@@ -87,7 +87,7 @@ def build() -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "edition_stamp": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "authority": {
-            "pin_prefix": "D1D38A",
+            "pin_prefix": str(cert.get("pin_prefix") or (sha[:6] if sha else "")),
             "fsot_compute_sha256": sha,
             "pin_match": pin_ok,
             "path": "vendor/fsot_compute.py",

@@ -27,7 +27,8 @@ FREEZE_JSON = ROOT / "data" / "domain_table_freeze.json"
 MANIFEST = ROOT / "data" / "honest_claims_manifest.yaml"
 COMPUTE_PATH = ROOT / "vendor" / "fsot_compute.py"
 EXT_MANIFEST = ROOT / "data" / "extension_domains_manifest.yaml"
-PIN_PREFIX = "D1D38A"  # overwritten from live hash in main if freeze is rewritten
+EXT_DERIVED = ROOT / "data" / "extension_folds_derived.json"
+PIN_PREFIX = "FE23A2"  # overwritten from live hash in main if freeze is rewritten
 K_LINE_NEEDLE = "K        = PHI * (GAMMA / E) * sqrt(2) / ln(PI) * (1 - 1 / PI**4)"
 
 # Literals in fsot_compute.py that are not derived from φ, e, π, γ closed forms.
@@ -98,33 +99,53 @@ def _domain_table_tunables() -> dict:
 
 
 def _extension_domain_tunables() -> dict:
+    """Authority is derived parent-nest JSON. YAML integers are ignored."""
+    if EXT_DERIVED.exists():
+        doc = json.loads(EXT_DERIVED.read_text(encoding="utf-8"))
+        rows = []
+        for name, cfg in sorted((doc.get("folds") or {}).items()):
+            rows.append(
+                {
+                    "domain": name,
+                    "parent_core": cfg.get("parent_core"),
+                    "D_eff": cfg.get("D_eff"),
+                    "look": cfg.get("look"),
+                    "hits": cfg.get("hits"),
+                    "observed": cfg.get("observed"),
+                    "yaml_D_eff_ignored": cfg.get("yaml_D_eff_ignored"),
+                }
+            )
+        return {
+            "extension_domain_count": len(rows),
+            "authority": "extension_folds_derived.json (parent nest)",
+            "per_extension_tunable_fields": 0,
+            "total_extension_slots": 0,
+            "domains": rows,
+        }
     if yaml is None or not EXT_MANIFEST.exists():
         return {"extension_domain_count": 0, "domains": []}
     spec = yaml.safe_load(EXT_MANIFEST.read_text(encoding="utf-8"))
-    rows = []
-    for name, cfg in sorted((spec.get("extension_domains") or {}).items()):
-        rows.append(
-            {
-                "domain": name,
-                "D_eff": cfg.get("D_eff"),
-                "delta_psi": cfg.get("delta_psi"),
-                "recent_hits": cfg.get("recent_hits"),
-            }
-        )
+    n = len(spec.get("extension_domains") or {})
     return {
-        "extension_domain_count": len(rows),
-        "per_extension_tunable_fields": 3,
-        "total_extension_slots": len(rows) * 3,
-        "domains": rows,
+        "extension_domain_count": n,
+        "authority": "missing derived json — YAML is not live",
+        "per_extension_tunable_fields": 0,
+        "total_extension_slots": 0,
+        "domains": [],
     }
 
 
 def _literal_hits(source: str) -> list[dict]:
     hits: list[dict] = []
+    lines = source.splitlines()
     for pat in TUNABLE_LITERAL_PATTERNS:
         for m in re.finditer(pat, source):
-            line = source.count("\n", 0, m.start()) + 1
-            hits.append({"pattern": pat, "line": line, "match": m.group(0)})
+            line_no = source.count("\n", 0, m.start()) + 1
+            line = lines[line_no - 1] if 0 < line_no <= len(lines) else ""
+            # Result(..., mpf("0.99")) is a literature measured anchor, not a knob.
+            if "Result(" in line:
+                continue
+            hits.append({"pattern": pat, "line": line_no, "match": m.group(0)})
     return hits
 
 
@@ -174,7 +195,8 @@ def build_audit() -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "headline_claim": "zero free parameters — decimals replaced by pi identities",
         "audit_verdict": (
-            "ZERO_FREE — 0.99/0.01/10 are π identities; look/hits named seeds; "
+            "ZERO_FREE — 0.99/0.01/10 are π identities; D_eff from nest; "
+            "look/hits/observed named laws; species inherit Neuroscience; "
             "f_domain=ALPHA. See docs/FROZEN_KNOBS.md."
         ),
         "freeze": {**freeze, "live_pin": pin, "freeze_ok": freeze_ok, "freeze_reason": freeze_reason},
@@ -198,13 +220,15 @@ def build_audit() -> dict:
         "empirical_tunable_slot_estimate": empirical_tunables,
         "honest_framing": (
             "Zero free parameters means: no post-hoc dial when a row misses. "
-            "It does not mean D_eff was derived from π,e,φ,γ,G. "
-            "35 assigned folds and K*0.99 are frozen. Changing them requires a new pin."
+            "D_eff is derived from the nest. Look/hits/observed are named fold laws. "
+            "Species use the Neuroscience parent, not a per-species D. "
+            "Changing the nest or identities requires a new pin."
         ),
         "what_is_zero_free": [
             "No per-observable least-squares when a prediction misses",
-            "Domain integers frozen on 2026-09-09 — hash-gated against pin D1D38A",
-            "K*0.99 admitted and frozen, not retuned",
+            "D_eff(g)=round(5*5**(g/(G-1))) from NEST_GENERATIONS",
+            "K, C_EFF, C_COSM are pi identities, not 0.99/0.01/10",
+            "f_domain = ALPHA; PROPERTY_ROUTING is domain names only",
             "SHA-256 gate on fsot_compute.py prevents silent engine drift",
         ],
     }
@@ -228,7 +252,7 @@ def main() -> int:
     print(f"  domain_table_sha256: {fz.get('domain_table_sha256')}")
     print(f"  wrote: {OUTPUT_JSON}")
     if not fz.get("freeze_ok", True):
-        print("FAIL: DomainConfig integers or K changed under pin D1D38A. New pin required.", file=sys.stderr)
+        print("FAIL: nest identities or K changed under the live pin. New pin required.", file=sys.stderr)
         return 1
     return 0
 

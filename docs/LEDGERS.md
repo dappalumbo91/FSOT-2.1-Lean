@@ -1,6 +1,6 @@
 # Three ledgers — never mixed in a headline
 
-**Pin:** D1D38A · **Peer review:** out of scope  
+**Pin:** live SHA prefix of `vendor/fsot_compute.py` · **Peer review:** out of scope  
 A hostile reader treats one green paragraph as a first-principles hit. These ledgers cannot share a headline.
 
 | Ledger | What is allowed in the formula | Pass metric | Forbidden |
@@ -19,8 +19,10 @@ Do not write “477/477” next to \(T_{\mathrm{CMB}}\) or H₀.
 
 Predict vs correct: `python scripts/predict_closed_form.py --observable T_CMB` then `python scripts/compare_to_anchor.py --observable T_CMB`.
 
-Frozen Ledger A set (20 rows): [`../predictions/LEDGER_A_FREEZE.yaml`](../predictions/LEDGER_A_FREEZE.yaml). Changing an expression is a new id. `CONSTANT_IDENTITY` rows are inventory, not ToE forecasts.
+Frozen Ledger A set: [`../predictions/LEDGER_A_FREEZE.yaml`](../predictions/LEDGER_A_FREEZE.yaml). Changing an expression is a new id. `CONSTANT_IDENTITY` rows are inventory, not ToE forecasts.
 
 Hubble is two objects: CMB class (`H0_PLANCK_CLASS`) is not the SH0ES ladder. See [`H0_DUAL_OBJECT.md`](H0_DUAL_OBJECT.md).
+
+Baryon / cold-dark-matter densities are the **chemistry rung**, not QM after nest collapse. See [`MATTER_BUDGET_OBJECT.md`](MATTER_BUDGET_OBJECT.md).
 
 Identities: [`FROZEN_KNOBS.md`](FROZEN_KNOBS.md). Extension \(D_{\mathrm{eff}}\) from parent nest: `data/extension_folds_derived.json` (YAML integers ignored). Misses: [`../results/MISSES.md`](../results/MISSES.md). What we do not claim: [`WHAT_WE_DO_NOT_CLAIM.md`](WHAT_WE_DO_NOT_CLAIM.md).

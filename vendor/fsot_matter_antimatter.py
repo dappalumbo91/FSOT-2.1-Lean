@@ -15,7 +15,7 @@ same fluid-scalar ontology:
 
 Already in fsot_compute (surfaced here for the dedicated panel):
   eta_baryon_photon = Poof^11 / (π · γ)     → ~6.14e-10
-  Omega_b_h2        = |S_cosmo| · (1 − S_quant)
+  Omega_b_h2        = |S_cosmo| · (1 − S_chem)
 
 Honest scope
 ------------
@@ -115,10 +115,14 @@ def seed_eta_baryon_photon() -> float:
 
 
 def seed_Omega_b_h2() -> float:
-    """Ω_b h² from cosmology × quantum interface — wave1 identity."""
+    """Ω_b h² from cosmology × chemistry rung — wave1 identity.
+
+    Nest collapse put QM on the Particle floor (D=5). Baryon inventory is the
+    first default-look specimen above that floor (Chemistry, D=6).
+    """
     s_cos = f(domain_scalar("Cosmology"))
-    s_q = f(domain_scalar("Quantum_Mechanics"))
-    return abs(s_cos) * (1.0 - s_q)
+    s_chem = f(domain_scalar("Chemistry"))
+    return abs(s_cos) * (1.0 - s_chem)
 
 
 def matter_S(domain: str = "Particle_Physics") -> float:

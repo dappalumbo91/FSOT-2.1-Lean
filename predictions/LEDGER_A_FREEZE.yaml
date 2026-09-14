@@ -1,8 +1,8 @@
-# Ledger A freeze — pin FE23A2
-# generated_at: 2026-09-14T21:19:36.093537+00:00
+# Ledger A freeze — pin 3FBCE5
+# generated_at: 2026-09-14T21:34:33.509045+00:00
 # Changing an expression requires a new PRED id. No silent rewrite.
 ledger: A
-pin: FE23A2
+pin: 3FBCE5
 rows:
   - id: BP_H2O
     kind: CONSTANT_IDENTITY
@@ -81,6 +81,17 @@ rows:
     operator_count: 3
     kill_band: 'If N_eff leaves [2.8, 3.4] this expression is dead'
     measured_in_formula: false
+  - id: Omega_DM_h2
+    kind: FORECAST
+    expression: '(1 - S_chem)*phi*A_in'
+    expression_id: wave2.Omega_DM_h2_CHEM
+    units: '1'
+    value: 0.12058582009653829
+    anchor: 0.12
+    error_pct: 0.488183
+    operator_count: 3
+    kill_band: 'If Omega_c h^2 leaves [0.110, 0.130] this expression is dead. Sibling of Omega_b at the chemistry rung.'
+    measured_in_formula: false
   - id: Omega_Lambda
     kind: FORECAST
     expression: 'S_quant/e + gamma**2'
@@ -94,14 +105,14 @@ rows:
     measured_in_formula: false
   - id: Omega_b_h2
     kind: FORECAST
-    expression: '|S_cosm|*(1 - S_quant)'
-    expression_id: wave1.Omega_b_h2
+    expression: '|S_cosm|*(1 - S_chem)'
+    expression_id: wave1.Omega_b_h2_CHEM
     units: '1'
-    value: 0.025019661375883018
+    value: 0.022461621418647423
     anchor: 0.02237
-    error_pct: 11.844709
+    error_pct: 0.409573
     operator_count: 2
-    kill_band: 'If Omega_b h^2 leaves [0.0215, 0.0232] this expression is dead'
+    kill_band: 'If Omega_b h^2 leaves [0.0215, 0.0232] this expression is dead. Chemistry rung, not QM after nest collapse.'
     measured_in_formula: false
   - id: T_CMB
     kind: FORECAST
@@ -224,6 +235,6 @@ rows:
     operator_count: 2
     kill_band: 'If tau_reion leaves [0.04, 0.07] this expression is dead'
     measured_in_formula: false
-n_forecast: 19
+n_forecast: 20
 n_constant_identity: 1
-n_forecast_outside_half_pct: 3
+n_forecast_outside_half_pct: 2

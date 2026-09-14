@@ -11,6 +11,9 @@ from pathlib import Path
 from fsot_paths import REPO_ROOT, portable_mode, rel_repo_path
 
 AUTHORITY_SHA256 = (
+    "3FBCE5F87825F15024BBE49CFD90E06BD4C16DBD278AB988AFF123F97D71FEFF"
+)
+PREVIOUS_DERIVED_D_SHA256 = (
     "FE23A2D6973C0BFB40BE3D144D61CFC0687A720A762B4D5E748134497ABDA0DE"
 )
 PREVIOUS_PI_IDENTITY_SHA256 = (
@@ -31,6 +34,7 @@ STALE_SHA256 = (
 
 KNOWN_HASHES: dict[str, str] = {
     AUTHORITY_SHA256: "canonical",
+    PREVIOUS_DERIVED_D_SHA256: "previous_derived_D_nest",
     PREVIOUS_PI_IDENTITY_SHA256: "previous_pi_identities_assigned_D",
     PREVIOUS_DECIMAL_KNOB_SHA256: "previous_decimal_knobs",
     PRE_LEDGER_ALIGN_SHA256: "stale",

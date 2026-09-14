@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-11T19:28:05.426813+00:00",
+  "generated_at": "2026-09-14T21:35:40.530855+00:00",
   "headline_claim": "zero free parameters \u2014 decimals replaced by pi identities",
-  "audit_verdict": "ZERO_FREE \u2014 0.99/0.01/10 are \u03c0 identities; look/hits named seeds; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.",
+  "audit_verdict": "ZERO_FREE \u2014 0.99/0.01/10 are \u03c0 identities; D_eff from nest; look/hits/observed named laws; species inherit Neuroscience; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.",
   "freeze": {
-    "freeze_date": "2026-09-11",
-    "pin_prefix": "FE23A2",
+    "freeze_date": "2026-09-14",
+    "pin_prefix": "3FBCE5",
     "domain_count": 35,
     "domain_table_sha256": "8e30e85e72091462c4d66df2d498afb36ccbc2d40eb5df01b4e083947c79dad3",
     "k_line_present": true,
     "k_line_sha256": "520f7bd28060075a64c6570096695205a00be17f6a70e1057c64fb43be948155",
     "note": "K = \u2026(1\u2212\u03c0\u207b\u2074); C_EFF uses \u03c0\u207b\u2074; C_COSM = 1/(\u03c6 \u03c0\u00b2). Look is 1 except Atomic e/\u03c0 and HEP 1\u2212POOF/\u03c0. Hits 0 except HEP=1. D_eff is the orifice rung (5 seeds \u2192 D=5, ceiling 25). f_domain = ALPHA.",
-    "live_pin": "FE23A2",
+    "live_pin": "3FBCE5",
     "freeze_ok": true,
-    "freeze_reason": "wrote_freeze_for_new_pin"
+    "freeze_reason": "ok"
   },
   "parameter_model": "Constants from seeds (\u03c0, e, \u03c6, \u03b3, G). K, C_EFF, C_COSM contain no decimal knobs. Orifice rungs are the 25-D ladder, not least-squares.",
   "scalar_input_fields": 24,
@@ -304,2279 +304,3400 @@
       }
     ]
   },
-  "domain_route_note": "175 core route slots + 1125 extension route slots = 1300 preregistered coordinates (D_eff, \u03b4\u03c8, recent_hits, \u03b4\u03b8, C) \u2014 seed-derived folds, not least-squares tunables.",
+  "domain_route_note": "175 core route slots + 0 extension route slots = 175 preregistered coordinates (D_eff, \u03b4\u03c8, recent_hits, \u03b4\u03b8, C) \u2014 seed-derived folds, not least-squares tunables.",
   "extension_domains": {
     "extension_domain_count": 375,
-    "per_extension_tunable_fields": 3,
-    "total_extension_slots": 1125,
+    "authority": "extension_folds_derived.json (parent nest)",
+    "per_extension_tunable_fields": 0,
+    "total_extension_slots": 0,
     "domains": [
       {
         "domain": "AI_Galactic_Orbital_Bridge",
-        "D_eff": 16,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Acoustic_Resonance_Materials",
-        "D_eff": 15,
-        "delta_psi": 0.82,
-        "recent_hits": 0
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Actuarial_Science_Panel",
-        "D_eff": 20,
-        "delta_psi": 1.5,
-        "recent_hits": 3
+        "parent_core": "Economics",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Adjacent_Rung_Coupling",
-        "D_eff": 17,
-        "delta_psi": 0.91,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Adversarial_Fractal_Break_Tests",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Agriculture_Agroecology",
-        "D_eff": 16,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Alternate_Base_Mathematics_Explorer_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 1
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Alternate_Base_Mathematics_Spine",
-        "D_eff": 18,
-        "delta_psi": 0.9,
-        "recent_hits": 1
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Anthropology",
-        "D_eff": 17,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Architecture_Building_Science",
-        "D_eff": 16,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Arxiv_Brain_Knowledge_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Arxiv_Gravitational_Waves_Panel",
-        "D_eff": 21,
-        "delta_psi": 1.0,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Arxiv_Primitives_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.74,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Arxiv_Primitives_V14",
-        "D_eff": 12,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Astrophysical_Structure_Crosswalk",
+        "parent_core": "Astronomy",
         "D_eff": 18,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Between_Scale_Interconnects",
-        "D_eff": 17,
-        "delta_psi": 1.0,
-        "recent_hits": 1
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Bibliography_Corpus_Panel",
-        "D_eff": 12,
-        "delta_psi": 0.55,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Bibliography_Lean_Corpus",
-        "D_eff": 13,
-        "delta_psi": 0.5,
-        "recent_hits": 1
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Binary_Decoder_Panel",
-        "D_eff": 13,
-        "delta_psi": 0.62,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Binary_Decoder_Rendlesham",
-        "D_eff": 12,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Biological_CUDA_Physarum",
-        "D_eff": 22,
-        "delta_psi": 0.9,
-        "recent_hits": 5
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "Biology_Developmental_Structural_Depth_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.6,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Biophysics_Public_Panel",
-        "D_eff": 12,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Astrophysics",
+        "D_eff": 23,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Botany",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Boundary_Partition_Tightening",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Breakthrough_Discoveries_2024_2026",
-        "D_eff": 22,
-        "delta_psi": 2.0,
-        "recent_hits": 20
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "CERN_Open_Data_LHC",
-        "D_eff": 19,
-        "delta_psi": 1.2,
-        "recent_hits": 1
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "CRC_Handbook_Properties",
-        "D_eff": 11,
-        "delta_psi": 0.6,
-        "recent_hits": 2
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 11
       },
       {
         "domain": "CVE_Codon_Hole_Falsification",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Canonical_Oracle_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Cardiology",
-        "D_eff": 15,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Cardiology_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Cartography_GIS_Panel",
+        "parent_core": "Economics",
         "D_eff": 18,
-        "delta_psi": 1.2,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Cepheid_PL_Interconnect",
-        "D_eff": 20,
-        "delta_psi": 1.0,
-        "recent_hits": 1
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Certified_Agent_Formal_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Certified_Agent_Qwen",
-        "D_eff": 12,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Chaos_Mediated_Phase_Transitions",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 0
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Chemical_Engineering",
-        "D_eff": 16,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Chemical_Structure_Stability_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.82,
-        "recent_hits": 2
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Civil_Engineering",
-        "D_eff": 16,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Civil_Engineering_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.55,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Climate_Science",
-        "D_eff": 16,
-        "delta_psi": 0.75,
-        "recent_hits": 3
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "ClinicalTrials_Medical_Panel",
-        "D_eff": 13,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Clinical_Medicine",
-        "D_eff": 15,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Code_Genome_Structure",
-        "D_eff": 17,
-        "delta_psi": 0.92,
-        "recent_hits": 3
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Cold_Fusion_Candidate_Prereg_Scaffold",
-        "D_eff": 14,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
-        "D_eff": 15,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Compact_Object_Binary_Events",
-        "D_eff": 20,
-        "delta_psi": 0.92,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Compactification_Ladder",
-        "D_eff": 18,
-        "delta_psi": 0.94,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Complexity_Folding_Emergence_Panel",
-        "D_eff": 21,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Computational_Reasoning",
-        "D_eff": 12,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Condensed_Matter_Superconductivity_Depth_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.55,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Consciousness_Econ",
-        "D_eff": 17,
-        "delta_psi": 0.92,
-        "recent_hits": 3
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Consciousness_Expansion_Spine",
-        "D_eff": 19,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Consciousness_Galactic_Orbital_Bridge",
-        "D_eff": 17,
-        "delta_psi": 0.92,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Consciousness_Genetics_Coupling_Panel",
-        "D_eff": 17,
-        "delta_psi": 1.15,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Consciousness_Genetics_Species_Panel",
-        "D_eff": 18,
-        "delta_psi": 1.1,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Consciousness_Soul_Bridge",
-        "D_eff": 17,
-        "delta_psi": 0.92,
-        "recent_hits": 3
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Consciousness_Species_Multi_Panel",
-        "D_eff": 18,
-        "delta_psi": 1.1,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Cosmology_Anomalies",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Cosmology_Anomaly_Deep_Panel",
-        "D_eff": 24,
-        "delta_psi": 0.96,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 24
       },
       {
         "domain": "Cosmology_Bubble_Bleed",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Cosmology_Extended",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 0.92,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Creative_Arts_Math_Spine",
-        "D_eff": 16,
-        "delta_psi": 0.85,
-        "recent_hits": 3
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Crossref_Scholarly_Panel",
+        "parent_core": "Economics",
         "D_eff": 18,
-        "delta_psi": 0.55,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Cryosphere",
-        "D_eff": 16,
-        "delta_psi": 0.74,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Cryptography_Technology",
-        "D_eff": 16,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Culinary_Arts",
-        "D_eff": 15,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Culinary_Fermentation_Maillard_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.45,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Dark_Energy_CPL",
-        "D_eff": 24,
-        "delta_psi": 0.98,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 24
       },
       {
         "domain": "Dark_Sector_Open_Problems",
-        "D_eff": 24,
-        "delta_psi": 0.98,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 24
       },
       {
         "domain": "Desktop_Application_Wiring_Spine",
-        "D_eff": 16,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Distant_Island_Emergence_Simulation",
-        "D_eff": 25,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Distant_Island_Z128_Z132_Deep_Panel",
-        "D_eff": 23,
-        "delta_psi": 0.92,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 23
       },
       {
         "domain": "Domain_Coupling_Simulation",
-        "D_eff": 17,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Domain_Coupling_Simulation_Refresh_Panel",
-        "D_eff": 24,
-        "delta_psi": 0.96,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 24
       },
       {
         "domain": "Domain_Orbital_Predictions",
-        "D_eff": 19,
-        "delta_psi": 0.96,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Early_Lean_MC_Panel",
-        "D_eff": 11,
-        "delta_psi": 0.58,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 11
       },
       {
         "domain": "Ecology",
-        "D_eff": 15,
-        "delta_psi": 0.2,
-        "recent_hits": 1
+        "parent_core": "Ecology",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Econometrics",
-        "D_eff": 19,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Econophysics",
-        "D_eff": 20,
-        "delta_psi": 1.5,
-        "recent_hits": 3
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Electrical_Power_Systems",
-        "D_eff": 9,
-        "delta_psi": 0.4,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 9
       },
       {
         "domain": "Element_Synthesis_Condition_Scaffold",
-        "D_eff": 14,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Energy_AI_Orbital_Bridge",
-        "D_eff": 16,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Energy_Neural_Orbital_Bridge",
-        "D_eff": 16,
-        "delta_psi": 0.86,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Entomology",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Entomology_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.4,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Environmental_Engineering",
-        "D_eff": 17,
-        "delta_psi": 0.78,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Epidemiology",
-        "D_eff": 15,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Epidemiology_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.6,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Ethology_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.35,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Exogeology",
-        "D_eff": 20,
-        "delta_psi": 1.0,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Exogeology_Panel",
-        "D_eff": 20,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Exoplanet_System_Architecture",
-        "D_eff": 21,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Experimental_Base_Mathematics_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.95,
-        "recent_hits": 1
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "External_OSS_Code_Genome",
-        "D_eff": 16,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "FPC_Fluidlink_Timing_Deep_Panel",
-        "D_eff": 20,
-        "delta_psi": 0.94,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "FPC_Temporal_Coupling",
-        "D_eff": 18,
-        "delta_psi": 0.93,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "FSOT_Aggregate_Organized_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "FSOT_Aggregate_Unified_DB",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Federal_Science_Registry_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Economics",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Finance_Markets",
-        "D_eff": 19,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Economics",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Finance_Markets_Panel",
-        "D_eff": 19,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Economics",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Fluid_Phase_Current_Spine",
-        "D_eff": 20,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Fluid_Spacetime_Observable_Spine",
-        "D_eff": 26,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 26
       },
       {
         "domain": "Fluid_Spacetime_Prereg_Validation_Panel",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 0.97,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Fold_Depth_Metrics",
-        "D_eff": 20,
-        "delta_psi": 0.96,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Food_Microbiology",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Formula_Branching_Fractal",
-        "D_eff": 18,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Formula_Corpus_CNC",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Formula_Corpus_Closure",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Formula_Precision_Spine",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Foundational_Ontology_Spine",
-        "D_eff": 22,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "Founding_Atmospheric_Ozone_Panel",
-        "D_eff": 12,
-        "delta_psi": 0.86,
-        "recent_hits": 1
+        "parent_core": "Meteorology",
+        "D_eff": 13,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Founding_Cosmic_Dust_Panel",
-        "D_eff": 13,
-        "delta_psi": 0.87,
-        "recent_hits": 1
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Founding_Cosmic_Ray_Panel",
-        "D_eff": 10,
-        "delta_psi": 0.88,
-        "recent_hits": 1
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 10
       },
       {
         "domain": "Founding_Galactic_Halo_Rotation_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.9,
-        "recent_hits": 1
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Founding_Pulsar_Glitch_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.91,
-        "recent_hits": 1
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Founding_Quantum_Vacuum_Panel",
-        "D_eff": 8,
-        "delta_psi": 0.85,
-        "recent_hits": 1
+        "parent_core": "Quantum_Mechanics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 8
       },
       {
         "domain": "Founding_White_Dwarf_Cooling_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.89,
-        "recent_hits": 1
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Fractal_Constant_Recursion",
-        "D_eff": 18,
-        "delta_psi": 0.92,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Fuel_Candidate_Prereg_Scaffold",
-        "D_eff": 16,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Fuel_Lab_Live_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Fuel_Thermochemistry_Public_Anchors",
-        "D_eff": 16,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Fusion_Decay_Chain_Prereg_Scaffold",
-        "D_eff": 17,
-        "delta_psi": 0.93,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Fusion_Lab_Certificate_Spine",
-        "D_eff": 20,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Fusion_Physics_Public_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "GBIF_Species_Occurrence",
-        "D_eff": 15,
-        "delta_psi": 0.2,
-        "recent_hits": 1
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "GWOSC_Live_Event_Deep",
-        "D_eff": 20,
-        "delta_psi": 0.92,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Gaia_Astrometry_Panel_Deep",
-        "D_eff": 20,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Gaia_DR3_TAP_Deep",
-        "D_eff": 20,
-        "delta_psi": 0.92,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Galactic_Structure_Sample",
-        "D_eff": 20,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Genomic_Sciences",
-        "D_eff": 12,
-        "delta_psi": 0.05,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Geochemistry",
-        "D_eff": 15,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Geology_Stratigraphy",
-        "D_eff": 18,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Geomagnetism",
-        "D_eff": 13,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Government_Open_Data_Spine",
-        "D_eff": 18,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Grace_Cryosphere",
-        "D_eff": 16,
-        "delta_psi": 0.76,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "HVAC_Thermal_Systems",
-        "D_eff": 13,
-        "delta_psi": 0.6,
-        "recent_hits": 1
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Heavy_Ion_Lab_Synthesis_Panel",
-        "D_eff": 13,
-        "delta_psi": 0.93,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Higgs_Mass",
-        "D_eff": 19,
-        "delta_psi": 0.95,
-        "recent_hits": 1
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "History",
-        "D_eff": 15,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "History_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.4,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Hubble_Bubble_Tension",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Hubble_Dark_Sector_Crosswalk",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 0.97,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Hybrid_FI_Sim_Multi_Hero_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.93,
-        "recent_hits": 3
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Hybrid_FI_Sim_Stratum_Deep_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Hydrology",
-        "D_eff": 15,
-        "delta_psi": 0.78,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "IGEM_Live_FASTA_Ingest",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "IGEM_Parts_Expanded",
-        "D_eff": 14,
-        "delta_psi": 0.83,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "IGEM_Synthetic_Biology",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Immunology",
-        "D_eff": 13,
-        "delta_psi": 0.45,
-        "recent_hits": 1
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Immunology_Panel",
-        "D_eff": 13,
-        "delta_psi": 0.45,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Inertial_Confinement_Fusion_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.92,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Information_Theory_Public_Panel",
-        "D_eff": 8,
-        "delta_psi": 0.6,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 8
       },
       {
         "domain": "Initiation_Transformation_Archetype",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Interactive_Media_Prereg_Scaffold",
-        "D_eff": 14,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Interdisciplinary_Spine_Crosswalk",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Intrinsic_LLM_Validators",
-        "D_eff": 12,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Intrinsic_LLM_Validators_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.68,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Ionospheric_Chemistry_Coupling",
-        "D_eff": 15,
-        "delta_psi": 0.88,
-        "recent_hits": 1
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Island_Of_Stability_Deep_Panel",
-        "D_eff": 19,
-        "delta_psi": 0.94,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Knowledge_Base_Portable_Bundle_Panel",
-        "D_eff": 19,
-        "delta_psi": 0.94,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Lab_Synthesis_Metamaterial_Spine",
-        "D_eff": 18,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Law_Policy",
-        "D_eff": 17,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Economics",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Law_Policy_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Economics",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Limnology_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Linguistics_Formal",
-        "D_eff": 12,
-        "delta_psi": 0.55,
-        "recent_hits": 1
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Live_Ingest_Spine",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Living_FSOT_Hardware_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Longevity_AnAge_Catalog_Panel",
-        "D_eff": 20,
-        "delta_psi": 1.05,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Longevity_Consciousness_Coupling_Panel",
-        "D_eff": 24,
-        "delta_psi": 1.18,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 24
       },
       {
         "domain": "Longevity_Extreme_Species_Panel",
-        "D_eff": 21,
-        "delta_psi": 1.15,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Longevity_Genetic_Mechanics_Panel",
-        "D_eff": 19,
-        "delta_psi": 1.1,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Longevity_MegaDeep_NCBI_Panel",
-        "D_eff": 23,
-        "delta_psi": 1.2,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 23
       },
       {
         "domain": "Longevity_Telomere_Repair_Panel",
-        "D_eff": 20,
-        "delta_psi": 1.08,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "MPCORB_Minor_Planet_Catalog",
-        "D_eff": 21,
-        "delta_psi": 0.9,
-        "recent_hits": 1
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Machine_And_Molecule_Live_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Magnetic_Confinement_Fusion_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Magnetosphere",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Magnetosphere_Extended",
-        "D_eff": 14,
-        "delta_psi": 0.75,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Maillard_Chemistry",
-        "D_eff": 15,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Malware_Threat_Intelligence",
-        "D_eff": 15,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Marine_Biology",
-        "D_eff": 15,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Marine_Biology_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Material_In_Silico_Screening_Scaffold",
-        "D_eff": 15,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Material_Property_Verification_Scaffold",
-        "D_eff": 15,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Materials_Creep_Fracture_Depth_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Materials_Engineering",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Materials_Genome_Crosswalk",
-        "D_eff": 15,
-        "delta_psi": 0.82,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Materials_Project_Live_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Materials_Species_Bridge",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Materials_Species_Bridge_Live_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Math_Generator_Airfoil_RMSE",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Math_Generator_Benchmark_Formula_Eval",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Math_Generator_Rules_Eval",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Mathematics_Computational",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Mechanical_Engineering",
-        "D_eff": 16,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Mechanical_Engineering_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.55,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Mechanistic_Coupling",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Medical_Galactic_Orbital_Bridge",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Metamaterial_Fluid_Design_Prereg_Scaffold",
-        "D_eff": 16,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Microtubule_Quantum_Consciousness_Panel",
-        "D_eff": 17,
-        "delta_psi": 1.15,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Music_Harmonics_Public_Panel",
-        "D_eff": 10,
-        "delta_psi": 0.3,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 10
       },
       {
         "domain": "Mycology",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Mycology_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.35,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "NASA_DONKI_Solar_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.82,
-        "recent_hits": 2
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "NASA_Exoplanet_Archive",
-        "D_eff": 21,
-        "delta_psi": 1.0,
-        "recent_hits": 1
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "NASA_NEO_Feed_Panel",
+        "parent_core": "Astronomy",
         "D_eff": 18,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "NCBI_Gene_Public_Panel",
-        "D_eff": 12,
-        "delta_psi": 0.45,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "NIST_CODATA_Constants",
-        "D_eff": 7,
-        "delta_psi": 1.0,
-        "recent_hits": 1
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 7
       },
       {
         "domain": "NIST_DLMF_Special_Functions",
-        "D_eff": 14,
-        "delta_psi": 0.5,
-        "recent_hits": 1
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "NOAA_Coastal_Tides",
-        "D_eff": 17,
-        "delta_psi": 0.7,
-        "recent_hits": 1
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "NOAA_NDBC_Buoy_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.78,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Natural_Formation_Element_Simulation",
-        "D_eff": 11,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 11
       },
       {
         "domain": "Network_Internet_Protocols",
-        "D_eff": 15,
-        "delta_psi": 0.82,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Network_Science_Public_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Neural_Galactic_Orbital_Bridge",
-        "D_eff": 17,
-        "delta_psi": 0.89,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Neuroeconomics",
-        "D_eff": 16,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Neuroeconomics_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Neuroimmunology",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Neurolab_Gaps_Math_Spine",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Neurolab_Residual_Math_Spine",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Neuron_Multi_Hero",
-        "D_eff": 14,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Neuroscience_Connectomics_Depth_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Neutrino_Physics_Panel",
-        "D_eff": 7,
-        "delta_psi": 0.95,
-        "recent_hits": 1
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 7
       },
       {
         "domain": "Nothing_Perfection_Friction_Origin_Panel",
-        "D_eff": 22,
-        "delta_psi": 1.15,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "OSTI_DOE_Science_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Observer_Channel_Derivation",
-        "D_eff": 16,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Observer_Effect_Cross_Species_Panel",
-        "D_eff": 16,
-        "delta_psi": 1.15,
-        "recent_hits": 3
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Omni_Theory_Genesis",
-        "D_eff": 25,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Omni_Theory_Humanities_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Oncology",
-        "D_eff": 14,
-        "delta_psi": 0.68,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "OpenAlex_Citation_Graph",
-        "D_eff": 18,
-        "delta_psi": 1.5,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "OpenNeuro_Full_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.1,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Open_Meteo_Live_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Optics_Interferometry_Depth_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.5,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Orbital_Mechanics",
+        "parent_core": "Astronomy",
         "D_eff": 18,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Overflow_Carry_Emergence_Panel",
-        "D_eff": 19,
-        "delta_psi": 1.1,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "PDG_Particle_Properties",
-        "D_eff": 9,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 9
       },
       {
         "domain": "Paleoclimate",
-        "D_eff": 17,
-        "delta_psi": 0.78,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Paleoclimate_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.6,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Paleontology",
-        "D_eff": 18,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Paleontology_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Particle_Neural_Orbital_Bridge",
-        "D_eff": 17,
-        "delta_psi": 0.84,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Particle_Physics",
-        "D_eff": 18,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Periodic_Extension_Decay_Topology_Scaffold",
-        "D_eff": 22,
-        "delta_psi": 0.94,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "Periodic_Table_Completion_Spine",
-        "D_eff": 12,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Periodic_Table_Extension_Closure_Spine",
-        "D_eff": 26,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 26
       },
       {
         "domain": "Periodic_Table_Public_Panel",
-        "D_eff": 9,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 9
       },
       {
         "domain": "Petrology_Geochemistry_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.55,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Pharmacokinetics",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Pharmacology",
-        "D_eff": 14,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Phi_Morphogenetic_Scaling",
-        "D_eff": 16,
-        "delta_psi": 0.78,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Physarum_Biological_CUDA_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.72,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Planetary_Atmospheres",
-        "D_eff": 16,
-        "delta_psi": 0.82,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Planetary_Structure",
-        "D_eff": 16,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Plasma_Physics",
-        "D_eff": 14,
-        "delta_psi": 0.85,
-        "recent_hits": 1
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Portable_Clone_Verify",
-        "D_eff": 14,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Prediction_Rederivation",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Preregistered_Outcome_Tracking",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Preregistered_Predictions",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Preregistered_Predictions_Verification_Scaffold",
-        "D_eff": 17,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Programming_Language_Laws",
-        "D_eff": 15,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Proof_Carrying_Code_Genome",
-        "D_eff": 16,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Proof_Ledger_Closure_Spine",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Psychology_Psychometrics_Depth_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "PubChem_Compound_Properties",
-        "D_eff": 8,
-        "delta_psi": 0.5,
-        "recent_hits": 0
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 8
       },
       {
         "domain": "PubChem_Live_Deep",
-        "D_eff": 20,
-        "delta_psi": 0.5,
-        "recent_hits": 3
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "PubChem_Stability_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Chemistry",
+        "D_eff": 6,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Public_Verifiable_Spine",
-        "D_eff": 16,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Published_Fuel_Property_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Pure_Mathematics",
-        "D_eff": 18,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Pure_Mathematics_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Quantum_Computing_Math_Depth_Panel",
-        "D_eff": 19,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Quantum_Information",
-        "D_eff": 11,
-        "delta_psi": 1.0,
-        "recent_hits": 2
+        "parent_core": "Quantum_Mechanics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 11
       },
       {
         "domain": "Quantum_Materials",
-        "D_eff": 16,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Quantum_Mechanics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Quantum_Mechanics_Entanglement_Depth_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.55,
-        "recent_hits": 2
+        "parent_core": "Quantum_Mechanics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "RCSB_PDB_Structures",
-        "D_eff": 13,
-        "delta_psi": 0.1,
-        "recent_hits": 1
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "RD_Interval_Tightening_Panel",
-        "D_eff": 22,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "Radio_Astronomy_Panel",
-        "D_eff": 20,
-        "delta_psi": 1.0,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Reality_Folding_Spine",
-        "D_eff": 21,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Robotics_Control_Systems",
-        "D_eff": 14,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Robotics_Control_Systems_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Rust_Lean_Bridge",
-        "D_eff": 8,
-        "delta_psi": 0.7,
-        "recent_hits": 0
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 8
       },
       {
         "domain": "Rust_Lean_Bridge_Panel",
-        "D_eff": 13,
-        "delta_psi": 0.66,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "SH0ES_Full_Sample",
-        "D_eff": 20,
-        "delta_psi": 1.0,
-        "recent_hits": 1
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "SH0ES_Ladder_Chain",
-        "D_eff": 20,
-        "delta_psi": 1.0,
-        "recent_hits": 1
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "SH0ES_Refined",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "SIMBAD_Stellar_Identity_Deep",
-        "D_eff": 20,
-        "delta_psi": 0.92,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "STScI_MAST_Telescope_Panel",
-        "D_eff": 21,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Scalar_Solver_35_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Scientific_Expansion_Depth_Spine",
-        "D_eff": 17,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Scientific_Expansion_Depth_Wave2_Spine",
-        "D_eff": 18,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Scientific_Expansion_Spine",
-        "D_eff": 18,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Scientific_Expansion_Wave2_Spine",
-        "D_eff": 17,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Scientific_Expansion_Wave3_Spine",
-        "D_eff": 17,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Secure_Software_Engineering",
-        "D_eff": 14,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Seismology",
-        "D_eff": 18,
-        "delta_psi": 1.2,
-        "recent_hits": 2
+        "parent_core": "Seismology",
+        "D_eff": 15,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Seismology_Deep",
-        "D_eff": 18,
-        "delta_psi": 1.0,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Semiconductor_Physics_Public_Panel",
-        "D_eff": 11,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 11
       },
       {
         "domain": "Small_Body_Orbits",
+        "parent_core": "Astronomy",
         "D_eff": 18,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Soil_Science_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.4,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "Solar_System_Structure_Deep",
+        "parent_core": "Astronomy",
         "D_eff": 18,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Space_Propulsion_Systems",
-        "D_eff": 14,
-        "delta_psi": 0.8,
-        "recent_hits": 5
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Space_Weather",
-        "D_eff": 14,
-        "delta_psi": 0.82,
-        "recent_hits": 2
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Speleology",
-        "D_eff": 16,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Speleology_Panel",
-        "D_eff": 16,
-        "delta_psi": 0.45,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 16
       },
       {
         "domain": "Sports_Biomechanics",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Star_Trek_Transporter_Live_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Statistical_Mechanics_Public_Panel",
+        "parent_core": "Thermodynamics",
         "D_eff": 12,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Stellar_Multiplicity_Catalog",
-        "D_eff": 19,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Stellar_Multiplicity_Live_Deep",
-        "D_eff": 19,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Stumped_Observables_Panel",
-        "D_eff": 22,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "Stumped_Observables_Spine",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Superheavy_Element_Stability_Panel",
-        "D_eff": 10,
-        "delta_psi": 0.92,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 10
       },
       {
         "domain": "Superheavy_Island_Completion_Spine",
-        "D_eff": 22,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "Superheavy_Island_Emergence_Simulation",
-        "D_eff": 21,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Supply_Chain_Logistics",
+        "parent_core": "Economics",
         "D_eff": 18,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Supply_Chain_Logistics_Panel",
+        "parent_core": "Economics",
         "D_eff": 18,
-        "delta_psi": 0.6,
-        "recent_hits": 2
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Symbolic_Archetype_Panel",
-        "D_eff": 17,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Synthetic_Biology",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "TOE_Contested_Sector_Refresh",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 0
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "TOE_Dynamics",
-        "D_eff": 15,
-        "delta_psi": 0.9,
-        "recent_hits": 1
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "TOE_Limit_Recovery",
-        "D_eff": 22,
-        "delta_psi": 1.0,
-        "recent_hits": 0
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "Tectonics",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Thermodynamics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Term3_Acoustic_Bleed_Depth",
-        "D_eff": 15,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 15
       },
       {
         "domain": "The_Well_Outcomes_Verification_Panel",
-        "D_eff": 20,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "The_Well_Spot_Check_Panel",
-        "D_eff": 18,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "The_Well_Verification_Spine",
-        "D_eff": 19,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Theory_Completeness_Spine",
-        "D_eff": 19,
-        "delta_psi": 0.98,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Tier_93_Dual_Wave_Spine",
-        "D_eff": 19,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Tier_94_Longevity_Spine",
-        "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "Tier_95_Zebrafish_Spine",
-        "D_eff": 23,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 23
       },
       {
         "domain": "Time_Domain_Crosswalk",
-        "D_eff": 19,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Time_Emergence_Deep_Panel",
-        "D_eff": 19,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Time_Emergence_Simulation",
-        "D_eff": 18,
-        "delta_psi": 0.94,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "ToE_Claim_Certificate_Bundle",
+        "parent_core": "Cosmology",
         "D_eff": 25,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 25
       },
       {
         "domain": "ToE_Gap_Closure_Spine",
-        "D_eff": 19,
-        "delta_psi": 0.98,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "ToE_Unification_Spine",
-        "D_eff": 20,
-        "delta_psi": 1.0,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Tokenization_Live_Panel",
-        "D_eff": 13,
-        "delta_psi": 0.6,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Tokenization_Smoke",
-        "D_eff": 12,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Toxicology_Panel",
-        "D_eff": 13,
-        "delta_psi": 0.45,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Trinary_Hardware_Live_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.65,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Trinary_Hardware_Motif",
-        "D_eff": 12,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Trinary_OS_ISA_Rebuild",
-        "D_eff": 12,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Trinary_OS_Portable",
-        "D_eff": 12,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Trinary_OS_Round_Trip",
-        "D_eff": 12,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Trinary_OS_Tier_E",
-        "D_eff": 12,
-        "delta_psi": 0.8,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "UAP_War_Gov_Release_Panel",
-        "D_eff": 20,
-        "delta_psi": 0.9,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold",
-        "D_eff": 10,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 10
       },
       {
         "domain": "UniProt_Protein_Annotations",
-        "D_eff": 12,
-        "delta_psi": 0.05,
-        "recent_hits": 0
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "UniProt_Structure_Annotations_Deep",
-        "D_eff": 13,
-        "delta_psi": 0.85,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 13
       },
       {
         "domain": "Unified_DB_Candidate_Crosswalk",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "Unified_DB_Crosswalk_Spine",
-        "D_eff": 17,
-        "delta_psi": 0.88,
-        "recent_hits": 3
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 17
       },
       {
         "domain": "VL_Agent_Distill_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.71,
-        "recent_hits": 2
+        "parent_core": "Cosmology",
+        "D_eff": 25,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "VL_Distill_Atlas",
-        "D_eff": 12,
-        "delta_psi": 0.75,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 12
       },
       {
         "domain": "Virology",
-        "D_eff": 14,
-        "delta_psi": 0.68,
-        "recent_hits": 2
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Virology_Panel",
-        "D_eff": 14,
-        "delta_psi": 0.55,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "VizieR_WDS_TAP_Live_Deep",
-        "D_eff": 21,
-        "delta_psi": 1.0,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Volcanology_Panel",
-        "D_eff": 19,
-        "delta_psi": 1.0,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "WDS_Live_Multiplicity_Deep",
-        "D_eff": 19,
-        "delta_psi": 0.9,
-        "recent_hits": 2
+        "parent_core": "Astronomy",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 19
       },
       {
         "domain": "Warp_BH_WH_Portal_Panel",
-        "D_eff": 29,
-        "delta_psi": 0.98,
-        "recent_hits": 3
+        "parent_core": "Astrophysics",
+        "D_eff": 23,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 29
       },
       {
         "domain": "World_Bank_Development",
-        "D_eff": 20,
-        "delta_psi": 1.5,
-        "recent_hits": 3
+        "parent_core": "Economics",
+        "D_eff": 18,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "XR_Interactive_Media_Math_Scaffold",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Neuroscience",
+        "D_eff": 11,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "Z120_Z126_Beam_Synthesis_Panel",
-        "D_eff": 20,
-        "delta_psi": 0.91,
-        "recent_hits": 3
+        "parent_core": "Nuclear_Physics",
+        "D_eff": 12,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Z164_Distant_Island_Prereg_Scaffold",
-        "D_eff": 24,
-        "delta_psi": 0.88,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 24
       },
       {
         "domain": "Zebrafish_Cell_Tracking_Panel",
-        "D_eff": 20,
-        "delta_psi": 1.1,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 20
       },
       {
         "domain": "Zebrafish_Developmental_Mechanics_Panel",
-        "D_eff": 21,
-        "delta_psi": 1.12,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 21
       },
       {
         "domain": "Zebrafish_Longevity_Genetics_Coupling_Panel",
-        "D_eff": 22,
-        "delta_psi": 1.15,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 22
       },
       {
         "domain": "Zero_Boundary_Not_Entity_Panel",
-        "D_eff": 18,
-        "delta_psi": 1.0,
-        "recent_hits": 2
+        "parent_core": "Particle_Physics",
+        "D_eff": 5,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Zero_Day_Risk_Evaluator",
-        "D_eff": 18,
-        "delta_psi": 0.95,
-        "recent_hits": 3
+        "parent_core": "Biochemistry",
+        "D_eff": 10,
+        "look": 1.0,
+        "hits": 0,
+        "observed": true,
+        "yaml_D_eff_ignored": 18
       },
       {
         "domain": "Zoology",
-        "D_eff": 14,
-        "delta_psi": 0.7,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 14
       },
       {
         "domain": "iNaturalist_Observation_Panel",
-        "D_eff": 15,
-        "delta_psi": 0.4,
-        "recent_hits": 2
+        "parent_core": "Biology",
+        "D_eff": 9,
+        "look": 1.0,
+        "hits": 0,
+        "observed": false,
+        "yaml_D_eff_ignored": 15
       }
     ]
   },
-  "literal_coefficient_hits": [
-    {
-      "pattern": "mpf\\(\"0\\.99\"\\)",
-      "line": 1090,
-      "match": "mpf(\"0.99\")"
-    }
-  ],
-  "literal_coefficient_count": 1,
-  "route_slot_count": 1300,
-  "empirical_tunable_slot_estimate": 1325,
-  "honest_framing": "Zero free parameters means: no post-hoc dial when a row misses. It does not mean D_eff was derived from \u03c0,e,\u03c6,\u03b3,G. 35 assigned folds and K*0.99 are frozen. Changing them requires a new pin.",
+  "literal_coefficient_hits": [],
+  "literal_coefficient_count": 0,
+  "route_slot_count": 175,
+  "empirical_tunable_slot_estimate": 199,
+  "honest_framing": "Zero free parameters means: no post-hoc dial when a row misses. D_eff is derived from the nest. Look/hits/observed are named fold laws. Species use the Neuroscience parent, not a per-species D. Changing the nest or identities requires a new pin.",
   "what_is_zero_free": [
     "No per-observable least-squares when a prediction misses",
-    "Domain integers frozen on 2026-09-09 \u2014 hash-gated against pin D1D38A",
-    "K*0.99 admitted and frozen, not retuned",
+    "D_eff(g)=round(5*5**(g/(G-1))) from NEST_GENERATIONS",
+    "K, C_EFF, C_COSM are pi identities, not 0.99/0.01/10",
+    "f_domain = ALPHA; PROPERTY_ROUTING is domain names only",
     "SHA-256 gate on fsot_compute.py prevents silent engine drift"
   ]
 }

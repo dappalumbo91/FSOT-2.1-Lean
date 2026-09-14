@@ -12,6 +12,7 @@ cd FSOT-2.1-Lean
 pip install -r requirements.txt
 python scripts/predict_closed_form.py --observable T_CMB --json
 python scripts/compare_to_anchor.py --observable T_CMB --source nist
+python scripts/assert_derived_folds.py
 python scripts/audit_parameter_count.py
 python scripts/freeze_ledger_a.py
 ```
@@ -53,6 +54,7 @@ pip install -r requirements.txt
 ```bash
 python scripts/build_repo_status_snapshot.py
 python scripts/audit_all_benchmark_margins.py
+python scripts/assert_derived_folds.py
 python scripts/audit_parameter_count.py
 ```
 

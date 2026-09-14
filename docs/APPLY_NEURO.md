@@ -1,9 +1,10 @@
 # APPLY cookbook — Neuroscience fold
 
-**Pin:** D1D38A · **core:** `Neuroscience` · \(D_{\mathrm{eff}}=14\) · `observed=True` · \(C=C_{\mathrm{factor}}\) · \(\delta\psi=0.7\) · hits=1.  
-**Neighbor:** `Biochemistry` \(D=13\) (molecule zoom). Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §20.  
-**Same rung:** `Condensed_Matter` \(\delta\psi=0.5\) (solid). Fold 0.5/0.7 onto \(D=13\).  
-**Social tank:** `Economics` \(D=20\) (same World Bank YoY; as-above-so-below).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Neuroscience` · nest \(D_{\mathrm{eff}}=11\) · `observed=True` · \(C=C_{\mathrm{factor}}\) · \(\delta\psi=1\) · hits=0.  
+**Neighbor:** `Biochemistry` nest \(D=10\) (molecule zoom). Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §20.  
+**Same rung:** `Condensed_Matter` (solid).  
+**Social tank:** `Economics` nest \(D=18\) (same World Bank YoY; as-above-so-below).  
+**Species:** Human/Octopus/Corvid/Honeybee/C_elegans inherit this \(D\). Neuron count is \(N\), not a per-species compactification. Honeybee \(D=4\) is retired.  
 **Observer:** 20 W is TISSUE-OBSERVER, not Psychology watts.  
 **General protocol:** [`APPLY.md`](APPLY.md).
 

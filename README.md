@@ -17,9 +17,9 @@ Do not mix these. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md) · knobs: [`docs/FR
 |--------|------|------|-----------|
 | **A closed-form** | **predict** (no measured in the formula) | `python scripts/predict_closed_form.py --observable T_CMB` then compare | quoting 477/477 as this |
 | **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | **477 / 477** files ≤0.5% pooled · median-of-medians ~0.0066% | calling this ToE accuracy or a first-principles hit |
-| **C live integrity** | **check** pin / stream / hash | pin **D1D38A** match · multiprover `overall_ok` | promoting C into A or B |
+| **C live integrity** | **check** pin / stream / hash | pin **3FBCE5** match · multiprover `overall_ok` | promoting C into A or B |
 
-Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **FE23A2** — \(D_{\mathrm{eff}}\) derived from the nest, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
+Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **3FBCE5** — nest \(D_{\mathrm{eff}}\), derived observed/species, baryon/DM at Chemistry, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
 > **477** is green *benchmark files*. **~407** is named coverage-map domains. **~403** is atlas CSV rows. **2024** is live atomic obligations. Do not mix them. Ledger: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md).  
 > Older prose saying **394/394**, **405/405**, **430/432**, **433/433**, **1,863 atomic**, **57% Mathlib**, or **~1912** obligations is **stale**.
@@ -146,7 +146,7 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 ## Abstract
 
-Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — π, e, φ, γ, and G (Catalan), **no post-hoc fits**, with **35 assigned folds frozen** ([`docs/FROZEN_KNOBS.md`](docs/FROZEN_KNOBS.md)).
+Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — π, e, φ, γ, and G (Catalan), **no post-hoc fits**, with \(D_{\mathrm{eff}}\) **derived from the nest** ([`docs/FROZEN_KNOBS.md`](docs/FROZEN_KNOBS.md)).
 
 Ledger **A** predicts from closed forms (`predict_closed_form.py`). Ledger **B** is catalog *correction* \(c=m(1+|S|f)\) — **477/477** files at ≤0.5% pooled, median-of-medians ~0.0066%, **not** a ToE headline. Ledger **C** is pin/stream integrity. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md). Formal corpus Mathlib-class depth **5248/5248** and formula-authority **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**) are Ledger C / formal, not Ledger A. Densify: [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md).
 

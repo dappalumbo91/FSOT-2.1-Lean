@@ -1,7 +1,7 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-11T19:28:06.616653+00:00`  
-**Edition stamp:** 2026-09-11  
+**Generated:** `2026-09-14T21:35:58.947944+00:00`  
+**Edition stamp:** 2026-09-14  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
 > Authoritative live numbers for expansion. Prefer this file over hand-edited counts in README when they disagree.
@@ -10,12 +10,12 @@
 
 | Item | Value |
 |------|-------|
-| Pin | **D1D38A** |
+| Pin | **3FBCE5** |
 | Match | **True** |
-| SHA-256 | `FE23A2D6973C0BFB…` |
+| SHA-256 | `3FBCE5F87825F150…` |
 | Path | `vendor/fsot_compute.py` |
 | Formula authority | **FORMULA_AUTHORITY_SYSTEM_CLOSED** (all_ok=True) |
-| Parameters | **ZERO_FREE — 0.99/0.01/10 are π identities; look/hits named seeds; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.** |
+| Parameters | **ZERO_FREE — 0.99/0.01/10 are π identities; D_eff from nest; look/hits/observed named laws; species inherit Neuroscience; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.** |
 
 ## Three ledgers (never mixed)
 

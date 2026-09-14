@@ -177,6 +177,29 @@ def _fold_hits(name: str) -> int:
     return 1 if name == "High_Energy_Physics" else 0
 
 
+# Bulk-medium orifices (dark). Everything else is a counted specimen.
+# This is the ontology of the fold — not a per-row switch and not a residual dial.
+MEDIUM_ORIFICES: frozenset[str] = frozenset({
+    "Quantum_Computing",      # compute medium, not a measured qubit specimen
+    "Biology",                # life as bulk medium
+    "Fluid_Dynamics",         # the fluid itself
+    "Ecology",                # population medium
+    "Meteorology",            # weather medium
+    "Atmospheric_Physics",    # air column
+    "Oceanography",           # water column
+    "Seismology",             # crustal medium
+    "Geophysics",             # planetary bulk
+    "Quantum_Gravity",        # Planck medium
+    "Particle_Astrophysics",  # messenger medium (not a catalogued source)
+    "Cosmology",              # the 25-D fluid as a whole
+})
+
+
+def _fold_observed(name: str) -> bool:
+    """Specimen look (True) vs bulk medium (False). Named ontology, not a knob."""
+    return name not in MEDIUM_ORIFICES
+
+
 # Unique nested-orifice chain of the 25-D fluid (micro → macro).
 # Look-splits share a generation. D_eff is computed, not stored.
 NEST_GENERATIONS: tuple[tuple[str, ...], ...] = (
@@ -220,7 +243,7 @@ def derived_D_eff(name: str) -> int:
 
 def _build_domains() -> dict[str, DomainConfig]:
     """35 orifice rungs. D_eff is compactification depth (5 seeds → D=5, ceiling 5²=25).
-    C is seed-derived. Look/hits from _fold_look/_fold_hits. observed is medium vs specimen.
+    C is seed-derived. Look/hits/observed from named fold laws, not assigned tables.
     """
     gp = GAMMA / PHI
     ep = E / PI
@@ -236,41 +259,41 @@ def _build_domains() -> dict[str, DomainConfig]:
     inv_phi2 = 1 / PHI**2
 
     rungs = [
-        ("Particle_Physics", True, gp),
-        ("Quantum_Mechanics", True, gp),
-        ("Atomic_Physics", True, ep),
-        ("Physical_Chemistry", True, ep),
-        ("Chemistry", True, ep),
-        ("Electromagnetism", True, ep),
-        ("Molecular_Chemistry", True, lnpi_e),
-        ("Optics", True, pi_e),
-        ("Acoustics", True, ab_s2),
-        ("Quantum_Computing", False, s2_e),
-        ("Quantum_Optics", True, pi_e),
-        ("Biology", False, lnphi_s2),
-        ("Thermodynamics", True, GAMMA / E),
-        ("Biochemistry", True, lnphi_s2),
-        ("Neuroscience", True, C_FACTOR),
-        ("Condensed_Matter", True, A_BLEED / E),
-        ("Fluid_Dynamics", False, A_BLEED / PHI),
-        ("Nuclear_Physics", True, alpha_phi),
-        ("Ecology", False, ln(PHI) / PHI),
-        ("Meteorology", False, CHAOS),
-        ("Materials_Science", True, A_IN / E),
-        ("Psychology", True, P_BASE),
-        ("Atmospheric_Physics", False, CHAOS),
-        ("Oceanography", False, A_IN / PHI),
-        ("Seismology", False, chaos_half),
-        ("Sociology", True, GAMMA / ln(PI)),
-        ("High_Energy_Physics", True, ALPHA / sqrt(2)),
-        ("Geophysics", False, CHAOS),
-        ("Astronomy", True, pi2_phi),
-        ("Economics", True, GAMMA / ln(PI)),
-        ("Planetary_Science", True, pi2_phi),
-        ("Quantum_Gravity", False, inv_phi2),
-        ("Particle_Astrophysics", False, pi2_e),
-        ("Astrophysics", True, pi2_phi),
-        ("Cosmology", False, C_COSM),
+        ("Particle_Physics", gp),
+        ("Quantum_Mechanics", gp),
+        ("Atomic_Physics", ep),
+        ("Physical_Chemistry", ep),
+        ("Chemistry", ep),
+        ("Electromagnetism", ep),
+        ("Molecular_Chemistry", lnpi_e),
+        ("Optics", pi_e),
+        ("Acoustics", ab_s2),
+        ("Quantum_Computing", s2_e),
+        ("Quantum_Optics", pi_e),
+        ("Biology", lnphi_s2),
+        ("Thermodynamics", GAMMA / E),
+        ("Biochemistry", lnphi_s2),
+        ("Neuroscience", C_FACTOR),
+        ("Condensed_Matter", A_BLEED / E),
+        ("Fluid_Dynamics", A_BLEED / PHI),
+        ("Nuclear_Physics", alpha_phi),
+        ("Ecology", ln(PHI) / PHI),
+        ("Meteorology", CHAOS),
+        ("Materials_Science", A_IN / E),
+        ("Psychology", P_BASE),
+        ("Atmospheric_Physics", CHAOS),
+        ("Oceanography", A_IN / PHI),
+        ("Seismology", chaos_half),
+        ("Sociology", GAMMA / ln(PI)),
+        ("High_Energy_Physics", ALPHA / sqrt(2)),
+        ("Geophysics", CHAOS),
+        ("Astronomy", pi2_phi),
+        ("Economics", GAMMA / ln(PI)),
+        ("Planetary_Science", pi2_phi),
+        ("Quantum_Gravity", inv_phi2),
+        ("Particle_Astrophysics", pi2_e),
+        ("Astrophysics", pi2_phi),
+        ("Cosmology", C_COSM),
     ]
     domains = [
         DomainConfig(
@@ -279,10 +302,10 @@ def _build_domains() -> dict[str, DomainConfig]:
             _fold_hits(name),
             _fold_look(name),
             mpf(1),
-            obs,
+            _fold_observed(name),
             C,
         )
-        for name, obs, C in rungs
+        for name, C in rungs
     ]
     return {d.name: d for d in domains}
 
@@ -290,23 +313,36 @@ def _build_domains() -> dict[str, DomainConfig]:
 DOMAINS = _build_domains()
 
 
-def domain_scalar(name: str) -> mpf:
-    """Compute the raw FSOT scalar S for a named domain (matches Ada Make_Scalar_Params)."""
-    d = DOMAINS[name]
+def scalar_from_fold(*, D_eff: int, look: mpf, hits: int, observed: bool) -> mpf:
+    """S from a named fold. Extensions must pass parent-nest values, never YAML integers."""
     si = ScalarInput(
-        N=mpf(1), P=mpf(1), D_eff=mpf(d.D_eff),
-        delta_psi=d.delta_psi, delta_theta=d.delta_theta,
-        recent_hits=mpf(d.hits), observed=d.observed,
-        rho=mpf(1),           # Ada default
-        scale=mpf(1),         # Ada default
-        amplitude=mpf(1),     # Ada default
+        N=mpf(1), P=mpf(1), D_eff=mpf(D_eff),
+        delta_psi=mpf(look), delta_theta=mpf(1),
+        recent_hits=mpf(hits), observed=observed,
+        rho=mpf(1),
+        scale=mpf(1),
+        amplitude=mpf(1),
     )
     return compute_scalar(si)
 
 
-# Cache the two scalars used everywhere
+def domain_scalar(name: str) -> mpf:
+    """Compute the raw FSOT scalar S for a named 35-core domain."""
+    d = DOMAINS[name]
+    return scalar_from_fold(
+        D_eff=int(d.D_eff),
+        look=d.delta_psi,
+        hits=int(d.hits),
+        observed=bool(d.observed),
+    )
+
+
+# Cache the scalars used in closed forms
 S_COSM = domain_scalar("Cosmology")
 S_QUANT = domain_scalar("Quantum_Mechanics")
+# First default-look specimen above the particle floor (nest g=3, D=6).
+# After derived D_eff, QM shares Particle at D=5; baryon/DM budget is this rung.
+S_CHEM = domain_scalar("Chemistry")
 
 
 # =========================================================================
@@ -344,9 +380,11 @@ def wave1() -> list[Result]:
     # 4. Spectral index
     v = 1 + S_COSM * C_COSM * PHI**(1/PI)
     results.append(Result("n_s", "1 + S_cosm·C_cosm·φ^(1/π)", v, mpf("0.9649"), 0.3))
-    # 5. Baryon density
-    v = fabs(S_COSM) * (1 - S_QUANT)
-    results.append(Result("Omega_b_h2", "|S_cosm|·(1 − S_quant)", v, mpf("0.02237"), 0.1))
+    # 5. Baryon density — chemistry rung, not QM.
+    # Nest collapse: QM shares Particle at D=5. Baryon inventory is the first
+    # default-look specimen above that floor (Chemistry/Physical_Chemistry, D=6).
+    v = fabs(S_COSM) * (1 - S_CHEM)
+    results.append(Result("Omega_b_h2", "|S_cosm|·(1 − S_chem)", v, mpf("0.02237"), 0.1))
     return results
 
 
@@ -442,9 +480,9 @@ def wave2() -> list[Result]:
     # 5 Omega_m
     v = C_EFF * C_FACTOR * ln(PI)
     r.append(Result("Omega_m", "C_eff·C·ln(π)", v, mpf("0.3153"), 0.0))
-    # 6 Omega_DM h²
-    v = (1 - S_QUANT) * PHI * A_IN
-    r.append(Result("Omega_DM_h2", "(1 − S_quant)·φ·A_in", v, mpf("0.1200"), 0.0))
+    # 6 Omega_DM h² — sibling of Omega_b: complement at the chemistry rung
+    v = (1 - S_CHEM) * PHI * A_IN
+    r.append(Result("Omega_DM_h2", "(1 − S_chem)·φ·A_in", v, mpf("0.1200"), 0.0))
     # 7 sigma_8
     v = fabs(S_COSM) * S_QUANT + fabs(CHAOS)
     r.append(Result("sigma_8", "|S_cosm|·S_quant + |Chaos|", v, mpf("0.8111"), 0.0))
@@ -897,30 +935,34 @@ def soliton_stdp() -> list[Result]:
 # =========================================================================
 @dataclass
 class Species:
+    """Specimen at the Neuroscience orifice. No per-species D_eff.
+
+    neurons / volume_cm3 are literature counts of the specimen, not compactification.
+    Honeybee D=4 and C_elegans D=1 were below the particle floor — that was a knob.
+    """
     name: str
-    D_eff: int
     neurons: float
     volume_cm3: float
 
 
 SPECIES = [
-    Species("Human",     14, 86e9,    1200),
-    Species("Octopus",   11, 500e6,   10),
-    Species("Corvid",    13, 2e9,     10),
-    Species("Honeybee",   4, 960e3,   1),
-    Species("C_elegans",  1, 302,     0.001),
+    Species("Human",     86e9,    1200),
+    Species("Octopus",   500e6,   10),
+    Species("Corvid",    2e9,     10),
+    Species("Honeybee",  960e3,   1),
+    Species("C_elegans", 302,     0.001),
 ]
 
 
 def cross_species() -> list[Result]:
+    """Same Neuroscience nest. S is S_neuro. Density = N / (|S_neuro| · V)."""
+    s = domain_scalar("Neuroscience")
+    d = derived_D_eff("Neuroscience")
     r = []
     for sp in SPECIES:
-        si = ScalarInput(N=mpf(1), P=mpf(1), D_eff=mpf(sp.D_eff),
-                         delta_psi=mpf("0.1"), observed=True)
-        s = compute_scalar(si)
         density = mpf(sp.neurons) / (fabs(s) * mpf(sp.volume_cm3))
-        r.append(Result(f"S({sp.name})", f"Scalar D={sp.D_eff}", s))
-        r.append(Result(f"Density({sp.name})", "N/(|S|·V)", density))
+        r.append(Result(f"S({sp.name})", f"S_neuro D={d}", s))
+        r.append(Result(f"Density({sp.name})", "N/(|S_neuro|·V)", density))
     return r
 
 

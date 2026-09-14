@@ -9,3 +9,5 @@ Pinned. Peer review is out of scope. These five stay false until a later edition
 5. **We do not claim QEMU boot confirms cosmology.** Hardware/OS harnesses are integrity (Ledger C), not \(H_0\).
 
 Also not claimed: a Clay Millennium Prize; ECMWF beaten; ticker close as 0.5%; person-level onset as 0.5%; GitHub as a Qualifying Outlet.
+
+Lean `FSOT.Formal.Scalar.get_domain_params` still stores older assigned \(D_{\mathrm{eff}}\) integers. Live authority is the Python nest and `FSOT.Formal.DerivedNest`. Do not quote the old Lean table as the ToE compactification.

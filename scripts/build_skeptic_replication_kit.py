@@ -110,6 +110,7 @@ pip install -r requirements.txt
 ```bash
 python scripts/build_repo_status_snapshot.py
 python scripts/audit_all_benchmark_margins.py
+python scripts/assert_derived_folds.py
 python scripts/audit_parameter_count.py
 ```
 

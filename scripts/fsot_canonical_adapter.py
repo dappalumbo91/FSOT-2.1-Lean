@@ -12,6 +12,7 @@ Loads authoritative fsot_compute.py and exposes:
 from __future__ import annotations
 
 import importlib.util
+import json
 import math
 import sys
 from pathlib import Path
@@ -55,9 +56,40 @@ def canonical_constants() -> dict[str, float]:
     }
 
 
+_EXT_FOLDS: dict[str, Any] | None = None
+
+
+def _extension_folds() -> dict[str, Any]:
+    """Parent-nest folds. YAML D_eff/delta_psi/hits are not authority."""
+    global _EXT_FOLDS
+    if _EXT_FOLDS is None:
+        path = ROOT / "data" / "extension_folds_derived.json"
+        if path.exists():
+            _EXT_FOLDS = json.loads(path.read_text(encoding="utf-8")).get("folds") or {}
+        else:
+            _EXT_FOLDS = {}
+    return _EXT_FOLDS
+
+
 def canonical_domain_scalar(name: str) -> float:
+    """S for a 35-core name, or an extension inheriting the parent nest.
+
+    YAML integers cannot leak: extensions read data/extension_folds_derived.json.
+    """
     mod, _ = load_fsot_compute()
-    return float(mod.domain_scalar(name))
+    if name in mod.DOMAINS:
+        return float(mod.domain_scalar(name))
+    fold = _extension_folds().get(name)
+    if not fold:
+        raise KeyError(f"no core or derived extension fold for {name!r}")
+    return float(
+        mod.scalar_from_fold(
+            D_eff=int(fold["D_eff"]),
+            look=mod.mpf(fold["look"]),
+            hits=int(fold["hits"]),
+            observed=bool(fold["observed"]),
+        )
+    )
 
 
 def micro_scalar_v16(
@@ -83,9 +115,21 @@ def micro_scalar_v16(
     return (t1 + t2 + t3) * gr * om * ch
 
 
-def compartment_scalar(trit_mean: float, c_factor: float = 0.2876, d_eff: float = 14.0) -> float:
-    """NEURON pre-training compartment S = K · t̄ · C / D_eff."""
-    k = canonical_constants()["k"]
+def compartment_scalar(
+    trit_mean: float,
+    c_factor: float | None = None,
+    d_eff: float | None = None,
+) -> float:
+    """NEURON pre-training compartment S = K · t̄ · C_factor / D_neuro.
+
+    D is the Neuroscience nest value, not an assigned 14. C_factor is live C_FACTOR.
+    """
+    mod, _ = load_fsot_compute()
+    if c_factor is None:
+        c_factor = float(mod.C_FACTOR)
+    if d_eff is None:
+        d_eff = float(mod.derived_D_eff("Neuroscience"))
+    k = float(mod.K)
     return k * trit_mean * (c_factor / d_eff)
 
 

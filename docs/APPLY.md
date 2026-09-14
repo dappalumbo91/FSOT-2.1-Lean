@@ -2,7 +2,9 @@
 
 This is the **trial-and-error** protocol. It is not a free-parameter hunt.
 
-Authority: pin **D1D38A** · [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §4–5 · [`FSOT_PROPER_DENSIFY_POLICY.md`](FSOT_PROPER_DENSIFY_POLICY.md) · [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md)
+Authority: live pin of `vendor/fsot_compute.py` · nest table in [`FROZEN_KNOBS.md`](FROZEN_KNOBS.md) · [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §4–5 · [`FSOT_PROPER_DENSIFY_POLICY.md`](FSOT_PROPER_DENSIFY_POLICY.md) · [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md)
+
+Live \(D_{\mathrm{eff}}\) is the nest, not the integers in older cookbook comments. Look is \(1\) except Atomic \(e/\pi\) and HEP \(1-\mathrm{POOF}/\pi\). Species inherit Neuroscience. Extensions inherit the parent core via `data/extension_folds_derived.json` (YAML integers ignored).
 
 ---
 
@@ -20,7 +22,7 @@ python scripts/predict_closed_form.py --observable T_CMB
 \texttt{computed} = \texttt{measured}\cdot\bigl(1 + |S(\mathrm{domain})|\cdot f_{\mathrm{domain}}\bigr)
 \]
 
-Call it `fsot_correct(m, domain)`, not predict. \(S = K(T_1+T_2+T_3)\) at a **frozen** \((D_{\mathrm{eff}}, h, \delta\psi, \delta\theta, \mathrm{observed})\). Changing those integers is a new pin.
+Call it `fsot_correct(m, domain)`, not predict. \(S = K(T_1+T_2+T_3)\) at the **derived** nest fold \((D_{\mathrm{eff}}(g), h, \delta\psi, \delta\theta, \mathrm{observed})\). Changing the nest is a new pin. Do not write a YAML integer to green a row.
 
 ---
 
@@ -33,7 +35,7 @@ Call it `fsot_correct(m, domain)`, not predict. \(S = K(T_1+T_2+T_3)\) at a **fr
 | 3 | `S = domain_scalar(name)` from the pin | Add a spring constant / Yukawa / dark density |
 | 4 | `computed, err% = fsot_correct(m, name)` (Ledger B) | Least-squares a new \(f\); calling this a prediction |
 | 5 | Green if domain **median** residual ≤ **0.5%** | Call HTTP 200 a residual |
-| 6 | If it fails: log in `results/MISSES.md`. Do **not** edit \(D_{\mathrm{eff}}\) as a repair | Add a free parameter; change DomainConfig integers under the same pin |
+| 6 | If it fails: log in `results/MISSES.md`. Do **not** edit \(D_{\mathrm{eff}}\) as a repair | Add a free parameter; re-assign a nest generation under the same pin |
 
 Worked examples in-repo:
 

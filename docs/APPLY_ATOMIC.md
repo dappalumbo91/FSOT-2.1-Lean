@@ -1,7 +1,7 @@
 # APPLY cookbook — Atomic_Physics fold
 
-**Pin:** D1D38A · **core:** `Atomic_Physics` · \(D_{\mathrm{eff}}=7\) · `observed=True` · \(C=e/\pi\) · \(\delta\psi=0.85\).  
-**Neighbor:** `Quantum_Mechanics` \(D=6\), \(C=\gamma/\varphi\), \(\delta\psi=1\) (free-orbit look, same as Particle).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Atomic_Physics` · nest \(D_{\mathrm{eff}}=6\) · `observed=True` · \(C=e/\pi\) · \(\delta\psi=e/\pi\) (bound well).  
+**Neighbor:** `Quantum_Mechanics` nest \(D=5\) (shares Particle floor), \(C=\gamma/\varphi\), \(\delta\psi=1\) (free-orbit look).  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §10.  
 **General protocol:** [`APPLY.md`](APPLY.md). Hydrogen is the specimen for \(a_0\) and \(R_\infty\) (one atom, three readouts). First-ionization dual-route is the engine table **H–Ca (Z=1–20)**. Z=21–118 already lives on the Atomic/periodic panel — that is the Atomic fold in isolation, not this QM tissue.
 

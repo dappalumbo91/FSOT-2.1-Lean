@@ -22,6 +22,7 @@ from fsot_compute import (  # noqa: E402
     P_BASE,
     PHI,
     PI,
+    S_CHEM,
     S_COSM,
     S_QUANT,
     C_COSM,
@@ -65,7 +66,13 @@ def _n_s() -> float:
 
 
 def _omega_b_h2() -> float:
-    return abs(_f(S_COSM)) * (1.0 - _f(S_QUANT))
+    """Baryon inventory: cosmology × complement of the chemistry rung.
+
+    After derived D_eff, QM shares Particle at D=5 so S_quant = S_particle.
+    The first default-look specimen above that floor is Chemistry (D=6).
+    The old |S_cosm|(1-S_quant) object is logged as a superseded miss.
+    """
+    return abs(_f(S_COSM)) * (1.0 - _f(S_CHEM))
 
 
 def _riemann_t1() -> float:
@@ -127,13 +134,23 @@ LEDGER_A: dict[str, dict[str, Any]] = {
     },
     "Omega_b_h2": {
         "units": "1",
-        "expression": "|S_cosm|*(1 - S_quant)",
-        "expression_id": "wave1.Omega_b_h2",
+        "expression": "|S_cosm|*(1 - S_chem)",
+        "expression_id": "wave1.Omega_b_h2_CHEM",
         "emit": _omega_b_h2,
         "kind": "FORECAST",
         "anchor": 0.02237,
         "anchor_source": "Planck 2018 Omega_b h^2 (compare step only)",
-        "kill_band": "If Omega_b h^2 leaves [0.0215, 0.0232] this expression is dead",
+        "kill_band": "If Omega_b h^2 leaves [0.0215, 0.0232] this expression is dead. Chemistry rung, not QM after nest collapse.",
+    },
+    "Omega_DM_h2": {
+        "units": "1",
+        "expression": "(1 - S_chem)*phi*A_in",
+        "expression_id": "wave2.Omega_DM_h2_CHEM",
+        "emit": _from_fn(wave2, "Omega_DM_h2"),
+        "kind": "FORECAST",
+        "anchor": 0.1200,
+        "anchor_source": "Planck 2018 Omega_c h^2 class (compare step only)",
+        "kill_band": "If Omega_c h^2 leaves [0.110, 0.130] this expression is dead. Sibling of Omega_b at the chemistry rung.",
     },
     "First_Riemann_zero": {
         "units": "1",

@@ -21,7 +21,8 @@
 | **Hubble dual object** | [`H0_DUAL_OBJECT.md`](H0_DUAL_OBJECT.md) | CMB class ≠ SH0ES ladder | Wrong-object kill |
 | **Newton limit** | [`LIMIT_RECOVERY_NEWTON.md`](LIMIT_RECOVERY_NEWTON.md) | Weak-field probes | Not EH uniqueness |
 | **QM limit** | [`LIMIT_RECOVERY_QM.md`](LIMIT_RECOVERY_QM.md) | de Broglie / Grover | Not Born-rule theorem |
-| **Frozen knobs** | [`FROZEN_KNOBS.md`](FROZEN_KNOBS.md) | 35 assigned folds + \(K\cdot 0.99\) admitted | Not a derived \(D_{\mathrm{eff}}\) |
+| **Frozen knobs** | [`FROZEN_KNOBS.md`](FROZEN_KNOBS.md) | nest \(D_{\mathrm{eff}}\), π identities, observed/species laws | Not assigned integers |
+| **Matter budget** | [`MATTER_BUDGET_OBJECT.md`](MATTER_BUDGET_OBJECT.md) | \(\Omega_b,\Omega_c\) at Chemistry \(D=6\) | Not restoring QM \(D=6\) |
 | **What we do not claim** | [`WHAT_WE_DO_NOT_CLAIM.md`](WHAT_WE_DO_NOT_CLAIM.md) | Five pinned non-claims | Ledger B ≠ ToE |
 | **Why not claimed** | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) | Uniqueness split + honest refusals | Every “no” has a reason |
 | **Emergent time** | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) | Process time vs Newtonian UTC | D12 / C15; dilation is flow |
