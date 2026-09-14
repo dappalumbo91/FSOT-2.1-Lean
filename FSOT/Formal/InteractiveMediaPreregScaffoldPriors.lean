@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def interactive_media_prereg_scaffold_observable_count : ℕ := 42
-def interactive_media_prereg_scaffold_D_eff : ℕ := 14
-
+def interactive_media_prereg_scaffold_D_eff : ℕ := 11
 theorem interactive_media_prereg_scaffold_observable_count_pos : 0 < interactive_media_prereg_scaffold_observable_count := by
   unfold interactive_media_prereg_scaffold_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem interactive_media_prereg_scaffold_median_error_under_half_pct :
 
 theorem interactive_media_prereg_scaffold_bundle :
     interactive_media_prereg_scaffold_observable_count = 42 ∧
-    interactive_media_prereg_scaffold_D_eff = 14 ∧
+    interactive_media_prereg_scaffold_D_eff = 11 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

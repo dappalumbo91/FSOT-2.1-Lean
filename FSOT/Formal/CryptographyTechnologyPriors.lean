@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def cryptography_technology_observable_count : ℕ := 44
-def cryptography_technology_D_eff : ℕ := 16
-
+def cryptography_technology_D_eff : ℕ := 5
 theorem cryptography_technology_observable_count_pos : 0 < cryptography_technology_observable_count := by
   unfold cryptography_technology_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem cryptography_technology_median_error_under_half_pct :
 
 theorem cryptography_technology_bundle :
     cryptography_technology_observable_count = 44 ∧
-    cryptography_technology_D_eff = 16 ∧
+    cryptography_technology_D_eff = 5 ∧
     (0.047520672006218234 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

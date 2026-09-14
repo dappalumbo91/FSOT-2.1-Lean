@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def element_synthesis_condition_scaffold_observable_count : ℕ := 45
-def element_synthesis_condition_scaffold_D_eff : ℕ := 14
-
+def element_synthesis_condition_scaffold_D_eff : ℕ := 12
 theorem element_synthesis_condition_scaffold_observable_count_pos : 0 < element_synthesis_condition_scaffold_observable_count := by
   unfold element_synthesis_condition_scaffold_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem element_synthesis_condition_scaffold_median_error_under_half_pct :
 
 theorem element_synthesis_condition_scaffold_bundle :
     element_synthesis_condition_scaffold_observable_count = 45 ∧
-    element_synthesis_condition_scaffold_D_eff = 14 ∧
+    element_synthesis_condition_scaffold_D_eff = 12 ∧
     (0.000787 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

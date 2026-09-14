@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def external_oss_code_genome_observable_count : ℕ := 164
-def external_oss_code_genome_D_eff : ℕ := 16
-
+def external_oss_code_genome_D_eff : ℕ := 9
 theorem external_oss_code_genome_observable_count_pos : 0 < external_oss_code_genome_observable_count := by
   unfold external_oss_code_genome_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem external_oss_code_genome_median_error_under_half_pct :
 
 theorem external_oss_code_genome_bundle :
     external_oss_code_genome_observable_count = 164 ∧
-    external_oss_code_genome_D_eff = 16 ∧
+    external_oss_code_genome_D_eff = 9 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

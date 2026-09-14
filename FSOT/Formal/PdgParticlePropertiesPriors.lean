@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def pdg_particle_properties_observable_count : ℕ := 21
-def pdg_particle_properties_D_eff : ℕ := 9
-
+def pdg_particle_properties_D_eff : ℕ := 5
 theorem pdg_particle_properties_observable_count_pos : 0 < pdg_particle_properties_observable_count := by
   unfold pdg_particle_properties_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem pdg_particle_properties_median_error_under_half_pct :
 
 theorem pdg_particle_properties_bundle :
     pdg_particle_properties_observable_count = 21 ∧
-    pdg_particle_properties_D_eff = 9 ∧
+    pdg_particle_properties_D_eff = 5 ∧
     (9.5e-05 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

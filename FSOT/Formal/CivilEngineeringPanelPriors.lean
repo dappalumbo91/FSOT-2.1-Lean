@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def civil_engineering_panel_observable_count : ℕ := 20
-def civil_engineering_panel_D_eff : ℕ := 16
-
+def civil_engineering_panel_D_eff : ℕ := 12
 theorem civil_engineering_panel_observable_count_pos : 0 < civil_engineering_panel_observable_count := by
   unfold civil_engineering_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem civil_engineering_panel_median_error_under_half_pct :
 
 theorem civil_engineering_panel_bundle :
     civil_engineering_panel_observable_count = 20 ∧
-    civil_engineering_panel_D_eff = 16 ∧
+    civil_engineering_panel_D_eff = 12 ∧
     (0.01341 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

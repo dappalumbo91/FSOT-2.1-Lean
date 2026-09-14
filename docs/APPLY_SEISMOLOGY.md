@@ -1,6 +1,6 @@
 # APPLY cookbook — Seismology fold
 
-**Pin:** D1D38A · **core:** `Seismology` · \(D_{\mathrm{eff}}=18\) · `observed=False` (dark — do not flip).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Seismology` · nest \(D=15\) · look \(1\) · `observed=False` (dark — do not flip). \(C\) does not enter \(S\). Same generation as Sociology (specimen).  
 **Neighbor:** `Geophysics` \(D=19\), also dark. Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §7.  
 **General protocol:** [`APPLY.md`](APPLY.md). This is the worked example for the crustal-wave fold (MPCORB is the catalog-fold example).
 

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def founding_cosmic_dust_panel_observable_count : ℕ := 24
-def founding_cosmic_dust_panel_D_eff : ℕ := 13
-
+def founding_cosmic_dust_panel_D_eff : ℕ := 25
 theorem founding_cosmic_dust_panel_observable_count_pos : 0 < founding_cosmic_dust_panel_observable_count := by
   unfold founding_cosmic_dust_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem founding_cosmic_dust_panel_median_error_under_half_pct :
 
 theorem founding_cosmic_dust_panel_bundle :
     founding_cosmic_dust_panel_observable_count = 24 ∧
-    founding_cosmic_dust_panel_D_eff = 13 ∧
+    founding_cosmic_dust_panel_D_eff = 25 ∧
     (0.026675 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

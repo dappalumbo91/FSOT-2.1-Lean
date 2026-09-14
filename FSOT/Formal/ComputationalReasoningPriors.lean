@@ -13,8 +13,7 @@ open Real
 
 def computational_reasoning_observable_count : ℕ := 577
 def computational_reasoning_median_error_pct : ℝ := (0.0 : ℝ)
-def computational_reasoning_D_eff : ℕ := 12
-
+def computational_reasoning_D_eff : ℕ := 11
 theorem computational_reasoning_observable_count_pos : 0 < computational_reasoning_observable_count := by
   unfold computational_reasoning_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem computational_reasoning_median_error_under_five_pct :
 
 theorem computational_reasoning_bundle :
     computational_reasoning_observable_count = 577 ∧
-    computational_reasoning_D_eff = 12 ∧
+    computational_reasoning_D_eff = 11 ∧
     computational_reasoning_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

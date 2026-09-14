@@ -13,8 +13,7 @@ open Real
 
 def world_bank_development_observable_count : ℕ := 420
 def world_bank_development_median_error_pct : ℝ := (0.02584 : ℝ)
-def world_bank_development_D_eff : ℕ := 20
-
+def world_bank_development_D_eff : ℕ := 18
 theorem world_bank_development_observable_count_pos : 0 < world_bank_development_observable_count := by
   unfold world_bank_development_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem world_bank_development_median_error_under_five_pct :
 
 theorem world_bank_development_bundle :
     world_bank_development_observable_count = 420 ∧
-    world_bank_development_D_eff = 20 ∧
+    world_bank_development_D_eff = 18 ∧
     world_bank_development_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

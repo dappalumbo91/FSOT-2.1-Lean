@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def finance_markets_panel_observable_count : ℕ := 36
-def finance_markets_panel_D_eff : ℕ := 19
-
+def finance_markets_panel_D_eff : ℕ := 18
 theorem finance_markets_panel_observable_count_pos : 0 < finance_markets_panel_observable_count := by
   unfold finance_markets_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem finance_markets_panel_median_error_under_half_pct :
 
 theorem finance_markets_panel_bundle :
     finance_markets_panel_observable_count = 36 ∧
-    finance_markets_panel_D_eff = 19 ∧
+    finance_markets_panel_D_eff = 18 ∧
     (0.02584 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

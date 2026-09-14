@@ -13,8 +13,7 @@ open Real
 
 def longevity_genetic_mechanics_observable_count : ℕ := 35
 def longevity_genetic_mechanics_median_error_pct : ℝ := (0.022236 : ℝ)
-def longevity_genetic_mechanics_D_eff : ℕ := 19
-
+def longevity_genetic_mechanics_D_eff : ℕ := 9
 theorem longevity_genetic_mechanics_observable_count_pos : 0 < longevity_genetic_mechanics_observable_count := by
   unfold longevity_genetic_mechanics_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem longevity_genetic_mechanics_median_error_under_five_pct :
 
 theorem longevity_genetic_mechanics_bundle :
     longevity_genetic_mechanics_observable_count = 35 ∧
-    longevity_genetic_mechanics_D_eff = 19 ∧
+    longevity_genetic_mechanics_D_eff = 9 ∧
     longevity_genetic_mechanics_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

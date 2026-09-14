@@ -17,9 +17,9 @@ Do not mix these. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md) · knobs: [`docs/FR
 |--------|------|------|-----------|
 | **A closed-form** | **predict** (no measured in the formula) | `python scripts/predict_closed_form.py --observable T_CMB` then compare | quoting 477/477 as this |
 | **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | **477 / 477** files ≤0.5% pooled · median-of-medians ~0.0066% | calling this ToE accuracy or a first-principles hit |
-| **C live integrity** | **check** pin / stream / hash | pin **3FBCE5** match · multiprover `overall_ok` | promoting C into A or B |
+| **C live integrity** | **check** pin / stream / hash | pin **AEB2AD** match · multiprover `overall_ok` | promoting C into A or B |
 
-Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **3FBCE5** — nest \(D_{\mathrm{eff}}\), derived observed/species, baryon/DM at Chemistry, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
+Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **AEB2AD** — nest \(D_{\mathrm{eff}}\), derived observed/species, named `_fold_C` unused by \(S\), baryon/DM at Chemistry, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
 > **477** is green *benchmark files*. **~407** is named coverage-map domains. **~403** is atlas CSV rows. **2024** is live atomic obligations. Do not mix them. Ledger: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md).  
 > Older prose saying **394/394**, **405/405**, **430/432**, **433/433**, **1,863 atomic**, **57% Mathlib**, or **~1912** obligations is **stale**.

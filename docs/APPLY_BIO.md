@@ -1,6 +1,6 @@
 # APPLY cookbook — Biology fold
 
-**Pin:** D1D38A · **core:** `Biology` · \(D_{\mathrm{eff}}=12\) · `observed=False` (**dark** — do not flip) · \(C=\ln\varphi/\sqrt{2}\) · \(\delta\psi=0.08\).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Biology` · nest \(D=9\) · look \(1\) · `observed=False` (**dark** — do not flip). \(C\) does not enter \(S\). Neighbor Biochemistry nest \(D=10\), specimen.  
 **Neighbor:** `Biochemistry` \(D=13\), `observed=True`, **same \(C\)**, \(\delta\psi=0.35\).  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §12.  
 **Not this tissue:** Genetics product 0.13 Å (sibling freeze). ChemLink already quotes that.

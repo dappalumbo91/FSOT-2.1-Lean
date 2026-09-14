@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def fluid_spacetime_observable_spine_observable_count : ℕ := 29
-def fluid_spacetime_observable_spine_D_eff : ℕ := 26
-
+def fluid_spacetime_observable_spine_D_eff : ℕ := 5
 theorem fluid_spacetime_observable_spine_observable_count_pos : 0 < fluid_spacetime_observable_spine_observable_count := by
   unfold fluid_spacetime_observable_spine_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem fluid_spacetime_observable_spine_median_error_under_half_pct :
 
 theorem fluid_spacetime_observable_spine_bundle :
     fluid_spacetime_observable_spine_observable_count = 29 ∧
-    fluid_spacetime_observable_spine_D_eff = 26 ∧
+    fluid_spacetime_observable_spine_D_eff = 5 ∧
     (0.000595 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

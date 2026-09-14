@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def law_policy_observable_count : ℕ := 180
-def law_policy_D_eff : ℕ := 17
-
+def law_policy_D_eff : ℕ := 18
 theorem law_policy_observable_count_pos : 0 < law_policy_observable_count := by
   unfold law_policy_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem law_policy_median_error_under_half_pct :
 
 theorem law_policy_bundle :
     law_policy_observable_count = 180 ∧
-    law_policy_D_eff = 17 ∧
+    law_policy_D_eff = 18 ∧
     (0.019504399572479934 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

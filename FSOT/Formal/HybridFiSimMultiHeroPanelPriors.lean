@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def hybrid_fi_sim_multi_hero_panel_observable_count : ℕ := 24
-def hybrid_fi_sim_multi_hero_panel_D_eff : ℕ := 18
-
+def hybrid_fi_sim_multi_hero_panel_D_eff : ℕ := 11
 theorem hybrid_fi_sim_multi_hero_panel_observable_count_pos : 0 < hybrid_fi_sim_multi_hero_panel_observable_count := by
   unfold hybrid_fi_sim_multi_hero_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem hybrid_fi_sim_multi_hero_panel_median_error_under_half_pct :
 
 theorem hybrid_fi_sim_multi_hero_panel_bundle :
     hybrid_fi_sim_multi_hero_panel_observable_count = 24 ∧
-    hybrid_fi_sim_multi_hero_panel_D_eff = 18 ∧
+    hybrid_fi_sim_multi_hero_panel_D_eff = 11 ∧
     (0.008488 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

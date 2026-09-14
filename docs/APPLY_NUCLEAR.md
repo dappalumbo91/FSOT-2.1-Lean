@@ -1,6 +1,6 @@
 # APPLY cookbook — Nuclear_Physics fold
 
-**Pin:** D1D38A · **core:** `Nuclear_Physics` · \(D_{\mathrm{eff}}=15\) · `observed=True` · \(C=\alpha/\varphi\) · \(\delta\psi=1\) · hits=1.  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Nuclear_Physics` · nest \(D=12\) · look \(1\) · hits \(0\) · `observed=True`. \(C\) does not enter \(S\).  
 **Far zoom:** `Particle_Physics` \(D=5\) (same orifice, two compactification ends). Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §4.  
 **Same rung:** `Thermodynamics` \(\delta\psi=0.9\) (heat). Fold 1/0.9 onto \(D=14\).  
 **Neighbor:** `Condensed_Matter` \(D=14\) (lattice; Fe is the shared class).  

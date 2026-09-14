@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def canonical_oracle_panel_observable_count : ℕ := 24
-def canonical_oracle_panel_D_eff : ℕ := 18
-
+def canonical_oracle_panel_D_eff : ℕ := 5
 theorem canonical_oracle_panel_observable_count_pos : 0 < canonical_oracle_panel_observable_count := by
   unfold canonical_oracle_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem canonical_oracle_panel_median_error_under_half_pct :
 
 theorem canonical_oracle_panel_bundle :
     canonical_oracle_panel_observable_count = 24 ∧
-    canonical_oracle_panel_D_eff = 18 ∧
+    canonical_oracle_panel_D_eff = 5 ∧
     (0.013294 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

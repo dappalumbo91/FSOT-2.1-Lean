@@ -13,8 +13,7 @@ open Real
 
 def zebrafish_cell_tracking_observable_count : ℕ := 20
 def zebrafish_cell_tracking_median_error_pct : ℝ := (0.022236 : ℝ)
-def zebrafish_cell_tracking_D_eff : ℕ := 20
-
+def zebrafish_cell_tracking_D_eff : ℕ := 9
 theorem zebrafish_cell_tracking_observable_count_pos : 0 < zebrafish_cell_tracking_observable_count := by
   unfold zebrafish_cell_tracking_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem zebrafish_cell_tracking_median_error_under_five_pct :
 
 theorem zebrafish_cell_tracking_bundle :
     zebrafish_cell_tracking_observable_count = 20 ∧
-    zebrafish_cell_tracking_D_eff = 20 ∧
+    zebrafish_cell_tracking_D_eff = 9 ∧
     zebrafish_cell_tracking_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

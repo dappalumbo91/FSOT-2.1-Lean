@@ -1,6 +1,6 @@
 # APPLY cookbook — Acoustics fold
 
-**Pin:** D1D38A · **core:** `Acoustics` · \(D_{\mathrm{eff}}=10\) · `observed=True` · \(C=A_{\mathrm{bleed}}/\sqrt{2}\) · \(\delta\psi=0.3\).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Acoustics` · nest \(D=8\) · look \(1\) · `observed=True`. \(C\) does not enter \(S\). Same generation as Optics / Materials.  
 **Same rung:** `Optics` \(\delta\psi=0.6\) (light); `Materials_Science` \(\delta\psi=0.5\) (bulk).  
 **Crustal zoom:** `Seismology` \(D=18\), dark. Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §1.  
 **General protocol:** [`APPLY.md`](APPLY.md). Lab sound is the T3 standing wave; PREM is the same wave in the lid.

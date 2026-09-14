@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def paleontology_panel_observable_count : ℕ := 120
-def paleontology_panel_D_eff : ℕ := 18
-
+def paleontology_panel_D_eff : ℕ := 9
 theorem paleontology_panel_observable_count_pos : 0 < paleontology_panel_observable_count := by
   unfold paleontology_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem paleontology_panel_median_error_under_half_pct :
 
 theorem paleontology_panel_bundle :
     paleontology_panel_observable_count = 120 ∧
-    paleontology_panel_D_eff = 18 ∧
+    paleontology_panel_D_eff = 9 ∧
     (0.0167305 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

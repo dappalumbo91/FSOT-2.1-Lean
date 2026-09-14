@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def island_of_stability_deep_panel_observable_count : ℕ := 23
-def island_of_stability_deep_panel_D_eff : ℕ := 19
-
+def island_of_stability_deep_panel_D_eff : ℕ := 5
 theorem island_of_stability_deep_panel_observable_count_pos : 0 < island_of_stability_deep_panel_observable_count := by
   unfold island_of_stability_deep_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem island_of_stability_deep_panel_median_error_under_half_pct :
 
 theorem island_of_stability_deep_panel_bundle :
     island_of_stability_deep_panel_observable_count = 23 ∧
-    island_of_stability_deep_panel_D_eff = 19 ∧
+    island_of_stability_deep_panel_D_eff = 5 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

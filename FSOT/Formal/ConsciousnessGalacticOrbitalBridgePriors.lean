@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def consciousness_galactic_orbital_bridge_observable_count : ℕ := 48
-def consciousness_galactic_orbital_bridge_D_eff : ℕ := 17
-
+def consciousness_galactic_orbital_bridge_D_eff : ℕ := 18
 theorem consciousness_galactic_orbital_bridge_observable_count_pos : 0 < consciousness_galactic_orbital_bridge_observable_count := by
   unfold consciousness_galactic_orbital_bridge_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem consciousness_galactic_orbital_bridge_median_error_under_half_pct :
 
 theorem consciousness_galactic_orbital_bridge_bundle :
     consciousness_galactic_orbital_bridge_observable_count = 48 ∧
-    consciousness_galactic_orbital_bridge_D_eff = 17 ∧
+    consciousness_galactic_orbital_bridge_D_eff = 18 ∧
     (0.036757197413939124 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

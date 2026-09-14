@@ -13,8 +13,7 @@ open Real
 
 def uniprot_protein_annotations_observable_count : ℕ := 22
 def uniprot_protein_annotations_median_error_pct : ℝ := (0.026684 : ℝ)
-def uniprot_protein_annotations_D_eff : ℕ := 12
-
+def uniprot_protein_annotations_D_eff : ℕ := 9
 theorem uniprot_protein_annotations_observable_count_pos : 0 < uniprot_protein_annotations_observable_count := by
   unfold uniprot_protein_annotations_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem uniprot_protein_annotations_median_error_under_five_pct :
 
 theorem uniprot_protein_annotations_bundle :
     uniprot_protein_annotations_observable_count = 22 ∧
-    uniprot_protein_annotations_D_eff = 12 ∧
+    uniprot_protein_annotations_D_eff = 9 ∧
     uniprot_protein_annotations_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

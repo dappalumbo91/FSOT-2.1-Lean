@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def gaia_astrometry_panel_deep_observable_count : ℕ := 62
-def gaia_astrometry_panel_deep_D_eff : ℕ := 20
-
+def gaia_astrometry_panel_deep_D_eff : ℕ := 18
 theorem gaia_astrometry_panel_deep_observable_count_pos : 0 < gaia_astrometry_panel_deep_observable_count := by
   unfold gaia_astrometry_panel_deep_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem gaia_astrometry_panel_deep_median_error_under_half_pct :
 
 theorem gaia_astrometry_panel_deep_bundle :
     gaia_astrometry_panel_deep_observable_count = 62 ∧
-    gaia_astrometry_panel_deep_D_eff = 20 ∧
+    gaia_astrometry_panel_deep_D_eff = 18 ∧
     (0.022461 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def trinary_hardware_live_panel_observable_count : ℕ := 37
-def trinary_hardware_live_panel_D_eff : ℕ := 14
-
+def trinary_hardware_live_panel_D_eff : ℕ := 11
 theorem trinary_hardware_live_panel_observable_count_pos : 0 < trinary_hardware_live_panel_observable_count := by
   unfold trinary_hardware_live_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem trinary_hardware_live_panel_median_error_under_half_pct :
 
 theorem trinary_hardware_live_panel_bundle :
     trinary_hardware_live_panel_observable_count = 37 ∧
-    trinary_hardware_live_panel_D_eff = 14 ∧
+    trinary_hardware_live_panel_D_eff = 11 ∧
     (0.014767 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

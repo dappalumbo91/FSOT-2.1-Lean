@@ -13,8 +13,7 @@ open Real
 
 def longevity_megadeep_ncbi_observable_count : ℕ := 1746
 def longevity_megadeep_ncbi_median_error_pct : ℝ := (0.017789 : ℝ)
-def longevity_megadeep_ncbi_D_eff : ℕ := 23
-
+def longevity_megadeep_ncbi_D_eff : ℕ := 9
 theorem longevity_megadeep_ncbi_observable_count_pos : 0 < longevity_megadeep_ncbi_observable_count := by
   unfold longevity_megadeep_ncbi_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem longevity_megadeep_ncbi_median_error_under_five_pct :
 
 theorem longevity_megadeep_ncbi_bundle :
     longevity_megadeep_ncbi_observable_count = 1746 ∧
-    longevity_megadeep_ncbi_D_eff = 23 ∧
+    longevity_megadeep_ncbi_D_eff = 9 ∧
     longevity_megadeep_ncbi_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

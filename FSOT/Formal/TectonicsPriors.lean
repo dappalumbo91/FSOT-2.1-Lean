@@ -14,7 +14,7 @@ open Real
 def tectonics_event_count : ℕ := 500
 def tectonics_boundary_count : ℕ := 241
 def tectonics_match_count : ℕ := 500
-def tectonics_D_eff : ℕ := 17
+def tectonics_D_eff : ℕ := 12
 def tectonics_match_rate : ℝ := (1.0 : ℝ)
 
 theorem tectonics_event_count_pos : 0 < tectonics_event_count := by
@@ -30,7 +30,7 @@ theorem tectonics_bundle :
     tectonics_event_count = 500 ∧
     tectonics_boundary_count = 241 ∧
     tectonics_match_count = 500 ∧
-    tectonics_D_eff = 17 ∧
+    tectonics_D_eff = 12 ∧
     tectonics_match_count ≤ tectonics_event_count ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

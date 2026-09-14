@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def immunology_observable_count : ℕ := 84
-def immunology_D_eff : ℕ := 13
-
+def immunology_D_eff : ℕ := 10
 theorem immunology_observable_count_pos : 0 < immunology_observable_count := by
   unfold immunology_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem immunology_median_error_under_half_pct :
 
 theorem immunology_bundle :
     immunology_observable_count = 84 ∧
-    immunology_D_eff = 13 ∧
+    immunology_D_eff = 10 ∧
     (0.061205 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨

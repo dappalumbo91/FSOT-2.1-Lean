@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def fpc_temporal_coupling_observable_count : ℕ := 24
-def fpc_temporal_coupling_D_eff : ℕ := 18
-
+def fpc_temporal_coupling_D_eff : ℕ := 5
 theorem fpc_temporal_coupling_observable_count_pos : 0 < fpc_temporal_coupling_observable_count := by
   unfold fpc_temporal_coupling_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem fpc_temporal_coupling_median_error_under_half_pct :
 
 theorem fpc_temporal_coupling_bundle :
     fpc_temporal_coupling_observable_count = 24 ∧
-    fpc_temporal_coupling_D_eff = 18 ∧
+    fpc_temporal_coupling_D_eff = 5 ∧
     (0.029733 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

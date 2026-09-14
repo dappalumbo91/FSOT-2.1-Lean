@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def exogeology_panel_observable_count : ℕ := 100
-def exogeology_panel_D_eff : ℕ := 20
-
+def exogeology_panel_D_eff : ℕ := 18
 theorem exogeology_panel_observable_count_pos : 0 < exogeology_panel_observable_count := by
   unfold exogeology_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem exogeology_panel_median_error_under_half_pct :
 
 theorem exogeology_panel_bundle :
     exogeology_panel_observable_count = 100 ∧
-    exogeology_panel_D_eff = 20 ∧
+    exogeology_panel_D_eff = 18 ∧
     (0.026472 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

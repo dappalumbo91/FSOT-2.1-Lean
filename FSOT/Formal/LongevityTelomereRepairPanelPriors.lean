@@ -13,8 +13,7 @@ open Real
 
 def longevity_telomere_repair_observable_count : ℕ := 60
 def longevity_telomere_repair_median_error_pct : ℝ := (0.022236 : ℝ)
-def longevity_telomere_repair_D_eff : ℕ := 20
-
+def longevity_telomere_repair_D_eff : ℕ := 9
 theorem longevity_telomere_repair_observable_count_pos : 0 < longevity_telomere_repair_observable_count := by
   unfold longevity_telomere_repair_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem longevity_telomere_repair_median_error_under_five_pct :
 
 theorem longevity_telomere_repair_bundle :
     longevity_telomere_repair_observable_count = 60 ∧
-    longevity_telomere_repair_D_eff = 20 ∧
+    longevity_telomere_repair_D_eff = 9 ∧
     longevity_telomere_repair_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

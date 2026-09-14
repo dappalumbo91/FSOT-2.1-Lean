@@ -14,8 +14,7 @@ open Real
 
 def fuel_lab_live_observable_count : ℕ := 366
 def fuel_lab_live_median_error_pct : ℝ := (0.039349 : ℝ)
-def fuel_lab_live_D_eff : ℕ := 16
-
+def fuel_lab_live_D_eff : ℕ := 12
 def fuel_lab_live_designed_fuel_count : ℝ := (7.0 : ℝ)
 
 theorem fuel_lab_live_designed_fuel_count_pos : 0 < fuel_lab_live_designed_fuel_count := by
@@ -37,7 +36,7 @@ theorem fuel_lab_live_median_error_under_half_pct :
 
 theorem fuel_lab_live_bundle :
     fuel_lab_live_observable_count = 366 ∧
-    fuel_lab_live_D_eff = 16 ∧
+    fuel_lab_live_D_eff = 12 ∧
     fuel_lab_live_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def ionospheric_chemistry_coupling_observable_count : ℕ := 85
-def ionospheric_chemistry_coupling_D_eff : ℕ := 15
-
+def ionospheric_chemistry_coupling_D_eff : ℕ := 6
 theorem ionospheric_chemistry_coupling_observable_count_pos : 0 < ionospheric_chemistry_coupling_observable_count := by
   unfold ionospheric_chemistry_coupling_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem ionospheric_chemistry_coupling_median_error_under_half_pct :
 
 theorem ionospheric_chemistry_coupling_bundle :
     ionospheric_chemistry_coupling_observable_count = 85 ∧
-    ionospheric_chemistry_coupling_D_eff = 15 ∧
+    ionospheric_chemistry_coupling_D_eff = 6 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -15,7 +15,7 @@ def climate_science_observable_count : ℕ := 9439
 def climate_science_train_month_count : ℕ := 7519
 def climate_science_holdout_month_count : ℕ := 1920
 def climate_science_holdout_station_count : ℕ := 4
-def climate_science_D_eff : ℕ := 16
+def climate_science_D_eff : ℕ := 12
 def climate_science_median_error_pct : ℝ := (0.0 : ℝ)
 def climate_science_holdout_median_error_pct : ℝ := (0.0 : ℝ)
 
@@ -40,7 +40,7 @@ theorem climate_science_bundle :
     climate_science_train_month_count = 7519 ∧
     climate_science_holdout_month_count = 1920 ∧
     climate_science_holdout_station_count = 4 ∧
-    climate_science_D_eff = 16 ∧
+    climate_science_D_eff = 12 ∧
     climate_science_median_error_pct < (0.5 : ℝ) ∧
     climate_science_holdout_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by

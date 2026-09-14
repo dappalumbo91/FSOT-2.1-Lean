@@ -13,8 +13,7 @@ open Real
 
 def space_propulsion_systems_observable_count : ℕ := 21
 def space_propulsion_systems_median_error_pct : ℝ := (0.0 : ℝ)
-def space_propulsion_systems_D_eff : ℕ := 14
-
+def space_propulsion_systems_D_eff : ℕ := 12
 theorem space_propulsion_systems_observable_count_pos : 0 < space_propulsion_systems_observable_count := by
   unfold space_propulsion_systems_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem space_propulsion_systems_median_error_under_five_pct :
 
 theorem space_propulsion_systems_bundle :
     space_propulsion_systems_observable_count = 21 ∧
-    space_propulsion_systems_D_eff = 14 ∧
+    space_propulsion_systems_D_eff = 12 ∧
     space_propulsion_systems_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "fusion") > 0 := by
   refine ⟨

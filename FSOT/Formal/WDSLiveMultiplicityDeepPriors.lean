@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def wds_live_multiplicity_deep_observable_count : ℕ := 281
-def wds_live_multiplicity_deep_D_eff : ℕ := 19
-
+def wds_live_multiplicity_deep_D_eff : ℕ := 18
 theorem wds_live_multiplicity_deep_observable_count_pos : 0 < wds_live_multiplicity_deep_observable_count := by
   unfold wds_live_multiplicity_deep_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem wds_live_multiplicity_deep_median_error_under_half_pct :
 
 theorem wds_live_multiplicity_deep_bundle :
     wds_live_multiplicity_deep_observable_count = 281 ∧
-    wds_live_multiplicity_deep_D_eff = 19 ∧
+    wds_live_multiplicity_deep_D_eff = 18 ∧
     (0.026954 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

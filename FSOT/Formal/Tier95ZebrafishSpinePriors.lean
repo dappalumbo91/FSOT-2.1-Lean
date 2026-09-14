@@ -13,8 +13,7 @@ open Real
 
 def tier_95_zebrafish_observable_count : ℕ := 18
 def tier_95_zebrafish_median_error_pct : ℝ := (0.0 : ℝ)
-def tier_95_zebrafish_D_eff : ℕ := 23
-
+def tier_95_zebrafish_D_eff : ℕ := 9
 theorem tier_95_zebrafish_observable_count_pos : 0 < tier_95_zebrafish_observable_count := by
   unfold tier_95_zebrafish_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem tier_95_zebrafish_median_error_under_five_pct :
 
 theorem tier_95_zebrafish_bundle :
     tier_95_zebrafish_observable_count = 18 ∧
-    tier_95_zebrafish_D_eff = 23 ∧
+    tier_95_zebrafish_D_eff = 9 ∧
     tier_95_zebrafish_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

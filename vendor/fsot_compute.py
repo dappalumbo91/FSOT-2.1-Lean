@@ -200,6 +200,58 @@ def _fold_observed(name: str) -> bool:
     return name not in MEDIUM_ORIFICES
 
 
+def _fold_C(name: str) -> mpf:
+    """Interpretation label of the orifice. Does **not** enter S.
+
+    Look-splits that share a generation may still differ here (Atomic vs HEP),
+    the same way they differ in look. This is a named seed identity, not a
+    residual dial. Compactification is D_eff; observer channel is look/hits/observed.
+    """
+    gp = GAMMA / PHI
+    ep = E / PI
+    table = {
+        "Particle_Physics": gp,
+        "Quantum_Mechanics": gp,
+        "Atomic_Physics": ep,
+        "Physical_Chemistry": ep,
+        "Chemistry": ep,
+        "Electromagnetism": ep,
+        "Molecular_Chemistry": ln(PI) / E,
+        "Optics": PI / E,
+        "Acoustics": A_BLEED / sqrt(2),
+        "Quantum_Computing": sqrt(2) / E,
+        "Quantum_Optics": PI / E,
+        "Biology": ln(PHI) / sqrt(2),
+        "Thermodynamics": GAMMA / E,
+        "Biochemistry": ln(PHI) / sqrt(2),
+        "Neuroscience": C_FACTOR,
+        "Condensed_Matter": A_BLEED / E,
+        "Fluid_Dynamics": A_BLEED / PHI,
+        "Nuclear_Physics": ALPHA / PHI,
+        "Ecology": ln(PHI) / PHI,
+        "Meteorology": CHAOS,
+        "Materials_Science": A_IN / E,
+        "Psychology": P_BASE,
+        "Atmospheric_Physics": CHAOS,
+        "Oceanography": A_IN / PHI,
+        "Seismology": CHAOS / 2,
+        "Sociology": GAMMA / ln(PI),
+        "High_Energy_Physics": ALPHA / sqrt(2),
+        "Geophysics": CHAOS,
+        "Astronomy": PI**2 / PHI,
+        "Economics": GAMMA / ln(PI),
+        "Planetary_Science": PI**2 / PHI,
+        "Quantum_Gravity": 1 / PHI**2,
+        "Particle_Astrophysics": PI**2 / E,
+        "Astrophysics": PI**2 / PHI,
+        "Cosmology": C_COSM,
+    }
+    try:
+        return table[name]
+    except KeyError as exc:
+        raise KeyError(f"no interpretation C for {name!r}") from exc
+
+
 # Unique nested-orifice chain of the 25-D fluid (micro → macro).
 # Look-splits share a generation. D_eff is computed, not stored.
 NEST_GENERATIONS: tuple[tuple[str, ...], ...] = (
@@ -243,58 +295,9 @@ def derived_D_eff(name: str) -> int:
 
 def _build_domains() -> dict[str, DomainConfig]:
     """35 orifice rungs. D_eff is compactification depth (5 seeds → D=5, ceiling 5²=25).
-    C is seed-derived. Look/hits/observed from named fold laws, not assigned tables.
+    Look/hits/observed from named fold laws. C is interpretation-only (does not enter S).
     """
-    gp = GAMMA / PHI
-    ep = E / PI
-    lnpi_e = ln(PI) / E
-    pi_e = PI / E
-    ab_s2 = A_BLEED / sqrt(2)
-    s2_e = sqrt(2) / E
-    lnphi_s2 = ln(PHI) / sqrt(2)
-    alpha_phi = ALPHA / PHI
-    chaos_half = CHAOS / 2
-    pi2_phi = PI**2 / PHI
-    pi2_e = PI**2 / E
-    inv_phi2 = 1 / PHI**2
-
-    rungs = [
-        ("Particle_Physics", gp),
-        ("Quantum_Mechanics", gp),
-        ("Atomic_Physics", ep),
-        ("Physical_Chemistry", ep),
-        ("Chemistry", ep),
-        ("Electromagnetism", ep),
-        ("Molecular_Chemistry", lnpi_e),
-        ("Optics", pi_e),
-        ("Acoustics", ab_s2),
-        ("Quantum_Computing", s2_e),
-        ("Quantum_Optics", pi_e),
-        ("Biology", lnphi_s2),
-        ("Thermodynamics", GAMMA / E),
-        ("Biochemistry", lnphi_s2),
-        ("Neuroscience", C_FACTOR),
-        ("Condensed_Matter", A_BLEED / E),
-        ("Fluid_Dynamics", A_BLEED / PHI),
-        ("Nuclear_Physics", alpha_phi),
-        ("Ecology", ln(PHI) / PHI),
-        ("Meteorology", CHAOS),
-        ("Materials_Science", A_IN / E),
-        ("Psychology", P_BASE),
-        ("Atmospheric_Physics", CHAOS),
-        ("Oceanography", A_IN / PHI),
-        ("Seismology", chaos_half),
-        ("Sociology", GAMMA / ln(PI)),
-        ("High_Energy_Physics", ALPHA / sqrt(2)),
-        ("Geophysics", CHAOS),
-        ("Astronomy", pi2_phi),
-        ("Economics", GAMMA / ln(PI)),
-        ("Planetary_Science", pi2_phi),
-        ("Quantum_Gravity", inv_phi2),
-        ("Particle_Astrophysics", pi2_e),
-        ("Astrophysics", pi2_phi),
-        ("Cosmology", C_COSM),
-    ]
+    names = [n for group in NEST_GENERATIONS for n in group]
     domains = [
         DomainConfig(
             name,
@@ -303,9 +306,9 @@ def _build_domains() -> dict[str, DomainConfig]:
             _fold_look(name),
             mpf(1),
             _fold_observed(name),
-            C,
+            _fold_C(name),
         )
-        for name, C in rungs
+        for name in names
     ]
     return {d.name: d for d in domains}
 

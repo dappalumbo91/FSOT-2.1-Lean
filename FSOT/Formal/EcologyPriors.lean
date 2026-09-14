@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def ecology_observable_count : ℕ := 24
-def ecology_D_eff : ℕ := 15
-
+def ecology_D_eff : ℕ := 12
 theorem ecology_observable_count_pos : 0 < ecology_observable_count := by
   unfold ecology_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem ecology_median_error_under_half_pct :
 
 theorem ecology_bundle :
     ecology_observable_count = 24 ∧
-    ecology_D_eff = 15 ∧
+    ecology_D_eff = 12 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

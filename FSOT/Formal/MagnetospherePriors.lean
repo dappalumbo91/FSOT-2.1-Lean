@@ -13,7 +13,7 @@ open Real
 
 def magnetosphere_observable_count : ℕ := 167
 def magnetosphere_match_count : ℕ := 167
-def magnetosphere_D_eff : ℕ := 14
+def magnetosphere_D_eff : ℕ := 12
 def magnetosphere_match_rate : ℝ := (1.0 : ℝ)
 
 theorem magnetosphere_observable_count_pos : 0 < magnetosphere_observable_count := by
@@ -25,7 +25,7 @@ theorem magnetosphere_match_le_total : magnetosphere_match_count ≤ magnetosphe
 theorem magnetosphere_bundle :
     magnetosphere_observable_count = 167 ∧
     magnetosphere_match_count = 167 ∧
-    magnetosphere_D_eff = 14 ∧
+    magnetosphere_D_eff = 12 ∧
     magnetosphere_match_count ≤ magnetosphere_observable_count ∧
     raw_S (get_domain_params "electron") > 0 := by
   refine ⟨

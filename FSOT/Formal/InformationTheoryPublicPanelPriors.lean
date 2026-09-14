@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def information_theory_public_panel_observable_count : ℕ := 24
-def information_theory_public_panel_D_eff : ℕ := 8
-
+def information_theory_public_panel_D_eff : ℕ := 11
 theorem information_theory_public_panel_observable_count_pos : 0 < information_theory_public_panel_observable_count := by
   unfold information_theory_public_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem information_theory_public_panel_median_error_under_half_pct :
 
 theorem information_theory_public_panel_bundle :
     information_theory_public_panel_observable_count = 24 ∧
-    information_theory_public_panel_D_eff = 8 ∧
+    information_theory_public_panel_D_eff = 11 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

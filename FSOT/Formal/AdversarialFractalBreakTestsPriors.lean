@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def adversarial_fractal_break_tests_observable_count : ℕ := 24
-def adversarial_fractal_break_tests_D_eff : ℕ := 17
-
+def adversarial_fractal_break_tests_D_eff : ℕ := 9
 theorem adversarial_fractal_break_tests_observable_count_pos : 0 < adversarial_fractal_break_tests_observable_count := by
   unfold adversarial_fractal_break_tests_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem adversarial_fractal_break_tests_median_error_under_half_pct :
 
 theorem adversarial_fractal_break_tests_bundle :
     adversarial_fractal_break_tests_observable_count = 24 ∧
-    adversarial_fractal_break_tests_D_eff = 17 ∧
+    adversarial_fractal_break_tests_D_eff = 9 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

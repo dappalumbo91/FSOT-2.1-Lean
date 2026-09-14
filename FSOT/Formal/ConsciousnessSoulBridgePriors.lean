@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def consciousness_soul_bridge_observable_count : ℕ := 27
-def consciousness_soul_bridge_D_eff : ℕ := 17
-
+def consciousness_soul_bridge_D_eff : ℕ := 11
 theorem consciousness_soul_bridge_observable_count_pos : 0 < consciousness_soul_bridge_observable_count := by
   unfold consciousness_soul_bridge_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem consciousness_soul_bridge_median_error_under_half_pct :
 
 theorem consciousness_soul_bridge_bundle :
     consciousness_soul_bridge_observable_count = 27 ∧
-    consciousness_soul_bridge_D_eff = 17 ∧
+    consciousness_soul_bridge_D_eff = 11 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

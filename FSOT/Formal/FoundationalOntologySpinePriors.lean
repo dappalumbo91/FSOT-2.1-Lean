@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def foundational_ontology_spine_observable_count : ℕ := 21
-def foundational_ontology_spine_D_eff : ℕ := 22
-
+def foundational_ontology_spine_D_eff : ℕ := 25
 theorem foundational_ontology_spine_observable_count_pos : 0 < foundational_ontology_spine_observable_count := by
   unfold foundational_ontology_spine_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem foundational_ontology_spine_median_error_under_half_pct :
 
 theorem foundational_ontology_spine_bundle :
     foundational_ontology_spine_observable_count = 21 ∧
-    foundational_ontology_spine_D_eff = 22 ∧
+    foundational_ontology_spine_D_eff = 25 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

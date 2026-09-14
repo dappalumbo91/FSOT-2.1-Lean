@@ -13,8 +13,7 @@ open Real
 
 def noaa_coastal_tides_observable_count : ℕ := 20
 def noaa_coastal_tides_median_error_pct : ℝ := (0.030173 : ℝ)
-def noaa_coastal_tides_D_eff : ℕ := 17
-
+def noaa_coastal_tides_D_eff : ℕ := 12
 theorem noaa_coastal_tides_observable_count_pos : 0 < noaa_coastal_tides_observable_count := by
   unfold noaa_coastal_tides_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem noaa_coastal_tides_median_error_under_five_pct :
 
 theorem noaa_coastal_tides_bundle :
     noaa_coastal_tides_observable_count = 20 ∧
-    noaa_coastal_tides_D_eff = 17 ∧
+    noaa_coastal_tides_D_eff = 12 ∧
     noaa_coastal_tides_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

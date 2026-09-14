@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def network_internet_protocols_observable_count : ℕ := 22
-def network_internet_protocols_D_eff : ℕ := 15
-
+def network_internet_protocols_D_eff : ℕ := 25
 theorem network_internet_protocols_observable_count_pos : 0 < network_internet_protocols_observable_count := by
   unfold network_internet_protocols_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem network_internet_protocols_median_error_under_half_pct :
 
 theorem network_internet_protocols_bundle :
     network_internet_protocols_observable_count = 22 ∧
-    network_internet_protocols_D_eff = 15 ∧
+    network_internet_protocols_D_eff = 25 ∧
     (0.010337117254355377 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

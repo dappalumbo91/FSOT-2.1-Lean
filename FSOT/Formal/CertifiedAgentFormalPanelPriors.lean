@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def certified_agent_formal_panel_observable_count : ℕ := 24
-def certified_agent_formal_panel_D_eff : ℕ := 14
-
+def certified_agent_formal_panel_D_eff : ℕ := 25
 theorem certified_agent_formal_panel_observable_count_pos : 0 < certified_agent_formal_panel_observable_count := by
   unfold certified_agent_formal_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem certified_agent_formal_panel_median_error_under_half_pct :
 
 theorem certified_agent_formal_panel_bundle :
     certified_agent_formal_panel_observable_count = 24 ∧
-    certified_agent_formal_panel_D_eff = 14 ∧
+    certified_agent_formal_panel_D_eff = 25 ∧
     (0.014767 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

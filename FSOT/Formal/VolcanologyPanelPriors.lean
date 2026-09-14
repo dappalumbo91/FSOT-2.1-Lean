@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def volcanology_panel_observable_count : ℕ := 90
-def volcanology_panel_D_eff : ℕ := 19
-
+def volcanology_panel_D_eff : ℕ := 5
 theorem volcanology_panel_observable_count_pos : 0 < volcanology_panel_observable_count := by
   unfold volcanology_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem volcanology_panel_median_error_under_half_pct :
 
 theorem volcanology_panel_bundle :
     volcanology_panel_observable_count = 90 ∧
-    volcanology_panel_D_eff = 19 ∧
+    volcanology_panel_D_eff = 5 ∧
     (0.023502 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def civil_engineering_observable_count : ℕ := 37
-def civil_engineering_D_eff : ℕ := 16
-
+def civil_engineering_D_eff : ℕ := 12
 theorem civil_engineering_observable_count_pos : 0 < civil_engineering_observable_count := by
   unfold civil_engineering_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem civil_engineering_median_error_under_half_pct :
 
 theorem civil_engineering_bundle :
     civil_engineering_observable_count = 37 ∧
-    civil_engineering_D_eff = 16 ∧
+    civil_engineering_D_eff = 12 ∧
     (0.0335259880736416 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

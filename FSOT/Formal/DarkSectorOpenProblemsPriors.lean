@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def dark_sector_open_problems_observable_count : ℕ := 24
-def dark_sector_open_problems_D_eff : ℕ := 24
-
+def dark_sector_open_problems_D_eff : ℕ := 25
 theorem dark_sector_open_problems_observable_count_pos : 0 < dark_sector_open_problems_observable_count := by
   unfold dark_sector_open_problems_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem dark_sector_open_problems_median_error_under_half_pct :
 
 theorem dark_sector_open_problems_bundle :
     dark_sector_open_problems_observable_count = 24 ∧
-    dark_sector_open_problems_D_eff = 24 ∧
+    dark_sector_open_problems_D_eff = 25 ∧
     (0.01529034996934153 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def inertial_confinement_fusion_panel_observable_count : ℕ := 24
-def inertial_confinement_fusion_panel_D_eff : ℕ := 17
-
+def inertial_confinement_fusion_panel_D_eff : ℕ := 12
 theorem inertial_confinement_fusion_panel_observable_count_pos : 0 < inertial_confinement_fusion_panel_observable_count := by
   unfold inertial_confinement_fusion_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem inertial_confinement_fusion_panel_median_error_under_half_pct :
 
 theorem inertial_confinement_fusion_panel_bundle :
     inertial_confinement_fusion_panel_observable_count = 24 ∧
-    inertial_confinement_fusion_panel_D_eff = 17 ∧
+    inertial_confinement_fusion_panel_D_eff = 12 ∧
     (7.9e-05 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

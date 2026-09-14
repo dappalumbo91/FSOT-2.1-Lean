@@ -13,8 +13,7 @@ open Real
 
 def intrinsic_llm_validators_observable_count : ℕ := 10
 def intrinsic_llm_validators_median_error_pct : ℝ := (0.0 : ℝ)
-def intrinsic_llm_validators_D_eff : ℕ := 12
-
+def intrinsic_llm_validators_D_eff : ℕ := 11
 theorem intrinsic_llm_validators_observable_count_pos : 0 < intrinsic_llm_validators_observable_count := by
   unfold intrinsic_llm_validators_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem intrinsic_llm_validators_median_error_under_five_pct :
 
 theorem intrinsic_llm_validators_bundle :
     intrinsic_llm_validators_observable_count = 10 ∧
-    intrinsic_llm_validators_D_eff = 12 ∧
+    intrinsic_llm_validators_D_eff = 11 ∧
     intrinsic_llm_validators_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

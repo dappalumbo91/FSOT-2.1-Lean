@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def z164_distant_island_prereg_scaffold_observable_count : ℕ := 24
-def z164_distant_island_prereg_scaffold_D_eff : ℕ := 24
-
+def z164_distant_island_prereg_scaffold_D_eff : ℕ := 5
 theorem z164_distant_island_prereg_scaffold_observable_count_pos : 0 < z164_distant_island_prereg_scaffold_observable_count := by
   unfold z164_distant_island_prereg_scaffold_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem z164_distant_island_prereg_scaffold_median_error_under_half_pct :
 
 theorem z164_distant_island_prereg_scaffold_bundle :
     z164_distant_island_prereg_scaffold_observable_count = 24 ∧
-    z164_distant_island_prereg_scaffold_D_eff = 24 ∧
+    z164_distant_island_prereg_scaffold_D_eff = 5 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

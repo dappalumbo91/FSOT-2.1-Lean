@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def interdisciplinary_spine_crosswalk_observable_count : ℕ := 24
-def interdisciplinary_spine_crosswalk_D_eff : ℕ := 17
-
+def interdisciplinary_spine_crosswalk_D_eff : ℕ := 18
 theorem interdisciplinary_spine_crosswalk_observable_count_pos : 0 < interdisciplinary_spine_crosswalk_observable_count := by
   unfold interdisciplinary_spine_crosswalk_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem interdisciplinary_spine_crosswalk_median_error_under_half_pct :
 
 theorem interdisciplinary_spine_crosswalk_bundle :
     interdisciplinary_spine_crosswalk_observable_count = 24 ∧
-    interdisciplinary_spine_crosswalk_D_eff = 17 ∧
+    interdisciplinary_spine_crosswalk_D_eff = 18 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

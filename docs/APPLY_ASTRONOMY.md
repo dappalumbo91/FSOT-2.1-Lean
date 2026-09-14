@@ -1,6 +1,6 @@
 # APPLY cookbook — Astronomy fold
 
-**Pin:** D1D38A · **core:** `Astronomy` · \(D_{\mathrm{eff}}=20\) · `observed=True` · \(C=\pi^2/\varphi\) · \(\delta\psi=1\) · hits=1.  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Astronomy` · nest \(D=18\) · look \(1\) · hits \(0\) · `observed=True`. \(C\) does not enter \(S\).  
 **Neighbor:** `Planetary_Science` \(D=21\), \(\delta\psi=0.9\) (body zoom). Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §31.  
 **Same rung:** `Economics` \(\delta\psi=1.5\), hits=3 (market look). Fold onto \(D=19\).  
 **H0 sectors:** Cosmology / Astrophysics — H0 is multi-variant expansion, not a siloed constant.  

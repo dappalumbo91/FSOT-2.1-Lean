@@ -1,6 +1,6 @@
 # APPLY cookbook — Electromagnetism fold
 
-**Pin:** D1D38A · **core:** `Electromagnetism` · \(D_{\mathrm{eff}}=9\) · `observed=True` · \(C=e/\pi\) · \(\delta\psi=0.7\).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Electromagnetism` · nest \(D=7\) · look \(1\) · `observed=True`. \(C\) does not enter \(S\). Same generation as Molecular_Chemistry.  
 **Neighbor:** `Optics` \(D=10\), \(C=\pi/e\), \(\delta\psi=0.6\) (wave readout). \(C_{\mathrm{em}}C_{\mathrm{opt}}=1\).  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §11.  
 **General protocol:** [`APPLY.md`](APPLY.md). CRC \(n_D\) specimens are the table (same list as Materials↔Optics).

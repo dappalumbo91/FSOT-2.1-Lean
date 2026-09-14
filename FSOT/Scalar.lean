@@ -32,7 +32,8 @@ def theta_s : Float := Float.sin (psi_con * eta_eff)
 def poof_factor : Float := Float.exp (- (Float.log pi / e) / (eta_eff * Float.log phi))
 def acoustic_bleed : Float := Float.sin (pi / e) * phi / sqrt2
 def phase_variance : Float := - Float.cos (theta_s + pi)
-def coherence_efficiency : Float := (1.0 - poof_factor * Float.sin theta_s) * (1.0 + 0.01 * catalan_G / (pi * phi))
+def pi_inv4 : Float := 1.0 / Float.pow pi 4
+def coherence_efficiency : Float := (1.0 - poof_factor * Float.sin theta_s) * (1.0 + pi_inv4 * catalan_G / (pi * phi))
 def bleed_in_factor : Float := coherence_efficiency * (1.0 - Float.sin theta_s / phi)
 def acoustic_inflow : Float := acoustic_bleed * (1.0 + Float.cos theta_s / phi)
 def suction_factor : Float := poof_factor * (- Float.cos (theta_s - pi))
@@ -40,7 +41,7 @@ def chaos_factor : Float := gamma / omega
 def perceived_param_base : Float := gamma_euler / e
 def new_perceived_param : Float := perceived_param_base * sqrt2
 def consciousness_factor : Float := coherence_efficiency * new_perceived_param
-def k : Float := phi * (perceived_param_base * sqrt2) / Float.log pi * 0.99
+def k : Float := phi * (perceived_param_base * sqrt2) / Float.log pi * (1.0 - pi_inv4)
 
 -- ============================================================
 -- EXTRACTED INTERNAL TERMS (for clean theorems)

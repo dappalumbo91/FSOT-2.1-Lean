@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def maillard_chemistry_observable_count : ℕ := 30
-def maillard_chemistry_D_eff : ℕ := 15
-
+def maillard_chemistry_D_eff : ℕ := 12
 theorem maillard_chemistry_observable_count_pos : 0 < maillard_chemistry_observable_count := by
   unfold maillard_chemistry_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem maillard_chemistry_median_error_under_half_pct :
 
 theorem maillard_chemistry_bundle :
     maillard_chemistry_observable_count = 30 ∧
-    maillard_chemistry_D_eff = 15 ∧
+    maillard_chemistry_D_eff = 12 ∧
     (0.09443694019339477 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def inaturalist_observation_panel_observable_count : ℕ := 288
-def inaturalist_observation_panel_D_eff : ℕ := 15
-
+def inaturalist_observation_panel_D_eff : ℕ := 9
 theorem inaturalist_observation_panel_observable_count_pos : 0 < inaturalist_observation_panel_observable_count := by
   unfold inaturalist_observation_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem inaturalist_observation_panel_median_error_under_half_pct :
 
 theorem inaturalist_observation_panel_bundle :
     inaturalist_observation_panel_observable_count = 288 ∧
-    inaturalist_observation_panel_D_eff = 15 ∧
+    inaturalist_observation_panel_D_eff = 9 ∧
     (0.006006 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

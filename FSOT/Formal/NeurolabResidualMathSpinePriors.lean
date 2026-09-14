@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def neurolab_residual_math_spine_observable_count : ℕ := 28
-def neurolab_residual_math_spine_D_eff : ℕ := 17
-
+def neurolab_residual_math_spine_D_eff : ℕ := 9
 theorem neurolab_residual_math_spine_observable_count_pos : 0 < neurolab_residual_math_spine_observable_count := by
   unfold neurolab_residual_math_spine_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem neurolab_residual_math_spine_median_error_under_half_pct :
 
 theorem neurolab_residual_math_spine_bundle :
     neurolab_residual_math_spine_observable_count = 28 ∧
-    neurolab_residual_math_spine_D_eff = 17 ∧
+    neurolab_residual_math_spine_D_eff = 9 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

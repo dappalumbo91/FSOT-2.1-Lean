@@ -13,8 +13,7 @@ open Real
 
 def prediction_rederivation_observable_count : ℕ := 10
 def prediction_rederivation_median_error_pct : ℝ := (0.0 : ℝ)
-def prediction_rederivation_D_eff : ℕ := 14
-
+def prediction_rederivation_D_eff : ℕ := 25
 theorem prediction_rederivation_observable_count_pos : 0 < prediction_rederivation_observable_count := by
   unfold prediction_rederivation_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem prediction_rederivation_median_error_under_five_pct :
 
 theorem prediction_rederivation_bundle :
     prediction_rederivation_observable_count = 10 ∧
-    prediction_rederivation_D_eff = 14 ∧
+    prediction_rederivation_D_eff = 25 ∧
     prediction_rederivation_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨

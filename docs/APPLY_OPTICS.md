@@ -1,6 +1,6 @@
 # APPLY cookbook — Optics fold
 
-**Pin:** D1D38A · **core:** `Optics` · \(D_{\mathrm{eff}}=10\) · `observed=True` · \(C=\pi/e\).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Optics` · nest \(D=8\) · look \(1\) · `observed=True`. \(C\) does not enter \(S\). Same generation as Materials / Acoustics.  
 **Neighbor:** `Quantum_Optics` \(D=11\), same \(C=\pi/e\). Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §9.  
 **Same rung, other \(C\):** `Materials_Science` \(D=10\), \(C=A_{\mathrm{in}}/e\). Tissue: §8.  
 **General protocol:** [`APPLY.md`](APPLY.md). This is the worked example for the light fold (MPCORB is catalog; Seismology is crustal-wave).

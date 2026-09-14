@@ -13,8 +13,7 @@ open Real
 
 def vl_distill_atlas_observable_count : ℕ := 10
 def vl_distill_atlas_median_error_pct : ℝ := (0.0 : ℝ)
-def vl_distill_atlas_D_eff : ℕ := 12
-
+def vl_distill_atlas_D_eff : ℕ := 11
 theorem vl_distill_atlas_observable_count_pos : 0 < vl_distill_atlas_observable_count := by
   unfold vl_distill_atlas_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem vl_distill_atlas_median_error_under_five_pct :
 
 theorem vl_distill_atlas_bundle :
     vl_distill_atlas_observable_count = 10 ∧
-    vl_distill_atlas_D_eff = 12 ∧
+    vl_distill_atlas_D_eff = 11 ∧
     vl_distill_atlas_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

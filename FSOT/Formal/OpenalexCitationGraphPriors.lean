@@ -13,8 +13,7 @@ open Real
 
 def openalex_citation_graph_observable_count : ℕ := 80
 def openalex_citation_graph_median_error_pct : ℝ := (0.031506 : ℝ)
-def openalex_citation_graph_D_eff : ℕ := 18
-
+def openalex_citation_graph_D_eff : ℕ := 25
 theorem openalex_citation_graph_observable_count_pos : 0 < openalex_citation_graph_observable_count := by
   unfold openalex_citation_graph_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem openalex_citation_graph_median_error_under_five_pct :
 
 theorem openalex_citation_graph_bundle :
     openalex_citation_graph_observable_count = 80 ∧
-    openalex_citation_graph_D_eff = 18 ∧
+    openalex_citation_graph_D_eff = 25 ∧
     openalex_citation_graph_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

@@ -1,6 +1,6 @@
 # APPLY cookbook — Ecology (habitat fold)
 
-**Pin:** D1D38A · **core:** `Ecology` · \(D_{\mathrm{eff}}=15\) · `observed=False` (**dark — do not flip**) · \(\delta\psi=0.2\).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Ecology` · nest \(D=12\) · look \(1\) · `observed=False` (**dark — do not flip**). \(C\) does not enter \(S\).  
 **Neighbors:** Condensed_Matter / Neuroscience \(D=14\); Fluid / Nuclear / Thermo \(D=15\); Meteorology / Psychology \(D=16\).  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §36.
 

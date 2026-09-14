@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def ai_galactic_orbital_bridge_observable_count : ℕ := 48
-def ai_galactic_orbital_bridge_D_eff : ℕ := 16
-
+def ai_galactic_orbital_bridge_D_eff : ℕ := 18
 theorem ai_galactic_orbital_bridge_observable_count_pos : 0 < ai_galactic_orbital_bridge_observable_count := by
   unfold ai_galactic_orbital_bridge_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem ai_galactic_orbital_bridge_median_error_under_half_pct :
 
 theorem ai_galactic_orbital_bridge_bundle :
     ai_galactic_orbital_bridge_observable_count = 48 ∧
-    ai_galactic_orbital_bridge_D_eff = 16 ∧
+    ai_galactic_orbital_bridge_D_eff = 18 ∧
     (0.005168558627177688 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

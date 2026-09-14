@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def warp_bh_wh_portal_panel_observable_count : ℕ := 24
-def warp_bh_wh_portal_panel_D_eff : ℕ := 29
-
+def warp_bh_wh_portal_panel_D_eff : ℕ := 23
 theorem warp_bh_wh_portal_panel_observable_count_pos : 0 < warp_bh_wh_portal_panel_observable_count := by
   unfold warp_bh_wh_portal_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem warp_bh_wh_portal_panel_median_error_under_half_pct :
 
 theorem warp_bh_wh_portal_panel_bundle :
     warp_bh_wh_portal_panel_observable_count = 24 ∧
-    warp_bh_wh_portal_panel_D_eff = 29 ∧
+    warp_bh_wh_portal_panel_D_eff = 23 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

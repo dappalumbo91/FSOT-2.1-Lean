@@ -13,8 +13,7 @@ open Real
 
 def linguistics_formal_observable_count : ℕ := 10
 def linguistics_formal_median_error_pct : ℝ := (0.0013504254899468224 : ℝ)
-def linguistics_formal_D_eff : ℕ := 12
-
+def linguistics_formal_D_eff : ℕ := 11
 theorem linguistics_formal_observable_count_pos : 0 < linguistics_formal_observable_count := by
   unfold linguistics_formal_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem linguistics_formal_median_error_under_five_pct :
 
 theorem linguistics_formal_bundle :
     linguistics_formal_observable_count = 10 ∧
-    linguistics_formal_D_eff = 12 ∧
+    linguistics_formal_D_eff = 11 ∧
     linguistics_formal_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

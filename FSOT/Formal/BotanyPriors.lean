@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def botany_observable_count : ℕ := 426
-def botany_D_eff : ℕ := 14
-
+def botany_D_eff : ℕ := 9
 theorem botany_observable_count_pos : 0 < botany_observable_count := by
   unfold botany_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem botany_median_error_under_half_pct :
 
 theorem botany_bundle :
     botany_observable_count = 426 ∧
-    botany_D_eff = 14 ∧
+    botany_D_eff = 9 ∧
     (0.022236250385193387 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

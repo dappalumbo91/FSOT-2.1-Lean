@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def neuroscience_connectomics_depth_panel_observable_count : ℕ := 27
-def neuroscience_connectomics_depth_panel_D_eff : ℕ := 18
-
+def neuroscience_connectomics_depth_panel_D_eff : ℕ := 11
 theorem neuroscience_connectomics_depth_panel_observable_count_pos : 0 < neuroscience_connectomics_depth_panel_observable_count := by
   unfold neuroscience_connectomics_depth_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem neuroscience_connectomics_depth_panel_median_error_under_half_pct :
 
 theorem neuroscience_connectomics_depth_panel_bundle :
     neuroscience_connectomics_depth_panel_observable_count = 27 ∧
-    neuroscience_connectomics_depth_panel_D_eff = 18 ∧
+    neuroscience_connectomics_depth_panel_D_eff = 11 ∧
     (0.0201195 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

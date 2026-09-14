@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def toe_gap_closure_spine_observable_count : ℕ := 24
-def toe_gap_closure_spine_D_eff : ℕ := 19
-
+def toe_gap_closure_spine_D_eff : ℕ := 5
 theorem toe_gap_closure_spine_observable_count_pos : 0 < toe_gap_closure_spine_observable_count := by
   unfold toe_gap_closure_spine_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem toe_gap_closure_spine_median_error_under_half_pct :
 
 theorem toe_gap_closure_spine_bundle :
     toe_gap_closure_spine_observable_count = 24 ∧
-    toe_gap_closure_spine_D_eff = 19 ∧
+    toe_gap_closure_spine_D_eff = 5 ∧
     (0.021927861384483893 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -1,9 +1,8 @@
 # APPLY cookbook — Materials_Science fold
 
-**Pin:** D1D38A · **core:** `Materials_Science` · \(D_{\mathrm{eff}}=10\) · `observed=True` · \(C=A_{\mathrm{in}}/e\) · \(\delta\psi=0.5\).  
-**Same rung, other \(C\):** `Optics` \(D=10\), \(C=\pi/e\), \(\delta\psi=0.6\) (light look). Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §8.  
-**Same rung, lab sound:** `Acoustics` \(D=10\), \(\delta\psi=0.3\). Tissue: §17.  
-**Neighbor:** `Electromagnetism` \(D=9\) (field zoom). Tissue: §19.  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Materials_Science` · nest \(D=8\) · look \(1\) · `observed=True`. \(C\) does not enter \(S\).  
+**Same generation:** `Optics`, `Acoustics` (also \(D=8\), look \(1\)). Live \(S\) is the same default-look specimen — assigned \(0.5/0.6/0.3\) looks are retired.  
+**Neighbor:** `Electromagnetism` nest \(D=7\) (field zoom).  
 **General protocol:** [`APPLY.md`](APPLY.md). This is the bulk / density fold of the same specimen Optics reads as \(n_D\).
 
 ---
@@ -16,7 +15,7 @@
 | Ice Ih density | CRC \(0.917\) | Ice optical \(n\) (that is Optics) |
 | Metal density (Al, Cu, Fe, Au, Ag, Pb) | CRC | Static electrical conductivity |
 
-Wrong object: \(\lvert S_{\mathrm{mat}}/S_{\mathrm{opt}}\rvert\) vs 1 (~18%). That is two looks at one rung (body \(\delta\psi=0.5\) vs light \(\delta\psi=0.6\)). Fold onto Physical_Chemistry/Chemistry. Static metal conductivity is another interface.
+Wrong object: \(\lvert S_{\mathrm{mat}}/S_{\mathrm{opt}}\rvert\) vs 1 on the *old assigned looks*. Live they share nest \(D=8\) and look \(1\), so that ratio is an identity. Scoring \(n_D\) on Materials is still the wrong fold.
 
 ---
 
@@ -31,14 +30,14 @@ If a residual is ugly, the usual miss is **wrong fold** (scoring \(n_D\) on Mate
 ## 3. Route
 
 ```text
-S = domain_scalar("Materials_Science")     # D=10, δψ=0.5, body look
+S = domain_scalar("Materials_Science")     # nest D=8, look=1, body
 computed, err% = fsot_scaled(m, "Materials_Science")
 ```
 
 Light zoom of the same CRC specimen:
 
 ```text
-S = domain_scalar("Optics")                # D=10, δψ=0.6
+S = domain_scalar("Optics")                # nest D=8, look=1
 computed, err% = fsot_scaled(n, "Optics")
 ```
 

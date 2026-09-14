@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def entomology_observable_count : ℕ := 430
-def entomology_D_eff : ℕ := 14
-
+def entomology_D_eff : ℕ := 9
 theorem entomology_observable_count_pos : 0 < entomology_observable_count := by
   unfold entomology_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem entomology_median_error_under_half_pct :
 
 theorem entomology_bundle :
     entomology_observable_count = 430 ∧
-    entomology_D_eff = 14 ∧
+    entomology_D_eff = 9 ∧
     (0.022236250385189223 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

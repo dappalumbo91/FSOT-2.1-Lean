@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def quantum_information_observable_count : ℕ := 24
-def quantum_information_D_eff : ℕ := 11
-
+def quantum_information_D_eff : ℕ := 5
 theorem quantum_information_observable_count_pos : 0 < quantum_information_observable_count := by
   unfold quantum_information_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem quantum_information_median_error_under_half_pct :
 
 theorem quantum_information_bundle :
     quantum_information_observable_count = 24 ∧
-    quantum_information_D_eff = 11 ∧
+    quantum_information_D_eff = 5 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

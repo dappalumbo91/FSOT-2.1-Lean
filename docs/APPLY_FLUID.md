@@ -1,6 +1,6 @@
 # APPLY cookbook — Fluid_Dynamics fold
 
-**Pin:** D1D38A · **core:** `Fluid_Dynamics` · \(D_{\mathrm{eff}}=15\) · `observed=False` (**dark — do not flip**) · \(C=A_{\mathrm{bleed}}/\varphi\) · \(\delta\psi=0.9\) · hits=1.  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Fluid_Dynamics` · nest \(D=12\) · look \(1\) · hits \(0\) · `observed=False` (**dark — do not flip**). \(C\) does not enter \(S\). Same generation as Thermodynamics / Nuclear / Ecology.  
 **Same rung:** `Thermodynamics` (observed, heat); `Nuclear_Physics` (observed, orifice); `Ecology` (dark, habitat).  
 **Adjacent tanks:** `Oceanography` \(D=17\) (SST); `Atmospheric_Physics` \(D=17\) (pressure); `Meteorology` \(D=16\) (weather).  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §2.  

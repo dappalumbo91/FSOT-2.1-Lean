@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def phi_morphogenetic_scaling_observable_count : ℕ := 289
-def phi_morphogenetic_scaling_D_eff : ℕ := 16
-
+def phi_morphogenetic_scaling_D_eff : ℕ := 9
 theorem phi_morphogenetic_scaling_observable_count_pos : 0 < phi_morphogenetic_scaling_observable_count := by
   unfold phi_morphogenetic_scaling_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem phi_morphogenetic_scaling_median_error_under_half_pct :
 
 theorem phi_morphogenetic_scaling_bundle :
     phi_morphogenetic_scaling_observable_count = 289 ∧
-    phi_morphogenetic_scaling_D_eff = 16 ∧
+    phi_morphogenetic_scaling_D_eff = 9 ∧
     (0.01760779720633292 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

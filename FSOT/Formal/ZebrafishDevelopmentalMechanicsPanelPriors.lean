@@ -13,8 +13,7 @@ open Real
 
 def zebrafish_developmental_mechanics_observable_count : ℕ := 31
 def zebrafish_developmental_mechanics_median_error_pct : ℝ := (0.017789 : ℝ)
-def zebrafish_developmental_mechanics_D_eff : ℕ := 21
-
+def zebrafish_developmental_mechanics_D_eff : ℕ := 9
 theorem zebrafish_developmental_mechanics_observable_count_pos : 0 < zebrafish_developmental_mechanics_observable_count := by
   unfold zebrafish_developmental_mechanics_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem zebrafish_developmental_mechanics_median_error_under_five_pct :
 
 theorem zebrafish_developmental_mechanics_bundle :
     zebrafish_developmental_mechanics_observable_count = 31 ∧
-    zebrafish_developmental_mechanics_D_eff = 21 ∧
+    zebrafish_developmental_mechanics_D_eff = 9 ∧
     zebrafish_developmental_mechanics_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

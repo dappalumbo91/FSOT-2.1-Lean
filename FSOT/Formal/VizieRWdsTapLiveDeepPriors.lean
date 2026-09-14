@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def vizier_wds_tap_live_deep_observable_count : ℕ := 121
-def vizier_wds_tap_live_deep_D_eff : ℕ := 21
-
+def vizier_wds_tap_live_deep_D_eff : ℕ := 18
 theorem vizier_wds_tap_live_deep_observable_count_pos : 0 < vizier_wds_tap_live_deep_observable_count := by
   unfold vizier_wds_tap_live_deep_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem vizier_wds_tap_live_deep_median_error_under_half_pct :
 
 theorem vizier_wds_tap_live_deep_bundle :
     vizier_wds_tap_live_deep_observable_count = 121 ∧
-    vizier_wds_tap_live_deep_D_eff = 21 ∧
+    vizier_wds_tap_live_deep_D_eff = 18 ∧
     (0.026954 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

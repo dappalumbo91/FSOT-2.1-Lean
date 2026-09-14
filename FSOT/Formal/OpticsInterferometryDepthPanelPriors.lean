@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def optics_interferometry_depth_panel_observable_count : ℕ := 127
-def optics_interferometry_depth_panel_D_eff : ℕ := 17
-
+def optics_interferometry_depth_panel_D_eff : ℕ := 18
 theorem optics_interferometry_depth_panel_observable_count_pos : 0 < optics_interferometry_depth_panel_observable_count := by
   unfold optics_interferometry_depth_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem optics_interferometry_depth_panel_median_error_under_half_pct :
 
 theorem optics_interferometry_depth_panel_bundle :
     optics_interferometry_depth_panel_observable_count = 127 ∧
-    optics_interferometry_depth_panel_D_eff = 17 ∧
+    optics_interferometry_depth_panel_D_eff = 18 ∧
     (0.026954 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def energy_neural_orbital_bridge_observable_count : ℕ := 48
-def energy_neural_orbital_bridge_D_eff : ℕ := 16
-
+def energy_neural_orbital_bridge_D_eff : ℕ := 12
 theorem energy_neural_orbital_bridge_observable_count_pos : 0 < energy_neural_orbital_bridge_observable_count := by
   unfold energy_neural_orbital_bridge_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem energy_neural_orbital_bridge_median_error_under_half_pct :
 
 theorem energy_neural_orbital_bridge_bundle :
     energy_neural_orbital_bridge_observable_count = 48 ∧
-    energy_neural_orbital_bridge_D_eff = 16 ∧
+    energy_neural_orbital_bridge_D_eff = 12 ∧
     (0.018002668701796887 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

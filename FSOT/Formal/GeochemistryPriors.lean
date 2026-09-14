@@ -13,8 +13,7 @@ open Real
 
 def geochemistry_observable_count : ℕ := 153
 def geochemistry_median_error_pct : ℝ := (0.006625234573930708 : ℝ)
-def geochemistry_D_eff : ℕ := 15
-
+def geochemistry_D_eff : ℕ := 6
 theorem geochemistry_observable_count_pos : 0 < geochemistry_observable_count := by
   unfold geochemistry_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem geochemistry_median_error_under_half_pct :
 
 theorem geochemistry_bundle :
     geochemistry_observable_count = 153 ∧
-    geochemistry_D_eff = 15 ∧
+    geochemistry_D_eff = 6 ∧
     geochemistry_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨

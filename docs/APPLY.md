@@ -39,16 +39,16 @@ Call it `fsot_correct(m, domain)`, not predict. \(S = K(T_1+T_2+T_3)\) at the **
 
 Worked examples in-repo:
 
-- Catalog fold: MPCORB eccentricity failed ~62% on the wrong fold; Planetary_Science \(D=21\) brought the panel to **~0.023%**. Log: [`MPCORB_REFINEMENT_PROCESS.md`](MPCORB_REFINEMENT_PROCESS.md).
-- Wave fold: [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md) — PREM / \(b\)-value / dated cells. Neighbor Geophysics \(D=19\).
-- Light fold: [`APPLY_OPTICS.md`](APPLY_OPTICS.md) — CRC \(n_D\) wave vs photon. Neighbor Quantum_Optics \(D=11\).
-- Bulk fold: [`APPLY_MATERIALS.md`](APPLY_MATERIALS.md) — CRC density. Same rung as Optics; look-split vs PhysChem/Chem.
-- Lab-sound fold: [`APPLY_ACOUSTICS.md`](APPLY_ACOUSTICS.md) — CRC \(c\); PREM \(v_P/v_S\). Neighbor Seismology \(D=18\).
-- Quantum-to-atom fold: [`APPLY_ATOMIC.md`](APPLY_ATOMIC.md) — NIST hydrogen \(a_0\)/\(R_\infty\); H–Ca ionization. Neighbor Quantum_Mechanics \(D=6\).
-- EM fold: [`APPLY_EM.md`](APPLY_EM.md) — CRC \(n_D\) and Maxwell \(n^2\). Neighbor Optics \(D=10\).
-- Chemistry ladder: [`APPLY_CHEMISTRY.md`](APPLY_CHEMISTRY.md) — CRC MW / \(T_m\) / \(T_b\) / density. Chemistry \(D=8\), Physical_Chemistry \(D=8\), Molecular_Chemistry \(D=9\).
-- Biology fold: [`APPLY_BIO.md`](APPLY_BIO.md) — NCBI mt-operon / AA MW. Neighbor Biochemistry \(D=13\). Dark: do not flip `observed`.
-- Signaling fold: [`APPLY_NEURO.md`](APPLY_NEURO.md) — CRC transmitter AA. Neighbor Biochemistry \(D=13\); not Psychology watts.
+- Catalog fold: MPCORB eccentricity failed ~62% on the wrong fold; Planetary_Science nest \(D=19\) brought the panel to **~0.023%**. Log: [`MPCORB_REFINEMENT_PROCESS.md`](MPCORB_REFINEMENT_PROCESS.md).
+- Wave fold: [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md) — PREM / \(b\)-value / dated cells. Neighbor Geophysics nest \(D=16\).
+- Light fold: [`APPLY_OPTICS.md`](APPLY_OPTICS.md) — CRC \(n_D\) wave vs photon. Neighbor Quantum_Optics nest \(D=8\).
+- Bulk fold: [`APPLY_MATERIALS.md`](APPLY_MATERIALS.md) — CRC density. Same nest generation as Optics (\(D=8\), look \(1\)).
+- Lab-sound fold: [`APPLY_ACOUSTICS.md`](APPLY_ACOUSTICS.md) — CRC \(c\); PREM \(v_P/v_S\). Neighbor Seismology nest \(D=15\).
+- Quantum-to-atom fold: [`APPLY_ATOMIC.md`](APPLY_ATOMIC.md) — NIST hydrogen \(a_0\)/\(R_\infty\); H–Ca ionization. Neighbor Quantum_Mechanics nest \(D=5\) (Particle floor). Atomic/HEP is the live look-split at \(D=6\).
+- EM fold: [`APPLY_EM.md`](APPLY_EM.md) — CRC \(n_D\) and Maxwell \(n^2\). Neighbor Optics nest \(D=8\).
+- Chemistry ladder: [`APPLY_CHEMISTRY.md`](APPLY_CHEMISTRY.md) — CRC MW / \(T_m\) / \(T_b\) / density. Chemistry / PhysChem nest \(D=6\); Molecular nest \(D=7\).
+- Biology fold: [`APPLY_BIO.md`](APPLY_BIO.md) — NCBI mt-operon / AA MW. Neighbor Biochemistry nest \(D=10\). Dark: do not flip `observed`.
+- Signaling fold: [`APPLY_NEURO.md`](APPLY_NEURO.md) — CRC transmitter AA. Neighbor Biochemistry nest \(D=10\); not Psychology watts.
 - Hilbert fold: [`APPLY_QC.md`](APPLY_QC.md) — CRC \(n_D\). Neighbor Optics / QO. Dark: do not flip `observed`.
 - Tank fold: [`APPLY_FLUID.md`](APPLY_FLUID.md) — NDBC neighborhood; \(\gamma=1.400\); \(e+\varphi\). Dark: do not flip `observed`.
 - Orifice fold: [`APPLY_NUCLEAR.md`](APPLY_NUCLEAR.md) — IAEA/ENDF keV. Neighbor Particle \(D=5\).

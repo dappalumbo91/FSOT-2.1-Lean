@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def exoplanet_system_architecture_observable_count : ℕ := 882
-def exoplanet_system_architecture_D_eff : ℕ := 21
-
+def exoplanet_system_architecture_D_eff : ℕ := 18
 theorem exoplanet_system_architecture_observable_count_pos : 0 < exoplanet_system_architecture_observable_count := by
   unfold exoplanet_system_architecture_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem exoplanet_system_architecture_median_error_under_half_pct :
 
 theorem exoplanet_system_architecture_bundle :
     exoplanet_system_architecture_observable_count = 882 ∧
-    exoplanet_system_architecture_D_eff = 21 ∧
+    exoplanet_system_architecture_D_eff = 18 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

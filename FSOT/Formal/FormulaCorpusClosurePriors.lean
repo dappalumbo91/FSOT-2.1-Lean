@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def formula_corpus_closure_observable_count : ℕ := 123
-def formula_corpus_closure_D_eff : ℕ := 17
-
+def formula_corpus_closure_D_eff : ℕ := 5
 theorem formula_corpus_closure_observable_count_pos : 0 < formula_corpus_closure_observable_count := by
   unfold formula_corpus_closure_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem formula_corpus_closure_median_error_under_half_pct :
 
 theorem formula_corpus_closure_bundle :
     formula_corpus_closure_observable_count = 123 ∧
-    formula_corpus_closure_D_eff = 17 ∧
+    formula_corpus_closure_D_eff = 5 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

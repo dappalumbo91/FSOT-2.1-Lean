@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def stellar_multiplicity_live_deep_observable_count : ℕ := 69
-def stellar_multiplicity_live_deep_D_eff : ℕ := 19
-
+def stellar_multiplicity_live_deep_D_eff : ℕ := 18
 theorem stellar_multiplicity_live_deep_observable_count_pos : 0 < stellar_multiplicity_live_deep_observable_count := by
   unfold stellar_multiplicity_live_deep_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem stellar_multiplicity_live_deep_median_error_under_half_pct :
 
 theorem stellar_multiplicity_live_deep_bundle :
     stellar_multiplicity_live_deep_observable_count = 69 ∧
-    stellar_multiplicity_live_deep_D_eff = 19 ∧
+    stellar_multiplicity_live_deep_D_eff = 18 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

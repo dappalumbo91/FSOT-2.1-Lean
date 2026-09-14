@@ -1,6 +1,6 @@
 # APPLY cookbook — Quantum Computing (Hilbert fold)
 
-**Pin:** D1D38A · **core:** `Quantum_Computing` · \(D_{\mathrm{eff}}=11\) · `observed=False` (**dark — Hilbert look; do not flip**) · \(\delta\psi=0.5\).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Quantum_Computing` · nest \(D=8\) · look \(1\) · `observed=False` (**dark — Hilbert medium; do not flip**). \(C\) does not enter \(S\). Same generation as Quantum_Optics (specimen).  
 **Neighbors:** Acoustics / Materials / Optics \(D=10\); Quantum_Optics \(D=11\), `observed=True`; Biology \(D=12\), also dark.  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §35.
 

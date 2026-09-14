@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def fractal_constant_recursion_observable_count : ℕ := 21
-def fractal_constant_recursion_D_eff : ℕ := 18
-
+def fractal_constant_recursion_D_eff : ℕ := 5
 theorem fractal_constant_recursion_observable_count_pos : 0 < fractal_constant_recursion_observable_count := by
   unfold fractal_constant_recursion_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem fractal_constant_recursion_median_error_under_half_pct :
 
 theorem fractal_constant_recursion_bundle :
     fractal_constant_recursion_observable_count = 21 ∧
-    fractal_constant_recursion_D_eff = 18 ∧
+    fractal_constant_recursion_D_eff = 5 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

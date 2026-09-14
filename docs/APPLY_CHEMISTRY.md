@@ -1,9 +1,9 @@
 # APPLY cookbook — Chemistry ladder (composition / thermo / molecule)
 
-**Pin:** D1D38A · **cores:** `Chemistry` \(D=8\), \(\delta\psi=0.6\); `Physical_Chemistry` \(D=8\), \(\delta\psi=0.5\); `Molecular_Chemistry` \(D=9\), \(\delta\psi=0.5\). All `observed=True`. Chemistry and PhysChem share \(C=e/\pi\). Mol uses \(C=\ln\pi/e\).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **cores:** `Chemistry` nest \(D=6\), `Physical_Chemistry` nest \(D=6\), `Molecular_Chemistry` nest \(D=7\). All look \(1\), hits \(0\), `observed=True`. \(C\) does not enter \(S\).  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §14–15, 22–23.  
-**Same 0.5/0.6 look:** Materials/Optics at \(D=10\).  
-**General protocol:** [`APPLY.md`](APPLY.md). One CRC table family, three zooms of the same specimen.
+**Same generation as Atomic/HEP** (\(D=6\)); those two are the remaining look-split (bound well vs collision). Chemistry and PhysChem are the **same** default-look specimen — live \(S\) is identical.  
+**General protocol:** [`APPLY.md`](APPLY.md). One CRC table family. Assigned \(\delta\psi=0.5/0.6\) is retired.
 
 ---
 
@@ -15,7 +15,7 @@
 | Melting / boiling \(T\) | CRC \(T_m\), \(T_b\) | A per-species Trouton constant |
 | Density | CRC \(\rho\) | Optical \(n_D\) (that is Optics) |
 
-Wrong object: \(\lvert S_{\mathrm{chem}}/S_{\mathrm{pc}}\rvert\) vs 1 (~22%). Same \(D=8\); the split is \(\delta\psi=0.6\) vs \(0.5\). That is the Materials/Optics look-split. Equalizing \(\delta\psi\) at \(D=8\) is an identity pad.
+Wrong object: \(\lvert S_{\mathrm{chem}}/S_{\mathrm{pc}}\rvert\) vs 1 on the *old assigned looks*. Live they share nest \(D=6\) and look \(1\), so that ratio is an identity. Do not gate it. Scoring \(n_D\) as MW is still the wrong fold.
 
 ---
 
@@ -30,13 +30,13 @@ If a residual is ugly, the usual miss is **scoring \(n_D\) or ionization as MW**
 ## 3. Route
 
 ```text
-S = domain_scalar("Chemistry")             # D=8, δψ=0.6, composition
+S = domain_scalar("Chemistry")             # nest D=6, look=1, composition
 computed, err% = fsot_scaled(MW, "Chemistry")
 
-S = domain_scalar("Physical_Chemistry")    # D=8, δψ=0.5, thermo
+S = domain_scalar("Physical_Chemistry")    # nest D=6, look=1, thermo (same S as Chemistry)
 computed, err% = fsot_scaled(Tm, "Physical_Chemistry")
 
-S = domain_scalar("Molecular_Chemistry")   # D=9, δψ=0.5, molecule
+S = domain_scalar("Molecular_Chemistry")   # nest D=7, look=1, molecule
 computed, err% = fsot_scaled(MW, "Molecular_Chemistry")
 ```
 

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def overflow_carry_emergence_panel_observable_count : ℕ := 29
-def overflow_carry_emergence_panel_D_eff : ℕ := 19
-
+def overflow_carry_emergence_panel_D_eff : ℕ := 11
 theorem overflow_carry_emergence_panel_observable_count_pos : 0 < overflow_carry_emergence_panel_observable_count := by
   unfold overflow_carry_emergence_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem overflow_carry_emergence_panel_median_error_under_half_pct :
 
 theorem overflow_carry_emergence_panel_bundle :
     overflow_carry_emergence_panel_observable_count = 29 ∧
-    overflow_carry_emergence_panel_D_eff = 19 ∧
+    overflow_carry_emergence_panel_D_eff = 11 ∧
     (0.009504 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

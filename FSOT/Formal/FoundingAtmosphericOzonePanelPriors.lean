@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def founding_atmospheric_ozone_panel_observable_count : ℕ := 24
-def founding_atmospheric_ozone_panel_D_eff : ℕ := 12
-
+def founding_atmospheric_ozone_panel_D_eff : ℕ := 13
 theorem founding_atmospheric_ozone_panel_observable_count_pos : 0 < founding_atmospheric_ozone_panel_observable_count := by
   unfold founding_atmospheric_ozone_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem founding_atmospheric_ozone_panel_median_error_under_half_pct :
 
 theorem founding_atmospheric_ozone_panel_bundle :
     founding_atmospheric_ozone_panel_observable_count = 24 ∧
-    founding_atmospheric_ozone_panel_D_eff = 12 ∧
+    founding_atmospheric_ozone_panel_D_eff = 13 ∧
     (0.022236 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

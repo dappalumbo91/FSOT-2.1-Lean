@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def programming_language_laws_observable_count : ℕ := 107
-def programming_language_laws_D_eff : ℕ := 15
-
+def programming_language_laws_D_eff : ℕ := 25
 theorem programming_language_laws_observable_count_pos : 0 < programming_language_laws_observable_count := by
   unfold programming_language_laws_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem programming_language_laws_median_error_under_half_pct :
 
 theorem programming_language_laws_bundle :
     programming_language_laws_observable_count = 107 ∧
-    programming_language_laws_D_eff = 15 ∧
+    programming_language_laws_D_eff = 25 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

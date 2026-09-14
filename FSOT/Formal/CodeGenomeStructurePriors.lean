@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def code_genome_structure_observable_count : ℕ := 205
-def code_genome_structure_D_eff : ℕ := 17
-
+def code_genome_structure_D_eff : ℕ := 9
 theorem code_genome_structure_observable_count_pos : 0 < code_genome_structure_observable_count := by
   unfold code_genome_structure_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem code_genome_structure_median_error_under_half_pct :
 
 theorem code_genome_structure_bundle :
     code_genome_structure_observable_count = 205 ∧
-    code_genome_structure_D_eff = 17 ∧
+    code_genome_structure_D_eff = 9 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

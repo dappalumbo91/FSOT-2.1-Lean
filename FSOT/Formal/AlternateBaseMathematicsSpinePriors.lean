@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def alternate_base_mathematics_spine_observable_count : ℕ := 24
-def alternate_base_mathematics_spine_D_eff : ℕ := 18
-
+def alternate_base_mathematics_spine_D_eff : ℕ := 25
 theorem alternate_base_mathematics_spine_observable_count_pos : 0 < alternate_base_mathematics_spine_observable_count := by
   unfold alternate_base_mathematics_spine_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem alternate_base_mathematics_spine_median_error_under_half_pct :
 
 theorem alternate_base_mathematics_spine_bundle :
     alternate_base_mathematics_spine_observable_count = 24 ∧
-    alternate_base_mathematics_spine_D_eff = 18 ∧
+    alternate_base_mathematics_spine_D_eff = 25 ∧
     (0.004184779870129773 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

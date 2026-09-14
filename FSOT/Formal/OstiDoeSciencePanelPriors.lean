@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def osti_doe_science_panel_observable_count : ℕ := 100
-def osti_doe_science_panel_D_eff : ℕ := 18
-
+def osti_doe_science_panel_D_eff : ℕ := 5
 theorem osti_doe_science_panel_observable_count_pos : 0 < osti_doe_science_panel_observable_count := by
   unfold osti_doe_science_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem osti_doe_science_panel_median_error_under_half_pct :
 
 theorem osti_doe_science_panel_bundle :
     osti_doe_science_panel_observable_count = 100 ∧
-    osti_doe_science_panel_D_eff = 18 ∧
+    osti_doe_science_panel_D_eff = 5 ∧
     (0.01382 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

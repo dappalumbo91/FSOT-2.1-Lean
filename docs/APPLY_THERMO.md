@@ -1,6 +1,6 @@
 # APPLY cookbook — Thermodynamics fold
 
-**Pin:** D1D38A · **core:** `Thermodynamics` · \(D_{\mathrm{eff}}=15\) · `observed=True` · \(C=\gamma/e\) · \(\delta\psi=0.9\) · hits=1.  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Thermodynamics` · nest \(D=12\) · look \(1\) · hits \(0\) · `observed=True`. \(C\) does not enter \(S\).  
 **Ceiling zoom:** `Cosmology` \(D=25\) (same fridge cycle). Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §3.  
 **Same rung:** `Nuclear_Physics` (orifice); `Fluid_Dynamics` (dark tank).  
 **Neighbor:** `Condensed_Matter` \(D=14\) (solid).  

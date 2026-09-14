@@ -14,8 +14,7 @@ open Real
 
 def star_trek_transporter_observable_count : ℕ := 1575
 def star_trek_transporter_median_error_pct : ℝ := (0.012464 : ℝ)
-def star_trek_transporter_D_eff : ℕ := 17
-
+def star_trek_transporter_D_eff : ℕ := 25
 def star_trek_transporter_info_preservation_proxy : ℝ := (0.981227203621 : ℝ)
 def star_trek_transporter_psi_entangle_gate : ℝ := (0.04803163401 : ℝ)
 def star_trek_transporter_psi_gate_pair : ℝ := (0.043599802456 : ℝ)
@@ -78,7 +77,7 @@ theorem star_trek_transporter_median_error_under_half_pct :
 
 theorem star_trek_transporter_bundle :
     star_trek_transporter_observable_count = 1575 ∧
-    star_trek_transporter_D_eff = 17 ∧
+    star_trek_transporter_D_eff = 25 ∧
     star_trek_transporter_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "quantum") > 0 := by
   refine ⟨

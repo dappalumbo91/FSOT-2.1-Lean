@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def symbolic_archetype_panel_observable_count : ℕ := 28
-def symbolic_archetype_panel_D_eff : ℕ := 17
-
+def symbolic_archetype_panel_D_eff : ℕ := 25
 theorem symbolic_archetype_panel_observable_count_pos : 0 < symbolic_archetype_panel_observable_count := by
   unfold symbolic_archetype_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem symbolic_archetype_panel_median_error_under_half_pct :
 
 theorem symbolic_archetype_panel_bundle :
     symbolic_archetype_panel_observable_count = 28 ∧
-    symbolic_archetype_panel_D_eff = 17 ∧
+    symbolic_archetype_panel_D_eff = 25 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

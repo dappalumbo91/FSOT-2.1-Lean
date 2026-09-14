@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def ethology_panel_observable_count : ℕ := 100
-def ethology_panel_D_eff : ℕ := 15
-
+def ethology_panel_D_eff : ℕ := 9
 theorem ethology_panel_observable_count_pos : 0 < ethology_panel_observable_count := by
   unfold ethology_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem ethology_panel_median_error_under_half_pct :
 
 theorem ethology_panel_bundle :
     ethology_panel_observable_count = 100 ∧
-    ethology_panel_D_eff = 15 ∧
+    ethology_panel_D_eff = 9 ∧
     (0.006607 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

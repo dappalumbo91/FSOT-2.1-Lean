@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def ncbi_gene_public_panel_observable_count : ℕ := 48
-def ncbi_gene_public_panel_D_eff : ℕ := 12
-
+def ncbi_gene_public_panel_D_eff : ℕ := 9
 theorem ncbi_gene_public_panel_observable_count_pos : 0 < ncbi_gene_public_panel_observable_count := by
   unfold ncbi_gene_public_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem ncbi_gene_public_panel_median_error_under_half_pct :
 
 theorem ncbi_gene_public_panel_bundle :
     ncbi_gene_public_panel_observable_count = 48 ∧
-    ncbi_gene_public_panel_D_eff = 12 ∧
+    ncbi_gene_public_panel_D_eff = 9 ∧
     (0.025571999999999998 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

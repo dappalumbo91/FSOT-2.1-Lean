@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def consciousness_genetics_species_panel_observable_count : ℕ := 27
-def consciousness_genetics_species_panel_D_eff : ℕ := 18
-
+def consciousness_genetics_species_panel_D_eff : ℕ := 11
 theorem consciousness_genetics_species_panel_observable_count_pos : 0 < consciousness_genetics_species_panel_observable_count := by
   unfold consciousness_genetics_species_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem consciousness_genetics_species_panel_median_error_under_half_pct :
 
 theorem consciousness_genetics_species_panel_bundle :
     consciousness_genetics_species_panel_observable_count = 27 ∧
-    consciousness_genetics_species_panel_D_eff = 18 ∧
+    consciousness_genetics_species_panel_D_eff = 11 ∧
     (0.022236 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

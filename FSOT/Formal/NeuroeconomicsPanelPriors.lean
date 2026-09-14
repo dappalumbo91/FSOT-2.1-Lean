@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def neuroeconomics_panel_observable_count : ℕ := 20
-def neuroeconomics_panel_D_eff : ℕ := 16
-
+def neuroeconomics_panel_D_eff : ℕ := 11
 theorem neuroeconomics_panel_observable_count_pos : 0 < neuroeconomics_panel_observable_count := by
   unfold neuroeconomics_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem neuroeconomics_panel_median_error_under_half_pct :
 
 theorem neuroeconomics_panel_bundle :
     neuroeconomics_panel_observable_count = 20 ∧
-    neuroeconomics_panel_D_eff = 16 ∧
+    neuroeconomics_panel_D_eff = 11 ∧
     (0.031506 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

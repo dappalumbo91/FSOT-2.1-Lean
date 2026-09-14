@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def noaa_ndbc_buoy_panel_observable_count : ℕ := 596
-def noaa_ndbc_buoy_panel_D_eff : ℕ := 17
-
+def noaa_ndbc_buoy_panel_D_eff : ℕ := 12
 theorem noaa_ndbc_buoy_panel_observable_count_pos : 0 < noaa_ndbc_buoy_panel_observable_count := by
   unfold noaa_ndbc_buoy_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem noaa_ndbc_buoy_panel_median_error_under_half_pct :
 
 theorem noaa_ndbc_buoy_panel_bundle :
     noaa_ndbc_buoy_panel_observable_count = 596 ∧
-    noaa_ndbc_buoy_panel_D_eff = 17 ∧
+    noaa_ndbc_buoy_panel_D_eff = 12 ∧
     (0.028287 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

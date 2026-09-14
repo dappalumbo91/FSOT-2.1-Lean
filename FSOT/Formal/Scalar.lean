@@ -40,6 +40,8 @@ def theta_s : Real := sin (psi_con * eta_eff)
 def poof_factor : Real := exp (-(log pi / e) / (eta_eff * log phi))
 def acoustic_bleed : Real := sin (pi / e) * phi / sqrt2
 def phase_variance : Real := -cos (theta_s + pi)
+/-- Python engine identity π⁻⁴. Interval proofs in Bounds.lean still use 0.01 / 99/100. -/
+def pi_inv4 : Real := 1 / pi ^ 4
 def coherence_efficiency : Real := (1 - poof_factor * sin theta_s) * (1 + 0.01 * catalan_G / (pi * phi))
 def bleed_in_factor : Real := coherence_efficiency * (1 - sin theta_s / phi)
 def acoustic_inflow : Real := acoustic_bleed * (1 + cos theta_s / phi)
@@ -47,6 +49,7 @@ def suction_factor : Real := poof_factor * -cos (theta_s - pi)
 def chaos_factor : Real := gamma / omega
 def new_perceived_param : Real := (gamma_euler / e) * sqrt2
 def consciousness_factor : Real := coherence_efficiency * new_perceived_param
+/-- Python engine uses (1 − π⁻⁴). This Real layer keeps 99/100 until Bounds nlinarith migrates. -/
 def k : Real := phi * (gamma_euler / e) * sqrt2 / log pi * (99 / 100)
 
 -- ============================================================
@@ -101,7 +104,9 @@ def raw_S (p : FSOTParams) : Real :=
 
 def scaled_S (p : FSOTParams) : Real := raw_S p * k
 
-/-- Base `FSOTParams` for a named domain (D_eff coupling to the 25D fluid manifold). -/
+/-- Coarse Lean aliases. Compactification authority is `DerivedNest` (Python nest).
+These rows still encode older assigned looks used by existing positivity proofs.
+Do not quote this table as live ToE \(D_{\mathrm{eff}}\). -/
 def get_domain_params (domain : String) : FSOTParams :=
   match domain with
   | "quantum"       => { D_eff := 6,  recent_hits := 0, delta_psi := 1.0,   observed := true }

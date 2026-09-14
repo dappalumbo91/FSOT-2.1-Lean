@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def cardiology_panel_observable_count : ℕ := 20
-def cardiology_panel_D_eff : ℕ := 14
-
+def cardiology_panel_D_eff : ℕ := 10
 theorem cardiology_panel_observable_count_pos : 0 < cardiology_panel_observable_count := by
   unfold cardiology_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem cardiology_panel_median_error_under_half_pct :
 
 theorem cardiology_panel_bundle :
     cardiology_panel_observable_count = 20 ∧
-    cardiology_panel_D_eff = 14 ∧
+    cardiology_panel_D_eff = 10 ∧
     (0.015311 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

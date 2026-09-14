@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def proof_carrying_code_genome_observable_count : ℕ := 25
-def proof_carrying_code_genome_D_eff : ℕ := 16
-
+def proof_carrying_code_genome_D_eff : ℕ := 25
 theorem proof_carrying_code_genome_observable_count_pos : 0 < proof_carrying_code_genome_observable_count := by
   unfold proof_carrying_code_genome_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem proof_carrying_code_genome_median_error_under_half_pct :
 
 theorem proof_carrying_code_genome_bundle :
     proof_carrying_code_genome_observable_count = 25 ∧
-    proof_carrying_code_genome_D_eff = 16 ∧
+    proof_carrying_code_genome_D_eff = 25 ∧
     (0.0051685586271776884 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

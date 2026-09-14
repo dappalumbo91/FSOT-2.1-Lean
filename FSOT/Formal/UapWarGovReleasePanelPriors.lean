@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def uap_war_gov_release_panel_observable_count : ℕ := 542
-def uap_war_gov_release_panel_D_eff : ℕ := 20
-
+def uap_war_gov_release_panel_D_eff : ℕ := 5
 theorem uap_war_gov_release_panel_observable_count_pos : 0 < uap_war_gov_release_panel_observable_count := by
   unfold uap_war_gov_release_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem uap_war_gov_release_panel_median_error_under_half_pct :
 
 theorem uap_war_gov_release_panel_bundle :
     uap_war_gov_release_panel_observable_count = 542 ∧
-    uap_war_gov_release_panel_D_eff = 20 ∧
+    uap_war_gov_release_panel_D_eff = 5 ∧
     (0.008488 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

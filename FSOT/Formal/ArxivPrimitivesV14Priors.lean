@@ -13,8 +13,7 @@ open Real
 
 def arxiv_primitives_v14_observable_count : ℕ := 14
 def arxiv_primitives_v14_median_error_pct : ℝ := (0.0 : ℝ)
-def arxiv_primitives_v14_D_eff : ℕ := 12
-
+def arxiv_primitives_v14_D_eff : ℕ := 11
 theorem arxiv_primitives_v14_observable_count_pos : 0 < arxiv_primitives_v14_observable_count := by
   unfold arxiv_primitives_v14_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem arxiv_primitives_v14_median_error_under_five_pct :
 
 theorem arxiv_primitives_v14_bundle :
     arxiv_primitives_v14_observable_count = 14 ∧
-    arxiv_primitives_v14_D_eff = 12 ∧
+    arxiv_primitives_v14_D_eff = 11 ∧
     arxiv_primitives_v14_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

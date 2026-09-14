@@ -13,8 +13,7 @@ open Real
 
 def formula_corpus_cnc_observable_count : ℕ := 10
 def formula_corpus_cnc_median_error_pct : ℝ := (0.0 : ℝ)
-def formula_corpus_cnc_D_eff : ℕ := 17
-
+def formula_corpus_cnc_D_eff : ℕ := 5
 theorem formula_corpus_cnc_observable_count_pos : 0 < formula_corpus_cnc_observable_count := by
   unfold formula_corpus_cnc_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem formula_corpus_cnc_median_error_under_five_pct :
 
 theorem formula_corpus_cnc_bundle :
     formula_corpus_cnc_observable_count = 10 ∧
-    formula_corpus_cnc_D_eff = 17 ∧
+    formula_corpus_cnc_D_eff = 5 ∧
     formula_corpus_cnc_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨

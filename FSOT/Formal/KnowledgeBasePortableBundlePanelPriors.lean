@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def knowledge_base_portable_bundle_panel_observable_count : ℕ := 24
-def knowledge_base_portable_bundle_panel_D_eff : ℕ := 19
-
+def knowledge_base_portable_bundle_panel_D_eff : ℕ := 5
 theorem knowledge_base_portable_bundle_panel_observable_count_pos : 0 < knowledge_base_portable_bundle_panel_observable_count := by
   unfold knowledge_base_portable_bundle_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem knowledge_base_portable_bundle_panel_median_error_under_half_pct :
 
 theorem knowledge_base_portable_bundle_panel_bundle :
     knowledge_base_portable_bundle_panel_observable_count = 24 ∧
-    knowledge_base_portable_bundle_panel_D_eff = 19 ∧
+    knowledge_base_portable_bundle_panel_D_eff = 5 ∧
     (0.0020923899350648867 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

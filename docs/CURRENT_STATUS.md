@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-14T21:35:58.947944+00:00`  
+**Generated:** `2026-09-14T22:02:52.527478+00:00`  
 **Edition stamp:** 2026-09-14  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -10,9 +10,9 @@
 
 | Item | Value |
 |------|-------|
-| Pin | **3FBCE5** |
+| Pin | **AEB2AD** |
 | Match | **True** |
-| SHA-256 | `3FBCE5F87825F150…` |
+| SHA-256 | `AEB2ADAD6E80F487…` |
 | Path | `vendor/fsot_compute.py` |
 | Formula authority | **FORMULA_AUTHORITY_SYSTEM_CLOSED** (all_ok=True) |
 | Parameters | **ZERO_FREE — 0.99/0.01/10 are π identities; D_eff from nest; look/hits/observed named laws; species inherit Neuroscience; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.** |

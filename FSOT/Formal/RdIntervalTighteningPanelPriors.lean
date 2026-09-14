@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def rd_interval_tightening_panel_observable_count : ℕ := 24
-def rd_interval_tightening_panel_D_eff : ℕ := 22
-
+def rd_interval_tightening_panel_D_eff : ℕ := 25
 theorem rd_interval_tightening_panel_observable_count_pos : 0 < rd_interval_tightening_panel_observable_count := by
   unfold rd_interval_tightening_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem rd_interval_tightening_panel_median_error_under_half_pct :
 
 theorem rd_interval_tightening_panel_bundle :
     rd_interval_tightening_panel_observable_count = 24 ∧
-    rd_interval_tightening_panel_D_eff = 22 ∧
+    rd_interval_tightening_panel_D_eff = 25 ∧
     (0.000502 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

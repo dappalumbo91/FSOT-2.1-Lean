@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def stsci_mast_telescope_panel_observable_count : ℕ := 377
-def stsci_mast_telescope_panel_D_eff : ℕ := 21
-
+def stsci_mast_telescope_panel_D_eff : ℕ := 18
 theorem stsci_mast_telescope_panel_observable_count_pos : 0 < stsci_mast_telescope_panel_observable_count := by
   unfold stsci_mast_telescope_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem stsci_mast_telescope_panel_median_error_under_half_pct :
 
 theorem stsci_mast_telescope_panel_bundle :
     stsci_mast_telescope_panel_observable_count = 377 ∧
-    stsci_mast_telescope_panel_D_eff = 21 ∧
+    stsci_mast_telescope_panel_D_eff = 18 ∧
     (0.022461 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

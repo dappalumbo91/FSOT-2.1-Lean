@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def clinicaltrials_medical_panel_observable_count : ℕ := 394
-def clinicaltrials_medical_panel_D_eff : ℕ := 13
-
+def clinicaltrials_medical_panel_D_eff : ℕ := 10
 theorem clinicaltrials_medical_panel_observable_count_pos : 0 < clinicaltrials_medical_panel_observable_count := by
   unfold clinicaltrials_medical_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem clinicaltrials_medical_panel_median_error_under_half_pct :
 
 theorem clinicaltrials_medical_panel_bundle :
     clinicaltrials_medical_panel_observable_count = 394 ∧
-    clinicaltrials_medical_panel_D_eff = 13 ∧
+    clinicaltrials_medical_panel_D_eff = 10 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

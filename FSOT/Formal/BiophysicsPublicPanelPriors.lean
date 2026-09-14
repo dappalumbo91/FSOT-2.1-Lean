@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def biophysics_public_panel_observable_count : ℕ := 24
-def biophysics_public_panel_D_eff : ℕ := 12
-
+def biophysics_public_panel_D_eff : ℕ := 9
 theorem biophysics_public_panel_observable_count_pos : 0 < biophysics_public_panel_observable_count := by
   unfold biophysics_public_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem biophysics_public_panel_median_error_under_half_pct :
 
 theorem biophysics_public_panel_bundle :
     biophysics_public_panel_observable_count = 24 ∧
-    biophysics_public_panel_D_eff = 12 ∧
+    biophysics_public_panel_D_eff = 9 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

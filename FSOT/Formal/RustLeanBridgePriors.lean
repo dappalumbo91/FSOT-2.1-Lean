@@ -13,8 +13,7 @@ open Real
 
 def rust_lean_bridge_observable_count : ℕ := 9
 def rust_lean_bridge_median_error_pct : ℝ := (0.0 : ℝ)
-def rust_lean_bridge_D_eff : ℕ := 8
-
+def rust_lean_bridge_D_eff : ℕ := 11
 theorem rust_lean_bridge_observable_count_pos : 0 < rust_lean_bridge_observable_count := by
   unfold rust_lean_bridge_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem rust_lean_bridge_median_error_under_five_pct :
 
 theorem rust_lean_bridge_bundle :
     rust_lean_bridge_observable_count = 9 ∧
-    rust_lean_bridge_D_eff = 8 ∧
+    rust_lean_bridge_D_eff = 11 ∧
     rust_lean_bridge_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

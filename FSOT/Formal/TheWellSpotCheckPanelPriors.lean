@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def the_well_spot_check_panel_observable_count : ℕ := 24
-def the_well_spot_check_panel_D_eff : ℕ := 18
-
+def the_well_spot_check_panel_D_eff : ℕ := 5
 theorem the_well_spot_check_panel_observable_count_pos : 0 < the_well_spot_check_panel_observable_count := by
   unfold the_well_spot_check_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem the_well_spot_check_panel_median_error_under_half_pct :
 
 theorem the_well_spot_check_panel_bundle :
     the_well_spot_check_panel_observable_count = 24 ∧
-    the_well_spot_check_panel_D_eff = 18 ∧
+    the_well_spot_check_panel_D_eff = 5 ∧
     (0.031159 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

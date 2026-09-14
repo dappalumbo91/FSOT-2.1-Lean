@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def econometrics_observable_count : ℕ := 172
-def econometrics_D_eff : ℕ := 19
-
+def econometrics_D_eff : ℕ := 25
 theorem econometrics_observable_count_pos : 0 < econometrics_observable_count := by
   unfold econometrics_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem econometrics_median_error_under_half_pct :
 
 theorem econometrics_bundle :
     econometrics_observable_count = 172 ∧
-    econometrics_D_eff = 19 ∧
+    econometrics_D_eff = 25 ∧
     (0.12920090413715177 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

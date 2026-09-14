@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def living_fsot_hardware_panel_observable_count : ℕ := 77
-def living_fsot_hardware_panel_D_eff : ℕ := 15
-
+def living_fsot_hardware_panel_D_eff : ℕ := 11
 theorem living_fsot_hardware_panel_observable_count_pos : 0 < living_fsot_hardware_panel_observable_count := by
   unfold living_fsot_hardware_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem living_fsot_hardware_panel_median_error_under_half_pct :
 
 theorem living_fsot_hardware_panel_bundle :
     living_fsot_hardware_panel_observable_count = 77 ∧
-    living_fsot_hardware_panel_D_eff = 15 ∧
+    living_fsot_hardware_panel_D_eff = 11 ∧
     (0.031506 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

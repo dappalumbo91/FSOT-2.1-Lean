@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def cosmology_anomaly_deep_panel_observable_count : ℕ := 24
-def cosmology_anomaly_deep_panel_D_eff : ℕ := 24
-
+def cosmology_anomaly_deep_panel_D_eff : ℕ := 25
 theorem cosmology_anomaly_deep_panel_observable_count_pos : 0 < cosmology_anomaly_deep_panel_observable_count := by
   unfold cosmology_anomaly_deep_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem cosmology_anomaly_deep_panel_median_error_under_half_pct :
 
 theorem cosmology_anomaly_deep_panel_bundle :
     cosmology_anomaly_deep_panel_observable_count = 24 ∧
-    cosmology_anomaly_deep_panel_D_eff = 24 ∧
+    cosmology_anomaly_deep_panel_D_eff = 25 ∧
     (0.029733 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

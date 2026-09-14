@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def open_meteo_live_panel_observable_count : ℕ := 432
-def open_meteo_live_panel_D_eff : ℕ := 16
-
+def open_meteo_live_panel_D_eff : ℕ := 12
 theorem open_meteo_live_panel_observable_count_pos : 0 < open_meteo_live_panel_observable_count := by
   unfold open_meteo_live_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem open_meteo_live_panel_median_error_under_half_pct :
 
 theorem open_meteo_live_panel_bundle :
     open_meteo_live_panel_observable_count = 432 ∧
-    open_meteo_live_panel_D_eff = 16 ∧
+    open_meteo_live_panel_D_eff = 12 ∧
     (0.026204 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -13,8 +13,7 @@ open Real
 
 def longevity_extreme_species_observable_count : ℕ := 164
 def longevity_extreme_species_median_error_pct : ℝ := (0.017789 : ℝ)
-def longevity_extreme_species_D_eff : ℕ := 21
-
+def longevity_extreme_species_D_eff : ℕ := 9
 theorem longevity_extreme_species_observable_count_pos : 0 < longevity_extreme_species_observable_count := by
   unfold longevity_extreme_species_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem longevity_extreme_species_median_error_under_five_pct :
 
 theorem longevity_extreme_species_bundle :
     longevity_extreme_species_observable_count = 164 ∧
-    longevity_extreme_species_D_eff = 21 ∧
+    longevity_extreme_species_D_eff = 9 ∧
     longevity_extreme_species_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨

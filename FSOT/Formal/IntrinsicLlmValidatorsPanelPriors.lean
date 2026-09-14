@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def intrinsic_llm_validators_panel_observable_count : ℕ := 21
-def intrinsic_llm_validators_panel_D_eff : ℕ := 14
-
+def intrinsic_llm_validators_panel_D_eff : ℕ := 25
 theorem intrinsic_llm_validators_panel_observable_count_pos : 0 < intrinsic_llm_validators_panel_observable_count := by
   unfold intrinsic_llm_validators_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem intrinsic_llm_validators_panel_median_error_under_half_pct :
 
 theorem intrinsic_llm_validators_panel_bundle :
     intrinsic_llm_validators_panel_observable_count = 21 ∧
-    intrinsic_llm_validators_panel_D_eff = 14 ∧
+    intrinsic_llm_validators_panel_D_eff = 25 ∧
     (0.014767 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

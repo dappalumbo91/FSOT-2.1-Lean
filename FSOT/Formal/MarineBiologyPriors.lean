@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def marine_biology_observable_count : ℕ := 540
-def marine_biology_D_eff : ℕ := 15
-
+def marine_biology_D_eff : ℕ := 9
 theorem marine_biology_observable_count_pos : 0 < marine_biology_observable_count := by
   unfold marine_biology_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem marine_biology_median_error_under_half_pct :
 
 theorem marine_biology_bundle :
     marine_biology_observable_count = 540 ∧
-    marine_biology_D_eff = 15 ∧
+    marine_biology_D_eff = 9 ∧
     (0.022236250385192644 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

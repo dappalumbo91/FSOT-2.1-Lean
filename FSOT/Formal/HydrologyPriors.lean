@@ -14,7 +14,7 @@ open Real
 def hydrology_month_count : ℕ := 960
 def hydrology_station_count : ℕ := 8
 def hydrology_stability_match_count : ℕ := 957
-def hydrology_D_eff : ℕ := 15
+def hydrology_D_eff : ℕ := 12
 def hydrology_stability_match_rate : ℝ := (0.996875 : ℝ)
 
 theorem hydrology_month_count_pos : 0 < hydrology_month_count := by
@@ -33,7 +33,7 @@ theorem hydrology_bundle :
     hydrology_month_count = 960 ∧
     hydrology_station_count = 8 ∧
     hydrology_stability_match_count = 957 ∧
-    hydrology_D_eff = 15 ∧
+    hydrology_D_eff = 12 ∧
     hydrology_stability_match_count ≤ hydrology_month_count ∧
     (0 : ℝ) ≤ hydrology_stability_match_rate ∧
     raw_S (get_domain_params "energy") > 0 := by

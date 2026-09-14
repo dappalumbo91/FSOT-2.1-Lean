@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def cold_fusion_lab_synthesis_crosswalk_observable_count : ℕ := 22
-def cold_fusion_lab_synthesis_crosswalk_D_eff : ℕ := 15
-
+def cold_fusion_lab_synthesis_crosswalk_D_eff : ℕ := 12
 theorem cold_fusion_lab_synthesis_crosswalk_observable_count_pos : 0 < cold_fusion_lab_synthesis_crosswalk_observable_count := by
   unfold cold_fusion_lab_synthesis_crosswalk_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem cold_fusion_lab_synthesis_crosswalk_median_error_under_half_pct :
 
 theorem cold_fusion_lab_synthesis_crosswalk_bundle :
     cold_fusion_lab_synthesis_crosswalk_observable_count = 22 ∧
-    cold_fusion_lab_synthesis_crosswalk_D_eff = 15 ∧
+    cold_fusion_lab_synthesis_crosswalk_D_eff = 12 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def arxiv_brain_knowledge_panel_observable_count : ℕ := 20
-def arxiv_brain_knowledge_panel_D_eff : ℕ := 16
-
+def arxiv_brain_knowledge_panel_D_eff : ℕ := 11
 theorem arxiv_brain_knowledge_panel_observable_count_pos : 0 < arxiv_brain_knowledge_panel_observable_count := by
   unfold arxiv_brain_knowledge_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem arxiv_brain_knowledge_panel_median_error_under_half_pct :
 
 theorem arxiv_brain_knowledge_panel_bundle :
     arxiv_brain_knowledge_panel_observable_count = 20 ∧
-    arxiv_brain_knowledge_panel_D_eff = 16 ∧
+    arxiv_brain_knowledge_panel_D_eff = 11 ∧
     (0.018003 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

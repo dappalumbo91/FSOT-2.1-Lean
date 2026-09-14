@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def preregistered_outcome_tracking_observable_count : ℕ := 56
-def preregistered_outcome_tracking_D_eff : ℕ := 17
-
+def preregistered_outcome_tracking_D_eff : ℕ := 25
 theorem preregistered_outcome_tracking_observable_count_pos : 0 < preregistered_outcome_tracking_observable_count := by
   unfold preregistered_outcome_tracking_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem preregistered_outcome_tracking_median_error_under_half_pct :
 
 theorem preregistered_outcome_tracking_bundle :
     preregistered_outcome_tracking_observable_count = 56 ∧
-    preregistered_outcome_tracking_D_eff = 17 ∧
+    preregistered_outcome_tracking_D_eff = 25 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def domain_orbital_predictions_observable_count : ℕ := 24
-def domain_orbital_predictions_D_eff : ℕ := 19
-
+def domain_orbital_predictions_D_eff : ℕ := 5
 theorem domain_orbital_predictions_observable_count_pos : 0 < domain_orbital_predictions_observable_count := by
   unfold domain_orbital_predictions_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem domain_orbital_predictions_median_error_under_half_pct :
 
 theorem domain_orbital_predictions_bundle :
     domain_orbital_predictions_observable_count = 24 ∧
-    domain_orbital_predictions_D_eff = 19 ∧
+    domain_orbital_predictions_D_eff = 5 ∧
     (0.01529034996934153 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

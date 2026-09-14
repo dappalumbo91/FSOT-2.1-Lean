@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def gaia_dr3_tap_deep_observable_count : ℕ := 1826
-def gaia_dr3_tap_deep_D_eff : ℕ := 20
-
+def gaia_dr3_tap_deep_D_eff : ℕ := 18
 theorem gaia_dr3_tap_deep_observable_count_pos : 0 < gaia_dr3_tap_deep_observable_count := by
   unfold gaia_dr3_tap_deep_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem gaia_dr3_tap_deep_median_error_under_half_pct :
 
 theorem gaia_dr3_tap_deep_bundle :
     gaia_dr3_tap_deep_observable_count = 1826 ∧
-    gaia_dr3_tap_deep_D_eff = 20 ∧
+    gaia_dr3_tap_deep_D_eff = 18 ∧
     (0.022461 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

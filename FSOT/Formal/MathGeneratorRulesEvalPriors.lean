@@ -15,7 +15,7 @@ open Real
 def math_generator_rules_eval_observable_count : ℕ := 1552
 def math_generator_rules_eval_corpus_count : ℕ := 62
 def math_generator_rules_eval_numeric_eval_count : ℕ := 6
-def math_generator_rules_eval_D_eff : ℕ := 17
+def math_generator_rules_eval_D_eff : ℕ := 5
 def math_generator_rules_eval_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def math_generator_rules_eval_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def math_generator_rules_eval_beats_sota_headlines : ℕ := 4
@@ -43,7 +43,7 @@ theorem math_generator_rules_eval_bundle :
     math_generator_rules_eval_observable_count = 1552 ∧
     math_generator_rules_eval_corpus_count = 62 ∧
     math_generator_rules_eval_numeric_eval_count = 6 ∧
-    math_generator_rules_eval_D_eff = 17 ∧
+    math_generator_rules_eval_D_eff = 5 ∧
     math_generator_rules_eval_pooled_median_error_pct < (0.5 : ℝ) ∧
     math_generator_rules_eval_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < math_generator_rules_eval_beats_sota_headlines ∧

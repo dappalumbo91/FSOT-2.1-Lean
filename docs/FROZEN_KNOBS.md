@@ -29,6 +29,10 @@ Five seeds → \(D=5\) at \(g=0\). Ceiling \(5^2=25\) at the last generation. Yo
 
 `observed`: medium (dark) vs specimen (look). Ontology of the fold, not a per-row switch. Named law: `_fold_observed` — a core is dark iff it is in `MEDIUM_ORIFICES` (the bulk fluid: Cosmology, QG, Biology, Fluid, Ecology, weather/ocean/crust columns, QC as compute medium, messenger Particle_Astrophysics). Everything else is a counted specimen.
 
+## \(C\) does not enter \(S\)
+
+`DomainConfig.C` is `_fold_C` — a named interpretation label (seed identity of the orifice). It is **not** an input to `compute_scalar`. Compactification is \(D_{\mathrm{eff}}\). Observer channel is look / hits / observed. Do not retune \(C\) to green a residual.
+
 ## Species are not a D
 
 Brains sit on the Neuroscience nest (`D=11` this edition). Neuron count \(N\) and volume \(V\) are specimen literature. There is no Human-14 / Honeybee-4 table. Honeybee \(D=4\) was below the particle floor — that was a knob. Density is \(N/(|S_{\mathrm{neuro}}|\cdot V)\).
@@ -64,4 +68,4 @@ After the nest, Quantum_Mechanics shares Particle at \(D=5\). \(\Omega_b h^2\) a
 
 ## Hash gate
 
-`python scripts/audit_parameter_count.py` fails if these identities move without a new pin. Previous pin **D1D38A** held the rounded decimals. **3090BC** held π identities with assigned \(D\). **FE23A2** derived \(D_{\mathrm{eff}}\). This edition also derives observed, species, and the baryon/DM object.
+`python scripts/audit_parameter_count.py` fails if these identities move without a new pin. Previous pin **D1D38A** held the rounded decimals. **3090BC** held π identities with assigned \(D\). **FE23A2** derived \(D_{\mathrm{eff}}\). **3FBCE5** derived observed/species and the baryon/DM chemistry object. This edition names `_fold_C` (unused by \(S\)). Python and `FSOT.Scalar` (Float) use \(\pi\) identities. Lean `FSOT.Formal` Real `k` / `C_{\mathrm{eff}}\) still write \(99/100\) and \(0.01\) because Bounds interval proofs are not migrated. `get_domain_params` still stores older assigned looks; live \(D\) is `DerivedNest`.

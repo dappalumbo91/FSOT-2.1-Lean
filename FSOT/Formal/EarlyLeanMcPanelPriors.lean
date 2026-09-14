@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def early_lean_mc_panel_observable_count : ℕ := 24
-def early_lean_mc_panel_D_eff : ℕ := 11
-
+def early_lean_mc_panel_D_eff : ℕ := 25
 theorem early_lean_mc_panel_observable_count_pos : 0 < early_lean_mc_panel_observable_count := by
   unfold early_lean_mc_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem early_lean_mc_panel_median_error_under_half_pct :
 
 theorem early_lean_mc_panel_bundle :
     early_lean_mc_panel_observable_count = 24 ∧
-    early_lean_mc_panel_D_eff = 11 ∧
+    early_lean_mc_panel_D_eff = 25 ∧
     (0.014767 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

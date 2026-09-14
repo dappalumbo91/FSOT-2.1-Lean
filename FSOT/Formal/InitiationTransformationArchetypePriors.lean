@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def initiation_transformation_archetype_observable_count : ℕ := 24
-def initiation_transformation_archetype_D_eff : ℕ := 17
-
+def initiation_transformation_archetype_D_eff : ℕ := 25
 theorem initiation_transformation_archetype_observable_count_pos : 0 < initiation_transformation_archetype_observable_count := by
   unfold initiation_transformation_archetype_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem initiation_transformation_archetype_median_error_under_half_pct :
 
 theorem initiation_transformation_archetype_bundle :
     initiation_transformation_archetype_observable_count = 24 ∧
-    initiation_transformation_archetype_D_eff = 17 ∧
+    initiation_transformation_archetype_D_eff = 25 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def toe_unification_spine_observable_count : ℕ := 24
-def toe_unification_spine_D_eff : ℕ := 20
-
+def toe_unification_spine_D_eff : ℕ := 5
 theorem toe_unification_spine_observable_count_pos : 0 < toe_unification_spine_observable_count := by
   unfold toe_unification_spine_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem toe_unification_spine_median_error_under_half_pct :
 
 theorem toe_unification_spine_bundle :
     toe_unification_spine_observable_count = 24 ∧
-    toe_unification_spine_D_eff = 20 ∧
+    toe_unification_spine_D_eff = 5 ∧
     (0.01900826880249791 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

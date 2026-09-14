@@ -1,6 +1,6 @@
 # APPLY cookbook — Psychology (psychometric fold)
 
-**Pin:** D1D38A · **core:** `Psychology` · \(D_{\mathrm{eff}}=16\) · `observed=True` · \(\delta\psi=1.15\).  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Psychology` · nest \(D=13\) · look \(1\) · `observed=True`. \(C\) does not enter \(S\). Same generation as Meteorology (dark).  
 **Neighbors:** Fluid / Nuclear / Thermo \(D=15\); Meteorology \(D=16\), dark; Atmospheric / Ocean \(D=17\), dark; Ecology \(D=15\), dark.  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §37.
 

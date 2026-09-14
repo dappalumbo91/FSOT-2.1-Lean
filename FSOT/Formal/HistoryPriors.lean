@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def history_observable_count : ℕ := 170
-def history_D_eff : ℕ := 15
-
+def history_D_eff : ℕ := 25
 theorem history_observable_count_pos : 0 < history_observable_count := by
   unfold history_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem history_median_error_under_half_pct :
 
 theorem history_bundle :
     history_observable_count = 170 ∧
-    history_D_eff = 15 ∧
+    history_D_eff = 25 ∧
     (0.019504399572477397 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

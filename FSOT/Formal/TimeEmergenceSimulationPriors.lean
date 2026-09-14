@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def time_emergence_simulation_observable_count : ℕ := 28
-def time_emergence_simulation_D_eff : ℕ := 18
-
+def time_emergence_simulation_D_eff : ℕ := 5
 theorem time_emergence_simulation_observable_count_pos : 0 < time_emergence_simulation_observable_count := by
   unfold time_emergence_simulation_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem time_emergence_simulation_median_error_under_half_pct :
 
 theorem time_emergence_simulation_bundle :
     time_emergence_simulation_observable_count = 28 ∧
-    time_emergence_simulation_D_eff = 18 ∧
+    time_emergence_simulation_D_eff = 5 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

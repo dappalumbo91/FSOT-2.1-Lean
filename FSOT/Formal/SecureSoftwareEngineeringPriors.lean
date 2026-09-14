@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def secure_software_engineering_observable_count : ℕ := 59
-def secure_software_engineering_D_eff : ℕ := 14
-
+def secure_software_engineering_D_eff : ℕ := 11
 theorem secure_software_engineering_observable_count_pos : 0 < secure_software_engineering_observable_count := by
   unfold secure_software_engineering_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem secure_software_engineering_median_error_under_half_pct :
 
 theorem secure_software_engineering_bundle :
     secure_software_engineering_observable_count = 59 ∧
-    secure_software_engineering_D_eff = 14 ∧
+    secure_software_engineering_D_eff = 11 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

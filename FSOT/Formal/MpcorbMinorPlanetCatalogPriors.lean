@@ -14,7 +14,7 @@ noncomputable section
 open Real
 
 def mpcorb_object_count : ℕ := 1554101
-def mpcorb_D_eff : ℕ := 21
+def mpcorb_D_eff : ℕ := 18
 def mpcorb_pooled_median_error_pct : ℝ := (0.023015 : ℝ)
 def mpcorb_kepler_median_error_pct : ℝ := (1.5875572596619725e-06 : ℝ)
 def mpcorb_green_gate_flag : ℕ := 1
@@ -42,7 +42,7 @@ theorem mpcorb_green_gate_pass : mpcorb_green_gate_flag = 1 := by
 
 theorem mpcorb_minor_planet_catalog_bundle :
     mpcorb_object_count = 1554101 ∧
-    mpcorb_D_eff = 21 ∧
+    mpcorb_D_eff = 18 ∧
     mpcorb_pooled_median_error_pct < (0.5 : ℝ) ∧
     mpcorb_pooled_median_error_pct < (0.05 : ℝ) ∧
     mpcorb_kepler_median_error_pct < (0.001 : ℝ) ∧

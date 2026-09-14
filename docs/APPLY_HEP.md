@@ -1,7 +1,7 @@
 # APPLY cookbook — High_Energy_Physics fold
 
-**Pin:** D1D38A · **core:** `High_Energy_Physics` · \(D_{\mathrm{eff}}=7\) · `observed=True` · \(C=\alpha/\sqrt{2}\) · \(\delta\psi=0.95\) · hits=1.  
-**Neighbor:** `Atomic_Physics` \(D=7\), \(C=e/\pi\), \(\delta\psi=0.85\), hits=0. **Same compactification rung.**  
+**Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `High_Energy_Physics` · nest \(D=6\) · `observed=True` · look \(1-\mathrm{POOF}/\pi\) · hits \(=1\). \(C\) does not enter \(S\).  
+**Neighbor:** `Atomic_Physics` nest \(D=6\), look \(e/\pi\), hits \(0\). **Same compactification generation — this is the remaining live look-split.**  
 **Tissue:** [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §13.  
 **General protocol:** [`APPLY.md`](APPLY.md).
 
@@ -14,13 +14,13 @@
 | Electron / proton mass | CODATA | A fitted Yukawa |
 | H first ionization | NIST 13.598 eV | A per-channel \(\varepsilon\) at the LHC |
 
-Wrong object: \(|S_{\mathrm{atomic}}|/|S_{\mathrm{HEP}}|\) vs 1 (~17%). Same \(D=7\); the split is \(\delta\psi=0.85\) vs \(0.95\) (bound well vs collision look). Equalizing look at the same \(D\) is an identity pad — do not gate that. Do not stuff \(\varphi/2\) (2.6%).
+Wrong object: \(|S_{\mathrm{atomic}}|/|S_{\mathrm{HEP}}|\) vs 1. Same nest \(D=6\); the split is bound well \(e/\pi\) vs collision \(1-\mathrm{POOF}/\pi\) with one hit. Equalizing look at the same \(D\) is an identity pad — do not gate that.
 
 ---
 
 ## 2. Pick the interface
 
-Atomic is the **bound well**. HEP is the **collision** look of the same \(D=7\) lepton/baryon. \(C\) does not enter \(S\).
+Atomic is the **bound well**. HEP is the **collision** look of the same nest \(D=6\) lepton/baryon. \(C\) does not enter \(S\).
 
 ---
 

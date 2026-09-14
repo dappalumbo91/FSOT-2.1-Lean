@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def uniprot_structure_annotations_deep_observable_count : ℕ := 121
-def uniprot_structure_annotations_deep_D_eff : ℕ := 13
-
+def uniprot_structure_annotations_deep_D_eff : ℕ := 9
 theorem uniprot_structure_annotations_deep_observable_count_pos : 0 < uniprot_structure_annotations_deep_observable_count := by
   unfold uniprot_structure_annotations_deep_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem uniprot_structure_annotations_deep_median_error_under_half_pct :
 
 theorem uniprot_structure_annotations_deep_bundle :
     uniprot_structure_annotations_deep_observable_count = 121 ∧
-    uniprot_structure_annotations_deep_D_eff = 13 ∧
+    uniprot_structure_annotations_deep_D_eff = 9 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

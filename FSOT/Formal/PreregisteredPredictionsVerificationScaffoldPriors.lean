@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def preregistered_predictions_verification_scaffold_observable_count : ℕ := 60
-def preregistered_predictions_verification_scaffold_D_eff : ℕ := 17
-
+def preregistered_predictions_verification_scaffold_D_eff : ℕ := 25
 theorem preregistered_predictions_verification_scaffold_observable_count_pos : 0 < preregistered_predictions_verification_scaffold_observable_count := by
   unfold preregistered_predictions_verification_scaffold_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem preregistered_predictions_verification_scaffold_median_error_under_half_
 
 theorem preregistered_predictions_verification_scaffold_bundle :
     preregistered_predictions_verification_scaffold_observable_count = 60 ∧
-    preregistered_predictions_verification_scaffold_D_eff = 17 ∧
+    preregistered_predictions_verification_scaffold_D_eff = 25 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

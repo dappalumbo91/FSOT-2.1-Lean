@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def nasa_donki_solar_panel_observable_count : ℕ := 2148
-def nasa_donki_solar_panel_D_eff : ℕ := 14
-
+def nasa_donki_solar_panel_D_eff : ℕ := 12
 theorem nasa_donki_solar_panel_observable_count_pos : 0 < nasa_donki_solar_panel_observable_count := by
   unfold nasa_donki_solar_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem nasa_donki_solar_panel_median_error_under_half_pct :
 
 theorem nasa_donki_solar_panel_bundle :
     nasa_donki_solar_panel_observable_count = 2148 ∧
-    nasa_donki_solar_panel_D_eff = 14 ∧
+    nasa_donki_solar_panel_D_eff = 12 ∧
     (0.020755 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

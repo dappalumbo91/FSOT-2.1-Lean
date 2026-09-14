@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def time_emergence_deep_panel_observable_count : ℕ := 24
-def time_emergence_deep_panel_D_eff : ℕ := 19
-
+def time_emergence_deep_panel_D_eff : ℕ := 5
 theorem time_emergence_deep_panel_observable_count_pos : 0 < time_emergence_deep_panel_observable_count := by
   unfold time_emergence_deep_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem time_emergence_deep_panel_median_error_under_half_pct :
 
 theorem time_emergence_deep_panel_bundle :
     time_emergence_deep_panel_observable_count = 24 ∧
-    time_emergence_deep_panel_D_eff = 19 ∧
+    time_emergence_deep_panel_D_eff = 5 ∧
     (0.024894 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
