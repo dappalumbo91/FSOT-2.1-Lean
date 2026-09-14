@@ -13,8 +13,7 @@ open Real
 
 def ncbi_gene_public_observable_count : ℕ := 48
 def ncbi_gene_public_median_error_pct : ℝ := (0.025571999999999998 : ℝ)
-def ncbi_gene_public_D_eff : ℕ := 12
-
+def ncbi_gene_public_D_eff : ℕ := 9
 theorem ncbi_gene_public_observable_count_pos : 0 < ncbi_gene_public_observable_count := by
   unfold ncbi_gene_public_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem ncbi_gene_public_median_error_under_five_pct :
 
 theorem ncbi_gene_public_bundle :
     ncbi_gene_public_observable_count = 48 ∧
-    ncbi_gene_public_D_eff = 12 ∧
+    ncbi_gene_public_D_eff = 9 ∧
     ncbi_gene_public_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

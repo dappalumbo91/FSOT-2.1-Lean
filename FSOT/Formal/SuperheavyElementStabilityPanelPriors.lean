@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def superheavy_element_stability_panel_observable_count : ℕ := 50
-def superheavy_element_stability_panel_D_eff : ℕ := 5
+def superheavy_element_stability_panel_D_eff : ℕ := 12
 theorem superheavy_element_stability_panel_observable_count_pos : 0 < superheavy_element_stability_panel_observable_count := by
   unfold superheavy_element_stability_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem superheavy_element_stability_panel_median_error_under_half_pct :
 
 theorem superheavy_element_stability_panel_bundle :
     superheavy_element_stability_panel_observable_count = 50 ∧
-    superheavy_element_stability_panel_D_eff = 5 ∧
+    superheavy_element_stability_panel_D_eff = 12 ∧
     (1e-06 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

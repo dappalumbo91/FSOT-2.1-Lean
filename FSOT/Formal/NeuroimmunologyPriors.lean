@@ -14,7 +14,7 @@ open Real
 
 def neuroimmunology_observable_count : ℕ := 92
 def neuroimmunology_section_count : ℕ := 7
-def neuroimmunology_D_eff : ℕ := 10
+def neuroimmunology_D_eff : ℕ := 11
 def neuroimmunology_pooled_median_error_pct : ℝ := (0.05041956982053305 : ℝ)
 def neuroimmunology_headline_median_error_pct : ℝ := (0.060502 : ℝ)
 def neuroimmunology_beats_sota_headlines : ℕ := 6
@@ -41,7 +41,7 @@ theorem neuroimmunology_beats_sota_headlines_pos : 0 < neuroimmunology_beats_sot
 theorem neuroimmunology_bundle :
     neuroimmunology_observable_count = 92 ∧
     neuroimmunology_section_count = 7 ∧
-    neuroimmunology_D_eff = 10 ∧
+    neuroimmunology_D_eff = 11 ∧
     neuroimmunology_pooled_median_error_pct < (0.5 : ℝ) ∧
     neuroimmunology_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < neuroimmunology_beats_sota_headlines ∧

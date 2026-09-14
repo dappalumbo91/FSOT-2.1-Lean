@@ -15,8 +15,7 @@ def virology_ext_observable_count : ℕ := 163
 def virology_ext_pooled_median_error_pct : ℝ := (0.04593318440798183 : ℝ)
 def virology_ext_headline_median_error_pct : ℝ := (0.04593318440798183 : ℝ)
 def virology_ext_beats_sota_headlines : ℕ := 2
-def virology_ext_D_eff : ℕ := 14
-
+def virology_ext_D_eff : ℕ := 9
 theorem virology_ext_observable_count_pos : 0 < virology_ext_observable_count := by
   unfold virology_ext_observable_count; decide
 

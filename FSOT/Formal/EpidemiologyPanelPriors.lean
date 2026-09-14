@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def epidemiology_panel_observable_count : ℕ := 24
-def epidemiology_panel_D_eff : ℕ := 10
+def epidemiology_panel_D_eff : ℕ := 9
 theorem epidemiology_panel_observable_count_pos : 0 < epidemiology_panel_observable_count := by
   unfold epidemiology_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem epidemiology_panel_median_error_under_half_pct :
 
 theorem epidemiology_panel_bundle :
     epidemiology_panel_observable_count = 24 ∧
-    epidemiology_panel_D_eff = 10 ∧
+    epidemiology_panel_D_eff = 9 ∧
     (0.015311 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

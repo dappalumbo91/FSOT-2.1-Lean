@@ -15,8 +15,7 @@ def mycology_ext_observable_count : ℕ := 420
 def mycology_ext_pooled_median_error_pct : ℝ := (0.022236250385193498 : ℝ)
 def mycology_ext_headline_median_error_pct : ℝ := (0.022236250385193498 : ℝ)
 def mycology_ext_beats_sota_headlines : ℕ := 2
-def mycology_ext_D_eff : ℕ := 14
-
+def mycology_ext_D_eff : ℕ := 9
 theorem mycology_ext_observable_count_pos : 0 < mycology_ext_observable_count := by
   unfold mycology_ext_observable_count; decide
 

@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def fold_depth_metrics_observable_count : ℕ := 51
-def fold_depth_metrics_D_eff : ℕ := 5
+def fold_depth_metrics_D_eff : ℕ := 25
 theorem fold_depth_metrics_observable_count_pos : 0 < fold_depth_metrics_observable_count := by
   unfold fold_depth_metrics_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem fold_depth_metrics_median_error_under_half_pct :
 
 theorem fold_depth_metrics_bundle :
     fold_depth_metrics_observable_count = 51 ∧
-    fold_depth_metrics_D_eff = 5 ∧
+    fold_depth_metrics_D_eff = 25 ∧
     (0.025753835305195434 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

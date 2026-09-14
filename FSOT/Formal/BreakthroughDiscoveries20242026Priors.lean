@@ -13,7 +13,7 @@ open Real
 
 def breakthrough_discoveries_2024_2026_observable_count : ℕ := 21
 def breakthrough_discoveries_2024_2026_median_error_pct : ℝ := (0.0 : ℝ)
-def breakthrough_discoveries_2024_2026_D_eff : ℕ := 5
+def breakthrough_discoveries_2024_2026_D_eff : ℕ := 25
 theorem breakthrough_discoveries_2024_2026_observable_count_pos : 0 < breakthrough_discoveries_2024_2026_observable_count := by
   unfold breakthrough_discoveries_2024_2026_observable_count; decide
 
@@ -24,7 +24,7 @@ theorem breakthrough_discoveries_2024_2026_median_error_under_five_pct :
 
 theorem breakthrough_discoveries_2024_2026_bundle :
     breakthrough_discoveries_2024_2026_observable_count = 21 ∧
-    breakthrough_discoveries_2024_2026_D_eff = 5 ∧
+    breakthrough_discoveries_2024_2026_D_eff = 25 ∧
     breakthrough_discoveries_2024_2026_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨

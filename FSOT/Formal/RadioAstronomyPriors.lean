@@ -13,8 +13,7 @@ open Real
 
 def radio_astronomy_observable_count : ℕ := 30
 def radio_astronomy_median_error_pct : ℝ := (0.022461 : ℝ)
-def radio_astronomy_D_eff : ℕ := 20
-
+def radio_astronomy_D_eff : ℕ := 18
 theorem radio_astronomy_observable_count_pos : 0 < radio_astronomy_observable_count := by
   unfold radio_astronomy_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem radio_astronomy_median_error_under_five_pct :
 
 theorem radio_astronomy_bundle :
     radio_astronomy_observable_count = 30 ∧
-    radio_astronomy_D_eff = 20 ∧
+    radio_astronomy_D_eff = 18 ∧
     radio_astronomy_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "astronomical") > 0 := by
   refine ⟨

@@ -15,8 +15,7 @@ def cardiology_ext_observable_count : ℕ := 126
 def cardiology_ext_pooled_median_error_pct : ℝ := (0.030622122938654326 : ℝ)
 def cardiology_ext_headline_median_error_pct : ℝ := (0.030622122938654326 : ℝ)
 def cardiology_ext_beats_sota_headlines : ℕ := 2
-def cardiology_ext_D_eff : ℕ := 15
-
+def cardiology_ext_D_eff : ℕ := 9
 theorem cardiology_ext_observable_count_pos : 0 < cardiology_ext_observable_count := by
   unfold cardiology_ext_observable_count; decide
 

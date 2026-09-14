@@ -13,8 +13,7 @@ open Real
 
 def ethology_observable_count : ℕ := 100
 def ethology_median_error_pct : ℝ := (0.006607 : ℝ)
-def ethology_D_eff : ℕ := 15
-
+def ethology_D_eff : ℕ := 9
 theorem ethology_observable_count_pos : 0 < ethology_observable_count := by
   unfold ethology_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem ethology_median_error_under_five_pct :
 
 theorem ethology_bundle :
     ethology_observable_count = 100 ∧
-    ethology_D_eff = 15 ∧
+    ethology_D_eff = 9 ∧
     ethology_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

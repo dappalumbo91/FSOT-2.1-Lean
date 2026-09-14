@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def toxicology_panel_observable_count : ℕ := 21
-def toxicology_panel_D_eff : ℕ := 10
+def toxicology_panel_D_eff : ℕ := 8
 theorem toxicology_panel_observable_count_pos : 0 < toxicology_panel_observable_count := by
   unfold toxicology_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem toxicology_panel_median_error_under_half_pct :
 
 theorem toxicology_panel_bundle :
     toxicology_panel_observable_count = 21 ∧
-    toxicology_panel_D_eff = 10 ∧
+    toxicology_panel_D_eff = 8 ∧
     (0.033401 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

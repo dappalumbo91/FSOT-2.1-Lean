@@ -15,8 +15,7 @@ open Real
 def pdg_live_depth_open_observable_count : ℕ := 33
 def pdg_live_depth_open_pooled_median_error_pct : ℝ := (0.009504 : ℝ)
 def pdg_live_depth_open_headline_median_error_pct : ℝ := (0.009504 : ℝ)
-def pdg_live_depth_open_D_eff : ℕ := 14
-
+def pdg_live_depth_open_D_eff : ℕ := 25
 theorem pdg_live_depth_open_observable_count_pos : 0 < pdg_live_depth_open_observable_count := by
   unfold pdg_live_depth_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem pdg_live_depth_open_headline_median_under_half_pct :
 
 theorem pdg_live_depth_open_bundle :
     pdg_live_depth_open_observable_count = 33 ∧
-    pdg_live_depth_open_D_eff = 14 ∧
+    pdg_live_depth_open_D_eff = 25 ∧
     pdg_live_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold pdg_live_depth_open_observable_count; decide

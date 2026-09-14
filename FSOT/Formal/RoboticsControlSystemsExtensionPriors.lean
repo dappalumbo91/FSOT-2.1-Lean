@@ -15,8 +15,7 @@ def robotics_control_ext_observable_count : ℕ := 45
 def robotics_control_ext_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def robotics_control_ext_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def robotics_control_ext_beats_sota_headlines : ℕ := 2
-def robotics_control_ext_D_eff : ℕ := 14
-
+def robotics_control_ext_D_eff : ℕ := 11
 theorem robotics_control_ext_observable_count_pos : 0 < robotics_control_ext_observable_count := by
   unfold robotics_control_ext_observable_count; decide
 

@@ -13,8 +13,7 @@ open Real
 
 def fsot_c_pack_parity_observable_count : ℕ := 23
 def fsot_c_pack_parity_median_error_pct : ℝ := (0.0 : ℝ)
-def fsot_c_pack_parity_D_eff : ℕ := 10
-
+def fsot_c_pack_parity_D_eff : ℕ := 8
 theorem fsot_c_pack_parity_observable_count_pos : 0 < fsot_c_pack_parity_observable_count := by
   unfold fsot_c_pack_parity_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem fsot_c_pack_parity_median_error_under_half_pct :
 
 theorem fsot_c_pack_parity_bundle :
     fsot_c_pack_parity_observable_count = 23 ∧
-    fsot_c_pack_parity_D_eff = 10 ∧
+    fsot_c_pack_parity_D_eff = 8 ∧
     fsot_c_pack_parity_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -15,8 +15,7 @@ def quantum_computing_gap_fill_observable_count : ℕ := 177
 def quantum_computing_gap_fill_pooled_median_error_pct : ℝ := (0.0002953462072651492 : ℝ)
 def quantum_computing_gap_fill_headline_median_error_pct : ℝ := (0.0002953462072651492 : ℝ)
 def quantum_computing_gap_fill_beats_sota_headlines : ℕ := 2
-def quantum_computing_gap_fill_D_eff : ℕ := 11
-
+def quantum_computing_gap_fill_D_eff : ℕ := 8
 theorem quantum_computing_gap_fill_observable_count_pos : 0 < quantum_computing_gap_fill_observable_count := by
   unfold quantum_computing_gap_fill_observable_count; decide
 

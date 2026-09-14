@@ -15,8 +15,7 @@ open Real
 def openneuro_depth_open_observable_count : ℕ := 47
 def openneuro_depth_open_pooled_median_error_pct : ℝ := (0.018003 : ℝ)
 def openneuro_depth_open_headline_median_error_pct : ℝ := (0.018003 : ℝ)
-def openneuro_depth_open_D_eff : ℕ := 14
-
+def openneuro_depth_open_D_eff : ℕ := 11
 theorem openneuro_depth_open_observable_count_pos : 0 < openneuro_depth_open_observable_count := by
   unfold openneuro_depth_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem openneuro_depth_open_headline_median_under_half_pct :
 
 theorem openneuro_depth_open_bundle :
     openneuro_depth_open_observable_count = 47 ∧
-    openneuro_depth_open_D_eff = 14 ∧
+    openneuro_depth_open_D_eff = 11 ∧
     openneuro_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold openneuro_depth_open_observable_count; decide

@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def founding_galactic_halo_rotation_panel_observable_count : ℕ := 24
-def founding_galactic_halo_rotation_panel_D_eff : ℕ := 25
+def founding_galactic_halo_rotation_panel_D_eff : ℕ := 18
 theorem founding_galactic_halo_rotation_panel_observable_count_pos : 0 < founding_galactic_halo_rotation_panel_observable_count := by
   unfold founding_galactic_halo_rotation_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem founding_galactic_halo_rotation_panel_median_error_under_half_pct :
 
 theorem founding_galactic_halo_rotation_panel_bundle :
     founding_galactic_halo_rotation_panel_observable_count = 24 ∧
-    founding_galactic_halo_rotation_panel_D_eff = 25 ∧
+    founding_galactic_halo_rotation_panel_D_eff = 18 ∧
     (0.022461 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

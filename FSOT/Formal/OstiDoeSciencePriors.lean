@@ -13,8 +13,7 @@ open Real
 
 def osti_doe_science_observable_count : ℕ := 100
 def osti_doe_science_median_error_pct : ℝ := (0.01382 : ℝ)
-def osti_doe_science_D_eff : ℕ := 18
-
+def osti_doe_science_D_eff : ℕ := 12
 theorem osti_doe_science_observable_count_pos : 0 < osti_doe_science_observable_count := by
   unfold osti_doe_science_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem osti_doe_science_median_error_under_five_pct :
 
 theorem osti_doe_science_bundle :
     osti_doe_science_observable_count = 100 ∧
-    osti_doe_science_D_eff = 18 ∧
+    osti_doe_science_D_eff = 12 ∧
     osti_doe_science_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "nuclear") > 0 := by
   refine ⟨

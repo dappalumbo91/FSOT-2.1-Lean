@@ -13,8 +13,7 @@ open Real
 
 def esp32_platform_engineering_observable_count : ℕ := 34
 def esp32_platform_engineering_median_error_pct : ℝ := (0.020755 : ℝ)
-def esp32_platform_engineering_D_eff : ℕ := 12
-
+def esp32_platform_engineering_D_eff : ℕ := 8
 theorem esp32_platform_engineering_observable_count_pos : 0 < esp32_platform_engineering_observable_count := by
   unfold esp32_platform_engineering_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem esp32_platform_engineering_median_error_under_half_pct :
 
 theorem esp32_platform_engineering_bundle :
     esp32_platform_engineering_observable_count = 34 ∧
-    esp32_platform_engineering_D_eff = 12 ∧
+    esp32_platform_engineering_D_eff = 8 ∧
     esp32_platform_engineering_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "electron") > 0 := by
   refine ⟨

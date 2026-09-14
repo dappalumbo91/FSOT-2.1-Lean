@@ -14,7 +14,7 @@ open Real
 def cryosphere_month_count : ℕ := 2399
 def cryosphere_station_count : ℕ := 4
 def cryosphere_match_count : ℕ := 2399
-def cryosphere_D_eff : ℕ := 12
+def cryosphere_D_eff : ℕ := 18
 def cryosphere_match_rate : ℝ := (1.0 : ℝ)
 
 theorem cryosphere_month_count_pos : 0 < cryosphere_month_count := by
@@ -27,7 +27,7 @@ theorem cryosphere_bundle :
     cryosphere_month_count = 2399 ∧
     cryosphere_station_count = 4 ∧
     cryosphere_match_count = 2399 ∧
-    cryosphere_D_eff = 12 ∧
+    cryosphere_D_eff = 18 ∧
     cryosphere_match_count ≤ cryosphere_month_count ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨

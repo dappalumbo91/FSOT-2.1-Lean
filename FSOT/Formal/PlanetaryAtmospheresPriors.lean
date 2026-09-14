@@ -14,7 +14,7 @@ open Real
 
 def planetary_atmospheres_observable_count : ℕ := 21
 def planetary_atmospheres_body_count : ℕ := 13
-def planetary_atmospheres_D_eff : ℕ := 18
+def planetary_atmospheres_D_eff : ℕ := 19
 def planetary_atmospheres_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def planetary_atmospheres_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def planetary_atmospheres_beats_sota_headlines : ℕ := 3
@@ -41,7 +41,7 @@ theorem planetary_atmospheres_beats_sota_headlines_pos : 0 < planetary_atmospher
 theorem planetary_atmospheres_bundle :
     planetary_atmospheres_observable_count = 21 ∧
     planetary_atmospheres_body_count = 13 ∧
-    planetary_atmospheres_D_eff = 18 ∧
+    planetary_atmospheres_D_eff = 19 ∧
     planetary_atmospheres_pooled_median_error_pct < (0.5 : ℝ) ∧
     planetary_atmospheres_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < planetary_atmospheres_beats_sota_headlines ∧

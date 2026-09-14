@@ -13,8 +13,7 @@ open Real
 
 def federal_science_registry_observable_count : ℕ := 16
 def federal_science_registry_median_error_pct : ℝ := (0.024225 : ℝ)
-def federal_science_registry_D_eff : ℕ := 17
-
+def federal_science_registry_D_eff : ℕ := 18
 theorem federal_science_registry_observable_count_pos : 0 < federal_science_registry_observable_count := by
   unfold federal_science_registry_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem federal_science_registry_median_error_under_five_pct :
 
 theorem federal_science_registry_bundle :
     federal_science_registry_observable_count = 16 ∧
-    federal_science_registry_D_eff = 17 ∧
+    federal_science_registry_D_eff = 18 ∧
     federal_science_registry_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

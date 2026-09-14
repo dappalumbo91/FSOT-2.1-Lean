@@ -11,7 +11,6 @@ noncomputable section
 
 def statistical_mechanics_public_panel_observable_count : ℕ := 24
 def statistical_mechanics_public_panel_D_eff : ℕ := 12
-
 theorem statistical_mechanics_public_panel_observable_count_pos : 0 < statistical_mechanics_public_panel_observable_count := by
   unfold statistical_mechanics_public_panel_observable_count; decide
 

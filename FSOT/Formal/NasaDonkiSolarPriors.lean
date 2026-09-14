@@ -13,8 +13,7 @@ open Real
 
 def nasa_donki_solar_observable_count : ℕ := 1200
 def nasa_donki_solar_median_error_pct : ℝ := (0.020755 : ℝ)
-def nasa_donki_solar_D_eff : ℕ := 14
-
+def nasa_donki_solar_D_eff : ℕ := 12
 theorem nasa_donki_solar_observable_count_pos : 0 < nasa_donki_solar_observable_count := by
   unfold nasa_donki_solar_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem nasa_donki_solar_median_error_under_five_pct :
 
 theorem nasa_donki_solar_bundle :
     nasa_donki_solar_observable_count = 1200 ∧
-    nasa_donki_solar_D_eff = 14 ∧
+    nasa_donki_solar_D_eff = 12 ∧
     nasa_donki_solar_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "fusion") > 0 := by
   refine ⟨

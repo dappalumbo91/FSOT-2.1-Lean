@@ -79,6 +79,27 @@ def main() -> int:
     except KeyError as e:
         issues.append(f"extension overlay KeyError: {e}")
 
+    expect_parent = {
+        "Acoustic_Resonance_Materials": "Acoustics",
+        "Quantum_Computing_Math_Depth_Panel": "Quantum_Computing",
+        "Condensed_Matter_Superconductivity_Depth_Panel": "Condensed_Matter",
+        "Optics_Interferometry_Depth_Panel": "Optics",
+        "Psychology_Psychometrics_Depth_Panel": "Psychology",
+        "Seismology_Deep": "Seismology",
+        "Maillard_Chemistry": "Chemistry",
+        "Climate_Science": "Meteorology",
+        "Plasma_Physics": "Condensed_Matter",
+    }
+    for ext_name, core in expect_parent.items():
+        row = folds.get(ext_name)
+        if not row:
+            issues.append(f"missing derived fold {ext_name}")
+            continue
+        if row.get("parent_core") != core:
+            issues.append(
+                f"{ext_name} parent={row.get('parent_core')} expected {core} (name, not first tag)"
+            )
+
     if issues:
         print("FAIL")
         for i in issues:

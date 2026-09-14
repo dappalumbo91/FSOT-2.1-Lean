@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def virology_observable_count : ℕ := 50
-def virology_D_eff : ℕ := 10
+def virology_D_eff : ℕ := 9
 theorem virology_observable_count_pos : 0 < virology_observable_count := by
   unfold virology_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem virology_median_error_under_half_pct :
 
 theorem virology_bundle :
     virology_observable_count = 50 ∧
-    virology_D_eff = 10 ∧
+    virology_D_eff = 9 ∧
     (0.04593318440797614 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

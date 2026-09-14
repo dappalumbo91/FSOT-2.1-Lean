@@ -15,8 +15,7 @@ open Real
 def quantum_trinary_syntax_observable_count : ℕ := 27
 def quantum_trinary_syntax_pooled_median_error_pct : ℝ := (0.005907 : ℝ)
 def quantum_trinary_syntax_headline_median_error_pct : ℝ := (0.005907 : ℝ)
-def quantum_trinary_syntax_D_eff : ℕ := 11
-
+def quantum_trinary_syntax_D_eff : ℕ := 5
 theorem quantum_trinary_syntax_observable_count_pos : 0 < quantum_trinary_syntax_observable_count := by
   unfold quantum_trinary_syntax_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem quantum_trinary_syntax_headline_median_under_half_pct :
 
 theorem quantum_trinary_syntax_bundle :
     quantum_trinary_syntax_observable_count = 27 ∧
-    quantum_trinary_syntax_D_eff = 11 ∧
+    quantum_trinary_syntax_D_eff = 5 ∧
     quantum_trinary_syntax_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold quantum_trinary_syntax_observable_count; decide

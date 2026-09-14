@@ -14,7 +14,7 @@ open Real
 
 def oncology_observable_count : ℕ := 67
 def oncology_section_count : ℕ := 5
-def oncology_D_eff : ℕ := 10
+def oncology_D_eff : ℕ := 9
 def oncology_pooled_median_error_pct : ℝ := (0.05041956982053305 : ℝ)
 def oncology_headline_median_error_pct : ℝ := (0.05041956982053305 : ℝ)
 def oncology_beats_sota_headlines : ℕ := 5
@@ -41,7 +41,7 @@ theorem oncology_beats_sota_headlines_pos : 0 < oncology_beats_sota_headlines :=
 theorem oncology_bundle :
     oncology_observable_count = 67 ∧
     oncology_section_count = 5 ∧
-    oncology_D_eff = 10 ∧
+    oncology_D_eff = 9 ∧
     oncology_pooled_median_error_pct < (0.5 : ℝ) ∧
     oncology_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < oncology_beats_sota_headlines ∧

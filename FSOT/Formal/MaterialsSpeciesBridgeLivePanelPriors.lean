@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def materials_species_bridge_live_panel_observable_count : ℕ := 150
-def materials_species_bridge_live_panel_D_eff : ℕ := 12
+def materials_species_bridge_live_panel_D_eff : ℕ := 8
 theorem materials_species_bridge_live_panel_observable_count_pos : 0 < materials_species_bridge_live_panel_observable_count := by
   unfold materials_species_bridge_live_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem materials_species_bridge_live_panel_median_error_under_half_pct :
 
 theorem materials_species_bridge_live_panel_bundle :
     materials_species_bridge_live_panel_observable_count = 150 ∧
-    materials_species_bridge_live_panel_D_eff = 12 ∧
+    materials_species_bridge_live_panel_D_eff = 8 ∧
     (0.01341 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

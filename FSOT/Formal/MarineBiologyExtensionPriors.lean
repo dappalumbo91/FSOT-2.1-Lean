@@ -15,8 +15,7 @@ def marine_biology_ext_observable_count : ℕ := 540
 def marine_biology_ext_pooled_median_error_pct : ℝ := (0.022236250385192644 : ℝ)
 def marine_biology_ext_headline_median_error_pct : ℝ := (0.022236250385194948 : ℝ)
 def marine_biology_ext_beats_sota_headlines : ℕ := 2
-def marine_biology_ext_D_eff : ℕ := 15
-
+def marine_biology_ext_D_eff : ℕ := 9
 theorem marine_biology_ext_observable_count_pos : 0 < marine_biology_ext_observable_count := by
   unfold marine_biology_ext_observable_count; decide
 

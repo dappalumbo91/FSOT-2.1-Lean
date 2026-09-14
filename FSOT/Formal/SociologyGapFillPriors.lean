@@ -15,8 +15,7 @@ def sociology_gap_fill_observable_count : ℕ := 200
 def sociology_gap_fill_pooled_median_error_pct : ℝ := (0.019504399572475274 : ℝ)
 def sociology_gap_fill_headline_median_error_pct : ℝ := (0.019504399572475274 : ℝ)
 def sociology_gap_fill_beats_sota_headlines : ℕ := 2
-def sociology_gap_fill_D_eff : ℕ := 18
-
+def sociology_gap_fill_D_eff : ℕ := 15
 theorem sociology_gap_fill_observable_count_pos : 0 < sociology_gap_fill_observable_count := by
   unfold sociology_gap_fill_observable_count; decide
 

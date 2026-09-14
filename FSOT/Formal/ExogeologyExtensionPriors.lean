@@ -15,8 +15,7 @@ def exogeology_ext_observable_count : ℕ := 316
 def exogeology_ext_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def exogeology_ext_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def exogeology_ext_beats_sota_headlines : ℕ := 2
-def exogeology_ext_D_eff : ℕ := 20
-
+def exogeology_ext_D_eff : ℕ := 18
 theorem exogeology_ext_observable_count_pos : 0 < exogeology_ext_observable_count := by
   unfold exogeology_ext_observable_count; decide
 

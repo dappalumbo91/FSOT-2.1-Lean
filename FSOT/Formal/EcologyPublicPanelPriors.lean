@@ -15,8 +15,7 @@ def ecology_public_panel_observable_count : ℕ := 12
 def ecology_public_panel_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def ecology_public_panel_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def ecology_public_panel_beats_sota_headlines : ℕ := 2
-def ecology_public_panel_D_eff : ℕ := 15
-
+def ecology_public_panel_D_eff : ℕ := 12
 theorem ecology_public_panel_observable_count_pos : 0 < ecology_public_panel_observable_count := by
   unfold ecology_public_panel_observable_count; decide
 

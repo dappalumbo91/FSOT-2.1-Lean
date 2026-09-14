@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def material_property_verification_scaffold_observable_count : ℕ := 79
-def material_property_verification_scaffold_D_eff : ℕ := 6
+def material_property_verification_scaffold_D_eff : ℕ := 8
 theorem material_property_verification_scaffold_observable_count_pos : 0 < material_property_verification_scaffold_observable_count := by
   unfold material_property_verification_scaffold_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem material_property_verification_scaffold_median_error_under_half_pct :
 
 theorem material_property_verification_scaffold_bundle :
     material_property_verification_scaffold_observable_count = 79 ∧
-    material_property_verification_scaffold_D_eff = 6 ∧
+    material_property_verification_scaffold_D_eff = 8 ∧
     (0.002271 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

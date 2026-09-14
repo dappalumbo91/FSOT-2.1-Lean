@@ -15,8 +15,7 @@ def quantum_mechanics_gap_fill_observable_count : ℕ := 50
 def quantum_mechanics_gap_fill_pooled_median_error_pct : ℝ := (9.52387420324368e-05 : ℝ)
 def quantum_mechanics_gap_fill_headline_median_error_pct : ℝ := (9.52387420324368e-05 : ℝ)
 def quantum_mechanics_gap_fill_beats_sota_headlines : ℕ := 2
-def quantum_mechanics_gap_fill_D_eff : ℕ := 6
-
+def quantum_mechanics_gap_fill_D_eff : ℕ := 5
 theorem quantum_mechanics_gap_fill_observable_count_pos : 0 < quantum_mechanics_gap_fill_observable_count := by
   unfold quantum_mechanics_gap_fill_observable_count; decide
 

@@ -15,7 +15,7 @@ def seismology_deep_observable_count : ℕ := 1000
 def seismology_deep_match_count : ℕ := 1000
 def seismology_deep_holdout_count : ℕ := 189
 def seismology_deep_holdout_match_count : ℕ := 189
-def seismology_deep_D_eff : ℕ := 12
+def seismology_deep_D_eff : ℕ := 15
 def seismology_deep_match_rate : ℝ := (1.0 : ℝ)
 
 theorem seismology_deep_observable_count_pos : 0 < seismology_deep_observable_count := by
@@ -33,7 +33,7 @@ theorem seismology_deep_bundle :
     seismology_deep_match_count = 1000 ∧
     seismology_deep_holdout_count = 189 ∧
     seismology_deep_holdout_match_count = 189 ∧
-    seismology_deep_D_eff = 12 ∧
+    seismology_deep_D_eff = 15 ∧
     seismology_deep_match_count ≤ seismology_deep_observable_count ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

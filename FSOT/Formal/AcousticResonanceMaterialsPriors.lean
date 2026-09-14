@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def acoustic_resonance_materials_observable_count : ℕ := 29
-def acoustic_resonance_materials_D_eff : ℕ := 5
+def acoustic_resonance_materials_D_eff : ℕ := 8
 theorem acoustic_resonance_materials_observable_count_pos : 0 < acoustic_resonance_materials_observable_count := by
   unfold acoustic_resonance_materials_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem acoustic_resonance_materials_median_error_under_half_pct :
 
 theorem acoustic_resonance_materials_bundle :
     acoustic_resonance_materials_observable_count = 29 ∧
-    acoustic_resonance_materials_D_eff = 5 ∧
+    acoustic_resonance_materials_D_eff = 8 ∧
     (0.008381497018411083 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -15,8 +15,7 @@ open Real
 def lmfdb_oeis_math_open_observable_count : ℕ := 3918
 def lmfdb_oeis_math_open_pooled_median_error_pct : ℝ := (0.014767 : ℝ)
 def lmfdb_oeis_math_open_headline_median_error_pct : ℝ := (0.014767 : ℝ)
-def lmfdb_oeis_math_open_D_eff : ℕ := 14
-
+def lmfdb_oeis_math_open_D_eff : ℕ := 5
 theorem lmfdb_oeis_math_open_observable_count_pos : 0 < lmfdb_oeis_math_open_observable_count := by
   unfold lmfdb_oeis_math_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem lmfdb_oeis_math_open_headline_median_under_half_pct :
 
 theorem lmfdb_oeis_math_open_bundle :
     lmfdb_oeis_math_open_observable_count = 3918 ∧
-    lmfdb_oeis_math_open_D_eff = 14 ∧
+    lmfdb_oeis_math_open_D_eff = 5 ∧
     lmfdb_oeis_math_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold lmfdb_oeis_math_open_observable_count; decide

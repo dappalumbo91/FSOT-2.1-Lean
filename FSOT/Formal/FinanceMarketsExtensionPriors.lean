@@ -15,8 +15,7 @@ def finance_markets_ext_observable_count : ℕ := 245
 def finance_markets_ext_pooled_median_error_pct : ℝ := (0.025840180827434747 : ℝ)
 def finance_markets_ext_headline_median_error_pct : ℝ := (0.025840180827434747 : ℝ)
 def finance_markets_ext_beats_sota_headlines : ℕ := 2
-def finance_markets_ext_D_eff : ℕ := 19
-
+def finance_markets_ext_D_eff : ℕ := 18
 theorem finance_markets_ext_observable_count_pos : 0 < finance_markets_ext_observable_count := by
   unfold finance_markets_ext_observable_count; decide
 

@@ -15,7 +15,7 @@ def adv_brk_observable_count : ℕ := 13
 def adv_brk_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def adv_brk_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def adv_brk_beats_sota_headlines : ℕ := 2
-def adv_brk_D_eff : ℕ := 17
+def adv_brk_D_eff : ℕ := 9
 def adv_brk_detection_rate_centipercent : ℕ := 100
 
 theorem adv_brk_observable_count_pos : 0 < adv_brk_observable_count := by

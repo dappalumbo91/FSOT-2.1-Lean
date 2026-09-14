@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def culinary_fermentation_maillard_panel_observable_count : ℕ := 130
-def culinary_fermentation_maillard_panel_D_eff : ℕ := 12
+def culinary_fermentation_maillard_panel_D_eff : ℕ := 8
 theorem culinary_fermentation_maillard_panel_observable_count_pos : 0 < culinary_fermentation_maillard_panel_observable_count := by
   unfold culinary_fermentation_maillard_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem culinary_fermentation_maillard_panel_median_error_under_half_pct :
 
 theorem culinary_fermentation_maillard_panel_bundle :
     culinary_fermentation_maillard_panel_observable_count = 130 ∧
-    culinary_fermentation_maillard_panel_D_eff = 12 ∧
+    culinary_fermentation_maillard_panel_D_eff = 8 ∧
     (0.040788 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

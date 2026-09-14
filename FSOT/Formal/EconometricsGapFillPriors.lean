@@ -15,8 +15,7 @@ def econometrics_gap_fill_observable_count : ℕ := 172
 def econometrics_gap_fill_pooled_median_error_pct : ℝ := (0.12920090413715177 : ℝ)
 def econometrics_gap_fill_headline_median_error_pct : ℝ := (0.12920090413715177 : ℝ)
 def econometrics_gap_fill_beats_sota_headlines : ℕ := 2
-def econometrics_gap_fill_D_eff : ℕ := 19
-
+def econometrics_gap_fill_D_eff : ℕ := 25
 theorem econometrics_gap_fill_observable_count_pos : 0 < econometrics_gap_fill_observable_count := by
   unfold econometrics_gap_fill_observable_count; decide
 

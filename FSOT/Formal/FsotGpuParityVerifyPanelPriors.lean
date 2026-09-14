@@ -13,8 +13,7 @@ open Real
 
 def fsot_gpu_parity_verify_observable_count : ℕ := 48
 def fsot_gpu_parity_verify_median_error_pct : ℝ := (0.0 : ℝ)
-def fsot_gpu_parity_verify_D_eff : ℕ := 11
-
+def fsot_gpu_parity_verify_D_eff : ℕ := 8
 theorem fsot_gpu_parity_verify_observable_count_pos : 0 < fsot_gpu_parity_verify_observable_count := by
   unfold fsot_gpu_parity_verify_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem fsot_gpu_parity_verify_median_error_under_half_pct :
 
 theorem fsot_gpu_parity_verify_bundle :
     fsot_gpu_parity_verify_observable_count = 48 ∧
-    fsot_gpu_parity_verify_D_eff = 11 ∧
+    fsot_gpu_parity_verify_D_eff = 8 ∧
     fsot_gpu_parity_verify_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "quantum") > 0 := by
   refine ⟨

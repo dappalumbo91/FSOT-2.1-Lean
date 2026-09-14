@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def chaos_mediated_phase_transitions_observable_count : ℕ := 21
-def chaos_mediated_phase_transitions_D_eff : ℕ := 5
+def chaos_mediated_phase_transitions_D_eff : ℕ := 12
 theorem chaos_mediated_phase_transitions_observable_count_pos : 0 < chaos_mediated_phase_transitions_observable_count := by
   unfold chaos_mediated_phase_transitions_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem chaos_mediated_phase_transitions_median_error_under_half_pct :
 
 theorem chaos_mediated_phase_transitions_bundle :
     chaos_mediated_phase_transitions_observable_count = 21 ∧
-    chaos_mediated_phase_transitions_D_eff = 5 ∧
+    chaos_mediated_phase_transitions_D_eff = 12 ∧
     (0.03147898006445882 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -15,8 +15,7 @@ def chemical_engineering_ext_observable_count : ℕ := 186
 def chemical_engineering_ext_pooled_median_error_pct : ℝ := (0.0010333425185953097 : ℝ)
 def chemical_engineering_ext_headline_median_error_pct : ℝ := (0.0010333425185953097 : ℝ)
 def chemical_engineering_ext_beats_sota_headlines : ℕ := 2
-def chemical_engineering_ext_D_eff : ℕ := 16
-
+def chemical_engineering_ext_D_eff : ℕ := 6
 theorem chemical_engineering_ext_observable_count_pos : 0 < chemical_engineering_ext_observable_count := by
   unfold chemical_engineering_ext_observable_count; decide
 

@@ -15,8 +15,7 @@ def supply_chain_ext_observable_count : ℕ := 220
 def supply_chain_ext_pooled_median_error_pct : ℝ := (0.01801902489293558 : ℝ)
 def supply_chain_ext_headline_median_error_pct : ℝ := (0.01801902489293558 : ℝ)
 def supply_chain_ext_beats_sota_headlines : ℕ := 2
-def supply_chain_ext_D_eff : ℕ := 18
-
+def supply_chain_ext_D_eff : ℕ := 9
 theorem supply_chain_ext_observable_count_pos : 0 < supply_chain_ext_observable_count := by
   unfold supply_chain_ext_observable_count; decide
 

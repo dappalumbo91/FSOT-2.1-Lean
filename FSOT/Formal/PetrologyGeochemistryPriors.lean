@@ -13,8 +13,7 @@ open Real
 
 def petrology_observable_count : ℕ := 80
 def petrology_median_error_pct : ℝ := (0.030428 : ℝ)
-def petrology_D_eff : ℕ := 14
-
+def petrology_D_eff : ℕ := 6
 theorem petrology_observable_count_pos : 0 < petrology_observable_count := by
   unfold petrology_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem petrology_median_error_under_five_pct :
 
 theorem petrology_bundle :
     petrology_observable_count = 80 ∧
-    petrology_D_eff = 14 ∧
+    petrology_D_eff = 6 ∧
     petrology_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨

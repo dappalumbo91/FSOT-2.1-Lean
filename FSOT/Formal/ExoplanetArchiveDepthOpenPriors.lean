@@ -15,8 +15,7 @@ open Real
 def exoplanet_archive_depth_open_observable_count : ℕ := 1976
 def exoplanet_archive_depth_open_pooled_median_error_pct : ℝ := (0.023015 : ℝ)
 def exoplanet_archive_depth_open_headline_median_error_pct : ℝ := (0.023015 : ℝ)
-def exoplanet_archive_depth_open_D_eff : ℕ := 16
-
+def exoplanet_archive_depth_open_D_eff : ℕ := 18
 theorem exoplanet_archive_depth_open_observable_count_pos : 0 < exoplanet_archive_depth_open_observable_count := by
   unfold exoplanet_archive_depth_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem exoplanet_archive_depth_open_headline_median_under_half_pct :
 
 theorem exoplanet_archive_depth_open_bundle :
     exoplanet_archive_depth_open_observable_count = 1976 ∧
-    exoplanet_archive_depth_open_D_eff = 16 ∧
+    exoplanet_archive_depth_open_D_eff = 18 ∧
     exoplanet_archive_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold exoplanet_archive_depth_open_observable_count; decide

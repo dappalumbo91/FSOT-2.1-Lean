@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def supply_chain_logistics_observable_count : ℕ := 40
-def supply_chain_logistics_D_eff : ℕ := 18
-
+def supply_chain_logistics_D_eff : ℕ := 9
 theorem supply_chain_logistics_observable_count_pos : 0 < supply_chain_logistics_observable_count := by
   unfold supply_chain_logistics_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem supply_chain_logistics_median_error_under_half_pct :
 
 theorem supply_chain_logistics_bundle :
     supply_chain_logistics_observable_count = 40 ∧
-    supply_chain_logistics_D_eff = 18 ∧
+    supply_chain_logistics_D_eff = 9 ∧
     (0.03230022603427978 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

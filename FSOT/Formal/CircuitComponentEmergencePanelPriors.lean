@@ -13,8 +13,7 @@ open Real
 
 def circuit_component_emergence_observable_count : ℕ := 23
 def circuit_component_emergence_median_error_pct : ℝ := (0.051887 : ℝ)
-def circuit_component_emergence_D_eff : ℕ := 10
-
+def circuit_component_emergence_D_eff : ℕ := 7
 theorem circuit_component_emergence_observable_count_pos : 0 < circuit_component_emergence_observable_count := by
   unfold circuit_component_emergence_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem circuit_component_emergence_median_error_under_five_pct :
 
 theorem circuit_component_emergence_bundle :
     circuit_component_emergence_observable_count = 23 ∧
-    circuit_component_emergence_D_eff = 10 ∧
+    circuit_component_emergence_D_eff = 7 ∧
     circuit_component_emergence_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨

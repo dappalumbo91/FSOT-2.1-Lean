@@ -13,7 +13,7 @@ open Real
 
 def rcsb_pdb_structures_observable_count : ℕ := 45
 def rcsb_pdb_structures_median_error_pct : ℝ := (0.022236 : ℝ)
-def rcsb_pdb_structures_D_eff : ℕ := 10
+def rcsb_pdb_structures_D_eff : ℕ := 9
 theorem rcsb_pdb_structures_observable_count_pos : 0 < rcsb_pdb_structures_observable_count := by
   unfold rcsb_pdb_structures_observable_count; decide
 
@@ -24,7 +24,7 @@ theorem rcsb_pdb_structures_median_error_under_five_pct :
 
 theorem rcsb_pdb_structures_bundle :
     rcsb_pdb_structures_observable_count = 45 ∧
-    rcsb_pdb_structures_D_eff = 10 ∧
+    rcsb_pdb_structures_D_eff = 9 ∧
     rcsb_pdb_structures_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨

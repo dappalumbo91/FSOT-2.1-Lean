@@ -13,8 +13,7 @@ open Real
 
 def igem_live_fasta_observable_count : ℕ := 42
 def igem_live_fasta_median_error_pct : ℝ := (0.0 : ℝ)
-def igem_live_fasta_D_eff : ℕ := 14
-
+def igem_live_fasta_D_eff : ℕ := 9
 theorem igem_live_fasta_observable_count_pos : 0 < igem_live_fasta_observable_count := by
   unfold igem_live_fasta_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem igem_live_fasta_median_error_under_five_pct :
 
 theorem igem_live_fasta_bundle :
     igem_live_fasta_observable_count = 42 ∧
-    igem_live_fasta_D_eff = 14 ∧
+    igem_live_fasta_D_eff = 9 ∧
     igem_live_fasta_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

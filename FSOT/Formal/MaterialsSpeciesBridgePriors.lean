@@ -13,7 +13,7 @@ open Real
 
 def materials_species_bridge_observable_count : ℕ := 45
 def materials_species_bridge_median_error_pct : ℝ := (0.0 : ℝ)
-def materials_species_bridge_D_eff : ℕ := 12
+def materials_species_bridge_D_eff : ℕ := 8
 theorem materials_species_bridge_observable_count_pos : 0 < materials_species_bridge_observable_count := by
   unfold materials_species_bridge_observable_count; decide
 
@@ -24,7 +24,7 @@ theorem materials_species_bridge_median_error_under_five_pct :
 
 theorem materials_species_bridge_bundle :
     materials_species_bridge_observable_count = 45 ∧
-    materials_species_bridge_D_eff = 12 ∧
+    materials_species_bridge_D_eff = 8 ∧
     materials_species_bridge_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨

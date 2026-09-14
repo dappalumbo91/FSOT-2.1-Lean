@@ -13,8 +13,7 @@ open Real
 
 def toxicology_observable_count : ℕ := 21
 def toxicology_median_error_pct : ℝ := (0.033401 : ℝ)
-def toxicology_D_eff : ℕ := 13
-
+def toxicology_D_eff : ℕ := 8
 theorem toxicology_observable_count_pos : 0 < toxicology_observable_count := by
   unfold toxicology_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem toxicology_median_error_under_five_pct :
 
 theorem toxicology_bundle :
     toxicology_observable_count = 21 ∧
-    toxicology_D_eff = 13 ∧
+    toxicology_D_eff = 8 ∧
     toxicology_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨

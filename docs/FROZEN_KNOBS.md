@@ -66,6 +66,10 @@ After the nest, Quantum_Mechanics shares Particle at \(D=5\). \(\Omega_b h^2\) a
 | 18 | 23 | Particle_Astrophysics, Astrophysics |
 | 19 | 25 | Cosmology |
 
+## Extension parent is the name
+
+`maps_to_lean: [particle, …]` is bookkeeping, not a parent. The parent core is the **leading orifice in the name** (earliest match, then longest). Acoustic_Resonance_Materials inherits Acoustics, not Particle. YAML `D_eff` is still ignored.
+
 ## Hash gate
 
-`python scripts/audit_parameter_count.py` fails if these identities move without a new pin. Previous pin **D1D38A** held the rounded decimals. **3090BC** held π identities with assigned \(D\). **FE23A2** derived \(D_{\mathrm{eff}}\). **3FBCE5** derived observed/species and the baryon/DM chemistry object. This edition names `_fold_C` (unused by \(S\)). Python and `FSOT.Scalar` (Float) use \(\pi\) identities. Lean `FSOT.Formal` Real `k` / `C_{\mathrm{eff}}\) still write \(99/100\) and \(0.01\) because Bounds interval proofs are not migrated. `get_domain_params` still stores older assigned looks; live \(D\) is `DerivedNest`.
+`python scripts/audit_parameter_count.py` fails if these identities move without a new pin. Previous pin **D1D38A** held the rounded decimals. **3090BC** held π identities with assigned \(D\). **FE23A2** derived \(D_{\mathrm{eff}}\). **3FBCE5** derived observed/species and the baryon/DM chemistry object. This edition names `_fold_C` (unused by \(S\)). Python and `FSOT.Scalar` (Float) use \(\pi\) identities. Lean `FSOT.Formal` Real `k` / `C_{\mathrm{eff}}\) still write \(99/100\) and \(0.01\) because Bounds interval proofs are not migrated. `get_domain_params` (Real) still stores older assigned looks for positivity proofs; live \(D\) is `DerivedNest`. Float `getDomainParams` follows the nest.

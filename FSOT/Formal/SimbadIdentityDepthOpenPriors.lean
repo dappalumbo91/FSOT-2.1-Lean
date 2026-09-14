@@ -15,8 +15,7 @@ open Real
 def simbad_identity_depth_open_observable_count : ℕ := 1365
 def simbad_identity_depth_open_pooled_median_error_pct : ℝ := (0.022461 : ℝ)
 def simbad_identity_depth_open_headline_median_error_pct : ℝ := (0.022461 : ℝ)
-def simbad_identity_depth_open_D_eff : ℕ := 16
-
+def simbad_identity_depth_open_D_eff : ℕ := 25
 theorem simbad_identity_depth_open_observable_count_pos : 0 < simbad_identity_depth_open_observable_count := by
   unfold simbad_identity_depth_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem simbad_identity_depth_open_headline_median_under_half_pct :
 
 theorem simbad_identity_depth_open_bundle :
     simbad_identity_depth_open_observable_count = 1365 ∧
-    simbad_identity_depth_open_D_eff = 16 ∧
+    simbad_identity_depth_open_D_eff = 25 ∧
     simbad_identity_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold simbad_identity_depth_open_observable_count; decide

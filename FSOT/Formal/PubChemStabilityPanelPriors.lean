@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def pubchem_stability_panel_observable_count : ℕ := 59
-def pubchem_stability_panel_D_eff : ℕ := 6
+def pubchem_stability_panel_D_eff : ℕ := 8
 theorem pubchem_stability_panel_observable_count_pos : 0 < pubchem_stability_panel_observable_count := by
   unfold pubchem_stability_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem pubchem_stability_panel_median_error_under_half_pct :
 
 theorem pubchem_stability_panel_bundle :
     pubchem_stability_panel_observable_count = 59 ∧
-    pubchem_stability_panel_D_eff = 6 ∧
+    pubchem_stability_panel_D_eff = 8 ∧
     (0.0024238898584426276 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

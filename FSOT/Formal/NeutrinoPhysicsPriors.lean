@@ -13,8 +13,7 @@ open Real
 
 def neutrino_physics_observable_count : ℕ := 20
 def neutrino_physics_median_error_pct : ℝ := (0.009504 : ℝ)
-def neutrino_physics_D_eff : ℕ := 7
-
+def neutrino_physics_D_eff : ℕ := 5
 theorem neutrino_physics_observable_count_pos : 0 < neutrino_physics_observable_count := by
   unfold neutrino_physics_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem neutrino_physics_median_error_under_five_pct :
 
 theorem neutrino_physics_bundle :
     neutrino_physics_observable_count = 20 ∧
-    neutrino_physics_D_eff = 7 ∧
+    neutrino_physics_D_eff = 5 ∧
     neutrino_physics_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨

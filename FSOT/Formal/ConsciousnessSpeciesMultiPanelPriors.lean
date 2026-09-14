@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def consciousness_species_multi_panel_observable_count : ℕ := 269
-def consciousness_species_multi_panel_D_eff : ℕ := 11
+def consciousness_species_multi_panel_D_eff : ℕ := 9
 theorem consciousness_species_multi_panel_observable_count_pos : 0 < consciousness_species_multi_panel_observable_count := by
   unfold consciousness_species_multi_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem consciousness_species_multi_panel_median_error_under_half_pct :
 
 theorem consciousness_species_multi_panel_bundle :
     consciousness_species_multi_panel_observable_count = 269 ∧
-    consciousness_species_multi_panel_D_eff = 11 ∧
+    consciousness_species_multi_panel_D_eff = 9 ∧
     (0.0201195 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

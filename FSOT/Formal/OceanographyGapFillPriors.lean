@@ -15,8 +15,7 @@ def oceanography_gap_fill_observable_count : ℕ := 65
 def oceanography_gap_fill_pooled_median_error_pct : ℝ := (0.03017272606768673 : ℝ)
 def oceanography_gap_fill_headline_median_error_pct : ℝ := (0.030172726067689837 : ℝ)
 def oceanography_gap_fill_beats_sota_headlines : ℕ := 2
-def oceanography_gap_fill_D_eff : ℕ := 17
-
+def oceanography_gap_fill_D_eff : ℕ := 14
 theorem oceanography_gap_fill_observable_count_pos : 0 < oceanography_gap_fill_observable_count := by
   unfold oceanography_gap_fill_observable_count; decide
 

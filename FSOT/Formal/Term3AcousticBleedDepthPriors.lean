@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def term3_acoustic_bleed_depth_observable_count : ℕ := 23
-def term3_acoustic_bleed_depth_D_eff : ℕ := 5
+def term3_acoustic_bleed_depth_D_eff : ℕ := 8
 theorem term3_acoustic_bleed_depth_observable_count_pos : 0 < term3_acoustic_bleed_depth_observable_count := by
   unfold term3_acoustic_bleed_depth_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem term3_acoustic_bleed_depth_median_error_under_half_pct :
 
 theorem term3_acoustic_bleed_depth_bundle :
     term3_acoustic_bleed_depth_observable_count = 23 ∧
-    term3_acoustic_bleed_depth_D_eff = 5 ∧
+    term3_acoustic_bleed_depth_D_eff = 8 ∧
     (0.008381497018408523 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

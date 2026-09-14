@@ -13,8 +13,7 @@ open Real
 
 def fsot_gpu_engineering_spine_observable_count : ℕ := 42
 def fsot_gpu_engineering_spine_median_error_pct : ℝ := (0.0 : ℝ)
-def fsot_gpu_engineering_spine_D_eff : ℕ := 13
-
+def fsot_gpu_engineering_spine_D_eff : ℕ := 8
 theorem fsot_gpu_engineering_spine_observable_count_pos : 0 < fsot_gpu_engineering_spine_observable_count := by
   unfold fsot_gpu_engineering_spine_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem fsot_gpu_engineering_spine_median_error_under_half_pct :
 
 theorem fsot_gpu_engineering_spine_bundle :
     fsot_gpu_engineering_spine_observable_count = 42 ∧
-    fsot_gpu_engineering_spine_D_eff = 13 ∧
+    fsot_gpu_engineering_spine_D_eff = 8 ∧
     fsot_gpu_engineering_spine_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

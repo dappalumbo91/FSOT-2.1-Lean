@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def semiconductor_physics_public_panel_observable_count : ℕ := 24
-def semiconductor_physics_public_panel_D_eff : ℕ := 5
+def semiconductor_physics_public_panel_D_eff : ℕ := 8
 theorem semiconductor_physics_public_panel_observable_count_pos : 0 < semiconductor_physics_public_panel_observable_count := by
   unfold semiconductor_physics_public_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem semiconductor_physics_public_panel_median_error_under_half_pct :
 
 theorem semiconductor_physics_public_panel_bundle :
     semiconductor_physics_public_panel_observable_count = 24 ∧
-    semiconductor_physics_public_panel_D_eff = 5 ∧
+    semiconductor_physics_public_panel_D_eff = 8 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

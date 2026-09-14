@@ -15,8 +15,7 @@ def particle_physics_gap_fill_observable_count : ℕ := 98
 def particle_physics_gap_fill_pooled_median_error_pct : ℝ := (0.002729984252880815 : ℝ)
 def particle_physics_gap_fill_headline_median_error_pct : ℝ := (0.002729984252880815 : ℝ)
 def particle_physics_gap_fill_beats_sota_headlines : ℕ := 2
-def particle_physics_gap_fill_D_eff : ℕ := 7
-
+def particle_physics_gap_fill_D_eff : ℕ := 5
 theorem particle_physics_gap_fill_observable_count_pos : 0 < particle_physics_gap_fill_observable_count := by
   unfold particle_physics_gap_fill_observable_count; decide
 

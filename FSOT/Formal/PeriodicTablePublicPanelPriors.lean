@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def periodic_table_public_panel_observable_count : ℕ := 52
-def periodic_table_public_panel_D_eff : ℕ := 5
+def periodic_table_public_panel_D_eff : ℕ := 8
 theorem periodic_table_public_panel_observable_count_pos : 0 < periodic_table_public_panel_observable_count := by
   unfold periodic_table_public_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem periodic_table_public_panel_median_error_under_half_pct :
 
 theorem periodic_table_public_panel_bundle :
     periodic_table_public_panel_observable_count = 52 ∧
-    periodic_table_public_panel_D_eff = 5 ∧
+    periodic_table_public_panel_D_eff = 8 ∧
     (9.5e-05 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

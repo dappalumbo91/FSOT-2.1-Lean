@@ -13,8 +13,7 @@ open Real
 
 def noaa_ndbc_buoy_observable_count : ℕ := 596
 def noaa_ndbc_buoy_median_error_pct : ℝ := (0.028287 : ℝ)
-def noaa_ndbc_buoy_D_eff : ℕ := 17
-
+def noaa_ndbc_buoy_D_eff : ℕ := 14
 theorem noaa_ndbc_buoy_observable_count_pos : 0 < noaa_ndbc_buoy_observable_count := by
   unfold noaa_ndbc_buoy_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem noaa_ndbc_buoy_median_error_under_five_pct :
 
 theorem noaa_ndbc_buoy_bundle :
     noaa_ndbc_buoy_observable_count = 596 ∧
-    noaa_ndbc_buoy_D_eff = 17 ∧
+    noaa_ndbc_buoy_D_eff = 14 ∧
     noaa_ndbc_buoy_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨

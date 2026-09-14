@@ -12,7 +12,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def weather_hour_count : ℕ := 24
-def weather_D_eff : ℕ := 15
+def weather_D_eff : ℕ := 12
 def weather_S_min : ℝ := (0.364542 : ℝ)
 def weather_S_mean : ℝ := (0.48326775000000016 : ℝ)
 
@@ -27,7 +27,7 @@ theorem weather_hour_count_pos : 0 < weather_hour_count := by
 /-- Bundle: 24-hour weather sim at D_eff=15 with positive S (medical-domain sign proxy). -/
 theorem weather_priors_bundle :
     weather_hour_count = 24 ∧
-    weather_D_eff = 15 ∧
+    weather_D_eff = 12 ∧
     weather_S_min = (0.364542 : ℝ) ∧
     weather_S_mean = (0.48326775000000016 : ℝ) ∧
     (0 : ℝ) < weather_S_min ∧

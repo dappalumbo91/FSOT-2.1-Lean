@@ -15,8 +15,7 @@ def pure_mathematics_ext_observable_count : ℕ := 1549
 def pure_mathematics_ext_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def pure_mathematics_ext_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def pure_mathematics_ext_beats_sota_headlines : ℕ := 2
-def pure_mathematics_ext_D_eff : ℕ := 18
-
+def pure_mathematics_ext_D_eff : ℕ := 5
 theorem pure_mathematics_ext_observable_count_pos : 0 < pure_mathematics_ext_observable_count := by
   unfold pure_mathematics_ext_observable_count; decide
 

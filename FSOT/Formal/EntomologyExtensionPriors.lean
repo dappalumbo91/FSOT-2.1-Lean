@@ -15,8 +15,7 @@ def entomology_ext_observable_count : ℕ := 430
 def entomology_ext_pooled_median_error_pct : ℝ := (0.022236250385189223 : ℝ)
 def entomology_ext_headline_median_error_pct : ℝ := (0.022236250385189223 : ℝ)
 def entomology_ext_beats_sota_headlines : ℕ := 2
-def entomology_ext_D_eff : ℕ := 14
-
+def entomology_ext_D_eff : ℕ := 9
 theorem entomology_ext_observable_count_pos : 0 < entomology_ext_observable_count := by
   unfold entomology_ext_observable_count; decide
 

@@ -15,8 +15,7 @@ def atomic_physics_gap_fill_observable_count : ℕ := 80
 def atomic_physics_gap_fill_pooled_median_error_pct : ℝ := (0.0009504134401195552 : ℝ)
 def atomic_physics_gap_fill_headline_median_error_pct : ℝ := (0.0009504134401195552 : ℝ)
 def atomic_physics_gap_fill_beats_sota_headlines : ℕ := 2
-def atomic_physics_gap_fill_D_eff : ℕ := 7
-
+def atomic_physics_gap_fill_D_eff : ℕ := 6
 theorem atomic_physics_gap_fill_observable_count_pos : 0 < atomic_physics_gap_fill_observable_count := by
   unfold atomic_physics_gap_fill_observable_count; decide
 

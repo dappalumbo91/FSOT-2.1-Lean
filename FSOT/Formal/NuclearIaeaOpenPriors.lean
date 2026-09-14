@@ -15,8 +15,7 @@ open Real
 def nuclear_iaea_open_observable_count : ℕ := 360
 def nuclear_iaea_open_pooled_median_error_pct : ℝ := (0.092131 : ℝ)
 def nuclear_iaea_open_headline_median_error_pct : ℝ := (0.092131 : ℝ)
-def nuclear_iaea_open_D_eff : ℕ := 16
-
+def nuclear_iaea_open_D_eff : ℕ := 12
 theorem nuclear_iaea_open_observable_count_pos : 0 < nuclear_iaea_open_observable_count := by
   unfold nuclear_iaea_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem nuclear_iaea_open_headline_median_under_half_pct :
 
 theorem nuclear_iaea_open_bundle :
     nuclear_iaea_open_observable_count = 360 ∧
-    nuclear_iaea_open_D_eff = 16 ∧
+    nuclear_iaea_open_D_eff = 12 ∧
     nuclear_iaea_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold nuclear_iaea_open_observable_count; decide

@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def microtubule_quantum_consciousness_panel_observable_count : ℕ := 63
-def microtubule_quantum_consciousness_panel_D_eff : ℕ := 11
+def microtubule_quantum_consciousness_panel_D_eff : ℕ := 5
 theorem microtubule_quantum_consciousness_panel_observable_count_pos : 0 < microtubule_quantum_consciousness_panel_observable_count := by
   unfold microtubule_quantum_consciousness_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem microtubule_quantum_consciousness_panel_median_error_under_half_pct :
 
 theorem microtubule_quantum_consciousness_panel_bundle :
     microtubule_quantum_consciousness_panel_observable_count = 63 ∧
-    microtubule_quantum_consciousness_panel_D_eff = 11 ∧
+    microtubule_quantum_consciousness_panel_D_eff = 5 ∧
     (0.044671 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

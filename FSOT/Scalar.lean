@@ -125,28 +125,30 @@ structure DomainParams where
 
 def defaultDomainParams : DomainParams := {}
 
+/-- Nest D / look / hits / observed. Authority is vendor/fsot_compute.py. -/
 def getDomainParams (domain : String) : DomainParams :=
   match domain with
-  | "quantum"         => { D_eff := 6,  recent_hits := 0, delta_psi := 1.0,  delta_theta := 1.0, observed := true }
-  | "biological"      => { D_eff := 12, recent_hits := 0, delta_psi := 0.05, delta_theta := 1.0, observed := false }
-  | "astronomical"    => { D_eff := 20, recent_hits := 1, delta_psi := 1.0,  delta_theta := 1.0, observed := true }
-  | "cosmological"    => { D_eff := 25, recent_hits := 0, delta_psi := 1.0,  delta_theta := 1.0, observed := false }
-  | "ai_tech"         => { D_eff := 12, recent_hits := 1, delta_psi := 0.8,  delta_theta := 1.0, observed := true }
-  | "engineering"     => { D_eff := 15, recent_hits := 0, delta_psi := 0.5,  delta_theta := 1.0, observed := true }
-  | "physics"         => { D_eff := 8,  recent_hits := 0, delta_psi := 1.0,  delta_theta := 1.0, observed := true }
-  | "chemistry"       => { D_eff := 10, recent_hits := 0, delta_psi := 0.7,  delta_theta := 1.0, observed := false }
-  | "earth_science"   => { D_eff := 18, recent_hits := 1, delta_psi := 0.9,  delta_theta := 1.0, observed := true }
-  | "neuroscience"    => { D_eff := 14, recent_hits := 0, delta_psi := 0.1,  delta_theta := 1.0, observed := false }
-  | "economics"       => { D_eff := 16, recent_hits := 1, delta_psi := 0.6,  delta_theta := 1.0, observed := true }
-  | "meteorology"     => { D_eff := 17, recent_hits := 1, delta_psi := 0.4,  delta_theta := 1.0, observed := true }
-  | "oceanography"    => { D_eff := 19, recent_hits := 0, delta_psi := 0.3,  delta_theta := 1.0, observed := false }
-  | "anomalies"       => { D_eff := 22, recent_hits := 2, delta_psi := 1.5,  delta_theta := 1.0, observed := true }
-  | "social"          => { D_eff := 21, recent_hits := 1, delta_psi := 0.8,  delta_theta := 1.0, observed := true }
-  | "planetary"       => { D_eff := 23, recent_hits := 0, delta_psi := 1.0,  delta_theta := 1.0, observed := false }
-  | "nuclear"         => { D_eff := 9,  recent_hits := 0, delta_psi := 1.0,  delta_theta := 1.0, observed := true }
-  | "atomic"          => { D_eff := 7,  recent_hits := 0, delta_psi := 0.9,  delta_theta := 1.0, observed := true }
-  | "molecular"       => { D_eff := 11, recent_hits := 0, delta_psi := 0.6,  delta_theta := 1.0, observed := false }
-  | "electromagnetic" => { D_eff := 13, recent_hits := 1, delta_psi := 1.0,  delta_theta := 1.0, observed := true }
+  | "quantum"         => { D_eff := 5,  recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "biological"      => { D_eff := 9,  recent_hits := 0, delta_psi := 1.0,  observed := false }
+  | "astronomical"    => { D_eff := 18, recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "cosmological"    => { D_eff := 25, recent_hits := 0, delta_psi := 1.0,  observed := false }
+  | "ai_tech"         => { D_eff := 8,  recent_hits := 0, delta_psi := 1.0,  observed := false }
+  | "engineering"     => { D_eff := 12, recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "physics"         => { D_eff := 5,  recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "chemistry"       => { D_eff := 6,  recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "earth_science"   => { D_eff := 16, recent_hits := 0, delta_psi := 1.0,  observed := false }
+  | "neuroscience"    => { D_eff := 11, recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "economics"       => { D_eff := 18, recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "meteorology"     => { D_eff := 13, recent_hits := 0, delta_psi := 1.0,  observed := false }
+  | "oceanography"    => { D_eff := 14, recent_hits := 0, delta_psi := 1.0,  observed := false }
+  | "anomalies"       => { D_eff := 25, recent_hits := 0, delta_psi := 1.0,  observed := false }
+  | "social"          => { D_eff := 15, recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "planetary"       => { D_eff := 19, recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "nuclear"         => { D_eff := 12, recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "atomic"          => { D_eff := 6,  recent_hits := 0, delta_psi := e / pi, observed := true }
+  | "molecular"       => { D_eff := 7,  recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "electromagnetic" => { D_eff := 7,  recent_hits := 0, delta_psi := 1.0,  observed := true }
+  | "hep"             => { D_eff := 6,  recent_hits := 1, delta_psi := 1.0 - poof_factor / pi, observed := true }
   | _                 => defaultDomainParams
 
 def compute_for_domain (domain_name : String) (overrides : Option DomainParams := none) : Float :=

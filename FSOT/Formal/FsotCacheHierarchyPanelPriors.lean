@@ -13,8 +13,7 @@ open Real
 
 def fsot_cache_hierarchy_observable_count : ℕ := 82
 def fsot_cache_hierarchy_median_error_pct : ℝ := (0.0 : ℝ)
-def fsot_cache_hierarchy_D_eff : ℕ := 11
-
+def fsot_cache_hierarchy_D_eff : ℕ := 8
 theorem fsot_cache_hierarchy_observable_count_pos : 0 < fsot_cache_hierarchy_observable_count := by
   unfold fsot_cache_hierarchy_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem fsot_cache_hierarchy_median_error_under_half_pct :
 
 theorem fsot_cache_hierarchy_bundle :
     fsot_cache_hierarchy_observable_count = 82 ∧
-    fsot_cache_hierarchy_D_eff = 11 ∧
+    fsot_cache_hierarchy_D_eff = 8 ∧
     fsot_cache_hierarchy_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

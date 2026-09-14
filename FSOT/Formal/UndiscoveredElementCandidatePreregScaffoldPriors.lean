@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def undiscovered_element_candidate_prereg_scaffold_observable_count : ℕ := 25
-def undiscovered_element_candidate_prereg_scaffold_D_eff : ℕ := 5
+def undiscovered_element_candidate_prereg_scaffold_D_eff : ℕ := 12
 theorem undiscovered_element_candidate_prereg_scaffold_observable_count_pos : 0 < undiscovered_element_candidate_prereg_scaffold_observable_count := by
   unfold undiscovered_element_candidate_prereg_scaffold_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem undiscovered_element_candidate_prereg_scaffold_median_error_under_half_p
 
 theorem undiscovered_element_candidate_prereg_scaffold_bundle :
     undiscovered_element_candidate_prereg_scaffold_observable_count = 25 ∧
-    undiscovered_element_candidate_prereg_scaffold_D_eff = 5 ∧
+    undiscovered_element_candidate_prereg_scaffold_D_eff = 12 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

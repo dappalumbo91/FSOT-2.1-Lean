@@ -15,8 +15,7 @@ def psychology_gap_fill_observable_count : ℕ := 160
 def psychology_gap_fill_pooled_median_error_pct : ℝ := (0.03150616921194649 : ℝ)
 def psychology_gap_fill_headline_median_error_pct : ℝ := (0.03150616921194649 : ℝ)
 def psychology_gap_fill_beats_sota_headlines : ℕ := 2
-def psychology_gap_fill_D_eff : ℕ := 16
-
+def psychology_gap_fill_D_eff : ℕ := 13
 theorem psychology_gap_fill_observable_count_pos : 0 < psychology_gap_fill_observable_count := by
   unfold psychology_gap_fill_observable_count; decide
 

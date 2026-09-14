@@ -13,8 +13,7 @@ open Real
 
 def qce_elm_fusion_edge_observable_count : ℕ := 86
 def qce_elm_fusion_edge_median_error_pct : ℝ := (0.0 : ℝ)
-def qce_elm_fusion_edge_D_eff : ℕ := 14
-
+def qce_elm_fusion_edge_D_eff : ℕ := 12
 theorem qce_elm_fusion_edge_observable_count_pos : 0 < qce_elm_fusion_edge_observable_count := by
   unfold qce_elm_fusion_edge_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem qce_elm_fusion_edge_median_error_under_half_pct :
 
 theorem qce_elm_fusion_edge_bundle :
     qce_elm_fusion_edge_observable_count = 86 ∧
-    qce_elm_fusion_edge_D_eff = 14 ∧
+    qce_elm_fusion_edge_D_eff = 12 ∧
     qce_elm_fusion_edge_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

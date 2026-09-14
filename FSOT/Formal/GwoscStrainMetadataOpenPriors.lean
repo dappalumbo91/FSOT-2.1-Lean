@@ -15,8 +15,7 @@ open Real
 def gwosc_strain_metadata_open_observable_count : ℕ := 54
 def gwosc_strain_metadata_open_pooled_median_error_pct : ℝ := (0.008488 : ℝ)
 def gwosc_strain_metadata_open_headline_median_error_pct : ℝ := (0.008488 : ℝ)
-def gwosc_strain_metadata_open_D_eff : ℕ := 18
-
+def gwosc_strain_metadata_open_D_eff : ℕ := 23
 theorem gwosc_strain_metadata_open_observable_count_pos : 0 < gwosc_strain_metadata_open_observable_count := by
   unfold gwosc_strain_metadata_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem gwosc_strain_metadata_open_headline_median_under_half_pct :
 
 theorem gwosc_strain_metadata_open_bundle :
     gwosc_strain_metadata_open_observable_count = 54 ∧
-    gwosc_strain_metadata_open_D_eff = 18 ∧
+    gwosc_strain_metadata_open_D_eff = 23 ∧
     gwosc_strain_metadata_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold gwosc_strain_metadata_open_observable_count; decide

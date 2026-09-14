@@ -15,8 +15,7 @@ def food_microbiology_gap_fill_observable_count : ℕ := 30
 def food_microbiology_gap_fill_pooled_median_error_pct : ℝ := (0.04447250077037743 : ℝ)
 def food_microbiology_gap_fill_headline_median_error_pct : ℝ := (0.04447250077037743 : ℝ)
 def food_microbiology_gap_fill_beats_sota_headlines : ℕ := 2
-def food_microbiology_gap_fill_D_eff : ℕ := 14
-
+def food_microbiology_gap_fill_D_eff : ℕ := 9
 theorem food_microbiology_gap_fill_observable_count_pos : 0 < food_microbiology_gap_fill_observable_count := by
   unfold food_microbiology_gap_fill_observable_count; decide
 

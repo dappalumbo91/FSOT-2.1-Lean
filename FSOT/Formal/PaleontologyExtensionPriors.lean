@@ -15,8 +15,7 @@ def paleontology_ext_observable_count : ℕ := 630
 def paleontology_ext_pooled_median_error_pct : ℝ := (0.017836062884406152 : ℝ)
 def paleontology_ext_headline_median_error_pct : ℝ := (0.017836062884406152 : ℝ)
 def paleontology_ext_beats_sota_headlines : ℕ := 2
-def paleontology_ext_D_eff : ℕ := 18
-
+def paleontology_ext_D_eff : ℕ := 9
 theorem paleontology_ext_observable_count_pos : 0 < paleontology_ext_observable_count := by
   unfold paleontology_ext_observable_count; decide
 

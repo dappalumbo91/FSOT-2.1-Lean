@@ -14,7 +14,7 @@ open Real
 
 def materials_engineering_observable_count : ℕ := 87
 def materials_engineering_section_count : ℕ := 7
-def materials_engineering_D_eff : ℕ := 12
+def materials_engineering_D_eff : ℕ := 8
 def materials_engineering_pooled_median_error_pct : ℝ := (0.027170334947435038 : ℝ)
 def materials_engineering_headline_median_error_pct : ℝ := (0.027170334947435038 : ℝ)
 def materials_engineering_beats_sota_headlines : ℕ := 6
@@ -42,7 +42,7 @@ theorem materials_engineering_beats_sota_headlines_pos : 0 < materials_engineeri
 theorem materials_engineering_bundle :
     materials_engineering_observable_count = 87 ∧
     materials_engineering_section_count = 7 ∧
-    materials_engineering_D_eff = 12 ∧
+    materials_engineering_D_eff = 8 ∧
     materials_engineering_pooled_median_error_pct < (0.5 : ℝ) ∧
     materials_engineering_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < materials_engineering_beats_sota_headlines ∧

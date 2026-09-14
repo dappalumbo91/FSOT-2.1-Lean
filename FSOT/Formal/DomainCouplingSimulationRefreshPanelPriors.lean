@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def domain_coupling_simulation_refresh_panel_observable_count : ℕ := 22
-def domain_coupling_simulation_refresh_panel_D_eff : ℕ := 5
+def domain_coupling_simulation_refresh_panel_D_eff : ℕ := 25
 theorem domain_coupling_simulation_refresh_panel_observable_count_pos : 0 < domain_coupling_simulation_refresh_panel_observable_count := by
   unfold domain_coupling_simulation_refresh_panel_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem domain_coupling_simulation_refresh_panel_median_error_under_half_pct :
 
 theorem domain_coupling_simulation_refresh_panel_bundle :
     domain_coupling_simulation_refresh_panel_observable_count = 22 ∧
-    domain_coupling_simulation_refresh_panel_D_eff = 5 ∧
+    domain_coupling_simulation_refresh_panel_D_eff = 25 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

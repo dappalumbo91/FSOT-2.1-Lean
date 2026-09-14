@@ -13,8 +13,7 @@ open Real
 
 def schematic_netlist_intrinsic_observable_count : ℕ := 5
 def schematic_netlist_intrinsic_median_error_pct : ℝ := (0.051887 : ℝ)
-def schematic_netlist_intrinsic_D_eff : ℕ := 10
-
+def schematic_netlist_intrinsic_D_eff : ℕ := 25
 theorem schematic_netlist_intrinsic_observable_count_pos : 0 < schematic_netlist_intrinsic_observable_count := by
   unfold schematic_netlist_intrinsic_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem schematic_netlist_intrinsic_median_error_under_five_pct :
 
 theorem schematic_netlist_intrinsic_bundle :
     schematic_netlist_intrinsic_observable_count = 5 ∧
-    schematic_netlist_intrinsic_D_eff = 10 ∧
+    schematic_netlist_intrinsic_D_eff = 25 ∧
     schematic_netlist_intrinsic_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "electron") > 0 := by
   refine ⟨

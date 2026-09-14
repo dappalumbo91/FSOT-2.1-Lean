@@ -13,8 +13,7 @@ open Real
 
 def inaturalist_observation_observable_count : ℕ := 288
 def inaturalist_observation_median_error_pct : ℝ := (0.006006 : ℝ)
-def inaturalist_observation_D_eff : ℕ := 15
-
+def inaturalist_observation_D_eff : ℕ := 9
 theorem inaturalist_observation_observable_count_pos : 0 < inaturalist_observation_observable_count := by
   unfold inaturalist_observation_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem inaturalist_observation_median_error_under_five_pct :
 
 theorem inaturalist_observation_bundle :
     inaturalist_observation_observable_count = 288 ∧
-    inaturalist_observation_D_eff = 15 ∧
+    inaturalist_observation_D_eff = 9 ∧
     inaturalist_observation_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨

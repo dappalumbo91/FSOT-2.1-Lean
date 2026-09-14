@@ -22,8 +22,7 @@ def warp_bh_wh_portal_observable_count : ℕ := 11
 def warp_bh_wh_portal_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def warp_bh_wh_portal_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def warp_bh_wh_portal_beats_sota_headlines : ℕ := 2
-def warp_bh_wh_portal_D_eff : ℕ := 29
-
+def warp_bh_wh_portal_D_eff : ℕ := 7
 /-! ## BH/WH doorway scalars (Steps 9–11) -/
 
 def warp_psi_bh_inlet : ℝ := (0.009663204175 : ℝ)

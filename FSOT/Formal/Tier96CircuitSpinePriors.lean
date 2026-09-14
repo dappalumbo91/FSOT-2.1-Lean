@@ -13,8 +13,7 @@ open Real
 
 def tier_96_circuit_observable_count : ℕ := 11
 def tier_96_circuit_median_error_pct : ℝ := (0.0 : ℝ)
-def tier_96_circuit_D_eff : ℕ := 10
-
+def tier_96_circuit_D_eff : ℕ := 7
 theorem tier_96_circuit_observable_count_pos : 0 < tier_96_circuit_observable_count := by
   unfold tier_96_circuit_observable_count; decide
 
@@ -25,7 +24,7 @@ theorem tier_96_circuit_median_error_under_five_pct :
 
 theorem tier_96_circuit_bundle :
     tier_96_circuit_observable_count = 11 ∧
-    tier_96_circuit_D_eff = 10 ∧
+    tier_96_circuit_D_eff = 7 ∧
     tier_96_circuit_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨

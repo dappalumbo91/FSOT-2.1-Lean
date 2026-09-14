@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def fuel_candidate_prereg_scaffold_observable_count : ℕ := 33
-def fuel_candidate_prereg_scaffold_D_eff : ℕ := 12
+def fuel_candidate_prereg_scaffold_D_eff : ℕ := 8
 theorem fuel_candidate_prereg_scaffold_observable_count_pos : 0 < fuel_candidate_prereg_scaffold_observable_count := by
   unfold fuel_candidate_prereg_scaffold_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem fuel_candidate_prereg_scaffold_median_error_under_half_pct :
 
 theorem fuel_candidate_prereg_scaffold_bundle :
     fuel_candidate_prereg_scaffold_observable_count = 33 ∧
-    fuel_candidate_prereg_scaffold_D_eff = 12 ∧
+    fuel_candidate_prereg_scaffold_D_eff = 8 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

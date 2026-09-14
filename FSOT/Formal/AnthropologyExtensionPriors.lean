@@ -15,8 +15,7 @@ def anthropology_ext_observable_count : ℕ := 160
 def anthropology_ext_pooled_median_error_pct : ℝ := (0.019504399572476606 : ℝ)
 def anthropology_ext_headline_median_error_pct : ℝ := (0.019504399572476606 : ℝ)
 def anthropology_ext_beats_sota_headlines : ℕ := 2
-def anthropology_ext_D_eff : ℕ := 17
-
+def anthropology_ext_D_eff : ℕ := 9
 theorem anthropology_ext_observable_count_pos : 0 < anthropology_ext_observable_count := by
   unfold anthropology_ext_observable_count; decide
 

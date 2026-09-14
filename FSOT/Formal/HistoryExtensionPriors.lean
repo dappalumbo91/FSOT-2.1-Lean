@@ -15,8 +15,7 @@ def history_ext_observable_count : ℕ := 170
 def history_ext_pooled_median_error_pct : ℝ := (0.019504399572477397 : ℝ)
 def history_ext_headline_median_error_pct : ℝ := (0.019504399572477397 : ℝ)
 def history_ext_beats_sota_headlines : ℕ := 2
-def history_ext_D_eff : ℕ := 15
-
+def history_ext_D_eff : ℕ := 25
 theorem history_ext_observable_count_pos : 0 < history_ext_observable_count := by
   unfold history_ext_observable_count; decide
 

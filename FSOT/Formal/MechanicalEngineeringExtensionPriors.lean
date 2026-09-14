@@ -15,8 +15,7 @@ def mechanical_engineering_ext_observable_count : ℕ := 50
 def mechanical_engineering_ext_pooled_median_error_pct : ℝ := (0.07869745016115025 : ℝ)
 def mechanical_engineering_ext_headline_median_error_pct : ℝ := (0.07869745016115025 : ℝ)
 def mechanical_engineering_ext_beats_sota_headlines : ℕ := 2
-def mechanical_engineering_ext_D_eff : ℕ := 16
-
+def mechanical_engineering_ext_D_eff : ℕ := 12
 theorem mechanical_engineering_ext_observable_count_pos : 0 < mechanical_engineering_ext_observable_count := by
   unfold mechanical_engineering_ext_observable_count; decide
 

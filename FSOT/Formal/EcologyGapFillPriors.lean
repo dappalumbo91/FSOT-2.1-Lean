@@ -15,8 +15,7 @@ def ecology_gap_fill_observable_count : ℕ := 627
 def ecology_gap_fill_pooled_median_error_pct : ℝ := (0.017789000308164337 : ℝ)
 def ecology_gap_fill_headline_median_error_pct : ℝ := (0.017789000308164337 : ℝ)
 def ecology_gap_fill_beats_sota_headlines : ℕ := 3
-def ecology_gap_fill_D_eff : ℕ := 14
-
+def ecology_gap_fill_D_eff : ℕ := 12
 theorem ecology_gap_fill_observable_count_pos : 0 < ecology_gap_fill_observable_count := by
   unfold ecology_gap_fill_observable_count; decide
 

@@ -14,7 +14,7 @@ open Real
 
 def machine_and_molecule_live_observable_count : ℕ := 120
 def machine_and_molecule_live_median_error_pct : ℝ := (0.01341 : ℝ)
-def machine_and_molecule_live_D_eff : ℕ := 12
+def machine_and_molecule_live_D_eff : ℕ := 8
 theorem machine_and_molecule_live_observable_count_pos : 0 < machine_and_molecule_live_observable_count := by
   unfold machine_and_molecule_live_observable_count; decide
 
@@ -30,7 +30,7 @@ theorem machine_and_molecule_live_median_error_under_half_pct :
 
 theorem machine_and_molecule_live_bundle :
     machine_and_molecule_live_observable_count = 120 ∧
-    machine_and_molecule_live_D_eff = 12 ∧
+    machine_and_molecule_live_D_eff = 8 ∧
     machine_and_molecule_live_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨

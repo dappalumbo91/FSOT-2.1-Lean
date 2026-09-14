@@ -15,8 +15,7 @@ def atmospheric_physics_gap_fill_observable_count : ℕ := 107
 def atmospheric_physics_gap_fill_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def atmospheric_physics_gap_fill_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def atmospheric_physics_gap_fill_beats_sota_headlines : ℕ := 2
-def atmospheric_physics_gap_fill_D_eff : ℕ := 15
-
+def atmospheric_physics_gap_fill_D_eff : ℕ := 14
 theorem atmospheric_physics_gap_fill_observable_count_pos : 0 < atmospheric_physics_gap_fill_observable_count := by
   unfold atmospheric_physics_gap_fill_observable_count; decide
 

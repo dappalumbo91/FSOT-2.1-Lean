@@ -15,8 +15,7 @@ def law_policy_ext_observable_count : ℕ := 180
 def law_policy_ext_pooled_median_error_pct : ℝ := (0.019504399572479934 : ℝ)
 def law_policy_ext_headline_median_error_pct : ℝ := (0.019504399572479934 : ℝ)
 def law_policy_ext_beats_sota_headlines : ℕ := 2
-def law_policy_ext_D_eff : ℕ := 17
-
+def law_policy_ext_D_eff : ℕ := 18
 theorem law_policy_ext_observable_count_pos : 0 < law_policy_ext_observable_count := by
   unfold law_policy_ext_observable_count; decide
 

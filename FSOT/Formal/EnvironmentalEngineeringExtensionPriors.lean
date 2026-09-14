@@ -15,8 +15,7 @@ def environmental_engineering_ext_observable_count : ℕ := 18416
 def environmental_engineering_ext_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def environmental_engineering_ext_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def environmental_engineering_ext_beats_sota_headlines : ℕ := 2
-def environmental_engineering_ext_D_eff : ℕ := 17
-
+def environmental_engineering_ext_D_eff : ℕ := 12
 theorem environmental_engineering_ext_observable_count_pos : 0 < environmental_engineering_ext_observable_count := by
   unfold environmental_engineering_ext_observable_count; decide
 

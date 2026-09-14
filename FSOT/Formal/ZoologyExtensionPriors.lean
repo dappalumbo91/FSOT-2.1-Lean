@@ -15,8 +15,7 @@ def zoology_ext_observable_count : ℕ := 1000
 def zoology_ext_pooled_median_error_pct : ℝ := (0.01778900030815634 : ℝ)
 def zoology_ext_headline_median_error_pct : ℝ := (0.01778900030815634 : ℝ)
 def zoology_ext_beats_sota_headlines : ℕ := 2
-def zoology_ext_D_eff : ℕ := 14
-
+def zoology_ext_D_eff : ℕ := 9
 theorem zoology_ext_observable_count_pos : 0 < zoology_ext_observable_count := by
   unfold zoology_ext_observable_count; decide
 

@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def gwosc_live_event_deep_observable_count : ℕ := 191
-def gwosc_live_event_deep_D_eff : ℕ := 18
+def gwosc_live_event_deep_D_eff : ℕ := 23
 theorem gwosc_live_event_deep_observable_count_pos : 0 < gwosc_live_event_deep_observable_count := by
   unfold gwosc_live_event_deep_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem gwosc_live_event_deep_median_error_under_half_pct :
 
 theorem gwosc_live_event_deep_bundle :
     gwosc_live_event_deep_observable_count = 191 ∧
-    gwosc_live_event_deep_D_eff = 18 ∧
+    gwosc_live_event_deep_D_eff = 23 ∧
     (0.008488 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

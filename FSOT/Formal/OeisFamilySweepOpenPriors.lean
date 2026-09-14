@@ -15,8 +15,7 @@ open Real
 def oeis_family_sweep_open_observable_count : ℕ := 394
 def oeis_family_sweep_open_pooled_median_error_pct : ℝ := (0.014767 : ℝ)
 def oeis_family_sweep_open_headline_median_error_pct : ℝ := (0.014767 : ℝ)
-def oeis_family_sweep_open_D_eff : ℕ := 14
-
+def oeis_family_sweep_open_D_eff : ℕ := 5
 theorem oeis_family_sweep_open_observable_count_pos : 0 < oeis_family_sweep_open_observable_count := by
   unfold oeis_family_sweep_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem oeis_family_sweep_open_headline_median_under_half_pct :
 
 theorem oeis_family_sweep_open_bundle :
     oeis_family_sweep_open_observable_count = 394 ∧
-    oeis_family_sweep_open_D_eff = 14 ∧
+    oeis_family_sweep_open_D_eff = 5 ∧
     oeis_family_sweep_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold oeis_family_sweep_open_observable_count; decide

@@ -15,8 +15,7 @@ def fluid_dynamics_gap_fill_observable_count : ℕ := 55
 def fluid_dynamics_gap_fill_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def fluid_dynamics_gap_fill_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def fluid_dynamics_gap_fill_beats_sota_headlines : ℕ := 3
-def fluid_dynamics_gap_fill_D_eff : ℕ := 15
-
+def fluid_dynamics_gap_fill_D_eff : ℕ := 12
 theorem fluid_dynamics_gap_fill_observable_count_pos : 0 < fluid_dynamics_gap_fill_observable_count := by
   unfold fluid_dynamics_gap_fill_observable_count; decide
 

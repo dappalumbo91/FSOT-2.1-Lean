@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def unified_db_crosswalk_spine_observable_count : ℕ := 24
-def unified_db_crosswalk_spine_D_eff : ℕ := 5
+def unified_db_crosswalk_spine_D_eff : ℕ := 10
 theorem unified_db_crosswalk_spine_observable_count_pos : 0 < unified_db_crosswalk_spine_observable_count := by
   unfold unified_db_crosswalk_spine_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem unified_db_crosswalk_spine_median_error_under_half_pct :
 
 theorem unified_db_crosswalk_spine_bundle :
     unified_db_crosswalk_spine_observable_count = 24 ∧
-    unified_db_crosswalk_spine_D_eff = 5 ∧
+    unified_db_crosswalk_spine_D_eff = 10 ∧
     (0.0020923899350648867 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

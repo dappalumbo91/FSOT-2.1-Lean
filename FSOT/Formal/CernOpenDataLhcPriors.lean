@@ -13,7 +13,7 @@ open Real
 
 def cern_open_data_lhc_observable_count : ℕ := 83
 def cern_open_data_lhc_median_error_pct : ℝ := (0.013294 : ℝ)
-def cern_open_data_lhc_D_eff : ℕ := 5
+def cern_open_data_lhc_D_eff : ℕ := 12
 theorem cern_open_data_lhc_observable_count_pos : 0 < cern_open_data_lhc_observable_count := by
   unfold cern_open_data_lhc_observable_count; decide
 
@@ -24,7 +24,7 @@ theorem cern_open_data_lhc_median_error_under_five_pct :
 
 theorem cern_open_data_lhc_bundle :
     cern_open_data_lhc_observable_count = 83 ∧
-    cern_open_data_lhc_D_eff = 5 ∧
+    cern_open_data_lhc_D_eff = 12 ∧
     cern_open_data_lhc_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨

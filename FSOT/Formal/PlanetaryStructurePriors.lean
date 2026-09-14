@@ -13,7 +13,7 @@ open Real
 
 def planetary_structure_body_count : ℕ := 20
 def planetary_structure_median_error_pct : ℝ := (0.0 : ℝ)
-def planetary_structure_D_eff : ℕ := 18
+def planetary_structure_D_eff : ℕ := 19
 theorem planetary_structure_body_count_pos : 0 < planetary_structure_body_count := by
   unfold planetary_structure_body_count; decide
 
@@ -24,7 +24,7 @@ theorem planetary_structure_median_error_under_half_pct :
 
 theorem planetary_structure_bundle :
     planetary_structure_body_count = 20 ∧
-    planetary_structure_D_eff = 18 ∧
+    planetary_structure_D_eff = 19 ∧
     planetary_structure_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨

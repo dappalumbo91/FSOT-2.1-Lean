@@ -15,8 +15,7 @@ def agriculture_agroecology_gap_fill_observable_count : ℕ := 276
 def agriculture_agroecology_gap_fill_pooled_median_error_pct : ℝ := (0.018019024892929635 : ℝ)
 def agriculture_agroecology_gap_fill_headline_median_error_pct : ℝ := (0.018019024892929635 : ℝ)
 def agriculture_agroecology_gap_fill_beats_sota_headlines : ℕ := 2
-def agriculture_agroecology_gap_fill_D_eff : ℕ := 16
-
+def agriculture_agroecology_gap_fill_D_eff : ℕ := 12
 theorem agriculture_agroecology_gap_fill_observable_count_pos : 0 < agriculture_agroecology_gap_fill_observable_count := by
   unfold agriculture_agroecology_gap_fill_observable_count; decide
 

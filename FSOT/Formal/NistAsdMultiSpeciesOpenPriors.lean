@@ -15,8 +15,7 @@ open Real
 def nist_asd_multi_species_open_observable_count : ℕ := 26
 def nist_asd_multi_species_open_pooled_median_error_pct : ℝ := (0.073582 : ℝ)
 def nist_asd_multi_species_open_headline_median_error_pct : ℝ := (0.073582 : ℝ)
-def nist_asd_multi_species_open_D_eff : ℕ := 12
-
+def nist_asd_multi_species_open_D_eff : ℕ := 6
 theorem nist_asd_multi_species_open_observable_count_pos : 0 < nist_asd_multi_species_open_observable_count := by
   unfold nist_asd_multi_species_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem nist_asd_multi_species_open_headline_median_under_half_pct :
 
 theorem nist_asd_multi_species_open_bundle :
     nist_asd_multi_species_open_observable_count = 26 ∧
-    nist_asd_multi_species_open_D_eff = 12 ∧
+    nist_asd_multi_species_open_D_eff = 6 ∧
     nist_asd_multi_species_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold nist_asd_multi_species_open_observable_count; decide

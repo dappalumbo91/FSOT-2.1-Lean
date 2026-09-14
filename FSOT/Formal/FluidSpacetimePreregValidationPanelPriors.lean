@@ -10,8 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def fluid_spacetime_prereg_validation_panel_observable_count : ℕ := 24
-def fluid_spacetime_prereg_validation_panel_D_eff : ℕ := 25
-
+def fluid_spacetime_prereg_validation_panel_D_eff : ℕ := 12
 theorem fluid_spacetime_prereg_validation_panel_observable_count_pos : 0 < fluid_spacetime_prereg_validation_panel_observable_count := by
   unfold fluid_spacetime_prereg_validation_panel_observable_count; decide
 
@@ -21,7 +20,7 @@ theorem fluid_spacetime_prereg_validation_panel_median_error_under_half_pct :
 
 theorem fluid_spacetime_prereg_validation_panel_bundle :
     fluid_spacetime_prereg_validation_panel_observable_count = 24 ∧
-    fluid_spacetime_prereg_validation_panel_D_eff = 25 ∧
+    fluid_spacetime_prereg_validation_panel_D_eff = 12 ∧
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

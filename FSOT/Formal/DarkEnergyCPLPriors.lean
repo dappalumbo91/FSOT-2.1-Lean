@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def dark_energy_cpl_observable_count : ℕ := 24
-def dark_energy_cpl_D_eff : ℕ := 25
+def dark_energy_cpl_D_eff : ℕ := 12
 theorem dark_energy_cpl_observable_count_pos : 0 < dark_energy_cpl_observable_count := by
   unfold dark_energy_cpl_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem dark_energy_cpl_median_error_under_half_pct :
 
 theorem dark_energy_cpl_bundle :
     dark_energy_cpl_observable_count = 24 ∧
-    dark_energy_cpl_D_eff = 25 ∧
+    dark_energy_cpl_D_eff = 12 ∧
     (0.029733 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

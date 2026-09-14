@@ -35,33 +35,119 @@ LEAN_TO_CORE = {
     "quantum": "Quantum_Mechanics",
     "atomic": "Atomic_Physics",
     "chemical": "Chemistry",
+    "chemistry": "Chemistry",
     "ocean": "Oceanography",
     "climate": "Meteorology",
     "seismic": "Seismology",
+    "seismology": "Seismology",
     "neural": "Neuroscience",
+    "neuro": "Neuroscience",
     "economic": "Economics",
+    "economics": "Economics",
     "planetary": "Planetary_Science",
     "nuclear": "Nuclear_Physics",
     "fluid": "Fluid_Dynamics",
     "optical": "Optics",
+    "optics": "Optics",
     "acoustic": "Acoustics",
+    "acoustical": "Acoustics",
+    "materials": "Materials_Science",
+    "material": "Materials_Science",
+    "psychology": "Psychology",
+    "psychometric": "Psychology",
+    "computing": "Quantum_Computing",
+    "interferometry": "Optics",
+    "meteorology": "Meteorology",
+    "ecology": "Ecology",
+    "geophysics": "Geophysics",
+    "sociology": "Sociology",
+    "engineering": "Thermodynamics",
+    "hardware": "Quantum_Computing",
+    "gpu": "Quantum_Computing",
+    "cuda": "Quantum_Computing",
+    "esp32": "Quantum_Computing",
+    "desi": "Cosmology",
+    "chembl": "Chemistry",
+    "alphafold": "Biochemistry",
+    "circuit": "Electromagnetism",
+    "cache": "Quantum_Computing",
+    "interconnect": "Quantum_Computing",
+    "endf": "Nuclear_Physics",
+    "iaea": "Nuclear_Physics",
+    "dzhanibekov": "Fluid_Dynamics",
+    "optimade": "Condensed_Matter",
+    "coding": "Quantum_Computing",
+    "codata": "Particle_Physics",
+    "gaia": "Astronomy",
+    "gbif": "Ecology",
+    "gwas": "Biology",
+    "gwosc": "Particle_Astrophysics",
+    "gwtc": "Particle_Astrophysics",
+    "nist": "Atomic_Physics",
+    "noaa": "Oceanography",
+    "tides": "Oceanography",
+    "nufit": "Particle_Physics",
+    "neutrino": "Particle_Physics",
+    "lmfdb": "Particle_Physics",
+    "oeis": "Particle_Physics",
+    "dft": "Condensed_Matter",
+    "antimatter": "Particle_Physics",
+    "processor": "Quantum_Computing",
+    "cpack": "Quantum_Computing",
 }
+
+# First-tag dumps. Only used if the name and other tags say nothing.
+WEAK_TAGS = frozenset({"particle", "energy", "quantum", "galactic"})
+
+
+def _compact(s: str) -> str:
+    return s.lower().replace("_", "")
+
+
+def _earliest_core(text: str) -> str | None:
+    """Leading orifice in the name: earliest start, then longest token."""
+    compact = _compact(text)
+    lower = text.lower()
+    hits: list[tuple[int, int, str]] = []
+    for core in DOMAINS:
+        cc = _compact(core)
+        i = compact.find(cc)
+        if i >= 0:
+            hits.append((i, -len(cc), core))
+    for token, core in LEAN_TO_CORE.items():
+        if core not in DOMAINS:
+            continue
+        i = lower.find(token)
+        if i >= 0:
+            hits.append((i, -len(token), core))
+    if not hits:
+        return None
+    hits.sort()
+    return hits[0][2]
 
 
 def _parent(name: str, tags: list[str]) -> str:
+    """Parent is the orifice of the name. Tags are fallback, not a particle dump."""
     if name in DOMAINS:
         return name
+    named = _earliest_core(name)
+    if named:
+        return named
+    strong: list[tuple[int, str]] = []
+    weak: list[tuple[int, str]] = []
     for t in tags:
-        core = LEAN_TO_CORE.get(str(t).lower())
-        if core in DOMAINS:
-            return core
-    lower = name.lower()
-    for token, core in LEAN_TO_CORE.items():
-        if token in lower and core in DOMAINS:
-            return core
-    for core in DOMAINS:
-        if core.lower().replace("_", "") in lower.replace("_", ""):
-            return core
+        mapped = _earliest_core(str(t)) or LEAN_TO_CORE.get(str(t).lower())
+        if mapped not in DOMAINS:
+            continue
+        tl = str(t).lower()
+        bucket = weak if tl in WEAK_TAGS else strong
+        bucket.append((len(tl), mapped))
+    strong.sort(reverse=True)
+    if strong:
+        return strong[0][1]
+    weak.sort(reverse=True)
+    if weak:
+        return weak[0][1]
     return "Cosmology"
 
 

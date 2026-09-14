@@ -15,8 +15,7 @@ def epidemiology_ext_observable_count : ℕ := 220
 def epidemiology_ext_pooled_median_error_pct : ℝ := (0.039895 : ℝ)
 def epidemiology_ext_headline_median_error_pct : ℝ := (0.039895 : ℝ)
 def epidemiology_ext_beats_sota_headlines : ℕ := 2
-def epidemiology_ext_D_eff : ℕ := 15
-
+def epidemiology_ext_D_eff : ℕ := 9
 theorem epidemiology_ext_observable_count_pos : 0 < epidemiology_ext_observable_count := by
   unfold epidemiology_ext_observable_count; decide
 

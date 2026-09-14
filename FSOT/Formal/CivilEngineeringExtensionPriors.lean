@@ -15,8 +15,7 @@ def civil_engineering_ext_observable_count : ℕ := 201
 def civil_engineering_ext_pooled_median_error_pct : ℝ := (0.021151317926568283 : ℝ)
 def civil_engineering_ext_headline_median_error_pct : ℝ := (0.021151317926568283 : ℝ)
 def civil_engineering_ext_beats_sota_headlines : ℕ := 2
-def civil_engineering_ext_D_eff : ℕ := 16
-
+def civil_engineering_ext_D_eff : ℕ := 12
 theorem civil_engineering_ext_observable_count_pos : 0 < civil_engineering_ext_observable_count := by
   unfold civil_engineering_ext_observable_count; decide
 

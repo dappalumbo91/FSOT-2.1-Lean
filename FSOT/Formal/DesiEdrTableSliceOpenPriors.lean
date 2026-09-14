@@ -15,8 +15,7 @@ open Real
 def desi_edr_table_slice_open_observable_count : ℕ := 18
 def desi_edr_table_slice_open_pooled_median_error_pct : ℝ := (0.010049 : ℝ)
 def desi_edr_table_slice_open_headline_median_error_pct : ℝ := (0.010049 : ℝ)
-def desi_edr_table_slice_open_D_eff : ℕ := 18
-
+def desi_edr_table_slice_open_D_eff : ℕ := 25
 theorem desi_edr_table_slice_open_observable_count_pos : 0 < desi_edr_table_slice_open_observable_count := by
   unfold desi_edr_table_slice_open_observable_count; decide
 
@@ -32,7 +31,7 @@ theorem desi_edr_table_slice_open_headline_median_under_half_pct :
 
 theorem desi_edr_table_slice_open_bundle :
     desi_edr_table_slice_open_observable_count = 18 ∧
-    desi_edr_table_slice_open_D_eff = 18 ∧
+    desi_edr_table_slice_open_D_eff = 25 ∧
     desi_edr_table_slice_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold desi_edr_table_slice_open_observable_count; decide

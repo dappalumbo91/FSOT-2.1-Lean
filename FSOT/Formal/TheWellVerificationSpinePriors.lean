@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def the_well_verification_spine_observable_count : ℕ := 24
-def the_well_verification_spine_D_eff : ℕ := 5
+def the_well_verification_spine_D_eff : ℕ := 8
 theorem the_well_verification_spine_observable_count_pos : 0 < the_well_verification_spine_observable_count := by
   unfold the_well_verification_spine_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem the_well_verification_spine_median_error_under_half_pct :
 
 theorem the_well_verification_spine_bundle :
     the_well_verification_spine_observable_count = 24 ∧
-    the_well_verification_spine_D_eff = 5 ∧
+    the_well_verification_spine_D_eff = 8 ∧
     (0.028287 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

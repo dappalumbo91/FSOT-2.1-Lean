@@ -10,7 +10,7 @@ namespace FSOT.Formal
 noncomputable section
 
 def compactification_ladder_observable_count : ℕ := 60
-def compactification_ladder_D_eff : ℕ := 5
+def compactification_ladder_D_eff : ℕ := 25
 theorem compactification_ladder_observable_count_pos : 0 < compactification_ladder_observable_count := by
   unfold compactification_ladder_observable_count; decide
 
@@ -20,7 +20,7 @@ theorem compactification_ladder_median_error_under_half_pct :
 
 theorem compactification_ladder_bundle :
     compactification_ladder_observable_count = 60 ∧
-    compactification_ladder_D_eff = 5 ∧
+    compactification_ladder_D_eff = 25 ∧
     (0.0220747159758794 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
