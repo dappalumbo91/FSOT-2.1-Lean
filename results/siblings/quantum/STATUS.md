@@ -59,7 +59,7 @@ C_{\mathrm{factor}} = C_{\mathrm{eff}}\cdot P_{\mathrm{new}}
 \]
 
 \[
-K = \varphi\cdot(\gamma/e)\cdot\sqrt{2}/\ln(\pi)\cdot 99/100 \approx 0.420222
+K = \varphi\cdot(\gamma/e)\cdot\sqrt{2}/\ln(\pi)\cdot(1-\pi^{-4}) \approx 0.420109
 \]
 
 \[

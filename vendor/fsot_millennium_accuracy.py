@@ -23,7 +23,7 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from fsot_compute import E, PHI, PI
+    from fsot_compute import E, PHI, PI, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
@@ -33,7 +33,7 @@ except ImportError:  # pragma: no cover
     import sys
 
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from fsot_compute import E, PHI, PI
+    from fsot_compute import E, PHI, PI, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
@@ -512,11 +512,12 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     )
     mu_ok = all(viscosity_eff(d) > 0.0 for d in (6.0, 14.0, 25.0))
     cs2 = sound_speed_sq(1.0)
-    visc_err = viscous_mode_rhs_error_pct(1.0, 15.0)
+    fluid_D = float(derived_D_eff("Fluid_Dynamics"))
+    visc_err = viscous_mode_rhs_error_pct(1.0, fluid_D)
     rows.append(
         _row(
             problem="Navier–Stokes existence and smoothness",
-            function_object="Seed-locked transport + 1D Stokes mode at Fluid D=15 (dark)",
+            function_object="Seed-locked transport + 1D Stokes mode at Fluid nest D (dark)",
             clay_object="Global smooth (or blow-up) 3D incompressible NSE",
             name="ns_transport_structure",
             computed=1.0 if visc_err <= 1e-9 else 0.0,
@@ -527,12 +528,13 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="native_structure_not_sota_contest",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="μ(D)>0, c_s²>0, manufactured Stokes mode at D=15 observed=False. Not Clay smoothness.",
+            note="μ(D)>0, c_s²>0, manufactured Stokes mode at nest Fluid D observed=False. Not Clay smoothness.",
             extra={
                 "mu_ok": mu_ok,
                 "mu_D6": viscosity_eff(6.0),
                 "mu_D14": viscosity_eff(14.0),
                 "mu_D25": viscosity_eff(25.0),
+                "fluid_D": fluid_D,
                 "c_s2": cs2,
                 "viscous_mode_err_pct": visc_err,
             },
@@ -677,7 +679,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     next_dig = [r for r in rows if r.get("next_dig")]
     return {
         "generated_at": _now(),
-        "pin": "D1D38A",
+        "pin": "AEB2AD",
         "clay_prize_claimed": False,
         "clay_problems_remaining": int(flags["clay_problems_remaining"]),
         "fsot_green_gate_pct": FSOT_GREEN_GATE_PCT,
@@ -734,7 +736,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
     lines = [
         "# Millennium functions — accuracy vs public SOTA",
         "",
-        f"**Pin:** D1D38A · **Clay Prize claimed:** **no** · **Generated:** `{summary['generated_at']}`",
+        f"**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `{summary['generated_at']}`",
         "",
         "Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.",
         "They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.",
@@ -824,7 +826,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Glueball 0++ vs Teper lattice precision | 4.57% vs 3.01% (~1.5σ). **Inside 2σ band, outside 1σ and outside 0.5%.** | Same seed as the 4√σ beat. Do not retune 3.5. Next: a better 0++ identity at the QCD fold. |",
         "| Weather storm-sector | Named object (docstring). Thin n_obs<24 is awaiting, not a kill. Majority-of-saw_storm **retired** (wrong object: 1010/8 mixed onto quiet 1005/12). | Quiet-fill fallback still misses. ECMWF not beaten. Frozen issues not rewritten. |",
         "| Weather quiet-fill | Five full-obs quiet kills (OLCN6, 42058, 44078). | Valve/quiet look, then finer `dt`. Do not drop these to inflate storm skill. |",
-        "| 3D NSE smoothness | Still no public accuracy %. | 1D Stokes mode at Fluid D=15 (dark) is executable structure, not Clay smoothness. |",
+        "| 3D NSE smoothness | Still no public accuracy %. | 1D Stokes mode at Fluid nest D (dark) is executable structure, not Clay smoothness. |",
         "| BSD | APPLY step 1: Cremona 11a1 / 37a1 / 389a1 named. | No native rank predictor. Do not `fsot_scaled(L(E,1))`. |",
         "| Hodge | APPLY step 1: ℂP² and an elliptic curve named. | Do not steal E_con≈20 for K3. Do not identity-pad 1=1. |",
         "",

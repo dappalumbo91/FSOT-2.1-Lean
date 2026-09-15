@@ -1,29 +1,29 @@
 #!/usr/bin/env python3
 """Between-scale interconnects — one fluid, adjacent D_eff talking through κ_ij.
 
-Gaps this module fills (not new laws):
+Gaps this module fills (not new laws). D from the nest, not the old assigned table:
 
-  Acoustics D=10  ↔ Seismology D=18     elastic wave
-  Fluid D=15      ↔ Ocean D=17 ↔ Air D=17
-  Thermodynamics D=15 ↔ Cosmology D=25  fridge-cycle / valve
-  Nuclear D=15    ↔ Particle D=5        same orifice, two zooms
-  Quantum_Gravity D=22 ↔ Cosmology D=25 compactification ceiling
-  Seismology D=18 ↔ Geophysics D=19     wave vs bulk-earth (adjacent rungs)
-  Materials D=10 ↔ Optics D=10          n and ρ, same compactification rung
-  Optics D=10 ↔ Quantum_Optics D=11     wave vs photon, same C=π/e
-  Quantum_Mechanics D=6 ↔ Atomic D=7    orbit vs bound well (same look)
-  Electromagnetism D=9 ↔ Optics D=10    source vs readout, ε=n² (Maxwell)
-  Biology D=12 ↔ Biochemistry D=13      organism vs molecule (dark look)
-  Atomic D=7 ↔ High_Energy D=7          bound well vs collision look
-  Chemistry D=8 ↔ Physical_Chemistry D=8 composition vs thermo (0.5/0.6 look)
-  Chemistry D=8 ↔ Molecular_Chemistry D=9 composition vs molecule
-  Biochemistry D=13 ↔ Condensed_Matter D=14 molecule vs solid
-  Condensed_Matter D=14 ↔ Neuroscience D=14 solid vs signaling
-  Condensed_Matter D=14 ↔ Fluid D=15 ice vs water (Fluid stays dark)
-  Condensed_Matter D=14 ↔ Nuclear D=15 lattice vs orifice
-  Neuroscience D=14 ↔ Thermodynamics D=15 signaling vs heat
-  Fluid D=15 ↔ Nuclear D=15 tank vs orifice (Fluid stays dark)
-  Fluid D=15 ↔ Meteorology D=16 tank vs weather (both dark)
+  Acoustics D=8   ↔ Seismology D=15     elastic wave
+  Fluid D=12      ↔ Ocean D=14 ↔ Air D=14
+  Thermodynamics D=12 ↔ Cosmology D=25  fridge-cycle / valve
+  Nuclear D=12    ↔ Particle D=5        same orifice, two zooms
+  Quantum_Gravity D=21 ↔ Cosmology D=25 compactification ceiling
+  Seismology D=15 ↔ Geophysics D=16     wave vs bulk-earth (adjacent rungs)
+  Materials D=8  ↔ Optics D=8           n and ρ, same compactification rung
+  Optics D=8     ↔ Quantum_Optics D=8   wave vs photon, same C=π/e
+  Quantum_Mechanics D=5 ↔ Atomic D=6    orbit vs bound well
+  Electromagnetism D=7 ↔ Optics D=8     source vs readout, ε=n² (Maxwell)
+  Biology D=9    ↔ Biochemistry D=10    organism vs molecule (Biology dark)
+  Atomic D=6     ↔ High_Energy D=6      bound well vs collision look
+  Chemistry D=6  ↔ Physical_Chemistry D=6 composition vs thermo
+  Chemistry D=6  ↔ Molecular_Chemistry D=7 composition vs molecule
+  Biochemistry D=10 ↔ Condensed_Matter D=11 molecule vs solid
+  Condensed_Matter D=11 ↔ Neuroscience D=11 solid vs signaling
+  Condensed_Matter D=11 ↔ Fluid D=12 ice vs water (Fluid stays dark)
+  Condensed_Matter D=11 ↔ Nuclear D=12 lattice vs orifice
+  Neuroscience D=11 ↔ Thermodynamics D=12 signaling vs heat
+  Fluid D=12 ↔ Nuclear D=12 tank vs orifice (Fluid stays dark)
+  Fluid D=12 ↔ Meteorology D=13 tank vs weather (both dark)
 
 Measured tables are public (PREM, NDBC, ENDF/IAEA, PDG, NIST, US Std Atmosphere).
 No least-squares. Deep-mantle PREM is a viscosity/phase-change band, not a
@@ -195,7 +195,7 @@ def scaled(measured: float, domain: str) -> tuple[float, float]:
 def poisson_seed() -> float:
     """Continuum-solid Poisson ratio.
 
-    Atomic fold D=7 over the compactification ceiling 25: ν = 7/25 = 0.28.
+    Atomic nest D over the compactification ceiling 25: ν = D_atomic/25.
     That is the mafic/lid solid. Felsic/porous crust and deep phase changes
     are other interfaces, not a new ν.
     """
@@ -4661,7 +4661,7 @@ def ecology_psychology_rows(eco_path: Path, psych_path: Path) -> list[dict[str, 
 
 
 def fluid_psychology_rows(psych_path: Path) -> list[dict[str, Any]]:
-    """Fluid D=15 ↔ Psychology D=16. Fluid stays dark."""
+    """Fluid nest D=12 ↔ Psychology D=13. Fluid stays dark."""
     rows = [_live_mix_structural(
         "Fluid_Dynamics", "Psychology", "fluid_psych_S_ratio",
         "S_fluid_over_S_psych_live", "Fluid stays dark. Not watts.",

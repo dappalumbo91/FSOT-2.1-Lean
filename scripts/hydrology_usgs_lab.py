@@ -130,7 +130,7 @@ def build_benchmark_records(
     chunks: list[dict],
     *,
     anomaly_tolerance_pct: float = 25.0,
-    D_eff: float = 15.0,
+    D_eff: float | None = None,
 ) -> dict[str, Any]:
     import sys
 
@@ -138,6 +138,8 @@ def build_benchmark_records(
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
     mod, authority_path = load_fsot_compute()
+    if D_eff is None:
+        D_eff = float(mod.derived_D_eff("Fluid_Dynamics"))
     S_energy = float(mod.domain_scalar("Geophysics"))
 
     by_station_month: dict[str, dict[str, list[float]]] = {}

@@ -32,6 +32,7 @@ try:
         PSI_CON,
         SUCTION,
         THETA_S,
+        derived_D_eff,
         domain_scalar,
         compute_scalar,
         ScalarInput,
@@ -54,6 +55,7 @@ except ImportError:  # pragma: no cover
         PSI_CON,
         SUCTION,
         THETA_S,
+        derived_D_eff,
         domain_scalar,
         compute_scalar,
         ScalarInput,
@@ -142,12 +144,17 @@ def scalar_transport_rhs(
     return -v * dS_dx + kappa * d2S_dx2 - gamma_rel * (S - S_eq)
 
 
-def viscous_mode_rhs_error_pct(k: float = 1.0, D_eff: float = 15.0) -> float:
-    """1D Stokes mode at the Fluid fold (D=15, dark).
+def viscous_mode_rhs_error_pct(
+    k: float = 1.0,
+    D_eff: float | None = None,
+) -> float:
+    """1D Stokes mode at the Fluid fold (nest D, dark).
 
     Manufactured v=sin(kx) at kx=π/2: analytic ∂t v = −μ k² v.
     Observer source is off (Fluid is dark). Not 3D NSE smoothness.
     """
+    if D_eff is None:
+        D_eff = float(derived_D_eff("Fluid_Dynamics"))
     rho = 1.0
     v = 1.0
     dv_dx = 0.0

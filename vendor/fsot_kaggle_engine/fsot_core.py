@@ -43,7 +43,7 @@ OMEGA = math.sin(PI / E) * SQRT2
 THETA_S = math.sin(PSI_CON * ETA_EFF)
 POOF = math.exp((-math.log(PI) / E) / (ETA_EFF * math.log(PHI)))
 
-C_EFF = (1.0 - POOF * math.sin(THETA_S)) * (1.0 + 0.01 * CATALAN_G / (PI * PHI))
+C_EFF = (1.0 - POOF * math.sin(THETA_S)) * (1.0 + (1.0 / PI**4) * CATALAN_G / (PI * PHI))
 A_BLEED = math.sin(PI / E) * PHI / SQRT2
 P_VAR = -math.cos(THETA_S + PI)
 B_IN = C_EFF * (1.0 - math.sin(THETA_S) / PHI)
@@ -53,7 +53,7 @@ CHAOS = GAMMA_C / OMEGA
 P_BASE = GAMMA_EULER / E
 P_NEW = P_BASE * SQRT2
 C_FACTOR = C_EFF * P_NEW                      # consciousness_factor
-K = PHI * (P_BASE * SQRT2) / math.log(PI) * 0.99
+K = PHI * (P_BASE * SQRT2) / math.log(PI) * (1.0 - 1.0 / PI**4)
 
 # Trinary collapse threshold (C_EFF * P_VAR ~= 0.9175)
 COLLAPSE_THRESHOLD = C_EFF * P_VAR
@@ -62,9 +62,9 @@ COLLAPSE_THRESHOLD = C_EFF * P_VAR
 FERTILE_LOW = 0.15
 FERTILE_HIGH = 0.45
 
-# Biological domain binding (FSOT/Formal/Scalar.lean get_domain_params "biological")
-BIO_D_EFF = 12
-BIO_DELTA_PSI = 0.08
+# Biological domain binding — nest Biology (D=9, look=1, dark).
+BIO_D_EFF = 9
+BIO_DELTA_PSI = 1.0
 BIO_DELTA_THETA = 1.0
 BIO_RECENT_HITS = 0
 BIO_OBSERVED = False
@@ -135,7 +135,7 @@ def compute_scalar_biological(
     amplitude: float = 1.0,
     observed: bool = False,
 ) -> float:
-    """FSOT scalar bound to the biological domain (D_eff=12)."""
+    """FSOT scalar bound to the biological domain (nest D=9, look=1, dark)."""
     return compute_scalar_fast(
         N=N, P=P, D_eff=BIO_D_EFF,
         recent_hits=recent_hits, delta_psi=delta_psi,
@@ -174,7 +174,7 @@ def validate_against_mpmath(dps: int = 50, tol: float = 1e-10) -> dict:
     m_OMEGA = sin(m_PI / m_E) * sqrt(2)
     m_THETA = sin(m_PSI * m_ETA)
     m_POOF = exp((-ln(m_PI) / m_E) / (m_ETA * ln(m_PHI)))
-    m_CEFF = (1 - m_POOF * sin(m_THETA)) * (1 + mpf("0.01") * m_GCAT / (m_PI * m_PHI))
+    m_CEFF = (1 - m_POOF * sin(m_THETA)) * (1 + (1 / m_PI**4) * m_GCAT / (m_PI * m_PHI))
     m_ABLEED = sin(m_PI / m_E) * m_PHI / sqrt(2)
     m_PVAR = -cos(m_THETA + m_PI)
     m_BIN = m_CEFF * (1 - sin(m_THETA) / m_PHI)
@@ -183,7 +183,7 @@ def validate_against_mpmath(dps: int = 50, tol: float = 1e-10) -> dict:
     m_CHAOS = m_GC / m_OMEGA
     m_PNEW = (m_GAMMA / m_E) * sqrt(2)
     m_CFAC = m_CEFF * m_PNEW
-    m_K = m_PHI * (m_GAMMA / m_E) * sqrt(2) / ln(m_PI) * mpf("0.99")
+    m_K = m_PHI * (m_GAMMA / m_E) * sqrt(2) / ln(m_PI) * (1 - 1 / m_PI**4)
 
     def ref(N, P, D, hits, dp, dt, rho, scale, amp, tb, obs):
         N = mpf(N); P = mpf(P); D = mpf(D); hits = mpf(hits)
@@ -232,7 +232,7 @@ if __name__ == "__main__":
     print(f"COLLAPSE_THRESHOLD = {COLLAPSE_THRESHOLD:.15f}")
     print(f"C_EFF              = {C_EFF:.15f}")
     print(f"P_VAR              = {P_VAR:.15f}")
-    print(f"biological S (dp=0.08, obs=False) = {compute_scalar_biological():.12f}")
+    print(f"biological S (look=1, dark, D=9) = {compute_scalar_biological():.12f}")
     print("-" * 70)
     try:
         res = validate_against_mpmath()

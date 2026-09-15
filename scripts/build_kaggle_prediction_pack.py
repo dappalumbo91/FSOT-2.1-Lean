@@ -7,7 +7,7 @@ Does NOT auto-upload unless --push is passed (requires authenticated kaggle CLI)
   python scripts/build_kaggle_prediction_pack.py --push
 
 Pack includes:
-  - vendor/fsot_compute.py (seed engine, pin D1D38A)
+  - vendor/fsot_compute.py (seed engine, live pin AEB2AD)
   - prediction manifests + freeze + monitor report
   - slim contested / margin summary JSON
   - notebook that runs the same prereg + scalar checks as the monorepo spine

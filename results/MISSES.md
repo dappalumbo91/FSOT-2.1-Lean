@@ -2,7 +2,7 @@
 
 A theory with zero misses and 477 greens looks like a filter. This file is the filter.
 
-**Pin:** D1D38A · Ledger B greens are **not** listed here. Ledger A / named-object misses are.
+**Pin:** AEB2AD (file opened under D1D38A). Ledger B greens are **not** listed here. Ledger A / named-object misses are.
 
 | ID | Ledger | Object | What missed | What we did not do |
 |----|--------|--------|-------------|--------------------|
@@ -15,7 +15,7 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | WX-QUIET-FILL | B/dated | Quiet-fill 24 h persistence | 6/11 hold; OLCN6, 42058, 44078 | Did not drop quiet kills to inflate storm-sector |
 | SH0ES-LADDER | A | SH0ES ladder chain pooled | ~0.212% (aspiration 0.05% open) | Did not β-fit the ladder |
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
-| NSE-CLAY | — | 3D NSE smoothness | No native Clay theorem | 1D Stokes at Fluid D=15 is not that theorem |
+| NSE-CLAY | — | 3D NSE smoothness | No native Clay theorem | 1D Stokes at Fluid nest D=12 (dark) is not that theorem |
 | BSD-RANK | — | rank = ord L(E,s) | No native rank predictor | Named 11a1/37a1/389a1 only |
 | HODGE-CLASS | — | Hodge classes algebraic | No native predictor | Named ℂP² and elliptic curve; did not steal 20 W for K3 |
 
