@@ -32,6 +32,7 @@ try:
         seed_lambda_qcd_GeV,
         seed_string_tension_GeV,
         seed_glueball_over_sqrt_sigma,
+        seed_closed_gluonic_GeV,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -46,6 +47,7 @@ except ImportError:  # pragma: no cover
         seed_lambda_qcd_GeV,
         seed_string_tension_GeV,
         seed_glueball_over_sqrt_sigma,
+        seed_closed_gluonic_GeV,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -69,6 +71,15 @@ TEPER_GLUEBALL_2PP_OVER_SQRT_SIGMA = 5.15
 TEPER_GLUEBALL_2PP_STAT = 0.21
 TEPER_CLOSED_FORM_0PP = 4.0
 TEPER_CLOSED_FORM_RATIO = 1.5
+# PDG 2024 (Navas et al. PRD 110, 030001). Observed I=0 0++ — not a glueball ID.
+# Morningstar arXiv:2502.02547: no scalar below ~2 GeV is predominantly a glueball.
+PDG_F0_1500_GEV = 1.506  # 1506 ± 6 MeV
+PDG_F0_1500_STAT = 0.006
+PDG_F0_1710_GEV = 1.733  # 1733 +8 −7 MeV
+PDG_F0_1710_STAT = 0.008
+# Morningstar-class quenched YM 0++ ~1730 ± 80 MeV (lattice construct in GeV).
+LATTICE_0PP_GEV = 1.73
+LATTICE_0PP_STAT = 0.08
 # Odlyzko / LMFDB Im(ρ_n) for n=1..10 (measurement, not a competing theory).
 # Rest-of-system residual bars (same as the 477-domain green / aspiration gates).
 FSOT_GREEN_GATE_PCT = 0.5
@@ -423,7 +434,8 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         )
     )
 
-    # --- Yang–Mills: glueball. Closed gluonic mode, not Λ. Lattice = measurement. ---
+    # --- Yang–Mills: glueball. Closed gluonic mode, not Λ.
+    # Teper m/√σ is a quenched-lattice construct, not an observed particle. ---
     glue = seed_glueball_over_sqrt_sigma()
     glue_vs_ballpark = _err_pct(glue, INREPO_GLUEBALL_BALLPARK)
     glue_vs_teper = _err_pct(glue, TEPER_GLUEBALL_OVER_SQRT_SIGMA)
@@ -434,18 +446,18 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Yang–Mills existence and mass gap",
-            function_object="Closed gluonic mode m(0++)/√σ vs lattice precision (not Λ_QCD)",
+            function_object="Closed gluonic mode m(0++)/√σ vs quenched-lattice construct (not an observed particle)",
             clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
             name="ym_glueball_over_sqrt_sigma",
             computed=glue,
             measured=TEPER_GLUEBALL_OVER_SQRT_SIGMA,
-            public_sota_model="Teper hep-lat/9711011 continuum 3.65±0.11 (lattice measurement, not a closed form)",
+            public_sota_model="Teper hep-lat/9711011 continuum 3.65±0.11 (quenched-lattice eigenstate, not an observed particle)",
             public_sota_typical_error_pct=teper_rel,
             comparison_class="comparable",
             verdict="beats_lattice_1sigma" if beats_teper_precision else "does_not_beat_lattice_precision",
             beats_or_meets_sota=beats_teper_precision,
             native_status="EXECUTABLE",
-            note="φ²+1 is morphic plus default look (closed loop). Old φ²+e/π used the Atomic bound-well look. Λ_QCD is a different object. Outside FSOT 0.5% is accuracy WIP, not stuffed. Not a Clay mass gap.",
+            note="φ²+1 is morphic plus default look (closed loop). Lattice 0++ is a quenched YM construct. Observed I=0 0++ are f0(1500)/f0(1710). Do not pick the closer. Not a Clay mass gap.",
             extra={
                 "fsot_vs_inrepo_ballpark_pct": glue_vs_ballpark,
                 "fsot_vs_teper_pct": glue_vs_teper,
@@ -501,6 +513,61 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
                 "fsot_2pp": math.sqrt(2.0) * glue,
                 "teper_2pp": TEPER_GLUEBALL_2PP_OVER_SQRT_SIGMA,
                 "formula": "sqrt(2)",
+            },
+        )
+    )
+
+    # --- Observed I=0 0++ : PDG-named candidates, not a glueball ID. ---
+    m_g = seed_closed_gluonic_GeV()
+    lat_vs_1500 = _err_pct(LATTICE_0PP_GEV, PDG_F0_1500_GEV)
+    lat_vs_1710 = _err_pct(LATTICE_0PP_GEV, PDG_F0_1710_GEV)
+    fsot_vs_1500 = _err_pct(m_g, PDG_F0_1500_GEV)
+    fsot_vs_1710 = _err_pct(m_g, PDG_F0_1710_GEV)
+    rows.append(
+        _row(
+            problem="Yang–Mills existence and mass gap",
+            function_object="Closed gluonic mode in GeV vs PDG f0(1500) (observed I=0 0++; not a glueball ID)",
+            clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
+            name="ym_closed_gluonic_GeV_vs_f0_1500",
+            computed=m_g,
+            measured=PDG_F0_1500_GEV,
+            public_sota_model="PDG 2024 f0(1500)=1506±6 MeV (Navas et al. PRD 110, 030001). Quenched lattice 0++ ~1730±80 MeV is the construct, not this particle.",
+            public_sota_typical_error_pct=lat_vs_1500,
+            comparison_class="comparable",
+            verdict="beats_lattice_on_this_candidate" if fsot_vs_1500 < lat_vs_1500 else "does_not_beat_lattice_on_this_candidate",
+            beats_or_meets_sota=fsot_vs_1500 < lat_vs_1500,
+            native_status="EXECUTABLE",
+            note="(φ²+1)·K. One of two PDG-named 0++ candidates. Do not pick this because it is closer. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Not a Clay mass gap.",
+            extra={
+                "formula": "(PHI**2 + 1) * K",
+                "sqrt_sigma_GeV": seed_string_tension_GeV(),
+                "fsot_vs_f0_1500_pct": fsot_vs_1500,
+                "lattice_vs_f0_1500_pct": lat_vs_1500,
+                "sibling_f0_1710_GeV": PDG_F0_1710_GEV,
+            },
+        )
+    )
+    rows.append(
+        _row(
+            problem="Yang–Mills existence and mass gap",
+            function_object="Closed gluonic mode in GeV vs PDG f0(1710) (observed I=0 0++; not a glueball ID)",
+            clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
+            name="ym_closed_gluonic_GeV_vs_f0_1710",
+            computed=m_g,
+            measured=PDG_F0_1710_GEV,
+            public_sota_model="PDG 2024 f0(1710)=1733+8−7 MeV. Quenched lattice 0++ ~1730±80 MeV sits on this candidate; that is the construct, not an ID.",
+            public_sota_typical_error_pct=lat_vs_1710,
+            comparison_class="comparable",
+            verdict="beats_lattice_on_this_candidate" if fsot_vs_1710 < lat_vs_1710 else "does_not_beat_lattice_on_this_candidate",
+            beats_or_meets_sota=fsot_vs_1710 < lat_vs_1710,
+            native_status="EXECUTABLE",
+            note="(φ²+1)·K. The other PDG-named 0++ candidate. Lattice GeV mass is closer here. Do not retune K to chase 1710. Not a glueball ID.",
+            extra={
+                "formula": "(PHI**2 + 1) * K",
+                "sqrt_sigma_GeV": seed_string_tension_GeV(),
+                "fsot_vs_f0_1710_pct": fsot_vs_1710,
+                "lattice_vs_f0_1710_pct": lat_vs_1710,
+                "sibling_f0_1500_GeV": PDG_F0_1500_GEV,
             },
         )
     )
@@ -705,6 +772,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     glue = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma")
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
     glue_ratio = next(r for r in rows if r["name"] == "ym_glueball_2pp_over_0pp")
+    glue_f0_1500 = next(r for r in rows if r["name"] == "ym_closed_gluonic_GeV_vs_f0_1500")
+    glue_f0_1710 = next(r for r in rows if r["name"] == "ym_closed_gluonic_GeV_vs_f0_1710")
     wx_storm = next(r for r in rows if r["name"] == "ns_weather_storm_sector")
     wx_quiet = next(r for r in rows if r["name"] == "ns_weather_quiet_fill")
     wip_beats = [r for r in rows if r.get("sota_beats_fsot_accuracy_wip")]
@@ -734,6 +803,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "glueball_does_not_beat_teper": 0 if glue["beats_or_meets_sota"] else 1,
         "glueball_beats_4sqrt_sigma": 1 if glue4["beats_or_meets_sota"] else 0,
         "glueball_ratio_beats_three_halves": 1 if glue_ratio["beats_or_meets_sota"] else 0,
+        "glueball_observed_pair_named": 1,
+        "glueball_f0_1500_beats_lattice_on_that_candidate": 1 if glue_f0_1500["beats_or_meets_sota"] else 0,
+        "glueball_f0_1710_beats_lattice_on_that_candidate": 1 if glue_f0_1710["beats_or_meets_sota"] else 0,
         "weather_beats_majority": 1 if wx_storm["beats_or_meets_sota"] else 0,
         "weather_does_not_beat_majority": 0 if wx_storm["beats_or_meets_sota"] else 1,
         "weather_quiet_fill_still_miss": 0 if wx_quiet["beats_or_meets_sota"] else 1,
@@ -745,8 +817,11 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
             "Misses next: quiet-fill weather, NSE smoothness, "
-            "BSD named curves, Hodge named varieties. Glueball 0++ is the closed gluonic mode "
-            "(φ²+1), not Λ. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
+            "BSD named curves, Hodge named varieties. Glueball 0++ in string units is φ²+1 vs a "
+            "quenched-lattice construct, not an observed particle. Observed I=0 0++ are PDG "
+            "f0(1500) and f0(1710); seed (φ²+1)·K=1.520 GeV. Do not pick the closer. "
+            "Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
+            "Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
             "SOTA and FSOT 0.5% are independent bars. "
             "Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten."
         ),
@@ -851,8 +926,10 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |",
         "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³, not public 7/8, not Euler walk. Do not stuff S(T). |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
-        "| Glueball closed mode φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Closed gluonic loop (look 1), not Λ, not Atomic e/π. |",
-        "| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same measurement 3.65. |",
+        "| Glueball φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Quenched-lattice construct in string units, **not an observed particle**. |",
+        "| Closed gluonic GeV vs f0(1500) | **0.93% vs PDG 1506 MeV — WIP; beats lattice-on-this-candidate** | One of two PDG-named 0++. Do not pick because closer. |",
+        "| Closed gluonic GeV vs f0(1710) | **12.3% vs PDG 1733 MeV — does not beat lattice-on-this-candidate** | The other PDG-named 0++. Lattice GeV mass sits here. Do not retune K. |",
+        "| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |",
         "| Glueball 2++/0++ | **Beats 3/2 (0.23%) — in 0.5% green, aspiration WIP** | √2 geometry on the closed 0++ mode. |",
         "| Grover 1/2 | **Meets proven bound and in 0.05%** | Not P vs NP. |",
         "",
@@ -862,6 +939,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "|------|----------------|------------------------|",
         "| Weather storm-sector | Named object (docstring). Thin n_obs<24 is awaiting, not a kill. Majority-of-saw_storm **retired** (wrong object: 1010/8 mixed onto quiet 1005/12). | Quiet-fill fallback still misses. ECMWF not beaten. Frozen issues not rewritten. |",
         "| Weather quiet-fill | Five full-obs quiet kills (OLCN6, 42058, 44078). | Valve/quiet look, then finer `dt`. Do not drop these to inflate storm skill. |",
+        "| Observed 0++ pair | PDG f0(1500) and f0(1710) are the live I=0 scalars. Lattice 0++ is a construct. | Named both. Do not pick the closer. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| 3D NSE smoothness | Still no public accuracy %. | 1D Stokes mode at Fluid nest D (dark) is executable structure, not Clay smoothness. |",
         "| BSD | APPLY step 1: Cremona 11a1 / 37a1 / 389a1 named. | No native rank predictor. Do not `fsot_scaled(L(E,1))`. |",
         "| Hodge | APPLY step 1: ℂP² and an elliptic curve named. | Do not steal E_con≈20 for K3. Do not identity-pad 1=1. |",
@@ -913,6 +991,9 @@ if __name__ == "__main__":
         and s["glueball_does_not_beat_teper"] == 0
         and s["glueball_beats_4sqrt_sigma"] == 1
         and s["glueball_ratio_beats_three_halves"] == 1
+        and s["glueball_observed_pair_named"] == 1
+        and s["glueball_f0_1500_beats_lattice_on_that_candidate"] == 1
+        and s["glueball_f0_1710_beats_lattice_on_that_candidate"] == 0
         and s["riemann_beats_public_closed_form"] == 1
         and s["riemann_panel_beats_rvm"] == 1
         and s["weather_quiet_fill_still_miss"] == 1

@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T02:21:22.587120+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T02:27:37.234639+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,12 +18,12 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 8 |
+| Beats or meets public SOTA | 9 |
 | …of those, inside FSOT 0.5% green | 4 |
 | …of those, inside 0.05% aspiration | 3 |
-| **SOTA beat, FSOT accuracy still WIP** | **3** |
-| Comparable but does **not** beat | 0 |
-| **Next dig** (misses + open tracks) | **4** |
+| **SOTA beat, FSOT accuracy still WIP** | **4** |
+| Comparable but does **not** beat | 1 |
+| **Next dig** (misses + open tracks) | **5** |
 | Clay problems remaining | 6 |
 | ECMWF beaten | 0 |
 
@@ -34,9 +34,11 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Riemann hypothesis | Im(ρ1) of ζ — first non-trivial zero (closed form vs tabulated) | 0.001661 | 26.27 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Riemann hypothesis | Im(ρ_n) n=2..10 — N(T)=n with C locked by e/γ³ (out of sample) | 1.627 mean n=2..10 (8/9 zeros) | 5.638 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Confinement scale Λ_QCD (zero-parameter seed vs PDG-class / FLAG) | 0.04806 vs PDG 0.2173; 2.068 vs FLAG 213 | 3.756 | beats/meets | pass | pass | beats_sota_in_aspiration |
-| Yang–Mills existence and mass gap | Closed gluonic mode m(0++)/√σ vs lattice precision (not Λ_QCD) | 0.8758 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Yang–Mills existence and mass gap | Closed gluonic mode m(0++)/√σ vs quenched-lattice construct (not an observed particle) | 0.8758 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Lightest 0++ glueball / √σ vs Teper's own closed-form ~4√σ | 0.8758 | 9.589 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Glueball tensor/scalar m(2++)/m(0++) — geometric √2 vs 3/2 rule | 0.2307 | 6.311 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
+| Yang–Mills existence and mass gap | Closed gluonic mode in GeV vs PDG f0(1500) (observed I=0 0++; not a glueball ID) | 0.9275 | 14.87 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Yang–Mills existence and mass gap | Closed gluonic mode in GeV vs PDG f0(1710) (observed I=0 0++; not a glueball ID) | 12.29 | 0.1731 | miss | wip | wip | miss_next |
 | Yang–Mills existence and mass gap | Discrete valve path-sum w_POOF + w_hold = 1; a0/γ_color finite | 1.11e-14 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Global smooth (or blow-up) 3D incompressible NSE | — | — | — | n/a | n/a | open_track_next |
 | Navier–Stokes existence and smoothness | Seed-locked transport + 1D Stokes mode at Fluid nest D (dark) | 0 | — | — | n/a | n/a | structure |
@@ -53,8 +55,10 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |
 | Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³, not public 7/8, not Euler walk. Do not stuff S(T). |
 | Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |
-| Glueball closed mode φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Closed gluonic loop (look 1), not Λ, not Atomic e/π. |
-| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same measurement 3.65. |
+| Glueball φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Quenched-lattice construct in string units, **not an observed particle**. |
+| Closed gluonic GeV vs f0(1500) | **0.93% vs PDG 1506 MeV — WIP; beats lattice-on-this-candidate** | One of two PDG-named 0++. Do not pick because closer. |
+| Closed gluonic GeV vs f0(1710) | **12.3% vs PDG 1733 MeV — does not beat lattice-on-this-candidate** | The other PDG-named 0++. Lattice GeV mass sits here. Do not retune K. |
+| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |
 | Glueball 2++/0++ | **Beats 3/2 (0.23%) — in 0.5% green, aspiration WIP** | √2 geometry on the closed 0++ mode. |
 | Grover 1/2 | **Meets proven bound and in 0.05%** | Not P vs NP. |
 
@@ -64,6 +68,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 |------|----------------|------------------------|
 | Weather storm-sector | Named object (docstring). Thin n_obs<24 is awaiting, not a kill. Majority-of-saw_storm **retired** (wrong object: 1010/8 mixed onto quiet 1005/12). | Quiet-fill fallback still misses. ECMWF not beaten. Frozen issues not rewritten. |
 | Weather quiet-fill | Five full-obs quiet kills (OLCN6, 42058, 44078). | Valve/quiet look, then finer `dt`. Do not drop these to inflate storm skill. |
+| Observed 0++ pair | PDG f0(1500) and f0(1710) are the live I=0 scalars. Lattice 0++ is a construct. | Named both. Do not pick the closer. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |
 | 3D NSE smoothness | Still no public accuracy %. | 1D Stokes mode at Fluid nest D (dark) is executable structure, not Clay smoothness. |
 | BSD | APPLY step 1: Cremona 11a1 / 37a1 / 389a1 named. | No native rank predictor. Do not `fsot_scaled(L(E,1))`. |
 | Hodge | APPLY step 1: ℂP² and an elliptic curve named. | Do not steal E_con≈20 for K3. Do not identity-pad 1=1. |
@@ -78,4 +83,4 @@ python scripts/run_goal_tracks_verification.py
 Prize-process flags (separate file, all honest): [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md).
 Yang–Mills object split: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).
 
-Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: quiet-fill weather, NSE smoothness, BSD named curves, Hodge named varieties. Glueball 0++ is the closed gluonic mode (φ²+1), not Λ. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten.
+Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: quiet-fill weather, NSE smoothness, BSD named curves, Hodge named varieties. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++ are PDG f0(1500) and f0(1710); seed (φ²+1)·K=1.520 GeV. Do not pick the closer. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten.

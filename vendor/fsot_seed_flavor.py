@@ -294,8 +294,21 @@ def seed_glueball_over_sqrt_sigma() -> float:
     Old probe φ² + e/π used the Atomic bound-well look (e/π). A closed
     mode has default look 1, so φ² + 1. 2++ / 0++ stays geometric √2.
     Not a fit to Teper 3.65. Do not restore e/π to chase the residual.
+    Teper m/√σ is a quenched-lattice construct, not an observed particle.
     """
     return f(PHI) ** 2 + 1.0
+
+
+def seed_closed_gluonic_GeV() -> float:
+    """Closed gluonic mode in GeV: (φ²+1)·K.
+
+    String-unit mode times the already-named string tension √σ=K.
+    No new coefficient. Not a fit to f0(1500) or f0(1710).
+    Observed I=0 0++ candidates are those PDG states; lattice 0++ is
+    a quenched YM eigenstate and need not exist as a distinct particle
+    once quarks are on (Morningstar, arXiv:2502.02547).
+    """
+    return seed_glueball_over_sqrt_sigma() * seed_string_tension_GeV()
 
 
 def seed_N_eff() -> float:
