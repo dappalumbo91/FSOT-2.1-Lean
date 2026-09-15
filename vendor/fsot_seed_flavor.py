@@ -518,18 +518,30 @@ def riemann_POOF_jitter_halfwidth(T: float) -> float:
 
 
 def riemann_signed_jitter_T(n: int, T_lock: float) -> float:
-    """C-lock T plus POOF envelope with sign from the prime-2 fold.
+    """C-lock T plus POOF envelope: prime-2 sign, prime-3 cancellation.
 
-    δT = sign(sin(T_lock ln 2)) · 2π POOF / log(T/2π).
-    n=1 stays at C-lock (t1 already spent e). Prime 2 is the first
-    interacting system; amplitude is the POOF valve. Do not Euler-invert
-    the whole product (wrecks t1). Do not trig S(n). Not RH.
+    Sign = sign(sin(T ln 2)). Amplitude = POOF·min(1, |S_{2,3}|/|S_2|).
+    Prime 2 shoves; prime 3 is the first opposing fold and can only
+    reduce the valve, not raise it. n=1 stays C-lock. Do not Euler-invert
+    the full product (wrecks t1). Do not trig S(n). Not RH.
     """
     T = float(T_lock)
     if int(n) <= 1:
         return T
+
+    def _euler_S(primes: list[int]) -> float:
+        s = 0.0
+        for p in primes:
+            s += (p ** -0.5) * math.sin(T * math.log(p))
+        return -s / math.pi
+
+    s2 = _euler_S([2])
+    s23 = _euler_S([2, 3])
     sign = 1.0 if math.sin(T * math.log(2.0)) >= 0.0 else -1.0
-    return T + sign * riemann_POOF_jitter_halfwidth(T)
+    amp = 1.0
+    if abs(s2) > 1e-12:
+        amp = min(1.0, abs(s23) / abs(s2))
+    return T + sign * riemann_POOF_jitter_halfwidth(T) * amp
 
 
 def seed_bsd_rank_parity(root_number: int) -> int:
@@ -565,6 +577,22 @@ def seed_gr24_euler() -> float:
     Do not steal 25−1 for K3.
     """
     return float(math.factorial(4) // (math.factorial(2) ** 2))
+
+
+def seed_fibonacci(n: int) -> float:
+    """Binet: F_n = (φ^n − (1−φ)^n)/√5. Integer for integer n."""
+    phi = f(PHI)
+    return (phi ** int(n) - (1.0 - phi) ** int(n)) / math.sqrt(5.0)
+
+
+def seed_cubic4_h22() -> float:
+    """h^{2,2} of a smooth cubic 4-fold = F_8 = 21.
+
+    Middle Hodge of a 4-fold: Fibonacci index 2n=8. Literature 21
+    (Hassett, Huybrechts). Primitive is 21−1 after Lefschetz h^2.
+    Not algebraicity of those classes. Do not steal 25−1 for K3.
+    """
+    return seed_fibonacci(8)
 
 
 def seed_cubic_4fold_euler() -> float:

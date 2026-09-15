@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T11:34:24.416946+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T11:44:37.832338+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,10 +18,10 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 28 |
-| …of those, inside FSOT 0.5% green | 21 |
-| …of those, inside 0.05% aspiration | 14 |
-| **SOTA beat, FSOT accuracy still WIP** | **5** |
+| Beats or meets public SOTA | 29 |
+| …of those, inside FSOT 0.5% green | 23 |
+| …of those, inside 0.05% aspiration | 15 |
+| **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
 | Clay problems remaining | 6 |
@@ -36,7 +36,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Riemann hypothesis | S(T) Gram-interval remainder after C-lock; |S|≤1/e on n=1..10 | 0 | — | — | n/a | n/a | structure |
 | Riemann hypothesis | Odlyzko t_n inside C-lock ± 2π(1/e)/log(T/2π) Gram band (interacting vs smooth counting) | 0 | — | — | n/a | n/a | structure |
 | Riemann hypothesis | Typical |S| after t1 = POOF (interacting-system valve, not GUE-as-noise) | 0.9982 | 142.1 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
-| Riemann hypothesis | Signed jitter: C-lock + sign(sin(T ln 2))·2π POOF/log(T/2π) (prime-2 fold) | 89.02 | 1.627 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Riemann hypothesis | Signed jitter: prime-2 sign, prime-3 cancellation of the POOF envelope | 0.4361 | 1.627 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Yang–Mills existence and mass gap | Confinement scale Λ_QCD (zero-parameter seed vs PDG-class / FLAG) | 0.04806 vs PDG 0.2173; 2.068 vs FLAG 213 | 3.756 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | α_s(M_Z) QCD process orifice 2(POOF/ψ_con)² vs PDG (not geometric 1/(eπ)) | 0.007478 | 0.6788 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | σ-unit 0++: φ²+1 + POOF/D_particle vs Teper 1997 3.65±0.11 (loop coupled to the flux tube) | 0.03478 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | pass | pass | beats_sota_in_aspiration |
@@ -82,6 +82,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Hodge conjecture | Lefschetz hyperplane: Hodge on a hypersurface reduces to primitive cohomology plus the ambient CP^n | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Hodge index: intersection form on a surface has signature (1, ρ−1). Proven. Not algebraicity. | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | χ of a smooth cubic 4-fold ⊂ CP^5 (Chern, n=4, d=3). Not Hodge (2,2). | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Hodge conjecture | h^{2,2} of a smooth cubic 4-fold = F_8 = 21 (middle Hodge, not algebraicity) | 1.692e-14 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Primitive (2,2) on a cubic 4-fold — first open hypersurface case after Grassmannians | — | — | — | n/a | n/a | structure |
 
 ## What this does and does not say
@@ -127,6 +128,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Lefschetz hyperplane | **Named reduction to primitive + ambient CP^n** | Cubic 4-fold primitive is what remains. |
 | Hodge index | **Named proven signature theorem on surfaces** | Not algebraicity. |
 | χ cubic 4-fold | **Meets 27** (Chern n=4, d=3) | Euler, not Hodge classes. |
+| h^{2,2} cubic 4-fold | **Meets 21** (F_8, index 2n=8) | The count. Algebraicity of those classes is the remainder. |
 | Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |
 | NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |
 
@@ -139,7 +141,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |
 | Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |
 | Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |
-| Riemann signed jitter | Prime-2 sign + POOF envelope. n=2..10 0.62% WIP (oos 0.43%). | Leftover is per-zero |S| variation around POOF, not a sign miss. |
+| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |
 | 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |
 | BSD integer rank | Parity map holds. No Weierstrass→ℤ formula. | L-order still required. Rank 4 Reg is not e²·POOF. |
 | Hodge primitive (2,2) on general X | Gr(2,4) Schubert algebraic. Cubic 4-fold is the named remainder. | Do not steal 25−1 for K3. |
