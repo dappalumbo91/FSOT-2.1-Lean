@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T02:40:32.567495+00:00",
+  "generated_at": "2026-09-15T02:45:45.307118+00:00",
   "pin": "AEB2AD",
   "clay_prize_claimed": false,
   "clay_problems_remaining": 6,
@@ -41,6 +41,7 @@
   "weather_beats_majority": 1,
   "weather_does_not_beat_majority": 0,
   "weather_quiet_fill_still_miss": 1,
+  "weather_gap_zone_named": 1,
   "ecmwf_beaten": 0,
   "ecmwf_not_beaten": 1,
   "rows": [
@@ -436,7 +437,7 @@
       "beats_or_meets_sota": true,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "EXECUTABLE",
-      "note": "Docstring object is storm-sector cells. Quiet-fill is a fallback diagnostic. Kill: ECMWF beaten. Kill: rewriting frozen issues.",
+      "note": "Docstring object is storm-sector cells. Gap-zone quiet is transferred_weather, not this object. Kill: ECMWF beaten. Kill: rewriting frozen issues.",
       "weather_skill": {
         "present": true,
         "min_obs_24h": 24,
@@ -463,6 +464,20 @@
           "FCAST-WX-20260825T0222-03",
           "FCAST-WX-20260825T0222-05",
           "FCAST-WX-20260831T2357-05"
+        ],
+        "clean_quiet_n": 5,
+        "clean_quiet_hold": 4,
+        "clean_quiet_hold_pct": 80.0,
+        "clean_quiet_kill_ids": [
+          "FCAST-WX-20260831T2357-05"
+        ],
+        "gap_zone_n": 6,
+        "gap_zone_hold": 2,
+        "gap_zone_kill_ids": [
+          "FCAST-WX-20260825T0121-03",
+          "FCAST-WX-20260825T0121-05",
+          "FCAST-WX-20260825T0222-03",
+          "FCAST-WX-20260825T0222-05"
         ],
         "majority_saw_storm_pct": 95.83333333333334,
         "majority_is_wrong_object": true,
@@ -480,20 +495,20 @@
     },
     {
       "problem": "Navier\u2013Stokes existence and smoothness",
-      "name": "ns_weather_quiet_fill",
-      "function_object": "Quiet-fill 24 h persistence (fallback cells, not the named storm-sector object)",
+      "name": "ns_weather_gap_zone_quiet",
+      "function_object": "Gap-zone quiet (1000\u20131010 hPa / 8\u201315 m/s) \u2014 should not issue (transferred_weather)",
       "clay_object": "Global smooth (or blow-up) 3D incompressible NSE",
-      "computed": 54.54545454545454,
-      "measured": 100.0,
-      "fsot_error_pct": 45.45454545454546,
-      "public_sota_model": "Quiet kill envelope pres<1005 or gst\u226512. Persistence of issued quiet_clean.",
+      "computed": 1.0,
+      "measured": 1.0,
+      "fsot_error_pct": 0.0,
+      "public_sota_model": "Same grammar as transferred_poof: load dumped in storm tanks on the same issue. New issuer skips. Frozen JSON not rewritten.",
       "public_sota_typical_error_pct": null,
-      "comparison_class": "related_not_clay",
-      "verdict": "quiet_fill_still_miss",
-      "beats_or_meets_sota": false,
+      "comparison_class": "structure",
+      "verdict": "gap_zone_should_not_issue",
+      "beats_or_meets_sota": null,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "EXECUTABLE",
-      "note": "Five full-obs quiet kills (OLCN6, 42058, 44078). Valve/quiet look still next. Do not drop quiet kills to inflate storm skill.",
+      "note": "OLCN6/42058 were already in the gap or at the quiet-kill bar at issue. Not quiet persistence. Do not drop them to inflate storm skill.",
       "weather_skill": {
         "present": true,
         "min_obs_24h": 24,
@@ -521,12 +536,108 @@
           "FCAST-WX-20260825T0222-05",
           "FCAST-WX-20260831T2357-05"
         ],
+        "clean_quiet_n": 5,
+        "clean_quiet_hold": 4,
+        "clean_quiet_hold_pct": 80.0,
+        "clean_quiet_kill_ids": [
+          "FCAST-WX-20260831T2357-05"
+        ],
+        "gap_zone_n": 6,
+        "gap_zone_hold": 2,
+        "gap_zone_kill_ids": [
+          "FCAST-WX-20260825T0121-03",
+          "FCAST-WX-20260825T0121-05",
+          "FCAST-WX-20260825T0222-03",
+          "FCAST-WX-20260825T0222-05"
+        ],
         "majority_saw_storm_pct": 95.83333333333334,
         "majority_is_wrong_object": true,
         "beats_wrong_majority_on_storm_object": true,
         "n_24h_agrees_48h": 28,
         "n_with_obs": 28
       },
+      "gap_zone_n": 6,
+      "gap_zone_kill_ids": [
+        "FCAST-WX-20260825T0121-03",
+        "FCAST-WX-20260825T0121-05",
+        "FCAST-WX-20260825T0222-03",
+        "FCAST-WX-20260825T0222-05"
+      ],
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
+    },
+    {
+      "problem": "Navier\u2013Stokes existence and smoothness",
+      "name": "ns_weather_quiet_fill",
+      "function_object": "Clean quiet 24 h persistence (pres\u22651010 and gst<8 at issue). Not gap-zone.",
+      "clay_object": "Global smooth (or blow-up) 3D incompressible NSE",
+      "computed": 80.0,
+      "measured": 100.0,
+      "fsot_error_pct": 20.0,
+      "public_sota_model": "Clean-quiet issue bar pres\u22651010 and gst<8. Kill envelope pres<1005 or gst\u226512. Gap-zone is a different object.",
+      "public_sota_typical_error_pct": null,
+      "comparison_class": "related_not_clay",
+      "verdict": "clean_quiet_honest_miss",
+      "beats_or_meets_sota": false,
+      "clay_status": "OPEN_NOT_CLAIMED",
+      "native_status": "EXECUTABLE",
+      "note": "Superseded object: mixed quiet 6/11 mixed gap-zone into persistence. Clean quiet is 4/5; 44078 is the honest miss (1010.3 hPa, 4.0 m/s at issue). Do not move 1010 to swallow it. Frozen JSON not rewritten.",
+      "weather_skill": {
+        "present": true,
+        "min_obs_24h": 24,
+        "n_raw_hold_kill": 28,
+        "n_thin_awaiting": 4,
+        "thin_ids": [
+          "FCAST-WX-20260909T1854-01",
+          "FCAST-WX-20260909T1854-02",
+          "FCAST-WX-20260909T1854-03",
+          "FCAST-WX-20260909T1854-04"
+        ],
+        "n_scored": 24,
+        "n_hold": 19,
+        "hold_pct": 79.16666666666666,
+        "storm_n": 13,
+        "storm_hold": 13,
+        "storm_hold_pct": 100.0,
+        "quiet_n": 11,
+        "quiet_hold": 6,
+        "quiet_hold_pct": 54.54545454545454,
+        "quiet_kill_ids": [
+          "FCAST-WX-20260825T0121-03",
+          "FCAST-WX-20260825T0121-05",
+          "FCAST-WX-20260825T0222-03",
+          "FCAST-WX-20260825T0222-05",
+          "FCAST-WX-20260831T2357-05"
+        ],
+        "clean_quiet_n": 5,
+        "clean_quiet_hold": 4,
+        "clean_quiet_hold_pct": 80.0,
+        "clean_quiet_kill_ids": [
+          "FCAST-WX-20260831T2357-05"
+        ],
+        "gap_zone_n": 6,
+        "gap_zone_hold": 2,
+        "gap_zone_kill_ids": [
+          "FCAST-WX-20260825T0121-03",
+          "FCAST-WX-20260825T0121-05",
+          "FCAST-WX-20260825T0222-03",
+          "FCAST-WX-20260825T0222-05"
+        ],
+        "majority_saw_storm_pct": 95.83333333333334,
+        "majority_is_wrong_object": true,
+        "beats_wrong_majority_on_storm_object": true,
+        "n_24h_agrees_48h": 28,
+        "n_with_obs": 28
+      },
+      "retired_mixed_quiet_hold_pct": 54.54545454545454,
+      "clean_quiet_kill_ids": [
+        "FCAST-WX-20260831T2357-05"
+      ],
       "fsot_green_gate_pct": 0.5,
       "fsot_aspiration_pct": 0.05,
       "fsot_green": "n/a",
@@ -641,5 +752,5 @@
       "sota_beats_fsot_accuracy_wip": false
     }
   ],
-  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: quiet-fill weather, NSE smoothness, BSD named curves, Hodge named varieties. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (\u03c6\u00b2+1)\u00b7K; f0(1710) flavor orifice (\u03c0+1)\u00b7K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten."
+  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: clean-quiet 44078, NSE smoothness, BSD named curves, Hodge named varieties. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (\u03c6\u00b2+1)\u00b7K; f0(1710) flavor orifice (\u03c0+1)\u00b7K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue (transferred_weather). Clean quiet 4/5; 44078 is the honest miss. ECMWF is not beaten. Frozen issues not rewritten."
 }
