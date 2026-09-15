@@ -19,7 +19,7 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | NSE-CLAY | — | 3D NSE existence on R^3 | Kolmogorov 4/5 cascade is the 3D number (`1−1/D_particle`). Global-in-time existence is a different object. | Did not stuff existence into 4/5. |
 | PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid | **Superseded object:** Atomic well \(D=6\) gave 5.43%. Continuum solid is Molecular \(D=7\), \(\nu=7/25=0.28\). | Did not put Atomic back to 7. |
 | BSD-RANK | — | integer rank of a general E | First-curve leadings uniquely label ranks 0..4. Rank 4 is \((\varphi^2+1)\cdot e\cdot\mathrm{POOF}\) (missing loop fold, not \(e^2\)). Parity from \(w_E\). General E still produces the leading from its modular form. | Did not nearest-template arbitrary \(L(1)\) (17a1 would mis-fire). Did not \(\pi^2\cdot\mathrm{POOF}\). |
-| HODGE-CLASS | — | Extra Hodge classes beyond \(C_{32}\) | \(C_8\) through \(C_{32}\) extra classes algebraic. Named remainder without K3: \(C_{36}\) (\(\mathrm{Bl}_{12}\mathbb{P}^2\)), \(C_{44}\) (Enriques). Then an infinite Hassett tail and general 4-folds. | Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). Did not pad \(d=32\) as \(4\cdot 8\). |
+| HODGE-CLASS | — | Unnamed Hassett tail and general 4-folds | Named extra classes \(C_8\) through \(C_{44}\) (last: Fano Enriques) are algebraic. Public SOTA (Nuer) stops naming at 44. Infinite later \(C_d\) have no named surface. General 4-folds remain. | Did not enumerate the infinite tail. Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
 
 Dated public scoreboard kills live in [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md). Do not rewrite issued JSON.
 

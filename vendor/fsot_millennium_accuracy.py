@@ -52,6 +52,9 @@ try:
         seed_hassett_d_sextic,
         seed_hassett_d_coble,
         seed_hassett_d_bl11,
+        seed_hassett_d_bl12,
+        seed_hassett_d_enriques,
+        hassett_named_no_k3,
         hassett_C_d_nonempty,
         hassett_associated_k3,
         seed_cp2_euler,
@@ -105,6 +108,9 @@ except ImportError:  # pragma: no cover
         seed_hassett_d_sextic,
         seed_hassett_d_coble,
         seed_hassett_d_bl11,
+        seed_hassett_d_bl12,
+        seed_hassett_d_enriques,
+        hassett_named_no_k3,
         hassett_C_d_nonempty,
         hassett_associated_k3,
         seed_cp2_euler,
@@ -2324,12 +2330,6 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     c32_nonempty = hassett_C_d_nonempty(32)
     c32_no_k3 = not hassett_associated_k3(32)
     c32_ok = c32_nonempty and c32_no_k3 and abs(d32 - 32.0) < 1e-9
-    named_no_k3 = [
-        d
-        for d in (8, 12, 18, 20, 24, 30, 32, 36, 44)
-        if hassett_C_d_nonempty(d) and not hassett_associated_k3(d)
-    ]
-    remaining_named = [d for d in named_no_k3 if d > 32]
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -2338,24 +2338,133 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             name="hodge_hassett_c32_bl11_algebraic",
             computed=1.0 if c32_ok else 0.0,
             measured=1.0,
-            public_sota_model="Nuer: C_32 nonempty. Extra (2,2) class is Bl_11 P². Named no-K3 after this: C_36, C_44 (Enriques). Then an infinite Hassett tail.",
+            public_sota_model="Nuer: C_32 nonempty. Extra (2,2) class is Bl_11 P².",
             public_sota_typical_error_pct=None,
             comparison_class="structure",
             verdict="c32_bl11_algebraic_no_k3" if c32_ok else "c32_bl11_fails",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="Seventh extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Named remainder: C_36 (Bl_12 P²), C_44 (Enriques). Infinite later C_d without K3, and general 4-folds. Do not steal 25−1 for K3.",
+            note="Seventh extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Do not steal 25−1 for K3.",
             extra={
                 "C_32_nonempty": c32_nonempty,
                 "associated_k3": hassett_associated_k3(32),
-                "named_no_k3": named_no_k3,
-                "remaining_named_no_k3": remaining_named,
-                "no_k3_after_32": [
-                    d
-                    for d in range(33, 50)
-                    if hassett_C_d_nonempty(d) and not hassett_associated_k3(d)
-                ],
             },
+        )
+    )
+    d36 = seed_hassett_d_bl12()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Hassett discriminant of a cubic containing Bl_12 P² = L_2 S² − (L_2 L_3)² = 36",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_d36",
+            computed=d36,
+            measured=36.0,
+            public_sota_model="Nuer C_36: generic cubic contains S=Bl_12 P² (p=L_2 L_3). Degree 12, H·K=2, S²=60. Gram [[3,12],[12,60]], disc=36. 4|36 and 9|36 so no associated K3.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_hassett_d36",
+            beats_or_meets_sota=abs(d36 - 36.0) < 1e-9,
+            native_status="EXECUTABLE",
+            note="Intersection pairing of the extra class, not 6·6 padding. Do not steal 25−1 for K3.",
+            extra={
+                "formula": "L2*S2 - H2**2",
+                "p": 12,
+                "H2": 12,
+                "S2": 60,
+                "gram": [[3, 12], [12, 60]],
+            },
+        )
+    )
+    c36_ok = (
+        hassett_C_d_nonempty(36)
+        and not hassett_associated_k3(36)
+        and abs(d36 - 36.0) < 1e-9
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Extra Hodge class on C_36 is [Bl_12 P²], algebraic; 4|d and 9|d so no associated K3",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_c36_bl12_algebraic",
+            computed=1.0 if c36_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Nuer: C_36 nonempty. Extra (2,2) class is Bl_12 P².",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="c36_bl12_algebraic_no_k3" if c36_ok else "c36_bl12_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Eighth extra-Hodge-without-K3 case. Last Nuer Bl_p. Next named is C_44 Enriques. Do not steal 25−1 for K3.",
+        )
+    )
+    d44 = seed_hassett_d_enriques()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Hassett discriminant of a cubic containing a Fano Enriques = L_2(6H²−χ) − H²² = 44",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_d44",
+            computed=d44,
+            measured=44.0,
+            public_sota_model="Nuer C_44: generic cubic contains a Fano Enriques (Δ²=10, χ=12). Gram [[3,10],[10,48]], disc=44. 11|44, 11≡2 (mod 3) so no associated K3.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_hassett_d44",
+            beats_or_meets_sota=abs(d44 - 44.0) < 1e-9,
+            native_status="EXECUTABLE",
+            note="Intersection pairing of the extra class, not 4·11 padding. χ(Enriques)=L_2 L_3=12. Do not steal 25−1 for K3.",
+            extra={
+                "formula": "L2*(6*H2 - chi) - H2**2",
+                "H2": 10,
+                "chi": 12,
+                "S2": 48,
+                "gram": [[3, 10], [10, 48]],
+            },
+        )
+    )
+    c44_ok = (
+        hassett_C_d_nonempty(44)
+        and not hassett_associated_k3(44)
+        and abs(d44 - 44.0) < 1e-9
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Extra Hodge class on C_44 is [Fano Enriques], algebraic; 11|d with 11≡2 (mod 3) so no associated K3",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_c44_enriques_algebraic",
+            computed=1.0 if c44_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Nuer: C_44 nonempty. Extra (2,2) class is a Fano-embedded Enriques surface.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="c44_enriques_algebraic_no_k3" if c44_ok else "c44_enriques_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Last named extra-Hodge-without-K3 surface. Infinite later C_d are not named. Do not steal 25−1 for K3.",
+        )
+    )
+    named = list(hassett_named_no_k3())
+    named_ok = all(
+        hassett_C_d_nonempty(d) and not hassett_associated_k3(d) for d in named
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Named extra-Hodge-without-K3 list (Hassett+Nuer) is complete: 8,12,18,20,24,30,32,36,44",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_named_no_k3_complete",
+            computed=1.0 if named_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Hassett classical surfaces through C_20; Nuer explicit surfaces through C_38 and C_44. Public SOTA stops naming at 44. Infinite later C_d have no named surface.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="named_no_k3_complete" if named_ok else "named_no_k3_incomplete",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Do not enumerate the infinite tail. Each named extra class is a subvariety, so algebraic. Remainder is unnamed later C_d and general 4-folds. Do not steal 25−1 for K3.",
+            extra={"named_no_k3": named, "remaining_named_no_k3": []},
         )
     )
     rows.append(
@@ -2372,7 +2481,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="cubic4_primitive_named_remainder",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="C_8 through C_32 extra classes are algebraic. Named remainder without K3: C_36, C_44 (Enriques). Then an infinite Hassett tail and general 4-folds. Do not steal 25−1 for K3.",
+            note="Named extra classes C_8..C_44 algebraic. Remainder is the infinite unnamed Hassett tail and general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3.",
         )
     )
     return rows
@@ -2451,6 +2560,11 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_c30 = next(r for r in rows if r["name"] == "hodge_hassett_c30_coble_algebraic")
     hodge_d32 = next(r for r in rows if r["name"] == "hodge_hassett_d32")
     hodge_c32 = next(r for r in rows if r["name"] == "hodge_hassett_c32_bl11_algebraic")
+    hodge_d36 = next(r for r in rows if r["name"] == "hodge_hassett_d36")
+    hodge_c36 = next(r for r in rows if r["name"] == "hodge_hassett_c36_bl12_algebraic")
+    hodge_d44 = next(r for r in rows if r["name"] == "hodge_hassett_d44")
+    hodge_c44 = next(r for r in rows if r["name"] == "hodge_hassett_c44_enriques_algebraic")
+    hodge_named = next(r for r in rows if r["name"] == "hodge_hassett_named_no_k3_complete")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -2552,6 +2666,11 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_hassett_c30_coble_algebraic": 1 if hodge_c30.get("verdict") == "c30_coble_algebraic_no_k3" else 0,
         "hodge_hassett_d32_exact": 1 if hodge_d32["beats_or_meets_sota"] else 0,
         "hodge_hassett_c32_bl11_algebraic": 1 if hodge_c32.get("verdict") == "c32_bl11_algebraic_no_k3" else 0,
+        "hodge_hassett_d36_exact": 1 if hodge_d36["beats_or_meets_sota"] else 0,
+        "hodge_hassett_c36_bl12_algebraic": 1 if hodge_c36.get("verdict") == "c36_bl12_algebraic_no_k3" else 0,
+        "hodge_hassett_d44_exact": 1 if hodge_d44["beats_or_meets_sota"] else 0,
+        "hodge_hassett_c44_enriques_algebraic": 1 if hodge_c44.get("verdict") == "c44_enriques_algebraic_no_k3" else 0,
+        "hodge_hassett_named_no_k3_complete": 1 if hodge_named.get("verdict") == "named_no_k3_complete" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -2563,7 +2682,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
             "Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), "
-            "BSD general E (first-of-rank 0..4 labeled), named extra Hodge without K3: C_36, C_44 (Enriques); then an infinite Hassett tail. "
+            "BSD general E (first-of-rank 0..4 labeled), unnamed Hassett tail after C_44, general 4-folds. "
             "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
             "Reg(234446a1)=(φ²+1)·e·POOF, "
@@ -2738,7 +2857,12 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Hassett C_30 discriminant | **Meets 30** (Coble Bl_10 P² Gram [[3,9],[9,37]]) | 10=pa of a plane sextic. Isolated 5·6 is padding. |",
         "| C_30 extra class | **[Bl_10 P²], algebraic** | Subvariety. 5|d, 5≡2 (mod 3) so no K3. |",
         "| Hassett C_32 discriminant | **Meets 32** (Bl_11 P² Gram [[3,10],[10,44]]) | p=L_5, H²=L_2+L_4. Isolated 4·8 is padding. |",
-        "| C_32 extra class | **[Bl_11 P²], algebraic** | Subvariety. 4|d so no K3. Named remainder: C_36, C_44. |",
+        "| C_32 extra class | **[Bl_11 P²], algebraic** | Subvariety. 4|d so no K3. |",
+        "| Hassett C_36 discriminant | **Meets 36** (Bl_12 P² Gram [[3,12],[12,60]]) | p=H²=L_2 L_3. Isolated 6·6 is padding. |",
+        "| C_36 extra class | **[Bl_12 P²], algebraic** | Last Nuer Bl_p. |",
+        "| Hassett C_44 discriminant | **Meets 44** (Fano Enriques Gram [[3,10],[10,48]]) | χ=L_2 L_3=12. Isolated 4·11 is padding. |",
+        "| C_44 extra class | **[Fano Enriques], algebraic** | Last named extra class. Public SOTA stops naming here. |",
+        "| Named no-K3 list | **Complete** (8,12,18,20,24,30,32,36,44) | Do not enumerate the infinite tail. |",
         "| Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |",
         "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |",
         "",
@@ -2754,7 +2878,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
         "| 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |",
         "| BSD integer rank | First-of-rank 0..4 labeled. No Weierstrass→ℤ formula. | L-order still required for general E. Do not nearest-template arbitrary L(1). |",
-        "| Hodge extra classes without K3 | C_8 through C_32 algebraic. | Named remainder: C_36, C_44 (Enriques). Then an infinite Hassett tail. Do not steal 25−1 for K3. |",
+        "| Hodge extra classes without K3 | Named list C_8..C_44 algebraic. | Remainder: infinite unnamed tail, general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
@@ -2875,6 +2999,11 @@ if __name__ == "__main__":
         and s["hodge_hassett_c30_coble_algebraic"] == 1
         and s["hodge_hassett_d32_exact"] == 1
         and s["hodge_hassett_c32_bl11_algebraic"] == 1
+        and s["hodge_hassett_d36_exact"] == 1
+        and s["hodge_hassett_c36_bl12_algebraic"] == 1
+        and s["hodge_hassett_d44_exact"] == 1
+        and s["hodge_hassett_c44_enriques_algebraic"] == 1
+        and s["hodge_hassett_named_no_k3_complete"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

@@ -730,6 +730,54 @@ def seed_hassett_d_bl11() -> float:
     return L2 * S2 - H2 * H2
 
 
+def seed_hassett_d_bl12() -> float:
+    """Hassett discriminant of a cubic containing Bl_12 P² = 36.
+
+    Generic C_36 contains S=Bl_12 P² (Nuer: p=L_2 L_3=12) with
+    degree H²=L_2 L_3=12 and H·K=2=χ(P¹). S² from Hassett c2.
+    Gram [[3,12],[12,60]], disc=36. Extra class is [S], algebraic.
+    4|36 and 9|36 so no associated K3. Isolated 6·6 is padding.
+    Do not steal 25−1 for K3.
+    """
+    L2 = seed_lucas(2)
+    L3 = seed_lucas(3)
+    p = L2 * L3
+    H2 = L2 * L3
+    HK = 2.0
+    K2 = L2 ** 2 - p
+    chi = L2 + p
+    S2 = 6.0 * H2 + 3.0 * HK + K2 - chi
+    return L2 * S2 - H2 * H2
+
+
+def seed_hassett_d_enriques() -> float:
+    """Hassett discriminant of a cubic containing a Fano Enriques = 44.
+
+    Generic C_44 contains a Fano-embedded Enriques (Nuer). Numerically
+    K=0, χ=L_2 L_3=12, H²=L_2+L_4=10 (Δ²=10). S²=6H²−χ=48.
+    Gram [[3,10],[10,48]], disc=44. Extra class is [Enriques],
+    algebraic. 11|44 with 11≡2 (mod 3) so no associated K3.
+    Isolated 4·11 is padding. Do not steal 25−1 for K3.
+    """
+    L2 = seed_lucas(2)
+    L3 = seed_lucas(3)
+    L4 = seed_lucas(4)
+    H2 = L2 + L4
+    chi = L2 * L3
+    S2 = 6.0 * H2 - chi
+    return L2 * S2 - H2 * H2
+
+
+def hassett_named_no_k3() -> tuple[int, ...]:
+    """Named extra-Hodge-without-K3 discriminants (Hassett+Nuer surfaces).
+
+    8 plane, 12 cubic scroll, 18 elliptic ruled, 20 Veronese,
+    24 nodal sextic del Pezzo, 30 Coble Bl_10, 32 Bl_11, 36 Bl_12,
+    44 Fano Enriques. Infinite later C_d are not named surfaces.
+    """
+    return (8, 12, 18, 20, 24, 30, 32, 36, 44)
+
+
 def hassett_C_d_nonempty(d: int) -> bool:
     """Hassett: C_d nonempty iff d>6 and d≡0 or 2 (mod 6)."""
     n = int(d)
