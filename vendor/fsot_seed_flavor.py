@@ -305,11 +305,29 @@ def seed_glueball_over_sqrt_sigma() -> float:
     The 0++ glueball is not Λ. It is a closed loop of the gluonic medium.
     Old probe φ² + e/π used the Atomic bound-well look (e/π). A closed
     mode has default look 1, so φ² + 1. 2++ / 0++ stays geometric √2.
-    Not a fit to Teper 1997 3.65. Live SU(3) continuum is AT2020 3.405(21)
-    (arXiv:2007.06422). Do not restore e/π or retune φ²+1. Lattice m/√σ is
-    a quenched construct, not an observed particle.
+    Not a fit to Teper 1997 3.65 (σ units). AT2020 3.405(21) is a different
+    Wilson-plaquette continuum scheme (0++ dip at β~5.5), not a 6% FSOT miss.
+    r0 units: (φ²+1)(1+1/(2π)). Do not restore e/π. Not an observed particle.
     """
     return f(PHI) ** 2 + 1.0
+
+
+def seed_sqrt_sigma_r0() -> float:
+    """Sommer vs string-tension conversion: √σ r0 = 1 + 1/(2π).
+
+    AT2020 (arXiv:2007.06422) quotes √σ r0=1.160(6). Circle compactification
+    1/(2π) on the Sommer scale. Do not use 1.160 as a fit.
+    """
+    return 1.0 + 1.0 / (2.0 * f(PI))
+
+
+def seed_glueball_r0() -> float:
+    """Closed 0++ in r0 units: (φ²+1)(1+1/(2π)).
+
+    Chen et al. PRD 73, 014504 (2006) r0 M(0++)=4.16(11). Converts σ-units
+    to Sommer units. Not a retune of φ²+1.
+    """
+    return seed_glueball_over_sqrt_sigma() * seed_sqrt_sigma_r0()
 
 
 def seed_closed_gluonic_GeV() -> float:

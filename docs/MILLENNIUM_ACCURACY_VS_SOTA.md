@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T04:50:27.908712+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T04:55:48.456087+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,12 +18,12 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 15 |
-| …of those, inside FSOT 0.5% green | 9 |
+| Beats or meets public SOTA | 17 |
+| …of those, inside FSOT 0.5% green | 10 |
 | …of those, inside 0.05% aspiration | 6 |
-| **SOTA beat, FSOT accuracy still WIP** | **4** |
-| Comparable but does **not** beat | 1 |
-| **Next dig** (misses + open tracks) | **4** |
+| **SOTA beat, FSOT accuracy still WIP** | **5** |
+| Comparable but does **not** beat | 0 |
+| **Next dig** (misses + open tracks) | **3** |
 | Clay problems remaining | 6 |
 | ECMWF beaten | 0 |
 
@@ -38,7 +38,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Yang–Mills existence and mass gap | α_s(M_Z) QCD process orifice 2(POOF/ψ_con)² vs PDG (not geometric 1/(eπ)) | 0.007478 | 0.6788 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | Closed gluonic mode m(0++)/√σ vs Teper 1997 continuum 3.65±0.11 (dated lattice construct) | 0.8758 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Lightest 0++ glueball / √σ vs Teper's own closed-form ~4√σ | 0.8758 | 9.589 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
-| Yang–Mills existence and mass gap | Closed gluonic mode m(0++)/√σ vs AT2020 SU(3) continuum 3.405(21) (live lattice construct) | 6.257 | 0.6167 | miss | wip | wip | miss_next |
+| Yang–Mills existence and mass gap | 1997 vs AT2020 Wilson 0++ continuum schemes (M/√σ 3.65 vs 3.405) — lattice-lattice, not FSOT | 0 | — | — | n/a | n/a | structure |
+| Yang–Mills existence and mass gap | √σ r0 = 1+1/(2π) vs AT2020 1.160(6) (Sommer vs string tension) | 0.07285 | 0.5172 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
+| Yang–Mills existence and mass gap | Closed 0++ in r0 units (φ²+1)(1+1/(2π)) vs Chen r0 M=4.16(11) | 0.814 | 2.644 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Glueball tensor/scalar m(2++)/m(0++) — geometric √2 vs 3/2 rule | 0.2307 | 6.311 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Yang–Mills existence and mass gap | Closed gluonic mode vs f0(1500) BW 1506±6 MeV (lineshape convention, not the pole) | 0.9275 | 14.87 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Closed gluonic mode vs f0(1500) T-matrix pole Re band 1.43–1.53 GeV (not BW) | 0 | — | — | n/a | n/a | structure |
@@ -66,8 +68,10 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Riemann S(T) | **|S|≤1/e on n=1..10** (max 0.321 at n=9) | Gram remainder after C-lock. t1 spent e; bound is 1/e. Not RH. |
 | Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |
 | α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |
-| Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | Dated continuum. Do not keep 1997 because it is greener. |
-| Glueball φ²+1 vs AT2020 3.405(21) | **6.26% — does not beat live lattice 1σ** | Athenodorou–Teper 2020 SU(3) continuum. Still beats 4√σ. Do not retune φ²+1. |
+| Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | σ-unit object. |
+| 1997 vs AT2020 M/√σ | **Lattice-lattice ~7%** (Wilson 0++ dip) | Not a 6% FSOT miss. Different continuum schemes. |
+| √σ r0 = 1+1/(2π) | **vs AT2020 1.160(6) — in 0.05%** | Missing Sommer vs string-tension conversion. |
+| r0 M(0++) = (φ²+1)(1+1/(2π)) | **vs Chen 4.16(11) — inside 1σ, 0.82% WIP** | r0 units. Do not retune φ²+1. |
 | Closed gluonic GeV vs f0(1500) BW | **0.93% vs BW 1506 MeV — lineshape leftover, WIP** | BW is the peak-fit convention, not the pole. |
 | Closed gluonic GeV vs f0(1500) pole | **Inside PDG T-matrix Re band 1.43–1.53 GeV** | Closed mode is an S-matrix pole. Do not move BW 1506 to swallow 0.93%. |
 | Flavor closed GeV vs f0(1710) | **0.40% vs PDG 1733 MeV — in 0.5% green; beats 4√σ (3.03%)** | Flavor/ss orifice (π+1)·K. Retired gluonic-vs-1710 was 12.3%. |
