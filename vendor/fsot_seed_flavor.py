@@ -315,9 +315,10 @@ def seed_closed_gluonic_GeV() -> float:
     """Closed gluonic mode in GeV: (φ²+1)·K.
 
     String-unit mode times the already-named string tension √σ=K.
-    No new coefficient. Observed I=0 0++ that sits here is f0(1500).
-    f0(1710) is the flavor/ss orifice (π+1)·K, not this seed.
-    Lattice 0++ is a quenched YM eigenstate (Morningstar, arXiv:2502.02547).
+    A closed mode is an S-matrix pole, not a Breit-Wigner peak.
+    PDG f0(1500) T-matrix Re band is 1.43–1.53 GeV (Navas et al. PRD 110, 030001).
+    BW 1506±6 MeV is the lineshape convention. f0(1710) is (π+1)·K.
+    Do not retune K. Do not swap orifices. Not a glueball ID.
     """
     return seed_glueball_over_sqrt_sigma() * seed_string_tension_GeV()
 

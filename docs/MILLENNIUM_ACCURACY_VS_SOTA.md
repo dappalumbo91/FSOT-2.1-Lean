@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T04:27:51.895634+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T04:41:07.396037+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -39,7 +39,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Yang–Mills existence and mass gap | Closed gluonic mode m(0++)/√σ vs quenched-lattice construct (not an observed particle) | 0.8758 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Lightest 0++ glueball / √σ vs Teper's own closed-form ~4√σ | 0.8758 | 9.589 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Glueball tensor/scalar m(2++)/m(0++) — geometric √2 vs 3/2 rule | 0.2307 | 6.311 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
-| Yang–Mills existence and mass gap | Closed gluonic mode in GeV vs PDG f0(1500) (observed I=0 0++; not a glueball ID) | 0.9275 | 14.87 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Yang–Mills existence and mass gap | Closed gluonic mode vs f0(1500) BW 1506±6 MeV (lineshape convention, not the pole) | 0.9275 | 14.87 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Yang–Mills existence and mass gap | Closed gluonic mode vs f0(1500) T-matrix pole Re band 1.43–1.53 GeV (not BW) | 0 | — | — | n/a | n/a | structure |
 | Yang–Mills existence and mass gap | Flavor/ss closed 0++ in GeV vs PDG f0(1710) (circle orifice π+1, not the gluonic mode) | 0.3993 | 3.033 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Yang–Mills existence and mass gap | Discrete valve path-sum w_POOF + w_hold = 1; a0/γ_color finite | 1.11e-14 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Global smooth (or blow-up) 3D incompressible NSE | — | — | — | n/a | n/a | open_track_next |
@@ -65,7 +66,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |
 | α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |
 | Glueball φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Quenched-lattice construct in string units, **not an observed particle**. |
-| Closed gluonic GeV vs f0(1500) | **0.93% vs PDG 1506 MeV — WIP; beats lattice-on-this-candidate** | Gluonic orifice (φ²+1)·K. Not a glueball ID. |
+| Closed gluonic GeV vs f0(1500) BW | **0.93% vs BW 1506 MeV — lineshape leftover, WIP** | BW is the peak-fit convention, not the pole. |
+| Closed gluonic GeV vs f0(1500) pole | **Inside PDG T-matrix Re band 1.43–1.53 GeV** | Closed mode is an S-matrix pole. Do not move BW 1506 to swallow 0.93%. |
 | Flavor closed GeV vs f0(1710) | **0.40% vs PDG 1733 MeV — in 0.5% green; beats 4√σ (3.03%)** | Flavor/ss orifice (π+1)·K. Retired gluonic-vs-1710 was 12.3%. |
 | Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |
 | Glueball 2++/0++ | **Beats 3/2 (0.23%) — in 0.5% green, aspiration WIP** | √2 geometry on the closed 0++ mode. |

@@ -87,8 +87,11 @@ TEPER_CLOSED_FORM_0PP = 4.0
 TEPER_CLOSED_FORM_RATIO = 1.5
 # PDG 2024 (Navas et al. PRD 110, 030001). Observed I=0 0++ — not a glueball ID.
 # Morningstar arXiv:2502.02547: no scalar below ~2 GeV is predominantly a glueball.
-PDG_F0_1500_GEV = 1.506  # 1506 ± 6 MeV
+PDG_F0_1500_GEV = 1.506  # 1506 ± 6 MeV BW (lineshape convention)
 PDG_F0_1500_STAT = 0.006
+# PDG 2024 T-matrix pole OUR ESTIMATE Re(√s)=(1430–1530) MeV. Closed mode is a pole.
+PDG_F0_1500_POLE_LO_GEV = 1.43
+PDG_F0_1500_POLE_HI_GEV = 1.53
 PDG_F0_1710_GEV = 1.733  # 1733 +8 −7 MeV
 PDG_F0_1710_STAT = 0.008
 # Morningstar-class quenched YM 0++ ~1730 ± 80 MeV (lattice construct in GeV).
@@ -718,27 +721,53 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Yang–Mills existence and mass gap",
-            function_object="Closed gluonic mode in GeV vs PDG f0(1500) (observed I=0 0++; not a glueball ID)",
+            function_object="Closed gluonic mode vs f0(1500) BW 1506±6 MeV (lineshape convention, not the pole)",
             clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
             name="ym_closed_gluonic_GeV_vs_f0_1500",
             computed=m_g,
             measured=PDG_F0_1500_GEV,
-            public_sota_model="PDG 2024 f0(1500)=1506±6 MeV (Navas et al. PRD 110, 030001). Quenched lattice 0++ ~1730±80 MeV is the construct, not this particle.",
+            public_sota_model="PDG 2024 BW 1506±6 MeV. Closed mode is a pole; BW is the peak-fit convention. Lattice 0++ ~1730 MeV is a construct.",
             public_sota_typical_error_pct=lat_vs_1500,
             comparison_class="comparable",
             verdict="beats_lattice_on_this_candidate" if fsot_vs_1500 < lat_vs_1500 else "does_not_beat_lattice_on_this_candidate",
             beats_or_meets_sota=fsot_vs_1500 < lat_vs_1500,
             native_status="EXECUTABLE",
-            note="(φ²+1)·K. Gluonic orifice. Sibling f0(1710) is the flavor orifice (π+1)·K. Do not pick 1500 because it is closer. Not a Clay mass gap.",
+            note="(φ²+1)·K vs BW. 0.93% is the lineshape leftover. Pole band is the named object. Do not retune K. Not a glueball ID.",
             extra={
                 "formula": "(PHI**2 + 1) * K",
                 "sqrt_sigma_GeV": seed_string_tension_GeV(),
                 "fsot_vs_f0_1500_pct": fsot_vs_1500,
                 "lattice_vs_f0_1500_pct": lat_vs_1500,
                 "sibling_f0_1710_GeV": PDG_F0_1710_GEV,
-                "tmatrix_pole_lo_GeV": 1.43,
-                "tmatrix_pole_hi_GeV": 1.53,
-                "inside_tmatrix_pole_band": 1.43 <= m_g <= 1.53,
+                "tmatrix_pole_lo_GeV": PDG_F0_1500_POLE_LO_GEV,
+                "tmatrix_pole_hi_GeV": PDG_F0_1500_POLE_HI_GEV,
+                "inside_tmatrix_pole_band": PDG_F0_1500_POLE_LO_GEV <= m_g <= PDG_F0_1500_POLE_HI_GEV,
+            },
+        )
+    )
+    pole_in = PDG_F0_1500_POLE_LO_GEV <= m_g <= PDG_F0_1500_POLE_HI_GEV
+    rows.append(
+        _row(
+            problem="Yang–Mills existence and mass gap",
+            function_object="Closed gluonic mode vs f0(1500) T-matrix pole Re band 1.43–1.53 GeV (not BW)",
+            clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
+            name="ym_closed_gluonic_GeV_vs_f0_1500_pole",
+            computed=1.0 if pole_in else 0.0,
+            measured=1.0,
+            public_sota_model="PDG 2024 T-matrix pole OUR ESTIMATE Re(√s)=(1430–1530) MeV (Navas et al. PRD 110, 030001). BW 1506 is the lineshape convention.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="inside_tmatrix_pole_band" if pole_in else "outside_tmatrix_pole_band",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="A closed mode is an S-matrix pole. Seed 1.520 GeV is inside 1.43–1.53. Do not move the BW central to swallow 0.93%. Do not retune K. Not a glueball ID.",
+            extra={
+                "formula": "(PHI**2 + 1) * K",
+                "seed_GeV": m_g,
+                "pole_lo_GeV": PDG_F0_1500_POLE_LO_GEV,
+                "pole_hi_GeV": PDG_F0_1500_POLE_HI_GEV,
+                "bw_GeV": PDG_F0_1500_GEV,
+                "retired_bw_err_pct": fsot_vs_1500,
             },
         )
     )
@@ -1096,6 +1125,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
     glue_ratio = next(r for r in rows if r["name"] == "ym_glueball_2pp_over_0pp")
     glue_f0_1500 = next(r for r in rows if r["name"] == "ym_closed_gluonic_GeV_vs_f0_1500")
+    glue_f0_pole = next(r for r in rows if r["name"] == "ym_closed_gluonic_GeV_vs_f0_1500_pole")
     glue_f0_1710 = next(r for r in rows if r["name"] == "ym_flavor_closed_GeV_vs_f0_1710")
     wx_storm = next(r for r in rows if r["name"] == "ns_weather_storm_sector")
     wx_quiet = next(r for r in rows if r["name"] == "ns_weather_quiet_fill")
@@ -1137,6 +1167,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "glueball_ratio_beats_three_halves": 1 if glue_ratio["beats_or_meets_sota"] else 0,
         "glueball_observed_pair_named": 1,
         "glueball_f0_1500_beats_lattice_on_that_candidate": 1 if glue_f0_1500["beats_or_meets_sota"] else 0,
+        "f0_1500_inside_tmatrix_pole_band": 1 if glue_f0_pole.get("verdict") == "inside_tmatrix_pole_band" else 0,
         "f0_1710_flavor_beats_4sqrt": 1 if glue_f0_1710["beats_or_meets_sota"] else 0,
         "f0_1710_flavor_green": 1 if glue_f0_1710.get("fsot_green") == "pass" else 0,
         "weather_beats_majority": 1 if wx_storm["beats_or_meets_sota"] else 0,
@@ -1271,7 +1302,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |",
         "| Glueball φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Quenched-lattice construct in string units, **not an observed particle**. |",
-        "| Closed gluonic GeV vs f0(1500) | **0.93% vs PDG 1506 MeV — WIP; beats lattice-on-this-candidate** | Gluonic orifice (φ²+1)·K. Not a glueball ID. |",
+        "| Closed gluonic GeV vs f0(1500) BW | **0.93% vs BW 1506 MeV — lineshape leftover, WIP** | BW is the peak-fit convention, not the pole. |",
+        "| Closed gluonic GeV vs f0(1500) pole | **Inside PDG T-matrix Re band 1.43–1.53 GeV** | Closed mode is an S-matrix pole. Do not move BW 1506 to swallow 0.93%. |",
         "| Flavor closed GeV vs f0(1710) | **0.40% vs PDG 1733 MeV — in 0.5% green; beats 4√σ (3.03%)** | Flavor/ss orifice (π+1)·K. Retired gluonic-vs-1710 was 12.3%. |",
         "| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |",
         "| Glueball 2++/0++ | **Beats 3/2 (0.23%) — in 0.5% green, aspiration WIP** | √2 geometry on the closed 0++ mode. |",
@@ -1345,6 +1377,7 @@ if __name__ == "__main__":
         and s["glueball_ratio_beats_three_halves"] == 1
         and s["glueball_observed_pair_named"] == 1
         and s["glueball_f0_1500_beats_lattice_on_that_candidate"] == 1
+        and s["f0_1500_inside_tmatrix_pole_band"] == 1
         and s["f0_1710_flavor_beats_4sqrt"] == 1
         and s["f0_1710_flavor_green"] == 1
         and s["riemann_beats_public_closed_form"] == 1
