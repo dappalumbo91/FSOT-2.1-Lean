@@ -1,6 +1,6 @@
 # Millennium Prize track — official rules + FSOT native objects
 
-**Pin:** D1D38A · **Clay Prize claimed:** **no**  
+**Pin:** AEB2AD · **Clay Prize claimed:** **no**  
 **Rules:** [CMI Millennium Prize Rules](https://www.claymath.org/millennium-problems/rules/) (Board, 26 September 2018)  
 **PDF:** https://www.claymath.org/wp-content/uploads/2022/03/millennium_prize_rules_0.pdf  
 **Problems:** https://www.claymath.org/millennium-problems/
@@ -8,7 +8,28 @@
 This is an **attempt track**. Native identities go through Lean / Coq / Isabelle / F* / Rust / SMT.
 The Clay *statement* of each unsolved problem stays `OPEN_NOT_CLAIMED` until that exact theorem is proved.
 
-Yang–Mills detail: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).
+Question/answer (not vs-SOTA residuals):  
+Yang–Mills [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) ·  
+Navier–Stokes [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) ·  
+BSD [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md).  
+Named-function outcomes: [`../results/millennium_named_outcomes.md`](../results/millennium_named_outcomes.md).
+
+---
+
+## The questions, and FSOT's answers
+
+Each Clay problem is a *question about reality*. FSOT answers that question in native objects. The prize manuscript is a different object.
+
+| Problem | Question | FSOT answer | Still open (native) |
+|---------|----------|-------------|---------------------|
+| **Yang–Mills** | Why no massless gluons / free quarks? | Gap scale \(m/\sqrt{\sigma}=\varphi^2+1\). Free color is not an attractor. Teper is a check of the σ-unit orifice \(\varphi^2+1+\mathrm{POOF}/D\), not the question. | Clay Wightman theory on \(\mathbb{R}^4\) |
+| **Navier–Stokes** | Do 3D NSE solutions stay smooth, or can stretching blow up? | 2D \(3/2\); 3D \(4/5=1-1/D_{\mathrm{particle}}\); Onsager \(1/3\); BKM: blow-up iff \(\int\|\omega\|_\infty dt\) diverges. | Whether viscosity keeps vorticity BKM-integrable |
+| **Riemann** | Do all non-trivial zeros have real part \(1/2\)? | \(t_1=e/\gamma^3\); C-lock; \(\lvert S\rvert\le 1/e\); typical \(\lvert S\rvert=\mathrm{POOF}\); signed jitter prime-2+3. | The line for *all* zeros |
+| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Parity from \(w_E\). First-of-rank leadings label \(0..4\). Rank 4 is \((\varphi^2+1)\cdot e\cdot\mathrm{POOF}\). | Leading of a *general* \(E\) from \(L(E)\) |
+| **Hodge** | Are Hodge classes algebraic cycles? | Lefschetz; associated K3; named extra classes \(C_8..C_{44}\) are the named surfaces. | Unnamed later \(C_d\); general 4-folds |
+| **P vs NP** | Is verifying as hard as searching? | Grover \(1/2\) (QI); Cook–Levin SAT named. | Search vs verification as Clay |
+
+---
 
 ---
 
@@ -50,7 +71,7 @@ Machine flags in this repo (all honest zeros except remaining=6 and Poincaré hi
 
 “We already solved some of these” is true **only** for the *native* column (YM path-sum, NS transport coefficients, Riemann first-zero residual, Grover 1/2). It is **false** for the Clay column. Same Perfect Host discipline: wrong object is a false kill *and* a false win.
 
-Accuracy vs public SOTA on those *functions* (not the Prize): [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md). Glueball vs Teper is allowed to lose. ECMWF is not beaten.
+Accuracy vs public SOTA on those *functions* (not the Prize): [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md). Teper is a check of the σ-unit glueball orifice, not the mass-gap question. ECMWF is not beaten.
 
 ---
 

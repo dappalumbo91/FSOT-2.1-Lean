@@ -1734,6 +1734,23 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     )
     rows.append(
         _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="BSD leading = arithmetic volume Ω·Reg·Tam / (|Sha|·|tors|²). Rank is the order of that leading.",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_leading_is_arithmetic_volume",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="Tate–BSD formula. First-of-rank ladder seeds the left-hand side for r=0..4. General E still produces Ω, Reg, Tam from the curve.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="bsd_volume_named_not_general_e",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="The question's content. First-of-rank is the seed-closed special case. Remainder is a general E. Do not nearest-template arbitrary L(1). Do not claim Clay BSD.",
+        )
+    )
+    rows.append(
+        _row(
             problem="Hodge conjecture",
             function_object="Named first objects: ℂP² (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20.",
             clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
@@ -2595,6 +2612,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_Reg4 = next(r for r in rows if r["name"] == "bsd_234446a1_regulator")
     bsd_par = next(r for r in rows if r["name"] == "bsd_rank_parity_map")
     bsd_int = next(r for r in rows if r["name"] == "bsd_integer_rank_leading")
+    bsd_vol = next(r for r in rows if r["name"] == "bsd_leading_is_arithmetic_volume")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -2704,6 +2722,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_234446a1_reg_green": 1 if bsd_Reg4.get("fsot_green") == "pass" else 0,
         "bsd_rank_parity_map": 1 if bsd_par.get("verdict") == "parity_map_holds" else 0,
         "bsd_integer_rank_first5": 1 if bsd_int.get("verdict") == "integer_rank_first5_holds" else 0,
+        "bsd_leading_volume_named": 1 if bsd_vol.get("verdict") == "bsd_volume_named_not_general_e" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -2900,6 +2919,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Reg(234446a1) | **(φ²+1)·e·POOF vs LMFDB — in 0.5%** | First rank-4 volume. Isolated e² was the missing loop fold. |",
         "| E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. Rank 4 is (φ²+1)·e·POOF, not e². |",
         "| Integer rank 0..4 | **First-curve leadings match uniquely** | Leading → rank. General E still produces the leading from its modular form. |",
+        "| BSD arithmetic volume | **Named formula** Ω·Reg·Tam / (|Sha|·|tors|²) | The question's content. Remainder is a general E. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
@@ -3043,6 +3063,7 @@ if __name__ == "__main__":
         and s["bsd_234446a1_reg_green"] == 1
         and s["bsd_rank_parity_map"] == 1
         and s["bsd_integer_rank_first5"] == 1
+        and s["bsd_leading_volume_named"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1

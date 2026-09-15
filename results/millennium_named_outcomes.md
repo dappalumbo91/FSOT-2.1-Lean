@@ -5,6 +5,8 @@
 Scoreboard: `python vendor/fsot_millennium_accuracy.py` → [`docs/MILLENNIUM_ACCURACY_VS_SOTA.md`](../docs/MILLENNIUM_ACCURACY_VS_SOTA.md).
 Gauntlet: `python scripts/run_goal_tracks_verification.py` (Lean / Coq / Isabelle / F* / Rust / SMT uniqueness spine).
 
+Question/answer (not vs-SOTA): [`MILLENNIUM_YM_VS_FSOT.md`](../docs/MILLENNIUM_YM_VS_FSOT.md) · [`MILLENNIUM_NSE_VS_FSOT.md`](../docs/MILLENNIUM_NSE_VS_FSOT.md) · [`MILLENNIUM_BSD_VS_FSOT.md`](../docs/MILLENNIUM_BSD_VS_FSOT.md).
+
 ## Live tally
 
 | Bucket | n |
@@ -72,5 +74,5 @@ Do not drop these. Named Hodge \(C_d\) is done; these are the leftover objects.
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
 | NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | 4/5 (3D), 3/2 (2D inverse), Onsager \(1/3\) are cascade numbers. BKM is the stretching criterion. Remainder is whether \(\int\|\omega\|_\infty dt\) stays finite. | Stuffing existence into 4/5 or 1/3 |
-| BSD-RANK | integer rank of a general \(E\) | First-of-rank 0..4 labeled. General \(E\) still produces the leading from its modular form. | Nearest-template arbitrary \(L(1)\) (17a1 mis-fires) |
+| BSD-RANK | integer rank of a general \(E\) | First-of-rank 0..4 labeled. Leading = arithmetic volume \(\Omega\cdot\mathrm{Reg}\cdot\mathrm{Tam}/(\lvert\mathrm{Sha}\rvert\cdot\lvert\mathrm{tors}\rvert^2)\). General \(E\) still produces that volume from \(L(E)\). | Nearest-template arbitrary \(L(1)\) (17a1 mis-fires) |
 | HODGE-TAIL | unnamed Hassett \(C_d\) after 44 + general 4-folds | Nuer stops naming at 44. Infinite later \(C_d\) have no named surface. | Enumerating the tail until it looks green |
