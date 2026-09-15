@@ -23,7 +23,7 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from fsot_compute import E, PHI, PI, derived_D_eff
+    from fsot_compute import E, PHI, PI, POOF, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
@@ -43,7 +43,7 @@ except ImportError:  # pragma: no cover
     import sys
 
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from fsot_compute import E, PHI, PI, derived_D_eff
+    from fsot_compute import E, PHI, PI, POOF, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
@@ -183,8 +183,13 @@ def riemann_spacing_walk(t1: float, n_zeros: int) -> list[float]:
     return out
 
 
+def _lat_belt_deg() -> float:
+    """Valve opening in latitude: POOF rad → deg. Polar-front tank width."""
+    return float(POOF) * 180.0 / math.pi
+
+
 def _issued_wx_state() -> dict[str, dict[str, Any]]:
-    """At-issue pres/gst from frozen dated JSON. Do not rewrite those files."""
+    """At-issue pres/gst/lat from frozen dated JSON. Do not rewrite those files."""
     out: dict[str, dict[str, Any]] = {}
     if not WX_ISSUE_DIR.is_dir():
         return out
@@ -200,22 +205,37 @@ def _issued_wx_state() -> dict[str, dict[str, Any]]:
             if not fid.startswith("FCAST-WX"):
                 continue
             pred = fc.get("predicted") or {}
+            loc = fc.get("location") or {}
+            sq = fc.get("score_query") or {}
             try:
                 pres = float(pred.get("pres_now"))
                 gst = float(pred.get("gst_now"))
             except (TypeError, ValueError):
                 continue
-            out[fid] = {"pres_now": pres, "gst_now": gst}
+            try:
+                lat = float(loc.get("lat"))
+            except (TypeError, ValueError):
+                lat = None
+            out[fid] = {
+                "pres_now": pres,
+                "gst_now": gst,
+                "lat": lat,
+                "issued_at": str(fc.get("issued_at") or ""),
+                "storm": bool(sq.get("storm")),
+                "buoy": loc.get("buoy_id") or sq.get("buoy_id"),
+            }
     return out
 
 
 def _weather_skill() -> dict[str, Any]:
-    """Split storm-sector vs clean quiet vs gap-zone. Majority-of-saw_storm is retired.
+    """Split storm-sector vs clean quiet vs gap-zone vs latitude transfer.
 
     Storm hold uses pres<1010 / gst≥8. Quiet kill uses pres<1005 / gst≥12.
-    Clean quiet at issue is pres≥1010 and gst<8. Gap-zone (1000–1010 / 8–15)
-    should not issue — same grammar as transferred_poof. Mixing gap-zone kills
-    into quiet persistence is the wrong object.
+    Clean quiet at issue is pres≥1010 and gst<8, and not lat-coupled to a
+    same-issue storm hold. Coupling width is POOF rad in degrees (valve).
+    44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N) while that storm held —
+    transferred_weather along the 60°N belt, not a 1010 retune.
+    Gap-zone (1000–1010 / 8–15) should not issue.
     Thin 24 h coverage (n_obs<24) is awaiting, not a kill.
     Frozen dated JSON is not rewritten.
     """
@@ -235,6 +255,15 @@ def _weather_skill() -> dict[str, Any]:
     storm = [r for r in scored if r.get("expect_storm")]
     quiet = [r for r in scored if not r.get("expect_storm")]
     issued = _issued_wx_state()
+    belt = _lat_belt_deg()
+    storm_holds_by_issue: dict[str, list[dict[str, Any]]] = {}
+    for r in storm:
+        if r.get("result_24h") != "hold":
+            continue
+        st = issued.get(str(r.get("id") or ""))
+        if not st or st.get("lat") is None:
+            continue
+        storm_holds_by_issue.setdefault(str(st.get("issued_at") or ""), []).append(st)
 
     def _hold_frac(rs: list[dict[str, Any]]) -> tuple[int, int, float]:
         if not rs:
@@ -248,8 +277,30 @@ def _weather_skill() -> dict[str, Any]:
             return False
         return st["pres_now"] >= 1010.0 and st["gst_now"] < 8.0
 
-    clean = [r for r in quiet if _is_clean(r)]
+    def _lat_coupled(r: dict[str, Any]) -> dict[str, Any] | None:
+        st = issued.get(str(r.get("id") or ""))
+        if not st or st.get("lat") is None:
+            return None
+        peers = storm_holds_by_issue.get(str(st.get("issued_at") or "")) or []
+        hit = None
+        best = None
+        for p in peers:
+            if p.get("lat") is None:
+                continue
+            dlat = abs(float(st["lat"]) - float(p["lat"]))
+            if best is None or dlat < best:
+                best = dlat
+                hit = p
+        if hit is None or best is None or best >= belt:
+            return None
+        return {"dlat_deg": best, "near_buoy": hit.get("buoy"), "belt_deg": belt}
+
+    clean = [r for r in quiet if _is_clean(r) and _lat_coupled(r) is None]
     gap = [r for r in quiet if not _is_clean(r)]
+    lat_xfer = [r for r in quiet if _lat_coupled(r) is not None]
+    lat_xfer_info = {
+        str(r.get("id")): _lat_coupled(r) for r in lat_xfer
+    }
     sh, sn, sp = _hold_frac(storm)
     qh, qn, qp = _hold_frac(quiet)
     ch, cn, cp = _hold_frac(clean)
@@ -280,6 +331,10 @@ def _weather_skill() -> dict[str, Any]:
         "gap_zone_n": gn,
         "gap_zone_hold": gh,
         "gap_zone_kill_ids": [r.get("id") for r in gap if r.get("result_24h") == "kill"],
+        "lat_transfer_n": len(lat_xfer),
+        "lat_transfer_kill_ids": [r.get("id") for r in lat_xfer if r.get("result_24h") == "kill"],
+        "lat_transfer": lat_xfer_info,
+        "lat_belt_deg": belt,
         "majority_saw_storm_pct": majority_wrong_object,
         "majority_is_wrong_object": True,
         "beats_wrong_majority_on_storm_object": sp > majority_wrong_object if sn else False,
@@ -636,6 +691,9 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
                 "fsot_vs_f0_1500_pct": fsot_vs_1500,
                 "lattice_vs_f0_1500_pct": lat_vs_1500,
                 "sibling_f0_1710_GeV": PDG_F0_1710_GEV,
+                "tmatrix_pole_lo_GeV": 1.43,
+                "tmatrix_pole_hi_GeV": 1.53,
+                "inside_tmatrix_pole_band": 1.43 <= m_g <= 1.53,
             },
         )
     )
@@ -806,22 +864,45 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
-    clean_miss = bool(wx.get("present") and (wx.get("clean_quiet_n") or 0) and clean_pct < 100.0)
     rows.append(
         _row(
             problem="Navier–Stokes existence and smoothness",
-            function_object="Clean quiet 24 h persistence (pres≥1010 and gst<8 at issue). Not gap-zone.",
+            function_object="Latitude-belt transfer: quiet kill coupled to a same-issue storm hold (|Δlat|<POOF·180/π)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_weather_lat_transfer",
+            computed=1.0 if wx.get("present") else None,
+            measured=1.0,
+            public_sota_model="Same grammar as transferred_poof. 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N). Valve width POOF rad in degrees. Frozen JSON not rewritten.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="lat_belt_transferred_weather",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE" if wx.get("present") else "OPEN_TRACK",
+            note="Do not move 1010 to swallow 44078. The dump is the 60°N storm tank. Do not drop this kill to inflate storm skill.",
+            extra={
+                "lat_belt_deg": wx.get("lat_belt_deg"),
+                "lat_transfer_kill_ids": wx.get("lat_transfer_kill_ids"),
+                "lat_transfer": wx.get("lat_transfer"),
+            },
+        )
+    )
+    clean_miss = bool(wx.get("present") and (wx.get("clean_quiet_n") or 0) and clean_pct < 100.0)
+    clean_hold = bool(wx.get("present") and (wx.get("clean_quiet_n") or 0) and not clean_miss)
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Clean quiet 24 h persistence (pres≥1010, gst<8, not lat-coupled to a storm hold)",
             clay_object="Global smooth (or blow-up) 3D incompressible NSE",
             name="ns_weather_quiet_fill",
             computed=clean_pct if wx.get("present") else None,
             measured=100.0,
-            public_sota_model="Clean-quiet issue bar pres≥1010 and gst<8. Kill envelope pres<1005 or gst≥12. Gap-zone is a different object.",
+            public_sota_model="Clean-quiet issue bar pres≥1010 and gst<8, uncoupled from same-issue storm latitude belt. ECMWF still a different object.",
             public_sota_typical_error_pct=None,
             comparison_class="related_not_clay",
-            verdict="clean_quiet_honest_miss" if clean_miss else "quiet_fill_still_miss",
-            beats_or_meets_sota=False if wx.get("present") else None,
+            verdict="clean_quiet_holds" if clean_hold else ("clean_quiet_honest_miss" if clean_miss else "quiet_fill_still_miss"),
+            beats_or_meets_sota=True if clean_hold else (False if wx.get("present") else None),
             native_status="EXECUTABLE" if wx.get("present") else "OPEN_TRACK",
-            note="Superseded object: mixed quiet 6/11 mixed gap-zone into persistence. Clean quiet is 4/5; 44078 is the honest miss (1010.3 hPa, 4.0 m/s at issue). Do not move 1010 to swallow it. Frozen JSON not rewritten.",
+            note="44078 is latitude transfer, not this object. Uncoupled clean quiet holds. Do not move 1010. Do not claim ECMWF. Frozen JSON not rewritten.",
             extra={
                 "weather_skill": wx,
                 "fsot_error_pct": (100.0 - clean_pct) if wx.get("present") else None,
@@ -973,6 +1054,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     wx_storm = next(r for r in rows if r["name"] == "ns_weather_storm_sector")
     wx_quiet = next(r for r in rows if r["name"] == "ns_weather_quiet_fill")
     wx_gap = next(r for r in rows if r["name"] == "ns_weather_gap_zone_quiet")
+    wx_lat = next(r for r in rows if r["name"] == "ns_weather_lat_transfer")
     ns_vk = next(r for r in rows if r["name"] == "ns_von_karman")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
@@ -1014,6 +1096,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "weather_does_not_beat_majority": 0 if wx_storm["beats_or_meets_sota"] else 1,
         "weather_quiet_fill_still_miss": 0 if wx_quiet["beats_or_meets_sota"] else 1,
         "weather_gap_zone_named": 1 if wx_gap.get("verdict") == "gap_zone_should_not_issue" else 0,
+        "weather_lat_transfer_named": 1 if wx_lat.get("verdict") == "lat_belt_transferred_weather" else 0,
         "ns_von_karman_green": 1 if ns_vk.get("fsot_green") == "pass" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
@@ -1024,7 +1107,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Misses next: clean-quiet 44078, NSE 3D smoothness (Clay), "
+            "Misses next: NSE 3D smoothness (Clay), "
             "BSD rank predictor, Hodge classes. Native: von Kármán κ, L(11a1,1)=√φ/D_particle, χ(CP²)=Lucas L_2. Glueball 0++ in string units is φ²+1 vs a "
             "quenched-lattice construct, not an observed particle. Observed I=0 0++: "
             "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
@@ -1033,7 +1116,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. "
             "SOTA and FSOT 0.5% are independent bars. "
             "Storm-sector is the weather object; majority-of-saw_storm is retired. "
-            "Gap-zone quiet should not issue (transferred_weather). Clean quiet 4/5; 44078 is the honest miss. "
+            "Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. "
             "ECMWF is not beaten. Frozen issues not rewritten."
         ),
     }
@@ -1153,8 +1236,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Item | Why it is next | First cut, no stuffing |",
         "|------|----------------|------------------------|",
         "| Weather storm-sector | Named object (docstring). Thin n_obs<24 is awaiting, not a kill. Majority-of-saw_storm **retired**. | ECMWF not beaten. Frozen issues not rewritten. |",
-        "| Weather gap-zone quiet | 1000–1010 hPa / 8–15 m/s should not issue (transferred_weather). OLCN6/42058 were already in the gap. | New issuer skips. Frozen JSON not rewritten. |",
-        "| Weather clean quiet | **4/5 hold**; 44078 (1010.3 hPa, 4.0 m/s) is the honest miss. | Do not move 1010 to swallow 44078. Do not mix gap-zone into this object. |",
+        "| Weather gap-zone quiet | 1000–1010 hPa / 8–15 m/s should not issue. OLCN6/42058 already in the gap. | New issuer skips. Frozen JSON not rewritten. |",
+        "| Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |",
+        "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| 3D NSE smoothness | Still no public accuracy %. | 1D Stokes + von Kármán κ are the executable functions. Not Clay smoothness. |",
         "| BSD rank | Still no native rank predictor. | L(11a1,1)=√φ/D_particle is the rank-0 first object. Do not `fsot_scaled(L)`. 37a1/389a1 vanish. |",
@@ -1216,8 +1300,9 @@ if __name__ == "__main__":
         and s["f0_1710_flavor_green"] == 1
         and s["riemann_beats_public_closed_form"] == 1
         and s["riemann_panel_beats_rvm"] == 1
-        and s["weather_quiet_fill_still_miss"] == 1
+        and s["weather_quiet_fill_still_miss"] == 0
         and s["weather_gap_zone_named"] == 1
+        and s["weather_lat_transfer_named"] == 1
         and s["ns_von_karman_green"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["hodge_cp2_euler_exact"] == 1

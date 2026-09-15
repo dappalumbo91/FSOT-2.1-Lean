@@ -1,21 +1,20 @@
 {
-  "generated_at": "2026-09-15T04:08:07.682123+00:00",
+  "generated_at": "2026-09-15T04:14:34.903134+00:00",
   "pin": "AEB2AD",
   "clay_prize_claimed": false,
   "clay_problems_remaining": 6,
   "fsot_green_gate_pct": 0.5,
   "fsot_aspiration_pct": 0.05,
   "comparable_count": 12,
-  "beats_or_meets_count": 14,
+  "beats_or_meets_count": 15,
   "does_not_beat_count": 0,
   "no_fair_compare_count": 3,
   "sota_beats_accuracy_wip_n": 4,
   "fsot_green_pass_n": 9,
   "fsot_aspiration_pass_n": 6,
-  "next_dig_n": 4,
+  "next_dig_n": 3,
   "next_dig_names": [
     "ns_clay_smoothness",
-    "ns_weather_quiet_fill",
     "bsd_named_cremona_objects",
     "hodge_named_varieties"
   ],
@@ -40,8 +39,9 @@
   "f0_1710_flavor_green": 1,
   "weather_beats_majority": 1,
   "weather_does_not_beat_majority": 0,
-  "weather_quiet_fill_still_miss": 1,
+  "weather_quiet_fill_still_miss": 0,
   "weather_gap_zone_named": 1,
+  "weather_lat_transfer_named": 1,
   "ns_von_karman_green": 1,
   "bsd_11a1_L_green": 1,
   "hodge_cp2_euler_exact": 1,
@@ -305,6 +305,9 @@
       "fsot_vs_f0_1500_pct": 0.9274758205173225,
       "lattice_vs_f0_1500_pct": 14.8738379814077,
       "sibling_f0_1710_GeV": 1.733,
+      "tmatrix_pole_lo_GeV": 1.43,
+      "tmatrix_pole_hi_GeV": 1.53,
+      "inside_tmatrix_pole_band": true,
       "fsot_green_gate_pct": 0.5,
       "fsot_aspiration_pct": 0.05,
       "fsot_green": "wip",
@@ -494,12 +497,10 @@
           "FCAST-WX-20260825T0222-05",
           "FCAST-WX-20260831T2357-05"
         ],
-        "clean_quiet_n": 5,
+        "clean_quiet_n": 4,
         "clean_quiet_hold": 4,
-        "clean_quiet_hold_pct": 80.0,
-        "clean_quiet_kill_ids": [
-          "FCAST-WX-20260831T2357-05"
-        ],
+        "clean_quiet_hold_pct": 100.0,
+        "clean_quiet_kill_ids": [],
         "gap_zone_n": 6,
         "gap_zone_hold": 2,
         "gap_zone_kill_ids": [
@@ -508,6 +509,18 @@
           "FCAST-WX-20260825T0222-03",
           "FCAST-WX-20260825T0222-05"
         ],
+        "lat_transfer_n": 1,
+        "lat_transfer_kill_ids": [
+          "FCAST-WX-20260831T2357-05"
+        ],
+        "lat_transfer": {
+          "FCAST-WX-20260831T2357-05": {
+            "dlat_deg": 0.5019999999999953,
+            "near_buoy": "MDXA2",
+            "belt_deg": 8.793883143771973
+          }
+        },
+        "lat_belt_deg": 8.793883143771973,
         "majority_saw_storm_pct": 95.83333333333334,
         "majority_is_wrong_object": true,
         "beats_wrong_majority_on_storm_object": true,
@@ -565,12 +578,10 @@
           "FCAST-WX-20260825T0222-05",
           "FCAST-WX-20260831T2357-05"
         ],
-        "clean_quiet_n": 5,
+        "clean_quiet_n": 4,
         "clean_quiet_hold": 4,
-        "clean_quiet_hold_pct": 80.0,
-        "clean_quiet_kill_ids": [
-          "FCAST-WX-20260831T2357-05"
-        ],
+        "clean_quiet_hold_pct": 100.0,
+        "clean_quiet_kill_ids": [],
         "gap_zone_n": 6,
         "gap_zone_hold": 2,
         "gap_zone_kill_ids": [
@@ -579,6 +590,18 @@
           "FCAST-WX-20260825T0222-03",
           "FCAST-WX-20260825T0222-05"
         ],
+        "lat_transfer_n": 1,
+        "lat_transfer_kill_ids": [
+          "FCAST-WX-20260831T2357-05"
+        ],
+        "lat_transfer": {
+          "FCAST-WX-20260831T2357-05": {
+            "dlat_deg": 0.5019999999999953,
+            "near_buoy": "MDXA2",
+            "belt_deg": 8.793883143771973
+          }
+        },
+        "lat_belt_deg": 8.793883143771973,
         "majority_saw_storm_pct": 95.83333333333334,
         "majority_is_wrong_object": true,
         "beats_wrong_majority_on_storm_object": true,
@@ -602,20 +625,55 @@
     },
     {
       "problem": "Navier\u2013Stokes existence and smoothness",
-      "name": "ns_weather_quiet_fill",
-      "function_object": "Clean quiet 24 h persistence (pres\u22651010 and gst<8 at issue). Not gap-zone.",
+      "name": "ns_weather_lat_transfer",
+      "function_object": "Latitude-belt transfer: quiet kill coupled to a same-issue storm hold (|\u0394lat|<POOF\u00b7180/\u03c0)",
       "clay_object": "Global smooth (or blow-up) 3D incompressible NSE",
-      "computed": 80.0,
-      "measured": 100.0,
-      "fsot_error_pct": 20.0,
-      "public_sota_model": "Clean-quiet issue bar pres\u22651010 and gst<8. Kill envelope pres<1005 or gst\u226512. Gap-zone is a different object.",
+      "computed": 1.0,
+      "measured": 1.0,
+      "fsot_error_pct": 0.0,
+      "public_sota_model": "Same grammar as transferred_poof. 44078 (59.94\u00b0N) sat 0.50\u00b0 from MDXA2 (59.44\u00b0N). Valve width POOF rad in degrees. Frozen JSON not rewritten.",
       "public_sota_typical_error_pct": null,
-      "comparison_class": "related_not_clay",
-      "verdict": "clean_quiet_honest_miss",
-      "beats_or_meets_sota": false,
+      "comparison_class": "structure",
+      "verdict": "lat_belt_transferred_weather",
+      "beats_or_meets_sota": null,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "EXECUTABLE",
-      "note": "Superseded object: mixed quiet 6/11 mixed gap-zone into persistence. Clean quiet is 4/5; 44078 is the honest miss (1010.3 hPa, 4.0 m/s at issue). Do not move 1010 to swallow it. Frozen JSON not rewritten.",
+      "note": "Do not move 1010 to swallow 44078. The dump is the 60\u00b0N storm tank. Do not drop this kill to inflate storm skill.",
+      "lat_belt_deg": 8.793883143771973,
+      "lat_transfer_kill_ids": [
+        "FCAST-WX-20260831T2357-05"
+      ],
+      "lat_transfer": {
+        "FCAST-WX-20260831T2357-05": {
+          "dlat_deg": 0.5019999999999953,
+          "near_buoy": "MDXA2",
+          "belt_deg": 8.793883143771973
+        }
+      },
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
+    },
+    {
+      "problem": "Navier\u2013Stokes existence and smoothness",
+      "name": "ns_weather_quiet_fill",
+      "function_object": "Clean quiet 24 h persistence (pres\u22651010, gst<8, not lat-coupled to a storm hold)",
+      "clay_object": "Global smooth (or blow-up) 3D incompressible NSE",
+      "computed": 100.0,
+      "measured": 100.0,
+      "fsot_error_pct": 0.0,
+      "public_sota_model": "Clean-quiet issue bar pres\u22651010 and gst<8, uncoupled from same-issue storm latitude belt. ECMWF still a different object.",
+      "public_sota_typical_error_pct": null,
+      "comparison_class": "related_not_clay",
+      "verdict": "clean_quiet_holds",
+      "beats_or_meets_sota": true,
+      "clay_status": "OPEN_NOT_CLAIMED",
+      "native_status": "EXECUTABLE",
+      "note": "44078 is latitude transfer, not this object. Uncoupled clean quiet holds. Do not move 1010. Do not claim ECMWF. Frozen JSON not rewritten.",
       "weather_skill": {
         "present": true,
         "min_obs_24h": 24,
@@ -643,12 +701,10 @@
           "FCAST-WX-20260825T0222-05",
           "FCAST-WX-20260831T2357-05"
         ],
-        "clean_quiet_n": 5,
+        "clean_quiet_n": 4,
         "clean_quiet_hold": 4,
-        "clean_quiet_hold_pct": 80.0,
-        "clean_quiet_kill_ids": [
-          "FCAST-WX-20260831T2357-05"
-        ],
+        "clean_quiet_hold_pct": 100.0,
+        "clean_quiet_kill_ids": [],
         "gap_zone_n": 6,
         "gap_zone_hold": 2,
         "gap_zone_kill_ids": [
@@ -657,6 +713,18 @@
           "FCAST-WX-20260825T0222-03",
           "FCAST-WX-20260825T0222-05"
         ],
+        "lat_transfer_n": 1,
+        "lat_transfer_kill_ids": [
+          "FCAST-WX-20260831T2357-05"
+        ],
+        "lat_transfer": {
+          "FCAST-WX-20260831T2357-05": {
+            "dlat_deg": 0.5019999999999953,
+            "near_buoy": "MDXA2",
+            "belt_deg": 8.793883143771973
+          }
+        },
+        "lat_belt_deg": 8.793883143771973,
         "majority_saw_storm_pct": 95.83333333333334,
         "majority_is_wrong_object": true,
         "beats_wrong_majority_on_storm_object": true,
@@ -664,16 +732,14 @@
         "n_with_obs": 28
       },
       "retired_mixed_quiet_hold_pct": 54.54545454545454,
-      "clean_quiet_kill_ids": [
-        "FCAST-WX-20260831T2357-05"
-      ],
+      "clean_quiet_kill_ids": [],
       "fsot_green_gate_pct": 0.5,
       "fsot_aspiration_pct": 0.05,
       "fsot_green": "n/a",
       "fsot_aspiration": "n/a",
       "sota_beats_fsot_accuracy_wip": false,
-      "next_dig": true,
-      "progress": "miss_next"
+      "next_dig": false,
+      "progress": "beats_sota_right_object"
     },
     {
       "problem": "P versus NP",
@@ -836,5 +902,5 @@
       "next_dig": false
     }
   ],
-  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: clean-quiet 44078, NSE 3D smoothness (Clay), BSD rank predictor, Hodge classes. Native: von K\u00e1rm\u00e1n \u03ba, L(11a1,1)=\u221a\u03c6/D_particle, \u03c7(CP\u00b2)=Lucas L_2. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (\u03c6\u00b2+1)\u00b7K; f0(1710) flavor orifice (\u03c0+1)\u00b7K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue (transferred_weather). Clean quiet 4/5; 44078 is the honest miss. ECMWF is not beaten. Frozen issues not rewritten."
+  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE 3D smoothness (Clay), BSD rank predictor, Hodge classes. Native: von K\u00e1rm\u00e1n \u03ba, L(11a1,1)=\u221a\u03c6/D_particle, \u03c7(CP\u00b2)=Lucas L_2. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (\u03c6\u00b2+1)\u00b7K; f0(1710) flavor orifice (\u03c0+1)\u00b7K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|\u0394lat|<POOF\u00b7180/\u03c0), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten."
 }

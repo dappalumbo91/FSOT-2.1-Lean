@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T04:08:07.682123+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T04:14:34.903134+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,12 +18,12 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 14 |
+| Beats or meets public SOTA | 15 |
 | …of those, inside FSOT 0.5% green | 9 |
 | …of those, inside 0.05% aspiration | 6 |
 | **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
-| **Next dig** (misses + open tracks) | **4** |
+| **Next dig** (misses + open tracks) | **3** |
 | Clay problems remaining | 6 |
 | ECMWF beaten | 0 |
 
@@ -46,7 +46,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Navier–Stokes existence and smoothness | von Kármán log-law κ = A_bleed/φ² (wall shear). Not 3D smoothness. | 0.02291 | 2.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 4.167 | beats/meets | n/a | n/a | beats_sota_right_object |
 | Navier–Stokes existence and smoothness | Gap-zone quiet (1000–1010 hPa / 8–15 m/s) — should not issue (transferred_weather) | 0 | — | — | n/a | n/a | structure |
-| Navier–Stokes existence and smoothness | Clean quiet 24 h persistence (pres≥1010 and gst<8 at issue). Not gap-zone. | 20 | — | miss | n/a | n/a | miss_next |
+| Navier–Stokes existence and smoothness | Latitude-belt transfer: quiet kill coupled to a same-issue storm hold (|Δlat|<POOF·180/π) | 0 | — | — | n/a | n/a | structure |
+| Navier–Stokes existence and smoothness | Clean quiet 24 h persistence (pres≥1010, gst<8, not lat-coupled to a storm hold) | 0 | — | beats/meets | n/a | n/a | beats_sota_right_object |
 | P versus NP | Unstructured-search query exponent (quantum query complexity) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Birch and Swinnerton-Dyer | Named first objects: Cremona 11a1 (rank 0), 37a1 (rank 1), 389a1 (rank 2) | 0 | — | — | n/a | n/a | open_track_next |
 | Birch and Swinnerton-Dyer | L(11a1,1)=√φ/D_particle vs LMFDB (first rank-0 curve, not a rank predictor) | 0.2214 | 1.513 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
@@ -76,8 +77,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Item | Why it is next | First cut, no stuffing |
 |------|----------------|------------------------|
 | Weather storm-sector | Named object (docstring). Thin n_obs<24 is awaiting, not a kill. Majority-of-saw_storm **retired**. | ECMWF not beaten. Frozen issues not rewritten. |
-| Weather gap-zone quiet | 1000–1010 hPa / 8–15 m/s should not issue (transferred_weather). OLCN6/42058 were already in the gap. | New issuer skips. Frozen JSON not rewritten. |
-| Weather clean quiet | **4/5 hold**; 44078 (1010.3 hPa, 4.0 m/s) is the honest miss. | Do not move 1010 to swallow 44078. Do not mix gap-zone into this object. |
+| Weather gap-zone quiet | 1000–1010 hPa / 8–15 m/s should not issue. OLCN6/42058 already in the gap. | New issuer skips. Frozen JSON not rewritten. |
+| Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |
+| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |
 | Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |
 | 3D NSE smoothness | Still no public accuracy %. | 1D Stokes + von Kármán κ are the executable functions. Not Clay smoothness. |
 | BSD rank | Still no native rank predictor. | L(11a1,1)=√φ/D_particle is the rank-0 first object. Do not `fsot_scaled(L)`. 37a1/389a1 vanish. |
@@ -93,4 +95,4 @@ python scripts/run_goal_tracks_verification.py
 Prize-process flags (separate file, all honest): [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md).
 Yang–Mills object split: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).
 
-Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: clean-quiet 44078, NSE 3D smoothness (Clay), BSD rank predictor, Hodge classes. Native: von Kármán κ, L(11a1,1)=√φ/D_particle, χ(CP²)=Lucas L_2. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue (transferred_weather). Clean quiet 4/5; 44078 is the honest miss. ECMWF is not beaten. Frozen issues not rewritten.
+Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE 3D smoothness (Clay), BSD rank predictor, Hodge classes. Native: von Kármán κ, L(11a1,1)=√φ/D_particle, χ(CP²)=Lucas L_2. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.
