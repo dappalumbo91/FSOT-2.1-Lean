@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T01:15:28.338189+00:00",
+  "generated_at": "2026-09-15T02:21:22.587120+00:00",
   "pin": "AEB2AD",
   "clay_prize_claimed": false,
   "clay_problems_remaining": 6,
@@ -20,7 +20,7 @@
     "hodge_named_varieties"
   ],
   "sota_beats_accuracy_wip_names": [
-    "riemann_zeros_2_to_10_spacing_walk",
+    "riemann_zeros_2_to_10_N_locked",
     "ym_glueball_over_sqrt_sigma",
     "ym_glueball_vs_4sqrt_sigma"
   ],
@@ -64,35 +64,35 @@
     },
     {
       "problem": "Riemann hypothesis",
-      "name": "riemann_zeros_2_to_10_spacing_walk",
-      "function_object": "Im(\u03c1_n) n=2..10 \u2014 mean-spacing walk from seed t1 (out of sample)",
+      "name": "riemann_zeros_2_to_10_N_locked",
+      "function_object": "Im(\u03c1_n) n=2..10 \u2014 N(T)=n with C locked by e/\u03b3\u00b3 (out of sample)",
       "clay_object": "All non-trivial zeros have Re=1/2",
-      "computed": 4.260544914034099,
+      "computed": 1.6266489064877554,
       "measured": 5.637662989445609,
-      "fsot_error_pct": 4.260544914034099,
-      "public_sota_model": "Riemann\u2013von Mangoldt inversion N(T)=n for each n (same public closed form as t1)",
+      "fsot_error_pct": 1.6266489064877554,
+      "public_sota_model": "Riemann\u2013von Mangoldt inversion N(T)=n with public C=7/8 (high-T Stirling)",
       "public_sota_typical_error_pct": 5.637662989445609,
       "comparison_class": "comparable",
       "verdict": "beats_rvm_panel_mean",
       "beats_or_meets_sota": true,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "EXECUTABLE",
-      "note": "t_{k+1}=t_k+2\u03c0/log(t_k/2\u03c0) from e/\u03b3\u00b3. Public spacing, no new coefficient. n\u22652 not used to lock t1. Not RH.",
-      "walk_mean_err_pct": 4.260544914034099,
+      "note": "C=1+u1\u2212u1 log u1 from N(t1)=1, t1=e/\u03b3\u00b3. Public 7/8 is the high-T Stirling orifice. Euler walk and t_n scale are retired. Outside 0.5% is S(T), not stuffed. Not RH.",
+      "locked_mean_err_pct": 1.6266489064877554,
       "rvm_mean_err_pct": 5.637662989445609,
-      "n_walk_beats_rvm": 7,
+      "n_locked_beats_rvm": 8,
       "n_panel": 9,
-      "walk_err_pct": [
+      "locked_err_pct": [
         0.0016606647963751638,
-        4.102271490173873,
-        7.631000143306534,
-        2.6721063854134015,
-        6.742355041357856,
-        3.2417446099367417,
-        3.267332584493818,
-        5.136200888804029,
-        1.497823879270819,
-        4.054069203549826
+        3.024103286164688,
+        1.0131289326986503,
+        2.9286818768514173,
+        1.5152180643871205,
+        1.3521027743960206,
+        0.9507546731191046,
+        1.1607763175274777,
+        2.0796723829905566,
+        0.6154018502547635
       ],
       "rvm_err_pct": [
         26.269427483605323,
@@ -106,7 +106,23 @@
         1.4707659548546677,
         3.9386004122185994
       ],
-      "formula": "t1=e/gamma**3; t_{k+1}=t_k+2pi/log(t_k/2pi)",
+      "C_from_t1": 1.425752415633152,
+      "public_C": 0.875,
+      "locked_T": [
+        14.1344904113302,
+        20.386311447236622,
+        25.2642498146062,
+        29.53382829270697,
+        33.43409959043364,
+        37.077974401150755,
+        40.52968237895903,
+        43.83000368663764,
+        47.00680101587858,
+        50.0801415636826
+      ],
+      "formula": "t1=e/gamma**3; C=1+u1-u1*log(u1); invert N(T)=n",
+      "retired_walk_mean_err_pct": 4.260544914034099,
+      "retired_walk_formula": "t_{k+1}=t_k+2pi/log(t_k/2pi)",
       "fsot_green_gate_pct": 0.5,
       "fsot_aspiration_pct": 0.05,
       "fsot_green": "wip",
@@ -529,5 +545,5 @@
       "sota_beats_fsot_accuracy_wip": false
     }
   ],
-  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: quiet-fill weather, NSE smoothness, BSD named curves, Hodge named varieties. Glueball 0++ is the closed gluonic mode (\u03c6\u00b2+1), not \u039b; SOTA-vs-Teper and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten."
+  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: quiet-fill weather, NSE smoothness, BSD named curves, Hodge named varieties. Glueball 0++ is the closed gluonic mode (\u03c6\u00b2+1), not \u039b. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten."
 }

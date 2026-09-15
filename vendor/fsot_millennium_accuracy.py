@@ -100,12 +100,9 @@ def _f(x: Any) -> float:
     return float(x)
 
 
-def riemann_von_mangoldt_t(n: int) -> float:
-    """Invert N(T)≈(T/2π)log(T/2π)−T/2π+7/8 at N=n.
-
-    Public zero-parameter closed form. Odlyzko is the measurement, not a competitor.
-    """
-    target = float(n) - 0.875
+def riemann_invert_N(n: int, const: float) -> float:
+    """Invert N(T)≈(T/2π)log(T/2π)−T/2π+C at N=n."""
+    target = float(n) - float(const)
 
     def residual(u: float) -> float:
         return u * math.log(u) - u - target
@@ -122,15 +119,34 @@ def riemann_von_mangoldt_t(n: int) -> float:
     return 2.0 * math.pi * (0.5 * (lo + hi))
 
 
+def riemann_von_mangoldt_t(n: int) -> float:
+    """Public Gram/RvM inversion with C=7/8 (high-T Stirling of θ).
+
+    Odlyzko is the measurement, not a competitor. 7/8 is the wrong orifice
+    for the first ten zeros — that regime is locked by t1=e/γ³, not Stirling.
+    """
+    return riemann_invert_N(n, 0.875)
+
+
 def riemann_von_mangoldt_t1() -> float:
     return riemann_von_mangoldt_t(1)
 
 
-def riemann_spacing_walk(t1: float, n_zeros: int) -> list[float]:
-    """t_{k+1} = t_k + 2π / log(t_k / 2π), started from seed-locked t1.
+def riemann_N_constant_from_t1(t1: float) -> float:
+    """C such that N(t1)=1. Low-lying orifice, not public 7/8.
 
-    Mean spacing is the public density of zeros. No new coefficient.
-    n≥2 is out-of-sample relative to the first-zero seed.
+    C = 1 + u1 − u1 log u1, u1 = t1/(2π), t1 = e/γ³.
+    No new coefficient. Do not restore 7/8. Do not add Stirling 1/48T.
+    """
+    u1 = float(t1) / (2.0 * math.pi)
+    return 1.0 + u1 - u1 * math.log(u1)
+
+
+def riemann_spacing_walk(t1: float, n_zeros: int) -> list[float]:
+    """Retired object: Euler-step public density from t1.
+
+    t_{k+1}=t_k+2π/log(t_k/2π) is the same mean spacing as RvM, just started
+    at a better t1. Naive t_n *= t1_fsot/t1_RvM also lost. Kept for extra.
     """
     out = [float(t1)]
     for _ in range(n_zeros - 1):
@@ -333,38 +349,47 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         )
     )
 
-    # --- Riemann push: n=2..10 mean-spacing walk from seed t1 vs RvM inversion ---
-    walk = riemann_spacing_walk(t1, 10)
+    # --- Riemann n=2..10: N(T)=n with C locked by t1. Not public 7/8, not Euler walk. ---
+    C_n = riemann_N_constant_from_t1(t1)
+    locked = [riemann_invert_N(n, C_n) for n in range(1, 11)]
     rvm_panel = [riemann_von_mangoldt_t(n) for n in range(1, 11)]
-    walk_err_n = [_err_pct(walk[i], ODLYZKO_T[i]) for i in range(10)]
+    walk = riemann_spacing_walk(t1, 10)
+    locked_err_n = [_err_pct(locked[i], ODLYZKO_T[i]) for i in range(10)]
     rvm_err_n = [_err_pct(rvm_panel[i], ODLYZKO_T[i]) for i in range(10)]
-    walk_mean = sum(walk_err_n[1:]) / 9.0
+    walk_err_n = [_err_pct(walk[i], ODLYZKO_T[i]) for i in range(10)]
+    locked_mean = sum(locked_err_n[1:]) / 9.0
     rvm_mean = sum(rvm_err_n[1:]) / 9.0
-    n_walk_beats = sum(1 for a, b in zip(walk_err_n[1:], rvm_err_n[1:]) if a < b)
+    walk_mean = sum(walk_err_n[1:]) / 9.0
+    n_locked_beats = sum(1 for a, b in zip(locked_err_n[1:], rvm_err_n[1:]) if a < b)
     rows.append(
         _row(
             problem="Riemann hypothesis",
-            function_object="Im(ρ_n) n=2..10 — mean-spacing walk from seed t1 (out of sample)",
+            function_object="Im(ρ_n) n=2..10 — N(T)=n with C locked by e/γ³ (out of sample)",
             clay_object="All non-trivial zeros have Re=1/2",
-            name="riemann_zeros_2_to_10_spacing_walk",
-            computed=walk_mean,
+            name="riemann_zeros_2_to_10_N_locked",
+            computed=locked_mean,
             measured=rvm_mean,
-            public_sota_model="Riemann–von Mangoldt inversion N(T)=n for each n (same public closed form as t1)",
+            public_sota_model="Riemann–von Mangoldt inversion N(T)=n with public C=7/8 (high-T Stirling)",
             public_sota_typical_error_pct=rvm_mean,
             comparison_class="comparable",
             verdict="beats_rvm_panel_mean",
-            beats_or_meets_sota=walk_mean < rvm_mean,
+            beats_or_meets_sota=locked_mean < rvm_mean,
             native_status="EXECUTABLE",
-            note="t_{k+1}=t_k+2π/log(t_k/2π) from e/γ³. Public spacing, no new coefficient. n≥2 not used to lock t1. Not RH.",
+            note="C=1+u1−u1 log u1 from N(t1)=1, t1=e/γ³. Public 7/8 is the high-T Stirling orifice. Euler walk and t_n scale are retired. Outside 0.5% is S(T), not stuffed. Not RH.",
             extra={
-                "fsot_error_pct": walk_mean,
-                "walk_mean_err_pct": walk_mean,
+                "fsot_error_pct": locked_mean,
+                "locked_mean_err_pct": locked_mean,
                 "rvm_mean_err_pct": rvm_mean,
-                "n_walk_beats_rvm": n_walk_beats,
+                "n_locked_beats_rvm": n_locked_beats,
                 "n_panel": 9,
-                "walk_err_pct": walk_err_n,
+                "locked_err_pct": locked_err_n,
                 "rvm_err_pct": rvm_err_n,
-                "formula": "t1=e/gamma**3; t_{k+1}=t_k+2pi/log(t_k/2pi)",
+                "C_from_t1": C_n,
+                "public_C": 0.875,
+                "locked_T": locked,
+                "formula": "t1=e/gamma**3; C=1+u1-u1*log(u1); invert N(T)=n",
+                "retired_walk_mean_err_pct": walk_mean,
+                "retired_walk_formula": "t_{k+1}=t_k+2pi/log(t_k/2pi)",
             },
         )
     )
@@ -676,7 +701,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ]
     flags = clay_process_flags()
     riemann = next(r for r in rows if r["name"] == "riemann_im_rho1_closed_form")
-    riemann_panel = next(r for r in rows if r["name"] == "riemann_zeros_2_to_10_spacing_walk")
+    riemann_panel = next(r for r in rows if r["name"] == "riemann_zeros_2_to_10_N_locked")
     glue = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma")
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
     glue_ratio = next(r for r in rows if r["name"] == "ym_glueball_2pp_over_0pp")
@@ -721,7 +746,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
             "Misses next: quiet-fill weather, NSE smoothness, "
             "BSD named curves, Hodge named varieties. Glueball 0++ is the closed gluonic mode "
-            "(φ²+1), not Λ; SOTA-vs-Teper and FSOT 0.5% are independent bars. "
+            "(φ²+1), not Λ. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
+            "SOTA and FSOT 0.5% are independent bars. "
             "Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten."
         ),
     }
@@ -790,10 +816,10 @@ def render_markdown(summary: dict[str, Any]) -> str:
                 f"{_fmt(r.get('fsot_vs_teper_pct'), 4)} vs Teper 3.65; "
                 f"{_fmt(r.get('fsot_vs_inrepo_ballpark_pct'), 4)} vs in-repo 3.5"
             )
-        elif r["name"] == "riemann_zeros_2_to_10_spacing_walk":
+        elif r["name"] == "riemann_zeros_2_to_10_N_locked":
             err_cell = (
-                f"{_fmt(r.get('walk_mean_err_pct'), 4)} mean n=2..10 "
-                f"({r.get('n_walk_beats_rvm')}/{r.get('n_panel')} zeros)"
+                f"{_fmt(r.get('locked_mean_err_pct'), 4)} mean n=2..10 "
+                f"({r.get('n_locked_beats_rvm')}/{r.get('n_panel')} zeros)"
             )
         sota_cell = {
             True: "beats/meets",
@@ -823,7 +849,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Function | Result | Why that is the right object |",
         "|----------|--------|------------------------------|",
         "| First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |",
-        "| Riemann zeros n=2..10 | **Beats RvM (4.26% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | Public spacing walk. Do not stuff 4.26% into the green gate. |",
+        "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³, not public 7/8, not Euler walk. Do not stuff S(T). |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| Glueball closed mode φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Closed gluonic loop (look 1), not Λ, not Atomic e/π. |",
         "| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same measurement 3.65. |",
