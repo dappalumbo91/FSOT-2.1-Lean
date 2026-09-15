@@ -52,4 +52,4 @@ Dark-matter density is the sibling complement at the **same** rung: what did not
 
 The superseded QM-class baryon object (\(\lvert S_{\mathrm{cosm}}\rvert(1-S_{\mathrm{quant}})\), **11.84%**) stays in [`../results/MISSES.md`](../results/MISSES.md).
 
-Hubble \(H_0\) (1.55%) and \(\alpha_s(M_Z)\) (0.679%) are different objects: [`H0_DUAL_OBJECT.md`](H0_DUAL_OBJECT.md) and the closed form \(1/(e\pi)\). They are unsolved folds, not domain-relabeled.
+Hubble \(H_0\) (1.55%) is a different object: [`H0_DUAL_OBJECT.md`](H0_DUAL_OBJECT.md). \(\alpha_s(M_Z)\): wave-1 geometric \(1/(e\pi)\) is the Ledger A freeze (0.679%); the QCD process orifice is \(2(\mathrm{POOF}/\psi_{\mathrm{con}})^2\) (0.0075%). Freeze not rewritten.

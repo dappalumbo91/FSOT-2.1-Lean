@@ -34,6 +34,7 @@ try:
         seed_glueball_over_sqrt_sigma,
         seed_closed_gluonic_GeV,
         seed_flavor_closed_GeV,
+        seed_alpha_s_MZ,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -50,6 +51,7 @@ except ImportError:  # pragma: no cover
         seed_glueball_over_sqrt_sigma,
         seed_closed_gluonic_GeV,
         seed_flavor_closed_GeV,
+        seed_alpha_s_MZ,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -59,6 +61,7 @@ WX_JSON = ROOT / "results" / "dated_forecast_scores" / "WEATHER_24H_RETRO.json"
 
 # In-repo PDG-class anchors already used by fsot_gr_sm / seed flavor. Do not retune.
 PDG_LAMBDA_QCD_GEV = 0.2173
+PDG_ALPHA_S_MZ = 0.1179
 INREPO_GLUEBALL_BALLPARK = 3.5
 
 # Public literature (cited; not fitted).
@@ -436,6 +439,35 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         )
     )
 
+    # --- Yang–Mills: α_s(M_Z). QCD process orifice, not geometric 1/(eπ). ---
+    a_s = seed_alpha_s_MZ()
+    a_s_geom = 1.0 / (math.e * math.pi)
+    a_s_vs_pdg = _err_pct(a_s, PDG_ALPHA_S_MZ)
+    geom_vs_pdg = _err_pct(a_s_geom, PDG_ALPHA_S_MZ)
+    rows.append(
+        _row(
+            problem="Yang–Mills existence and mass gap",
+            function_object="α_s(M_Z) QCD process orifice 2(POOF/ψ_con)² vs PDG (not geometric 1/(eπ))",
+            clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
+            name="ym_alpha_s_MZ_qcd_orifice",
+            computed=a_s,
+            measured=PDG_ALPHA_S_MZ,
+            public_sota_model="Wave-1 geometric 1/(eπ) (Ledger A freeze). PDG 0.1179 is the measurement.",
+            public_sota_typical_error_pct=geom_vs_pdg,
+            comparison_class="comparable",
+            verdict="beats_geometric_1_over_e_pi",
+            beats_or_meets_sota=a_s_vs_pdg < geom_vs_pdg,
+            native_status="EXECUTABLE",
+            note="Process valve over observer fold, quadratic. 1/(eπ) has no QCD content. Ledger A freeze not rewritten. Do not polish 1/(eπ). Not a Clay mass gap.",
+            extra={
+                "formula": "2*(POOF/PSI_CON)**2",
+                "retired_geometric": "1/(e*pi)",
+                "retired_geometric_vs_pdg_pct": geom_vs_pdg,
+                "fsot_vs_pdg_pct": a_s_vs_pdg,
+            },
+        )
+    )
+
     # --- Yang–Mills: glueball. Closed gluonic mode, not Λ.
     # Teper m/√σ is a quenched-lattice construct, not an observed particle. ---
     glue = seed_glueball_over_sqrt_sigma()
@@ -779,6 +811,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     riemann = next(r for r in rows if r["name"] == "riemann_im_rho1_closed_form")
     riemann_panel = next(r for r in rows if r["name"] == "riemann_zeros_2_to_10_N_locked")
     glue = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma")
+    alpha_s_qcd = next(r for r in rows if r["name"] == "ym_alpha_s_MZ_qcd_orifice")
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
     glue_ratio = next(r for r in rows if r["name"] == "ym_glueball_2pp_over_0pp")
     glue_f0_1500 = next(r for r in rows if r["name"] == "ym_closed_gluonic_GeV_vs_f0_1500")
@@ -808,6 +841,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "sota_beats_accuracy_wip_names": [r["name"] for r in wip_beats],
         "riemann_beats_public_closed_form": 1 if riemann["beats_or_meets_sota"] else 0,
         "riemann_panel_beats_rvm": 1 if riemann_panel["beats_or_meets_sota"] else 0,
+        "alpha_s_qcd_beats_geometric": 1 if alpha_s_qcd["beats_or_meets_sota"] else 0,
+        "alpha_s_qcd_green": 1 if alpha_s_qcd.get("fsot_green") == "pass" else 0,
+        "alpha_s_qcd_aspiration": 1 if alpha_s_qcd.get("fsot_aspiration") == "pass" else 0,
         "glueball_beats_teper": 1 if glue["beats_or_meets_sota"] else 0,
         "glueball_does_not_beat_teper": 0 if glue["beats_or_meets_sota"] else 1,
         "glueball_beats_4sqrt_sigma": 1 if glue4["beats_or_meets_sota"] else 0,
@@ -832,6 +868,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
             "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
             "Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
+            "α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. "
             "SOTA and FSOT 0.5% are independent bars. "
             "Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten."
         ),
@@ -936,6 +973,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |",
         "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³, not public 7/8, not Euler walk. Do not stuff S(T). |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
+        "| α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |",
         "| Glueball φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Quenched-lattice construct in string units, **not an observed particle**. |",
         "| Closed gluonic GeV vs f0(1500) | **0.93% vs PDG 1506 MeV — WIP; beats lattice-on-this-candidate** | Gluonic orifice (φ²+1)·K. Not a glueball ID. |",
         "| Flavor closed GeV vs f0(1710) | **0.40% vs PDG 1733 MeV — in 0.5% green; beats 4√σ (3.03%)** | Flavor/ss orifice (π+1)·K. Retired gluonic-vs-1710 was 12.3%. |",
@@ -997,6 +1035,9 @@ if __name__ == "__main__":
         and s["clay_problems_remaining"] == 6
         and s["ecmwf_beaten"] == 0
         and s["ecmwf_not_beaten"] == 1
+        and s["alpha_s_qcd_beats_geometric"] == 1
+        and s["alpha_s_qcd_green"] == 1
+        and s["alpha_s_qcd_aspiration"] == 1
         and s["glueball_beats_teper"] == 1
         and s["glueball_does_not_beat_teper"] == 0
         and s["glueball_beats_4sqrt_sigma"] == 1

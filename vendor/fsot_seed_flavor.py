@@ -225,7 +225,13 @@ def seed_alpha_inv() -> float:
 
 
 def seed_alpha_s_MZ() -> float:
-    """α_s(M_Z) = 2 · (POOF / ψ_con)²."""
+    """α_s(M_Z) = 2 · (POOF / ψ_con)².
+
+    QCD process orifice: valve POOF over observer fold ψ_con=1−e^{-1},
+    quadratic (coupling), structural 2. Wave-1 geometric 1/(eπ) is a
+    different object (Ledger A freeze). Do not rewrite the freeze.
+    Do not add a decimal polish to 1/(eπ).
+    """
     return 2.0 * (f(POOF) / f(PSI_CON)) ** 2
 
 
