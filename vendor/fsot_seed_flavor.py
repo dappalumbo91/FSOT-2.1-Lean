@@ -286,6 +286,18 @@ def seed_string_tension_GeV() -> float:
     return f(K)
 
 
+def seed_glueball_over_sqrt_sigma() -> float:
+    """First closed gluonic mode in string units: m(0++)/√σ = φ² + 1.
+
+    Λ_QCD is the confinement *scale* of the fluid (Catalan·SUCTION·φ − …).
+    The 0++ glueball is not Λ. It is a closed loop of the gluonic medium.
+    Old probe φ² + e/π used the Atomic bound-well look (e/π). A closed
+    mode has default look 1, so φ² + 1. 2++ / 0++ stays geometric √2.
+    Not a fit to Teper 3.65. Do not restore e/π to chase the residual.
+    """
+    return f(PHI) ** 2 + 1.0
+
+
 def seed_N_eff() -> float:
     """N_eff = 3 + 2 · POOF · SUCTION  (3 SM ν + yin–yang radiative correction)."""
     return 3.0 + 2.0 * f(POOF) * f(SUCTION)

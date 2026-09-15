@@ -79,6 +79,7 @@ from fsot_seed_flavor import (  # type: ignore
     seed_sin2_theta_W,
     seed_sin2_theta_W_onshell,
     seed_string_tension_GeV,
+    seed_glueball_over_sqrt_sigma,
     seed_triangle_sides,
     seed_unitarity_triangle,
 )
@@ -766,16 +767,15 @@ def run_gr_recovery_suite() -> list[dict]:
             sector="QCD",
         )
     )
-    # Glueball scale ratio m_{0++}/√σ (lattice ballpark ~3.5); seed: φ² + e/π
-    # Cross-domain: morphic φ² plus transcendental e/π (same seeds as FO ladder)
-    m_glue_over_sqrt_sig = f(PHI) ** 2 + f(E) / f(PI)
+    # Closed gluonic mode m(0++)/√σ. Not Λ. Default look, not Atomic e/π.
+    m_glue_over_sqrt_sig = seed_glueball_over_sqrt_sigma()
     rows.append(
         _row(
             "glueball_over_sqrt_sigma",
             m_glue_over_sqrt_sig,
-            3.5,  # lattice 0++ / √σ ballpark (Morningstar et al. class)
+            3.65,  # Teper continuum 0++ / √σ (hep-lat/9711011)
             claim="T4_path_integral_glueball",
-            formula="PHI**2 + E/PI  [glueball / string-scale probe]",
+            formula="PHI**2 + 1  [closed gluonic mode / string scale; not Λ]",
             sector="QCD",
         )
     )
@@ -946,7 +946,7 @@ def force_package_manifest() -> dict[str, Any]:
             "Still NOT claimed: full path-integral confinement theorem or spin-2 Fock uniqueness",
         ],
         "depth_v5": [
-            "θ_QCD→0 strong-CP flag; glueball/√σ = φ²+e/π probe; trace anomaly structure",
+            "θ_QCD→0 strong-CP flag; glueball/√σ = φ²+1 closed mode; trace anomaly structure",
             "Graviton 1/k² pole; GW quadrupole coupling structure; ISO(2) little-group ±2",
             "Still NOT claimed: path-integral uniqueness or Fock uniqueness theorems",
         ],

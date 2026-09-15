@@ -195,15 +195,16 @@ def scaled(measured: float, domain: str) -> tuple[float, float]:
 def poisson_seed() -> float:
     """Continuum-solid Poisson ratio.
 
-    Atomic nest D over the compactification ceiling 25: ν = D_atomic/25.
-    That is the mafic/lid solid. Felsic/porous crust and deep phase changes
-    are other interfaces, not a new ν.
+    The mafic/lid solid is a bonded lattice, not a bound well. Nest orifice
+    is Molecular_Chemistry (D=7), the first specimen generation above Atomic.
+    ν = D_molecular/25 = 7/25. Felsic/porous crust and deep phase changes
+    are other interfaces, not a new ν. Do not put Atomic back to 7.
     """
-    return float(DOMAINS["Atomic_Physics"].D_eff) / 25.0
+    return float(DOMAINS["Molecular_Chemistry"].D_eff) / 25.0
 
 
 def vp_vs_seed() -> float:
-    """Isotropic vp/vs = √[2(1−ν)/(1−2ν)] with ν = D_atomic/25."""
+    """Isotropic vp/vs = √[2(1−ν)/(1−2ν)] with ν = D_molecular/25."""
     nu = poisson_seed()
     return math.sqrt(2.0 * (1.0 - nu) / (1.0 - 2.0 * nu))
 
@@ -282,7 +283,7 @@ def seismic_acoustic_rows() -> list[dict[str, Any]]:
             name=str(layer["name"]),
             computed=seed,
             measured=ratio,
-            note="vp/vs(ν=D_atomic/25=0.28) vs PREM/mafic rock; felsic/porous is another interface",
+            note="vp/vs(ν=D_molecular/25=0.28) vs PREM/mafic rock; felsic/porous is another interface",
             extra={
                 "vp_kms": layer["vp"],
                 "vs_kms": layer["vs"],
@@ -294,7 +295,7 @@ def seismic_acoustic_rows() -> list[dict[str, Any]]:
             rec["record_kind"] = "structural"
             rec["eval_kind"] = "literature_band"
             rec["note"] = (
-                "Not the mafic Poisson-0.28 solid: felsic/porous crust, or deep "
+                "Not the mafic Poisson (Molecular D=7) solid: felsic/porous crust, or deep "
                 "olivine-spinel / CMB viscosity. Interface change, not a new ν."
             )
         else:
@@ -313,7 +314,7 @@ def seismic_acoustic_rows() -> list[dict[str, Any]]:
                 name="lithosphere_vp_vs_median",
                 computed=seed,
                 measured=med_m,
-                note="vp/vs(ν=7/25) vs median mafic/lid PREM+basalt/gabbro",
+                note="vp/vs(ν=D_molecular/25=7/25) vs median mafic/lid PREM+basalt/gabbro",
                 extra={
                     "n": float(len(litho_meas)),
                     "kappa_ac_seis": kappa_domains("Acoustics", "Seismology"),

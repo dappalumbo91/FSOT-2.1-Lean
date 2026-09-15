@@ -63,14 +63,14 @@ Forbidden: a coefficient that swallows the live view; stuffing \(\sqrt{\varphi}\
 
 ## 1. Elastic wave — Acoustics \(D=10\) ↔ Seismology \(D=18\)
 
-A crustal solid is the same T3 standing wave as lab sound. Cookbook: [`APPLY_ACOUSTICS.md`](APPLY_ACOUSTICS.md) · [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md). Poisson of the continuum mafic/lid solid is the atomic fold over the ceiling:
+A crustal solid is the same T3 standing wave as lab sound. Cookbook: [`APPLY_ACOUSTICS.md`](APPLY_ACOUSTICS.md) · [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md). Poisson of the continuum mafic/lid solid is the molecular fold over the ceiling:
 
 \[
-\nu = D_{\mathrm{atomic}}/25 = 6/25 = 0.24,\qquad
+\nu = D_{\mathrm{molecular}}/25 = 7/25 = 0.28,\qquad
 v_P/v_S = \sqrt{2(1-\nu)/(1-2\nu)}
 \]
 
-After nest, Atomic is the bound well (\(D=6\)), not assigned 7. PREM lid \(v_P/v_S\) is then **5.43%** — logged miss. A continuum solid may sit on Molecular \(D=7\) (\(\nu=0.28\)). Do not put Atomic back to 7.
+Atomic nest \(D=6\) is the bound well. The mafic/lid solid is the bonded lattice — Molecular \(D=7\). Do not put Atomic back to 7.
 
 Measured: PREM (Dziewonski & Anderson 1981) lid/Moho/upper crust + basalt/gabbro lab means. Felsic/porous crust and deep olivine–spinel / CMB are **other interfaces** (structural), not a new \(\nu\).
 

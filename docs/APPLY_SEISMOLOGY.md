@@ -1,7 +1,7 @@
 # APPLY cookbook — Seismology fold
 
 **Pin:** live SHA of `vendor/fsot_compute.py` · **core:** `Seismology` · nest \(D=15\) · look \(1\) · `observed=False` (dark — do not flip). \(C\) does not enter \(S\). Same generation as Sociology (specimen).  
-**Neighbor:** `Geophysics` \(D=19\), also dark. Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §7.  
+**Neighbor:** `Geophysics` nest \(D=16\), also dark. Tissue: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §7.  
 **General protocol:** [`APPLY.md`](APPLY.md). This is the worked example for the crustal-wave fold (MPCORB is the catalog-fold example).
 
 ---
@@ -39,7 +39,7 @@ Seed-closed handles already in the engine:
 
 | Handle | Form | Use |
 |--------|------|-----|
-| Poisson of the mafic/lid solid | \(\nu = D_{\mathrm{atomic}}/25 = 0.28\) | \(v_P/v_S\) vs PREM lid/Moho/basalt |
+| Poisson of the mafic/lid solid | \(\nu = D_{\mathrm{molecular}}/25 = 7/25 = 0.28\) | \(v_P/v_S\) vs PREM lid/Moho/basalt. Continuum lattice, not the Atomic well. |
 | GR \(b\)-value | \(b = \varphi - 1/\varphi = 1\) | PRED-056 band 0.90–1.10 |
 | Kernel | \(R_\oplus\cdot\mathrm{POOF}/25 \approx 39.1\,\mathrm{km}\) | dated cells |
 | Horizon | \(\varphi^4 \approx 7\,\mathrm{d}\) | dated cells |
