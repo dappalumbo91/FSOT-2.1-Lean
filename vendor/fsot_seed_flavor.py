@@ -600,8 +600,8 @@ def seed_fibonacci(n: int) -> float:
 def seed_lucas(n: int) -> float:
     """Lucas L_n = φ^n + (1−φ)^n. Integer for integer n.
 
-    L_2=3=χ(CP²), L_3=4=χ(CP³), L_4=7=self-intersection of the cubic scroll,
-    L_6=18=self-intersection of the elliptic ruled surface.
+    L_2=3=χ(CP²), L_3=4=χ(CP³)=deg v_2(P²), L_4=7=self-intersection of
+    the cubic scroll, L_6=18=self-intersection of the elliptic ruled surface.
     Not a general χ(CP^n)=L_n law (n=4 breaks it).
     """
     phi = f(PHI)
@@ -654,6 +654,21 @@ def seed_hassett_d_elliptic() -> float:
     L6 = seed_lucas(6)
     deg = 2.0 * L2
     return L2 * L6 - deg * deg
+
+
+def seed_hassett_d_veronese() -> float:
+    """Hassett discriminant of a cubic containing a Veronese surface = 20.
+
+    Gram of ⟨h², [V]⟩ (Hassett K_20): (h²,h²)=L_2=3, (h²,V)=L_3=4
+    (degree of v_2(P²)), (V,V)=L_2 L_3=12. disc = L_2(L_2 L_3)−L_3² = 20.
+    Extra class is [Veronese], algebraic. 4|20 so no associated K3.
+    Isolated 4·5 or 2·10 is padding. Do not steal 25−1 for K3.
+    """
+    L2 = seed_lucas(2)
+    L3 = seed_lucas(3)
+    deg = L3
+    self_int = L2 * L3
+    return L2 * self_int - deg * deg
 
 
 def hassett_C_d_nonempty(d: int) -> bool:
