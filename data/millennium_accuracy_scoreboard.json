@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-15T12:04:16.195773+00:00",
+  "generated_at": "2026-09-15T12:10:23.085482+00:00",
   "pin": "AEB2AD",
   "clay_prize_claimed": false,
   "clay_problems_remaining": 6,
   "fsot_green_gate_pct": 0.5,
   "fsot_aspiration_pct": 0.05,
-  "comparable_count": 30,
-  "beats_or_meets_count": 33,
+  "comparable_count": 31,
+  "beats_or_meets_count": 34,
   "does_not_beat_count": 0,
   "no_fair_compare_count": 3,
   "sota_beats_accuracy_wip_n": 4,
-  "fsot_green_pass_n": 27,
-  "fsot_aspiration_pass_n": 18,
+  "fsot_green_pass_n": 28,
+  "fsot_aspiration_pass_n": 19,
   "next_dig_n": 3,
   "next_dig_names": [
     "ns_clay_smoothness",
@@ -89,6 +89,8 @@
   "hodge_associated_k3_algebraicity": 1,
   "hodge_hassett_d8_exact": 1,
   "hodge_hassett_c8_plane_algebraic": 1,
+  "hodge_hassett_d12_exact": 1,
+  "hodge_hassett_c12_scroll_algebraic": 1,
   "ns_stretching_named": 1,
   "ns_2d_enstrophy_named": 1,
   "pnp_sat_named": 1,
@@ -2041,7 +2043,7 @@
       "beats_or_meets_sota": null,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "EXECUTABLE",
-      "note": "First extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Remainder is other extra discriminants (C_12 scroll, \u2026) and general 4-folds. Do not steal 25\u22121 for K3.",
+      "note": "First extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Next without K3 is C_12 (cubic scroll). Do not steal 25\u22121 for K3.",
       "C_8_nonempty": true,
       "associated_k3": false,
       "no_k3_after_8": [
@@ -2068,6 +2070,77 @@
     },
     {
       "problem": "Hodge conjecture",
+      "name": "hodge_hassett_d12",
+      "function_object": "Hassett discriminant of a cubic containing a cubic scroll = L_2 L_4 \u2212 L_2\u00b2 = 12",
+      "clay_object": "Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+      "computed": 12.000000000000004,
+      "measured": 12.0,
+      "fsot_error_pct": 2.9605947323337504e-14,
+      "public_sota_model": "Hassett C_12: cubics containing a cubic scroll \u03a3\u2083 \u2245 Bl_p(P\u00b2) \u2282 P^4. Gram [[3,3],[3,7]], disc=12. 4|12 so no associated K3.",
+      "public_sota_typical_error_pct": 0.0,
+      "comparison_class": "comparable",
+      "verdict": "meets_hassett_d12",
+      "beats_or_meets_sota": true,
+      "clay_status": "OPEN_NOT_CLAIMED",
+      "native_status": "EXECUTABLE",
+      "note": "Intersection pairing of the extra class, not 3\u00b74 or 2\u00b76 padding. (\u03a3\u2083,\u03a3\u2083)=L_4=7. Do not steal 25\u22121 for K3.",
+      "formula": "L2*L4 - L2**2",
+      "L2": 3,
+      "L4": 7,
+      "gram": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "pass",
+      "fsot_aspiration": "pass",
+      "sota_beats_fsot_accuracy_wip": false,
+      "progress": "beats_sota_in_aspiration",
+      "next_dig": false
+    },
+    {
+      "problem": "Hodge conjecture",
+      "name": "hodge_hassett_c12_scroll_algebraic",
+      "function_object": "Extra Hodge class on C_12 is [cubic scroll], algebraic; 4|d so no associated K3",
+      "clay_object": "Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+      "computed": 1.0,
+      "measured": 1.0,
+      "fsot_error_pct": 0.0,
+      "public_sota_model": "Hassett: C_12 nonempty, 4|12 \u21d2 no associated K3. The extra (2,2) class is a cubic scroll.",
+      "public_sota_typical_error_pct": null,
+      "comparison_class": "structure",
+      "verdict": "c12_scroll_algebraic_no_k3",
+      "beats_or_meets_sota": null,
+      "clay_status": "OPEN_NOT_CLAIMED",
+      "native_status": "EXECUTABLE",
+      "note": "Second extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Remainder is later extra discriminants (C_18, C_20, \u2026) and general 4-folds. Do not steal 25\u22121 for K3.",
+      "C_12_nonempty": true,
+      "associated_k3": false,
+      "no_k3_after_12": [
+        18,
+        20,
+        24,
+        30,
+        32,
+        36
+      ],
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
+    },
+    {
+      "problem": "Hodge conjecture",
       "name": "hodge_cubic4_primitive_22",
       "function_object": "Primitive (2,2) on a cubic 4-fold \u2014 first open hypersurface case after Grassmannians",
       "clay_object": "Hodge classes on a projective complex manifold are algebraic cycles (rational)",
@@ -2081,7 +2154,7 @@
       "beats_or_meets_sota": null,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "OPEN_TRACK",
-      "note": "C_8 extra class is [plane], algebraic. Remainder is other extra discriminants without K3 (C_12 scroll, \u2026) and general 4-folds. Do not steal 25\u22121 for K3.",
+      "note": "C_8 [plane] and C_12 [scroll] extra classes are algebraic. Remainder is later extra discriminants without K3 (C_18, C_20, \u2026) and general 4-folds. Do not steal 25\u22121 for K3.",
       "fsot_green_gate_pct": 0.5,
       "fsot_aspiration_pct": 0.05,
       "fsot_green": "n/a",
@@ -2091,5 +2164,5 @@
       "sota_beats_fsot_accuracy_wip": false
     }
   ],
-  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), BSD general E (first-of-rank 0..4 labeled), other extra Hodge discriminants (C_12\u2026). Native: von K\u00e1rm\u00e1n \u03ba, 2D enstrophy, Kolmogorov 4/5=1\u22121/D_particle, L(11a1,1)=\u221a\u03c6/D_particle, L'(37a1,1)=2\u00b7POOF, Reg(389a1)=POOF, Reg(5077a1)=e\u00b7POOF, Reg(234446a1)=(\u03c6\u00b2+1)\u00b7e\u00b7POOF, \u03c7(CP\u00b2)=L_2, \u03c7(CP\u00b3)=L_3, Lefschetz (1,1), Hodge (2,2) on CP\u00b3, hard Lefschetz, Cook\u2013Levin SAT. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue\u2013flavor 2\u00d72 V=POOF\u00b7K; isolated (\u03c6\u00b2+1)\u00b7K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))\u00b7POOF envelope. E\u2192rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|\u0394lat|<POOF\u00b7180/\u03c0), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten."
+  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), BSD general E (first-of-rank 0..4 labeled), later extra Hodge discriminants (C_18, C_20\u2026). Native: von K\u00e1rm\u00e1n \u03ba, 2D enstrophy, Kolmogorov 4/5=1\u22121/D_particle, L(11a1,1)=\u221a\u03c6/D_particle, L'(37a1,1)=2\u00b7POOF, Reg(389a1)=POOF, Reg(5077a1)=e\u00b7POOF, Reg(234446a1)=(\u03c6\u00b2+1)\u00b7e\u00b7POOF, \u03c7(CP\u00b2)=L_2, \u03c7(CP\u00b3)=L_3, Lefschetz (1,1), Hodge (2,2) on CP\u00b3, hard Lefschetz, Cook\u2013Levin SAT. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue\u2013flavor 2\u00d72 V=POOF\u00b7K; isolated (\u03c6\u00b2+1)\u00b7K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))\u00b7POOF envelope. E\u2192rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|\u0394lat|<POOF\u00b7180/\u03c0), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten."
 }

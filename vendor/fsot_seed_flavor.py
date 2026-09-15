@@ -597,6 +597,16 @@ def seed_fibonacci(n: int) -> float:
     return (phi ** int(n) - (1.0 - phi) ** int(n)) / math.sqrt(5.0)
 
 
+def seed_lucas(n: int) -> float:
+    """Lucas L_n = φ^n + (1−φ)^n. Integer for integer n.
+
+    L_2=3=χ(CP²), L_3=4=χ(CP³), L_4=7=self-intersection of the cubic scroll.
+    Not a general χ(CP^n)=L_n law (n=4 breaks it).
+    """
+    phi = f(PHI)
+    return phi ** int(n) + (1.0 - phi) ** int(n)
+
+
 def seed_cubic4_h22() -> float:
     """h^{2,2} of a smooth cubic 4-fold = F_8 = 21.
 
@@ -615,6 +625,19 @@ def seed_hassett_d_plane() -> float:
     25−1 for K3.
     """
     return seed_fibonacci(6)
+
+
+def seed_hassett_d_scroll() -> float:
+    """Hassett discriminant of a cubic 4-fold containing a cubic scroll = 12.
+
+    Gram of ⟨h², [Σ₃]⟩ (Hassett K_12): (h²,h²)=L_2=3, (h²,Σ₃)=L_2=3,
+    (Σ₃,Σ₃)=L_4=7. disc = L_2 L_4 − L_2² = 12. Extra class is [scroll],
+    algebraic. 4|12 so no associated K3. Isolated 3·4 or 2·6 is padding.
+    Do not steal 25−1 for K3.
+    """
+    L2 = seed_lucas(2)
+    L4 = seed_lucas(4)
+    return L2 * L4 - L2 * L2
 
 
 def hassett_C_d_nonempty(d: int) -> bool:
