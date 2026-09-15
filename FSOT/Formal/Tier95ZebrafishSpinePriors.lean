@@ -26,12 +26,12 @@ theorem tier_95_zebrafish_bundle :
     tier_95_zebrafish_observable_count = 18 ∧
     tier_95_zebrafish_D_eff = 9 ∧
     tier_95_zebrafish_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold tier_95_zebrafish_observable_count; decide,
     by unfold tier_95_zebrafish_D_eff; decide,
     tier_95_zebrafish_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

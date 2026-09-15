@@ -2,8 +2,7 @@
   Derived nest D_eff. Authority is vendor/fsot_compute.py NEST_GENERATIONS.
   D_eff(g) = round(5 * 5^(g/(G-1))).
   Hits/observed from named fold laws. Look is 1 except Atomic e/π and HEP 1-POOF/π.
-  FSOT.Formal.Scalar.get_domain_params still holds older assigned looks
-  for existing positivity proofs — do not quote it as live ToE D_eff.
+  FSOT.Formal.Scalar.get_domain_params follows this nest.
 -/
 
 namespace FSOT.Formal.DerivedNest

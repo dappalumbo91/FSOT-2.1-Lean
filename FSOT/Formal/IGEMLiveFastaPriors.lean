@@ -26,12 +26,12 @@ theorem igem_live_fasta_bundle :
     igem_live_fasta_observable_count = 42 ∧
     igem_live_fasta_D_eff = 9 ∧
     igem_live_fasta_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold igem_live_fasta_observable_count; decide,
     by unfold igem_live_fasta_D_eff; decide,
     igem_live_fasta_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

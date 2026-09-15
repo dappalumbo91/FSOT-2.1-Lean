@@ -26,12 +26,12 @@ theorem uniprot_protein_annotations_bundle :
     uniprot_protein_annotations_observable_count = 22 ∧
     uniprot_protein_annotations_D_eff = 9 ∧
     uniprot_protein_annotations_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold uniprot_protein_annotations_observable_count; decide,
     by unfold uniprot_protein_annotations_D_eff; decide,
     uniprot_protein_annotations_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

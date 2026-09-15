@@ -26,12 +26,12 @@ theorem ncbi_gene_public_bundle :
     ncbi_gene_public_observable_count = 48 ∧
     ncbi_gene_public_D_eff = 9 ∧
     ncbi_gene_public_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold ncbi_gene_public_observable_count; decide,
     by unfold ncbi_gene_public_D_eff; decide,
     ncbi_gene_public_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

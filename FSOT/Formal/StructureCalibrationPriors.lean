@@ -48,14 +48,14 @@ theorem structure_calibration_bundle :
     structure_calibration_burial_accuracy_pct = (59.47 : ℝ) ∧
     structure_calibration_disorder_accuracy_pct = (50.0 : ℝ) ∧
     structure_calibration_median_error_pct = (40.53 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold structure_calibration_residue_count; decide,
     by unfold structure_calibration_protein_count; decide,
     by unfold structure_calibration_burial_accuracy_pct; norm_num,
     by unfold structure_calibration_disorder_accuracy_pct; norm_num,
     by unfold structure_calibration_median_error_pct; norm_num,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

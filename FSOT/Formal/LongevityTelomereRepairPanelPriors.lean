@@ -26,12 +26,12 @@ theorem longevity_telomere_repair_bundle :
     longevity_telomere_repair_observable_count = 60 ∧
     longevity_telomere_repair_D_eff = 9 ∧
     longevity_telomere_repair_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold longevity_telomere_repair_observable_count; decide,
     by unfold longevity_telomere_repair_D_eff; decide,
     longevity_telomere_repair_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

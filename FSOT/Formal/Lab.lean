@@ -98,13 +98,13 @@ theorem lab_material_raw_S_positive :
     raw_S (get_domain_params "material") > 0 :=
   material_raw_S_positive
 
-theorem lab_biological_raw_S_positive :
-    raw_S (get_domain_params "biological") > 0 :=
-  biological_raw_S_positive
+theorem lab_biological_raw_S_negative :
+    raw_S (get_domain_params "biological") < 0 :=
+  biological_raw_S_negative
 
-theorem lab_cellular_raw_S_positive :
-    raw_S (get_domain_params "cellular") > 0 :=
-  cellular_raw_S_positive
+theorem lab_cellular_raw_S_negative :
+    raw_S (get_domain_params "cellular") < 0 :=
+  cellular_raw_S_negative
 
 theorem lab_consciousness_raw_S_positive :
     raw_S (get_domain_params "consciousness") > 0 :=
@@ -120,16 +120,16 @@ theorem neurolab_genomic_exact_bundle :
               |(2 * (phi ^ 5 - phi ^ (-5 : ℤ))) - 22| < (0.01 : ℝ) :=
   genomic_exact_identity_bundle
 
-/-- NeuroLab biological/neural ledger domains: positive raw_S at canonical params. -/
+/-- NeuroLab: specimen neural/medical/consciousness positive; biology is the dark medium. -/
 theorem neurolab_bio_sign_bundle :
     raw_S (get_domain_params "neural") > 0 ∧
       raw_S (get_domain_params "medical") > 0 ∧
-        raw_S (get_domain_params "biological") > 0 ∧
+        raw_S (get_domain_params "biological") < 0 ∧
           raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨lab_neural_raw_S_positive, lab_medical_raw_S_positive,
-    lab_biological_raw_S_positive, lab_consciousness_raw_S_positive⟩
+    lab_biological_raw_S_negative, lab_consciousness_raw_S_positive⟩
 
-/-- All SMILES-mapped ledger domains have positive raw_S at canonical params. -/
+/-- SMILES-mapped specimen domains are positive; biology is the dark medium. -/
 theorem lab_smiles_domain_sign_bundle :
     raw_S (get_domain_params "medical") > 0 ∧
       raw_S (get_domain_params "neural") > 0 ∧
@@ -141,11 +141,11 @@ theorem lab_smiles_domain_sign_bundle :
                   raw_S (get_domain_params "energy") > 0 ∧
                     raw_S (get_domain_params "molecular") > 0 ∧
                       raw_S (get_domain_params "material") > 0 ∧
-                        raw_S (get_domain_params "biological") > 0 := by
+                        raw_S (get_domain_params "biological") < 0 := by
   refine ⟨lab_medical_raw_S_positive, lab_neural_raw_S_positive, lab_chemical_raw_S_positive,
     lab_electron_raw_S_positive, lab_quantum_raw_S_positive, lab_particle_raw_S_positive,
     lab_nuclear_raw_S_positive, lab_energy_raw_S_positive, lab_molecular_raw_S_positive,
-    lab_material_raw_S_positive, lab_biological_raw_S_positive⟩
+    lab_material_raw_S_positive, lab_biological_raw_S_negative⟩
 
 end
 

@@ -26,12 +26,12 @@ theorem zebrafish_predictive_validation_bundle :
     zebrafish_predictive_validation_observable_count = 20 ∧
     zebrafish_predictive_validation_D_eff = 25 ∧
     zebrafish_predictive_validation_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold zebrafish_predictive_validation_observable_count; decide,
     by unfold zebrafish_predictive_validation_D_eff; decide,
     zebrafish_predictive_validation_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

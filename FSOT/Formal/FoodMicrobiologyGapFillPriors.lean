@@ -37,13 +37,13 @@ theorem food_microbiology_gap_fill_bundle :
     food_microbiology_gap_fill_pooled_median_error_pct < (0.5 : ℝ) ∧
     food_microbiology_gap_fill_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < food_microbiology_gap_fill_beats_sota_headlines ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold food_microbiology_gap_fill_observable_count; decide,
     food_microbiology_gap_fill_pooled_median_under_half_pct,
     food_microbiology_gap_fill_headline_median_under_half_pct,
     food_microbiology_gap_fill_beats_sota_headlines_pos,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

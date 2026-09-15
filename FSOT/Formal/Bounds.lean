@@ -40,6 +40,11 @@ lemma phi_gt_1618 : (1.618 : ℝ) < phi := by
   have h : (2.236 : ℝ) < sqrt 5 := Real.lt_sqrt_of_sq_lt (by norm_num : (2.236 : ℝ) ^ 2 < 5)
   linarith [h]
 
+lemma phi_gt_161803 : (1.61803 : ℝ) < phi := by
+  unfold phi
+  have h : (2.23606 : ℝ) < sqrt 5 := Real.lt_sqrt_of_sq_lt (by norm_num : (2.23606 : ℝ) ^ 2 < 5)
+  linarith [h]
+
 lemma phi_lt_16181 : phi < (1.6181 : ℝ) := by
   unfold phi
   have h_s : sqrt 5 < (2.2361 : ℝ) := by
@@ -52,6 +57,47 @@ lemma pi_eq_real_pi : pi = π := rfl
 lemma pi_gt_one : (1 : ℝ) < pi := by
   unfold pi
   exact lt_trans (by norm_num) pi_gt_d4
+
+lemma pi_inv4_pos : (0 : ℝ) < pi_inv4 := by
+  unfold pi_inv4
+  exact div_pos (by norm_num) (pow_pos (lt_trans (by norm_num) pi_gt_one) 4)
+
+lemma pi_inv4_lt_0103 : pi_inv4 < (0.0103 : ℝ) := by
+  unfold pi_inv4
+  have hpi : (3.1415 : ℝ) < pi := by unfold pi; exact pi_gt_d4
+  have h2 : (3.1415 : ℝ) ^ 2 < pi ^ 2 := by
+    simpa [pow_two] using mul_self_lt_mul_self (by norm_num : (0 : ℝ) ≤ 3.1415) hpi
+  have h4 : (3.1415 : ℝ) ^ 4 < pi ^ 4 := by
+    have hL : (3.1415 : ℝ) ^ 4 = ((3.1415 : ℝ) ^ 2) * ((3.1415 : ℝ) ^ 2) := by ring
+    have hR : pi ^ 4 = (pi ^ 2) * (pi ^ 2) := by ring
+    rw [hL, hR]
+    exact mul_self_lt_mul_self (sq_nonneg _) h2
+  have h3n : (97.2 : ℝ) < (3.1415 : ℝ) ^ 4 := by norm_num
+  have hpi4 : (97.2 : ℝ) < pi ^ 4 := lt_trans h3n h4
+  have hdiv : (1 : ℝ) / pi ^ 4 < 1 / 97.2 :=
+    (one_div_lt_one_div (pow_pos (lt_trans (by norm_num) pi_gt_one) 4) (by norm_num)).2 hpi4
+  linarith [hdiv]
+
+lemma pi_inv4_gt_01 : (0.01 : ℝ) < pi_inv4 := by
+  unfold pi_inv4
+  have hpi : pi < (3.15 : ℝ) := lt_trans (by unfold pi; exact pi_lt_d4) (by norm_num)
+  have h2 : pi ^ 2 < (3.15 : ℝ) ^ 2 := by
+    simpa [pow_two] using mul_self_lt_mul_self (le_of_lt (lt_trans (by norm_num) pi_gt_one)) hpi
+  have h4 : pi ^ 4 < (3.15 : ℝ) ^ 4 := by
+    have hL : pi ^ 4 = (pi ^ 2) * (pi ^ 2) := by ring
+    have hR : (3.15 : ℝ) ^ 4 = ((3.15 : ℝ) ^ 2) * ((3.15 : ℝ) ^ 2) := by ring
+    rw [hL, hR]
+    exact mul_self_lt_mul_self (sq_nonneg _) h2
+  have h3n : (3.15 : ℝ) ^ 4 < (99 : ℝ) := by norm_num
+  have hpi4 : pi ^ 4 < (99 : ℝ) := lt_trans h4 h3n
+  have hdiv : (1 : ℝ) / 99 < 1 / pi ^ 4 :=
+    one_div_lt_one_div_of_lt (pow_pos (lt_trans (by norm_num) pi_gt_one) 4) hpi4
+  linarith [hdiv]
+
+lemma k_identity_gt_9897 : (0.9897 : ℝ) < 1 - pi_inv4 := by linarith [pi_inv4_lt_0103]
+
+lemma k_identity_pos : (0 : ℝ) < 1 - pi_inv4 :=
+  lt_trans (by norm_num : (0 : ℝ) < 0.9897) k_identity_gt_9897
 
 lemma pi_sub_one_pos : (0 : ℝ) < pi - 1 := sub_pos.mpr pi_gt_one
 
@@ -423,6 +469,31 @@ lemma exp_neg_185_lt_016 : exp (-1.85) < (0.16 : ℝ) := by
 lemma log_016_gt_m185 : (-1.85 : ℝ) < log (0.16 : ℝ) :=
   (lt_log_iff_exp_lt (by norm_num : (0 : ℝ) < 0.16)).2 exp_neg_185_lt_016
 
+lemma atomic_look_gt_07 : (0.7 : ℝ) < e / pi := by
+  have he : (2.7 : ℝ) < e := by unfold e; linarith [exp_one_gt_d9]
+  have hpi : pi < (3.15 : ℝ) := lt_trans (by unfold pi; exact pi_lt_d4) (by norm_num)
+  have hpi_pos : (0 : ℝ) < pi := by unfold pi; linarith [pi_gt_d4]
+  have he_pos : (0 : ℝ) < e := by unfold e; linarith [exp_one_gt_d9]
+  have h : (2.7 : ℝ) * pi < e * (3.15 : ℝ) := by nlinarith [he, hpi, he_pos, hpi_pos]
+  have h' : (2.7 : ℝ) / (3.15 : ℝ) < e / pi :=
+    (div_lt_div_iff₀ (by norm_num : (0 : ℝ) < (3.15 : ℝ)) hpi_pos).2 (by linarith [h])
+  linarith [h']
+
+lemma atomic_look_lt_13 : e / pi < (1.3 : ℝ) := by
+  have he : e < (2.8 : ℝ) := by unfold e; linarith [exp_one_lt_d9]
+  have hpi : (3.14 : ℝ) < pi := by unfold pi; linarith [pi_gt_d4]
+  have hpi_pos : (0 : ℝ) < pi := by unfold pi; linarith [pi_gt_d4]
+  have he_pos : (0 : ℝ) < e := by unfold e; linarith [exp_one_gt_d9]
+  have h : e * (1 : ℝ) < pi * (1.3 : ℝ) := by nlinarith [he, hpi, he_pos, hpi_pos]
+  exact (div_lt_iff₀ hpi_pos).2 (by linarith [h])
+
+lemma atomic_look_bounds :
+    (0.35 : ℝ) ≤ e / pi ∧ e / pi ≤ (1.3 : ℝ) :=
+  ⟨le_of_lt (lt_trans (by norm_num : (0.35 : ℝ) < (0.7 : ℝ)) atomic_look_gt_07),
+    le_of_lt atomic_look_lt_13⟩
+
+lemma atomic_look_ge_07 : (0.7 : ℝ) ≤ e / pi := le_of_lt atomic_look_gt_07
+
 lemma poof_factor_lt_point_one_six : poof_factor < (0.16 : ℝ) := by
   unfold poof_factor
   have h_denom_pos : (0 : ℝ) < eta_eff * log phi := mul_pos eta_pos (log_pos phi_gt_one)
@@ -437,6 +508,33 @@ lemma poof_factor_lt_point_one_six : poof_factor < (0.16 : ℝ) := by
   have h := (exp_lt_exp).2 h_neg
   rwa [exp_log (by norm_num : (0 : ℝ) < 0.16)] at h
 
+lemma hep_look_gt_07 : (0.7 : ℝ) < 1 - poof_factor / pi := by
+  have hpoof := poof_factor_lt_point_one_six
+  have hpi : (3.14 : ℝ) < pi := by unfold pi; linarith [pi_gt_d4]
+  have hpi_pos : (0 : ℝ) < pi := by unfold pi; linarith [pi_gt_d4]
+  have h_small : poof_factor / pi < (0.06 : ℝ) := by
+    have h1 : poof_factor / pi < (0.16 : ℝ) / pi :=
+      div_lt_div_of_pos_right hpoof hpi_pos
+    have h2 : (0.16 : ℝ) / pi < (0.16 : ℝ) / (3.14 : ℝ) :=
+      div_lt_div_of_pos_left (by norm_num : (0 : ℝ) < (0.16 : ℝ))
+        (by norm_num : (0 : ℝ) < (3.14 : ℝ)) hpi
+    have h3 : (0.16 : ℝ) / (3.14 : ℝ) < (0.06 : ℝ) := by norm_num
+    exact lt_trans (lt_trans h1 h2) h3
+  linarith [h_small]
+
+lemma hep_look_lt_13 : 1 - poof_factor / pi < (1.3 : ℝ) := by
+  have hpi_pos : (0 : ℝ) < pi := by unfold pi; linarith [pi_gt_d4]
+  have hpoof_pos : (0 : ℝ) < poof_factor := exp_pos _
+  have hquot_pos : (0 : ℝ) < poof_factor / pi := div_pos hpoof_pos hpi_pos
+  linarith [hquot_pos]
+
+lemma hep_look_bounds :
+    (0.35 : ℝ) ≤ 1 - poof_factor / pi ∧ 1 - poof_factor / pi ≤ (1.3 : ℝ) :=
+  ⟨le_of_lt (lt_trans (by norm_num : (0.35 : ℝ) < (0.7 : ℝ)) hep_look_gt_07),
+    le_of_lt hep_look_lt_13⟩
+
+lemma hep_look_ge_07 : (0.7 : ℝ) ≤ 1 - poof_factor / pi := le_of_lt hep_look_gt_07
+
 lemma alpha_nonneg : (0 : ℝ) ≤ alpha := by
   unfold alpha
   apply div_nonneg (log_nonneg (le_of_lt pi_gt_one))
@@ -447,21 +545,21 @@ lemma coherence_efficiency_lt_ten : coherence_efficiency < (10 : ℝ) := by
   have h_poof_pos : 0 < poof_factor := exp_pos _
   have h1 : 1 - poof_factor * sin theta_s ≤ (3 : ℝ) := by
     nlinarith [poof_factor_lt_one, h_poof_pos, sin_le_one theta_s, sin_theta_s_nonneg]
-  have h2 : 1 + 0.01 * catalan_G / (pi * phi) ≤ (3 : ℝ) := by
-    have h_small : 0.01 * catalan_G / (pi * phi) ≤ (1 : ℝ) := by
+  have h2 : 1 + pi_inv4 * catalan_G / (pi * phi) ≤ (3 : ℝ) := by
+    have h_small : pi_inv4 * catalan_G / (pi * phi) ≤ (1 : ℝ) := by
       unfold catalan_G
       have h_den : (0 : ℝ) < pi * phi := by nlinarith [phi_gt_one, pi_gt_one]
       rw [div_le_iff₀ h_den]
-      nlinarith [phi_gt_one, pi_gt_one]
+      nlinarith [phi_gt_one, pi_gt_one, pi_inv4_lt_0103]
     linarith [h_small]
   have h1pos : 0 < 1 - poof_factor * sin theta_s := by
     have h_le : poof_factor * sin theta_s ≤ poof_factor := by
       simpa using mul_le_mul_of_nonneg_left (sin_le_one theta_s) (le_of_lt h_poof_pos)
     exact sub_pos.mpr (lt_of_le_of_lt h_le poof_factor_lt_one)
-  have h2pos : 0 < 1 + 0.01 * catalan_G / (pi * phi) := by
+  have h2pos : 0 < 1 + pi_inv4 * catalan_G / (pi * phi) := by
     have hphi_pos : 0 < phi := lt_trans (by norm_num) phi_gt_one
-    exact add_pos (by norm_num) (div_pos (mul_pos (by norm_num) (by unfold catalan_G; norm_num)) (mul_pos Real.pi_pos hphi_pos))
-  calc (1 - poof_factor * sin theta_s) * (1 + 0.01 * catalan_G / (pi * phi))
+    exact add_pos (by norm_num) (div_pos (mul_pos pi_inv4_pos (by unfold catalan_G; norm_num)) (mul_pos Real.pi_pos hphi_pos))
+  calc (1 - poof_factor * sin theta_s) * (1 + pi_inv4 * catalan_G / (pi * phi))
       ≤ (3 : ℝ) * 3 := mul_le_mul h1 h2 (le_of_lt h2pos) (by norm_num)
     _ < 10 := by norm_num
 
@@ -545,7 +643,7 @@ lemma bleed_in_factor_nonneg : (0 : ℝ) ≤ bleed_in_factor := by
       exact lt_of_le_of_lt h_le poof_factor_lt_one
     exact mul_pos (sub_pos.mpr h_prod_lt_one) (by
       have hphi_pos : 0 < phi := lt_trans (by norm_num) phi_gt_one
-      exact add_pos (by norm_num) (div_pos (mul_pos (by norm_num) (by unfold catalan_G; norm_num)) (mul_pos Real.pi_pos hphi_pos)))
+      exact add_pos (by norm_num) (div_pos (mul_pos pi_inv4_pos (by unfold catalan_G; norm_num)) (mul_pos Real.pi_pos hphi_pos)))
   apply mul_nonneg (le_of_lt h_coherence)
   linarith [sin_div_phi_le_one, sin_theta_s_nonneg]
 
@@ -560,7 +658,7 @@ lemma bleed_in_factor_pos : (0 : ℝ) < bleed_in_factor := by
       exact lt_of_le_of_lt h_le poof_factor_lt_one
     exact mul_pos (sub_pos.mpr h_prod_lt_one) (by
       have hphi_pos : 0 < phi := lt_trans (by norm_num) phi_gt_one
-      exact add_pos (by norm_num) (div_pos (mul_pos (by norm_num) (by unfold catalan_G; norm_num)) (mul_pos Real.pi_pos hphi_pos)))
+      exact add_pos (by norm_num) (div_pos (mul_pos pi_inv4_pos (by unfold catalan_G; norm_num)) (mul_pos Real.pi_pos hphi_pos)))
   have h_inner : (0 : ℝ) < 1 - sin theta_s / phi := by
     have hφ : (0 : ℝ) < phi := lt_trans (by norm_num) phi_gt_one
     have h_div_lt_one : sin theta_s / phi < 1 := by
@@ -582,11 +680,12 @@ lemma theta_s_lt_three_tenths : theta_s < (0.3 : ℝ) := by
   unfold theta_s
   exact lt_trans (Real.sin_lt psi_con_eta_pos) psi_con_eta_prod_lt_three_tenths
 
-lemma coherence_correction_gt_one : (1 : ℝ) < 1 + 0.01 * catalan_G / (pi * phi) := by
+lemma coherence_correction_gt_one : (1 : ℝ) < 1 + pi_inv4 * catalan_G / (pi * phi) := by
   have hphi_pos : (0 : ℝ) < phi := lt_trans (by norm_num) phi_gt_one
   have h_den_pos : (0 : ℝ) < pi * phi := mul_pos Real.pi_pos hphi_pos
-  have h_num_pos : (0 : ℝ) < 0.01 * catalan_G := by unfold catalan_G; norm_num
-  have h_div_pos : (0 : ℝ) < 0.01 * catalan_G / (pi * phi) := div_pos h_num_pos h_den_pos
+  have h_num_pos : (0 : ℝ) < pi_inv4 * catalan_G :=
+    mul_pos pi_inv4_pos (by unfold catalan_G; norm_num)
+  have h_div_pos : (0 : ℝ) < pi_inv4 * catalan_G / (pi * phi) := div_pos h_num_pos h_den_pos
   linarith
 
 lemma coherence_efficiency_gt_nine_five : (0.95 : ℝ) < coherence_efficiency := by
@@ -597,7 +696,7 @@ lemma coherence_efficiency_gt_nine_five : (0.95 : ℝ) < coherence_efficiency :=
     nlinarith [poof_factor_lt_point_one_six, h_sin_le, theta_s_lt_three_tenths, h_poof_pos]
   have h_first : (0.95 : ℝ) < 1 - poof_factor * sin theta_s := by linarith [h_psin_lt]
   have h_second := coherence_correction_gt_one
-  have h_second_pos : (0 : ℝ) < 1 + 0.01 * catalan_G / (pi * phi) := by linarith [h_second]
+  have h_second_pos : (0 : ℝ) < 1 + pi_inv4 * catalan_G / (pi * phi) := by linarith [h_second]
   simpa [mul_one] using
     mul_lt_mul_of_pos h_first h_second (by norm_num : (0 : ℝ) < (0.95 : ℝ)) h_second_pos
 
@@ -846,6 +945,16 @@ lemma exp_six_gt_400 : (400 : ℝ) < exp 6 := by
 lemma exp_28_gt_410 : (410 : ℝ) < exp 28 := by
   have h_poly :
       (410 : ℝ) < 1 + 28 + 28 ^ 2 / 2 + 28 ^ 3 / 6 + 28 ^ 4 / 24 + 28 ^ 5 / 120 := by norm_num
+  have h_sum := Real.sum_le_exp_of_nonneg (by norm_num : (0 : ℝ) ≤ 28) 6
+  have h_eq :
+      (1 + 28 + 28 ^ 2 / 2 + 28 ^ 3 / 6 + 28 ^ 4 / 24 + 28 ^ 5 / 120 : ℝ) =
+        ∑ i ∈ Finset.range 6, (28 : ℝ) ^ i / Nat.factorial i := by
+    norm_num [Finset.range, Nat.factorial]
+  linarith [h_poly, h_eq, h_sum]
+
+lemma exp_28_gt_1000 : (1000 : ℝ) < exp 28 := by
+  have h_poly :
+      (1000 : ℝ) < 1 + 28 + 28 ^ 2 / 2 + 28 ^ 3 / 6 + 28 ^ 4 / 24 + 28 ^ 5 / 120 := by norm_num
   have h_sum := Real.sum_le_exp_of_nonneg (by norm_num : (0 : ℝ) ≤ 28) 6
   have h_eq :
       (1 + 28 + 28 ^ 2 / 2 + 28 ^ 3 / 6 + 28 ^ 4 / 24 + 28 ^ 5 / 120 : ℝ) =
@@ -1479,6 +1588,28 @@ lemma log_pi_lt_11453 : log pi < (1.1453 : ℝ) := by
   have hpi : pi < (3.14159265358979323847 : ℝ) := by unfold pi; exact pi_lt_d20
   exact lt_trans (log_lt_log (lt_trans (by norm_num) pi_gt_one) hpi) log_pi23847_lt_11453
 
+lemma exp_11448_gt_pi23847 : (3.14159265358979323847 : ℝ) < exp (1.1448 : ℝ) := by
+  have h_poly :
+      (3.14159265358979323847 : ℝ) < 1 + (1.1448 : ℝ) + (1.1448 : ℝ) ^ 2 / 2 +
+        (1.1448 : ℝ) ^ 3 / 6 + (1.1448 : ℝ) ^ 4 / 24 + (1.1448 : ℝ) ^ 5 / 120 +
+        (1.1448 : ℝ) ^ 6 / 720 + (1.1448 : ℝ) ^ 7 / 5040 := by norm_num
+  have h_sum := Real.sum_le_exp_of_nonneg (by norm_num : (0 : ℝ) ≤ 1.1448) 8
+  have h_eq :
+      (1 + (1.1448 : ℝ) + (1.1448 : ℝ) ^ 2 / 2 + (1.1448 : ℝ) ^ 3 / 6 +
+          (1.1448 : ℝ) ^ 4 / 24 + (1.1448 : ℝ) ^ 5 / 120 + (1.1448 : ℝ) ^ 6 / 720 +
+          (1.1448 : ℝ) ^ 7 / 5040 : ℝ) =
+        ∑ i ∈ Finset.range 8, (1.1448 : ℝ) ^ i / Nat.factorial i := by
+    norm_num [Finset.range, Nat.factorial]
+  linarith [h_poly, h_eq, h_sum]
+
+lemma log_pi23847_lt_11448 : log (3.14159265358979323847 : ℝ) < (1.1448 : ℝ) :=
+  (log_lt_iff_lt_exp (by norm_num : (0 : ℝ) < (3.14159265358979323847 : ℝ))).2
+    exp_11448_gt_pi23847
+
+lemma log_pi_lt_11448 : log pi < (1.1448 : ℝ) := by
+  have hpi : pi < (3.14159265358979323847 : ℝ) := by unfold pi; exact pi_lt_d20
+  exact lt_trans (log_lt_log (lt_trans (by norm_num) pi_gt_one) hpi) log_pi23847_lt_11448
+
 lemma log_pi_div_e_lt_422 : log pi / e < (0.422 : ℝ) := by
   unfold e
   rw [div_lt_iff₀ (exp_pos 1)]
@@ -1487,35 +1618,68 @@ lemma log_pi_div_e_lt_422 : log pi / e < (0.422 : ℝ) := by
 lemma k_gt_0420 : (0.42 : ℝ) < k := by
   unfold k
   have h_log_pos : (0 : ℝ) < log pi := log_pos pi_gt_one
-  have h99_pos : (0 : ℝ) < (99 / 100 : ℝ) := by norm_num
-  have h_den : (0.42 : ℝ) * log pi < phi * new_perceived_param * (99 / 100) := by
+  have hid_pos : (0 : ℝ) < (1 - pi_inv4) := k_identity_pos
+  have h_den : (0.42 : ℝ) * log pi < phi * new_perceived_param * (1 - pi_inv4) := by
     have h_np := new_perceived_param_gt_30030
-    have h_phi := phi_gt_1618
-    nlinarith [h_np, h_phi, new_perceived_param_pos, log_pi_lt_11453]
-  have h_step1 : (0.42 : ℝ) * log pi / (99 / 100) < phi * new_perceived_param :=
-    (div_lt_iff₀ h99_pos).mpr h_den
-  have h_step2 : (0.42 : ℝ) / (99 / 100) < phi * new_perceived_param / log pi := by
+    have h_phi := phi_gt_161803
+    have h_id := k_identity_gt_9897
+    have h_log := log_pi_lt_11448
+    have h_prod_lo :
+        (1.61803 : ℝ) * (0.30030 : ℝ) * (0.9897 : ℝ) <
+          phi * new_perceived_param * (1 - pi_inv4) := by
+      have h1 : (1.61803 : ℝ) * (0.30030 : ℝ) < phi * new_perceived_param := by
+        nlinarith [h_phi, h_np, new_perceived_param_pos]
+      nlinarith [h1, h_id, new_perceived_param_pos, h_phi]
+    have h_rhs : (0.42 : ℝ) * (1.1448 : ℝ) < (1.61803 : ℝ) * (0.30030 : ℝ) * (0.9897 : ℝ) := by
+      norm_num
+    have h_lhs : (0.42 : ℝ) * log pi < (0.42 : ℝ) * (1.1448 : ℝ) := by
+      nlinarith [h_log]
+    linarith [h_lhs, h_rhs, h_prod_lo]
+  have h_step1 : (0.42 : ℝ) * log pi / (1 - pi_inv4) < phi * new_perceived_param :=
+    (div_lt_iff₀ hid_pos).mpr h_den
+  have h_step2 : (0.42 : ℝ) / (1 - pi_inv4) < phi * new_perceived_param / log pi := by
     have h := div_lt_div_of_pos_right h_step1 h_log_pos
-    have h_lhs : (0.42 : ℝ) * log pi / (99 / 100) / log pi = (0.42 : ℝ) / (99 / 100) := by field_simp
+    have h_lhs : (0.42 : ℝ) * log pi / (1 - pi_inv4) / log pi = (0.42 : ℝ) / (1 - pi_inv4) := by
+      field_simp
     simpa [h_lhs] using h
-  have h_goal : (0.42 : ℝ) < phi * new_perceived_param / log pi * (99 / 100) :=
-    (div_lt_iff₀ h99_pos).mp h_step2
-  have h_align : phi * new_perceived_param / log pi * (99 / 100) =
-      phi * (gamma_euler / e) * sqrt2 / log pi * (99 / 100) := by
+  have h_goal : (0.42 : ℝ) < phi * new_perceived_param / log pi * (1 - pi_inv4) :=
+    (div_lt_iff₀ hid_pos).mp h_step2
+  have h_align : phi * new_perceived_param / log pi * (1 - pi_inv4) =
+      phi * (gamma_euler / e) * sqrt2 / log pi * (1 - pi_inv4) := by
     unfold new_perceived_param; ring_nf
   simpa [h_align] using h_goal
 
 lemma k_lt_042042 : k < (0.42042 : ℝ) := by
   unfold k
   have h_log_pos : (0 : ℝ) < log pi := log_pos pi_gt_one
-  have h_main : phi * new_perceived_param * (99 / 100) < (0.42042 : ℝ) * log pi := by
+  have h_id_hi : (1 - pi_inv4) < (0.99 : ℝ) := by linarith [pi_inv4_gt_01]
+  have h_main : phi * new_perceived_param * (1 - pi_inv4) < (0.42042 : ℝ) * log pi := by
     have h_np := new_perceived_param_lt_30032
     have h_phi := phi_lt_16181
-    nlinarith [h_np, h_phi, new_perceived_param_pos, phi_gt_1618, log_pi_gt_11445]
-  have h_core : phi * new_perceived_param * (99 / 100) / log pi < (0.42042 : ℝ) :=
+    have h_log := log_pi_gt_11445
+    have h_prod_hi :
+        phi * new_perceived_param * (1 - pi_inv4) <
+          (1.6181 : ℝ) * (0.30032 : ℝ) * (0.99 : ℝ) := by
+      have h1 : phi * new_perceived_param < (1.6181 : ℝ) * (0.30032 : ℝ) := by
+        nlinarith [h_phi, h_np, new_perceived_param_pos, phi_gt_1618]
+      have hpos : (0 : ℝ) < phi * new_perceived_param :=
+        mul_pos (lt_trans (by norm_num) phi_gt_one) new_perceived_param_pos
+      have hmid : phi * new_perceived_param * (1 - pi_inv4) <
+          (1.6181 : ℝ) * (0.30032 : ℝ) * (1 - pi_inv4) :=
+        mul_lt_mul_of_pos_right h1 k_identity_pos
+      have hmid2 : (1.6181 : ℝ) * (0.30032 : ℝ) * (1 - pi_inv4) <
+          (1.6181 : ℝ) * (0.30032 : ℝ) * (0.99 : ℝ) :=
+        mul_lt_mul_of_pos_left h_id_hi (by norm_num)
+      exact lt_trans hmid hmid2
+    have h_rhs : (1.6181 : ℝ) * (0.30032 : ℝ) * (0.99 : ℝ) < (0.42042 : ℝ) * (1.1445 : ℝ) := by
+      norm_num
+    have h_lhs : (0.42042 : ℝ) * (1.1445 : ℝ) < (0.42042 : ℝ) * log pi := by
+      nlinarith [h_log]
+    linarith [h_prod_hi, h_rhs, h_lhs]
+  have h_core : phi * new_perceived_param * (1 - pi_inv4) / log pi < (0.42042 : ℝ) :=
     (div_lt_iff₀ h_log_pos).mpr h_main
-  have h_align : phi * new_perceived_param * (99 / 100) / log pi =
-      phi * (gamma_euler / e) * sqrt2 / log pi * (99 / 100) := by
+  have h_align : phi * new_perceived_param * (1 - pi_inv4) / log pi =
+      phi * (gamma_euler / e) * sqrt2 / log pi * (1 - pi_inv4) := by
     unfold new_perceived_param; ring_nf
   simpa [h_align] using h_core
 
@@ -1542,15 +1706,15 @@ lemma sin_theta_s_gt_02858 : (0.2858 : ℝ) < sin theta_s := by
     · exact le_of_lt (lt_trans theta_s_lt_291325 (lt_trans (by norm_num) pi_half_gt_02956))
   exact lt_trans h_sin_ref (strictMonoOn_sin h_icc_a h_icc_b hθ)
 
-lemma coherence_correction_lt_1002 : 1 + 0.01 * catalan_G / (pi * phi) < (1.002 : ℝ) := by
+lemma coherence_correction_lt_1002 : 1 + pi_inv4 * catalan_G / (pi * phi) < (1.002 : ℝ) := by
   have hphi_pos : (0 : ℝ) < phi := lt_trans (by norm_num) phi_gt_one
-  have h_small : 0.01 * catalan_G / (pi * phi) < (0.002 : ℝ) := by
+  have h_small : pi_inv4 * catalan_G / (pi * phi) < (0.002 : ℝ) := by
     unfold catalan_G
     have h_den_pos : (0 : ℝ) < pi * phi := mul_pos Real.pi_pos hphi_pos
     have hpi : (3.1415 : ℝ) < pi := by unfold pi; exact pi_gt_d4
     have hphi : (1.618 : ℝ) < phi := phi_gt_1618
     rw [div_lt_iff₀ h_den_pos]
-    nlinarith [hpi, hphi]
+    nlinarith [hpi, hphi, pi_inv4_lt_0103]
   linarith [h_small]
 
 lemma coherence_efficiency_lt_1002 : coherence_efficiency < (1.002 : ℝ) := by
@@ -1757,6 +1921,78 @@ lemma exp_neg_1434_lt_24_div_25 : exp (-1.434) < (6 : ℝ) / 25 := by
 lemma log_ratio_D6_gt : (-1.434 : ℝ) < log ((6 : ℝ) / 25) :=
   (lt_log_iff_exp_lt (by norm_num : (0 : ℝ) < (6 : ℝ) / 25)).2 exp_neg_1434_lt_24_div_25
 
+lemma exp_162_gt_five : (5 : ℝ) < exp 1.62 := by
+  have h_poly :
+      (5 : ℝ) < 1 + (1.62 : ℝ) + (1.62 : ℝ) ^ 2 / 2 + (1.62 : ℝ) ^ 3 / 6 +
+        (1.62 : ℝ) ^ 4 / 24 + (1.62 : ℝ) ^ 5 / 120 + (1.62 : ℝ) ^ 6 / 720 := by norm_num
+  have h_sum := Real.sum_le_exp_of_nonneg (by norm_num : (0 : ℝ) ≤ 1.62) 7
+  have h_eq :
+      (1 + (1.62 : ℝ) + (1.62 : ℝ) ^ 2 / 2 + (1.62 : ℝ) ^ 3 / 6 +
+          (1.62 : ℝ) ^ 4 / 24 + (1.62 : ℝ) ^ 5 / 120 + (1.62 : ℝ) ^ 6 / 720 : ℝ) =
+        ∑ i ∈ Finset.range 7, (1.62 : ℝ) ^ i / Nat.factorial i := by
+    norm_num [Finset.range, Nat.factorial]
+  linarith [h_poly, h_eq, h_sum]
+
+lemma log_ratio_D5_gt : (-1.62 : ℝ) < log ((5 : ℝ) / 25) := by
+  have h : (5 : ℝ) / 25 = 1 / 5 := by norm_num
+  rw [h]
+  have h' : exp (-1.62) < (1 / 5 : ℝ) := by
+    rw [exp_neg, ← one_div]
+    exact one_div_lt_one_div_of_lt (by norm_num : (0 : ℝ) < 5) exp_162_gt_five
+  exact (lt_log_iff_exp_lt (by norm_num : (0 : ℝ) < 1 / 5)).2 h'
+
+lemma exp_115_gt_25_div_8 : (25 : ℝ) / 8 < exp 1.15 := by
+  have h_poly :
+      (25 : ℝ) / 8 < 1 + (1.15 : ℝ) + (1.15 : ℝ) ^ 2 / 2 + (1.15 : ℝ) ^ 3 / 6 +
+        (1.15 : ℝ) ^ 4 / 24 + (1.15 : ℝ) ^ 5 / 120 + (1.15 : ℝ) ^ 6 / 720 := by norm_num
+  have h_sum := Real.sum_le_exp_of_nonneg (by norm_num : (0 : ℝ) ≤ 1.15) 7
+  have h_eq :
+      (1 + (1.15 : ℝ) + (1.15 : ℝ) ^ 2 / 2 + (1.15 : ℝ) ^ 3 / 6 +
+          (1.15 : ℝ) ^ 4 / 24 + (1.15 : ℝ) ^ 5 / 120 + (1.15 : ℝ) ^ 6 / 720 : ℝ) =
+        ∑ i ∈ Finset.range 7, (1.15 : ℝ) ^ i / Nat.factorial i := by
+    norm_num [Finset.range, Nat.factorial]
+  linarith [h_poly, h_eq, h_sum]
+
+lemma log_ratio_D8_gt : (-1.15 : ℝ) < log ((8 : ℝ) / 25) := by
+  have h' : exp (-1.15) < (8 : ℝ) / 25 := by
+    rw [exp_neg, ← one_div, show (8 : ℝ) / 25 = 1 / ((25 : ℝ) / 8) by norm_num]
+    exact one_div_lt_one_div_of_lt (by norm_num : (0 : ℝ) < (25 : ℝ) / 8) exp_115_gt_25_div_8
+  exact (lt_log_iff_exp_lt (by norm_num : (0 : ℝ) < (8 : ℝ) / 25)).2 h'
+
+lemma perceived_adjust_lo_D8 :
+    (0.65 : ℝ) < 1 + new_perceived_param * log ((8 : ℝ) / 25) := by
+  have h_log := log_ratio_D8_gt
+  have h_prod : (-0.350 : ℝ) < new_perceived_param * log ((8 : ℝ) / 25) := by
+    have h_mul' := mul_lt_mul_of_pos_right h_log new_perceived_param_pos
+    nlinarith [new_perceived_param_gt_030, new_perceived_param_lt_031, h_mul']
+  linarith [h_prod]
+
+lemma exp_103_gt_25_div_9 : (25 : ℝ) / 9 < exp 1.03 := by
+  have h_poly :
+      (25 : ℝ) / 9 < 1 + (1.03 : ℝ) + (1.03 : ℝ) ^ 2 / 2 + (1.03 : ℝ) ^ 3 / 6 +
+        (1.03 : ℝ) ^ 4 / 24 + (1.03 : ℝ) ^ 5 / 120 := by norm_num
+  have h_sum := Real.sum_le_exp_of_nonneg (by norm_num : (0 : ℝ) ≤ 1.03) 6
+  have h_eq :
+      (1 + (1.03 : ℝ) + (1.03 : ℝ) ^ 2 / 2 + (1.03 : ℝ) ^ 3 / 6 +
+          (1.03 : ℝ) ^ 4 / 24 + (1.03 : ℝ) ^ 5 / 120 : ℝ) =
+        ∑ i ∈ Finset.range 6, (1.03 : ℝ) ^ i / Nat.factorial i := by
+    norm_num [Finset.range, Nat.factorial]
+  linarith [h_poly, h_eq, h_sum]
+
+lemma log_ratio_D9_gt : (-1.03 : ℝ) < log ((9 : ℝ) / 25) := by
+  have h' : exp (-1.03) < (9 : ℝ) / 25 := by
+    rw [exp_neg, ← one_div, show (9 : ℝ) / 25 = 1 / ((25 : ℝ) / 9) by norm_num]
+    exact one_div_lt_one_div_of_lt (by norm_num : (0 : ℝ) < (25 : ℝ) / 9) exp_103_gt_25_div_9
+  exact (lt_log_iff_exp_lt (by norm_num : (0 : ℝ) < (9 : ℝ) / 25)).2 h'
+
+lemma perceived_adjust_lo_D9 :
+    (0.68 : ℝ) < 1 + new_perceived_param * log ((9 : ℝ) / 25) := by
+  have h_log := log_ratio_D9_gt
+  have h_prod : (-0.320 : ℝ) < new_perceived_param * log ((9 : ℝ) / 25) := by
+    have h_mul' := mul_lt_mul_of_pos_right h_log new_perceived_param_pos
+    nlinarith [new_perceived_param_gt_030, new_perceived_param_lt_031, h_mul']
+  linarith [h_prod]
+
 lemma exp_040_lt_25_div_24 : exp 0.040 < (25 : ℝ) / 24 := by
   have h :=
     Real.exp_bound' (by norm_num : (0 : ℝ) ≤ 0.040) (by norm_num : (0.040 : ℝ) ≤ 1) (n := 4)
@@ -1776,17 +2012,17 @@ lemma bleed_in_factor_gt_0773 : (0.773 : ℝ) < bleed_in_factor := by
   nlinarith [coherence_efficiency_gt_nine_five, bleed_in_inner_gt_eight_one_four, h_floor,
     bleed_in_inner_pos]
 
-lemma perceived_adjust_lo_domain (p : FSOTParams) (h_D : (6 : ℝ) ≤ p.D_eff) :
-    (0.567 : ℝ) < 1 + new_perceived_param * log (p.D_eff / 25) := by
-  have h_log : log ((6 : ℝ) / 25) ≤ log (p.D_eff / 25) := by
-    have h_frac : (6 : ℝ) / 25 ≤ p.D_eff / 25 := by linarith [h_D]
+lemma perceived_adjust_lo_domain (p : FSOTParams) (h_D : (5 : ℝ) ≤ p.D_eff) :
+    (0.49 : ℝ) < 1 + new_perceived_param * log (p.D_eff / 25) := by
+  have h_log : log ((5 : ℝ) / 25) ≤ log (p.D_eff / 25) := by
+    have h_frac : (5 : ℝ) / 25 ≤ p.D_eff / 25 := by linarith [h_D]
     have h_pos : (0 : ℝ) < p.D_eff / 25 := div_pos (by linarith [h_D]) (by norm_num)
-    exact log_le_log (by norm_num : (0 : ℝ) < (6 : ℝ) / 25) h_frac
-  have h_mul : new_perceived_param * log ((6 : ℝ) / 25) ≤
+    exact log_le_log (by norm_num : (0 : ℝ) < (5 : ℝ) / 25) h_frac
+  have h_mul : new_perceived_param * log ((5 : ℝ) / 25) ≤
       new_perceived_param * log (p.D_eff / 25) := by
     apply mul_le_mul_of_nonneg_left h_log (le_of_lt new_perceived_param_pos)
-  have h_floor : (-0.433 : ℝ) < new_perceived_param * log ((6 : ℝ) / 25) := by
-    have h_mul' := mul_lt_mul_of_pos_right log_ratio_D6_gt new_perceived_param_pos
+  have h_floor : (-0.510 : ℝ) < new_perceived_param * log ((5 : ℝ) / 25) := by
+    have h_mul' := mul_lt_mul_of_pos_right log_ratio_D5_gt new_perceived_param_pos
     nlinarith [new_perceived_param_gt_030, new_perceived_param_lt_031, h_mul']
   linarith [h_mul, h_floor]
 
@@ -2545,19 +2781,19 @@ lemma chaos_factor_abs_lt_one : abs chaos_factor < (1 : ℝ) := by
   refine (div_lt_iff₀ hφ).mpr ?_
   nlinarith [h_log2, phi_gt_one, omega_abs_ge_one]
 
-lemma D_eff_shift_abs_le (p : FSOTParams) (h_D : (6 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25) :
-    abs (p.D_eff - 25) ≤ (19 : ℝ) := by
+lemma D_eff_shift_abs_le (p : FSOTParams) (h_D : (5 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25) :
+    abs (p.D_eff - 25) ≤ (20 : ℝ) := by
   rw [abs_le]
   constructor
-  · have h_lo : (6 : ℝ) - 25 ≤ p.D_eff - 25 := by linarith [h_D.1]
+  · have h_lo : (5 : ℝ) - 25 ≤ p.D_eff - 25 := by linarith [h_D.1]
     linarith [h_lo]
   · have h_hi : p.D_eff - 25 ≤ (0 : ℝ) := by linarith [h_D.2]
     linarith [h_hi]
 
-lemma chaos_perturbation_abs_le_two (p : FSOTParams) (h_D : (6 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25) :
+lemma chaos_perturbation_abs_le_two (p : FSOTParams) (h_D : (5 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25) :
     abs (1 + chaos_factor * (p.D_eff - 25) / 25) ≤ (2 : ℝ) := by
   have h_shift := D_eff_shift_abs_le p h_D
-  have h_frac : abs ((p.D_eff - 25) / 25) ≤ (19 / 25 : ℝ) := by
+  have h_frac : abs ((p.D_eff - 25) / 25) ≤ (20 / 25 : ℝ) := by
     have hpos : (0 : ℝ) < (25 : ℝ) := by norm_num
     rw [abs_div, abs_of_pos hpos]
     refine (div_le_iff₀ hpos).mpr ?_
@@ -2626,11 +2862,11 @@ lemma beta_pos : (0 : ℝ) < beta := by
   exact one_div_pos.mpr (exp_pos _)
 
 lemma chaos_perturbation_pos
-    (p : FSOTParams) (h_D : (6 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25) :
+    (p : FSOTParams) (h_D : (5 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25) :
     (0 : ℝ) < 1 + chaos_factor * (p.D_eff - 25) / 25 := by
   have h_shift := D_eff_shift_abs_le p h_D
   have hpos : (0 : ℝ) < (25 : ℝ) := by norm_num
-  have h_frac : abs ((p.D_eff - 25) / 25) ≤ (19 / 25 : ℝ) := by
+  have h_frac : abs ((p.D_eff - 25) / 25) ≤ (20 / 25 : ℝ) := by
     rw [abs_div, abs_of_pos hpos]
     refine (div_le_iff₀ hpos).mpr ?_
     linarith [h_shift]

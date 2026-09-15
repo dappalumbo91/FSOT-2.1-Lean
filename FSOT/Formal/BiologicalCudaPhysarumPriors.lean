@@ -26,12 +26,12 @@ theorem biological_cuda_physarum_bundle :
     biological_cuda_physarum_observable_count = 35 ∧
     biological_cuda_physarum_D_eff = 9 ∧
     biological_cuda_physarum_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold biological_cuda_physarum_observable_count; decide,
     by unfold biological_cuda_physarum_D_eff; decide,
     biological_cuda_physarum_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

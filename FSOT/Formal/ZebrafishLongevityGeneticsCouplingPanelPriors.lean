@@ -26,12 +26,12 @@ theorem zebrafish_longevity_genetics_coupling_bundle :
     zebrafish_longevity_genetics_coupling_observable_count = 15 ∧
     zebrafish_longevity_genetics_coupling_D_eff = 9 ∧
     zebrafish_longevity_genetics_coupling_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold zebrafish_longevity_genetics_coupling_observable_count; decide,
     by unfold zebrafish_longevity_genetics_coupling_D_eff; decide,
     zebrafish_longevity_genetics_coupling_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

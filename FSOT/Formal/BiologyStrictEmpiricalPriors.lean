@@ -31,12 +31,12 @@ theorem biology_strict_bundle :
     biology_strict_observable_count = 15 ∧
     biology_strict_operon_count = 13 ∧
     biology_strict_median_error_pct < (2 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold biology_strict_observable_count; decide,
     by unfold biology_strict_operon_count; decide,
     biology_strict_median_error_under_two_pct,
-    lab_biological_raw_S_positive
+    lab_biological_raw_S_negative
   ⟩
 
 end

@@ -10,4 +10,4 @@ Pinned. Peer review is out of scope. These five stay false until a later edition
 
 Also not claimed: a Clay Millennium Prize; ECMWF beaten; ticker close as 0.5%; person-level onset as 0.5%; GitHub as a Qualifying Outlet.
 
-Lean `FSOT.Formal.Scalar.get_domain_params` still stores older assigned \(D_{\mathrm{eff}}\) integers. Live authority is the Python nest and `FSOT.Formal.DerivedNest`. Do not quote the old Lean table as the ToE compactification.
+Lean `FSOT.Formal.Scalar.get_domain_params` follows `DerivedNest` \(D\) and the named look/hits/observed laws. Biology is a dark medium (live \(S<0\)). Do not restore assigned looks to green a positivity theorem.

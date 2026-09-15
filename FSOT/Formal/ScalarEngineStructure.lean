@@ -366,7 +366,7 @@ theorem abs_term3_eq_beta_mul_abs_factors (p : FSOTParams) :
 theorem t3_leftover_seed_tiny
     (p : FSOTParams)
     (h2 : term2 p = 1)
-    (h_D : (6 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25)
+    (h_D : (5 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25)
     (h_dp : (0 : ℝ) ≤ p.delta_psi ∧ p.delta_psi ≤ 1.3)
     (h_N : p.N = 1) (h_P : p.P = 1) (h_dt : p.delta_theta = 1) :
     |raw_S p - (1 + term1 p)| < (0.2 : ℝ) := by

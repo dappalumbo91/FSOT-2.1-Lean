@@ -30,13 +30,13 @@ theorem evolution_priors_bundle :
     evolution_best_fitness = (58.493466 : ℝ) ∧
     evolution_biological_capacity = (8002.5 : ℝ) ∧
     (0 : ℝ) < evolution_best_fitness ∧
-    (0 : ℝ) < raw_S (get_domain_params "biological") := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold evolution_operon_count; decide,
     by unfold evolution_best_fitness; norm_num,
     by unfold evolution_biological_capacity; norm_num,
     evolution_fitness_positive,
-    lab_biological_raw_S_positive
+    lab_biological_raw_S_negative
   ⟩
 
 end

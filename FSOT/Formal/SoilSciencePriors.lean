@@ -26,12 +26,12 @@ theorem soil_science_bundle :
     soil_science_observable_count = 96 ∧
     soil_science_D_eff = 9 ∧
     soil_science_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold soil_science_observable_count; decide,
     by unfold soil_science_D_eff; decide,
     soil_science_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

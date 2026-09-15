@@ -37,13 +37,13 @@ theorem mycology_ext_bundle :
     mycology_ext_pooled_median_error_pct < (0.5 : ℝ) ∧
     mycology_ext_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < mycology_ext_beats_sota_headlines ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold mycology_ext_observable_count; decide,
     mycology_ext_pooled_median_under_half_pct,
     mycology_ext_headline_median_under_half_pct,
     mycology_ext_beats_sota_headlines_pos,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

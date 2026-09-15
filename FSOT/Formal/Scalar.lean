@@ -40,17 +40,18 @@ def theta_s : Real := sin (psi_con * eta_eff)
 def poof_factor : Real := exp (-(log pi / e) / (eta_eff * log phi))
 def acoustic_bleed : Real := sin (pi / e) * phi / sqrt2
 def phase_variance : Real := -cos (theta_s + pi)
-/-- Python engine identity π⁻⁴. Interval proofs in Bounds.lean still use 0.01 / 99/100. -/
+/-- π⁻⁴. Replaces the assigned decimal 0.01 in C_eff. -/
 def pi_inv4 : Real := 1 / pi ^ 4
-def coherence_efficiency : Real := (1 - poof_factor * sin theta_s) * (1 + 0.01 * catalan_G / (pi * phi))
+def coherence_efficiency : Real :=
+  (1 - poof_factor * sin theta_s) * (1 + pi_inv4 * catalan_G / (pi * phi))
 def bleed_in_factor : Real := coherence_efficiency * (1 - sin theta_s / phi)
 def acoustic_inflow : Real := acoustic_bleed * (1 + cos theta_s / phi)
 def suction_factor : Real := poof_factor * -cos (theta_s - pi)
 def chaos_factor : Real := gamma / omega
 def new_perceived_param : Real := (gamma_euler / e) * sqrt2
 def consciousness_factor : Real := coherence_efficiency * new_perceived_param
-/-- Python engine uses (1 − π⁻⁴). This Real layer keeps 99/100 until Bounds nlinarith migrates. -/
-def k : Real := phi * (gamma_euler / e) * sqrt2 / log pi * (99 / 100)
+/-- 1 − π⁻⁴. Replaces the assigned decimal 0.99 in K. -/
+def k : Real := phi * (gamma_euler / e) * sqrt2 / log pi * (1 - pi_inv4)
 
 -- ============================================================
 -- FSOTParams and core scalar (aligned with attached Scalar.lean)
@@ -104,38 +105,68 @@ def raw_S (p : FSOTParams) : Real :=
 
 def scaled_S (p : FSOTParams) : Real := raw_S p * k
 
-/-- Coarse Lean aliases. Compactification authority is `DerivedNest` (Python nest).
-These rows still encode older assigned looks used by existing positivity proofs.
-Do not quote this table as live ToE \(D_{\mathrm{eff}}\). -/
+/-- Default-look specimen (look = 1, hits = 0, observed). D from DerivedNest. -/
+@[simp] def specimenFold (D : ℝ) : FSOTParams :=
+  { D_eff := D, recent_hits := 0, delta_psi := (1.0 : ℝ), observed := true }
+
+/-- Bulk-medium orifice (look = 1, hits = 0, unobserved). D from DerivedNest. -/
+@[simp] def mediumFold (D : ℝ) : FSOTParams :=
+  { D_eff := D, recent_hits := 0, delta_psi := (1.0 : ℝ), observed := false }
+
+/-- Atomic bound well: look = e/π. Nest g=2, D=6. -/
+@[simp] def atomicFold : FSOTParams :=
+  { D_eff := 6, recent_hits := 0, delta_psi := e / pi, observed := true }
+
+/-- HEP collision: look = 1 − POOF/π, hits = 1. Nest g=2, D=6. -/
+@[simp] def hepFold : FSOTParams :=
+  { D_eff := 6, recent_hits := 1, delta_psi := 1 - poof_factor / pi, observed := true }
+
+/-- Coarse Lean aliases. Numerals are DerivedNest D_eff(g); look/hits/observed
+are the named fold laws (default 1 / 0 / specimen, Atomic e/π, HEP 1−POOF/π,
+MEDIUM_ORIFICES dark). Biology live S is negative at nest look 1. -/
 def get_domain_params (domain : String) : FSOTParams :=
   match domain with
-  | "quantum"       => { D_eff := 6,  recent_hits := 0, delta_psi := 1.0,   observed := true }
-  | "particle"      => { D_eff := 7,  recent_hits := 0, delta_psi := 0.85,  observed := true }
-  | "higgs"         => { D_eff := 7,  recent_hits := 1, delta_psi := 0.95,  observed := true }
-  | "proton"        => { D_eff := 8,  recent_hits := 0, delta_psi := 0.7,   observed := true }
-  | "electron"      => { D_eff := 8,  recent_hits := 0, delta_psi := 0.6,   observed := true }
-  | "chemical"      => { D_eff := 9,  recent_hits := 0, delta_psi := 0.5,   observed := true }
-  | "molecular"     => { D_eff := 9,  recent_hits := 0, delta_psi := 0.4,   observed := true }
-  | "material"      => { D_eff := 10, recent_hits := 0, delta_psi := 0.5,   observed := true }
-  | "biological"    => { D_eff := 12, recent_hits := 0, delta_psi := 0.08,  observed := false }
-  | "medical"       => { D_eff := 13, recent_hits := 1, delta_psi := 0.35,  observed := true }
-  | "neural"        => { D_eff := 14, recent_hits := 1, delta_psi := 0.70,  observed := true }
-  | "cellular"      => { D_eff := 12, recent_hits := 0, delta_psi := 0.08,  observed := false }
-  | "energy"        => { D_eff := 15, recent_hits := 1, delta_psi := 0.9,   observed := true }
-  | "nuclear"       => { D_eff := 15, recent_hits := 1, delta_psi := 1.0,   observed := true }
-  | "fusion"        => { D_eff := 16, recent_hits := 1, delta_psi := 0.95,  observed := true }
-  | "ai"            => { D_eff := 11, recent_hits := 0, delta_psi := 0.50,  delta_theta := 1, observed := false }
-  | "consciousness" => { D_eff := 16, recent_hits := 1, delta_psi := 1.15,  observed := true }
-  | "perceived"     => { D_eff := 12, recent_hits := 0, delta_psi := 0.300302, observed := true }
-  | "neural_net"    => { D_eff := 12, recent_hits := 1, delta_psi := 0.8,   observed := true }
-  | "observer"      => { D_eff := 14, recent_hits := 1, delta_psi := 1.0,   observed := true }
-  | "astronomical"  => { D_eff := 20, recent_hits := 1, delta_psi := 1.0,   observed := true }
-  | "cosmological"  => { D_eff := 25, recent_hits := 0, delta_psi := 1.0,   observed := false }
-  | "galactic"      => { D_eff := 21, recent_hits := 1, delta_psi := 0.9,   observed := true }
-  | "blackhole"     => { D_eff := 23, recent_hits := 2, delta_psi := 1.25,  observed := true }
-  | "cmb"           => { D_eff := 24, recent_hits := 0, delta_psi := 0.8,   observed := false }
-  | "dark_energy"   => { D_eff := 25, recent_hits := 0, delta_psi := 1.1,   observed := false }
-  | _               => { D_eff := 25, recent_hits := 0, delta_psi := 1.0,   observed := false }
+  | "quantum" | "physics" | "particle" | "proton" =>
+      specimenFold 5
+  | "higgs" | "hep" =>
+      hepFold
+  | "electron" | "atomic" =>
+      atomicFold
+  | "chemical" | "chemistry" =>
+      specimenFold 6
+  | "molecular" | "electromagnetic" =>
+      specimenFold 7
+  | "material" =>
+      specimenFold 8
+  | "ai" | "ai_tech" =>
+      mediumFold 8
+  | "biological" | "cellular" =>
+      mediumFold 9
+  | "medical" =>
+      specimenFold 10
+  | "neural" | "consciousness" | "perceived" | "neural_net"
+  | "observer" | "neuroscience" =>
+      specimenFold 11
+  | "energy" | "engineering" | "nuclear" | "fusion" =>
+      specimenFold 12
+  | "meteorology" =>
+      mediumFold 13
+  | "oceanography" =>
+      mediumFold 14
+  | "social" =>
+      specimenFold 15
+  | "earth_science" =>
+      mediumFold 16
+  | "astronomical" | "economic" | "economics" =>
+      specimenFold 18
+  | "planetary" =>
+      specimenFold 19
+  | "galactic" | "blackhole" =>
+      specimenFold 23
+  | "cosmological" | "cmb" | "dark_energy" | "anomalies" =>
+      mediumFold 25
+  | _ =>
+      mediumFold 25
 
 end
 

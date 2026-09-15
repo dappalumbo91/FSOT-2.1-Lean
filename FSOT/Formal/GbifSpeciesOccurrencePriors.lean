@@ -26,12 +26,12 @@ theorem gbif_species_occurrence_bundle :
     gbif_species_occurrence_observable_count = 240 ∧
     gbif_species_occurrence_D_eff = 12 ∧
     gbif_species_occurrence_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold gbif_species_occurrence_observable_count; decide,
     by unfold gbif_species_occurrence_D_eff; decide,
     gbif_species_occurrence_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

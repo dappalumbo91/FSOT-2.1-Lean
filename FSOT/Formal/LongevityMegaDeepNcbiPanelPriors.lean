@@ -26,12 +26,12 @@ theorem longevity_megadeep_ncbi_bundle :
     longevity_megadeep_ncbi_observable_count = 1746 ∧
     longevity_megadeep_ncbi_D_eff = 9 ∧
     longevity_megadeep_ncbi_median_error_pct < (5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold longevity_megadeep_ncbi_observable_count; decide,
     by unfold longevity_megadeep_ncbi_D_eff; decide,
     longevity_megadeep_ncbi_median_error_under_five_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

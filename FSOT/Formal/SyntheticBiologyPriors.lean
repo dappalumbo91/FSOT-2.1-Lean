@@ -26,12 +26,12 @@ theorem synthetic_biology_bundle :
     synthetic_biology_observable_count = 20 ∧
     synthetic_biology_D_eff = 9 ∧
     synthetic_biology_median_error_pct < (0.5 : ℝ) ∧
-    raw_S (get_domain_params "biological") > 0 := by
+    raw_S (get_domain_params "biological") < 0 := by
   refine ⟨
     by unfold synthetic_biology_observable_count; decide,
     by unfold synthetic_biology_D_eff; decide,
     synthetic_biology_median_error_under_half_pct,
-    biological_raw_S_positive
+    biological_raw_S_negative
   ⟩
 
 end

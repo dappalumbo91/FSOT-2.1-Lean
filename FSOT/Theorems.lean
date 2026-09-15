@@ -94,8 +94,8 @@ theorem sign_S_determined_by_balance_of_all_terms
 
 theorem physics_is_emergence : compute_for_domain "physics" > 0 := by native_decide
 theorem nuclear_is_emergence : compute_for_domain "nuclear" > 0 := by native_decide
-theorem chemistry_is_damping : compute_for_domain "chemistry" < 0 := by native_decide
-theorem planetary_is_damping : compute_for_domain "planetary" < 0 := by native_decide
+theorem chemistry_is_emergence : compute_for_domain "chemistry" > 0 := by native_decide
+theorem planetary_is_emergence : compute_for_domain "planetary" > 0 := by native_decide
 
 -- ============================================================
 -- DEEPER QUIRK_MOD PROPERTIES (rigorous case analysis on when it increases vs decreases S)
