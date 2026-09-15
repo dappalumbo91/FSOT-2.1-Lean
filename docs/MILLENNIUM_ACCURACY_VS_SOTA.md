@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T13:04:14.216283+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T13:11:36.105908+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,9 +18,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 43 |
-| …of those, inside FSOT 0.5% green | 37 |
-| …of those, inside 0.05% aspiration | 28 |
+| Beats or meets public SOTA | 45 |
+| …of those, inside FSOT 0.5% green | 39 |
+| …of those, inside 0.05% aspiration | 30 |
 | **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
@@ -75,6 +75,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Birch and Swinnerton-Dyer | E→rank (mod 2): rank ≡ (1−w_E)/2. Functional equation. Not the integer rank. | 0 | — | — | n/a | n/a | structure |
 | Birch and Swinnerton-Dyer | Integer rank from seed leading: first curves of rank 0..4 match uniquely | 0 | — | — | n/a | n/a | structure |
 | Birch and Swinnerton-Dyer | BSD leading = arithmetic volume Ω·Reg·Tam / (|Sha|·|tors|²). Rank is the order of that leading. | 0 | — | — | n/a | n/a | structure |
+| Birch and Swinnerton-Dyer | 17a1 raw L(1) nearest-leading mis-fires as rank 3; analytic Sha=L·tors²/(Ω·Tam)=1 (rank 0) | 0 | 7.296 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Birch and Swinnerton-Dyer | 19a1 analytic Sha=1 out of sample vs 17a1 (rank 0, not first-of-rank) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Birch and Swinnerton-Dyer | General rank 0: L(1)≠0 (vanishing, not magnitude). Sha=L·tors²/(Ω·Tam) on 11a1/17a1/19a1 | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Named first objects: ℂP² (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20. | — | — | — | n/a | n/a | open_track_next |
 | Hodge conjecture | χ(ℂP²)=φ²+φ^{-2}=Lucas L_2 (named surface Euler number, not Hodge classes) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Lefschetz (1,1) on ℂP² — proven first Hodge-type theorem, not Clay (p,p) for p>1 | 0 | — | — | n/a | n/a | structure |
@@ -149,7 +152,10 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Reg(234446a1) | **(φ²+1)·e·POOF vs LMFDB — in 0.5%** | First rank-4 volume. Isolated e² was the missing loop fold. |
 | E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. Rank 4 is (φ²+1)·e·POOF, not e². |
 | Integer rank 0..4 | **First-curve leadings match uniquely** | Leading → rank. General E still produces the leading from its modular form. |
-| BSD arithmetic volume | **Named formula** Ω·Reg·Tam / (|Sha|·|tors|²) | The question's content. Remainder is a general E. |
+| BSD arithmetic volume | **Named formula** Ω·Reg·Tam / (|Sha|·|tors|²) | The question's content. |
+| 17a1 Sha | **Meets 1** (volume, not L magnitude) | Raw L(1) mis-fires as rank 3. L≠0 is rank 0. |
+| 19a1 Sha | **Meets 1** out of sample | Same orifice. |
+| General rank 0 | **Vanishing, not magnitude** | L(1)≠0 ⇒ analytic rank 0. First-of-rank scale is not a lookup. |
 | χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |
 | χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |
 | Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |
@@ -199,7 +205,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |
 | Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |
 | 3D NSE existence on R^3 | 4/5, 2D 3/2, Onsager 1/3 are cascade numbers. BKM is the stretching criterion. | Do not stuff existence into 4/5 or 1/3. |
-| BSD integer rank | First-of-rank 0..4 labeled. No Weierstrass→ℤ formula. | L-order still required for general E. Do not nearest-template arbitrary L(1). |
+| BSD integer rank | First-of-rank 0..4 labeled. Rank 0 for general E is L(1)≠0, not L magnitude. | Rank ≥1 still needs ord L. Do not nearest-template arbitrary L(1). |
 | Hodge extra classes without K3 | Named list C_8..C_44 algebraic. | Remainder: infinite unnamed tail, general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3. |
 | P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |
 

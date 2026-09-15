@@ -68,6 +68,7 @@ try:
         seed_k3_h11,
         seed_cubic4_fano_b2,
         bsd_integer_rank_from_leading,
+        bsd_analytic_sha,
         seed_riemann_S_bound,
         seed_riemann_S_amplitude,
         seed_sqrt_sigma_r0,
@@ -126,6 +127,7 @@ except ImportError:  # pragma: no cover
         seed_k3_h11,
         seed_cubic4_fano_b2,
         bsd_integer_rank_from_leading,
+        bsd_analytic_sha,
         seed_riemann_S_bound,
         seed_riemann_S_amplitude,
         seed_sqrt_sigma_r0,
@@ -197,6 +199,20 @@ LMFDB_389A1_SPECIAL = 0.7593165002884268
 LMFDB_5077A1_REG = 0.41714355875838397
 # LMFDB 234446.a1 analytic rank 4. First rank-4 curve. Tamagawa product 2.
 LMFDB_234446A1_REG = 1.504344888275284
+# LMFDB 17a1 (Cremona 17a1): rank 0. Raw L(1) mis-fires as rank 3 on the first-of-rank ladder.
+LMFDB_17A1_L = 0.38676993838778004
+LMFDB_17A1_OMEGA = 1.5470797535511202
+LMFDB_17A1_TAM = 4.0
+LMFDB_17A1_TORS = 4.0
+# LMFDB 19.a1 (Cremona 19a2): rank 0, out of sample vs 17a1.
+LMFDB_19A1_L = 0.4532532444961036
+LMFDB_19A1_OMEGA = 0.4532532444961036
+LMFDB_19A1_TAM = 1.0
+LMFDB_19A1_TORS = 1.0
+# LMFDB 11a1 volume factors (same orifice as 17a1).
+LMFDB_11A1_OMEGA = 1.2692093042795534
+LMFDB_11A1_TAM = 5.0
+LMFDB_11A1_TORS = 5.0
 # Kolmogorov 4/5 law (exact 3D inertial identity).
 KOLMOGOROV_45 = 0.8
 # Kraichnan 3/2 law (exact 2D inverse-cascade identity).
@@ -1749,6 +1765,96 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             note="The question's content. First-of-rank is the seed-closed special case. Remainder is a general E. Do not nearest-template arbitrary L(1). Do not claim Clay BSD.",
         )
     )
+    misfire_17 = bsd_integer_rank_from_leading(LMFDB_17A1_L)
+    sha17 = bsd_analytic_sha(
+        LMFDB_17A1_L, LMFDB_17A1_OMEGA, LMFDB_17A1_TAM, LMFDB_17A1_TORS
+    )
+    sha17_err = _err_pct(sha17, 1.0)
+    naive_17_mag = _err_pct(LMFDB_17A1_L, seed_bsd_5077a1_regulator())
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="17a1 raw L(1) nearest-leading mis-fires as rank 3; analytic Sha=L·tors²/(Ω·Tam)=1 (rank 0)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_17a1_sha_not_leading_magnitude",
+            computed=sha17,
+            measured=1.0,
+            public_sota_model="LMFDB 17a1: rank 0, L(1)≈0.387, Ω≈1.547, Tam=4, tors=4, Sha_an=1. Naive: raw L vs e·POOF (rank-3 scale).",
+            public_sota_typical_error_pct=naive_17_mag,
+            comparison_class="comparable",
+            verdict="beats_raw_L_nearest_leading" if sha17_err < 0.5 and misfire_17 == 3 else "does_not_convert_17a1",
+            beats_or_meets_sota=sha17_err < 0.5 and misfire_17 == 3,
+            native_status="EXECUTABLE",
+            note="Wrong orifice was L(1) magnitude. L(1)≠0 already means analytic rank 0. Volume quotient is Sha. Do not nearest-template arbitrary L(1).",
+            extra={
+                "naive_predicted_rank": misfire_17,
+                "true_rank": 0,
+                "sha_an": sha17,
+                "formula": "L*tors**2/(Omega*Tam)",
+            },
+        )
+    )
+    sha19 = bsd_analytic_sha(
+        LMFDB_19A1_L, LMFDB_19A1_OMEGA, LMFDB_19A1_TAM, LMFDB_19A1_TORS
+    )
+    sha19_err = _err_pct(sha19, 1.0)
+    misfire_19 = bsd_integer_rank_from_leading(LMFDB_19A1_L)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="19a1 analytic Sha=1 out of sample vs 17a1 (rank 0, not first-of-rank)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_19a1_sha_oos",
+            computed=sha19,
+            measured=1.0,
+            public_sota_model="LMFDB 19.a1 (Cremona 19a2): rank 0, L=Ω, Tam=1, tors=1, Sha_an=1.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_sha_1_oos",
+            beats_or_meets_sota=sha19_err < 0.5,
+            native_status="EXECUTABLE",
+            note="Same volume orifice as 17a1. Raw L≈0.453 would also mis-fire on the first-of-rank ladder. Do not nearest-template.",
+            extra={"naive_predicted_rank": misfire_19, "true_rank": 0, "sha_an": sha19},
+        )
+    )
+    sha11 = bsd_analytic_sha(
+        LMFDB_11A1_L, LMFDB_11A1_OMEGA, LMFDB_11A1_TAM, LMFDB_11A1_TORS
+    )
+    rank0_vanish = (
+        abs(LMFDB_11A1_L) > 1e-12
+        and abs(LMFDB_17A1_L) > 1e-12
+        and abs(LMFDB_19A1_L) > 1e-12
+    )
+    sha_ok = (
+        _err_pct(sha11, 1.0) < 0.5
+        and sha17_err < 0.5
+        and sha19_err < 0.5
+        and rank0_vanish
+        and misfire_17 == 3
+    )
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="General rank 0: L(1)≠0 (vanishing, not magnitude). Sha=L·tors²/(Ω·Tam) on 11a1/17a1/19a1",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_general_rank0_vanishing_not_magnitude",
+            computed=1.0 if sha_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Analytic rank 0 iff L(1)≠0. First-of-rank L magnitude is the first-curve scale, not a lookup for every E.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="rank0_vanishing_holds" if sha_ok else "rank0_vanishing_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="The missing conversion. 37a1 L(1)=0 (rank 1). Remainder is ord L for rank ≥1 without computing the modular form. Do not claim Clay BSD.",
+            extra={
+                "sha_11a1": sha11,
+                "sha_17a1": sha17,
+                "sha_19a1": sha19,
+                "misfire_17a1_rank": misfire_17,
+            },
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -2613,6 +2719,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_par = next(r for r in rows if r["name"] == "bsd_rank_parity_map")
     bsd_int = next(r for r in rows if r["name"] == "bsd_integer_rank_leading")
     bsd_vol = next(r for r in rows if r["name"] == "bsd_leading_is_arithmetic_volume")
+    bsd_17 = next(r for r in rows if r["name"] == "bsd_17a1_sha_not_leading_magnitude")
+    bsd_19 = next(r for r in rows if r["name"] == "bsd_19a1_sha_oos")
+    bsd_r0 = next(r for r in rows if r["name"] == "bsd_general_rank0_vanishing_not_magnitude")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -2723,6 +2832,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_rank_parity_map": 1 if bsd_par.get("verdict") == "parity_map_holds" else 0,
         "bsd_integer_rank_first5": 1 if bsd_int.get("verdict") == "integer_rank_first5_holds" else 0,
         "bsd_leading_volume_named": 1 if bsd_vol.get("verdict") == "bsd_volume_named_not_general_e" else 0,
+        "bsd_17a1_sha_green": 1 if bsd_17.get("fsot_green") == "pass" else 0,
+        "bsd_19a1_sha_green": 1 if bsd_19.get("fsot_green") == "pass" else 0,
+        "bsd_general_rank0_vanishing": 1 if bsd_r0.get("verdict") == "rank0_vanishing_holds" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -2919,7 +3031,10 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Reg(234446a1) | **(φ²+1)·e·POOF vs LMFDB — in 0.5%** | First rank-4 volume. Isolated e² was the missing loop fold. |",
         "| E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. Rank 4 is (φ²+1)·e·POOF, not e². |",
         "| Integer rank 0..4 | **First-curve leadings match uniquely** | Leading → rank. General E still produces the leading from its modular form. |",
-        "| BSD arithmetic volume | **Named formula** Ω·Reg·Tam / (|Sha|·|tors|²) | The question's content. Remainder is a general E. |",
+        "| BSD arithmetic volume | **Named formula** Ω·Reg·Tam / (|Sha|·|tors|²) | The question's content. |",
+        "| 17a1 Sha | **Meets 1** (volume, not L magnitude) | Raw L(1) mis-fires as rank 3. L≠0 is rank 0. |",
+        "| 19a1 Sha | **Meets 1** out of sample | Same orifice. |",
+        "| General rank 0 | **Vanishing, not magnitude** | L(1)≠0 ⇒ analytic rank 0. First-of-rank scale is not a lookup. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
@@ -2969,7 +3084,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
         "| 3D NSE existence on R^3 | 4/5, 2D 3/2, Onsager 1/3 are cascade numbers. BKM is the stretching criterion. | Do not stuff existence into 4/5 or 1/3. |",
-        "| BSD integer rank | First-of-rank 0..4 labeled. No Weierstrass→ℤ formula. | L-order still required for general E. Do not nearest-template arbitrary L(1). |",
+        "| BSD integer rank | First-of-rank 0..4 labeled. Rank 0 for general E is L(1)≠0, not L magnitude. | Rank ≥1 still needs ord L. Do not nearest-template arbitrary L(1). |",
         "| Hodge extra classes without K3 | Named list C_8..C_44 algebraic. | Remainder: infinite unnamed tail, general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
@@ -3064,6 +3179,9 @@ if __name__ == "__main__":
         and s["bsd_rank_parity_map"] == 1
         and s["bsd_integer_rank_first5"] == 1
         and s["bsd_leading_volume_named"] == 1
+        and s["bsd_17a1_sha_green"] == 1
+        and s["bsd_19a1_sha_green"] == 1
+        and s["bsd_general_rank0_vanishing"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1

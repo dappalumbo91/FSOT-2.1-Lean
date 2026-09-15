@@ -31,9 +31,15 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
 
 3. **Two systems at rank 2.** Néron-Tate \(\mathrm{Reg}(389\mathrm{a1})=\mathrm{POOF}\) (0.67% WIP) is the height pairing. The BSD *leading* is the special value \(2\pi\cdot\mathrm{POOF}/\sqrt{\varphi}\) (0.16% green). Like BW vs pole / Chen vs AT2020: do not swallow one into the other.
 
-4. **General \(E\).** The leading still comes from the modular form \(L(E)\). Nearest-template of an arbitrary \(L(1)\) against the first-of-rank ladder mis-fires (17a1 \(L(1)\approx 0.387\) looks like rank 3). There is no Weierstrass-coefficient → \(\mathbb{Z}\) seed map.
+4. **General rank 0 (the 17a1 conversion).** Raw \(L(1)\) magnitude is the wrong orifice. \(L(1)\neq 0\) already means analytic rank 0. 17a1 \(L(1)\approx 0.387\) looks like rank-3 \(e\cdot\mathrm{POOF}\) on the first-of-rank ladder; the arithmetic volume
+   \[
+   \mathrm{Sha}_{\mathrm{an}}=\frac{L(1)\cdot|E_{\mathrm{tors}}|^2}{\Omega\cdot\prod c_p}
+   \]
+   is **1**. 19a1 is the same orifice out of sample. First-of-rank \(L(11\mathrm{a1},1)=\sqrt{\varphi}/D_{\mathrm{particle}}\) is the *first-curve scale*, not a lookup table for every \(L(1)\).
 
-**Remainder:** produce the leading of a general \(E\) from its arithmetic (conductor, \(\Omega\), Tamagawa, torsion) without stuffing a nearest-neighbor on \(L(1)\). That *is* Clay BSD for general \(E\).
+5. **Rank \(\ge 1\).** \(L(1)=0\). Integer rank is still \(\mathrm{ord}_{s=1}L\). No Weierstrass-coefficient → \(\mathbb{Z}\) seed map.
+
+**Remainder:** \(\mathrm{ord}\,L\) for rank \(\ge 1\) without computing the modular form. That *is* Clay BSD for positive rank.
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 
@@ -46,8 +52,9 @@ Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays 
 | Arena | All \(E/\mathbb{Q}\) | First curve of each rank \(0..4\) + parity |
 | Question | \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\) | What is the leading number that *labels* those first ranks? |
 | Parity | Functional equation | \(w_E\mapsto\mathrm{rank}\pmod{2}\) |
-| Integer rank | \(\mathrm{ord}\,L\) | Nearest seed leading on the first-of-rank ladder only |
-| General \(E\) | The theorem | Still produces the leading from \(L(E)\) |
+| Integer rank | \(\mathrm{ord}\,L\) | First-of-rank ladder for the first curves; rank 0 is \(L(1)\neq 0\) |
+| General rank 0 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 17a1/19a1 (not \(L\) magnitude) |
+| Rank \(\ge 1\) | The theorem | Still \(\mathrm{ord}\,L\) from the modular form |
 | Status | Open prize problem | Ladder **executable**; general \(E\) **OPEN_NOT_CLAIMED** |
 
 Forbidden: “we proved Millennium BSD because five Cremona curves match.” Allowed: parity + first-of-rank leadings. Do not \(\pi^2\cdot\mathrm{POOF}\) on rank 4. Do not nearest-template arbitrary \(L(1)\).

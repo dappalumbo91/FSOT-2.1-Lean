@@ -25,7 +25,7 @@ Each Clay problem is a *question about reality*. FSOT answers that question in n
 | **Yang–Mills** | Why no massless gluons / free quarks? | Gap scale \(m/\sqrt{\sigma}=\varphi^2+1\). Free color is not an attractor. Teper is a check of the σ-unit orifice \(\varphi^2+1+\mathrm{POOF}/D\), not the question. | Clay Wightman theory on \(\mathbb{R}^4\) |
 | **Navier–Stokes** | Do 3D NSE solutions stay smooth, or can stretching blow up? | 2D \(3/2\); 3D \(4/5=1-1/D_{\mathrm{particle}}\); Onsager \(1/3\); BKM: blow-up iff \(\int\|\omega\|_\infty dt\) diverges. | Whether viscosity keeps vorticity BKM-integrable |
 | **Riemann** | Do all non-trivial zeros have real part \(1/2\)? | \(t_1=e/\gamma^3\); C-lock; \(\lvert S\rvert\le 1/e\); typical \(\lvert S\rvert=\mathrm{POOF}\); signed jitter prime-2+3. | The line for *all* zeros |
-| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Parity from \(w_E\). First-of-rank leadings label \(0..4\). Rank 4 is \((\varphi^2+1)\cdot e\cdot\mathrm{POOF}\). | Leading of a *general* \(E\) from \(L(E)\) |
+| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Parity from \(w_E\). First-of-rank 0..4. Rank 0 is \(L(1)\neq 0\) (17a1 Sha=1, not magnitude). | \(\mathrm{ord}\,L\) for rank \(\ge 1\) |
 | **Hodge** | Are Hodge classes algebraic cycles? | Lefschetz; associated K3; named extra classes \(C_8..C_{44}\) are the named surfaces. | Unnamed later \(C_d\); general 4-folds |
 | **P vs NP** | Is verifying as hard as searching? | Grover \(1/2\) (QI); Cook–Levin SAT named. | Search vs verification as Clay |
 

@@ -11,7 +11,7 @@
 | **Path integral** | Discrete path-sum (valve branches + \(a_0/\gamma\)) | Deeper native sum; classical YM still named | “Millennium theorem proved” |
 | **Millennium SOTA vs 0.5%** | Named Hodge extra classes \(C_8\)..\(C_{44}\) algebraic; BSD first-of-rank 0..4 labeled. | WIP SOTA beats stay outside 0.5% until the object is right | Enumerating infinite Hassett tail; Clay Prize; stuffing a WIP beat into the green gate |
 | **NSE (tracked)** | Kolmogorov 4/5, Kraichnan 3/2, Onsager 1/3 exact. BKM named. | Global-in-time = BKM-integrable stretching | Stuffing existence into 4/5 or 1/3 |
-| **BSD general \(E\) (tracked next)** | First-of-rank ladder 0..4 unique. Parity from \(w_E\). | Leading of a general \(E\) from its modular form | Nearest-template arbitrary \(L(1)\) |
+| **BSD rank \(\ge 1\) (tracked)** | Rank 0 is \(L(1)\neq 0\) (17a1/19a1 Sha=1). First-of-rank 0..4 labeled. | \(\mathrm{ord}\,L\) for rank \(\ge 1\) | Nearest-template arbitrary \(L(1)\) |
 
 Same fluid. Not a second physics. Wrong object is still wrong object.
 

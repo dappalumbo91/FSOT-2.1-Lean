@@ -874,11 +874,32 @@ def seed_bsd_leading_of_rank(rank: int) -> float:
     raise ValueError("seed leading for rank 0..4 only")
 
 
+def bsd_analytic_sha(
+    L_leading: float,
+    omega: float,
+    tamagawa: float,
+    torsion: float,
+    regulator: float = 1.0,
+) -> float:
+    """Analytic Sha = L · |tors|² / (Ω · Tam · Reg).
+
+    Rank-0 BSD volume. 17a1 raw L(1)≈0.387 mis-fires as rank 3 on the
+    first-of-rank ladder; the quotient is 1. Magnitude of L(1) is the
+    wrong orifice. L(1)≠0 already means analytic rank 0.
+    """
+    return (
+        float(L_leading)
+        * float(torsion) ** 2
+        / (float(omega) * float(tamagawa) * float(regulator))
+    )
+
+
 def bsd_integer_rank_from_leading(value: float) -> int:
     """Integer rank = nearest seed leading among r=0..4.
 
     For the first curve of each of those ranks the match is unique.
-    Not a Weierstrass→ℤ formula; the leading comes from L(E).
+    Not a Weierstrass→ℤ formula. Do not run on arbitrary L(1)
+    (17a1 is rank 0; magnitude looks like rank 3).
     """
     best_r, best = 0, float("inf")
     v = float(value)
