@@ -13,6 +13,7 @@ import os
 import shutil
 import subprocess
 import sys
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -34,6 +35,15 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def _rust_cargo_env() -> dict[str, str]:
+    """Host temp target dir — in-repo target/ exe stays mapped on Windows (LNK1104)."""
+    env = os.environ.copy()
+    target = Path(tempfile.gettempdir()) / "fsot_uniqueness_research_replay_target"
+    target.mkdir(parents=True, exist_ok=True)
+    env["CARGO_TARGET_DIR"] = str(target)
+    return env
+
+
 def main() -> int:
     print("=== Uniqueness research multi-prover verification ===")
     r = subprocess.run([sys.executable, str(GEN)], cwd=str(ROOT))
@@ -50,13 +60,18 @@ def main() -> int:
     rust_status = "skipped"
     rust_detail = ""
     if (RUST / "Cargo.toml").exists() and shutil.which("cargo"):
+        rust_env = _rust_cargo_env()
+        in_repo_target = RUST / "target"
         rr = None
-        for _attempt in range(2):
+        for attempt in range(3):
+            if attempt == 1 and in_repo_target.is_dir():
+                shutil.rmtree(in_repo_target, ignore_errors=True)
             rr = subprocess.run(
                 ["cargo", "test", "--manifest-path", str(RUST / "Cargo.toml"), "--", "--nocapture"],
                 cwd=str(ROOT),
                 capture_output=True,
                 text=True,
+                env=rust_env,
             )
             if rr.returncode == 0:
                 break

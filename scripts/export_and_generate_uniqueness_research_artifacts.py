@@ -686,7 +686,7 @@ def gen_fstar(obs: list[dict]) -> str:
             v = int(ob["value"])
             lines.append(f"let {oid}_ok : squash (0 < {v}) = ()")
             n += 1
-        if n >= 120:
+        if n >= 256:
             break
     lines.append("")
     lines.append(f"(* emitted {n} F* squash certificates *)")

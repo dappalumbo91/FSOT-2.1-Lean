@@ -9,7 +9,9 @@
 | **Prices** | Economics class residuals + \(d=20\) process window | Dated quiet/storm market windows, then finer dt | Ticker close / crash date as 0.5% |
 | **Sickness** | Epidemiology class 0.015%; host+pathogen coupling smoke | Genetics two-system product on public genomes | Person-level onset as 0.5% |
 | **Path integral** | Discrete path-sum (valve branches + \(a_0/\gamma\)) | Deeper native sum; classical YM still named | “Millennium theorem proved” |
-| **Millennium SOTA vs 0.5%** | Named Hodge extra classes \(C_8\)..\(C_{44}\) algebraic; BSD first-of-rank 0..4 labeled. Next dig: NSE global-in-time, general \(E\). | WIP SOTA beats stay outside 0.5% until the object is right | Enumerating infinite Hassett tail; Clay Prize; stuffing a WIP beat into the green gate |
+| **Millennium SOTA vs 0.5%** | Named Hodge extra classes \(C_8\)..\(C_{44}\) algebraic; BSD first-of-rank 0..4 labeled. | WIP SOTA beats stay outside 0.5% until the object is right | Enumerating infinite Hassett tail; Clay Prize; stuffing a WIP beat into the green gate |
+| **NSE (tracked next)** | Kolmogorov 4/5 \(=1-1/D_{\mathrm{particle}}\) exact. 2D enstrophy named. | Global-in-time on \(\mathbb{R}^3\) | Stuffing existence into 4/5 |
+| **BSD general \(E\) (tracked next)** | First-of-rank ladder 0..4 unique. Parity from \(w_E\). | Leading of a general \(E\) from its modular form | Nearest-template arbitrary \(L(1)\) |
 
 Same fluid. Not a second physics. Wrong object is still wrong object.
 

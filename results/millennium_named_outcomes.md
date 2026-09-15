@@ -54,8 +54,12 @@ Did not enumerate the infinite unnamed Hassett tail. Did not steal \(25-1\) for 
 
 Rank-4 volume uses the **same** \(\varphi^2+1\) closed-loop fold as the isolated glueball \(m(0++)/\sqrt{\sigma}\). That is APPLY step 2 (interacting systems), not a new knob.
 
-## Still open (next run)
+## Still open (tracked — next run)
 
-- NSE global-in-time on \(\mathbb{R}^3\) (4/5 is the cascade number)
-- BSD for a *general* \(E\)
-- Unnamed later \(C_d\) and general 4-folds
+Do not drop these. Named Hodge \(C_d\) is done; these are the leftover objects.
+
+| ID | Object | Why it stayed | Kill |
+|----|--------|---------------|------|
+| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | 4/5 cascade is the 3D number. Global-in-time is a different object. | Stuffing existence into 4/5 |
+| BSD-RANK | integer rank of a general \(E\) | First-of-rank 0..4 labeled. General \(E\) still produces the leading from its modular form. | Nearest-template arbitrary \(L(1)\) (17a1 mis-fires) |
+| HODGE-TAIL | unnamed Hassett \(C_d\) after 44 + general 4-folds | Nuer stops naming at 44. Infinite later \(C_d\) have no named surface. | Enumerating the tail until it looks green |
