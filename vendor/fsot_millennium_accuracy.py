@@ -230,6 +230,22 @@ LMFDB_61A1_OMEGA = 6.133193148394534
 LMFDB_61A1_REG = 0.07918773136204194
 LMFDB_61A1_TAM = 1.0
 LMFDB_61A1_TORS = 1.0
+# LMFDB 389a1 rank-2 volume (first-of-rank special).
+LMFDB_389A1_OMEGA = 4.980425121710110
+LMFDB_389A1_TAM = 1.0
+LMFDB_389A1_TORS = 1.0
+# LMFDB 643a1: rank 2, not first-of-rank. Raw L''/2! mis-fires as rank 4.
+LMFDB_643A1_SPECIAL = 1.1482617365489983
+LMFDB_643A1_OMEGA = 5.010313433142889
+LMFDB_643A1_REG = 0.22917962156884708
+LMFDB_643A1_TAM = 1.0
+LMFDB_643A1_TORS = 1.0
+# LMFDB 433a1: rank 2, out of sample vs 643a1.
+LMFDB_433A1_SPECIAL = 0.9470207808658145
+LMFDB_433A1_OMEGA = 4.214710192998484
+LMFDB_433A1_REG = 0.22469416341816674
+LMFDB_433A1_TAM = 1.0
+LMFDB_433A1_TORS = 1.0
 # Kolmogorov 4/5 law (exact 3D inertial identity).
 KOLMOGOROV_45 = 0.8
 # Kraichnan 3/2 law (exact 2D inverse-cascade identity).
@@ -1961,12 +1977,109 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="rank1_vanishing_holds" if rank1_ok else "rank1_vanishing_fails",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="The rank ≥1 conversion. Remainder is rank ≥2 (L' also vanishes). Do not claim Clay BSD.",
+            note="The rank-1 conversion. Remainder is rank ≥2 (L' also vanishes).",
             extra={
                 "sha_37a1": sha37,
                 "sha_53a1": sha53,
                 "sha_61a1": sha61,
                 "misfire_53a1_rank": misfire_53,
+            },
+        )
+    )
+    misfire_643 = bsd_integer_rank_from_leading(LMFDB_643A1_SPECIAL)
+    sha643 = bsd_analytic_sha(
+        LMFDB_643A1_SPECIAL,
+        LMFDB_643A1_OMEGA,
+        LMFDB_643A1_TAM,
+        LMFDB_643A1_TORS,
+        LMFDB_643A1_REG,
+    )
+    sha643_err = _err_pct(sha643, 1.0)
+    naive_643_mag = _err_pct(LMFDB_643A1_SPECIAL, seed_bsd_234446a1_regulator())
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="643a1 raw L''(1)/2! nearest-leading mis-fires as rank 4; analytic Sha=L''/2!·tors²/(Ω·Reg·Tam)=1 (rank 2)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_643a1_sha_not_special_magnitude",
+            computed=sha643,
+            measured=1.0,
+            public_sota_model="LMFDB 643a1: rank 2, L''(1)/2!≈1.148, Ω≈5.010, Reg≈0.229, Tam=1, tors=1, Sha_an=1. Naive: raw special vs (φ²+1)·e·POOF (rank-4 scale).",
+            public_sota_typical_error_pct=naive_643_mag,
+            comparison_class="comparable",
+            verdict="beats_raw_special_nearest_leading" if sha643_err < 0.5 and misfire_643 == 4 else "does_not_convert_643a1",
+            beats_or_meets_sota=sha643_err < 0.5 and misfire_643 == 4,
+            native_status="EXECUTABLE",
+            note="Same conversion as 17a1/53a1, now at rank 2. L=L'=0 and L''≠0 is rank 2. Magnitude of the special is the wrong orifice.",
+            extra={
+                "naive_predicted_rank": misfire_643,
+                "true_rank": 2,
+                "sha_an": sha643,
+                "formula": "special*tors**2/(Omega*Reg*Tam)",
+            },
+        )
+    )
+    sha433 = bsd_analytic_sha(
+        LMFDB_433A1_SPECIAL,
+        LMFDB_433A1_OMEGA,
+        LMFDB_433A1_TAM,
+        LMFDB_433A1_TORS,
+        LMFDB_433A1_REG,
+    )
+    sha433_err = _err_pct(sha433, 1.0)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="433a1 analytic Sha=1 out of sample vs 643a1 (rank 2, not first-of-rank)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_433a1_sha_oos",
+            computed=sha433,
+            measured=1.0,
+            public_sota_model="LMFDB 433a1: rank 2, L''(1)/2!≈0.947, Ω≈4.215, Reg≈0.225, Tam=1, tors=1, Sha_an=1.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_sha_1_rank2_oos",
+            beats_or_meets_sota=sha433_err < 0.5,
+            native_status="EXECUTABLE",
+            note="Same volume orifice as 643a1. Do not nearest-template the special.",
+            extra={"true_rank": 2, "sha_an": sha433},
+        )
+    )
+    sha389 = bsd_analytic_sha(
+        LMFDB_389A1_SPECIAL,
+        LMFDB_389A1_OMEGA,
+        LMFDB_389A1_TAM,
+        LMFDB_389A1_TORS,
+        LMFDB_389A1_REG,
+    )
+    rank2_ok = (
+        _err_pct(sha389, 1.0) < 0.5
+        and sha643_err < 0.5
+        and sha433_err < 0.5
+        and misfire_643 == 4
+        and abs(LMFDB_643A1_SPECIAL) > 1e-12
+        and abs(LMFDB_433A1_SPECIAL) > 1e-12
+    )
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="General rank 2: L=L'=0 and L''≠0 (vanishing order, not special magnitude). Sha on 389a1/643a1/433a1",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_general_rank2_vanishing_not_magnitude",
+            computed=1.0 if rank2_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Analytic rank 2 iff L vanishes twice. First-of-rank L''(389a1)/2!=2π·POOF/√φ is the first-curve scale, not a lookup.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="rank2_vanishing_holds" if rank2_ok else "rank2_vanishing_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="The rank-2 conversion. Remainder is rank ≥3 (L'' also vanishes). Do not claim Clay BSD.",
+            extra={
+                "sha_389a1": sha389,
+                "sha_643a1": sha643,
+                "sha_433a1": sha433,
+                "misfire_643a1_rank": misfire_643,
             },
         )
     )
@@ -2840,6 +2953,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_53 = next(r for r in rows if r["name"] == "bsd_53a1_sha_not_Lprime_magnitude")
     bsd_61 = next(r for r in rows if r["name"] == "bsd_61a1_sha_oos")
     bsd_r1 = next(r for r in rows if r["name"] == "bsd_general_rank1_vanishing_not_magnitude")
+    bsd_643 = next(r for r in rows if r["name"] == "bsd_643a1_sha_not_special_magnitude")
+    bsd_433 = next(r for r in rows if r["name"] == "bsd_433a1_sha_oos")
+    bsd_r2 = next(r for r in rows if r["name"] == "bsd_general_rank2_vanishing_not_magnitude")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -2956,6 +3072,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_53a1_sha_green": 1 if bsd_53.get("fsot_green") == "pass" else 0,
         "bsd_61a1_sha_green": 1 if bsd_61.get("fsot_green") == "pass" else 0,
         "bsd_general_rank1_vanishing": 1 if bsd_r1.get("verdict") == "rank1_vanishing_holds" else 0,
+        "bsd_643a1_sha_green": 1 if bsd_643.get("fsot_green") == "pass" else 0,
+        "bsd_433a1_sha_green": 1 if bsd_433.get("fsot_green") == "pass" else 0,
+        "bsd_general_rank2_vanishing": 1 if bsd_r2.get("verdict") == "rank2_vanishing_holds" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -3158,7 +3277,10 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| General rank 0 | **Vanishing, not magnitude** | L(1)≠0 ⇒ analytic rank 0. First-of-rank scale is not a lookup. |",
         "| 53a1 Sha | **Meets 1** (volume, not L' magnitude) | Raw L' mis-fires as rank 3. L=0 and L'≠0 is rank 1. |",
         "| 61a1 Sha | **Meets 1** out of sample | Same orifice. |",
-        "| General rank 1 | **Vanishing order, not L' magnitude** | L(1)=0, L'≠0. Remainder is rank ≥2. |",
+        "| General rank 1 | **Vanishing order, not L' magnitude** | L(1)=0, L'≠0. |",
+        "| 643a1 Sha | **Meets 1** (volume, not special magnitude) | Raw L''/2! mis-fires as rank 4. |",
+        "| 433a1 Sha | **Meets 1** out of sample | Same orifice. |",
+        "| General rank 2 | **Vanishing order, not special magnitude** | L=L'=0, L''≠0. Remainder is rank ≥3. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
@@ -3208,7 +3330,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
         "| 3D NSE existence on R^3 | 4/5, 2D 3/2, Onsager 1/3 are cascade numbers. BKM is the stretching criterion. | Do not stuff existence into 4/5 or 1/3. |",
-        "| BSD integer rank | First-of-rank 0..4 labeled. Rank 0 is L≠0; rank 1 is L=0 and L'≠0, not magnitudes. | Rank ≥2 still needs further vanishing. Do not nearest-template. |",
+        "| BSD integer rank | First-of-rank 0..4 labeled. Rank 0/1/2 are vanishing order, not leading magnitudes. | Rank ≥3 still needs further vanishing. Do not nearest-template. |",
         "| Hodge extra classes without K3 | Named list C_8..C_44 algebraic. | Remainder: infinite unnamed tail, general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
@@ -3309,6 +3431,9 @@ if __name__ == "__main__":
         and s["bsd_53a1_sha_green"] == 1
         and s["bsd_61a1_sha_green"] == 1
         and s["bsd_general_rank1_vanishing"] == 1
+        and s["bsd_643a1_sha_green"] == 1
+        and s["bsd_433a1_sha_green"] == 1
+        and s["bsd_general_rank2_vanishing"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1

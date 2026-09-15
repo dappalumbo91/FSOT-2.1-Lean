@@ -43,9 +43,15 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
    \]
    is **1**. 61a1 is the same orifice out of sample. First-of-rank \(L'(37\mathrm{a1},1)=2\cdot\mathrm{POOF}\) is the *first-curve* scale, not a lookup for every \(L'\).
 
-6. **Rank \(\ge 2\).** \(L'(1)=0\) as well. Integer rank is still further vanishing of \(L\). No Weierstrass-coefficient → \(\mathbb{Z}\) seed map.
+6. **General rank 2 (the 643a1 conversion).** \(L=L'=0\) and \(L''\neq 0\). Raw \(L''(643\mathrm{a1},1)/2!\approx 1.148\) looks like rank-4 \((\varphi^2+1)\cdot e\cdot\mathrm{POOF}\); the volume
+   \[
+   \mathrm{Sha}_{\mathrm{an}}=\frac{L''(1)/2!\cdot|E_{\mathrm{tors}}|^2}{\Omega\cdot\mathrm{Reg}\cdot\prod c_p}
+   \]
+   is **1**. 433a1 is the same orifice out of sample. First-of-rank \(L''(389\mathrm{a1},1)/2!=2\pi\cdot\mathrm{POOF}/\sqrt{\varphi}\) is the *first-curve* scale, not a lookup.
 
-**Remainder:** \(\mathrm{ord}\,L\) for rank \(\ge 2\) (L' also vanishes) without computing the modular form.
+7. **Rank \(\ge 3\).** \(L''(1)=0\) as well. Integer rank is still further vanishing of \(L\). No Weierstrass-coefficient → \(\mathbb{Z}\) seed map.
+
+**Remainder:** \(\mathrm{ord}\,L\) for rank \(\ge 3\) without computing the modular form.
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 
@@ -61,7 +67,8 @@ Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays 
 | Integer rank | \(\mathrm{ord}\,L\) | First-of-rank ladder for the first curves; rank 0 is \(L(1)\neq 0\) |
 | General rank 0 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 17a1/19a1 (not \(L\) magnitude) |
 | General rank 1 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 53a1/61a1 (not \(L'\) magnitude) |
-| Rank \(\ge 2\) | The theorem | Still further vanishing of \(L\) |
+| General rank 2 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 643a1/433a1 (not special magnitude) |
+| Rank \(\ge 3\) | The theorem | Still further vanishing of \(L\) |
 | Status | Open prize problem | Ladder **executable**; general \(E\) **OPEN_NOT_CLAIMED** |
 
 Forbidden: “we proved Millennium BSD because five Cremona curves match.” Allowed: parity + first-of-rank leadings. Do not \(\pi^2\cdot\mathrm{POOF}\) on rank 4. Do not nearest-template arbitrary \(L(1)\).

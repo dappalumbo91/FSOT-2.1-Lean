@@ -18,7 +18,7 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
 | NSE-CLAY | — | 3D NSE existence on R^3 | 4/5 (3D), 3/2 (2D inverse), Onsager 1/3 are cascade numbers. BKM is the stretching criterion. Global-in-time is whether \(\int\|\omega\|_\infty dt\) stays finite. | Did not stuff existence into 4/5 or 1/3. Did not put \(D_{\mathrm{particle}}\) on 2D. |
 | PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid | **Superseded object:** Atomic well \(D=6\) gave 5.43%. Continuum solid is Molecular \(D=7\), \(\nu=7/25=0.28\). | Did not put Atomic back to 7. |
-| BSD-RANK | — | \(\mathrm{ord}\,L\) for rank \(\ge 2\) | Rank 0 is \(L\neq 0\). Rank 1 is \(L=0,L'\neq 0\); 53a1 raw \(L'\) mis-fires as rank 3, \(\mathrm{Sha}_{\mathrm{an}}=1\). 61a1 oos. | Did not nearest-template \(L'\) magnitude. |
+| BSD-RANK | — | \(\mathrm{ord}\,L\) for rank \(\ge 3\) | Rank 0/1/2 are vanishing order. 643a1 raw \(L''/2!\) mis-fires as rank 4; \(\mathrm{Sha}_{\mathrm{an}}=1\). 433a1 oos. | Did not nearest-template special magnitude. |
 | HODGE-CLASS | — | Unnamed Hassett tail and general 4-folds | Named extra classes \(C_8\) through \(C_{44}\) (last: Fano Enriques) are algebraic. Public SOTA (Nuer) stops naming at 44. Infinite later \(C_d\) have no named surface. General 4-folds remain. | Did not enumerate the infinite tail. Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
 
 Dated public scoreboard kills live in [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md). Do not rewrite issued JSON.
