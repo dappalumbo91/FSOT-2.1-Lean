@@ -711,6 +711,25 @@ def seed_hassett_d_coble() -> float:
     return L2 * S2 - H2 * H2
 
 
+def seed_hassett_d_bl11() -> float:
+    """Hassett discriminant of a cubic containing Bl_11 P² = 32.
+
+    Generic C_32 contains S=Bl_11 P² (Nuer: p=L_5=11) with degree
+    H²=L_2+L_4=10 and H·K=0. S² from Hassett c2. Gram [[3,10],[10,44]],
+    disc=32. Extra class is [S], algebraic. 4|32 so no associated K3.
+    Isolated 4·8 is padding. Do not steal 25−1 for K3.
+    """
+    L2 = seed_lucas(2)
+    L4 = seed_lucas(4)
+    p = seed_lucas(5)
+    H2 = L2 + L4
+    HK = 0.0
+    K2 = L2 ** 2 - p
+    chi = L2 + p
+    S2 = 6.0 * H2 + 3.0 * HK + K2 - chi
+    return L2 * S2 - H2 * H2
+
+
 def hassett_C_d_nonempty(d: int) -> bool:
     """Hassett: C_d nonempty iff d>6 and d≡0 or 2 (mod 6)."""
     n = int(d)

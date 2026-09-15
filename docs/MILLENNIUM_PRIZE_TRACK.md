@@ -46,7 +46,7 @@ Machine flags in this repo (all honest zeros except remaining=6 and Poincaré hi
 | **P versus NP** | Proof that P=NP or P≠NP | Grover \(1/2\) (QI); Cook–Levin SAT named. Not P=?NP. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
 | **Riemann hypothesis** | All non-trivial zeros of \(\zeta\) have real part \(1/2\) | C-lock; \(\lvert S\rvert\le 1/e\); typical \(\lvert S\rvert=\mathrm{POOF}\); signed jitter \(\mathrm{sign}(\sin(T\ln 2))\cdot\mathrm{POOF}\) envelope. Not RH. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
 | **Birch and Swinnerton-Dyer** | Rank of \(E(\mathbb{Q})\) equals order of vanishing of \(L(E,s)\) at \(s=1\) | Parity from \(w_E\). First-of-rank leadings 0..4. \(\mathrm{Reg}(234446a1)=(\varphi^2+1)\cdot e\cdot\mathrm{POOF}\). General \(E\) still needs \(\mathrm{ord}\,L\). | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
-| **Hodge conjecture** | Hodge classes on a projective complex manifold are algebraic cycles (rational) | Lefschetz; associated K3; \(C_8\) through \(C_{30}\) extra classes algebraic. Remainder: later extra discriminants, general 4-folds. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
+| **Hodge conjecture** | Hodge classes on a projective complex manifold are algebraic cycles (rational) | Lefschetz; associated K3; \(C_8\) through \(C_{32}\) extra classes algebraic. Named remainder: \(C_{36}\), \(C_{44}\) (Enriques). Then an infinite Hassett tail. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
 
 “We already solved some of these” is true **only** for the *native* column (YM path-sum, NS transport coefficients, Riemann first-zero residual, Grover 1/2). It is **false** for the Clay column. Same Perfect Host discipline: wrong object is a false kill *and* a false win.
 

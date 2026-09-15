@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T12:25:04.700640+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T12:29:32.941351+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,9 +18,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 38 |
-| …of those, inside FSOT 0.5% green | 32 |
-| …of those, inside 0.05% aspiration | 23 |
+| Beats or meets public SOTA | 39 |
+| …of those, inside FSOT 0.5% green | 33 |
+| …of those, inside 0.05% aspiration | 24 |
 | **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
@@ -100,6 +100,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Hodge conjecture | Extra Hodge class on C_24 is [nodal sextic del Pezzo], algebraic; 4|d so no associated K3 | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Hassett discriminant of a cubic containing Bl_10 P² (Coble nodes) = L_2 S² − (L_2²)² = 30 | 1.421e-13 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Extra Hodge class on C_30 is [Bl_10 P²], algebraic; 5|d with 5≡2 (mod 3) so no associated K3 | 0 | — | — | n/a | n/a | structure |
+| Hodge conjecture | Hassett discriminant of a cubic containing Bl_11 P² = L_2 S² − (L_2+L_4)² = 32 | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Hodge conjecture | Extra Hodge class on C_32 is [Bl_11 P²], algebraic; 4|d so no associated K3 | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Primitive (2,2) on a cubic 4-fold — first open hypersurface case after Grassmannians | — | — | — | n/a | n/a | structure |
 
 ## What this does and does not say
@@ -162,7 +164,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Hassett C_24 discriminant | **Meets 24** (L_2(L_6+2) − (2 L_2)²) | Nodal sextic del Pezzo Gram [[3,6],[6,20]]. Isolated χ(K3) is padding. |
 | C_24 extra class | **[nodal sextic del Pezzo], algebraic** | Subvariety. Two nodes on L_6. |
 | Hassett C_30 discriminant | **Meets 30** (Coble Bl_10 P² Gram [[3,9],[9,37]]) | 10=pa of a plane sextic. Isolated 5·6 is padding. |
-| C_30 extra class | **[Bl_10 P²], algebraic** | Subvariety. 5|d, 5≡2 (mod 3) so no K3. Remainder: C_32, C_36, … |
+| C_30 extra class | **[Bl_10 P²], algebraic** | Subvariety. 5|d, 5≡2 (mod 3) so no K3. |
+| Hassett C_32 discriminant | **Meets 32** (Bl_11 P² Gram [[3,10],[10,44]]) | p=L_5, H²=L_2+L_4. Isolated 4·8 is padding. |
+| C_32 extra class | **[Bl_11 P²], algebraic** | Subvariety. 4|d so no K3. Named remainder: C_36, C_44. |
 | Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |
 | NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |
 
@@ -178,7 +182,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |
 | 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |
 | BSD integer rank | First-of-rank 0..4 labeled. No Weierstrass→ℤ formula. | L-order still required for general E. Do not nearest-template arbitrary L(1). |
-| Hodge extra classes without K3 | C_8 [plane] through C_30 [Bl_10 P²] algebraic. | Remainder: C_32, C_36, later extra discriminants, general 4-folds. Do not steal 25−1 for K3. |
+| Hodge extra classes without K3 | C_8 through C_32 algebraic. | Named remainder: C_36, C_44 (Enriques). Then an infinite Hassett tail. Do not steal 25−1 for K3. |
 | P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |
 
 ## Reproduce
@@ -191,4 +195,4 @@ python scripts/run_goal_tracks_verification.py
 Prize-process flags (separate file, all honest): [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md).
 Yang–Mills object split: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).
 
-Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), BSD general E (first-of-rank 0..4 labeled), later extra Hodge discriminants (C_32, C_36…). Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, Reg(234446a1)=(φ²+1)·e·POOF, χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue–flavor 2×2 V=POOF·K; isolated (φ²+1)·K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. E→rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.
+Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), BSD general E (first-of-rank 0..4 labeled), named extra Hodge without K3: C_36, C_44 (Enriques); then an infinite Hassett tail. Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, Reg(234446a1)=(φ²+1)·e·POOF, χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue–flavor 2×2 V=POOF·K; isolated (φ²+1)·K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. E→rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.
