@@ -49,6 +49,7 @@ try:
         seed_hassett_d_scroll,
         seed_hassett_d_elliptic,
         seed_hassett_d_veronese,
+        seed_hassett_d_sextic,
         hassett_C_d_nonempty,
         hassett_associated_k3,
         seed_cp2_euler,
@@ -99,6 +100,7 @@ except ImportError:  # pragma: no cover
         seed_hassett_d_scroll,
         seed_hassett_d_elliptic,
         seed_hassett_d_veronese,
+        seed_hassett_d_sextic,
         hassett_C_d_nonempty,
         hassett_associated_k3,
         seed_cp2_euler,
@@ -2170,13 +2172,67 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="c20_veronese_algebraic_no_k3" if c20_ok else "c20_veronese_fails",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="Fourth extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Remainder is later extra discriminants (C_24, …) and general 4-folds. Do not steal 25−1 for K3.",
+            note="Fourth extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Next without K3 is C_24 (nodal sextic del Pezzo). Do not steal 25−1 for K3.",
             extra={
                 "C_20_nonempty": c20_nonempty,
                 "associated_k3": hassett_associated_k3(20),
                 "no_k3_after_20": [
                     d
                     for d in range(21, 40)
+                    if hassett_C_d_nonempty(d) and not hassett_associated_k3(d)
+                ],
+            },
+        )
+    )
+    d24 = seed_hassett_d_sextic()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Hassett discriminant of a cubic containing a nodal sextic del Pezzo = L_2(L_6+2) − (2 L_2)² = 24",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_d24",
+            computed=d24,
+            measured=24.0,
+            public_sota_model="Hassett C_24: cubics containing a nodal sextic del Pezzo W (equivalently two-nodal sextic scroll). Gram [[3,6],[6,20]], disc=24. 4|24 so no associated K3.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_hassett_d24",
+            beats_or_meets_sota=abs(d24 - 24.0) < 1e-9,
+            native_status="EXECUTABLE",
+            note="Intersection pairing of the extra class, not χ(K3)=24 or 8·3 padding. Degree 6=2 L_2. (W,W)=L_6+2=20 (two nodes). Twisted degree-6 K3 is a different object. Do not steal 25−1 for K3.",
+            extra={
+                "formula": "L2*(L6+2) - (2*L2)**2",
+                "L2": 3,
+                "L6": 18,
+                "nodes": 2,
+                "gram": [[3, 6], [6, 20]],
+            },
+        )
+    )
+    c24_nonempty = hassett_C_d_nonempty(24)
+    c24_no_k3 = not hassett_associated_k3(24)
+    c24_ok = c24_nonempty and c24_no_k3 and abs(d24 - 24.0) < 1e-9
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Extra Hodge class on C_24 is [nodal sextic del Pezzo], algebraic; 4|d so no associated K3",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_c24_sextic_algebraic",
+            computed=1.0 if c24_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Hassett 2024: C_24 nonempty, 4|24 ⇒ no associated K3. Extra (2,2) class is a nodal sextic del Pezzo / two-nodal sextic scroll.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="c24_sextic_algebraic_no_k3" if c24_ok else "c24_sextic_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Fifth extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Remainder is later extra discriminants (C_30, C_32, …) and general 4-folds. Do not steal 25−1 for K3.",
+            extra={
+                "C_24_nonempty": c24_nonempty,
+                "associated_k3": hassett_associated_k3(24),
+                "no_k3_after_24": [
+                    d
+                    for d in range(25, 40)
                     if hassett_C_d_nonempty(d) and not hassett_associated_k3(d)
                 ],
             },
@@ -2196,7 +2252,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="cubic4_primitive_named_remainder",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="C_8 [plane], C_12 [scroll], C_18 [elliptic ruled], C_20 [Veronese] extra classes are algebraic. Remainder is later extra discriminants without K3 (C_24, …) and general 4-folds. Do not steal 25−1 for K3.",
+            note="C_8 [plane], C_12 [scroll], C_18 [elliptic ruled], C_20 [Veronese], C_24 [nodal sextic del Pezzo] extra classes are algebraic. Remainder is later extra discriminants without K3 (C_30, C_32, …) and general 4-folds. Do not steal 25−1 for K3.",
         )
     )
     return rows
@@ -2269,6 +2325,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_c18 = next(r for r in rows if r["name"] == "hodge_hassett_c18_elliptic_algebraic")
     hodge_d20 = next(r for r in rows if r["name"] == "hodge_hassett_d20")
     hodge_c20 = next(r for r in rows if r["name"] == "hodge_hassett_c20_veronese_algebraic")
+    hodge_d24 = next(r for r in rows if r["name"] == "hodge_hassett_d24")
+    hodge_c24 = next(r for r in rows if r["name"] == "hodge_hassett_c24_sextic_algebraic")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -2364,6 +2422,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_hassett_c18_elliptic_algebraic": 1 if hodge_c18.get("verdict") == "c18_elliptic_algebraic_no_k3" else 0,
         "hodge_hassett_d20_exact": 1 if hodge_d20["beats_or_meets_sota"] else 0,
         "hodge_hassett_c20_veronese_algebraic": 1 if hodge_c20.get("verdict") == "c20_veronese_algebraic_no_k3" else 0,
+        "hodge_hassett_d24_exact": 1 if hodge_d24["beats_or_meets_sota"] else 0,
+        "hodge_hassett_c24_sextic_algebraic": 1 if hodge_c24.get("verdict") == "c24_sextic_algebraic_no_k3" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -2375,7 +2435,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
             "Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), "
-            "BSD general E (first-of-rank 0..4 labeled), later extra Hodge discriminants (C_24…). "
+            "BSD general E (first-of-rank 0..4 labeled), later extra Hodge discriminants (C_30, C_32…). "
             "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
             "Reg(234446a1)=(φ²+1)·e·POOF, "
@@ -2544,7 +2604,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Hassett C_18 discriminant | **Meets 18** (L_2 L_6 − (2 L_2)²) | Elliptic-ruled Gram [[3,6],[6,18]]. Isolated L_6 as d is padding. |",
         "| C_18 extra class | **[elliptic ruled], algebraic** | Subvariety. 9|d so no K3. |",
         "| Hassett C_20 discriminant | **Meets 20** (L_2(L_2 L_3) − L_3²) | Veronese Gram [[3,4],[4,12]]. Isolated 4·5 is padding. |",
-        "| C_20 extra class | **[Veronese], algebraic** | Subvariety. 4|d so no K3. Remainder: C_24, … |",
+        "| C_20 extra class | **[Veronese], algebraic** | Subvariety. 4|d so no K3. |",
+        "| Hassett C_24 discriminant | **Meets 24** (L_2(L_6+2) − (2 L_2)²) | Nodal sextic del Pezzo Gram [[3,6],[6,20]]. Isolated χ(K3) is padding. |",
+        "| C_24 extra class | **[nodal sextic del Pezzo], algebraic** | Subvariety. Two nodes on L_6. Remainder: C_30, C_32, … |",
         "| Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |",
         "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |",
         "",
@@ -2560,7 +2622,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
         "| 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |",
         "| BSD integer rank | First-of-rank 0..4 labeled. No Weierstrass→ℤ formula. | L-order still required for general E. Do not nearest-template arbitrary L(1). |",
-        "| Hodge extra classes without K3 | C_8 [plane], C_12 [scroll], C_18 [elliptic ruled], C_20 [Veronese] algebraic. | Remainder: C_24, later extra discriminants, general 4-folds. Do not steal 25−1 for K3. |",
+        "| Hodge extra classes without K3 | C_8 [plane], C_12 [scroll], C_18 [elliptic ruled], C_20 [Veronese], C_24 [nodal sextic del Pezzo] algebraic. | Remainder: C_30, C_32, later extra discriminants, general 4-folds. Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
@@ -2675,6 +2737,8 @@ if __name__ == "__main__":
         and s["hodge_hassett_c18_elliptic_algebraic"] == 1
         and s["hodge_hassett_d20_exact"] == 1
         and s["hodge_hassett_c20_veronese_algebraic"] == 1
+        and s["hodge_hassett_d24_exact"] == 1
+        and s["hodge_hassett_c24_sextic_algebraic"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

@@ -671,6 +671,24 @@ def seed_hassett_d_veronese() -> float:
     return L2 * self_int - deg * deg
 
 
+def seed_hassett_d_sextic() -> float:
+    """Hassett discriminant of a cubic containing a nodal sextic del Pezzo = 24.
+
+    Gram of ⟨h², [W]⟩ (Hassett 2024 K_24): (h²,h²)=L_2=3, (h²,W)=2 L_2=6
+    (degree 6, same as the elliptic ruled), (W,W)=L_6+2=20 (smooth
+    self-int L_6 plus two nodes). disc = L_2(L_6+2) − (2 L_2)² = 24.
+    Extra class is [nodal sextic del Pezzo] (equivalently two-nodal
+    sextic scroll), algebraic. 4|24 so no associated K3; the twisted
+    degree-6 K3 is a different object. Isolated 8·3 or χ(K3)=24 is
+    padding. Do not steal 25−1 for K3.
+    """
+    L2 = seed_lucas(2)
+    L6 = seed_lucas(6)
+    deg = 2.0 * L2
+    self_int = L6 + 2.0
+    return L2 * self_int - deg * deg
+
+
 def hassett_C_d_nonempty(d: int) -> bool:
     """Hassett: C_d nonempty iff d>6 and d≡0 or 2 (mod 6)."""
     n = int(d)
