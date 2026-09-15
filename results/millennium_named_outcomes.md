@@ -74,5 +74,5 @@ Do not drop these. Named Hodge \(C_d\) is done; these are the leftover objects.
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
 | NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | 4/5 (3D), 3/2 (2D inverse), Onsager \(1/3\) are cascade numbers. BKM is the stretching criterion. Remainder is whether \(\int\|\omega\|_\infty dt\) stays finite. | Stuffing existence into 4/5 or 1/3 |
-| BSD-RANK | \(\mathrm{ord}\,L\) for rank \(\ge 1\) | Rank 0 is \(L(1)\neq 0\), not \(L\) magnitude. 17a1/19a1 \(\mathrm{Sha}_{\mathrm{an}}=1\). First-of-rank 0..4 still labels the first curves. | Nearest-template arbitrary \(L(1)\) |
+| BSD-RANK | \(\mathrm{ord}\,L\) for rank \(\ge 2\) | Rank 0 is \(L\neq 0\). Rank 1 is \(L=0,L'\neq 0\); 53a1/61a1 \(\mathrm{Sha}_{\mathrm{an}}=1\) (raw \(L'\) mis-fires as rank 3). | Nearest-template \(L'\) magnitude |
 | HODGE-TAIL | unnamed Hassett \(C_d\) after 44 + general 4-folds | Nuer stops naming at 44. Infinite later \(C_d\) have no named surface. | Enumerating the tail until it looks green |

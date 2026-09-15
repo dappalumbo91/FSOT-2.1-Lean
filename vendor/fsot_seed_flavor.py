@@ -883,9 +883,9 @@ def bsd_analytic_sha(
 ) -> float:
     """Analytic Sha = L · |tors|² / (Ω · Tam · Reg).
 
-    Rank-0 BSD volume. 17a1 raw L(1)≈0.387 mis-fires as rank 3 on the
-    first-of-rank ladder; the quotient is 1. Magnitude of L(1) is the
-    wrong orifice. L(1)≠0 already means analytic rank 0.
+    BSD volume for the leading L^{(r)}(1)/r!. Rank 0: L(1), Reg=1.
+    Rank 1: L'(1) and Néron-Tate Reg. 53a1 raw L' mis-fires as rank 3;
+    the quotient is 1. Magnitude is the wrong orifice.
     """
     return (
         float(L_leading)
