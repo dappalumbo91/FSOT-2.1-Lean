@@ -600,7 +600,8 @@ def seed_fibonacci(n: int) -> float:
 def seed_lucas(n: int) -> float:
     """Lucas L_n = φ^n + (1−φ)^n. Integer for integer n.
 
-    L_2=3=χ(CP²), L_3=4=χ(CP³), L_4=7=self-intersection of the cubic scroll.
+    L_2=3=χ(CP²), L_3=4=χ(CP³), L_4=7=self-intersection of the cubic scroll,
+    L_6=18=self-intersection of the elliptic ruled surface.
     Not a general χ(CP^n)=L_n law (n=4 breaks it).
     """
     phi = f(PHI)
@@ -638,6 +639,21 @@ def seed_hassett_d_scroll() -> float:
     L2 = seed_lucas(2)
     L4 = seed_lucas(4)
     return L2 * L4 - L2 * L2
+
+
+def seed_hassett_d_elliptic() -> float:
+    """Hassett discriminant of a cubic containing an elliptic ruled surface = 18.
+
+    Gram of ⟨h², [T]⟩ (Hassett K_18): (h²,h²)=L_2=3, (h²,T)=2 L_2=6
+    (degree 6 = χ(P¹)·L_2, the ruling), (T,T)=L_6=18.
+    disc = L_2 L_6 − (2 L_2)² = 18. Extra class is [elliptic ruled],
+    algebraic. 9|18 so no associated K3 (not 4|d). Isolated L_6 as
+    the discriminant is padding. Do not steal 25−1 for K3.
+    """
+    L2 = seed_lucas(2)
+    L6 = seed_lucas(6)
+    deg = 2.0 * L2
+    return L2 * L6 - deg * deg
 
 
 def hassett_C_d_nonempty(d: int) -> bool:
