@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T01:06:18.155037+00:00",
+  "generated_at": "2026-09-15T12:44:08.351329+00:00",
   "version": "1.0",
   "track": "uniqueness_research",
   "hardest_target": "path_integral_confinement_reframe",
@@ -15,11 +15,11 @@
     "identity_exact_count": 10,
     "boolean_pass_count": 8,
     "boolean_total": 8,
-    "free_color_damping_rate": 0.6684908749126979,
+    "free_color_damping_rate": 0.6707623914122531,
     "singlet_relaxation_rate": 0.4280434460598068,
-    "nuclear_S_eq": 0.9213094330291355,
+    "nuclear_S_eq": 0.9363875640629747,
     "Lambda_QCD_GeV": 0.21740442367390217,
-    "sigma_GeV2": 0.17658624702998535,
+    "sigma_GeV2": 0.17649137329543738,
     "theorem_status": "CANDIDATE_EXECUTABLE",
     "classical_path_integral_uniqueness": "OPEN_NOT_CLAIMED",
     "fsot_reframe": "Confinement = free-color modes damped by seed-locked \u03b3_color; color singlets are nuclear S_eq attractors. Not a continuum Yang\u2013Mills path-integral measure theorem."
@@ -75,7 +75,7 @@
       "claim": "U4_free_color_damps",
       "formula": "|a_color|(t_final) < 1e-6 under gamma_color dynamics",
       "sector": "QCD_uniqueness",
-      "note": "|a_color| final=5.520e-08, gamma=0.668491"
+      "note": "|a_color| final=5.215e-08, gamma=0.670762"
     },
     {
       "name": "singlet_persists_at_S_eq",
@@ -88,7 +88,7 @@
       "claim": "U5_singlet_attractor",
       "formula": "a_singlet \u2192 S_eq(Nuclear_Physics)",
       "sector": "QCD_uniqueness",
-      "note": "a_singlet final=0.921309, S_eq=0.921309"
+      "note": "a_singlet final=0.936388, S_eq=0.936388"
     },
     {
       "name": "counterfactual_no_damp_free_color_persists",
@@ -106,9 +106,9 @@
     {
       "name": "linear_potential_unit_identity",
       "property": "U7_linear_potential_identity",
-      "computed": 0.42022166416069673,
-      "measured": 0.4202216641606967,
-      "error_pct": 1.3209968920124462e-14,
+      "computed": 0.4201087636498879,
+      "measured": 0.4201087636498879,
+      "error_pct": 0.0,
       "eval_kind": "seed_identity",
       "record_kind": "structural",
       "claim": "U7_linear_potential_identity",
@@ -145,8 +145,8 @@
     {
       "name": "gamma_color_over_gamma_singlet",
       "property": "U10_timescale_ratio",
-      "computed": 1.5617360365314306,
-      "measured": 1.5617360365314306,
+      "computed": 1.5670427793877102,
+      "measured": 1.5670427793877102,
       "error_pct": 0.0,
       "eval_kind": "seed_identity",
       "record_kind": "structural",

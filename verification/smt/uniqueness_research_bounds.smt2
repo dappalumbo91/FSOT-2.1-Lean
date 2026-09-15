@@ -3,13 +3,13 @@
 (set-logic QF_LIRA)
 
 ; gamma_color_pos kind=pos
-(assert (! (> 0.668490874912697874 0.0) :named o0))
+(assert (! (> 0.670762391412253134 0.0) :named o0))
 ; gamma_singlet_pos kind=pos
 (assert (! (> 0.42804344605980682 0.0) :named o1))
 ; nuclear_S_eq_pos kind=pos
-(assert (! (> 0.921309433029135483 0.0) :named o2))
+(assert (! (> 0.936387564062974742 0.0) :named o2))
 ; nuclear_S_eq_emergence_pos kind=pos
-(assert (! (> 0.921309433029135483 0.0) :named o3))
+(assert (! (> 0.936387564062974742 0.0) :named o3))
 ; lambda_qcd_proxy_pos kind=pos
 (assert (! (> 0.21740442367390217 0.0) :named o4))
 ; deff_ceiling_eq_25 kind=eq_nat
@@ -29,13 +29,13 @@
 ; counterfactual_no_damp_free_color_persists_flag_eq kind=eq_nat
 (assert (! (= 1 1) :named o12))
 ; linear_potential_unit_identity_err_under_half kind=lt_half
-(assert (! (< 0.00000000000001321 0.5) :named o13))
+(assert (! (< 0.0 0.5) :named o13))
 ; linear_potential_unit_identity_measured_pos kind=pos
-(assert (! (> 0.420221664160696673 0.0) :named o14))
+(assert (! (> 0.420108763649887917 0.0) :named o14))
 ; linear_potential_unit_identity_computed_pos kind=pos
-(assert (! (> 0.420221664160696728 0.0) :named o15))
+(assert (! (> 0.420108763649887917 0.0) :named o15))
 ; linear_potential_unit_identity_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000000000000000056 0.000000000001) :named o16))
+(assert (! (< 0.0 0.000000001) :named o16))
 ; alpha_s_seed_positive_flag_eq kind=eq_nat
 (assert (! (= 1 1) :named o17))
 ; nuclear_S_emergence_sign_flag_eq kind=eq_nat
@@ -43,9 +43,9 @@
 ; gamma_color_over_gamma_singlet_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o19))
 ; gamma_color_over_gamma_singlet_measured_pos kind=pos
-(assert (! (> 1.56173603653143056 0.0) :named o20))
+(assert (! (> 1.567042779387710194 0.0) :named o20))
 ; gamma_color_over_gamma_singlet_computed_pos kind=pos
-(assert (! (> 1.56173603653143056 0.0) :named o21))
+(assert (! (> 1.567042779387710194 0.0) :named o21))
 ; gamma_color_over_gamma_singlet_abs_diff kind=abs_diff_lt_lit
 (assert (! (< 0.0 0.000000001) :named o22))
 ; R1_nuclear_emergence_calibration_pass kind=eq_nat
@@ -119,7 +119,7 @@
 ; reality_fiction_calibration_ok kind=eq_nat
 (assert (! (= 1 1) :named o57))
 ; confinement_suite_gamma_export_pos kind=pos
-(assert (! (> 0.668490874912697874 0.0) :named o58))
+(assert (! (> 0.670762391412253134 0.0) :named o58))
 ; path_sum2_eq_one_flag kind=eq_nat
 (assert (! (= 1 1) :named o59))
 ; poof_hold_pos kind=pos
@@ -127,7 +127,7 @@
 ; suction_hold_pos kind=pos
 (assert (! (> 0.489271411226038899 0.0) :named o61))
 ; color_path_integral_proxy_pos kind=pos
-(assert (! (> 1.495906731906543774 0.0) :named o62))
+(assert (! (> 1.490840889118060453 0.0) :named o62))
 ; P1_path_sum2_eq_one_err_under_half kind=lt_half
 (assert (! (< 0.000000000000011102 0.5) :named o63))
 ; P2_poof_hold_eq_valve_err_under_half kind=lt_half
@@ -137,7 +137,7 @@
 ; P4_color_path_integral_finite_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o66))
 ; P5_area_law_V_of_one_over_sqrt_sigma_err_under_half kind=lt_half
-(assert (! (< 0.00000000000001321 0.5) :named o67))
+(assert (! (< 0.0 0.5) :named o67))
 ; P6_mass_gap_proxy_pos_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o68))
 ; forecast_horizon_eq_7 kind=eq_nat
@@ -185,7 +185,7 @@
 ; ym_color_path_integral_finite_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o90))
 ; ym_color_path_integral_finite_computed_pos kind=pos
-(assert (! (> 1.495906731906543774 0.0) :named o91))
+(assert (! (> 1.490840889118060453 0.0) :named o91))
 ; ns_viscosity_pos_D6_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o92))
 ; ns_viscosity_pos_D6_computed_pos kind=pos
@@ -201,7 +201,7 @@
 ; ns_sound_speed_sq_pos_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o98))
 ; ns_sound_speed_sq_pos_computed_pos kind=pos
-(assert (! (> 0.591892512320145503 0.0) :named o99))
+(assert (! (> 0.59192082984473493 0.0) :named o99))
 ; riemann_first_zero_im_probe_err_under_half kind=lt_half
 (assert (! (< 0.001660664796375164 0.5) :named o100))
 ; riemann_first_zero_im_probe_computed_pos kind=pos
@@ -219,26 +219,38 @@
 ; hodge_clay_open_computed_pos kind=pos
 (assert (! (> 1.0 0.0) :named o107))
 ; mill_acc_beats_or_meets_n_flag kind=eq_nat
-(assert (! (= 7 7) :named o108))
+(assert (! (= 41 41) :named o108))
+; mill_acc_comparable_n_flag kind=eq_nat
+(assert (! (= 38 38) :named o109))
+; mill_acc_green_pass_n_flag kind=eq_nat
+(assert (! (= 35 35) :named o110))
 ; mill_acc_clay_open_n_flag kind=eq_nat
-(assert (! (= 6 6) :named o109))
+(assert (! (= 6 6) :named o111))
 ; mill_acc_sota_beats_accuracy_wip_n_flag kind=eq_nat
-(assert (! (= 2 2) :named o110))
+(assert (! (= 4 4) :named o112))
 ; mill_acc_next_dig_n_flag kind=eq_nat
-(assert (! (= 5 5) :named o111))
+(assert (! (= 3 3) :named o113))
 ; mill_acc_riemann_beats_public_closed_form_flag kind=eq_nat
-(assert (! (= 1 1) :named o112))
-; mill_acc_riemann_panel_beats_rvm_flag kind=eq_nat
-(assert (! (= 1 1) :named o113))
-; mill_acc_glueball_does_not_beat_teper_flag kind=eq_nat
 (assert (! (= 1 1) :named o114))
-; mill_acc_glueball_beats_4sqrt_sigma_flag kind=eq_nat
+; mill_acc_riemann_panel_beats_rvm_flag kind=eq_nat
 (assert (! (= 1 1) :named o115))
-; mill_acc_glueball_ratio_beats_three_halves_flag kind=eq_nat
+; mill_acc_riemann_signed_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o116))
-; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
-(assert (! (= 1 1) :named o117))
-; mill_acc_weather_quiet_fill_still_miss_flag kind=eq_nat
+; mill_acc_glueball_does_not_beat_teper_flag kind=eq_nat
+(assert (! (= 0 0) :named o117))
+; mill_acc_glueball_beats_4sqrt_sigma_flag kind=eq_nat
 (assert (! (= 1 1) :named o118))
+; mill_acc_glueball_ratio_beats_three_halves_flag kind=eq_nat
+(assert (! (= 1 1) :named o119))
+; mill_acc_bsd_integer_rank_first5_flag kind=eq_nat
+(assert (! (= 1 1) :named o120))
+; mill_acc_bsd_234446_reg_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o121))
+; mill_acc_hodge_named_no_k3_complete_flag kind=eq_nat
+(assert (! (= 1 1) :named o122))
+; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
+(assert (! (= 1 1) :named o123))
+; mill_acc_weather_quiet_fill_still_miss_flag kind=eq_nat
+(assert (! (= 0 0) :named o124))
 (check-sat)
 ; expect: sat

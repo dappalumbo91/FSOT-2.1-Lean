@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T01:06:18.702371+00:00",
+  "generated_at": "2026-09-15T12:44:08.977010+00:00",
   "version": "1.0",
   "track": "reality_fiction_calibration",
   "authority_pin": "D1D38A",
@@ -48,7 +48,7 @@
       "verdict": "REALITY_HOLDS",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "S_nuclear=0.921309",
+      "detail": "S_nuclear=0.936388",
       "formula": "domain_scalar(Nuclear_Physics) > 0"
     },
     {
@@ -59,7 +59,7 @@
       "verdict": "REALITY_HOLDS",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "S_particle=0.950413",
+      "detail": "S_particle=0.950197",
       "formula": "domain_scalar(Particle_Physics) > 0"
     },
     {
@@ -70,7 +70,7 @@
       "verdict": "REALITY_HOLDS",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "Lambda=0.217404 sigma=0.176586",
+      "detail": "Lambda=0.217404 sigma=0.176491",
       "formula": "seed_lambda_qcd_GeV()>0 and (seed_sqrt_sigma)**2>0"
     },
     {
@@ -81,7 +81,7 @@
       "verdict": "REALITY_HOLDS",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "a_singlet=0.921309 S_eq=0.921309",
+      "detail": "a_singlet=0.936388 S_eq=0.936388",
       "formula": "a_singlet \u2192 S_eq under FSOT channel dynamics"
     },
     {
@@ -92,7 +92,7 @@
       "verdict": "REALITY_HOLDS",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "C_EFF=0.957702",
+      "detail": "C_EFF=0.957748",
       "formula": "C_EFF > 0 (seed stack)"
     },
     {
@@ -103,7 +103,7 @@
       "verdict": "REALITY_HOLDS",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "C_EFF=0.957702 transport_stack_live=True S_cosmo(D_eff=25)=-0.502456 \u2014 fluid IS FSOT, not a re-eval maybe",
+      "detail": "C_EFF=0.957748 transport_stack_live=True S_cosmo(D_eff=25)=-0.502377 \u2014 fluid IS FSOT, not a re-eval maybe",
       "formula": "C_EFF>0 and POOF/SUCTION/A_BLEED/CHAOS live and Cosmology(D_eff=25) defined"
     },
     {
@@ -125,7 +125,7 @@
       "verdict": "FICTION_DAMPED",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "|a_color|_final=5.520e-08 gamma=0.668491",
+      "detail": "|a_color|_final=5.215e-08 gamma=0.670762",
       "formula": "free color amplitude \u2192 0 under gamma_color > 0"
     },
     {
@@ -147,7 +147,7 @@
       "verdict": "FICTION_DAMPED",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "gamma_pref=0.565751 a_final=1.486e-10 fluid_C_EFF=0.957702 \u2014 damp REST FRAME, keep fluid spacetime",
+      "detail": "gamma_pref=0.565621 a_final=1.493e-10 fluid_C_EFF=0.957748 \u2014 damp REST FRAME, keep fluid spacetime",
       "formula": "preferred-frame amplitude damps; C_EFF fluid remains load-bearing"
     },
     {
@@ -169,7 +169,7 @@
       "verdict": "FICTION_DAMPED",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "growth=1.61803 damp=2.81036 net=-1.19233",
+      "detail": "growth=1.61803 damp=2.81026 net=-1.19223",
       "formula": "superluminal claim and (v/c-1) - full_seed_damp < 0"
     },
     {
@@ -180,7 +180,7 @@
       "verdict": "FICTION_DAMPED",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "scales_ok=True damp_ok=True free_color_gone=True |a_c|=1.951e-09 \u2192 necessity meta-claim non-load-bearing under FSOT",
+      "detail": "scales_ok=True damp_ok=True free_color_gone=True |a_c|=1.823e-09 \u2192 necessity meta-claim non-load-bearing under FSOT",
       "formula": "(dependent confinement physics closed under FSOT) \u21d2 necessity-of-classical-PI uniqueness damps"
     },
     {
@@ -191,7 +191,7 @@
       "verdict": "REEVAL_OPEN",
       "pass_calibration": true,
       "score": 1.0,
-      "detail": "S_QM=0.955506 C_FACTOR=0.2876 \u2014 structure only, not endorsement",
+      "detail": "S_QM=0.950197 C_FACTOR=0.287614 \u2014 structure only, not endorsement",
       "formula": "domain_scalar(Quantum_Mechanics) and C_FACTOR structure present"
     },
     {

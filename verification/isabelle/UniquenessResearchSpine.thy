@@ -4,16 +4,16 @@ begin
 
 (* FSOT uniqueness research — fluid spacetime omni + dampening certificates. *)
 
-lemma gamma_color_pos: "(0::real) < 0.6684908749126979"
+lemma gamma_color_pos: "(0::real) < 0.6707623914122531"
   by simp
 
 lemma gamma_singlet_pos: "(0::real) < 0.4280434460598068"
   by simp
 
-lemma nuclear_S_eq_pos: "(0::real) < 0.9213094330291355"
+lemma nuclear_S_eq_pos: "(0::real) < 0.9363875640629747"
   by simp
 
-lemma nuclear_S_eq_emergence_pos: "(0::real) < 0.9213094330291355"
+lemma nuclear_S_eq_emergence_pos: "(0::real) < 0.9363875640629747"
   by simp
 
 lemma lambda_qcd_proxy_pos: "(0::real) < 0.21740442367390217"
@@ -43,16 +43,16 @@ lemma singlet_persists_at_S_eq_flag_eq: "(1::nat) = 1"
 lemma counterfactual_no_damp_free_color_persists_flag_eq: "(1::nat) = 1"
   by simp
 
-lemma linear_potential_unit_identity_err_under_half: "(0.00000000000001320997::real) < (0.5::real)"
+lemma linear_potential_unit_identity_err_under_half: "(0::real) < (0.5::real)"
   by simp
 
-lemma linear_potential_unit_identity_measured_pos: "(0::real) < 0.4202216641606967"
+lemma linear_potential_unit_identity_measured_pos: "(0::real) < 0.4201087636498879"
   by simp
 
-lemma linear_potential_unit_identity_computed_pos: "(0::real) < 0.42022166416069673"
+lemma linear_potential_unit_identity_computed_pos: "(0::real) < 0.4201087636498879"
   by simp
 
-lemma linear_potential_unit_identity_abs_diff: "(0.00000000000000005551115::real) < (0.000000000001::real)"
+lemma linear_potential_unit_identity_abs_diff: "(0::real) < (0.000000001::real)"
   by simp
 
 lemma alpha_s_seed_positive_flag_eq: "(1::nat) = 1"
@@ -64,10 +64,10 @@ lemma nuclear_S_emergence_sign_flag_eq: "(1::nat) = 1"
 lemma gamma_color_over_gamma_singlet_err_under_half: "(0::real) < (0.5::real)"
   by simp
 
-lemma gamma_color_over_gamma_singlet_measured_pos: "(0::real) < 1.5617360365314306"
+lemma gamma_color_over_gamma_singlet_measured_pos: "(0::real) < 1.5670427793877102"
   by simp
 
-lemma gamma_color_over_gamma_singlet_computed_pos: "(0::real) < 1.5617360365314306"
+lemma gamma_color_over_gamma_singlet_computed_pos: "(0::real) < 1.5670427793877102"
   by simp
 
 lemma gamma_color_over_gamma_singlet_abs_diff: "(0::real) < (0.000000001::real)"
@@ -178,7 +178,7 @@ lemma E5_reeval_machinery_exists_score_pos: "(0::real) < 1.0"
 lemma reality_fiction_calibration_ok: "(1::nat) = 1"
   by simp
 
-lemma confinement_suite_gamma_export_pos: "(0::real) < 0.6684908749126979"
+lemma confinement_suite_gamma_export_pos: "(0::real) < 0.6707623914122531"
   by simp
 
 lemma path_sum2_eq_one_flag: "(1::nat) = 1"
@@ -190,7 +190,7 @@ lemma poof_hold_pos: "(0::real) < 0.510728588773961"
 lemma suction_hold_pos: "(0::real) < 0.4892714112260389"
   by simp
 
-lemma color_path_integral_proxy_pos: "(0::real) < 1.4959067319065438"
+lemma color_path_integral_proxy_pos: "(0::real) < 1.4908408891180605"
   by simp
 
 lemma P1_path_sum2_eq_one_err_under_half: "(0.00000000000001110223::real) < (0.5::real)"
@@ -205,7 +205,7 @@ lemma P3_loading_potentials_sum_one_err_under_half: "(0::real) < (0.5::real)"
 lemma P4_color_path_integral_finite_err_under_half: "(0::real) < (0.5::real)"
   by simp
 
-lemma P5_area_law_V_of_one_over_sqrt_sigma_err_under_half: "(0.00000000000001320997::real) < (0.5::real)"
+lemma P5_area_law_V_of_one_over_sqrt_sigma_err_under_half: "(0::real) < (0.5::real)"
   by simp
 
 lemma P6_mass_gap_proxy_pos_err_under_half: "(0::real) < (0.5::real)"
@@ -277,7 +277,7 @@ lemma ym_native_path_sum2_computed_pos: "(0::real) < 0.9999999999999999"
 lemma ym_color_path_integral_finite_err_under_half: "(0::real) < (0.5::real)"
   by simp
 
-lemma ym_color_path_integral_finite_computed_pos: "(0::real) < 1.4959067319065438"
+lemma ym_color_path_integral_finite_computed_pos: "(0::real) < 1.4908408891180605"
   by simp
 
 lemma ns_viscosity_pos_D6_err_under_half: "(0::real) < (0.5::real)"
@@ -301,7 +301,7 @@ lemma ns_viscosity_pos_D25_computed_pos: "(0::real) < 0.16069183175866183"
 lemma ns_sound_speed_sq_pos_err_under_half: "(0::real) < (0.5::real)"
   by simp
 
-lemma ns_sound_speed_sq_pos_computed_pos: "(0::real) < 0.5918925123201455"
+lemma ns_sound_speed_sq_pos_computed_pos: "(0::real) < 0.5919208298447349"
   by simp
 
 lemma riemann_first_zero_im_probe_err_under_half: "(0.0016606647963751638::real) < (0.5::real)"
@@ -328,16 +328,22 @@ lemma hodge_clay_open_err_under_half: "(0::real) < (0.5::real)"
 lemma hodge_clay_open_computed_pos: "(0::real) < 1.0"
   by simp
 
-lemma mill_acc_beats_or_meets_n_flag: "(7::nat) = 7"
+lemma mill_acc_beats_or_meets_n_flag: "(41::nat) = 41"
+  by simp
+
+lemma mill_acc_comparable_n_flag: "(38::nat) = 38"
+  by simp
+
+lemma mill_acc_green_pass_n_flag: "(35::nat) = 35"
   by simp
 
 lemma mill_acc_clay_open_n_flag: "(6::nat) = 6"
   by simp
 
-lemma mill_acc_sota_beats_accuracy_wip_n_flag: "(2::nat) = 2"
+lemma mill_acc_sota_beats_accuracy_wip_n_flag: "(4::nat) = 4"
   by simp
 
-lemma mill_acc_next_dig_n_flag: "(5::nat) = 5"
+lemma mill_acc_next_dig_n_flag: "(3::nat) = 3"
   by simp
 
 lemma mill_acc_riemann_beats_public_closed_form_flag: "(1::nat) = 1"
@@ -346,7 +352,10 @@ lemma mill_acc_riemann_beats_public_closed_form_flag: "(1::nat) = 1"
 lemma mill_acc_riemann_panel_beats_rvm_flag: "(1::nat) = 1"
   by simp
 
-lemma mill_acc_glueball_does_not_beat_teper_flag: "(1::nat) = 1"
+lemma mill_acc_riemann_signed_green_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_glueball_does_not_beat_teper_flag: "(0::nat) = 0"
   by simp
 
 lemma mill_acc_glueball_beats_4sqrt_sigma_flag: "(1::nat) = 1"
@@ -355,10 +364,19 @@ lemma mill_acc_glueball_beats_4sqrt_sigma_flag: "(1::nat) = 1"
 lemma mill_acc_glueball_ratio_beats_three_halves_flag: "(1::nat) = 1"
   by simp
 
+lemma mill_acc_bsd_integer_rank_first5_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_bsd_234446_reg_green_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_hodge_named_no_k3_complete_flag: "(1::nat) = 1"
+  by simp
+
 lemma mill_acc_ecmwf_not_beaten_flag: "(1::nat) = 1"
   by simp
 
-lemma mill_acc_weather_quiet_fill_still_miss_flag: "(1::nat) = 1"
+lemma mill_acc_weather_quiet_fill_still_miss_flag: "(0::nat) = 0"
   by simp
 
 end

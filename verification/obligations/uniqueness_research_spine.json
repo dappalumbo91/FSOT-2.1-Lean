@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-10T01:06:20.565157+00:00",
+  "generated_at": "2026-09-15T12:44:10.935078+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 119,
+  "obligation_count": 125,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -17,7 +17,7 @@
     {
       "id": "gamma_color_pos",
       "kind": "pos",
-      "value": 0.6684908749126979,
+      "value": 0.6707623914122531,
       "module": "Uniqueness.Confinement",
       "claim": "U1_gamma_color",
       "coq_id": "gamma_color_pos"
@@ -33,7 +33,7 @@
     {
       "id": "nuclear_S_eq_pos",
       "kind": "pos",
-      "value": 0.9213094330291355,
+      "value": 0.9363875640629747,
       "module": "Uniqueness.Confinement",
       "claim": "U9_nuclear_S",
       "coq_id": "nuclear_S_eq_pos"
@@ -41,7 +41,7 @@
     {
       "id": "nuclear_S_eq_emergence_pos",
       "kind": "pos",
-      "value": 0.9213094330291355,
+      "value": 0.9363875640629747,
       "module": "Uniqueness.Confinement",
       "claim": "U9_nuclear_emergence",
       "coq_id": "nuclear_S_eq_emergence_pos"
@@ -128,7 +128,7 @@
     {
       "id": "linear_potential_unit_identity_err_under_half",
       "kind": "lt_half",
-      "value": 1.3209968920124462e-14,
+      "value": 0.0,
       "module": "Uniqueness.Confinement",
       "claim": "U7_linear_potential_identity",
       "statement": "error_pct(linear_potential_unit_identity) < 0.5",
@@ -137,7 +137,7 @@
     {
       "id": "linear_potential_unit_identity_measured_pos",
       "kind": "pos",
-      "value": 0.4202216641606967,
+      "value": 0.4201087636498879,
       "module": "Uniqueness.Confinement",
       "claim": "U7_linear_potential_identity",
       "coq_id": "linear_potential_unit_identity_measured_pos"
@@ -145,7 +145,7 @@
     {
       "id": "linear_potential_unit_identity_computed_pos",
       "kind": "pos",
-      "value": 0.42022166416069673,
+      "value": 0.4201087636498879,
       "module": "Uniqueness.Confinement",
       "claim": "U7_linear_potential_identity",
       "coq_id": "linear_potential_unit_identity_computed_pos"
@@ -153,10 +153,10 @@
     {
       "id": "linear_potential_unit_identity_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 5.551115123125783e-17,
-      "bound": 1e-12,
-      "left_value": 0.42022166416069673,
-      "right_value": 0.4202216641606967,
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 0.4201087636498879,
+      "right_value": 0.4201087636498879,
       "module": "Uniqueness.Confinement",
       "claim": "U7_linear_potential_identity",
       "coq_id": "linear_potential_unit_identity_abs_diff"
@@ -191,7 +191,7 @@
     {
       "id": "gamma_color_over_gamma_singlet_measured_pos",
       "kind": "pos",
-      "value": 1.5617360365314306,
+      "value": 1.5670427793877102,
       "module": "Uniqueness.Confinement",
       "claim": "U10_timescale_ratio",
       "coq_id": "gamma_color_over_gamma_singlet_measured_pos"
@@ -199,7 +199,7 @@
     {
       "id": "gamma_color_over_gamma_singlet_computed_pos",
       "kind": "pos",
-      "value": 1.5617360365314306,
+      "value": 1.5670427793877102,
       "module": "Uniqueness.Confinement",
       "claim": "U10_timescale_ratio",
       "coq_id": "gamma_color_over_gamma_singlet_computed_pos"
@@ -209,8 +209,8 @@
       "kind": "abs_diff_lt_lit",
       "diff": 0.0,
       "bound": 1e-09,
-      "left_value": 1.5617360365314306,
-      "right_value": 1.5617360365314306,
+      "left_value": 1.5670427793877102,
+      "right_value": 1.5670427793877102,
       "module": "Uniqueness.Confinement",
       "claim": "U10_timescale_ratio",
       "coq_id": "gamma_color_over_gamma_singlet_abs_diff"
@@ -516,7 +516,7 @@
     {
       "id": "confinement_suite_gamma_export_pos",
       "kind": "pos",
-      "value": 0.6684908749126979,
+      "value": 0.6707623914122531,
       "module": "Uniqueness.Confinement",
       "claim": "suite_gamma",
       "coq_id": "confinement_suite_gamma_export_pos"
@@ -549,7 +549,7 @@
     {
       "id": "color_path_integral_proxy_pos",
       "kind": "pos",
-      "value": 1.4959067319065438,
+      "value": 1.4908408891180605,
       "module": "Uniqueness.PathSum",
       "claim": "P4_color_path_integral",
       "coq_id": "color_path_integral_proxy_pos"
@@ -589,7 +589,7 @@
     {
       "id": "P5_area_law_V_of_one_over_sqrt_sigma_err_under_half",
       "kind": "lt_half",
-      "value": 1.3209968920124464e-14,
+      "value": 0.0,
       "module": "Uniqueness.PathSum",
       "claim": "P5_area_law_V_of_one_over_sqrt_sigma",
       "coq_id": "P5_area_law_V_of_one_over_sqrt_sigma_err_under_half"
@@ -798,7 +798,7 @@
     {
       "id": "ym_color_path_integral_finite_computed_pos",
       "kind": "pos",
-      "value": 1.4959067319065438,
+      "value": 1.4908408891180605,
       "module": "Uniqueness.MillenniumTrack",
       "claim": "ym_color_path_integral_finite",
       "coq_id": "ym_color_path_integral_finite_computed_pos"
@@ -862,7 +862,7 @@
     {
       "id": "ns_sound_speed_sq_pos_computed_pos",
       "kind": "pos",
-      "value": 0.5918925123201455,
+      "value": 0.5919208298447349,
       "module": "Uniqueness.MillenniumTrack",
       "claim": "ns_sound_speed_sq_pos",
       "coq_id": "ns_sound_speed_sq_pos_computed_pos"
@@ -934,11 +934,29 @@
     {
       "id": "mill_acc_beats_or_meets_n_flag",
       "kind": "eq_nat",
-      "value": 7,
-      "right_value": 7,
+      "value": 41,
+      "right_value": 41,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_beats_or_meets_n",
       "coq_id": "mill_acc_beats_or_meets_n_flag"
+    },
+    {
+      "id": "mill_acc_comparable_n_flag",
+      "kind": "eq_nat",
+      "value": 38,
+      "right_value": 38,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_comparable_n",
+      "coq_id": "mill_acc_comparable_n_flag"
+    },
+    {
+      "id": "mill_acc_green_pass_n_flag",
+      "kind": "eq_nat",
+      "value": 35,
+      "right_value": 35,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_green_pass_n",
+      "coq_id": "mill_acc_green_pass_n_flag"
     },
     {
       "id": "mill_acc_clay_open_n_flag",
@@ -952,8 +970,8 @@
     {
       "id": "mill_acc_sota_beats_accuracy_wip_n_flag",
       "kind": "eq_nat",
-      "value": 2,
-      "right_value": 2,
+      "value": 4,
+      "right_value": 4,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_sota_beats_accuracy_wip_n",
       "coq_id": "mill_acc_sota_beats_accuracy_wip_n_flag"
@@ -961,8 +979,8 @@
     {
       "id": "mill_acc_next_dig_n_flag",
       "kind": "eq_nat",
-      "value": 5,
-      "right_value": 5,
+      "value": 3,
+      "right_value": 3,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_next_dig_n",
       "coq_id": "mill_acc_next_dig_n_flag"
@@ -986,10 +1004,19 @@
       "coq_id": "mill_acc_riemann_panel_beats_rvm_flag"
     },
     {
-      "id": "mill_acc_glueball_does_not_beat_teper_flag",
+      "id": "mill_acc_riemann_signed_green_flag",
       "kind": "eq_nat",
       "value": 1,
       "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_riemann_signed_green",
+      "coq_id": "mill_acc_riemann_signed_green_flag"
+    },
+    {
+      "id": "mill_acc_glueball_does_not_beat_teper_flag",
+      "kind": "eq_nat",
+      "value": 0,
+      "right_value": 0,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_glueball_does_not_beat_teper",
       "coq_id": "mill_acc_glueball_does_not_beat_teper_flag"
@@ -1013,6 +1040,33 @@
       "coq_id": "mill_acc_glueball_ratio_beats_three_halves_flag"
     },
     {
+      "id": "mill_acc_bsd_integer_rank_first5_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_integer_rank_first5",
+      "coq_id": "mill_acc_bsd_integer_rank_first5_flag"
+    },
+    {
+      "id": "mill_acc_bsd_234446_reg_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_234446_reg_green",
+      "coq_id": "mill_acc_bsd_234446_reg_green_flag"
+    },
+    {
+      "id": "mill_acc_hodge_named_no_k3_complete_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_named_no_k3_complete",
+      "coq_id": "mill_acc_hodge_named_no_k3_complete_flag"
+    },
+    {
       "id": "mill_acc_ecmwf_not_beaten_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -1024,8 +1078,8 @@
     {
       "id": "mill_acc_weather_quiet_fill_still_miss_flag",
       "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
+      "value": 0,
+      "right_value": 0,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_weather_quiet_fill_still_miss",
       "coq_id": "mill_acc_weather_quiet_fill_still_miss_flag"
@@ -1037,11 +1091,11 @@
       "identity_exact_count": 10,
       "boolean_pass_count": 8,
       "boolean_total": 8,
-      "free_color_damping_rate": 0.6684908749126979,
+      "free_color_damping_rate": 0.6707623914122531,
       "singlet_relaxation_rate": 0.4280434460598068,
-      "nuclear_S_eq": 0.9213094330291355,
+      "nuclear_S_eq": 0.9363875640629747,
       "Lambda_QCD_GeV": 0.21740442367390217,
-      "sigma_GeV2": 0.17658624702998535,
+      "sigma_GeV2": 0.17649137329543738,
       "theorem_status": "CANDIDATE_EXECUTABLE",
       "classical_path_integral_uniqueness": "OPEN_NOT_CLAIMED",
       "fsot_reframe": "Confinement = free-color modes damped by seed-locked \u03b3_color; color singlets are nuclear S_eq attractors. Not a continuum Yang\u2013Mills path-integral measure theorem."

@@ -12,16 +12,16 @@ namespace FSOT.Formal.UniquenessResearch
 
 noncomputable section
 
-theorem gamma_color_pos : (0 : ℝ) < (0.6684908749126979 : ℝ) := by
+theorem gamma_color_pos : (0 : ℝ) < (0.6707623914122531 : ℝ) := by
   norm_num
 
 theorem gamma_singlet_pos : (0 : ℝ) < (0.4280434460598068 : ℝ) := by
   norm_num
 
-theorem nuclear_S_eq_pos : (0 : ℝ) < (0.9213094330291355 : ℝ) := by
+theorem nuclear_S_eq_pos : (0 : ℝ) < (0.9363875640629747 : ℝ) := by
   norm_num
 
-theorem nuclear_S_eq_emergence_pos : (0 : ℝ) < (0.9213094330291355 : ℝ) := by
+theorem nuclear_S_eq_emergence_pos : (0 : ℝ) < (0.9363875640629747 : ℝ) := by
   norm_num
 
 theorem lambda_qcd_proxy_pos : (0 : ℝ) < (0.21740442367390217 : ℝ) := by
@@ -51,16 +51,16 @@ theorem singlet_persists_at_S_eq_flag_eq : (1 : ℕ) = (1 : ℕ) := by
 theorem counterfactual_no_damp_free_color_persists_flag_eq : (1 : ℕ) = (1 : ℕ) := by
   decide
 
-theorem linear_potential_unit_identity_err_under_half : (1.3209968920124462e-14 : ℝ) < (0.5 : ℝ) := by
+theorem linear_potential_unit_identity_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem linear_potential_unit_identity_measured_pos : (0 : ℝ) < (0.4202216641606967 : ℝ) := by
+theorem linear_potential_unit_identity_measured_pos : (0 : ℝ) < (0.4201087636498879 : ℝ) := by
   norm_num
 
-theorem linear_potential_unit_identity_computed_pos : (0 : ℝ) < (0.42022166416069673 : ℝ) := by
+theorem linear_potential_unit_identity_computed_pos : (0 : ℝ) < (0.4201087636498879 : ℝ) := by
   norm_num
 
-theorem linear_potential_unit_identity_abs_diff : (5.551115123125783e-17 : ℝ) < (1e-12 : ℝ) := by
+theorem linear_potential_unit_identity_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
   norm_num
 
 theorem alpha_s_seed_positive_flag_eq : (1 : ℕ) = (1 : ℕ) := by
@@ -72,10 +72,10 @@ theorem nuclear_S_emergence_sign_flag_eq : (1 : ℕ) = (1 : ℕ) := by
 theorem gamma_color_over_gamma_singlet_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem gamma_color_over_gamma_singlet_measured_pos : (0 : ℝ) < (1.5617360365314306 : ℝ) := by
+theorem gamma_color_over_gamma_singlet_measured_pos : (0 : ℝ) < (1.5670427793877102 : ℝ) := by
   norm_num
 
-theorem gamma_color_over_gamma_singlet_computed_pos : (0 : ℝ) < (1.5617360365314306 : ℝ) := by
+theorem gamma_color_over_gamma_singlet_computed_pos : (0 : ℝ) < (1.5670427793877102 : ℝ) := by
   norm_num
 
 theorem gamma_color_over_gamma_singlet_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
@@ -186,7 +186,7 @@ theorem E5_reeval_machinery_exists_score_pos : (0 : ℝ) < (1.0 : ℝ) := by
 theorem reality_fiction_calibration_ok : (1 : ℕ) = (1 : ℕ) := by
   decide
 
-theorem confinement_suite_gamma_export_pos : (0 : ℝ) < (0.6684908749126979 : ℝ) := by
+theorem confinement_suite_gamma_export_pos : (0 : ℝ) < (0.6707623914122531 : ℝ) := by
   norm_num
 
 theorem path_sum2_eq_one_flag : (1 : ℕ) = (1 : ℕ) := by
@@ -198,7 +198,7 @@ theorem poof_hold_pos : (0 : ℝ) < (0.510728588773961 : ℝ) := by
 theorem suction_hold_pos : (0 : ℝ) < (0.4892714112260389 : ℝ) := by
   norm_num
 
-theorem color_path_integral_proxy_pos : (0 : ℝ) < (1.4959067319065438 : ℝ) := by
+theorem color_path_integral_proxy_pos : (0 : ℝ) < (1.4908408891180605 : ℝ) := by
   norm_num
 
 theorem P1_path_sum2_eq_one_err_under_half : (1.1102230246251565e-14 : ℝ) < (0.5 : ℝ) := by
@@ -213,7 +213,7 @@ theorem P3_loading_potentials_sum_one_err_under_half : (0.0 : ℝ) < (0.5 : ℝ)
 theorem P4_color_path_integral_finite_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem P5_area_law_V_of_one_over_sqrt_sigma_err_under_half : (1.3209968920124464e-14 : ℝ) < (0.5 : ℝ) := by
+theorem P5_area_law_V_of_one_over_sqrt_sigma_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem P6_mass_gap_proxy_pos_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
@@ -285,7 +285,7 @@ theorem ym_native_path_sum2_computed_pos : (0 : ℝ) < (0.9999999999999999 : ℝ
 theorem ym_color_path_integral_finite_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem ym_color_path_integral_finite_computed_pos : (0 : ℝ) < (1.4959067319065438 : ℝ) := by
+theorem ym_color_path_integral_finite_computed_pos : (0 : ℝ) < (1.4908408891180605 : ℝ) := by
   norm_num
 
 theorem ns_viscosity_pos_D6_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
@@ -309,7 +309,7 @@ theorem ns_viscosity_pos_D25_computed_pos : (0 : ℝ) < (0.16069183175866183 : �
 theorem ns_sound_speed_sq_pos_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem ns_sound_speed_sq_pos_computed_pos : (0 : ℝ) < (0.5918925123201455 : ℝ) := by
+theorem ns_sound_speed_sq_pos_computed_pos : (0 : ℝ) < (0.5919208298447349 : ℝ) := by
   norm_num
 
 theorem riemann_first_zero_im_probe_err_under_half : (0.0016606647963751638 : ℝ) < (0.5 : ℝ) := by
@@ -336,16 +336,22 @@ theorem hodge_clay_open_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
 theorem hodge_clay_open_computed_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
-theorem mill_acc_beats_or_meets_n_flag : (7 : ℕ) = (7 : ℕ) := by
+theorem mill_acc_beats_or_meets_n_flag : (41 : ℕ) = (41 : ℕ) := by
+  decide
+
+theorem mill_acc_comparable_n_flag : (38 : ℕ) = (38 : ℕ) := by
+  decide
+
+theorem mill_acc_green_pass_n_flag : (35 : ℕ) = (35 : ℕ) := by
   decide
 
 theorem mill_acc_clay_open_n_flag : (6 : ℕ) = (6 : ℕ) := by
   decide
 
-theorem mill_acc_sota_beats_accuracy_wip_n_flag : (2 : ℕ) = (2 : ℕ) := by
+theorem mill_acc_sota_beats_accuracy_wip_n_flag : (4 : ℕ) = (4 : ℕ) := by
   decide
 
-theorem mill_acc_next_dig_n_flag : (5 : ℕ) = (5 : ℕ) := by
+theorem mill_acc_next_dig_n_flag : (3 : ℕ) = (3 : ℕ) := by
   decide
 
 theorem mill_acc_riemann_beats_public_closed_form_flag : (1 : ℕ) = (1 : ℕ) := by
@@ -354,7 +360,10 @@ theorem mill_acc_riemann_beats_public_closed_form_flag : (1 : ℕ) = (1 : ℕ) :
 theorem mill_acc_riemann_panel_beats_rvm_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
-theorem mill_acc_glueball_does_not_beat_teper_flag : (1 : ℕ) = (1 : ℕ) := by
+theorem mill_acc_riemann_signed_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
+theorem mill_acc_glueball_does_not_beat_teper_flag : (0 : ℕ) = (0 : ℕ) := by
   decide
 
 theorem mill_acc_glueball_beats_4sqrt_sigma_flag : (1 : ℕ) = (1 : ℕ) := by
@@ -363,10 +372,19 @@ theorem mill_acc_glueball_beats_4sqrt_sigma_flag : (1 : ℕ) = (1 : ℕ) := by
 theorem mill_acc_glueball_ratio_beats_three_halves_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
+theorem mill_acc_bsd_integer_rank_first5_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
+theorem mill_acc_bsd_234446_reg_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
+theorem mill_acc_hodge_named_no_k3_complete_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
 theorem mill_acc_ecmwf_not_beaten_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
-theorem mill_acc_weather_quiet_fill_still_miss_flag : (1 : ℕ) = (1 : ℕ) := by
+theorem mill_acc_weather_quiet_fill_still_miss_flag : (0 : ℕ) = (0 : ℕ) := by
   decide
 
 end

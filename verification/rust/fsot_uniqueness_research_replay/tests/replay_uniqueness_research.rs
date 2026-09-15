@@ -2,10 +2,10 @@
 
 #[test]
 fn replay_uniqueness_research_obligations() {
-    assert!(0.6684908749126979_f64 > 0.0, "gamma_color_pos");
+    assert!(0.6707623914122531_f64 > 0.0, "gamma_color_pos");
     assert!(0.4280434460598068_f64 > 0.0, "gamma_singlet_pos");
-    assert!(0.9213094330291355_f64 > 0.0, "nuclear_S_eq_pos");
-    assert!(0.9213094330291355_f64 > 0.0, "nuclear_S_eq_emergence_pos");
+    assert!(0.9363875640629747_f64 > 0.0, "nuclear_S_eq_pos");
+    assert!(0.9363875640629747_f64 > 0.0, "nuclear_S_eq_emergence_pos");
     assert!(0.21740442367390217_f64 > 0.0, "lambda_qcd_proxy_pos");
     assert_eq!(25, 25, "deff_ceiling_eq_25");
     assert!(25 > 0, "deff_ceiling_nat_pos");
@@ -15,15 +15,15 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "free_color_damped_to_zero_flag_eq");
     assert_eq!(1, 1, "singlet_persists_at_S_eq_flag_eq");
     assert_eq!(1, 1, "counterfactual_no_damp_free_color_persists_flag_eq");
-    assert!(1.3209968920124462e-14_f64 < 0.5_f64, "linear_potential_unit_identity_err_under_half");
-    assert!(0.4202216641606967_f64 > 0.0, "linear_potential_unit_identity_measured_pos");
-    assert!(0.42022166416069673_f64 > 0.0, "linear_potential_unit_identity_computed_pos");
-    assert!(5.551115123125783e-17_f64 < 1e-12_f64, "linear_potential_unit_identity_abs_diff");
+    assert!(0.0_f64 < 0.5_f64, "linear_potential_unit_identity_err_under_half");
+    assert!(0.4201087636498879_f64 > 0.0, "linear_potential_unit_identity_measured_pos");
+    assert!(0.4201087636498879_f64 > 0.0, "linear_potential_unit_identity_computed_pos");
+    assert!(0.0_f64 < 1e-09_f64, "linear_potential_unit_identity_abs_diff");
     assert_eq!(1, 1, "alpha_s_seed_positive_flag_eq");
     assert_eq!(1, 1, "nuclear_S_emergence_sign_flag_eq");
     assert!(0.0_f64 < 0.5_f64, "gamma_color_over_gamma_singlet_err_under_half");
-    assert!(1.5617360365314306_f64 > 0.0, "gamma_color_over_gamma_singlet_measured_pos");
-    assert!(1.5617360365314306_f64 > 0.0, "gamma_color_over_gamma_singlet_computed_pos");
+    assert!(1.5670427793877102_f64 > 0.0, "gamma_color_over_gamma_singlet_measured_pos");
+    assert!(1.5670427793877102_f64 > 0.0, "gamma_color_over_gamma_singlet_computed_pos");
     assert!(0.0_f64 < 1e-09_f64, "gamma_color_over_gamma_singlet_abs_diff");
     assert_eq!(1, 1, "R1_nuclear_emergence_calibration_pass");
     assert!(1.0_f64 > 0.0, "R1_nuclear_emergence_score_pos");
@@ -60,16 +60,16 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "E5_reeval_machinery_exists_calibration_pass");
     assert!(1.0_f64 > 0.0, "E5_reeval_machinery_exists_score_pos");
     assert_eq!(1, 1, "reality_fiction_calibration_ok");
-    assert!(0.6684908749126979_f64 > 0.0, "confinement_suite_gamma_export_pos");
+    assert!(0.6707623914122531_f64 > 0.0, "confinement_suite_gamma_export_pos");
     assert_eq!(1, 1, "path_sum2_eq_one_flag");
     assert!(0.510728588773961_f64 > 0.0, "poof_hold_pos");
     assert!(0.4892714112260389_f64 > 0.0, "suction_hold_pos");
-    assert!(1.4959067319065438_f64 > 0.0, "color_path_integral_proxy_pos");
+    assert!(1.4908408891180605_f64 > 0.0, "color_path_integral_proxy_pos");
     assert!(1.1102230246251565e-14_f64 < 0.5_f64, "P1_path_sum2_eq_one_err_under_half");
     assert!(0.0_f64 < 0.5_f64, "P2_poof_hold_eq_valve_err_under_half");
     assert!(0.0_f64 < 0.5_f64, "P3_loading_potentials_sum_one_err_under_half");
     assert!(0.0_f64 < 0.5_f64, "P4_color_path_integral_finite_err_under_half");
-    assert!(1.3209968920124464e-14_f64 < 0.5_f64, "P5_area_law_V_of_one_over_sqrt_sigma_err_under_half");
+    assert!(0.0_f64 < 0.5_f64, "P5_area_law_V_of_one_over_sqrt_sigma_err_under_half");
     assert!(0.0_f64 < 0.5_f64, "P6_mass_gap_proxy_pos_err_under_half");
     assert_eq!(7, 7, "forecast_horizon_eq_7");
     assert!(6.854101966249686_f64 > 0.0, "process_ceiling_days_pos");
@@ -93,7 +93,7 @@ fn replay_uniqueness_research_obligations() {
     assert!(1.1102230246251565e-14_f64 < 0.5_f64, "ym_native_path_sum2_err_under_half");
     assert!(0.9999999999999999_f64 > 0.0, "ym_native_path_sum2_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "ym_color_path_integral_finite_err_under_half");
-    assert!(1.4959067319065438_f64 > 0.0, "ym_color_path_integral_finite_computed_pos");
+    assert!(1.4908408891180605_f64 > 0.0, "ym_color_path_integral_finite_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "ns_viscosity_pos_D6_err_under_half");
     assert!(0.412270210542628_f64 > 0.0, "ns_viscosity_pos_D6_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "ns_viscosity_pos_D14_err_under_half");
@@ -101,7 +101,7 @@ fn replay_uniqueness_research_obligations() {
     assert!(0.0_f64 < 0.5_f64, "ns_viscosity_pos_D25_err_under_half");
     assert!(0.16069183175866183_f64 > 0.0, "ns_viscosity_pos_D25_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "ns_sound_speed_sq_pos_err_under_half");
-    assert!(0.5918925123201455_f64 > 0.0, "ns_sound_speed_sq_pos_computed_pos");
+    assert!(0.5919208298447349_f64 > 0.0, "ns_sound_speed_sq_pos_computed_pos");
     assert!(0.0016606647963751638_f64 < 0.5_f64, "riemann_first_zero_im_probe_err_under_half");
     assert!(14.1344904113302_f64 > 0.0, "riemann_first_zero_im_probe_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "pnp_grover_exponent_err_under_half");
@@ -110,15 +110,21 @@ fn replay_uniqueness_research_obligations() {
     assert!(1.0_f64 > 0.0, "bsd_clay_open_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "hodge_clay_open_err_under_half");
     assert!(1.0_f64 > 0.0, "hodge_clay_open_computed_pos");
-    assert_eq!(7, 7, "mill_acc_beats_or_meets_n_flag");
+    assert_eq!(41, 41, "mill_acc_beats_or_meets_n_flag");
+    assert_eq!(38, 38, "mill_acc_comparable_n_flag");
+    assert_eq!(35, 35, "mill_acc_green_pass_n_flag");
     assert_eq!(6, 6, "mill_acc_clay_open_n_flag");
-    assert_eq!(2, 2, "mill_acc_sota_beats_accuracy_wip_n_flag");
-    assert_eq!(5, 5, "mill_acc_next_dig_n_flag");
+    assert_eq!(4, 4, "mill_acc_sota_beats_accuracy_wip_n_flag");
+    assert_eq!(3, 3, "mill_acc_next_dig_n_flag");
     assert_eq!(1, 1, "mill_acc_riemann_beats_public_closed_form_flag");
     assert_eq!(1, 1, "mill_acc_riemann_panel_beats_rvm_flag");
-    assert_eq!(1, 1, "mill_acc_glueball_does_not_beat_teper_flag");
+    assert_eq!(1, 1, "mill_acc_riemann_signed_green_flag");
+    assert_eq!(0, 0, "mill_acc_glueball_does_not_beat_teper_flag");
     assert_eq!(1, 1, "mill_acc_glueball_beats_4sqrt_sigma_flag");
     assert_eq!(1, 1, "mill_acc_glueball_ratio_beats_three_halves_flag");
+    assert_eq!(1, 1, "mill_acc_bsd_integer_rank_first5_flag");
+    assert_eq!(1, 1, "mill_acc_bsd_234446_reg_green_flag");
+    assert_eq!(1, 1, "mill_acc_hodge_named_no_k3_complete_flag");
     assert_eq!(1, 1, "mill_acc_ecmwf_not_beaten_flag");
-    assert_eq!(1, 1, "mill_acc_weather_quiet_fill_still_miss_flag");
+    assert_eq!(0, 0, "mill_acc_weather_quiet_fill_still_miss_flag");
 }

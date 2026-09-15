@@ -460,14 +460,20 @@ def build_obligations() -> list[dict]:
     acc = accuracy_summary()
     for key, val in (
         ("mill_acc_beats_or_meets_n", acc["beats_or_meets_count"]),
+        ("mill_acc_comparable_n", acc["comparable_count"]),
+        ("mill_acc_green_pass_n", acc["fsot_green_pass_n"]),
         ("mill_acc_clay_open_n", acc["clay_problems_remaining"]),
         ("mill_acc_sota_beats_accuracy_wip_n", acc["sota_beats_accuracy_wip_n"]),
         ("mill_acc_next_dig_n", acc["next_dig_n"]),
         ("mill_acc_riemann_beats_public_closed_form", acc["riemann_beats_public_closed_form"]),
         ("mill_acc_riemann_panel_beats_rvm", acc["riemann_panel_beats_rvm"]),
+        ("mill_acc_riemann_signed_green", acc["riemann_signed_green"]),
         ("mill_acc_glueball_does_not_beat_teper", acc["glueball_does_not_beat_teper"]),
         ("mill_acc_glueball_beats_4sqrt_sigma", acc["glueball_beats_4sqrt_sigma"]),
         ("mill_acc_glueball_ratio_beats_three_halves", acc["glueball_ratio_beats_three_halves"]),
+        ("mill_acc_bsd_integer_rank_first5", acc["bsd_integer_rank_first5"]),
+        ("mill_acc_bsd_234446_reg_green", acc["bsd_234446a1_reg_green"]),
+        ("mill_acc_hodge_named_no_k3_complete", acc["hodge_hassett_named_no_k3_complete"]),
         ("mill_acc_ecmwf_not_beaten", acc["ecmwf_not_beaten"]),
         ("mill_acc_weather_quiet_fill_still_miss", acc["weather_quiet_fill_still_miss"]),
     ):

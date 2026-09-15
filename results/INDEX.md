@@ -9,7 +9,8 @@
 **Catalog-class refresh:** [`catalog_class_refresh.json`](catalog_class_refresh.json) · [`../predictions/reports/CATALOG_CLASS_REFRESH.md`](../predictions/reports/CATALOG_CLASS_REFRESH.md)  
 **FRB orifice (Cat-2 dump):** [`frb_orifice_outgassing_outcome.json`](frb_orifice_outgassing_outcome.json)  
 **Architecture densify:** [`architecture_building_science_densify_hold.md`](architecture_building_science_densify_hold.md)  
-**Pin:** D1D38A
+**Pin:** AEB2AD
+**Millennium named functions:** [`millennium_named_outcomes.md`](millennium_named_outcomes.md) — Hodge \(C_8\)..\(C_{44}\) algebraic; BSD ranks 0..4 labeled. Not a Clay Prize.
 
 Predictions live in [`../predictions/`](../predictions/). This page is **outcomes only**.
 

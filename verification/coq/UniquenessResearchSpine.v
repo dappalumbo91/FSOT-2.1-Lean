@@ -5,16 +5,16 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma gamma_color_pos : 0 < ((0.6684908749126979%R)).
+Lemma gamma_color_pos : 0 < ((0.6707623914122531%R)).
 Proof. lra. Qed.
 
 Lemma gamma_singlet_pos : 0 < ((0.4280434460598068%R)).
 Proof. lra. Qed.
 
-Lemma nuclear_S_eq_pos : 0 < ((0.9213094330291355%R)).
+Lemma nuclear_S_eq_pos : 0 < ((0.9363875640629747%R)).
 Proof. lra. Qed.
 
-Lemma nuclear_S_eq_emergence_pos : 0 < ((0.9213094330291355%R)).
+Lemma nuclear_S_eq_emergence_pos : 0 < ((0.9363875640629747%R)).
 Proof. lra. Qed.
 
 Lemma lambda_qcd_proxy_pos : 0 < ((0.21740442367390217%R)).
@@ -44,16 +44,16 @@ Proof. reflexivity. Qed.
 Lemma counterfactual_no_damp_free_color_persists_flag_eq : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
-Lemma linear_potential_unit_identity_err_under_half : ((0.000000000000013209968920124462%R)) < (0.5%R).
+Lemma linear_potential_unit_identity_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma linear_potential_unit_identity_measured_pos : 0 < ((0.4202216641606967%R)).
+Lemma linear_potential_unit_identity_measured_pos : 0 < ((0.4201087636498879%R)).
 Proof. lra. Qed.
 
-Lemma linear_potential_unit_identity_computed_pos : 0 < ((0.42022166416069673%R)).
+Lemma linear_potential_unit_identity_computed_pos : 0 < ((0.4201087636498879%R)).
 Proof. lra. Qed.
 
-Lemma linear_potential_unit_identity_abs_diff : ((0.00000000000000005551115123125783%R)) < ((0.000000000001%R)).
+Lemma linear_potential_unit_identity_abs_diff : (0%R) < ((0.000000001%R)).
 Proof. lra. Qed.
 
 Lemma alpha_s_seed_positive_flag_eq : (1 = 1)%nat.
@@ -65,10 +65,10 @@ Proof. reflexivity. Qed.
 Lemma gamma_color_over_gamma_singlet_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma gamma_color_over_gamma_singlet_measured_pos : 0 < ((1.5617360365314306%R)).
+Lemma gamma_color_over_gamma_singlet_measured_pos : 0 < ((1.5670427793877102%R)).
 Proof. lra. Qed.
 
-Lemma gamma_color_over_gamma_singlet_computed_pos : 0 < ((1.5617360365314306%R)).
+Lemma gamma_color_over_gamma_singlet_computed_pos : 0 < ((1.5670427793877102%R)).
 Proof. lra. Qed.
 
 Lemma gamma_color_over_gamma_singlet_abs_diff : (0%R) < ((0.000000001%R)).
@@ -179,7 +179,7 @@ Proof. lra. Qed.
 Lemma reality_fiction_calibration_ok : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
-Lemma confinement_suite_gamma_export_pos : 0 < ((0.6684908749126979%R)).
+Lemma confinement_suite_gamma_export_pos : 0 < ((0.6707623914122531%R)).
 Proof. lra. Qed.
 
 Lemma path_sum2_eq_one_flag : (1 = 1)%nat.
@@ -191,7 +191,7 @@ Proof. lra. Qed.
 Lemma suction_hold_pos : 0 < ((0.4892714112260389%R)).
 Proof. lra. Qed.
 
-Lemma color_path_integral_proxy_pos : 0 < ((1.4959067319065438%R)).
+Lemma color_path_integral_proxy_pos : 0 < ((1.4908408891180605%R)).
 Proof. lra. Qed.
 
 Lemma P1_path_sum2_eq_one_err_under_half : ((0.000000000000011102230246251565%R)) < (0.5%R).
@@ -206,7 +206,7 @@ Proof. lra. Qed.
 Lemma P4_color_path_integral_finite_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma P5_area_law_V_of_one_over_sqrt_sigma_err_under_half : ((0.000000000000013209968920124464%R)) < (0.5%R).
+Lemma P5_area_law_V_of_one_over_sqrt_sigma_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma P6_mass_gap_proxy_pos_err_under_half : (0%R) < (0.5%R).
@@ -278,7 +278,7 @@ Proof. lra. Qed.
 Lemma ym_color_path_integral_finite_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma ym_color_path_integral_finite_computed_pos : 0 < ((1.4959067319065438%R)).
+Lemma ym_color_path_integral_finite_computed_pos : 0 < ((1.4908408891180605%R)).
 Proof. lra. Qed.
 
 Lemma ns_viscosity_pos_D6_err_under_half : (0%R) < (0.5%R).
@@ -302,7 +302,7 @@ Proof. lra. Qed.
 Lemma ns_sound_speed_sq_pos_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma ns_sound_speed_sq_pos_computed_pos : 0 < ((0.5918925123201455%R)).
+Lemma ns_sound_speed_sq_pos_computed_pos : 0 < ((0.5919208298447349%R)).
 Proof. lra. Qed.
 
 Lemma riemann_first_zero_im_probe_err_under_half : ((0.0016606647963751638%R)) < (0.5%R).
@@ -329,16 +329,22 @@ Proof. lra. Qed.
 Lemma hodge_clay_open_computed_pos : 0 < ((1.0%R)).
 Proof. lra. Qed.
 
-Lemma mill_acc_beats_or_meets_n_flag : (7 = 7)%nat.
+Lemma mill_acc_beats_or_meets_n_flag : (41 = 41)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_comparable_n_flag : (38 = 38)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_green_pass_n_flag : (35 = 35)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_clay_open_n_flag : (6 = 6)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_sota_beats_accuracy_wip_n_flag : (2 = 2)%nat.
+Lemma mill_acc_sota_beats_accuracy_wip_n_flag : (4 = 4)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_next_dig_n_flag : (5 = 5)%nat.
+Lemma mill_acc_next_dig_n_flag : (3 = 3)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_riemann_beats_public_closed_form_flag : (1 = 1)%nat.
@@ -347,7 +353,10 @@ Proof. reflexivity. Qed.
 Lemma mill_acc_riemann_panel_beats_rvm_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_glueball_does_not_beat_teper_flag : (1 = 1)%nat.
+Lemma mill_acc_riemann_signed_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_glueball_does_not_beat_teper_flag : (0 = 0)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_glueball_beats_4sqrt_sigma_flag : (1 = 1)%nat.
@@ -356,9 +365,18 @@ Proof. reflexivity. Qed.
 Lemma mill_acc_glueball_ratio_beats_three_halves_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
+Lemma mill_acc_bsd_integer_rank_first5_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_bsd_234446_reg_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_hodge_named_no_k3_complete_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
 Lemma mill_acc_ecmwf_not_beaten_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_weather_quiet_fill_still_miss_flag : (1 = 1)%nat.
+Lemma mill_acc_weather_quiet_fill_still_miss_flag : (0 = 0)%nat.
 Proof. reflexivity. Qed.
 

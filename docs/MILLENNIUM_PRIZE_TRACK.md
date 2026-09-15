@@ -73,7 +73,7 @@ python vendor/fsot_millennium_accuracy.py
 python scripts/run_goal_tracks_verification.py
 ```
 
-Lean: `FSOT/Formal/MillenniumTrack.lean` (process rules + Grover 1/2 + critical-line *goal*).  
-Numeric native rows export into the uniqueness spine (Coq / Isabelle / F* / Rust / SMT) with `clay_status=OPEN_NOT_CLAIMED`.
+Lean: `FSOT/Formal/MillenniumTrack.lean` (process rules + Grover 1/2 + critical-line *goal* + BSD first-of-rank \(n=5\) + named Hodge no-K3 \(n=9\)).  
+Numeric native rows export into the uniqueness spine (Coq / Isabelle / F* / Rust / SMT) with `clay_status=OPEN_NOT_CLAIMED`. Named-function outcomes: [`../results/millennium_named_outcomes.md`](../results/millennium_named_outcomes.md).
 
 Kill: “we won a Millennium Prize.” Kill: GitHub as a Qualifying Outlet. Kill: stuffing a residual probe into the Clay statement.

@@ -29,7 +29,7 @@
 | **Goal tracks** | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) | ECMWF, prices, sickness, path-sum | In progress, not claimed beaten |
 | **Millennium YM vs FSOT** | [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) | Clay mass-gap vs native path-sum | Different formal objects |
 | **All 6 Clay problems + prize rules** | [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) | Official CMI rules; native vs Clay objects | Prize not claimed |
-| **Accuracy vs public SOTA** | [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) | Function contest, not Prize gates | Glueball vs Teper may lose |
+| **Accuracy vs public SOTA** | [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) | Function contest, not Prize gates | Named Hodge \(C_8\)..\(C_{44}\); BSD ranks 0..4; NSE/general \(E\) still open |
 | **Coverage list** | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) | 35 cores + 477 green files | What the program solves for |
 | **Sibling slots** | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) | Residual vs product | Where the next open-source text/sim goes |
 
@@ -39,7 +39,7 @@ Everyone who will **run code** also reads [`REPRODUCIBILITY.md`](REPRODUCIBILITY
 
 ## Accuracy rule (non-negotiable)
 
-1. **Pin** = first 6 hex of SHA-256 of `vendor/fsot_compute.py` (must be **D1D38A** when pin_match is true).  
+1. **Pin** = first 6 hex of SHA-256 of `vendor/fsot_compute.py` (live **AEB2AD** when pin_match is true).  
 2. **Green count** = `data/benchmark_margin_audit.json` → `green_gate_pass_count` / `benchmark_file_count` (gate ≤ **0.5%** pooled median).  
 3. **Multiprover** = `data/cross_proof_verification_report.json` → `overall_ok`.  
 4. If a doc disagrees with [`CURRENT_STATUS.md`](CURRENT_STATUS.md), **the status file wins** until the doc is regenerated.

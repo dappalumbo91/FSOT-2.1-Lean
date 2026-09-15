@@ -65,6 +65,19 @@ def riemann_critical_line : ℝ := 1 / 2
 theorem riemann_critical_line_eq_half : riemann_critical_line = (1 / 2 : ℝ) := by
   unfold riemann_critical_line; norm_num
 
+/-- First-of-rank BSD ladder: ranks 0..4. Not a Weierstrass→ℤ map; not Clay BSD. -/
+def bsd_first_of_rank_n : ℕ := 5
+
+theorem bsd_first_of_rank_n_eq : bsd_first_of_rank_n = 5 := by
+  unfold bsd_first_of_rank_n; decide
+
+/-- Named extra-Hodge-without-K3 discriminants (Hassett+Nuer):
+    8,12,18,20,24,30,32,36,44. Not the Hodge conjecture. Infinite later C_d unnamed. -/
+def hodge_named_no_k3_n : ℕ := 9
+
+theorem hodge_named_no_k3_n_eq : hodge_named_no_k3_n = 9 := by
+  unfold hodge_named_no_k3_n; decide
+
 end
 
 end FSOT.Formal.MillenniumTrack
