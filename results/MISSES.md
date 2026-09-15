@@ -16,6 +16,7 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | SH0ES-LADDER | A | SH0ES ladder chain pooled | ~0.212% (aspiration 0.05% open) | Did not β-fit the ladder |
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
 | NSE-CLAY | — | 3D NSE smoothness | No native Clay theorem | 1D Stokes at Fluid nest D=12 (dark) is not that theorem |
+| PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid \(v_P/v_S\) | **5.43%** after nest Atomic \(D=6\) (\(\nu=0.24\)). Assigned Atomic \(D=7\) had been 0.19%. | Did not put Atomic back to 7. Continuum solid may be Molecular \(D=7\) (\(\nu=0.28\)), not the bound well. |
 | BSD-RANK | — | rank = ord L(E,s) | No native rank predictor | Named 11a1/37a1/389a1 only |
 | HODGE-CLASS | — | Hodge classes algebraic | No native predictor | Named ℂP² and elliptic curve; did not steal 20 W for K3 |
 

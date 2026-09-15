@@ -252,6 +252,9 @@ def _row(
     kind: str = "scalar",
     extra: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    # Live |S_i|/|S_j| (vs 1 or vs a retired look-split) is perception, not a 0.5% central.
+    if "S_ratio" in prop:
+        kind = "structural"
     rec: dict[str, Any] = {
         "lab": "scale_interconnect_lab",
         "property": prop,
@@ -259,7 +262,7 @@ def _row(
         "computed": computed,
         "measured": measured,
         "error_pct": err(computed, measured),
-        "eval_kind": "fsot_prediction" if kind == "scalar" else "literature_band",
+        "eval_kind": "fsot_prediction" if kind == "scalar" else "structural",
         "record_kind": kind,
         "note": note,
     }

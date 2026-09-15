@@ -18,37 +18,37 @@
     "poof_factor": "0.15348221489445079910819397263148311778909269545395"
   },
   "layer2": {
-    "coherence_efficiency": "0.95770220262056129840924162512013500710030977376188",
+    "coherence_efficiency": "0.95774802133782426776708397717345371304644791865112",
     "acoustic_bleed": "1.0469736305875510479944010893274985086379517243744",
     "phase_variance": "0.95798712267227574298012347968347185668911366196382",
-    "bleed_in_factor": "0.78794079227644358538153094640794623032301509402471",
+    "bleed_in_factor": "0.78797848921008588808606276473951084370984721279822",
     "acoustic_inflow": "1.6668538450045730429519037608383471556533672886222",
     "suction_factor": "0.14703398542810282486066079564381082923203891666308",
     "chaos_factor": "-0.33102418261048184117525238337709910027806936155306",
     "perceived_param_base": "0.21234577623937842245507726769782102059270547813039",
     "new_perceived_param": "0.30030227667037148123499897419686964352723973036138",
-    "consciousness_factor": "0.28760015181918396646257723332531607604357272537045",
-    "k": "0.42022166416069669404357559272383420120358143238861",
-    "c_cosm": "0.061803398874989484820458683436563811772030917980576"
+    "consciousness_factor": "0.28761391128429215221261541448255116750490022331023",
+    "k": "0.42010876364988794091537199035249421857574511746219",
+    "c_cosm": "0.06261993527133461215587329253593934355036217496184"
   },
   "domain_scalars": {
-    "S_cosm": "-0.50245594621004332083298044769232221368558717436863",
-    "S_quant": "0.9555063001027196648365669453932087257502742070049"
+    "S_cosm": "-0.50237731817614781868177889914058744567326467089208",
+    "S_quant": "0.95019747016701420406929823691255270935876830911052"
   },
   "wave1": {
     "alpha_s(M_Z)": "0.11709966304863832138048453693333374442782984255212",
-    "H0": "68.440056829794272329874272030600110529524723805312",
-    "T_CMB": "2.7247283866739578679174163637561201161362975032163",
-    "n_s": "0.96380628336788156990701102883355720712081375344866",
-    "Omega_b_h2": "0.022356124082273698114310622688489593591736735542849"
+    "H0": "68.444995563826667897297566662111189384546505870652",
+    "T_CMB": "2.7247116903430661513554951519478184718028486708919",
+    "n_s": "0.96333383659547170297445110866307488184089720271181",
+    "Omega_b_h2": "0.022461621418647439568385717048195613961467343294758"
   },
   "hash_gate": {
     "authority_path": "vendor/fsot_compute.py",
-    "authority_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-    "expected_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-    "synced_at": "2026-07-13T04:13:47.873409+00:00",
+    "authority_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+    "expected_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+    "synced_at": "2026-09-15T00:46:59.950382+00:00",
     "known_hashes": {
-      "canonical": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+      "canonical": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
       "pre_ledger_align": "EE4E02C4CD658541C019AB6F1B0649926D9319F969231E17F4987389235A83B7",
       "extended_fork": "DB1FAA8A40B4BDFEC98DF14869E85A891C817AD549E341090A1889399868C493",
       "stale": "BF668F9E3682E7834545501BE6254E5149B0D409CE02B6976B96814E07645F57"
@@ -58,7 +58,7 @@
         "label": "vendor",
         "path": "vendor/fsot_compute.py",
         "present": true,
-        "sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+        "sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
         "class": "canonical",
         "expected_role": "canonical",
         "matches_expected": true
@@ -68,18 +68,18 @@
         "path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
         "present": true,
         "sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-        "class": "canonical",
+        "class": "previous_decimal_knobs",
         "expected_role": "canonical",
-        "matches_expected": true
+        "matches_expected": false
       },
       {
         "label": "fsot_3_0",
         "path": "C:\\Users\\damia\\Desktop\\Fsot3.0 code\\fsot_compute.py",
-        "present": true,
-        "sha256": "DB1FAA8A40B4BDFEC98DF14869E85A891C817AD549E341090A1889399868C493",
-        "class": "extended_fork",
+        "present": false,
+        "sha256": null,
+        "class": null,
         "expected_role": "extended_fork",
-        "matches_expected": true
+        "matches_expected": null
       },
       {
         "label": "cosmology_lab",
@@ -95,16 +95,16 @@
         "path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\fsot_compute.py",
         "present": true,
         "sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-        "class": "canonical",
+        "class": "previous_decimal_knobs",
         "expected_role": "canonical",
-        "matches_expected": true
+        "matches_expected": false
       },
       {
         "label": "neurolab",
         "path": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\fsot_compute.py",
         "present": true,
-        "sha256": "A6ABB338981D5FF74AA3A754797C87A127EA5B32D9B6C243C4E97C1395AA1955",
-        "class": "unknown",
+        "sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+        "class": "previous_decimal_knobs",
         "expected_role": "canonical",
         "matches_expected": false
       }
