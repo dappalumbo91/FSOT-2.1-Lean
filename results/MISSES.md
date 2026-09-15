@@ -18,8 +18,8 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
 | NSE-CLAY | — | 3D NSE existence on R^3 | Kolmogorov 4/5 cascade is the 3D number (`1−1/D_particle`). Global-in-time existence is a different object. | Did not stuff existence into 4/5. |
 | PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid | **Superseded object:** Atomic well \(D=6\) gave 5.43%. Continuum solid is Molecular \(D=7\), \(\nu=7/25=0.28\). | Did not put Atomic back to 7. |
-| BSD-RANK | — | integer rank of a general E | First-curve leadings uniquely label ranks 0..3. Parity from \(w_E\). General E still produces the leading from its modular form. Rank 4 unnamed. | Did not nearest-template arbitrary \(L(1)\) (17a1 would mis-fire). |
-| HODGE-CLASS | — | Extra Hodge classes on a cubic with no associated K3 | Associated K3 reduces algebraicity to Lefschetz (1,1). Very general cubic: only \(h^2\). \(h^{1,1}(\mathrm{K3})=20=F_8-1\); Fano \(b_2=23\). | Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
+| BSD-RANK | — | integer rank of a general E | First-curve leadings uniquely label ranks 0..4. Rank 4 is \((\varphi^2+1)\cdot e\cdot\mathrm{POOF}\) (missing loop fold, not \(e^2\)). Parity from \(w_E\). General E still produces the leading from its modular form. | Did not nearest-template arbitrary \(L(1)\) (17a1 would mis-fire). Did not \(\pi^2\cdot\mathrm{POOF}\). |
+| HODGE-CLASS | — | Extra Hodge classes beyond \(C_8\) | \(C_8\) extra class is \([\mathrm{plane}]\), algebraic; \(4\mid d\) so no associated K3. \(d=F_6=8\). Remainder: \(C_{12}\) scroll and later extra discriminants, general 4-folds. | Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). Did not pad \(d=8\) as \(2^3\). |
 
 Dated public scoreboard kills live in [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md). Do not rewrite issued JSON.
 

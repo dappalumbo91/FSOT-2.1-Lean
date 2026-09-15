@@ -44,6 +44,10 @@ try:
         seed_bsd_389a1_regulator,
         seed_bsd_389a1_special,
         seed_bsd_5077a1_regulator,
+        seed_bsd_234446a1_regulator,
+        seed_hassett_d_plane,
+        hassett_C_d_nonempty,
+        hassett_associated_k3,
         seed_cp2_euler,
         seed_cp3_euler,
         seed_cp2xcp2_euler,
@@ -87,6 +91,10 @@ except ImportError:  # pragma: no cover
         seed_bsd_389a1_regulator,
         seed_bsd_389a1_special,
         seed_bsd_5077a1_regulator,
+        seed_bsd_234446a1_regulator,
+        seed_hassett_d_plane,
+        hassett_C_d_nonempty,
+        hassett_associated_k3,
         seed_cp2_euler,
         seed_cp3_euler,
         seed_cp2xcp2_euler,
@@ -165,6 +173,8 @@ LMFDB_389A1_REG = 0.15246017794314375
 LMFDB_389A1_SPECIAL = 0.7593165002884268
 # LMFDB 5077.a1 analytic rank 3. First rank-3 curve.
 LMFDB_5077A1_REG = 0.41714355875838397
+# LMFDB 234446.a1 analytic rank 4. First rank-4 curve. Tamagawa product 2.
+LMFDB_234446A1_REG = 1.504344888275284
 # Kolmogorov 4/5 law (exact 3D inertial identity).
 KOLMOGOROV_45 = 0.8
 # Odlyzko / LMFDB Im(ρ_n) for n=1..10 (measurement, not a competing theory).
@@ -1404,6 +1414,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         {"label": "37a1", "conductor": 37, "rank": 1, "L_at_1": 0.0},
         {"label": "389a1", "conductor": 389, "rank": 2, "L_at_1": 0.0},
         {"label": "5077a1", "conductor": 5077, "rank": 3, "L_at_1": 0.0},
+        {"label": "234446a1", "conductor": 234446, "rank": 4, "L_at_1": 0.0},
     )
     bsd_table_ok = all(
         (c["rank"] == 0 and c["L_at_1"] != 0.0) or (c["rank"] > 0 and c["L_at_1"] == 0.0)
@@ -1412,18 +1423,18 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Birch and Swinnerton-Dyer",
-            function_object="Named first objects: Cremona 11a1 (rank 0), 37a1 (rank 1), 389a1 (rank 2), 5077a1 (rank 3)",
+            function_object="Named first objects: Cremona 11a1 (r=0), 37a1 (r=1), 389a1 (r=2), 5077a1 (r=3), 234446a1 (r=4)",
             clay_object="rank E(Q) = ord_{s=1} L(E,s)",
             name="bsd_named_cremona_objects",
             computed=1.0 if bsd_table_ok else 0.0,
             measured=1.0,
-            public_sota_model="Cremona tables / Silverman: these three curves are the standard rank 0/1/2 examples",
+            public_sota_model="Cremona / LMFDB: first curves of analytic rank 0..4.",
             public_sota_typical_error_pct=None,
             comparison_class="no_fair_compare",
             verdict="objects_named_no_native_rank_predictor",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="APPLY step 1 only. Table is literature, not an FSOT rank formula. Do not fsot_scaled(L(E,1)).",
+            note="APPLY step 1. First-of-rank ladder 0..4 is seed-labeled. General E still produces the leading from its modular form. Do not nearest-template arbitrary L(1).",
             extra={"curves": bsd_curves, "literature_rank_vs_L_consistent": bsd_table_ok},
         )
     )
@@ -1555,6 +1566,32 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    Reg4 = seed_bsd_234446a1_regulator()
+    Reg4_err = _err_pct(Reg4, LMFDB_234446A1_REG)
+    naive_Reg4 = _err_pct(float(E) ** 2 * float(POOF), LMFDB_234446A1_REG)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Reg(234446a1)=(φ²+1)·e·POOF vs LMFDB (first rank-4 height volume, not a rank predictor)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_234446a1_regulator",
+            computed=Reg4,
+            measured=LMFDB_234446A1_REG,
+            public_sota_model="LMFDB 234446.a1 regulator. Isolated e²·POOF as naive (missing closed-loop fold).",
+            public_sota_typical_error_pct=naive_Reg4,
+            comparison_class="comparable",
+            verdict="beats_e2_POOF_as_typical" if Reg4_err < naive_Reg4 else "does_not_beat_e2_POOF",
+            beats_or_meets_sota=Reg4_err < naive_Reg4,
+            native_status="EXECUTABLE",
+            note="Rank-3 volume times the glueball/loop fold φ²+1. Isolated e²·POOF misses 24.6%. Tamagawa 2 is the extra prime in the conductor, not a retune of the volume. Do not π²·POOF. Not a rank formula for general E.",
+            extra={
+                "formula": "(PHI**2+1)*E*POOF",
+                "fsot_vs_lmfdb_pct": Reg4_err,
+                "e2_POOF_vs_lmfdb_pct": naive_Reg4,
+                "loop_fold": float(PHI) ** 2 + 1.0,
+            },
+        )
+    )
     # E→rank (mod 2) from the root number. First curves of rank 0..4.
     bsd_parity_curves = (
         {"label": "11a1", "rank": 0, "w": 1},
@@ -1580,7 +1617,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="parity_map_holds" if parity_ok else "parity_map_fails",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="This is the Weierstrass→rank map we have: parity from a finite local invariant. Integer rank still needs ord L. e^{r-2} POOF fails at rank 4 (234446a1). Do not fsot_scaled.",
+            note="This is the Weierstrass→rank map we have: parity from a finite local invariant. Integer rank still needs ord L. Rank-4 volume is (φ²+1)·e·POOF, not e²·POOF. Do not fsot_scaled.",
             extra={"curves": bsd_parity_curves, "n_ok": 5 if parity_ok else 0},
         )
     )
@@ -1589,6 +1626,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         ("37a1", 1, LMFDB_37A1_LPRIME),
         ("389a1", 2, LMFDB_389A1_SPECIAL),
         ("5077a1", 3, LMFDB_5077A1_REG),
+        ("234446a1", 4, LMFDB_234446A1_REG),
     )
     rank_hits = [
         {"label": lab, "rank": r, "predicted": bsd_integer_rank_from_leading(val), "ok": bsd_integer_rank_from_leading(val) == r}
@@ -1598,19 +1636,19 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Birch and Swinnerton-Dyer",
-            function_object="Integer rank from seed leading: first curves of rank 0..3 match uniquely",
+            function_object="Integer rank from seed leading: first curves of rank 0..4 match uniquely",
             clay_object="rank E(Q) = ord_{s=1} L(E,s)",
             name="bsd_integer_rank_leading",
             computed=1.0 if rank_ok else 0.0,
             measured=1.0,
-            public_sota_model="LMFDB first curves 11a1/37a1/389a1/5077a1. Nearest of {√φ/5, 2·POOF, 2π·POOF/√φ, e·POOF}.",
+            public_sota_model="LMFDB first curves 11a1/37a1/389a1/5077a1/234446a1. Nearest of {√φ/5, 2·POOF, 2π·POOF/√φ, e·POOF, (φ²+1)·e·POOF}.",
             public_sota_typical_error_pct=None,
             comparison_class="structure",
-            verdict="integer_rank_first4_holds" if rank_ok else "integer_rank_first4_fails",
+            verdict="integer_rank_first5_holds" if rank_ok else "integer_rank_first5_fails",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="Leading → rank on the first-of-rank ladder. General E still produces that leading from its modular form. Rank 4 unnamed. Do not run this nearest-template on arbitrary L(1) (17a1 would mis-fire).",
-            extra={"curves": rank_hits, "n_ok": 4 if rank_ok else 0},
+            note="Leading → rank on the first-of-rank ladder. Isolated e²·POOF was the missing loop fold. General E still produces that leading from its modular form. Do not run this nearest-template on arbitrary L(1) (17a1 would mis-fire).",
+            extra={"curves": rank_hits, "n_ok": 5 if rank_ok else 0},
         )
     )
     rows.append(
@@ -1924,6 +1962,59 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             note="The connective system. Remainder is special cubics with extra Hodge classes and no associated K3. Do not claim Hodge for every 4-fold.",
         )
     )
+    d8 = seed_hassett_d_plane()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Hassett discriminant of a cubic containing a plane = F_6 = 8 (first extra Hodge class, no associated K3)",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_d8",
+            computed=d8,
+            measured=8.0,
+            public_sota_model="Hassett C_8: cubics containing a plane. d=8>6, d≡2 (mod 6). 4|8 so no associated K3.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_hassett_d8",
+            beats_or_meets_sota=abs(d8 - 8.0) < 1e-9,
+            native_status="EXECUTABLE",
+            note="F_6, not 2³ padding. Extra class without K3 starts here. Do not steal 25−1 for K3.",
+            extra={"formula": "(PHI**6 - (1-PHI)**6)/sqrt(5)", "fibonacci_index": 6},
+        )
+    )
+    c8_nonempty = hassett_C_d_nonempty(8)
+    c8_no_k3 = not hassett_associated_k3(8)
+    c8_ok = c8_nonempty and c8_no_k3 and abs(d8 - 8.0) < 1e-9
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Extra Hodge class on C_8 is [plane], algebraic; 4|d so no associated K3",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_c8_plane_algebraic",
+            computed=1.0 if c8_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Hassett: C_8 nonempty, 4|8 ⇒ no associated K3. The extra (2,2) class is a plane.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="c8_plane_algebraic_no_k3" if c8_ok else "c8_plane_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="First extra-Hodge-without-K3 case. The class is a subvariety, so algebraic. Remainder is other extra discriminants (C_12 scroll, …) and general 4-folds. Do not steal 25−1 for K3.",
+            extra={
+                "C_8_nonempty": c8_nonempty,
+                "associated_k3": hassett_associated_k3(8),
+                "no_k3_after_8": [
+                    d
+                    for d in range(9, 40)
+                    if hassett_C_d_nonempty(d) and not hassett_associated_k3(d)
+                ],
+                "with_k3": [
+                    d
+                    for d in range(7, 40)
+                    if hassett_C_d_nonempty(d) and hassett_associated_k3(d)
+                ],
+            },
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -1938,7 +2029,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="cubic4_primitive_named_remainder",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="Algebraicity on special cubics with associated K3 is Lefschetz on the K3. Remainder is extra Hodge classes with no associated K3. Do not steal 25−1 for K3.",
+            note="C_8 extra class is [plane], algebraic. Remainder is other extra discriminants without K3 (C_12 scroll, …) and general 4-folds. Do not steal 25−1 for K3.",
         )
     )
     return rows
@@ -1983,6 +2074,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
     bsd_Sp = next(r for r in rows if r["name"] == "bsd_389a1_special")
     bsd_Reg3 = next(r for r in rows if r["name"] == "bsd_5077a1_regulator")
+    bsd_Reg4 = next(r for r in rows if r["name"] == "bsd_234446a1_regulator")
     bsd_par = next(r for r in rows if r["name"] == "bsd_rank_parity_map")
     bsd_int = next(r for r in rows if r["name"] == "bsd_integer_rank_leading")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
@@ -2002,6 +2094,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_k3 = next(r for r in rows if r["name"] == "hodge_k3_h11")
     hodge_fano = next(r for r in rows if r["name"] == "hodge_cubic4_fano_b2")
     hodge_alg = next(r for r in rows if r["name"] == "hodge_associated_k3_algebraicity")
+    hodge_d8 = next(r for r in rows if r["name"] == "hodge_hassett_d8")
+    hodge_c8 = next(r for r in rows if r["name"] == "hodge_hassett_c8_plane_algebraic")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -2069,8 +2163,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_389a1_special_green": 1 if bsd_Sp.get("fsot_green") == "pass" else 0,
         "bsd_5077a1_reg_green": 1 if bsd_Reg3.get("fsot_green") == "pass" else 0,
         "bsd_5077a1_reg_aspiration": 1 if bsd_Reg3.get("fsot_aspiration") == "pass" else 0,
+        "bsd_234446a1_reg_green": 1 if bsd_Reg4.get("fsot_green") == "pass" else 0,
         "bsd_rank_parity_map": 1 if bsd_par.get("verdict") == "parity_map_holds" else 0,
-        "bsd_integer_rank_first4": 1 if bsd_int.get("verdict") == "integer_rank_first4_holds" else 0,
+        "bsd_integer_rank_first5": 1 if bsd_int.get("verdict") == "integer_rank_first5_holds" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -2088,6 +2183,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_k3_h11_exact": 1 if hodge_k3["beats_or_meets_sota"] else 0,
         "hodge_fano_b2_exact": 1 if hodge_fano["beats_or_meets_sota"] else 0,
         "hodge_associated_k3_algebraicity": 1 if hodge_alg.get("verdict") == "associated_k3_lefschetz_algebraicity" else 0,
+        "hodge_hassett_d8_exact": 1 if hodge_d8["beats_or_meets_sota"] else 0,
+        "hodge_hassett_c8_plane_algebraic": 1 if hodge_c8.get("verdict") == "c8_plane_algebraic_no_k3" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -2099,9 +2196,10 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
             "Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), "
-            "BSD integer rank (parity map holds), cubic 4-fold primitive (2,2). "
+            "BSD general E (first-of-rank 0..4 labeled), other extra Hodge discriminants (C_12…). "
             "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
+            "Reg(234446a1)=(φ²+1)·e·POOF, "
             "χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, "
             "Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a "
             "quenched-lattice construct, not an observed particle. Observed I=0 0++: "
@@ -2109,7 +2207,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
             "Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
             "S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. "
-            "E→rank map is parity from w_E; integer rank still needs ord L. "
+            "E→rank map is parity from w_E; first-of-rank leadings label 0..4. "
             "Do not invert with trig S(n) or the full Euler product. "
             "α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. "
             "SOTA and FSOT 0.5% are independent bars. "
@@ -2241,8 +2339,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Reg(389a1) | **POOF vs LMFDB — 0.67% WIP** | Néron-Tate pairing. Not the BSD leading term. |",
         "| L''(389a1,1)/2! | **2π POOF/√φ vs LMFDB — in 0.5%** | Dual period × valve. Wrong object was Reg in isolation. |",
         "| Reg(5077a1) | **e·POOF vs LMFDB — in 0.05%** | First rank-3 height volume. Same occupancy as Riemann 1/e band. Out of sample vs rank 2. |",
-        "| E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. e^{r-2} POOF fails at rank 4. |",
-        "| Integer rank 0..3 | **First-curve leadings match uniquely** | Leading → rank. General E still produces the leading from its modular form. |",
+        "| Reg(234446a1) | **(φ²+1)·e·POOF vs LMFDB — in 0.5%** | First rank-4 volume. Isolated e² was the missing loop fold. |",
+        "| E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. Rank 4 is (φ²+1)·e·POOF, not e². |",
+        "| Integer rank 0..4 | **First-curve leadings match uniquely** | Leading → rank. General E still produces the leading from its modular form. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
@@ -2259,6 +2358,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Associated K3 h^{1,1} | **Meets 20** (F_8−1) | Primitive (2,2) of the cubic. Lefschetz (1,1) is algebraicity. |",
         "| Fano of lines b_2 | **Meets 23** (F_8+2) | Beauville–Donagi H^2(F)≅H^4(X). |",
         "| Algebraicity via associated K3 | **Named reduction to Lefschetz (1,1)** | Very general cubic: only h^2. Remainder: extra classes, no K3. |",
+        "| Hassett C_8 discriminant | **Meets 8** (F_6) | First extra Hodge class. 4|d so no associated K3. |",
+        "| C_8 extra class | **[plane], algebraic** | Subvariety. Remainder: C_12 scroll and later extra discriminants. |",
         "| Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |",
         "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |",
         "",
@@ -2273,8 +2374,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
         "| 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |",
-        "| BSD integer rank | Parity map holds. No Weierstrass→ℤ formula. | L-order still required. Rank 4 Reg is not e²·POOF. |",
-        "| Hodge primitive (2,2) on general X | Gr(2,4) Schubert algebraic. Cubic 4-fold is the named remainder. | Do not steal 25−1 for K3. |",
+        "| BSD integer rank | First-of-rank 0..4 labeled. No Weierstrass→ℤ formula. | L-order still required for general E. Do not nearest-template arbitrary L(1). |",
+        "| Hodge extra classes without K3 | C_8 extra class is [plane], algebraic. | Remainder: C_12 scroll, later extra discriminants, general 4-folds. Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
@@ -2361,8 +2462,9 @@ if __name__ == "__main__":
         and s["bsd_389a1_special_green"] == 1
         and s["bsd_5077a1_reg_green"] == 1
         and s["bsd_5077a1_reg_aspiration"] == 1
+        and s["bsd_234446a1_reg_green"] == 1
         and s["bsd_rank_parity_map"] == 1
-        and s["bsd_integer_rank_first4"] == 1
+        and s["bsd_integer_rank_first5"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1
@@ -2380,6 +2482,8 @@ if __name__ == "__main__":
         and s["hodge_k3_h11_exact"] == 1
         and s["hodge_fano_b2_exact"] == 1
         and s["hodge_associated_k3_algebraicity"] == 1
+        and s["hodge_hassett_d8_exact"] == 1
+        and s["hodge_hassett_c8_plane_algebraic"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

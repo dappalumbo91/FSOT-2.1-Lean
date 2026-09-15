@@ -462,6 +462,18 @@ def seed_bsd_5077a1_regulator() -> float:
     return f(E) * f(POOF)
 
 
+def seed_bsd_234446a1_regulator() -> float:
+    """Reg(234446a1) = (φ²+1)·e·POOF.
+
+    First rank-4 curve. Rank-3 volume e·POOF times the closed-loop
+    fold φ²+1 (the extra cycle). Isolated e²·POOF misses 24.6% —
+    that was the missing glueball/loop coupling. Tamagawa 2 is the
+    extra prime in the conductor, not a retune of the volume.
+    Not a rank predictor for general E. Do not fsot_scaled(Reg).
+    """
+    return seed_glueball_over_sqrt_sigma() * seed_bsd_5077a1_regulator()
+
+
 def seed_cp2_euler() -> float:
     """χ(ℂP²) = φ² + φ^{-2} = Lucas L_2 = 3.
 
@@ -595,6 +607,47 @@ def seed_cubic4_h22() -> float:
     return seed_fibonacci(8)
 
 
+def seed_hassett_d_plane() -> float:
+    """Hassett discriminant of a cubic 4-fold containing a plane = F_6 = 8.
+
+    First extra Hodge class with no associated K3 (4|d). The class is
+    [plane], algebraic. C_8 is nonempty (d>6, d≡2 mod 6). Do not steal
+    25−1 for K3.
+    """
+    return seed_fibonacci(6)
+
+
+def hassett_C_d_nonempty(d: int) -> bool:
+    """Hassett: C_d nonempty iff d>6 and d≡0 or 2 (mod 6)."""
+    n = int(d)
+    return n > 6 and n % 6 in (0, 2)
+
+
+def hassett_associated_k3(d: int) -> bool:
+    """Associated K3 iff 4∤d, 9∤d, and no odd prime p≡2 (mod 3) divides d.
+
+    C_8 fails 4∤d: extra class is a plane, not a K3 period. Do not steal
+    25−1 for χ(K3)=24.
+    """
+    n = int(d)
+    if n % 4 == 0 or n % 9 == 0:
+        return False
+    m = n
+    while m % 2 == 0:
+        m //= 2
+    p = 3
+    while p * p <= m:
+        if m % p == 0:
+            if p % 3 == 2:
+                return False
+            while m % p == 0:
+                m //= p
+        p += 2
+    if m > 1 and m % 3 == 2:
+        return False
+    return True
+
+
 def seed_k3_h11() -> float:
     """h^{1,1}(K3) = F_8 − 1 = 20.
 
@@ -614,14 +667,15 @@ def seed_cubic4_fano_b2() -> float:
 
 
 def seed_bsd_leading_of_rank(rank: int) -> float:
-    """Seed leading BSD number that labels integer rank 0..3.
+    """Seed leading BSD number that labels integer rank 0..4.
 
     r=0: L(11a1,1)=√φ/D_particle
     r=1: L'(37a1,1)=2·POOF
     r=2: L''(389a1,1)/2!=2π·POOF/√φ
     r=3: Reg(5077a1)=e·POOF
+    r=4: Reg(234446a1)=(φ²+1)·e·POOF
     First-of-rank ladder. General E still produces the leading from its
-    modular form; this map is leading → rank. Rank 4 unnamed.
+    modular form; this map is leading → rank.
     """
     r = int(rank)
     if r == 0:
@@ -632,18 +686,20 @@ def seed_bsd_leading_of_rank(rank: int) -> float:
         return seed_bsd_389a1_special()
     if r == 3:
         return seed_bsd_5077a1_regulator()
-    raise ValueError("seed leading for rank 0..3 only")
+    if r == 4:
+        return seed_bsd_234446a1_regulator()
+    raise ValueError("seed leading for rank 0..4 only")
 
 
 def bsd_integer_rank_from_leading(value: float) -> int:
-    """Integer rank = nearest seed leading among r=0..3.
+    """Integer rank = nearest seed leading among r=0..4.
 
     For the first curve of each of those ranks the match is unique.
     Not a Weierstrass→ℤ formula; the leading comes from L(E).
     """
     best_r, best = 0, float("inf")
     v = float(value)
-    for r in range(4):
+    for r in range(5):
         s = seed_bsd_leading_of_rank(r)
         e = abs(v - s) / max(abs(s), 1e-30)
         if e < best:
