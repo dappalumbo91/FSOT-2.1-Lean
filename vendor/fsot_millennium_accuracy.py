@@ -44,6 +44,8 @@ try:
         seed_cp2_euler,
         seed_cp3_euler,
         seed_cp2xcp2_euler,
+        seed_gr24_euler,
+        seed_cubic_4fold_euler,
         seed_riemann_S_bound,
         seed_riemann_S_amplitude,
         seed_sqrt_sigma_r0,
@@ -78,6 +80,8 @@ except ImportError:  # pragma: no cover
         seed_cp2_euler,
         seed_cp3_euler,
         seed_cp2xcp2_euler,
+        seed_gr24_euler,
+        seed_cubic_4fold_euler,
         seed_riemann_S_bound,
         seed_riemann_S_amplitude,
         seed_sqrt_sigma_r0,
@@ -1517,7 +1521,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="objects_named_no_native_predictor",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="APPLY step 1. Do not steal E_con≈20 W for K3 h^{1,1}=20. Do not identity-pad 1=1 as a residual.",
+            note="APPLY step 1. Cubic 4-fold primitive (2,2) is the named remainder after Gr(2,4). Do not steal 25−1 for K3. Do not identity-pad 1=1.",
             extra={
                 "varieties": [
                     {"name": "CP^2", "h11": 1, "h20": 0},
@@ -1648,7 +1652,113 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="primitive_22_product_algebraic_not_general",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="Named first primitive (2,2) that is not empty (CP^n primitive=0). Still a product of projective spaces. General 4-fold leftover remains.",
+            note="Named first primitive (2,2) that is not empty (CP^n primitive=0). Still a product of projective spaces. Gr(2,4) is the first non-product.",
+        )
+    )
+    chi_gr = seed_gr24_euler()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="χ(Gr(2,4))=C(4,2)=6 (first homogeneous 4-fold that is not CP^n and not a product)",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_gr24_euler",
+            computed=chi_gr,
+            measured=6.0,
+            public_sota_model="Gr(2,4) ≅ quadric 4-fold in CP^5. Schubert cell count C(4,2)=6 = χ.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_topological_6",
+            beats_or_meets_sota=abs(chi_gr - 6.0) < 1e-12,
+            native_status="EXECUTABLE",
+            note="Schubert calculus: all Hodge classes algebraic. Not a general 4-fold. Do not steal 25−1 for K3.",
+            extra={"formula": "4!/(2! 2!)", "schubert_cells": 6},
+        )
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Primitive (2,2) on Gr(2,4) — Schubert, algebraic. First non-product primitive (2,2).",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_gr24_primitive_22",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="h^{2,2}(Gr(2,4))=2. Lefschetz span 1. Primitive 1 = Schubert class, algebraic.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="gr24_schubert_algebraic_not_general",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Homogeneous 4-fold. Hodge on Grassmannians is Schubert. Cubic 4-fold primitive (2,2) is the leftover.",
+        )
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Lefschetz hyperplane: Hodge on a hypersurface reduces to primitive cohomology plus the ambient CP^n",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_lefschetz_hyperplane",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="Lefschetz hyperplane theorem. Ambient CP^n is hyperplane powers. Primitive part of the hypersurface is the remainder.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="lefschetz_hyperplane_named",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Reduction map, same grammar as hard Lefschetz. Cubic 4-fold primitive (2,2) is what remains after this cut.",
+        )
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Hodge index: intersection form on a surface has signature (1, ρ−1). Proven. Not algebraicity.",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_index_theorem",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="Hodge index theorem. Signature of NS, not the Hodge conjecture.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="hodge_index_named_not_clay",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Proven Hodge-type theorem on surfaces. Clay is algebraicity of (p,p) for p>1 on general X.",
+        )
+    )
+    chi_c4 = seed_cubic_4fold_euler()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="χ of a smooth cubic 4-fold ⊂ CP^5 (Chern, n=4, d=3). Not Hodge (2,2).",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_cubic4_euler",
+            computed=chi_c4,
+            measured=27.0,
+            public_sota_model="Hypersurface Euler d·[h^n](1+h)^{n+2}/(1+d h). Cubic 4-fold χ=27.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_topological_27",
+            beats_or_meets_sota=abs(chi_c4 - 27.0) < 1e-12,
+            native_status="EXECUTABLE",
+            note="Euler, not Hodge classes. Primitive (2,2) of this 4-fold is the remaining Hodge object.",
+            extra={"formula": "d*[h^n](1+h)^{n+2}/(1+dh) n=4 d=3", "n": 4, "d": 3},
+        )
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Primitive (2,2) on a cubic 4-fold — first open hypersurface case after Grassmannians",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_cubic4_primitive_22",
+            computed=None,
+            measured=None,
+            public_sota_model="Hodge for cubic 4-folds is open (rationality / algebraic cycles). Homogeneous cases are Schubert.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="cubic4_primitive_named_remainder",
+            beats_or_meets_sota=None,
+            native_status="OPEN_TRACK",
+            note="Named remainder after CP^n, products, and Gr(2,4). Do not identity-pad. Do not steal 25−1 for K3.",
         )
     )
     return rows
@@ -1699,6 +1809,12 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_hl = next(r for r in rows if r["name"] == "hodge_hard_lefschetz")
     hodge_prod = next(r for r in rows if r["name"] == "hodge_cp2xcp2_euler")
     hodge_prim = next(r for r in rows if r["name"] == "hodge_primitive_22_cp2xcp2")
+    hodge_gr = next(r for r in rows if r["name"] == "hodge_gr24_euler")
+    hodge_gr_p = next(r for r in rows if r["name"] == "hodge_gr24_primitive_22")
+    hodge_hyp = next(r for r in rows if r["name"] == "hodge_lefschetz_hyperplane")
+    hodge_idx = next(r for r in rows if r["name"] == "hodge_index_theorem")
+    hodge_c4 = next(r for r in rows if r["name"] == "hodge_cubic4_euler")
+    hodge_c4p = next(r for r in rows if r["name"] == "hodge_cubic4_primitive_22")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -1769,6 +1885,12 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_hard_lefschetz_named": 1 if hodge_hl.get("verdict") == "hard_lefschetz_named_primitive_open" else 0,
         "hodge_cp2xcp2_exact": 1 if hodge_prod["beats_or_meets_sota"] else 0,
         "hodge_primitive_22_named": 1 if hodge_prim.get("verdict") == "primitive_22_product_algebraic_not_general" else 0,
+        "hodge_gr24_exact": 1 if hodge_gr["beats_or_meets_sota"] else 0,
+        "hodge_gr24_schubert_named": 1 if hodge_gr_p.get("verdict") == "gr24_schubert_algebraic_not_general" else 0,
+        "hodge_lefschetz_hyperplane_named": 1 if hodge_hyp.get("verdict") == "lefschetz_hyperplane_named" else 0,
+        "hodge_index_named": 1 if hodge_idx.get("verdict") == "hodge_index_named_not_clay" else 0,
+        "hodge_cubic4_euler_exact": 1 if hodge_c4["beats_or_meets_sota"] else 0,
+        "hodge_cubic4_remainder_named": 1 if hodge_c4p.get("verdict") == "cubic4_primitive_named_remainder" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -1780,7 +1902,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
             "Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), "
-            "BSD rank for general E (first ranks 0–3 named), Hodge primitive (2,2) on general X. "
+            "BSD integer rank (parity map holds), cubic 4-fold primitive (2,2). "
             "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
             "χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, "
@@ -1928,7 +2050,13 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Hodge (2,2) on ℂP³ | **Named proven first p>1 object** | Hyperplane square. |",
         "| Hard Lefschetz | **Named transport (1,1)→(2,2)** | Primitive (2,2) on general X is the leftover. |",
         "| χ(ℂP²×ℂP²) | **Meets 9** (L_2²) | First 4-fold that is not CP^n. |",
-        "| Primitive (2,2) on CP²×CP² | **1-dimensional, algebraic (H1 H2)** | Not empty (unlike CP^n). Not a general 4-fold. |",
+        "| Primitive (2,2) on CP²×CP² | **1-dimensional, algebraic (H1 H2)** | Not empty (unlike CP^n). |",
+        "| χ(Gr(2,4)) | **Meets 6** (C(4,2) Schubert cells) | First homogeneous 4-fold, not a product. |",
+        "| Primitive (2,2) on Gr(2,4) | **Schubert, algebraic** | First non-product primitive (2,2). |",
+        "| Lefschetz hyperplane | **Named reduction to primitive + ambient CP^n** | Cubic 4-fold primitive is what remains. |",
+        "| Hodge index | **Named proven signature theorem on surfaces** | Not algebraicity. |",
+        "| χ cubic 4-fold | **Meets 27** (Chern n=4, d=3) | Euler, not Hodge classes. |",
+        "| Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |",
         "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |",
         "",
         "## Next dig (misses and open tracks)",
@@ -1943,7 +2071,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Riemann signed jitter | Prime-2 sign + POOF envelope. n=2..10 0.62% WIP. | Do not Euler-invert the full product. n=1 stays C-lock. |",
         "| 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |",
         "| BSD integer rank | Parity map holds. No Weierstrass→ℤ formula. | L-order still required. Rank 4 Reg is not e²·POOF. |",
-        "| Hodge primitive (2,2) on general X | Product CP²×CP² is algebraic. | Do not steal 25−1 for K3. |",
+        "| Hodge primitive (2,2) on general X | Gr(2,4) Schubert algebraic. Cubic 4-fold is the named remainder. | Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
@@ -2033,6 +2161,12 @@ if __name__ == "__main__":
         and s["hodge_hard_lefschetz_named"] == 1
         and s["hodge_cp2xcp2_exact"] == 1
         and s["hodge_primitive_22_named"] == 1
+        and s["hodge_gr24_exact"] == 1
+        and s["hodge_gr24_schubert_named"] == 1
+        and s["hodge_lefschetz_hyperplane_named"] == 1
+        and s["hodge_index_named"] == 1
+        and s["hodge_cubic4_euler_exact"] == 1
+        and s["hodge_cubic4_remainder_named"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

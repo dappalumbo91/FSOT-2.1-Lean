@@ -520,6 +520,31 @@ def seed_cp2xcp2_euler() -> float:
     return seed_cp2_euler() ** 2
 
 
+def seed_gr24_euler() -> float:
+    """χ(Gr(2,4)) = C(4,2) = 6.
+
+    First homogeneous 4-fold that is not CP^n and not a product.
+    Gr(2,4) ≅ quadric 4-fold in CP^5. Schubert cells: binom(4,2).
+    Hodge classes are Schubert (algebraic). Not a general 4-fold.
+    Do not steal 25−1 for K3.
+    """
+    return float(math.factorial(4) // (math.factorial(2) ** 2))
+
+
+def seed_cubic_4fold_euler() -> float:
+    """χ of a smooth cubic 4-fold ⊂ CP^5 = 27.
+
+    Hypersurface Chern: d · [h^n](1+h)^{n+2}/(1+d h) at n=4, d=3
+    (structural 4-fold, cubic). Not Hodge (2,2). Primitive (2,2) of
+    the cubic 4-fold is the remaining Hodge object after Grassmannians.
+    """
+    n, d = 4, 3
+    term = 0.0
+    for k in range(n + 1):
+        term += math.comb(n + 2, n - k) * ((-d) ** k)
+    return float(d * term)
+
+
 def seed_h0_global() -> float:
     """Global CMB-background H0 = 100*(1 + S_cosm*A_bleed/A_in) [km s⁻¹ Mpc⁻¹].
 

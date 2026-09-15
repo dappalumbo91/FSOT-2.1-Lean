@@ -46,7 +46,7 @@ Machine flags in this repo (all honest zeros except remaining=6 and Poincaré hi
 | **P versus NP** | Proof that P=NP or P≠NP | Grover \(1/2\) (QI); Cook–Levin SAT named. Not P=?NP. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
 | **Riemann hypothesis** | All non-trivial zeros of \(\zeta\) have real part \(1/2\) | C-lock; \(\lvert S\rvert\le 1/e\); typical \(\lvert S\rvert=\mathrm{POOF}\); signed jitter \(\mathrm{sign}(\sin(T\ln 2))\cdot\mathrm{POOF}\) envelope. Not RH. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
 | **Birch and Swinnerton-Dyer** | Rank of \(E(\mathbb{Q})\) equals order of vanishing of \(L(E,s)\) at \(s=1\) | Parity map from \(w_E\). Leading terms for first ranks 0–3. Integer rank still needs \(\mathrm{ord}\,L\). | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
-| **Hodge conjecture** | Hodge classes on a projective complex manifold are algebraic cycles (rational) | Lefschetz; hard Lefschetz; \(\chi(\mathbb{CP}^2\times\mathbb{CP}^2)=L_2^2\); product primitive (2,2) algebraic. General \(X\) open. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
+| **Hodge conjecture** | Hodge classes on a projective complex manifold are algebraic cycles (rational) | Lefschetz; hyperplane; Hodge index; \(\chi(\mathrm{Gr}(2,4))=6\); cubic 4-fold primitive (2,2) named remainder. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
 
 “We already solved some of these” is true **only** for the *native* column (YM path-sum, NS transport coefficients, Riemann first-zero residual, Grover 1/2). It is **false** for the Clay column. Same Perfect Host discipline: wrong object is a false kill *and* a false win.
 
