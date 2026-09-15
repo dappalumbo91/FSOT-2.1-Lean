@@ -149,8 +149,8 @@ def run_millennium_suite() -> list[dict[str, Any]]:
     )
 
     for name, note in (
-        ("bsd_clay_open", "Rank vs L-function. No elliptic-curve BSD theorem in-repo."),
-        ("hodge_clay_open", "Algebraic cycles vs cohomology. No Hodge theorem in-repo."),
+        ("bsd_clay_open", "Rank vs L-function. Native L(11a1,1)=√φ/D_particle is not a rank theorem."),
+        ("hodge_clay_open", "Algebraic cycles vs cohomology. Native χ(CP²)=Lucas L_2 is not a Hodge theorem."),
     ):
         rows.append(
             _row(

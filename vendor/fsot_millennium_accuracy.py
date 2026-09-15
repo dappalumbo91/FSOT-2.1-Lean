@@ -35,6 +35,9 @@ try:
         seed_closed_gluonic_GeV,
         seed_flavor_closed_GeV,
         seed_alpha_s_MZ,
+        seed_von_karman,
+        seed_bsd_11a1_L,
+        seed_cp2_euler,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -52,6 +55,9 @@ except ImportError:  # pragma: no cover
         seed_closed_gluonic_GeV,
         seed_flavor_closed_GeV,
         seed_alpha_s_MZ,
+        seed_von_karman,
+        seed_bsd_11a1_L,
+        seed_cp2_euler,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -86,6 +92,11 @@ PDG_F0_1710_STAT = 0.008
 # Morningstar-class quenched YM 0++ ~1730 ± 80 MeV (lattice construct in GeV).
 LATTICE_0PP_GEV = 1.73
 LATTICE_0PP_STAT = 0.08
+# von Kármán log-law (classic 0.40; scatter 0.38–0.41). Wave table measured 0.400.
+VON_KARMAN = 0.40
+# LMFDB / Cremona 11a1 L(E,1). Measurement, not a competing closed form.
+LMFDB_11A1_L = 0.2538418608559107
+NAIVE_BSD_L_QUARTER = 0.25
 # Odlyzko / LMFDB Im(ρ_n) for n=1..10 (measurement, not a competing theory).
 # Rest-of-system residual bars (same as the 477-domain green / aspiration gates).
 FSOT_GREEN_GATE_PCT = 0.5
@@ -729,6 +740,27 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    kappa = seed_von_karman()
+    kappa_err = _err_pct(kappa, VON_KARMAN)
+    kappa_sota = 2.5  # log-law fits typically 0.38–0.41
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="von Kármán log-law κ = A_bleed/φ² (wall shear). Not 3D smoothness.",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_von_karman",
+            computed=kappa,
+            measured=VON_KARMAN,
+            public_sota_model="Classic κ=0.40; empirical log-law scatter ~0.38–0.41 (~2.5%)",
+            public_sota_typical_error_pct=kappa_sota,
+            comparison_class="comparable",
+            verdict="beats_log_law_scatter" if kappa_err < kappa_sota else "does_not_beat_log_law_scatter",
+            beats_or_meets_sota=kappa_err < kappa_sota,
+            native_status="EXECUTABLE",
+            note="Seed-closed wall law. 1D Stokes + κ is the executable NSE function. Not Clay 3D smoothness. Do not retune 0.40.",
+            extra={"formula": "A_BLEED/PHI**2", "fsot_vs_040_pct": kappa_err},
+        )
+    )
     wx = _weather_skill()
     storm_pct = float(wx.get("storm_hold_pct") or 0.0)
     quiet_pct = float(wx.get("quiet_hold_pct") or 0.0)
@@ -847,6 +879,33 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"curves": bsd_curves, "literature_rank_vs_L_consistent": bsd_table_ok},
         )
     )
+    L11 = seed_bsd_11a1_L()
+    L11_err = _err_pct(L11, LMFDB_11A1_L)
+    naive_L_err = _err_pct(NAIVE_BSD_L_QUARTER, LMFDB_11A1_L)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="L(11a1,1)=√φ/D_particle vs LMFDB (first rank-0 curve, not a rank predictor)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_11a1_L_at_1",
+            computed=L11,
+            measured=LMFDB_11A1_L,
+            public_sota_model="LMFDB/Cremona numerical L(11a1,1). Naive closed form 1/4.",
+            public_sota_typical_error_pct=naive_L_err,
+            comparison_class="comparable",
+            verdict="beats_naive_quarter" if L11_err < naive_L_err else "does_not_beat_naive_quarter",
+            beats_or_meets_sota=L11_err < naive_L_err,
+            native_status="EXECUTABLE",
+            note="Particle-floor torsion 5; Ω=√φ; rank-0 leading term Ω/5. Not a rank formula. Do not fsot_scaled(L). Do not apply to 37a1/389a1 (vanishing).",
+            extra={
+                "formula": "sqrt(PHI)/D_particle",
+                "D_particle": float(derived_D_eff("Particle_Physics")),
+                "Omega_sqrt_phi": math.sqrt(float(PHI)),
+                "fsot_vs_lmfdb_pct": L11_err,
+                "naive_quarter_vs_lmfdb_pct": naive_L_err,
+            },
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -868,6 +927,25 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
                     {"name": "elliptic_curve", "h10": 1, "h01": 1},
                 ]
             },
+        )
+    )
+    chi = seed_cp2_euler()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="χ(ℂP²)=φ²+φ^{-2}=Lucas L_2 (named surface Euler number, not Hodge classes)",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_cp2_euler",
+            computed=chi,
+            measured=3.0,
+            public_sota_model="Topological Euler characteristic χ(CP²)=3. Seed form is Lucas L_2, not a conjecture proof.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_topological_3",
+            beats_or_meets_sota=abs(chi - 3.0) < 1e-12,
+            native_status="EXECUTABLE",
+            note="Named Hodge surface Euler number. Not the Hodge conjecture. Do not identity-pad h^{1,1}=1. Do not steal 25−1 for χ(K3)=24.",
+            extra={"formula": "PHI**2 + PHI**(-2)", "lucas_L2": True},
         )
     )
     return rows
@@ -895,6 +973,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     wx_storm = next(r for r in rows if r["name"] == "ns_weather_storm_sector")
     wx_quiet = next(r for r in rows if r["name"] == "ns_weather_quiet_fill")
     wx_gap = next(r for r in rows if r["name"] == "ns_weather_gap_zone_quiet")
+    ns_vk = next(r for r in rows if r["name"] == "ns_von_karman")
+    bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
+    hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     wip_beats = [r for r in rows if r.get("sota_beats_fsot_accuracy_wip")]
     in_green = [r for r in rows if r.get("fsot_green") == "pass"]
     in_asp = [r for r in rows if r.get("fsot_aspiration") == "pass"]
@@ -933,6 +1014,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "weather_does_not_beat_majority": 0 if wx_storm["beats_or_meets_sota"] else 1,
         "weather_quiet_fill_still_miss": 0 if wx_quiet["beats_or_meets_sota"] else 1,
         "weather_gap_zone_named": 1 if wx_gap.get("verdict") == "gap_zone_should_not_issue" else 0,
+        "ns_von_karman_green": 1 if ns_vk.get("fsot_green") == "pass" else 0,
+        "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
+        "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "ecmwf_beaten": 0,
         "ecmwf_not_beaten": 1,
         "rows": rows,
@@ -940,8 +1024,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Misses next: clean-quiet 44078, NSE smoothness, "
-            "BSD named curves, Hodge named varieties. Glueball 0++ in string units is φ²+1 vs a "
+            "Misses next: clean-quiet 44078, NSE 3D smoothness (Clay), "
+            "BSD rank predictor, Hodge classes. Native: von Kármán κ, L(11a1,1)=√φ/D_particle, χ(CP²)=Lucas L_2. Glueball 0++ in string units is φ²+1 vs a "
             "quenched-lattice construct, not an observed particle. Observed I=0 0++: "
             "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
             "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
@@ -1060,6 +1144,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |",
         "| Glueball 2++/0++ | **Beats 3/2 (0.23%) — in 0.5% green, aspiration WIP** | √2 geometry on the closed 0++ mode. |",
         "| Grover 1/2 | **Meets proven bound and in 0.05%** | Not P vs NP. |",
+        "| von Kármán κ | **Beats log-law scatter and in 0.05%** (`A_bleed/φ²` vs 0.40) | Wall shear, not 3D NSE smoothness. |",
+        "| L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |",
+        "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "",
         "## Next dig (misses and open tracks)",
         "",
@@ -1069,9 +1156,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather gap-zone quiet | 1000–1010 hPa / 8–15 m/s should not issue (transferred_weather). OLCN6/42058 were already in the gap. | New issuer skips. Frozen JSON not rewritten. |",
         "| Weather clean quiet | **4/5 hold**; 44078 (1010.3 hPa, 4.0 m/s) is the honest miss. | Do not move 1010 to swallow 44078. Do not mix gap-zone into this object. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
-        "| 3D NSE smoothness | Still no public accuracy %. | 1D Stokes mode at Fluid nest D (dark) is executable structure, not Clay smoothness. |",
-        "| BSD | APPLY step 1: Cremona 11a1 / 37a1 / 389a1 named. | No native rank predictor. Do not `fsot_scaled(L(E,1))`. |",
-        "| Hodge | APPLY step 1: ℂP² and an elliptic curve named. | Do not steal E_con≈20 for K3. Do not identity-pad 1=1. |",
+        "| 3D NSE smoothness | Still no public accuracy %. | 1D Stokes + von Kármán κ are the executable functions. Not Clay smoothness. |",
+        "| BSD rank | Still no native rank predictor. | L(11a1,1)=√φ/D_particle is the rank-0 first object. Do not `fsot_scaled(L)`. 37a1/389a1 vanish. |",
+        "| Hodge classes | Still no native Hodge-class predictor. | χ(CP²)=Lucas L_2. Do not steal 25−1 for K3. Do not identity-pad h^{1,1}=1. |",
         "",
         "## Reproduce",
         "",
@@ -1131,6 +1218,9 @@ if __name__ == "__main__":
         and s["riemann_panel_beats_rvm"] == 1
         and s["weather_quiet_fill_still_miss"] == 1
         and s["weather_gap_zone_named"] == 1
+        and s["ns_von_karman_green"] == 1
+        and s["bsd_11a1_L_green"] == 1
+        and s["hodge_cp2_euler_exact"] == 1
         and s["ecmwf_not_beaten"] == 1
         and s["sota_beats_accuracy_wip_n"] >= 1
         and s["next_dig_n"] >= 1

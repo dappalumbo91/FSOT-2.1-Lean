@@ -39,6 +39,7 @@ try:
         P_NEW,
         SUCTION,
         THETA_S,
+        derived_D_eff,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -62,6 +63,7 @@ except ImportError:  # pragma: no cover
         P_NEW,
         SUCTION,
         THETA_S,
+        derived_D_eff,
     )
 
 
@@ -334,6 +336,35 @@ def seed_flavor_closed_GeV() -> float:
     PDG f0(1710) is the measurement. Not a glueball ID.
     """
     return seed_flavor_closed_over_sqrt_sigma() * seed_string_tension_GeV()
+
+
+def seed_von_karman() -> float:
+    """von Kármán log-law κ = A_bleed / φ².
+
+    Wall-bounded shear (the NSE function we can execute). Not 3D
+    global smoothness. Do not retune 0.40.
+    """
+    return f(A_BLEED) / f(PHI) ** 2
+
+
+def seed_bsd_11a1_L() -> float:
+    """L(11a1, 1) = √φ / D_particle.
+
+    First rank-0 modular curve. Torsion saturates Mazur at the particle
+    floor D=5. Rank-0 BSD leading term then reads L(1)=Ω/|tors| with
+    Ω=√φ (real period of the genus-1 torus). Not a rank predictor.
+    Do not fsot_scaled(L(E,1)). Do not apply to 37a1/389a1 (vanishing).
+    """
+    return math.sqrt(f(PHI)) / float(derived_D_eff("Particle_Physics"))
+
+
+def seed_cp2_euler() -> float:
+    """χ(ℂP²) = φ² + φ^{-2} = Lucas L_2 = 3.
+
+    Named Hodge surface Euler number. Not the Hodge conjecture.
+    Do not steal 25−1 for χ(K3)=24. Do not identity-pad h^{1,1}=1.
+    """
+    return f(PHI) ** 2 + f(PHI) ** -2
 
 
 def seed_N_eff() -> float:

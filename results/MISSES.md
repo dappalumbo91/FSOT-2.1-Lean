@@ -16,10 +16,10 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | WX-QUIET-FILL | B/dated | Clean quiet 24 h (pres≥1010, gst<8) | **Superseded object:** mixed quiet 6/11 mixed gap-zone into persistence. Gap-zone (OLCN6, 42058) should not issue (transferred_weather). Clean quiet is **4/5**; **44078** is the honest miss. | Did not rewrite frozen JSON. Did not move 1010. Did not drop kills to inflate storm skill. |
 | SH0ES-LADDER | A | SH0ES ladder chain pooled | ~0.212% (aspiration 0.05% open) | Did not β-fit the ladder |
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
-| NSE-CLAY | — | 3D NSE smoothness | No native Clay theorem | 1D Stokes at Fluid nest D=12 (dark) is not that theorem |
+| NSE-CLAY | — | 3D NSE smoothness | No native Clay theorem | 1D Stokes + von Kármán \(\kappa=A_{\mathrm{bleed}}/\varphi^2\) are not that theorem |
 | PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid | **Superseded object:** Atomic well \(D=6\) gave 5.43%. Continuum solid is Molecular \(D=7\), \(\nu=7/25=0.28\). | Did not put Atomic back to 7. |
-| BSD-RANK | — | rank = ord L(E,s) | No native rank predictor | Named 11a1/37a1/389a1 only |
-| HODGE-CLASS | — | Hodge classes algebraic | No native predictor | Named ℂP² and elliptic curve; did not steal 20 W for K3 |
+| BSD-RANK | — | rank = ord L(E,s) | No native rank predictor | \(L(11a1,1)=\sqrt{\varphi}/D_{\mathrm{particle}}\) is the rank-0 first object. 37a1/389a1 vanish. Did not `fsot_scaled(L)`. |
+| HODGE-CLASS | — | Hodge classes algebraic | No native Hodge-class predictor | \(\chi(\mathbb{CP}^2)=\varphi^2+\varphi^{-2}=3\). Did not steal 25−1 for K3. Did not pad \(h^{1,1}=1\). |
 
 Dated public scoreboard kills live in [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md). Do not rewrite issued JSON.
 
