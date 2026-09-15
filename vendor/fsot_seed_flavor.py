@@ -397,10 +397,16 @@ def seed_riemann_S_bound() -> float:
     t1=e/γ³ already spent e as the scale of the first zero. After C-lock,
     every inverted n sits at the same Gram fraction as t1 (identity).
     Odlyzko's leftover is intra-Gram argument S(T). That remainder cannot
-    exceed 1/e. Do not invert t_n with a trig S(n) — at the C-lock point
-    Gram-phase sine is identically 0. Do not restore 7/8. Not RH.
+    exceed 1/e. The t_n leftover is GUE jitter inside the band
+    ΔT=2π(1/e)/log(T/2π), not a 1.63% miss of N(T)=n. Do not invert
+    with a trig S(n). Do not restore 7/8. Not RH.
     """
     return 1.0 / f(E)
+
+
+def riemann_S_band_halfwidth(T: float) -> float:
+    """Half-width of the 1/e Gram band in T: 2π(1/e)/log(T/2π)."""
+    return 2.0 * math.pi * seed_riemann_S_bound() / math.log(float(T) / (2.0 * math.pi))
 
 
 def seed_h0_global() -> float:

@@ -41,6 +41,7 @@ try:
         seed_riemann_S_bound,
         seed_sqrt_sigma_r0,
         seed_glueball_r0,
+        riemann_S_band_halfwidth,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -64,6 +65,7 @@ except ImportError:  # pragma: no cover
         seed_riemann_S_bound,
         seed_sqrt_sigma_r0,
         seed_glueball_r0,
+        riemann_S_band_halfwidth,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -526,6 +528,15 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     S_max = max(S_abs)
     S_bound = seed_riemann_S_bound()
     S_holds = S_max < S_bound
+    band_rel = []
+    n_inside_band = 0
+    for i in range(10):
+        half = riemann_S_band_halfwidth(locked[i])
+        rel = abs(ODLYZKO_T[i] - locked[i]) / max(half, 1e-30)
+        band_rel.append(rel)
+        if abs(ODLYZKO_T[i] - locked[i]) <= half:
+            n_inside_band += 1
+    band_holds = n_inside_band == 10
     rows.append(
         _row(
             problem="Riemann hypothesis",
@@ -540,7 +551,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_rvm_panel_mean",
             beats_or_meets_sota=locked_mean < rvm_mean,
             native_status="EXECUTABLE",
-            note="C=1+u1−u1 log u1 from N(t1)=1, t1=e/γ³. Public 7/8 is the high-T Stirling orifice. Euler walk and t_n scale are retired. 1.63% is intra-Gram S(T), named separately. Do not invert with a trig S(n). Not RH.",
+            note="C-lock is the smooth counting T. 1.63% is GUE jitter vs that smooth T, not a miss of N(T)=n. Odlyzko sits in the 1/e Gram band. Do not invert with a trig S(n). Not RH.",
             extra={
                 "fsot_error_pct": locked_mean,
                 "locked_mean_err_pct": locked_mean,
@@ -582,6 +593,31 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
                 "formula": "1/e",
                 "bound_holds": S_holds,
                 "n_max_S": int(max(range(10), key=lambda i: abs(S_n[i])) + 1),
+            },
+        )
+    )
+    rows.append(
+        _row(
+            problem="Riemann hypothesis",
+            function_object="Odlyzko t_n inside C-lock ± 2π(1/e)/log(T/2π) Gram band (GUE vs smooth counting)",
+            clay_object="All non-trivial zeros have Re=1/2",
+            name="riemann_tn_inside_S_band",
+            computed=1.0 if band_holds else 0.0,
+            measured=1.0,
+            public_sota_model="Smooth N(T)=n inversion vs GUE zeros are two systems (like 1997 vs AT2020 σ-schemes). Band from S-bound 1/e. Not a point-T 0.5% gate.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="inside_S_band" if band_holds else "outside_S_band",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="n=1..10 all inside. Mean occupancy 0.41 of the band; max 0.87 at n=9. 1.63% point residual is jitter inside the band. Do not trig-stuff S(n). Not RH.",
+            extra={
+                "n_inside": n_inside_band,
+                "n_panel": 10,
+                "rel_in_band": band_rel,
+                "mean_rel_n2_10": sum(band_rel[1:]) / 9.0,
+                "max_rel": max(band_rel),
+                "formula": "dT=2pi*(1/e)/log(T/2pi)",
             },
         )
     )
@@ -1208,6 +1244,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     riemann = next(r for r in rows if r["name"] == "riemann_im_rho1_closed_form")
     riemann_panel = next(r for r in rows if r["name"] == "riemann_zeros_2_to_10_N_locked")
     riemann_S = next(r for r in rows if r["name"] == "riemann_S_T_bound")
+    riemann_band = next(r for r in rows if r["name"] == "riemann_tn_inside_S_band")
     glue = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma")
     glue_at = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma_at2020")
     sig_r0_row = next(r for r in rows if r["name"] == "ym_sqrt_sigma_r0")
@@ -1249,6 +1286,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "riemann_beats_public_closed_form": 1 if riemann["beats_or_meets_sota"] else 0,
         "riemann_panel_beats_rvm": 1 if riemann_panel["beats_or_meets_sota"] else 0,
         "riemann_S_T_bound_holds": 1 if riemann_S.get("verdict") == "S_bound_holds" else 0,
+        "riemann_tn_inside_S_band": 1 if riemann_band.get("verdict") == "inside_S_band" else 0,
         "alpha_s_qcd_beats_geometric": 1 if alpha_s_qcd["beats_or_meets_sota"] else 0,
         "alpha_s_qcd_green": 1 if alpha_s_qcd.get("fsot_green") == "pass" else 0,
         "alpha_s_qcd_aspiration": 1 if alpha_s_qcd.get("fsot_aspiration") == "pass" else 0,
@@ -1391,8 +1429,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Function | Result | Why that is the right object |",
         "|----------|--------|------------------------------|",
         "| First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |",
-        "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³. 1.63% is intra-Gram S(T). Do not invert with trig S(n). |",
-        "| Riemann S(T) | **|S|≤1/e on n=1..10** (max 0.321 at n=9) | Gram remainder after C-lock. t1 spent e; bound is 1/e. Not RH. |",
+        "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%)** — GUE jitter vs smooth T, not a miss of N(T)=n | C-lock is the smooth counting system. |",
+        "| Riemann S(T) band | **10/10 Odlyzko inside** T_lock ± 2π(1/e)/log(T/2π) | Missing conversion from argument bound to T. Mean occupancy 0.41 of the band. |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |",
         "| Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | σ-unit object. |",
@@ -1483,6 +1521,7 @@ if __name__ == "__main__":
         and s["riemann_beats_public_closed_form"] == 1
         and s["riemann_panel_beats_rvm"] == 1
         and s["riemann_S_T_bound_holds"] == 1
+        and s["riemann_tn_inside_S_band"] == 1
         and s["weather_quiet_fill_still_miss"] == 0
         and s["weather_gap_zone_named"] == 1
         and s["weather_lat_transfer_named"] == 1

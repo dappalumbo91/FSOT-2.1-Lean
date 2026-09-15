@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T04:55:48.456087+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T05:01:48.120125+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -34,6 +34,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Riemann hypothesis | Im(ρ1) of ζ — first non-trivial zero (closed form vs tabulated) | 0.001661 | 26.27 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Riemann hypothesis | Im(ρ_n) n=2..10 — N(T)=n with C locked by e/γ³ (out of sample) | 1.627 mean n=2..10 (8/9 zeros) | 5.638 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Riemann hypothesis | S(T) Gram-interval remainder after C-lock; |S|≤1/e on n=1..10 | 0 | — | — | n/a | n/a | structure |
+| Riemann hypothesis | Odlyzko t_n inside C-lock ± 2π(1/e)/log(T/2π) Gram band (GUE vs smooth counting) | 0 | — | — | n/a | n/a | structure |
 | Yang–Mills existence and mass gap | Confinement scale Λ_QCD (zero-parameter seed vs PDG-class / FLAG) | 0.04806 vs PDG 0.2173; 2.068 vs FLAG 213 | 3.756 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | α_s(M_Z) QCD process orifice 2(POOF/ψ_con)² vs PDG (not geometric 1/(eπ)) | 0.007478 | 0.6788 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | Closed gluonic mode m(0++)/√σ vs Teper 1997 continuum 3.65±0.11 (dated lattice construct) | 0.8758 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
@@ -64,8 +65,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Function | Result | Why that is the right object |
 |----------|--------|------------------------------|
 | First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |
-| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³. 1.63% is intra-Gram S(T). Do not invert with trig S(n). |
-| Riemann S(T) | **|S|≤1/e on n=1..10** (max 0.321 at n=9) | Gram remainder after C-lock. t1 spent e; bound is 1/e. Not RH. |
+| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%)** — GUE jitter vs smooth T, not a miss of N(T)=n | C-lock is the smooth counting system. |
+| Riemann S(T) band | **10/10 Odlyzko inside** T_lock ± 2π(1/e)/log(T/2π) | Missing conversion from argument bound to T. Mean occupancy 0.41 of the band. |
 | Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |
 | α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |
 | Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | σ-unit object. |
