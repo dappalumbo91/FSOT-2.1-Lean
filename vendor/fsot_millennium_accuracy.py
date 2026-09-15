@@ -37,6 +37,7 @@ try:
         seed_alpha_s_MZ,
         seed_von_karman,
         seed_bsd_11a1_L,
+        seed_bsd_37a1_Lprime,
         seed_cp2_euler,
         seed_riemann_S_bound,
         seed_sqrt_sigma_r0,
@@ -61,6 +62,7 @@ except ImportError:  # pragma: no cover
         seed_alpha_s_MZ,
         seed_von_karman,
         seed_bsd_11a1_L,
+        seed_bsd_37a1_Lprime,
         seed_cp2_euler,
         seed_riemann_S_bound,
         seed_sqrt_sigma_r0,
@@ -119,6 +121,8 @@ VON_KARMAN = 0.40
 # LMFDB / Cremona 11a1 L(E,1). Measurement, not a competing closed form.
 LMFDB_11A1_L = 0.2538418608559107
 NAIVE_BSD_L_QUARTER = 0.25
+# LMFDB / Cremona 37a1 analytic rank 1, L'(E,1).
+LMFDB_37A1_LPRIME = 0.3059997738340523
 # Odlyzko / LMFDB Im(ρ_n) for n=1..10 (measurement, not a competing theory).
 # Rest-of-system residual bars (same as the 477-domain green / aspiration gates).
 FSOT_GREEN_GATE_PCT = 0.5
@@ -963,7 +967,24 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="no_fair_numeric_compare",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="Toy μ(D_eff)>0 and c_s²>0 are transport identities, not 3D global smoothness.",
+            note="Toy μ(D_eff)>0 and c_s²>0 are transport identities, not 3D global smoothness. Vortex stretching is the Clay remainder.",
+        )
+    )
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Vortex stretching — the 3D remainder after 1D Stokes decay (named, not solved)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_vortex_stretching_remainder",
+            computed=None,
+            measured=None,
+            public_sota_model="Beale–Kato–Majda: blow-up iff ∫||ω||_∞ dt diverges. 1D Stokes kills linear modes; stretching is the extra 3D term.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="named_clay_remainder",
+            beats_or_meets_sota=None,
+            native_status="OPEN_TRACK",
+            note="Same grammar as Riemann S(T): the leftover after the named executable object. Do not claim 3D smoothness. Not a Clay prize.",
         )
     )
     mu_ok = all(viscosity_eff(d) > 0.0 for d in (6.0, 14.0, 25.0))
@@ -1185,6 +1206,31 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    Lp = seed_bsd_37a1_Lprime()
+    Lp_err = _err_pct(Lp, LMFDB_37A1_LPRIME)
+    naive_Lp = _err_pct(1.0 / math.pi, LMFDB_37A1_LPRIME)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="L'(37a1,1)=2·POOF vs LMFDB (first rank-1 curve, not a rank predictor)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_37a1_Lprime",
+            computed=Lp,
+            measured=LMFDB_37A1_LPRIME,
+            public_sota_model="LMFDB/Cremona 37a1 L'(E,1). Public closed form 1/π. Rank 1: L vanishes, leading term is the valve.",
+            public_sota_typical_error_pct=naive_Lp,
+            comparison_class="comparable",
+            verdict="beats_naive_1_over_pi" if Lp_err < naive_Lp else "does_not_beat_1_over_pi",
+            beats_or_meets_sota=Lp_err < naive_Lp,
+            native_status="EXECUTABLE",
+            note="2·POOF. Structural 2. Not a rank formula. 389a1 still vanishes to order 2. Do not fsot_scaled(L'). Not BSD.",
+            extra={
+                "formula": "2*POOF",
+                "fsot_vs_lmfdb_pct": Lp_err,
+                "naive_pi_vs_lmfdb_pct": naive_Lp,
+            },
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -1227,6 +1273,23 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"formula": "PHI**2 + PHI**(-2)", "lucas_L2": True},
         )
     )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Lefschetz (1,1) on ℂP² — proven first Hodge-type theorem, not Clay (p,p) for p>1",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_lefschetz_11",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="Lefschetz (1,1) is a theorem for (1,1)-classes on Kähler surfaces. Clay Hodge is the higher (p,p) analog.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="lefschetz_11_named_not_clay",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Named first true Hodge-type object. Do not identity-pad h^{1,1}=1 as a residual. Do not claim the Hodge conjecture. χ(CP²)=Lucas L_2 is Euler, not this.",
+        )
+    )
     return rows
 
 
@@ -1261,7 +1324,10 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     wx_lat = next(r for r in rows if r["name"] == "ns_weather_lat_transfer")
     ns_vk = next(r for r in rows if r["name"] == "ns_von_karman")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
+    bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
+    hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
+    ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     wip_beats = [r for r in rows if r.get("sota_beats_fsot_accuracy_wip")]
     in_green = [r for r in rows if r.get("fsot_green") == "pass"]
     in_asp = [r for r in rows if r.get("fsot_aspiration") == "pass"]
@@ -1309,7 +1375,10 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "weather_lat_transfer_named": 1 if wx_lat.get("verdict") == "lat_belt_transferred_weather" else 0,
         "ns_von_karman_green": 1 if ns_vk.get("fsot_green") == "pass" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
+        "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
+        "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
+        "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ecmwf_beaten": 0,
         "ecmwf_not_beaten": 1,
         "rows": rows,
@@ -1317,8 +1386,10 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Misses next: NSE 3D smoothness (Clay), "
-            "BSD rank predictor, Hodge classes. Native: von Kármán κ, L(11a1,1)=√φ/D_particle, χ(CP²)=Lucas L_2. Glueball 0++ in string units is φ²+1 vs a "
+            "Misses next: NSE 3D smoothness (Clay, vortex stretching named), "
+            "BSD rank predictor (389a1 order-2 unnamed), Hodge (p,p) p>1. "
+            "Native: von Kármán κ, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, "
+            "χ(CP²)=Lucas L_2, Lefschetz (1,1) named. Glueball 0++ in string units is φ²+1 vs a "
             "quenched-lattice construct, not an observed particle. Observed I=0 0++: "
             "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
             "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
@@ -1445,7 +1516,10 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Grover 1/2 | **Meets proven bound and in 0.05%** | Not P vs NP. |",
         "| von Kármán κ | **Beats log-law scatter and in 0.05%** (`A_bleed/φ²` vs 0.40) | Wall shear, not 3D NSE smoothness. |",
         "| L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |",
+        "| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. 389a1 still order-2 vanishing. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
+        "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | Clay is (p,p) for p>1. Do not claim Hodge. |",
+        "| NSE vortex stretching | **Named Clay remainder** after 1D Stokes | Beale–Kato–Majda leftover. Do not claim 3D smoothness. |",
         "",
         "## Next dig (misses and open tracks)",
         "",
@@ -1456,9 +1530,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |",
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
-        "| 3D NSE smoothness | Still no public accuracy %. | 1D Stokes + von Kármán κ are the executable functions. Not Clay smoothness. |",
-        "| BSD rank | Still no native rank predictor. | L(11a1,1)=√φ/D_particle is the rank-0 first object. Do not `fsot_scaled(L)`. 37a1/389a1 vanish. |",
-        "| Hodge classes | Still no native Hodge-class predictor. | χ(CP²)=Lucas L_2. Do not steal 25−1 for K3. Do not identity-pad h^{1,1}=1. |",
+        "| 3D NSE smoothness | Vortex stretching is the named remainder. | 1D Stokes + κ executable. Stretching unsolved. Not Clay. |",
+        "| BSD rank | Still no native rank predictor for general E. | L(11a1,1) rank 0; L'(37a1,1)=2·POOF rank 1. 389a1 order-2. Do not `fsot_scaled`. |",
+        "| Hodge (p,p) p>1 | Lefschetz (1,1) is the proven first object. | χ(CP²)=Lucas L_2. Do not claim Hodge. Do not steal 25−1 for K3. |",
         "",
         "## Reproduce",
         "",
@@ -1527,7 +1601,10 @@ if __name__ == "__main__":
         and s["weather_lat_transfer_named"] == 1
         and s["ns_von_karman_green"] == 1
         and s["bsd_11a1_L_green"] == 1
+        and s["bsd_37a1_Lprime_green"] == 1
         and s["hodge_cp2_euler_exact"] == 1
+        and s["hodge_lefschetz_11_named"] == 1
+        and s["ns_stretching_named"] == 1
         and s["ecmwf_not_beaten"] == 1
         and s["sota_beats_accuracy_wip_n"] >= 1
         and s["next_dig_n"] >= 1

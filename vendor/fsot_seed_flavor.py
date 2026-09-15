@@ -382,6 +382,16 @@ def seed_bsd_11a1_L() -> float:
     return math.sqrt(f(PHI)) / float(derived_D_eff("Particle_Physics"))
 
 
+def seed_bsd_37a1_Lprime() -> float:
+    """L'(37a1, 1) = 2·POOF.
+
+    First rank-1 curve: L vanishes, leading Taylor term is the valve.
+    Structural 2 (same spirit as α_s). Not a rank predictor for general E.
+    Do not fsot_scaled(L'). 389a1 (rank 2) still vanishes to order 2.
+    """
+    return 2.0 * f(POOF)
+
+
 def seed_cp2_euler() -> float:
     """χ(ℂP²) = φ² + φ^{-2} = Lucas L_2 = 3.
 
