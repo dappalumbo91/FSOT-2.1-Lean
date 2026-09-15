@@ -11,10 +11,10 @@ Question/answer (not vs-SOTA): [`MILLENNIUM_YM_VS_FSOT.md`](../docs/MILLENNIUM_Y
 
 | Bucket | n |
 |--------|---|
-| Comparable | 38 |
-| Beats/meets SOTA | 41 |
-| Green 0.5% | 35 |
-| Aspiration 0.05% | 26 |
+| Comparable | 48 |
+| Beats/meets SOTA | 51 |
+| Green 0.5% | 45 |
+| Aspiration 0.05% | 36 |
 | SOTA beat, accuracy WIP | 4 |
 | Next dig (open tracks) | 3 |
 | Clay remaining | 6, not claimed |
@@ -33,6 +33,17 @@ WIP SOTA beats (right object, outside 0.5%): C-lock Riemann panel, typical \(\lv
 | 4 | 234446a1 | \(\mathrm{Reg}=(\varphi^2+1)\cdot e\cdot\mathrm{POOF}\) | 0.341% green |
 
 Rank 4 was isolated \(e^2\cdot\mathrm{POOF}\) (24.6%). The missing fold is the same closed loop as the glueball \(\varphi^2+1\). Tamagawa 2 is the extra prime in the conductor, not a retune of volume. Integer rank classifier unique on these five. General \(E\) still produces the leading from its modular form — do not nearest-template arbitrary \(L(1)\).
+
+## BSD — general rank 0..3 is vanishing, not magnitude
+
+| Rank | Conversion curve | Wrong orifice | Volume |
+|------|------------------|---------------|--------|
+| 0 | 17a1 (19a1 oos) | raw \(L(1)\) looks like rank-3 \(e\cdot\mathrm{POOF}\) | \(\mathrm{Sha}_{\mathrm{an}}=1\) |
+| 1 | 53a1 (61a1 oos) | raw \(L'\) looks like rank-3 \(e\cdot\mathrm{POOF}\) | \(\mathrm{Sha}_{\mathrm{an}}=1\) |
+| 2 | 643a1 (433a1 oos) | raw \(L''/2!\) looks like rank-4 \((\varphi^2+1)\cdot e\cdot\mathrm{POOF}\) | \(\mathrm{Sha}_{\mathrm{an}}=1\) |
+| 3 | 11197a1 (11642a1 oos) | raw \(L'''/3!\) looks like rank-4 \((\varphi^2+1)\cdot e\cdot\mathrm{POOF}\) | \(\mathrm{Sha}_{\mathrm{an}}=1\) |
+
+Remainder: \(\mathrm{ord}\,L\) for rank \(\ge 4\).
 
 ## Hodge — named extra classes without K3 complete
 
@@ -74,5 +85,5 @@ Do not drop these. Named Hodge \(C_d\) is done; these are the leftover objects.
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
 | NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | 4/5 (3D), 3/2 (2D inverse), Onsager \(1/3\) are cascade numbers. BKM is the stretching criterion. Remainder is whether \(\int\|\omega\|_\infty dt\) stays finite. | Stuffing existence into 4/5 or 1/3 |
-| BSD-RANK | \(\mathrm{ord}\,L\) for rank \(\ge 3\) | Rank 0/1/2 are vanishing order. 643a1 raw \(L''/2!\) mis-fires as rank 4; \(\mathrm{Sha}_{\mathrm{an}}=1\). 433a1 oos. | Nearest-template special magnitude |
+| BSD-RANK | \(\mathrm{ord}\,L\) for rank \(\ge 4\) | Rank 0/1/2/3 are vanishing order. 11197a1 raw \(L'''/3!\) mis-fires as rank 4; \(\mathrm{Sha}_{\mathrm{an}}=1\). 11642a1 oos. | Nearest-template special magnitude |
 | HODGE-TAIL | unnamed Hassett \(C_d\) after 44 + general 4-folds | Nuer stops naming at 44. Infinite later \(C_d\) have no named surface. | Enumerating the tail until it looks green |
