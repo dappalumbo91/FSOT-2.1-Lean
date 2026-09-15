@@ -149,8 +149,8 @@ def run_millennium_suite() -> list[dict[str, Any]]:
     )
 
     for name, note in (
-        ("bsd_clay_open", "Rank vs L-function. Native ranks 0–3 (L, L', Reg=POOF, Reg=e·POOF) are not a map E↦rank."),
-        ("hodge_clay_open", "Algebraic cycles vs cohomology. Hard Lefschetz named. Primitive (2,2) on general X is open."),
+        ("bsd_clay_open", "Rank vs L-function. Parity map from w_E. Integer rank still needs ord L."),
+        ("hodge_clay_open", "Algebraic cycles vs cohomology. Product CP²×CP² primitive (2,2) algebraic. General X open."),
     ):
         rows.append(
             _row(

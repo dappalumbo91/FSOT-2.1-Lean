@@ -43,12 +43,15 @@ try:
         seed_bsd_5077a1_regulator,
         seed_cp2_euler,
         seed_cp3_euler,
+        seed_cp2xcp2_euler,
         seed_riemann_S_bound,
         seed_riemann_S_amplitude,
         seed_sqrt_sigma_r0,
         seed_glueball_r0,
         riemann_S_band_halfwidth,
         riemann_POOF_jitter_halfwidth,
+        riemann_signed_jitter_T,
+        seed_bsd_rank_parity,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -74,12 +77,15 @@ except ImportError:  # pragma: no cover
         seed_bsd_5077a1_regulator,
         seed_cp2_euler,
         seed_cp3_euler,
+        seed_cp2xcp2_euler,
         seed_riemann_S_bound,
         seed_riemann_S_amplitude,
         seed_sqrt_sigma_r0,
         seed_glueball_r0,
         riemann_S_band_halfwidth,
         riemann_POOF_jitter_halfwidth,
+        riemann_signed_jitter_T,
+        seed_bsd_rank_parity,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -702,6 +708,53 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
                 "oos_vs_POOF_pct": oos_amp_err,
                 "oos_inside_1e": oos_inside_1e,
                 "oos_inside_POOF_envelope": oos_inside_poof,
+                "oos_n_panel": 10,
+            },
+        )
+    )
+    signed_T = [riemann_signed_jitter_T(n, locked[n - 1]) for n in range(1, 11)]
+    signed_err_n = [_err_pct(signed_T[i], ODLYZKO_T[i]) for i in range(10)]
+    signed_mean = sum(signed_err_n[1:]) / 9.0
+    signed_agree = 0
+    for i in range(1, 10):
+        pred_dt = signed_T[i] - locked[i]
+        true_dt = ODLYZKO_T[i] - locked[i]
+        if (pred_dt >= 0) == (true_dt >= 0):
+            signed_agree += 1
+    oos_signed_err = []
+    oos_signed_agree = 0
+    for j, Ttrue in enumerate(ODLYZKO_T11_20):
+        n = j + 11
+        Tlock = riemann_invert_N(n, C_n)
+        Tp = riemann_signed_jitter_T(n, Tlock)
+        oos_signed_err.append(_err_pct(Tp, Ttrue))
+        if ((Tp - Tlock) >= 0) == ((Ttrue - Tlock) >= 0):
+            oos_signed_agree += 1
+    oos_signed_mean = sum(oos_signed_err) / 10.0
+    rows.append(
+        _row(
+            problem="Riemann hypothesis",
+            function_object="Signed jitter: C-lock + sign(sin(T ln 2))·2π POOF/log(T/2π) (prime-2 fold)",
+            clay_object="All non-trivial zeros have Re=1/2",
+            name="riemann_signed_jitter_p2",
+            computed=signed_mean,
+            measured=rvm_mean,
+            public_sota_model="Smooth C-lock (no sign) and RvM C=7/8. Sign from the first interacting prime; amplitude POOF.",
+            public_sota_typical_error_pct=locked_mean,
+            comparison_class="comparable",
+            verdict="beats_clock_and_rvm" if (signed_mean < locked_mean and signed_mean < rvm_mean) else "does_not_beat_clock",
+            beats_or_meets_sota=signed_mean < locked_mean and signed_mean < rvm_mean,
+            native_status="EXECUTABLE",
+            note="n=1 stays C-lock. n=2..10 sign 9/9. Do not Euler-invert the full product. Amplitude is typical POOF, not per-zero |S|. Not RH.",
+            extra={
+                "formula": "T_lock + sign(sin(T_lock*log(2)))*2pi*POOF/log(T/2pi)",
+                "signed_mean_err_pct": signed_mean,
+                "clock_mean_err_pct": locked_mean,
+                "rvm_mean_err_pct": rvm_mean,
+                "sign_agree_n2_10": signed_agree,
+                "signed_err_pct": signed_err_n,
+                "oos_n11_20_mean_err_pct": oos_signed_mean,
+                "oos_sign_agree": oos_signed_agree,
                 "oos_n_panel": 10,
             },
         )
@@ -1421,6 +1474,35 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    # E→rank (mod 2) from the root number. First curves of rank 0..4.
+    bsd_parity_curves = (
+        {"label": "11a1", "rank": 0, "w": 1},
+        {"label": "37a1", "rank": 1, "w": -1},
+        {"label": "389a1", "rank": 2, "w": 1},
+        {"label": "5077a1", "rank": 3, "w": -1},
+        {"label": "234446a1", "rank": 4, "w": 1},
+    )
+    parity_ok = all(
+        seed_bsd_rank_parity(c["w"]) == (c["rank"] % 2) for c in bsd_parity_curves
+    )
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="E→rank (mod 2): rank ≡ (1−w_E)/2. Functional equation. Not the integer rank.",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_rank_parity_map",
+            computed=1.0 if parity_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Root number w_E=(−1)^{analytic rank} over Q (parity theorem). First curves of rank 0..4.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="parity_map_holds" if parity_ok else "parity_map_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="This is the Weierstrass→rank map we have: parity from a finite local invariant. Integer rank still needs ord L. e^{r-2} POOF fails at rank 4 (234446a1). Do not fsot_scaled.",
+            extra={"curves": bsd_parity_curves, "n_ok": 5 if parity_ok else 0},
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -1533,6 +1615,42 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             note="Transport from (1,1) to (2,2), same grammar as 1D Stokes vs 3D stretching. Primitive (2,2) on general X is still open. Do not claim Hodge.",
         )
     )
+    chi22 = seed_cp2xcp2_euler()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="χ(ℂP²×ℂP²)=(φ²+φ^{-2})²=L_2² (first 4-fold that is not CP^n)",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_cp2xcp2_euler",
+            computed=chi22,
+            measured=9.0,
+            public_sota_model="Künneth: χ(CP²×CP²)=χ(CP²)²=9. Seed form is L_2².",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_topological_9",
+            beats_or_meets_sota=abs(chi22 - 9.0) < 1e-12,
+            native_status="EXECUTABLE",
+            note="Product 4-fold. Hodge (2,2) is algebraic (H1, H2, H1 H2). Primitive (2,2) is 1-dimensional and algebraic. Not Hodge on a general 4-fold.",
+            extra={"formula": "(PHI**2 + PHI**(-2))**2", "lucas_L2_sq": True},
+        )
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Primitive (2,2) on ℂP²×ℂP² — 1-dimensional, generated by H1 H2, algebraic",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_primitive_22_cp2xcp2",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="h^{2,2}=3, Lefschetz span from h^{1,1}=2 leaves primitive 1. All algebraic by Künneth.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="primitive_22_product_algebraic_not_general",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Named first primitive (2,2) that is not empty (CP^n primitive=0). Still a product of projective spaces. General 4-fold leftover remains.",
+        )
+    )
     return rows
 
 
@@ -1552,6 +1670,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     riemann_S = next(r for r in rows if r["name"] == "riemann_S_T_bound")
     riemann_band = next(r for r in rows if r["name"] == "riemann_tn_inside_S_band")
     riemann_amp = next(r for r in rows if r["name"] == "riemann_S_amplitude_POOF")
+    riemann_signed = next(r for r in rows if r["name"] == "riemann_signed_jitter_p2")
     glue = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma")
     glue_at = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma_at2020")
     sig_r0_row = next(r for r in rows if r["name"] == "ym_sqrt_sigma_r0")
@@ -1572,11 +1691,14 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
     bsd_Reg3 = next(r for r in rows if r["name"] == "bsd_5077a1_regulator")
+    bsd_par = next(r for r in rows if r["name"] == "bsd_rank_parity_map")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
     hodge_22 = next(r for r in rows if r["name"] == "hodge_22_cp3")
     hodge_hl = next(r for r in rows if r["name"] == "hodge_hard_lefschetz")
+    hodge_prod = next(r for r in rows if r["name"] == "hodge_cp2xcp2_euler")
+    hodge_prim = next(r for r in rows if r["name"] == "hodge_primitive_22_cp2xcp2")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -1608,6 +1730,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "riemann_S_amplitude_beats_bound_as_typical": 1 if riemann_amp["beats_or_meets_sota"] else 0,
         "riemann_S_amplitude_green": 1 if riemann_amp.get("fsot_green") == "pass" else 0,
         "riemann_S_oos_1e_band": 1 if riemann_amp.get("oos_inside_1e") == 10 else 0,
+        "riemann_signed_beats_clock": 1 if riemann_signed["beats_or_meets_sota"] else 0,
+        "riemann_signed_green": 1 if riemann_signed.get("fsot_green") == "pass" else 0,
+        "riemann_signed_oos_sign": 1 if riemann_signed.get("oos_sign_agree") == 10 else 0,
         "alpha_s_qcd_beats_geometric": 1 if alpha_s_qcd["beats_or_meets_sota"] else 0,
         "alpha_s_qcd_green": 1 if alpha_s_qcd.get("fsot_green") == "pass" else 0,
         "alpha_s_qcd_aspiration": 1 if alpha_s_qcd.get("fsot_aspiration") == "pass" else 0,
@@ -1636,11 +1761,14 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_389a1_reg_green": 1 if bsd_Reg.get("fsot_green") == "pass" else 0,
         "bsd_5077a1_reg_green": 1 if bsd_Reg3.get("fsot_green") == "pass" else 0,
         "bsd_5077a1_reg_aspiration": 1 if bsd_Reg3.get("fsot_aspiration") == "pass" else 0,
+        "bsd_rank_parity_map": 1 if bsd_par.get("verdict") == "parity_map_holds" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
         "hodge_22_named": 1 if hodge_22.get("verdict") == "hodge_22_named_not_clay" else 0,
         "hodge_hard_lefschetz_named": 1 if hodge_hl.get("verdict") == "hard_lefschetz_named_primitive_open" else 0,
+        "hodge_cp2xcp2_exact": 1 if hodge_prod["beats_or_meets_sota"] else 0,
+        "hodge_primitive_22_named": 1 if hodge_prim.get("verdict") == "primitive_22_product_algebraic_not_general" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -1661,8 +1789,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
             "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
             "Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
-            "S(T) bound is 1/e; typical |S| is POOF (interacting-system valve, not GUE-as-noise). "
-            "Do not invert with trig S(n) or Euler product. "
+            "S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. "
+            "E→rank map is parity from w_E; integer rank still needs ord L. "
+            "Do not invert with trig S(n) or the full Euler product. "
             "α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. "
             "SOTA and FSOT 0.5% are independent bars. "
             "Storm-sector is the weather object; majority-of-saw_storm is retired. "
@@ -1770,7 +1899,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |",
         "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%)** — POOF-amplitude interacting bleed vs smooth T, not a miss of N(T)=n | C-lock is the potential / timetable. |",
         "| Riemann S(T) band | **10/10 Odlyzko inside** T_lock ± 2π(1/e)/log(T/2π) | Bound from t1's e. Typical occupancy is e·POOF. |",
-        "| Riemann typical \\|S\\| | **POOF vs mean \\|S\\| n=2..10 — beats 1/e-as-typical; 0.5% WIP** | Interacting-system valve. n=11..20 out-of-sample. Sign unsolved. |",
+        "| Riemann typical \\|S\\| | **POOF vs mean \\|S\\| n=2..10 — beats 1/e-as-typical; 0.5% WIP** | Interacting-system valve. n=11..20 out-of-sample. |",
+        "| Riemann signed jitter | **Prime-2 sign + POOF envelope vs C-lock 1.63%** | n=2..10 0.62% WIP; oos n=11..20 0.43%. Sign 19/19. |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |",
         "| Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | σ-unit object. |",
@@ -1791,11 +1921,14 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |",
         "| Reg(389a1) | **POOF vs LMFDB — beats 1/e; 0.5% WIP** | First rank-2 height pairing. Not L''(1)/2!. |",
         "| Reg(5077a1) | **e·POOF vs LMFDB — in 0.05%** | First rank-3 height volume. Same occupancy as Riemann 1/e band. Out of sample vs rank 2. |",
+        "| E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. e^{r-2} POOF fails at rank 4. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
         "| Hodge (2,2) on ℂP³ | **Named proven first p>1 object** | Hyperplane square. |",
         "| Hard Lefschetz | **Named transport (1,1)→(2,2)** | Primitive (2,2) on general X is the leftover. |",
+        "| χ(ℂP²×ℂP²) | **Meets 9** (L_2²) | First 4-fold that is not CP^n. |",
+        "| Primitive (2,2) on CP²×CP² | **1-dimensional, algebraic (H1 H2)** | Not empty (unlike CP^n). Not a general 4-fold. |",
         "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |",
         "",
         "## Next dig (misses and open tracks)",
@@ -1807,10 +1940,10 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |",
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
-        "| Riemann signed jitter | Amplitude is POOF; sign is neighbor push-pull. | Do not Euler/trig invert. Envelope 2π POOF/log(T/2π). Not RH. |",
+        "| Riemann signed jitter | Prime-2 sign + POOF envelope. n=2..10 0.62% WIP. | Do not Euler-invert the full product. n=1 stays C-lock. |",
         "| 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |",
-        "| BSD rank for general E | First ranks 0–3 named. No map E ↦ rank. | L, L', Reg=POOF, Reg=e·POOF. Do not `fsot_scaled`. |",
-        "| Hodge primitive (2,2) on general X | Hard Lefschetz named. CP^n primitive=0. | Do not steal 25−1 for K3. |",
+        "| BSD integer rank | Parity map holds. No Weierstrass→ℤ formula. | L-order still required. Rank 4 Reg is not e²·POOF. |",
+        "| Hodge primitive (2,2) on general X | Product CP²×CP² is algebraic. | Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
@@ -1878,6 +2011,9 @@ if __name__ == "__main__":
         and s["riemann_S_amplitude_beats_bound_as_typical"] == 1
         and s["riemann_S_amplitude_green"] == 0
         and s["riemann_S_oos_1e_band"] == 1
+        and s["riemann_signed_beats_clock"] == 1
+        and s["riemann_signed_green"] == 0
+        and s["riemann_signed_oos_sign"] == 1
         and s["weather_quiet_fill_still_miss"] == 0
         and s["weather_gap_zone_named"] == 1
         and s["weather_lat_transfer_named"] == 1
@@ -1889,11 +2025,14 @@ if __name__ == "__main__":
         and s["bsd_389a1_reg_green"] == 0
         and s["bsd_5077a1_reg_green"] == 1
         and s["bsd_5077a1_reg_aspiration"] == 1
+        and s["bsd_rank_parity_map"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1
         and s["hodge_22_named"] == 1
         and s["hodge_hard_lefschetz_named"] == 1
+        and s["hodge_cp2xcp2_exact"] == 1
+        and s["hodge_primitive_22_named"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

@@ -481,6 +481,45 @@ def riemann_POOF_jitter_halfwidth(T: float) -> float:
     return 2.0 * math.pi * seed_riemann_S_amplitude() / math.log(float(T) / (2.0 * math.pi))
 
 
+def riemann_signed_jitter_T(n: int, T_lock: float) -> float:
+    """C-lock T plus POOF envelope with sign from the prime-2 fold.
+
+    δT = sign(sin(T_lock ln 2)) · 2π POOF / log(T/2π).
+    n=1 stays at C-lock (t1 already spent e). Prime 2 is the first
+    interacting system; amplitude is the POOF valve. Do not Euler-invert
+    the whole product (wrecks t1). Do not trig S(n). Not RH.
+    """
+    T = float(T_lock)
+    if int(n) <= 1:
+        return T
+    sign = 1.0 if math.sin(T * math.log(2.0)) >= 0.0 else -1.0
+    return T + sign * riemann_POOF_jitter_halfwidth(T)
+
+
+def seed_bsd_rank_parity(root_number: int) -> int:
+    """rank(E) ≡ (1 − w_E)/2 (mod 2).
+
+    Functional equation over Q: w_E = (−1)^{rank}. This is the E→rank
+    map we have — parity, not the integer. Full rank still needs the
+    order of vanishing of L. Root number is a finite local invariant
+    of E, not a fit. Do not claim a Weierstrass→ℤ formula.
+    """
+    w = int(root_number)
+    if w not in (-1, 1):
+        raise ValueError("root number must be ±1")
+    return 0 if w == 1 else 1
+
+
+def seed_cp2xcp2_euler() -> float:
+    """χ(ℂP²×ℂP²) = (φ²+φ^{-2})² = L_2² = 9.
+
+    First 4-fold that is not CP^n. Künneth. Hodge (2,2) is algebraic
+    (products of hyperplanes). Primitive (2,2) is 1-dimensional and
+    algebraic. Not Hodge on a general 4-fold. Do not steal 25−1 for K3.
+    """
+    return seed_cp2_euler() ** 2
+
+
 def seed_h0_global() -> float:
     """Global CMB-background H0 = 100*(1 + S_cosm*A_bleed/A_in) [km s⁻¹ Mpc⁻¹].
 
