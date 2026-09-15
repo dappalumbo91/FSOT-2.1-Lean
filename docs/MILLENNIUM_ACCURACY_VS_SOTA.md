@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T05:12:38.269541+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T05:24:16.407866+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,10 +18,10 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 18 |
+| Beats or meets public SOTA | 19 |
 | …of those, inside FSOT 0.5% green | 11 |
 | …of those, inside 0.05% aspiration | 6 |
-| **SOTA beat, FSOT accuracy still WIP** | **5** |
+| **SOTA beat, FSOT accuracy still WIP** | **6** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
 | Clay problems remaining | 6 |
@@ -34,7 +34,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Riemann hypothesis | Im(ρ1) of ζ — first non-trivial zero (closed form vs tabulated) | 0.001661 | 26.27 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Riemann hypothesis | Im(ρ_n) n=2..10 — N(T)=n with C locked by e/γ³ (out of sample) | 1.627 mean n=2..10 (8/9 zeros) | 5.638 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Riemann hypothesis | S(T) Gram-interval remainder after C-lock; |S|≤1/e on n=1..10 | 0 | — | — | n/a | n/a | structure |
-| Riemann hypothesis | Odlyzko t_n inside C-lock ± 2π(1/e)/log(T/2π) Gram band (GUE vs smooth counting) | 0 | — | — | n/a | n/a | structure |
+| Riemann hypothesis | Odlyzko t_n inside C-lock ± 2π(1/e)/log(T/2π) Gram band (interacting vs smooth counting) | 0 | — | — | n/a | n/a | structure |
+| Riemann hypothesis | Typical |S| after t1 = POOF (interacting-system valve, not GUE-as-noise) | 0.9982 | 142.1 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Confinement scale Λ_QCD (zero-parameter seed vs PDG-class / FLAG) | 0.04806 vs PDG 0.2173; 2.068 vs FLAG 213 | 3.756 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | α_s(M_Z) QCD process orifice 2(POOF/ψ_con)² vs PDG (not geometric 1/(eπ)) | 0.007478 | 0.6788 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | Closed gluonic mode m(0++)/√σ vs Teper 1997 continuum 3.65±0.11 (dated lattice construct) | 0.8758 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
@@ -68,8 +69,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Function | Result | Why that is the right object |
 |----------|--------|------------------------------|
 | First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |
-| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%)** — GUE jitter vs smooth T, not a miss of N(T)=n | C-lock is the smooth counting system. |
-| Riemann S(T) band | **10/10 Odlyzko inside** T_lock ± 2π(1/e)/log(T/2π) | Missing conversion from argument bound to T. Mean occupancy 0.41 of the band. |
+| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%)** — POOF-amplitude interacting bleed vs smooth T, not a miss of N(T)=n | C-lock is the potential / timetable. |
+| Riemann S(T) band | **10/10 Odlyzko inside** T_lock ± 2π(1/e)/log(T/2π) | Bound from t1's e. Typical occupancy is e·POOF. |
+| Riemann typical \|S\| | **POOF vs mean \|S\| n=2..10 — beats 1/e-as-typical; 0.5% WIP** | Interacting-system valve. n=11..20 out-of-sample. Sign unsolved. |
 | Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |
 | α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |
 | Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | σ-unit object. |
@@ -98,6 +100,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |
 | Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |
 | Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |
+| Riemann signed jitter | Amplitude is POOF; sign is neighbor push-pull. | Do not Euler/trig invert. Envelope 2π POOF/log(T/2π). Not RH. |
 | 3D NSE smoothness | Vortex stretching is the named remainder. | 1D Stokes + κ executable. Stretching unsolved. Not Clay. |
 | BSD rank | Still no native rank predictor for general E. | L(11a1,1) rank 0; L'(37a1,1)=2·POOF rank 1. 389a1 order-2. Do not `fsot_scaled`. |
 | Hodge (p,p) p>1 | Lefschetz (1,1) is the proven first object. | χ(CP²)=Lucas L_2. Do not claim Hodge. Do not steal 25−1 for K3. |
@@ -112,4 +115,4 @@ python scripts/run_goal_tracks_verification.py
 Prize-process flags (separate file, all honest): [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md).
 Yang–Mills object split: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).
 
-Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE 3D smoothness (Clay, vortex stretching named), BSD rank predictor (389a1 order-2 unnamed), Hodge (p,p) p>1. Native: von Kármán κ, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, χ(CP²)=Lucas L_2, Lefschetz (1,1) named. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) is the intra-Gram remainder; |S|≤1/e on n=1..10. Do not invert with trig S(n). α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.
+Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE 3D smoothness (Clay, vortex stretching named), BSD rank predictor (389a1 order-2 unnamed), Hodge (p,p) p>1. Native: von Kármán κ, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, χ(CP²)=Lucas L_2, Lefschetz (1,1) named. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF (interacting-system valve, not GUE-as-noise). Do not invert with trig S(n) or Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.

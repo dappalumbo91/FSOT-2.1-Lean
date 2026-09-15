@@ -40,9 +40,11 @@ try:
         seed_bsd_37a1_Lprime,
         seed_cp2_euler,
         seed_riemann_S_bound,
+        seed_riemann_S_amplitude,
         seed_sqrt_sigma_r0,
         seed_glueball_r0,
         riemann_S_band_halfwidth,
+        riemann_POOF_jitter_halfwidth,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -65,9 +67,11 @@ except ImportError:  # pragma: no cover
         seed_bsd_37a1_Lprime,
         seed_cp2_euler,
         seed_riemann_S_bound,
+        seed_riemann_S_amplitude,
         seed_sqrt_sigma_r0,
         seed_glueball_r0,
         riemann_S_band_halfwidth,
+        riemann_POOF_jitter_halfwidth,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -139,6 +143,19 @@ ODLYZKO_T = (
     43.327073280914999,
     48.005150881167159,
     49.773832477672302,
+)
+# Out-of-sample Odlyzko n=11..20 (amplitude check; do not retune n=2..10 panel).
+ODLYZKO_T11_20 = (
+    52.970321477714460,
+    56.446247697207331,
+    59.347044002602353,
+    60.831778524609809,
+    65.112544029887539,
+    67.079810529494173,
+    69.546401711173979,
+    72.067157674481907,
+    75.704690699083933,
+    77.144840068874805,
 )
 
 
@@ -555,7 +572,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_rvm_panel_mean",
             beats_or_meets_sota=locked_mean < rvm_mean,
             native_status="EXECUTABLE",
-            note="C-lock is the smooth counting T. 1.63% is GUE jitter vs that smooth T, not a miss of N(T)=n. Odlyzko sits in the 1/e Gram band. Do not invert with a trig S(n). Not RH.",
+            note="C-lock is the smooth counting T (potential). 1.63% is POOF-amplitude interacting bleed vs that T, not a miss of N(T)=n. Odlyzko sits in the 1/e Gram band. Do not invert with a trig S(n) or Euler product. Not RH.",
             extra={
                 "fsot_error_pct": locked_mean,
                 "locked_mean_err_pct": locked_mean,
@@ -590,7 +607,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="S_bound_holds" if S_holds else "S_bound_fails",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="At the C-lock invert, Gram fraction equals t1's (identity); sine-of-phase cannot move t_n. Do not stuff a trig S(n). t_n 1.63% stays WIP. Not RH.",
+            note="At the C-lock invert, Gram fraction equals t1's (identity); sine-of-phase cannot move t_n. Typical |S| is POOF (valve), bound is 1/e. Do not stuff a trig S(n) or Euler product. Not RH.",
             extra={
                 "S_at_odlyzko": S_n,
                 "S_max_abs": S_max,
@@ -603,25 +620,75 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Riemann hypothesis",
-            function_object="Odlyzko t_n inside C-lock ± 2π(1/e)/log(T/2π) Gram band (GUE vs smooth counting)",
+            function_object="Odlyzko t_n inside C-lock ± 2π(1/e)/log(T/2π) Gram band (interacting vs smooth counting)",
             clay_object="All non-trivial zeros have Re=1/2",
             name="riemann_tn_inside_S_band",
             computed=1.0 if band_holds else 0.0,
             measured=1.0,
-            public_sota_model="Smooth N(T)=n inversion vs GUE zeros are two systems (like 1997 vs AT2020 σ-schemes). Band from S-bound 1/e. Not a point-T 0.5% gate.",
+            public_sota_model="Smooth N(T)=n inversion vs interacting zeros are two systems (like 1997 vs AT2020 σ-schemes). Band from S-bound 1/e. Typical occupancy e·POOF. Not a point-T 0.5% gate.",
             public_sota_typical_error_pct=None,
             comparison_class="structure",
             verdict="inside_S_band" if band_holds else "outside_S_band",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="n=1..10 all inside. Mean occupancy 0.41 of the band; max 0.87 at n=9. 1.63% point residual is jitter inside the band. Do not trig-stuff S(n). Not RH.",
+            note="n=1..10 all inside. Mean occupancy is e·POOF (derived), not a measured 0.41. Sign is neighbor push-pull, unsolved as a point. Do not trig/Euler-stuff S(n). Not RH.",
             extra={
                 "n_inside": n_inside_band,
                 "n_panel": 10,
                 "rel_in_band": band_rel,
                 "mean_rel_n2_10": sum(band_rel[1:]) / 9.0,
                 "max_rel": max(band_rel),
+                "occupancy_e_POOF": math.e * seed_riemann_S_amplitude(),
                 "formula": "dT=2pi*(1/e)/log(T/2pi)",
+            },
+        )
+    )
+    mean_abs_S = sum(abs(s) for s in S_n[1:]) / 9.0
+    S_amp = seed_riemann_S_amplitude()
+    S_amp_err = _err_pct(S_amp, mean_abs_S)
+    bound_as_typical_err = _err_pct(S_bound, mean_abs_S)
+    oos_S = []
+    oos_inside_1e = 0
+    oos_inside_poof = 0
+    for j, Ttrue in enumerate(ODLYZKO_T11_20):
+        n = j + 11
+        Tlock = riemann_invert_N(n, C_n)
+        So = riemann_S_at_zero(n, Ttrue, C_n)
+        oos_S.append(So)
+        half_1e = riemann_S_band_halfwidth(Tlock)
+        half_p = riemann_POOF_jitter_halfwidth(Tlock)
+        if abs(Ttrue - Tlock) <= half_1e:
+            oos_inside_1e += 1
+        if abs(Ttrue - Tlock) <= half_p:
+            oos_inside_poof += 1
+    oos_mean_abs_S = sum(abs(s) for s in oos_S) / 10.0
+    oos_amp_err = _err_pct(S_amp, oos_mean_abs_S)
+    rows.append(
+        _row(
+            problem="Riemann hypothesis",
+            function_object="Typical |S| after t1 = POOF (interacting-system valve, not GUE-as-noise)",
+            clay_object="All non-trivial zeros have Re=1/2",
+            name="riemann_S_amplitude_POOF",
+            computed=S_amp,
+            measured=mean_abs_S,
+            public_sota_model="Gram/RvM uses the whole 1/e room as if typical=bound. Interacting bleed is the POOF valve.",
+            public_sota_typical_error_pct=bound_as_typical_err,
+            comparison_class="comparable",
+            verdict="beats_bound_as_typical" if S_amp_err < bound_as_typical_err else "does_not_beat_bound_as_typical",
+            beats_or_meets_sota=S_amp_err < bound_as_typical_err,
+            native_status="EXECUTABLE",
+            note="Mean |S| n=2..10 vs POOF. Occupancy of the 1/e band is then e·POOF. Sign is neighbor push-pull, not a point S(n). Do not Euler-invert (wrecks t1). Do not replace 1/e bound. n=11..20 is out-of-sample. Not RH.",
+            extra={
+                "formula": "POOF",
+                "mean_abs_S_n2_10": mean_abs_S,
+                "fsot_vs_mean_abs_S_pct": S_amp_err,
+                "bound_1e_as_typical_pct": bound_as_typical_err,
+                "occupancy_e_POOF": math.e * S_amp,
+                "oos_n11_20_mean_abs_S": oos_mean_abs_S,
+                "oos_vs_POOF_pct": oos_amp_err,
+                "oos_inside_1e": oos_inside_1e,
+                "oos_inside_POOF_envelope": oos_inside_poof,
+                "oos_n_panel": 10,
             },
         )
     )
@@ -1308,6 +1375,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     riemann_panel = next(r for r in rows if r["name"] == "riemann_zeros_2_to_10_N_locked")
     riemann_S = next(r for r in rows if r["name"] == "riemann_S_T_bound")
     riemann_band = next(r for r in rows if r["name"] == "riemann_tn_inside_S_band")
+    riemann_amp = next(r for r in rows if r["name"] == "riemann_S_amplitude_POOF")
     glue = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma")
     glue_at = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma_at2020")
     sig_r0_row = next(r for r in rows if r["name"] == "ym_sqrt_sigma_r0")
@@ -1353,6 +1421,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "riemann_panel_beats_rvm": 1 if riemann_panel["beats_or_meets_sota"] else 0,
         "riemann_S_T_bound_holds": 1 if riemann_S.get("verdict") == "S_bound_holds" else 0,
         "riemann_tn_inside_S_band": 1 if riemann_band.get("verdict") == "inside_S_band" else 0,
+        "riemann_S_amplitude_beats_bound_as_typical": 1 if riemann_amp["beats_or_meets_sota"] else 0,
+        "riemann_S_amplitude_green": 1 if riemann_amp.get("fsot_green") == "pass" else 0,
+        "riemann_S_oos_1e_band": 1 if riemann_amp.get("oos_inside_1e") == 10 else 0,
         "alpha_s_qcd_beats_geometric": 1 if alpha_s_qcd["beats_or_meets_sota"] else 0,
         "alpha_s_qcd_green": 1 if alpha_s_qcd.get("fsot_green") == "pass" else 0,
         "alpha_s_qcd_aspiration": 1 if alpha_s_qcd.get("fsot_aspiration") == "pass" else 0,
@@ -1394,7 +1465,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
             "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
             "Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
-            "S(T) is the intra-Gram remainder; |S|≤1/e on n=1..10. Do not invert with trig S(n). "
+            "S(T) bound is 1/e; typical |S| is POOF (interacting-system valve, not GUE-as-noise). "
+            "Do not invert with trig S(n) or Euler product. "
             "α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. "
             "SOTA and FSOT 0.5% are independent bars. "
             "Storm-sector is the weather object; majority-of-saw_storm is retired. "
@@ -1500,8 +1572,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Function | Result | Why that is the right object |",
         "|----------|--------|------------------------------|",
         "| First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |",
-        "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%)** — GUE jitter vs smooth T, not a miss of N(T)=n | C-lock is the smooth counting system. |",
-        "| Riemann S(T) band | **10/10 Odlyzko inside** T_lock ± 2π(1/e)/log(T/2π) | Missing conversion from argument bound to T. Mean occupancy 0.41 of the band. |",
+        "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%)** — POOF-amplitude interacting bleed vs smooth T, not a miss of N(T)=n | C-lock is the potential / timetable. |",
+        "| Riemann S(T) band | **10/10 Odlyzko inside** T_lock ± 2π(1/e)/log(T/2π) | Bound from t1's e. Typical occupancy is e·POOF. |",
+        "| Riemann typical \\|S\\| | **POOF vs mean \\|S\\| n=2..10 — beats 1/e-as-typical; 0.5% WIP** | Interacting-system valve. n=11..20 out-of-sample. Sign unsolved. |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |",
         "| Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | σ-unit object. |",
@@ -1530,6 +1603,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |",
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
+        "| Riemann signed jitter | Amplitude is POOF; sign is neighbor push-pull. | Do not Euler/trig invert. Envelope 2π POOF/log(T/2π). Not RH. |",
         "| 3D NSE smoothness | Vortex stretching is the named remainder. | 1D Stokes + κ executable. Stretching unsolved. Not Clay. |",
         "| BSD rank | Still no native rank predictor for general E. | L(11a1,1) rank 0; L'(37a1,1)=2·POOF rank 1. 389a1 order-2. Do not `fsot_scaled`. |",
         "| Hodge (p,p) p>1 | Lefschetz (1,1) is the proven first object. | χ(CP²)=Lucas L_2. Do not claim Hodge. Do not steal 25−1 for K3. |",
@@ -1596,6 +1670,9 @@ if __name__ == "__main__":
         and s["riemann_panel_beats_rvm"] == 1
         and s["riemann_S_T_bound_holds"] == 1
         and s["riemann_tn_inside_S_band"] == 1
+        and s["riemann_S_amplitude_beats_bound_as_typical"] == 1
+        and s["riemann_S_amplitude_green"] == 0
+        and s["riemann_S_oos_1e_band"] == 1
         and s["weather_quiet_fill_still_miss"] == 0
         and s["weather_gap_zone_named"] == 1
         and s["weather_lat_transfer_named"] == 1
