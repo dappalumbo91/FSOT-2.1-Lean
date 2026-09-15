@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T05:24:16.407866+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T10:41:13.072101+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,10 +18,10 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 19 |
-| …of those, inside FSOT 0.5% green | 11 |
-| …of those, inside 0.05% aspiration | 6 |
-| **SOTA beat, FSOT accuracy still WIP** | **6** |
+| Beats or meets public SOTA | 21 |
+| …of those, inside FSOT 0.5% green | 12 |
+| …of those, inside 0.05% aspiration | 7 |
+| **SOTA beat, FSOT accuracy still WIP** | **7** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
 | Clay problems remaining | 6 |
@@ -50,6 +50,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Yang–Mills existence and mass gap | Discrete valve path-sum w_POOF + w_hold = 1; a0/γ_color finite | 1.11e-14 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Global smooth (or blow-up) 3D incompressible NSE | — | — | — | n/a | n/a | open_track_next |
 | Navier–Stokes existence and smoothness | Vortex stretching — the 3D remainder after 1D Stokes decay (named, not solved) | — | — | — | n/a | n/a | structure |
+| Navier–Stokes existence and smoothness | 2D enstrophy conservation — proven first object (no vortex stretching). Clay is 3D. | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Seed-locked transport + 1D Stokes mode at Fluid nest D (dark) | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | von Kármán log-law κ = A_bleed/φ² (wall shear). Not 3D smoothness. | 0.02291 | 2.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 4.167 | beats/meets | n/a | n/a | beats_sota_right_object |
@@ -57,12 +58,16 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Navier–Stokes existence and smoothness | Latitude-belt transfer: quiet kill coupled to a same-issue storm hold (|Δlat|<POOF·180/π) | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Clean quiet 24 h persistence (pres≥1010, gst<8, not lat-coupled to a storm hold) | 0 | — | beats/meets | n/a | n/a | beats_sota_right_object |
 | P versus NP | Unstructured-search query exponent (quantum query complexity) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| P versus NP | Cook–Levin SAT is NP-complete — proven first object. Clay is P=?NP. | 0 | — | — | n/a | n/a | structure |
 | Birch and Swinnerton-Dyer | Named first objects: Cremona 11a1 (rank 0), 37a1 (rank 1), 389a1 (rank 2) | 0 | — | — | n/a | n/a | open_track_next |
 | Birch and Swinnerton-Dyer | L(11a1,1)=√φ/D_particle vs LMFDB (first rank-0 curve, not a rank predictor) | 0.2214 | 1.513 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Birch and Swinnerton-Dyer | L'(37a1,1)=2·POOF vs LMFDB (first rank-1 curve, not a rank predictor) | 0.3152 | 4.023 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
+| Birch and Swinnerton-Dyer | Reg(389a1)=POOF vs LMFDB (first rank-2 height pairing, not a rank predictor) | 0.6704 | 141.3 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Hodge conjecture | Named first objects: ℂP² (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20. | — | — | — | n/a | n/a | open_track_next |
 | Hodge conjecture | χ(ℂP²)=φ²+φ^{-2}=Lucas L_2 (named surface Euler number, not Hodge classes) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Lefschetz (1,1) on ℂP² — proven first Hodge-type theorem, not Clay (p,p) for p>1 | 0 | — | — | n/a | n/a | structure |
+| Hodge conjecture | χ(ℂP³)=φ³−φ^{-3}=Lucas L_3 (named 3-fold Euler number, not Hodge classes) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Hodge conjecture | Hodge (2,2) on ℂP³ — hyperplane square generates H^{2,2}. Proven first p>1 object, not Clay. | 0 | — | — | n/a | n/a | structure |
 
 ## What this does and does not say
 
@@ -84,12 +89,17 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |
 | Glueball 2++/0++ | **Beats 3/2 (0.23%) — in 0.5% green, aspiration WIP** | √2 geometry on the closed 0++ mode. |
 | Grover 1/2 | **Meets proven bound and in 0.05%** | Not P vs NP. |
+| Cook–Levin SAT | **Named proven first NP-complete theorem** | Clay is P=?NP. Verification is poly; search is the remainder. |
 | von Kármán κ | **Beats log-law scatter and in 0.05%** (`A_bleed/φ²` vs 0.40) | Wall shear, not 3D NSE smoothness. |
+| 2D enstrophy | **Named proven first NSE-type theorem** | No stretching in 2D. Clay is 3D. |
 | L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |
-| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. 389a1 still order-2 vanishing. |
+| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |
+| Reg(389a1) | **POOF vs LMFDB — beats 1/e; 0.5% WIP** | First rank-2 height pairing. Not L''(1)/2!. Not a rank predictor. |
 | χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |
-| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | Clay is (p,p) for p>1. Do not claim Hodge. |
-| NSE vortex stretching | **Named Clay remainder** after 1D Stokes | Beale–Kato–Majda leftover. Do not claim 3D smoothness. |
+| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |
+| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |
+| Hodge (2,2) on ℂP³ | **Named proven first p>1 object** | Hyperplane square. Clay is general X. |
+| NSE vortex stretching | **Named Clay remainder** after 1D Stokes / 2D enstrophy | Beale–Kato–Majda leftover. Do not claim 3D smoothness. |
 
 ## Next dig (misses and open tracks)
 
@@ -101,9 +111,10 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |
 | Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |
 | Riemann signed jitter | Amplitude is POOF; sign is neighbor push-pull. | Do not Euler/trig invert. Envelope 2π POOF/log(T/2π). Not RH. |
-| 3D NSE smoothness | Vortex stretching is the named remainder. | 1D Stokes + κ executable. Stretching unsolved. Not Clay. |
-| BSD rank | Still no native rank predictor for general E. | L(11a1,1) rank 0; L'(37a1,1)=2·POOF rank 1. 389a1 order-2. Do not `fsot_scaled`. |
-| Hodge (p,p) p>1 | Lefschetz (1,1) is the proven first object. | χ(CP²)=Lucas L_2. Do not claim Hodge. Do not steal 25−1 for K3. |
+| 3D NSE smoothness | Vortex stretching is the named remainder. 2D enstrophy is the proven first object. | 1D Stokes + κ executable. Stretching unsolved. Not Clay. |
+| BSD rank | Still no native rank predictor for general E. | L(11a1,1) rank 0; L'(37a1,1)=2·POOF rank 1; Reg(389a1)=POOF rank 2. Do not `fsot_scaled`. |
+| Hodge on general X | (2,2) on CP³ is the proven first p>1 object. | χ(CP²)=L_2; χ(CP³)=L_3. Do not claim Hodge. Do not steal 25−1 for K3. |
+| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. Do not claim P≠NP. |
 
 ## Reproduce
 
@@ -115,4 +126,4 @@ python scripts/run_goal_tracks_verification.py
 Prize-process flags (separate file, all honest): [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md).
 Yang–Mills object split: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).
 
-Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE 3D smoothness (Clay, vortex stretching named), BSD rank predictor (389a1 order-2 unnamed), Hodge (p,p) p>1. Native: von Kármán κ, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, χ(CP²)=Lucas L_2, Lefschetz (1,1) named. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF (interacting-system valve, not GUE-as-noise). Do not invert with trig S(n) or Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.
+Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE 3D smoothness (Clay, 2D enstrophy named, stretching unsolved), BSD rank predictor (no general E; 389a1 Reg=POOF named), Hodge on general X. Native: von Kármán κ, 2D enstrophy, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF (interacting-system valve, not GUE-as-noise). Do not invert with trig S(n) or Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.

@@ -42,11 +42,11 @@ Machine flags in this repo (all honest zeros except remaining=6 and Poincaré hi
 | Problem | Clay object (what the prize pays for) | FSOT native (what we machine-check) | Status |
 |---------|----------------------------------------|-------------------------------------|--------|
 | **Yang–Mills existence and mass gap** | Continuum quantum YM on \(\mathbb{R}^4\) + Hamiltonian \(\Delta>0\) | Discrete path-sum \(w_{\mathrm{POOF}}+w_{\mathrm{hold}}=1\); free color damps; \(a_0/\gamma\) finite | Native **executable**. Clay **OPEN_NOT_CLAIMED** |
-| **Navier–Stokes existence and smoothness** | Global smooth (or blow-up) solutions of 3D incompressible NSE | 1D Stokes, von Kármán \(\kappa\). Vortex stretching named as the 3D remainder. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
-| **P versus NP** | Proof that P=NP or P≠NP | Grover exponent \(1/2\) (QI class); complexity-fold residual panel is **not** this theorem | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
+| **Navier–Stokes existence and smoothness** | Global smooth (or blow-up) solutions of 3D incompressible NSE | 1D Stokes, von Kármán \(\kappa\), 2D enstrophy (proven). Vortex stretching named as the 3D remainder. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
+| **P versus NP** | Proof that P=NP or P≠NP | Grover \(1/2\) (QI); Cook–Levin SAT named. Not P=?NP. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
 | **Riemann hypothesis** | All non-trivial zeros of \(\zeta\) have real part \(1/2\) | First-zero \(e/\gamma^3\); \(N(T)\) C-lock; \(\lvert S\rvert\le 1/e\); typical \(\lvert S\rvert=\mathrm{POOF}\). Sign unsolved. Not RH. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
-| **Birch and Swinnerton-Dyer** | Rank of \(E(\mathbb{Q})\) equals order of vanishing of \(L(E,s)\) at \(s=1\) | \(L(11a1,1)=\sqrt{\varphi}/D_{\mathrm{particle}}\); \(L'(37a1,1)=2\cdot\mathrm{POOF}\). No rank theorem. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
-| **Hodge conjecture** | Hodge classes on a projective complex manifold are algebraic cycles (rational) | Lefschetz (1,1) on \(\mathbb{CP}^2\) named (proven). \(\chi=L_2\). Clay is (p,p) p>1. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
+| **Birch and Swinnerton-Dyer** | Rank of \(E(\mathbb{Q})\) equals order of vanishing of \(L(E,s)\) at \(s=1\) | \(L(11a1,1)=\sqrt{\varphi}/D_{\mathrm{particle}}\); \(L'(37a1,1)=2\cdot\mathrm{POOF}\); \(\mathrm{Reg}(389a1)=\mathrm{POOF}\). No rank theorem. | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
+| **Hodge conjecture** | Hodge classes on a projective complex manifold are algebraic cycles (rational) | Lefschetz (1,1); Hodge (2,2) on \(\mathbb{CP}^3\). \(\chi=L_2,L_3\). Clay is general \(X\). | Native **probe**. Clay **OPEN_NOT_CLAIMED** |
 
 “We already solved some of these” is true **only** for the *native* column (YM path-sum, NS transport coefficients, Riemann first-zero residual, Grover 1/2). It is **false** for the Clay column. Same Perfect Host discipline: wrong object is a false kill *and* a false win.
 

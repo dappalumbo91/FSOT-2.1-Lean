@@ -392,6 +392,17 @@ def seed_bsd_37a1_Lprime() -> float:
     return 2.0 * f(POOF)
 
 
+def seed_bsd_389a1_regulator() -> float:
+    """Reg(389a1) = POOF.
+
+    First rank-2 curve: L vanishes to order 2. The leftover arithmetic is
+    the height pairing of the two generators — the interacting-system valve.
+    Same POOF as Riemann typical |S|. Not L''(1)/2! (that still needs Ω).
+    Not a rank predictor for general E. Do not fsot_scaled(Reg).
+    """
+    return f(POOF)
+
+
 def seed_cp2_euler() -> float:
     """χ(ℂP²) = φ² + φ^{-2} = Lucas L_2 = 3.
 
@@ -399,6 +410,16 @@ def seed_cp2_euler() -> float:
     Do not steal 25−1 for χ(K3)=24. Do not identity-pad h^{1,1}=1.
     """
     return f(PHI) ** 2 + f(PHI) ** -2
+
+
+def seed_cp3_euler() -> float:
+    """χ(ℂP³) = φ³ − φ^{-3} = Lucas L_3 = 4.
+
+    Next named Euler after χ(CP²)=L_2. Odd Lucas uses minus because
+    1−φ = −φ^{-1}. Not a general χ(CP^n)=L_n law (n=4 breaks it).
+    Not Hodge (2,2). Do not steal 25−1 for K3.
+    """
+    return f(PHI) ** 3 - f(PHI) ** -3
 
 
 def seed_riemann_S_bound() -> float:
