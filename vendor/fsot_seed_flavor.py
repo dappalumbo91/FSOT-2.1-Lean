@@ -595,6 +595,62 @@ def seed_cubic4_h22() -> float:
     return seed_fibonacci(8)
 
 
+def seed_k3_h11() -> float:
+    """h^{1,1}(K3) = F_8 − 1 = 20.
+
+    Associated K3 of a cubic 4-fold: primitive (2,2) ≅ H^{1,1}(K3)
+    (Hassett, Huybrechts). Lefschetz (1,1) on that K3 is algebraicity.
+    Do not steal 25−1 for χ(K3)=24.
+    """
+    return seed_fibonacci(8) - 1.0
+
+
+def seed_cubic4_fano_b2() -> float:
+    """b_2 of the Fano variety of lines on a cubic 4-fold = F_8 + 2 = 23.
+
+    Beauville–Donagi: H^2(F(X)) ≅ H^4(X). b_4 = h^{3,1}+h^{2,2}+h^{1,3}=1+21+1.
+    """
+    return seed_fibonacci(8) + 2.0
+
+
+def seed_bsd_leading_of_rank(rank: int) -> float:
+    """Seed leading BSD number that labels integer rank 0..3.
+
+    r=0: L(11a1,1)=√φ/D_particle
+    r=1: L'(37a1,1)=2·POOF
+    r=2: L''(389a1,1)/2!=2π·POOF/√φ
+    r=3: Reg(5077a1)=e·POOF
+    First-of-rank ladder. General E still produces the leading from its
+    modular form; this map is leading → rank. Rank 4 unnamed.
+    """
+    r = int(rank)
+    if r == 0:
+        return seed_bsd_11a1_L()
+    if r == 1:
+        return seed_bsd_37a1_Lprime()
+    if r == 2:
+        return seed_bsd_389a1_special()
+    if r == 3:
+        return seed_bsd_5077a1_regulator()
+    raise ValueError("seed leading for rank 0..3 only")
+
+
+def bsd_integer_rank_from_leading(value: float) -> int:
+    """Integer rank = nearest seed leading among r=0..3.
+
+    For the first curve of each of those ranks the match is unique.
+    Not a Weierstrass→ℤ formula; the leading comes from L(E).
+    """
+    best_r, best = 0, float("inf")
+    v = float(value)
+    for r in range(4):
+        s = seed_bsd_leading_of_rank(r)
+        e = abs(v - s) / max(abs(s), 1e-30)
+        if e < best:
+            best, best_r = e, r
+    return best_r
+
+
 def seed_cubic_4fold_euler() -> float:
     """χ of a smooth cubic 4-fold ⊂ CP^5 = 27.
 

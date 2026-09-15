@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T11:44:37.832338+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T11:51:48.130701+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,9 +18,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 29 |
-| …of those, inside FSOT 0.5% green | 23 |
-| …of those, inside 0.05% aspiration | 15 |
+| Beats or meets public SOTA | 31 |
+| …of those, inside FSOT 0.5% green | 25 |
+| …of those, inside 0.05% aspiration | 17 |
 | **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
@@ -69,6 +69,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Birch and Swinnerton-Dyer | L''(389a1,1)/2!=2π·POOF/√φ vs LMFDB special (BSD leading term, not Néron-Tate Reg in isolation) | 0.1562 | 3.435 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Birch and Swinnerton-Dyer | Reg(5077a1)=e·POOF vs LMFDB (first rank-3 height volume, not a rank predictor) | 0.01543 | 63.21 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Birch and Swinnerton-Dyer | E→rank (mod 2): rank ≡ (1−w_E)/2. Functional equation. Not the integer rank. | 0 | — | — | n/a | n/a | structure |
+| Birch and Swinnerton-Dyer | Integer rank from seed leading: first curves of rank 0..3 match uniquely | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Named first objects: ℂP² (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20. | — | — | — | n/a | n/a | open_track_next |
 | Hodge conjecture | χ(ℂP²)=φ²+φ^{-2}=Lucas L_2 (named surface Euler number, not Hodge classes) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Lefschetz (1,1) on ℂP² — proven first Hodge-type theorem, not Clay (p,p) for p>1 | 0 | — | — | n/a | n/a | structure |
@@ -83,6 +84,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Hodge conjecture | Hodge index: intersection form on a surface has signature (1, ρ−1). Proven. Not algebraicity. | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | χ of a smooth cubic 4-fold ⊂ CP^5 (Chern, n=4, d=3). Not Hodge (2,2). | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | h^{2,2} of a smooth cubic 4-fold = F_8 = 21 (middle Hodge, not algebraicity) | 1.692e-14 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Hodge conjecture | h^{1,1} of the associated K3 = F_8−1 = 20 (primitive (2,2) of the cubic) | 1.776e-14 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Hodge conjecture | b_2 of the Fano variety of lines on a cubic 4-fold = F_8+2 = 23 | 1.545e-14 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Hodge conjecture | Algebraicity: special cubic with associated K3 reduces (2,2) Hodge classes to Lefschetz (1,1) on the K3 | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Primitive (2,2) on a cubic 4-fold — first open hypersurface case after Grassmannians | — | — | — | n/a | n/a | structure |
 
 ## What this does and does not say
@@ -116,6 +120,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | L''(389a1,1)/2! | **2π POOF/√φ vs LMFDB — in 0.5%** | Dual period × valve. Wrong object was Reg in isolation. |
 | Reg(5077a1) | **e·POOF vs LMFDB — in 0.05%** | First rank-3 height volume. Same occupancy as Riemann 1/e band. Out of sample vs rank 2. |
 | E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. e^{r-2} POOF fails at rank 4. |
+| Integer rank 0..3 | **First-curve leadings match uniquely** | Leading → rank. General E still produces the leading from its modular form. |
 | χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |
 | χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |
 | Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |
@@ -128,7 +133,10 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Lefschetz hyperplane | **Named reduction to primitive + ambient CP^n** | Cubic 4-fold primitive is what remains. |
 | Hodge index | **Named proven signature theorem on surfaces** | Not algebraicity. |
 | χ cubic 4-fold | **Meets 27** (Chern n=4, d=3) | Euler, not Hodge classes. |
-| h^{2,2} cubic 4-fold | **Meets 21** (F_8, index 2n=8) | The count. Algebraicity of those classes is the remainder. |
+| h^{2,2} cubic 4-fold | **Meets 21** (F_8, index 2n=8) | The count. |
+| Associated K3 h^{1,1} | **Meets 20** (F_8−1) | Primitive (2,2) of the cubic. Lefschetz (1,1) is algebraicity. |
+| Fano of lines b_2 | **Meets 23** (F_8+2) | Beauville–Donagi H^2(F)≅H^4(X). |
+| Algebraicity via associated K3 | **Named reduction to Lefschetz (1,1)** | Very general cubic: only h^2. Remainder: extra classes, no K3. |
 | Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |
 | NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |
 

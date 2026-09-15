@@ -149,8 +149,8 @@ def run_millennium_suite() -> list[dict[str, Any]]:
     )
 
     for name, note in (
-        ("bsd_clay_open", "Rank vs L-function. Parity from w_E. L''(389a1,1)/2!=2π POOF/√φ. Integer rank still needs ord L."),
-        ("hodge_clay_open", "Algebraic cycles vs cohomology. Gr(2,4) Schubert algebraic. Cubic 4-fold primitive (2,2) is the remainder."),
+        ("bsd_clay_open", "Rank vs L-function. Parity from w_E. First-curve leadings label ranks 0..3. General E still produces the leading from its modular form."),
+        ("hodge_clay_open", "Algebraic cycles vs cohomology. Associated K3 reduces cubic (2,2) to Lefschetz (1,1). Remainder: extra classes, no K3."),
     ):
         rows.append(
             _row(
