@@ -299,17 +299,27 @@ def seed_string_tension_GeV() -> float:
 
 
 def seed_glueball_over_sqrt_sigma() -> float:
-    """First closed gluonic mode in string units: m(0++)/√σ = φ² + 1.
+    """Isolated closed gluonic mode: m(0++)/√σ = φ² + 1.
 
-    Λ_QCD is the confinement *scale* of the fluid (Catalan·SUCTION·φ − …).
-    The 0++ glueball is not Λ. It is a closed loop of the gluonic medium.
-    Old probe φ² + e/π used the Atomic bound-well look (e/π). A closed
-    mode has default look 1, so φ² + 1. 2++ / 0++ stays geometric √2.
-    Not a fit to Teper 1997 3.65 (σ units). AT2020 3.405(21) is a different
-    Wilson-plaquette continuum scheme (0++ dip at β~5.5), not a 6% FSOT miss.
-    r0 units: (φ²+1)(1+1/(2π)). Do not restore e/π. Not an observed particle.
+    Look 1 closed loop. Not the σ-unit object — that couples to the flux
+    tube (POOF/D_particle). GeV pole and r0 product use this isolated loop.
+    Do not restore e/π. Not an observed particle.
     """
     return f(PHI) ** 2 + 1.0
+
+
+def seed_glueball_sigma_coupled() -> float:
+    """σ-unit 0++: φ²+1 + POOF/D_particle.
+
+    Teper quotes m/√σ — the loop in units of the string it lives in.
+    Isolated loop is φ²+1. Flux-tube coupling is the POOF valve at the
+    particle floor D=5. Isolated vs Teper 3.65 was the missing coupling
+    (0.88%). Do not put this extra on r0 (Sommer is a different orifice).
+    AT2020 3.405 is still a Wilson-scheme split. Not an observed particle.
+    """
+    return seed_glueball_over_sqrt_sigma() + f(POOF) / float(
+        derived_D_eff("Particle_Physics")
+    )
 
 
 def seed_sqrt_sigma_r0() -> float:
@@ -360,6 +370,22 @@ def seed_flavor_closed_GeV() -> float:
     PDG f0(1710) is the measurement. Not a glueball ID.
     """
     return seed_flavor_closed_over_sqrt_sigma() * seed_string_tension_GeV()
+
+
+def seed_f0_1500_mixed_GeV() -> float:
+    """Observed f0(1500) BW: glue–flavor 2×2, V=POOF·K.
+
+    Isolated gluonic pole is (φ²+1)K (inside the T-matrix band).
+    BW 1506 is the mixed lineshape — glue talking to the flavor partner
+    (π+1)K through the POOF valve at the string scale. Lower eigenvalue.
+    Do not mix the 1710 orifice (already 0.40% unmixed). Not a glueball ID.
+    """
+    g = seed_closed_gluonic_GeV()
+    flav = seed_flavor_closed_GeV()
+    v = f(POOF) * seed_string_tension_GeV()
+    mid = 0.5 * (g + flav)
+    half = 0.5 * (flav - g)
+    return mid - math.sqrt(half * half + v * v)
 
 
 def seed_von_karman() -> float:

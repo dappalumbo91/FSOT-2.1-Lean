@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T11:22:14.764729+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T11:34:24.416946+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -19,9 +19,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Bucket | n |
 |--------|---|
 | Beats or meets public SOTA | 28 |
-| …of those, inside FSOT 0.5% green | 18 |
-| …of those, inside 0.05% aspiration | 12 |
-| **SOTA beat, FSOT accuracy still WIP** | **8** |
+| …of those, inside FSOT 0.5% green | 21 |
+| …of those, inside 0.05% aspiration | 14 |
+| **SOTA beat, FSOT accuracy still WIP** | **5** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
 | Clay problems remaining | 6 |
@@ -39,13 +39,14 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Riemann hypothesis | Signed jitter: C-lock + sign(sin(T ln 2))·2π POOF/log(T/2π) (prime-2 fold) | 89.02 | 1.627 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
 | Yang–Mills existence and mass gap | Confinement scale Λ_QCD (zero-parameter seed vs PDG-class / FLAG) | 0.04806 vs PDG 0.2173; 2.068 vs FLAG 213 | 3.756 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | α_s(M_Z) QCD process orifice 2(POOF/ψ_con)² vs PDG (not geometric 1/(eπ)) | 0.007478 | 0.6788 | beats/meets | pass | pass | beats_sota_in_aspiration |
-| Yang–Mills existence and mass gap | Closed gluonic mode m(0++)/√σ vs Teper 1997 continuum 3.65±0.11 (dated lattice construct) | 0.8758 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
-| Yang–Mills existence and mass gap | Lightest 0++ glueball / √σ vs Teper's own closed-form ~4√σ | 0.8758 | 9.589 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Yang–Mills existence and mass gap | σ-unit 0++: φ²+1 + POOF/D_particle vs Teper 1997 3.65±0.11 (loop coupled to the flux tube) | 0.03478 vs Teper 3.65; 3.372 vs in-repo 3.5 | 3.014 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Yang–Mills existence and mass gap | Lightest 0++ glueball / √σ vs Teper's own closed-form ~4√σ | 0.03478 | 9.589 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Yang–Mills existence and mass gap | 1997 vs AT2020 Wilson 0++ continuum schemes (M/√σ 3.65 vs 3.405) — lattice-lattice, not FSOT | 0 | — | — | n/a | n/a | structure |
 | Yang–Mills existence and mass gap | √σ r0 = 1+1/(2π) vs AT2020 1.160(6) (Sommer vs string tension) | 0.07285 | 0.5172 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Yang–Mills existence and mass gap | Closed 0++ in r0 units (φ²+1)(1+1/(2π)) vs Chen r0 M=4.16(11) | 0.814 | 2.644 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Yang–Mills existence and mass gap | Chen r0 M 4.16 vs AT2020 (m/√σ)(√σ r0)=3.95 — lattice scheme split, not FSOT | 0 | — | — | n/a | n/a | structure |
 | Yang–Mills existence and mass gap | Glueball tensor/scalar m(2++)/m(0++) — geometric √2 vs 3/2 rule | 0.2307 | 6.311 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
-| Yang–Mills existence and mass gap | Closed gluonic mode vs f0(1500) BW 1506±6 MeV (lineshape convention, not the pole) | 0.9275 | 14.87 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Yang–Mills existence and mass gap | f0(1500) BW: glue–flavor 2×2, V=POOF·K (mixed lineshape, not the isolated pole) | 0.2351 | 14.87 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Yang–Mills existence and mass gap | Closed gluonic mode vs f0(1500) T-matrix pole Re band 1.43–1.53 GeV (not BW) | 0 | — | — | n/a | n/a | structure |
 | Yang–Mills existence and mass gap | Flavor/ss closed 0++ in GeV vs PDG f0(1710) (circle orifice π+1, not the gluonic mode) | 0.3993 | 3.033 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Yang–Mills existence and mass gap | Discrete valve path-sum w_POOF + w_hold = 1; a0/γ_color finite | 1.11e-14 | — | — | n/a | n/a | structure |
@@ -94,11 +95,11 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Riemann signed jitter | **Prime-2 sign + POOF envelope vs C-lock 1.63%** | n=2..10 0.62% WIP; oos n=11..20 0.43%. Sign 19/19. |
 | Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |
 | α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |
-| Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | σ-unit object. |
+| Glueball σ-unit vs Teper 1997 3.65 | **φ²+1 + POOF/D_particle — in 0.05%** | Isolated loop was missing flux-tube coupling. |
 | 1997 vs AT2020 M/√σ | **Lattice-lattice ~7%** (Wilson 0++ dip) | Not a 6% FSOT miss. Different continuum schemes. |
 | √σ r0 = 1+1/(2π) | **vs AT2020 1.160(6) — in 0.05%** | Missing Sommer vs string-tension conversion. |
 | r0 M(0++) = (φ²+1)(1+1/(2π)) | **vs Chen 4.16(11) — inside 1σ, 0.82% WIP** | r0 units. Do not retune φ²+1. |
-| Closed gluonic GeV vs f0(1500) BW | **0.93% vs BW 1506 MeV — lineshape leftover, WIP** | BW is the peak-fit convention, not the pole. |
+| f0(1500) BW mixed | **2×2 V=POOF·K vs 1506 — in 0.5%** | Isolated pole stays in 1.43–1.53. Do not mix 1710. |
 | Closed gluonic GeV vs f0(1500) pole | **Inside PDG T-matrix Re band 1.43–1.53 GeV** | Closed mode is an S-matrix pole. Do not move BW 1506 to swallow 0.93%. |
 | Flavor closed GeV vs f0(1710) | **0.40% vs PDG 1733 MeV — in 0.5% green; beats 4√σ (3.03%)** | Flavor/ss orifice (π+1)·K. Retired gluonic-vs-1710 was 12.3%. |
 | Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |
@@ -154,4 +155,4 @@ python scripts/run_goal_tracks_verification.py
 Prize-process flags (separate file, all honest): [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md).
 Yang–Mills object split: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).
 
-Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), BSD integer rank (parity map holds), cubic 4-fold primitive (2,2). Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. E→rank map is parity from w_E; integer rank still needs ord L. Do not invert with trig S(n) or the full Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.
+Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), BSD integer rank (parity map holds), cubic 4-fold primitive (2,2). Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue–flavor 2×2 V=POOF·K; isolated (φ²+1)·K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. E→rank map is parity from w_E; integer rank still needs ord L. Do not invert with trig S(n) or the full Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.

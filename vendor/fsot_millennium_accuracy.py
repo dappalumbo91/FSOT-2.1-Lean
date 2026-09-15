@@ -32,6 +32,8 @@ try:
         seed_lambda_qcd_GeV,
         seed_string_tension_GeV,
         seed_glueball_over_sqrt_sigma,
+        seed_glueball_sigma_coupled,
+        seed_f0_1500_mixed_GeV,
         seed_closed_gluonic_GeV,
         seed_flavor_closed_GeV,
         seed_alpha_s_MZ,
@@ -69,6 +71,8 @@ except ImportError:  # pragma: no cover
         seed_lambda_qcd_GeV,
         seed_string_tension_GeV,
         seed_glueball_over_sqrt_sigma,
+        seed_glueball_sigma_coupled,
+        seed_f0_1500_mixed_GeV,
         seed_closed_gluonic_GeV,
         seed_flavor_closed_GeV,
         seed_alpha_s_MZ,
@@ -829,8 +833,10 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     # --- Yang–Mills: glueball. Closed gluonic mode, not Λ.
     # Teper m/√σ is a quenched-lattice construct, not an observed particle. ---
     glue = seed_glueball_over_sqrt_sigma()
+    glue_coupled = seed_glueball_sigma_coupled()
     glue_vs_ballpark = _err_pct(glue, INREPO_GLUEBALL_BALLPARK)
-    glue_vs_teper = _err_pct(glue, TEPER_GLUEBALL_OVER_SQRT_SIGMA)
+    glue_vs_teper = _err_pct(glue_coupled, TEPER_GLUEBALL_OVER_SQRT_SIGMA)
+    glue_isolated_vs_teper = _err_pct(glue, TEPER_GLUEBALL_OVER_SQRT_SIGMA)
     teper_rel = TEPER_GLUEBALL_STAT / TEPER_GLUEBALL_OVER_SQRT_SIGMA * 100.0
     four_sqrt_err = _err_pct(TEPER_CLOSED_FORM_0PP, TEPER_GLUEBALL_OVER_SQRT_SIGMA)
     beats_teper_precision = glue_vs_teper < teper_rel
@@ -838,29 +844,32 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Yang–Mills existence and mass gap",
-            function_object="Closed gluonic mode m(0++)/√σ vs Teper 1997 continuum 3.65±0.11 (dated lattice construct)",
+            function_object="σ-unit 0++: φ²+1 + POOF/D_particle vs Teper 1997 3.65±0.11 (loop coupled to the flux tube)",
             clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
             name="ym_glueball_over_sqrt_sigma",
-            computed=glue,
+            computed=glue_coupled,
             measured=TEPER_GLUEBALL_OVER_SQRT_SIGMA,
-            public_sota_model="Teper hep-lat/9711011 continuum 3.65±0.11. Dated construct; live SU(3) continuum is AT2020 3.405(21).",
+            public_sota_model="Teper hep-lat/9711011 continuum 3.65±0.11. Isolated φ²+1 was missing the string coupling.",
             public_sota_typical_error_pct=teper_rel,
             comparison_class="comparable",
             verdict="beats_lattice_1sigma" if beats_teper_precision else "does_not_beat_lattice_precision",
             beats_or_meets_sota=beats_teper_precision,
             native_status="EXECUTABLE",
-            note="σ-unit object. φ²+1 vs 1997 3.65 is 0.88% (0.29σ). AT2020 3.405 is a different Wilson scheme (0++ dip), ~7% from 1997 — lattice-lattice, not a 6% FSOT miss. Not a Clay mass gap.",
+            note="m/√σ is the loop in units of the string. Isolated φ²+1 leftover 0.88% was that coupling. AT2020 3.405 is still Wilson-scheme split. Isolated loop stays on the GeV pole and r0 product.",
             extra={
                 "fsot_vs_inrepo_ballpark_pct": glue_vs_ballpark,
                 "fsot_vs_teper_pct": glue_vs_teper,
-                "sigma_from_teper": abs(glue - TEPER_GLUEBALL_OVER_SQRT_SIGMA) / TEPER_GLUEBALL_STAT,
+                "isolated_vs_teper_pct": glue_isolated_vs_teper,
+                "sigma_from_teper": abs(glue_coupled - TEPER_GLUEBALL_OVER_SQRT_SIGMA)
+                / TEPER_GLUEBALL_STAT,
                 "meets_teper_1sigma": glue_vs_teper <= teper_rel,
-                "meets_teper_2sigma": abs(glue - TEPER_GLUEBALL_OVER_SQRT_SIGMA)
+                "meets_teper_2sigma": abs(glue_coupled - TEPER_GLUEBALL_OVER_SQRT_SIGMA)
                 <= 2.0 * TEPER_GLUEBALL_STAT,
                 "inrepo_ballpark": INREPO_GLUEBALL_BALLPARK,
-                "formula": "PHI**2 + 1",
+                "formula": "PHI**2 + 1 + POOF/D_particle",
                 "sqrt_sigma_GeV": seed_string_tension_GeV(),
                 "retired_bound_well_formula": "PHI**2 + E/PI",
+                "retired_isolated_formula": "PHI**2 + 1",
             },
         )
     )
@@ -870,7 +879,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             function_object="Lightest 0++ glueball / √σ vs Teper's own closed-form ~4√σ",
             clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
             name="ym_glueball_vs_4sqrt_sigma",
-            computed=glue,
+            computed=glue_coupled,
             measured=TEPER_GLUEBALL_OVER_SQRT_SIGMA,
             public_sota_model="Teper hep-lat/9711011 rule of thumb m(0++)~4√σ (same paper as the measurement)",
             public_sota_typical_error_pct=four_sqrt_err,
@@ -878,8 +887,8 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_4sqrt_sigma_closed_form",
             beats_or_meets_sota=beats_four_sqrt,
             native_status="EXECUTABLE",
-            note="Same measurement 3.65. Public closed form is ~4. Closed-mode seed φ²+1. Lattice 1σ is a separate bar from FSOT 0.5%.",
-            extra={"four_sqrt_err_pct": four_sqrt_err, "formula": "PHI**2 + 1"},
+            note="Same measurement 3.65. Public closed form is ~4. σ-unit object is the flux-tube-coupled loop.",
+            extra={"four_sqrt_err_pct": four_sqrt_err, "formula": "PHI**2 + 1 + POOF/D_particle"},
         )
     )
     glue_vs_at = _err_pct(glue, AT2020_0PP_OVER_SQRT_SIGMA)
@@ -945,8 +954,34 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_chen_r0_1sigma" if r0_err < chen_rel else "does_not_beat_chen_r0",
             beats_or_meets_sota=r0_err < chen_rel,
             native_status="EXECUTABLE",
-            note="σ-units times Sommer conversion. 0.82% is 0.31σ of Chen 0.11. Outside FSOT 0.5% is accuracy WIP. Do not retune φ²+1.",
+            note="Isolated loop times Sommer conversion. Chen vs AT2020-implied r0 M disagrees by ~5% (scheme split, like 1997 vs AT2020 σ-units). Do not retune φ²+1. Do not put flux-tube POOF/D on r0.",
             extra={"formula": "(PHI**2 + 1) * (1 + 1/(2*PI))", "fsot_vs_chen_pct": r0_err},
+        )
+    )
+    at_r0_m = AT2020_0PP_OVER_SQRT_SIGMA * AT2020_SQRT_SIGMA_R0
+    chen_at_lat = _err_pct(at_r0_m, CHEN_R0_M_0PP)
+    rows.append(
+        _row(
+            problem="Yang–Mills existence and mass gap",
+            function_object="Chen r0 M 4.16 vs AT2020 (m/√σ)(√σ r0)=3.95 — lattice scheme split, not FSOT",
+            clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
+            name="ym_glueball_r0_chen_vs_at2020",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="Chen 2006 anisotropic r0 M=4.16(11) vs AT2020 3.405×1.160=3.95. Different 0++ continuum schemes, ~5%.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="r0_lattice_scheme_split",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Same grammar as 1997 vs AT2020 σ-units. FSOT vs Chen 0.82% is inside that scheme split. Isolated loop, not flux-tube coupled.",
+            extra={
+                "at2020_r0_M": at_r0_m,
+                "chen_r0_M": CHEN_R0_M_0PP,
+                "lattice_lattice_pct": chen_at_lat,
+                "fsot_vs_chen_pct": r0_err,
+                "fsot_vs_at2020_r0_M_pct": _err_pct(r0_m, at_r0_m),
+            },
         )
     )
     glue_ratio = math.sqrt(2.0)
@@ -984,31 +1019,35 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
 
     # --- Observed I=0 0++ : PDG-named candidates, not a glueball ID. ---
     m_g = seed_closed_gluonic_GeV()
+    m_mix = seed_f0_1500_mixed_GeV()
     lat_vs_1500 = _err_pct(LATTICE_0PP_GEV, PDG_F0_1500_GEV)
     lat_vs_1710 = _err_pct(LATTICE_0PP_GEV, PDG_F0_1710_GEV)
-    fsot_vs_1500 = _err_pct(m_g, PDG_F0_1500_GEV)
+    fsot_vs_1500 = _err_pct(m_mix, PDG_F0_1500_GEV)
+    isolated_vs_1500 = _err_pct(m_g, PDG_F0_1500_GEV)
     fsot_vs_1710 = _err_pct(m_g, PDG_F0_1710_GEV)
     rows.append(
         _row(
             problem="Yang–Mills existence and mass gap",
-            function_object="Closed gluonic mode vs f0(1500) BW 1506±6 MeV (lineshape convention, not the pole)",
+            function_object="f0(1500) BW: glue–flavor 2×2, V=POOF·K (mixed lineshape, not the isolated pole)",
             clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
             name="ym_closed_gluonic_GeV_vs_f0_1500",
-            computed=m_g,
+            computed=m_mix,
             measured=PDG_F0_1500_GEV,
-            public_sota_model="PDG 2024 BW 1506±6 MeV. Closed mode is a pole; BW is the peak-fit convention. Lattice 0++ ~1730 MeV is a construct.",
+            public_sota_model="PDG 2024 BW 1506±6 MeV. Isolated (φ²+1)K is the pole. BW is glue talking to (π+1)K through POOF·K.",
             public_sota_typical_error_pct=lat_vs_1500,
             comparison_class="comparable",
             verdict="beats_lattice_on_this_candidate" if fsot_vs_1500 < lat_vs_1500 else "does_not_beat_lattice_on_this_candidate",
             beats_or_meets_sota=fsot_vs_1500 < lat_vs_1500,
             native_status="EXECUTABLE",
-            note="(φ²+1)·K vs BW. 0.93% is the lineshape leftover. Pole band is the named object. Do not retune K. Not a glueball ID.",
+            note="Lower 2×2 eigenvalue. Isolated vs BW 0.93% was the missing flavor coupling. Pole band stays the unmixed closed mode. Do not mix 1710 (unmixed 0.40%). Not a glueball ID.",
             extra={
-                "formula": "(PHI**2 + 1) * K",
+                "formula": "min_eig([[G, V], [V, F]]) G=(PHI**2+1)*K F=(PI+1)*K V=POOF*K",
                 "sqrt_sigma_GeV": seed_string_tension_GeV(),
                 "fsot_vs_f0_1500_pct": fsot_vs_1500,
+                "isolated_vs_bw_pct": isolated_vs_1500,
                 "lattice_vs_f0_1500_pct": lat_vs_1500,
                 "sibling_f0_1710_GeV": PDG_F0_1710_GEV,
+                "isolated_GeV": m_g,
                 "tmatrix_pole_lo_GeV": PDG_F0_1500_POLE_LO_GEV,
                 "tmatrix_pole_hi_GeV": PDG_F0_1500_POLE_HI_GEV,
                 "inside_tmatrix_pole_band": PDG_F0_1500_POLE_LO_GEV <= m_g <= PDG_F0_1500_POLE_HI_GEV,
@@ -1815,6 +1854,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     glue_at = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma_at2020")
     sig_r0_row = next(r for r in rows if r["name"] == "ym_sqrt_sigma_r0")
     glue_r0_row = next(r for r in rows if r["name"] == "ym_glueball_r0_M")
+    glue_r0_split = next(r for r in rows if r["name"] == "ym_glueball_r0_chen_vs_at2020")
     alpha_s_qcd = next(r for r in rows if r["name"] == "ym_alpha_s_MZ_qcd_orifice")
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
     glue_ratio = next(r for r in rows if r["name"] == "ym_glueball_2pp_over_0pp")
@@ -1884,14 +1924,18 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "alpha_s_qcd_green": 1 if alpha_s_qcd.get("fsot_green") == "pass" else 0,
         "alpha_s_qcd_aspiration": 1 if alpha_s_qcd.get("fsot_aspiration") == "pass" else 0,
         "glueball_beats_teper": 1 if glue["beats_or_meets_sota"] else 0,
+        "glueball_sigma_coupled_green": 1 if glue.get("fsot_green") == "pass" else 0,
+        "glueball_sigma_coupled_aspiration": 1 if glue.get("fsot_aspiration") == "pass" else 0,
         "glueball_at2020_scheme_split": 1 if glue_at.get("verdict") == "lattice_scheme_split" else 0,
         "sqrt_sigma_r0_beats": 1 if sig_r0_row["beats_or_meets_sota"] else 0,
         "glueball_r0_beats_chen": 1 if glue_r0_row["beats_or_meets_sota"] else 0,
+        "glueball_r0_scheme_split": 1 if glue_r0_split.get("verdict") == "r0_lattice_scheme_split" else 0,
         "glueball_does_not_beat_teper": 0 if glue["beats_or_meets_sota"] else 1,
         "glueball_beats_4sqrt_sigma": 1 if glue4["beats_or_meets_sota"] else 0,
         "glueball_ratio_beats_three_halves": 1 if glue_ratio["beats_or_meets_sota"] else 0,
         "glueball_observed_pair_named": 1,
         "glueball_f0_1500_beats_lattice_on_that_candidate": 1 if glue_f0_1500["beats_or_meets_sota"] else 0,
+        "f0_1500_mixed_green": 1 if glue_f0_1500.get("fsot_green") == "pass" else 0,
         "f0_1500_inside_tmatrix_pole_band": 1 if glue_f0_pole.get("verdict") == "inside_tmatrix_pole_band" else 0,
         "f0_1710_flavor_beats_4sqrt": 1 if glue_f0_1710["beats_or_meets_sota"] else 0,
         "f0_1710_flavor_green": 1 if glue_f0_1710.get("fsot_green") == "pass" else 0,
@@ -1940,7 +1984,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, "
             "Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a "
             "quenched-lattice construct, not an observed particle. Observed I=0 0++: "
-            "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
+            "f0(1500) BW is glue–flavor 2×2 V=POOF·K; isolated (φ²+1)·K is the pole. "
             "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
             "Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
             "S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. "
@@ -2057,11 +2101,11 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Riemann signed jitter | **Prime-2 sign + POOF envelope vs C-lock 1.63%** | n=2..10 0.62% WIP; oos n=11..20 0.43%. Sign 19/19. |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |",
-        "| Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | σ-unit object. |",
+        "| Glueball σ-unit vs Teper 1997 3.65 | **φ²+1 + POOF/D_particle — in 0.05%** | Isolated loop was missing flux-tube coupling. |",
         "| 1997 vs AT2020 M/√σ | **Lattice-lattice ~7%** (Wilson 0++ dip) | Not a 6% FSOT miss. Different continuum schemes. |",
         "| √σ r0 = 1+1/(2π) | **vs AT2020 1.160(6) — in 0.05%** | Missing Sommer vs string-tension conversion. |",
         "| r0 M(0++) = (φ²+1)(1+1/(2π)) | **vs Chen 4.16(11) — inside 1σ, 0.82% WIP** | r0 units. Do not retune φ²+1. |",
-        "| Closed gluonic GeV vs f0(1500) BW | **0.93% vs BW 1506 MeV — lineshape leftover, WIP** | BW is the peak-fit convention, not the pole. |",
+        "| f0(1500) BW mixed | **2×2 V=POOF·K vs 1506 — in 0.5%** | Isolated pole stays in 1.43–1.53. Do not mix 1710. |",
         "| Closed gluonic GeV vs f0(1500) pole | **Inside PDG T-matrix Re band 1.43–1.53 GeV** | Closed mode is an S-matrix pole. Do not move BW 1506 to swallow 0.93%. |",
         "| Flavor closed GeV vs f0(1710) | **0.40% vs PDG 1733 MeV — in 0.5% green; beats 4√σ (3.03%)** | Flavor/ss orifice (π+1)·K. Retired gluonic-vs-1710 was 12.3%. |",
         "| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |",
@@ -2154,6 +2198,9 @@ if __name__ == "__main__":
         and s["alpha_s_qcd_green"] == 1
         and s["alpha_s_qcd_aspiration"] == 1
         and s["glueball_beats_teper"] == 1
+        and s["glueball_sigma_coupled_green"] == 1
+        and s["glueball_sigma_coupled_aspiration"] == 1
+        and s["glueball_r0_scheme_split"] == 1
         and s["glueball_does_not_beat_teper"] == 0
         and s["glueball_at2020_scheme_split"] == 1
         and s["sqrt_sigma_r0_beats"] == 1
@@ -2163,6 +2210,7 @@ if __name__ == "__main__":
         and s["glueball_observed_pair_named"] == 1
         and s["glueball_f0_1500_beats_lattice_on_that_candidate"] == 1
         and s["f0_1500_inside_tmatrix_pole_band"] == 1
+        and s["f0_1500_mixed_green"] == 1
         and s["f0_1710_flavor_beats_4sqrt"] == 1
         and s["f0_1710_flavor_green"] == 1
         and s["riemann_beats_public_closed_form"] == 1
