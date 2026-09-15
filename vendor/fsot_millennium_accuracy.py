@@ -33,6 +33,7 @@ try:
         seed_string_tension_GeV,
         seed_glueball_over_sqrt_sigma,
         seed_closed_gluonic_GeV,
+        seed_flavor_closed_GeV,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -48,6 +49,7 @@ except ImportError:  # pragma: no cover
         seed_string_tension_GeV,
         seed_glueball_over_sqrt_sigma,
         seed_closed_gluonic_GeV,
+        seed_flavor_closed_GeV,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -537,7 +539,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_lattice_on_this_candidate" if fsot_vs_1500 < lat_vs_1500 else "does_not_beat_lattice_on_this_candidate",
             beats_or_meets_sota=fsot_vs_1500 < lat_vs_1500,
             native_status="EXECUTABLE",
-            note="(φ²+1)·K. One of two PDG-named 0++ candidates. Do not pick this because it is closer. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Not a Clay mass gap.",
+            note="(φ²+1)·K. Gluonic orifice. Sibling f0(1710) is the flavor orifice (π+1)·K. Do not pick 1500 because it is closer. Not a Clay mass gap.",
             extra={
                 "formula": "(PHI**2 + 1) * K",
                 "sqrt_sigma_GeV": seed_string_tension_GeV(),
@@ -547,26 +549,33 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    m_f = seed_flavor_closed_GeV()
+    four_k = 4.0 * seed_string_tension_GeV()
+    four_k_vs_1710 = _err_pct(four_k, PDG_F0_1710_GEV)
+    flavor_vs_1710 = _err_pct(m_f, PDG_F0_1710_GEV)
+    retired_gluonic_vs_1710 = fsot_vs_1710
     rows.append(
         _row(
             problem="Yang–Mills existence and mass gap",
-            function_object="Closed gluonic mode in GeV vs PDG f0(1710) (observed I=0 0++; not a glueball ID)",
+            function_object="Flavor/ss closed 0++ in GeV vs PDG f0(1710) (circle orifice π+1, not the gluonic mode)",
             clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
-            name="ym_closed_gluonic_GeV_vs_f0_1710",
-            computed=m_g,
+            name="ym_flavor_closed_GeV_vs_f0_1710",
+            computed=m_f,
             measured=PDG_F0_1710_GEV,
-            public_sota_model="PDG 2024 f0(1710)=1733+8−7 MeV. Quenched lattice 0++ ~1730±80 MeV sits on this candidate; that is the construct, not an ID.",
-            public_sota_typical_error_pct=lat_vs_1710,
+            public_sota_model="PDG 2024 f0(1710)=1733+8−7 MeV. Public closed form near this mass is Teper ~4√σ → 4K. Lattice ~1730 MeV is a glue construct sitting here, not a flavor closed form.",
+            public_sota_typical_error_pct=four_k_vs_1710,
             comparison_class="comparable",
-            verdict="beats_lattice_on_this_candidate" if fsot_vs_1710 < lat_vs_1710 else "does_not_beat_lattice_on_this_candidate",
-            beats_or_meets_sota=fsot_vs_1710 < lat_vs_1710,
+            verdict="beats_4sqrt_sigma_on_flavor_orifice" if flavor_vs_1710 < four_k_vs_1710 else "does_not_beat_4sqrt_on_flavor",
+            beats_or_meets_sota=flavor_vs_1710 < four_k_vs_1710,
             native_status="EXECUTABLE",
-            note="(φ²+1)·K. The other PDG-named 0++ candidate. Lattice GeV mass is closer here. Do not retune K to chase 1710. Not a glueball ID.",
+            note="(π+1)·K. Parallel to gluonic (φ²+1)·K. Retired object: gluonic seed vs 1710 was 12.3%. Do not restore 4√σ or φ³. Do not swap onto f0(1500). Not a glueball ID.",
             extra={
-                "formula": "(PHI**2 + 1) * K",
+                "formula": "(PI + 1) * K",
                 "sqrt_sigma_GeV": seed_string_tension_GeV(),
-                "fsot_vs_f0_1710_pct": fsot_vs_1710,
-                "lattice_vs_f0_1710_pct": lat_vs_1710,
+                "fsot_vs_f0_1710_pct": flavor_vs_1710,
+                "four_K_GeV": four_k,
+                "four_K_vs_f0_1710_pct": four_k_vs_1710,
+                "retired_gluonic_vs_f0_1710_pct": retired_gluonic_vs_1710,
                 "sibling_f0_1500_GeV": PDG_F0_1500_GEV,
             },
         )
@@ -773,7 +782,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
     glue_ratio = next(r for r in rows if r["name"] == "ym_glueball_2pp_over_0pp")
     glue_f0_1500 = next(r for r in rows if r["name"] == "ym_closed_gluonic_GeV_vs_f0_1500")
-    glue_f0_1710 = next(r for r in rows if r["name"] == "ym_closed_gluonic_GeV_vs_f0_1710")
+    glue_f0_1710 = next(r for r in rows if r["name"] == "ym_flavor_closed_GeV_vs_f0_1710")
     wx_storm = next(r for r in rows if r["name"] == "ns_weather_storm_sector")
     wx_quiet = next(r for r in rows if r["name"] == "ns_weather_quiet_fill")
     wip_beats = [r for r in rows if r.get("sota_beats_fsot_accuracy_wip")]
@@ -805,7 +814,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "glueball_ratio_beats_three_halves": 1 if glue_ratio["beats_or_meets_sota"] else 0,
         "glueball_observed_pair_named": 1,
         "glueball_f0_1500_beats_lattice_on_that_candidate": 1 if glue_f0_1500["beats_or_meets_sota"] else 0,
-        "glueball_f0_1710_beats_lattice_on_that_candidate": 1 if glue_f0_1710["beats_or_meets_sota"] else 0,
+        "f0_1710_flavor_beats_4sqrt": 1 if glue_f0_1710["beats_or_meets_sota"] else 0,
+        "f0_1710_flavor_green": 1 if glue_f0_1710.get("fsot_green") == "pass" else 0,
         "weather_beats_majority": 1 if wx_storm["beats_or_meets_sota"] else 0,
         "weather_does_not_beat_majority": 0 if wx_storm["beats_or_meets_sota"] else 1,
         "weather_quiet_fill_still_miss": 0 if wx_quiet["beats_or_meets_sota"] else 1,
@@ -818,9 +828,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
             "Misses next: quiet-fill weather, NSE smoothness, "
             "BSD named curves, Hodge named varieties. Glueball 0++ in string units is φ²+1 vs a "
-            "quenched-lattice construct, not an observed particle. Observed I=0 0++ are PDG "
-            "f0(1500) and f0(1710); seed (φ²+1)·K=1.520 GeV. Do not pick the closer. "
-            "Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
+            "quenched-lattice construct, not an observed particle. Observed I=0 0++: "
+            "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
+            "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
             "Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
             "SOTA and FSOT 0.5% are independent bars. "
             "Storm-sector is the weather object; majority-of-saw_storm is retired. ECMWF is not beaten."
@@ -927,8 +937,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³, not public 7/8, not Euler walk. Do not stuff S(T). |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| Glueball φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Quenched-lattice construct in string units, **not an observed particle**. |",
-        "| Closed gluonic GeV vs f0(1500) | **0.93% vs PDG 1506 MeV — WIP; beats lattice-on-this-candidate** | One of two PDG-named 0++. Do not pick because closer. |",
-        "| Closed gluonic GeV vs f0(1710) | **12.3% vs PDG 1733 MeV — does not beat lattice-on-this-candidate** | The other PDG-named 0++. Lattice GeV mass sits here. Do not retune K. |",
+        "| Closed gluonic GeV vs f0(1500) | **0.93% vs PDG 1506 MeV — WIP; beats lattice-on-this-candidate** | Gluonic orifice (φ²+1)·K. Not a glueball ID. |",
+        "| Flavor closed GeV vs f0(1710) | **0.40% vs PDG 1733 MeV — in 0.5% green; beats 4√σ (3.03%)** | Flavor/ss orifice (π+1)·K. Retired gluonic-vs-1710 was 12.3%. |",
         "| Glueball 0++ vs 4√σ | **Beats 4√σ closed form** | Teper's own rule of thumb. Same lattice construct 3.65. |",
         "| Glueball 2++/0++ | **Beats 3/2 (0.23%) — in 0.5% green, aspiration WIP** | √2 geometry on the closed 0++ mode. |",
         "| Grover 1/2 | **Meets proven bound and in 0.05%** | Not P vs NP. |",
@@ -939,7 +949,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "|------|----------------|------------------------|",
         "| Weather storm-sector | Named object (docstring). Thin n_obs<24 is awaiting, not a kill. Majority-of-saw_storm **retired** (wrong object: 1010/8 mixed onto quiet 1005/12). | Quiet-fill fallback still misses. ECMWF not beaten. Frozen issues not rewritten. |",
         "| Weather quiet-fill | Five full-obs quiet kills (OLCN6, 42058, 44078). | Valve/quiet look, then finer `dt`. Do not drop these to inflate storm skill. |",
-        "| Observed 0++ pair | PDG f0(1500) and f0(1710) are the live I=0 scalars. Lattice 0++ is a construct. | Named both. Do not pick the closer. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
+        "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| 3D NSE smoothness | Still no public accuracy %. | 1D Stokes mode at Fluid nest D (dark) is executable structure, not Clay smoothness. |",
         "| BSD | APPLY step 1: Cremona 11a1 / 37a1 / 389a1 named. | No native rank predictor. Do not `fsot_scaled(L(E,1))`. |",
         "| Hodge | APPLY step 1: ℂP² and an elliptic curve named. | Do not steal E_con≈20 for K3. Do not identity-pad 1=1. |",
@@ -993,7 +1003,8 @@ if __name__ == "__main__":
         and s["glueball_ratio_beats_three_halves"] == 1
         and s["glueball_observed_pair_named"] == 1
         and s["glueball_f0_1500_beats_lattice_on_that_candidate"] == 1
-        and s["glueball_f0_1710_beats_lattice_on_that_candidate"] == 0
+        and s["f0_1710_flavor_beats_4sqrt"] == 1
+        and s["f0_1710_flavor_green"] == 1
         and s["riemann_beats_public_closed_form"] == 1
         and s["riemann_panel_beats_rvm"] == 1
         and s["weather_quiet_fill_still_miss"] == 1

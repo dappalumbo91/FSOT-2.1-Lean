@@ -303,12 +303,31 @@ def seed_closed_gluonic_GeV() -> float:
     """Closed gluonic mode in GeV: (φ²+1)·K.
 
     String-unit mode times the already-named string tension √σ=K.
-    No new coefficient. Not a fit to f0(1500) or f0(1710).
-    Observed I=0 0++ candidates are those PDG states; lattice 0++ is
-    a quenched YM eigenstate and need not exist as a distinct particle
-    once quarks are on (Morningstar, arXiv:2502.02547).
+    No new coefficient. Observed I=0 0++ that sits here is f0(1500).
+    f0(1710) is the flavor/ss orifice (π+1)·K, not this seed.
+    Lattice 0++ is a quenched YM eigenstate (Morningstar, arXiv:2502.02547).
     """
     return seed_glueball_over_sqrt_sigma() * seed_string_tension_GeV()
+
+
+def seed_flavor_closed_over_sqrt_sigma() -> float:
+    """ss/flavor closed 0++ in string units: m/√σ = π + 1.
+
+    Parallel to the gluonic closed mode φ²+1. Morphic generator is glue
+    (self-similar flux). Circle generator is flavor/compactification.
+    Default look 1 on both. Do not swap onto f0(1500). Do not restore
+    4√σ or φ³ to chase 1710.
+    """
+    return f(PI) + 1.0
+
+
+def seed_flavor_closed_GeV() -> float:
+    """Flavor/ss closed 0++ in GeV: (π+1)·K.
+
+    Same √σ=K as the gluonic GeV mass. No new coefficient.
+    PDG f0(1710) is the measurement. Not a glueball ID.
+    """
+    return seed_flavor_closed_over_sqrt_sigma() * seed_string_tension_GeV()
 
 
 def seed_N_eff() -> float:

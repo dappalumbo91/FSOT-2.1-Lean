@@ -23,7 +23,7 @@ In community language that means all of:
 | **Mass gap** | The Hamiltonian’s spectrum of physical excitations is bounded away from 0 (no massless gluon in the physical Hilbert space) |
 | **Prize object** | That *specific* existence + \(\Delta>0\) theorem |
 
-Lattice evidence is strong (area law, no free quarks). Lattice **glueballs** are quenched-YM eigenstates — a construct, not an observed particle. The continuum theorem is open. That open statement is what “OPEN_NOT_CLAIMED” refers to. Observed \(I=0\) \(0^{++}\) candidates are PDG \(f_0(1500)\) and \(f_0(1710)\); neither is claimed as a glueball ID.
+Lattice evidence is strong (area law, no free quarks). Lattice **glueballs** are quenched-YM eigenstates — a construct, not an observed particle. The continuum theorem is open. That open statement is what “OPEN_NOT_CLAIMED” refers to. Observed \(I=0\) \(0^{++}\): \(f_0(1500)\) is the gluonic orifice \((\varphi^2+1)K\); \(f_0(1710)\) is the flavor orifice \((\pi+1)K\). Neither is claimed as a glueball ID.
 
 A sibling slogan is **confinement** (Wilson area law, no asymptotic free color). Often discussed with the mass gap; it is still not the same as “we ran an ODE.”
 
