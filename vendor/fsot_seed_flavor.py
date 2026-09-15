@@ -689,6 +689,28 @@ def seed_hassett_d_sextic() -> float:
     return L2 * self_int - deg * deg
 
 
+def seed_hassett_d_coble() -> float:
+    """Hassett discriminant of a cubic containing Bl_10 P² (Coble nodes) = 30.
+
+    Generic C_30 contains S=Bl_10 P² embedded by |7L−2∑E_i| (Nuer).
+    10 = pa of a plane sextic of degree 2 L_2 (nodes of a rational
+    sextic). Polarization a=L_4=7. Degree H²=L_4²−4p=L_2²=9.
+    disc from Hassett c2: 6H²+3H·K+K²−χ. Extra class is [S],
+    algebraic. 5|30 with 5≡2 (mod 3) so no associated K3.
+    Isolated 5·6 or 3·10 is padding. Do not steal 25−1 for K3.
+    """
+    L2 = seed_lucas(2)
+    L4 = seed_lucas(4)
+    deg_sextic = 2.0 * L2
+    p = (deg_sextic - 1.0) * (deg_sextic - 2.0) / 2.0
+    H2 = L4 ** 2 - 4.0 * p
+    HK = -L4 * L2 + 2.0 * p
+    K2 = L2 ** 2 - p
+    chi = L2 + p
+    S2 = 6.0 * H2 + 3.0 * HK + K2 - chi
+    return L2 * S2 - H2 * H2
+
+
 def hassett_C_d_nonempty(d: int) -> bool:
     """Hassett: C_d nonempty iff d>6 and d≡0 or 2 (mod 6)."""
     n = int(d)

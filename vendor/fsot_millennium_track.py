@@ -150,7 +150,7 @@ def run_millennium_suite() -> list[dict[str, Any]]:
 
     for name, note in (
         ("bsd_clay_open", "Rank vs L-function. Parity from w_E. First-curve leadings label ranks 0..4. Rank 4 is (phi^2+1)*e*POOF. General E still produces the leading from its modular form."),
-        ("hodge_clay_open", "Algebraic cycles vs cohomology. Associated K3 reduces cubic (2,2) to Lefschetz (1,1). C_8 [plane], C_12 [scroll], C_18 [elliptic ruled], C_20 [Veronese], C_24 [nodal sextic del Pezzo] extra classes algebraic. Remainder: later extra discriminants, general 4-folds."),
+        ("hodge_clay_open", "Algebraic cycles vs cohomology. Associated K3 reduces cubic (2,2) to Lefschetz (1,1). C_8 through C_30 extra classes algebraic. Remainder: later extra discriminants, general 4-folds."),
     ):
         rows.append(
             _row(
