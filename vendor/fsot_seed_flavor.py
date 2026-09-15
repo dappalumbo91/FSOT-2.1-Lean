@@ -24,6 +24,8 @@ from typing import Any, Callable
 try:
     from fsot_compute import (  # type: ignore
         A_BLEED,
+        A_IN,
+        S_COSM,
         C_EFF,
         C_FACTOR,
         CHAOS,
@@ -48,6 +50,8 @@ except ImportError:  # pragma: no cover
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from fsot_compute import (  # type: ignore
         A_BLEED,
+        A_IN,
+        S_COSM,
         C_EFF,
         C_FACTOR,
         CHAOS,
@@ -377,6 +381,17 @@ def seed_riemann_S_bound() -> float:
     Gram-phase sine is identically 0. Do not restore 7/8. Not RH.
     """
     return 1.0 / f(E)
+
+
+def seed_h0_global() -> float:
+    """Global CMB-background H0 = 100*(1 + S_cosm*A_bleed/A_in) [km s⁻¹ Mpc⁻¹].
+
+    Wave-1 Cosmology D=25 dark. Not SH0ES. Not Planck-2018-only 67.4.
+    Live CMB+BAO class is P-ACT-LB2 (Louis et al. arXiv:2503.14452 eq. 41)
+    68.43±0.27. Ledger A freeze still vs 67.4 — do not rewrite. Do not
+    put 0.99 back into K.
+    """
+    return 100.0 * (1.0 + f(S_COSM) * f(A_BLEED) / f(A_IN))
 
 
 def seed_N_eff() -> float:
