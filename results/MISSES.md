@@ -16,10 +16,10 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | WX-QUIET-FILL | B/dated | Clean quiet 24 h, uncoupled from storm latitude belt | **Superseded object:** 44078 (59.94°N) was lat-belt transfer to MDXA2 (59.44°N), \|Δlat\|<POOF·180/π. Window min_pres=1002.8. Uncoupled clean quiet **holds** (n=4). | Did not move 1010. Did not rewrite frozen JSON. Did not drop the kill to inflate storm skill. |
 | SH0ES-LADDER | A | SH0ES ladder chain pooled | ~0.212% (aspiration 0.05% open) | Did not β-fit the ladder |
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
-| NSE-CLAY | — | 3D NSE smoothness | Vortex stretching is the named remainder after 1D Stokes. 2D enstrophy (no stretching) is the proven first object. | Did not claim Beale–Kato–Majda. Not Clay. |
+| NSE-CLAY | — | 3D NSE existence on R^3 | Kolmogorov 4/5 cascade is the 3D number (`1−1/D_particle`). Global-in-time existence is a different object. | Did not stuff existence into 4/5. |
 | PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid | **Superseded object:** Atomic well \(D=6\) gave 5.43%. Continuum solid is Molecular \(D=7\), \(\nu=7/25=0.28\). | Did not put Atomic back to 7. |
-| BSD-RANK | — | rank = ord L(E,s) for general E | No native rank predictor | \(L(11a1,1)=\sqrt{\varphi}/D_{\mathrm{particle}}\) rank 0; \(L'(37a1,1)=2\cdot\mathrm{POOF}\) rank 1; \(\mathrm{Reg}(389a1)=\mathrm{POOF}\) rank 2 (0.67% WIP). Did not `fsot_scaled`. |
-| HODGE-CLASS | — | Hodge classes on general X | Lefschetz (1,1) and (2,2) on \(\mathbb{CP}^n\) are the proven first objects | \(\chi(\mathbb{CP}^2)=L_2\), \(\chi(\mathbb{CP}^3)=L_3\). Did not claim Hodge. Did not steal 25−1 for K3. |
+| BSD-RANK | — | rank = ord L(E,s) for general E | No map \(E\mapsto\) rank | Ranks 0–3 named: \(L=\sqrt{\varphi}/D_{\mathrm{particle}}\), \(L'=2\cdot\mathrm{POOF}\), \(\mathrm{Reg}=\mathrm{POOF}\), \(\mathrm{Reg}=e\cdot\mathrm{POOF}\) (5077a1 0.015%). Did not `fsot_scaled`. |
+| HODGE-CLASS | — | Primitive (2,2) on general X | Hard Lefschetz named. CP^n primitive=0. | \(\chi=L_2,L_3\). Did not steal 25−1 for K3. |
 
 Dated public scoreboard kills live in [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md). Do not rewrite issued JSON.
 

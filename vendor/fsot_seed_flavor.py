@@ -371,6 +371,18 @@ def seed_von_karman() -> float:
     return f(A_BLEED) / f(PHI) ** 2
 
 
+def seed_kolmogorov_45() -> float:
+    """Kolmogorov 4/5 law: 12/(d (d+2)) at spatial d=3 = 1 − 1/D_particle.
+
+    The exact 3D inertial-range identity. Energy cascade exists because
+    vortex stretching does. d+2 = D_particle = 5 (particle floor).
+    Not global-in-time smoothness on R^3. Do not retune 4/5.
+    """
+    d = 3.0
+    dpart = float(derived_D_eff("Particle_Physics"))
+    return 12.0 / (d * dpart)
+
+
 def seed_bsd_11a1_L() -> float:
     """L(11a1, 1) = √φ / D_particle.
 
@@ -401,6 +413,17 @@ def seed_bsd_389a1_regulator() -> float:
     Not a rank predictor for general E. Do not fsot_scaled(Reg).
     """
     return f(POOF)
+
+
+def seed_bsd_5077a1_regulator() -> float:
+    """Reg(5077a1) = e·POOF.
+
+    First rank-3 curve: three-generator height volume. Same occupancy
+    e·POOF as the Riemann 1/e-band fill. Out of sample vs rank-2 POOF.
+    Not L'''(1)/3! (needs Ω). Not a rank predictor for general E.
+    Do not fsot_scaled(Reg).
+    """
+    return f(E) * f(POOF)
 
 
 def seed_cp2_euler() -> float:

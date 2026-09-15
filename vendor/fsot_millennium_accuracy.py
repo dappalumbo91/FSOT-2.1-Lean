@@ -36,9 +36,11 @@ try:
         seed_flavor_closed_GeV,
         seed_alpha_s_MZ,
         seed_von_karman,
+        seed_kolmogorov_45,
         seed_bsd_11a1_L,
         seed_bsd_37a1_Lprime,
         seed_bsd_389a1_regulator,
+        seed_bsd_5077a1_regulator,
         seed_cp2_euler,
         seed_cp3_euler,
         seed_riemann_S_bound,
@@ -65,9 +67,11 @@ except ImportError:  # pragma: no cover
         seed_flavor_closed_GeV,
         seed_alpha_s_MZ,
         seed_von_karman,
+        seed_kolmogorov_45,
         seed_bsd_11a1_L,
         seed_bsd_37a1_Lprime,
         seed_bsd_389a1_regulator,
+        seed_bsd_5077a1_regulator,
         seed_cp2_euler,
         seed_cp3_euler,
         seed_riemann_S_bound,
@@ -133,6 +137,10 @@ NAIVE_BSD_L_QUARTER = 0.25
 LMFDB_37A1_LPRIME = 0.3059997738340523
 # LMFDB 389.a1 analytic rank 2. Regulator is the height pairing (not L''(1)/2!).
 LMFDB_389A1_REG = 0.15246017794314375
+# LMFDB 5077.a1 analytic rank 3. First rank-3 curve.
+LMFDB_5077A1_REG = 0.41714355875838397
+# Kolmogorov 4/5 law (exact 3D inertial identity).
+KOLMOGOROV_45 = 0.8
 # Odlyzko / LMFDB Im(ρ_n) for n=1..10 (measurement, not a competing theory).
 # Rest-of-system residual bars (same as the 477-domain green / aspiration gates).
 FSOT_GREEN_GATE_PCT = 0.5
@@ -1040,7 +1048,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="no_fair_numeric_compare",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="Toy μ(D_eff)>0 and c_s²>0 are transport identities, not 3D global smoothness. Vortex stretching is the Clay remainder.",
+            note="3D cascade 4/5 is the numeric stretching function. Global-in-time existence on R^3 is a different object, still open.",
         )
     )
     rows.append(
@@ -1074,7 +1082,31 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="enstrophy_2d_named_not_clay",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="Named first true NSE-type theorem. Do not claim 3D smoothness. Stretching remains OPEN_TRACK. Not a Clay prize.",
+            note="Named first true NSE-type theorem. 3D cascade is the 4/5 law. Stretching existence on R^3 stays open.",
+        )
+    )
+    k45 = seed_kolmogorov_45()
+    k45_err = _err_pct(k45, KOLMOGOROV_45)
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Kolmogorov 4/5 = 12/(d(d+2)) at d=3 = 1−1/D_particle (3D cascade from stretching)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_kolmogorov_45",
+            computed=k45,
+            measured=KOLMOGOROV_45,
+            public_sota_model="Kolmogorov 1941: ⟨(δu_L)³⟩=−(4/5)ε r in 3D isotropic turbulence. Exact. d+2=D_particle.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_kolmogorov_45",
+            beats_or_meets_sota=abs(k45 - KOLMOGOROV_45) < 1e-12,
+            native_status="EXECUTABLE",
+            note="The 3D energy cascade exists because vortex stretching does. This is the numeric 3D function. Global-in-time smoothness on R^3 is a different object.",
+            extra={
+                "formula": "12/(3*D_particle)",
+                "D_particle": float(derived_D_eff("Particle_Physics")),
+                "fsot_vs_45_pct": k45_err,
+            },
         )
     )
     mu_ok = all(viscosity_eff(d) > 0.0 for d in (6.0, 14.0, 25.0))
@@ -1263,6 +1295,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         {"label": "11a1", "conductor": 11, "rank": 0, "L_at_1": 0.253841},
         {"label": "37a1", "conductor": 37, "rank": 1, "L_at_1": 0.0},
         {"label": "389a1", "conductor": 389, "rank": 2, "L_at_1": 0.0},
+        {"label": "5077a1", "conductor": 5077, "rank": 3, "L_at_1": 0.0},
     )
     bsd_table_ok = all(
         (c["rank"] == 0 and c["L_at_1"] != 0.0) or (c["rank"] > 0 and c["L_at_1"] == 0.0)
@@ -1271,7 +1304,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Birch and Swinnerton-Dyer",
-            function_object="Named first objects: Cremona 11a1 (rank 0), 37a1 (rank 1), 389a1 (rank 2)",
+            function_object="Named first objects: Cremona 11a1 (rank 0), 37a1 (rank 1), 389a1 (rank 2), 5077a1 (rank 3)",
             clay_object="rank E(Q) = ord_{s=1} L(E,s)",
             name="bsd_named_cremona_objects",
             computed=1.0 if bsd_table_ok else 0.0,
@@ -1360,6 +1393,31 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
                 "formula": "POOF",
                 "fsot_vs_lmfdb_pct": Reg_err,
                 "naive_e_vs_lmfdb_pct": naive_Reg,
+            },
+        )
+    )
+    Reg3 = seed_bsd_5077a1_regulator()
+    Reg3_err = _err_pct(Reg3, LMFDB_5077A1_REG)
+    naive_Reg3 = _err_pct(float(POOF), LMFDB_5077A1_REG)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Reg(5077a1)=e·POOF vs LMFDB (first rank-3 height volume, not a rank predictor)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_5077a1_regulator",
+            computed=Reg3,
+            measured=LMFDB_5077A1_REG,
+            public_sota_model="LMFDB 5077.a1 regulator. Rank-2 POOF as naive (wrong dimension of the height lattice).",
+            public_sota_typical_error_pct=naive_Reg3,
+            comparison_class="comparable",
+            verdict="beats_rank2_POOF_as_typical" if Reg3_err < naive_Reg3 else "does_not_beat_rank2_POOF",
+            beats_or_meets_sota=Reg3_err < naive_Reg3,
+            native_status="EXECUTABLE",
+            note="e·POOF. Same occupancy as the Riemann 1/e band. Out of sample vs rank-2 POOF. Not L'''(1)/3!. Not a rank formula for general E.",
+            extra={
+                "formula": "E*POOF",
+                "fsot_vs_lmfdb_pct": Reg3_err,
+                "rank2_POOF_vs_lmfdb_pct": naive_Reg3,
             },
         )
     )
@@ -1458,6 +1516,23 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             note="Named first p>1 Hodge-type object. Do not identity-pad h^{2,2}=1. Do not claim Hodge on a general 4-fold. χ(CP³)=L_3 is Euler, not this.",
         )
     )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Hard Lefschetz: cup with ω^{n−2} carries (1,1) onto the non-primitive (2,2). Primitive (2,2) is the remainder.",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hard_lefschetz",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="Hard Lefschetz is a theorem on Kähler manifolds. On CP^n primitive (p,p)=0. On a general 4-fold primitive (2,2) is the leftover.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="hard_lefschetz_named_primitive_open",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Transport from (1,1) to (2,2), same grammar as 1D Stokes vs 3D stretching. Primitive (2,2) on general X is still open. Do not claim Hodge.",
+        )
+    )
     return rows
 
 
@@ -1492,13 +1567,16 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     wx_gap = next(r for r in rows if r["name"] == "ns_weather_gap_zone_quiet")
     wx_lat = next(r for r in rows if r["name"] == "ns_weather_lat_transfer")
     ns_vk = next(r for r in rows if r["name"] == "ns_von_karman")
+    ns_k45 = next(r for r in rows if r["name"] == "ns_kolmogorov_45")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
+    bsd_Reg3 = next(r for r in rows if r["name"] == "bsd_5077a1_regulator")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
     hodge_22 = next(r for r in rows if r["name"] == "hodge_22_cp3")
+    hodge_hl = next(r for r in rows if r["name"] == "hodge_hard_lefschetz")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -1551,14 +1629,18 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "weather_gap_zone_named": 1 if wx_gap.get("verdict") == "gap_zone_should_not_issue" else 0,
         "weather_lat_transfer_named": 1 if wx_lat.get("verdict") == "lat_belt_transferred_weather" else 0,
         "ns_von_karman_green": 1 if ns_vk.get("fsot_green") == "pass" else 0,
+        "ns_kolmogorov_45_exact": 1 if ns_k45["beats_or_meets_sota"] else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
         "bsd_389a1_reg_green": 1 if bsd_Reg.get("fsot_green") == "pass" else 0,
+        "bsd_5077a1_reg_green": 1 if bsd_Reg3.get("fsot_green") == "pass" else 0,
+        "bsd_5077a1_reg_aspiration": 1 if bsd_Reg3.get("fsot_aspiration") == "pass" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
         "hodge_22_named": 1 if hodge_22.get("verdict") == "hodge_22_named_not_clay" else 0,
+        "hodge_hard_lefschetz_named": 1 if hodge_hl.get("verdict") == "hard_lefschetz_named_primitive_open" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -1569,10 +1651,11 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Misses next: NSE 3D smoothness (Clay, 2D enstrophy named, stretching unsolved), "
-            "BSD rank predictor (no general E; 389a1 Reg=POOF named), Hodge on general X. "
-            "Native: von Kármán κ, 2D enstrophy, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, "
-            "Reg(389a1)=POOF, χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, "
+            "Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), "
+            "BSD rank for general E (first ranks 0–3 named), Hodge primitive (2,2) on general X. "
+            "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, "
+            "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
+            "χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, "
             "Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a "
             "quenched-lattice construct, not an observed particle. Observed I=0 0++: "
             "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
@@ -1702,15 +1785,18 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Grover 1/2 | **Meets proven bound and in 0.05%** | Not P vs NP. |",
         "| Cook–Levin SAT | **Named proven first NP-complete theorem** | Clay is P=?NP. Verification is poly; search is the remainder. |",
         "| von Kármán κ | **Beats log-law scatter and in 0.05%** (`A_bleed/φ²` vs 0.40) | Wall shear, not 3D NSE smoothness. |",
-        "| 2D enstrophy | **Named proven first NSE-type theorem** | No stretching in 2D. Clay is 3D. |",
+        "| 2D enstrophy | **Named proven first NSE-type theorem** | No stretching in 2D. |",
+        "| Kolmogorov 4/5 | **Meets 4/5 exactly** (`12/(3 D_particle)=1−1/D_particle`) | 3D cascade from stretching. Not global existence on R^3. |",
         "| L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |",
         "| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |",
-        "| Reg(389a1) | **POOF vs LMFDB — beats 1/e; 0.5% WIP** | First rank-2 height pairing. Not L''(1)/2!. Not a rank predictor. |",
+        "| Reg(389a1) | **POOF vs LMFDB — beats 1/e; 0.5% WIP** | First rank-2 height pairing. Not L''(1)/2!. |",
+        "| Reg(5077a1) | **e·POOF vs LMFDB — in 0.05%** | First rank-3 height volume. Same occupancy as Riemann 1/e band. Out of sample vs rank 2. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
-        "| Hodge (2,2) on ℂP³ | **Named proven first p>1 object** | Hyperplane square. Clay is general X. |",
-        "| NSE vortex stretching | **Named Clay remainder** after 1D Stokes / 2D enstrophy | Beale–Kato–Majda leftover. Do not claim 3D smoothness. |",
+        "| Hodge (2,2) on ℂP³ | **Named proven first p>1 object** | Hyperplane square. |",
+        "| Hard Lefschetz | **Named transport (1,1)→(2,2)** | Primitive (2,2) on general X is the leftover. |",
+        "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |",
         "",
         "## Next dig (misses and open tracks)",
         "",
@@ -1722,10 +1808,10 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Amplitude is POOF; sign is neighbor push-pull. | Do not Euler/trig invert. Envelope 2π POOF/log(T/2π). Not RH. |",
-        "| 3D NSE smoothness | Vortex stretching is the named remainder. 2D enstrophy is the proven first object. | 1D Stokes + κ executable. Stretching unsolved. Not Clay. |",
-        "| BSD rank | Still no native rank predictor for general E. | L(11a1,1) rank 0; L'(37a1,1)=2·POOF rank 1; Reg(389a1)=POOF rank 2. Do not `fsot_scaled`. |",
-        "| Hodge on general X | (2,2) on CP³ is the proven first p>1 object. | χ(CP²)=L_2; χ(CP³)=L_3. Do not claim Hodge. Do not steal 25−1 for K3. |",
-        "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. Do not claim P≠NP. |",
+        "| 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |",
+        "| BSD rank for general E | First ranks 0–3 named. No map E ↦ rank. | L, L', Reg=POOF, Reg=e·POOF. Do not `fsot_scaled`. |",
+        "| Hodge primitive (2,2) on general X | Hard Lefschetz named. CP^n primitive=0. | Do not steal 25−1 for K3. |",
+        "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
         "",
@@ -1796,14 +1882,18 @@ if __name__ == "__main__":
         and s["weather_gap_zone_named"] == 1
         and s["weather_lat_transfer_named"] == 1
         and s["ns_von_karman_green"] == 1
+        and s["ns_kolmogorov_45_exact"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
         and s["bsd_389a1_reg_green"] == 0
+        and s["bsd_5077a1_reg_green"] == 1
+        and s["bsd_5077a1_reg_aspiration"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1
         and s["hodge_22_named"] == 1
+        and s["hodge_hard_lefschetz_named"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1
