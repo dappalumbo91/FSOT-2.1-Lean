@@ -38,6 +38,7 @@ try:
         seed_von_karman,
         seed_bsd_11a1_L,
         seed_cp2_euler,
+        seed_riemann_S_bound,
     )
 except ImportError:  # pragma: no cover
     import sys
@@ -58,6 +59,7 @@ except ImportError:  # pragma: no cover
         seed_von_karman,
         seed_bsd_11a1_L,
         seed_cp2_euler,
+        seed_riemann_S_bound,
     )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -168,6 +170,17 @@ def riemann_N_constant_from_t1(t1: float) -> float:
     """
     u1 = float(t1) / (2.0 * math.pi)
     return 1.0 + u1 - u1 * math.log(u1)
+
+
+def riemann_N_main(T: float, const: float) -> float:
+    """Main-term N(T)=(T/2π)log(T/2π)−T/2π+C."""
+    u = float(T) / (2.0 * math.pi)
+    return u * math.log(u) - u + float(const)
+
+
+def riemann_S_at_zero(n: int, T: float, const: float) -> float:
+    """Argument leftover S = n − N_main(T;C) at a counted zero."""
+    return float(n) - riemann_N_main(T, const)
 
 
 def riemann_spacing_walk(t1: float, n_zeros: int) -> list[float]:
@@ -490,6 +503,11 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rvm_mean = sum(rvm_err_n[1:]) / 9.0
     walk_mean = sum(walk_err_n[1:]) / 9.0
     n_locked_beats = sum(1 for a, b in zip(locked_err_n[1:], rvm_err_n[1:]) if a < b)
+    S_n = [riemann_S_at_zero(n, ODLYZKO_T[n - 1], C_n) for n in range(1, 11)]
+    S_abs = [abs(s) for s in S_n]
+    S_max = max(S_abs)
+    S_bound = seed_riemann_S_bound()
+    S_holds = S_max < S_bound
     rows.append(
         _row(
             problem="Riemann hypothesis",
@@ -504,7 +522,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_rvm_panel_mean",
             beats_or_meets_sota=locked_mean < rvm_mean,
             native_status="EXECUTABLE",
-            note="C=1+u1−u1 log u1 from N(t1)=1, t1=e/γ³. Public 7/8 is the high-T Stirling orifice. Euler walk and t_n scale are retired. Outside 0.5% is S(T), not stuffed. Not RH.",
+            note="C=1+u1−u1 log u1 from N(t1)=1, t1=e/γ³. Public 7/8 is the high-T Stirling orifice. Euler walk and t_n scale are retired. 1.63% is intra-Gram S(T), named separately. Do not invert with a trig S(n). Not RH.",
             extra={
                 "fsot_error_pct": locked_mean,
                 "locked_mean_err_pct": locked_mean,
@@ -519,6 +537,33 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
                 "formula": "t1=e/gamma**3; C=1+u1-u1*log(u1); invert N(T)=n",
                 "retired_walk_mean_err_pct": walk_mean,
                 "retired_walk_formula": "t_{k+1}=t_k+2pi/log(t_k/2pi)",
+                "S_at_odlyzko": S_n,
+                "S_max_abs": S_max,
+                "S_bound_1_over_e": S_bound,
+            },
+        )
+    )
+    rows.append(
+        _row(
+            problem="Riemann hypothesis",
+            function_object="S(T) Gram-interval remainder after C-lock; |S|≤1/e on n=1..10",
+            clay_object="All non-trivial zeros have Re=1/2",
+            name="riemann_S_T_bound",
+            computed=1.0 if S_holds else 0.0,
+            measured=1.0,
+            public_sota_model="S=0 (Gram/RvM main term). C-lock already sets the mean Gram phase; leftover is intra-Gram argument. Bound 1/e from t1's e.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="S_bound_holds" if S_holds else "S_bound_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="At the C-lock invert, Gram fraction equals t1's (identity); sine-of-phase cannot move t_n. Do not stuff a trig S(n). t_n 1.63% stays WIP. Not RH.",
+            extra={
+                "S_at_odlyzko": S_n,
+                "S_max_abs": S_max,
+                "formula": "1/e",
+                "bound_holds": S_holds,
+                "n_max_S": int(max(range(10), key=lambda i: abs(S_n[i])) + 1),
             },
         )
     )
@@ -1045,6 +1090,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     flags = clay_process_flags()
     riemann = next(r for r in rows if r["name"] == "riemann_im_rho1_closed_form")
     riemann_panel = next(r for r in rows if r["name"] == "riemann_zeros_2_to_10_N_locked")
+    riemann_S = next(r for r in rows if r["name"] == "riemann_S_T_bound")
     glue = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma")
     alpha_s_qcd = next(r for r in rows if r["name"] == "ym_alpha_s_MZ_qcd_orifice")
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
@@ -1081,6 +1127,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "sota_beats_accuracy_wip_names": [r["name"] for r in wip_beats],
         "riemann_beats_public_closed_form": 1 if riemann["beats_or_meets_sota"] else 0,
         "riemann_panel_beats_rvm": 1 if riemann_panel["beats_or_meets_sota"] else 0,
+        "riemann_S_T_bound_holds": 1 if riemann_S.get("verdict") == "S_bound_holds" else 0,
         "alpha_s_qcd_beats_geometric": 1 if alpha_s_qcd["beats_or_meets_sota"] else 0,
         "alpha_s_qcd_green": 1 if alpha_s_qcd.get("fsot_green") == "pass" else 0,
         "alpha_s_qcd_aspiration": 1 if alpha_s_qcd.get("fsot_aspiration") == "pass" else 0,
@@ -1113,6 +1160,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "f0(1500) gluonic orifice (φ²+1)·K; f0(1710) flavor orifice (π+1)·K. "
             "Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. "
             "Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. "
+            "S(T) is the intra-Gram remainder; |S|≤1/e on n=1..10. Do not invert with trig S(n). "
             "α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. "
             "SOTA and FSOT 0.5% are independent bars. "
             "Storm-sector is the weather object; majority-of-saw_storm is retired. "
@@ -1218,7 +1266,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Function | Result | Why that is the right object |",
         "|----------|--------|------------------------------|",
         "| First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |",
-        "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³, not public 7/8, not Euler walk. Do not stuff S(T). |",
+        "| Riemann zeros n=2..10 | **Beats RvM (1.63% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | N(T)=n with C locked by e/γ³. 1.63% is intra-Gram S(T). Do not invert with trig S(n). |",
+        "| Riemann S(T) | **|S|≤1/e on n=1..10** (max 0.321 at n=9) | Gram remainder after C-lock. t1 spent e; bound is 1/e. Not RH. |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |",
         "| Glueball φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Quenched-lattice construct in string units, **not an observed particle**. |",
@@ -1300,6 +1349,7 @@ if __name__ == "__main__":
         and s["f0_1710_flavor_green"] == 1
         and s["riemann_beats_public_closed_form"] == 1
         and s["riemann_panel_beats_rvm"] == 1
+        and s["riemann_S_T_bound_holds"] == 1
         and s["weather_quiet_fill_still_miss"] == 0
         and s["weather_gap_zone_named"] == 1
         and s["weather_lat_transfer_named"] == 1

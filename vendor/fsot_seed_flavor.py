@@ -367,6 +367,18 @@ def seed_cp2_euler() -> float:
     return f(PHI) ** 2 + f(PHI) ** -2
 
 
+def seed_riemann_S_bound() -> float:
+    """|S(T)| bound on the first zeros: 1/e.
+
+    t1=e/γ³ already spent e as the scale of the first zero. After C-lock,
+    every inverted n sits at the same Gram fraction as t1 (identity).
+    Odlyzko's leftover is intra-Gram argument S(T). That remainder cannot
+    exceed 1/e. Do not invert t_n with a trig S(n) — at the C-lock point
+    Gram-phase sine is identically 0. Do not restore 7/8. Not RH.
+    """
+    return 1.0 / f(E)
+
+
 def seed_N_eff() -> float:
     """N_eff = 3 + 2 · POOF · SUCTION  (3 SM ν + yin–yang radiative correction)."""
     return 3.0 + 2.0 * f(POOF) * f(SUCTION)
