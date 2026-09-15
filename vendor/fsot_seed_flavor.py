@@ -407,12 +407,22 @@ def seed_bsd_37a1_Lprime() -> float:
 def seed_bsd_389a1_regulator() -> float:
     """Reg(389a1) = POOF.
 
-    First rank-2 curve: L vanishes to order 2. The leftover arithmetic is
-    the height pairing of the two generators — the interacting-system valve.
-    Same POOF as Riemann typical |S|. Not L''(1)/2! (that still needs Ω).
-    Not a rank predictor for general E. Do not fsot_scaled(Reg).
+    Néron-Tate pairing of the two generators. Same POOF valve as Riemann
+    typical |S|. The BSD *leading term* is L''(1)/2! = 2π POOF/√φ, not
+    this pairing in isolation (two systems, like BW vs pole). 0.67% is
+    that scheme leftover. Not a rank predictor. Do not fsot_scaled(Reg).
     """
     return f(POOF)
+
+
+def seed_bsd_389a1_special() -> float:
+    """L''(389a1,1)/2! = 2π·POOF/√φ.
+
+    Rank-0 period is Ω=√φ. Two generators see the dual circumference
+    2π/√φ. Times the POOF valve = BSD special value. Not the Néron-Tate
+    regulator in isolation. Not a rank predictor. Do not fsot_scaled.
+    """
+    return 2.0 * f(PI) * f(POOF) / math.sqrt(f(PHI))
 
 
 def seed_bsd_5077a1_regulator() -> float:

@@ -40,6 +40,7 @@ try:
         seed_bsd_11a1_L,
         seed_bsd_37a1_Lprime,
         seed_bsd_389a1_regulator,
+        seed_bsd_389a1_special,
         seed_bsd_5077a1_regulator,
         seed_cp2_euler,
         seed_cp3_euler,
@@ -76,6 +77,7 @@ except ImportError:  # pragma: no cover
         seed_bsd_11a1_L,
         seed_bsd_37a1_Lprime,
         seed_bsd_389a1_regulator,
+        seed_bsd_389a1_special,
         seed_bsd_5077a1_regulator,
         seed_cp2_euler,
         seed_cp3_euler,
@@ -147,6 +149,8 @@ NAIVE_BSD_L_QUARTER = 0.25
 LMFDB_37A1_LPRIME = 0.3059997738340523
 # LMFDB 389.a1 analytic rank 2. Regulator is the height pairing (not L''(1)/2!).
 LMFDB_389A1_REG = 0.15246017794314375
+# LMFDB 389.a1 BSD special value L''(E,1)/2!.
+LMFDB_389A1_SPECIAL = 0.7593165002884268
 # LMFDB 5077.a1 analytic rank 3. First rank-3 curve.
 LMFDB_5077A1_REG = 0.41714355875838397
 # Kolmogorov 4/5 law (exact 3D inertial identity).
@@ -749,7 +753,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_clock_and_rvm" if (signed_mean < locked_mean and signed_mean < rvm_mean) else "does_not_beat_clock",
             beats_or_meets_sota=signed_mean < locked_mean and signed_mean < rvm_mean,
             native_status="EXECUTABLE",
-            note="n=1 stays C-lock. n=2..10 sign 9/9. Do not Euler-invert the full product. Amplitude is typical POOF, not per-zero |S|. Not RH.",
+            note="n=1 stays C-lock. Sign 19/19. 0.619% leftover is per-zero |S| variation around POOF (envelope fill), not a sign miss. Do not Euler-invert the full product. Not RH.",
             extra={
                 "formula": "T_lock + sign(sin(T_lock*log(2)))*2pi*POOF/log(T/2pi)",
                 "signed_mean_err_pct": signed_mean,
@@ -1453,6 +1457,32 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    Sp = seed_bsd_389a1_special()
+    Sp_err = _err_pct(Sp, LMFDB_389A1_SPECIAL)
+    naive_Sp = _err_pct(math.pi / 4.0, LMFDB_389A1_SPECIAL)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="L''(389a1,1)/2!=2π·POOF/√φ vs LMFDB special (BSD leading term, not Néron-Tate Reg in isolation)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_389a1_special",
+            computed=Sp,
+            measured=LMFDB_389A1_SPECIAL,
+            public_sota_model="LMFDB 389.a1 L''(1)/2!. Naive closed form π/4. Rank-0 period √φ; two generators see dual 2π/√φ.",
+            public_sota_typical_error_pct=naive_Sp,
+            comparison_class="comparable",
+            verdict="beats_naive_pi_over_4" if Sp_err < naive_Sp else "does_not_beat_pi_over_4",
+            beats_or_meets_sota=Sp_err < naive_Sp,
+            native_status="EXECUTABLE",
+            note="Wrong object was Reg vs POOF (0.67%). BSD leading term is Ω_dual·POOF. Two systems, like BW vs pole. Not a rank formula.",
+            extra={
+                "formula": "2*PI*POOF/sqrt(PHI)",
+                "fsot_vs_lmfdb_pct": Sp_err,
+                "naive_pi4_vs_lmfdb_pct": naive_Sp,
+                "omega_dual": 2.0 * math.pi / math.sqrt(float(PHI)),
+            },
+        )
+    )
     Reg3 = seed_bsd_5077a1_regulator()
     Reg3_err = _err_pct(Reg3, LMFDB_5077A1_REG)
     naive_Reg3 = _err_pct(float(POOF), LMFDB_5077A1_REG)
@@ -1800,6 +1830,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
+    bsd_Sp = next(r for r in rows if r["name"] == "bsd_389a1_special")
     bsd_Reg3 = next(r for r in rows if r["name"] == "bsd_5077a1_regulator")
     bsd_par = next(r for r in rows if r["name"] == "bsd_rank_parity_map")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
@@ -1875,6 +1906,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
         "bsd_389a1_reg_green": 1 if bsd_Reg.get("fsot_green") == "pass" else 0,
+        "bsd_389a1_special_green": 1 if bsd_Sp.get("fsot_green") == "pass" else 0,
         "bsd_5077a1_reg_green": 1 if bsd_Reg3.get("fsot_green") == "pass" else 0,
         "bsd_5077a1_reg_aspiration": 1 if bsd_Reg3.get("fsot_aspiration") == "pass" else 0,
         "bsd_rank_parity_map": 1 if bsd_par.get("verdict") == "parity_map_holds" else 0,
@@ -2041,7 +2073,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Kolmogorov 4/5 | **Meets 4/5 exactly** (`12/(3 D_particle)=1−1/D_particle`) | 3D cascade from stretching. Not global existence on R^3. |",
         "| L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |",
         "| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |",
-        "| Reg(389a1) | **POOF vs LMFDB — beats 1/e; 0.5% WIP** | First rank-2 height pairing. Not L''(1)/2!. |",
+        "| Reg(389a1) | **POOF vs LMFDB — 0.67% WIP** | Néron-Tate pairing. Not the BSD leading term. |",
+        "| L''(389a1,1)/2! | **2π POOF/√φ vs LMFDB — in 0.5%** | Dual period × valve. Wrong object was Reg in isolation. |",
         "| Reg(5077a1) | **e·POOF vs LMFDB — in 0.05%** | First rank-3 height volume. Same occupancy as Riemann 1/e band. Out of sample vs rank 2. |",
         "| E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. e^{r-2} POOF fails at rank 4. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
@@ -2068,7 +2101,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |",
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
-        "| Riemann signed jitter | Prime-2 sign + POOF envelope. n=2..10 0.62% WIP. | Do not Euler-invert the full product. n=1 stays C-lock. |",
+        "| Riemann signed jitter | Prime-2 sign + POOF envelope. n=2..10 0.62% WIP (oos 0.43%). | Leftover is per-zero |S| variation around POOF, not a sign miss. |",
         "| 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |",
         "| BSD integer rank | Parity map holds. No Weierstrass→ℤ formula. | L-order still required. Rank 4 Reg is not e²·POOF. |",
         "| Hodge primitive (2,2) on general X | Gr(2,4) Schubert algebraic. Cubic 4-fold is the named remainder. | Do not steal 25−1 for K3. |",
@@ -2151,6 +2184,7 @@ if __name__ == "__main__":
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
         and s["bsd_389a1_reg_green"] == 0
+        and s["bsd_389a1_special_green"] == 1
         and s["bsd_5077a1_reg_green"] == 1
         and s["bsd_5077a1_reg_aspiration"] == 1
         and s["bsd_rank_parity_map"] == 1

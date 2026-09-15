@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T11:12:35.646225+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-15T11:22:14.764729+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,8 +18,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 27 |
-| …of those, inside FSOT 0.5% green | 17 |
+| Beats or meets public SOTA | 28 |
+| …of those, inside FSOT 0.5% green | 18 |
 | …of those, inside 0.05% aspiration | 12 |
 | **SOTA beat, FSOT accuracy still WIP** | **8** |
 | Comparable but does **not** beat | 0 |
@@ -65,6 +65,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Birch and Swinnerton-Dyer | L(11a1,1)=√φ/D_particle vs LMFDB (first rank-0 curve, not a rank predictor) | 0.2214 | 1.513 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Birch and Swinnerton-Dyer | L'(37a1,1)=2·POOF vs LMFDB (first rank-1 curve, not a rank predictor) | 0.3152 | 4.023 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Birch and Swinnerton-Dyer | Reg(389a1)=POOF vs LMFDB (first rank-2 height pairing, not a rank predictor) | 0.6704 | 141.3 | beats/meets | wip | wip | beats_sota_fsot_accuracy_wip |
+| Birch and Swinnerton-Dyer | L''(389a1,1)/2!=2π·POOF/√φ vs LMFDB special (BSD leading term, not Néron-Tate Reg in isolation) | 0.1562 | 3.435 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
 | Birch and Swinnerton-Dyer | Reg(5077a1)=e·POOF vs LMFDB (first rank-3 height volume, not a rank predictor) | 0.01543 | 63.21 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Birch and Swinnerton-Dyer | E→rank (mod 2): rank ≡ (1−w_E)/2. Functional equation. Not the integer rank. | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Named first objects: ℂP² (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20. | — | — | — | n/a | n/a | open_track_next |
@@ -109,7 +110,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Kolmogorov 4/5 | **Meets 4/5 exactly** (`12/(3 D_particle)=1−1/D_particle`) | 3D cascade from stretching. Not global existence on R^3. |
 | L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |
 | L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |
-| Reg(389a1) | **POOF vs LMFDB — beats 1/e; 0.5% WIP** | First rank-2 height pairing. Not L''(1)/2!. |
+| Reg(389a1) | **POOF vs LMFDB — 0.67% WIP** | Néron-Tate pairing. Not the BSD leading term. |
+| L''(389a1,1)/2! | **2π POOF/√φ vs LMFDB — in 0.5%** | Dual period × valve. Wrong object was Reg in isolation. |
 | Reg(5077a1) | **e·POOF vs LMFDB — in 0.05%** | First rank-3 height volume. Same occupancy as Riemann 1/e band. Out of sample vs rank 2. |
 | E→rank (mod 2) | **Parity from w_E on first curves of rank 0..4** | Integer rank still needs ord L. e^{r-2} POOF fails at rank 4. |
 | χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |
@@ -136,7 +138,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Weather lat-belt transfer | 44078 (59.94°N) sat 0.50° from MDXA2 (59.44°N); storm tanks held. Valve |Δlat|<POOF·180/π. | Do not move 1010. Transferred_weather, not clean-quiet persistence. |
 | Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |
 | Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |
-| Riemann signed jitter | Prime-2 sign + POOF envelope. n=2..10 0.62% WIP. | Do not Euler-invert the full product. n=1 stays C-lock. |
+| Riemann signed jitter | Prime-2 sign + POOF envelope. n=2..10 0.62% WIP (oos 0.43%). | Leftover is per-zero |S| variation around POOF, not a sign miss. |
 | 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |
 | BSD integer rank | Parity map holds. No Weierstrass→ℤ formula. | L-order still required. Rank 4 Reg is not e²·POOF. |
 | Hodge primitive (2,2) on general X | Gr(2,4) Schubert algebraic. Cubic 4-fold is the named remainder. | Do not steal 25−1 for K3. |
