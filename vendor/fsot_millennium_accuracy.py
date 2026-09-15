@@ -39,6 +39,8 @@ try:
         seed_alpha_s_MZ,
         seed_von_karman,
         seed_kolmogorov_45,
+        seed_kolmogorov_d2_32,
+        seed_onsager_holder,
         seed_bsd_11a1_L,
         seed_bsd_37a1_Lprime,
         seed_bsd_389a1_regulator,
@@ -95,6 +97,8 @@ except ImportError:  # pragma: no cover
         seed_alpha_s_MZ,
         seed_von_karman,
         seed_kolmogorov_45,
+        seed_kolmogorov_d2_32,
+        seed_onsager_holder,
         seed_bsd_11a1_L,
         seed_bsd_37a1_Lprime,
         seed_bsd_389a1_regulator,
@@ -195,6 +199,10 @@ LMFDB_5077A1_REG = 0.41714355875838397
 LMFDB_234446A1_REG = 1.504344888275284
 # Kolmogorov 4/5 law (exact 3D inertial identity).
 KOLMOGOROV_45 = 0.8
+# Kraichnan 3/2 law (exact 2D inverse-cascade identity).
+KOLMOGOROV_D2_32 = 1.5
+# Onsager–Kolmogorov Hölder threshold (Euler dissipative anomaly).
+ONSAGER_HOLDER = 1.0 / 3.0
 # Odlyzko / LMFDB Im(ρ_n) for n=1..10 (measurement, not a competing theory).
 # Rest-of-system residual bars (same as the 477-domain green / aspiration gates).
 FSOT_GREEN_GATE_PCT = 0.5
@@ -1184,7 +1192,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="no_fair_numeric_compare",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="3D cascade 4/5 is the numeric stretching function. Global-in-time existence on R^3 is a different object, still open.",
+            note="3D cascade 4/5 and Onsager 1/3 are the cascade numbers. 2D inverse cascade is 3/2 from the same 12/(d(d+2)). Global-in-time on R^3 is whether stretching stays BKM-integrable. Still open.",
         )
     )
     rows.append(
@@ -1201,7 +1209,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="named_clay_remainder",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="Same grammar as Riemann S(T): the leftover after the named executable object. 2D enstrophy (no stretching) is the proven first object. Do not claim 3D smoothness. Not a Clay prize.",
+            note="BKM is the criterion: blow-up iff ∫||ω||_∞ dt diverges. 4/5 and Onsager 1/3 are the mean cascade. Pointwise stretching vs viscosity is the remainder. Do not claim 3D smoothness.",
         )
     )
     rows.append(
@@ -1243,6 +1251,61 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
                 "D_particle": float(derived_D_eff("Particle_Physics")),
                 "fsot_vs_45_pct": k45_err,
             },
+        )
+    )
+    k32 = seed_kolmogorov_d2_32()
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Kraichnan 3/2 = 12/(d(d+2)) at d=2 (2D inverse energy cascade, no stretching)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_kolmogorov_d2_32",
+            computed=k32,
+            measured=KOLMOGOROV_D2_32,
+            public_sota_model="Kraichnan 1967: 2D inverse cascade ⟨(δu_L)³⟩=+(3/2)ε r. Same 12/(d(d+2)) as 3D 4/5. d+2=4 is geometry, not D_particle.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_kolmogorov_32",
+            beats_or_meets_sota=abs(k32 - KOLMOGOROV_D2_32) < 1e-12,
+            native_status="EXECUTABLE",
+            note="Out of sample vs 3D 4/5. Do not put D_particle on 2D. Not 3D smoothness.",
+            extra={"formula": "12/(2*(2+2))", "spatial_d": 2},
+        )
+    )
+    h13 = seed_onsager_holder()
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Onsager–Kolmogorov Hölder threshold = 1/d at d=3 = 1/3 (Euler dissipative anomaly)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_onsager_holder",
+            computed=h13,
+            measured=ONSAGER_HOLDER,
+            public_sota_model="Onsager: Euler conserves energy if Hölder >1/3; can dissipate if rougher. Same cascade as 4/5: δu~(ε r)^{1/3}.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_onsager_13",
+            beats_or_meets_sota=abs(h13 - ONSAGER_HOLDER) < 1e-12,
+            native_status="EXECUTABLE",
+            note="1/d spatial, not 1/D_particle. NSE has viscosity — this is the inviscid flux threshold. Global NSE is still BKM vs stretching.",
+            extra={"formula": "1/3", "spatial_d": 3},
+        )
+    )
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Beale–Kato–Majda: blow-up iff ∫||ω||_∞ dt diverges (the stretching criterion)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_bkm_criterion",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="Beale–Kato–Majda 1984. Equivalent to vorticity remaining time-integrable in L^∞.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="bkm_named_not_clay",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="The connective criterion. 4/5 and Onsager 1/3 are mean cascade. Remainder is whether viscosity keeps ||ω||_∞ BKM-integrable. Do not claim 3D smoothness.",
         )
     )
     mu_ok = all(viscosity_eff(d) > 0.0 for d in (6.0, 14.0, 25.0))
@@ -2521,6 +2584,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     wx_lat = next(r for r in rows if r["name"] == "ns_weather_lat_transfer")
     ns_vk = next(r for r in rows if r["name"] == "ns_von_karman")
     ns_k45 = next(r for r in rows if r["name"] == "ns_kolmogorov_45")
+    ns_k32 = next(r for r in rows if r["name"] == "ns_kolmogorov_d2_32")
+    ns_ons = next(r for r in rows if r["name"] == "ns_onsager_holder")
+    ns_bkm = next(r for r in rows if r["name"] == "ns_bkm_criterion")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -2625,6 +2691,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "weather_lat_transfer_named": 1 if wx_lat.get("verdict") == "lat_belt_transferred_weather" else 0,
         "ns_von_karman_green": 1 if ns_vk.get("fsot_green") == "pass" else 0,
         "ns_kolmogorov_45_exact": 1 if ns_k45["beats_or_meets_sota"] else 0,
+        "ns_kolmogorov_d2_32_exact": 1 if ns_k32["beats_or_meets_sota"] else 0,
+        "ns_onsager_holder_exact": 1 if ns_ons["beats_or_meets_sota"] else 0,
+        "ns_bkm_named": 1 if ns_bkm.get("verdict") == "bkm_named_not_clay" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -2681,9 +2750,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Misses next: NSE global-in-time on R^3 (4/5 cascade is the 3D number), "
+            "Misses next: NSE global-in-time on R^3 (4/5, 2D 3/2, Onsager 1/3 are cascade numbers; BKM is the stretching criterion), "
             "BSD general E (first-of-rank 0..4 labeled), unnamed Hassett tail after C_44, general 4-folds. "
-            "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, "
+            "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, 2D 3/2, Onsager 1/3, BKM, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
             "Reg(234446a1)=(φ²+1)·e·POOF, "
             "χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, "
@@ -2819,7 +2888,10 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Cook–Levin SAT | **Named proven first NP-complete theorem** | Clay is P=?NP. Verification is poly; search is the remainder. |",
         "| von Kármán κ | **Beats log-law scatter and in 0.05%** (`A_bleed/φ²` vs 0.40) | Wall shear, not 3D NSE smoothness. |",
         "| 2D enstrophy | **Named proven first NSE-type theorem** | No stretching in 2D. |",
-        "| Kolmogorov 4/5 | **Meets 4/5 exactly** (`12/(3 D_particle)=1−1/D_particle`) | 3D cascade from stretching. Not global existence on R^3. |",
+        "| Kolmogorov 4/5 | **Meets 4/5 exactly** (`12/(3 D_particle)=1−1/D_particle`) | 3D cascade from stretching. |",
+        "| Kraichnan 3/2 | **Meets 3/2 exactly** (`12/(d(d+2))` at d=2) | 2D inverse cascade. Do not put D_particle on 2D. |",
+        "| Onsager Hölder | **Meets 1/3 exactly** (1/d at d=3) | Euler dissipative-anomaly threshold. Same cascade as 4/5. |",
+        "| Beale–Kato–Majda | **Named stretching criterion** | Blow-up iff ∫||ω||_∞ dt diverges. |",
         "| L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |",
         "| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |",
         "| Reg(389a1) | **POOF vs LMFDB — 0.67% WIP** | Néron-Tate pairing. Not the BSD leading term. |",
@@ -2864,7 +2936,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| C_44 extra class | **[Fano Enriques], algebraic** | Last named extra class. Public SOTA stops naming here. |",
         "| Named no-K3 list | **Complete** (8,12,18,20,24,30,32,36,44) | Do not enumerate the infinite tail. |",
         "| Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |",
-        "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5 is the 3D cascade number. Existence on R^3 is a different object. |",
+        "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5, 2D 3/2, Onsager 1/3, BKM named. Existence on R^3 is whether stretching stays BKM-integrable. |",
         "",
         "## Next dig (misses and open tracks)",
         "",
@@ -2876,7 +2948,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
-        "| 3D NSE existence on R^3 | 4/5 cascade is the 3D number. Global-in-time is a different object. | Do not stuff existence into 4/5. |",
+        "| 3D NSE existence on R^3 | 4/5, 2D 3/2, Onsager 1/3 are cascade numbers. BKM is the stretching criterion. | Do not stuff existence into 4/5 or 1/3. |",
         "| BSD integer rank | First-of-rank 0..4 labeled. No Weierstrass→ℤ formula. | L-order still required for general E. Do not nearest-template arbitrary L(1). |",
         "| Hodge extra classes without K3 | Named list C_8..C_44 algebraic. | Remainder: infinite unnamed tail, general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
@@ -2958,6 +3030,9 @@ if __name__ == "__main__":
         and s["weather_lat_transfer_named"] == 1
         and s["ns_von_karman_green"] == 1
         and s["ns_kolmogorov_45_exact"] == 1
+        and s["ns_kolmogorov_d2_32_exact"] == 1
+        and s["ns_onsager_holder_exact"] == 1
+        and s["ns_bkm_named"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1

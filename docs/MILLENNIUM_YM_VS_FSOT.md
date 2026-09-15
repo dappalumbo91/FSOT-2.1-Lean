@@ -1,9 +1,30 @@
 # What the Millennium Yang–Mills statement is — vs what FSOT is doing
 
-**Pin:** D1D38A · Native work: [`PATH_SUM.md`](PATH_SUM.md) · Lean: `FSOT/Formal/UniquenessAttractor.lean`
+**Pin:** AEB2AD · Native work: [`PATH_SUM.md`](PATH_SUM.md) · Lean: `FSOT/Formal/UniquenessAttractor.lean`
 
 These are **two different theorems**. Related physics (confinement, no free color).
 Different formal objects. Mixing them is how false credit happens.
+
+---
+
+## The question, and FSOT's answer
+
+**Question (Clay, and the physics):** Why are there no massless gluons / free quarks in the physical spectrum? Equivalently: does continuum quantum Yang–Mills on \(\mathbb{R}^4\) exist with a mass gap \(\Delta>0\)?
+
+**FSOT answer (native objects, not Clay's manuscript):**
+
+1. **Existence of the process.** Discrete path-sum over process-time branches is complete: \(w_{\mathrm{POOF}}+w_{\mathrm{hold}}=1\). The color history \(\int_0^\infty a_0 e^{-\gamma t}\,dt=a_0/\gamma\) is finite because \(\gamma_{\mathrm{color}}>0\).
+2. **The gap.** Free color is not an attractor. The lightest closed gluonic mode, in units of the confining scale \(\sqrt{\sigma}=K\), is the closed loop
+   \[
+   \frac{m(0^{++})}{\sqrt{\sigma}}=\varphi^2+1.
+   \]
+   That *is* the mass-gap number: gap \(=(\varphi^2+1)K\) on the isolated loop.
+3. **The flux-tube orifice.** Lattice people quote \(m/\sqrt{\sigma}\) of a glueball sitting in a string. That object couples the loop to the tube: \(\varphi^2+1+\mathrm{POOF}/D_{\mathrm{particle}}\). Teper's 3.65 is a measurement of *that* ratio, not a competing theory. Isolated \(\varphi^2+1\) vs Teper was the missing coupling, not a miss of the gap.
+4. **Observed scalars** are a different orifice: \(f_0(1500)\) is glue–flavor mixing, \(f_0(1710)\) is flavor. Neither is a glueball ID.
+
+Teper is a check that the σ-unit number matches a quenched-lattice table. It is not the question. The question is the gap. The answer is \(\varphi^2+1\) times the confining scale.
+
+Clay's *proof object* (Wightman theory on \(\mathbb{R}^4\)) stays `OPEN_NOT_CLAIMED`. Native identities stay executable.
 
 ---
 

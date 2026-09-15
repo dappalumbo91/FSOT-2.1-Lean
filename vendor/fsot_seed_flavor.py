@@ -409,6 +409,28 @@ def seed_kolmogorov_45() -> float:
     return 12.0 / (d * dpart)
 
 
+def seed_kolmogorov_d2_32() -> float:
+    """Kraichnan 3/2 law: 12/(d(d+2)) at spatial d=2 = 3/2.
+
+    2D inverse energy cascade (no stretching). Same dimensional
+    Kolmogorov formula as 3D 4/5; d+2=4 is geometry, not D_particle.
+    Do not put the particle floor on 2D. Not 3D smoothness.
+    """
+    d = 2.0
+    return 12.0 / (d * (d + 2.0))
+
+
+def seed_onsager_holder() -> float:
+    """Onsager–Kolmogorov Hölder threshold = 1/d at spatial d=3 = 1/3.
+
+    Euler can dissipate only if the velocity is rougher than 1/3.
+    Same cascade as 4/5: δu ~ (ε r)^{1/3}. Not 1/D_particle (wrong
+    orifice). Not global NSE smoothness — NSE has viscosity.
+    """
+    d = 3.0
+    return 1.0 / d
+
+
 def seed_bsd_11a1_L() -> float:
     """L(11a1, 1) = √φ / D_particle.
 
