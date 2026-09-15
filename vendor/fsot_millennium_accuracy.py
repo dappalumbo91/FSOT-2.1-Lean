@@ -85,6 +85,12 @@ TEPER_GLUEBALL_2PP_OVER_SQRT_SIGMA = 5.15
 TEPER_GLUEBALL_2PP_STAT = 0.21
 TEPER_CLOSED_FORM_0PP = 4.0
 TEPER_CLOSED_FORM_RATIO = 1.5
+# Athenodorou–Teper 2020 SU(3) continuum (JHEP 11 (2020) 172, arXiv:2007.06422).
+# Linear O(a²σ) M(0++)/√σ=3.405(21); 2++ GeV 2.376(32) with √σ=485(6) MeV.
+AT2020_0PP_OVER_SQRT_SIGMA = 3.405
+AT2020_0PP_STAT = 0.021
+AT2020_2PP_OVER_SQRT_SIGMA = 4.894  # 3.405 * 2.376/1.653
+AT2020_2PP_STAT = 0.07
 # PDG 2024 (Navas et al. PRD 110, 030001). Observed I=0 0++ — not a glueball ID.
 # Morningstar arXiv:2502.02547: no scalar below ~2 GeV is predominantly a glueball.
 PDG_F0_1500_GEV = 1.506  # 1506 ± 6 MeV BW (lineshape convention)
@@ -641,18 +647,18 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Yang–Mills existence and mass gap",
-            function_object="Closed gluonic mode m(0++)/√σ vs quenched-lattice construct (not an observed particle)",
+            function_object="Closed gluonic mode m(0++)/√σ vs Teper 1997 continuum 3.65±0.11 (dated lattice construct)",
             clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
             name="ym_glueball_over_sqrt_sigma",
             computed=glue,
             measured=TEPER_GLUEBALL_OVER_SQRT_SIGMA,
-            public_sota_model="Teper hep-lat/9711011 continuum 3.65±0.11 (quenched-lattice eigenstate, not an observed particle)",
+            public_sota_model="Teper hep-lat/9711011 continuum 3.65±0.11. Dated construct; live SU(3) continuum is AT2020 3.405(21).",
             public_sota_typical_error_pct=teper_rel,
             comparison_class="comparable",
             verdict="beats_lattice_1sigma" if beats_teper_precision else "does_not_beat_lattice_precision",
             beats_or_meets_sota=beats_teper_precision,
             native_status="EXECUTABLE",
-            note="φ²+1 is morphic plus default look (closed loop). Lattice 0++ is a quenched YM construct. Observed I=0 0++ are f0(1500)/f0(1710). Do not pick the closer. Not a Clay mass gap.",
+            note="φ²+1 vs 1997 Teper is inside 1σ (0.29σ), outside FSOT 0.5%. Live lattice is AT2020. Do not keep 1997 because it is greener. Not a Clay mass gap.",
             extra={
                 "fsot_vs_inrepo_ballpark_pct": glue_vs_ballpark,
                 "fsot_vs_teper_pct": glue_vs_teper,
@@ -685,6 +691,33 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"four_sqrt_err_pct": four_sqrt_err, "formula": "PHI**2 + 1"},
         )
     )
+    glue_vs_at = _err_pct(glue, AT2020_0PP_OVER_SQRT_SIGMA)
+    at_rel = AT2020_0PP_STAT / AT2020_0PP_OVER_SQRT_SIGMA * 100.0
+    four_vs_at = _err_pct(TEPER_CLOSED_FORM_0PP, AT2020_0PP_OVER_SQRT_SIGMA)
+    rows.append(
+        _row(
+            problem="Yang–Mills existence and mass gap",
+            function_object="Closed gluonic mode m(0++)/√σ vs AT2020 SU(3) continuum 3.405(21) (live lattice construct)",
+            clay_object="Continuum QFT on R^4 + Hamiltonian Δ>0",
+            name="ym_glueball_over_sqrt_sigma_at2020",
+            computed=glue,
+            measured=AT2020_0PP_OVER_SQRT_SIGMA,
+            public_sota_model="Athenodorou–Teper JHEP 11 (2020) 172 / arXiv:2007.06422 M(0++)/√σ=3.405(21). Improved continuum vs 1997 3.65±0.11.",
+            public_sota_typical_error_pct=at_rel,
+            comparison_class="comparable",
+            verdict="beats_at2020_1sigma" if glue_vs_at < at_rel else "does_not_beat_at2020_1sigma",
+            beats_or_meets_sota=glue_vs_at < at_rel,
+            native_status="EXECUTABLE",
+            note="Live quenched SU(3) construct. φ²+1 is 6.26% (outside 1σ). Still beats 4√σ (17.5%). Do not retune 3.5 or φ²+1. Not a particle. Not a Clay mass gap.",
+            extra={
+                "fsot_vs_at2020_pct": glue_vs_at,
+                "four_sqrt_vs_at2020_pct": four_vs_at,
+                "sigma_from_at2020": abs(glue - AT2020_0PP_OVER_SQRT_SIGMA) / AT2020_0PP_STAT,
+                "formula": "PHI**2 + 1",
+                "retired_1997": TEPER_GLUEBALL_OVER_SQRT_SIGMA,
+            },
+        )
+    )
     glue_ratio = math.sqrt(2.0)
     teper_ratio = TEPER_GLUEBALL_2PP_OVER_SQRT_SIGMA / TEPER_GLUEBALL_OVER_SQRT_SIGMA
     ratio_err = _err_pct(glue_ratio, teper_ratio)
@@ -707,6 +740,12 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={
                 "fsot_2pp": math.sqrt(2.0) * glue,
                 "teper_2pp": TEPER_GLUEBALL_2PP_OVER_SQRT_SIGMA,
+                "at2020_2pp": AT2020_2PP_OVER_SQRT_SIGMA,
+                "at2020_ratio": AT2020_2PP_OVER_SQRT_SIGMA / AT2020_0PP_OVER_SQRT_SIGMA,
+                "sqrt2_vs_at2020_ratio_pct": _err_pct(
+                    math.sqrt(2.0),
+                    AT2020_2PP_OVER_SQRT_SIGMA / AT2020_0PP_OVER_SQRT_SIGMA,
+                ),
                 "formula": "sqrt(2)",
             },
         )
@@ -1121,6 +1160,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     riemann_panel = next(r for r in rows if r["name"] == "riemann_zeros_2_to_10_N_locked")
     riemann_S = next(r for r in rows if r["name"] == "riemann_S_T_bound")
     glue = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma")
+    glue_at = next(r for r in rows if r["name"] == "ym_glueball_over_sqrt_sigma_at2020")
     alpha_s_qcd = next(r for r in rows if r["name"] == "ym_alpha_s_MZ_qcd_orifice")
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
     glue_ratio = next(r for r in rows if r["name"] == "ym_glueball_2pp_over_0pp")
@@ -1162,6 +1202,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "alpha_s_qcd_green": 1 if alpha_s_qcd.get("fsot_green") == "pass" else 0,
         "alpha_s_qcd_aspiration": 1 if alpha_s_qcd.get("fsot_aspiration") == "pass" else 0,
         "glueball_beats_teper": 1 if glue["beats_or_meets_sota"] else 0,
+        "glueball_beats_at2020": 1 if glue_at["beats_or_meets_sota"] else 0,
         "glueball_does_not_beat_teper": 0 if glue["beats_or_meets_sota"] else 1,
         "glueball_beats_4sqrt_sigma": 1 if glue4["beats_or_meets_sota"] else 0,
         "glueball_ratio_beats_three_halves": 1 if glue_ratio["beats_or_meets_sota"] else 0,
@@ -1301,7 +1342,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Riemann S(T) | **|S|≤1/e on n=1..10** (max 0.321 at n=9) | Gram remainder after C-lock. t1 spent e; bound is 1/e. Not RH. |",
         "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
         "| α_s(M_Z) QCD orifice | **Beats 1/(eπ) and in 0.05%** (0.0075% vs PDG 0.1179) | Process 2(POOF/ψ_con)². Geometric 1/(eπ) is the freeze, 0.679%. Do not rewrite freeze. |",
-        "| Glueball φ²+1 vs Teper 3.65 | **Beats lattice 1σ; FSOT 0.5% still WIP** | Quenched-lattice construct in string units, **not an observed particle**. |",
+        "| Glueball φ²+1 vs Teper 1997 3.65 | **Inside 1σ (0.29σ); FSOT 0.5% WIP** | Dated continuum. Do not keep 1997 because it is greener. |",
+        "| Glueball φ²+1 vs AT2020 3.405(21) | **6.26% — does not beat live lattice 1σ** | Athenodorou–Teper 2020 SU(3) continuum. Still beats 4√σ. Do not retune φ²+1. |",
         "| Closed gluonic GeV vs f0(1500) BW | **0.93% vs BW 1506 MeV — lineshape leftover, WIP** | BW is the peak-fit convention, not the pole. |",
         "| Closed gluonic GeV vs f0(1500) pole | **Inside PDG T-matrix Re band 1.43–1.53 GeV** | Closed mode is an S-matrix pole. Do not move BW 1506 to swallow 0.93%. |",
         "| Flavor closed GeV vs f0(1710) | **0.40% vs PDG 1733 MeV — in 0.5% green; beats 4√σ (3.03%)** | Flavor/ss orifice (π+1)·K. Retired gluonic-vs-1710 was 12.3%. |",
@@ -1373,6 +1415,7 @@ if __name__ == "__main__":
         and s["alpha_s_qcd_aspiration"] == 1
         and s["glueball_beats_teper"] == 1
         and s["glueball_does_not_beat_teper"] == 0
+        and s["glueball_beats_at2020"] == 0
         and s["glueball_beats_4sqrt_sigma"] == 1
         and s["glueball_ratio_beats_three_halves"] == 1
         and s["glueball_observed_pair_named"] == 1

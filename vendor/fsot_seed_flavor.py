@@ -305,8 +305,9 @@ def seed_glueball_over_sqrt_sigma() -> float:
     The 0++ glueball is not Λ. It is a closed loop of the gluonic medium.
     Old probe φ² + e/π used the Atomic bound-well look (e/π). A closed
     mode has default look 1, so φ² + 1. 2++ / 0++ stays geometric √2.
-    Not a fit to Teper 3.65. Do not restore e/π to chase the residual.
-    Teper m/√σ is a quenched-lattice construct, not an observed particle.
+    Not a fit to Teper 1997 3.65. Live SU(3) continuum is AT2020 3.405(21)
+    (arXiv:2007.06422). Do not restore e/π or retune φ²+1. Lattice m/√σ is
+    a quenched construct, not an observed particle.
     """
     return f(PHI) ** 2 + 1.0
 
