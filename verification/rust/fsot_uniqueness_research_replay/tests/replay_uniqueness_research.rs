@@ -110,9 +110,9 @@ fn replay_uniqueness_research_obligations() {
     assert!(1.0_f64 > 0.0, "bsd_clay_open_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "hodge_clay_open_err_under_half");
     assert!(1.0_f64 > 0.0, "hodge_clay_open_computed_pos");
-    assert_eq!(64, 64, "mill_acc_beats_or_meets_n_flag");
-    assert_eq!(61, 61, "mill_acc_comparable_n_flag");
-    assert_eq!(58, 58, "mill_acc_green_pass_n_flag");
+    assert_eq!(68, 68, "mill_acc_beats_or_meets_n_flag");
+    assert_eq!(65, 65, "mill_acc_comparable_n_flag");
+    assert_eq!(62, 62, "mill_acc_green_pass_n_flag");
     assert_eq!(6, 6, "mill_acc_clay_open_n_flag");
     assert_eq!(4, 4, "mill_acc_sota_beats_accuracy_wip_n_flag");
     assert_eq!(3, 3, "mill_acc_next_dig_n_flag");

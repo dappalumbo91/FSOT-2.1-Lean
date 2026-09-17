@@ -26,7 +26,15 @@ try:
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel, nse_omega0_scan
     from fsot_nse3d import nse3d_measured_compare
-    from fsot_scale_interconnects import water_air_sound_ratio, gamma_diatomic
+    from fsot_scale_interconnects import (
+        water_air_sound_ratio,
+        gamma_diatomic,
+        scale_height_us1976,
+        scaled,
+        C_AIR_20C,
+        C_WATER_20C,
+        H_STD_ATM_M,
+    )
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -101,7 +109,15 @@ except ImportError:  # pragma: no cover
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel, nse_omega0_scan
     from fsot_nse3d import nse3d_measured_compare
-    from fsot_scale_interconnects import water_air_sound_ratio, gamma_diatomic
+    from fsot_scale_interconnects import (
+        water_air_sound_ratio,
+        gamma_diatomic,
+        scale_height_us1976,
+        scaled,
+        C_AIR_20C,
+        C_WATER_20C,
+        H_STD_ATM_M,
+    )
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -218,11 +234,10 @@ LATTICE_0PP_GEV = 1.73
 LATTICE_0PP_STAT = 0.08
 # von Kármán log-law (classic 0.40; scatter 0.38–0.41). Wave table measured 0.400.
 VON_KARMAN = 0.40
-# CRC/ISO 20 °C observables (lab tank, not Euler).
-C_AIR_20C_MPS = 343.2
-C_WATER_20C_MPS = 1482.0
-C_WATER_OVER_C_AIR_CRC = C_WATER_20C_MPS / C_AIR_20C_MPS
+C_WATER_OVER_C_AIR_CRC = C_WATER_20C / C_AIR_20C
 GAMMA_DIATOMIC_AIR = 1.400
+CRC_WATER_N_D = 1.3330
+CRC_WATER_RHO = 0.9982
 # LMFDB / Cremona 11a1 L(E,1). Measurement, not a competing closed form.
 LMFDB_11A1_L = 0.2538418608559107
 NAIVE_BSD_L_QUARTER = 0.25
@@ -1765,7 +1780,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_crc_sound_ratio" if c_err < 1.0 else "miss_crc_sound_ratio",
             beats_or_meets_sota=c_err < 1.0,
             native_status="EXECUTABLE",
-            extra={"formula": "e+phi", "c_air_mps": C_AIR_20C_MPS, "c_water_mps": C_WATER_20C_MPS},
+            extra={"formula": "e+phi", "c_air_mps": C_AIR_20C, "c_water_mps": C_WATER_20C},
             note="Observable. Fluid dark. Do not retune. Not Clay smoothness.",
         )
     )
@@ -1789,11 +1804,72 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             note="Observable. Not Clay smoothness.",
         )
     )
+    h_std = scale_height_us1976()
+    h_err = _err_pct(h_std, H_STD_ATM_M)
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="US Std Atmosphere 1976 scale height H=RT/μg (lab atmosphere table). Not Euler",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_us1976_scale_height",
+            computed=h_std,
+            measured=H_STD_ATM_M,
+            public_sota_model="US Standard Atmosphere 1976: H=8434.5 m at T0=288.15 K.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_us1976_H" if h_err < 0.5 else "miss_us1976_H",
+            beats_or_meets_sota=h_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"formula": "RT/mu g"},
+            note="Observable atmosphere. Fluid tank adjacent. Not Clay smoothness.",
+        )
+    )
+    n_w, n_err = scaled(CRC_WATER_N_D, "Optics")
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="CRC water n_D(20 °C)=1.3330 on Optics (lab refractive index of the fluid)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_crc_water_nD",
+            computed=n_w,
+            measured=CRC_WATER_N_D,
+            public_sota_model="CRC Handbook n_D water 20 °C = 1.3330.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_crc_nD" if n_err < 0.5 else "miss_crc_nD",
+            beats_or_meets_sota=n_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"fold": "Optics"},
+            note="Observable. Same H2O specimen as the tank. Not Clay smoothness.",
+        )
+    )
+    rho_w, rho_err = scaled(CRC_WATER_RHO, "Fluid_Dynamics")
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="CRC water density 20 °C=0.9982 g/cm³ on Fluid (dark tank). Not Euler",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_crc_water_rho",
+            computed=rho_w,
+            measured=CRC_WATER_RHO,
+            public_sota_model="CRC Handbook ρ_water 20 °C = 0.9982 g/cm³.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_crc_rho" if rho_err < 0.5 else "miss_crc_rho",
+            beats_or_meets_sota=rho_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"fold": "Fluid_Dynamics", "dark": True},
+            note="Observable. Do not flip Fluid dark. Not Clay smoothness.",
+        )
+    )
     reality_ok = (
         nse3_ok
         and kappa_err < kappa_sota
         and c_err < 1.0
         and g_err < 0.5
+        and h_err < 0.5
+        and n_err < 0.5
+        and rho_err < 0.5
     )
     rows.append(
         _row(
@@ -2965,6 +3041,26 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"n": len(mw_obs), "ranks": [r for _l, r in mw_obs]},
         )
     )
+    dpart = float(derived_D_eff("Particle_Physics"))
+    tors_ok = abs(dpart - LMFDB_11A1_TORS) < 1e-12
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Observable torsion of 11a1 is |E_tors|=5=D_particle (Mazur points, not a seed lookup of L)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_11a1_torsion_is_particle_floor",
+            computed=dpart,
+            measured=LMFDB_11A1_TORS,
+            public_sota_model="11a1 torsion is Z/5Z, exhibited by rational points. Mazur bound. Particle floor D=5.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_11a1_tors5" if tors_ok else "miss_11a1_tors",
+            beats_or_meets_sota=tors_ok,
+            native_status="EXECUTABLE",
+            extra={"formula": "D_particle"},
+            note="Observable points. Not Clay ∀E. Do not Weierstrass→ℤ.",
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -4072,6 +4168,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_crc = next(r for r in rows if r["name"] == "ns_c_water_over_c_air_crc")
     ns_gam = next(r for r in rows if r["name"] == "ns_gamma_diatomic_air")
     ns_real = next(r for r in rows if r["name"] == "ns_reality_observables_not_euler")
+    ns_h = next(r for r in rows if r["name"] == "ns_us1976_scale_height")
+    ns_nd = next(r for r in rows if r["name"] == "ns_crc_water_nD")
+    ns_rho = next(r for r in rows if r["name"] == "ns_crc_water_rho")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -4108,6 +4207,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_nmeas = next(r for r in rows if r["name"] == "bsd_clay_equality_not_a_measured_function")
     bsd_panel = next(r for r in rows if r["name"] == "bsd_sha_panel_vs_lmfdb")
     bsd_mw = next(r for r in rows if r["name"] == "bsd_mw_generators_are_the_observable")
+    bsd_tors = next(r for r in rows if r["name"] == "bsd_11a1_torsion_is_particle_floor")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -4230,6 +4330,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_c_water_over_c_air_crc": 1 if ns_crc.get("fsot_green") == "pass" else 0,
         "ns_gamma_diatomic_air": 1 if ns_gam.get("fsot_green") == "pass" else 0,
         "ns_reality_observables": 1 if ns_real.get("verdict") == "reality_observables_hold" else 0,
+        "ns_us1976_scale_height": 1 if ns_h.get("fsot_green") == "pass" else 0,
+        "ns_crc_water_nD": 1 if ns_nd.get("fsot_green") == "pass" else 0,
+        "ns_crc_water_rho": 1 if ns_rho.get("fsot_green") == "pass" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -4268,6 +4371,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_clay_equality_not_measured": 1 if bsd_nmeas.get("verdict") == "clay_bsd_not_measured" else 0,
         "bsd_sha_panel_vs_lmfdb": 1 if bsd_panel.get("fsot_green") == "pass" else 0,
         "bsd_mw_generators_observable": 1 if bsd_mw.get("verdict") == "mw_generators_observable" else 0,
+        "bsd_11a1_torsion_particle": 1 if bsd_tors.get("fsot_green") == "pass" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -4664,6 +4768,9 @@ if __name__ == "__main__":
         and s["ns_c_water_over_c_air_crc"] == 1
         and s["ns_gamma_diatomic_air"] == 1
         and s["ns_reality_observables"] == 1
+        and s["ns_us1976_scale_height"] == 1
+        and s["ns_crc_water_nD"] == 1
+        and s["ns_crc_water_rho"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
@@ -4702,6 +4809,7 @@ if __name__ == "__main__":
         and s["bsd_clay_equality_not_measured"] == 1
         and s["bsd_sha_panel_vs_lmfdb"] == 1
         and s["bsd_mw_generators_observable"] == 1
+        and s["bsd_11a1_torsion_particle"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1

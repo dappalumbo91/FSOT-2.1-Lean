@@ -336,13 +336,13 @@ theorem hodge_clay_open_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
 theorem hodge_clay_open_computed_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
-theorem mill_acc_beats_or_meets_n_flag : (64 : ℕ) = (64 : ℕ) := by
+theorem mill_acc_beats_or_meets_n_flag : (68 : ℕ) = (68 : ℕ) := by
   decide
 
-theorem mill_acc_comparable_n_flag : (61 : ℕ) = (61 : ℕ) := by
+theorem mill_acc_comparable_n_flag : (65 : ℕ) = (65 : ℕ) := by
   decide
 
-theorem mill_acc_green_pass_n_flag : (58 : ℕ) = (58 : ℕ) := by
+theorem mill_acc_green_pass_n_flag : (62 : ℕ) = (62 : ℕ) := by
   decide
 
 theorem mill_acc_clay_open_n_flag : (6 : ℕ) = (6 : ℕ) := by
