@@ -10,7 +10,7 @@
 **FRB orifice (Cat-2 dump):** [`frb_orifice_outgassing_outcome.json`](frb_orifice_outgassing_outcome.json)  
 **Architecture densify:** [`architecture_building_science_densify_hold.md`](architecture_building_science_densify_hold.md)  
 **Pin:** AEB2AD
-**Millennium named functions:** [`millennium_named_outcomes.md`](millennium_named_outcomes.md) — Hodge \(C_8\)..\(C_{44}\) algebraic; BSD ranks 0..4 labeled; rank 0..5 vanishing not magnitude. Not a Clay Prize.
+**Millennium named functions:** [`millennium_named_outcomes.md`](millennium_named_outcomes.md) — Hodge \(C_8\)..\(C_{44}\) algebraic; BSD LMFDB ranks 0..5 vanishing complete; rank \(\ge 6\) unnamed tail. Not a Clay Prize.
 
 Predictions live in [`../predictions/`](../predictions/). This page is **outcomes only**.
 

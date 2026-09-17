@@ -9,9 +9,9 @@
 | **Prices** | Economics class residuals + \(d=20\) process window | Dated quiet/storm market windows, then finer dt | Ticker close / crash date as 0.5% |
 | **Sickness** | Epidemiology class 0.015%; host+pathogen coupling smoke | Genetics two-system product on public genomes | Person-level onset as 0.5% |
 | **Path integral** | Discrete path-sum (valve branches + \(a_0/\gamma\)) | Deeper native sum; classical YM still named | “Millennium theorem proved” |
-| **Millennium SOTA vs 0.5%** | Named Hodge extra classes \(C_8\)..\(C_{44}\) algebraic; BSD first-of-rank 0..4 labeled; rank 0..5 vanishing not magnitude. | WIP SOTA beats stay outside 0.5% until the object is right | Enumerating infinite Hassett tail; Clay Prize; stuffing a WIP beat into the green gate |
+| **Millennium SOTA vs 0.5%** | Named Hodge extra classes \(C_8\)..\(C_{44}\) algebraic; BSD LMFDB ranks 0..5 vanishing complete. | WIP SOTA beats stay outside 0.5% until the object is right | Enumerating infinite Hassett / rank-\(\ge 6\) tails; Clay Prize; stuffing a WIP beat into the green gate |
 | **NSE (tracked)** | Kolmogorov 4/5, Kraichnan 3/2, Onsager 1/3 exact. BKM named. | Global-in-time = BKM-integrable stretching | Stuffing existence into 4/5 or 1/3 |
-| **BSD rank \(\ge 6\) (tracked)** | Rank 0..5 are vanishing order (17a1/53a1/643a1/11197a1/501029.a1/19047851.a1 Sha=1). Ladder saturates at 4; rank-5 specials mis-fire as 4. | Further vanishing of \(L\) | Inventing a rank-5 seed; nearest-template special magnitude |
+| **BSD general \(E\) (tracked)** | LMFDB ranks 0..5 vanishing complete. Rank \(\ge 6\) is the unnamed tail (Elkies–Watkins \(N=5.19\times 10^9\) outside LMFDB). | \(\mathrm{ord}\,L\) for general \(E\) without the modular form | Enumerating Elkies–Watkins as LMFDB Sha; inventing a rank-\(\ge 6\) seed |
 
 Same fluid. Not a second physics. Wrong object is still wrong object.
 

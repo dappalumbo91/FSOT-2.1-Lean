@@ -903,6 +903,7 @@ def bsd_integer_rank_from_leading(value: float) -> int:
     Not a Weierstrass→ℤ formula. Do not run on arbitrary L(1)
     (17a1 is rank 0; magnitude looks like rank 3). Rank ≥5
     specials also nearest-template as 4 because the ladder stops.
+    Rank ≥6 is outside LMFDB (unnamed tail).
     """
     best_r, best = 0, float("inf")
     v = float(value)

@@ -291,6 +291,13 @@ LMFDB_64921931A1_OMEGA = 1.9045045575674987
 LMFDB_64921931A1_REG = 20.398788410955994
 LMFDB_64921931A1_TAM = 1.0
 LMFDB_64921931A1_TORS = 1.0
+# LMFDB elliptic curves over Q: conductor at most 299996953 (Release 1.2.1).
+# Browse-by-rank lists 0..5. Search rank=6 returns no matches.
+LMFDB_Q_CONDUCTOR_MAX = 299996953
+# Elkies–Watkins 2004: smallest known rank-6 conductor, outside LMFDB.
+# ainvs [1,1,0,-2582,48720]. Not an LMFDB Sha conversion.
+ELKIES_WATKINS_R6_CONDUCTOR = 5187563742
+ELKIES_WATKINS_R6_NEXT_CONDUCTOR = 5258110041
 # Kolmogorov 4/5 law (exact 3D inertial identity).
 KOLMOGOROV_45 = 0.8
 # Kraichnan 3/2 law (exact 2D inverse-cascade identity).
@@ -2415,6 +2422,34 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    named_ranks_ok = (
+        rank5_ok
+        and ELKIES_WATKINS_R6_CONDUCTOR > LMFDB_Q_CONDUCTOR_MAX
+        and ELKIES_WATKINS_R6_NEXT_CONDUCTOR > LMFDB_Q_CONDUCTOR_MAX
+    )
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Named LMFDB ranks 0..5 complete. Rank ≥6 is the unnamed tail (Elkies–Watkins N=5187563742 outside LMFDB conductor ≤299996953)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_lmfdb_named_ranks_complete",
+            computed=1.0 if named_ranks_ok else 0.0,
+            measured=1.0,
+            public_sota_model="LMFDB browse-by-rank is 0..5. Search rank=6: no matches. Completeness: conductor ≤299996953. Elkies–Watkins 2004 first r=6 has N=5187563742.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="named_ranks_0_5_complete" if named_ranks_ok else "named_ranks_incomplete",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Do not enumerate Elkies–Watkins high-rank curves as LMFDB Sha conversions. No r≥6 seed. Same orifice as rank 5: further vanishing of L, volume is Sha. Remainder is general E without the modular form. Do not claim Clay BSD.",
+            extra={
+                "lmfdb_conductor_max": LMFDB_Q_CONDUCTOR_MAX,
+                "elkies_watkins_r6_conductor": ELKIES_WATKINS_R6_CONDUCTOR,
+                "elkies_watkins_r6_next_conductor": ELKIES_WATKINS_R6_NEXT_CONDUCTOR,
+                "outside_lmfdb": True,
+            },
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3297,6 +3332,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_19047851 = next(r for r in rows if r["name"] == "bsd_19047851a1_sha_not_special_magnitude")
     bsd_64921931 = next(r for r in rows if r["name"] == "bsd_64921931a1_sha_oos")
     bsd_r5 = next(r for r in rows if r["name"] == "bsd_general_rank5_vanishing_not_magnitude")
+    bsd_named_r = next(r for r in rows if r["name"] == "bsd_lmfdb_named_ranks_complete")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -3425,6 +3461,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_19047851a1_sha_green": 1 if bsd_19047851.get("fsot_green") == "pass" else 0,
         "bsd_64921931a1_sha_green": 1 if bsd_64921931.get("fsot_green") == "pass" else 0,
         "bsd_general_rank5_vanishing": 1 if bsd_r5.get("verdict") == "rank5_vanishing_holds" else 0,
+        "bsd_lmfdb_named_ranks_complete": 1 if bsd_named_r.get("verdict") == "named_ranks_0_5_complete" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -3472,7 +3509,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
             "Misses next: NSE global-in-time on R^3 (4/5, 2D 3/2, Onsager 1/3 are cascade numbers; BKM is the stretching criterion), "
-            "BSD general E (first-of-rank 0..4 labeled; rank 0..5 vanishing not magnitude), unnamed Hassett tail after C_44, general 4-folds. "
+            "BSD general E (first-of-rank 0..4 labeled; LMFDB ranks 0..5 vanishing complete; rank ≥6 unnamed tail), unnamed Hassett tail after C_44, general 4-folds. "
             "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, 2D 3/2, Onsager 1/3, BKM, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
             "Reg(234446a1)=(φ²+1)·e·POOF, "
@@ -3639,7 +3676,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| General rank 4 | **Vanishing order, not special/Reg magnitude** | L through L''' vanish, L^{(4)}≠0. |",
         "| 19047851.a1 Sha | **Meets 1** (volume, not special/Reg magnitude) | Raw L^{(5)}/5!≈30.29 nearest-templates as rank 4. No r=5 seed. |",
         "| 64921931.a1 Sha | **Meets 1** out of sample | Same orifice. |",
-        "| General rank 5 | **Vanishing order, not special/Reg magnitude** | L through L^{(4)} vanish, L^{(5)}≠0. Remainder is rank ≥6. |",
+        "| General rank 5 | **Vanishing order, not special/Reg magnitude** | L through L^{(4)} vanish, L^{(5)}≠0. |",
+        "| Named LMFDB ranks | **Complete 0..5** | Rank ≥6 is the unnamed tail (Elkies–Watkins N=5.19e9 outside LMFDB). Remainder is general E. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
@@ -3689,7 +3727,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
         "| 3D NSE existence on R^3 | 4/5, 2D 3/2, Onsager 1/3 are cascade numbers. BKM is the stretching criterion. | Do not stuff existence into 4/5 or 1/3. |",
-        "| BSD integer rank | First-of-rank 0..4 labeled. Rank 0..5 are vanishing order, not leading magnitudes. | Rank ≥6 still needs further vanishing. Do not invent a rank-5 seed. Do not nearest-template. |",
+        "| BSD integer rank | First-of-rank 0..4 labeled. LMFDB ranks 0..5 vanishing complete. | Rank ≥6 is the unnamed tail. Remainder is general E without the modular form. Do not enumerate Elkies–Watkins as LMFDB Sha. |",
         "| Hodge extra classes without K3 | Named list C_8..C_44 algebraic. | Remainder: infinite unnamed tail, general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
@@ -3802,6 +3840,7 @@ if __name__ == "__main__":
         and s["bsd_19047851a1_sha_green"] == 1
         and s["bsd_64921931a1_sha_green"] == 1
         and s["bsd_general_rank5_vanishing"] == 1
+        and s["bsd_lmfdb_named_ranks_complete"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1

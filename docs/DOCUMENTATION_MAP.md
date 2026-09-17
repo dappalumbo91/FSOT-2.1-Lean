@@ -29,9 +29,9 @@
 | **Goal tracks** | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) | ECMWF, prices, sickness, path-sum | In progress, not claimed beaten |
 | **Millennium YM vs FSOT** | [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) | Question: mass gap. Answer: \(\varphi^2+1\). Teper is a check. | Not Clay Wightman |
 | **Millennium NSE vs FSOT** | [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) | Question: 3D blow-up. Answer: 4/5, 3/2, 1/3, BKM. | Existence still BKM-integrable stretching |
-| **Millennium BSD vs FSOT** | [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md) | Question: rank vs ord \(L\). Answer: first-of-rank 0..4; rank 0..5 vanishing. | General \(E\) still from \(L(E)\) |
+| **Millennium BSD vs FSOT** | [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md) | Question: rank vs ord \(L\). Answer: first-of-rank 0..4; LMFDB ranks 0..5 vanishing. | Rank \(\ge 6\) unnamed tail; general \(E\) |
 | **All 6 Clay problems + prize rules** | [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) | Official CMI rules; Q&A vs Clay objects | Prize not claimed |
-| **Accuracy vs public SOTA** | [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) | Function contest, not Prize gates | Named Hodge \(C_8\)..\(C_{44}\); BSD ranks 0..4; rank 0..5 vanishing |
+| **Accuracy vs public SOTA** | [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) | Function contest, not Prize gates | Named Hodge \(C_8\)..\(C_{44}\); BSD LMFDB ranks 0..5 complete |
 | **Coverage list** | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) | 35 cores + 477 green files | What the program solves for |
 | **Sibling slots** | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) | Residual vs product | Where the next open-source text/sim goes |
 

@@ -67,9 +67,9 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
    \]
    is **1**. 64921931.a1 is the same orifice out of sample. Do not invent a rank-5 seed. LMFDB analytic rank \(\ge 4\) is numerical, not a rigorous \(\mathrm{ord}\,L\) theorem.
 
-10. **Rank \(\ge 6\).** \(L^{(5)}(1)=0\) as well. Integer rank is still further vanishing of \(L\). No Weierstrass-coefficient → \(\mathbb{Z}\) seed map.
+10. **Named LMFDB ranks complete (0..5).** Public SOTA browse-by-rank is \(0..5\). Search rank \(=6\) returns no matches. Completeness is conductor \(\le 299{,}996{,}953\). The first known rank-6 curve (Elkies–Watkins 2004, \(N=5{,}187{,}563{,}742\)) sits outside that bound. Rank \(\ge 6\) is the unnamed tail: further vanishing of \(L\), same Sha volume, no seed. Do not enumerate Elkies–Watkins as LMFDB conversions.
 
-**Remainder:** \(\mathrm{ord}\,L\) for rank \(\ge 6\), and general \(E\) without computing the modular form.
+**Remainder:** general \(E\) without computing the modular form. Clay’s \(\mathrm{ord}\,L\) for every \(E/\mathbb{Q}\).
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 
@@ -89,7 +89,8 @@ Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays 
 | General rank 3 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 11197a1/11642a1 (not special/Reg magnitude) |
 | General rank 4 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 501029.a1/545723.a1 (not special/Reg magnitude; ladder saturates) |
 | General rank 5 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 19047851.a1/64921931.a1 (not special/Reg magnitude; nearest mis-fires as 4) |
-| Rank \(\ge 6\) | The theorem | Still further vanishing of \(L\) |
+| Named LMFDB ranks | — | Complete \(0..5\). Rank \(\ge 6\) is the unnamed tail (outside LMFDB) |
+| Rank \(\ge 6\) / general \(E\) | The theorem | Unnamed tail + modular form |
 | Status | Open prize problem | Ladder **executable**; general \(E\) **OPEN_NOT_CLAIMED** |
 
 Forbidden: “we proved Millennium BSD because five Cremona curves match.” Allowed: parity + first-of-rank leadings. Do not \(\pi^2\cdot\mathrm{POOF}\) on rank 4. Do not nearest-template arbitrary \(L(1)\).

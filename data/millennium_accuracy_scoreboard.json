@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T18:54:49.852788+00:00",
+  "generated_at": "2026-09-17T19:02:58.707366+00:00",
   "pin": "AEB2AD",
   "clay_prize_claimed": false,
   "clay_problems_remaining": 6,
@@ -92,6 +92,7 @@
   "bsd_19047851a1_sha_green": 1,
   "bsd_64921931a1_sha_green": 1,
   "bsd_general_rank5_vanishing": 1,
+  "bsd_lmfdb_named_ranks_complete": 1,
   "hodge_cp2_euler_exact": 1,
   "hodge_cp3_euler_exact": 1,
   "hodge_lefschetz_11_named": 1,
@@ -2200,6 +2201,34 @@
       "sota_beats_fsot_accuracy_wip": false
     },
     {
+      "problem": "Birch and Swinnerton-Dyer",
+      "name": "bsd_lmfdb_named_ranks_complete",
+      "function_object": "Named LMFDB ranks 0..5 complete. Rank \u22656 is the unnamed tail (Elkies\u2013Watkins N=5187563742 outside LMFDB conductor \u2264299996953)",
+      "clay_object": "rank E(Q) = ord_{s=1} L(E,s)",
+      "computed": 1.0,
+      "measured": 1.0,
+      "fsot_error_pct": 0.0,
+      "public_sota_model": "LMFDB browse-by-rank is 0..5. Search rank=6: no matches. Completeness: conductor \u2264299996953. Elkies\u2013Watkins 2004 first r=6 has N=5187563742.",
+      "public_sota_typical_error_pct": null,
+      "comparison_class": "structure",
+      "verdict": "named_ranks_0_5_complete",
+      "beats_or_meets_sota": null,
+      "clay_status": "OPEN_NOT_CLAIMED",
+      "native_status": "EXECUTABLE",
+      "note": "Do not enumerate Elkies\u2013Watkins high-rank curves as LMFDB Sha conversions. No r\u22656 seed. Same orifice as rank 5: further vanishing of L, volume is Sha. Remainder is general E without the modular form. Do not claim Clay BSD.",
+      "lmfdb_conductor_max": 299996953,
+      "elkies_watkins_r6_conductor": 5187563742,
+      "elkies_watkins_r6_next_conductor": 5258110041,
+      "outside_lmfdb": true,
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
+    },
+    {
       "problem": "Hodge conjecture",
       "name": "hodge_named_varieties",
       "function_object": "Named first objects: \u2102P\u00b2 (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20.",
@@ -3300,5 +3329,5 @@
       "sota_beats_fsot_accuracy_wip": false
     }
   ],
-  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE global-in-time on R^3 (4/5, 2D 3/2, Onsager 1/3 are cascade numbers; BKM is the stretching criterion), BSD general E (first-of-rank 0..4 labeled; rank 0..5 vanishing not magnitude), unnamed Hassett tail after C_44, general 4-folds. Native: von K\u00e1rm\u00e1n \u03ba, 2D enstrophy, Kolmogorov 4/5=1\u22121/D_particle, 2D 3/2, Onsager 1/3, BKM, L(11a1,1)=\u221a\u03c6/D_particle, L'(37a1,1)=2\u00b7POOF, Reg(389a1)=POOF, Reg(5077a1)=e\u00b7POOF, Reg(234446a1)=(\u03c6\u00b2+1)\u00b7e\u00b7POOF, \u03c7(CP\u00b2)=L_2, \u03c7(CP\u00b3)=L_3, Lefschetz (1,1), Hodge (2,2) on CP\u00b3, hard Lefschetz, Cook\u2013Levin SAT. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue\u2013flavor 2\u00d72 V=POOF\u00b7K; isolated (\u03c6\u00b2+1)\u00b7K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))\u00b7POOF envelope. E\u2192rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|\u0394lat|<POOF\u00b7180/\u03c0), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten."
+  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE global-in-time on R^3 (4/5, 2D 3/2, Onsager 1/3 are cascade numbers; BKM is the stretching criterion), BSD general E (first-of-rank 0..4 labeled; LMFDB ranks 0..5 vanishing complete; rank \u22656 unnamed tail), unnamed Hassett tail after C_44, general 4-folds. Native: von K\u00e1rm\u00e1n \u03ba, 2D enstrophy, Kolmogorov 4/5=1\u22121/D_particle, 2D 3/2, Onsager 1/3, BKM, L(11a1,1)=\u221a\u03c6/D_particle, L'(37a1,1)=2\u00b7POOF, Reg(389a1)=POOF, Reg(5077a1)=e\u00b7POOF, Reg(234446a1)=(\u03c6\u00b2+1)\u00b7e\u00b7POOF, \u03c7(CP\u00b2)=L_2, \u03c7(CP\u00b3)=L_3, Lefschetz (1,1), Hodge (2,2) on CP\u00b3, hard Lefschetz, Cook\u2013Levin SAT. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue\u2013flavor 2\u00d72 V=POOF\u00b7K; isolated (\u03c6\u00b2+1)\u00b7K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))\u00b7POOF envelope. E\u2192rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|\u0394lat|<POOF\u00b7180/\u03c0), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten."
 }

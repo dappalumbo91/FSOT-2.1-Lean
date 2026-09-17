@@ -45,7 +45,7 @@ Rank 4 was isolated \(e^2\cdot\mathrm{POOF}\) (24.6%). The missing fold is the s
 | 4 | 501029.a1 (545723.a1 oos) | raw \(L^{(4)}/4!\approx 9.36\) is not the rank-4 seed \(1.50\); ladder saturates | \(\mathrm{Sha}_{\mathrm{an}}=1\) |
 | 5 | 19047851.a1 (64921931.a1 oos) | raw \(L^{(5)}/5!\approx 30.29\) nearest-templates as rank 4; no r=5 seed | \(\mathrm{Sha}_{\mathrm{an}}=1\) |
 
-Remainder: \(\mathrm{ord}\,L\) for rank \(\ge 6\).
+Named LMFDB ranks **complete** \(0..5\). Rank \(\ge 6\) is the unnamed tail (Elkies–Watkins \(N=5{,}187{,}563{,}742\) outside LMFDB). Remainder: general \(E\) without the modular form.
 
 ## Hodge — named extra classes without K3 complete
 
@@ -87,5 +87,5 @@ Do not drop these. Named Hodge \(C_d\) is done; these are the leftover objects.
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
 | NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | 4/5 (3D), 3/2 (2D inverse), Onsager \(1/3\) are cascade numbers. BKM is the stretching criterion. Remainder is whether \(\int\|\omega\|_\infty dt\) stays finite. | Stuffing existence into 4/5 or 1/3 |
-| BSD-RANK | \(\mathrm{ord}\,L\) for rank \(\ge 6\) | Rank 0..5 are vanishing order. 19047851.a1 raw \(L^{(5)}/5!\) nearest-templates as rank 4; \(\mathrm{Sha}_{\mathrm{an}}=1\). 64921931.a1 oos. No r=5 seed. | Inventing a rank-5 seed; nearest-template special magnitude |
+| BSD-RANK | General \(E\) without the modular form | LMFDB ranks 0..5 vanishing complete. Rank \(\ge 6\) unnamed tail (outside LMFDB). | Enumerating Elkies–Watkins as LMFDB Sha |
 | HODGE-TAIL | unnamed Hassett \(C_d\) after 44 + general 4-folds | Nuer stops naming at 44. Infinite later \(C_d\) have no named surface. | Enumerating the tail until it looks green |
