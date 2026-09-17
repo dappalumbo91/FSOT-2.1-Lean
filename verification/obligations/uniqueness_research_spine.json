@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-17T19:52:30.095110+00:00",
+  "generated_at": "2026-09-17T20:00:33.064711+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 138,
+  "obligation_count": 142,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -934,8 +934,8 @@
     {
       "id": "mill_acc_beats_or_meets_n_flag",
       "kind": "eq_nat",
-      "value": 57,
-      "right_value": 57,
+      "value": 58,
+      "right_value": 58,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_beats_or_meets_n",
       "coq_id": "mill_acc_beats_or_meets_n_flag"
@@ -943,8 +943,8 @@
     {
       "id": "mill_acc_comparable_n_flag",
       "kind": "eq_nat",
-      "value": 54,
-      "right_value": 54,
+      "value": 55,
+      "right_value": 55,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_comparable_n",
       "coq_id": "mill_acc_comparable_n_flag"
@@ -952,8 +952,8 @@
     {
       "id": "mill_acc_green_pass_n_flag",
       "kind": "eq_nat",
-      "value": 51,
-      "right_value": 51,
+      "value": 52,
+      "right_value": 52,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_green_pass_n",
       "coq_id": "mill_acc_green_pass_n_flag"
@@ -1094,6 +1094,15 @@
       "coq_id": "mill_acc_bsd_regulator_is_height_gram_flag"
     },
     {
+      "id": "mill_acc_bsd_tam_local_reg_global_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_tam_local_reg_global",
+      "coq_id": "mill_acc_bsd_tam_local_reg_global_flag"
+    },
+    {
       "id": "mill_acc_bsd_lmfdb_named_ranks_complete_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -1139,6 +1148,15 @@
       "coq_id": "mill_acc_ns_enstrophy_budget_two_term_flag"
     },
     {
+      "id": "mill_acc_ns_helicity_3d_not_2d_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_helicity_3d_not_2d",
+      "coq_id": "mill_acc_ns_helicity_3d_not_2d_flag"
+    },
+    {
       "id": "mill_acc_hodge_named_no_k3_complete_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -1182,6 +1200,24 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_hodge_hypersurface_4folds_after_cubic",
       "coq_id": "mill_acc_hodge_hypersurface_4folds_after_cubic_flag"
+    },
+    {
+      "id": "mill_acc_hodge_hk4_fano_lines_named_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_hk4_fano_lines_named",
+      "coq_id": "mill_acc_hodge_hk4_fano_lines_named_flag"
+    },
+    {
+      "id": "mill_acc_hodge_abelian4_euler_exact_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_abelian4_euler_exact",
+      "coq_id": "mill_acc_hodge_abelian4_euler_exact_flag"
     },
     {
       "id": "mill_acc_ecmwf_not_beaten_flag",

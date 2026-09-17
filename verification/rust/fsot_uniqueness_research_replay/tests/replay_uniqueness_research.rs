@@ -110,9 +110,9 @@ fn replay_uniqueness_research_obligations() {
     assert!(1.0_f64 > 0.0, "bsd_clay_open_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "hodge_clay_open_err_under_half");
     assert!(1.0_f64 > 0.0, "hodge_clay_open_computed_pos");
-    assert_eq!(57, 57, "mill_acc_beats_or_meets_n_flag");
-    assert_eq!(54, 54, "mill_acc_comparable_n_flag");
-    assert_eq!(51, 51, "mill_acc_green_pass_n_flag");
+    assert_eq!(58, 58, "mill_acc_beats_or_meets_n_flag");
+    assert_eq!(55, 55, "mill_acc_comparable_n_flag");
+    assert_eq!(52, 52, "mill_acc_green_pass_n_flag");
     assert_eq!(6, 6, "mill_acc_clay_open_n_flag");
     assert_eq!(4, 4, "mill_acc_sota_beats_accuracy_wip_n_flag");
     assert_eq!(3, 3, "mill_acc_next_dig_n_flag");
@@ -128,16 +128,20 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "mill_acc_bsd_kolyvagin_rank_le1_flag");
     assert_eq!(1, 1, "mill_acc_bsd_rank_ge2_volume_native_flag");
     assert_eq!(1, 1, "mill_acc_bsd_regulator_is_height_gram_flag");
+    assert_eq!(1, 1, "mill_acc_bsd_tam_local_reg_global_flag");
     assert_eq!(1, 1, "mill_acc_bsd_lmfdb_named_ranks_complete_flag");
     assert_eq!(1, 1, "mill_acc_ns_bkm_named_flag");
     assert_eq!(1, 1, "mill_acc_ns_l2_cascade_not_l_inf_flag");
     assert_eq!(1, 1, "mill_acc_ns_stretch_visc_two_zoom_flag");
     assert_eq!(1, 1, "mill_acc_ns_enstrophy_budget_two_term_flag");
+    assert_eq!(1, 1, "mill_acc_ns_helicity_3d_not_2d_flag");
     assert_eq!(1, 1, "mill_acc_hodge_named_no_k3_complete_flag");
     assert_eq!(1, 1, "mill_acc_hodge_k3_tail_lefschetz_flag");
     assert_eq!(1, 1, "mill_acc_hodge_very_general_cubic_only_h2_flag");
     assert_eq!(1, 1, "mill_acc_hodge_unnamed_no_k3_no_seed_flag");
     assert_eq!(1, 1, "mill_acc_hodge_hypersurface_4folds_after_cubic_flag");
+    assert_eq!(1, 1, "mill_acc_hodge_hk4_fano_lines_named_flag");
+    assert_eq!(1, 1, "mill_acc_hodge_abelian4_euler_exact_flag");
     assert_eq!(1, 1, "mill_acc_ecmwf_not_beaten_flag");
     assert_eq!(0, 0, "mill_acc_weather_quiet_fill_still_miss_flag");
 }

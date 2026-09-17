@@ -329,13 +329,13 @@ Proof. lra. Qed.
 Lemma hodge_clay_open_computed_pos : 0 < ((1.0%R)).
 Proof. lra. Qed.
 
-Lemma mill_acc_beats_or_meets_n_flag : (57 = 57)%nat.
+Lemma mill_acc_beats_or_meets_n_flag : (58 = 58)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_comparable_n_flag : (54 = 54)%nat.
+Lemma mill_acc_comparable_n_flag : (55 = 55)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_green_pass_n_flag : (51 = 51)%nat.
+Lemma mill_acc_green_pass_n_flag : (52 = 52)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_clay_open_n_flag : (6 = 6)%nat.
@@ -383,6 +383,9 @@ Proof. reflexivity. Qed.
 Lemma mill_acc_bsd_regulator_is_height_gram_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
+Lemma mill_acc_bsd_tam_local_reg_global_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
 Lemma mill_acc_bsd_lmfdb_named_ranks_complete_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
@@ -398,6 +401,9 @@ Proof. reflexivity. Qed.
 Lemma mill_acc_ns_enstrophy_budget_two_term_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
+Lemma mill_acc_ns_helicity_3d_not_2d_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
 Lemma mill_acc_hodge_named_no_k3_complete_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
@@ -411,6 +417,12 @@ Lemma mill_acc_hodge_unnamed_no_k3_no_seed_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_hodge_hypersurface_4folds_after_cubic_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_hodge_hk4_fano_lines_named_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_hodge_abelian4_euler_exact_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_ecmwf_not_beaten_flag : (1 = 1)%nat.

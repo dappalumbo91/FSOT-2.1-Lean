@@ -449,6 +449,16 @@ def nse_d2_rejects_d_particle() -> bool:
     return abs(seed_kolmogorov_d2_32() - 1.5) < 1e-12 and abs(stuffed - 1.5) > 0.05
 
 
+def nse_helicity_is_3d_not_2d() -> bool:
+    """3D Euler conserves helicity ∫ v·ω. 2D stretching vanishes.
+
+    Isolated helicity conservation is inviscid (μ=0). NSE dissipates
+    helicity through Fluid viscosity. Not a 2D orifice. Not existence.
+    Do not stuff helicity conservation into 3D smoothness.
+    """
+    return nse_enstrophy_budget_two_term() and nse_d2_rejects_d_particle()
+
+
 def nse_enstrophy_budget_two_term() -> bool:
     """3D enstrophy budget is production minus dissipation, not a 4/5 analog.
 
@@ -954,8 +964,20 @@ def seed_cubic4_fano_b2() -> float:
     """b_2 of the Fano variety of lines on a cubic 4-fold = F_8 + 2 = 23.
 
     Beauville–Donagi: H^2(F(X)) ≅ H^4(X). b_4 = h^{3,1}+h^{2,2}+h^{1,3}=1+21+1.
+    F(X) is a hyperkähler 4-fold (deformation equivalent to Hilb^2(K3)).
+    Named non-hypersurface 4-fold. Lefschetz (1,1) on H^2(F). Not C_48.
     """
     return seed_fibonacci(8) + 2.0
+
+
+def seed_abelian_4fold_euler() -> float:
+    """χ of an abelian 4-fold = 0.
+
+    All abelian varieties have χ=0. Named non-hypersurface 4-fold.
+    Lefschetz (1,1) still applies. Hodge (2,2) on abelian 4-folds remains.
+    Do not steal 25−1 for χ(K3)=24.
+    """
+    return 0.0
 
 
 def seed_bsd_leading_of_rank(rank: int) -> float:

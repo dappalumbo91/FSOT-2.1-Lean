@@ -36,7 +36,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 8. **Enstrophy budget is two terms, not a 4/5 analog.** \(\frac{d}{dt}\int\lvert\omega\rvert^2/2=\int\omega_i S_{ij}\omega_j-\nu\int\lvert\nabla\omega\rvert^2\). 2D production vanishes. 3D production *is* stretching. Mean \(4/5\) is energy flux, not enstrophy conservation. Isolated “enstrophy 4/5” is the wrong orifice.
 
-**Remainder:** whether production stays BKM-controlled. That *is* Clay smoothness. Do not stuff the budget or the valve into existence.
+9. **Helicity is a 3D Euler invariant, not existence.** \(H=\int v\cdot\omega\). Conserved for Euler (\(\mu=0\)). NSE dissipates it through Fluid viscosity. 2D stretching vanishes, so helicity is not the 2D orifice. Isolated “helicity conservation ⇒ smooth” is inviscid stuffing.
+
+**Remainder:** whether stretching production stays BKM-controlled. That *is* Clay smoothness. Do not stuff helicity, the budget, or the valve into existence.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 

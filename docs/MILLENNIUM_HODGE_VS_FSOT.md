@@ -28,7 +28,9 @@ These are **two different objects**. Related geometry (Hodge classes vs algebrai
 
 8. **Next named 4-folds after cubic (not \(C_{48}\)).** Same Chern family in \(\mathbb{CP}^5\): quartic \(\chi=188\) (not a K3 — K3 is a quartic *surface* in \(\mathbb{CP}^3\)); sextic \(\chi=2610\) (first Calabi–Yau hypersurface 4-fold, \(K_X=(d-6)h=0\)). Lefschetz hyperplane still applies.
 
-**Remainder:** non-hypersurface 4-folds. Do not hunt \(C_{48}\). Do not steal \(25-1\) for \(\chi(\mathrm{K3})\).
+9. **Named non-hypersurface 4-folds.** Fano of lines on a cubic is a hyperkähler 4-fold, \(b_2=F_8+2=23\) (Beauville–Donagi; deformation equivalent to \(\mathrm{Hilb}^2(\mathrm{K3})\)). Lefschetz (1,1) on \(H^2(F)\). Abelian 4-fold \(\chi=0\).
+
+**Remainder:** Hodge (2,2) on abelian and hyperkähler 4-folds. Do not hunt \(C_{48}\). Do not steal \(25-1\) for \(\chi(\mathrm{K3})\).
 
 Clay’s *proof object* (Hodge classes algebraic on every projective manifold) stays `OPEN_NOT_CLAIMED`. Native Lefschetz + named surfaces stay executable.
 

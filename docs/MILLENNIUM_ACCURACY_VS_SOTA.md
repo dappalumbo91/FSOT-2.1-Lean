@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T19:52:19.057525+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T20:00:29.749599+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,9 +18,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 57 |
-| …of those, inside FSOT 0.5% green | 51 |
-| …of those, inside 0.05% aspiration | 42 |
+| Beats or meets public SOTA | 58 |
+| …of those, inside FSOT 0.5% green | 52 |
+| …of those, inside 0.05% aspiration | 43 |
 | **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
@@ -61,6 +61,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Navier–Stokes existence and smoothness | BKM magnitude is not direction: blow-up iff ∫||ω||_∞ dt diverges; Constantin–Fefferman is Lipschitz vorticity direction | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Stretching is Particle zoom (4/5 uses D_particle); viscosity is Fluid zoom (dark Stokes). Isolated BKM/CF is the theorem-ladder | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | 3D enstrophy budget is production minus dissipation: 2D production ≡ 0; 3D has no 4/5 analog for enstrophy | 0 | — | — | n/a | n/a | structure |
+| Navier–Stokes existence and smoothness | 3D Euler conserves helicity ∫v·ω; 2D stretching vanishes so helicity is not the 3D orifice; NSE dissipates helicity via Fluid μ | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Seed-locked transport + 1D Stokes mode at Fluid nest D (dark) | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | von Kármán log-law κ = A_bleed/φ² (wall shear). Not 3D smoothness. | 0.02291 | 2.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 4.167 | beats/meets | n/a | n/a | beats_sota_right_object |
@@ -102,6 +103,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Birch and Swinnerton-Dyer | Gross–Zagier–Kolyvagin: analytic rank 0 or 1 implies algebraic rank = analytic rank. Remainder is rank ≥2 | 0 | — | — | n/a | n/a | structure |
 | Birch and Swinnerton-Dyer | Analytic rank ≥2 native object is already vanishing+Sha (643a1/11197a1/501029.a1/19047851.a1). Naming Kato next is theorem enumeration | 0 | — | — | n/a | n/a | structure |
 | Birch and Swinnerton-Dyer | Rank ≥2 regulator is Néron-Tate height Gram det (same orifice as Hassett extra-class Gram). Kolyvagin is one Heegner point (r=1) | 0 | — | — | n/a | n/a | structure |
+| Birch and Swinnerton-Dyer | BSD volume two zooms: Tamagawa is local (bad primes); regulator is global height Gram. 11642a1 Tam=2 vs 643a1 Tam=1, both Sha=1 | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Named first objects: ℂP² (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20. | — | — | — | n/a | n/a | open_track_next |
 | Hodge conjecture | χ(ℂP²)=φ²+φ^{-2}=Lucas L_2 (named surface Euler number, not Hodge classes) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Lefschetz (1,1) on ℂP² — proven first Hodge-type theorem, not Clay (p,p) for p>1 | 0 | — | — | n/a | n/a | structure |
@@ -144,6 +146,8 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Hodge conjecture | χ of a smooth quartic 4-fold ⊂ CP^5 = 188 (same Chern as cubic at d=4). Not a K3 | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | χ of a smooth sextic 4-fold ⊂ CP^5 = 2610 (first Calabi–Yau hypersurface 4-fold, K=(d−6)h=0) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Named hypersurface 4-folds after cubic: quartic χ=188, sextic CY χ=2610. Lefschetz hyperplane still applies. Not C_48 | 0 | — | — | n/a | n/a | structure |
+| Hodge conjecture | Fano of lines on a cubic 4-fold is a named hyperkähler 4-fold (b_2=F_8+2=23). Lefschetz (1,1) on H^2(F). Not C_48 | 0 | — | — | n/a | n/a | structure |
+| Hodge conjecture | χ of an abelian 4-fold = 0. Named non-hypersurface 4-fold. Lefschetz (1,1) applies; Hodge (2,2) remains | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Primitive (2,2) on a cubic 4-fold — first open hypersurface case after Grassmannians | — | — | — | n/a | n/a | structure |
 
 ## What this does and does not say
@@ -178,6 +182,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | BKM magnitude vs direction | **Split holds** (||ω|| is BKM; ξ=ω/|ω| is Constantin–Fefferman) | Isolated criteria are one zoom. |
 | Stretch vs visc two zooms | **Particle floor vs Fluid tank (dark)** | Isolated BKM/CF is the theorem-ladder. Valve is not existence. |
 | 3D enstrophy budget | **Two terms** (production − dissipation) | No 4/5 analog for 3D enstrophy. 2D production ≡ 0. |
+| 3D helicity | **Euler invariant; NSE dissipates** | Not 2D. Isolated conservation is inviscid stuffing. |
 | L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |
 | L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |
 | Reg(389a1) | **POOF vs LMFDB — 0.67% WIP** | Néron-Tate pairing. Not the BSD leading term. |
@@ -210,6 +215,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Kolyvagin r=0,1 | **Named proven rank=ord L** | External check, not a new seed. |
 | Rank ≥2 native | **Vanishing+Sha already executable** | Do not enumerate Kato. Remainder is Clay equality. |
 | Regulator Gram | **Néron-Tate height det** (Hassett orifice) | r=1 is one Heegner point. r≥2 is a lattice. |
+| Tam local vs Reg global | **Two zooms** (11642 Tam=2 vs 643 Tam=1, both Sha=1) | Do not swallow Tam into Reg. |
 | χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |
 | χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |
 | Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |
@@ -250,7 +256,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Unnamed no-K3 | **No Gram seed** (no named surface) | FSOT seeds attach to named varieties. Do not hunt C_48. |
 | Quartic 4-fold χ | **Meets 188** (same Chern as cubic at d=4) | Not a K3 (K3 is a quartic surface). |
 | Sextic 4-fold χ | **Meets 2610** (first CY hypersurface 4-fold) | K=(d−6)h=0. |
-| Hypersurface 4-folds after cubic | **Named** | Remainder is non-hypersurface 4-folds. |
+| Hypersurface 4-folds after cubic | **Named** | Remainder was non-hypersurface 4-folds. |
+| HK Fano of lines | **Named** (b_2=23, Beauville–Donagi) | Lefschetz (1,1) on H^2(F). Not C_48. |
+| Abelian 4-fold χ | **Meets 0** | Lefschetz (1,1) applies. Hodge (2,2) remains. |
 | Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |
 | NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5, 2D 3/2, Onsager 1/3, BKM named. Existence on R^3 is whether stretching stays BKM-integrable. |
 
@@ -264,9 +272,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |
 | Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |
 | Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |
-| 3D NSE existence on R^3 | Enstrophy budget is production − dissipation. No 4/5 analog for 3D enstrophy. | Do not stuff the budget into existence. |
-| BSD integer rank | r≥2 Reg is height Gram (Hassett orifice). Volume already native. | Clay equality for r≥2. Do not enumerate Kato. |
-| Hodge extra classes without K3 | Quartic/sextic hypersurface 4-folds named. Unnamed no-K3 has no Gram seed. | Remainder: non-hypersurface 4-folds. Do not hunt C_48. |
+| 3D NSE existence on R^3 | Helicity is 3D Euler invariant; NSE dissipates it. Enstrophy budget two-term. | Do not stuff helicity or the budget into existence. |
+| BSD integer rank | Tam local vs Reg global. r≥2 Reg is height Gram. | Clay equality for r≥2. Do not enumerate Kato. |
+| Hodge extra classes without K3 | HK Fano of lines named. Abelian 4-fold χ=0. | Remainder: Hodge (2,2) on abelian/HK 4-folds. Do not hunt C_48. |
 | P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |
 
 ## Reproduce
@@ -282,4 +290,4 @@ Navier–Stokes object split: [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FS
 BSD object split: [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md).
 Hodge object split: [`MILLENNIUM_HODGE_VS_FSOT.md`](MILLENNIUM_HODGE_VS_FSOT.md).
 
-Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE enstrophy budget (production − dissipation; no 4/5 analog), BSD Clay rank=ord L for r≥2 (Reg is height Gram; do not name Kato), non-hypersurface 4-folds (quartic/sextic named; do not hunt C_48). Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, 2D 3/2, Onsager 1/3, BKM, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, Reg(234446a1)=(φ²+1)·e·POOF, χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue–flavor 2×2 V=POOF·K; isolated (φ²+1)·K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. E→rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.
+Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE stretching BKM (helicity is Euler-only; budget is two-term), BSD Clay rank=ord L for r≥2 (Tam local vs Reg global; do not name Kato), Hodge (2,2) on abelian/HK 4-folds (do not hunt C_48). Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, 2D 3/2, Onsager 1/3, BKM, L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, Reg(234446a1)=(φ²+1)·e·POOF, χ(CP²)=L_2, χ(CP³)=L_3, Lefschetz (1,1), Hodge (2,2) on CP³, hard Lefschetz, Cook–Levin SAT. Glueball 0++ in string units is φ²+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue–flavor 2×2 V=POOF·K; isolated (φ²+1)·K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/γ³, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))·POOF envelope. E→rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. α_s(M_Z) QCD orifice is 2(POOF/ψ_con)², not geometric 1/(eπ); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|Δlat|<POOF·180/π), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten.

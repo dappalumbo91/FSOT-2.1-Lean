@@ -77,6 +77,8 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
 
 14. **Regulator is a height Gram (Hassett orifice).** \(\mathrm{Reg}(E)=\det\langle P_i,P_j\rangle_{\mathrm{NT}}\) of \(r\) generators. Hassett discriminant is \(\det\) of the extra-class Gram. Rank 1 is a \(1\times 1\) height (one Heegner point). Rank \(\ge 2\) is a lattice. Sha volume already uses that Gram. Isolated “need Kato” is the wrong remainder.
 
+15. **Tamagawa is local; regulator is global.** \(\prod c_p\) is bad-prime local data. Reg is the global height Gram. 11642a1 Tam=2 vs 643a1 Tam=1, both \(\mathrm{Sha}_{\mathrm{an}}=1\). Same two-zoom as Particle stretching vs Fluid viscosity. Isolated “one volume number” swallows Tam into Reg.
+
 **Remainder:** Clay’s equality \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\). Do not enumerate Euler systems. Do not Weierstrass\(\to\mathbb{Z}\).
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.

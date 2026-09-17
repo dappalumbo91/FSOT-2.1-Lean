@@ -11,10 +11,10 @@ Question/answer (not vs-SOTA): [`MILLENNIUM_YM_VS_FSOT.md`](../docs/MILLENNIUM_Y
 
 | Bucket | n |
 |--------|---|
-| Comparable | 54 |
-| Beats/meets SOTA | 57 |
-| Green 0.5% | 51 |
-| Aspiration 0.05% | 42 |
+| Comparable | 55 |
+| Beats/meets SOTA | 58 |
+| Green 0.5% | 52 |
+| Aspiration 0.05% | 43 |
 | SOTA beat, accuracy WIP | 4 |
 | Next dig (open tracks) | 3 |
 | Clay remaining | 6, not claimed |
@@ -94,6 +94,6 @@ We were naming the next public theorem (BKM → CF → next Lipschitz; Kolyvagin
 
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
-| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | Enstrophy budget is production − dissipation. No 4/5 analog for 3D enstrophy. | Stuffing the budget into existence |
-| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\) | Reg is height Gram (Hassett orifice). Volume already native. | Enumerating Kato; Weierstrass\(\to\mathbb{Z}\) |
-| HODGE-TAIL | Non-hypersurface 4-folds | Quartic \(\chi=188\), sextic CY \(\chi=2610\) named. Unnamed no-K3 has no Gram seed. | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
+| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | Helicity is 3D Euler invariant; NSE dissipates it. Enstrophy budget two-term. | Stuffing helicity or the budget into existence |
+| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\) | Tam local vs Reg global. Height Gram native. | Enumerating Kato; Weierstrass\(\to\mathbb{Z}\) |
+| HODGE-TAIL | Hodge (2,2) on abelian/HK 4-folds | HK Fano of lines named. Abelian \(\chi=0\). Unnamed no-K3 has no Gram seed. | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
