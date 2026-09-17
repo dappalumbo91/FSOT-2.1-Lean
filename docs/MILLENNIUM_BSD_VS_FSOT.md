@@ -81,7 +81,9 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
 
 16. **Clay rank \(=\) ord \(L\) for every \(E\) is not a measured function.** LMFDB publishes \(\Omega\), Reg, Tam, \(L^{(r)}/r!\), \(\mathrm{Sha}_{\mathrm{an}}\) on named curves. Nobody publishes a residual for “rank \(=\) ord \(L\) \(\forall E\).” Working data: first-of-rank seeds and Sha volume on those curves.
 
-**Remainder:** Clay’s equality as a theorem — not a missing LMFDB column. Do not hunt Kato for a non-function. Do not Weierstrass\(\to\mathbb{Z}\).
+17. **Sha panel vs LMFDB.** Run the volume function on the named curves we have. Hit rate vs \(\mathrm{Sha}_{\mathrm{an}}=1\) is the measured compare. Not Clay \(\forall E\).
+
+**Remainder:** Clay’s equality as a theorem. Do not hunt Kato. Do not Weierstrass\(\to\mathbb{Z}\).
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 

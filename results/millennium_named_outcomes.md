@@ -11,10 +11,10 @@ Question/answer (not vs-SOTA): [`MILLENNIUM_YM_VS_FSOT.md`](../docs/MILLENNIUM_Y
 
 | Bucket | n |
 |--------|---|
-| Comparable | 55 |
-| Beats/meets SOTA | 58 |
-| Green 0.5% | 52 |
-| Aspiration 0.05% | 43 |
+| Comparable | 57 |
+| Beats/meets SOTA | 60 |
+| Green 0.5% | 54 |
+| Aspiration 0.05% | 45 |
 | SOTA beat, accuracy WIP | 4 |
 | Next dig (open tracks) | 3 |
 | Clay remaining | 6, not claimed |

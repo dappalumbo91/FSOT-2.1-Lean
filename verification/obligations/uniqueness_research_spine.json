@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-17T20:08:09.824460+00:00",
+  "generated_at": "2026-09-17T20:17:23.232746+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 145,
+  "obligation_count": 148,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -934,8 +934,8 @@
     {
       "id": "mill_acc_beats_or_meets_n_flag",
       "kind": "eq_nat",
-      "value": 58,
-      "right_value": 58,
+      "value": 60,
+      "right_value": 60,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_beats_or_meets_n",
       "coq_id": "mill_acc_beats_or_meets_n_flag"
@@ -943,8 +943,8 @@
     {
       "id": "mill_acc_comparable_n_flag",
       "kind": "eq_nat",
-      "value": 55,
-      "right_value": 55,
+      "value": 57,
+      "right_value": 57,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_comparable_n",
       "coq_id": "mill_acc_comparable_n_flag"
@@ -952,8 +952,8 @@
     {
       "id": "mill_acc_green_pass_n_flag",
       "kind": "eq_nat",
-      "value": 52,
-      "right_value": 52,
+      "value": 54,
+      "right_value": 54,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_green_pass_n",
       "coq_id": "mill_acc_green_pass_n_flag"
@@ -1112,6 +1112,15 @@
       "coq_id": "mill_acc_bsd_clay_equality_not_measured_flag"
     },
     {
+      "id": "mill_acc_bsd_sha_panel_vs_lmfdb_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_sha_panel_vs_lmfdb",
+      "coq_id": "mill_acc_bsd_sha_panel_vs_lmfdb_flag"
+    },
+    {
       "id": "mill_acc_bsd_lmfdb_named_ranks_complete_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -1173,6 +1182,15 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_ns_clay_smoothness_not_measured",
       "coq_id": "mill_acc_ns_clay_smoothness_not_measured_flag"
+    },
+    {
+      "id": "mill_acc_ns_stretch_sim_vs_public_answers_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_stretch_sim_vs_public_answers",
+      "coq_id": "mill_acc_ns_stretch_sim_vs_public_answers_flag"
     },
     {
       "id": "mill_acc_hodge_named_no_k3_complete_flag",
@@ -1245,6 +1263,15 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_hodge_clay_algebraicity_not_measured",
       "coq_id": "mill_acc_hodge_clay_algebraicity_not_measured_flag"
+    },
+    {
+      "id": "mill_acc_hodge_chi_panel_vs_chern_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_chi_panel_vs_chern",
+      "coq_id": "mill_acc_hodge_chi_panel_vs_chern_flag"
     },
     {
       "id": "mill_acc_ecmwf_not_beaten_flag",

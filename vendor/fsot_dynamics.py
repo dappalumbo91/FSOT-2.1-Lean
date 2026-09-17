@@ -164,6 +164,111 @@ def viscous_mode_rhs_error_pct(
     return abs(got - want) / max(abs(want), 1e-30) * 100.0
 
 
+def nse_stretch_rhs(omega: float, alpha: float, mu: float, k: float = 1.0) -> float:
+    """Cartoon vorticity: dω/dt = α ω² − μ k² ω.
+
+    α=0 is 2D/Stokes (no stretching). α>0 is 3D stretching. Not Clay NSE.
+    Coefficients seed-locked. Fluid stays dark.
+    """
+    return float(alpha) * float(omega) ** 2 - float(mu) * float(k) ** 2 * float(omega)
+
+
+def nse_stretch_integrate(
+    alpha: float,
+    mu: float,
+    omega0: float = 1.0,
+    t_end: float | None = None,
+    n_steps: int = 400,
+    k: float = 1.0,
+    blow_cap: float = 1.0e6,
+) -> dict[str, float | bool]:
+    """RK4 BKM proxy. finite=False if |ω| exceeds blow_cap or goes non-finite."""
+    gamma = float(mu) * float(k) ** 2
+    a = float(alpha)
+    w0 = float(omega0)
+    if t_end is None:
+        t_end = 8.0 / max(gamma, abs(a) * max(abs(w0), 1e-12), 1e-12)
+    dt = float(t_end) / int(n_steps)
+    w = w0
+    t = 0.0
+    bkm = 0.0
+    for _ in range(int(n_steps)):
+        if (not math.isfinite(w)) or abs(w) > blow_cap:
+            return {
+                "finite": False,
+                "bkm": bkm,
+                "omega_end": w,
+                "t": t,
+                "t_end": float(t_end),
+                "alpha": a,
+                "mu": float(mu),
+                "gamma": gamma,
+            }
+
+        def rhs(om: float) -> float:
+            return nse_stretch_rhs(om, a, mu, k)
+
+        k1 = rhs(w)
+        k2 = rhs(w + 0.5 * dt * k1)
+        k3 = rhs(w + 0.5 * dt * k2)
+        k4 = rhs(w + dt * k3)
+        w = w + (dt / 6.0) * (k1 + 2.0 * k2 + 2.0 * k3 + k4)
+        bkm += abs(w) * dt
+        t += dt
+    finite = bool(math.isfinite(w) and abs(w) <= blow_cap)
+    return {
+        "finite": finite,
+        "bkm": bkm,
+        "omega_end": w,
+        "t": t,
+        "t_end": float(t_end),
+        "alpha": a,
+        "mu": float(mu),
+        "gamma": gamma,
+    }
+
+
+def nse_stretch_sim_panel() -> dict[str, object]:
+    """Seed-locked stretch/visc cartoon vs public *answers*, not a Clay residual.
+
+    2D proven global ↔ α=0 stays finite.
+    Euler more singular than NSE ↔ μ=0 blows, μ>0 may not.
+    DNS: no blow-up observed at accessible Re (not a theorem).
+    Do not claim 3D NSE smoothness.
+    """
+    fluid_d = float(derived_D_eff("Fluid_Dynamics"))
+    mu = viscosity_eff(fluid_d)
+    alpha_3d = f(POOF)
+    two_d = nse_stretch_integrate(0.0, mu)
+    euler = nse_stretch_integrate(alpha_3d, 0.0)
+    nse3 = nse_stretch_integrate(alpha_3d, mu)
+    gamma = mu
+    thresh = gamma / max(alpha_3d, 1e-30)
+    agrees_2d = bool(two_d["finite"])
+    agrees_euler_worse = (not bool(euler["finite"])) and bool(nse3["finite"])
+    agrees_dns_no_blowup = bool(nse3["finite"])
+    return {
+        "fluid_D": fluid_d,
+        "mu": mu,
+        "alpha_3d": alpha_3d,
+        "threshold_omega": thresh,
+        "two_d_finite": bool(two_d["finite"]),
+        "euler_finite": bool(euler["finite"]),
+        "nse3_finite": bool(nse3["finite"]),
+        "two_d_omega_end": float(two_d["omega_end"]),
+        "nse3_omega_end": float(nse3["omega_end"]),
+        "euler_bkm": float(euler["bkm"]),
+        "nse3_bkm": float(nse3["bkm"]),
+        "agrees_2d_proven_regular": agrees_2d,
+        "agrees_euler_more_singular": agrees_euler_worse,
+        "agrees_dns_no_blowup_accessible_Re": agrees_dns_no_blowup,
+        "public_2d_answer": "global",
+        "public_euler_answer": "open_more_singular_than_NSE",
+        "public_dns_answer": "no_blowup_observed_accessible_Re",
+        "clay_claimed": False,
+    }
+
+
 def equilibrium_scalar(domain: str = "Cosmology") -> float:
     return f(domain_scalar(domain))
 

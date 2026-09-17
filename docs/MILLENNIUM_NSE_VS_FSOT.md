@@ -40,7 +40,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 10. **Clay smoothness is not a measured function.** Lab and DNS publish inertial-range flux and wall \(\kappa\). Nobody publishes a % error on “is NSE smooth?” Isolated “solve existence” looks for a residual that does not exist. Working data: \(4/5\), \(3/2\), \(1/3\) exact; \(\kappa\) vs log-law scatter.
 
-**Remainder:** Clay’s yes/no on \(\mathbb{R}^3\) smoothness — not a seed-shaped object. Do not stuff working cascade numbers into that yes/no.
+11. **Stretch/visc cartoon vs other answers.** Seed-locked ODE \(d\omega/dt=\alpha\omega^2-\mu k^2\omega\) with \(\alpha=\mathrm{POOF}\), \(\mu=\mu(\mathrm{Fluid})\). 2D (\(\alpha=0\)) stays regular — agrees with the proven 2D theorem. 3D Euler (\(\mu=0\)) blows — agrees Euler is more singular. 3D NSE toy stays regular (\(\omega_0=1<\mu/\mathrm{POOF}\)) — agrees with DNS: no blow-up at accessible Re. Not Clay smoothness.
+
+**Remainder:** Clay’s yes/no on \(\mathbb{R}^3\) — a theorem, not this cartoon. Do not stuff the toy into existence.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 

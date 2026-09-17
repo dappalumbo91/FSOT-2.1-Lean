@@ -479,6 +479,7 @@ def build_obligations() -> list[dict]:
         ("mill_acc_bsd_regulator_is_height_gram", acc["bsd_regulator_is_height_gram"]),
         ("mill_acc_bsd_tam_local_reg_global", acc["bsd_tam_local_reg_global"]),
         ("mill_acc_bsd_clay_equality_not_measured", acc["bsd_clay_equality_not_measured"]),
+        ("mill_acc_bsd_sha_panel_vs_lmfdb", acc["bsd_sha_panel_vs_lmfdb"]),
         ("mill_acc_bsd_lmfdb_named_ranks_complete", acc["bsd_lmfdb_named_ranks_complete"]),
         ("mill_acc_ns_bkm_named", acc["ns_bkm_named"]),
         ("mill_acc_ns_l2_cascade_not_l_inf", acc["ns_l2_cascade_not_l_inf"]),
@@ -486,6 +487,7 @@ def build_obligations() -> list[dict]:
         ("mill_acc_ns_enstrophy_budget_two_term", acc["ns_enstrophy_budget_two_term"]),
         ("mill_acc_ns_helicity_3d_not_2d", acc["ns_helicity_3d_not_2d"]),
         ("mill_acc_ns_clay_smoothness_not_measured", acc["ns_clay_smoothness_not_measured"]),
+        ("mill_acc_ns_stretch_sim_vs_public_answers", acc["ns_stretch_sim_vs_public_answers"]),
         ("mill_acc_hodge_named_no_k3_complete", acc["hodge_hassett_named_no_k3_complete"]),
         ("mill_acc_hodge_k3_tail_lefschetz", acc["hodge_hassett_k3_tail_lefschetz"]),
         ("mill_acc_hodge_very_general_cubic_only_h2", acc["hodge_very_general_cubic_only_h2"]),
@@ -494,6 +496,7 @@ def build_obligations() -> list[dict]:
         ("mill_acc_hodge_hk4_fano_lines_named", acc["hodge_hk4_fano_lines_named"]),
         ("mill_acc_hodge_abelian4_euler_exact", acc["hodge_abelian4_euler_exact"]),
         ("mill_acc_hodge_clay_algebraicity_not_measured", acc["hodge_clay_algebraicity_not_measured"]),
+        ("mill_acc_hodge_chi_panel_vs_chern", acc["hodge_chi_panel_vs_chern"]),
         ("mill_acc_ecmwf_not_beaten", acc["ecmwf_not_beaten"]),
         ("mill_acc_weather_quiet_fill_still_miss", acc["weather_quiet_fill_still_miss"]),
     ):

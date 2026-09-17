@@ -24,7 +24,7 @@ from typing import Any
 
 try:
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
-    from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct
+    from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -96,7 +96,7 @@ except ImportError:  # pragma: no cover
 
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
-    from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct
+    from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -710,6 +710,53 @@ def _stamp_accuracy_lanes(rec: dict[str, Any]) -> dict[str, Any]:
         rec["progress"] = "open_track_next"
         rec["next_dig"] = True
     return rec
+
+
+def _bsd_sha_panel() -> dict[str, Any]:
+    """Sha vs 1 on named LMFDB curves. Hit rate vs data, not Clay ∀E."""
+    specs: list[tuple[str, float, float, float, float, float]] = [
+        ("11a1", LMFDB_11A1_L, LMFDB_11A1_OMEGA, LMFDB_11A1_TAM, LMFDB_11A1_TORS, 1.0),
+        ("17a1", LMFDB_17A1_L, LMFDB_17A1_OMEGA, LMFDB_17A1_TAM, LMFDB_17A1_TORS, 1.0),
+        ("19a1", LMFDB_19A1_L, LMFDB_19A1_OMEGA, LMFDB_19A1_TAM, LMFDB_19A1_TORS, 1.0),
+        ("37a1", LMFDB_37A1_LPRIME, LMFDB_37A1_OMEGA, LMFDB_37A1_TAM, LMFDB_37A1_TORS, LMFDB_37A1_REG),
+        ("53a1", LMFDB_53A1_LPRIME, LMFDB_53A1_OMEGA, LMFDB_53A1_TAM, LMFDB_53A1_TORS, LMFDB_53A1_REG),
+        ("61a1", LMFDB_61A1_LPRIME, LMFDB_61A1_OMEGA, LMFDB_61A1_TAM, LMFDB_61A1_TORS, LMFDB_61A1_REG),
+        ("389a1", LMFDB_389A1_SPECIAL, LMFDB_389A1_OMEGA, LMFDB_389A1_TAM, LMFDB_389A1_TORS, LMFDB_389A1_REG),
+        ("5077a1", LMFDB_5077A1_SPECIAL, LMFDB_5077A1_OMEGA, LMFDB_5077A1_TAM, LMFDB_5077A1_TORS, LMFDB_5077A1_REG),
+        ("234446a1", LMFDB_234446A1_SPECIAL, LMFDB_234446A1_OMEGA, LMFDB_234446A1_TAM, LMFDB_234446A1_TORS, LMFDB_234446A1_REG),
+        ("643a1", LMFDB_643A1_SPECIAL, LMFDB_643A1_OMEGA, LMFDB_643A1_TAM, LMFDB_643A1_TORS, LMFDB_643A1_REG),
+        ("433a1", LMFDB_433A1_SPECIAL, LMFDB_433A1_OMEGA, LMFDB_433A1_TAM, LMFDB_433A1_TORS, LMFDB_433A1_REG),
+        ("11197a1", LMFDB_11197A1_SPECIAL, LMFDB_11197A1_OMEGA, LMFDB_11197A1_TAM, LMFDB_11197A1_TORS, LMFDB_11197A1_REG),
+        ("11642a1", LMFDB_11642A1_SPECIAL, LMFDB_11642A1_OMEGA, LMFDB_11642A1_TAM, LMFDB_11642A1_TORS, LMFDB_11642A1_REG),
+        ("501029.a1", LMFDB_501029A1_SPECIAL, LMFDB_501029A1_OMEGA, LMFDB_501029A1_TAM, LMFDB_501029A1_TORS, LMFDB_501029A1_REG),
+        ("545723.a1", LMFDB_545723A1_SPECIAL, LMFDB_545723A1_OMEGA, LMFDB_545723A1_TAM, LMFDB_545723A1_TORS, LMFDB_545723A1_REG),
+        ("19047851.a1", LMFDB_19047851A1_SPECIAL, LMFDB_19047851A1_OMEGA, LMFDB_19047851A1_TAM, LMFDB_19047851A1_TORS, LMFDB_19047851A1_REG),
+        ("64921931.a1", LMFDB_64921931A1_SPECIAL, LMFDB_64921931A1_OMEGA, LMFDB_64921931A1_TAM, LMFDB_64921931A1_TORS, LMFDB_64921931A1_REG),
+    ]
+    hits = 0
+    for _lab, lead, om, tam, tors, reg in specs:
+        sha = bsd_analytic_sha(lead, om, tam, tors, reg)
+        if _err_pct(sha, 1.0) < 0.5:
+            hits += 1
+    n = len(specs)
+    return {"hits": hits, "n": n, "hit_pct": 100.0 * hits / n, "labels": [s[0] for s in specs]}
+
+
+def _hodge_chi_panel() -> dict[str, Any]:
+    """Named-variety χ vs Chern/literature. Hit rate vs data, not Clay algebraicity."""
+    pairs = [
+        ("CP2", seed_cp2_euler(), 3.0),
+        ("CP3", seed_cp3_euler(), 4.0),
+        ("CP2xCP2", seed_cp2xcp2_euler(), 9.0),
+        ("Gr24", seed_gr24_euler(), 6.0),
+        ("cubic4", seed_cubic_4fold_euler(), 27.0),
+        ("quartic4", seed_quartic_4fold_euler(), QUARTIC_4FOLD_CHI),
+        ("sextic4", seed_sextic_4fold_euler(), SEXTIC_4FOLD_CHI),
+        ("abelian4", seed_abelian_4fold_euler(), ABELIAN_4FOLD_CHI),
+    ]
+    hits = sum(1 for _n, c, m in pairs if abs(c - m) < 1e-9)
+    n = len(pairs)
+    return {"hits": hits, "n": n, "hit_pct": 100.0 * hits / n, "names": [p[0] for p in pairs]}
 
 
 def run_accuracy_scoreboard() -> list[dict[str, Any]]:
@@ -1627,6 +1674,26 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             native_status="EXECUTABLE",
             note="Inversion. APPLY step 1: name the measured object. Cascade numbers and κ have data. Clay smoothness does not. Do not hunt a seed for a non-function. Do not stuff 4/5 into existence.",
             extra={"working": ["kolmogorov_45", "kraichnan_32", "onsager_13", "von_karman"], "clay_measured": None},
+        )
+    )
+    sim = nse_stretch_sim_panel()
+    sim_ok = bool(sim["agrees_2d_proven_regular"]) and bool(sim["agrees_euler_more_singular"]) and bool(sim["agrees_dns_no_blowup_accessible_Re"]) and not bool(sim["clay_claimed"])
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Seed-locked stretch/visc cartoon: 2D stays regular; 3D Euler toy blows; 3D NSE toy stays regular. Compare those answers to 2D theorem / Euler / DNS",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_stretch_sim_vs_public_answers",
+            computed=1.0 if sim_ok else 0.0,
+            measured=1.0,
+            public_sota_model="2D global is proven. Euler is more singular than NSE. DNS: no blow-up at accessible Re (not a theorem). Toy: α=POOF, μ=viscosity_eff(Fluid).",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="stretch_sim_agrees_public_answers" if sim_ok else "stretch_sim_disagrees",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Simulation vs other answers, not a Clay residual. 2D toy finite ↔ proven global. Euler toy blows, NSE toy damps ↔ DNS no blow-up at accessible Re. Do not claim 3D smoothness. Fluid stays dark. ω0=1 < μ/POOF so the viscous branch wins in the cartoon.",
+            extra=sim,
         )
     )
     wx = _weather_skill()
@@ -2735,6 +2802,26 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"working": ["first_of_rank_0_4", "sha_ranks_0_5", "tam_vs_reg"], "clay_measured": None},
         )
     )
+    sha_panel = _bsd_sha_panel()
+    sha_panel_ok = sha_panel["hits"] == sha_panel["n"] and sha_panel["n"] >= 17
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Sha vs 1 on named LMFDB curves (volume function vs data). Hit rate, not Clay rank=ord L ∀E",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_sha_panel_vs_lmfdb",
+            computed=float(sha_panel["hits"]),
+            measured=float(sha_panel["n"]),
+            public_sota_model="LMFDB analytic Sha=1 on these named curves. Panel is the measured volume function. Clay ∀E has no table.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="sha_panel_hits_lmfdb" if sha_panel_ok else "sha_panel_miss",
+            beats_or_meets_sota=sha_panel_ok,
+            native_status="EXECUTABLE",
+            note="Simulation vs data: n hits / n named curves. Not Clay equality for every E. Do not Weierstrass→ℤ. Do not hunt Kato.",
+            extra=sha_panel,
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3733,6 +3820,26 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"working": ["chi_named_4folds", "hassett_named_grams", "hk_fano_b2", "abelian_chi_0"], "clay_measured": None},
         )
     )
+    chi_panel = _hodge_chi_panel()
+    chi_panel_ok = chi_panel["hits"] == chi_panel["n"] and chi_panel["n"] >= 8
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Named-variety χ vs Chern/literature (panel hit rate). Not Clay algebraicity without a cycle",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_chi_panel_vs_chern",
+            computed=float(chi_panel["hits"]),
+            measured=float(chi_panel["n"]),
+            public_sota_model="Euler numbers from hypersurface Chern and χ(abelian)=0. Algebraicity without a named cycle has no residual.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="chi_panel_hits_chern" if chi_panel_ok else "chi_panel_miss",
+            beats_or_meets_sota=chi_panel_ok,
+            native_status="EXECUTABLE",
+            note="Simulation vs data: n exact χ / n named varieties. Cycle is the measurement for algebraicity. Do not hunt C_48. Do not steal 25−1 for K3.",
+            extra=chi_panel,
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3796,6 +3903,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_budg = next(r for r in rows if r["name"] == "ns_enstrophy_budget_two_term")
     ns_hel = next(r for r in rows if r["name"] == "ns_helicity_3d_not_2d")
     ns_nmeas = next(r for r in rows if r["name"] == "ns_clay_smoothness_not_a_measured_function")
+    ns_sim = next(r for r in rows if r["name"] == "ns_stretch_sim_vs_public_answers")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -3830,6 +3938,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_gram = next(r for r in rows if r["name"] == "bsd_regulator_is_height_gram_not_euler_system")
     bsd_tam = next(r for r in rows if r["name"] == "bsd_tamagawa_local_reg_global_two_zoom")
     bsd_nmeas = next(r for r in rows if r["name"] == "bsd_clay_equality_not_a_measured_function")
+    bsd_panel = next(r for r in rows if r["name"] == "bsd_sha_panel_vs_lmfdb")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -3875,6 +3984,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_hk = next(r for r in rows if r["name"] == "hodge_hk4_fano_lines_named_not_c48")
     hodge_ab = next(r for r in rows if r["name"] == "hodge_abelian4_euler")
     hodge_nmeas = next(r for r in rows if r["name"] == "hodge_clay_algebraicity_not_a_measured_function")
+    hodge_panel = next(r for r in rows if r["name"] == "hodge_chi_panel_vs_chern")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -3944,6 +4054,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_enstrophy_budget_two_term": 1 if ns_budg.get("verdict") == "enstrophy_budget_two_term" else 0,
         "ns_helicity_3d_not_2d": 1 if ns_hel.get("verdict") == "helicity_3d_not_2d" else 0,
         "ns_clay_smoothness_not_measured": 1 if ns_nmeas.get("verdict") == "clay_smoothness_not_measured" else 0,
+        "ns_stretch_sim_vs_public_answers": 1 if ns_sim.get("verdict") == "stretch_sim_agrees_public_answers" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -3980,6 +4091,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_regulator_is_height_gram": 1 if bsd_gram.get("verdict") == "regulator_is_height_gram" else 0,
         "bsd_tam_local_reg_global": 1 if bsd_tam.get("verdict") == "tam_local_reg_global" else 0,
         "bsd_clay_equality_not_measured": 1 if bsd_nmeas.get("verdict") == "clay_bsd_not_measured" else 0,
+        "bsd_sha_panel_vs_lmfdb": 1 if bsd_panel.get("fsot_green") == "pass" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -4025,6 +4137,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_hk4_fano_lines_named": 1 if hodge_hk.get("verdict") == "hk4_fano_lines_named" else 0,
         "hodge_abelian4_euler_exact": 1 if hodge_ab["beats_or_meets_sota"] else 0,
         "hodge_clay_algebraicity_not_measured": 1 if hodge_nmeas.get("verdict") == "clay_hodge_not_measured" else 0,
+        "hodge_chi_panel_vs_chern": 1 if hodge_panel.get("fsot_green") == "pass" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -4368,6 +4481,7 @@ if __name__ == "__main__":
         and s["ns_enstrophy_budget_two_term"] == 1
         and s["ns_helicity_3d_not_2d"] == 1
         and s["ns_clay_smoothness_not_measured"] == 1
+        and s["ns_stretch_sim_vs_public_answers"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
@@ -4404,6 +4518,7 @@ if __name__ == "__main__":
         and s["bsd_regulator_is_height_gram"] == 1
         and s["bsd_tam_local_reg_global"] == 1
         and s["bsd_clay_equality_not_measured"] == 1
+        and s["bsd_sha_panel_vs_lmfdb"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1
@@ -4449,6 +4564,7 @@ if __name__ == "__main__":
         and s["hodge_hk4_fano_lines_named"] == 1
         and s["hodge_abelian4_euler_exact"] == 1
         and s["hodge_clay_algebraicity_not_measured"] == 1
+        and s["hodge_chi_panel_vs_chern"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

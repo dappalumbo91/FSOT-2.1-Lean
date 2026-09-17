@@ -32,7 +32,9 @@ These are **two different objects**. Related geometry (Hodge classes vs algebrai
 
 10. **Clay algebraicity without a named cycle is not a measured function.** Chern/Euler and Hassett Gram are published for named varieties. Algebraicity of an unnamed class has no residual % — **the cycle is the measurement**. Isolated “prove Hodge” looks for a function that is not measured.
 
-**Remainder:** Clay’s algebraicity on a general 4-fold — not a missing Gram. Do not hunt \(C_{48}\) for a non-function. Do not steal \(25-1\) for \(\chi(\mathrm{K3})\).
+11. **\(\chi\) panel vs Chern.** Named varieties ( \(\mathbb{CP}^n\), products, Gr(2,4), cubic/quartic/sextic 4-folds, abelian \(\chi=0\) ) vs the Chern formula. Hit rate is the measured compare. Not Clay algebraicity.
+
+**Remainder:** Clay’s algebraicity on a general 4-fold. Do not hunt \(C_{48}\). Do not steal \(25-1\) for \(\chi(\mathrm{K3})\).
 
 Clay’s *proof object* (Hodge classes algebraic on every projective manifold) stays `OPEN_NOT_CLAIMED`. Native Lefschetz + named surfaces stay executable.
 

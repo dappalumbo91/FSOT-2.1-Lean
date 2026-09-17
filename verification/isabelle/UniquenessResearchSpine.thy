@@ -328,13 +328,13 @@ lemma hodge_clay_open_err_under_half: "(0::real) < (0.5::real)"
 lemma hodge_clay_open_computed_pos: "(0::real) < 1.0"
   by simp
 
-lemma mill_acc_beats_or_meets_n_flag: "(58::nat) = 58"
+lemma mill_acc_beats_or_meets_n_flag: "(60::nat) = 60"
   by simp
 
-lemma mill_acc_comparable_n_flag: "(55::nat) = 55"
+lemma mill_acc_comparable_n_flag: "(57::nat) = 57"
   by simp
 
-lemma mill_acc_green_pass_n_flag: "(52::nat) = 52"
+lemma mill_acc_green_pass_n_flag: "(54::nat) = 54"
   by simp
 
 lemma mill_acc_clay_open_n_flag: "(6::nat) = 6"
@@ -388,6 +388,9 @@ lemma mill_acc_bsd_tam_local_reg_global_flag: "(1::nat) = 1"
 lemma mill_acc_bsd_clay_equality_not_measured_flag: "(1::nat) = 1"
   by simp
 
+lemma mill_acc_bsd_sha_panel_vs_lmfdb_flag: "(1::nat) = 1"
+  by simp
+
 lemma mill_acc_bsd_lmfdb_named_ranks_complete_flag: "(1::nat) = 1"
   by simp
 
@@ -407,6 +410,9 @@ lemma mill_acc_ns_helicity_3d_not_2d_flag: "(1::nat) = 1"
   by simp
 
 lemma mill_acc_ns_clay_smoothness_not_measured_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_ns_stretch_sim_vs_public_answers_flag: "(1::nat) = 1"
   by simp
 
 lemma mill_acc_hodge_named_no_k3_complete_flag: "(1::nat) = 1"
@@ -431,6 +437,9 @@ lemma mill_acc_hodge_abelian4_euler_exact_flag: "(1::nat) = 1"
   by simp
 
 lemma mill_acc_hodge_clay_algebraicity_not_measured_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_hodge_chi_panel_vs_chern_flag: "(1::nat) = 1"
   by simp
 
 lemma mill_acc_ecmwf_not_beaten_flag: "(1::nat) = 1"

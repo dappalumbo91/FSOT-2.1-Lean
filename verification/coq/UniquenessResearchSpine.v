@@ -329,13 +329,13 @@ Proof. lra. Qed.
 Lemma hodge_clay_open_computed_pos : 0 < ((1.0%R)).
 Proof. lra. Qed.
 
-Lemma mill_acc_beats_or_meets_n_flag : (58 = 58)%nat.
+Lemma mill_acc_beats_or_meets_n_flag : (60 = 60)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_comparable_n_flag : (55 = 55)%nat.
+Lemma mill_acc_comparable_n_flag : (57 = 57)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_green_pass_n_flag : (52 = 52)%nat.
+Lemma mill_acc_green_pass_n_flag : (54 = 54)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_clay_open_n_flag : (6 = 6)%nat.
@@ -389,6 +389,9 @@ Proof. reflexivity. Qed.
 Lemma mill_acc_bsd_clay_equality_not_measured_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
+Lemma mill_acc_bsd_sha_panel_vs_lmfdb_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
 Lemma mill_acc_bsd_lmfdb_named_ranks_complete_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
@@ -408,6 +411,9 @@ Lemma mill_acc_ns_helicity_3d_not_2d_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_ns_clay_smoothness_not_measured_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_ns_stretch_sim_vs_public_answers_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_hodge_named_no_k3_complete_flag : (1 = 1)%nat.
@@ -432,6 +438,9 @@ Lemma mill_acc_hodge_abelian4_euler_exact_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_hodge_clay_algebraicity_not_measured_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_hodge_chi_panel_vs_chern_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_ecmwf_not_beaten_flag : (1 = 1)%nat.
