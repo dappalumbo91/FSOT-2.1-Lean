@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-10T01:06:23.645173+00:00",
+  "generated_at": "2026-09-17T19:44:17.399756+00:00",
   "spine": "uniqueness_research",
-  "obligation_count": 119,
+  "obligation_count": 135,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "python_decimal": {
-    "passed": 119,
-    "total": 119,
+    "passed": 135,
+    "total": 135,
     "status": "passed"
   },
   "rust_f64_replay": {
     "status": "passed",
-    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n1-Lean\\verification\\rust\\fsot_uniqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.29s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
+    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\niqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.76s\n     Running unittests src\\lib.rs (C:\\Users\\damia\\AppData\\Local\\Temp\\fsot_uniqueness_research_replay_target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (C:\\Users\\damia\\AppData\\Local\\Temp\\fsot_uniqueness_research_replay_target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
   },
   "smt_z3": {
     "status": "passed",
@@ -48,11 +48,11 @@
       "identity_exact_count": 10,
       "boolean_pass_count": 8,
       "boolean_total": 8,
-      "free_color_damping_rate": 0.6684908749126979,
+      "free_color_damping_rate": 0.6707623914122531,
       "singlet_relaxation_rate": 0.4280434460598068,
-      "nuclear_S_eq": 0.9213094330291355,
+      "nuclear_S_eq": 0.9363875640629747,
       "Lambda_QCD_GeV": 0.21740442367390217,
-      "sigma_GeV2": 0.17658624702998535,
+      "sigma_GeV2": 0.17649137329543738,
       "theorem_status": "CANDIDATE_EXECUTABLE",
       "classical_path_integral_uniqueness": "OPEN_NOT_CLAIMED",
       "fsot_reframe": "Confinement = free-color modes damped by seed-locked \u03b3_color; color singlets are nuclear S_eq attractors. Not a continuum Yang\u2013Mills path-integral measure theorem."

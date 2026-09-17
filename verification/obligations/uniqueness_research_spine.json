@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-15T12:49:18.082749+00:00",
+  "generated_at": "2026-09-17T19:44:07.464438+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 125,
+  "obligation_count": 135,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -934,8 +934,8 @@
     {
       "id": "mill_acc_beats_or_meets_n_flag",
       "kind": "eq_nat",
-      "value": 41,
-      "right_value": 41,
+      "value": 55,
+      "right_value": 55,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_beats_or_meets_n",
       "coq_id": "mill_acc_beats_or_meets_n_flag"
@@ -943,8 +943,8 @@
     {
       "id": "mill_acc_comparable_n_flag",
       "kind": "eq_nat",
-      "value": 38,
-      "right_value": 38,
+      "value": 52,
+      "right_value": 52,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_comparable_n",
       "coq_id": "mill_acc_comparable_n_flag"
@@ -952,8 +952,8 @@
     {
       "id": "mill_acc_green_pass_n_flag",
       "kind": "eq_nat",
-      "value": 35,
-      "right_value": 35,
+      "value": 49,
+      "right_value": 49,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_green_pass_n",
       "coq_id": "mill_acc_green_pass_n_flag"
@@ -1058,6 +1058,69 @@
       "coq_id": "mill_acc_bsd_234446_reg_green_flag"
     },
     {
+      "id": "mill_acc_bsd_modularity_named_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_modularity_named",
+      "coq_id": "mill_acc_bsd_modularity_named_flag"
+    },
+    {
+      "id": "mill_acc_bsd_kolyvagin_rank_le1_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_kolyvagin_rank_le1",
+      "coq_id": "mill_acc_bsd_kolyvagin_rank_le1_flag"
+    },
+    {
+      "id": "mill_acc_bsd_rank_ge2_volume_native_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_rank_ge2_volume_native",
+      "coq_id": "mill_acc_bsd_rank_ge2_volume_native_flag"
+    },
+    {
+      "id": "mill_acc_bsd_lmfdb_named_ranks_complete_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_lmfdb_named_ranks_complete",
+      "coq_id": "mill_acc_bsd_lmfdb_named_ranks_complete_flag"
+    },
+    {
+      "id": "mill_acc_ns_bkm_named_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_bkm_named",
+      "coq_id": "mill_acc_ns_bkm_named_flag"
+    },
+    {
+      "id": "mill_acc_ns_l2_cascade_not_l_inf_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_l2_cascade_not_l_inf",
+      "coq_id": "mill_acc_ns_l2_cascade_not_l_inf_flag"
+    },
+    {
+      "id": "mill_acc_ns_stretch_visc_two_zoom_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_stretch_visc_two_zoom",
+      "coq_id": "mill_acc_ns_stretch_visc_two_zoom_flag"
+    },
+    {
       "id": "mill_acc_hodge_named_no_k3_complete_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -1065,6 +1128,33 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_hodge_named_no_k3_complete",
       "coq_id": "mill_acc_hodge_named_no_k3_complete_flag"
+    },
+    {
+      "id": "mill_acc_hodge_k3_tail_lefschetz_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_k3_tail_lefschetz",
+      "coq_id": "mill_acc_hodge_k3_tail_lefschetz_flag"
+    },
+    {
+      "id": "mill_acc_hodge_very_general_cubic_only_h2_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_very_general_cubic_only_h2",
+      "coq_id": "mill_acc_hodge_very_general_cubic_only_h2_flag"
+    },
+    {
+      "id": "mill_acc_hodge_unnamed_no_k3_no_seed_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_unnamed_no_k3_no_seed",
+      "coq_id": "mill_acc_hodge_unnamed_no_k3_no_seed_flag"
     },
     {
       "id": "mill_acc_ecmwf_not_beaten_flag",
