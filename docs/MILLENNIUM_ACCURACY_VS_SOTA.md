@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T20:56:55.788329+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T21:03:11.108735+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,9 +18,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 68 |
-| …of those, inside FSOT 0.5% green | 62 |
-| …of those, inside 0.05% aspiration | 52 |
+| Beats or meets public SOTA | 73 |
+| …of those, inside FSOT 0.5% green | 67 |
+| …of those, inside 0.05% aspiration | 57 |
 | **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
@@ -73,6 +73,11 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Navier–Stokes existence and smoothness | US Std Atmosphere 1976 scale height H=RT/μg (lab atmosphere table). Not Euler | 0.001901 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | CRC water n_D(20 °C)=1.3330 on Optics (lab refractive index of the fluid) | 0.03815 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | CRC water density 20 °C=0.9982 g/cm³ on Fluid (dark tank). Not Euler | 0.0309 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Navier–Stokes existence and smoothness | CRC ice Ih n_D=φ²/2 (same H2O, solid zoom). Lab table, not Euler | 0.001298 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Navier–Stokes existence and smoothness | CRC ice Ih density 0.917 g/cm³ on Condensed_Matter (solid H2O). Water tank is Fluid dark | 0.03765 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Navier–Stokes existence and smoothness | CRC ice Ih longitudinal c=3980 m/s on Acoustics (lab sound in the solid) | 0.03815 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Navier–Stokes existence and smoothness | CRC water melting T=273.15 K on Physical_Chemistry (lab phase change of the tank) | 0.04776 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Navier–Stokes existence and smoothness | CRC water boiling T=373.15 K on Physical_Chemistry (lab phase change of the tank) | 0.04776 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | Reality bar: lab κ, CRC sound-speed ratio, diatomic γ, 3D viscous TG decay. Not Euler, not 2D theorems | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 4.167 | beats/meets | n/a | n/a | beats_sota_right_object |
 | Navier–Stokes existence and smoothness | Gap-zone quiet (1000–1010 hPa / 8–15 m/s) — should not issue (transferred_weather) | 0 | — | — | n/a | n/a | structure |

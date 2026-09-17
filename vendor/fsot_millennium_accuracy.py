@@ -238,6 +238,11 @@ C_WATER_OVER_C_AIR_CRC = C_WATER_20C / C_AIR_20C
 GAMMA_DIATOMIC_AIR = 1.400
 CRC_WATER_N_D = 1.3330
 CRC_WATER_RHO = 0.9982
+CRC_ICE_N_D = 1.309
+CRC_ICE_RHO = 0.917
+CRC_ICE_C = 3980.0
+CRC_WATER_TM = 273.15
+CRC_WATER_TB = 373.15
 # LMFDB / Cremona 11a1 L(E,1). Measurement, not a competing closed form.
 LMFDB_11A1_L = 0.2538418608559107
 NAIVE_BSD_L_QUARTER = 0.25
@@ -1862,6 +1867,102 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             note="Observable. Do not flip Fluid dark. Not Clay smoothness.",
         )
     )
+    ice_n = float(PHI) ** 2 / 2.0
+    ice_n_err = _err_pct(ice_n, CRC_ICE_N_D)
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="CRC ice Ih n_D=φ²/2 (same H2O, solid zoom). Lab table, not Euler",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_crc_ice_nD_phi_sq_over_2",
+            computed=ice_n,
+            measured=CRC_ICE_N_D,
+            public_sota_model="CRC ice Ih n_D ≈ 1.309. Same specimen as water; Condensed_Matter zoom.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_ice_nD" if ice_n_err < 0.5 else "miss_ice_nD",
+            beats_or_meets_sota=ice_n_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"formula": "PHI**2/2"},
+            note="Observable ice. Not Clay smoothness.",
+        )
+    )
+    ice_rho, ice_rho_err = scaled(CRC_ICE_RHO, "Condensed_Matter")
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="CRC ice Ih density 0.917 g/cm³ on Condensed_Matter (solid H2O). Water tank is Fluid dark",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_crc_ice_rho",
+            computed=ice_rho,
+            measured=CRC_ICE_RHO,
+            public_sota_model="CRC ice Ih ρ ≈ 0.917 g/cm³.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_ice_rho" if ice_rho_err < 0.5 else "miss_ice_rho",
+            beats_or_meets_sota=ice_rho_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"fold": "Condensed_Matter"},
+            note="Same H2O as the fluid tank. Not Clay smoothness.",
+        )
+    )
+    ice_c, ice_c_err = scaled(CRC_ICE_C, "Acoustics")
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="CRC ice Ih longitudinal c=3980 m/s on Acoustics (lab sound in the solid)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_crc_ice_c",
+            computed=ice_c,
+            measured=CRC_ICE_C,
+            public_sota_model="CRC/literature ice Ih c_L ≈ 3980 m/s.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_ice_c" if ice_c_err < 0.5 else "miss_ice_c",
+            beats_or_meets_sota=ice_c_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"fold": "Acoustics"},
+            note="Observable. Not Euler. Not Clay smoothness.",
+        )
+    )
+    tm_w, tm_err = scaled(CRC_WATER_TM, "Physical_Chemistry")
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="CRC water melting T=273.15 K on Physical_Chemistry (lab phase change of the tank)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_crc_water_Tm",
+            computed=tm_w,
+            measured=CRC_WATER_TM,
+            public_sota_model="CRC/IUPAC Tm(H2O)=273.15 K.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_water_Tm" if tm_err < 0.5 else "miss_water_Tm",
+            beats_or_meets_sota=tm_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"fold": "Physical_Chemistry"},
+            note="Observable phase change. Not Clay smoothness.",
+        )
+    )
+    tb_w, tb_err = scaled(CRC_WATER_TB, "Physical_Chemistry")
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="CRC water boiling T=373.15 K on Physical_Chemistry (lab phase change of the tank)",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_crc_water_Tb",
+            computed=tb_w,
+            measured=CRC_WATER_TB,
+            public_sota_model="CRC/IUPAC Tb(H2O)=373.15 K at 1 atm.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_water_Tb" if tb_err < 0.5 else "miss_water_Tb",
+            beats_or_meets_sota=tb_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"fold": "Physical_Chemistry"},
+            note="Observable phase change. Not Clay smoothness.",
+        )
+    )
     reality_ok = (
         nse3_ok
         and kappa_err < kappa_sota
@@ -1870,6 +1971,11 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         and h_err < 0.5
         and n_err < 0.5
         and rho_err < 0.5
+        and ice_n_err < 0.5
+        and ice_rho_err < 0.5
+        and ice_c_err < 0.5
+        and tm_err < 0.5
+        and tb_err < 0.5
     )
     rows.append(
         _row(
@@ -4171,6 +4277,11 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_h = next(r for r in rows if r["name"] == "ns_us1976_scale_height")
     ns_nd = next(r for r in rows if r["name"] == "ns_crc_water_nD")
     ns_rho = next(r for r in rows if r["name"] == "ns_crc_water_rho")
+    ns_ice_n = next(r for r in rows if r["name"] == "ns_crc_ice_nD_phi_sq_over_2")
+    ns_ice_rho = next(r for r in rows if r["name"] == "ns_crc_ice_rho")
+    ns_ice_c = next(r for r in rows if r["name"] == "ns_crc_ice_c")
+    ns_tm = next(r for r in rows if r["name"] == "ns_crc_water_Tm")
+    ns_tb = next(r for r in rows if r["name"] == "ns_crc_water_Tb")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -4333,6 +4444,11 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_us1976_scale_height": 1 if ns_h.get("fsot_green") == "pass" else 0,
         "ns_crc_water_nD": 1 if ns_nd.get("fsot_green") == "pass" else 0,
         "ns_crc_water_rho": 1 if ns_rho.get("fsot_green") == "pass" else 0,
+        "ns_crc_ice_nD": 1 if ns_ice_n.get("fsot_green") == "pass" else 0,
+        "ns_crc_ice_rho": 1 if ns_ice_rho.get("fsot_green") == "pass" else 0,
+        "ns_crc_ice_c": 1 if ns_ice_c.get("fsot_green") == "pass" else 0,
+        "ns_crc_water_Tm": 1 if ns_tm.get("fsot_green") == "pass" else 0,
+        "ns_crc_water_Tb": 1 if ns_tb.get("fsot_green") == "pass" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -4771,6 +4887,11 @@ if __name__ == "__main__":
         and s["ns_us1976_scale_height"] == 1
         and s["ns_crc_water_nD"] == 1
         and s["ns_crc_water_rho"] == 1
+        and s["ns_crc_ice_nD"] == 1
+        and s["ns_crc_ice_rho"] == 1
+        and s["ns_crc_ice_c"] == 1
+        and s["ns_crc_water_Tm"] == 1
+        and s["ns_crc_water_Tb"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1

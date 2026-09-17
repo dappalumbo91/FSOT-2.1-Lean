@@ -328,13 +328,13 @@ lemma hodge_clay_open_err_under_half: "(0::real) < (0.5::real)"
 lemma hodge_clay_open_computed_pos: "(0::real) < 1.0"
   by simp
 
-lemma mill_acc_beats_or_meets_n_flag: "(68::nat) = 68"
+lemma mill_acc_beats_or_meets_n_flag: "(73::nat) = 73"
   by simp
 
-lemma mill_acc_comparable_n_flag: "(65::nat) = 65"
+lemma mill_acc_comparable_n_flag: "(70::nat) = 70"
   by simp
 
-lemma mill_acc_green_pass_n_flag: "(62::nat) = 62"
+lemma mill_acc_green_pass_n_flag: "(67::nat) = 67"
   by simp
 
 lemma mill_acc_clay_open_n_flag: "(6::nat) = 6"

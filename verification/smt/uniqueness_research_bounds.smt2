@@ -219,11 +219,11 @@
 ; hodge_clay_open_computed_pos kind=pos
 (assert (! (> 1.0 0.0) :named o107))
 ; mill_acc_beats_or_meets_n_flag kind=eq_nat
-(assert (! (= 68 68) :named o108))
+(assert (! (= 73 73) :named o108))
 ; mill_acc_comparable_n_flag kind=eq_nat
-(assert (! (= 65 65) :named o109))
+(assert (! (= 70 70) :named o109))
 ; mill_acc_green_pass_n_flag kind=eq_nat
-(assert (! (= 62 62) :named o110))
+(assert (! (= 67 67) :named o110))
 ; mill_acc_clay_open_n_flag kind=eq_nat
 (assert (! (= 6 6) :named o111))
 ; mill_acc_sota_beats_accuracy_wip_n_flag kind=eq_nat
