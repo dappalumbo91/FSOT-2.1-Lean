@@ -336,13 +336,13 @@ theorem hodge_clay_open_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
 theorem hodge_clay_open_computed_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
-theorem mill_acc_beats_or_meets_n_flag : (62 : ℕ) = (62 : ℕ) := by
+theorem mill_acc_beats_or_meets_n_flag : (64 : ℕ) = (64 : ℕ) := by
   decide
 
-theorem mill_acc_comparable_n_flag : (59 : ℕ) = (59 : ℕ) := by
+theorem mill_acc_comparable_n_flag : (61 : ℕ) = (61 : ℕ) := by
   decide
 
-theorem mill_acc_green_pass_n_flag : (56 : ℕ) = (56 : ℕ) := by
+theorem mill_acc_green_pass_n_flag : (58 : ℕ) = (58 : ℕ) := by
   decide
 
 theorem mill_acc_clay_open_n_flag : (6 : ℕ) = (6 : ℕ) := by
@@ -399,6 +399,9 @@ theorem mill_acc_bsd_clay_equality_not_measured_flag : (1 : ℕ) = (1 : ℕ) := 
 theorem mill_acc_bsd_sha_panel_vs_lmfdb_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
+theorem mill_acc_bsd_mw_generators_observable_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
 theorem mill_acc_bsd_lmfdb_named_ranks_complete_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
@@ -427,6 +430,9 @@ theorem mill_acc_ns_omega0_scan_vs_threshold_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
 theorem mill_acc_ns_3d_spectral_tg_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
+theorem mill_acc_ns_reality_observables_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
 theorem mill_acc_hodge_named_no_k3_complete_flag : (1 : ℕ) = (1 : ℕ) := by

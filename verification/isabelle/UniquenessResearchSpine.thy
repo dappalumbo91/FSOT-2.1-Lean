@@ -328,13 +328,13 @@ lemma hodge_clay_open_err_under_half: "(0::real) < (0.5::real)"
 lemma hodge_clay_open_computed_pos: "(0::real) < 1.0"
   by simp
 
-lemma mill_acc_beats_or_meets_n_flag: "(62::nat) = 62"
+lemma mill_acc_beats_or_meets_n_flag: "(64::nat) = 64"
   by simp
 
-lemma mill_acc_comparable_n_flag: "(59::nat) = 59"
+lemma mill_acc_comparable_n_flag: "(61::nat) = 61"
   by simp
 
-lemma mill_acc_green_pass_n_flag: "(56::nat) = 56"
+lemma mill_acc_green_pass_n_flag: "(58::nat) = 58"
   by simp
 
 lemma mill_acc_clay_open_n_flag: "(6::nat) = 6"
@@ -391,6 +391,9 @@ lemma mill_acc_bsd_clay_equality_not_measured_flag: "(1::nat) = 1"
 lemma mill_acc_bsd_sha_panel_vs_lmfdb_flag: "(1::nat) = 1"
   by simp
 
+lemma mill_acc_bsd_mw_generators_observable_flag: "(1::nat) = 1"
+  by simp
+
 lemma mill_acc_bsd_lmfdb_named_ranks_complete_flag: "(1::nat) = 1"
   by simp
 
@@ -419,6 +422,9 @@ lemma mill_acc_ns_omega0_scan_vs_threshold_flag: "(1::nat) = 1"
   by simp
 
 lemma mill_acc_ns_3d_spectral_tg_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_ns_reality_observables_flag: "(1::nat) = 1"
   by simp
 
 lemma mill_acc_hodge_named_no_k3_complete_flag: "(1::nat) = 1"

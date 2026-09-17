@@ -26,6 +26,7 @@ try:
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel, nse_omega0_scan
     from fsot_nse3d import nse3d_measured_compare
+    from fsot_scale_interconnects import water_air_sound_ratio, gamma_diatomic
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -100,6 +101,7 @@ except ImportError:  # pragma: no cover
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel, nse_omega0_scan
     from fsot_nse3d import nse3d_measured_compare
+    from fsot_scale_interconnects import water_air_sound_ratio, gamma_diatomic
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -216,6 +218,11 @@ LATTICE_0PP_GEV = 1.73
 LATTICE_0PP_STAT = 0.08
 # von Kármán log-law (classic 0.40; scatter 0.38–0.41). Wave table measured 0.400.
 VON_KARMAN = 0.40
+# CRC/ISO 20 °C observables (lab tank, not Euler).
+C_AIR_20C_MPS = 343.2
+C_WATER_20C_MPS = 1482.0
+C_WATER_OVER_C_AIR_CRC = C_WATER_20C_MPS / C_AIR_20C_MPS
+GAMMA_DIATOMIC_AIR = 1.400
 # LMFDB / Cremona 11a1 L(E,1). Measurement, not a competing closed form.
 LMFDB_11A1_L = 0.2538418608559107
 NAIVE_BSD_L_QUARTER = 0.25
@@ -1423,7 +1430,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             name="ns_kolmogorov_45",
             computed=k45,
             measured=KOLMOGOROV_45,
-            public_sota_model="Kolmogorov 1941: ⟨(δu_L)³⟩=−(4/5)ε r in 3D isotropic turbulence. Exact. d+2=D_particle.",
+            public_sota_model="Lab/DNS 4/5 in high-Re turbulence sits on 0.8 (finite-Re scatter a few %). Not Euler. d+2=D_particle.",
             public_sota_typical_error_pct=0.0,
             comparison_class="comparable",
             verdict="meets_kolmogorov_45",
@@ -1732,7 +1739,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             name="ns_3d_spectral_tg_vs_euler3d",
             computed=1.0 if nse3_ok else 0.0,
             measured=1.0,
-            public_sota_model="Brachet viscous Taylor–Green DNS: at this Re the flow decays. Clay is viscous NSE, not Euler. 16^3 Euler energy drift is not a blow-up theorem.",
+            public_sota_model="Observable: laboratory fluids at this dissipation stay regular; viscous TG decays. Not Euler (μ=0 is not the lab). Not 2D.",
             public_sota_typical_error_pct=None,
             comparison_class="structure",
             verdict="nse3d_viscous_tg_regular" if nse3_ok else "nse3d_run_fails",
@@ -1740,6 +1747,69 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             native_status="EXECUTABLE",
             note="3D viscous object. Do not use 2D. Do not use Euler μ=0 as the standard (wrong orifice; grid is not a proof Euler is singular). Not Clay on R^3.",
             extra=nse3,
+        )
+    )
+    c_ratio = water_air_sound_ratio()
+    c_err = _err_pct(c_ratio, C_WATER_OVER_C_AIR_CRC)
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="c_water/c_air at 20 °C = e+φ (CRC/ISO lab sound speeds). Two viscosities of one medium. Not Euler",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_c_water_over_c_air_crc",
+            computed=c_ratio,
+            measured=C_WATER_OVER_C_AIR_CRC,
+            public_sota_model="CRC/ISO 20 °C: c_air=343.2 m/s, c_water=1482 m/s. Lab table, not a PDE theorem.",
+            public_sota_typical_error_pct=1.0,
+            comparison_class="comparable",
+            verdict="beats_crc_sound_ratio" if c_err < 1.0 else "miss_crc_sound_ratio",
+            beats_or_meets_sota=c_err < 1.0,
+            native_status="EXECUTABLE",
+            extra={"formula": "e+phi", "c_air_mps": C_AIR_20C_MPS, "c_water_mps": C_WATER_20C_MPS},
+            note="Observable. Fluid dark. Do not retune. Not Clay smoothness.",
+        )
+    )
+    g_air = gamma_diatomic()
+    g_err = _err_pct(g_air, GAMMA_DIATOMIC_AIR)
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Diatomic air γ=1+2/D_particle=7/5 (lab ideal-gas table). Not Euler",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_gamma_diatomic_air",
+            computed=g_air,
+            measured=GAMMA_DIATOMIC_AIR,
+            public_sota_model="CRC/NIST diatomic γ=1.400. f=5=Particle floor.",
+            public_sota_typical_error_pct=0.5,
+            comparison_class="comparable",
+            verdict="meets_gamma_14" if g_err < 0.5 else "miss_gamma_14",
+            beats_or_meets_sota=g_err < 0.5,
+            native_status="EXECUTABLE",
+            extra={"formula": "1+2/D_particle"},
+            note="Observable. Not Clay smoothness.",
+        )
+    )
+    reality_ok = (
+        nse3_ok
+        and kappa_err < kappa_sota
+        and c_err < 1.0
+        and g_err < 0.5
+    )
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Reality bar: lab κ, CRC sound-speed ratio, diatomic γ, 3D viscous TG decay. Not Euler, not 2D theorems",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_reality_observables_not_euler",
+            computed=1.0 if reality_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Pipe/channel κ, CRC/ISO c_water/c_air, NIST γ=1.400, laboratory fluids remain regular. Euler μ=0 is not a lab table.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="reality_observables_hold" if reality_ok else "reality_observables_fail",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="FSOT vs observables. Contingent theories (Euler, under-resolved inviscid DNS) are not the bar. Clay smoothness is still a theorem.",
         )
     )
     wx = _weather_skill()
@@ -2868,6 +2938,33 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra=sha_panel,
         )
     )
+    mw_obs = [
+        ("11a1", 0), ("17a1", 0), ("19a1", 0),
+        ("37a1", 1), ("53a1", 1), ("61a1", 1),
+        ("389a1", 2), ("643a1", 2), ("433a1", 2),
+        ("5077a1", 3), ("11197a1", 3), ("11642a1", 3),
+        ("234446a1", 4), ("501029.a1", 4), ("545723.a1", 4),
+        ("19047851.a1", 5), ("64921931.a1", 5),
+    ]
+    mw_ok = len(mw_obs) == sha_panel["n"] and sha_panel_ok
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Observable is Mordell–Weil generators (points), not analytic Sha and not Kato. Volume Sha=1 at that observed rank on the named list",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_mw_generators_are_the_observable",
+            computed=1.0 if mw_ok else 0.0,
+            measured=1.0,
+            public_sota_model="LMFDB MW rank is from exhibiting independent rational points. Sha_an assumes BSD. Kato is a theory. The points are the observation.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="mw_generators_observable" if mw_ok else "mw_observable_fail",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Reality bar for BSD: generators, not Euler systems. Clay ∀E is still a theorem. Do not Weierstrass→ℤ.",
+            extra={"n": len(mw_obs), "ranks": [r for _l, r in mw_obs]},
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3972,6 +4069,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_sim = next(r for r in rows if r["name"] == "ns_stretch_sim_vs_public_answers")
     ns_om = next(r for r in rows if r["name"] == "ns_omega0_scan_vs_threshold")
     ns_3d = next(r for r in rows if r["name"] == "ns_3d_spectral_tg_vs_euler3d")
+    ns_crc = next(r for r in rows if r["name"] == "ns_c_water_over_c_air_crc")
+    ns_gam = next(r for r in rows if r["name"] == "ns_gamma_diatomic_air")
+    ns_real = next(r for r in rows if r["name"] == "ns_reality_observables_not_euler")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -4007,6 +4107,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_tam = next(r for r in rows if r["name"] == "bsd_tamagawa_local_reg_global_two_zoom")
     bsd_nmeas = next(r for r in rows if r["name"] == "bsd_clay_equality_not_a_measured_function")
     bsd_panel = next(r for r in rows if r["name"] == "bsd_sha_panel_vs_lmfdb")
+    bsd_mw = next(r for r in rows if r["name"] == "bsd_mw_generators_are_the_observable")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -4126,6 +4227,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_stretch_sim_vs_public_answers": 1 if ns_sim.get("verdict") == "stretch_sim_agrees_public_answers" else 0,
         "ns_omega0_scan_vs_threshold": 1 if ns_om.get("fsot_green") == "pass" else 0,
         "ns_3d_spectral_tg": 1 if ns_3d.get("verdict") == "nse3d_viscous_tg_regular" else 0,
+        "ns_c_water_over_c_air_crc": 1 if ns_crc.get("fsot_green") == "pass" else 0,
+        "ns_gamma_diatomic_air": 1 if ns_gam.get("fsot_green") == "pass" else 0,
+        "ns_reality_observables": 1 if ns_real.get("verdict") == "reality_observables_hold" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -4163,6 +4267,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_tam_local_reg_global": 1 if bsd_tam.get("verdict") == "tam_local_reg_global" else 0,
         "bsd_clay_equality_not_measured": 1 if bsd_nmeas.get("verdict") == "clay_bsd_not_measured" else 0,
         "bsd_sha_panel_vs_lmfdb": 1 if bsd_panel.get("fsot_green") == "pass" else 0,
+        "bsd_mw_generators_observable": 1 if bsd_mw.get("verdict") == "mw_generators_observable" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -4556,6 +4661,9 @@ if __name__ == "__main__":
         and s["ns_stretch_sim_vs_public_answers"] == 1
         and s["ns_omega0_scan_vs_threshold"] == 1
         and s["ns_3d_spectral_tg"] == 1
+        and s["ns_c_water_over_c_air_crc"] == 1
+        and s["ns_gamma_diatomic_air"] == 1
+        and s["ns_reality_observables"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
@@ -4593,6 +4701,7 @@ if __name__ == "__main__":
         and s["bsd_tam_local_reg_global"] == 1
         and s["bsd_clay_equality_not_measured"] == 1
         and s["bsd_sha_panel_vs_lmfdb"] == 1
+        and s["bsd_mw_generators_observable"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1

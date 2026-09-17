@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T20:47:12.736991+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T20:51:29.836559+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,9 +18,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 62 |
-| …of those, inside FSOT 0.5% green | 56 |
-| …of those, inside 0.05% aspiration | 47 |
+| Beats or meets public SOTA | 64 |
+| …of those, inside FSOT 0.5% green | 58 |
+| …of those, inside 0.05% aspiration | 48 |
 | **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
@@ -68,6 +68,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Navier–Stokes existence and smoothness | Seed-locked stretch/visc cartoon: 2D stays regular; 3D Euler toy blows; 3D NSE toy stays regular. Compare those answers to 2D theorem / Euler / DNS | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Cartoon ω0 scan vs Riccati threshold μ/POOF: finite iff ω0 ≤ threshold (6/6). Not Clay 3D NSE | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | 3D viscous NSE on T^3 (spectral Taylor–Green): stretching is 3D; seed-μ energy and max|ω| decay. 3D Euler μ=0 is the wrong orifice (inviscid, under-resolved) | 0 | — | — | n/a | n/a | structure |
+| Navier–Stokes existence and smoothness | c_water/c_air at 20 °C = e+φ (CRC/ISO lab sound speeds). Two viscosities of one medium. Not Euler | 0.4199 | 1 | beats/meets | pass | wip | beats_sota_in_green_aspiration_wip |
+| Navier–Stokes existence and smoothness | Diatomic air γ=1+2/D_particle=7/5 (lab ideal-gas table). Not Euler | 0 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Navier–Stokes existence and smoothness | Reality bar: lab κ, CRC sound-speed ratio, diatomic γ, 3D viscous TG decay. Not Euler, not 2D theorems | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 4.167 | beats/meets | n/a | n/a | beats_sota_right_object |
 | Navier–Stokes existence and smoothness | Gap-zone quiet (1000–1010 hPa / 8–15 m/s) — should not issue (transferred_weather) | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Latitude-belt transfer: quiet kill coupled to a same-issue storm hold (|Δlat|<POOF·180/π) | 0 | — | — | n/a | n/a | structure |
@@ -110,6 +113,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Birch and Swinnerton-Dyer | BSD volume two zooms: Tamagawa is local (bad primes); regulator is global height Gram. 11642a1 Tam=2 vs 643a1 Tam=1, both Sha=1 | 0 | — | — | n/a | n/a | structure |
 | Birch and Swinnerton-Dyer | Clay rank=ord L for every E is not a measured function. Working data: LMFDB Sha=1 and first-of-rank seeds on named curves | 0 | — | — | n/a | n/a | structure |
 | Birch and Swinnerton-Dyer | Sha vs 1 on named LMFDB curves (volume function vs data). Hit rate, not Clay rank=ord L ∀E | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Birch and Swinnerton-Dyer | Observable is Mordell–Weil generators (points), not analytic Sha and not Kato. Volume Sha=1 at that observed rank on the named list | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Named first objects: ℂP² (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20. | — | — | — | n/a | n/a | open_track_next |
 | Hodge conjecture | χ(ℂP²)=φ²+φ^{-2}=Lucas L_2 (named surface Euler number, not Hodge classes) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Lefschetz (1,1) on ℂP² — proven first Hodge-type theorem, not Clay (p,p) for p>1 | 0 | — | — | n/a | n/a | structure |

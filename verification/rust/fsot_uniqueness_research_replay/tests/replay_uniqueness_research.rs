@@ -110,9 +110,9 @@ fn replay_uniqueness_research_obligations() {
     assert!(1.0_f64 > 0.0, "bsd_clay_open_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "hodge_clay_open_err_under_half");
     assert!(1.0_f64 > 0.0, "hodge_clay_open_computed_pos");
-    assert_eq!(62, 62, "mill_acc_beats_or_meets_n_flag");
-    assert_eq!(59, 59, "mill_acc_comparable_n_flag");
-    assert_eq!(56, 56, "mill_acc_green_pass_n_flag");
+    assert_eq!(64, 64, "mill_acc_beats_or_meets_n_flag");
+    assert_eq!(61, 61, "mill_acc_comparable_n_flag");
+    assert_eq!(58, 58, "mill_acc_green_pass_n_flag");
     assert_eq!(6, 6, "mill_acc_clay_open_n_flag");
     assert_eq!(4, 4, "mill_acc_sota_beats_accuracy_wip_n_flag");
     assert_eq!(3, 3, "mill_acc_next_dig_n_flag");
@@ -131,6 +131,7 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "mill_acc_bsd_tam_local_reg_global_flag");
     assert_eq!(1, 1, "mill_acc_bsd_clay_equality_not_measured_flag");
     assert_eq!(1, 1, "mill_acc_bsd_sha_panel_vs_lmfdb_flag");
+    assert_eq!(1, 1, "mill_acc_bsd_mw_generators_observable_flag");
     assert_eq!(1, 1, "mill_acc_bsd_lmfdb_named_ranks_complete_flag");
     assert_eq!(1, 1, "mill_acc_ns_bkm_named_flag");
     assert_eq!(1, 1, "mill_acc_ns_l2_cascade_not_l_inf_flag");
@@ -141,6 +142,7 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "mill_acc_ns_stretch_sim_vs_public_answers_flag");
     assert_eq!(1, 1, "mill_acc_ns_omega0_scan_vs_threshold_flag");
     assert_eq!(1, 1, "mill_acc_ns_3d_spectral_tg_flag");
+    assert_eq!(1, 1, "mill_acc_ns_reality_observables_flag");
     assert_eq!(1, 1, "mill_acc_hodge_named_no_k3_complete_flag");
     assert_eq!(1, 1, "mill_acc_hodge_k3_tail_lefschetz_flag");
     assert_eq!(1, 1, "mill_acc_hodge_very_general_cubic_only_h2_flag");

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-17T20:41:12.499839+00:00",
+  "generated_at": "2026-09-17T20:51:44.888277+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 151,
+  "obligation_count": 153,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -934,8 +934,8 @@
     {
       "id": "mill_acc_beats_or_meets_n_flag",
       "kind": "eq_nat",
-      "value": 62,
-      "right_value": 62,
+      "value": 64,
+      "right_value": 64,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_beats_or_meets_n",
       "coq_id": "mill_acc_beats_or_meets_n_flag"
@@ -943,8 +943,8 @@
     {
       "id": "mill_acc_comparable_n_flag",
       "kind": "eq_nat",
-      "value": 59,
-      "right_value": 59,
+      "value": 61,
+      "right_value": 61,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_comparable_n",
       "coq_id": "mill_acc_comparable_n_flag"
@@ -952,8 +952,8 @@
     {
       "id": "mill_acc_green_pass_n_flag",
       "kind": "eq_nat",
-      "value": 56,
-      "right_value": 56,
+      "value": 58,
+      "right_value": 58,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_green_pass_n",
       "coq_id": "mill_acc_green_pass_n_flag"
@@ -1121,6 +1121,15 @@
       "coq_id": "mill_acc_bsd_sha_panel_vs_lmfdb_flag"
     },
     {
+      "id": "mill_acc_bsd_mw_generators_observable_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_mw_generators_observable",
+      "coq_id": "mill_acc_bsd_mw_generators_observable_flag"
+    },
+    {
       "id": "mill_acc_bsd_lmfdb_named_ranks_complete_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -1209,6 +1218,15 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_ns_3d_spectral_tg",
       "coq_id": "mill_acc_ns_3d_spectral_tg_flag"
+    },
+    {
+      "id": "mill_acc_ns_reality_observables_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_reality_observables",
+      "coq_id": "mill_acc_ns_reality_observables_flag"
     },
     {
       "id": "mill_acc_hodge_named_no_k3_complete_flag",

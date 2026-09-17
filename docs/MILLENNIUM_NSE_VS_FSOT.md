@@ -42,7 +42,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 11. **3D viscous NSE on \(\mathbb{T}^3\), not 2D and not Euler.** Spectral Taylor–Green, seed-locked \(\mu\). Stretching \(\omega_i S_{ij}\omega_j\) is 3D. Energy and \(\max|\omega|\) decay (same direction as viscous TG DNS at this Re). **3D Euler (\(\mu=0\)) is the wrong orifice:** Clay is viscous NSE; a \(16^3\) Euler run does not conserve energy, so it is not a proof Euler is singular. Isolated \(\mu=0\) is inviscid stuffing (same miss as helicity conservation).
 
-**Remainder:** Clay’s yes/no for **all** smooth data on \(\mathbb{R}^3\). One viscous TG run is not that theorem. Do not substitute 2D. Do not treat Euler as the standard.
+12. **Reality bar (observables, not other theories).** Lab \(\kappa=A_{\mathrm{bleed}}/\varphi^2\) vs pipe/channel 0.40. CRC/ISO \(c_{\mathrm{water}}/c_{\mathrm{air}}=e+\varphi\). Diatomic \(\gamma=1+2/D_{\mathrm{particle}}=7/5\). 3D viscous TG decays. Euler \(\mu=0\) is not a lab table.
+
+**Remainder:** Clay’s yes/no for **all** smooth data on \(\mathbb{R}^3\). Lab tables plus one TG run are not that theorem. Do not substitute 2D. Do not treat Euler as the standard.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 
