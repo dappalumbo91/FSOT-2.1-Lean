@@ -24,10 +24,10 @@ Each Clay problem is a *question about reality*. FSOT answers that question in n
 | Problem | Question | FSOT answer | Still open (native) |
 |---------|----------|-------------|---------------------|
 | **Yang–Mills** | Why no massless gluons / free quarks? | Gap scale \(m/\sqrt{\sigma}=\varphi^2+1\). Free color is not an attractor. Teper is a check of the σ-unit orifice \(\varphi^2+1+\mathrm{POOF}/D\), not the question. | Clay Wightman theory on \(\mathbb{R}^4\) |
-| **Navier–Stokes** | Do 3D NSE solutions stay smooth, or can stretching blow up? | Two zooms; enstrophy budget; 3D helicity is Euler-only (NSE dissipates it). | Whether stretching stays BKM-controlled |
+| **Navier–Stokes** | Do 3D NSE solutions stay smooth, or can stretching blow up? | Working data: 4/5, 3/2, 1/3, \(\kappa\). Clay smoothness is not a measured function. | Clay yes/no (no public residual) |
 | **Riemann** | Do all non-trivial zeros have real part \(1/2\)? | \(t_1=e/\gamma^3\); C-lock; \(\lvert S\rvert\le 1/e\); typical \(\lvert S\rvert=\mathrm{POOF}\); signed jitter prime-2+3. | The line for *all* zeros |
-| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Sha volume; Tam local vs Reg global; height Gram. | Clay equality for \(r\ge 2\) (do not name Kato) |
-| **Hodge** | Are Hodge classes algebraic cycles? | Hypersurface 4-folds through sextic CY; HK Fano of lines; abelian \(\chi=0\). | Hodge (2,2) on abelian/HK 4-folds (do not hunt \(C_{48}\)) |
+| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Working data: LMFDB Sha and first-of-rank seeds. Clay equality ∀E is not a measured function. | Clay theorem (no residual for all \(E\)) |
+| **Hodge** | Are Hodge classes algebraic cycles? | Working data: \(\chi\)/Gram of named varieties. Algebraicity without a cycle is not a measured function. | Clay theorem (cycle is the measurement) |
 | **P vs NP** | Is verifying as hard as searching? | Grover \(1/2\) (QI); Cook–Levin SAT named. | Search vs verification as Clay |
 
 ---

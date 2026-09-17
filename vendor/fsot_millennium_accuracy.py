@@ -1323,7 +1323,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="no_fair_numeric_compare",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="Stretching is Particle zoom; viscosity is Fluid zoom. Isolated 4/5/BKM/CF is the theorem-ladder. Coupling is two zooms plus the valve. Do not stuff the valve into existence. Still open.",
+            note="No public measured smoothness number. Working NSE functions are 4/5, 3/2, 1/3, κ vs data. Isolated 'solve existence' looks for a function that is not measured. Do not stuff cascade identities into smoothness.",
         )
     )
     rows.append(
@@ -1602,6 +1602,31 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             native_status="EXECUTABLE",
             note="Seed-closed wall law. 1D Stokes + κ is the executable NSE function. Not Clay 3D smoothness. Do not retune 0.40.",
             extra={"formula": "A_BLEED/PHI**2", "fsot_vs_040_pct": kappa_err},
+        )
+    )
+    ns_data_ok = (
+        abs(k45 - KOLMOGOROV_45) < 1e-12
+        and abs(k32 - KOLMOGOROV_D2_32) < 1e-12
+        and abs(h13 - ONSAGER_HOLDER) < 1e-12
+        and kappa_err < kappa_sota
+        and hel_ok
+    )
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Clay smoothness is not a measured function. Working data: 4/5, 3/2, 1/3 exact; κ beats log-law scatter. No public smoothness residual",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_clay_smoothness_not_a_measured_function",
+            computed=1.0 if ns_data_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Lab/DNS measure inertial-range flux and wall κ. Nobody publishes a % error on 'is NSE smooth?'. Isolated existence is the wrong orifice — it is not a residual.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="clay_smoothness_not_measured" if ns_data_ok else "ns_data_functions_fail",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Inversion. APPLY step 1: name the measured object. Cascade numbers and κ have data. Clay smoothness does not. Do not hunt a seed for a non-function. Do not stuff 4/5 into existence.",
+            extra={"working": ["kolmogorov_45", "kraichnan_32", "onsager_13", "von_karman"], "clay_measured": None},
         )
     )
     wx = _weather_skill()
@@ -2691,6 +2716,25 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"tam_643a1": LMFDB_643A1_TAM, "tam_11642a1": LMFDB_11642A1_TAM},
         )
     )
+    bsd_data_ok = bool(local_global_ok) and bool(sha_ok) and bool(rank1_ok)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Clay rank=ord L for every E is not a measured function. Working data: LMFDB Sha=1 and first-of-rank seeds on named curves",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_clay_equality_not_a_measured_function",
+            computed=1.0 if bsd_data_ok else 0.0,
+            measured=1.0,
+            public_sota_model="LMFDB publishes Ω, Reg, Tam, L^{(r)}/r!, Sha_an on named curves. Nobody publishes a residual for 'rank=ord L ∀E'. Isolated general equality is not a residual.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="clay_bsd_not_measured" if bsd_data_ok else "bsd_data_functions_fail",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Inversion. APPLY step 1: the measured object is LMFDB volume on named curves. Clay equality for all E has no independent table. Do not hunt Kato for a non-function. Do not Weierstrass→ℤ.",
+            extra={"working": ["first_of_rank_0_4", "sha_ranks_0_5", "tam_vs_reg"], "clay_measured": None},
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3666,6 +3710,29 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"formula": "chi=0"},
         )
     )
+    hodge_data_ok = (
+        bool(hk_ok)
+        and abs(ab4 - ABELIAN_4FOLD_CHI) < 1e-9
+        and bool(next4_ok)
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Clay algebraicity without a named cycle is not a measured function. Working data: χ/Gram of named varieties (CP^n, cubic, quartic, sextic, HK Fano, abelian χ=0)",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_clay_algebraicity_not_a_measured_function",
+            computed=1.0 if hodge_data_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Chern/Euler and Hassett Gram are published for named varieties. Algebraicity of an unnamed class has no residual % — the cycle is the measurement. Isolated 'prove Hodge' looks for a function that is not measured.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="clay_hodge_not_measured" if hodge_data_ok else "hodge_data_functions_fail",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Inversion. APPLY step 1: seeds attach to named varieties. Clay algebraicity on a general 4-fold has no public table. Do not hunt C_48 for a non-function. Do not steal 25−1 for K3.",
+            extra={"working": ["chi_named_4folds", "hassett_named_grams", "hk_fano_b2", "abelian_chi_0"], "clay_measured": None},
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3728,6 +3795,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_zoom = next(r for r in rows if r["name"] == "ns_stretch_particle_visc_fluid_two_zoom")
     ns_budg = next(r for r in rows if r["name"] == "ns_enstrophy_budget_two_term")
     ns_hel = next(r for r in rows if r["name"] == "ns_helicity_3d_not_2d")
+    ns_nmeas = next(r for r in rows if r["name"] == "ns_clay_smoothness_not_a_measured_function")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -3761,6 +3829,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_rge2 = next(r for r in rows if r["name"] == "bsd_rank_ge2_volume_is_native_not_euler_system")
     bsd_gram = next(r for r in rows if r["name"] == "bsd_regulator_is_height_gram_not_euler_system")
     bsd_tam = next(r for r in rows if r["name"] == "bsd_tamagawa_local_reg_global_two_zoom")
+    bsd_nmeas = next(r for r in rows if r["name"] == "bsd_clay_equality_not_a_measured_function")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -3805,6 +3874,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_next4 = next(r for r in rows if r["name"] == "hodge_hypersurface_4folds_after_cubic_named")
     hodge_hk = next(r for r in rows if r["name"] == "hodge_hk4_fano_lines_named_not_c48")
     hodge_ab = next(r for r in rows if r["name"] == "hodge_abelian4_euler")
+    hodge_nmeas = next(r for r in rows if r["name"] == "hodge_clay_algebraicity_not_a_measured_function")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -3873,6 +3943,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_stretch_visc_two_zoom": 1 if ns_zoom.get("verdict") == "stretch_visc_two_zoom" else 0,
         "ns_enstrophy_budget_two_term": 1 if ns_budg.get("verdict") == "enstrophy_budget_two_term" else 0,
         "ns_helicity_3d_not_2d": 1 if ns_hel.get("verdict") == "helicity_3d_not_2d" else 0,
+        "ns_clay_smoothness_not_measured": 1 if ns_nmeas.get("verdict") == "clay_smoothness_not_measured" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -3908,6 +3979,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_rank_ge2_volume_native": 1 if bsd_rge2.get("verdict") == "rank_ge2_volume_native" else 0,
         "bsd_regulator_is_height_gram": 1 if bsd_gram.get("verdict") == "regulator_is_height_gram" else 0,
         "bsd_tam_local_reg_global": 1 if bsd_tam.get("verdict") == "tam_local_reg_global" else 0,
+        "bsd_clay_equality_not_measured": 1 if bsd_nmeas.get("verdict") == "clay_bsd_not_measured" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -3952,6 +4024,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_hypersurface_4folds_after_cubic": 1 if hodge_next4.get("verdict") == "hypersurface_4folds_after_cubic" else 0,
         "hodge_hk4_fano_lines_named": 1 if hodge_hk.get("verdict") == "hk4_fano_lines_named" else 0,
         "hodge_abelian4_euler_exact": 1 if hodge_ab["beats_or_meets_sota"] else 0,
+        "hodge_clay_algebraicity_not_measured": 1 if hodge_nmeas.get("verdict") == "clay_hodge_not_measured" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -3962,8 +4035,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Misses next: NSE stretching BKM (helicity is Euler-only; budget is two-term), "
-            "BSD Clay rank=ord L for r≥2 (Tam local vs Reg global; do not name Kato), Hodge (2,2) on abelian/HK 4-folds (do not hunt C_48). "
+            "Misses next: Clay NSE/BSD/Hodge remainders are not measured functions "
+            "(working data: cascade numbers, LMFDB Sha, named χ/Gram). "
             "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, 2D 3/2, Onsager 1/3, BKM, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
             "Reg(234446a1)=(φ²+1)·e·POOF, "
@@ -4109,6 +4182,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Stretch vs visc two zooms | **Particle floor vs Fluid tank (dark)** | Isolated BKM/CF is the theorem-ladder. Valve is not existence. |",
         "| 3D enstrophy budget | **Two terms** (production − dissipation) | No 4/5 analog for 3D enstrophy. 2D production ≡ 0. |",
         "| 3D helicity | **Euler invariant; NSE dissipates** | Not 2D. Isolated conservation is inviscid stuffing. |",
+        "| Clay smoothness vs data | **Not a measured function** | Working: 4/5, 3/2, 1/3, κ. No public smoothness residual. |",
         "| L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |",
         "| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |",
         "| Reg(389a1) | **POOF vs LMFDB — 0.67% WIP** | Néron-Tate pairing. Not the BSD leading term. |",
@@ -4142,6 +4216,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Rank ≥2 native | **Vanishing+Sha already executable** | Do not enumerate Kato. Remainder is Clay equality. |",
         "| Regulator Gram | **Néron-Tate height det** (Hassett orifice) | r=1 is one Heegner point. r≥2 is a lattice. |",
         "| Tam local vs Reg global | **Two zooms** (11642 Tam=2 vs 643 Tam=1, both Sha=1) | Do not swallow Tam into Reg. |",
+        "| Clay rank=ord L vs data | **Not a measured function** | Working: LMFDB Sha and first-of-rank seeds. No residual for ∀E. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
@@ -4185,6 +4260,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Hypersurface 4-folds after cubic | **Named** | Remainder was non-hypersurface 4-folds. |",
         "| HK Fano of lines | **Named** (b_2=23, Beauville–Donagi) | Lefschetz (1,1) on H^2(F). Not C_48. |",
         "| Abelian 4-fold χ | **Meets 0** | Lefschetz (1,1) applies. Hodge (2,2) remains. |",
+        "| Clay algebraicity vs data | **Not a measured function** | Working: χ/Gram of named varieties. Cycle is the measurement. |",
         "| Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |",
         "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5, 2D 3/2, Onsager 1/3, BKM named. Existence on R^3 is whether stretching stays BKM-integrable. |",
         "",
@@ -4198,9 +4274,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
-        "| 3D NSE existence on R^3 | Helicity is 3D Euler invariant; NSE dissipates it. Enstrophy budget two-term. | Do not stuff helicity or the budget into existence. |",
-        "| BSD integer rank | Tam local vs Reg global. r≥2 Reg is height Gram. | Clay equality for r≥2. Do not enumerate Kato. |",
-        "| Hodge extra classes without K3 | HK Fano of lines named. Abelian 4-fold χ=0. | Remainder: Hodge (2,2) on abelian/HK 4-folds. Do not hunt C_48. |",
+        "| 3D NSE existence on R^3 | Not a measured function. Working: 4/5, 3/2, 1/3, κ. | Do not stuff cascade numbers into smoothness. |",
+        "| BSD integer rank | Not a measured function. Working: LMFDB Sha, first-of-rank seeds. | Do not hunt Kato. Do not Weierstrass→ℤ. |",
+        "| Hodge extra classes without K3 | Not a measured function. Working: χ/Gram of named varieties. | Do not hunt C_48. Cycle is the measurement. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
@@ -4291,6 +4367,7 @@ if __name__ == "__main__":
         and s["ns_stretch_visc_two_zoom"] == 1
         and s["ns_enstrophy_budget_two_term"] == 1
         and s["ns_helicity_3d_not_2d"] == 1
+        and s["ns_clay_smoothness_not_measured"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
@@ -4326,6 +4403,7 @@ if __name__ == "__main__":
         and s["bsd_rank_ge2_volume_native"] == 1
         and s["bsd_regulator_is_height_gram"] == 1
         and s["bsd_tam_local_reg_global"] == 1
+        and s["bsd_clay_equality_not_measured"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1
@@ -4370,6 +4448,7 @@ if __name__ == "__main__":
         and s["hodge_hypersurface_4folds_after_cubic"] == 1
         and s["hodge_hk4_fano_lines_named"] == 1
         and s["hodge_abelian4_euler_exact"] == 1
+        and s["hodge_clay_algebraicity_not_measured"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

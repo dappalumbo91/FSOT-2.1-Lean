@@ -90,10 +90,20 @@ We were naming the next public theorem (BKM → CF → next Lipschitz; Kolyvagin
 | BSD \(r\ge 2\) | Next Euler system | Vanishing+\(\mathrm{Sha}\) **already is** the native object (643a1…19047851.a1). Kolyvagin is an external check for \(r=0,1\) | Volume executable. Kato would be enumeration |
 | Hodge unnamed | Next named surface | Seeds attach to **named varieties**. No surface name ⇒ no Gram seed | No-seed diagnosis executable. \(C_{48}\) would be enumeration |
 
+## What actually works vs data (the inversion)
+
+Clay asked for objects that have **no public residual**. FSOT already hits the functions that *do* have data. Isolated “solve the hurdle” looks for a measurement that is not there.
+
+| Track | Public data (works) | Clay remainder (no table) |
+|-------|---------------------|---------------------------|
+| NSE | Kolmogorov \(4/5\), Kraichnan \(3/2\), Onsager \(1/3\), von Kármán \(\kappa\) vs lab/DNS/log-law | “Is 3D NSE smooth?” — no % error exists |
+| BSD | LMFDB \(\Omega\), Reg, Tam, \(L^{(r)}/r!\), \(\mathrm{Sha}_{\mathrm{an}}\) on named curves | “rank \(=\) ord \(L\) \(\forall E\)” — no residual for all curves |
+| Hodge | \(\chi\)/Gram of named varieties (hypersurfaces, HK Fano, abelian \(\chi=0\)) | Algebraicity with no named cycle — the cycle *is* the measurement |
+
 ## Still open (Clay leftover — not a missing seed)
 
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
-| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | Helicity is 3D Euler invariant; NSE dissipates it. Enstrophy budget two-term. | Stuffing helicity or the budget into existence |
-| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\) | Tam local vs Reg global. Height Gram native. | Enumerating Kato; Weierstrass\(\to\mathbb{Z}\) |
-| HODGE-TAIL | Hodge (2,2) on abelian/HK 4-folds | HK Fano of lines named. Abelian \(\chi=0\). Unnamed no-K3 has no Gram seed. | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
+| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | Not a measured function. Working: 4/5, 3/2, 1/3, \(\kappa\). | Stuffing cascade numbers into smoothness |
+| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) \(\forall E\) | Not a measured function. Working: LMFDB Sha and first-of-rank seeds. | Hunting Kato; Weierstrass\(\to\mathbb{Z}\) |
+| HODGE-TAIL | Algebraicity with no named cycle | Not a measured function. Working: \(\chi\)/Gram of named varieties. | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |

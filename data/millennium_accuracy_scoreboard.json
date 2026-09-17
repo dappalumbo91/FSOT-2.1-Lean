@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T20:00:29.749599+00:00",
+  "generated_at": "2026-09-17T20:07:38.693733+00:00",
   "pin": "AEB2AD",
   "clay_prize_claimed": false,
   "clay_problems_remaining": 6,
@@ -68,6 +68,7 @@
   "ns_stretch_visc_two_zoom": 1,
   "ns_enstrophy_budget_two_term": 1,
   "ns_helicity_3d_not_2d": 1,
+  "ns_clay_smoothness_not_measured": 1,
   "bsd_11a1_L_green": 1,
   "bsd_37a1_Lprime_green": 1,
   "bsd_389a1_reg_beats": 1,
@@ -103,6 +104,7 @@
   "bsd_rank_ge2_volume_native": 1,
   "bsd_regulator_is_height_gram": 1,
   "bsd_tam_local_reg_global": 1,
+  "bsd_clay_equality_not_measured": 1,
   "hodge_cp2_euler_exact": 1,
   "hodge_cp3_euler_exact": 1,
   "hodge_lefschetz_11_named": 1,
@@ -147,6 +149,7 @@
   "hodge_hypersurface_4folds_after_cubic": 1,
   "hodge_hk4_fano_lines_named": 1,
   "hodge_abelian4_euler_exact": 1,
+  "hodge_clay_algebraicity_not_measured": 1,
   "ns_stretching_named": 1,
   "ns_2d_enstrophy_named": 1,
   "pnp_sat_named": 1,
@@ -813,7 +816,7 @@
       "beats_or_meets_sota": null,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "OPEN_TRACK",
-      "note": "Stretching is Particle zoom; viscosity is Fluid zoom. Isolated 4/5/BKM/CF is the theorem-ladder. Coupling is two zooms plus the valve. Do not stuff the valve into existence. Still open.",
+      "note": "No public measured smoothness number. Working NSE functions are 4/5, 3/2, 1/3, \u03ba vs data. Isolated 'solve existence' looks for a function that is not measured. Do not stuff cascade identities into smoothness.",
       "fsot_green_gate_pct": 0.5,
       "fsot_aspiration_pct": 0.05,
       "fsot_green": "n/a",
@@ -1157,6 +1160,37 @@
       "sota_beats_fsot_accuracy_wip": false,
       "progress": "beats_sota_in_aspiration",
       "next_dig": false
+    },
+    {
+      "problem": "Navier\u2013Stokes existence and smoothness",
+      "name": "ns_clay_smoothness_not_a_measured_function",
+      "function_object": "Clay smoothness is not a measured function. Working data: 4/5, 3/2, 1/3 exact; \u03ba beats log-law scatter. No public smoothness residual",
+      "clay_object": "Global smooth (or blow-up) 3D incompressible NSE",
+      "computed": 1.0,
+      "measured": 1.0,
+      "fsot_error_pct": 0.0,
+      "public_sota_model": "Lab/DNS measure inertial-range flux and wall \u03ba. Nobody publishes a % error on 'is NSE smooth?'. Isolated existence is the wrong orifice \u2014 it is not a residual.",
+      "public_sota_typical_error_pct": null,
+      "comparison_class": "structure",
+      "verdict": "clay_smoothness_not_measured",
+      "beats_or_meets_sota": null,
+      "clay_status": "OPEN_NOT_CLAIMED",
+      "native_status": "EXECUTABLE",
+      "note": "Inversion. APPLY step 1: name the measured object. Cascade numbers and \u03ba have data. Clay smoothness does not. Do not hunt a seed for a non-function. Do not stuff 4/5 into existence.",
+      "working": [
+        "kolmogorov_45",
+        "kraichnan_32",
+        "onsager_13",
+        "von_karman"
+      ],
+      "clay_measured": null,
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
     },
     {
       "problem": "Navier\u2013Stokes existence and smoothness",
@@ -2503,6 +2537,36 @@
       "sota_beats_fsot_accuracy_wip": false
     },
     {
+      "problem": "Birch and Swinnerton-Dyer",
+      "name": "bsd_clay_equality_not_a_measured_function",
+      "function_object": "Clay rank=ord L for every E is not a measured function. Working data: LMFDB Sha=1 and first-of-rank seeds on named curves",
+      "clay_object": "rank E(Q) = ord_{s=1} L(E,s)",
+      "computed": 1.0,
+      "measured": 1.0,
+      "fsot_error_pct": 0.0,
+      "public_sota_model": "LMFDB publishes \u03a9, Reg, Tam, L^{(r)}/r!, Sha_an on named curves. Nobody publishes a residual for 'rank=ord L \u2200E'. Isolated general equality is not a residual.",
+      "public_sota_typical_error_pct": null,
+      "comparison_class": "structure",
+      "verdict": "clay_bsd_not_measured",
+      "beats_or_meets_sota": null,
+      "clay_status": "OPEN_NOT_CLAIMED",
+      "native_status": "EXECUTABLE",
+      "note": "Inversion. APPLY step 1: the measured object is LMFDB volume on named curves. Clay equality for all E has no independent table. Do not hunt Kato for a non-function. Do not Weierstrass\u2192\u2124.",
+      "working": [
+        "first_of_rank_0_4",
+        "sha_ranks_0_5",
+        "tam_vs_reg"
+      ],
+      "clay_measured": null,
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
+    },
+    {
       "problem": "Hodge conjecture",
       "name": "hodge_named_varieties",
       "function_object": "Named first objects: \u2102P\u00b2 (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20.",
@@ -3822,6 +3886,37 @@
     },
     {
       "problem": "Hodge conjecture",
+      "name": "hodge_clay_algebraicity_not_a_measured_function",
+      "function_object": "Clay algebraicity without a named cycle is not a measured function. Working data: \u03c7/Gram of named varieties (CP^n, cubic, quartic, sextic, HK Fano, abelian \u03c7=0)",
+      "clay_object": "Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+      "computed": 1.0,
+      "measured": 1.0,
+      "fsot_error_pct": 0.0,
+      "public_sota_model": "Chern/Euler and Hassett Gram are published for named varieties. Algebraicity of an unnamed class has no residual % \u2014 the cycle is the measurement. Isolated 'prove Hodge' looks for a function that is not measured.",
+      "public_sota_typical_error_pct": null,
+      "comparison_class": "structure",
+      "verdict": "clay_hodge_not_measured",
+      "beats_or_meets_sota": null,
+      "clay_status": "OPEN_NOT_CLAIMED",
+      "native_status": "EXECUTABLE",
+      "note": "Inversion. APPLY step 1: seeds attach to named varieties. Clay algebraicity on a general 4-fold has no public table. Do not hunt C_48 for a non-function. Do not steal 25\u22121 for K3.",
+      "working": [
+        "chi_named_4folds",
+        "hassett_named_grams",
+        "hk_fano_b2",
+        "abelian_chi_0"
+      ],
+      "clay_measured": null,
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
+    },
+    {
+      "problem": "Hodge conjecture",
       "name": "hodge_cubic4_primitive_22",
       "function_object": "Primitive (2,2) on a cubic 4-fold \u2014 first open hypersurface case after Grassmannians",
       "clay_object": "Hodge classes on a projective complex manifold are algebraic cycles (rational)",
@@ -3845,5 +3940,5 @@
       "sota_beats_fsot_accuracy_wip": false
     }
   ],
-  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: NSE stretching BKM (helicity is Euler-only; budget is two-term), BSD Clay rank=ord L for r\u22652 (Tam local vs Reg global; do not name Kato), Hodge (2,2) on abelian/HK 4-folds (do not hunt C_48). Native: von K\u00e1rm\u00e1n \u03ba, 2D enstrophy, Kolmogorov 4/5=1\u22121/D_particle, 2D 3/2, Onsager 1/3, BKM, L(11a1,1)=\u221a\u03c6/D_particle, L'(37a1,1)=2\u00b7POOF, Reg(389a1)=POOF, Reg(5077a1)=e\u00b7POOF, Reg(234446a1)=(\u03c6\u00b2+1)\u00b7e\u00b7POOF, \u03c7(CP\u00b2)=L_2, \u03c7(CP\u00b3)=L_3, Lefschetz (1,1), Hodge (2,2) on CP\u00b3, hard Lefschetz, Cook\u2013Levin SAT. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue\u2013flavor 2\u00d72 V=POOF\u00b7K; isolated (\u03c6\u00b2+1)\u00b7K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))\u00b7POOF envelope. E\u2192rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|\u0394lat|<POOF\u00b7180/\u03c0), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten."
+  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses next: Clay NSE/BSD/Hodge remainders are not measured functions (working data: cascade numbers, LMFDB Sha, named \u03c7/Gram). Native: von K\u00e1rm\u00e1n \u03ba, 2D enstrophy, Kolmogorov 4/5=1\u22121/D_particle, 2D 3/2, Onsager 1/3, BKM, L(11a1,1)=\u221a\u03c6/D_particle, L'(37a1,1)=2\u00b7POOF, Reg(389a1)=POOF, Reg(5077a1)=e\u00b7POOF, Reg(234446a1)=(\u03c6\u00b2+1)\u00b7e\u00b7POOF, \u03c7(CP\u00b2)=L_2, \u03c7(CP\u00b3)=L_3, Lefschetz (1,1), Hodge (2,2) on CP\u00b3, hard Lefschetz, Cook\u2013Levin SAT. Glueball 0++ in string units is \u03c6\u00b2+1 vs a quenched-lattice construct, not an observed particle. Observed I=0 0++: f0(1500) BW is glue\u2013flavor 2\u00d72 V=POOF\u00b7K; isolated (\u03c6\u00b2+1)\u00b7K is the pole. Do not swap them. Morningstar 2502.02547: no scalar below ~2 GeV is predominantly glue. Riemann n=2..10 is N(T)=n with C locked by e/\u03b3\u00b3, not public 7/8. S(T) bound is 1/e; typical |S| is POOF. Signed jitter is sign(sin(T ln 2))\u00b7POOF envelope. E\u2192rank map is parity from w_E; first-of-rank leadings label 0..4. Do not invert with trig S(n) or the full Euler product. \u03b1_s(M_Z) QCD orifice is 2(POOF/\u03c8_con)\u00b2, not geometric 1/(e\u03c0); Ledger A freeze not rewritten. SOTA and FSOT 0.5% are independent bars. Storm-sector is the weather object; majority-of-saw_storm is retired. Gap-zone quiet should not issue. 44078 is latitude-belt transfer to MDXA2 (|\u0394lat|<POOF\u00b7180/\u03c0), not a 1010 retune. Uncoupled clean quiet holds. ECMWF is not beaten. Frozen issues not rewritten."
 }

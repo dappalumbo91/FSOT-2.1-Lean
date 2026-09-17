@@ -129,12 +129,14 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "mill_acc_bsd_rank_ge2_volume_native_flag");
     assert_eq!(1, 1, "mill_acc_bsd_regulator_is_height_gram_flag");
     assert_eq!(1, 1, "mill_acc_bsd_tam_local_reg_global_flag");
+    assert_eq!(1, 1, "mill_acc_bsd_clay_equality_not_measured_flag");
     assert_eq!(1, 1, "mill_acc_bsd_lmfdb_named_ranks_complete_flag");
     assert_eq!(1, 1, "mill_acc_ns_bkm_named_flag");
     assert_eq!(1, 1, "mill_acc_ns_l2_cascade_not_l_inf_flag");
     assert_eq!(1, 1, "mill_acc_ns_stretch_visc_two_zoom_flag");
     assert_eq!(1, 1, "mill_acc_ns_enstrophy_budget_two_term_flag");
     assert_eq!(1, 1, "mill_acc_ns_helicity_3d_not_2d_flag");
+    assert_eq!(1, 1, "mill_acc_ns_clay_smoothness_not_measured_flag");
     assert_eq!(1, 1, "mill_acc_hodge_named_no_k3_complete_flag");
     assert_eq!(1, 1, "mill_acc_hodge_k3_tail_lefschetz_flag");
     assert_eq!(1, 1, "mill_acc_hodge_very_general_cubic_only_h2_flag");
@@ -142,6 +144,7 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "mill_acc_hodge_hypersurface_4folds_after_cubic_flag");
     assert_eq!(1, 1, "mill_acc_hodge_hk4_fano_lines_named_flag");
     assert_eq!(1, 1, "mill_acc_hodge_abelian4_euler_exact_flag");
+    assert_eq!(1, 1, "mill_acc_hodge_clay_algebraicity_not_measured_flag");
     assert_eq!(1, 1, "mill_acc_ecmwf_not_beaten_flag");
     assert_eq!(0, 0, "mill_acc_weather_quiet_fill_still_miss_flag");
 }

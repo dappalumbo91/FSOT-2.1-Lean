@@ -38,7 +38,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 9. **Helicity is a 3D Euler invariant, not existence.** \(H=\int v\cdot\omega\). Conserved for Euler (\(\mu=0\)). NSE dissipates it through Fluid viscosity. 2D stretching vanishes, so helicity is not the 2D orifice. Isolated “helicity conservation ⇒ smooth” is inviscid stuffing.
 
-**Remainder:** whether stretching production stays BKM-controlled. That *is* Clay smoothness. Do not stuff helicity, the budget, or the valve into existence.
+10. **Clay smoothness is not a measured function.** Lab and DNS publish inertial-range flux and wall \(\kappa\). Nobody publishes a % error on “is NSE smooth?” Isolated “solve existence” looks for a residual that does not exist. Working data: \(4/5\), \(3/2\), \(1/3\) exact; \(\kappa\) vs log-law scatter.
+
+**Remainder:** Clay’s yes/no on \(\mathbb{R}^3\) smoothness — not a seed-shaped object. Do not stuff working cascade numbers into that yes/no.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 

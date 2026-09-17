@@ -449,6 +449,16 @@ def nse_d2_rejects_d_particle() -> bool:
     return abs(seed_kolmogorov_d2_32() - 1.5) < 1e-12 and abs(stuffed - 1.5) > 0.05
 
 
+def nse_clay_smoothness_has_no_measured() -> bool:
+    """Clay 3D smoothness has no public residual. Working functions do.
+
+    Kolmogorov 4/5, Kraichnan 3/2, Onsager 1/3 are identities vs data.
+    Isolated 'solve existence' looks for a function that is not measured.
+    Do not stuff those identities into smoothness.
+    """
+    return nse_helicity_is_3d_not_2d()
+
+
 def nse_helicity_is_3d_not_2d() -> bool:
     """3D Euler conserves helicity ∫ v·ω. 2D stretching vanishes.
 

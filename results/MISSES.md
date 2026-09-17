@@ -16,10 +16,10 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | WX-QUIET-FILL | B/dated | Clean quiet 24 h, uncoupled from storm latitude belt | **Superseded object:** 44078 (59.94°N) was lat-belt transfer to MDXA2 (59.44°N), \|Δlat\|<POOF·180/π. Window min_pres=1002.8. Uncoupled clean quiet **holds** (n=4). | Did not move 1010. Did not rewrite frozen JSON. Did not drop the kill to inflate storm skill. |
 | SH0ES-LADDER | A | SH0ES ladder chain pooled | ~0.212% (aspiration 0.05% open) | Did not β-fit the ladder |
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
-| NSE-CLAY | — | 3D NSE existence on R^3 | Helicity is 3D Euler invariant; NSE dissipates it. Enstrophy budget two-term. | Did not stuff helicity or the budget into existence. Did not put \(D_{\mathrm{particle}}\) on 2D. |
+| NSE-CLAY | — | 3D NSE existence on R^3 | Not a measured function. Working data: 4/5, 3/2, 1/3, \(\kappa\). | Did not stuff cascade numbers into smoothness. |
 | PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid | **Superseded object:** Atomic well \(D=6\) gave 5.43%. Continuum solid is Molecular \(D=7\), \(\nu=7/25=0.28\). | Did not put Atomic back to 7. |
-| BSD-RANK | — | \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\) | Tam local vs Reg global. Height Gram native. | Did not enumerate Kato. Did not Weierstrass\(\to\mathbb{Z}\). |
-| HODGE-CLASS | — | Hodge (2,2) on abelian/HK 4-folds | HK Fano of lines named (\(b_2=23\)). Abelian 4-fold \(\chi=0\). Unnamed no-K3 has no Gram seed. | Did not hunt \(C_{48}\). Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
+| BSD-RANK | — | \(\mathrm{rank}=\mathrm{ord}\,L\) \(\forall E\) | Not a measured function. Working data: LMFDB Sha and first-of-rank seeds. | Did not hunt Kato. Did not Weierstrass\(\to\mathbb{Z}\). |
+| HODGE-CLASS | — | Algebraicity with no named cycle | Not a measured function. Working: \(\chi\)/Gram of named varieties. | Did not hunt \(C_{48}\). Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
 
 Dated public scoreboard kills live in [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md). Do not rewrite issued JSON.
 

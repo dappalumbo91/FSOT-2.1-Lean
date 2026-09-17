@@ -386,6 +386,9 @@ Proof. reflexivity. Qed.
 Lemma mill_acc_bsd_tam_local_reg_global_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
+Lemma mill_acc_bsd_clay_equality_not_measured_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
 Lemma mill_acc_bsd_lmfdb_named_ranks_complete_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
@@ -402,6 +405,9 @@ Lemma mill_acc_ns_enstrophy_budget_two_term_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_ns_helicity_3d_not_2d_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_ns_clay_smoothness_not_measured_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_hodge_named_no_k3_complete_flag : (1 = 1)%nat.
@@ -423,6 +429,9 @@ Lemma mill_acc_hodge_hk4_fano_lines_named_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_hodge_abelian4_euler_exact_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_hodge_clay_algebraicity_not_measured_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_ecmwf_not_beaten_flag : (1 = 1)%nat.

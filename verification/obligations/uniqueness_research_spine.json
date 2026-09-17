@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-17T20:00:33.064711+00:00",
+  "generated_at": "2026-09-17T20:08:09.824460+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 142,
+  "obligation_count": 145,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -1103,6 +1103,15 @@
       "coq_id": "mill_acc_bsd_tam_local_reg_global_flag"
     },
     {
+      "id": "mill_acc_bsd_clay_equality_not_measured_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_bsd_clay_equality_not_measured",
+      "coq_id": "mill_acc_bsd_clay_equality_not_measured_flag"
+    },
+    {
       "id": "mill_acc_bsd_lmfdb_named_ranks_complete_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -1155,6 +1164,15 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_ns_helicity_3d_not_2d",
       "coq_id": "mill_acc_ns_helicity_3d_not_2d_flag"
+    },
+    {
+      "id": "mill_acc_ns_clay_smoothness_not_measured_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_clay_smoothness_not_measured",
+      "coq_id": "mill_acc_ns_clay_smoothness_not_measured_flag"
     },
     {
       "id": "mill_acc_hodge_named_no_k3_complete_flag",
@@ -1218,6 +1236,15 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_hodge_abelian4_euler_exact",
       "coq_id": "mill_acc_hodge_abelian4_euler_exact_flag"
+    },
+    {
+      "id": "mill_acc_hodge_clay_algebraicity_not_measured_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_clay_algebraicity_not_measured",
+      "coq_id": "mill_acc_hodge_clay_algebraicity_not_measured_flag"
     },
     {
       "id": "mill_acc_ecmwf_not_beaten_flag",

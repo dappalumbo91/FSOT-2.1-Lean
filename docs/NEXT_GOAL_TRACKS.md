@@ -10,9 +10,9 @@
 | **Sickness** | Epidemiology class 0.015%; host+pathogen coupling smoke | Genetics two-system product on public genomes | Person-level onset as 0.5% |
 | **Path integral** | Discrete path-sum (valve branches + \(a_0/\gamma\)) | Deeper native sum; classical YM still named | “Millennium theorem proved” |
 | **Millennium SOTA vs 0.5%** | Named Hodge extra classes \(C_8\)..\(C_{44}\) algebraic; BSD LMFDB ranks 0..5 vanishing complete. | WIP SOTA beats stay outside 0.5% until the object is right | Enumerating infinite Hassett / rank-\(\ge 6\) tails; Clay Prize; stuffing a WIP beat into the green gate |
-| **NSE (tracked)** | Helicity is 3D Euler invariant; NSE dissipates it. Enstrophy budget two-term. | Clay: whether stretching stays BKM-controlled | Stuffing helicity or the budget into existence |
-| **BSD general \(E\) (tracked)** | Tam local vs Reg global. Height Gram native. | Clay \(\mathrm{rank}=\mathrm{ord}\,L\) for \(r\ge 2\) | Enumerating Kato; Weierstrass\(\to\mathbb{Z}\) |
-| **Hodge (tracked)** | HK Fano of lines named. Abelian 4-fold \(\chi=0\). | Hodge (2,2) on abelian/HK 4-folds | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
+| **NSE (tracked)** | Clay smoothness is not a measured function. Working: 4/5, 3/2, 1/3, \(\kappa\). | Clay yes/no on \(\mathbb{R}^3\) | Stuffing cascade numbers into smoothness |
+| **BSD general \(E\) (tracked)** | Clay rank=ord L ∀E is not a measured function. Working: LMFDB Sha, first-of-rank seeds. | Clay equality as a theorem | Hunting Kato; Weierstrass\(\to\mathbb{Z}\) |
+| **Hodge (tracked)** | Clay algebraicity without a cycle is not a measured function. Working: named \(\chi\)/Gram. | Clay algebraicity on a general 4-fold | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
 
 Same fluid. Not a second physics. Wrong object is still wrong object.
 

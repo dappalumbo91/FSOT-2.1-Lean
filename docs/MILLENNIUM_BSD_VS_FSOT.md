@@ -79,7 +79,9 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
 
 15. **Tamagawa is local; regulator is global.** \(\prod c_p\) is bad-prime local data. Reg is the global height Gram. 11642a1 Tam=2 vs 643a1 Tam=1, both \(\mathrm{Sha}_{\mathrm{an}}=1\). Same two-zoom as Particle stretching vs Fluid viscosity. Isolated “one volume number” swallows Tam into Reg.
 
-**Remainder:** Clay’s equality \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\). Do not enumerate Euler systems. Do not Weierstrass\(\to\mathbb{Z}\).
+16. **Clay rank \(=\) ord \(L\) for every \(E\) is not a measured function.** LMFDB publishes \(\Omega\), Reg, Tam, \(L^{(r)}/r!\), \(\mathrm{Sha}_{\mathrm{an}}\) on named curves. Nobody publishes a residual for “rank \(=\) ord \(L\) \(\forall E\).” Working data: first-of-rank seeds and Sha volume on those curves.
+
+**Remainder:** Clay’s equality as a theorem — not a missing LMFDB column. Do not hunt Kato for a non-function. Do not Weierstrass\(\to\mathbb{Z}\).
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 
