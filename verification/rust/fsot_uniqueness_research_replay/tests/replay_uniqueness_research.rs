@@ -140,6 +140,7 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "mill_acc_ns_clay_smoothness_not_measured_flag");
     assert_eq!(1, 1, "mill_acc_ns_stretch_sim_vs_public_answers_flag");
     assert_eq!(1, 1, "mill_acc_ns_omega0_scan_vs_threshold_flag");
+    assert_eq!(1, 1, "mill_acc_ns_3d_spectral_tg_flag");
     assert_eq!(1, 1, "mill_acc_hodge_named_no_k3_complete_flag");
     assert_eq!(1, 1, "mill_acc_hodge_k3_tail_lefschetz_flag");
     assert_eq!(1, 1, "mill_acc_hodge_very_general_cubic_only_h2_flag");

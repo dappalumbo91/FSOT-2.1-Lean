@@ -40,9 +40,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 10. **Clay smoothness is not a measured function.** Lab and DNS publish inertial-range flux and wall \(\kappa\). Nobody publishes a % error on “is NSE smooth?” Isolated “solve existence” looks for a residual that does not exist. Working data: \(4/5\), \(3/2\), \(1/3\) exact; \(\kappa\) vs log-law scatter.
 
-11. **Stretch/visc cartoon vs other answers.** Seed-locked ODE \(d\omega/dt=\alpha\omega^2-\mu k^2\omega\) with \(\alpha=\mathrm{POOF}\), \(\mu=\mu(\mathrm{Fluid})\). 2D (\(\alpha=0\)) stays regular — agrees with the proven 2D theorem. 3D Euler (\(\mu=0\)) blows — agrees Euler is more singular. 3D NSE toy stays regular (\(\omega_0=1<\mu/\mathrm{POOF}\)) — agrees with DNS: no blow-up at accessible Re. Not Clay smoothness.
+11. **3D NSE on \(\mathbb{T}^3\), not 2D.** Spectral Taylor–Green, seed-locked \(\mu\). Stretching production \(\omega_i S_{ij}\omega_j\) is 3D (not Beltrami, not 2D). Viscous run: energy and \(\max|\omega|\) decay, BKM proxy finite on the run. 3D Euler on the **same** grid does not dissipate (\(\max|\omega|\) grows). 2D enstrophy is a different theorem. Not Clay on \(\mathbb{R}^3\).
 
-**Remainder:** Clay’s yes/no on \(\mathbb{R}^3\) — a theorem, not this cartoon. Do not stuff the toy into existence.
+**Remainder:** Clay’s yes/no for **all** smooth data on \(\mathbb{R}^3\) — a theorem, not one Taylor–Green run. Do not substitute 2D.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 

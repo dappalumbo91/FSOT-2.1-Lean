@@ -25,6 +25,7 @@ from typing import Any
 try:
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel, nse_omega0_scan
+    from fsot_nse3d import nse3d_measured_compare
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -98,6 +99,7 @@ except ImportError:  # pragma: no cover
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
     from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel, nse_omega0_scan
+    from fsot_nse3d import nse3d_measured_compare
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -1718,6 +1720,26 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             native_status="EXECUTABLE",
             note="Measured compare of the toy against its own threshold. Not 3D NSE on R^3. Do not stuff into smoothness.",
             extra=om_scan,
+        )
+    )
+    nse3 = nse3d_measured_compare()
+    nse3_ok = bool(nse3["ok"])
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="3D incompressible NSE on T^3 (spectral Taylor–Green): stretching is 3D; seed-μ run stays regular; 3D Euler on the same grid does not dissipate. Not 2D",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_3d_spectral_tg_vs_euler3d",
+            computed=1.0 if nse3_ok else 0.0,
+            measured=1.0,
+            public_sota_model="3D Taylor–Green DNS (Brachet et al.): viscous TG decays. 3D Euler is more singular. This is a finite-grid finite-time 3D run at seed μ. Not Clay on R^3.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="nse3d_tg_regular_euler3d_undamped" if nse3_ok else "nse3d_run_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="The 3D object. 2D enstrophy is not this. 1D Riccati is not this. Stretching production is 3D. Seed μ damps energy and max|ω|; 3D Euler on T^3 does not. Do not claim Clay smoothness.",
+            extra=nse3,
         )
     )
     wx = _weather_skill()
@@ -3949,6 +3971,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_nmeas = next(r for r in rows if r["name"] == "ns_clay_smoothness_not_a_measured_function")
     ns_sim = next(r for r in rows if r["name"] == "ns_stretch_sim_vs_public_answers")
     ns_om = next(r for r in rows if r["name"] == "ns_omega0_scan_vs_threshold")
+    ns_3d = next(r for r in rows if r["name"] == "ns_3d_spectral_tg_vs_euler3d")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -4102,6 +4125,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_clay_smoothness_not_measured": 1 if ns_nmeas.get("verdict") == "clay_smoothness_not_measured" else 0,
         "ns_stretch_sim_vs_public_answers": 1 if ns_sim.get("verdict") == "stretch_sim_agrees_public_answers" else 0,
         "ns_omega0_scan_vs_threshold": 1 if ns_om.get("fsot_green") == "pass" else 0,
+        "ns_3d_spectral_tg": 1 if ns_3d.get("verdict") == "nse3d_tg_regular_euler3d_undamped" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -4531,6 +4555,7 @@ if __name__ == "__main__":
         and s["ns_clay_smoothness_not_measured"] == 1
         and s["ns_stretch_sim_vs_public_answers"] == 1
         and s["ns_omega0_scan_vs_threshold"] == 1
+        and s["ns_3d_spectral_tg"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1

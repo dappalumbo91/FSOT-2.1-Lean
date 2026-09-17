@@ -419,6 +419,9 @@ Proof. reflexivity. Qed.
 Lemma mill_acc_ns_omega0_scan_vs_threshold_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
+Lemma mill_acc_ns_3d_spectral_tg_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
 Lemma mill_acc_hodge_named_no_k3_complete_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

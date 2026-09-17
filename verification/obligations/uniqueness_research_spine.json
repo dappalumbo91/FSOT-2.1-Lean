@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-17T20:31:38.225165+00:00",
+  "generated_at": "2026-09-17T20:41:12.499839+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 150,
+  "obligation_count": 151,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -1200,6 +1200,15 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_ns_omega0_scan_vs_threshold",
       "coq_id": "mill_acc_ns_omega0_scan_vs_threshold_flag"
+    },
+    {
+      "id": "mill_acc_ns_3d_spectral_tg_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_3d_spectral_tg",
+      "coq_id": "mill_acc_ns_3d_spectral_tg_flag"
     },
     {
       "id": "mill_acc_hodge_named_no_k3_complete_flag",

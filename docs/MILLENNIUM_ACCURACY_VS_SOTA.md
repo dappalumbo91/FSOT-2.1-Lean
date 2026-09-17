@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T20:31:27.625161+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T20:40:58.338527+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -67,6 +67,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Navier–Stokes existence and smoothness | Clay smoothness is not a measured function. Working data: 4/5, 3/2, 1/3 exact; κ beats log-law scatter. No public smoothness residual | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Seed-locked stretch/visc cartoon: 2D stays regular; 3D Euler toy blows; 3D NSE toy stays regular. Compare those answers to 2D theorem / Euler / DNS | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Cartoon ω0 scan vs Riccati threshold μ/POOF: finite iff ω0 ≤ threshold (6/6). Not Clay 3D NSE | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Navier–Stokes existence and smoothness | 3D incompressible NSE on T^3 (spectral Taylor–Green): stretching is 3D; seed-μ run stays regular; 3D Euler on the same grid does not dissipate. Not 2D | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 4.167 | beats/meets | n/a | n/a | beats_sota_right_object |
 | Navier–Stokes existence and smoothness | Gap-zone quiet (1000–1010 hPa / 8–15 m/s) — should not issue (transferred_weather) | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Latitude-belt transfer: quiet kill coupled to a same-issue storm hold (|Δlat|<POOF·180/π) | 0 | — | — | n/a | n/a | structure |
