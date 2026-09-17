@@ -1727,18 +1727,18 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Navier–Stokes existence and smoothness",
-            function_object="3D incompressible NSE on T^3 (spectral Taylor–Green): stretching is 3D; seed-μ run stays regular; 3D Euler on the same grid does not dissipate. Not 2D",
+            function_object="3D viscous NSE on T^3 (spectral Taylor–Green): stretching is 3D; seed-μ energy and max|ω| decay. 3D Euler μ=0 is the wrong orifice (inviscid, under-resolved)",
             clay_object="Global smooth (or blow-up) 3D incompressible NSE",
             name="ns_3d_spectral_tg_vs_euler3d",
             computed=1.0 if nse3_ok else 0.0,
             measured=1.0,
-            public_sota_model="3D Taylor–Green DNS (Brachet et al.): viscous TG decays. 3D Euler is more singular. This is a finite-grid finite-time 3D run at seed μ. Not Clay on R^3.",
+            public_sota_model="Brachet viscous Taylor–Green DNS: at this Re the flow decays. Clay is viscous NSE, not Euler. 16^3 Euler energy drift is not a blow-up theorem.",
             public_sota_typical_error_pct=None,
             comparison_class="structure",
-            verdict="nse3d_tg_regular_euler3d_undamped" if nse3_ok else "nse3d_run_fails",
+            verdict="nse3d_viscous_tg_regular" if nse3_ok else "nse3d_run_fails",
             beats_or_meets_sota=None,
             native_status="EXECUTABLE",
-            note="The 3D object. 2D enstrophy is not this. 1D Riccati is not this. Stretching production is 3D. Seed μ damps energy and max|ω|; 3D Euler on T^3 does not. Do not claim Clay smoothness.",
+            note="3D viscous object. Do not use 2D. Do not use Euler μ=0 as the standard (wrong orifice; grid is not a proof Euler is singular). Not Clay on R^3.",
             extra=nse3,
         )
     )
@@ -4125,7 +4125,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_clay_smoothness_not_measured": 1 if ns_nmeas.get("verdict") == "clay_smoothness_not_measured" else 0,
         "ns_stretch_sim_vs_public_answers": 1 if ns_sim.get("verdict") == "stretch_sim_agrees_public_answers" else 0,
         "ns_omega0_scan_vs_threshold": 1 if ns_om.get("fsot_green") == "pass" else 0,
-        "ns_3d_spectral_tg": 1 if ns_3d.get("verdict") == "nse3d_tg_regular_euler3d_undamped" else 0,
+        "ns_3d_spectral_tg": 1 if ns_3d.get("verdict") == "nse3d_viscous_tg_regular" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,

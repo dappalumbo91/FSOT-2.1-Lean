@@ -40,9 +40,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 10. **Clay smoothness is not a measured function.** Lab and DNS publish inertial-range flux and wall \(\kappa\). Nobody publishes a % error on “is NSE smooth?” Isolated “solve existence” looks for a residual that does not exist. Working data: \(4/5\), \(3/2\), \(1/3\) exact; \(\kappa\) vs log-law scatter.
 
-11. **3D NSE on \(\mathbb{T}^3\), not 2D.** Spectral Taylor–Green, seed-locked \(\mu\). Stretching production \(\omega_i S_{ij}\omega_j\) is 3D (not Beltrami, not 2D). Viscous run: energy and \(\max|\omega|\) decay, BKM proxy finite on the run. 3D Euler on the **same** grid does not dissipate (\(\max|\omega|\) grows). 2D enstrophy is a different theorem. Not Clay on \(\mathbb{R}^3\).
+11. **3D viscous NSE on \(\mathbb{T}^3\), not 2D and not Euler.** Spectral Taylor–Green, seed-locked \(\mu\). Stretching \(\omega_i S_{ij}\omega_j\) is 3D. Energy and \(\max|\omega|\) decay (same direction as viscous TG DNS at this Re). **3D Euler (\(\mu=0\)) is the wrong orifice:** Clay is viscous NSE; a \(16^3\) Euler run does not conserve energy, so it is not a proof Euler is singular. Isolated \(\mu=0\) is inviscid stuffing (same miss as helicity conservation).
 
-**Remainder:** Clay’s yes/no for **all** smooth data on \(\mathbb{R}^3\) — a theorem, not one Taylor–Green run. Do not substitute 2D.
+**Remainder:** Clay’s yes/no for **all** smooth data on \(\mathbb{R}^3\). One viscous TG run is not that theorem. Do not substitute 2D. Do not treat Euler as the standard.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 
