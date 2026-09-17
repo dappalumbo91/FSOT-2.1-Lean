@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T20:16:49.644758+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T20:31:27.625161+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
@@ -18,9 +18,9 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 
 | Bucket | n |
 |--------|---|
-| Beats or meets public SOTA | 60 |
-| …of those, inside FSOT 0.5% green | 54 |
-| …of those, inside 0.05% aspiration | 45 |
+| Beats or meets public SOTA | 62 |
+| …of those, inside FSOT 0.5% green | 56 |
+| …of those, inside 0.05% aspiration | 47 |
 | **SOTA beat, FSOT accuracy still WIP** | **4** |
 | Comparable but does **not** beat | 0 |
 | **Next dig** (misses + open tracks) | **3** |
@@ -66,6 +66,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Navier–Stokes existence and smoothness | von Kármán log-law κ = A_bleed/φ² (wall shear). Not 3D smoothness. | 0.02291 | 2.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | Clay smoothness is not a measured function. Working data: 4/5, 3/2, 1/3 exact; κ beats log-law scatter. No public smoothness residual | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Seed-locked stretch/visc cartoon: 2D stays regular; 3D Euler toy blows; 3D NSE toy stays regular. Compare those answers to 2D theorem / Euler / DNS | 0 | — | — | n/a | n/a | structure |
+| Navier–Stokes existence and smoothness | Cartoon ω0 scan vs Riccati threshold μ/POOF: finite iff ω0 ≤ threshold (6/6). Not Clay 3D NSE | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 4.167 | beats/meets | n/a | n/a | beats_sota_right_object |
 | Navier–Stokes existence and smoothness | Gap-zone quiet (1000–1010 hPa / 8–15 m/s) — should not issue (transferred_weather) | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Latitude-belt transfer: quiet kill coupled to a same-issue storm hold (|Δlat|<POOF·180/π) | 0 | — | — | n/a | n/a | structure |
@@ -148,6 +149,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Hodge conjecture | Very general cubic 4-fold: rational Hodge (2,2) is ⟨h²⟩ only (rank 1). Extra rational classes live on C_d | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Unnamed no-K3 C_d have no named surface, hence no Gram seed. FSOT seeds attach to named varieties. Hunting C_48 is enumeration | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | χ of a smooth quartic 4-fold ⊂ CP^5 = 188 (same Chern as cubic at d=4). Not a K3 | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
+| Hodge conjecture | χ of a smooth quintic 4-fold ⊂ CP^5 = 825 (same Chern family, Fano K=(5−6)h). Not C_48 | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | χ of a smooth sextic 4-fold ⊂ CP^5 = 2610 (first Calabi–Yau hypersurface 4-fold, K=(d−6)h=0) | 0 | 0 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Hodge conjecture | Named hypersurface 4-folds after cubic: quartic χ=188, sextic CY χ=2610. Lefschetz hyperplane still applies. Not C_48 | 0 | — | — | n/a | n/a | structure |
 | Hodge conjecture | Fano of lines on a cubic 4-fold is a named hyperkähler 4-fold (b_2=F_8+2=23). Lefschetz (1,1) on H^2(F). Not C_48 | 0 | — | — | n/a | n/a | structure |

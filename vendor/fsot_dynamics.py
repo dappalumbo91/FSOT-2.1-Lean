@@ -269,6 +269,42 @@ def nse_stretch_sim_panel() -> dict[str, object]:
     }
 
 
+def nse_omega0_scan() -> dict[str, object]:
+    """Cartoon Riccati threshold: finite iff ω0 ≤ μ/POOF. Not Clay NSE."""
+    panel = nse_stretch_sim_panel()
+    mu = float(panel["mu"])
+    alpha = float(panel["alpha_3d"])
+    thresh = mu / max(alpha, 1e-30)
+    rows: list[dict[str, object]] = []
+    hits = 0
+    for scale in (0.25, 0.5, 0.9, 1.0, 1.1, 2.0):
+        w0 = thresh * scale
+        run = nse_stretch_integrate(alpha, mu, omega0=w0)
+        predicted = w0 <= thresh * (1.0 + 1e-12)
+        agree = bool(run["finite"]) == predicted
+        hits += int(agree)
+        rows.append(
+            {
+                "omega0": w0,
+                "scale_of_threshold": scale,
+                "finite": bool(run["finite"]),
+                "predicted_finite": predicted,
+                "agree": agree,
+            }
+        )
+    n = len(rows)
+    return {
+        "threshold": thresh,
+        "mu": mu,
+        "alpha": alpha,
+        "hits": hits,
+        "n": n,
+        "hit_pct": 100.0 * hits / n,
+        "rows": rows,
+        "clay_claimed": False,
+    }
+
+
 def equilibrium_scalar(domain: str = "Cosmology") -> float:
     return f(domain_scalar(domain))
 

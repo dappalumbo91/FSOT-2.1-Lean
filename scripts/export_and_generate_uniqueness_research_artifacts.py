@@ -488,6 +488,7 @@ def build_obligations() -> list[dict]:
         ("mill_acc_ns_helicity_3d_not_2d", acc["ns_helicity_3d_not_2d"]),
         ("mill_acc_ns_clay_smoothness_not_measured", acc["ns_clay_smoothness_not_measured"]),
         ("mill_acc_ns_stretch_sim_vs_public_answers", acc["ns_stretch_sim_vs_public_answers"]),
+        ("mill_acc_ns_omega0_scan_vs_threshold", acc["ns_omega0_scan_vs_threshold"]),
         ("mill_acc_hodge_named_no_k3_complete", acc["hodge_hassett_named_no_k3_complete"]),
         ("mill_acc_hodge_k3_tail_lefschetz", acc["hodge_hassett_k3_tail_lefschetz"]),
         ("mill_acc_hodge_very_general_cubic_only_h2", acc["hodge_very_general_cubic_only_h2"]),
@@ -497,6 +498,7 @@ def build_obligations() -> list[dict]:
         ("mill_acc_hodge_abelian4_euler_exact", acc["hodge_abelian4_euler_exact"]),
         ("mill_acc_hodge_clay_algebraicity_not_measured", acc["hodge_clay_algebraicity_not_measured"]),
         ("mill_acc_hodge_chi_panel_vs_chern", acc["hodge_chi_panel_vs_chern"]),
+        ("mill_acc_hodge_quintic4_euler_exact", acc["hodge_quintic4_euler_exact"]),
         ("mill_acc_ecmwf_not_beaten", acc["ecmwf_not_beaten"]),
         ("mill_acc_weather_quiet_fill_still_miss", acc["weather_quiet_fill_still_miss"]),
     ):

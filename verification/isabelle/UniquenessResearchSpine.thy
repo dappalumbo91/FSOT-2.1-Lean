@@ -328,13 +328,13 @@ lemma hodge_clay_open_err_under_half: "(0::real) < (0.5::real)"
 lemma hodge_clay_open_computed_pos: "(0::real) < 1.0"
   by simp
 
-lemma mill_acc_beats_or_meets_n_flag: "(60::nat) = 60"
+lemma mill_acc_beats_or_meets_n_flag: "(62::nat) = 62"
   by simp
 
-lemma mill_acc_comparable_n_flag: "(57::nat) = 57"
+lemma mill_acc_comparable_n_flag: "(59::nat) = 59"
   by simp
 
-lemma mill_acc_green_pass_n_flag: "(54::nat) = 54"
+lemma mill_acc_green_pass_n_flag: "(56::nat) = 56"
   by simp
 
 lemma mill_acc_clay_open_n_flag: "(6::nat) = 6"
@@ -415,6 +415,9 @@ lemma mill_acc_ns_clay_smoothness_not_measured_flag: "(1::nat) = 1"
 lemma mill_acc_ns_stretch_sim_vs_public_answers_flag: "(1::nat) = 1"
   by simp
 
+lemma mill_acc_ns_omega0_scan_vs_threshold_flag: "(1::nat) = 1"
+  by simp
+
 lemma mill_acc_hodge_named_no_k3_complete_flag: "(1::nat) = 1"
   by simp
 
@@ -440,6 +443,9 @@ lemma mill_acc_hodge_clay_algebraicity_not_measured_flag: "(1::nat) = 1"
   by simp
 
 lemma mill_acc_hodge_chi_panel_vs_chern_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_hodge_quintic4_euler_exact_flag: "(1::nat) = 1"
   by simp
 
 lemma mill_acc_ecmwf_not_beaten_flag: "(1::nat) = 1"

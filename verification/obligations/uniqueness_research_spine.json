@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-17T20:17:23.232746+00:00",
+  "generated_at": "2026-09-17T20:31:38.225165+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 148,
+  "obligation_count": 150,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -934,8 +934,8 @@
     {
       "id": "mill_acc_beats_or_meets_n_flag",
       "kind": "eq_nat",
-      "value": 60,
-      "right_value": 60,
+      "value": 62,
+      "right_value": 62,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_beats_or_meets_n",
       "coq_id": "mill_acc_beats_or_meets_n_flag"
@@ -943,8 +943,8 @@
     {
       "id": "mill_acc_comparable_n_flag",
       "kind": "eq_nat",
-      "value": 57,
-      "right_value": 57,
+      "value": 59,
+      "right_value": 59,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_comparable_n",
       "coq_id": "mill_acc_comparable_n_flag"
@@ -952,8 +952,8 @@
     {
       "id": "mill_acc_green_pass_n_flag",
       "kind": "eq_nat",
-      "value": 54,
-      "right_value": 54,
+      "value": 56,
+      "right_value": 56,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_green_pass_n",
       "coq_id": "mill_acc_green_pass_n_flag"
@@ -1193,6 +1193,15 @@
       "coq_id": "mill_acc_ns_stretch_sim_vs_public_answers_flag"
     },
     {
+      "id": "mill_acc_ns_omega0_scan_vs_threshold_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ns_omega0_scan_vs_threshold",
+      "coq_id": "mill_acc_ns_omega0_scan_vs_threshold_flag"
+    },
+    {
       "id": "mill_acc_hodge_named_no_k3_complete_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -1272,6 +1281,15 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_hodge_chi_panel_vs_chern",
       "coq_id": "mill_acc_hodge_chi_panel_vs_chern_flag"
+    },
+    {
+      "id": "mill_acc_hodge_quintic4_euler_exact_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_hodge_quintic4_euler_exact",
+      "coq_id": "mill_acc_hodge_quintic4_euler_exact_flag"
     },
     {
       "id": "mill_acc_ecmwf_not_beaten_flag",

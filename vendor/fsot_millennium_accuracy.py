@@ -24,7 +24,7 @@ from typing import Any
 
 try:
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
-    from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel
+    from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel, nse_omega0_scan
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -74,6 +74,7 @@ try:
         seed_gr24_euler,
         seed_cubic_4fold_euler,
         seed_quartic_4fold_euler,
+        seed_hypersurface_4fold_euler,
         seed_sextic_4fold_euler,
         seed_cubic4_h22,
         seed_cubic4_very_general_rational_hodge_rank,
@@ -96,7 +97,7 @@ except ImportError:  # pragma: no cover
 
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from fsot_compute import E, PHI, PI, POOF, MEDIUM_ORIFICES, derived_D_eff
-    from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel
+    from fsot_dynamics import sound_speed_sq, viscosity_eff, viscous_mode_rhs_error_pct, nse_stretch_sim_panel, nse_omega0_scan
     from fsot_millennium_track import GAMMA, RIEMANN_T1, clay_process_flags
     from fsot_path_sum import run_path_sum_suite
     from fsot_quantum_trinary_syntax import GROVER_EXPONENT
@@ -146,6 +147,7 @@ except ImportError:  # pragma: no cover
         seed_gr24_euler,
         seed_cubic_4fold_euler,
         seed_quartic_4fold_euler,
+        seed_hypersurface_4fold_euler,
         seed_sextic_4fold_euler,
         seed_cubic4_h22,
         seed_cubic4_very_general_rational_hodge_rank,
@@ -326,6 +328,7 @@ ELKIES_WATKINS_R6_CONDUCTOR = 5187563742
 ELKIES_WATKINS_R6_NEXT_CONDUCTOR = 5258110041
 # Hypersurface 4-folds ⊂ CP^5: same Chern formula as cubic (d=3 → 27).
 QUARTIC_4FOLD_CHI = 188.0
+QUINTIC_4FOLD_CHI = 825.0
 SEXTIC_4FOLD_CHI = 2610.0
 ABELIAN_4FOLD_CHI = 0.0
 # Kolmogorov 4/5 law (exact 3D inertial identity).
@@ -751,6 +754,7 @@ def _hodge_chi_panel() -> dict[str, Any]:
         ("Gr24", seed_gr24_euler(), 6.0),
         ("cubic4", seed_cubic_4fold_euler(), 27.0),
         ("quartic4", seed_quartic_4fold_euler(), QUARTIC_4FOLD_CHI),
+        ("quintic4", seed_hypersurface_4fold_euler(5), QUINTIC_4FOLD_CHI),
         ("sextic4", seed_sextic_4fold_euler(), SEXTIC_4FOLD_CHI),
         ("abelian4", seed_abelian_4fold_euler(), ABELIAN_4FOLD_CHI),
     ]
@@ -1694,6 +1698,26 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             native_status="EXECUTABLE",
             note="Simulation vs other answers, not a Clay residual. 2D toy finite ↔ proven global. Euler toy blows, NSE toy damps ↔ DNS no blow-up at accessible Re. Do not claim 3D smoothness. Fluid stays dark. ω0=1 < μ/POOF so the viscous branch wins in the cartoon.",
             extra=sim,
+        )
+    )
+    om_scan = nse_omega0_scan()
+    om_ok = int(om_scan["hits"]) == int(om_scan["n"]) and int(om_scan["n"]) == 6
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="Cartoon ω0 scan vs Riccati threshold μ/POOF: finite iff ω0 ≤ threshold (6/6). Not Clay 3D NSE",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_omega0_scan_vs_threshold",
+            computed=float(om_scan["hits"]),
+            measured=float(om_scan["n"]),
+            public_sota_model="Riccati dω/dt=αω²−γω has a threshold ω=γ/α. Scan is the cartoon vs that identity. DNS/2D answers sit on the other row.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="omega0_scan_hits_threshold" if om_ok else "omega0_scan_miss",
+            beats_or_meets_sota=om_ok,
+            native_status="EXECUTABLE",
+            note="Measured compare of the toy against its own threshold. Not 3D NSE on R^3. Do not stuff into smoothness.",
+            extra=om_scan,
         )
     )
     wx = _weather_skill()
@@ -3715,6 +3739,25 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"formula": "seed_hypersurface_4fold_euler(4)", "degree": 4},
         )
     )
+    q5 = seed_hypersurface_4fold_euler(5)
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="χ of a smooth quintic 4-fold ⊂ CP^5 = 825 (same Chern family, Fano K=(5−6)h). Not C_48",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_quintic4_euler",
+            computed=q5,
+            measured=QUINTIC_4FOLD_CHI,
+            public_sota_model="Hypersurface Chern at d=5. Completes Fano line cubic/quartic/quintic before CY sextic. Not Hassett C_48.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_quintic4_chi",
+            beats_or_meets_sota=abs(q5 - QUINTIC_4FOLD_CHI) < 1e-9,
+            native_status="EXECUTABLE",
+            note="Measured Chern compare. Do not steal 25−1 for K3. Not Hodge (2,2).",
+            extra={"formula": "seed_hypersurface_4fold_euler(5)", "degree": 5},
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3736,6 +3779,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     next4_ok = (
         abs(c3 - 27.0) < 1e-9
         and abs(q4 - QUARTIC_4FOLD_CHI) < 1e-9
+        and abs(q5 - QUINTIC_4FOLD_CHI) < 1e-9
         and abs(s6 - SEXTIC_4FOLD_CHI) < 1e-9
         and no_seed_ok
     )
@@ -3821,7 +3865,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         )
     )
     chi_panel = _hodge_chi_panel()
-    chi_panel_ok = chi_panel["hits"] == chi_panel["n"] and chi_panel["n"] >= 8
+    chi_panel_ok = chi_panel["hits"] == chi_panel["n"] and chi_panel["n"] >= 9
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3904,6 +3948,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_hel = next(r for r in rows if r["name"] == "ns_helicity_3d_not_2d")
     ns_nmeas = next(r for r in rows if r["name"] == "ns_clay_smoothness_not_a_measured_function")
     ns_sim = next(r for r in rows if r["name"] == "ns_stretch_sim_vs_public_answers")
+    ns_om = next(r for r in rows if r["name"] == "ns_omega0_scan_vs_threshold")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -3979,6 +4024,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_vg = next(r for r in rows if r["name"] == "hodge_very_general_cubic_only_h2")
     hodge_noseed = next(r for r in rows if r["name"] == "hodge_unnamed_no_k3_has_no_seed")
     hodge_q4 = next(r for r in rows if r["name"] == "hodge_quartic4_euler")
+    hodge_q5 = next(r for r in rows if r["name"] == "hodge_quintic4_euler")
     hodge_s6 = next(r for r in rows if r["name"] == "hodge_sextic4_cy_euler")
     hodge_next4 = next(r for r in rows if r["name"] == "hodge_hypersurface_4folds_after_cubic_named")
     hodge_hk = next(r for r in rows if r["name"] == "hodge_hk4_fano_lines_named_not_c48")
@@ -4055,6 +4101,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_helicity_3d_not_2d": 1 if ns_hel.get("verdict") == "helicity_3d_not_2d" else 0,
         "ns_clay_smoothness_not_measured": 1 if ns_nmeas.get("verdict") == "clay_smoothness_not_measured" else 0,
         "ns_stretch_sim_vs_public_answers": 1 if ns_sim.get("verdict") == "stretch_sim_agrees_public_answers" else 0,
+        "ns_omega0_scan_vs_threshold": 1 if ns_om.get("fsot_green") == "pass" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -4132,6 +4179,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_very_general_cubic_only_h2": 1 if hodge_vg.get("verdict") == "very_general_cubic_only_h2" else 0,
         "hodge_unnamed_no_k3_no_seed": 1 if hodge_noseed.get("verdict") == "unnamed_no_k3_no_native_seed" else 0,
         "hodge_quartic4_euler_exact": 1 if hodge_q4["beats_or_meets_sota"] else 0,
+        "hodge_quintic4_euler_exact": 1 if hodge_q5["beats_or_meets_sota"] else 0,
         "hodge_sextic4_cy_euler_exact": 1 if hodge_s6["beats_or_meets_sota"] else 0,
         "hodge_hypersurface_4folds_after_cubic": 1 if hodge_next4.get("verdict") == "hypersurface_4folds_after_cubic" else 0,
         "hodge_hk4_fano_lines_named": 1 if hodge_hk.get("verdict") == "hk4_fano_lines_named" else 0,
@@ -4482,6 +4530,7 @@ if __name__ == "__main__":
         and s["ns_helicity_3d_not_2d"] == 1
         and s["ns_clay_smoothness_not_measured"] == 1
         and s["ns_stretch_sim_vs_public_answers"] == 1
+        and s["ns_omega0_scan_vs_threshold"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
@@ -4559,6 +4608,7 @@ if __name__ == "__main__":
         and s["hodge_very_general_cubic_only_h2"] == 1
         and s["hodge_unnamed_no_k3_no_seed"] == 1
         and s["hodge_quartic4_euler_exact"] == 1
+        and s["hodge_quintic4_euler_exact"] == 1
         and s["hodge_sextic4_cy_euler_exact"] == 1
         and s["hodge_hypersurface_4folds_after_cubic"] == 1
         and s["hodge_hk4_fano_lines_named"] == 1

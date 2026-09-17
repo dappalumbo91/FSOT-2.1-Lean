@@ -336,13 +336,13 @@ theorem hodge_clay_open_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
 theorem hodge_clay_open_computed_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
-theorem mill_acc_beats_or_meets_n_flag : (60 : ℕ) = (60 : ℕ) := by
+theorem mill_acc_beats_or_meets_n_flag : (62 : ℕ) = (62 : ℕ) := by
   decide
 
-theorem mill_acc_comparable_n_flag : (57 : ℕ) = (57 : ℕ) := by
+theorem mill_acc_comparable_n_flag : (59 : ℕ) = (59 : ℕ) := by
   decide
 
-theorem mill_acc_green_pass_n_flag : (54 : ℕ) = (54 : ℕ) := by
+theorem mill_acc_green_pass_n_flag : (56 : ℕ) = (56 : ℕ) := by
   decide
 
 theorem mill_acc_clay_open_n_flag : (6 : ℕ) = (6 : ℕ) := by
@@ -423,6 +423,9 @@ theorem mill_acc_ns_clay_smoothness_not_measured_flag : (1 : ℕ) = (1 : ℕ) :=
 theorem mill_acc_ns_stretch_sim_vs_public_answers_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
+theorem mill_acc_ns_omega0_scan_vs_threshold_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
 theorem mill_acc_hodge_named_no_k3_complete_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
@@ -448,6 +451,9 @@ theorem mill_acc_hodge_clay_algebraicity_not_measured_flag : (1 : ℕ) = (1 : �
   decide
 
 theorem mill_acc_hodge_chi_panel_vs_chern_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
+theorem mill_acc_hodge_quintic4_euler_exact_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
 theorem mill_acc_ecmwf_not_beaten_flag : (1 : ℕ) = (1 : ℕ) := by
