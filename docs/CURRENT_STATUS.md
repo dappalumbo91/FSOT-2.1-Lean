@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-17T21:54:20.176919+00:00`  
+**Generated:** `2026-09-17T22:41:06.915371+00:00`  
 **Edition stamp:** 2026-09-17  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -39,8 +39,9 @@ Verbs: **A predicts** · **B corrects** · **C checks**. Spec: [`LEDGERS.md`](LE
 | Gate | ≤ 0.5% pooled median |
 | Median-of-medians | 0.006625234573930708% |
 | Scalar records (envelope) | 181477 |
-| Tiers | `{'B_verified': 338, 'C_thin': 12, 'A_strong': 118}` |
+| Tiers | `{'B_verified': 340, 'B_process': 8, 'A_strong': 118, 'B_named': 2}` |
 | Cite as ToE accuracy | **no** |
+| Ledger B depth closed | **True** (empirical C_thin open=0) |
 
 ### Ledger C — live integrity
 
@@ -59,7 +60,7 @@ Verbs: **A predicts** · **B corrects** · **C checks**. Spec: [`LEDGERS.md`](LE
 | Gate | ≤ 0.5% pooled median |
 | Median-of-medians | 0.006625234573930708% |
 | Scalar records (envelope) | 181477 |
-| Tiers | `{'B_verified': 338, 'C_thin': 12, 'A_strong': 118}` |
+| Tiers | `{'B_verified': 340, 'B_process': 8, 'A_strong': 118, 'B_named': 2}` |
 
 ## Mathlib re-derivation (Formal corpus)
 

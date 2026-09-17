@@ -73,17 +73,17 @@ Do not stand up a “YM uniqueness repo” that pretends the probes are the theo
 
 ## High-value sibling / text slots (physics and application)
 
-These are **application gaps**, not residual holes. Each should pin D1D38A,
+These are **application gaps**, not residual holes. Each should pin AEB2AD,
 cite [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md), and keep kill criteria.
 
 | Slot | Hub already has | Sibling would add | Kill |
 |------|-----------------|-------------------|------|
-| **Chemistry lab / process sim** | CRC MW / \(T_m\) / \(T_b\) dual-route | Reactor / species notebook with the water worked example | Fitted Trouton; \(n_D\) as MW |
+| **Chemistry lab / process sim** | CRC MW / \(T_m\) / \(T_b\) dual-route · hub CLI `products/chemistry_lab.py` | Reactor / species notebook with the water worked example | Fitted Trouton; \(n_D\) as MW |
 | **Cell / developmental sim** | NCBI NC_012920.1 mt operons (dark Biology) | Cell-cycle / morphogen runtime; zebrafish stays quoted, not densified here | Flip Biology `observed`; CASP as 0.13 Å |
-| **Astronomy catalog browser** | JPL densities; MPCORB 0.023%; H0 sectors | Interactive sky/body zoom + Perfect Host vs PRED-001 demo | One \(H_0\); identity-pad densities |
-| **Seismology window dashboard** | PREM, \(b=\varphi-1/\varphi=1\), dated cells | Map of 39 km cells / 978 km cycle, potentials on **new** issues | Clock-time; rewrite 09-09 JSON |
-| **Weather / tide / hydro monitor** | Class locks + dated windows | Always-on sibling (approach doc exists) | S2S beat claim |
-| **Optics / photonics instrument** | CRC \(n_D\); Maxwell \(n^2\) | Lab-facing n-route vs Chemistry MW | Static water \(\varepsilon\sim 80\) as \(n^2\) |
+| **Astronomy catalog browser** | JPL densities; MPCORB 0.023%; H0 sectors · hub CLI `products/catalog_mpcorb.py` | Interactive sky/body zoom + Perfect Host vs PRED-001 demo | One \(H_0\); identity-pad densities |
+| **Seismology window dashboard** | PREM, \(b=\varphi-1/\varphi=1\), dated cells · hub CLI `products/seismo_windows.py` | Map of 39 km cells / 978 km cycle, potentials on **new** issues | Clock-time; rewrite 09-09 JSON |
+| **Weather / tide / hydro monitor** | Class locks + dated windows · hub CLI `products/weather_monitor.py` | Always-on sibling (approach doc exists) | S2S beat claim |
+| **Optics / photonics instrument** | CRC \(n_D\); Maxwell \(n^2\) · hub CLI `products/optics_nd.py` | Lab-facing n-route vs Chemistry MW | Static water \(\varepsilon\sim 80\) as \(n^2\) |
 | **Condensed-matter / SC lab** | CM core green; interconnect vs thermo is D9 | Superconductivity / band-structure product | Stuff live \(\lvert S\rvert\) vs 1 |
 | **Plasma / fusion product** | Plasma_Physics + space-weather classifiers | MHD / confinement **runtime** (not YM theorem) | Path-integral uniqueness as “proved” |
 | **Nuclear / superheavy watch** | ENDF; PRED-017 Z=119 awaiting | Decay-chain sim; JINR watch UI | Half-life as a 0.5% central before an atom exists |
@@ -102,7 +102,7 @@ CASP/CAMEO blind, dated `2026-09-09` after `valid_to`.
 
 ```text
 git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
-# pin D1D38A — do not copy-paste a second vendor/fsot_compute.py
+# pin AEB2AD — do not copy-paste a second vendor/fsot_compute.py
 ```
 
 1. Import `fsot_scaled` / quote the oracle hash prefix.

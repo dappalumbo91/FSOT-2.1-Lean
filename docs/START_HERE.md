@@ -38,6 +38,7 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | Why something is not claimed | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) · uniqueness: [`UNIQUENESS_RESEARCH_SPINE.md`](UNIQUENESS_RESEARCH_SPINE.md) |
 | Time (emergent process, not UTC) | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) · C15 / D12 |
 | Pin lineage (live AEB2AD vs freeze D1D38A) | [`PIN_LINEAGE.md`](PIN_LINEAGE.md) |
+| Field products (chem / weather / seismo / MPCORB / optics) | [`../products/README.md`](../products/README.md) |
 | Goal tracks (ECMWF / prices / sickness / path-sum) | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) |
 | Millennium YM vs FSOT path-sum | [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) — question: mass gap; answer: \(\varphi^2+1\) |
 | Millennium NSE vs FSOT | [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) — question: blow-up; answer: \(4/5\) is \(L^2\) not \(L^\infty\); BKM is stretching |

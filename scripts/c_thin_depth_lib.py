@@ -28,12 +28,22 @@ def _tier(median: float | None, records: int) -> str:
     return "D_needs_work"
 
 
-def _is_c_thin(bench: dict) -> bool:
+def classify_bench(bench: dict) -> str:
+    """Ledger B depth class. Process spines and named-complete objects are not C_thin debt."""
+    role = str(bench.get("ledger_role") or "")
+    if role == "process_certificate":
+        return "B_process"
+    if role == "named_object_complete":
+        return "B_named"
     rec = int(bench.get("record_count") or bench.get("observable_count") or 0)
     med = bench.get("pooled_median_error_pct") or bench.get("median_error_pct")
-    if med is None or rec == 0:
-        return False
-    return _tier(float(med), rec) == "C_thin"
+    if med is None:
+        return "unverified"
+    return _tier(float(med), rec)
+
+
+def _is_c_thin(bench: dict) -> bool:
+    return classify_bench(bench) == "C_thin"
 
 
 def deepen_panel(panel: str, cfg: dict, ext: dict[str, dict]) -> dict[str, Any] | None:

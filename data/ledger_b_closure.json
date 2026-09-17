@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-09-17T22:40:56.525652+00:00",
+  "pin": "AEB2AD",
+  "cite_as_toe_accuracy": false,
+  "green_gate": "477/477 stays; this file is depth/role, not a new residual gate",
+  "ledger_b_empirical_open": 0,
+  "ledger_b_done": true,
+  "tier_distribution": {
+    "B_verified": 341,
+    "B_process": 8,
+    "A_strong": 120,
+    "B_named": 2
+  },
+  "tagged_process_or_named": [
+    {
+      "file": "adversarial_fractal_break_benchmark.json",
+      "domain": "Adversarial_Fractal_Break_Tests",
+      "role": "process_certificate"
+    },
+    {
+      "file": "cepheid_pl_interconnect_benchmark.json",
+      "domain": "Cepheid_PL_Interconnect",
+      "role": "named_object_complete"
+    },
+    {
+      "file": "domain_orbital_predictions_benchmark.json",
+      "domain": "Domain_Orbital_Predictions",
+      "role": "process_certificate"
+    },
+    {
+      "file": "proof_ledger_closure_spine_benchmark.json",
+      "domain": "Proof_Ledger_Closure_Spine",
+      "role": "process_certificate"
+    },
+    {
+      "file": "rust_lean_bridge_benchmark.json",
+      "domain": "rust_lean_bridge",
+      "role": "process_certificate"
+    },
+    {
+      "file": "sh0es_ladder_chain_benchmark.json",
+      "domain": "SH0ES_Ladder_Chain",
+      "role": "named_object_complete"
+    },
+    {
+      "file": "theory_completeness_spine_benchmark.json",
+      "domain": "Theory_Completeness_Spine",
+      "role": "process_certificate"
+    },
+    {
+      "file": "toe_claim_certificate_bundle_benchmark.json",
+      "domain": "ToE_Claim_Certificate_Bundle",
+      "role": "process_certificate"
+    },
+    {
+      "file": "toe_gap_closure_spine_benchmark.json",
+      "domain": "ToE_Gap_Closure_Spine",
+      "role": "process_certificate"
+    },
+    {
+      "file": "toe_unification_spine_benchmark.json",
+      "domain": "ToE_Unification_Spine",
+      "role": "process_certificate"
+    }
+  ],
+  "expanded": [
+    {
+      "file": "sh0es_refined_benchmark.json",
+      "domain": "SH0ES_Refined",
+      "added": 0,
+      "record_count": 32
+    },
+    {
+      "file": "sh0es_full_sample_benchmark.json",
+      "domain": "SH0ES_Full_Sample",
+      "added": 0,
+      "record_count": 48
+    }
+  ],
+  "open_c_thin": [],
+  "kill": [
+    "Padding process spines to n=20",
+    "Padding SH0ES ladder rungs",
+    "Gating cz/d hosts as 0.5% H0",
+    "Retuning rho onto 73.04",
+    "Quoting 477/477 as ToE accuracy"
+  ]
+}

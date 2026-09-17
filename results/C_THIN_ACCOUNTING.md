@@ -2,7 +2,7 @@
 
 **Pin:** AEB2AD. Green gate is pooled median ≤ 0.5%. Tier C_thin is n&lt;20, not a failed law.
 
-Live scan: **13** C_thin files.
+**Ledger B depth closed 2026-09-17:** empirical C_thin open = **0**. See [`../docs/LEDGER_B_CLOSURE.md`](../docs/LEDGER_B_CLOSURE.md).
 
 ## Process spines (do not densify as empirical)
 

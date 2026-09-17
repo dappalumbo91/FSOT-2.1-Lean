@@ -1,6 +1,6 @@
 # Three ledgers — never mixed in a headline
 
-**Pin:** live SHA prefix of `vendor/fsot_compute.py` · **Peer review:** out of scope  
+**Pin:** **AEB2AD** (live SHA prefix of `vendor/fsot_compute.py`; freeze-era D1D38A: [`PIN_LINEAGE.md`](PIN_LINEAGE.md)) · **Peer review:** out of scope  
 A hostile reader treats one green paragraph as a first-principles hit. These ledgers cannot share a headline.
 
 | Ledger | What is allowed in the formula | Pass metric | Forbidden |

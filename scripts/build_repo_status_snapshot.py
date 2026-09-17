@@ -19,7 +19,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from c_thin_depth_lib import _tier  # noqa: E402
+from c_thin_depth_lib import classify_bench  # noqa: E402
+from fsot_precision_constants import AUDIT_EXCLUDED_BENCHMARKS  # noqa: E402
 
 OUT_JSON = ROOT / "data" / "repo_status_snapshot.json"
 OUT_MD = ROOT / "docs" / "CURRENT_STATUS.md"
@@ -61,6 +62,8 @@ def build() -> dict:
 
     tiers: Counter[str] = Counter()
     for p in (ROOT / "data").glob("*benchmark*.json"):
+        if p.name in AUDIT_EXCLUDED_BENCHMARKS:
+            continue
         try:
             d = json.loads(p.read_text(encoding="utf-8"))
         except Exception:
@@ -71,7 +74,7 @@ def build() -> dict:
             med = d.get("median_error_pct")
         if med is None or rec == 0:
             continue
-        tiers[_tier(float(med), rec)] += 1
+        tiers[classify_bench(d)] += 1
 
     green = int(margin.get("green_gate_pass_count") or 0)
     fail = int(margin.get("green_gate_fail_count") or 0)
@@ -108,6 +111,11 @@ def build() -> dict:
             "total_scalar_records": (empirical.get("benchmark_envelope") or {}).get(
                 "total_scalar_records"
             ),
+            "ledger_b_done": bool((_load(ROOT / "data" / "ledger_b_closure.json") or {}).get("ledger_b_done")),
+            "ledger_b_empirical_open": (_load(ROOT / "data" / "ledger_b_closure.json") or {}).get(
+                "ledger_b_empirical_open"
+            ),
+            "cite_as_toe_accuracy": False,
         },
         "mathlib": {
             "verdict": mathlib.get("verdict"),
@@ -233,6 +241,7 @@ def write_md(doc: dict) -> str:
         f"| Scalar records (envelope) | {emp.get('total_scalar_records')} |",
         f"| Tiers | `{emp.get('tier_distribution')}` |",
         "| Cite as ToE accuracy | **no** |",
+        f"| Ledger B depth closed | **{emp.get('ledger_b_done')}** (empirical C_thin open={emp.get('ledger_b_empirical_open')}) |",
         "",
         "### Ledger C — live integrity",
         "",

@@ -1,6 +1,6 @@
 # Worked examples — how to apply FSOT (cells, chemistry, astronomy)
 
-**Pin:** D1D38A · **Law:** \(\hat y = y\,(1+|S(\mathrm{domain})|\,f)\) · **Green:** domain **median** ≤ 0.5%
+**Pin:** AEB2AD · **Law:** \(\hat y = y\,(1+|S(\mathrm{domain})|\,f)\) · **Green:** domain **median** ≤ 0.5%
 
 These are **broken-down** applications on public tables. Same protocol every time.
 Full cookbooks: [`APPLY.md`](APPLY.md) · chemistry [`APPLY_CHEMISTRY.md`](APPLY_CHEMISTRY.md) ·

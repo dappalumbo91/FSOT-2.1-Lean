@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T21:54:20.176919+00:00",
+  "generated_at": "2026-09-17T22:41:06.915371+00:00",
   "edition_stamp": "2026-09-17",
   "authority": {
     "pin_prefix": "AEB2AD",
@@ -16,12 +16,16 @@
     "benchmark_file_count": 477,
     "green_gate_pct": 0.5,
     "tier_distribution": {
-      "B_verified": 338,
-      "C_thin": 12,
-      "A_strong": 118
+      "B_verified": 340,
+      "B_process": 8,
+      "A_strong": 118,
+      "B_named": 2
     },
     "median_of_medians_pct": 0.006625234573930708,
-    "total_scalar_records": 181477
+    "total_scalar_records": 181477,
+    "ledger_b_done": true,
+    "ledger_b_empirical_open": 0,
+    "cite_as_toe_accuracy": false
   },
   "mathlib": {
     "verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
