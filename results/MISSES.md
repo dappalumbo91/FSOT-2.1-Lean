@@ -16,10 +16,10 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | WX-QUIET-FILL | B/dated | Clean quiet 24 h, uncoupled from storm latitude belt | **Superseded object:** 44078 (59.94°N) was lat-belt transfer to MDXA2 (59.44°N), \|Δlat\|<POOF·180/π. Window min_pres=1002.8. Uncoupled clean quiet **holds** (n=4). | Did not move 1010. Did not rewrite frozen JSON. Did not drop the kill to inflate storm skill. |
 | SH0ES-LADDER | A | SH0ES ladder chain pooled | ~0.212% (aspiration 0.05% open) | Did not β-fit the ladder |
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
-| NSE-CLAY | — | 3D NSE existence on R^3 | \(L^2\) cascade 4/5 is not \(L^\infty\) existence. Stokes damps linear modes. BKM is \(\|\omega\|_\infty\). | Did not stuff existence into 4/5 or 1/3. Did not put \(D_{\mathrm{particle}}\) on 2D. |
+| NSE-CLAY | — | 3D NSE existence on R^3 | \(L^2\) cascade is not \(L^\infty\). BKM is \(\|\omega\|\) magnitude, not direction. Constantin–Fefferman is Lipschitz \(\xi\). | Did not stuff existence into 4/5 or \(\|\omega\|\). Did not put \(D_{\mathrm{particle}}\) on 2D. |
 | PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid | **Superseded object:** Atomic well \(D=6\) gave 5.43%. Continuum solid is Molecular \(D=7\), \(\nu=7/25=0.28\). | Did not put Atomic back to 7. |
-| BSD-RANK | — | \(\mathrm{rank}=\mathrm{ord}\,L\) for every \(E/\mathbb{Q}\) | Modularity produces \(L\). Volume is Sha. LMFDB ranks 0..5 vanishing complete. Rank \(\ge 6\) unnamed tail. | Did not nearest-template. Did not Weierstrass\(\to\mathbb{Z}\). |
-| HODGE-CLASS | — | Unnamed no-K3 Hassett and general non-cubic 4-folds | Named extra classes \(C_8\) through \(C_{44}\) algebraic. K3-locus extra classes (including unnamed \(d\)) are Lefschetz (1,1). | Did not enumerate the tail. Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
+| BSD-RANK | — | Analytic rank \(\ge 2\) | Modularity produces \(L\). Kolyvagin is rank \(=\) ord \(L\) for analytic rank 0,1. Volume is Sha. | Did not nearest-template. Did not Weierstrass\(\to\mathbb{Z}\). |
+| HODGE-CLASS | — | Unnamed no-K3 Hassett and general non-cubic 4-folds | Very general cubic: only \(h^2\). Named \(C_8\) through \(C_{44}\) algebraic. K3-locus extra classes are Lefschetz (1,1). | Did not enumerate the tail. Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
 
 Dated public scoreboard kills live in [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md). Do not rewrite issued JSON.
 

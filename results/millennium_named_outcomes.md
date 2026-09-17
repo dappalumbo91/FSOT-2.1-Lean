@@ -86,6 +86,6 @@ Do not drop these. Named Hodge \(C_d\) is done; these are the leftover objects.
 
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
-| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | \(L^2\) cascade 4/5 is not \(L^\infty\) existence. Stokes damps linear. BKM is \(\|\omega\|_\infty\). | Stuffing existence into 4/5 or 1/3 |
-| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) | Modularity produces \(L\). Volume is Sha. LMFDB ranks 0..5 vanishing complete. | Nearest-template; Weierstrass\(\to\mathbb{Z}\) |
-| HODGE-TAIL | unnamed no-K3 \(C_d\) + general non-cubic 4-folds | Named \(C_8..C_{44}\) algebraic. K3-locus extra classes are Lefschetz (1,1). | Enumerating the tail; stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
+| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | \(L^2\) cascade is not \(L^\infty\). BKM is \(\|\omega\|\) magnitude. Constantin–Fefferman is direction \(\xi\). | Stuffing existence into 4/5 or \(\|\omega\|\) |
+| BSD-RANK | Analytic rank \(\ge 2\) | Modularity produces \(L\). Kolyvagin is rank \(=\) ord \(L\) for analytic rank 0,1. | Nearest-template; Weierstrass\(\to\mathbb{Z}\) |
+| HODGE-TAIL | unnamed no-K3 \(C_d\) + general non-cubic 4-folds | Very general cubic only \(h^2\). Named \(C_8..C_{44}\) algebraic. K3 tail Lefschetz. | Enumerating the tail; stealing \(25-1\) for \(\chi(\mathrm{K3})\) |

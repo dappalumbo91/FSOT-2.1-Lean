@@ -640,6 +640,17 @@ def seed_cubic4_h22() -> float:
     return seed_fibonacci(8)
 
 
+def seed_cubic4_very_general_rational_hodge_rank() -> float:
+    """Rational Hodge (2,2) rank of a very general cubic 4-fold = 1.
+
+    h^{2,2}=F_8=21 is the Hodge number. Primitive F_8−1=20 is
+    transcendental for a very general X (not rational Hodge classes).
+    The only rational Hodge class is h², algebraic. Extra rational
+    classes live on C_d. Not the unnamed no-K3 remainder.
+    """
+    return 1.0
+
+
 def seed_hassett_d_plane() -> float:
     """Hassett discriminant of a cubic 4-fold containing a plane = F_6 = 8.
 

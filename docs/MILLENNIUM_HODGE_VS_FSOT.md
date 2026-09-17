@@ -22,6 +22,8 @@ These are **two different objects**. Related geometry (Hodge classes vs algebrai
 
 5. **K3-locus tail is Lefschetz (the conversion).** Isolated listing of later \(C_d\) is the wrong orifice. Unnamed \(d\) *with* associated K3 (sample \(14,26,38\)) reduce to Lefschetz (1,1) on that K3 — same as item 3, no surface name needed. Do not enumerate.
 
+6. **Very general cubic: only \(h^2\).** Isolated “cubic 4-fold Hodge is open” is the wrong orifice. A very general cubic has rational Hodge \((2,2)=\langle h^2\rangle\) only (rank 1). Hodge number \(h^{2,2}=21\); the primitive 20 is not rational for a very general \(X\). Extra *rational* classes live on Hassett \(C_d\).
+
 **Remainder:** unnamed *no-K3* \(C_d\) (sample \(48,50,54\): no named surface, no K3 reduction) and general non-cubic 4-folds. Do not enumerate the tail.
 
 Clay’s *proof object* (Hodge classes algebraic on every projective manifold) stays `OPEN_NOT_CLAIMED`. Native Lefschetz + named surfaces stay executable.
@@ -38,6 +40,7 @@ Clay’s *proof object* (Hodge classes algebraic on every projective manifold) s
 | Associated K3 | — | Extra class \(\cong H^{1,1}(\mathrm{K3})\); Lefschetz |
 | Named no-K3 | — | \(C_8..C_{44}\) are the named surfaces |
 | Unnamed with K3 | — | Same Lefschetz reduction; do not enumerate |
+| Very general cubic | — | Rational Hodge \((2,2)=\langle h^2\rangle\) only |
 | Unnamed no-K3 / general 4-folds | The theorem | Remainder |
 | Status | Open prize problem | Named list **executable**; remainder **OPEN_NOT_CLAIMED** |
 

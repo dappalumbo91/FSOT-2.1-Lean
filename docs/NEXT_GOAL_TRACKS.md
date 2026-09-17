@@ -10,9 +10,9 @@
 | **Sickness** | Epidemiology class 0.015%; host+pathogen coupling smoke | Genetics two-system product on public genomes | Person-level onset as 0.5% |
 | **Path integral** | Discrete path-sum (valve branches + \(a_0/\gamma\)) | Deeper native sum; classical YM still named | “Millennium theorem proved” |
 | **Millennium SOTA vs 0.5%** | Named Hodge extra classes \(C_8\)..\(C_{44}\) algebraic; BSD LMFDB ranks 0..5 vanishing complete. | WIP SOTA beats stay outside 0.5% until the object is right | Enumerating infinite Hassett / rank-\(\ge 6\) tails; Clay Prize; stuffing a WIP beat into the green gate |
-| **NSE (tracked)** | Kolmogorov 4/5 is \(L^2\) flux, not \(L^\infty\) existence. Stokes damps linear. BKM is \(\|\omega\|_\infty\). | Whether stretching stays BKM-integrable | Stuffing existence into 4/5 or 1/3 |
-| **BSD general \(E\) (tracked)** | Modularity produces \(L\) for every \(E\). Volume is Sha. LMFDB ranks 0..5 vanishing complete. | \(\mathrm{rank}=\mathrm{ord}\,L\) | Nearest-template; Weierstrass\(\to\mathbb{Z}\) |
-| **Hodge (tracked)** | Named \(C_8..C_{44}\) algebraic. K3-locus extra classes are Lefschetz (1,1), including unnamed \(d\). | Unnamed no-K3; general non-cubic 4-folds | Enumerating the tail; stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
+| **NSE (tracked)** | \(4/5\) is \(L^2\) not \(L^\infty\). BKM is \(\|\omega\|\) magnitude. Constantin–Fefferman is direction \(\xi\). | Whether \(\xi\) stays Lipschitz under viscosity | Stuffing existence into 4/5 or \(\|\omega\|\) |
+| **BSD general \(E\) (tracked)** | Modularity produces \(L\). Kolyvagin is rank \(=\) ord \(L\) for analytic rank 0,1. | Analytic rank \(\ge 2\) | Nearest-template; Weierstrass\(\to\mathbb{Z}\) |
+| **Hodge (tracked)** | Very general cubic only \(h^2\). Named \(C_8..C_{44}\) algebraic. K3 tail Lefschetz. | Unnamed no-K3; general non-cubic 4-folds | Enumerating the tail; stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
 
 Same fluid. Not a second physics. Wrong object is still wrong object.
 

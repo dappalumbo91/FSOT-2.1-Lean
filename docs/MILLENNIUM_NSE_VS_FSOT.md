@@ -30,7 +30,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 5. **L² cascade is not L∞ existence (the conversion).** Isolated \(4/5\) is the wrong orifice for smoothness: Kolmogorov \(\varepsilon=\nu\langle\lvert\omega\rvert^2\rangle\) is mean \(L^2\) dissipation. 1D Stokes \(\partial_t v=-\mu k^2 v\) damps linear modes (\(\mu(D)>0\), Fluid dark). 3D Sobolev does not give \(L^\infty\) from \(H^1\). BKM is the \(L^\infty\) stretching channel. Do not stuff existence into \(4/5\) or \(1/3\).
 
-**Remainder:** whether that \(L^\infty\) channel stays BKM-integrable. That *is* Clay smoothness.
+6. **BKM magnitude is not direction.** Isolated \(\|\omega\|_\infty\) is the wrong orifice for the remaining channel. Constantin–Fefferman: if the vorticity direction \(\xi=\omega/\lvert\omega\rvert\) is Lipschitz in high-vorticity regions, there is no blow-up. Magnitude (BKM) and direction (CF) are two systems. Do not swallow one into the other.
+
+**Remainder:** whether \(\xi\) stays Lipschitz under viscosity. That *is* Clay smoothness.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 
@@ -47,8 +49,9 @@ Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPE
 | Hölder | Onsager (Euler) | \(1/d=1/3\) exact |
 | Blow-up test | BKM | Named connective criterion |
 | L² vs L∞ | — | \(4/5\) is mean flux; Stokes damps linear; BKM is \(\|\omega\|_\infty\) |
+| Magnitude vs direction | — | \(\|\omega\|\) is BKM; \(\xi=\omega/\lvert\omega\rvert\) is Constantin–Fefferman |
 | Status | Open prize problem | Cascade **executable**; existence **OPEN_NOT_CLAIMED** |
 
-Forbidden: “we proved Millennium NSE because 4/5 is exact.” Allowed: the cascade numbers, Stokes damping, and the BKM criterion. Do not stuff \(L^2\) into \(L^\infty\).
+Forbidden: “we proved Millennium NSE because 4/5 is exact.” Allowed: the cascade numbers, Stokes damping, BKM, and the direction split. Do not stuff \(L^2\) into \(L^\infty\), or \(\|\omega\|\) into \(\xi\).
 
 Refresh: `python vendor/fsot_millennium_accuracy.py`
