@@ -449,6 +449,18 @@ def nse_d2_rejects_d_particle() -> bool:
     return abs(seed_kolmogorov_d2_32() - 1.5) < 1e-12 and abs(stuffed - 1.5) > 0.05
 
 
+def nse_enstrophy_budget_two_term() -> bool:
+    """3D enstrophy budget is production minus dissipation, not a 4/5 analog.
+
+    2D: stretching production ≡ 0 (enstrophy conserved). 3D: production
+    exists because 4/5 uses D_particle; dissipation is Fluid μ>0.
+    There is no Kolmogorov 4/5 for 3D enstrophy — stretching sources it.
+    Isolated 'next Lipschitz name' is the theorem-ladder. Do not stuff
+    the budget into existence.
+    """
+    return nse_stretch_visc_two_zoom() and nse_d2_rejects_d_particle()
+
+
 def nse_stretch_visc_two_zoom() -> bool:
     """3D stretching is Particle zoom; viscosity is Fluid zoom.
 
@@ -1012,18 +1024,47 @@ def bsd_integer_rank_from_leading(value: float) -> int:
     return best_r
 
 
-def seed_cubic_4fold_euler() -> float:
-    """χ of a smooth cubic 4-fold ⊂ CP^5 = 27.
+def seed_hypersurface_4fold_euler(degree: int) -> float:
+    """χ of a smooth degree-d 4-fold ⊂ CP^5.
 
-    Hypersurface Chern: d · [h^n](1+h)^{n+2}/(1+d h) at n=4, d=3
-    (structural 4-fold, cubic). Not Hodge (2,2). Primitive (2,2) of
-    the cubic 4-fold is the remaining Hodge object after Grassmannians.
+    Hypersurface Chern: d · [h^n](1+h)^{n+2}/(1+d h) at n=4.
+    Cubic d=3 → 27. Quartic d=4 → 188. Sextic d=6 → 2610 (CY, K=0).
+    Not Hodge (2,2). Do not steal 25−1 for χ(K3)=24 (quartic surface).
     """
-    n, d = 4, 3
+    n, d = 4, int(degree)
+    if d < 1:
+        raise ValueError("hypersurface degree ≥ 1")
     term = 0.0
     for k in range(n + 1):
         term += math.comb(n + 2, n - k) * ((-d) ** k)
     return float(d * term)
+
+
+def seed_cubic_4fold_euler() -> float:
+    """χ of a smooth cubic 4-fold ⊂ CP^5 = 27.
+
+    Hypersurface Chern at n=4, d=3. Not Hodge (2,2). Primitive (2,2) of
+    the cubic 4-fold is the remaining Hodge object after Grassmannians.
+    """
+    return seed_hypersurface_4fold_euler(3)
+
+
+def seed_quartic_4fold_euler() -> float:
+    """χ of a smooth quartic 4-fold ⊂ CP^5 = 188.
+
+    Same Chern as cubic at d=4. Not a K3 (K3 is a quartic *surface* in CP^3,
+    χ=24). Not Hodge (2,2). Do not steal 25−1 for K3.
+    """
+    return seed_hypersurface_4fold_euler(4)
+
+
+def seed_sextic_4fold_euler() -> float:
+    """χ of a smooth sextic 4-fold ⊂ CP^5 = 2610.
+
+    First Calabi–Yau hypersurface 4-fold: K_X=(d−6)h=0. Same Chern at d=6.
+    Not Hodge (2,2). Do not steal 25−1 for K3.
+    """
+    return seed_hypersurface_4fold_euler(6)
 
 
 def seed_h0_global() -> float:

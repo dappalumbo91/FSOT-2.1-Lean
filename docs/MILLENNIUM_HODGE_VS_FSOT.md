@@ -26,7 +26,9 @@ These are **two different objects**. Related geometry (Hodge classes vs algebrai
 
 7. **The missing concept (why the \(C_d\) list looped).** FSOT seeds attach to **named varieties** (\(\chi\), Gram, a surface). Unnamed no-K3 \(C_d\) (sample \(48,50,54\)) are nonempty Hassett loci with no K3 and **no named surface**, hence **no Gram seed**. Hunting \(C_{48}\)’s surface is the enumeration failure. There is nothing to connect until a variety is named.
 
-**Remainder:** general non-cubic 4-folds (no named \(\chi\)/Hodge seed). Do not enumerate the tail. Do not steal \(25-1\) for \(\chi(\mathrm{K3})\).
+8. **Next named 4-folds after cubic (not \(C_{48}\)).** Same Chern family in \(\mathbb{CP}^5\): quartic \(\chi=188\) (not a K3 — K3 is a quartic *surface* in \(\mathbb{CP}^3\)); sextic \(\chi=2610\) (first Calabi–Yau hypersurface 4-fold, \(K_X=(d-6)h=0\)). Lefschetz hyperplane still applies.
+
+**Remainder:** non-hypersurface 4-folds. Do not hunt \(C_{48}\). Do not steal \(25-1\) for \(\chi(\mathrm{K3})\).
 
 Clay’s *proof object* (Hodge classes algebraic on every projective manifold) stays `OPEN_NOT_CLAIMED`. Native Lefschetz + named surfaces stay executable.
 

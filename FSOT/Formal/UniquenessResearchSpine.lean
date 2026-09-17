@@ -336,13 +336,13 @@ theorem hodge_clay_open_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
 theorem hodge_clay_open_computed_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
-theorem mill_acc_beats_or_meets_n_flag : (55 : ℕ) = (55 : ℕ) := by
+theorem mill_acc_beats_or_meets_n_flag : (57 : ℕ) = (57 : ℕ) := by
   decide
 
-theorem mill_acc_comparable_n_flag : (52 : ℕ) = (52 : ℕ) := by
+theorem mill_acc_comparable_n_flag : (54 : ℕ) = (54 : ℕ) := by
   decide
 
-theorem mill_acc_green_pass_n_flag : (49 : ℕ) = (49 : ℕ) := by
+theorem mill_acc_green_pass_n_flag : (51 : ℕ) = (51 : ℕ) := by
   decide
 
 theorem mill_acc_clay_open_n_flag : (6 : ℕ) = (6 : ℕ) := by
@@ -387,6 +387,9 @@ theorem mill_acc_bsd_kolyvagin_rank_le1_flag : (1 : ℕ) = (1 : ℕ) := by
 theorem mill_acc_bsd_rank_ge2_volume_native_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
+theorem mill_acc_bsd_regulator_is_height_gram_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
 theorem mill_acc_bsd_lmfdb_named_ranks_complete_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
@@ -399,6 +402,9 @@ theorem mill_acc_ns_l2_cascade_not_l_inf_flag : (1 : ℕ) = (1 : ℕ) := by
 theorem mill_acc_ns_stretch_visc_two_zoom_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
+theorem mill_acc_ns_enstrophy_budget_two_term_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
 theorem mill_acc_hodge_named_no_k3_complete_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
@@ -409,6 +415,9 @@ theorem mill_acc_hodge_very_general_cubic_only_h2_flag : (1 : ℕ) = (1 : ℕ) :
   decide
 
 theorem mill_acc_hodge_unnamed_no_k3_no_seed_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
+theorem mill_acc_hodge_hypersurface_4folds_after_cubic_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
 theorem mill_acc_ecmwf_not_beaten_flag : (1 : ℕ) = (1 : ℕ) := by

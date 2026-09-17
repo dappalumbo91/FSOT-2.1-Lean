@@ -75,6 +75,8 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
 
 13. **The missing concept (why the Euler-system ladder looped).** For analytic rank \(\ge 2\) the native object is **already** vanishing + \(\mathrm{Sha}\) (643a1, 11197a1, 501029.a1, 19047851.a1). Kolyvagin is an *external check* that rank \(=\) ord \(L\) holds for \(r=0,1\). Naming Kato / Perrin-Riou next is theorem enumeration — the Hassett-tail failure. There is no missing seed for \(r\ge 2\).
 
+14. **Regulator is a height Gram (Hassett orifice).** \(\mathrm{Reg}(E)=\det\langle P_i,P_j\rangle_{\mathrm{NT}}\) of \(r\) generators. Hassett discriminant is \(\det\) of the extra-class Gram. Rank 1 is a \(1\times 1\) height (one Heegner point). Rank \(\ge 2\) is a lattice. Sha volume already uses that Gram. Isolated “need Kato” is the wrong remainder.
+
 **Remainder:** Clay’s equality \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\). Do not enumerate Euler systems. Do not Weierstrass\(\to\mathbb{Z}\).
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.

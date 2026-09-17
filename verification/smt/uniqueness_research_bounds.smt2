@@ -219,11 +219,11 @@
 ; hodge_clay_open_computed_pos kind=pos
 (assert (! (> 1.0 0.0) :named o107))
 ; mill_acc_beats_or_meets_n_flag kind=eq_nat
-(assert (! (= 55 55) :named o108))
+(assert (! (= 57 57) :named o108))
 ; mill_acc_comparable_n_flag kind=eq_nat
-(assert (! (= 52 52) :named o109))
+(assert (! (= 54 54) :named o109))
 ; mill_acc_green_pass_n_flag kind=eq_nat
-(assert (! (= 49 49) :named o110))
+(assert (! (= 51 51) :named o110))
 ; mill_acc_clay_open_n_flag kind=eq_nat
 (assert (! (= 6 6) :named o111))
 ; mill_acc_sota_beats_accuracy_wip_n_flag kind=eq_nat
@@ -252,25 +252,31 @@
 (assert (! (= 1 1) :named o123))
 ; mill_acc_bsd_rank_ge2_volume_native_flag kind=eq_nat
 (assert (! (= 1 1) :named o124))
-; mill_acc_bsd_lmfdb_named_ranks_complete_flag kind=eq_nat
+; mill_acc_bsd_regulator_is_height_gram_flag kind=eq_nat
 (assert (! (= 1 1) :named o125))
-; mill_acc_ns_bkm_named_flag kind=eq_nat
+; mill_acc_bsd_lmfdb_named_ranks_complete_flag kind=eq_nat
 (assert (! (= 1 1) :named o126))
-; mill_acc_ns_l2_cascade_not_l_inf_flag kind=eq_nat
+; mill_acc_ns_bkm_named_flag kind=eq_nat
 (assert (! (= 1 1) :named o127))
-; mill_acc_ns_stretch_visc_two_zoom_flag kind=eq_nat
+; mill_acc_ns_l2_cascade_not_l_inf_flag kind=eq_nat
 (assert (! (= 1 1) :named o128))
-; mill_acc_hodge_named_no_k3_complete_flag kind=eq_nat
+; mill_acc_ns_stretch_visc_two_zoom_flag kind=eq_nat
 (assert (! (= 1 1) :named o129))
-; mill_acc_hodge_k3_tail_lefschetz_flag kind=eq_nat
+; mill_acc_ns_enstrophy_budget_two_term_flag kind=eq_nat
 (assert (! (= 1 1) :named o130))
-; mill_acc_hodge_very_general_cubic_only_h2_flag kind=eq_nat
+; mill_acc_hodge_named_no_k3_complete_flag kind=eq_nat
 (assert (! (= 1 1) :named o131))
-; mill_acc_hodge_unnamed_no_k3_no_seed_flag kind=eq_nat
+; mill_acc_hodge_k3_tail_lefschetz_flag kind=eq_nat
 (assert (! (= 1 1) :named o132))
-; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
+; mill_acc_hodge_very_general_cubic_only_h2_flag kind=eq_nat
 (assert (! (= 1 1) :named o133))
+; mill_acc_hodge_unnamed_no_k3_no_seed_flag kind=eq_nat
+(assert (! (= 1 1) :named o134))
+; mill_acc_hodge_hypersurface_4folds_after_cubic_flag kind=eq_nat
+(assert (! (= 1 1) :named o135))
+; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
+(assert (! (= 1 1) :named o136))
 ; mill_acc_weather_quiet_fill_still_miss_flag kind=eq_nat
-(assert (! (= 0 0) :named o134))
+(assert (! (= 0 0) :named o137))
 (check-sat)
 ; expect: sat

@@ -24,10 +24,10 @@ Each Clay problem is a *question about reality*. FSOT answers that question in n
 | Problem | Question | FSOT answer | Still open (native) |
 |---------|----------|-------------|---------------------|
 | **Yang–Mills** | Why no massless gluons / free quarks? | Gap scale \(m/\sqrt{\sigma}=\varphi^2+1\). Free color is not an attractor. Teper is a check of the σ-unit orifice \(\varphi^2+1+\mathrm{POOF}/D\), not the question. | Clay Wightman theory on \(\mathbb{R}^4\) |
-| **Navier–Stokes** | Do 3D NSE solutions stay smooth, or can stretching blow up? | Stretching is Particle zoom; viscosity is Fluid zoom (dark). Isolated 4/5/BKM/CF is one zoom. | Two-zoom coupling vs Clay existence (do not stuff the valve) |
+| **Navier–Stokes** | Do 3D NSE solutions stay smooth, or can stretching blow up? | Two zooms; enstrophy budget is production − dissipation (no 4/5 analog). | Whether production stays BKM-controlled |
 | **Riemann** | Do all non-trivial zeros have real part \(1/2\)? | \(t_1=e/\gamma^3\); C-lock; \(\lvert S\rvert\le 1/e\); typical \(\lvert S\rvert=\mathrm{POOF}\); signed jitter prime-2+3. | The line for *all* zeros |
-| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Parity; Sha volume; modularity; Kolyvagin \(r=0,1\); \(r\ge 2\) native is vanishing+Sha. | Clay equality for \(r\ge 2\) (do not name Kato) |
-| **Hodge** | Are Hodge classes algebraic cycles? | Lefschetz; very general cubic only \(h^2\); named \(C_8..C_{44}\); K3 tail Lefschetz; unnamed no-K3 has no seed. | General non-cubic 4-folds (do not hunt \(C_{48}\)) |
+| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Sha volume; Kolyvagin \(r=0,1\); \(r\ge 2\) Reg is height Gram. | Clay equality for \(r\ge 2\) (do not name Kato) |
+| **Hodge** | Are Hodge classes algebraic cycles? | Named hypersurface 4-folds through sextic CY; unnamed no-K3 has no seed. | Non-hypersurface 4-folds (do not hunt \(C_{48}\)) |
 | **P vs NP** | Is verifying as hard as searching? | Grover \(1/2\) (QI); Cook–Levin SAT named. | Search vs verification as Clay |
 
 ---

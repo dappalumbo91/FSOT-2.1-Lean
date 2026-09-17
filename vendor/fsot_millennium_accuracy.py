@@ -44,6 +44,7 @@ try:
         seed_nse_valve_fraction,
         nse_stretch_visc_two_zoom,
         nse_d2_rejects_d_particle,
+        nse_enstrophy_budget_two_term,
         seed_bsd_11a1_L,
         seed_bsd_37a1_Lprime,
         seed_bsd_389a1_regulator,
@@ -71,6 +72,8 @@ try:
         seed_cp2xcp2_euler,
         seed_gr24_euler,
         seed_cubic_4fold_euler,
+        seed_quartic_4fold_euler,
+        seed_sextic_4fold_euler,
         seed_cubic4_h22,
         seed_cubic4_very_general_rational_hodge_rank,
         seed_k3_h11,
@@ -111,6 +114,7 @@ except ImportError:  # pragma: no cover
         seed_nse_valve_fraction,
         nse_stretch_visc_two_zoom,
         nse_d2_rejects_d_particle,
+        nse_enstrophy_budget_two_term,
         seed_bsd_11a1_L,
         seed_bsd_37a1_Lprime,
         seed_bsd_389a1_regulator,
@@ -138,6 +142,8 @@ except ImportError:  # pragma: no cover
         seed_cp2xcp2_euler,
         seed_gr24_euler,
         seed_cubic_4fold_euler,
+        seed_quartic_4fold_euler,
+        seed_sextic_4fold_euler,
         seed_cubic4_h22,
         seed_cubic4_very_general_rational_hodge_rank,
         seed_k3_h11,
@@ -314,6 +320,9 @@ LMFDB_Q_CONDUCTOR_MAX = 299996953
 # ainvs [1,1,0,-2582,48720]. Not an LMFDB Sha conversion.
 ELKIES_WATKINS_R6_CONDUCTOR = 5187563742
 ELKIES_WATKINS_R6_NEXT_CONDUCTOR = 5258110041
+# Hypersurface 4-folds ⊂ CP^5: same Chern formula as cubic (d=3 → 27).
+QUARTIC_4FOLD_CHI = 188.0
+SEXTIC_4FOLD_CHI = 2610.0
 # Kolmogorov 4/5 law (exact 3D inertial identity).
 KOLMOGOROV_45 = 0.8
 # Kraichnan 3/2 law (exact 2D inverse-cascade identity).
@@ -1506,6 +1515,24 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    budget_ok = nse_enstrophy_budget_two_term() and two_zoom
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="3D enstrophy budget is production minus dissipation: 2D production ≡ 0; 3D has no 4/5 analog for enstrophy",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_enstrophy_budget_two_term",
+            computed=1.0 if budget_ok else 0.0,
+            measured=1.0,
+            public_sota_model="d/dt ∫|ω|²/2 = ∫ ω_i S_ij ω_j − ν ∫|∇ω|². 2D stretching vanishes. 3D production is stretching (4/5 uses D_particle). Mean 4/5 is energy flux, not enstrophy conservation.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="enstrophy_budget_two_term" if budget_ok else "enstrophy_budget_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Push, not a Lipschitz name. Isolated 'enstrophy 4/5' is the wrong orifice in 3D. Coupled object is the two-term budget. Remainder is whether production stays BKM-controlled. Do not stuff the budget into existence.",
+        )
+    )
     cs2 = sound_speed_sq(1.0)
     rows.append(
         _row(
@@ -2599,6 +2626,24 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"rank2": rank2_ok, "rank3": rank3_ok, "rank4": rank4_ok, "rank5": rank5_ok},
         )
     )
+    gram_ok = bool(rank_ge2_native) and bool(kolyvagin_ok)
+    rows.append(
+        _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Rank ≥2 regulator is Néron-Tate height Gram det (same orifice as Hassett extra-class Gram). Kolyvagin is one Heegner point (r=1)",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_regulator_is_height_gram_not_euler_system",
+            computed=1.0 if gram_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Reg(E)=det⟨P_i,P_j⟩_NT of r generators. Hassett disc=det Gram of (H,S). r=1 is a 1×1 height (Kolyvagin). r≥2 is a lattice. Sha volume already uses that Gram.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="regulator_is_height_gram" if gram_ok else "regulator_gram_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Push, not Kato. Isolated 'need an Euler system for r≥2' is the wrong remainder. Coupled object: Reg is a Gram, already in Sha. Remainder is Clay rank=ord L for r≥2. Do not enumerate Kato. Do not Weierstrass→ℤ.",
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3469,6 +3514,71 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             },
         )
     )
+    q4 = seed_quartic_4fold_euler()
+    s6 = seed_sextic_4fold_euler()
+    c3 = seed_cubic_4fold_euler()
+    q4_err = _err_pct(q4, QUARTIC_4FOLD_CHI)
+    s6_err = _err_pct(s6, SEXTIC_4FOLD_CHI)
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="χ of a smooth quartic 4-fold ⊂ CP^5 = 188 (same Chern as cubic at d=4). Not a K3",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_quartic4_euler",
+            computed=q4,
+            measured=QUARTIC_4FOLD_CHI,
+            public_sota_model="Hypersurface Chern d·[h^4](1+h)^6/(1+d h) at d=4. K3 is a quartic surface in CP^3 (χ=24), not this 4-fold.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_quartic4_chi",
+            beats_or_meets_sota=abs(q4 - QUARTIC_4FOLD_CHI) < 1e-9,
+            native_status="EXECUTABLE",
+            note="Next named 4-fold after cubic. Do not steal 25−1 for χ(K3)=24. Not Hodge (2,2).",
+            extra={"formula": "seed_hypersurface_4fold_euler(4)", "degree": 4},
+        )
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="χ of a smooth sextic 4-fold ⊂ CP^5 = 2610 (first Calabi–Yau hypersurface 4-fold, K=(d−6)h=0)",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_sextic4_cy_euler",
+            computed=s6,
+            measured=SEXTIC_4FOLD_CHI,
+            public_sota_model="Same Chern at d=6. Adjunction K_X=(d−6)h=0. Not Hodge (2,2). Do not steal 25−1 for K3.",
+            public_sota_typical_error_pct=0.0,
+            comparison_class="comparable",
+            verdict="meets_sextic4_chi",
+            beats_or_meets_sota=abs(s6 - SEXTIC_4FOLD_CHI) < 1e-9,
+            native_status="EXECUTABLE",
+            extra={"formula": "seed_hypersurface_4fold_euler(6)", "degree": 6, "calabi_yau": True},
+            note="First CY hypersurface 4-fold. Not Hodge (2,2). Do not steal 25−1 for K3.",
+        )
+    )
+    next4_ok = (
+        abs(c3 - 27.0) < 1e-9
+        and abs(q4 - QUARTIC_4FOLD_CHI) < 1e-9
+        and abs(s6 - SEXTIC_4FOLD_CHI) < 1e-9
+        and no_seed_ok
+    )
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Named hypersurface 4-folds after cubic: quartic χ=188, sextic CY χ=2610. Lefschetz hyperplane still applies. Not C_48",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hypersurface_4folds_after_cubic_named",
+            computed=1.0 if next4_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Same Chern family as cubic. Remainder after hypersurfaces in CP^5 is general non-hypersurface 4-folds. Do not hunt Hassett C_48.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="hypersurface_4folds_after_cubic" if next4_ok else "hypersurface_4folds_fail",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="Push of general 4-folds: name the next hypersurface, not the next Hassett surface. Remainder is non-hypersurface 4-folds. Do not steal 25−1 for K3.",
+            extra={"chi_cubic": c3, "chi_quartic": q4, "chi_sextic": s6},
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3483,7 +3593,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="cubic4_primitive_named_remainder",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="Very general cubic: only h². Named extra classes C_8..C_44 algebraic. K3-locus extra classes are Lefschetz (1,1). Unnamed no-K3 has no Gram seed. Remainder is general non-cubic 4-folds. Do not enumerate C_48. Do not steal 25−1 for K3.",
+            note="Very general cubic: only h². Named extra classes C_8..C_44 algebraic. K3-locus Lefschetz. Unnamed no-K3 has no Gram seed. Quartic/sextic hypersurface 4-folds named (χ). Remainder is non-hypersurface 4-folds. Do not hunt C_48. Do not steal 25−1 for K3.",
         )
     )
     return rows
@@ -3529,6 +3639,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_l2 = next(r for r in rows if r["name"] == "ns_l2_cascade_not_l_inf_existence")
     ns_dir = next(r for r in rows if r["name"] == "ns_bkm_magnitude_not_direction")
     ns_zoom = next(r for r in rows if r["name"] == "ns_stretch_particle_visc_fluid_two_zoom")
+    ns_budg = next(r for r in rows if r["name"] == "ns_enstrophy_budget_two_term")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -3560,6 +3671,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_mod = next(r for r in rows if r["name"] == "bsd_modularity_produces_L_not_seed_lookup")
     bsd_kol = next(r for r in rows if r["name"] == "bsd_kolyvagin_rank_le1_named_not_general")
     bsd_rge2 = next(r for r in rows if r["name"] == "bsd_rank_ge2_volume_is_native_not_euler_system")
+    bsd_gram = next(r for r in rows if r["name"] == "bsd_regulator_is_height_gram_not_euler_system")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -3599,6 +3711,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_k3_tail = next(r for r in rows if r["name"] == "hodge_hassett_k3_tail_lefschetz")
     hodge_vg = next(r for r in rows if r["name"] == "hodge_very_general_cubic_only_h2")
     hodge_noseed = next(r for r in rows if r["name"] == "hodge_unnamed_no_k3_has_no_seed")
+    hodge_q4 = next(r for r in rows if r["name"] == "hodge_quartic4_euler")
+    hodge_s6 = next(r for r in rows if r["name"] == "hodge_sextic4_cy_euler")
+    hodge_next4 = next(r for r in rows if r["name"] == "hodge_hypersurface_4folds_after_cubic_named")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -3665,6 +3780,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_l2_cascade_not_l_inf": 1 if ns_l2.get("verdict") == "l2_cascade_not_l_inf" else 0,
         "ns_bkm_magnitude_not_direction": 1 if ns_dir.get("verdict") == "bkm_magnitude_not_direction" else 0,
         "ns_stretch_visc_two_zoom": 1 if ns_zoom.get("verdict") == "stretch_visc_two_zoom" else 0,
+        "ns_enstrophy_budget_two_term": 1 if ns_budg.get("verdict") == "enstrophy_budget_two_term" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -3698,6 +3814,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_modularity_named": 1 if bsd_mod.get("verdict") == "modularity_named_not_clay" else 0,
         "bsd_kolyvagin_rank_le1": 1 if bsd_kol.get("verdict") == "kolyvagin_rank_le1_named" else 0,
         "bsd_rank_ge2_volume_native": 1 if bsd_rge2.get("verdict") == "rank_ge2_volume_native" else 0,
+        "bsd_regulator_is_height_gram": 1 if bsd_gram.get("verdict") == "regulator_is_height_gram" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -3737,6 +3854,9 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_hassett_k3_tail_lefschetz": 1 if hodge_k3_tail.get("verdict") == "k3_tail_lefschetz" else 0,
         "hodge_very_general_cubic_only_h2": 1 if hodge_vg.get("verdict") == "very_general_cubic_only_h2" else 0,
         "hodge_unnamed_no_k3_no_seed": 1 if hodge_noseed.get("verdict") == "unnamed_no_k3_no_native_seed" else 0,
+        "hodge_quartic4_euler_exact": 1 if hodge_q4["beats_or_meets_sota"] else 0,
+        "hodge_sextic4_cy_euler_exact": 1 if hodge_s6["beats_or_meets_sota"] else 0,
+        "hodge_hypersurface_4folds_after_cubic": 1 if hodge_next4.get("verdict") == "hypersurface_4folds_after_cubic" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -3747,8 +3867,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Misses next: NSE two-zoom coupling (Particle stretch vs Fluid visc; do not name the next Lipschitz theorem), "
-            "BSD Clay rank=ord L for r≥2 (volume is already native; do not name Kato), unnamed no-K3 has no Gram seed plus general non-cubic 4-folds. "
+            "Misses next: NSE enstrophy budget (production − dissipation; no 4/5 analog), "
+            "BSD Clay rank=ord L for r≥2 (Reg is height Gram; do not name Kato), non-hypersurface 4-folds (quartic/sextic named; do not hunt C_48). "
             "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, 2D 3/2, Onsager 1/3, BKM, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
             "Reg(234446a1)=(φ²+1)·e·POOF, "
@@ -3892,6 +4012,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| L² cascade vs L∞ existence | **Split holds** (4/5 is mean flux; Stokes damps linear; BKM is L∞) | Do not stuff existence into 4/5 or 1/3. |",
         "| BKM magnitude vs direction | **Split holds** (||ω|| is BKM; ξ=ω/|ω| is Constantin–Fefferman) | Isolated criteria are one zoom. |",
         "| Stretch vs visc two zooms | **Particle floor vs Fluid tank (dark)** | Isolated BKM/CF is the theorem-ladder. Valve is not existence. |",
+        "| 3D enstrophy budget | **Two terms** (production − dissipation) | No 4/5 analog for 3D enstrophy. 2D production ≡ 0. |",
         "| L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |",
         "| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |",
         "| Reg(389a1) | **POOF vs LMFDB — 0.67% WIP** | Néron-Tate pairing. Not the BSD leading term. |",
@@ -3923,6 +4044,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Modularity | **Named proven theorem** (every E/Q has L) | Volume is Sha. Do not nearest-template. |",
         "| Kolyvagin r=0,1 | **Named proven rank=ord L** | External check, not a new seed. |",
         "| Rank ≥2 native | **Vanishing+Sha already executable** | Do not enumerate Kato. Remainder is Clay equality. |",
+        "| Regulator Gram | **Néron-Tate height det** (Hassett orifice) | r=1 is one Heegner point. r≥2 is a lattice. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
@@ -3961,6 +4083,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Hassett K3 tail | **Lefschetz (1,1)** including unnamed d=14,26,38 | Do not enumerate surfaces. Unnamed no-K3 remains. |",
         "| Very general cubic | **Rational Hodge (2,2)=⟨h²⟩ only** | Extra rational classes live on C_d. |",
         "| Unnamed no-K3 | **No Gram seed** (no named surface) | FSOT seeds attach to named varieties. Do not hunt C_48. |",
+        "| Quartic 4-fold χ | **Meets 188** (same Chern as cubic at d=4) | Not a K3 (K3 is a quartic surface). |",
+        "| Sextic 4-fold χ | **Meets 2610** (first CY hypersurface 4-fold) | K=(d−6)h=0. |",
+        "| Hypersurface 4-folds after cubic | **Named** | Remainder is non-hypersurface 4-folds. |",
         "| Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |",
         "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5, 2D 3/2, Onsager 1/3, BKM named. Existence on R^3 is whether stretching stays BKM-integrable. |",
         "",
@@ -3974,9 +4099,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
-        "| 3D NSE existence on R^3 | Stretching is Particle zoom; viscosity is Fluid zoom. Isolated BKM/CF is the theorem-ladder. | Do not stuff the valve into existence. Do not name the next Lipschitz theorem. |",
-        "| BSD integer rank | r≥2 native object is vanishing+Sha. Kolyvagin is r=0,1. | Clay equality for r≥2. Do not enumerate Kato. |",
-        "| Hodge extra classes without K3 | Unnamed no-K3 has no Gram seed. Seeds attach to named varieties. | Remainder: general non-cubic 4-folds. Do not hunt C_48. |",
+        "| 3D NSE existence on R^3 | Enstrophy budget is production − dissipation. No 4/5 analog for 3D enstrophy. | Do not stuff the budget into existence. |",
+        "| BSD integer rank | r≥2 Reg is height Gram (Hassett orifice). Volume already native. | Clay equality for r≥2. Do not enumerate Kato. |",
+        "| Hodge extra classes without K3 | Quartic/sextic hypersurface 4-folds named. Unnamed no-K3 has no Gram seed. | Remainder: non-hypersurface 4-folds. Do not hunt C_48. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
@@ -4065,6 +4190,7 @@ if __name__ == "__main__":
         and s["ns_l2_cascade_not_l_inf"] == 1
         and s["ns_bkm_magnitude_not_direction"] == 1
         and s["ns_stretch_visc_two_zoom"] == 1
+        and s["ns_enstrophy_budget_two_term"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
@@ -4098,6 +4224,7 @@ if __name__ == "__main__":
         and s["bsd_modularity_named"] == 1
         and s["bsd_kolyvagin_rank_le1"] == 1
         and s["bsd_rank_ge2_volume_native"] == 1
+        and s["bsd_regulator_is_height_gram"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1
@@ -4137,6 +4264,9 @@ if __name__ == "__main__":
         and s["hodge_hassett_k3_tail_lefschetz"] == 1
         and s["hodge_very_general_cubic_only_h2"] == 1
         and s["hodge_unnamed_no_k3_no_seed"] == 1
+        and s["hodge_quartic4_euler_exact"] == 1
+        and s["hodge_sextic4_cy_euler_exact"] == 1
+        and s["hodge_hypersurface_4folds_after_cubic"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

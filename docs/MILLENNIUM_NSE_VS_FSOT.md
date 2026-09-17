@@ -34,7 +34,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 7. **The missing concept (why the criterion-ladder looped).** Isolated regularity names (4/5, BKM, CF, next Lipschitz…) are **one zoom**. Stretching is the Particle-floor zoom (\(4/5=1-1/D_{\mathrm{particle}}\); 2D \(3/2\) does **not** use \(D_{\mathrm{particle}}\)). Viscosity is the Fluid-tank zoom (\(\mu(D)>0\), Stokes, **dark**). Same orifice, two zooms — Nuclear/Particle, glueball \(\varphi^2+1\) vs \(\mathrm{POOF}/D\). The valve \(\mathrm{POOF}/(\mathrm{POOF}+\mathrm{SUCTION})\) is production vs hold, **not** an existence number. Naming the next PDE theorem is the Hassett-tail failure.
 
-**Remainder:** whether that two-zoom coupling keeps stretching BKM-integrable / \(\xi\) Lipschitz. That *is* Clay smoothness. Do not stuff the valve into existence.
+8. **Enstrophy budget is two terms, not a 4/5 analog.** \(\frac{d}{dt}\int\lvert\omega\rvert^2/2=\int\omega_i S_{ij}\omega_j-\nu\int\lvert\nabla\omega\rvert^2\). 2D production vanishes. 3D production *is* stretching. Mean \(4/5\) is energy flux, not enstrophy conservation. Isolated “enstrophy 4/5” is the wrong orifice.
+
+**Remainder:** whether production stays BKM-controlled. That *is* Clay smoothness. Do not stuff the budget or the valve into existence.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 

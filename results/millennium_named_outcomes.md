@@ -11,10 +11,10 @@ Question/answer (not vs-SOTA): [`MILLENNIUM_YM_VS_FSOT.md`](../docs/MILLENNIUM_Y
 
 | Bucket | n |
 |--------|---|
-| Comparable | 52 |
-| Beats/meets SOTA | 55 |
-| Green 0.5% | 49 |
-| Aspiration 0.05% | 40 |
+| Comparable | 54 |
+| Beats/meets SOTA | 57 |
+| Green 0.5% | 51 |
+| Aspiration 0.05% | 42 |
 | SOTA beat, accuracy WIP | 4 |
 | Next dig (open tracks) | 3 |
 | Clay remaining | 6, not claimed |
@@ -94,6 +94,6 @@ We were naming the next public theorem (BKM → CF → next Lipschitz; Kolyvagin
 
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
-| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | Two-zoom coupling named. Valve is not an existence number. | Stuffing the valve into existence; naming the next Lipschitz theorem |
-| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\) | Native volume already executable. Remainder is Clay equality. | Enumerating Kato; Weierstrass\(\to\mathbb{Z}\) |
-| HODGE-TAIL | General non-cubic 4-folds | Unnamed no-K3 has no Gram seed. Remainder has no named variety. | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
+| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | Enstrophy budget is production − dissipation. No 4/5 analog for 3D enstrophy. | Stuffing the budget into existence |
+| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\) | Reg is height Gram (Hassett orifice). Volume already native. | Enumerating Kato; Weierstrass\(\to\mathbb{Z}\) |
+| HODGE-TAIL | Non-hypersurface 4-folds | Quartic \(\chi=188\), sextic CY \(\chi=2610\) named. Unnamed no-K3 has no Gram seed. | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
