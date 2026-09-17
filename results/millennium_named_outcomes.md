@@ -80,12 +80,20 @@ Clay question: do smooth finite-energy 3D NSE solutions exist for all time? FSOT
 
 Rank-4 volume uses the **same** \(\varphi^2+1\) closed-loop fold as the isolated glueball \(m(0++)/\sqrt{\sigma}\). That is APPLY step 2 (interacting systems), not a new knob.
 
-## Still open (tracked — next run)
+## Why these three kept looping
 
-Do not drop these. Named Hodge \(C_d\) is done; these are the leftover objects.
+We were naming the next public theorem (BKM → CF → next Lipschitz; Kolyvagin → Kato; \(C_{44}\) → \(C_{48}\)) and calling it a conversion. That is the **Hassett-tail failure**: enumerate until it looks green. The miss was a concept, not a missing name.
+
+| Track | Isolated (wrong remainder) | Missing concept | Native object now |
+|-------|----------------------------|-----------------|-------------------|
+| NSE | Next regularity criterion | Stretching and viscosity are **two zooms of one orifice** (Particle floor vs Fluid tank, dark), coupled by the valve — APPLY interacting systems, same miss as isolated glueball \(\varphi^2+1\) | Two-zoom split executable. Valve is **not** existence |
+| BSD \(r\ge 2\) | Next Euler system | Vanishing+\(\mathrm{Sha}\) **already is** the native object (643a1…19047851.a1). Kolyvagin is an external check for \(r=0,1\) | Volume executable. Kato would be enumeration |
+| Hodge unnamed | Next named surface | Seeds attach to **named varieties**. No surface name ⇒ no Gram seed | No-seed diagnosis executable. \(C_{48}\) would be enumeration |
+
+## Still open (Clay leftover — not a missing seed)
 
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
-| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | \(L^2\) cascade is not \(L^\infty\). BKM is \(\|\omega\|\) magnitude. Constantin–Fefferman is direction \(\xi\). | Stuffing existence into 4/5 or \(\|\omega\|\) |
-| BSD-RANK | Analytic rank \(\ge 2\) | Modularity produces \(L\). Kolyvagin is rank \(=\) ord \(L\) for analytic rank 0,1. | Nearest-template; Weierstrass\(\to\mathbb{Z}\) |
-| HODGE-TAIL | unnamed no-K3 \(C_d\) + general non-cubic 4-folds | Very general cubic only \(h^2\). Named \(C_8..C_{44}\) algebraic. K3 tail Lefschetz. | Enumerating the tail; stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
+| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | Two-zoom coupling named. Valve is not an existence number. | Stuffing the valve into existence; naming the next Lipschitz theorem |
+| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\) | Native volume already executable. Remainder is Clay equality. | Enumerating Kato; Weierstrass\(\to\mathbb{Z}\) |
+| HODGE-TAIL | General non-cubic 4-folds | Unnamed no-K3 has no Gram seed. Remainder has no named variety. | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |

@@ -32,7 +32,9 @@ These are **two different objects**. Related physics (3D incompressible flow). M
 
 6. **BKM magnitude is not direction.** Isolated \(\|\omega\|_\infty\) is the wrong orifice for the remaining channel. Constantin–Fefferman: if the vorticity direction \(\xi=\omega/\lvert\omega\rvert\) is Lipschitz in high-vorticity regions, there is no blow-up. Magnitude (BKM) and direction (CF) are two systems. Do not swallow one into the other.
 
-**Remainder:** whether \(\xi\) stays Lipschitz under viscosity. That *is* Clay smoothness.
+7. **The missing concept (why the criterion-ladder looped).** Isolated regularity names (4/5, BKM, CF, next Lipschitz…) are **one zoom**. Stretching is the Particle-floor zoom (\(4/5=1-1/D_{\mathrm{particle}}\); 2D \(3/2\) does **not** use \(D_{\mathrm{particle}}\)). Viscosity is the Fluid-tank zoom (\(\mu(D)>0\), Stokes, **dark**). Same orifice, two zooms — Nuclear/Particle, glueball \(\varphi^2+1\) vs \(\mathrm{POOF}/D\). The valve \(\mathrm{POOF}/(\mathrm{POOF}+\mathrm{SUCTION})\) is production vs hold, **not** an existence number. Naming the next PDE theorem is the Hassett-tail failure.
+
+**Remainder:** whether that two-zoom coupling keeps stretching BKM-integrable / \(\xi\) Lipschitz. That *is* Clay smoothness. Do not stuff the valve into existence.
 
 Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPEN_NOT_CLAIMED`. Native cascade numbers stay executable.
 
@@ -50,8 +52,9 @@ Clay’s *proof object* (global smooth solutions on \(\mathbb{R}^3\)) stays `OPE
 | Blow-up test | BKM | Named connective criterion |
 | L² vs L∞ | — | \(4/5\) is mean flux; Stokes damps linear; BKM is \(\|\omega\|_\infty\) |
 | Magnitude vs direction | — | \(\|\omega\|\) is BKM; \(\xi=\omega/\lvert\omega\rvert\) is Constantin–Fefferman |
+| Two zooms | — | Particle stretching vs Fluid viscosity (dark); valve is not existence |
 | Status | Open prize problem | Cascade **executable**; existence **OPEN_NOT_CLAIMED** |
 
-Forbidden: “we proved Millennium NSE because 4/5 is exact.” Allowed: the cascade numbers, Stokes damping, BKM, and the direction split. Do not stuff \(L^2\) into \(L^\infty\), or \(\|\omega\|\) into \(\xi\).
+Forbidden: “we proved Millennium NSE because 4/5 is exact.” Allowed: two zooms + valve. Do not stuff \(L^2\) into \(L^\infty\), \(\|\omega\|\) into \(\xi\), or the valve into existence. Do not name the next Lipschitz theorem.
 
 Refresh: `python vendor/fsot_millennium_accuracy.py`

@@ -73,7 +73,9 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
 
 12. **Gross–Zagier–Kolyvagin (rank \(=\) ord \(L\) for analytic rank 0 and 1).** Isolated “general \(E\)” is the wrong orifice. If analytic rank is 0 or 1, algebraic rank equals analytic rank (Kolyvagin 1990; Gross–Zagier 1986; modularity now for all \(E/\mathbb{Q}\)). That is the proven first rank \(=\) ord \(L\) theorem, like Lefschetz for Hodge.
 
-**Remainder:** analytic rank \(\ge 2\). Clay’s full statement stays open.
+13. **The missing concept (why the Euler-system ladder looped).** For analytic rank \(\ge 2\) the native object is **already** vanishing + \(\mathrm{Sha}\) (643a1, 11197a1, 501029.a1, 19047851.a1). Kolyvagin is an *external check* that rank \(=\) ord \(L\) holds for \(r=0,1\). Naming Kato / Perrin-Riou next is theorem enumeration — the Hassett-tail failure. There is no missing seed for \(r\ge 2\).
+
+**Remainder:** Clay’s equality \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\). Do not enumerate Euler systems. Do not Weierstrass\(\to\mathbb{Z}\).
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 

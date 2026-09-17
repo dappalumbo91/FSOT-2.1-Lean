@@ -149,8 +149,8 @@ def run_millennium_suite() -> list[dict[str, Any]]:
     )
 
     for name, note in (
-        ("bsd_clay_open", "Rank vs L-function. Parity from w_E. First-curve leadings label ranks 0..4. LMFDB ranks 0..5 vanishing (Sha=1). Modularity produces L. Kolyvagin is rank=ord L for analytic rank 0,1. Remainder is analytic rank ≥2."),
-        ("hodge_clay_open", "Algebraic cycles vs cohomology. Very general cubic: only h^2. Associated K3 reduces extra (2,2) to Lefschetz (1,1). Named extra classes C_8 through C_44 algebraic. Remainder: unnamed no-K3, general non-cubic 4-folds."),
+        ("bsd_clay_open", "Rank vs L-function. r≥2 native object is vanishing+Sha. Kolyvagin is r=0,1. Naming Kato is theorem enumeration. Remainder is Clay rank=ord L for r≥2."),
+        ("hodge_clay_open", "Algebraic cycles vs cohomology. Unnamed no-K3 has no Gram seed (seeds attach to named varieties). Remainder: general non-cubic 4-folds. Do not hunt C_48."),
     ):
         rows.append(
             _row(

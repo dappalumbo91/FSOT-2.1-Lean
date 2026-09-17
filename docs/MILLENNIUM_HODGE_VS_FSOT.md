@@ -24,7 +24,9 @@ These are **two different objects**. Related geometry (Hodge classes vs algebrai
 
 6. **Very general cubic: only \(h^2\).** Isolated “cubic 4-fold Hodge is open” is the wrong orifice. A very general cubic has rational Hodge \((2,2)=\langle h^2\rangle\) only (rank 1). Hodge number \(h^{2,2}=21\); the primitive 20 is not rational for a very general \(X\). Extra *rational* classes live on Hassett \(C_d\).
 
-**Remainder:** unnamed *no-K3* \(C_d\) (sample \(48,50,54\): no named surface, no K3 reduction) and general non-cubic 4-folds. Do not enumerate the tail.
+7. **The missing concept (why the \(C_d\) list looped).** FSOT seeds attach to **named varieties** (\(\chi\), Gram, a surface). Unnamed no-K3 \(C_d\) (sample \(48,50,54\)) are nonempty Hassett loci with no K3 and **no named surface**, hence **no Gram seed**. Hunting \(C_{48}\)’s surface is the enumeration failure. There is nothing to connect until a variety is named.
+
+**Remainder:** general non-cubic 4-folds (no named \(\chi\)/Hodge seed). Do not enumerate the tail. Do not steal \(25-1\) for \(\chi(\mathrm{K3})\).
 
 Clay’s *proof object* (Hodge classes algebraic on every projective manifold) stays `OPEN_NOT_CLAIMED`. Native Lefschetz + named surfaces stay executable.
 

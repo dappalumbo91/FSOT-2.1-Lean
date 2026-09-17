@@ -431,6 +431,41 @@ def seed_onsager_holder() -> float:
     return 1.0 / d
 
 
+def seed_nse_valve_fraction() -> float:
+    """POOF/(POOF+SUCTION): stretch production vs viscous hold.
+
+    APPLY interacting systems (same miss as isolated glueball φ²+1).
+    Not an existence number. Do not stuff the valve into 3D smoothness.
+    """
+    p = float(f(POOF))
+    s = float(f(SUCTION))
+    return p / (p + s)
+
+
+def nse_d2_rejects_d_particle() -> bool:
+    """2D 3/2 is geometry d+2=4, not 12/(2 D_particle)."""
+    dpart = float(derived_D_eff("Particle_Physics"))
+    stuffed = 12.0 / (2.0 * dpart)
+    return abs(seed_kolmogorov_d2_32() - 1.5) < 1e-12 and abs(stuffed - 1.5) > 0.05
+
+
+def nse_stretch_visc_two_zoom() -> bool:
+    """3D stretching is Particle zoom; viscosity is Fluid zoom.
+
+    Isolated BKM/CF is the theorem-ladder. Coupling is two zooms of
+    one orifice plus the POOF/SUCTION valve. Do not put D_particle on 2D.
+    Do not stuff the valve into existence.
+    """
+    dpart = float(derived_D_eff("Particle_Physics"))
+    k45 = seed_kolmogorov_45()
+    v = seed_nse_valve_fraction()
+    return (
+        abs(k45 - 12.0 / (3.0 * dpart)) < 1e-12
+        and nse_d2_rejects_d_particle()
+        and 0.0 < v < 1.0
+    )
+
+
 def seed_bsd_11a1_L() -> float:
     """L(11a1, 1) = √φ / D_particle.
 
@@ -827,6 +862,21 @@ def hassett_unnamed_no_k3_sample() -> tuple[int, ...]:
     enumerate as algebraic.
     """
     return (48, 50, 54)
+
+
+def hassett_unnamed_no_k3_has_no_seed() -> bool:
+    """Unnamed no-K3 C_d have no named surface, hence no Gram seed.
+
+    FSOT seeds attach to named varieties. Hunting C_48 is the
+    enumeration failure. Not algebraicity of those classes.
+    """
+    named = set(hassett_named_no_k3())
+    if not hassett_k3_tail_is_lefschetz():
+        return False
+    for d in hassett_unnamed_no_k3_sample():
+        if d in named or hassett_associated_k3(d) or not hassett_C_d_nonempty(d):
+            return False
+    return True
 
 
 def hassett_k3_tail_is_lefschetz() -> bool:

@@ -16,10 +16,10 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | WX-QUIET-FILL | B/dated | Clean quiet 24 h, uncoupled from storm latitude belt | **Superseded object:** 44078 (59.94°N) was lat-belt transfer to MDXA2 (59.44°N), \|Δlat\|<POOF·180/π. Window min_pres=1002.8. Uncoupled clean quiet **holds** (n=4). | Did not move 1010. Did not rewrite frozen JSON. Did not drop the kill to inflate storm skill. |
 | SH0ES-LADDER | A | SH0ES ladder chain pooled | ~0.212% (aspiration 0.05% open) | Did not β-fit the ladder |
 | CEPHEID-PL | A | Cepheid PL interconnect | ~0.135% (aspiration 0.05% open) | Did not retune ρ |
-| NSE-CLAY | — | 3D NSE existence on R^3 | \(L^2\) cascade is not \(L^\infty\). BKM is \(\|\omega\|\) magnitude, not direction. Constantin–Fefferman is Lipschitz \(\xi\). | Did not stuff existence into 4/5 or \(\|\omega\|\). Did not put \(D_{\mathrm{particle}}\) on 2D. |
+| NSE-CLAY | — | 3D NSE existence on R^3 | Stretching is Particle zoom; viscosity is Fluid zoom. Isolated BKM/CF is the theorem-ladder. Valve is not existence. | Did not stuff the valve into existence. Did not name the next Lipschitz theorem. Did not put \(D_{\mathrm{particle}}\) on 2D. |
 | PREM-POISSON-ATOMIC | A/named | \(\nu=D_{\mathrm{atomic}}/25\) vs PREM lid | **Superseded object:** Atomic well \(D=6\) gave 5.43%. Continuum solid is Molecular \(D=7\), \(\nu=7/25=0.28\). | Did not put Atomic back to 7. |
-| BSD-RANK | — | Analytic rank \(\ge 2\) | Modularity produces \(L\). Kolyvagin is rank \(=\) ord \(L\) for analytic rank 0,1. Volume is Sha. | Did not nearest-template. Did not Weierstrass\(\to\mathbb{Z}\). |
-| HODGE-CLASS | — | Unnamed no-K3 Hassett and general non-cubic 4-folds | Very general cubic: only \(h^2\). Named \(C_8\) through \(C_{44}\) algebraic. K3-locus extra classes are Lefschetz (1,1). | Did not enumerate the tail. Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
+| BSD-RANK | — | \(\mathrm{rank}=\mathrm{ord}\,L\) for analytic rank \(\ge 2\) | Vanishing+Sha already native for r=2..5. Kolyvagin is r=0,1. Naming Kato is theorem enumeration. | Did not enumerate Euler systems. Did not Weierstrass\(\to\mathbb{Z}\). |
+| HODGE-CLASS | — | General non-cubic 4-folds | Unnamed no-K3 has no Gram seed (seeds attach to named varieties). Very general cubic only \(h^2\). Named \(C_8..C_{44}\) algebraic. | Did not hunt \(C_{48}\). Did not steal 25−1 for \(\chi(\mathrm{K3})=24\). |
 
 Dated public scoreboard kills live in [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md). Do not rewrite issued JSON.
 
