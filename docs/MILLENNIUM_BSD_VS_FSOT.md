@@ -61,9 +61,15 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
    \]
    is **1**. 545723.a1 is the same orifice out of sample. First-of-rank \(\mathrm{Reg}\) is the *first-curve* scale, not a lookup for every special.
 
-9. **Rank \(\ge 5\).** \(L^{(4)}(1)=0\) as well. Integer rank is still further vanishing of \(L\). No Weierstrass-coefficient → \(\mathbb{Z}\) seed map. The first-of-rank ladder stops at 4.
+9. **General rank 5 (the 19047851.a1 conversion).** \(L\) through \(L^{(4)}\) vanish and \(L^{(5)}\neq 0\). There is no rank-5 seed: the first-of-rank ladder stops at 4. Raw \(L^{(5)}(19047851.\mathrm{a1},1)/5!\approx 30.286\) nearest-templates as rank 4 (true rank is 5 — the misfire is restored). The volume
+   \[
+   \mathrm{Sha}_{\mathrm{an}}=\frac{L^{(5)}(1)/5!\cdot|E_{\mathrm{tors}}|^2}{\Omega\cdot\mathrm{Reg}\cdot\prod c_p}
+   \]
+   is **1**. 64921931.a1 is the same orifice out of sample. Do not invent a rank-5 seed. LMFDB analytic rank \(\ge 4\) is numerical, not a rigorous \(\mathrm{ord}\,L\) theorem.
 
-**Remainder:** \(\mathrm{ord}\,L\) for rank \(\ge 5\), and general \(E\) without computing the modular form.
+10. **Rank \(\ge 6\).** \(L^{(5)}(1)=0\) as well. Integer rank is still further vanishing of \(L\). No Weierstrass-coefficient → \(\mathbb{Z}\) seed map.
+
+**Remainder:** \(\mathrm{ord}\,L\) for rank \(\ge 6\), and general \(E\) without computing the modular form.
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 
@@ -82,7 +88,8 @@ Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays 
 | General rank 2 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 643a1/433a1 (not special magnitude) |
 | General rank 3 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 11197a1/11642a1 (not special/Reg magnitude) |
 | General rank 4 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 501029.a1/545723.a1 (not special/Reg magnitude; ladder saturates) |
-| Rank \(\ge 5\) | The theorem | Still further vanishing of \(L\) |
+| General rank 5 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 19047851.a1/64921931.a1 (not special/Reg magnitude; nearest mis-fires as 4) |
+| Rank \(\ge 6\) | The theorem | Still further vanishing of \(L\) |
 | Status | Open prize problem | Ladder **executable**; general \(E\) **OPEN_NOT_CLAIMED** |
 
 Forbidden: “we proved Millennium BSD because five Cremona curves match.” Allowed: parity + first-of-rank leadings. Do not \(\pi^2\cdot\mathrm{POOF}\) on rank 4. Do not nearest-template arbitrary \(L(1)\).

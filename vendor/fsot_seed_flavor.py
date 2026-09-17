@@ -886,7 +886,8 @@ def bsd_analytic_sha(
     BSD volume for the leading L^{(r)}(1)/r!. Rank 0: L(1), Reg=1.
     Rank 1: L'(1) and Néron-Tate Reg. Rank 2: L''/2!. Rank 3: L'''/3!.
     11197a1 raw special mis-fires as rank 4; 501029.a1 special is
-    not the rank-4 seed. The quotient is 1. Magnitude is the wrong orifice.
+    not the rank-4 seed; 19047851.a1 special (~30) also nearest-templates
+    as 4 (ladder saturates). The quotient is 1. Magnitude is the wrong orifice.
     """
     return (
         float(L_leading)
@@ -900,7 +901,8 @@ def bsd_integer_rank_from_leading(value: float) -> int:
 
     For the first curve of each of those ranks the match is unique.
     Not a Weierstrass→ℤ formula. Do not run on arbitrary L(1)
-    (17a1 is rank 0; magnitude looks like rank 3).
+    (17a1 is rank 0; magnitude looks like rank 3). Rank ≥5
+    specials also nearest-template as 4 because the ladder stops.
     """
     best_r, best = 0, float("inf")
     v = float(value)
