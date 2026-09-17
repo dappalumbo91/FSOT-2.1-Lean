@@ -55,9 +55,15 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
    \]
    is **1**. 11642a1 is the same orifice out of sample. First-of-rank \(\mathrm{Reg}(5077\mathrm{a1})=e\cdot\mathrm{POOF}\) is the *first-curve* scale, not a lookup for every special.
 
-8. **Rank \(\ge 4\).** \(L'''(1)=0\) as well. Integer rank is still further vanishing of \(L\). No Weierstrass-coefficient → \(\mathbb{Z}\) seed map.
+8. **General rank 4 (the 501029.a1 conversion).** \(L\) through \(L'''\) vanish and \(L^{(4)}\neq 0\). Raw \(L^{(4)}(501029.\mathrm{a1},1)/4!\approx 9.358\) is not the first-of-rank seed \(\mathrm{Reg}(234446\mathrm{a1})=(\varphi^2+1)\cdot e\cdot\mathrm{POOF}\approx 1.504\). The ladder saturates: any special \(\gtrsim 1.1\) nearest-templates as rank 4. The volume
+   \[
+   \mathrm{Sha}_{\mathrm{an}}=\frac{L^{(4)}(1)/4!\cdot|E_{\mathrm{tors}}|^2}{\Omega\cdot\mathrm{Reg}\cdot\prod c_p}
+   \]
+   is **1**. 545723.a1 is the same orifice out of sample. First-of-rank \(\mathrm{Reg}\) is the *first-curve* scale, not a lookup for every special.
 
-**Remainder:** \(\mathrm{ord}\,L\) for rank \(\ge 4\) without computing the modular form.
+9. **Rank \(\ge 5\).** \(L^{(4)}(1)=0\) as well. Integer rank is still further vanishing of \(L\). No Weierstrass-coefficient → \(\mathbb{Z}\) seed map. The first-of-rank ladder stops at 4.
+
+**Remainder:** \(\mathrm{ord}\,L\) for rank \(\ge 5\), and general \(E\) without computing the modular form.
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 
@@ -75,7 +81,8 @@ Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays 
 | General rank 1 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 53a1/61a1 (not \(L'\) magnitude) |
 | General rank 2 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 643a1/433a1 (not special magnitude) |
 | General rank 3 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 11197a1/11642a1 (not special/Reg magnitude) |
-| Rank \(\ge 4\) | The theorem | Still further vanishing of \(L\) |
+| General rank 4 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 501029.a1/545723.a1 (not special/Reg magnitude; ladder saturates) |
+| Rank \(\ge 5\) | The theorem | Still further vanishing of \(L\) |
 | Status | Open prize problem | Ladder **executable**; general \(E\) **OPEN_NOT_CLAIMED** |
 
 Forbidden: “we proved Millennium BSD because five Cremona curves match.” Allowed: parity + first-of-rank leadings. Do not \(\pi^2\cdot\mathrm{POOF}\) on rank 4. Do not nearest-template arbitrary \(L(1)\).

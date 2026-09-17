@@ -885,8 +885,8 @@ def bsd_analytic_sha(
 
     BSD volume for the leading L^{(r)}(1)/r!. Rank 0: L(1), Reg=1.
     Rank 1: L'(1) and Néron-Tate Reg. Rank 2: L''/2!. Rank 3: L'''/3!.
-    11197a1 raw special mis-fires as rank 4; the quotient is 1.
-    Magnitude is the wrong orifice.
+    11197a1 raw special mis-fires as rank 4; 501029.a1 special is
+    not the rank-4 seed. The quotient is 1. Magnitude is the wrong orifice.
     """
     return (
         float(L_leading)
