@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-09-09T16:11:09.487993+00:00",
+  "generated_at": "2026-09-17T21:52:42.136832+00:00",
   "domain": "TOE_Dynamics",
   "maps_to_lean": [
     "fluid_dynamics",
@@ -16,8 +16,8 @@
     "\u03bc": "\u03bc = |Chaos|\u00b7|D_eff-25|/25 + A_bleed\u00b7Poof",
     "J_obs": "J_obs = C_factor\u00b7cos(\u03b4\u03c8+\u03b8_S) if observed else 0"
   },
-  "record_count": 18,
-  "observable_count": 18,
+  "record_count": 21,
+  "observable_count": 21,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "green_gate_pass": true,
@@ -88,8 +88,8 @@
     {
       "name": "momentum_rhs_finite",
       "property": "momentum_rhs",
-      "computed": 0.07667912370284831,
-      "measured": 0.07667912370284831,
+      "computed": 0.07668292488354565,
+      "measured": 0.07668292488354565,
       "error_pct": 0.0,
       "eval_kind": "dynamics_definition",
       "claim": "T2_momentum"
@@ -102,25 +102,25 @@
       "error_pct": 0.0,
       "eval_kind": "dynamics_identity",
       "claim": "T2_scalar_relax",
-      "S_eq": -0.5024559462100433,
+      "S_eq": -0.5023773181761478,
       "rhs": -0.04280434460598067
     },
     {
       "name": "D_eff_interface_split",
       "property": "abs_S_gap",
-      "computed": 0.39645785939929656,
-      "measured": 0.39645785939929656,
+      "computed": 0.39633052902070287,
+      "measured": 0.39633052902070287,
       "error_pct": 0.0,
       "eval_kind": "dynamics_definition",
       "claim": "T2_dimensional_interface",
-      "S_D20": 0.8989138056093399,
-      "S_D25": 0.5024559462100433
+      "S_D20": 0.8987078471968507,
+      "S_D25": 0.5023773181761478
     },
     {
       "name": "acoustic_speed_positive",
       "property": "c_s",
-      "computed": 0.7693455090660798,
-      "measured": 0.7693455090660798,
+      "computed": 0.7693639124918291,
+      "measured": 0.7693639124918291,
       "error_pct": 0.0,
       "eval_kind": "dynamics_identity",
       "claim": "T2_acoustic_metric"
@@ -133,8 +133,8 @@
       "error_pct": 0.0,
       "eval_kind": "dynamics_integration",
       "claim": "T2_euler_contract",
-      "residual_after": 0.22948413562653325,
-      "initial_offset": 0.2499999999999999,
+      "residual_after": 0.22948413562653347,
+      "initial_offset": 0.2500000000000001,
       "note": "200 explicit Euler steps at dt=0.001 toward S_eq(D=21)"
     },
     {
@@ -167,39 +167,69 @@
       "mu_D25": 0.16069183175866183
     },
     {
+      "name": "crc_water_air_sound_ratio",
+      "property": "c_water_over_c_air",
+      "computed": 4.3363158172089395,
+      "measured": 4.31934731934732,
+      "error_pct": 0.39284865529600077,
+      "eval_kind": "lab_table",
+      "claim": "T2_fluid_tank_crc",
+      "note": "e+\u03c6 vs CRC/ISO 20 \u00b0C. Two viscosities of one medium."
+    },
+    {
+      "name": "crc_diatomic_gamma",
+      "property": "gamma_air",
+      "computed": 1.4,
+      "measured": 1.4,
+      "error_pct": 0.0,
+      "eval_kind": "lab_table",
+      "claim": "T2_fluid_tank_gamma",
+      "note": "1+2/D_particle vs diatomic air 7/5"
+    },
+    {
+      "name": "us1976_scale_height",
+      "property": "H_std_atm",
+      "computed": 8434.6603105082,
+      "measured": 8434.5,
+      "error_pct": 0.0019006521809173357,
+      "eval_kind": "lab_table",
+      "claim": "T2_fluid_tank_H",
+      "note": "RT/\u03bcg vs US Standard Atmosphere 1976. Not Euler."
+    },
+    {
       "lab": "toe_dynamics_lab",
       "property": "dimensional_interface_S",
       "name": "bleed_rate",
-      "computed": 0.300584,
+      "computed": 0.300737,
       "measured": 0.30051620032255366,
-      "error_pct": 0.022461,
+      "error_pct": 0.073352,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Astronomy",
-      "fsot_scalar": 0.89846,
+      "fsot_scalar": 0.907488,
       "claim": "T2_dynamics_channel"
     },
     {
       "lab": "toe_dynamics_lab",
       "property": "consciousness_factor_channel",
       "name": "C_FACTOR",
-      "computed": 0.287652,
-      "measured": 0.28760015181918397,
-      "error_pct": 0.018003,
+      "computed": 0.287833,
+      "measured": 0.28761391128429215,
+      "error_pct": 0.076082,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
+      "fsot_scalar": 0.941271,
       "claim": "T2_dynamics_channel"
     },
     {
       "lab": "toe_dynamics_lab",
       "property": "poof_valve_channel",
       "name": "POOF",
-      "computed": 0.153504,
+      "computed": 0.1536,
       "measured": 0.1534822148944508,
-      "error_pct": 0.014333,
+      "error_pct": 0.076804,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Quantum_Mechanics",
-      "fsot_scalar": 0.955506,
+      "fsot_scalar": 0.950197,
       "claim": "T2_dynamics_channel"
     }
   ],
@@ -270,8 +300,8 @@
     {
       "name": "momentum_rhs_finite",
       "property": "momentum_rhs",
-      "computed": 0.07667912370284831,
-      "measured": 0.07667912370284831,
+      "computed": 0.07668292488354565,
+      "measured": 0.07668292488354565,
       "error_pct": 0.0,
       "eval_kind": "dynamics_definition",
       "claim": "T2_momentum"
@@ -284,25 +314,25 @@
       "error_pct": 0.0,
       "eval_kind": "dynamics_identity",
       "claim": "T2_scalar_relax",
-      "S_eq": -0.5024559462100433,
+      "S_eq": -0.5023773181761478,
       "rhs": -0.04280434460598067
     },
     {
       "name": "D_eff_interface_split",
       "property": "abs_S_gap",
-      "computed": 0.39645785939929656,
-      "measured": 0.39645785939929656,
+      "computed": 0.39633052902070287,
+      "measured": 0.39633052902070287,
       "error_pct": 0.0,
       "eval_kind": "dynamics_definition",
       "claim": "T2_dimensional_interface",
-      "S_D20": 0.8989138056093399,
-      "S_D25": 0.5024559462100433
+      "S_D20": 0.8987078471968507,
+      "S_D25": 0.5023773181761478
     },
     {
       "name": "acoustic_speed_positive",
       "property": "c_s",
-      "computed": 0.7693455090660798,
-      "measured": 0.7693455090660798,
+      "computed": 0.7693639124918291,
+      "measured": 0.7693639124918291,
       "error_pct": 0.0,
       "eval_kind": "dynamics_identity",
       "claim": "T2_acoustic_metric"
@@ -315,8 +345,8 @@
       "error_pct": 0.0,
       "eval_kind": "dynamics_integration",
       "claim": "T2_euler_contract",
-      "residual_after": 0.22948413562653325,
-      "initial_offset": 0.2499999999999999,
+      "residual_after": 0.22948413562653347,
+      "initial_offset": 0.2500000000000001,
       "note": "200 explicit Euler steps at dt=0.001 toward S_eq(D=21)"
     },
     {
@@ -349,39 +379,69 @@
       "mu_D25": 0.16069183175866183
     },
     {
+      "name": "crc_water_air_sound_ratio",
+      "property": "c_water_over_c_air",
+      "computed": 4.3363158172089395,
+      "measured": 4.31934731934732,
+      "error_pct": 0.39284865529600077,
+      "eval_kind": "lab_table",
+      "claim": "T2_fluid_tank_crc",
+      "note": "e+\u03c6 vs CRC/ISO 20 \u00b0C. Two viscosities of one medium."
+    },
+    {
+      "name": "crc_diatomic_gamma",
+      "property": "gamma_air",
+      "computed": 1.4,
+      "measured": 1.4,
+      "error_pct": 0.0,
+      "eval_kind": "lab_table",
+      "claim": "T2_fluid_tank_gamma",
+      "note": "1+2/D_particle vs diatomic air 7/5"
+    },
+    {
+      "name": "us1976_scale_height",
+      "property": "H_std_atm",
+      "computed": 8434.6603105082,
+      "measured": 8434.5,
+      "error_pct": 0.0019006521809173357,
+      "eval_kind": "lab_table",
+      "claim": "T2_fluid_tank_H",
+      "note": "RT/\u03bcg vs US Standard Atmosphere 1976. Not Euler."
+    },
+    {
       "lab": "toe_dynamics_lab",
       "property": "dimensional_interface_S",
       "name": "bleed_rate",
-      "computed": 0.300584,
+      "computed": 0.300737,
       "measured": 0.30051620032255366,
-      "error_pct": 0.022461,
+      "error_pct": 0.073352,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Astronomy",
-      "fsot_scalar": 0.89846,
+      "fsot_scalar": 0.907488,
       "claim": "T2_dynamics_channel"
     },
     {
       "lab": "toe_dynamics_lab",
       "property": "consciousness_factor_channel",
       "name": "C_FACTOR",
-      "computed": 0.287652,
-      "measured": 0.28760015181918397,
-      "error_pct": 0.018003,
+      "computed": 0.287833,
+      "measured": 0.28761391128429215,
+      "error_pct": 0.076082,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
+      "fsot_scalar": 0.941271,
       "claim": "T2_dynamics_channel"
     },
     {
       "lab": "toe_dynamics_lab",
       "property": "poof_valve_channel",
       "name": "POOF",
-      "computed": 0.153504,
+      "computed": 0.1536,
       "measured": 0.1534822148944508,
-      "error_pct": 0.014333,
+      "error_pct": 0.076804,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Quantum_Mechanics",
-      "fsot_scalar": 0.955506,
+      "fsot_scalar": 0.950197,
       "claim": "T2_dynamics_channel"
     }
   ]

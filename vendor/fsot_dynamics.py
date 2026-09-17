@@ -555,6 +555,74 @@ def run_dynamics_consistency_suite() -> list[dict]:
         }
     )
 
+    # 11) Lab observables of the Fluid tank (CRC / US1976) — not Euler, not Clay.
+    try:
+        from fsot_scale_interconnects import (
+            C_AIR_20C,
+            C_WATER_20C,
+            H_STD_ATM_M,
+            gamma_diatomic,
+            scale_height_us1976,
+            water_air_sound_ratio,
+        )
+    except ImportError:  # pragma: no cover
+        from pathlib import Path
+        import sys as _sys
+
+        _sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from fsot_scale_interconnects import (
+            C_AIR_20C,
+            C_WATER_20C,
+            H_STD_ATM_M,
+            gamma_diatomic,
+            scale_height_us1976,
+            water_air_sound_ratio,
+        )
+
+    def _lab_err(c: float, m: float) -> float:
+        return 100.0 * abs(c - m) / max(abs(m), 1e-30)
+
+    ratio = water_air_sound_ratio()
+    ratio_m = C_WATER_20C / C_AIR_20C
+    rows.append(
+        {
+            "name": "crc_water_air_sound_ratio",
+            "property": "c_water_over_c_air",
+            "computed": ratio,
+            "measured": ratio_m,
+            "error_pct": _lab_err(ratio, ratio_m),
+            "eval_kind": "lab_table",
+            "claim": "T2_fluid_tank_crc",
+            "note": "e+φ vs CRC/ISO 20 °C. Two viscosities of one medium.",
+        }
+    )
+    g_air = gamma_diatomic()
+    rows.append(
+        {
+            "name": "crc_diatomic_gamma",
+            "property": "gamma_air",
+            "computed": g_air,
+            "measured": 1.400,
+            "error_pct": _lab_err(g_air, 1.400),
+            "eval_kind": "lab_table",
+            "claim": "T2_fluid_tank_gamma",
+            "note": "1+2/D_particle vs diatomic air 7/5",
+        }
+    )
+    h_comp = scale_height_us1976()
+    rows.append(
+        {
+            "name": "us1976_scale_height",
+            "property": "H_std_atm",
+            "computed": h_comp,
+            "measured": H_STD_ATM_M,
+            "error_pct": _lab_err(h_comp, H_STD_ATM_M),
+            "eval_kind": "lab_table",
+            "claim": "T2_fluid_tank_H",
+            "note": "RT/μg vs US Standard Atmosphere 1976. Not Euler.",
+        }
+    )
+
     return rows
 
 

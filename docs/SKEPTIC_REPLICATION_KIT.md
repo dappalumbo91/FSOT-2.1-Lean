@@ -1,25 +1,10 @@
 # FSOT Skeptic Replication Kit
 
-*15-minute verification path · live pin in CURRENT_STATUS*
+*15-minute verification path · 2026-09-17 · commit `873fc87bf789`*
 
-Run this if you want to **break Ledger A fast** — not read 12,000 lines of narrative first.
+Run this if you want to **break FSOT fast** — not read 12,000 lines of narrative first.
 
-Five steps, one domain first. No Lean required on this path.
-
-```bash
-git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
-cd FSOT-2.1-Lean
-pip install -r requirements.txt
-python scripts/predict_closed_form.py --observable T_CMB --json
-python scripts/compare_to_anchor.py --observable T_CMB --source nist
-python scripts/assert_derived_folds.py
-python scripts/audit_parameter_count.py
-python scripts/freeze_ledger_a.py
-```
-
-Expect: a \(T_{\mathrm{CMB}}\) number with **no measured input**, a separate compare residual, freeze_ok, and `predictions/LEDGER_A_FREEZE.yaml`. Ledger B 477/477 is a *different* verb (correct, not predict): [`LEDGERS.md`](LEDGERS.md).
-
-**Live authority:** pin prefix of `vendor/fsot_compute.py` (match certificate). Ledger B green is not a Ledger A hit.  
+**Live authority:** pin **AEB2AD** (match=True) · green **477/477** · multiprover overall_ok=True  
 Full human guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) · audience map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) · math: [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md)
 
 Picture first (do not silo H₀): [`CONCEPTS.md`](CONCEPTS.md) C2–C3, C8, C10 · [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md)  
@@ -62,12 +47,12 @@ python scripts/audit_parameter_count.py
 
 | Check | Expected |
 |-------|----------|
-| Pin | **D1D38A** with `pin_match: true` in `docs/CURRENT_STATUS.md` |
+| Pin | **AEB2AD** with `pin_match: true` in `docs/CURRENT_STATUS.md` |
 | Benchmark green | **477/477** fail 0 (`data/benchmark_margin_audit.json`) |
 | Gate | pooled median ≤ **0.5%** |
 | Parameter audit | **ZERO_FREE** |
 | Label A / B (if toe report present) | A=True, B=True |
-| C_thin (records < 20) | **13** — mostly process/certificate spines, not missing physics |
+| C_thin (records < 20) | **14** — mostly process/certificate spines, not missing physics |
 
 Optional one-command publication bundle:
 
@@ -99,9 +84,9 @@ Open `data/publication/BENCHMARK_NEAR_MISS_LEDGER.md` — worst green domains pu
 | Domain | Records | Pooled % |
 |--------|--------:|---------:|
 | Zebrafish_Predictive_Validation_Panel | 20 | 0.3580 |
-| SH0ES_Ladder_Chain | 2 | 0.2121 |
-| SH0ES_Full_Sample | 7 | 0.1410 |
-| Cepheid_PL_Interconnect | 8 | 0.1350 |
+| SH0ES_Ladder_Chain | 5 | 0.3284 |
+| SH0ES_Full_Sample | 11 | 0.1410 |
+| Cepheid_PL_Interconnect | 12 | 0.1350 |
 | Econometrics | 172 | 0.1292 |
 | Economics | 157 | 0.1292 |
 | Neuroeconomics | 65 | 0.1050 |
@@ -119,8 +104,7 @@ Frozen files in `predictions/` are **not** rewritten after data lands. Score in 
 | Ladder mixture | `results/sh0es_ladder_chain_outcome.json` | **72.856 vs 73.04 (0.252%)** |
 | Cepheid PL | `results/cepheid_pl_interconnect_outcome.json` | **0.135%** GREEN, no fitted \(b\) |
 | Table 2 + \(cz/d\) | `results/sh0es_unpublished_objects_outcome.json` | Full NIR **0.141%**; \(cz/d\) **68.623** is local flow, not SH0ES |
-| Between-scale gaps | `results/between_scale_interconnect_outcome.json` | Adjacent-fold fills, pooled **0.026%** GREEN (1061 tight) |
-| Live \(\lvert S_i/S_j\rvert\) vs 1 (the 30% class) | same file, `perception_view` | Closed form \(\lvert 1+T_{1,i}\rvert/\lvert 1+T_{1,j}\rvert\). T3 leftover **0.000%**. vs 1 is **not** a 0.5% central. |
+| Between-scale gaps | `results/between_scale_interconnect_outcome.json` | Five adjacent-fold fills, pooled **0.028%** |
 
 ```bash
 python scripts/build_sh0es_ladder_chain_benchmark.py
@@ -144,8 +128,6 @@ python scripts/run_cross_proof_verification.py
 3. Authority pin leaves D1D38A without a documented migration.
 4. Preregistered prediction PRED rows violated after manifest-locked registration.
 5. Parameter audit finds per-observable least-squares tuning.
-
-**Not a falsifier:** live \(|S_i|/|S_j|\) vs 1 at tens of percent (QM/atomic 29.86%, CM/thermo 57%, …). That is \(T_1\) perception at each fold (D9). Adjacent same-look \(D\) vs 1 is 0.046%. Stuffing \(\sqrt{\varphi}\) onto the 30%, retuning \(\delta\psi\), or gating vs 1 at 0.5% would be the dishonest move.
 6. Someone retunes `predictions/sector_h0_seed.json` ρ to stuff SH0ES 73.04 into the 0.5% gate.
 7. Someone 0.5%-gates an individual nearby \(H_0=cz/d\).
 8. Identity pads (`φ=φ`) counted as empirical depth.

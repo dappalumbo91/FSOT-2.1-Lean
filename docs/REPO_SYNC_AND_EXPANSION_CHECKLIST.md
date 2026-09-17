@@ -17,7 +17,7 @@
 | Build new panels | domain `build_*.py` / bridge libs |
 | Proper densify only | `docs/FSOT_PROPER_DENSIFY_POLICY.md` + `fsot_proper_densify_lib` |
 | Margin audit | `python scripts/audit_all_benchmark_margins.py` |
-| Authority pin | `vendor/fsot_compute.py` still **D1D38A** |
+| Authority pin | `vendor/fsot_compute.py` still **AEB2AD** (freeze-era D1D38A: [`PIN_LINEAGE.md`](PIN_LINEAGE.md)) |
 | Status snapshot | `python scripts/build_repo_status_snapshot.py` |
 
 ### 2. Formal / multiprover (when batch is “public-ready”)
@@ -52,7 +52,7 @@
 
 ### 5. Commit message habit
 
-Include: green N/N · pin D1D38A · multiprover overall_ok if re-run · which domains deepened.
+Include: green N/N · pin AEB2AD · multiprover overall_ok if re-run · which domains deepened.
 
 ---
 

@@ -1,7 +1,7 @@
 # Physics completion status — what “finished” means here
 
 **Edition:** 2026-08-05  
-**Authority pin:** D1D38A  
+**Authority pin:** AEB2AD  
 **Regenerate scoreboard:** `python scripts/build_toe_gap_closure.py` · `python scripts/audit_all_benchmark_margins.py` · `python scripts/build_repo_status_snapshot.py`
 
 ---

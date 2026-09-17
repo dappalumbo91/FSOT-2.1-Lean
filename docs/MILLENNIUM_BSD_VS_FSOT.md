@@ -4,6 +4,8 @@
 
 These are **two different objects**. Related arithmetic (rank of \(E(\mathbb{Q})\) vs \(L(E,s)\)). Mixing them is how false credit happens.
 
+Clay froze \(\mathrm{rank}=\mathrm{ord}\,L\) for every \(E\). That formula has **no residual for all curves**. The function is vanishing order plus Sha volume on named curves, and Mordell–Weil generators as the observation. Raw \(L(1)\) magnitude is a flawed encoding (17a1 misfires as rank 3). Spine: [`FUNCTION_NOT_FORMULA.md`](FUNCTION_NOT_FORMULA.md). Pictures: [`HOW_THESE_ARE_DEPICTED.md`](HOW_THESE_ARE_DEPICTED.md).
+
 ---
 
 ## The question, and FSOT's answer

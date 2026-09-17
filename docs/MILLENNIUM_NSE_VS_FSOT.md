@@ -4,6 +4,8 @@
 
 These are **two different objects**. Related physics (3D incompressible flow). Mixing them is how false credit happens.
 
+Clay froze a smoothness yes/no. That formula has **no public residual**. The function is 3D stretching versus viscosity, against CRC/NIST/US1976 and viscous DNS. FSOT does not depend on the Clay encoding being the unique correct write-up. Spine: [`FUNCTION_NOT_FORMULA.md`](FUNCTION_NOT_FORMULA.md). Pictures: [`HOW_THESE_ARE_DEPICTED.md`](HOW_THESE_ARE_DEPICTED.md).
+
 ---
 
 ## The question, and FSOT's answer

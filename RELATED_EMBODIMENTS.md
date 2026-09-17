@@ -1,7 +1,7 @@
 # Related embodiments (same FSOT pin)
 
 This repository (**FSOT-2.1-Lean**) is the **public / formal face** of the FSOT Physical Archive.  
-The **same law** \(S = K(T_1+T_2+T_3)\) (pin **D1D38A**) routes cosmology, quantum, biology, and the neural mind.
+The **same law** \(S = K(T_1+T_2+T_3)\) (live pin **AEB2AD**; freeze-era D1D38A) routes cosmology, quantum, biology, and the neural mind.
 
 | Project | URL / path | Role |
 |---------|------------|------|

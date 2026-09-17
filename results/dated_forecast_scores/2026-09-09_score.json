@@ -1,0 +1,231 @@
+{
+  "scored_at": "2026-09-17T21:50:29.203773+00:00",
+  "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-09-09_issue.json",
+  "rows": [
+    {
+      "id": "FCAST-EQ-20260909T1854-01",
+      "result": "hold",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": false
+    },
+    {
+      "id": "FCAST-EQ-20260909T1854-02",
+      "result": "hold",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": false
+    },
+    {
+      "id": "FCAST-EQ-20260909T1854-03",
+      "result": "hold",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": false
+    },
+    {
+      "id": "FCAST-EQ-20260909T1854-04",
+      "result": "kill",
+      "n_hits": 2,
+      "hits": [
+        {
+          "id": "us7000tg43",
+          "mag": 5.1,
+          "place": "86 km ESE of Isangel, Vanuatu",
+          "lat": -19.777,
+          "lon": 170.0677,
+          "km": 3.986179740724758
+        },
+        {
+          "id": "us7000tg3x",
+          "mag": 5.2,
+          "place": "78 km ESE of Isangel, Vanuatu",
+          "lat": -19.8279,
+          "lon": 169.9636,
+          "km": 13.788185565893942
+        }
+      ],
+      "expect_event": false
+    },
+    {
+      "id": "FCAST-EQ-20260909T1854-05",
+      "result": "hold",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": false
+    },
+    {
+      "id": "FCAST-EQ-20260909T1854-06",
+      "result": "kill",
+      "n_hits": 1,
+      "hits": [
+        {
+          "id": "us7000tgey",
+          "mag": 5.4,
+          "place": "southern East Pacific Rise",
+          "lat": -34.8341,
+          "lon": -109.1514,
+          "km": 19.990090421137378
+        }
+      ],
+      "expect_event": false
+    },
+    {
+      "id": "FCAST-EQ-20260909T1854-07",
+      "result": "hold",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": false
+    },
+    {
+      "id": "FCAST-EQ-20260909T1854-08",
+      "result": "hold",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": false
+    },
+    {
+      "id": "FCAST-WX-20260909T1854-01",
+      "result": "awaiting",
+      "notes": "no NDBC realtime/stdmet in window for 62442"
+    },
+    {
+      "id": "FCAST-WX-20260909T1854-02",
+      "result": "hold",
+      "n_obs": 227,
+      "saw_storm": true,
+      "expect_storm": true,
+      "buoy_id": "46070"
+    },
+    {
+      "id": "FCAST-WX-20260909T1854-03",
+      "result": "awaiting",
+      "notes": "no NDBC realtime/stdmet in window for 64046"
+    },
+    {
+      "id": "FCAST-WX-20260909T1854-04",
+      "result": "hold",
+      "n_obs": 235,
+      "saw_storm": true,
+      "expect_storm": false,
+      "buoy_id": "51002"
+    },
+    {
+      "id": "FCAST-WX-20260909T1854-05",
+      "result": "kill",
+      "n_obs": 480,
+      "saw_storm": true,
+      "expect_storm": false,
+      "buoy_id": "PTIT2"
+    },
+    {
+      "id": "FCAST-SOL-20260909T1854-01",
+      "result": "hold",
+      "kp_max": 3.0,
+      "expect_kp_ge_5": false
+    },
+    {
+      "id": "FCAST-TIDE-20260909T1854-01",
+      "result": "hold",
+      "max_residual_m": 0.29,
+      "n_hours": 48,
+      "expect_surge": true,
+      "station_id": "9414290",
+      "window_clipped": true
+    },
+    {
+      "id": "FCAST-TIDE-20260909T1854-02",
+      "result": "hold",
+      "max_residual_m": 0.247,
+      "n_hours": 47,
+      "expect_surge": true,
+      "station_id": "8443970",
+      "window_clipped": true
+    },
+    {
+      "id": "FCAST-TIDE-20260909T1854-03",
+      "result": "hold",
+      "max_residual_m": 0.323,
+      "n_hours": 48,
+      "expect_surge": true,
+      "station_id": "9410170",
+      "window_clipped": true
+    },
+    {
+      "id": "FCAST-TIDE-20260909T1854-04",
+      "result": "kill",
+      "max_residual_m": 0.179,
+      "n_hours": 48,
+      "expect_surge": false,
+      "station_id": "8724580",
+      "window_clipped": true
+    },
+    {
+      "id": "FCAST-HYDRO-20260909T1854-01",
+      "result": "hold",
+      "mean_cfs": 1799.05,
+      "n_obs": 2304,
+      "expect_high_flow": false,
+      "site_id": "01646500"
+    },
+    {
+      "id": "FCAST-HYDRO-20260909T1854-02",
+      "result": "hold",
+      "mean_cfs": 2845.76,
+      "n_obs": 768,
+      "expect_high_flow": false,
+      "site_id": "05464500"
+    },
+    {
+      "id": "FCAST-HYDRO-20260909T1854-03",
+      "result": "hold",
+      "mean_cfs": 754.04,
+      "n_obs": 768,
+      "expect_high_flow": true,
+      "site_id": "08114000"
+    },
+    {
+      "id": "FCAST-HYDRO-20260909T1854-04",
+      "result": "hold",
+      "mean_cfs": 7889.87,
+      "n_obs": 768,
+      "expect_high_flow": false,
+      "site_id": "09380000"
+    },
+    {
+      "id": "FCAST-HYDRO-20260909T1854-05",
+      "result": "hold",
+      "mean_cfs": 43707.59,
+      "n_obs": 580,
+      "expect_high_flow": false,
+      "site_id": "06934500"
+    },
+    {
+      "id": "FCAST-HYDRO-20260909T1854-06",
+      "result": "hold",
+      "mean_cfs": 85271.4,
+      "n_obs": 2267,
+      "expect_high_flow": false,
+      "site_id": "14144700"
+    },
+    {
+      "id": "FCAST-HYDRO-20260909T1854-07",
+      "result": "hold",
+      "mean_cfs": 230.21,
+      "n_obs": 767,
+      "expect_high_flow": false,
+      "site_id": "023177483"
+    },
+    {
+      "id": "FCAST-HYDRO-20260909T1854-08",
+      "result": "hold",
+      "mean_cfs": 6791.39,
+      "n_obs": 768,
+      "expect_high_flow": true,
+      "site_id": "03072655"
+    }
+  ],
+  "n_hold": 20,
+  "n_kill": 4,
+  "n_awaiting": 2
+}

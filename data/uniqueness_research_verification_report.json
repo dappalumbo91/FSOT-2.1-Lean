@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-17T21:08:03.399964+00:00",
+  "generated_at": "2026-09-17T21:53:26.576917+00:00",
   "spine": "uniqueness_research",
-  "obligation_count": 153,
+  "obligation_count": 157,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "python_decimal": {
-    "passed": 153,
-    "total": 153,
+    "passed": 157,
+    "total": 157,
     "status": "passed"
   },
   "rust_f64_replay": {
     "status": "passed",
-    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\niqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.90s\n     Running unittests src\\lib.rs (C:\\Users\\damia\\AppData\\Local\\Temp\\fsot_uniqueness_research_replay_target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (C:\\Users\\damia\\AppData\\Local\\Temp\\fsot_uniqueness_research_replay_target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
+    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\niqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.69s\n     Running unittests src\\lib.rs (C:\\Users\\damia\\AppData\\Local\\Temp\\fsot_uniqueness_research_replay_target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (C:\\Users\\damia\\AppData\\Local\\Temp\\fsot_uniqueness_research_replay_target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
   },
   "smt_z3": {
     "status": "passed",

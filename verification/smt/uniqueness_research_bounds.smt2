@@ -140,173 +140,181 @@
 (assert (! (< 0.0 0.5) :named o67))
 ; P6_mass_gap_proxy_pos_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o68))
+; P7_steady_potentials_sum_one_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o69))
+; P8_process_ceiling_is_phi4_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o70))
+; P9_process_time_at_d25_is_tau0_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o71))
+; P10_forecast_horizon_eq_7_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o72))
 ; forecast_horizon_eq_7 kind=eq_nat
-(assert (! (= 7 7) :named o69))
+(assert (! (= 7 7) :named o73))
 ; process_ceiling_days_pos kind=pos
-(assert (! (> 6.854101966249685596 0.0) :named o70))
+(assert (! (> 6.854101966249685596 0.0) :named o74))
 ; process_time_d25_eq_ceiling kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000000001) :named o71))
+(assert (! (< 0.0 0.000000000001) :named o75))
 ; process_time_25_cell_eq_ceiling kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000000001) :named o72))
+(assert (! (< 0.0 0.000000000001) :named o76))
 ; weather_window_hours_eq_24 kind=eq_nat
-(assert (! (= 24 24) :named o73))
+(assert (! (= 24 24) :named o77))
 ; market_class_median_under_half kind=lt_half
-(assert (! (< 0.073351691544809583 0.5) :named o74))
+(assert (! (< 0.073351691544809583 0.5) :named o78))
 ; market_window_days_pos kind=nat_pos
-(assert (! (> 1 0) :named o75))
+(assert (! (> 1 0) :named o79))
 ; market_class_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o76))
+(assert (! (= 1 1) :named o80))
 ; sickness_host_err_under_half kind=lt_half
-(assert (! (< 0.05218859322839639 0.5) :named o77))
+(assert (! (< 0.05218859322839639 0.5) :named o81))
 ; sickness_pathogen_err_under_half kind=lt_half
-(assert (! (< 0.076460068007654911 0.5) :named o78))
+(assert (! (< 0.076460068007654911 0.5) :named o82))
 ; sickness_kappa_pos kind=pos
-(assert (! (> 0.094369640423149562 0.0) :named o79))
+(assert (! (> 0.094369640423149562 0.0) :named o83))
 ; clay_problems_remaining_flag kind=eq_nat
-(assert (! (= 6 6) :named o80))
+(assert (! (= 6 6) :named o84))
 ; clay_direct_submit_accepted_flag kind=eq_nat
-(assert (! (= 0 0) :named o81))
-; clay_wait_years_required_flag kind=eq_nat
-(assert (! (= 2 2) :named o82))
-; clay_published_qualifying_outlet_flag kind=eq_nat
-(assert (! (= 0 0) :named o83))
-; clay_two_years_elapsed_flag kind=eq_nat
-(assert (! (= 0 0) :named o84))
-; clay_general_acceptance_flag kind=eq_nat
 (assert (! (= 0 0) :named o85))
+; clay_wait_years_required_flag kind=eq_nat
+(assert (! (= 2 2) :named o86))
+; clay_published_qualifying_outlet_flag kind=eq_nat
+(assert (! (= 0 0) :named o87))
+; clay_two_years_elapsed_flag kind=eq_nat
+(assert (! (= 0 0) :named o88))
+; clay_general_acceptance_flag kind=eq_nat
+(assert (! (= 0 0) :named o89))
 ; clay_prize_awarded_flag kind=eq_nat
-(assert (! (= 0 0) :named o86))
+(assert (! (= 0 0) :named o90))
 ; poincare_solved_historical_flag kind=eq_nat
-(assert (! (= 1 1) :named o87))
+(assert (! (= 1 1) :named o91))
 ; ym_native_path_sum2_err_under_half kind=lt_half
-(assert (! (< 0.000000000000011102 0.5) :named o88))
+(assert (! (< 0.000000000000011102 0.5) :named o92))
 ; ym_native_path_sum2_computed_pos kind=pos
-(assert (! (> 0.999999999999999889 0.0) :named o89))
+(assert (! (> 0.999999999999999889 0.0) :named o93))
 ; ym_color_path_integral_finite_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o90))
-; ym_color_path_integral_finite_computed_pos kind=pos
-(assert (! (> 1.490840889118060453 0.0) :named o91))
-; ns_viscosity_pos_D6_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o92))
-; ns_viscosity_pos_D6_computed_pos kind=pos
-(assert (! (> 0.412270210542628024 0.0) :named o93))
-; ns_viscosity_pos_D14_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o94))
-; ns_viscosity_pos_D14_computed_pos kind=pos
-(assert (! (> 0.306342472107273833 0.0) :named o95))
-; ns_viscosity_pos_D25_err_under_half kind=lt_half
+; ym_color_path_integral_finite_computed_pos kind=pos
+(assert (! (> 1.490840889118060453 0.0) :named o95))
+; ns_viscosity_pos_D6_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o96))
-; ns_viscosity_pos_D25_computed_pos kind=pos
-(assert (! (> 0.160691831758661835 0.0) :named o97))
-; ns_sound_speed_sq_pos_err_under_half kind=lt_half
+; ns_viscosity_pos_D6_computed_pos kind=pos
+(assert (! (> 0.412270210542628024 0.0) :named o97))
+; ns_viscosity_pos_D14_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o98))
-; ns_sound_speed_sq_pos_computed_pos kind=pos
-(assert (! (> 0.59192082984473493 0.0) :named o99))
-; riemann_first_zero_im_probe_err_under_half kind=lt_half
-(assert (! (< 0.001660664796375164 0.5) :named o100))
-; riemann_first_zero_im_probe_computed_pos kind=pos
-(assert (! (> 14.134490411330199677 0.0) :named o101))
-; pnp_grover_exponent_err_under_half kind=lt_half
+; ns_viscosity_pos_D14_computed_pos kind=pos
+(assert (! (> 0.306342472107273833 0.0) :named o99))
+; ns_viscosity_pos_D25_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o100))
+; ns_viscosity_pos_D25_computed_pos kind=pos
+(assert (! (> 0.160691831758661835 0.0) :named o101))
+; ns_sound_speed_sq_pos_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o102))
-; pnp_grover_exponent_computed_pos kind=pos
-(assert (! (> 0.5 0.0) :named o103))
-; bsd_clay_open_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o104))
-; bsd_clay_open_computed_pos kind=pos
-(assert (! (> 1.0 0.0) :named o105))
-; hodge_clay_open_err_under_half kind=lt_half
+; ns_sound_speed_sq_pos_computed_pos kind=pos
+(assert (! (> 0.59192082984473493 0.0) :named o103))
+; riemann_first_zero_im_probe_err_under_half kind=lt_half
+(assert (! (< 0.001660664796375164 0.5) :named o104))
+; riemann_first_zero_im_probe_computed_pos kind=pos
+(assert (! (> 14.134490411330199677 0.0) :named o105))
+; pnp_grover_exponent_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o106))
+; pnp_grover_exponent_computed_pos kind=pos
+(assert (! (> 0.5 0.0) :named o107))
+; bsd_clay_open_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o108))
+; bsd_clay_open_computed_pos kind=pos
+(assert (! (> 1.0 0.0) :named o109))
+; hodge_clay_open_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o110))
 ; hodge_clay_open_computed_pos kind=pos
-(assert (! (> 1.0 0.0) :named o107))
+(assert (! (> 1.0 0.0) :named o111))
 ; mill_acc_beats_or_meets_n_flag kind=eq_nat
-(assert (! (= 73 73) :named o108))
+(assert (! (= 73 73) :named o112))
 ; mill_acc_comparable_n_flag kind=eq_nat
-(assert (! (= 70 70) :named o109))
+(assert (! (= 70 70) :named o113))
 ; mill_acc_green_pass_n_flag kind=eq_nat
-(assert (! (= 67 67) :named o110))
+(assert (! (= 67 67) :named o114))
 ; mill_acc_clay_open_n_flag kind=eq_nat
-(assert (! (= 6 6) :named o111))
+(assert (! (= 6 6) :named o115))
 ; mill_acc_sota_beats_accuracy_wip_n_flag kind=eq_nat
-(assert (! (= 4 4) :named o112))
+(assert (! (= 4 4) :named o116))
 ; mill_acc_next_dig_n_flag kind=eq_nat
-(assert (! (= 3 3) :named o113))
+(assert (! (= 3 3) :named o117))
 ; mill_acc_riemann_beats_public_closed_form_flag kind=eq_nat
-(assert (! (= 1 1) :named o114))
-; mill_acc_riemann_panel_beats_rvm_flag kind=eq_nat
-(assert (! (= 1 1) :named o115))
-; mill_acc_riemann_signed_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o116))
-; mill_acc_glueball_does_not_beat_teper_flag kind=eq_nat
-(assert (! (= 0 0) :named o117))
-; mill_acc_glueball_beats_4sqrt_sigma_flag kind=eq_nat
 (assert (! (= 1 1) :named o118))
-; mill_acc_glueball_ratio_beats_three_halves_flag kind=eq_nat
+; mill_acc_riemann_panel_beats_rvm_flag kind=eq_nat
 (assert (! (= 1 1) :named o119))
-; mill_acc_bsd_integer_rank_first5_flag kind=eq_nat
+; mill_acc_riemann_signed_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o120))
-; mill_acc_bsd_234446_reg_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o121))
-; mill_acc_bsd_modularity_named_flag kind=eq_nat
+; mill_acc_glueball_does_not_beat_teper_flag kind=eq_nat
+(assert (! (= 0 0) :named o121))
+; mill_acc_glueball_beats_4sqrt_sigma_flag kind=eq_nat
 (assert (! (= 1 1) :named o122))
-; mill_acc_bsd_kolyvagin_rank_le1_flag kind=eq_nat
+; mill_acc_glueball_ratio_beats_three_halves_flag kind=eq_nat
 (assert (! (= 1 1) :named o123))
-; mill_acc_bsd_rank_ge2_volume_native_flag kind=eq_nat
+; mill_acc_bsd_integer_rank_first5_flag kind=eq_nat
 (assert (! (= 1 1) :named o124))
-; mill_acc_bsd_regulator_is_height_gram_flag kind=eq_nat
+; mill_acc_bsd_234446_reg_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o125))
-; mill_acc_bsd_tam_local_reg_global_flag kind=eq_nat
+; mill_acc_bsd_modularity_named_flag kind=eq_nat
 (assert (! (= 1 1) :named o126))
-; mill_acc_bsd_clay_equality_not_measured_flag kind=eq_nat
+; mill_acc_bsd_kolyvagin_rank_le1_flag kind=eq_nat
 (assert (! (= 1 1) :named o127))
-; mill_acc_bsd_sha_panel_vs_lmfdb_flag kind=eq_nat
+; mill_acc_bsd_rank_ge2_volume_native_flag kind=eq_nat
 (assert (! (= 1 1) :named o128))
-; mill_acc_bsd_mw_generators_observable_flag kind=eq_nat
+; mill_acc_bsd_regulator_is_height_gram_flag kind=eq_nat
 (assert (! (= 1 1) :named o129))
-; mill_acc_bsd_lmfdb_named_ranks_complete_flag kind=eq_nat
+; mill_acc_bsd_tam_local_reg_global_flag kind=eq_nat
 (assert (! (= 1 1) :named o130))
-; mill_acc_ns_bkm_named_flag kind=eq_nat
+; mill_acc_bsd_clay_equality_not_measured_flag kind=eq_nat
 (assert (! (= 1 1) :named o131))
-; mill_acc_ns_l2_cascade_not_l_inf_flag kind=eq_nat
+; mill_acc_bsd_sha_panel_vs_lmfdb_flag kind=eq_nat
 (assert (! (= 1 1) :named o132))
-; mill_acc_ns_stretch_visc_two_zoom_flag kind=eq_nat
+; mill_acc_bsd_mw_generators_observable_flag kind=eq_nat
 (assert (! (= 1 1) :named o133))
-; mill_acc_ns_enstrophy_budget_two_term_flag kind=eq_nat
+; mill_acc_bsd_lmfdb_named_ranks_complete_flag kind=eq_nat
 (assert (! (= 1 1) :named o134))
-; mill_acc_ns_helicity_3d_not_2d_flag kind=eq_nat
+; mill_acc_ns_bkm_named_flag kind=eq_nat
 (assert (! (= 1 1) :named o135))
-; mill_acc_ns_clay_smoothness_not_measured_flag kind=eq_nat
+; mill_acc_ns_l2_cascade_not_l_inf_flag kind=eq_nat
 (assert (! (= 1 1) :named o136))
-; mill_acc_ns_stretch_sim_vs_public_answers_flag kind=eq_nat
+; mill_acc_ns_stretch_visc_two_zoom_flag kind=eq_nat
 (assert (! (= 1 1) :named o137))
-; mill_acc_ns_omega0_scan_vs_threshold_flag kind=eq_nat
+; mill_acc_ns_enstrophy_budget_two_term_flag kind=eq_nat
 (assert (! (= 1 1) :named o138))
-; mill_acc_ns_3d_spectral_tg_flag kind=eq_nat
+; mill_acc_ns_helicity_3d_not_2d_flag kind=eq_nat
 (assert (! (= 1 1) :named o139))
-; mill_acc_ns_reality_observables_flag kind=eq_nat
+; mill_acc_ns_clay_smoothness_not_measured_flag kind=eq_nat
 (assert (! (= 1 1) :named o140))
-; mill_acc_hodge_named_no_k3_complete_flag kind=eq_nat
+; mill_acc_ns_stretch_sim_vs_public_answers_flag kind=eq_nat
 (assert (! (= 1 1) :named o141))
-; mill_acc_hodge_k3_tail_lefschetz_flag kind=eq_nat
+; mill_acc_ns_omega0_scan_vs_threshold_flag kind=eq_nat
 (assert (! (= 1 1) :named o142))
-; mill_acc_hodge_very_general_cubic_only_h2_flag kind=eq_nat
+; mill_acc_ns_3d_spectral_tg_flag kind=eq_nat
 (assert (! (= 1 1) :named o143))
-; mill_acc_hodge_unnamed_no_k3_no_seed_flag kind=eq_nat
+; mill_acc_ns_reality_observables_flag kind=eq_nat
 (assert (! (= 1 1) :named o144))
-; mill_acc_hodge_hypersurface_4folds_after_cubic_flag kind=eq_nat
+; mill_acc_hodge_named_no_k3_complete_flag kind=eq_nat
 (assert (! (= 1 1) :named o145))
-; mill_acc_hodge_hk4_fano_lines_named_flag kind=eq_nat
+; mill_acc_hodge_k3_tail_lefschetz_flag kind=eq_nat
 (assert (! (= 1 1) :named o146))
-; mill_acc_hodge_abelian4_euler_exact_flag kind=eq_nat
+; mill_acc_hodge_very_general_cubic_only_h2_flag kind=eq_nat
 (assert (! (= 1 1) :named o147))
-; mill_acc_hodge_clay_algebraicity_not_measured_flag kind=eq_nat
+; mill_acc_hodge_unnamed_no_k3_no_seed_flag kind=eq_nat
 (assert (! (= 1 1) :named o148))
-; mill_acc_hodge_chi_panel_vs_chern_flag kind=eq_nat
+; mill_acc_hodge_hypersurface_4folds_after_cubic_flag kind=eq_nat
 (assert (! (= 1 1) :named o149))
-; mill_acc_hodge_quintic4_euler_exact_flag kind=eq_nat
+; mill_acc_hodge_hk4_fano_lines_named_flag kind=eq_nat
 (assert (! (= 1 1) :named o150))
-; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
+; mill_acc_hodge_abelian4_euler_exact_flag kind=eq_nat
 (assert (! (= 1 1) :named o151))
+; mill_acc_hodge_clay_algebraicity_not_measured_flag kind=eq_nat
+(assert (! (= 1 1) :named o152))
+; mill_acc_hodge_chi_panel_vs_chern_flag kind=eq_nat
+(assert (! (= 1 1) :named o153))
+; mill_acc_hodge_quintic4_euler_exact_flag kind=eq_nat
+(assert (! (= 1 1) :named o154))
+; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
+(assert (! (= 1 1) :named o155))
 ; mill_acc_weather_quiet_fill_still_miss_flag kind=eq_nat
-(assert (! (= 0 0) :named o152))
+(assert (! (= 0 0) :named o156))
 (check-sat)
 ; expect: sat

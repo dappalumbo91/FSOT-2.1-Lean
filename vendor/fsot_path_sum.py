@@ -15,8 +15,14 @@ import math
 from typing import Any
 
 try:
-    from fsot_compute import POOF, SUCTION  # type: ignore
-    from fsot_earth_fluid_forecast import frozen_potentials, valve_split
+    from fsot_compute import PHI, POOF, SUCTION  # type: ignore
+    from fsot_earth_fluid_forecast import (
+        forecast_horizon_days,
+        frozen_potentials,
+        process_ceiling_days,
+        process_time_days,
+        valve_split,
+    )
     from fsot_uniqueness_confinement import (
         free_color_damping_rate,
         linear_potential,
@@ -27,8 +33,14 @@ except ImportError:  # pragma: no cover
     from pathlib import Path
 
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from fsot_compute import POOF, SUCTION  # type: ignore
-    from fsot_earth_fluid_forecast import frozen_potentials, valve_split
+    from fsot_compute import PHI, POOF, SUCTION  # type: ignore
+    from fsot_earth_fluid_forecast import (
+        forecast_horizon_days,
+        frozen_potentials,
+        process_ceiling_days,
+        process_time_days,
+        valve_split,
+    )
     from fsot_uniqueness_confinement import (
         free_color_damping_rate,
         linear_potential,
@@ -114,6 +126,43 @@ def run_path_sum_suite() -> dict[str, Any]:
     rows[4]["computed"] = v
     rows[4]["measured"] = math.sqrt(sig)
     rows[4]["error_pct"] = abs(v - math.sqrt(sig)) / max(math.sqrt(sig), 1e-30) * 100.0
+
+    w_load = sum(float(r["weight"]) for r in frozen_potentials("earthquake", "steady"))
+    tau0 = process_ceiling_days()
+    phi4 = float(PHI) ** 4
+    p25 = process_time_days(tau0, 25.0)
+    rows.extend(
+        [
+            {
+                "id": "P7_steady_potentials_sum_one",
+                "computed": w_load,
+                "measured": 1.0,
+                "error_pct": abs(w_load - 1.0) * 100.0,
+                "note": "here+transfer+hold branches at a quiet cell; not YM measure",
+            },
+            {
+                "id": "P8_process_ceiling_is_phi4",
+                "computed": tau0,
+                "measured": phi4,
+                "error_pct": abs(tau0 - phi4) / max(phi4, 1e-30) * 100.0,
+                "note": "D12 ceiling duration; not UTC hypocenter",
+            },
+            {
+                "id": "P9_process_time_at_d25_is_tau0",
+                "computed": p25,
+                "measured": tau0,
+                "error_pct": abs(p25 - tau0) / max(tau0, 1e-30) * 100.0,
+                "note": "process_time(τ0,25)=τ0; unfold is the issued window",
+            },
+            {
+                "id": "P10_forecast_horizon_eq_7",
+                "computed": float(forecast_horizon_days()),
+                "measured": 7.0,
+                "error_pct": abs(float(forecast_horizon_days()) - 7.0) / 7.0 * 100.0,
+                "note": "calendar projection of φ^4; not ECMWF week-3",
+            },
+        ]
+    )
 
     hard = [r for r in rows if r["error_pct"] > 1e-6]
     return {

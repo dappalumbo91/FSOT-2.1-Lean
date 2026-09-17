@@ -8,6 +8,8 @@
 This is an **attempt track**. Native identities go through Lean / Coq / Isabelle / F* / Rust / SMT.
 The Clay *statement* of each unsolved problem stays `OPEN_NOT_CLAIMED` until that exact theorem is proved.
 
+**Formula vs function:** Clay asked a frozen manuscript. FSOT answers the question that manuscript was pointing at by hitting the function that has data. Full explanation: [`FUNCTION_NOT_FORMULA.md`](FUNCTION_NOT_FORMULA.md). Pictures: [`HOW_THESE_ARE_DEPICTED.md`](HOW_THESE_ARE_DEPICTED.md). Gaps: [`FINDINGS.md`](FINDINGS.md).
+
 Question/answer (not vs-SOTA residuals):  
 Yang–Mills [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) ·  
 Navier–Stokes [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) ·  
@@ -19,7 +21,7 @@ Named-function outcomes: [`../results/millennium_named_outcomes.md`](../results/
 
 ## The questions, and FSOT's answers
 
-Each Clay problem is a *question about reality*. FSOT answers that question in native objects. The prize manuscript is a different object.
+Each Clay problem is a *question about reality*. The prize manuscript is one encoding of that question — and can be the wrong orifice. FSOT answers the question in native objects that have tables. The prize manuscript is a different object.
 
 | Problem | Question | FSOT answer | Still open (native) |
 |---------|----------|-------------|---------------------|
@@ -90,10 +92,11 @@ Accuracy vs public SOTA on those *functions* (not the Prize): [`MILLENNIUM_ACCUR
 ## Gauntlet
 
 ```powershell
-python vendor/fsot_millennium_track.py
-python vendor/fsot_millennium_accuracy.py
-python scripts/run_goal_tracks_verification.py
+python scripts/reproduce.py
+python scripts/plot_millennium_panels.py
 ```
+
+Authority (FSOT 2.1) still runs `python scripts/run_goal_tracks_verification.py`.
 
 Lean: `FSOT/Formal/MillenniumTrack.lean` (process rules + Grover 1/2 + critical-line *goal* + BSD first-of-rank \(n=5\) + named Hodge no-K3 \(n=9\)).  
 Numeric native rows export into the uniqueness spine (Coq / Isabelle / F* / Rust / SMT) with `clay_status=OPEN_NOT_CLAIMED`. Named-function outcomes: [`../results/millennium_named_outcomes.md`](../results/millennium_named_outcomes.md).

@@ -1,6 +1,6 @@
 # Time is emergent — process time vs Newtonian clock-time
 
-**Pin:** D1D38A · **Law D12** · **Picture C15**
+**Pin:** AEB2AD · **Law D12** · **Picture C15**
 
 Time is not sitting under the fluid as a fundamental axis.
 Time **is** the duration of a fold or mold as a pattern travels through the flow.

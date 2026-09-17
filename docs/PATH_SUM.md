@@ -26,6 +26,10 @@ Working the native path-sum is how we do the path-integral job here.
 | P4 | \(\int_0^\infty a_0 e^{-\gamma t}\,dt=a_0/\gamma\) finite (\(\gamma_{\mathrm{color}}>0\)) |
 | P5 | Area-law identity \(V(1/\sqrt{\sigma})=\sqrt{\sigma}\) |
 | P6 | \(\Lambda_{\mathrm{QCD}}\) proxy \(>0\) |
+| P7 | Steady-cell potentials (here+transfer+hold) sum to 1 |
+| P8 | Process ceiling \(=\varphi^4\) days (D12) |
+| P9 | \(\mathrm{process\_time}(\tau_0,25)=\tau_0\) |
+| P10 | Calendar horizon \(\mathrm{round}(\varphi^4)=7\) — not ECMWF week-3 |
 
 Run: `python vendor/fsot_path_sum.py`
 

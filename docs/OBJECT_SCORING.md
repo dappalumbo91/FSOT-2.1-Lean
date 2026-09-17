@@ -1,6 +1,8 @@
 # Object scoring — do not kill the wrong row
 
-**As-of:** 2026-09-07 · freeze `TOE-PREREG-20260806` · pin **D1D38A**
+**As-of:** 2026-09-07 · freeze `TOE-PREREG-20260806` · freeze-pin **D1D38A** · live pin **AEB2AD**
+
+Calendar watches (Euclid / JWST / DESI — not retunes): [`../results/WATCHES.md`](../results/WATCHES.md).
 
 Do **not** retune `fsot_predicted`. Do **not** rewrite Family B `vendor/fsot_compute.py`.
 A literature number is a **named object**. Scoring the wrong object is a false kill.

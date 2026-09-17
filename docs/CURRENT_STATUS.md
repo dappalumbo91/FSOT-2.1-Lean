@@ -1,7 +1,7 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-14T22:02:52.527478+00:00`  
-**Edition stamp:** 2026-09-14  
+**Generated:** `2026-09-17T21:54:20.176919+00:00`  
+**Edition stamp:** 2026-09-17  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
 > Authoritative live numbers for expansion. Prefer this file over hand-edited counts in README when they disagree.
@@ -39,7 +39,7 @@ Verbs: **A predicts** · **B corrects** · **C checks**. Spec: [`LEDGERS.md`](LE
 | Gate | ≤ 0.5% pooled median |
 | Median-of-medians | 0.006625234573930708% |
 | Scalar records (envelope) | 181477 |
-| Tiers | `{'B_verified': 337, 'C_thin': 13, 'A_strong': 118}` |
+| Tiers | `{'B_verified': 338, 'C_thin': 12, 'A_strong': 118}` |
 | Cite as ToE accuracy | **no** |
 
 ### Ledger C — live integrity
@@ -59,7 +59,7 @@ Verbs: **A predicts** · **B corrects** · **C checks**. Spec: [`LEDGERS.md`](LE
 | Gate | ≤ 0.5% pooled median |
 | Median-of-medians | 0.006625234573930708% |
 | Scalar records (envelope) | 181477 |
-| Tiers | `{'B_verified': 337, 'C_thin': 13, 'A_strong': 118}` |
+| Tiers | `{'B_verified': 338, 'C_thin': 12, 'A_strong': 118}` |
 
 ## Mathlib re-derivation (Formal corpus)
 
@@ -101,11 +101,11 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 | Item | Value |
 |------|-------|
 | Hand PREDs | **77** (PRED-001–084) |
-| Dated scores | hold 65 · kill 45 · awaiting 4 |
+| Dated scores | hold 85 · kill 49 · awaiting 6 |
 | Score table | [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md) |
 | Expansion map | [`../predictions/reports/PREDICTION_EXPANSION_MAP.md`](../predictions/reports/PREDICTION_EXPANSION_MAP.md) |
 
-08-31 / 09-01 EQ+hydro score after **2026-09-08**. Volcanic **2026-09-08**. Do not rewrite issued JSON.
+09-09 windows scored **2026-09-17** (EQ valid_to 09-16). Issued JSON not rewritten. Awaiting = missing NDBC catalogs.
 
 ## Claim evidence (kill commands)
 

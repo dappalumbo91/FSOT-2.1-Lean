@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T01:06:10.822744+00:00",
+  "generated_at": "2026-09-17T21:07:44.734596+00:00",
   "pin": "D1D38A",
   "product": "FSOT-Genetics (sibling). Hub smoke only.",
   "host": {
@@ -8,9 +8,9 @@
     "measured_bp": 956,
     "domain": "Biology",
     "source": "NCBI RefSeq human mitochondrial genome",
-    "computed_bp": 956.2125785536825,
-    "error_pct": 0.02223625038520223,
-    "S": 0.4447250077038459
+    "computed_bp": 956.4989229512635,
+    "error_pct": 0.05218859322839608,
+    "S": -0.6456637055867616
   },
   "pathogen": {
     "name": "S_spike_CDS",
@@ -18,9 +18,9 @@
     "measured_bp": 3822,
     "domain": "Biochemistry",
     "source": "NCBI RefSeq SARS-CoV-2 Wuhan-Hu-1 spike CDS",
-    "computed_bp": 3822.5851887693575,
-    "error_pct": 0.015311061469322368,
-    "S": 0.3062212293865662
+    "computed_bp": 3824.9223037992524,
+    "error_pct": 0.07646006800765055,
+    "S": 0.9459440805999452
   },
   "hosts": [
     {
@@ -29,9 +29,9 @@
       "measured_bp": 956,
       "domain": "Biology",
       "source": "NCBI RefSeq human mitochondrial genome",
-      "computed_bp": 956.2125785536825,
-      "error_pct": 0.02223625038520223,
-      "S": 0.4447250077038459
+      "computed_bp": 956.4989229512635,
+      "error_pct": 0.05218859322839608,
+      "S": -0.6456637055867616
     },
     {
       "name": "MT-CO1",
@@ -39,9 +39,9 @@
       "measured_bp": 1542,
       "domain": "Biology",
       "source": "NCBI RefSeq human mitochondrial genome",
-      "computed_bp": 1542.3428829809397,
-      "error_pct": 0.022236250385197696,
-      "S": 0.4447250077038459
+      "computed_bp": 1542.8047481075819,
+      "error_pct": 0.05218859322839639,
+      "S": -0.6456637055867616
     },
     {
       "name": "MT-ND2",
@@ -49,9 +49,9 @@
       "measured_bp": 1044,
       "domain": "Biology",
       "source": "NCBI RefSeq human mitochondrial genome",
-      "computed_bp": 1044.2321464540214,
-      "error_pct": 0.022236250385191933,
-      "S": 0.4447250077038459
+      "computed_bp": 1044.5448489133046,
+      "error_pct": 0.05218859322840774,
+      "S": -0.6456637055867616
     }
   ],
   "pathogens": [
@@ -61,9 +61,9 @@
       "measured_bp": 3822,
       "domain": "Biochemistry",
       "source": "NCBI RefSeq SARS-CoV-2 Wuhan-Hu-1 spike CDS",
-      "computed_bp": 3822.5851887693575,
-      "error_pct": 0.015311061469322368,
-      "S": 0.3062212293865662
+      "computed_bp": 3824.9223037992524,
+      "error_pct": 0.07646006800765055,
+      "S": 0.9459440805999452
     },
     {
       "name": "N_nucleocapsid_CDS",
@@ -71,14 +71,14 @@
       "measured_bp": 1260,
       "domain": "Biochemistry",
       "source": "NCBI RefSeq SARS-CoV-2 Wuhan-Hu-1 nucleocapsid CDS",
-      "computed_bp": 1260.1929193745134,
-      "error_pct": 0.015311061469317011,
-      "S": 0.3062212293865662
+      "computed_bp": 1260.9633968568965,
+      "error_pct": 0.07646006800765491,
+      "S": 0.9459440805999452
     }
   ],
-  "host_median_error_pct": 0.022236250385197696,
-  "pathogen_median_error_pct": 0.015311061469322368,
-  "kappa_host_pathogen": 0.02104201418939883,
+  "host_median_error_pct": 0.05218859322839639,
+  "pathogen_median_error_pct": 0.07646006800765491,
+  "kappa_host_pathogen": 0.09436964042314956,
   "poof_hold": 0.510728588773961,
   "suction_hold": 0.4892714112260389,
   "process_time_days_host_d12": 3.289968943799849,

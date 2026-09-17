@@ -18,6 +18,8 @@ oracle:
   path: "vendor/fsot_compute.py"
   sha256_prefix: "D1D38A185487B452"
   pin: "D1D38A"
+  live_pin: "AEB2AD"
+  pin_note: "This freeze is D1D38A. Live engine pin is AEB2AD (same law, later SHA). Do not rewrite this freeze. See docs/PIN_LINEAGE.md."
 
 toolchains:
   notes: "python>=3.11; Lean 4.31 / Coq / Isabelle / F* / Rust / Z3 / TLA+ for full cross-proof"

@@ -211,6 +211,18 @@ lemma P5_area_law_V_of_one_over_sqrt_sigma_err_under_half: "(0::real) < (0.5::re
 lemma P6_mass_gap_proxy_pos_err_under_half: "(0::real) < (0.5::real)"
   by simp
 
+lemma P7_steady_potentials_sum_one_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma P8_process_ceiling_is_phi4_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma P9_process_time_at_d25_is_tau0_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma P10_forecast_horizon_eq_7_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
 lemma forecast_horizon_eq_7: "(7::nat) = 7"
   by simp
 

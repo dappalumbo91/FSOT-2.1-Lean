@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-10T01:06:17.628898+00:00",
+  "generated_at": "2026-09-17T21:07:51.551136+00:00",
   "pin": "D1D38A",
   "note": "Frozen 48 h issues not rewritten. 24 h is the next increment for NEW issues.",
   "n": 32,
-  "n_with_obs": 28,
-  "n_24h_agrees_48h": 28,
+  "n_with_obs": 26,
+  "n_24h_agrees_48h": 25,
   "rows": [
     {
       "id": "FCAST-WX-20260825-01",
@@ -344,23 +344,19 @@
     {
       "id": "FCAST-WX-20260909T1854-01",
       "buoy_id": "62442",
-      "expect_storm": true,
       "issued_hours": 48.0,
-      "n_obs_48h": 6,
-      "n_obs_24h": 6,
-      "saw_storm_48h": false,
-      "saw_storm_24h": false,
-      "result_48h": "kill",
-      "result_24h": "kill",
-      "same": true
+      "result_48h": "no_obs",
+      "result_24h": "no_obs",
+      "n_obs_48h": 0,
+      "n_obs_24h": 0
     },
     {
       "id": "FCAST-WX-20260909T1854-02",
       "buoy_id": "46070",
       "expect_storm": true,
       "issued_hours": 48.0,
-      "n_obs_48h": 19,
-      "n_obs_24h": 19,
+      "n_obs_48h": 227,
+      "n_obs_24h": 109,
       "saw_storm_48h": true,
       "saw_storm_24h": true,
       "result_48h": "hold",
@@ -370,23 +366,19 @@
     {
       "id": "FCAST-WX-20260909T1854-03",
       "buoy_id": "64046",
-      "expect_storm": false,
       "issued_hours": 48.0,
-      "n_obs_48h": 6,
-      "n_obs_24h": 6,
-      "saw_storm_48h": false,
-      "saw_storm_24h": false,
-      "result_48h": "hold",
-      "result_24h": "hold",
-      "same": true
+      "result_48h": "no_obs",
+      "result_24h": "no_obs",
+      "n_obs_48h": 0,
+      "n_obs_24h": 0
     },
     {
       "id": "FCAST-WX-20260909T1854-04",
       "buoy_id": "51002",
       "expect_storm": false,
       "issued_hours": 48.0,
-      "n_obs_48h": 21,
-      "n_obs_24h": 21,
+      "n_obs_48h": 235,
+      "n_obs_24h": 115,
       "saw_storm_48h": true,
       "saw_storm_24h": true,
       "result_48h": "hold",
@@ -398,13 +390,13 @@
       "buoy_id": "PTIT2",
       "expect_storm": false,
       "issued_hours": 48.0,
-      "n_obs_48h": 54,
-      "n_obs_24h": 54,
+      "n_obs_48h": 480,
+      "n_obs_24h": 240,
       "saw_storm_48h": true,
       "saw_storm_24h": true,
-      "result_48h": "hold",
+      "result_48h": "kill",
       "result_24h": "hold",
-      "same": true
+      "same": false
     }
   ]
 }

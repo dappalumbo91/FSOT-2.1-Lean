@@ -13,7 +13,7 @@
 |----------|--------|
 | Role | Full **GitHub-scale** FSOT-2.1-Lean tree (math, proofs, portable vendor caches, benchmarks) |
 | Size on disk | **~425 MB** / ~3,421 files |
-| Authority pin | **D1D38A** — `vendor/fsot_compute.py` SHA-256 matches pin |
+| Authority pin | **AEB2AD** — `vendor/fsot_compute.py` SHA-256 matches pin |
 | Not included | Full Physical Archive offline mass (~17–39+ GB: `.lake`, bulk API dumps, SR-ITE runtime, genetics blobs, etc.) |
 
 This is the **verification + mathematics** face of the project. It is **not** a byte-for-byte restore of the entire `I:\FSOT-Physical-Archive` tree. Catalog **results** and portable caches are here; multi-GB raw downloads often lived only on `I:`.
@@ -30,7 +30,7 @@ This is the **verification + mathematics** face of the project. It is **not** a 
 | Engine theorems | `FSOT/Formal/Theorems.lean` (~106 KB) | OK |
 | Domain table | `FSOT/Formal/Domains.lean` | OK |
 | Domain priors | `FSOT/Formal/*Priors.lean` | **~492** modules / **506** Lean files total |
-| Decimal oracle | `vendor/fsot_compute.py` | OK, pin **D1D38A** match |
+| Decimal oracle | `vendor/fsot_compute.py` | OK, pin **AEB2AD** match |
 | Authority pin file | `vendor/fsot_compute_AUTHORITY_PIN.json` | OK |
 
 **Engine equation (what is being solved):**

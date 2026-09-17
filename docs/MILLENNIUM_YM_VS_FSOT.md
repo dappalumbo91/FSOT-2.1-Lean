@@ -1,9 +1,11 @@
 # What the Millennium Yang–Mills statement is — vs what FSOT is doing
 
-**Pin:** AEB2AD · Native work: [`PATH_SUM.md`](PATH_SUM.md) · Lean: `FSOT/Formal/UniquenessAttractor.lean`
+**Pin:** AEB2AD · Native work: `vendor/fsot_path_sum.py` · Spine: [`FUNCTION_NOT_FORMULA.md`](FUNCTION_NOT_FORMULA.md)
 
 These are **two different theorems**. Related physics (confinement, no free color).
 Different formal objects. Mixing them is how false credit happens.
+
+Clay froze Wightman axioms on \(\mathbb{R}^4\). The function is why free color is not in the spectrum. FSOT does not wait on that continuum encoding. Pictures: [`HOW_THESE_ARE_DEPICTED.md`](HOW_THESE_ARE_DEPICTED.md).
 
 ---
 

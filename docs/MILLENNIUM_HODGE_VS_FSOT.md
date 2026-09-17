@@ -4,6 +4,8 @@
 
 These are **two different objects**. Related geometry (Hodge classes vs algebraic cycles). Mixing them is how false credit happens.
 
+Clay froze algebraicity of every rational Hodge class. An unnamed class has **no residual** — the cycle is the measurement. The function is \(\chi\)/Gram of named varieties and named Hassett surfaces. Hunting \(C_{48}\) is depending on the original moduli formula. Spine: [`FUNCTION_NOT_FORMULA.md`](FUNCTION_NOT_FORMULA.md). Pictures: [`HOW_THESE_ARE_DEPICTED.md`](HOW_THESE_ARE_DEPICTED.md).
+
 ---
 
 ## The question, and FSOT's answer

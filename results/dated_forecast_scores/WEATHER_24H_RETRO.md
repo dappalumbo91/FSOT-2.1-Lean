@@ -1,11 +1,11 @@
 # Weather 24 h retrospective
 
-*Generated 2026-09-10T01:06:17.628898+00:00 · pin D1D38A*
+*Generated 2026-09-17T21:07:51.551136+00:00 · pin D1D38A*
 
 Issued JSON is **frozen**. This asks whether the first SI day of a 48 h
 window would have given the same hold/kill. New issues use 24 h.
 
-Compared **28/28** windows with observations (agree 24 h vs 48 h).
+Compared **25/26** windows with observations (agree 24 h vs 48 h).
 
 | ID | Buoy | 48 h | 24 h | Same | n24 / n48 |
 |----|------|------|------|:----:|----------:|
@@ -36,11 +36,11 @@ Compared **28/28** windows with observations (agree 24 h vs 48 h).
 | `FCAST-WX-20260901T0032-03` | 42013 | hold | hold | True | 48/95 |
 | `FCAST-WX-20260901T0032-04` | APRP7 | hold | hold | True | 240/480 |
 | `FCAST-WX-20260901T0032-05` | 62146 | no_obs | no_obs | None | 0/0 |
-| `FCAST-WX-20260909T1854-01` | 62442 | kill | kill | True | 6/6 |
-| `FCAST-WX-20260909T1854-02` | 46070 | hold | hold | True | 19/19 |
-| `FCAST-WX-20260909T1854-03` | 64046 | hold | hold | True | 6/6 |
-| `FCAST-WX-20260909T1854-04` | 51002 | hold | hold | True | 21/21 |
-| `FCAST-WX-20260909T1854-05` | PTIT2 | hold | hold | True | 54/54 |
+| `FCAST-WX-20260909T1854-01` | 62442 | no_obs | no_obs | None | 0/0 |
+| `FCAST-WX-20260909T1854-02` | 46070 | hold | hold | True | 109/227 |
+| `FCAST-WX-20260909T1854-03` | 64046 | no_obs | no_obs | None | 0/0 |
+| `FCAST-WX-20260909T1854-04` | 51002 | hold | hold | True | 115/235 |
+| `FCAST-WX-20260909T1854-05` | PTIT2 | kill | hold | False | 240/480 |
 
 Kill: rewriting issued JSON. Kill: retuning POOF to swallow a miss.
 

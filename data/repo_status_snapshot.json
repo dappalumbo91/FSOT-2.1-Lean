@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T22:02:52.527478+00:00",
-  "edition_stamp": "2026-09-14",
+  "generated_at": "2026-09-17T21:54:20.176919+00:00",
+  "edition_stamp": "2026-09-17",
   "authority": {
     "pin_prefix": "AEB2AD",
     "fsot_compute_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
@@ -16,8 +16,8 @@
     "benchmark_file_count": 477,
     "green_gate_pct": 0.5,
     "tier_distribution": {
-      "B_verified": 337,
-      "C_thin": 13,
+      "B_verified": 338,
+      "C_thin": 12,
       "A_strong": 118
     },
     "median_of_medians_pct": 0.006625234573930708,
@@ -72,9 +72,9 @@
   },
   "predictions": {
     "hand_prereg_count": 77,
-    "dated_forecast_hold": 65,
-    "dated_forecast_kill": 45,
-    "dated_forecast_awaiting": 4,
+    "dated_forecast_hold": 85,
+    "dated_forecast_kill": 49,
+    "dated_forecast_awaiting": 6,
     "score_report": "results/dated_forecast_scores/REPORT.md",
     "expansion_map": "predictions/reports/PREDICTION_EXPANSION_MAP.md"
   },

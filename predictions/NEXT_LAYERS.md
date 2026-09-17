@@ -18,7 +18,7 @@
 | CCHP TRGB hosts | **22** intermediate H₀ | New Freedman/CCHP papers → per-host score |
 | Atlas | **~1445** (472 residual + 885 scalar + …) | Breadth claim, not 1445 cosmology kills |
 | Monitor watches | 14 active · 8 local green hold · 6 open predata | `python scripts/run_prediction_monitor.py` |
-| **Nearest hard drop** | **Euclid DR1-Foundation · 12 Nov 2026** | Highest-priority calendar watch |
+| **Nearest hard drop** | **Euclid DR1-Foundation · 12 Nov 2026** | Highest-priority calendar watch — [`../../results/WATCHES.md`](../results/WATCHES.md) |
 
 **Look at weekly (no freeze of development):**
 

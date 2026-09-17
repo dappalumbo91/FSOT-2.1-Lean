@@ -1,5 +1,6 @@
 # No decimal knobs — identities
 
+**Live pin:** AEB2AD. Freeze-era pin D1D38A is historical — [`PIN_LINEAGE.md`](PIN_LINEAGE.md).  
 **Peer review:** out of scope.
 
 “Zero free parameters” means the engine is **self-derived**. Assigned decimals (`0.99`, `0.01`, `10`, per-domain `0.85`…) were a drift. They are replaced by seed identities. A miss goes to [`../results/MISSES.md`](../results/MISSES.md). We do **not** put the decimals back to chase a residual.

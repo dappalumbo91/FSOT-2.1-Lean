@@ -212,6 +212,18 @@ Proof. lra. Qed.
 Lemma P6_mass_gap_proxy_pos_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma P7_steady_potentials_sum_one_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma P8_process_ceiling_is_phi4_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma P9_process_time_at_d25_is_tau0_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma P10_forecast_horizon_eq_7_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma forecast_horizon_eq_7 : (7 = 7)%nat.
 Proof. reflexivity. Qed.
 

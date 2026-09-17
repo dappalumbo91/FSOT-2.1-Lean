@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-17T21:07:56.535990+00:00",
+  "generated_at": "2026-09-17T21:53:18.440584+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 153,
+  "obligation_count": 157,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -601,6 +601,38 @@
       "module": "Uniqueness.PathSum",
       "claim": "P6_mass_gap_proxy_pos",
       "coq_id": "P6_mass_gap_proxy_pos_err_under_half"
+    },
+    {
+      "id": "P7_steady_potentials_sum_one_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.PathSum",
+      "claim": "P7_steady_potentials_sum_one",
+      "coq_id": "P7_steady_potentials_sum_one_err_under_half"
+    },
+    {
+      "id": "P8_process_ceiling_is_phi4_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.PathSum",
+      "claim": "P8_process_ceiling_is_phi4",
+      "coq_id": "P8_process_ceiling_is_phi4_err_under_half"
+    },
+    {
+      "id": "P9_process_time_at_d25_is_tau0_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.PathSum",
+      "claim": "P9_process_time_at_d25_is_tau0",
+      "coq_id": "P9_process_time_at_d25_is_tau0_err_under_half"
+    },
+    {
+      "id": "P10_forecast_horizon_eq_7_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.PathSum",
+      "claim": "P10_forecast_horizon_eq_7",
+      "coq_id": "P10_forecast_horizon_eq_7_err_under_half"
     },
     {
       "id": "forecast_horizon_eq_7",

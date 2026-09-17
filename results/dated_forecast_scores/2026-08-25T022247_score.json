@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-09-09T18:53:44.978190+00:00",
+  "scored_at": "2026-09-17T21:50:29.203773+00:00",
   "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25T022247_issue.json",
   "rows": [
     {
@@ -11,9 +11,9 @@
           "id": "us7000tbyu",
           "mag": 5,
           "place": "60 km NNW of Ende, Indonesia",
-          "lat": -8.3425,
-          "lon": 121.4343,
-          "km": 9.159558263463394
+          "lat": -8.3515,
+          "lon": 121.4186,
+          "km": 8.146010289016472
         }
       ],
       "expect_event": true
@@ -169,8 +169,8 @@
     {
       "id": "FCAST-HYDRO-20260825T0222-02",
       "result": "hold",
-      "mean_cfs": 29663.72,
-      "n_obs": 1152,
+      "mean_cfs": 11135.77,
+      "n_obs": 640,
       "expect_high_flow": false,
       "site_id": "05420500"
     },
@@ -185,7 +185,7 @@
     {
       "id": "FCAST-HYDRO-20260825T0222-04",
       "result": "hold",
-      "mean_cfs": 7603.58,
+      "mean_cfs": 7773.18,
       "n_obs": 743,
       "expect_high_flow": false,
       "site_id": "09402500"
@@ -193,7 +193,7 @@
     {
       "id": "FCAST-HYDRO-20260825T0222-05",
       "result": "kill",
-      "mean_cfs": 2.21,
+      "mean_cfs": 4.19,
       "n_obs": 2304,
       "expect_high_flow": true,
       "site_id": "06803510"

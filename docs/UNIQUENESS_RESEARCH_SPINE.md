@@ -1,7 +1,7 @@
 # Uniqueness research spine — after residual closure
 
 **Policy:** Residual program is **CLOSED**. This track does **not** expand residual domains.  
-**Authority pin:** D1D38A  
+**Authority pin:** AEB2AD (freeze-era D1D38A: [`PIN_LINEAGE.md`](PIN_LINEAGE.md))  
 **Machine:** `data/uniqueness_research_manifest.json` · `data/uniqueness_confinement_research.json`  
 **Module:** `vendor/fsot_uniqueness_confinement.py`  
 **Builder:** `python scripts/build_uniqueness_confinement_research.py`

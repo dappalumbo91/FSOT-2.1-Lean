@@ -1,6 +1,6 @@
 # Coverage vs product — where a new GitHub text/simulation belongs
 
-**Pin:** D1D38A · Hub is the **authority**. Siblings **quote** the pin; they do not fork the scalar.
+**Pin:** AEB2AD · Hub is the **authority**. Siblings **quote** the pin; they do not fork the scalar.
 
 This audit is for the next open-source texts and simulators. Two different ledgers:
 

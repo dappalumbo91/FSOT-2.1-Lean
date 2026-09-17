@@ -297,7 +297,7 @@ def write_md(doc: dict) -> str:
         f"| Score table | [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md) |",
         f"| Expansion map | [`../predictions/reports/PREDICTION_EXPANSION_MAP.md`](../predictions/reports/PREDICTION_EXPANSION_MAP.md) |",
         "",
-        "08-31 / 09-01 EQ+hydro score after **2026-09-08**. Volcanic **2026-09-08**. Do not rewrite issued JSON.",
+        "09-09 windows scored **2026-09-17** (EQ valid_to 09-16). Issued JSON not rewritten. Awaiting = missing NDBC catalogs.",
         "",
         "## Claim evidence (kill commands)",
         "",

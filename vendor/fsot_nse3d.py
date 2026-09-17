@@ -114,6 +114,7 @@ def nse3d_run(
     n_steps: int = 240,
     mu: float | None = None,
     dt: float | None = None,
+    return_histories: bool = False,
 ) -> dict[str, Any]:
     """3D incompressible NSE on T^3, ABC initial data, seed-locked μ.
 
@@ -181,7 +182,7 @@ def nse3d_run(
 
     finite = (not blow) and len(max_om) == int(n_steps)
     stretching_3d = bool(production) and max(abs(p) for p in production) > 1e-8
-    return {
+    out: dict[str, Any] = {
         "n": n,
         "n_steps": int(n_steps),
         "dt": dt,
@@ -203,6 +204,13 @@ def nse3d_run(
         "clay_claimed": False,
         "poof": float(POOF),
     }
+    if return_histories:
+        out["history"] = {
+            "max_omega": max_om,
+            "energy": energy,
+            "stretching_production": production,
+        }
+    return out
 
 
 def nse3d_measured_compare() -> dict[str, Any]:
