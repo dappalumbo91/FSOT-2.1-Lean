@@ -39,8 +39,9 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | Time (emergent process, not UTC) | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) · C15 / D12 |
 | Goal tracks (ECMWF / prices / sickness / path-sum) | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) |
 | Millennium YM vs FSOT path-sum | [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) — question: mass gap; answer: \(\varphi^2+1\) |
-| Millennium NSE vs FSOT | [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) — question: blow-up; answer: 4/5, 3/2, 1/3, BKM |
-| Millennium BSD vs FSOT | [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md) — question: rank vs ord \(L\); answer: first-of-rank 0..4; LMFDB ranks 0..5 vanishing complete |
+| Millennium NSE vs FSOT | [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) — question: blow-up; answer: \(4/5\) is \(L^2\) not \(L^\infty\); BKM is stretching |
+| Millennium BSD vs FSOT | [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md) — question: rank vs ord \(L\); answer: first-of-rank + Sha volume; modularity produces \(L\) |
+| Millennium Hodge vs FSOT | [`MILLENNIUM_HODGE_VS_FSOT.md`](MILLENNIUM_HODGE_VS_FSOT.md) — question: Hodge classes algebraic; answer: Lefschetz + named surfaces; K3 tail is Lefschetz |
 | All 6 remaining Clay problems + prize rules | [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) |
 | Accuracy vs public SOTA on those functions | [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) |
 | What 477 files cover | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) |

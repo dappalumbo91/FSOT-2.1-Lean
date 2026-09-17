@@ -5,7 +5,7 @@
 Scoreboard: `python vendor/fsot_millennium_accuracy.py` → [`docs/MILLENNIUM_ACCURACY_VS_SOTA.md`](../docs/MILLENNIUM_ACCURACY_VS_SOTA.md).
 Gauntlet: `python scripts/run_goal_tracks_verification.py` (Lean / Coq / Isabelle / F* / Rust / SMT uniqueness spine).
 
-Question/answer (not vs-SOTA): [`MILLENNIUM_YM_VS_FSOT.md`](../docs/MILLENNIUM_YM_VS_FSOT.md) · [`MILLENNIUM_NSE_VS_FSOT.md`](../docs/MILLENNIUM_NSE_VS_FSOT.md) · [`MILLENNIUM_BSD_VS_FSOT.md`](../docs/MILLENNIUM_BSD_VS_FSOT.md).
+Question/answer (not vs-SOTA): [`MILLENNIUM_YM_VS_FSOT.md`](../docs/MILLENNIUM_YM_VS_FSOT.md) · [`MILLENNIUM_NSE_VS_FSOT.md`](../docs/MILLENNIUM_NSE_VS_FSOT.md) · [`MILLENNIUM_BSD_VS_FSOT.md`](../docs/MILLENNIUM_BSD_VS_FSOT.md) · [`MILLENNIUM_HODGE_VS_FSOT.md`](../docs/MILLENNIUM_HODGE_VS_FSOT.md).
 
 ## Live tally
 
@@ -86,6 +86,6 @@ Do not drop these. Named Hodge \(C_d\) is done; these are the leftover objects.
 
 | ID | Object | Why it stayed | Kill |
 |----|--------|---------------|------|
-| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | 4/5 (3D), 3/2 (2D inverse), Onsager \(1/3\) are cascade numbers. BKM is the stretching criterion. Remainder is whether \(\int\|\omega\|_\infty dt\) stays finite. | Stuffing existence into 4/5 or 1/3 |
-| BSD-RANK | General \(E\) without the modular form | LMFDB ranks 0..5 vanishing complete. Rank \(\ge 6\) unnamed tail (outside LMFDB). | Enumerating Elkies–Watkins as LMFDB Sha |
-| HODGE-TAIL | unnamed Hassett \(C_d\) after 44 + general 4-folds | Nuer stops naming at 44. Infinite later \(C_d\) have no named surface. | Enumerating the tail until it looks green |
+| NSE-CLAY | 3D NSE existence on \(\mathbb{R}^3\) | \(L^2\) cascade 4/5 is not \(L^\infty\) existence. Stokes damps linear. BKM is \(\|\omega\|_\infty\). | Stuffing existence into 4/5 or 1/3 |
+| BSD-RANK | \(\mathrm{rank}=\mathrm{ord}\,L\) | Modularity produces \(L\). Volume is Sha. LMFDB ranks 0..5 vanishing complete. | Nearest-template; Weierstrass\(\to\mathbb{Z}\) |
+| HODGE-TAIL | unnamed no-K3 \(C_d\) + general non-cubic 4-folds | Named \(C_8..C_{44}\) algebraic. K3-locus extra classes are Lefschetz (1,1). | Enumerating the tail; stealing \(25-1\) for \(\chi(\mathrm{K3})\) |

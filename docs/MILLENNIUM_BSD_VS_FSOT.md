@@ -69,7 +69,9 @@ Rank 4 is rank-3 volume times the same closed-loop fold \(\varphi^2+1\) as the i
 
 10. **Named LMFDB ranks complete (0..5).** Public SOTA browse-by-rank is \(0..5\). Search rank \(=6\) returns no matches. Completeness is conductor \(\le 299{,}996{,}953\). The first known rank-6 curve (Elkies–Watkins 2004, \(N=5{,}187{,}563{,}742\)) sits outside that bound. Rank \(\ge 6\) is the unnamed tail: further vanishing of \(L\), same Sha volume, no seed. Do not enumerate Elkies–Watkins as LMFDB conversions.
 
-**Remainder:** general \(E\) without computing the modular form. Clay’s \(\mathrm{ord}\,L\) for every \(E/\mathbb{Q}\).
+11. **Modularity produces \(L\) (the general-\(E\) conversion).** Isolated first-of-rank seed magnitude is the wrong orifice (17a1/53a1/… mis-fire). Every \(E/\mathbb{Q}\) is modular (Wiles; Breuil–Conrad–Diamond–Taylor), so \(L(E,s)\) exists without a seed lookup. The leading is the arithmetic volume \(\mathrm{Sha}_{\mathrm{an}}\). Integer rank \(=\mathrm{ord}\,L\) is still Clay. Do not Weierstrass\(\to\mathbb{Z}\). Do not nearest-template.
+
+**Remainder:** \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\) for every \(E/\mathbb{Q}\).
 
 Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays `OPEN_NOT_CLAIMED`. Native first-of-rank leadings stay executable.
 
@@ -90,8 +92,9 @@ Clay’s *proof object* (rank \(=\) ord \(L\) for every \(E/\mathbb{Q}\)) stays 
 | General rank 4 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 501029.a1/545723.a1 (not special/Reg magnitude; ladder saturates) |
 | General rank 5 | — | Volume \(\mathrm{Sha}_{\mathrm{an}}=1\) on 19047851.a1/64921931.a1 (not special/Reg magnitude; nearest mis-fires as 4) |
 | Named LMFDB ranks | — | Complete \(0..5\). Rank \(\ge 6\) is the unnamed tail (outside LMFDB) |
-| Rank \(\ge 6\) / general \(E\) | The theorem | Unnamed tail + modular form |
-| Status | Open prize problem | Ladder **executable**; general \(E\) **OPEN_NOT_CLAIMED** |
+| Rank \(\ge 6\) / general \(E\) | The theorem | Unnamed tail; modularity produces \(L\); volume is Sha |
+| Modularity | Proven (Wiles–BCDT) | Named: every \(E/\mathbb{Q}\) has \(L\). Not Clay rank \(=\) ord \(L\) |
+| Status | Open prize problem | Ladder **executable**; rank \(=\) ord \(L\) **OPEN_NOT_CLAIMED** |
 
 Forbidden: “we proved Millennium BSD because five Cremona curves match.” Allowed: parity + first-of-rank leadings. Do not \(\pi^2\cdot\mathrm{POOF}\) on rank 4. Do not nearest-template arbitrary \(L(1)\).
 

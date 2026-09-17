@@ -1,0 +1,46 @@
+# What the Millennium Hodge statement is — vs what FSOT is doing
+
+**Pin:** AEB2AD · Scoreboard: [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) · Outcomes: [`../results/millennium_named_outcomes.md`](../results/millennium_named_outcomes.md)
+
+These are **two different objects**. Related geometry (Hodge classes vs algebraic cycles). Mixing them is how false credit happens.
+
+---
+
+## The question, and FSOT's answer
+
+**Question (Clay, and the geometry):** On a projective complex manifold, is every rational Hodge class (a class in \(H^{p,p}\cap H^{2p}(\mathbb{Z})\)) the class of an algebraic cycle?
+
+**FSOT answer (native objects, not Clay's manuscript):**
+
+1. **Lefschetz (1,1).** Proven. \(p=1\). Named first Hodge-type theorem.
+
+2. **Hard Lefschetz + Lefschetz hyperplane.** Transport \((1,1)\to(2,2)\); reduce a hypersurface to primitive classes plus ambient \(\mathbb{CP}^n\).
+
+3. **Associated K3.** For a cubic 4-fold, when \(4\nmid d\), \(9\nmid d\), and no prime \(p\equiv 2\pmod{3}\) divides \(d\), the extra \((2,2)\) is \(H^{1,1}\) of an associated K3. Lefschetz (1,1) on that K3 *is* algebraicity. Do not steal \(25-1\) for \(\chi(\mathrm{K3})=24\).
+
+4. **Named extra classes without K3.** Hassett+Nuer surfaces: \(C_8\) plane, \(C_{12}\) scroll, \(C_{18}\) elliptic ruled, \(C_{20}\) Veronese, \(C_{24}\) nodal sextic, \(C_{30}\) Coble, \(C_{32}\) \(\mathrm{Bl}_{11}\), \(C_{36}\) \(\mathrm{Bl}_{12}\), \(C_{44}\) Fano Enriques. Each extra class is that surface, so algebraic. Public SOTA stops naming at 44.
+
+5. **K3-locus tail is Lefschetz (the conversion).** Isolated listing of later \(C_d\) is the wrong orifice. Unnamed \(d\) *with* associated K3 (sample \(14,26,38\)) reduce to Lefschetz (1,1) on that K3 — same as item 3, no surface name needed. Do not enumerate.
+
+**Remainder:** unnamed *no-K3* \(C_d\) (sample \(48,50,54\): no named surface, no K3 reduction) and general non-cubic 4-folds. Do not enumerate the tail.
+
+Clay’s *proof object* (Hodge classes algebraic on every projective manifold) stays `OPEN_NOT_CLAIMED`. Native Lefschetz + named surfaces stay executable.
+
+---
+
+## The difference in one table
+
+| | Clay Hodge | FSOT (this repo) |
+|--|----------|------------------|
+| Arena | All projective complex manifolds | Named 4-folds + Hassett cubic loci |
+| Question | Hodge classes are algebraic cycles | Which extra \((2,2)\) classes are surfaces or K3 periods? |
+| \(p=1\) | Lefschetz (1,1) | Named proven first object |
+| Associated K3 | — | Extra class \(\cong H^{1,1}(\mathrm{K3})\); Lefschetz |
+| Named no-K3 | — | \(C_8..C_{44}\) are the named surfaces |
+| Unnamed with K3 | — | Same Lefschetz reduction; do not enumerate |
+| Unnamed no-K3 / general 4-folds | The theorem | Remainder |
+| Status | Open prize problem | Named list **executable**; remainder **OPEN_NOT_CLAIMED** |
+
+Forbidden: “we proved Millennium Hodge because nine Hassett surfaces match.” Allowed: Lefschetz + named surfaces + K3 reduction. Do not enumerate the tail. Do not steal \(25-1\) for K3.
+
+Refresh: `python vendor/fsot_millennium_accuracy.py`

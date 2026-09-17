@@ -800,6 +800,42 @@ def hassett_named_no_k3() -> tuple[int, ...]:
     return (8, 12, 18, 20, 24, 30, 32, 36, 44)
 
 
+def hassett_k3_tail_sample() -> tuple[int, ...]:
+    """Unnamed Hassett d with associated K3 (not in the named no-K3 list).
+
+    Extra (2,2) reduces to Lefschetz (1,1) on that K3. Do not enumerate
+    surfaces. Do not steal 25−1 for χ(K3)=24.
+    """
+    return (14, 26, 38)
+
+
+def hassett_unnamed_no_k3_sample() -> tuple[int, ...]:
+    """Unnamed no-K3 tail. No named surface, no K3 reduction.
+
+    Remainder after the Lefschetz reduction of the K3 locus. Do not
+    enumerate as algebraic.
+    """
+    return (48, 50, 54)
+
+
+def hassett_k3_tail_is_lefschetz() -> bool:
+    """K3-locus extra classes are Lefschetz (1,1), including unnamed d.
+
+    Named no-K3 list really has no K3. Sample unnamed-with-K3 does.
+    Not algebraicity of the unnamed no-K3 tail. Not a general 4-fold.
+    """
+    named = set(hassett_named_no_k3())
+    if any(hassett_associated_k3(d) for d in named):
+        return False
+    for d in hassett_k3_tail_sample():
+        if d in named or not hassett_C_d_nonempty(d) or not hassett_associated_k3(d):
+            return False
+    for d in hassett_unnamed_no_k3_sample():
+        if d in named or not hassett_C_d_nonempty(d) or hassett_associated_k3(d):
+            return False
+    return True
+
+
 def hassett_C_d_nonempty(d: int) -> bool:
     """Hassett: C_d nonempty iff d>6 and d≡0 or 2 (mod 6)."""
     n = int(d)

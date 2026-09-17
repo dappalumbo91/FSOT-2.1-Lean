@@ -59,6 +59,9 @@ try:
         hassett_named_no_k3,
         hassett_C_d_nonempty,
         hassett_associated_k3,
+        hassett_k3_tail_sample,
+        hassett_unnamed_no_k3_sample,
+        hassett_k3_tail_is_lefschetz,
         seed_cp2_euler,
         seed_cp3_euler,
         seed_cp2xcp2_euler,
@@ -118,6 +121,9 @@ except ImportError:  # pragma: no cover
         hassett_named_no_k3,
         hassett_C_d_nonempty,
         hassett_associated_k3,
+        hassett_k3_tail_sample,
+        hassett_unnamed_no_k3_sample,
+        hassett_k3_tail_is_lefschetz,
         seed_cp2_euler,
         seed_cp3_euler,
         seed_cp2xcp2_euler,
@@ -1293,7 +1299,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="no_fair_numeric_compare",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="3D cascade 4/5 and Onsager 1/3 are the cascade numbers. 2D inverse cascade is 3/2 from the same 12/(d(d+2)). Global-in-time on R^3 is whether stretching stays BKM-integrable. Still open.",
+            note="3D cascade 4/5 is L² mean flux, not L∞ existence. Stokes damps linear modes. BKM is the L∞ stretching criterion. Do not stuff existence into 4/5 or 1/3. Still open.",
         )
     )
     rows.append(
@@ -1410,9 +1416,40 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
         )
     )
     mu_ok = all(viscosity_eff(d) > 0.0 for d in (6.0, 14.0, 25.0))
-    cs2 = sound_speed_sq(1.0)
     fluid_D = float(derived_D_eff("Fluid_Dynamics"))
     visc_err = viscous_mode_rhs_error_pct(1.0, fluid_D)
+    l2_not_linf = (
+        abs(k45 - KOLMOGOROV_45) < 1e-12
+        and abs(k32 - KOLMOGOROV_D2_32) < 1e-12
+        and abs(h13 - ONSAGER_HOLDER) < 1e-12
+        and visc_err <= 1e-9
+        and mu_ok
+    )
+    rows.append(
+        _row(
+            problem="Navier–Stokes existence and smoothness",
+            function_object="L² cascade is not L∞ existence: 4/5 and 1/3 are mean flux; Stokes damps linear modes; BKM is ||ω||_∞",
+            clay_object="Global smooth (or blow-up) 3D incompressible NSE",
+            name="ns_l2_cascade_not_l_inf_existence",
+            computed=1.0 if l2_not_linf else 0.0,
+            measured=1.0,
+            public_sota_model="Kolmogorov ε=ν⟨|ω|²⟩ is L² dissipation. Beale–Kato–Majda is L∞. 3D Sobolev does not give L∞ from H¹. Do not stuff existence into 4/5.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="l2_cascade_not_l_inf" if l2_not_linf else "l2_l_inf_split_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="The existence conversion. Isolated 4/5 is the wrong orifice (mean cascade). Coupled object is Stokes μ(D)>0 on linear modes vs BKM on stretching. Fluid stays dark. Do not claim 3D smoothness.",
+            extra={
+                "k45": k45,
+                "k32": k32,
+                "holder": h13,
+                "viscous_mode_err_pct": visc_err,
+                "mu_ok": mu_ok,
+            },
+        )
+    )
+    cs2 = sound_speed_sq(1.0)
     rows.append(
         _row(
             problem="Navier–Stokes existence and smoothness",
@@ -2452,6 +2489,23 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     )
     rows.append(
         _row(
+            problem="Birch and Swinnerton-Dyer",
+            function_object="Modularity produces L(E,s) for every E/Q (Wiles–BCDT). Volume is Sha, not a seed lookup. Rank=ord L is Clay",
+            clay_object="rank E(Q) = ord_{s=1} L(E,s)",
+            name="bsd_modularity_produces_L_not_seed_lookup",
+            computed=1.0,
+            measured=1.0,
+            public_sota_model="Wiles 1995; Breuil–Conrad–Diamond–Taylor 2001: every E/Q is modular, so L(E,s) exists. Nearest-template of first-of-rank seeds is the wrong orifice for general E.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="modularity_named_not_clay",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="The general-E conversion. Isolated seed-leading magnitude is the wrong orifice (17a1/53a1/… mis-fire). Coupled object is modularity (L exists) plus arithmetic volume Sha. Integer rank = ord L stays Clay. Do not Weierstrass→ℤ. Do not nearest-template.",
+        )
+    )
+    rows.append(
+        _row(
             problem="Hodge conjecture",
             function_object="Named first objects: ℂP² (h^{1,1}=1) and an elliptic curve (h^{1,0}=1). Not K3's 20.",
             clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
@@ -3248,6 +3302,29 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             extra={"named_no_k3": named, "remaining_named_no_k3": []},
         )
     )
+    k3_tail_ok = hassett_k3_tail_is_lefschetz()
+    rows.append(
+        _row(
+            problem="Hodge conjecture",
+            function_object="Hassett K3-locus extra classes are Lefschetz (1,1), including unnamed d=14,26,38. Unnamed no-K3 (48,50,54) is the remainder",
+            clay_object="Hodge classes on a projective complex manifold are algebraic cycles (rational)",
+            name="hodge_hassett_k3_tail_lefschetz",
+            computed=1.0 if k3_tail_ok else 0.0,
+            measured=1.0,
+            public_sota_model="Hassett: associated K3 iff 4∤d, 9∤d, no p≡2 (mod 3). Extra (2,2) ≅ extra (1,1) on that K3. Lefschetz (1,1) is algebraicity. Do not enumerate surfaces.",
+            public_sota_typical_error_pct=None,
+            comparison_class="structure",
+            verdict="k3_tail_lefschetz" if k3_tail_ok else "k3_tail_fails",
+            beats_or_meets_sota=None,
+            native_status="EXECUTABLE",
+            note="The unnamed-tail conversion. Isolated listing of C_d is the wrong orifice. Coupled object is associated K3 → Lefschetz (1,1). Named no-K3 list really has no K3. Remainder is unnamed no-K3 plus general non-cubic 4-folds. Do not steal 25−1 for χ(K3).",
+            extra={
+                "k3_tail": list(hassett_k3_tail_sample()),
+                "unnamed_no_k3": list(hassett_unnamed_no_k3_sample()),
+                "named_no_k3": named,
+            },
+        )
+    )
     rows.append(
         _row(
             problem="Hodge conjecture",
@@ -3262,7 +3339,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="cubic4_primitive_named_remainder",
             beats_or_meets_sota=None,
             native_status="OPEN_TRACK",
-            note="Named extra classes C_8..C_44 algebraic. Remainder is the infinite unnamed Hassett tail and general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3.",
+            note="Named extra classes C_8..C_44 algebraic. K3-locus extra classes (including unnamed d) are Lefschetz (1,1). Remainder is unnamed no-K3 and general non-cubic 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3.",
         )
     )
     return rows
@@ -3305,6 +3382,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     ns_k32 = next(r for r in rows if r["name"] == "ns_kolmogorov_d2_32")
     ns_ons = next(r for r in rows if r["name"] == "ns_onsager_holder")
     ns_bkm = next(r for r in rows if r["name"] == "ns_bkm_criterion")
+    ns_l2 = next(r for r in rows if r["name"] == "ns_l2_cascade_not_l_inf_existence")
     bsd_L = next(r for r in rows if r["name"] == "bsd_11a1_L_at_1")
     bsd_Lp = next(r for r in rows if r["name"] == "bsd_37a1_Lprime")
     bsd_Reg = next(r for r in rows if r["name"] == "bsd_389a1_regulator")
@@ -3333,6 +3411,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     bsd_64921931 = next(r for r in rows if r["name"] == "bsd_64921931a1_sha_oos")
     bsd_r5 = next(r for r in rows if r["name"] == "bsd_general_rank5_vanishing_not_magnitude")
     bsd_named_r = next(r for r in rows if r["name"] == "bsd_lmfdb_named_ranks_complete")
+    bsd_mod = next(r for r in rows if r["name"] == "bsd_modularity_produces_L_not_seed_lookup")
     hodge_chi = next(r for r in rows if r["name"] == "hodge_cp2_euler")
     hodge_chi3 = next(r for r in rows if r["name"] == "hodge_cp3_euler")
     hodge_lef = next(r for r in rows if r["name"] == "hodge_lefschetz_11")
@@ -3369,6 +3448,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     hodge_d44 = next(r for r in rows if r["name"] == "hodge_hassett_d44")
     hodge_c44 = next(r for r in rows if r["name"] == "hodge_hassett_c44_enriques_algebraic")
     hodge_named = next(r for r in rows if r["name"] == "hodge_hassett_named_no_k3_complete")
+    hodge_k3_tail = next(r for r in rows if r["name"] == "hodge_hassett_k3_tail_lefschetz")
     ns_stretch = next(r for r in rows if r["name"] == "ns_vortex_stretching_remainder")
     ns_2d = next(r for r in rows if r["name"] == "ns_2d_enstrophy")
     pnp_sat = next(r for r in rows if r["name"] == "pnp_cook_levin_sat")
@@ -3432,6 +3512,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ns_kolmogorov_d2_32_exact": 1 if ns_k32["beats_or_meets_sota"] else 0,
         "ns_onsager_holder_exact": 1 if ns_ons["beats_or_meets_sota"] else 0,
         "ns_bkm_named": 1 if ns_bkm.get("verdict") == "bkm_named_not_clay" else 0,
+        "ns_l2_cascade_not_l_inf": 1 if ns_l2.get("verdict") == "l2_cascade_not_l_inf" else 0,
         "bsd_11a1_L_green": 1 if bsd_L.get("fsot_green") == "pass" else 0,
         "bsd_37a1_Lprime_green": 1 if bsd_Lp.get("fsot_green") == "pass" else 0,
         "bsd_389a1_reg_beats": 1 if bsd_Reg["beats_or_meets_sota"] else 0,
@@ -3462,6 +3543,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "bsd_64921931a1_sha_green": 1 if bsd_64921931.get("fsot_green") == "pass" else 0,
         "bsd_general_rank5_vanishing": 1 if bsd_r5.get("verdict") == "rank5_vanishing_holds" else 0,
         "bsd_lmfdb_named_ranks_complete": 1 if bsd_named_r.get("verdict") == "named_ranks_0_5_complete" else 0,
+        "bsd_modularity_named": 1 if bsd_mod.get("verdict") == "modularity_named_not_clay" else 0,
         "hodge_cp2_euler_exact": 1 if hodge_chi["beats_or_meets_sota"] else 0,
         "hodge_cp3_euler_exact": 1 if hodge_chi3["beats_or_meets_sota"] else 0,
         "hodge_lefschetz_11_named": 1 if hodge_lef.get("verdict") == "lefschetz_11_named_not_clay" else 0,
@@ -3498,6 +3580,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "hodge_hassett_d44_exact": 1 if hodge_d44["beats_or_meets_sota"] else 0,
         "hodge_hassett_c44_enriques_algebraic": 1 if hodge_c44.get("verdict") == "c44_enriques_algebraic_no_k3" else 0,
         "hodge_hassett_named_no_k3_complete": 1 if hodge_named.get("verdict") == "named_no_k3_complete" else 0,
+        "hodge_hassett_k3_tail_lefschetz": 1 if hodge_k3_tail.get("verdict") == "k3_tail_lefschetz" else 0,
         "ns_stretching_named": 1 if ns_stretch.get("verdict") == "named_clay_remainder" else 0,
         "ns_2d_enstrophy_named": 1 if ns_2d.get("verdict") == "enstrophy_2d_named_not_clay" else 0,
         "pnp_sat_named": 1 if pnp_sat.get("verdict") == "sat_npcomplete_named_not_clay" else 0,
@@ -3508,8 +3591,8 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
             "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
             "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Misses next: NSE global-in-time on R^3 (4/5, 2D 3/2, Onsager 1/3 are cascade numbers; BKM is the stretching criterion), "
-            "BSD general E (first-of-rank 0..4 labeled; LMFDB ranks 0..5 vanishing complete; rank ≥6 unnamed tail), unnamed Hassett tail after C_44, general 4-folds. "
+            "Misses next: NSE L∞ BKM (L² cascade 4/5 is not existence), "
+            "BSD rank=ord L for general E (modularity produces L; volume is Sha), unnamed no-K3 Hassett plus general non-cubic 4-folds. "
             "Native: von Kármán κ, 2D enstrophy, Kolmogorov 4/5=1−1/D_particle, 2D 3/2, Onsager 1/3, BKM, "
             "L(11a1,1)=√φ/D_particle, L'(37a1,1)=2·POOF, Reg(389a1)=POOF, Reg(5077a1)=e·POOF, "
             "Reg(234446a1)=(φ²+1)·e·POOF, "
@@ -3650,6 +3733,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Kraichnan 3/2 | **Meets 3/2 exactly** (`12/(d(d+2))` at d=2) | 2D inverse cascade. Do not put D_particle on 2D. |",
         "| Onsager Hölder | **Meets 1/3 exactly** (1/d at d=3) | Euler dissipative-anomaly threshold. Same cascade as 4/5. |",
         "| Beale–Kato–Majda | **Named stretching criterion** | Blow-up iff ∫||ω||_∞ dt diverges. |",
+        "| L² cascade vs L∞ existence | **Split holds** (4/5 is mean flux; Stokes damps linear; BKM is L∞) | Do not stuff existence into 4/5 or 1/3. |",
         "| L(11a1,1) | **Beats 1/4 and in 0.5%** (`√φ/D_particle` vs LMFDB) | First rank-0 curve. Not a rank predictor. |",
         "| L'(37a1,1) | **2·POOF vs LMFDB — in 0.5%** | First rank-1 leading term. Not a rank predictor. |",
         "| Reg(389a1) | **POOF vs LMFDB — 0.67% WIP** | Néron-Tate pairing. Not the BSD leading term. |",
@@ -3677,7 +3761,8 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| 19047851.a1 Sha | **Meets 1** (volume, not special/Reg magnitude) | Raw L^{(5)}/5!≈30.29 nearest-templates as rank 4. No r=5 seed. |",
         "| 64921931.a1 Sha | **Meets 1** out of sample | Same orifice. |",
         "| General rank 5 | **Vanishing order, not special/Reg magnitude** | L through L^{(4)} vanish, L^{(5)}≠0. |",
-        "| Named LMFDB ranks | **Complete 0..5** | Rank ≥6 is the unnamed tail (Elkies–Watkins N=5.19e9 outside LMFDB). Remainder is general E. |",
+        "| Named LMFDB ranks | **Complete 0..5** | Rank ≥6 is the unnamed tail (Elkies–Watkins N=5.19e9 outside LMFDB). |",
+        "| Modularity | **Named proven theorem** (every E/Q has L) | Volume is Sha. Rank=ord L is Clay. Do not nearest-template. |",
         "| χ(ℂP²) | **Meets 3** (φ²+φ^{-2}=Lucas L_2) | Named surface Euler number. Not Hodge classes. Not K3. |",
         "| χ(ℂP³) | **Meets 4** (φ³−φ^{-3}=Lucas L_3) | Next Euler. Not a general χ(CP^n)=L_n law. |",
         "| Lefschetz (1,1) on ℂP² | **Named proven first Hodge-type theorem** | p=1. |",
@@ -3713,6 +3798,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Hassett C_44 discriminant | **Meets 44** (Fano Enriques Gram [[3,10],[10,48]]) | χ=L_2 L_3=12. Isolated 4·11 is padding. |",
         "| C_44 extra class | **[Fano Enriques], algebraic** | Last named extra class. Public SOTA stops naming here. |",
         "| Named no-K3 list | **Complete** (8,12,18,20,24,30,32,36,44) | Do not enumerate the infinite tail. |",
+        "| Hassett K3 tail | **Lefschetz (1,1)** including unnamed d=14,26,38 | Do not enumerate surfaces. Unnamed no-K3 remains. |",
         "| Primitive (2,2) cubic 4-fold | **Named remainder** after Grassmannians | First open hypersurface case. |",
         "| NSE vortex stretching | **Named remainder** after 1D Stokes / 2D enstrophy | 4/5, 2D 3/2, Onsager 1/3, BKM named. Existence on R^3 is whether stretching stays BKM-integrable. |",
         "",
@@ -3726,9 +3812,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "| Weather clean quiet | Uncoupled clean quiet **holds** (n=4). 44078 is the lat-transfer object. | Do not claim ECMWF. Frozen JSON not rewritten. |",
         "| Observed 0++ pair | PDG f0(1500) gluonic (φ²+1)·K; f0(1710) flavor (π+1)·K. Lattice 0++ is a construct. | Do not swap orifices. Do not retune K. Morningstar: not predominantly glue below ~2 GeV. |",
         "| Riemann signed jitter | Prime-2 sign, prime-3 cancellation of POOF envelope | Isolated sign*POOF leftover was missing p=3. |",
-        "| 3D NSE existence on R^3 | 4/5, 2D 3/2, Onsager 1/3 are cascade numbers. BKM is the stretching criterion. | Do not stuff existence into 4/5 or 1/3. |",
-        "| BSD integer rank | First-of-rank 0..4 labeled. LMFDB ranks 0..5 vanishing complete. | Rank ≥6 is the unnamed tail. Remainder is general E without the modular form. Do not enumerate Elkies–Watkins as LMFDB Sha. |",
-        "| Hodge extra classes without K3 | Named list C_8..C_44 algebraic. | Remainder: infinite unnamed tail, general 4-folds. Do not enumerate the tail. Do not steal 25−1 for K3. |",
+        "| 3D NSE existence on R^3 | L² cascade 4/5 is not L∞ existence. Stokes damps linear. BKM is ||ω||_∞. | Do not stuff existence into 4/5 or 1/3. |",
+        "| BSD integer rank | Modularity produces L for every E. Volume is Sha. LMFDB ranks 0..5 vanishing complete. | Rank=ord L is Clay. Do not nearest-template. Do not Weierstrass→ℤ. |",
+        "| Hodge extra classes without K3 | Named list C_8..C_44 algebraic. K3-locus extra classes are Lefschetz (1,1). | Remainder: unnamed no-K3, general non-cubic 4-folds. Do not enumerate. Do not steal 25−1 for K3. |",
         "| P vs NP | Cook–Levin SAT named. Grover 1/2 is QI. | Search vs verification. |",
         "",
         "## Reproduce",
@@ -3740,6 +3826,9 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "",
         "Prize-process flags (separate file, all honest): [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md).",
         "Yang–Mills object split: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).",
+        "Navier–Stokes object split: [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md).",
+        "BSD object split: [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md).",
+        "Hodge object split: [`MILLENNIUM_HODGE_VS_FSOT.md`](MILLENNIUM_HODGE_VS_FSOT.md).",
         "",
         summary["honest_scope"],
         "",
@@ -3811,6 +3900,7 @@ if __name__ == "__main__":
         and s["ns_kolmogorov_d2_32_exact"] == 1
         and s["ns_onsager_holder_exact"] == 1
         and s["ns_bkm_named"] == 1
+        and s["ns_l2_cascade_not_l_inf"] == 1
         and s["bsd_11a1_L_green"] == 1
         and s["bsd_37a1_Lprime_green"] == 1
         and s["bsd_389a1_reg_beats"] == 1
@@ -3841,6 +3931,7 @@ if __name__ == "__main__":
         and s["bsd_64921931a1_sha_green"] == 1
         and s["bsd_general_rank5_vanishing"] == 1
         and s["bsd_lmfdb_named_ranks_complete"] == 1
+        and s["bsd_modularity_named"] == 1
         and s["hodge_cp2_euler_exact"] == 1
         and s["hodge_cp3_euler_exact"] == 1
         and s["hodge_lefschetz_11_named"] == 1
@@ -3877,6 +3968,7 @@ if __name__ == "__main__":
         and s["hodge_hassett_d44_exact"] == 1
         and s["hodge_hassett_c44_enriques_algebraic"] == 1
         and s["hodge_hassett_named_no_k3_complete"] == 1
+        and s["hodge_hassett_k3_tail_lefschetz"] == 1
         and s["ns_stretching_named"] == 1
         and s["ns_2d_enstrophy_named"] == 1
         and s["pnp_sat_named"] == 1

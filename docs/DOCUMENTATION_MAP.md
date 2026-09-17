@@ -28,8 +28,9 @@
 | **Emergent time** | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) | Process time vs Newtonian UTC | D12 / C15; dilation is flow |
 | **Goal tracks** | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) | ECMWF, prices, sickness, path-sum | In progress, not claimed beaten |
 | **Millennium YM vs FSOT** | [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) | Question: mass gap. Answer: \(\varphi^2+1\). Teper is a check. | Not Clay Wightman |
-| **Millennium NSE vs FSOT** | [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) | Question: 3D blow-up. Answer: 4/5, 3/2, 1/3, BKM. | Existence still BKM-integrable stretching |
-| **Millennium BSD vs FSOT** | [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md) | Question: rank vs ord \(L\). Answer: first-of-rank 0..4; LMFDB ranks 0..5 vanishing. | Rank \(\ge 6\) unnamed tail; general \(E\) |
+| **Millennium NSE vs FSOT** | [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) | Question: 3D blow-up. Answer: \(4/5\) is \(L^2\) not \(L^\infty\); BKM. | Existence still BKM-integrable stretching |
+| **Millennium BSD vs FSOT** | [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md) | Question: rank vs ord \(L\). Answer: Sha volume; modularity produces \(L\). | \(\mathrm{rank}=\mathrm{ord}\,L\) |
+| **Millennium Hodge vs FSOT** | [`MILLENNIUM_HODGE_VS_FSOT.md`](MILLENNIUM_HODGE_VS_FSOT.md) | Question: Hodge classes algebraic. Answer: Lefschetz; named surfaces; K3 tail. | Unnamed no-K3; general 4-folds |
 | **All 6 Clay problems + prize rules** | [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) | Official CMI rules; Q&A vs Clay objects | Prize not claimed |
 | **Accuracy vs public SOTA** | [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) | Function contest, not Prize gates | Named Hodge \(C_8\)..\(C_{44}\); BSD LMFDB ranks 0..5 complete |
 | **Coverage list** | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) | 35 cores + 477 green files | What the program solves for |

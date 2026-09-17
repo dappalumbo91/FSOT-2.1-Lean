@@ -11,7 +11,8 @@ The Clay *statement* of each unsolved problem stays `OPEN_NOT_CLAIMED` until tha
 Question/answer (not vs-SOTA residuals):  
 Yang–Mills [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) ·  
 Navier–Stokes [`MILLENNIUM_NSE_VS_FSOT.md`](MILLENNIUM_NSE_VS_FSOT.md) ·  
-BSD [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md).  
+BSD [`MILLENNIUM_BSD_VS_FSOT.md`](MILLENNIUM_BSD_VS_FSOT.md) ·  
+Hodge [`MILLENNIUM_HODGE_VS_FSOT.md`](MILLENNIUM_HODGE_VS_FSOT.md).  
 Named-function outcomes: [`../results/millennium_named_outcomes.md`](../results/millennium_named_outcomes.md).
 
 ---
@@ -23,10 +24,10 @@ Each Clay problem is a *question about reality*. FSOT answers that question in n
 | Problem | Question | FSOT answer | Still open (native) |
 |---------|----------|-------------|---------------------|
 | **Yang–Mills** | Why no massless gluons / free quarks? | Gap scale \(m/\sqrt{\sigma}=\varphi^2+1\). Free color is not an attractor. Teper is a check of the σ-unit orifice \(\varphi^2+1+\mathrm{POOF}/D\), not the question. | Clay Wightman theory on \(\mathbb{R}^4\) |
-| **Navier–Stokes** | Do 3D NSE solutions stay smooth, or can stretching blow up? | 2D \(3/2\); 3D \(4/5=1-1/D_{\mathrm{particle}}\); Onsager \(1/3\); BKM: blow-up iff \(\int\|\omega\|_\infty dt\) diverges. | Whether viscosity keeps vorticity BKM-integrable |
+| **Navier–Stokes** | Do 3D NSE solutions stay smooth, or can stretching blow up? | 2D \(3/2\); 3D \(4/5\) is \(L^2\) flux not \(L^\infty\) existence; Onsager \(1/3\); Stokes damps linear; BKM is \(\|\omega\|_\infty\). | Whether stretching stays BKM-integrable |
 | **Riemann** | Do all non-trivial zeros have real part \(1/2\)? | \(t_1=e/\gamma^3\); C-lock; \(\lvert S\rvert\le 1/e\); typical \(\lvert S\rvert=\mathrm{POOF}\); signed jitter prime-2+3. | The line for *all* zeros |
-| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Parity from \(w_E\). First-of-rank 0..4. LMFDB ranks 0..5 vanishing (Sha=1). Rank \(\ge 6\) unnamed tail (outside LMFDB). | General \(E\) without the modular form |
-| **Hodge** | Are Hodge classes algebraic cycles? | Lefschetz; associated K3; named extra classes \(C_8..C_{44}\) are the named surfaces. | Unnamed later \(C_d\); general 4-folds |
+| **BSD** | Is \(\mathrm{rank}\,E(\mathbb{Q})=\mathrm{ord}_{s=1}L(E,s)\)? | Parity from \(w_E\). First-of-rank 0..4. LMFDB ranks 0..5 vanishing (Sha=1). Modularity produces \(L\) for every \(E\). | \(\mathrm{rank}=\mathrm{ord}\,L\) (Clay) |
+| **Hodge** | Are Hodge classes algebraic cycles? | Lefschetz; associated K3; named \(C_8..C_{44}\) surfaces; K3-locus tail is Lefschetz (1,1). | Unnamed no-K3; general non-cubic 4-folds |
 | **P vs NP** | Is verifying as hard as searching? | Grover \(1/2\) (QI); Cook–Levin SAT named. | Search vs verification as Clay |
 
 ---
