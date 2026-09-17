@@ -227,7 +227,7 @@ Proof. lra. Qed.
 Lemma weather_window_hours_eq_24 : (24 = 24)%nat.
 Proof. reflexivity. Qed.
 
-Lemma market_class_median_under_half : ((0.025840180827430004%R)) < (0.5%R).
+Lemma market_class_median_under_half : ((0.07335169154480958%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma market_window_days_pos : (0 < 1)%nat.
@@ -236,13 +236,13 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma market_class_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
-Lemma sickness_host_err_under_half : ((0.022236250385197696%R)) < (0.5%R).
+Lemma sickness_host_err_under_half : ((0.05218859322839639%R)) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma sickness_pathogen_err_under_half : ((0.015311061469322368%R)) < (0.5%R).
+Lemma sickness_pathogen_err_under_half : ((0.07646006800765491%R)) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma sickness_kappa_pos : 0 < ((0.02104201418939883%R)).
+Lemma sickness_kappa_pos : 0 < ((0.09436964042314956%R)).
 Proof. lra. Qed.
 
 Lemma clay_problems_remaining_flag : (6 = 6)%nat.

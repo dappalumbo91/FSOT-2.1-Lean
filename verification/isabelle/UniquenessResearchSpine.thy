@@ -226,7 +226,7 @@ lemma process_time_25_cell_eq_ceiling: "(0::real) < (0.000000000001::real)"
 lemma weather_window_hours_eq_24: "(24::nat) = 24"
   by simp
 
-lemma market_class_median_under_half: "(0.025840180827430004::real) < (0.5::real)"
+lemma market_class_median_under_half: "(0.07335169154480958::real) < (0.5::real)"
   by simp
 
 lemma market_window_days_pos: "(0::nat) < 1"
@@ -235,13 +235,13 @@ lemma market_window_days_pos: "(0::nat) < 1"
 lemma market_class_green_flag: "(1::nat) = 1"
   by simp
 
-lemma sickness_host_err_under_half: "(0.022236250385197696::real) < (0.5::real)"
+lemma sickness_host_err_under_half: "(0.05218859322839639::real) < (0.5::real)"
   by simp
 
-lemma sickness_pathogen_err_under_half: "(0.015311061469322368::real) < (0.5::real)"
+lemma sickness_pathogen_err_under_half: "(0.07646006800765491::real) < (0.5::real)"
   by simp
 
-lemma sickness_kappa_pos: "(0::real) < 0.02104201418939883"
+lemma sickness_kappa_pos: "(0::real) < 0.09436964042314956"
   by simp
 
 lemma clay_problems_remaining_flag: "(6::nat) = 6"

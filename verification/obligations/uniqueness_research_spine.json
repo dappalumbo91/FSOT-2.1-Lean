@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T21:03:24.839411+00:00",
+  "generated_at": "2026-09-17T21:07:56.535990+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
   "obligation_count": 153,
@@ -653,7 +653,7 @@
     {
       "id": "market_class_median_under_half",
       "kind": "lt_half",
-      "value": 0.025840180827430004,
+      "value": 0.07335169154480958,
       "module": "Uniqueness.MarketProcess",
       "claim": "market_class",
       "coq_id": "market_class_median_under_half"
@@ -678,7 +678,7 @@
     {
       "id": "sickness_host_err_under_half",
       "kind": "lt_half",
-      "value": 0.022236250385197696,
+      "value": 0.05218859322839639,
       "module": "Uniqueness.SicknessTwoSystem",
       "claim": "host_mt_nd1",
       "coq_id": "sickness_host_err_under_half"
@@ -686,7 +686,7 @@
     {
       "id": "sickness_pathogen_err_under_half",
       "kind": "lt_half",
-      "value": 0.015311061469322368,
+      "value": 0.07646006800765491,
       "module": "Uniqueness.SicknessTwoSystem",
       "claim": "spike_cds",
       "coq_id": "sickness_pathogen_err_under_half"
@@ -694,7 +694,7 @@
     {
       "id": "sickness_kappa_pos",
       "kind": "pos",
-      "value": 0.02104201418939883,
+      "value": 0.09436964042314956,
       "module": "Uniqueness.SicknessTwoSystem",
       "claim": "R7_kappa",
       "coq_id": "sickness_kappa_pos"

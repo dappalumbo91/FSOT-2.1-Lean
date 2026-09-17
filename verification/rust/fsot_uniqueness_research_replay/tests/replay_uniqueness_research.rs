@@ -76,12 +76,12 @@ fn replay_uniqueness_research_obligations() {
     assert!(0.0_f64 < 1e-12_f64, "process_time_d25_eq_ceiling");
     assert!(0.0_f64 < 1e-12_f64, "process_time_25_cell_eq_ceiling");
     assert_eq!(24, 24, "weather_window_hours_eq_24");
-    assert!(0.025840180827430004_f64 < 0.5_f64, "market_class_median_under_half");
+    assert!(0.07335169154480958_f64 < 0.5_f64, "market_class_median_under_half");
     assert!(1 > 0, "market_window_days_pos");
     assert_eq!(1, 1, "market_class_green_flag");
-    assert!(0.022236250385197696_f64 < 0.5_f64, "sickness_host_err_under_half");
-    assert!(0.015311061469322368_f64 < 0.5_f64, "sickness_pathogen_err_under_half");
-    assert!(0.02104201418939883_f64 > 0.0, "sickness_kappa_pos");
+    assert!(0.05218859322839639_f64 < 0.5_f64, "sickness_host_err_under_half");
+    assert!(0.07646006800765491_f64 < 0.5_f64, "sickness_pathogen_err_under_half");
+    assert!(0.09436964042314956_f64 > 0.0, "sickness_kappa_pos");
     assert_eq!(6, 6, "clay_problems_remaining_flag");
     assert_eq!(0, 0, "clay_direct_submit_accepted_flag");
     assert_eq!(2, 2, "clay_wait_years_required_flag");

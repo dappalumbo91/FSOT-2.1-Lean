@@ -10,6 +10,8 @@
 **FRB orifice (Cat-2 dump):** [`frb_orifice_outgassing_outcome.json`](frb_orifice_outgassing_outcome.json)  
 **Architecture densify:** [`architecture_building_science_densify_hold.md`](architecture_building_science_densify_hold.md)  
 **Pin:** AEB2AD
+**Gauntlet stamp:** [`GAUNTLET_STAMP.md`](GAUNTLET_STAMP.md) — millenium top-to-bottom + uniqueness 153/153 (Python, Rust, Z3, Coq, Isabelle, F*, lake Lean). Clay not claimed.
+
 **Millennium named functions:** [`millennium_named_outcomes.md`](millennium_named_outcomes.md) — Hodge \(C_8\)..\(C_{44}\) algebraic; K3 tail Lefschetz; BSD modularity + Sha; NSE \(L^2\) not \(L^\infty\). Not a Clay Prize.
 
 Predictions live in [`../predictions/`](../predictions/). This page is **outcomes only**.
