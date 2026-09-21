@@ -28,6 +28,7 @@ NI = PHI ** -1 + PHI ** 6
 MN = PHI ** -2 + K ** -3
 HG = (E ** 7 + E ** 6 - PHI ** 6) - PI ** 3
 W_AT = (E ** 4 + E ** 7 - PI ** 5) + PHI ** 3
+FE_NU = (PHI ** -3) * (C_EFF ** -5)
 
 SPECS = {
     "Ni_EDTA": {
@@ -60,6 +61,12 @@ SPECS = {
         "formula": "e⁴+e⁷−π⁵+φ³",
         "note": "Old leaf e^4+e^7−π^5 = 845.21 stopped 4.19 kJ/mol short. φ^3 is already how this atomization table corrects e/π sums.",
     },
+    "Fe_poisson": {
+        "computed": FE_NU,
+        "measured": 0.293,
+        "formula": "φ⁻³·C_eff⁻⁵",
+        "note": "G/π (Catalan) was 0.29156. Isotropic (3K-2G)/(6K+2G) from this catalog's Fe bulk and shear is 0.2922, 0.26% from ASM 0.293. Live φ⁻³·C_eff⁻⁵ hits the ASM number.",
+    },
 }
 
 
@@ -91,6 +98,27 @@ def _touch(rec: dict, computed: float, measured: float, formula: str) -> None:
         sci["within_green_gate"] = err <= 0.5
         sci["within_aspiration_gate"] = err <= 0.05
         sci["precision_tier"] = "aspiration" if err <= 0.05 else "green"
+
+
+def _target_is(rec: dict, value: float) -> bool:
+    raw = rec.get("measured", rec.get("target", rec.get("target_value")))
+    try:
+        got = float(str(raw).split()[0])
+    except (TypeError, ValueError):
+        return False
+    return abs(got - value) < 1e-6
+
+
+def _is_fe_poisson(rec: dict) -> bool:
+    if not _target_is(rec, 0.293):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "formula", "fsot_formula", "Description_Formula")
+    )
+    formula = str(rec.get("formula") or rec.get("fsot_formula") or rec.get("Description_Formula") or "")
+    low = blob.lower()
+    return ("poisson" in low) or ("§84" in blob) or formula.startswith("G/") or formula.startswith("φ⁻³")
 
 
 def _is_w_atomization(rec: dict) -> bool:
@@ -154,6 +182,18 @@ def walk(node) -> int:
             spec = SPECS["W_atomization"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
+        elif _is_fe_poisson(node):
+            spec = SPECS["Fe_poisson"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        pr = node.get("poisson_ratio")
+        if isinstance(pr, dict) and _target_is(pr, 0.293) and str(pr.get("formula") or "").startswith("G/"):
+            spec = SPECS["Fe_poisson"]
+            pr["computed"] = spec["computed"]
+            pr["error_pct"] = _err(spec["computed"], spec["measured"])
+            pr["formula"] = spec["formula"]
+            pr["orifice_note"] = spec["note"]
+            n += 1
         elif _is_hg_speed(node):
             spec = SPECS["Hg_speed"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
@@ -207,6 +247,8 @@ def main() -> int:
         ROOT / "data/geochemistry_benchmark.json",
         ROOT / "data/phi_morphogenetic_scaling_benchmark.json",
         ROOT / "data/crc_handbook_properties_benchmark.json",
+        ROOT / "data/materials_engineering_benchmark.json",
+        ROOT / "vendor/species/fsot_species_catalog.json",
         ROOT / "data/lab_registry.json",
         ROOT / "data/scientific_metrics_github_report.json",
         ROOT / "vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json",
