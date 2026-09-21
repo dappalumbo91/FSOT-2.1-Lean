@@ -37,6 +37,7 @@ BENZENE_TM = ((float(m.GAMMA) ** -5) * (PHI ** 6)) - (E / 2.0)
 AU_CHI = (-(PI ** 3) + PI) - (PHI ** -4)
 H2SO4_VISC = (PI ** 2 * E) - (E ** -2)
 ZNO_GAP = (E ** -1) + (float(m.GAMMA) ** -2)
+CU_MUEFF = (PI ** -1) + (float(m.PSI_CON) ** -1)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -124,6 +125,12 @@ SPECS = {
         "formula": "e⁻¹+γ⁻²",
         "note": "Kittel/Madelung ZnO gap 3.37 eV. Old leaf π+γ/e=3.354 was 0.477% low. Not GaN 3.4.",
     },
+    "Cu_mueff": {
+        "computed": CU_MUEFF,
+        "measured": 1.9,
+        "formula": "π⁻¹+ψ⁻¹",
+        "note": "Earnshaw Cu2+ μeff 1.9 BM. Old leaf φ+θ_S=1.9089 was 0.470% high. Not CO2(aq) diffusion 1.91, which shares φ+θ.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -184,6 +191,22 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_cu_mueff(rec: dict) -> bool:
+    if not _target_is(rec, 1.9):
+        return False
+    ident = str(rec.get("name") or rec.get("Symbol") or "")
+    if ident not in {"Cu²⁺", "Cu2+"}:
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    )
+    low = blob.lower()
+    if "diffusion" in low or "§50" in blob:
+        return False
+    return ("magnetic" in low) or ("§55" in blob) or ("eff" in low) or ("bm" in low)
 
 
 def _is_zno_gap(rec: dict) -> bool:
@@ -415,6 +438,10 @@ def walk(node) -> int:
             n += 1
         elif _is_zno_gap(node):
             spec = SPECS["ZnO_gap"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_cu_mueff(node):
+            spec = SPECS["Cu_mueff"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         gap = node.get("band_gap_eV")
