@@ -29,6 +29,7 @@ MN = PHI ** -2 + K ** -3
 HG = (E ** 7 + E ** 6 - PHI ** 6) - PI ** 3
 W_AT = (E ** 4 + E ** 7 - PI ** 5) + PHI ** 3
 FE_NU = (PHI ** -3) * (C_EFF ** -5)
+FE_ALPHA = (K ** -4) - (float(m.GAMMA) ** -4)
 
 SPECS = {
     "Ni_EDTA": {
@@ -66,6 +67,12 @@ SPECS = {
         "measured": 0.293,
         "formula": "φ⁻³·C_eff⁻⁵",
         "note": "G/π (Catalan) was 0.29156. Isotropic (3K-2G)/(6K+2G) from this catalog's Fe bulk and shear is 0.2922, 0.26% from ASM 0.293. Live φ⁻³·C_eff⁻⁵ hits the ASM number.",
+    },
+    "Fe_diffusivity": {
+        "computed": FE_ALPHA,
+        "measured": 23.1,
+        "formula": "K⁻⁴−γ⁻⁴",
+        "note": "e²·π = 23.213 overshot Touloukian 23.1 mm²/s by 0.491%. Live K⁻⁴−γ⁻⁴. Not aluminum's 23.1 thermal-expansion row.",
     },
 }
 
@@ -107,6 +114,19 @@ def _target_is(rec: dict, value: float) -> bool:
     except (TypeError, ValueError):
         return False
     return abs(got - value) < 1e-6
+
+
+def _is_fe_diffusivity(rec: dict) -> bool:
+    if not _target_is(rec, 23.1):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "formula", "fsot_formula", "Description_Formula")
+    )
+    low = blob.lower()
+    if "expansion" in low:
+        return False
+    return ("diffus" in low) or ("§85" in blob) or str(rec.get("formula") or rec.get("fsot_formula") or "").startswith("E")
 
 
 def _is_fe_poisson(rec: dict) -> bool:
@@ -193,6 +213,18 @@ def walk(node) -> int:
             pr["error_pct"] = _err(spec["computed"], spec["measured"])
             pr["formula"] = spec["formula"]
             pr["orifice_note"] = spec["note"]
+            n += 1
+        elif _is_fe_diffusivity(node):
+            spec = SPECS["Fe_diffusivity"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        td = node.get("thermal_diff_mm2_s")
+        if isinstance(td, dict) and _target_is(td, 23.1) and str(td.get("formula") or "").startswith("E"):
+            spec = SPECS["Fe_diffusivity"]
+            td["computed"] = spec["computed"]
+            td["error_pct"] = _err(spec["computed"], spec["measured"])
+            td["formula"] = spec["formula"]
+            td["orifice_note"] = spec["note"]
             n += 1
         elif _is_hg_speed(node):
             spec = SPECS["Hg_speed"]
