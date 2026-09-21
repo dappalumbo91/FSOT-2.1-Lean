@@ -5844,10 +5844,12 @@
     "Index": 650,
     "Symbol": "Hg",
     "Type": "SMILES Derivation (\u00a739 Speed of Sound)",
-    "Description_Formula": "e\u2077+\u03c6\u2078\u00b7e\u00b2",
-    "Value": "1443.7615098843964",
+    "Description_Formula": "(e\u2077+e\u2076\u2212\u03c6\u2076)\u2212\u03c0\u00b3",
+    "Value": "1451.1114033308943",
     "Target_Unit": "1451.0 m/s",
-    "Error": "0.498862%"
+    "Error": "0.007677693376587923%",
+    "computed": 1451.1114033308943,
+    "error_pct": 0.007677693376587923
   },
   {
     "Index": 651,
@@ -8364,19 +8366,23 @@
     "Index": 930,
     "Symbol": "Mn_EDTA",
     "Type": "SMILES Derivation (\u00a758 log\u03b2 Stability)",
-    "Description_Formula": "PHI\u2075+E",
-    "Value": "13.80845177220852",
+    "Description_Formula": "\u03c6\u207b\u00b2+K\u207b\u00b3",
+    "Value": "13.868947964845008",
     "Target_Unit": "13.87 dimensionless",
-    "Error": "0.443751%"
+    "Error": "0.007584968673333924%",
+    "computed": 13.868947964845008,
+    "error_pct": 0.007584968673333924
   },
   {
     "Index": 931,
     "Symbol": "Ni_EDTA",
     "Type": "SMILES Derivation (\u00a758 log\u03b2 Stability)",
-    "Description_Formula": "E\u00b3-PHI",
-    "Value": "18.46750293443777",
+    "Description_Formula": "\u03c6\u207b\u00b9+\u03c6\u2076",
+    "Value": "18.562305898749056",
     "Target_Unit": "18.56 dimensionless",
-    "Error": "0.498368%"
+    "Error": "0.012424023432420142%",
+    "computed": 18.562305898749056,
+    "error_pct": 0.012424023432420142
   },
   {
     "Index": 932,

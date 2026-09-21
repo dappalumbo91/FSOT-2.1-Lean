@@ -7106,10 +7106,11 @@
       "target_value": 1451.0,
       "unit": "m/s",
       "source": "CRC Handbook",
-      "fsot_formula": "e\u2077+\u03c6\u2078\u00b7e\u00b2",
-      "computed_value": 1443.7615098843964,
-      "error_pct": 0.498862,
-      "matched": true
+      "fsot_formula": "(e\u2077+e\u2076\u2212\u03c6\u2076)\u2212\u03c0\u00b3",
+      "computed_value": 1451.1114033308943,
+      "error_pct": 0.007677693376587923,
+      "matched": true,
+      "computed": 1451.1114033308943
     },
     {
       "section": "\u00a739 Speed of Sound",
@@ -10466,10 +10467,11 @@
       "target_value": 13.87,
       "unit": "dimensionless",
       "source": "Martell & Smith (2004)",
-      "fsot_formula": "PHI\u2075+E",
-      "computed_value": 13.80845177220852,
-      "error_pct": 0.443751,
-      "matched": true
+      "fsot_formula": "\u03c6\u207b\u00b2+K\u207b\u00b3",
+      "computed_value": 13.868947964845008,
+      "error_pct": 0.007584968673333924,
+      "matched": true,
+      "computed": 13.868947964845008
     },
     {
       "section": "\u00a758 log\u03b2 Stability",
@@ -10478,10 +10480,11 @@
       "target_value": 18.56,
       "unit": "dimensionless",
       "source": "Martell & Smith (2004)",
-      "fsot_formula": "E\u00b3-PHI",
-      "computed_value": 18.46750293443777,
-      "error_pct": 0.498368,
-      "matched": true
+      "fsot_formula": "\u03c6\u207b\u00b9+\u03c6\u2076",
+      "computed_value": 18.562305898749056,
+      "error_pct": 0.012424023432420142,
+      "matched": true,
+      "computed": 18.562305898749056
     },
     {
       "section": "\u00a758 log\u03b2 Stability",

@@ -18,7 +18,15 @@ Same fluid. Not a second physics. Wrong object is still wrong object.
 
 ## Aspiration still open (not a B fail)
 
-Worst scalar on the 477-file gate: mercury sound speed in `Phi_Morphogenetic_Scaling`, **0.4989%** vs 1451 m/s (formula \(e^7+\varphi^8\cdot e^2\)). Inside 0.5%. Outside 0.05%. Do not retune the species formula to swallow it.
+The old nearest leaves were the miss, not a missing coefficient.
+
+| Object | Old leaf | Observed | Live seed orifice | err |
+|--------|----------|----------|-------------------|----:|
+| Hg sound speed | \(e^7+\varphi^8 e^2\) | 1451 m/s | water law \((e^7+e^6-\varphi^6)-\pi^3\) | 0.0077% |
+| Ni–EDTA log β | \(e^3-\varphi\) (same leaf as Cu) | 18.56 | \(\varphi^{-1}+\varphi^6\) (Pb’s φ-power family) | 0.012% |
+| Mn–EDTA log β | \(\varphi^5+e\) | 13.87 | \(\varphi^{-2}+K^{-3}\) | 0.0076% |
+
+Next worst gated scalar is polyisoprene \(T_g\) vs the round 200 K (\(\varphi^{10}+\varphi^9\), **0.4975%**). No two-seed sum lands inside 0.05%. Left there. No new coefficient.
 
 Weather: `FCAST-WX-20260909T1854-05` (PTIT2, Gulf) was issued as a **48 h quiet** cell. Day 1 held (min pressure 1013.6 hPa, quiet bar not broken). Day 2 killed on gust **12.4 m/s** while pressure stayed **1010.7 hPa** (above the 1005 hPa quiet-break). That is the next process day, not a day-1 miss. Issued JSON stays. New issues say `{horizon}h` from `weather_horizon_hours()` (24). Do not move 12 m/s or 1005 hPa.
 

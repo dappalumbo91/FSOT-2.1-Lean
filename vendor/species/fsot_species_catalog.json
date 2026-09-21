@@ -9,8 +9,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -23,35 +23,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -65,14 +65,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -86,8 +86,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -101,7 +101,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       }
     },
     "Cu": {
@@ -113,56 +113,56 @@
         "target": 24.44,
         "computed": 24.321604900687458,
         "error_pct": 0.4844,
-        "formula": "e³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1358.0,
         "computed": 1355.2756104382308,
         "error_pct": 0.2006177880536935,
-        "formula": "((π*(e+(3)^2)))^2",
+        "formula": "((\u03c0*(e+(3)^2)))^2",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.65,
         "computed": 4.606144427445237,
         "error_pct": 0.9431,
-        "formula": "π+φ-POOF",
+        "formula": "\u03c0+\u03c6-POOF",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 130.0,
         "computed": 130.46888719257745,
         "error_pct": 0.3607,
-        "formula": "e⁵-φ⁶",
+        "formula": "e\u2075-\u03c6\u2076",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 401.0,
         "computed": 403.4287934927351,
         "error_pct": 0.6057,
-        "formula": "e⁶",
-        "unit": "W/(m·K)"
+        "formula": "e\u2076",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 1.68,
         "computed": 1.6799905609889012,
         "error_pct": 0.0005618458987341083,
-        "formula": "(e*(φ-1))",
-        "unit": "μΩ·cm"
+        "formula": "(e*(\u03c6-1))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.26,
         "computed": 13.260092240744768,
         "error_pct": 0.0006956315593404662,
-        "formula": "(φ+(sqrt(π)+(π)^2))",
+        "formula": "(\u03c6+(sqrt(\u03c0)+(\u03c0)^2))",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 140.0,
         "computed": 141.02410300364596,
         "error_pct": 0.7315,
-        "formula": "E⁵-E²",
+        "formula": "E\u2075-E\u00b2",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -177,7 +177,7 @@
         "computed": 17.0,
         "error_pct": 0.0,
         "formula": "(1+((2)^2)^2)",
-        "unit": "10⁻⁶/K"
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.49,
@@ -190,15 +190,15 @@
         "target": 0.343,
         "computed": 0.3435826833227941,
         "error_pct": 0.1699,
-        "formula": "P_BASE·PHI",
+        "formula": "P_BASE\u00b7PHI",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 117.0,
         "computed": 117.40688242227678,
         "error_pct": 0.3478,
-        "formula": "E⁵-PI³",
-        "unit": "mm²/s"
+        "formula": "E\u2075-PI\u00b3",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.96,
@@ -211,8 +211,8 @@
         "target": 1.79,
         "computed": 1.7899979479289336,
         "error_pct": 0.00011464084169861162,
-        "formula": "sqrt((π+1/(((2)^2)^2)))",
-        "unit": "J/m²"
+        "formula": "sqrt((\u03c0+1/(((2)^2)^2)))",
+        "unit": "J/m\u00b2"
       }
     },
     "Al": {
@@ -224,28 +224,28 @@
         "target": 24.2,
         "computed": 24.321604900687458,
         "error_pct": 0.5025,
-        "formula": "e³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 933.5,
         "computed": 933.5542581824798,
         "error_pct": 0.0058123387766224706,
-        "formula": "(((π*(e)^2))^2/γ)",
+        "formula": "(((\u03c0*(e)^2))^2/\u03b3)",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 70.0,
         "computed": 70.20479159671953,
         "error_pct": 0.2926,
-        "formula": "e⁴+γ⁻⁵",
+        "formula": "e\u2074+\u03b3\u207b\u2075",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
@@ -253,63 +253,63 @@
         "computed": 237.0,
         "error_pct": 0.0,
         "formula": "(3*(((3)^2)^2-2))",
-        "unit": "W/(m·K)"
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 2.65,
         "computed": 2.6499538677809147,
         "error_pct": 0.0017408384560462819,
-        "formula": "(1/(π)+sqrt((e+e)))",
-        "unit": "μΩ·cm"
+        "formula": "(1/(\u03c0)+sqrt((e+e)))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 10.71,
         "computed": 10.709534322265133,
         "error_pct": 0.004348064751330512,
-        "formula": "(((1+(φ/2)))^2)^2",
+        "formula": "(((1+(\u03c6/2)))^2)^2",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 26.0,
         "computed": 25.89284920015884,
         "error_pct": 0.4121,
-        "formula": "PHI⁷-PI",
+        "formula": "PHI\u2077-PI",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 23.1,
         "computed": 23.10092850280591,
         "error_pct": 0.004019492666272504,
-        "formula": "((π-γ)/((γ)^2)^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "((\u03c0-\u03b3)/((\u03b3)^2)^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.39,
         "computed": 3.389958264487283,
         "error_pct": 0.0012311360683454771,
-        "formula": "(3+1/((π-γ)))",
+        "formula": "(3+1/((\u03c0-\u03b3)))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.345,
         "computed": 0.3435826833227941,
         "error_pct": 0.4108,
-        "formula": "P_BASE·PHI",
+        "formula": "P_BASE\u00b7PHI",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 97.5,
         "computed": 97.40909103400244,
         "error_pct": 0.0932,
-        "formula": "PI⁴",
-        "unit": "mm²/s"
+        "formula": "PI\u2074",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 2.17,
@@ -322,8 +322,8 @@
         "target": 1.14,
         "computed": 1.1422809136128413,
         "error_pct": 0.2001,
-        "formula": "E·K",
-        "unit": "J/m²"
+        "formula": "E\u00b7K",
+        "unit": "J/m\u00b2"
       }
     },
     "Hg": {
@@ -334,43 +334,44 @@
         "target": 485.5,
         "computed": 489.0951938042658,
         "error_pct": 0.7405,
-        "formula": "e⁶·(1+P_BASE)",
+        "formula": "e\u2076\u00b7(1+P_BASE)",
         "unit": "mN/m"
       },
       "viscosity": {
         "target": 1.554,
         "computed": 1.5495947149407068,
         "error_pct": 0.2835,
-        "formula": "φ·C_EFF",
-        "unit": "mPa·s"
+        "formula": "\u03c6\u00b7C_EFF",
+        "unit": "mPa\u00b7s"
       },
       "boiling_K": {
         "target": 629.9,
         "computed": 630.4448804249943,
         "error_pct": 0.08650268693352747,
-        "formula": "(φ*((2*(π)^2))^2)",
+        "formula": "(\u03c6*((2*(\u03c0)^2))^2)",
         "unit": "K"
       },
       "melting_K": {
         "target": 234.3,
         "computed": 234.27878061996748,
         "error_pct": 0.009056500227287137,
-        "formula": "((e+(e+(π)^2)))^2",
+        "formula": "((e+(e+(\u03c0)^2)))^2",
         "unit": "K"
       },
       "resistivity_uOhm_cm": {
         "target": 96.1,
         "computed": 96.11496045594647,
         "error_pct": 0.0156,
-        "formula": "π⁴-OMEGA",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u2074-OMEGA",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "speed_sound_m_s": {
         "target": 1451.0,
-        "computed": 1443.7615098843964,
-        "error_pct": 0.4989,
-        "formula": "e⁷+φ⁸·e²",
-        "unit": "m/s"
+        "computed": 1451.1114033308943,
+        "error_pct": 0.007677693376587923,
+        "formula": "(e\u2077+e\u2076\u2212\u03c6\u2076)\u2212\u03c0\u00b3",
+        "unit": "m/s",
+        "orifice_note": "H2O liquid law in this catalog, minus \u03c0\u00b3."
       }
     },
     "Ga": {
@@ -381,7 +382,7 @@
         "target": 302.9,
         "computed": 302.87809213169163,
         "error_pct": 0.007232706605594811,
-        "formula": "(π*(((π)^2)^2-1))",
+        "formula": "(\u03c0*(((\u03c0)^2)^2-1))",
         "unit": "K"
       }
     },
@@ -393,7 +394,7 @@
         "target": 336.5,
         "computed": 336.5316874722089,
         "error_pct": 0.009416782231467134,
-        "formula": "((1-((e*φ))^2))^2",
+        "formula": "((1-((e*\u03c6))^2))^2",
         "unit": "K"
       },
       "work_function_eV": {
@@ -419,7 +420,7 @@
         "target": 370.9,
         "computed": 374.2212874957692,
         "error_pct": 0.8955,
-        "formula": "e⁴·φ⁴",
+        "formula": "e\u2074\u00b7\u03c6\u2074",
         "unit": "K"
       },
       "work_function_eV": {
@@ -433,21 +434,21 @@
         "target": 4.77,
         "computed": 4.759626642339688,
         "error_pct": 0.2175,
-        "formula": "π+φ",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0+\u03c6",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 2.6,
         "computed": 2.618033988749895,
         "error_pct": 0.6936,
-        "formula": "PHI²",
+        "formula": "PHI\u00b2",
         "unit": "kJ/mol"
       },
       "cohesive_eV": {
         "target": 1.113,
         "computed": 1.113017303790252,
         "error_pct": 0.0015546981358489683,
-        "formula": "sqrt((sqrt(2)/(π-2)))",
+        "formula": "sqrt((sqrt(2)/(\u03c0-2)))",
         "unit": "eV/atom"
       },
       "grueneisen": {
@@ -466,7 +467,7 @@
         "target": 600.6,
         "computed": 605.5027624819006,
         "error_pct": 0.8163,
-        "formula": "e⁴·φ⁵",
+        "formula": "e\u2074\u00b7\u03c6\u2075",
         "unit": "K"
       },
       "youngs_GPa": {
@@ -480,15 +481,15 @@
         "target": 35.3,
         "computed": 35.24234465779961,
         "error_pct": 0.1633,
-        "formula": "π³+φ³",
-        "unit": "W/(m·K)"
+        "formula": "\u03c0\u00b3+\u03c6\u00b3",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 20.6,
         "computed": 20.598133443788207,
         "error_pct": 0.009060952484439541,
-        "formula": "(e*((e*3)-γ))",
-        "unit": "μΩ·cm"
+        "formula": "(e*((e*3)-\u03b3))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 46.0,
@@ -501,8 +502,8 @@
         "target": 29.0,
         "computed": 29.034441853748632,
         "error_pct": 0.1188,
-        "formula": "PHI⁷",
-        "unit": "10⁻⁶/K"
+        "formula": "PHI\u2077",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 2.03,
@@ -523,7 +524,7 @@
         "computed": 24.096657014959963,
         "error_pct": 0.013871307220078117,
         "formula": "((e*(3)^2)-1/(e))",
-        "unit": "mm²/s"
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 2.73,
@@ -536,8 +537,8 @@
         "target": 0.6,
         "computed": 0.604284188165621,
         "error_pct": 0.714,
-        "formula": "OMEGA·ETA",
-        "unit": "J/m²"
+        "formula": "OMEGA\u00b7ETA",
+        "unit": "J/m\u00b2"
       }
     },
     "Zn": {
@@ -548,29 +549,29 @@
         "target": 692.7,
         "computed": 698.9221152921343,
         "error_pct": 0.8982,
-        "formula": "e⁶·γ⁻¹",
+        "formula": "e\u2076\u00b7\u03b3\u207b\u00b9",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.33,
         "computed": 4.33631581720894,
         "error_pct": 0.1459,
-        "formula": "e+φ",
+        "formula": "e+\u03c6",
         "unit": "eV"
       },
       "resistivity_uOhm_cm": {
         "target": 5.96,
         "computed": 5.938136372072465,
         "error_pct": 0.3668,
-        "formula": "φ⁴-G",
-        "unit": "μΩ·cm"
+        "formula": "\u03c6\u2074-G",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "surface_energy_mJ_m2": {
         "target": 0.99,
         "computed": 0.9974373290622296,
         "error_pct": 0.7512,
         "formula": "GAMMA+K",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       }
     },
     "Ag": {
@@ -581,14 +582,14 @@
         "target": 1234.9,
         "computed": 1245.0463175310351,
         "error_pct": 0.8216,
-        "formula": "e⁷+e⁵",
+        "formula": "e\u2077+e\u2075",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.26,
         "computed": 4.23606797749979,
         "error_pct": 0.5618,
-        "formula": "φ³",
+        "formula": "\u03c6\u00b3",
         "unit": "eV"
       },
       "youngs_GPa": {
@@ -602,36 +603,36 @@
         "target": 429.0,
         "computed": 430.3684323821725,
         "error_pct": 0.319,
-        "formula": "e⁶+e³+φ⁴",
-        "unit": "W/(m·K)"
+        "formula": "e\u2076+e\u00b3+\u03c6\u2074",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 1.59,
         "computed": 1.5789724997061827,
         "error_pct": 0.6936,
-        "formula": "γ⁻¹-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03b3\u207b\u00b9-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 11.28,
         "computed": 11.279827235839502,
         "error_pct": 0.0015315971675319779,
-        "formula": "((3)^2*sqrt((π/2)))",
+        "formula": "((3)^2*sqrt((\u03c0/2)))",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 104.0,
         "computed": 104.79814713293308,
         "error_pct": 0.7674,
-        "formula": "PI⁴+E²",
+        "formula": "PI\u2074+E\u00b2",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 18.0,
         "computed": 17.94427190999916,
         "error_pct": 0.3096,
-        "formula": "PHI⁶",
-        "unit": "10⁻⁶/K"
+        "formula": "PHI\u2076",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 2.95,
@@ -644,15 +645,15 @@
         "target": 0.37,
         "computed": 0.3679228124712124,
         "error_pct": 0.5614,
-        "formula": "ETA·B_IN",
+        "formula": "ETA\u00b7B_IN",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 174.0,
         "computed": 173.98712130218152,
         "error_pct": 0.007401550470390326,
-        "formula": "((e+((φ*2))^2))^2",
-        "unit": "mm²/s"
+        "formula": "((e+((\u03c6*2))^2))^2",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 2.4,
@@ -666,7 +667,7 @@
         "computed": 1.2485987431657344,
         "error_pct": 0.1121,
         "formula": "C_EFF+THETA",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       }
     },
     "Cs": {
@@ -677,7 +678,7 @@
         "target": 2.14,
         "computed": 2.1526763787613303,
         "error_pct": 0.5924,
-        "formula": "γ⁻¹+K",
+        "formula": "\u03b3\u207b\u00b9+K",
         "unit": "eV"
       }
     },
@@ -701,7 +702,7 @@
         "target": 2.87,
         "computed": 2.87000613368955,
         "error_pct": 0.00021371740592499825,
-        "formula": "(1+(π/(e/φ)))",
+        "formula": "(1+(\u03c0/(e/\u03c6)))",
         "unit": "eV"
       }
     },
@@ -713,14 +714,14 @@
         "target": 3.66,
         "computed": 3.659955337936487,
         "error_pct": 0.0012202749593792032,
-        "formula": "(1+(3/sqrt(sqrt(φ))))",
+        "formula": "(1+(3/sqrt(sqrt(\u03c6))))",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 45.0,
         "computed": 45.3606797749979,
         "error_pct": 0.8015,
-        "formula": "φ⁸-φ",
+        "formula": "\u03c6\u2078-\u03c6",
         "unit": "GPa"
       }
     },
@@ -732,49 +733,49 @@
         "target": 4.33,
         "computed": 4.33631581720894,
         "error_pct": 0.1459,
-        "formula": "e+φ",
+        "formula": "e+\u03c6",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 21.9,
         "computed": 21.70357091193756,
         "error_pct": 0.8969,
-        "formula": "e³+φ",
-        "unit": "W/(m·K)"
+        "formula": "e\u00b3+\u03c6",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 42.0,
         "computed": 42.0,
         "error_pct": 0.0,
         "formula": "(3*(((2)^2)^2-2))",
-        "unit": "μΩ·cm"
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 110.0,
         "computed": 109.99055899603007,
         "error_pct": 0.008582730881750484,
-        "formula": "(((π)^2+1/(φ)))^2",
+        "formula": "(((\u03c0)^2+1/(\u03c6)))^2",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 44.0,
         "computed": 44.3606797749979,
         "error_pct": 0.8197,
-        "formula": "PHI⁸-PHI²",
+        "formula": "PHI\u2078-PHI\u00b2",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 8.6,
         "computed": 8.683186676986617,
         "error_pct": 0.9673,
-        "formula": "E²+OMEGA",
-        "unit": "10⁻⁶/K"
+        "formula": "E\u00b2+OMEGA",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.85,
         "computed": 4.850076845727893,
         "error_pct": 0.001584447997794138,
-        "formula": "(3+sqrt(((2)^2-γ)))",
+        "formula": "(3+sqrt(((2)^2-\u03b3)))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -789,14 +790,14 @@
         "computed": 9.2,
         "error_pct": 0.0,
         "formula": "((3)^2+1/((2+3)))",
-        "unit": "mm²/s"
+        "unit": "mm\u00b2/s"
       },
       "surface_energy_mJ_m2": {
         "target": 2.1,
         "computed": 2.094619023002242,
         "error_pct": 0.2562,
         "formula": "PI-A_BLEED",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "melting_K": {
         "target": 1941.0,
@@ -815,49 +816,49 @@
         "target": 4.55,
         "computed": 4.548661593448318,
         "error_pct": 0.0294,
-        "formula": "e+φ+P_BASE",
+        "formula": "e+\u03c6+P_BASE",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 411.0,
         "computed": 412.6315312464996,
         "error_pct": 0.397,
-        "formula": "π⁴·φ³",
+        "formula": "\u03c0\u2074\u00b7\u03c6\u00b3",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 173.0,
         "computed": 172.73476400326405,
         "error_pct": 0.1533,
-        "formula": "e⁵+e³+φ³",
-        "unit": "W/(m·K)"
+        "formula": "e\u2075+e\u00b3+\u03c6\u00b3",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 5.28,
         "computed": 5.28003862850292,
         "error_pct": 0.0007316004340892601,
-        "formula": "(3+(sqrt(sqrt(3))/γ))",
-        "unit": "μΩ·cm"
+        "formula": "(3+(sqrt(sqrt(3))/\u03b3))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 310.0,
         "computed": 309.16127743887125,
         "error_pct": 0.2706,
-        "formula": "PI⁵+PI",
+        "formula": "PI\u2075+PI",
         "unit": "GPa"
       },
       "cohesive_eV": {
         "target": 8.9,
         "computed": 8.911902198468796,
         "error_pct": 0.1337,
-        "formula": "PI²-C_EFF",
+        "formula": "PI\u00b2-C_EFF",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.28,
         "computed": 0.2799984268314835,
         "error_pct": 0.0005618458987539336,
-        "formula": "(e/(φ*(2*3)))",
+        "formula": "(e/(\u03c6*(2*3)))",
         "unit": "dimensionless"
       },
       "grueneisen": {
@@ -871,8 +872,8 @@
         "target": 3.27,
         "computed": 3.2699579216718915,
         "error_pct": 0.0012867990247260332,
-        "formula": "(π+(1-sqrt(sqrt(γ))))",
-        "unit": "J/m²"
+        "formula": "(\u03c0+(1-sqrt(sqrt(\u03b3))))",
+        "unit": "J/m\u00b2"
       },
       "melting_K": {
         "target": 3695.0,
@@ -891,42 +892,42 @@
         "target": 5.1,
         "computed": 5.0832036923152595,
         "error_pct": 0.3293,
-        "formula": "π·φ",
+        "formula": "\u03c0\u00b7\u03c6",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 78.0,
         "computed": 77.98499044404761,
         "error_pct": 0.0192,
-        "formula": "φ⁸+π³",
+        "formula": "\u03c6\u2078+\u03c0\u00b3",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 317.0,
         "computed": 317.1098547290309,
         "error_pct": 0.0347,
-        "formula": "π⁵+φ⁵",
-        "unit": "W/(m·K)"
+        "formula": "\u03c0\u2075+\u03c6\u2075",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 2.44,
         "computed": 2.4179795517886737,
         "error_pct": 0.9025,
         "formula": "e-P_NEW",
-        "unit": "μΩ·cm"
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 12.55,
         "computed": 12.549708119394687,
         "error_pct": 0.0023257418750105272,
-        "formula": "((e*((π-2))^2))^2",
+        "formula": "((e*((\u03c0-2))^2))^2",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 171.0,
         "computed": 169.97058314499202,
         "error_pct": 0.602,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -941,7 +942,7 @@
         "computed": 14.0,
         "error_pct": 0.0,
         "formula": "(((2)^2)^2-2)",
-        "unit": "10⁻⁶/K"
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.81,
@@ -961,14 +962,14 @@
         "target": 127.0,
         "computed": 127.0179042372705,
         "error_pct": 0.014097824622440814,
-        "formula": "((π)^2*(3+(π)^2))",
-        "unit": "mm²/s"
+        "formula": "((\u03c0)^2*(3+(\u03c0)^2))",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 3.03,
         "computed": 3.0382556529105917,
         "error_pct": 0.2725,
-        "formula": "PHI²+K",
+        "formula": "PHI\u00b2+K",
         "unit": "dimensionless"
       },
       "surface_energy_mJ_m2": {
@@ -976,7 +977,7 @@
         "computed": 1.5064763542953445,
         "error_pct": 0.2334,
         "formula": "OMEGA+P_BASE",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       }
     },
     "Pt": {
@@ -987,21 +988,21 @@
         "target": 5.65,
         "computed": 5.64752870580946,
         "error_pct": 0.0437,
-        "formula": "π+e-P_BASE",
+        "formula": "\u03c0+e-P_BASE",
         "unit": "eV"
       },
       "resistivity_uOhm_cm": {
         "target": 10.6,
         "computed": 10.657545193365802,
         "error_pct": 0.5429,
-        "formula": "π²+B_IN",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2+B_IN",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 228.0,
         "computed": 230.00652916778503,
         "error_pct": 0.8801,
-        "formula": "PI⁵-PHI⁹",
+        "formula": "PI\u2075-PHI\u2079",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -1015,8 +1016,8 @@
         "target": 9.0,
         "computed": 9.007090087680545,
         "error_pct": 0.0788,
-        "formula": "E²+PHI",
-        "unit": "10⁻⁶/K"
+        "formula": "E\u00b2+PHI",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 5.84,
@@ -1036,8 +1037,8 @@
         "target": 25.4,
         "computed": 25.494180670458224,
         "error_pct": 0.3708,
-        "formula": "E⁴·ETA",
-        "unit": "mm²/s"
+        "formula": "E\u2074\u00b7ETA",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 2.54,
@@ -1051,7 +1052,7 @@
         "computed": 2.505936052219667,
         "error_pct": 0.64,
         "formula": "E-P_BASE",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "melting_K": {
         "target": 2041.0,
@@ -1070,64 +1071,64 @@
         "target": 200.0,
         "computed": 198.23630361533583,
         "error_pct": 0.8818,
-        "formula": "e³·π²",
+        "formula": "e\u00b3\u00b7\u03c0\u00b2",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 90.9,
         "computed": 90.55498906775276,
         "error_pct": 0.3795,
-        "formula": "π⁴-φ⁴",
-        "unit": "W/(m·K)"
+        "formula": "\u03c0\u2074-\u03c6\u2074",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 6.99,
         "computed": 7.007584181144136,
         "error_pct": 0.2516,
-        "formula": "φ⁴+POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c6\u2074+POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 180.0,
         "computed": 179.41943578287643,
         "error_pct": 0.3225,
-        "formula": "E⁵+PI³",
+        "formula": "E\u2075+PI\u00b3",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 13.0,
         "computed": 13.011197054679151,
         "error_pct": 0.0861,
-        "formula": "PI²+PI",
-        "unit": "10⁻⁶/K"
+        "formula": "PI\u00b2+PI",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.44,
         "computed": 4.439955876012397,
         "error_pct": 0.000993783504577217,
-        "formula": "(3+((π/(φ)^2))^2)",
+        "formula": "(3+((\u03c0/(\u03c6)^2))^2)",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.31,
         "computed": 0.30998746099588353,
         "error_pct": 0.004044840037568718,
-        "formula": "1/((γ+(1+sqrt(e))))",
+        "formula": "1/((\u03b3+(1+sqrt(e))))",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 23.0,
         "computed": 22.943325467023268,
         "error_pct": 0.2464,
-        "formula": "E⁴·K",
-        "unit": "mm²/s"
+        "formula": "E\u2074\u00b7K",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.88,
@@ -1140,8 +1141,8 @@
         "target": 2.38,
         "computed": 2.380020500709717,
         "error_pct": 0.0008613743578542328,
-        "formula": "(e-sqrt((1/(γ)-φ)))",
-        "unit": "J/m²"
+        "formula": "(e-sqrt((1/(\u03b3)-\u03c6)))",
+        "unit": "J/m\u00b2"
       },
       "melting_K": {
         "target": 1728.0,
@@ -1160,7 +1161,7 @@
         "target": 329.0,
         "computed": 328.99689437998484,
         "error_pct": 0.0009439574514171605,
-        "formula": "(3*(((φ*2))^2)^2)",
+        "formula": "(3*(((\u03c6*2))^2)^2)",
         "unit": "GPa"
       },
       "melting_K": {
@@ -1180,7 +1181,7 @@
         "target": 4.39,
         "computed": 4.390001865465991,
         "error_pct": 4.249353055711679e-05,
-        "formula": "(2*sqrt((e*sqrt(π))))",
+        "formula": "(2*sqrt((e*sqrt(\u03c0))))",
         "unit": "eV/atom"
       },
       "melting_K": {
@@ -1201,7 +1202,7 @@
         "computed": 0.7091516423840117,
         "error_pct": 0.1195,
         "formula": "A_IN-C_EFF",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       }
     },
     "AISI_1018": {
@@ -1209,8 +1210,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -1223,35 +1224,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -1265,14 +1266,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -1286,8 +1287,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -1301,7 +1302,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "AISI_1018"
@@ -1319,8 +1320,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -1333,35 +1334,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -1375,14 +1376,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -1396,8 +1397,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -1411,7 +1412,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "AISI_4140"
@@ -1429,8 +1430,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -1443,35 +1444,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -1485,14 +1486,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -1506,8 +1507,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -1521,7 +1522,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "AISI_H13"
@@ -1539,8 +1540,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -1553,35 +1554,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -1595,14 +1596,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -1616,8 +1617,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -1631,7 +1632,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "AISI_D2"
@@ -1649,8 +1650,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -1663,35 +1664,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -1705,14 +1706,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -1726,8 +1727,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -1741,7 +1742,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "AISI_A2"
@@ -1759,8 +1760,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -1773,35 +1774,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -1815,14 +1816,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -1836,8 +1837,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -1851,7 +1852,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "SS_304"
@@ -1869,8 +1870,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -1883,35 +1884,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -1925,14 +1926,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -1946,8 +1947,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -1961,7 +1962,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "SS_316"
@@ -1979,8 +1980,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -1993,35 +1994,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -2035,14 +2036,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -2056,8 +2057,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -2071,7 +2072,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "SS_17-4PH"
@@ -2089,8 +2090,8 @@
         "target": 25.1,
         "computed": 25.333328008929808,
         "error_pct": 0.9296,
-        "formula": "e²+φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b2+\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1811.0,
@@ -2103,35 +2104,35 @@
         "target": 4.5,
         "computed": 4.489798032103391,
         "error_pct": 0.2267,
-        "formula": "e+φ+POOF",
+        "formula": "e+\u03c6+POOF",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 80.4,
         "computed": 80.4047585604223,
         "error_pct": 0.005918607490409002,
-        "formula": "(((3)^2)^2-(φ/e))",
-        "unit": "W/(m·K)"
+        "formula": "(((3)^2)^2-(\u03c6/e))",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 9.71,
         "computed": 9.716122186194907,
         "error_pct": 0.063,
-        "formula": "π²-POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c0\u00b2-POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.81,
         "computed": 13.80845177220852,
         "error_pct": 0.0112,
-        "formula": "PHI⁵+E",
+        "formula": "PHI\u2075+E",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 170.0,
         "computed": 169.97058314499202,
         "error_pct": 0.0173,
-        "formula": "PHI¹⁰+PHI⁸",
+        "formula": "PHI\u00b9\u2070+PHI\u2078",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -2145,14 +2146,14 @@
         "target": 11.8,
         "computed": 11.800283807427723,
         "error_pct": 0.002405147692563503,
-        "formula": "(γ+((φ+sqrt(3)))^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "(\u03b3+((\u03c6+sqrt(3)))^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -2166,8 +2167,8 @@
         "target": 23.1,
         "computed": 23.213404357363387,
         "error_pct": 0.4909,
-        "formula": "E²·PI",
-        "unit": "mm²/s"
+        "formula": "E\u00b2\u00b7PI",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.68,
@@ -2181,7 +2182,7 @@
         "computed": 2.4179795517886737,
         "error_pct": 0.0835,
         "formula": "E-P_NEW",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "CastIron"
@@ -2199,28 +2200,28 @@
         "target": 24.2,
         "computed": 24.321604900687458,
         "error_pct": 0.5025,
-        "formula": "e³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 933.5,
         "computed": 933.5542581824798,
         "error_pct": 0.0058123387766224706,
-        "formula": "(((π*(e)^2))^2/γ)",
+        "formula": "(((\u03c0*(e)^2))^2/\u03b3)",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 70.0,
         "computed": 70.20479159671953,
         "error_pct": 0.2926,
-        "formula": "e⁴+γ⁻⁵",
+        "formula": "e\u2074+\u03b3\u207b\u2075",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
@@ -2228,63 +2229,63 @@
         "computed": 237.0,
         "error_pct": 0.0,
         "formula": "(3*(((3)^2)^2-2))",
-        "unit": "W/(m·K)"
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 2.65,
         "computed": 2.6499538677809147,
         "error_pct": 0.0017408384560462819,
-        "formula": "(1/(π)+sqrt((e+e)))",
-        "unit": "μΩ·cm"
+        "formula": "(1/(\u03c0)+sqrt((e+e)))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 10.71,
         "computed": 10.709534322265133,
         "error_pct": 0.004348064751330512,
-        "formula": "(((1+(φ/2)))^2)^2",
+        "formula": "(((1+(\u03c6/2)))^2)^2",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 26.0,
         "computed": 25.89284920015884,
         "error_pct": 0.4121,
-        "formula": "PHI⁷-PI",
+        "formula": "PHI\u2077-PI",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 23.1,
         "computed": 23.10092850280591,
         "error_pct": 0.004019492666272504,
-        "formula": "((π-γ)/((γ)^2)^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "((\u03c0-\u03b3)/((\u03b3)^2)^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.39,
         "computed": 3.389958264487283,
         "error_pct": 0.0012311360683454771,
-        "formula": "(3+1/((π-γ)))",
+        "formula": "(3+1/((\u03c0-\u03b3)))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.345,
         "computed": 0.3435826833227941,
         "error_pct": 0.4108,
-        "formula": "P_BASE·PHI",
+        "formula": "P_BASE\u00b7PHI",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 97.5,
         "computed": 97.40909103400244,
         "error_pct": 0.0932,
-        "formula": "PI⁴",
-        "unit": "mm²/s"
+        "formula": "PI\u2074",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 2.17,
@@ -2297,8 +2298,8 @@
         "target": 1.14,
         "computed": 1.1422809136128413,
         "error_pct": 0.2001,
-        "formula": "E·K",
-        "unit": "J/m²"
+        "formula": "E\u00b7K",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "AL_6061-T6"
@@ -2315,28 +2316,28 @@
         "target": 24.2,
         "computed": 24.321604900687458,
         "error_pct": 0.5025,
-        "formula": "e³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 933.5,
         "computed": 933.5542581824798,
         "error_pct": 0.0058123387766224706,
-        "formula": "(((π*(e)^2))^2/γ)",
+        "formula": "(((\u03c0*(e)^2))^2/\u03b3)",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 70.0,
         "computed": 70.20479159671953,
         "error_pct": 0.2926,
-        "formula": "e⁴+γ⁻⁵",
+        "formula": "e\u2074+\u03b3\u207b\u2075",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
@@ -2344,63 +2345,63 @@
         "computed": 237.0,
         "error_pct": 0.0,
         "formula": "(3*(((3)^2)^2-2))",
-        "unit": "W/(m·K)"
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 2.65,
         "computed": 2.6499538677809147,
         "error_pct": 0.0017408384560462819,
-        "formula": "(1/(π)+sqrt((e+e)))",
-        "unit": "μΩ·cm"
+        "formula": "(1/(\u03c0)+sqrt((e+e)))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 10.71,
         "computed": 10.709534322265133,
         "error_pct": 0.004348064751330512,
-        "formula": "(((1+(φ/2)))^2)^2",
+        "formula": "(((1+(\u03c6/2)))^2)^2",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 26.0,
         "computed": 25.89284920015884,
         "error_pct": 0.4121,
-        "formula": "PHI⁷-PI",
+        "formula": "PHI\u2077-PI",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 23.1,
         "computed": 23.10092850280591,
         "error_pct": 0.004019492666272504,
-        "formula": "((π-γ)/((γ)^2)^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "((\u03c0-\u03b3)/((\u03b3)^2)^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.39,
         "computed": 3.389958264487283,
         "error_pct": 0.0012311360683454771,
-        "formula": "(3+1/((π-γ)))",
+        "formula": "(3+1/((\u03c0-\u03b3)))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.345,
         "computed": 0.3435826833227941,
         "error_pct": 0.4108,
-        "formula": "P_BASE·PHI",
+        "formula": "P_BASE\u00b7PHI",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 97.5,
         "computed": 97.40909103400244,
         "error_pct": 0.0932,
-        "formula": "PI⁴",
-        "unit": "mm²/s"
+        "formula": "PI\u2074",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 2.17,
@@ -2413,8 +2414,8 @@
         "target": 1.14,
         "computed": 1.1422809136128413,
         "error_pct": 0.2001,
-        "formula": "E·K",
-        "unit": "J/m²"
+        "formula": "E\u00b7K",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "AL_7075-T6"
@@ -2431,28 +2432,28 @@
         "target": 24.2,
         "computed": 24.321604900687458,
         "error_pct": 0.5025,
-        "formula": "e³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 933.5,
         "computed": 933.5542581824798,
         "error_pct": 0.0058123387766224706,
-        "formula": "(((π*(e)^2))^2/γ)",
+        "formula": "(((\u03c0*(e)^2))^2/\u03b3)",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.28,
         "computed": 4.28003862850292,
         "error_pct": 0.0009025351149512367,
-        "formula": "(2+(sqrt(sqrt(3))/γ))",
+        "formula": "(2+(sqrt(sqrt(3))/\u03b3))",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 70.0,
         "computed": 70.20479159671953,
         "error_pct": 0.2926,
-        "formula": "e⁴+γ⁻⁵",
+        "formula": "e\u2074+\u03b3\u207b\u2075",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
@@ -2460,63 +2461,63 @@
         "computed": 237.0,
         "error_pct": 0.0,
         "formula": "(3*(((3)^2)^2-2))",
-        "unit": "W/(m·K)"
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 2.65,
         "computed": 2.6499538677809147,
         "error_pct": 0.0017408384560462819,
-        "formula": "(1/(π)+sqrt((e+e)))",
-        "unit": "μΩ·cm"
+        "formula": "(1/(\u03c0)+sqrt((e+e)))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 10.71,
         "computed": 10.709534322265133,
         "error_pct": 0.004348064751330512,
-        "formula": "(((1+(φ/2)))^2)^2",
+        "formula": "(((1+(\u03c6/2)))^2)^2",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 26.0,
         "computed": 25.89284920015884,
         "error_pct": 0.4121,
-        "formula": "PHI⁷-PI",
+        "formula": "PHI\u2077-PI",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 23.1,
         "computed": 23.10092850280591,
         "error_pct": 0.004019492666272504,
-        "formula": "((π-γ)/((γ)^2)^2)",
-        "unit": "10⁻⁶/K"
+        "formula": "((\u03c0-\u03b3)/((\u03b3)^2)^2)",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.39,
         "computed": 3.389958264487283,
         "error_pct": 0.0012311360683454771,
-        "formula": "(3+1/((π-γ)))",
+        "formula": "(3+1/((\u03c0-\u03b3)))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.345,
         "computed": 0.3435826833227941,
         "error_pct": 0.4108,
-        "formula": "P_BASE·PHI",
+        "formula": "P_BASE\u00b7PHI",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 97.5,
         "computed": 97.40909103400244,
         "error_pct": 0.0932,
-        "formula": "PI⁴",
-        "unit": "mm²/s"
+        "formula": "PI\u2074",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 2.17,
@@ -2529,8 +2530,8 @@
         "target": 1.14,
         "computed": 1.1422809136128413,
         "error_pct": 0.2001,
-        "formula": "E·K",
-        "unit": "J/m²"
+        "formula": "E\u00b7K",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "AL_2024-T3"
@@ -2547,49 +2548,49 @@
         "target": 4.33,
         "computed": 4.33631581720894,
         "error_pct": 0.1459,
-        "formula": "e+φ",
+        "formula": "e+\u03c6",
         "unit": "eV"
       },
       "thermal_cond_W_mK": {
         "target": 21.9,
         "computed": 21.70357091193756,
         "error_pct": 0.8969,
-        "formula": "e³+φ",
-        "unit": "W/(m·K)"
+        "formula": "e\u00b3+\u03c6",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 42.0,
         "computed": 42.0,
         "error_pct": 0.0,
         "formula": "(3*(((2)^2)^2-2))",
-        "unit": "μΩ·cm"
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 110.0,
         "computed": 109.99055899603007,
         "error_pct": 0.008582730881750484,
-        "formula": "(((π)^2+1/(φ)))^2",
+        "formula": "(((\u03c0)^2+1/(\u03c6)))^2",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 44.0,
         "computed": 44.3606797749979,
         "error_pct": 0.8197,
-        "formula": "PHI⁸-PHI²",
+        "formula": "PHI\u2078-PHI\u00b2",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 8.6,
         "computed": 8.683186676986617,
         "error_pct": 0.9673,
-        "formula": "E²+OMEGA",
-        "unit": "10⁻⁶/K"
+        "formula": "E\u00b2+OMEGA",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.85,
         "computed": 4.850076845727893,
         "error_pct": 0.001584447997794138,
-        "formula": "(3+sqrt(((2)^2-γ)))",
+        "formula": "(3+sqrt(((2)^2-\u03b3)))",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
@@ -2604,14 +2605,14 @@
         "computed": 9.2,
         "error_pct": 0.0,
         "formula": "((3)^2+1/((2+3)))",
-        "unit": "mm²/s"
+        "unit": "mm\u00b2/s"
       },
       "surface_energy_mJ_m2": {
         "target": 2.1,
         "computed": 2.094619023002242,
         "error_pct": 0.2562,
         "formula": "PI-A_BLEED",
-        "unit": "J/m²"
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "Ti-6Al-4V"
@@ -2628,64 +2629,64 @@
         "target": 200.0,
         "computed": 198.23630361533583,
         "error_pct": 0.8818,
-        "formula": "e³·π²",
+        "formula": "e\u00b3\u00b7\u03c0\u00b2",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 90.9,
         "computed": 90.55498906775276,
         "error_pct": 0.3795,
-        "formula": "π⁴-φ⁴",
-        "unit": "W/(m·K)"
+        "formula": "\u03c0\u2074-\u03c6\u2074",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 6.99,
         "computed": 7.007584181144136,
         "error_pct": 0.2516,
-        "formula": "φ⁴+POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c6\u2074+POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 180.0,
         "computed": 179.41943578287643,
         "error_pct": 0.3225,
-        "formula": "E⁵+PI³",
+        "formula": "E\u2075+PI\u00b3",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 13.0,
         "computed": 13.011197054679151,
         "error_pct": 0.0861,
-        "formula": "PI²+PI",
-        "unit": "10⁻⁶/K"
+        "formula": "PI\u00b2+PI",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.44,
         "computed": 4.439955876012397,
         "error_pct": 0.000993783504577217,
-        "formula": "(3+((π/(φ)^2))^2)",
+        "formula": "(3+((\u03c0/(\u03c6)^2))^2)",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.31,
         "computed": 0.30998746099588353,
         "error_pct": 0.004044840037568718,
-        "formula": "1/((γ+(1+sqrt(e))))",
+        "formula": "1/((\u03b3+(1+sqrt(e))))",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 23.0,
         "computed": 22.943325467023268,
         "error_pct": 0.2464,
-        "formula": "E⁴·K",
-        "unit": "mm²/s"
+        "formula": "E\u2074\u00b7K",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.88,
@@ -2698,8 +2699,8 @@
         "target": 2.38,
         "computed": 2.380020500709717,
         "error_pct": 0.0008613743578542328,
-        "formula": "(e-sqrt((1/(γ)-φ)))",
-        "unit": "J/m²"
+        "formula": "(e-sqrt((1/(\u03b3)-\u03c6)))",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "Inconel_718"
@@ -2717,64 +2718,64 @@
         "target": 200.0,
         "computed": 198.23630361533583,
         "error_pct": 0.8818,
-        "formula": "e³·π²",
+        "formula": "e\u00b3\u00b7\u03c0\u00b2",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 90.9,
         "computed": 90.55498906775276,
         "error_pct": 0.3795,
-        "formula": "π⁴-φ⁴",
-        "unit": "W/(m·K)"
+        "formula": "\u03c0\u2074-\u03c6\u2074",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 6.99,
         "computed": 7.007584181144136,
         "error_pct": 0.2516,
-        "formula": "φ⁴+POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c6\u2074+POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 180.0,
         "computed": 179.41943578287643,
         "error_pct": 0.3225,
-        "formula": "E⁵+PI³",
+        "formula": "E\u2075+PI\u00b3",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 13.0,
         "computed": 13.011197054679151,
         "error_pct": 0.0861,
-        "formula": "PI²+PI",
-        "unit": "10⁻⁶/K"
+        "formula": "PI\u00b2+PI",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.44,
         "computed": 4.439955876012397,
         "error_pct": 0.000993783504577217,
-        "formula": "(3+((π/(φ)^2))^2)",
+        "formula": "(3+((\u03c0/(\u03c6)^2))^2)",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.31,
         "computed": 0.30998746099588353,
         "error_pct": 0.004044840037568718,
-        "formula": "1/((γ+(1+sqrt(e))))",
+        "formula": "1/((\u03b3+(1+sqrt(e))))",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 23.0,
         "computed": 22.943325467023268,
         "error_pct": 0.2464,
-        "formula": "E⁴·K",
-        "unit": "mm²/s"
+        "formula": "E\u2074\u00b7K",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.88,
@@ -2787,8 +2788,8 @@
         "target": 2.38,
         "computed": 2.380020500709717,
         "error_pct": 0.0008613743578542328,
-        "formula": "(e-sqrt((1/(γ)-φ)))",
-        "unit": "J/m²"
+        "formula": "(e-sqrt((1/(\u03b3)-\u03c6)))",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "Inconel_625"
@@ -2806,64 +2807,64 @@
         "target": 200.0,
         "computed": 198.23630361533583,
         "error_pct": 0.8818,
-        "formula": "e³·π²",
+        "formula": "e\u00b3\u00b7\u03c0\u00b2",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 90.9,
         "computed": 90.55498906775276,
         "error_pct": 0.3795,
-        "formula": "π⁴-φ⁴",
-        "unit": "W/(m·K)"
+        "formula": "\u03c0\u2074-\u03c6\u2074",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 6.99,
         "computed": 7.007584181144136,
         "error_pct": 0.2516,
-        "formula": "φ⁴+POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c6\u2074+POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 180.0,
         "computed": 179.41943578287643,
         "error_pct": 0.3225,
-        "formula": "E⁵+PI³",
+        "formula": "E\u2075+PI\u00b3",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 13.0,
         "computed": 13.011197054679151,
         "error_pct": 0.0861,
-        "formula": "PI²+PI",
-        "unit": "10⁻⁶/K"
+        "formula": "PI\u00b2+PI",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.44,
         "computed": 4.439955876012397,
         "error_pct": 0.000993783504577217,
-        "formula": "(3+((π/(φ)^2))^2)",
+        "formula": "(3+((\u03c0/(\u03c6)^2))^2)",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.31,
         "computed": 0.30998746099588353,
         "error_pct": 0.004044840037568718,
-        "formula": "1/((γ+(1+sqrt(e))))",
+        "formula": "1/((\u03b3+(1+sqrt(e))))",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 23.0,
         "computed": 22.943325467023268,
         "error_pct": 0.2464,
-        "formula": "E⁴·K",
-        "unit": "mm²/s"
+        "formula": "E\u2074\u00b7K",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.88,
@@ -2876,8 +2877,8 @@
         "target": 2.38,
         "computed": 2.380020500709717,
         "error_pct": 0.0008613743578542328,
-        "formula": "(e-sqrt((1/(γ)-φ)))",
-        "unit": "J/m²"
+        "formula": "(e-sqrt((1/(\u03b3)-\u03c6)))",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "Hastelloy_C"
@@ -2895,64 +2896,64 @@
         "target": 200.0,
         "computed": 198.23630361533583,
         "error_pct": 0.8818,
-        "formula": "e³·π²",
+        "formula": "e\u00b3\u00b7\u03c0\u00b2",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 90.9,
         "computed": 90.55498906775276,
         "error_pct": 0.3795,
-        "formula": "π⁴-φ⁴",
-        "unit": "W/(m·K)"
+        "formula": "\u03c0\u2074-\u03c6\u2074",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 6.99,
         "computed": 7.007584181144136,
         "error_pct": 0.2516,
-        "formula": "φ⁴+POOF",
-        "unit": "μΩ·cm"
+        "formula": "\u03c6\u2074+POOF",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 180.0,
         "computed": 179.41943578287643,
         "error_pct": 0.3225,
-        "formula": "E⁵+PI³",
+        "formula": "E\u2075+PI\u00b3",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 76.0,
         "computed": 76.01315561749642,
         "error_pct": 0.0173,
-        "formula": "PHI⁹",
+        "formula": "PHI\u2079",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 13.0,
         "computed": 13.011197054679151,
         "error_pct": 0.0861,
-        "formula": "PI²+PI",
-        "unit": "10⁻⁶/K"
+        "formula": "PI\u00b2+PI",
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 4.44,
         "computed": 4.439955876012397,
         "error_pct": 0.000993783504577217,
-        "formula": "(3+((π/(φ)^2))^2)",
+        "formula": "(3+((\u03c0/(\u03c6)^2))^2)",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.31,
         "computed": 0.30998746099588353,
         "error_pct": 0.004044840037568718,
-        "formula": "1/((γ+(1+sqrt(e))))",
+        "formula": "1/((\u03b3+(1+sqrt(e))))",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 23.0,
         "computed": 22.943325467023268,
         "error_pct": 0.2464,
-        "formula": "E⁴·K",
-        "unit": "mm²/s"
+        "formula": "E\u2074\u00b7K",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.88,
@@ -2965,8 +2966,8 @@
         "target": 2.38,
         "computed": 2.380020500709717,
         "error_pct": 0.0008613743578542328,
-        "formula": "(e-sqrt((1/(γ)-φ)))",
-        "unit": "J/m²"
+        "formula": "(e-sqrt((1/(\u03b3)-\u03c6)))",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "Monel_400"
@@ -2984,56 +2985,56 @@
         "target": 24.44,
         "computed": 24.321604900687458,
         "error_pct": 0.4844,
-        "formula": "e³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1358.0,
         "computed": 1355.2756104382308,
         "error_pct": 0.2006177880536935,
-        "formula": "((π*(e+(3)^2)))^2",
+        "formula": "((\u03c0*(e+(3)^2)))^2",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.65,
         "computed": 4.606144427445237,
         "error_pct": 0.9431,
-        "formula": "π+φ-POOF",
+        "formula": "\u03c0+\u03c6-POOF",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 130.0,
         "computed": 130.46888719257745,
         "error_pct": 0.3607,
-        "formula": "e⁵-φ⁶",
+        "formula": "e\u2075-\u03c6\u2076",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 401.0,
         "computed": 403.4287934927351,
         "error_pct": 0.6057,
-        "formula": "e⁶",
-        "unit": "W/(m·K)"
+        "formula": "e\u2076",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 1.68,
         "computed": 1.6799905609889012,
         "error_pct": 0.0005618458987341083,
-        "formula": "(e*(φ-1))",
-        "unit": "μΩ·cm"
+        "formula": "(e*(\u03c6-1))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.26,
         "computed": 13.260092240744768,
         "error_pct": 0.0006956315593404662,
-        "formula": "(φ+(sqrt(π)+(π)^2))",
+        "formula": "(\u03c6+(sqrt(\u03c0)+(\u03c0)^2))",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 140.0,
         "computed": 141.02410300364596,
         "error_pct": 0.7315,
-        "formula": "E⁵-E²",
+        "formula": "E\u2075-E\u00b2",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -3048,7 +3049,7 @@
         "computed": 17.0,
         "error_pct": 0.0,
         "formula": "(1+((2)^2)^2)",
-        "unit": "10⁻⁶/K"
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.49,
@@ -3061,15 +3062,15 @@
         "target": 0.343,
         "computed": 0.3435826833227941,
         "error_pct": 0.1699,
-        "formula": "P_BASE·PHI",
+        "formula": "P_BASE\u00b7PHI",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 117.0,
         "computed": 117.40688242227678,
         "error_pct": 0.3478,
-        "formula": "E⁵-PI³",
-        "unit": "mm²/s"
+        "formula": "E\u2075-PI\u00b3",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.96,
@@ -3082,8 +3083,8 @@
         "target": 1.79,
         "computed": 1.7899979479289336,
         "error_pct": 0.00011464084169861162,
-        "formula": "sqrt((π+1/(((2)^2)^2)))",
-        "unit": "J/m²"
+        "formula": "sqrt((\u03c0+1/(((2)^2)^2)))",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "Brass_C360"
@@ -3100,56 +3101,56 @@
         "target": 24.44,
         "computed": 24.321604900687458,
         "error_pct": 0.4844,
-        "formula": "e³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1358.0,
         "computed": 1355.2756104382308,
         "error_pct": 0.2006177880536935,
-        "formula": "((π*(e+(3)^2)))^2",
+        "formula": "((\u03c0*(e+(3)^2)))^2",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.65,
         "computed": 4.606144427445237,
         "error_pct": 0.9431,
-        "formula": "π+φ-POOF",
+        "formula": "\u03c0+\u03c6-POOF",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 130.0,
         "computed": 130.46888719257745,
         "error_pct": 0.3607,
-        "formula": "e⁵-φ⁶",
+        "formula": "e\u2075-\u03c6\u2076",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 401.0,
         "computed": 403.4287934927351,
         "error_pct": 0.6057,
-        "formula": "e⁶",
-        "unit": "W/(m·K)"
+        "formula": "e\u2076",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 1.68,
         "computed": 1.6799905609889012,
         "error_pct": 0.0005618458987341083,
-        "formula": "(e*(φ-1))",
-        "unit": "μΩ·cm"
+        "formula": "(e*(\u03c6-1))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.26,
         "computed": 13.260092240744768,
         "error_pct": 0.0006956315593404662,
-        "formula": "(φ+(sqrt(π)+(π)^2))",
+        "formula": "(\u03c6+(sqrt(\u03c0)+(\u03c0)^2))",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 140.0,
         "computed": 141.02410300364596,
         "error_pct": 0.7315,
-        "formula": "E⁵-E²",
+        "formula": "E\u2075-E\u00b2",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -3164,7 +3165,7 @@
         "computed": 17.0,
         "error_pct": 0.0,
         "formula": "(1+((2)^2)^2)",
-        "unit": "10⁻⁶/K"
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.49,
@@ -3177,15 +3178,15 @@
         "target": 0.343,
         "computed": 0.3435826833227941,
         "error_pct": 0.1699,
-        "formula": "P_BASE·PHI",
+        "formula": "P_BASE\u00b7PHI",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 117.0,
         "computed": 117.40688242227678,
         "error_pct": 0.3478,
-        "formula": "E⁵-PI³",
-        "unit": "mm²/s"
+        "formula": "E\u2075-PI\u00b3",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.96,
@@ -3198,8 +3199,8 @@
         "target": 1.79,
         "computed": 1.7899979479289336,
         "error_pct": 0.00011464084169861162,
-        "formula": "sqrt((π+1/(((2)^2)^2)))",
-        "unit": "J/m²"
+        "formula": "sqrt((\u03c0+1/(((2)^2)^2)))",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "BeCu_C17200"
@@ -3216,56 +3217,56 @@
         "target": 24.44,
         "computed": 24.321604900687458,
         "error_pct": 0.4844,
-        "formula": "e³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1358.0,
         "computed": 1355.2756104382308,
         "error_pct": 0.2006177880536935,
-        "formula": "((π*(e+(3)^2)))^2",
+        "formula": "((\u03c0*(e+(3)^2)))^2",
         "unit": "K"
       },
       "work_function_eV": {
         "target": 4.65,
         "computed": 4.606144427445237,
         "error_pct": 0.9431,
-        "formula": "π+φ-POOF",
+        "formula": "\u03c0+\u03c6-POOF",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 130.0,
         "computed": 130.46888719257745,
         "error_pct": 0.3607,
-        "formula": "e⁵-φ⁶",
+        "formula": "e\u2075-\u03c6\u2076",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 401.0,
         "computed": 403.4287934927351,
         "error_pct": 0.6057,
-        "formula": "e⁶",
-        "unit": "W/(m·K)"
+        "formula": "e\u2076",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 1.68,
         "computed": 1.6799905609889012,
         "error_pct": 0.0005618458987341083,
-        "formula": "(e*(φ-1))",
-        "unit": "μΩ·cm"
+        "formula": "(e*(\u03c6-1))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "h_fus_kJ_mol": {
         "target": 13.26,
         "computed": 13.260092240744768,
         "error_pct": 0.0006956315593404662,
-        "formula": "(φ+(sqrt(π)+(π)^2))",
+        "formula": "(\u03c6+(sqrt(\u03c0)+(\u03c0)^2))",
         "unit": "kJ/mol"
       },
       "bulk_GPa": {
         "target": 140.0,
         "computed": 141.02410300364596,
         "error_pct": 0.7315,
-        "formula": "E⁵-E²",
+        "formula": "E\u2075-E\u00b2",
         "unit": "GPa"
       },
       "shear_GPa": {
@@ -3280,7 +3281,7 @@
         "computed": 17.0,
         "error_pct": 0.0,
         "formula": "(1+((2)^2)^2)",
-        "unit": "10⁻⁶/K"
+        "unit": "10\u207b\u2076/K"
       },
       "cohesive_eV": {
         "target": 3.49,
@@ -3293,15 +3294,15 @@
         "target": 0.343,
         "computed": 0.3435826833227941,
         "error_pct": 0.1699,
-        "formula": "P_BASE·PHI",
+        "formula": "P_BASE\u00b7PHI",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 117.0,
         "computed": 117.40688242227678,
         "error_pct": 0.3478,
-        "formula": "E⁵-PI³",
-        "unit": "mm²/s"
+        "formula": "E\u2075-PI\u00b3",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.96,
@@ -3314,8 +3315,8 @@
         "target": 1.79,
         "computed": 1.7899979479289336,
         "error_pct": 0.00011464084169861162,
-        "formula": "sqrt((π+1/(((2)^2)^2)))",
-        "unit": "J/m²"
+        "formula": "sqrt((\u03c0+1/(((2)^2)^2)))",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "Bronze_954"
@@ -3332,49 +3333,49 @@
         "target": 4.55,
         "computed": 4.548661593448318,
         "error_pct": 0.0294,
-        "formula": "e+φ+P_BASE",
+        "formula": "e+\u03c6+P_BASE",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 411.0,
         "computed": 412.6315312464996,
         "error_pct": 0.397,
-        "formula": "π⁴·φ³",
+        "formula": "\u03c0\u2074\u00b7\u03c6\u00b3",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 173.0,
         "computed": 172.73476400326405,
         "error_pct": 0.1533,
-        "formula": "e⁵+e³+φ³",
-        "unit": "W/(m·K)"
+        "formula": "e\u2075+e\u00b3+\u03c6\u00b3",
+        "unit": "W/(m\u00b7K)"
       },
       "resistivity_uOhm_cm": {
         "target": 5.28,
         "computed": 5.28003862850292,
         "error_pct": 0.0007316004340892601,
-        "formula": "(3+(sqrt(sqrt(3))/γ))",
-        "unit": "μΩ·cm"
+        "formula": "(3+(sqrt(sqrt(3))/\u03b3))",
+        "unit": "\u03bc\u03a9\u00b7cm"
       },
       "bulk_GPa": {
         "target": 310.0,
         "computed": 309.16127743887125,
         "error_pct": 0.2706,
-        "formula": "PI⁵+PI",
+        "formula": "PI\u2075+PI",
         "unit": "GPa"
       },
       "cohesive_eV": {
         "target": 8.9,
         "computed": 8.911902198468796,
         "error_pct": 0.1337,
-        "formula": "PI²-C_EFF",
+        "formula": "PI\u00b2-C_EFF",
         "unit": "eV/atom"
       },
       "poisson_ratio": {
         "target": 0.28,
         "computed": 0.2799984268314835,
         "error_pct": 0.0005618458987539336,
-        "formula": "(e/(φ*(2*3)))",
+        "formula": "(e/(\u03c6*(2*3)))",
         "unit": "dimensionless"
       },
       "grueneisen": {
@@ -3388,8 +3389,8 @@
         "target": 3.27,
         "computed": 3.2699579216718915,
         "error_pct": 0.0012867990247260332,
-        "formula": "(π+(1-sqrt(sqrt(γ))))",
-        "unit": "J/m²"
+        "formula": "(\u03c0+(1-sqrt(sqrt(\u03b3))))",
+        "unit": "J/m\u00b2"
       },
       "_aliases": [
         "Tungsten"
@@ -3407,14 +3408,14 @@
         "target": 3.66,
         "computed": 3.659955337936487,
         "error_pct": 0.0012202749593792032,
-        "formula": "(1+(3/sqrt(sqrt(φ))))",
+        "formula": "(1+(3/sqrt(sqrt(\u03c6))))",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 45.0,
         "computed": 45.3606797749979,
         "error_pct": 0.8015,
-        "formula": "φ⁸-φ",
+        "formula": "\u03c6\u2078-\u03c6",
         "unit": "GPa"
       },
       "_aliases": [
@@ -3431,85 +3432,85 @@
   "molecules": {
     "H2": {
       "_aliases": [
-        "H₂(g)",
-        "H₂",
+        "H\u2082(g)",
+        "H\u2082",
         "H2"
       ],
       "cp_J_molK": {
         "target": 28.84,
         "computed": 29.034441853748632,
         "error_pct": 0.6742,
-        "formula": "φ⁸-φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "\u03c6\u2078-\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "speed_sound_m_s": {
         "target": 1270.0,
         "computed": 1267.408878360586,
         "error_pct": 0.204,
-        "formula": "π⁶+π⁵",
+        "formula": "\u03c0\u2076+\u03c0\u2075",
         "unit": "m/s"
       },
       "critical_T_K": {
         "target": 33.19,
         "computed": 33.1888547299962,
         "error_pct": 0.0034506477969158894,
-        "formula": "((1/(π)+(π/γ)))^2",
+        "formula": "((1/(\u03c0)+(\u03c0/\u03b3)))^2",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 0.904,
         "computed": 0.9039995635793291,
         "error_pct": 4.8276622891048464e-05,
-        "formula": "sqrt(sqrt((φ/(3-γ))))",
+        "formula": "sqrt(sqrt((\u03c6/(3-\u03b3))))",
         "unit": "kJ/mol"
       },
       "cp_cv_ratio": {
         "target": 1.405,
         "computed": 1.4049955175523368,
         "error_pct": 0.0003190354208731433,
-        "formula": "(3-sqrt((2*sqrt(φ))))",
+        "formula": "(3-sqrt((2*sqrt(\u03c6))))",
         "unit": "dimensionless"
       },
       "h_comb_kJ_mol": {
         "target": 285.8,
         "computed": 285.93414786209377,
         "error_pct": 0.0469,
-        "formula": "PI⁵-E³",
+        "formula": "PI\u2075-E\u00b3",
         "unit": "kJ/mol"
       },
       "critical_P_bar": {
         "target": 12.98,
         "computed": 13.011197054679151,
         "error_pct": 0.2403,
-        "formula": "PI²+PI",
+        "formula": "PI\u00b2+PI",
         "unit": "atm"
       }
     },
     "N2": {
       "_aliases": [
-        "N₂(g)",
-        "N₂",
+        "N\u2082(g)",
+        "N\u2082",
         "N2"
       ],
       "cp_J_molK": {
         "target": 29.12,
         "computed": 29.034441853748632,
         "error_pct": 0.2938,
-        "formula": "φ⁸-φ⁶",
-        "unit": "J/(mol·K)"
+        "formula": "\u03c6\u2078-\u03c6\u2076",
+        "unit": "J/(mol\u00b7K)"
       },
       "boiling_K": {
         "target": 77.36,
         "computed": 77.98499044404761,
         "error_pct": 0.8079,
-        "formula": "φ⁸+π³",
+        "formula": "\u03c6\u2078+\u03c0\u00b3",
         "unit": "K"
       },
       "speed_sound_m_s": {
         "target": 349.0,
         "computed": 348.8306434595909,
         "error_pct": 0.0485,
-        "formula": "e⁶-e⁴",
+        "formula": "e\u2076-e\u2074",
         "unit": "m/s"
       },
       "h_fus_kJ_mol": {
@@ -3530,49 +3531,49 @@
         "target": 33.94,
         "computed": 33.74351244334934,
         "error_pct": 0.5789,
-        "formula": "E⁴/PHI",
+        "formula": "E\u2074/PHI",
         "unit": "atm"
       }
     },
     "O2": {
       "_aliases": [
-        "O₂(g)",
-        "O₂",
+        "O\u2082(g)",
+        "O\u2082",
         "O2"
       ],
       "cp_J_molK": {
         "target": 29.38,
         "computed": 29.273821965699188,
         "error_pct": 0.3614,
-        "formula": "π³-γ⁻¹",
-        "unit": "J/(mol·K)"
+        "formula": "\u03c0\u00b3-\u03b3\u207b\u00b9",
+        "unit": "J/(mol\u00b7K)"
       },
       "boiling_K": {
         "target": 90.19,
         "computed": 90.02003493507179,
         "error_pct": 0.1885,
-        "formula": "π⁴-e²",
+        "formula": "\u03c0\u2074-e\u00b2",
         "unit": "K"
       },
       "speed_sound_m_s": {
         "target": 326.0,
         "computed": 326.1052217084691,
         "error_pct": 0.0323,
-        "formula": "π⁵+e³",
+        "formula": "\u03c0\u2075+e\u00b3",
         "unit": "m/s"
       },
       "critical_T_K": {
         "target": 154.58,
         "computed": 154.60389320133612,
         "error_pct": 0.015456851685928289,
-        "formula": "((π-(γ-(π)^2)))^2",
+        "formula": "((\u03c0-(\u03b3-(\u03c0)^2)))^2",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 6.82,
         "computed": 6.854101966249685,
         "error_pct": 0.5,
-        "formula": "PHI⁴",
+        "formula": "PHI\u2074",
         "unit": "kJ/mol"
       },
       "h_fus_kJ_mol": {
@@ -3593,29 +3594,29 @@
         "target": 50.43,
         "computed": 50.16920953330837,
         "error_pct": 0.5171,
-        "formula": "PI³·PHI",
+        "formula": "PI\u00b3\u00b7PHI",
         "unit": "atm"
       }
     },
     "H2O": {
       "_aliases": [
-        "H₂O(l)",
-        "H₂O(g)",
-        "H₂O",
+        "H\u2082O(l)",
+        "H\u2082O(g)",
+        "H\u2082O",
         "Water"
       ],
       "cp_J_molK": {
         "target": 33.58,
         "computed": 33.62431066904971,
         "error_pct": 0.132,
-        "formula": "π³+φ²",
-        "unit": "J/(mol·K)"
+        "formula": "\u03c0\u00b3+\u03c6\u00b2",
+        "unit": "J/(mol\u00b7K)"
       },
       "surface_tension_mNm": {
         "target": 72.75,
         "computed": 72.5424219431434,
         "error_pct": 0.2853,
-        "formula": "e⁴+φ⁶",
+        "formula": "e\u2074+\u03c6\u2076",
         "unit": "mN/m"
       },
       "viscosity": {
@@ -3623,13 +3624,13 @@
         "computed": 1.000286568515822,
         "error_pct": 0.171,
         "formula": "B_IN+P_BASE",
-        "unit": "mPa·s"
+        "unit": "mPa\u00b7s"
       },
       "boiling_K": {
         "target": 373.15,
         "computed": 374.2212874957692,
         "error_pct": 0.2871,
-        "formula": "e⁴·φ⁴",
+        "formula": "e\u2074\u00b7\u03c6\u2074",
         "unit": "K"
       },
       "dielectric": {
@@ -3650,35 +3651,35 @@
         "target": 0.606,
         "computed": 0.605980292546884,
         "error_pct": 0.0032520549696318664,
-        "formula": "1/((1+sqrt((1-γ))))",
-        "unit": "W/(m·K)"
+        "formula": "1/((1+sqrt((1-\u03b3))))",
+        "unit": "W/(m\u00b7K)"
       },
       "speed_sound_m_s": {
         "target": 1481.0,
         "computed": 1482.1176800111946,
         "error_pct": 0.0755,
-        "formula": "e⁷+e⁶-φ⁶",
+        "formula": "e\u2077+e\u2076-\u03c6\u2076",
         "unit": "m/s"
       },
       "critical_T_K": {
         "target": 647.1,
         "computed": 652.7614999116079,
         "error_pct": 0.8749,
-        "formula": "E⁶·PHI",
+        "formula": "E\u2076\u00b7PHI",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 40.65,
         "computed": 40.87588108138918,
         "error_pct": 0.5557,
-        "formula": "PI³+PI²",
+        "formula": "PI\u00b3+PI\u00b2",
         "unit": "kJ/mol"
       },
       "h_fus_kJ_mol": {
         "target": 6.01,
         "computed": 6.009829316040607,
         "error_pct": 0.0028399993243411526,
-        "formula": "((π/e)+(φ*3))",
+        "formula": "((\u03c0/e)+(\u03c6*3))",
         "unit": "kJ/mol"
       },
       "vapor_p_kPa": {
@@ -3693,41 +3694,41 @@
         "computed": 45.24943474548015,
         "error_pct": 0.0012,
         "formula": "E^2+PI^3+PHI^4",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 18.07,
         "computed": 18.04451974970831,
         "error_pct": 0.141,
         "formula": "E^1+PHI^3+PHI^5",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       }
     },
     "CO2": {
       "_aliases": [
-        "CO₂(g)",
-        "CO₂",
+        "CO\u2082(g)",
+        "CO\u2082",
         "CO2"
       ],
       "cp_J_molK": {
         "target": 37.11,
         "computed": 37.20696196175629,
         "error_pct": 0.2613,
-        "formula": "π⁴/φ²",
-        "unit": "J/(mol·K)"
+        "formula": "\u03c0\u2074/\u03c6\u00b2",
+        "unit": "J/(mol\u00b7K)"
       },
       "speed_sound_m_s": {
         "target": 259.0,
         "computed": 259.04097102153366,
         "error_pct": 0.0158,
-        "formula": "π⁵-φ⁸",
+        "formula": "\u03c0\u2075-\u03c6\u2078",
         "unit": "m/s"
       },
       "critical_T_K": {
         "target": 304.13,
         "computed": 306.01968478528147,
         "error_pct": 0.6213,
-        "formula": "PI⁵",
+        "formula": "PI\u2075",
         "unit": "K"
       },
       "cp_cv_ratio": {
@@ -3741,7 +3742,7 @@
         "target": 72.86,
         "computed": 72.92706059390211,
         "error_pct": 0.092,
-        "formula": "PI²·E²",
+        "formula": "PI\u00b2\u00b7E\u00b2",
         "unit": "atm"
       }
     },
@@ -3754,35 +3755,35 @@
         "target": 8.53,
         "computed": 8.47213595499958,
         "error_pct": 0.6784,
-        "formula": "φ⁴+φ",
-        "unit": "J/(mol·K)"
+        "formula": "\u03c6\u2074+\u03c6",
+        "unit": "J/(mol\u00b7K)"
       }
     },
     "CH4": {
       "_aliases": [
-        "CH₄(g)",
-        "CH₄",
+        "CH\u2084(g)",
+        "CH\u2084",
         "CH4"
       ],
       "cp_J_molK": {
         "target": 35.31,
         "computed": 35.24234465779961,
         "error_pct": 0.1916,
-        "formula": "π³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "\u03c0\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "boiling_K": {
         "target": 111.7,
         "computed": 111.70449772400784,
         "error_pct": 0.004026610571024066,
-        "formula": "(((3)^2+(e*γ)))^2",
+        "formula": "(((3)^2+(e*\u03b3)))^2",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 8.19,
         "computed": 8.224796345905053,
         "error_pct": 0.4249,
-        "formula": "PI·PHI²",
+        "formula": "PI\u00b7PHI\u00b2",
         "unit": "kJ/mol"
       },
       "cp_cv_ratio": {
@@ -3796,7 +3797,7 @@
         "target": 890.4,
         "computed": 889.7314359814501,
         "error_pct": 0.07508580621629457,
-        "formula": "((3+(e*(π)^2)))^2",
+        "formula": "((3+(e*(\u03c0)^2)))^2",
         "unit": "kJ/mol"
       },
       "critical_P_bar": {
@@ -3809,29 +3810,29 @@
     },
     "NH3": {
       "_aliases": [
-        "NH₃(g)",
-        "NH₃",
+        "NH\u2083(g)",
+        "NH\u2083",
         "NH3"
       ],
       "cp_J_molK": {
         "target": 35.06,
         "computed": 35.24234465779961,
         "error_pct": 0.5201,
-        "formula": "π³+φ³",
-        "unit": "J/(mol·K)"
+        "formula": "\u03c0\u00b3+\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "critical_T_K": {
         "target": 405.4,
         "computed": 403.4287934927351,
         "error_pct": 0.4862,
-        "formula": "E⁶",
+        "formula": "E\u2076",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 23.33,
         "computed": 23.22712957677746,
         "error_pct": 0.4409,
-        "formula": "E³+PI",
+        "formula": "E\u00b3+PI",
         "unit": "kJ/mol"
       },
       "cp_cv_ratio": {
@@ -3845,7 +3846,7 @@
         "target": 112.8,
         "computed": 112.57835062627026,
         "error_pct": 0.1965,
-        "formula": "PI⁵/E",
+        "formula": "PI\u2075/E",
         "unit": "atm"
       }
     },
@@ -3858,14 +3859,14 @@
         "target": 50.5,
         "computed": 50.36208205564445,
         "error_pct": 0.2731,
-        "formula": "e⁴-φ³",
-        "unit": "J/(mol·K)"
+        "formula": "e\u2074-\u03c6\u00b3",
+        "unit": "J/(mol\u00b7K)"
       },
       "melting_K": {
         "target": 1074.0,
         "computed": 1076.5476215052709,
         "error_pct": 0.2372,
-        "formula": "e⁷-e³",
+        "formula": "e\u2077-e\u00b3",
         "unit": "K"
       },
       "refractive_index": {
@@ -3878,35 +3879,35 @@
     },
     "CH3OH": {
       "_aliases": [
-        "CH₃OH",
+        "CH\u2083OH",
         "Methanol"
       ],
       "surface_tension_mNm": {
         "target": 22.5,
         "computed": 22.70357091193756,
         "error_pct": 0.9048,
-        "formula": "e³+φ²",
+        "formula": "e\u00b3+\u03c6\u00b2",
         "unit": "mN/m"
       },
       "viscosity": {
         "target": 0.594,
         "computed": 0.5952414395777111,
         "error_pct": 0.209,
-        "formula": "φ/e",
-        "unit": "mPa·s"
+        "formula": "\u03c6/e",
+        "unit": "mPa\u00b7s"
       },
       "boiling_K": {
         "target": 337.7,
         "computed": 337.86426104176576,
         "error_pct": 0.04864111393715407,
-        "formula": "(((e+(e*γ)))^2)^2",
+        "formula": "(((e+(e*\u03b3)))^2)^2",
         "unit": "K"
       },
       "dielectric": {
         "target": 32.7,
         "computed": 32.738731394900455,
         "error_pct": 0.1184,
-        "formula": "π³+γ⁻¹",
+        "formula": "\u03c0\u00b3+\u03b3\u207b\u00b9",
         "unit": "dimensionless"
       },
       "refractive_index": {
@@ -3920,7 +3921,7 @@
         "target": 1103.0,
         "computed": 1096.6331584284585,
         "error_pct": 0.5772,
-        "formula": "e⁷",
+        "formula": "e\u2077",
         "unit": "m/s"
       },
       "vapor_p_kPa": {
@@ -3935,14 +3936,14 @@
         "computed": 122.99186938124426,
         "error_pct": 0.0878,
         "formula": "PHI^8+PHI^9",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 40.73,
         "computed": 40.748090661645875,
         "error_pct": 0.0444,
         "formula": "E^1+E^3+PHI^6",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       },
       "autoignition_K": {
         "target": 658.0,
@@ -3954,7 +3955,7 @@
     },
     "C2H5OH": {
       "_aliases": [
-        "C₂H₅OH",
+        "C\u2082H\u2085OH",
         "ethanol",
         "C2H5OH",
         "Ethanol"
@@ -3963,7 +3964,7 @@
         "target": 22.39,
         "computed": 22.388483282497056,
         "error_pct": 0.006774084425836028,
-        "formula": "((3*(γ+1)))^2",
+        "formula": "((3*(\u03b3+1)))^2",
         "unit": "mN/m"
       },
       "viscosity": {
@@ -3971,20 +3972,20 @@
         "computed": 1.2081624564371403,
         "error_pct": 0.6802,
         "formula": "B_IN+K",
-        "unit": "mPa·s"
+        "unit": "mPa\u00b7s"
       },
       "boiling_K": {
         "target": 351.4,
         "computed": 351.2415811939241,
         "error_pct": 0.045082187272587365,
-        "formula": "(((3)^2)^2*(e+φ))",
+        "formula": "(((3)^2)^2*(e+\u03c6))",
         "unit": "K"
       },
       "dielectric": {
         "target": 24.55,
         "computed": 24.321604900687458,
         "error_pct": 0.9303,
-        "formula": "e³+φ³",
+        "formula": "e\u00b3+\u03c6\u00b3",
         "unit": "dimensionless"
       },
       "refractive_index": {
@@ -3998,28 +3999,28 @@
         "target": 1162.0,
         "computed": 1151.2313084616028,
         "error_pct": 0.9267,
-        "formula": "e⁷+e⁴",
+        "formula": "e\u2077+e\u2074",
         "unit": "m/s"
       },
       "critical_T_K": {
         "target": 513.92,
         "computed": 513.7830056166733,
         "error_pct": 0.02665675267096501,
-        "formula": "(γ+(((π+φ))^2)^2)",
+        "formula": "(\u03b3+(((\u03c0+\u03c6))^2)^2)",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 38.56,
         "computed": 38.39533277923047,
         "error_pct": 0.427,
-        "formula": "PI³+E²",
+        "formula": "PI\u00b3+E\u00b2",
         "unit": "kJ/mol"
       },
       "h_comb_kJ_mol": {
         "target": 1366.8,
         "computed": 1364.0007331374359,
         "error_pct": 0.2048,
-        "formula": "PHI¹⁵",
+        "formula": "PHI\u00b9\u2075",
         "unit": "kJ/mol"
       },
       "vapor_p_kPa": {
@@ -4034,14 +4035,14 @@
         "computed": 113.87353426404596,
         "error_pct": 0.1526,
         "formula": "PI^3+PHI^4+PHI^9",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 58.68,
         "computed": 58.603837840178244,
         "error_pct": 0.1298,
         "formula": "E^2+PHI^3+PHI^8",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       },
       "autoignition_K": {
         "target": 636.0,
@@ -4060,28 +4061,28 @@
         "target": 23.7,
         "computed": 23.699139710769643,
         "error_pct": 0.003629912364373058,
-        "formula": "((π)^2+((π+γ))^2)",
+        "formula": "((\u03c0)^2+((\u03c0+\u03b3))^2)",
         "unit": "mN/m"
       },
       "boiling_K": {
         "target": 329.2,
         "computed": 329.1503536809492,
         "error_pct": 0.015080898861115997,
-        "formula": "((((φ*2))^2/γ))^2",
+        "formula": "((((\u03c6*2))^2/\u03b3))^2",
         "unit": "K"
       },
       "refractive_index": {
         "target": 1.359,
         "computed": 1.3589979545427477,
         "error_pct": 0.0001505119390906655,
-        "formula": "sqrt(((2/γ)-φ))",
+        "formula": "sqrt(((2/\u03b3)-\u03c6))",
         "unit": "dimensionless"
       },
       "h_vap_kJ_mol": {
         "target": 31.3,
         "computed": 31.00627668029982,
         "error_pct": 0.9384,
-        "formula": "PI³",
+        "formula": "PI\u00b3",
         "unit": "kJ/mol"
       },
       "vapor_p_kPa": {
@@ -4096,14 +4097,14 @@
         "computed": 126.23281921507763,
         "error_pct": 0.0532,
         "formula": "E^5+PHI^4-PHI^7",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 73.53,
         "computed": 73.39512162874655,
         "error_pct": 0.1834,
         "formula": "PHI^9-PHI^2",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       },
       "autoignition_K": {
         "target": 738.0,
@@ -4115,7 +4116,7 @@
     },
     "C6H6": {
       "_aliases": [
-        "C₆H₆",
+        "C\u2086H\u2086",
         "benzene",
         "Benzene"
       ],
@@ -4123,49 +4124,49 @@
         "target": 28.88,
         "computed": 29.034441853748632,
         "error_pct": 0.5348,
-        "formula": "φ⁸-φ⁶",
+        "formula": "\u03c6\u2078-\u03c6\u2076",
         "unit": "mN/m"
       },
       "boiling_K": {
         "target": 353.2,
         "computed": 353.36664990597427,
         "error_pct": 0.04718287258615002,
-        "formula": "(φ*((2*(e)^2))^2)",
+        "formula": "(\u03c6*((2*(e)^2))^2)",
         "unit": "K"
       },
       "melting_K": {
         "target": 278.7,
         "computed": 280.04981981868946,
         "error_pct": 0.4843,
-        "formula": "γ⁻⁵·φ⁶",
+        "formula": "\u03b3\u207b\u2075\u00b7\u03c6\u2076",
         "unit": "K"
       },
       "dielectric": {
         "target": 2.28,
         "computed": 2.280033080121436,
         "error_pct": 0.0014508825191370221,
-        "formula": "(φ*(π-1/(γ)))",
+        "formula": "(\u03c6*(\u03c0-1/(\u03b3)))",
         "unit": "dimensionless"
       },
       "refractive_index": {
         "target": 1.501,
         "computed": 1.5009852744139671,
         "error_pct": 0.0009810517010507048,
-        "formula": "(sqrt(e)*(γ+(γ)^2))",
+        "formula": "(sqrt(e)*(\u03b3+(\u03b3)^2))",
         "unit": "dimensionless"
       },
       "h_vap_kJ_mol": {
         "target": 30.72,
         "computed": 31.00627668029982,
         "error_pct": 0.9319,
-        "formula": "PI³",
+        "formula": "PI\u00b3",
         "unit": "kJ/mol"
       },
       "h_fus_kJ_mol": {
         "target": 9.87,
         "computed": 9.869604401089358,
         "error_pct": 0.004,
-        "formula": "PI²",
+        "formula": "PI\u00b2",
         "unit": "kJ/mol"
       },
       "vapor_p_kPa": {
@@ -4180,14 +4181,14 @@
         "computed": 96.57546151624551,
         "error_pct": 0.0782,
         "formula": "PHI^2+PHI^6+PHI^9",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 89.41,
         "computed": 89.46051374384274,
         "error_pct": 0.0565,
         "formula": "PI^1+PI^4-PHI^5",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       },
       "autoignition_K": {
         "target": 771.0,
@@ -4199,35 +4200,35 @@
     },
     "CCl4": {
       "_aliases": [
-        "CCl₄",
+        "CCl\u2084",
         "CCl4"
       ],
       "surface_tension_mNm": {
         "target": 26.43,
         "computed": 26.43056129807596,
         "error_pct": 0.0021237157622455644,
-        "formula": "((e-(γ-3)))^2",
+        "formula": "((e-(\u03b3-3)))^2",
         "unit": "mN/m"
       },
       "viscosity": {
         "target": 0.969,
         "computed": 0.968987180076485,
         "error_pct": 0.0013230055227021625,
-        "formula": "(e/sqrt(((π)^2-2)))",
-        "unit": "mPa·s"
+        "formula": "(e/sqrt(((\u03c0)^2-2)))",
+        "unit": "mPa\u00b7s"
       },
       "boiling_K": {
         "target": 349.9,
         "computed": 347.1283514559379,
         "error_pct": 0.7921,
-        "formula": "φ⁸·e²",
+        "formula": "\u03c6\u2078\u00b7e\u00b2",
         "unit": "K"
       },
       "dielectric": {
         "target": 2.24,
         "computed": 2.23606797749979,
         "error_pct": 0.1755,
-        "formula": "φ+GATE",
+        "formula": "\u03c6+GATE",
         "unit": "dimensionless"
       },
       "refractive_index": {
@@ -4249,26 +4250,26 @@
         "computed": 107.27869543509178,
         "error_pct": 0.0199,
         "formula": "PI^2+PI^4",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 97.09,
         "computed": 97.09902018108541,
         "error_pct": 0.0093,
         "formula": "PI^1+PHI^6+PHI^9",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       }
     },
     "CHCl3": {
       "_aliases": [
-        "CHCl₃",
+        "CHCl\u2083",
         "Chloroform"
       ],
       "surface_tension_mNm": {
         "target": 27.16,
         "computed": 26.93963888943735,
         "error_pct": 0.8113,
-        "formula": "e³+φ⁴",
+        "formula": "e\u00b3+\u03c6\u2074",
         "unit": "mN/m"
       },
       "dielectric": {
@@ -4297,14 +4298,14 @@
         "computed": 100.55068368759221,
         "error_pct": 0.0504,
         "formula": "PI^1+PI^4",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 80.67,
         "computed": 80.70327227250667,
         "error_pct": 0.0412,
         "formula": "E^1+PI^3+PHI^8",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       }
     },
     "Toluene": {
@@ -4316,35 +4317,35 @@
         "target": 28.52,
         "computed": 28.52368610759433,
         "error_pct": 0.012924640933835793,
-        "formula": "((π)^2*(φ+sqrt(φ)))",
+        "formula": "((\u03c0)^2*(\u03c6+sqrt(\u03c6)))",
         "unit": "mN/m"
       },
       "viscosity": {
         "target": 0.59,
         "computed": 0.5952414395777111,
         "error_pct": 0.8884,
-        "formula": "φ/e",
-        "unit": "mPa·s"
+        "formula": "\u03c6/e",
+        "unit": "mPa\u00b7s"
       },
       "dielectric": {
         "target": 2.38,
         "computed": 2.380020500709717,
         "error_pct": 0.0008613743578542328,
-        "formula": "(e-sqrt((1/(γ)-φ)))",
+        "formula": "(e-sqrt((1/(\u03b3)-\u03c6)))",
         "unit": "dimensionless"
       },
       "refractive_index": {
         "target": 1.497,
         "computed": 1.4970343185725872,
         "error_pct": 0.002292489818775317,
-        "formula": "(sqrt(π)-(e/(π)^2))",
+        "formula": "(sqrt(\u03c0)-(e/(\u03c0)^2))",
         "unit": "dimensionless"
       },
       "vapor_p_kPa": {
         "target": 28.4,
         "computed": 28.400682642694072,
         "error_pct": 0.0024,
-        "formula": "PI^3·G",
+        "formula": "PI^3\u00b7G",
         "unit": "mmHg"
       },
       "compressibility_1e_11_Pa": {
@@ -4352,14 +4353,14 @@
         "computed": 92.4855404082678,
         "error_pct": 0.0156,
         "formula": "E^3+E^5-PHI^9",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 106.85,
         "computed": 106.881226989002,
         "error_pct": 0.0292,
         "formula": "PI^4+PHI^2+PHI^4",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       }
     },
     "n-Hexane": {
@@ -4371,14 +4372,14 @@
         "target": 18.43,
         "computed": 18.353082208587033,
         "error_pct": 0.4174,
-        "formula": "e³-γ⁻¹",
+        "formula": "e\u00b3-\u03b3\u207b\u00b9",
         "unit": "mN/m"
       },
       "boiling_K": {
         "target": 341.9,
         "computed": 343.8648777074413,
         "error_pct": 0.5747,
-        "formula": "π³·φ⁵",
+        "formula": "\u03c0\u00b3\u00b7\u03c6\u2075",
         "unit": "K"
       },
       "refractive_index": {
@@ -4400,14 +4401,14 @@
         "computed": 166.8923851452567,
         "error_pct": 0.0644,
         "formula": "E^2+E^5+PHI^5",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 131.62,
         "computed": 131.55696036789203,
         "error_pct": 0.0479,
         "formula": "PI^1+PI^3+PI^4",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       },
       "autoignition_K": {
         "target": 498.0,
@@ -4427,35 +4428,35 @@
         "target": 17.01,
         "computed": 16.943944269597875,
         "error_pct": 0.3883,
-        "formula": "e³-π",
+        "formula": "e\u00b3-\u03c0",
         "unit": "mN/m"
       },
       "boiling_K": {
         "target": 307.6,
         "computed": 306.01968478528147,
         "error_pct": 0.5138,
-        "formula": "π⁵",
+        "formula": "\u03c0\u2075",
         "unit": "K"
       },
       "dielectric": {
         "target": 4.34,
         "computed": 4.340115894364771,
         "error_pct": 0.0026703770684510237,
-        "formula": "((2+((γ/2))^2))^2",
+        "formula": "((2+((\u03b3/2))^2))^2",
         "unit": "dimensionless"
       },
       "refractive_index": {
         "target": 1.353,
         "computed": 1.3530044054847812,
         "error_pct": 0.00032560863127866125,
-        "formula": "((1+sqrt(sqrt(2)))/φ)",
+        "formula": "((1+sqrt(sqrt(2)))/\u03c6)",
         "unit": "dimensionless"
       },
       "h_vap_kJ_mol": {
         "target": 26.52,
         "computed": 26.518049811598548,
         "error_pct": 0.007353651589184272,
-        "formula": "(φ*((e)^2+(3)^2))",
+        "formula": "(\u03c6*((e)^2+(3)^2))",
         "unit": "kJ/mol"
       },
       "vapor_p_kPa": {
@@ -4470,14 +4471,14 @@
         "computed": 190.50960572662586,
         "error_pct": 0.1101,
         "formula": "E^5+PI^3+PHI^5",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "molar_vol_cm3_mol": {
         "target": 104.74,
         "computed": 104.71845645048182,
         "error_pct": 0.0206,
         "formula": "E^4+PI^1+PHI^8",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       },
       "autoignition_K": {
         "target": 433.0,
@@ -4495,21 +4496,21 @@
         "target": 63.4,
         "computed": 63.60654802014325,
         "error_pct": 0.3258,
-        "formula": "e⁴+γ⁻⁴",
+        "formula": "e\u2074+\u03b3\u207b\u2074",
         "unit": "mN/m"
       },
       "viscosity": {
         "target": 1412.0,
         "computed": 1419.186503232361,
         "error_pct": 0.509,
-        "formula": "e⁷·Ω",
-        "unit": "mPa·s"
+        "formula": "e\u2077\u00b7\u03a9",
+        "unit": "mPa\u00b7s"
       },
       "dielectric": {
         "target": 42.5,
         "computed": 42.742645786248005,
         "error_pct": 0.5709,
-        "formula": "φ⁸-φ³",
+        "formula": "\u03c6\u2078-\u03c6\u00b3",
         "unit": "dimensionless"
       },
       "refractive_index": {
@@ -4523,20 +4524,20 @@
         "target": 1904.0,
         "computed": 1904.9619479730445,
         "error_pct": 0.05052247757586746,
-        "formula": "(((π+(2/γ)))^2)^2",
+        "formula": "(((\u03c0+(2/\u03b3)))^2)^2",
         "unit": "m/s"
       }
     },
     "H2SO4": {
       "_aliases": [
-        "H₂SO₄"
+        "H\u2082SO\u2084"
       ],
       "viscosity": {
         "target": 26.7,
         "computed": 26.82836629756062,
         "error_pct": 0.4808,
-        "formula": "π²·e",
-        "unit": "mPa·s"
+        "formula": "\u03c0\u00b2\u00b7e",
+        "unit": "mPa\u00b7s"
       }
     },
     "olive oil": {
@@ -4547,8 +4548,8 @@
         "target": 84.0,
         "computed": 83.63259188689287,
         "error_pct": 0.4374,
-        "formula": "e⁴+φ⁷",
-        "unit": "mPa·s"
+        "formula": "e\u2074+\u03c6\u2077",
+        "unit": "mPa\u00b7s"
       }
     },
     "He": {
@@ -4559,7 +4560,7 @@
         "target": 4.22,
         "computed": 4.23606797749979,
         "error_pct": 0.3808,
-        "formula": "φ³",
+        "formula": "\u03c6\u00b3",
         "unit": "K"
       },
       "speed_sound_m_s": {
@@ -4573,7 +4574,7 @@
         "target": 5.2,
         "computed": 5.199981614864327,
         "error_pct": 0.0003535603014120498,
-        "formula": "((2)^2+(π/(φ)^2))",
+        "formula": "((2)^2+(\u03c0/(\u03c6)^2))",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
@@ -4587,7 +4588,7 @@
         "target": 0.021,
         "computed": 0.02098785458948131,
         "error_pct": 0.0578352881842385,
-        "formula": "(3/((φ*(e)^2))^2)",
+        "formula": "(3/((\u03c6*(e)^2))^2)",
         "unit": "kJ/mol"
       },
       "cp_cv_ratio": {
@@ -4606,21 +4607,21 @@
         "target": 87.3,
         "computed": 87.53948663291308,
         "error_pct": 0.2743,
-        "formula": "π⁴-π²",
+        "formula": "\u03c0\u2074-\u03c0\u00b2",
         "unit": "K"
       },
       "critical_T_K": {
         "target": 150.69,
         "computed": 150.79644737231007,
         "error_pct": 0.07063997100675018,
-        "formula": "(π*(3*((2)^2)^2))",
+        "formula": "(\u03c0*(3*((2)^2)^2))",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 6.43,
         "computed": 6.473090504753431,
         "error_pct": 0.6701,
-        "formula": "E²-G",
+        "formula": "E\u00b2-G",
         "unit": "kJ/mol"
       },
       "h_fus_kJ_mol": {
@@ -4640,20 +4641,20 @@
     },
     "Cl2": {
       "_aliases": [
-        "Cl₂"
+        "Cl\u2082"
       ],
       "boiling_K": {
         "target": 239.1,
         "computed": 240.13753580571478,
         "error_pct": 0.4339,
-        "formula": "e⁵·φ",
+        "formula": "e\u2075\u00b7\u03c6",
         "unit": "K"
       },
       "critical_T_K": {
         "target": 417.15,
         "computed": 417.04455883660546,
         "error_pct": 0.025276558406931916,
-        "formula": "((φ+((e+φ))^2))^2",
+        "formula": "((\u03c6+((e+\u03c6))^2))^2",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
@@ -4666,28 +4667,28 @@
     },
     "CH3COOH": {
       "_aliases": [
-        "CH₃COOH",
+        "CH\u2083COOH",
         "CH3COOH"
       ],
       "melting_K": {
         "target": 289.8,
         "computed": 289.75446885702416,
         "error_pct": 0.015711229460264563,
-        "formula": "(((3)^2)^2*(γ+3))",
+        "formula": "(((3)^2)^2*(\u03b3+3))",
         "unit": "K"
       },
       "dielectric": {
         "target": 6.15,
         "computed": 6.199366119843095,
         "error_pct": 0.8027,
-        "formula": "e²·G²",
+        "formula": "e\u00b2\u00b7G\u00b2",
         "unit": "dimensionless"
       },
       "h_comb_kJ_mol": {
         "target": 874.2,
         "computed": 874.1476161952093,
         "error_pct": 0.005992199129580527,
-        "formula": "(γ+(((e+e))^2)^2)",
+        "formula": "(\u03b3+(((e+e))^2)^2)",
         "unit": "kJ/mol"
       }
     },
@@ -4711,7 +4712,7 @@
         "target": 17.84,
         "computed": 17.94427190999916,
         "error_pct": 0.5845,
-        "formula": "φ⁶",
+        "formula": "\u03c6\u2076",
         "unit": "dimensionless"
       }
     },
@@ -4723,7 +4724,7 @@
         "target": 46.7,
         "computed": 46.97871376374779,
         "error_pct": 0.5968,
-        "formula": "φ⁸",
+        "formula": "\u03c6\u2078",
         "unit": "dimensionless"
       },
       "refractive_index": {
@@ -4738,7 +4739,7 @@
         "computed": 70.99268316900367,
         "error_pct": 0.0525,
         "formula": "PI^4+PHI^2-PHI^7",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       }
     },
     "formic acid": {
@@ -4749,13 +4750,13 @@
         "target": 58.5,
         "computed": 58.83421801064403,
         "error_pct": 0.5713,
-        "formula": "e⁴+φ³",
+        "formula": "e\u2074+\u03c6\u00b3",
         "unit": "dimensionless"
       }
     },
     "CS2": {
       "_aliases": [
-        "CS₂",
+        "CS\u2082",
         "CS2"
       ],
       "refractive_index": {
@@ -4777,7 +4778,7 @@
         "computed": 92.7368619848355,
         "error_pct": 0.0398,
         "formula": "PI^2+PHI^4+PHI^9",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "autoignition_K": {
         "target": 363.0,
@@ -4796,57 +4797,57 @@
         "target": 2.417,
         "computed": 2.4059747810263383,
         "error_pct": 0.4562,
-        "formula": "φ+B_IN",
+        "formula": "\u03c6+B_IN",
         "unit": "dimensionless"
       },
       "band_gap_eV": {
         "target": 5.47,
         "computed": 5.439652817888142,
         "error_pct": 0.5548,
-        "formula": "π+e-K",
+        "formula": "\u03c0+e-K",
         "unit": "eV"
       },
       "youngs_GPa": {
         "target": 1050.0,
         "computed": 1056.190293404343,
         "error_pct": 0.5896,
-        "formula": "e⁶·φ²",
+        "formula": "e\u2076\u00b7\u03c6\u00b2",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 2200.0,
         "computed": 2206.999546896146,
         "error_pct": 0.3182,
-        "formula": "φ⁸·φ⁸",
-        "unit": "W/(m·K)"
+        "formula": "\u03c6\u2078\u00b7\u03c6\u2078",
+        "unit": "W/(m\u00b7K)"
       },
       "bulk_GPa": {
         "target": 443.0,
         "computed": 443.21024334503494,
         "error_pct": 0.047458994364546155,
-        "formula": "((φ*(π+(π)^2)))^2",
+        "formula": "((\u03c6*(\u03c0+(\u03c0)^2)))^2",
         "unit": "GPa"
       },
       "shear_GPa": {
         "target": 478.0,
         "computed": 479.4419491102315,
         "error_pct": 0.3017,
-        "formula": "E⁶+PHI⁹",
+        "formula": "E\u2076+PHI\u2079",
         "unit": "GPa"
       },
       "poisson_ratio": {
         "target": 0.07,
         "computed": 0.07000085276519473,
         "error_pct": 0.0012182359924609427,
-        "formula": "((γ)^2/(π+φ))",
+        "formula": "((\u03b3)^2/(\u03c0+\u03c6))",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 530.0,
         "computed": 530.1652456668605,
         "error_pct": 0.031178427709533628,
-        "formula": "(π/(γ/((π)^2)^2))",
-        "unit": "mm²/s"
+        "formula": "(\u03c0/(\u03b3/((\u03c0)^2)^2))",
+        "unit": "mm\u00b2/s"
       },
       "grueneisen": {
         "target": 1.1,
@@ -4883,43 +4884,43 @@
         "target": 130.0,
         "computed": 130.46888719257745,
         "error_pct": 0.3607,
-        "formula": "e⁵-φ⁶",
+        "formula": "e\u2075-\u03c6\u2076",
         "unit": "GPa"
       },
       "thermal_cond_W_mK": {
         "target": 149.0,
         "computed": 148.4131591025766,
         "error_pct": 0.3939,
-        "formula": "e⁵",
-        "unit": "W/(m·K)"
+        "formula": "e\u2075",
+        "unit": "W/(m\u00b7K)"
       },
       "bulk_GPa": {
         "target": 98.0,
         "computed": 97.40910870745367,
         "error_pct": 0.6029,
-        "formula": "E⁶-PI⁵",
+        "formula": "E\u2076-PI\u2075",
         "unit": "GPa"
       },
       "expansion_e6_per_K": {
         "target": 2.56,
         "computed": 2.559996853662967,
         "error_pct": 0.0001229037903567598,
-        "formula": "(2+(e/(φ*3)))",
-        "unit": "10⁻⁶/K"
+        "formula": "(2+(e/(\u03c6*3)))",
+        "unit": "10\u207b\u2076/K"
       },
       "poisson_ratio": {
         "target": 0.28,
         "computed": 0.2799984268314835,
         "error_pct": 0.0005618458987539336,
-        "formula": "(e/(φ*(2*3)))",
+        "formula": "(e/(\u03c6*(2*3)))",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
         "target": 88.0,
         "computed": 88.34166247649358,
         "error_pct": 0.3883,
-        "formula": "E⁴·PHI",
-        "unit": "mm²/s"
+        "formula": "E\u2074\u00b7PHI",
+        "unit": "mm\u00b2/s"
       }
     },
     "InP": {
@@ -4930,7 +4931,7 @@
         "target": 1.35,
         "computed": 1.3499512157895937,
         "error_pct": 0.0036136452152917354,
-        "formula": "sqrt((((e/φ))^2-1))",
+        "formula": "sqrt((((e/\u03c6))^2-1))",
         "unit": "eV"
       }
     },
@@ -4942,7 +4943,7 @@
         "target": 1.42,
         "computed": 1.4200278669503374,
         "error_pct": 0.0019624612913745356,
-        "formula": "(π/(2+(γ/e)))",
+        "formula": "(\u03c0/(2+(\u03b3/e)))",
         "unit": "eV"
       }
     },
@@ -4978,7 +4979,7 @@
         "target": 2.42,
         "computed": 2.4059747810263383,
         "error_pct": 0.5796,
-        "formula": "φ+B_IN",
+        "formula": "\u03c6+B_IN",
         "unit": "eV"
       }
     },
@@ -4990,7 +4991,7 @@
         "target": 3.26,
         "computed": 3.259917313787768,
         "error_pct": 0.0025363868782773526,
-        "formula": "((π+2)/(γ+1))",
+        "formula": "((\u03c0+2)/(\u03b3+1))",
         "unit": "eV"
       }
     },
@@ -5002,7 +5003,7 @@
         "target": 3.37,
         "computed": 3.3539384298291717,
         "error_pct": 0.4766,
-        "formula": "π+P_BASE",
+        "formula": "\u03c0+P_BASE",
         "unit": "eV"
       }
     },
@@ -5027,7 +5028,7 @@
         "computed": 0.1534822148944508,
         "error_pct": 0.9751,
         "formula": "POOF",
-        "unit": "W/(m·K)"
+        "unit": "W/(m\u00b7K)"
       }
     },
     "glass": {
@@ -5039,7 +5040,7 @@
         "computed": 1.000286568515822,
         "error_pct": 0.0287,
         "formula": "B_IN+P_BASE",
-        "unit": "W/(m·K)"
+        "unit": "W/(m\u00b7K)"
       }
     },
     "ice": {
@@ -5051,7 +5052,7 @@
         "computed": 2.2200009940932155,
         "error_pct": 4.4778973662195985e-05,
         "formula": "(sqrt(3)*((2)^2-e))",
-        "unit": "W/(m·K)"
+        "unit": "W/(m\u00b7K)"
       }
     },
     "SS304": {
@@ -5062,8 +5063,8 @@
         "target": 72.0,
         "computed": 72.5424219431434,
         "error_pct": 0.7534,
-        "formula": "e⁴+φ⁶",
-        "unit": "μΩ·cm"
+        "formula": "e\u2074+\u03c6\u2076",
+        "unit": "\u03bc\u03a9\u00b7cm"
       }
     },
     "nichrome": {
@@ -5074,8 +5075,8 @@
         "target": 110.0,
         "computed": 109.99055899603007,
         "error_pct": 0.008582730881750484,
-        "formula": "(((π)^2+1/(φ)))^2",
-        "unit": "μΩ·cm"
+        "formula": "(((\u03c0)^2+1/(\u03c6)))^2",
+        "unit": "\u03bc\u03a9\u00b7cm"
       }
     },
     "Air": {
@@ -5086,7 +5087,7 @@
         "target": 343.0,
         "computed": 343.0502940874385,
         "error_pct": 0.014662999253203388,
-        "formula": "(π*(2*((e)^2)^2))",
+        "formula": "(\u03c0*(2*((e)^2)^2))",
         "unit": "m/s"
       }
     },
@@ -5098,7 +5099,7 @@
         "target": 5960.0,
         "computed": 6001.251214818521,
         "error_pct": 0.6921,
-        "formula": "e⁸+π⁷",
+        "formula": "e\u2078+\u03c0\u2077",
         "unit": "m/s"
       }
     },
@@ -5110,7 +5111,7 @@
         "target": 44.49,
         "computed": 44.72854563205488,
         "error_pct": 0.5362,
-        "formula": "E⁴-PI²",
+        "formula": "E\u2074-PI\u00b2",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
@@ -5124,20 +5125,20 @@
         "target": 0.335,
         "computed": 0.33500726534568664,
         "error_pct": 0.0021687599064550787,
-        "formula": "1/((sqrt(2)+(π/2)))",
+        "formula": "1/((sqrt(2)+(\u03c0/2)))",
         "unit": "kJ/mol"
       }
     },
     "C2H6": {
       "_aliases": [
-        "C₂H₆",
+        "C\u2082H\u2086",
         "C2H6"
       ],
       "critical_T_K": {
         "target": 305.32,
         "computed": 306.01968478528147,
         "error_pct": 0.2292,
-        "formula": "PI⁵",
+        "formula": "PI\u2075",
         "unit": "K"
       },
       "cp_cv_ratio": {
@@ -5150,21 +5151,21 @@
     },
     "C3H8": {
       "_aliases": [
-        "C₃H₈",
+        "C\u2083H\u2088",
         "C3H8"
       ],
       "critical_T_K": {
         "target": 369.83,
         "computed": 369.90171292742656,
         "error_pct": 0.019390781555464517,
-        "formula": "(((e*(3)^2))^2/φ)",
+        "formula": "(((e*(3)^2))^2/\u03c6)",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 19.04,
         "computed": 19.16957132901045,
         "error_pct": 0.6805,
-        "formula": "E³-G",
+        "formula": "E\u00b3-G",
         "unit": "kJ/mol"
       },
       "critical_P_bar": {
@@ -5177,26 +5178,26 @@
     },
     "n-C4H10": {
       "_aliases": [
-        "n-C₄H₁₀"
+        "n-C\u2084H\u2081\u2080"
       ],
       "critical_T_K": {
         "target": 425.12,
         "computed": 423.5143304159228,
         "error_pct": 0.3777,
-        "formula": "E⁶+E³",
+        "formula": "E\u2076+E\u00b3",
         "unit": "K"
       }
     },
     "SO2": {
       "_aliases": [
-        "SO₂",
+        "SO\u2082",
         "SO2"
       ],
       "critical_T_K": {
         "target": 430.64,
         "computed": 430.7250201954335,
         "error_pct": 0.019742753908952908,
-        "formula": "(e*((e+(π)^2))^2)",
+        "formula": "(e*((e+(\u03c0)^2))^2)",
         "unit": "K"
       },
       "cp_cv_ratio": {
@@ -5210,7 +5211,7 @@
         "target": 77.8,
         "computed": 77.32355411081477,
         "error_pct": 0.6124,
-        "formula": "PI⁴-E³",
+        "formula": "PI\u2074-E\u00b3",
         "unit": "atm"
       }
     },
@@ -5222,14 +5223,14 @@
         "target": 324.65,
         "computed": 321.99689437998484,
         "error_pct": 0.8172,
-        "formula": "PHI¹²",
+        "formula": "PHI\u00b9\u00b2",
         "unit": "K"
       },
       "h_vap_kJ_mol": {
         "target": 16.15,
         "computed": 16.150540105216614,
         "error_pct": 0.0033443047468418655,
-        "formula": "(π+(3*(e+φ)))",
+        "formula": "(\u03c0+(3*(e+\u03c6)))",
         "unit": "kJ/mol"
       }
     },
@@ -5241,7 +5242,7 @@
         "target": 11.73,
         "computed": 11.7300105143876,
         "error_pct": 8.963672292245021e-05,
-        "formula": "((sqrt(π)-(3/γ)))^2",
+        "formula": "((sqrt(\u03c0)-(3/\u03b3)))^2",
         "unit": "kJ/mol"
       }
     },
@@ -5253,7 +5254,7 @@
         "target": 1473.0,
         "computed": 1464.7791682583652,
         "error_pct": 0.5581,
-        "formula": "PI²·E⁵",
+        "formula": "PI\u00b2\u00b7E\u2075",
         "unit": "K"
       }
     },
@@ -5265,7 +5266,7 @@
         "target": 553.0,
         "computed": 551.8419525953117,
         "error_pct": 0.2094,
-        "formula": "E⁶+E⁵",
+        "formula": "E\u2076+E\u2075",
         "unit": "K"
       }
     },
@@ -5277,7 +5278,7 @@
         "target": 373.0,
         "computed": 372.4225168124353,
         "error_pct": 0.1548,
-        "formula": "E⁶-PI³",
+        "formula": "E\u2076-PI\u00b3",
         "unit": "K"
       }
     },
@@ -5289,7 +5290,7 @@
         "target": 378.0,
         "computed": 377.88678099855923,
         "error_pct": 0.029952116783272052,
-        "formula": "((e*(e-(π)^2)))^2",
+        "formula": "((e*(e-(\u03c0)^2)))^2",
         "unit": "K"
       }
     },
@@ -5301,7 +5302,7 @@
         "target": 354.0,
         "computed": 354.00363785410735,
         "error_pct": 0.0010276424032071123,
-        "formula": "((((e+γ))^2/γ))^2",
+        "formula": "((((e+\u03b3))^2/\u03b3))^2",
         "unit": "K"
       }
     },
@@ -5313,7 +5314,7 @@
         "target": 342.0,
         "computed": 341.87639760666286,
         "error_pct": 0.036141050683373414,
-        "formula": "(((φ)^2/(π-3)))^2",
+        "formula": "(((\u03c6)^2/(\u03c0-3)))^2",
         "unit": "K"
       }
     },
@@ -5325,7 +5326,7 @@
         "target": 423.0,
         "computed": 422.9756002471765,
         "error_pct": 0.00576826307884461,
-        "formula": "(((2)^2*(π+2)))^2",
+        "formula": "(((2)^2*(\u03c0+2)))^2",
         "unit": "K"
       }
     },
@@ -5337,7 +5338,7 @@
         "target": 323.0,
         "computed": 326.1052217084691,
         "error_pct": 0.9614,
-        "formula": "PI⁵+E³",
+        "formula": "PI\u2075+E\u00b3",
         "unit": "K"
       }
     },
@@ -5349,7 +5350,7 @@
         "target": 304.0,
         "computed": 303.3014029568224,
         "error_pct": 0.2298,
-        "formula": "PI⁵-E",
+        "formula": "PI\u2075-E",
         "unit": "K"
       }
     },
@@ -5361,7 +5362,7 @@
         "target": 309.0,
         "computed": 309.16127743887125,
         "error_pct": 0.0522,
-        "formula": "PI⁵+PI",
+        "formula": "PI\u2075+PI",
         "unit": "K"
       }
     },
@@ -5373,7 +5374,7 @@
         "target": 200.0,
         "computed": 199.00502499874065,
         "error_pct": 0.4975,
-        "formula": "PHI¹⁰+PHI⁹",
+        "formula": "PHI\u00b9\u2070+PHI\u2079",
         "unit": "K"
       }
     },
@@ -5385,7 +5386,7 @@
         "target": 0.000413,
         "computed": 0.000412766290514644,
         "error_pct": 0.05658825311283946,
-        "formula": "(e*((((γ)^2)^2)^2)^2)",
+        "formula": "(e*((((\u03b3)^2)^2)^2)^2)",
         "unit": "MRayl"
       }
     },
@@ -5409,7 +5410,7 @@
         "target": 17.0,
         "computed": 16.943944269597875,
         "error_pct": 0.3297,
-        "formula": "E³-PI",
+        "formula": "E\u00b3-PI",
         "unit": "MRayl"
       }
     },
@@ -5433,7 +5434,7 @@
         "target": 41.6,
         "computed": 41.60108808814756,
         "error_pct": 0.002615596508561178,
-        "formula": "((φ+3)/((γ)^2)^2)",
+        "formula": "((\u03c6+3)/((\u03b3)^2)^2)",
         "unit": "MRayl"
       }
     },
@@ -5445,7 +5446,7 @@
         "target": 27.3,
         "computed": 27.474593022118317,
         "error_pct": 0.6395,
-        "formula": "E³+E²",
+        "formula": "E\u00b3+E\u00b2",
         "unit": "MRayl"
       }
     },
@@ -5469,7 +5470,7 @@
         "target": 49.5,
         "computed": 49.596747752497684,
         "error_pct": 0.1955,
-        "formula": "PHI⁸+PHI²",
+        "formula": "PHI\u2078+PHI\u00b2",
         "unit": "MRayl"
       }
     },
@@ -5517,7 +5518,7 @@
         "target": 1411.2,
         "computed": 1402.65284321374,
         "error_pct": 0.6057,
-        "formula": "E⁷+PI⁵",
+        "formula": "E\u2077+PI\u2075",
         "unit": "kJ/mol"
       }
     },
@@ -5529,7 +5530,7 @@
         "target": 1299.6,
         "computed": 1299.14159265359,
         "error_pct": 0.035272956787474066,
-        "formula": "(π+(((2*3))^2)^2)",
+        "formula": "(\u03c0+(((2*3))^2)^2)",
         "unit": "kJ/mol"
       }
     },
@@ -5553,7 +5554,7 @@
         "target": 513.0,
         "computed": 512.0643071829058,
         "error_pct": 0.1824,
-        "formula": "E^7·ETA",
+        "formula": "E^7\u00b7ETA",
         "unit": "mmHg"
       }
     },
@@ -5566,7 +5567,7 @@
         "computed": 144.71204525775772,
         "error_pct": 0.0607,
         "formula": "E^2+E^5-PHI^5",
-        "unit": "×10⁻⁶/bar"
+        "unit": "\u00d710\u207b\u2076/bar"
       },
       "autoignition_K": {
         "target": 496.0,
@@ -5585,7 +5586,7 @@
         "computed": 57.50936251626825,
         "error_pct": 0.0532,
         "formula": "E^2+PI^1+PHI^8",
-        "unit": "cm³/mol"
+        "unit": "cm\u00b3/mol"
       }
     },
     "Acetaldehyde": {
@@ -5620,7 +5621,7 @@
         "target": 773.0,
         "computed": 772.5170636206857,
         "error_pct": 0.06247559887636614,
-        "formula": "(((sqrt(φ)+(2)^2))^2)^2",
+        "formula": "(((sqrt(\u03c6)+(2)^2))^2)^2",
         "unit": "K"
       }
     },
