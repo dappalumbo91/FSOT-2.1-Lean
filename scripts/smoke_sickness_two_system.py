@@ -15,6 +15,7 @@ Kill: person-level onset as a 0.5% central. Kill: flipping Biology observed.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from datetime import datetime, timezone
@@ -91,7 +92,7 @@ def main() -> int:
     path_med = sorted(p["error_pct"] for p in paths)[len(paths) // 2]
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "pin": "D1D38A",
+        "pin": hashlib.sha256((ROOT / "vendor" / "fsot_compute.py").read_bytes()).hexdigest()[:6].upper(),
         "product": "FSOT-Genetics (sibling). Hub smoke only.",
         "host": hosts[0],
         "pathogen": paths[0],

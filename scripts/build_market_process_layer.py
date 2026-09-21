@@ -9,6 +9,7 @@ Goal: dated quiet/storm windows, then finer dt — same path as ECMWF.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from datetime import datetime, timezone
@@ -65,7 +66,7 @@ def main() -> int:
     p_fire, p_hold = valve_split()
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "pin": "D1D38A",
+        "pin": hashlib.sha256((ROOT / "vendor" / "fsot_compute.py").read_bytes()).hexdigest()[:6].upper(),
         "domain": DOMAIN,
         "D_eff": 20,
         "n": len(rows),
@@ -85,7 +86,7 @@ def main() -> int:
     OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     doc = f"""# Market process layer
 
-**Pin:** D1D38A · **Fold:** Economics \(D=20\) · **Generated:** {payload['generated_at']}
+**Pin:** {payload['pin']} · **Fold:** Economics \(D=20\) · **Generated:** {payload['generated_at']}
 
 This is the start of *price prediction* as **process time**, not as a ticker.
 

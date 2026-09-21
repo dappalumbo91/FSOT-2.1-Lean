@@ -4,10 +4,10 @@
 
 | Track | Accurate answer today | Goal | Kill |
 |-------|----------------------|------|------|
-| **Timing** | Process window at the right fold (7 d / 48 h / 72 h) | Sharper SI stamp via finer `dt` | UTC hypocenter as a 0.5% central |
-| **ECMWF S2S** | Weather class + **24 h** process windows (48 h frozen issues kept) | Beat week-3 skill on the **same** φ^4 / Omori path; historical 24 h retro | Claiming the beat today; new β |
-| **Prices** | Economics class residuals + \(d=20\) process window | Dated quiet/storm market windows, then finer dt | Ticker close / crash date as 0.5% |
-| **Sickness** | Epidemiology class 0.015%; host+pathogen coupling smoke | Genetics two-system product on public genomes | Person-level onset as 0.5% |
+| **Timing** | Process window at the right fold (7 d / 24 h weather / 1 d economics) | Sharper SI stamp via finer `dt` | UTC hypocenter as a 0.5% central |
+| **ECMWF S2S** | 24 h vs 48 h retro agrees on scored buoys except **PTIT2** (48 h kill, 24 h hold). Not a beat. | Beat week-3 skill on the **same** φ^4 / Omori path | Claiming the beat today; retune POOF for PTIT2 |
+| **Prices** | Economics class median ~0.07%; 1-day window; CLI `products/market_windows.py` | Dated quiet/storm prints, then finer dt | Ticker close / crash date as 0.5% |
+| **Sickness** | Host mt CDS ~0.052%; pathogen CDS ~0.076%; κ coupling; CLI `products/sickness_coupling.py` | Genetics structure product on public genomes | Person-level onset as 0.5% |
 | **Path integral** | Discrete path-sum P1–P10 (valve + \(\varphi^4\) process time + \(a_0/\gamma\)) | Deeper native sum; classical YM still named | “Millennium theorem proved” |
 | **Millennium SOTA vs 0.5%** | Named Hodge extra classes \(C_8\)..\(C_{44}\) algebraic; BSD LMFDB ranks 0..5 vanishing complete. | WIP SOTA beats stay outside 0.5% until the object is right | Enumerating infinite Hassett / rank-\(\ge 6\) tails; Clay Prize; stuffing a WIP beat into the green gate |
 | **NSE (tracked)** | Clay smoothness is not a measured function. Working: 4/5, 3/2, 1/3, \(\kappa\). | Clay yes/no on \(\mathbb{R}^3\) | Stuffing cascade numbers into smoothness |
@@ -15,6 +15,12 @@
 | **Hodge (tracked)** | Clay algebraicity without a cycle is not a measured function. Working: named \(\chi\)/Gram. | Clay algebraicity on a general 4-fold | Hunting \(C_{48}\); stealing \(25-1\) for \(\chi(\mathrm{K3})\) |
 
 Same fluid. Not a second physics. Wrong object is still wrong object.
+
+## Aspiration still open (not a B fail)
+
+Worst scalar on the 477-file gate: mercury sound speed in `Phi_Morphogenetic_Scaling`, **0.4989%** vs 1451 m/s (formula \(e^7+\varphi^8\cdot e^2\)). Inside 0.5%. Outside 0.05%. Do not retune the species formula to swallow it.
+
+Weather: `FCAST-WX-20260909T1854-05` (PTIT2) is **kill at 48 h, hold at 24 h**. Issued JSON stays. Do not move the storm bar.
 
 ## Commands
 

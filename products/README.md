@@ -11,5 +11,7 @@ Ledger: **B corrects** (catalog residual). Not Ledger A predict. Not a Clay priz
 | Seismology windows | `python products/seismo_windows.py` | UTC hypocenter as 0.5% |
 | MPCORB catalog | `python products/catalog_mpcorb.py` | One \(\varepsilon\) per asteroid |
 | Optics \(n_D\) | `python products/optics_nd.py` | Static water \(\varepsilon\sim 80\) as \(n^2\) |
+| Market windows | `python products/market_windows.py` | Ticker close / crash date as 0.5% |
+| Sickness coupling | `python products/sickness_coupling.py` | Person-level onset as 0.5% |
 
 Always-on siblings (Genetics, Quantum, Neural, GPU, Materials) stay out of this folder.
