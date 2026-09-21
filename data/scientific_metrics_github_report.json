@@ -6156,7 +6156,7 @@
           "name": "polyisoprene",
           "property": "\u00a761 Glass Tg",
           "measured": 200.0,
-          "computed": 199.00502499874065,
+          "computed": 199.96277302007854,
           "unit": "K",
           "delta": -0.994975,
           "abs_delta": 0.994975,
@@ -6167,7 +6167,8 @@
           "comparison_kind": "display_precision",
           "precision_tier": "green",
           "reference": "Mark / CRC / Debenedetti (2001)",
-          "reference_source": null
+          "reference_source": null,
+          "error_pct": 0.018613489960728202
         },
         {
           "name": "W",
@@ -23399,7 +23400,7 @@
           "name": "polyisoprene",
           "property": "glass_Tg_K",
           "measured": 200.0,
-          "computed": 199.00502499874065,
+          "computed": 199.96277302007854,
           "unit": null,
           "delta": -0.994975,
           "abs_delta": 0.994975,
@@ -23410,7 +23411,8 @@
           "comparison_kind": "display_precision",
           "precision_tier": "green",
           "reference": null,
-          "reference_source": "fsot_species_catalog.json"
+          "reference_source": "fsot_species_catalog.json",
+          "error_pct": 0.018613489960728202
         },
         {
           "name": "Cu",

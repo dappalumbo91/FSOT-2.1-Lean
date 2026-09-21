@@ -26,7 +26,7 @@ The old nearest leaves were the miss, not a missing coefficient.
 | Ni–EDTA log β | \(e^3-\varphi\) (same leaf as Cu) | 18.56 | \(\varphi^{-1}+\varphi^6\) (Pb’s φ-power family) | 0.012% |
 | Mn–EDTA log β | \(\varphi^5+e\) | 13.87 | \(\varphi^{-2}+K^{-3}\) | 0.0076% |
 
-Next worst gated scalar is polyisoprene \(T_g\) vs the round 200 K (\(\varphi^{10}+\varphi^9\), **0.4975%**). No two-seed sum lands inside 0.05%. Left there. No new coefficient.
+Polyisoprene \(T_g\): \(\varphi^{10}+\varphi^9\) is \(\varphi^{11}=199.005\) K against the cited 200 K (Mark / CRC / Debenedetti). The shortfall is the live compactification factor \(C_{\mathrm{eff}}\), not a new coefficient and not the integer 1: \(\varphi^{11}+C_{\mathrm{eff}}\) at 0.019%.
 
 Weather: `FCAST-WX-20260909T1854-05` (PTIT2, Gulf) was issued as a **48 h quiet** cell. Day 1 held (min pressure 1013.6 hPa, quiet bar not broken). Day 2 killed on gust **12.4 m/s** while pressure stayed **1010.7 hPa** (above the 1005 hPa quiet-break). That is the next process day, not a day-1 miss. Issued JSON stays. New issues say `{horizon}h` from `weather_horizon_hours()` (24). Do not move 12 m/s or 1005 hPa.
 

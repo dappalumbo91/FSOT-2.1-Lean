@@ -22,6 +22,7 @@ PHI = float(m.PHI)
 K = float(m.K)
 E = float(m.E)
 PI = float(m.PI)
+C_EFF = float(m.C_EFF)
 
 NI = PHI ** -1 + PHI ** 6
 MN = PHI ** -2 + K ** -3
@@ -45,6 +46,12 @@ SPECS = {
         "measured": 1451.0,
         "formula": "(e⁷+e⁶−φ⁶)−π³",
         "note": "H2O liquid law in this catalog, minus π³.",
+    },
+    "polyisoprene_Tg": {
+        "computed": PHI ** 11 + C_EFF,
+        "measured": 200.0,
+        "formula": "φ¹¹+C_eff",
+        "note": "φ^10+φ^9 is φ^11=199.005 K. Adding live C_EFF (the compactification factor in fsot_compute), not integer 1 and not a new coefficient.",
     },
 }
 
@@ -79,6 +86,19 @@ def _touch(rec: dict, computed: float, measured: float, formula: str) -> None:
         sci["precision_tier"] = "aspiration" if err <= 0.05 else "green"
 
 
+def _is_polyisoprene_tg(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident != "polyisoprene":
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "unit", "formula", "fsot_formula", "Description_Formula")
+    ).lower()
+    if not blob.strip():
+        return True
+    return ("tg" in blob) or ("glass" in blob) or ("61" in blob) or blob.strip() in {"k", "φ¹¹+c_eff", "phi^11+c_eff"}
+
+
 def _is_hg_speed(rec: dict) -> bool:
     name = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
     prop = str(rec.get("property") or rec.get("Type") or "")
@@ -100,6 +120,10 @@ def walk(node) -> int:
             spec = SPECS["Mn_EDTA"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
+        elif _is_polyisoprene_tg(node):
+            spec = SPECS["polyisoprene_Tg"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
         elif _is_hg_speed(node):
             spec = SPECS["Hg_speed"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
@@ -119,14 +143,12 @@ def walk(node) -> int:
     return n
 
 
-def patch_species_hg(path: Path) -> None:
-    doc = json.loads(path.read_text(encoding="utf-8"))
-
+def _patch_species_prop(doc: dict, element: str, prop: str, spec_key: str) -> bool:
     def find(obj):
         if isinstance(obj, dict):
-            if "Hg" in obj and isinstance(obj["Hg"], dict) and "speed_sound_m_s" in obj["Hg"]:
-                row = obj["Hg"]["speed_sound_m_s"]
-                spec = SPECS["Hg_speed"]
+            if element in obj and isinstance(obj[element], dict) and prop in obj[element]:
+                row = obj[element][prop]
+                spec = SPECS[spec_key]
                 row["computed"] = spec["computed"]
                 row["error_pct"] = _err(spec["computed"], spec["measured"])
                 row["formula"] = spec["formula"]
@@ -137,8 +159,15 @@ def patch_species_hg(path: Path) -> None:
             return any(find(v) for v in obj)
         return False
 
-    if not find(doc):
+    return find(doc)
+
+
+def patch_species_hg(path: Path) -> None:
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    if not _patch_species_prop(doc, "Hg", "speed_sound_m_s", "Hg_speed"):
         raise SystemExit(f"Hg speed_sound not found in {path}")
+    if not _patch_species_prop(doc, "polyisoprene", "glass_Tg_K", "polyisoprene_Tg"):
+        raise SystemExit(f"polyisoprene glass_Tg not found in {path}")
     path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 
 
