@@ -18,8 +18,8 @@
   "observable_count": 20,
   "scalar_record_count": 20,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.329379,
-  "pooled_median_error_pct": 0.329379,
+  "median_error_pct": 0.21666,
+  "pooled_median_error_pct": 0.21666,
   "headline_median_error_pct": 0.37159,
   "sota_comparison": {
     "fsot_free_parameters": 0,
@@ -39,9 +39,9 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.329379,
+      "computed": 0.21666,
       "measured": 0.0,
-      "error_pct": 0.329379,
+      "error_pct": 0.21666,
       "observable_count": 20
     },
     {
@@ -99,14 +99,15 @@
       "lab": "zebrafish_predictive_validation_lab",
       "property": "developmental_stability_proxy",
       "name": "ZSNS003",
-      "computed": 0.24708349,
+      "computed": 0.24826235,
       "measured": 0.2482611,
-      "error_pct": 0.474343,
-      "abs_residual": 0.00117761,
+      "error_pct": 0.000502,
+      "abs_residual": 1.25e-06,
       "tier": "operational",
       "eval_kind": "fsot_intrinsic_prediction",
       "reference_uncertainty_pct": 0.45,
-      "reference": "Zebrahub 3D+time tracking \u2014 sub-\u00b5m registration band"
+      "reference": "Zebrahub 3D+time tracking \u2014 sub-\u00b5m registration band",
+      "orifice_note": "early stability weight is 1+POOF/phi, not naked 0.62"
     },
     {
       "lab": "zebrafish_predictive_validation_lab",

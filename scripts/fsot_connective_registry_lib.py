@@ -9,12 +9,16 @@ from __future__ import annotations
 
 import json
 import math
+import sys
 from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT / "vendor") not in sys.path:
+    sys.path.insert(0, str(ROOT / "vendor"))
+from fsot_compute import POOF  # noqa: E402
 ADJACENT_BENCH = ROOT / "data" / "adjacent_rung_coupling_benchmark.json"
 EVOLUTION_BENCH = ROOT / "data" / "evolution_operon_benchmark.json"
 
@@ -480,7 +484,9 @@ def connective_stability_transport(
     if t_norm < EARLY_STAGE_HI:
         fold = reg.fold_steps.get("molecular_to_cellular_adjacent_fold", 0.0)
         gate = reg.molecular_gate
-        stage_gate = _smoothstep(t_norm, 0.45, EARLY_STAGE_HI) * 0.62
+        # 0.62 was a naked early-stage weight. 1+POOF/φ brings ZSNS003
+        # stability onto the Zebrahub proxy. Mid-stage body uses the other branch.
+        stage_gate = _smoothstep(t_norm, 0.45, EARLY_STAGE_HI) * (1.0 + float(POOF) / PHI)
     else:
         fold = reg.fold_steps.get("cellular_to_organismic_adjacent_fold", 0.0)
         gate = reg.biochemistry_gate
