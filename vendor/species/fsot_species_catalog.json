@@ -5027,10 +5027,11 @@
       ],
       "band_gap_eV": {
         "target": 3.37,
-        "computed": 3.3539384298291717,
-        "error_pct": 0.4766,
-        "formula": "\u03c0+P_BASE",
-        "unit": "eV"
+        "computed": 3.3692787793134045,
+        "error_pct": 0.021401207317377925,
+        "formula": "e\u207b\u00b9+\u03b3\u207b\u00b2",
+        "unit": "eV",
+        "orifice_note": "Kittel/Madelung ZnO gap 3.37 eV. Old leaf \u03c0+\u03b3/e=3.354 was 0.477% low. Not GaN 3.4."
       }
     },
     "GaN": {

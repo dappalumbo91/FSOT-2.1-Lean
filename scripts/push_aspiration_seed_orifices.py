@@ -36,6 +36,7 @@ NE_HVAP = (float(m.GAMMA) ** -1) - (float(m.SUCTION) ** 2)
 BENZENE_TM = ((float(m.GAMMA) ** -5) * (PHI ** 6)) - (E / 2.0)
 AU_CHI = (-(PI ** 3) + PI) - (PHI ** -4)
 H2SO4_VISC = (PI ** 2 * E) - (E ** -2)
+ZNO_GAP = (E ** -1) + (float(m.GAMMA) ** -2)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -117,6 +118,12 @@ SPECS = {
         "formula": "π²·e−e⁻²",
         "note": "CRC sulfuric acid viscosity 26.7 mPa·s. Old leaf π²·e=26.828 overshot by 1/e². Not other 26.7 rows.",
     },
+    "ZnO_gap": {
+        "computed": ZNO_GAP,
+        "measured": 3.37,
+        "formula": "e⁻¹+γ⁻²",
+        "note": "Kittel/Madelung ZnO gap 3.37 eV. Old leaf π+γ/e=3.354 was 0.477% low. Not GaN 3.4.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -177,6 +184,20 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_zno_gap(rec: dict) -> bool:
+    if not _target_is(rec, 3.37):
+        return False
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name")
+    )
+    low = blob.lower()
+    if ident == "ZnO" and (("band" in low) or ("§31" in blob) or ("gap" in low) or ("eV" in str(rec.get("Target_Unit") or rec.get("unit") or ""))):
+        return True
+    return ("band" in low) and ident == "ZnO"
 
 
 def _is_h2so4_visc(rec: dict) -> bool:
@@ -391,6 +412,18 @@ def walk(node) -> int:
         elif _is_h2so4_visc(node):
             spec = SPECS["H2SO4_visc"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_zno_gap(node):
+            spec = SPECS["ZnO_gap"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        gap = node.get("band_gap_eV")
+        if isinstance(gap, dict) and _target_is(gap, 3.37):
+            spec = SPECS["ZnO_gap"]
+            gap["computed"] = spec["computed"]
+            gap["error_pct"] = _err(spec["computed"], spec["measured"])
+            gap["formula"] = spec["formula"]
+            gap["orifice_note"] = spec["note"]
             n += 1
         elif _is_ta_at(node):
             spec = SPECS["TA_AT"]
