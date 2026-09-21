@@ -1574,10 +1574,11 @@
       "target_value": 9.95,
       "unit": "dimensionless",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "\u03c6\u2074+\u03c0",
-      "computed_value": 9.995694619839478,
-      "error_pct": 0.459242,
-      "matched": true
+      "fsot_formula": "\u03c6\u2074+\u03c0\u2212e\u207b\u00b3",
+      "computed_value": 9.945907551471615,
+      "error_pct": 0.04113013596366027,
+      "matched": true,
+      "computed": 9.945907551471615
     },
     {
       "section": "\u00a75b pKa",

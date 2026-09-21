@@ -40,6 +40,7 @@ ZNO_GAP = (E ** -1) + (float(m.GAMMA) ** -2)
 CU_MUEFF = (PI ** -1) + (float(m.PSI_CON) ** -1)
 F_RADIUS = (float(m.G_CAT) + K) - (K ** 6)
 SUCROSE_EA = (PI ** 4 + PHI ** 5) - (E ** -1 + E ** -2)
+PHENOL_PKA = (PHI ** 4 + PI) - (E ** -3)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -145,6 +146,12 @@ SPECS = {
         "formula": "π⁴+φ⁵−e⁻¹−e⁻²",
         "note": "Laidler sucrose hydrolysis Ea 108 kJ/mol. Old leaf π⁴+φ⁵=108.499 overshot by (e+1)/e². Not nichrome resistivity, which shares π⁴+φ⁵ against 110.",
     },
+    "phenol_pka": {
+        "computed": PHENOL_PKA,
+        "measured": 9.95,
+        "formula": "φ⁴+π−e⁻³",
+        "note": "CRC phenol pKa 9.95. Old leaf φ⁴+π=9.996 overshot by 1/e³. Not other 9.95 rows.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -205,6 +212,19 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_phenol_pka(rec: dict) -> bool:
+    if str(rec.get("name") or rec.get("Symbol") or "") != "phenol":
+        return False
+    if not _target_is(rec, 9.95):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name")
+    )
+    low = blob.lower()
+    return ("pka" in low) or ("§5b" in blob)
 
 
 def _is_sucrose_ea(rec: dict) -> bool:
@@ -493,6 +513,10 @@ def walk(node) -> int:
             n += 1
         elif _is_sucrose_ea(node):
             spec = SPECS["sucrose_ea"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_phenol_pka(node):
+            spec = SPECS["phenol_pka"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         gap = node.get("band_gap_eV")
