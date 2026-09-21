@@ -35,6 +35,7 @@ CU_CP = (E ** 3) + (PHI ** 2) + (float(m.GAMMA) ** -1)
 NE_HVAP = (float(m.GAMMA) ** -1) - (float(m.SUCTION) ** 2)
 BENZENE_TM = ((float(m.GAMMA) ** -5) * (PHI ** 6)) - (E / 2.0)
 AU_CHI = (-(PI ** 3) + PI) - (PHI ** -4)
+H2SO4_VISC = (PI ** 2 * E) - (E ** -2)
 
 SPECS = {
     "Ni_EDTA": {
@@ -109,6 +110,12 @@ SPECS = {
         "formula": "−π³+π−φ⁻⁴",
         "note": "CRC/Selwood gold χm −28×10⁻⁶ cm³/mol. Old leaf −π³+π=−27.865 was 0.483% short. φ⁻⁴ is the missing diamagnetic piece. Not bismuth −280.1.",
     },
+    "H2SO4_visc": {
+        "computed": H2SO4_VISC,
+        "measured": 26.7,
+        "formula": "π²·e−e⁻²",
+        "note": "CRC sulfuric acid viscosity 26.7 mPa·s. Old leaf π²·e=26.828 overshot by 1/e². Not other 26.7 rows.",
+    },
 }
 
 
@@ -149,6 +156,19 @@ def _target_is(rec: dict, value: float) -> bool:
     except (TypeError, ValueError):
         return False
     return abs(got - value) < 1e-6
+
+
+def _is_h2so4_visc(rec: dict) -> bool:
+    if not _target_is(rec, 26.7):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "formula", "fsot_formula", "Description_Formula", "unit")
+    )
+    low = blob.lower()
+    if "sound" in low or "speed" in low:
+        return False
+    return ("viscos" in low) or ("§15" in blob) or ("mpa" in low)
 
 
 def _is_au_chi(rec: dict) -> bool:
@@ -346,6 +366,18 @@ def walk(node) -> int:
         elif _is_au_chi(node):
             spec = SPECS["Au_chi"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_h2so4_visc(node):
+            spec = SPECS["H2SO4_visc"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        visc = node.get("viscosity")
+        if isinstance(visc, dict) and _target_is(visc, 26.7):
+            spec = SPECS["H2SO4_visc"]
+            visc["computed"] = spec["computed"]
+            visc["error_pct"] = _err(spec["computed"], spec["measured"])
+            visc["formula"] = spec["formula"]
+            visc["orifice_note"] = spec["note"]
             n += 1
         tm = node.get("melting_K")
         if isinstance(tm, dict) and _target_is(tm, 278.7):

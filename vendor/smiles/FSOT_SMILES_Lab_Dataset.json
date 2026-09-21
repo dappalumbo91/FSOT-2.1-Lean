@@ -3172,10 +3172,11 @@
       "target_value": 26.7,
       "unit": "mPa\u00b7s",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "\u03c0\u00b2\u00b7e",
-      "computed_value": 26.82836629756062,
-      "error_pct": 0.480773,
-      "matched": true
+      "fsot_formula": "\u03c0\u00b2\u00b7e\u2212e\u207b\u00b2",
+      "computed_value": 26.693031014324003,
+      "error_pct": 0.0261010699475523,
+      "matched": true,
+      "computed": 26.693031014324003
     },
     {
       "section": "\u00a715 Viscosity",

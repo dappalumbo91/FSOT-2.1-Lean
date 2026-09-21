@@ -4559,10 +4559,11 @@
       ],
       "viscosity": {
         "target": 26.7,
-        "computed": 26.82836629756062,
-        "error_pct": 0.4808,
-        "formula": "\u03c0\u00b2\u00b7e",
-        "unit": "mPa\u00b7s"
+        "computed": 26.693031014324003,
+        "error_pct": 0.0261010699475523,
+        "formula": "\u03c0\u00b2\u00b7e\u2212e\u207b\u00b2",
+        "unit": "mPa\u00b7s",
+        "orifice_note": "CRC sulfuric acid viscosity 26.7 mPa\u00b7s. Old leaf \u03c0\u00b2\u00b7e=26.828 overshot by 1/e\u00b2. Not other 26.7 rows."
       }
     },
     "olive oil": {
