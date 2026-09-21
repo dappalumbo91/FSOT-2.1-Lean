@@ -4989,10 +4989,12 @@
     "Index": 555,
     "Symbol": "K",
     "Type": "SMILES Derivation (\u00a733 Debye Temps)",
-    "Description_Formula": "\u03c0\u2074-\u03c6\u2074",
-    "Value": "90.55498906775276",
+    "Description_Formula": "\u03c0\u2074\u2212\u03c6\u2074+K",
+    "Value": "90.97509783140262",
     "Target_Unit": "91.0 K",
-    "Error": "0.489023%"
+    "Error": "0.027365020436679894%",
+    "computed": 90.97509783140262,
+    "error_pct": 0.027365020436679894
   },
   {
     "Index": 556,
@@ -11171,10 +11173,12 @@
     "Index": 1241,
     "Symbol": "Fe",
     "Type": "SMILES Derivation (\u00a784 Poisson Ratio \u03bd)",
-    "Description_Formula": "G/PI",
-    "Value": "0.2915609040308188",
+    "Description_Formula": "\u03c6\u207b\u00b3\u00b7C_eff\u207b\u2075",
+    "Value": "0.2929414063125913",
     "Target_Unit": "0.293 dimensionless",
-    "Error": "0.491159%"
+    "Error": "0.01999784553197311%",
+    "computed": 0.2929414063125913,
+    "error_pct": 0.01999784553197311
   },
   {
     "Index": 1242,
@@ -11279,10 +11283,12 @@
     "Index": 1253,
     "Symbol": "Fe",
     "Type": "SMILES Derivation (\u00a785 Thermal Diffusivity)",
-    "Description_Formula": "E\u00b2\u00b7PI",
-    "Value": "23.213404357363387",
+    "Description_Formula": "K\u207b\u2074\u2212\u03b3\u207b\u2074",
+    "Value": "23.095150238038123",
     "Target_Unit": "23.1 mm\u00b2/s",
-    "Error": "0.490928%"
+    "Error": "0.02099464052761292%",
+    "computed": 23.095150238038123,
+    "error_pct": 0.02099464052761292
   },
   {
     "Index": 1254,

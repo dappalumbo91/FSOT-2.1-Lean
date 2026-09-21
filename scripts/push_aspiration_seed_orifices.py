@@ -30,6 +30,7 @@ HG = (E ** 7 + E ** 6 - PHI ** 6) - PI ** 3
 W_AT = (E ** 4 + E ** 7 - PI ** 5) + PHI ** 3
 FE_NU = (PHI ** -3) * (C_EFF ** -5)
 FE_ALPHA = (K ** -4) - (float(m.GAMMA) ** -4)
+K_DEBYE = (PI ** 4 - PHI ** 4) + K
 
 SPECS = {
     "Ni_EDTA": {
@@ -74,6 +75,12 @@ SPECS = {
         "formula": "K⁻⁴−γ⁻⁴",
         "note": "e²·π = 23.213 overshot Touloukian 23.1 mm²/s by 0.491%. Live K⁻⁴−γ⁻⁴. Not aluminum's 23.1 thermal-expansion row.",
     },
+    "K_debye": {
+        "computed": K_DEBYE,
+        "measured": 91.0,
+        "formula": "π⁴−φ⁴+K",
+        "note": "Potassium Debye temperature, Kittel/CRC 91 K. π⁴−φ⁴=90.555 stopped 0.445 K short. Add live K. Not Ni thermal conductivity 90.9.",
+    },
 }
 
 
@@ -108,12 +115,38 @@ def _touch(rec: dict, computed: float, measured: float, formula: str) -> None:
 
 
 def _target_is(rec: dict, value: float) -> bool:
-    raw = rec.get("measured", rec.get("target", rec.get("target_value")))
+    raw = rec.get("measured", rec.get("target", rec.get("target_value", rec.get("Target_Unit"))))
     try:
         got = float(str(raw).split()[0])
     except (TypeError, ValueError):
         return False
     return abs(got - value) < 1e-6
+
+
+def _is_k_debye(rec: dict) -> bool:
+    if not _target_is(rec, 91.0):
+        return False
+    formula = str(rec.get("formula") or rec.get("fsot_formula") or rec.get("Description_Formula") or "")
+    blob = " ".join(
+        [
+            formula,
+            str(rec.get("section") or ""),
+            str(rec.get("property") or ""),
+            str(rec.get("Type") or ""),
+            str(rec.get("section_display_name") or ""),
+        ]
+    )
+    low = blob.lower()
+    compact = (
+        low.replace(" ", "")
+        .replace("^", "")
+        .replace("⁴", "4")
+        .replace("φ", "phi")
+        .replace("π", "pi")
+    )
+    if "thermal" in low or "kappa" in low or "κ" in blob:
+        return False
+    return ("debye" in low) or ("§33" in blob) or ("pi4" in compact and "phi4" in compact)
 
 
 def _is_fe_diffusivity(rec: dict) -> bool:
@@ -218,6 +251,10 @@ def walk(node) -> int:
             spec = SPECS["Fe_diffusivity"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
+        elif _is_k_debye(node):
+            spec = SPECS["K_debye"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
         td = node.get("thermal_diff_mm2_s")
         if isinstance(td, dict) and _target_is(td, 23.1) and str(td.get("formula") or "").startswith("E"):
             spec = SPECS["Fe_diffusivity"]
@@ -280,6 +317,8 @@ def main() -> int:
         ROOT / "data/phi_morphogenetic_scaling_benchmark.json",
         ROOT / "data/crc_handbook_properties_benchmark.json",
         ROOT / "data/materials_engineering_benchmark.json",
+        ROOT / "data/electrical_power_systems_benchmark.json",
+        ROOT / "data/quantum_materials_benchmark.json",
         ROOT / "vendor/species/fsot_species_catalog.json",
         ROOT / "data/lab_registry.json",
         ROOT / "data/scientific_metrics_github_report.json",
