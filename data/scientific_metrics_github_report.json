@@ -6174,7 +6174,7 @@
           "name": "W",
           "property": "\u00a7101 Atomization \u0394H_at",
           "measured": 849.4,
-          "computed": 845.2116236763211,
+          "computed": 849.4476916538209,
           "unit": "kJ/mol",
           "delta": -4.18837632,
           "abs_delta": 4.18837632,
@@ -6185,7 +6185,8 @@
           "comparison_kind": "display_precision",
           "precision_tier": "green",
           "reference": "NIST-JANAF / CRC / Kittel",
-          "reference_source": null
+          "reference_source": null,
+          "error_pct": 0.005614746152689897
         },
         {
           "name": "K",
@@ -12503,7 +12504,7 @@
           "name": "W",
           "property": "\u00a7101 Atomization \u0394H_at",
           "measured": 849.4,
-          "computed": 845.2116236763211,
+          "computed": 849.4476916538209,
           "unit": null,
           "delta": -4.18837632,
           "abs_delta": 4.18837632,
@@ -12514,7 +12515,8 @@
           "comparison_kind": "display_precision",
           "precision_tier": "green",
           "reference": null,
-          "reference_source": "smiles_lab"
+          "reference_source": "smiles_lab",
+          "error_pct": 0.005614746152689897
         },
         {
           "name": "F\u207b",

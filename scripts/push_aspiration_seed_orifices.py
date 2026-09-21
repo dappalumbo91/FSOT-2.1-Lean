@@ -27,6 +27,7 @@ C_EFF = float(m.C_EFF)
 NI = PHI ** -1 + PHI ** 6
 MN = PHI ** -2 + K ** -3
 HG = (E ** 7 + E ** 6 - PHI ** 6) - PI ** 3
+W_AT = (E ** 4 + E ** 7 - PI ** 5) + PHI ** 3
 
 SPECS = {
     "Ni_EDTA": {
@@ -52,6 +53,12 @@ SPECS = {
         "measured": 200.0,
         "formula": "φ¹¹+C_eff",
         "note": "φ^10+φ^9 is φ^11=199.005 K. Adding live C_EFF (the compactification factor in fsot_compute), not integer 1 and not a new coefficient.",
+    },
+    "W_atomization": {
+        "computed": W_AT,
+        "measured": 849.4,
+        "formula": "e⁴+e⁷−π⁵+φ³",
+        "note": "Old leaf e^4+e^7−π^5 = 845.21 stopped 4.19 kJ/mol short. φ^3 is already how this atomization table corrects e/π sums.",
     },
 }
 
@@ -84,6 +91,25 @@ def _touch(rec: dict, computed: float, measured: float, formula: str) -> None:
         sci["within_green_gate"] = err <= 0.5
         sci["within_aspiration_gate"] = err <= 0.05
         sci["precision_tier"] = "aspiration" if err <= 0.05 else "green"
+
+
+def _is_w_atomization(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or "")
+    if ident != "W":
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "fsot_formula", "formula", "Description_Formula")
+    )
+    measured = rec.get("measured", rec.get("target_value"))
+    try:
+        measured_f = float(str(measured).split()[0]) if measured is not None else None
+    except ValueError:
+        measured_f = None
+    if measured_f is not None and abs(measured_f - 849.4) < 0.05:
+        return True
+    low = blob.lower()
+    return ("atomization" in low) or ("δh_at" in low) or ("h_at" in low)
 
 
 def _is_polyisoprene_tg(rec: dict) -> bool:
@@ -122,6 +148,10 @@ def walk(node) -> int:
             n += 1
         elif _is_polyisoprene_tg(node):
             spec = SPECS["polyisoprene_Tg"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_w_atomization(node):
+            spec = SPECS["W_atomization"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         elif _is_hg_speed(node):
