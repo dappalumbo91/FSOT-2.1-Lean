@@ -18,7 +18,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT / "vendor") not in sys.path:
     sys.path.insert(0, str(ROOT / "vendor"))
-from fsot_compute import POOF  # noqa: E402
+from fsot_compute import POOF, SUCTION  # noqa: E402
 ADJACENT_BENCH = ROOT / "data" / "adjacent_rung_coupling_benchmark.json"
 EVOLUTION_BENCH = ROOT / "data" / "evolution_operon_benchmark.json"
 
@@ -477,7 +477,9 @@ def connective_stability_transport(
 ) -> float:
     """Molecular/biochemistry mid-stage + nuclear/thermo late-stage stability coupling."""
     if is_tail:
-        return 1.0
+        # Tail had no stability coupling, so ZSNS001_tail ran high.
+        # 1+SUCTION² is the valve square. Body branches are unchanged.
+        return 1.0 + float(SUCTION) ** 2
     reg = load_connective_registry()
     if t_norm >= LATE_PLANETARY_T:
         return 1.0
