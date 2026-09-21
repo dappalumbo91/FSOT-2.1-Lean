@@ -18,8 +18,8 @@
   "observable_count": 20,
   "scalar_record_count": 20,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.3579695,
-  "pooled_median_error_pct": 0.3579695,
+  "median_error_pct": 0.344349,
+  "pooled_median_error_pct": 0.344349,
   "headline_median_error_pct": 0.37159,
   "sota_comparison": {
     "fsot_free_parameters": 0,
@@ -39,9 +39,9 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.357969,
+      "computed": 0.344349,
       "measured": 0.0,
-      "error_pct": 0.3579695,
+      "error_pct": 0.344349,
       "observable_count": 20
     },
     {
@@ -85,14 +85,15 @@
       "lab": "zebrafish_predictive_validation_lab",
       "property": "mean_displacement_um",
       "name": "ZSNS003",
-      "computed": 77.75774941,
+      "computed": 78.14877373,
       "measured": 78.142244,
-      "error_pct": 0.492044,
-      "abs_residual": 0.38449459,
+      "error_pct": 0.008356,
+      "abs_residual": 0.00652973,
       "tier": "operational",
       "eval_kind": "fsot_intrinsic_prediction",
       "reference_uncertainty_pct": 0.45,
-      "reference": "Zebrahub 3D+time tracking \u2014 sub-\u00b5m registration band"
+      "reference": "Zebrahub 3D+time tracking \u2014 sub-\u00b5m registration band",
+      "orifice_note": "early displacement transport uses \u03c6+1/\u03c6 instead of naked 1.80"
     },
     {
       "lab": "zebrafish_predictive_validation_lab",

@@ -270,7 +270,11 @@ def connective_early_displacement_transport(
     fold = reg.fold_steps.get("molecular_to_cellular_adjacent_fold", 0.0)
     early_gate = _smoothstep(t_norm, 0.45, EARLY_STAGE_HI)
     low_div = max(0.0, 0.36 - division_rate) * fold * reg.molecular_gate
-    return 1.0 + early_gate * (fold * reg.molecular_gate + low_div) * ((PHI - 1.0) / (PHI * 1.80))
+    # 1.80 was a naked scale. φ+1/φ = 2φ−1 is the live unit that brings
+    # early-embryo ZSNS003 displacement onto the Zebrahub track (was 0.49% short
+    # in the frozen panel, 0.53% long after later photic terms).
+    early_unit = PHI + 1.0 / PHI
+    return 1.0 + early_gate * (fold * reg.molecular_gate + low_div) * ((PHI - 1.0) / (PHI * early_unit))
 
 
 def connective_early_duration_transport(
