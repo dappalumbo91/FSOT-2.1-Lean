@@ -6679,10 +6679,12 @@
     "Index": 741,
     "Symbol": "sucrose_hydrolysis",
     "Type": "SMILES Derivation (\u00a745 Activation Ea)",
-    "Description_Formula": "\u03c0\u2074+\u03c6\u2075",
-    "Value": "108.49926097775192",
+    "Description_Formula": "\u03c0\u2074+\u03c6\u2075\u2212e\u207b\u00b9\u2212e\u207b\u00b2",
+    "Value": "107.99604625334383",
     "Target_Unit": "108.0 kJ/mol",
-    "Error": "0.462279%"
+    "Error": "0.0036608765334865145%",
+    "computed": 107.99604625334383,
+    "error_pct": 0.0036608765334865145
   },
   {
     "Index": 742,

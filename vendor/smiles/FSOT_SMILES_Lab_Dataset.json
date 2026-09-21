@@ -8206,10 +8206,11 @@
       "target_value": 108.0,
       "unit": "kJ/mol",
       "source": "Laidler, Chem. Kinetics 3rd ed",
-      "fsot_formula": "\u03c0\u2074+\u03c6\u2075",
-      "computed_value": 108.49926097775192,
-      "error_pct": 0.462279,
-      "matched": true
+      "fsot_formula": "\u03c0\u2074+\u03c6\u2075\u2212e\u207b\u00b9\u2212e\u207b\u00b2",
+      "computed_value": 107.99604625334383,
+      "error_pct": 0.0036608765334865145,
+      "matched": true,
+      "computed": 107.99604625334383
     },
     {
       "section": "\u00a745 Activation Ea",

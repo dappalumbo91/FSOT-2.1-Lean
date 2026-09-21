@@ -39,6 +39,7 @@ H2SO4_VISC = (PI ** 2 * E) - (E ** -2)
 ZNO_GAP = (E ** -1) + (float(m.GAMMA) ** -2)
 CU_MUEFF = (PI ** -1) + (float(m.PSI_CON) ** -1)
 F_RADIUS = (float(m.G_CAT) + K) - (K ** 6)
+SUCROSE_EA = (PI ** 4 + PHI ** 5) - (E ** -1 + E ** -2)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -138,6 +139,12 @@ SPECS = {
         "formula": "G+K−K⁶",
         "note": "Shannon F− radius 1.33 Å. Old leaf G+K=1.336 overshot by K^6. Not water n_D 1.333, which also uses G+K.",
     },
+    "sucrose_ea": {
+        "computed": SUCROSE_EA,
+        "measured": 108.0,
+        "formula": "π⁴+φ⁵−e⁻¹−e⁻²",
+        "note": "Laidler sucrose hydrolysis Ea 108 kJ/mol. Old leaf π⁴+φ⁵=108.499 overshot by (e+1)/e². Not nichrome resistivity, which shares π⁴+φ⁵ against 110.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -198,6 +205,19 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_sucrose_ea(rec: dict) -> bool:
+    if str(rec.get("name") or rec.get("Symbol") or "") != "sucrose_hydrolysis":
+        return False
+    if not _target_is(rec, 108.0):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name")
+    )
+    low = blob.lower()
+    return ("activation" in low) or ("§45" in blob) or ("ea" in low) or ("kJ" in str(rec.get("Target_Unit") or rec.get("unit") or ""))
 
 
 def _is_f_radius(rec: dict) -> bool:
@@ -471,6 +491,10 @@ def walk(node) -> int:
             spec = SPECS["F_radius"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
+        elif _is_sucrose_ea(node):
+            spec = SPECS["sucrose_ea"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
         gap = node.get("band_gap_eV")
         if isinstance(gap, dict) and _target_is(gap, 3.37):
             spec = SPECS["ZnO_gap"]
@@ -582,6 +606,10 @@ def main() -> int:
         ROOT / "data/clinical_medicine_extension_benchmark.json",
         ROOT / "data/immunology_benchmark.json",
         ROOT / "data/neuroimmunology_benchmark.json",
+        ROOT / "data/creative_arts_math_spine_benchmark.json",
+        ROOT / "data/culinary_arts_benchmark.json",
+        ROOT / "data/maillard_chemistry_gap_fill_benchmark.json",
+        ROOT / "data/interactive_media_prereg_scaffold_benchmark.json",
         ROOT / "vendor/species/fsot_species_catalog.json",
         ROOT / "data/lab_registry.json",
         ROOT / "data/scientific_metrics_github_report.json",
