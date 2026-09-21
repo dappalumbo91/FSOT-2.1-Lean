@@ -5140,10 +5140,11 @@
       },
       "h_vap_kJ_mol": {
         "target": 1.71,
-        "computed": 1.7182818284590453,
-        "error_pct": 0.4843,
-        "formula": "E-1",
-        "unit": "kJ/mol"
+        "computed": 1.7108357217297618,
+        "error_pct": 0.04887261577554816,
+        "formula": "\u03b3\u207b\u00b9\u2212SUCTION\u00b2",
+        "unit": "kJ/mol",
+        "orifice_note": "NIST/CRC neon \u0394Hvap 1.71 kJ/mol. Old leaf e\u22121=1.718 was 0.484% high. Not other 1.71 rows."
       },
       "h_fus_kJ_mol": {
         "target": 0.335,

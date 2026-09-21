@@ -32,6 +32,7 @@ FE_NU = (PHI ** -3) * (C_EFF ** -5)
 FE_ALPHA = (K ** -4) - (float(m.GAMMA) ** -4)
 K_DEBYE = (PI ** 4 - PHI ** 4) + K
 CU_CP = (E ** 3) + (PHI ** 2) + (float(m.GAMMA) ** -1)
+NE_HVAP = (float(m.GAMMA) ** -1) - (float(m.SUCTION) ** 2)
 
 SPECS = {
     "Ni_EDTA": {
@@ -88,6 +89,12 @@ SPECS = {
         "formula": "e³+φ²+γ⁻¹",
         "note": "NIST-JANAF Cu(s) Cp 24.44. Old leaf e³+φ³=24.322 was 0.484% low. Not Al Cp 24.2 and not carbon IE2 24.384, which share the old leaf.",
     },
+    "Ne_hvap": {
+        "computed": NE_HVAP,
+        "measured": 1.71,
+        "formula": "γ⁻¹−SUCTION²",
+        "note": "NIST/CRC neon ΔHvap 1.71 kJ/mol. Old leaf e−1=1.718 was 0.484% high. Not other 1.71 rows.",
+    },
 }
 
 
@@ -128,6 +135,19 @@ def _target_is(rec: dict, value: float) -> bool:
     except (TypeError, ValueError):
         return False
     return abs(got - value) < 1e-6
+
+
+def _is_ne_hvap(rec: dict) -> bool:
+    if not _target_is(rec, 1.71):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "formula", "fsot_formula", "Description_Formula")
+    )
+    low = blob.lower()
+    if "hospital" in low or "gdp" in low or "bed" in low:
+        return False
+    return ("hvap" in low) or ("vap" in low) or ("§47" in blob) or ("e-1" in low.replace(" ", ""))
 
 
 def _is_cu_cp(rec: dict) -> bool:
@@ -278,6 +298,18 @@ def walk(node) -> int:
         elif _is_cu_cp(node):
             spec = SPECS["Cu_cp"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_ne_hvap(node):
+            spec = SPECS["Ne_hvap"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        hv = node.get("h_vap_kJ_mol")
+        if isinstance(hv, dict) and _target_is(hv, 1.71) and str(hv.get("formula") or "") in {"E-1", "e-1"}:
+            spec = SPECS["Ne_hvap"]
+            hv["computed"] = spec["computed"]
+            hv["error_pct"] = _err(spec["computed"], spec["measured"])
+            hv["formula"] = spec["formula"]
+            hv["orifice_note"] = spec["note"]
             n += 1
         cp = node.get("cp_J_molK")
         if isinstance(cp, dict) and _target_is(cp, 24.44) and str(cp.get("formula") or "").startswith("e"):
