@@ -38,6 +38,7 @@ AU_CHI = (-(PI ** 3) + PI) - (PHI ** -4)
 H2SO4_VISC = (PI ** 2 * E) - (E ** -2)
 ZNO_GAP = (E ** -1) + (float(m.GAMMA) ** -2)
 CU_MUEFF = (PI ** -1) + (float(m.PSI_CON) ** -1)
+F_RADIUS = (float(m.G_CAT) + K) - (K ** 6)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -131,6 +132,12 @@ SPECS = {
         "formula": "π⁻¹+ψ⁻¹",
         "note": "Earnshaw Cu2+ μeff 1.9 BM. Old leaf φ+θ_S=1.9089 was 0.470% high. Not CO2(aq) diffusion 1.91, which shares φ+θ.",
     },
+    "F_radius": {
+        "computed": F_RADIUS,
+        "measured": 1.33,
+        "formula": "G+K−K⁶",
+        "note": "Shannon F− radius 1.33 Å. Old leaf G+K=1.336 overshot by K^6. Not water n_D 1.333, which also uses G+K.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -191,6 +198,22 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_f_radius(rec: dict) -> bool:
+    if not _target_is(rec, 1.33):
+        return False
+    ident = str(rec.get("name") or rec.get("Symbol") or "")
+    if ident not in {"F⁻", "F-"}:
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit")
+    )
+    low = blob.lower()
+    if "electrode" in low or "§107" in blob or "refractive" in low:
+        return False
+    return ("ionic" in low) or ("§40" in blob) or ("radi" in low)
 
 
 def _is_cu_mueff(rec: dict) -> bool:
@@ -442,6 +465,10 @@ def walk(node) -> int:
             n += 1
         elif _is_cu_mueff(node):
             spec = SPECS["Cu_mueff"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_f_radius(node):
+            spec = SPECS["F_radius"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         gap = node.get("band_gap_eV")

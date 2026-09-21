@@ -7257,10 +7257,11 @@
       "target_value": 1.33,
       "unit": "\u00c5",
       "source": "Shannon (1976)",
-      "fsot_formula": "G+K",
-      "computed_value": 1.3361872583379157,
-      "error_pct": 0.465207,
-      "matched": true
+      "fsot_formula": "G+K\u2212K\u2076",
+      "computed_value": 1.330576791886474,
+      "error_pct": 0.043367811013072154,
+      "matched": true,
+      "computed": 1.330576791886474
     },
     {
       "section": "\u00a740 Ionic Radii",
