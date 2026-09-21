@@ -33,6 +33,7 @@ FE_ALPHA = (K ** -4) - (float(m.GAMMA) ** -4)
 K_DEBYE = (PI ** 4 - PHI ** 4) + K
 CU_CP = (E ** 3) + (PHI ** 2) + (float(m.GAMMA) ** -1)
 NE_HVAP = (float(m.GAMMA) ** -1) - (float(m.SUCTION) ** 2)
+BENZENE_TM = ((float(m.GAMMA) ** -5) * (PHI ** 6)) - (E / 2.0)
 
 SPECS = {
     "Ni_EDTA": {
@@ -95,6 +96,12 @@ SPECS = {
         "formula": "γ⁻¹−SUCTION²",
         "note": "NIST/CRC neon ΔHvap 1.71 kJ/mol. Old leaf e−1=1.718 was 0.484% high. Not other 1.71 rows.",
     },
+    "benzene_tm": {
+        "computed": BENZENE_TM,
+        "measured": 278.7,
+        "formula": "γ⁻⁵·φ⁶−e/2",
+        "note": "NIST benzene Tm 278.7 K. Old leaf γ⁻⁵·φ⁶=280.05 overshot by about e/2. Not water's melting point, which shared the old leaf in a stale unified copy.",
+    },
 }
 
 
@@ -135,6 +142,17 @@ def _target_is(rec: dict, value: float) -> bool:
     except (TypeError, ValueError):
         return False
     return abs(got - value) < 1e-6
+
+
+def _is_benzene_tm(rec: dict) -> bool:
+    if not _target_is(rec, 278.7):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "formula", "fsot_formula", "Description_Formula")
+    )
+    low = blob.lower()
+    return ("melt" in low) or ("§28" in blob)
 
 
 def _is_ne_hvap(rec: dict) -> bool:
@@ -302,6 +320,18 @@ def walk(node) -> int:
         elif _is_ne_hvap(node):
             spec = SPECS["Ne_hvap"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_benzene_tm(node):
+            spec = SPECS["benzene_tm"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        tm = node.get("melting_K")
+        if isinstance(tm, dict) and _target_is(tm, 278.7):
+            spec = SPECS["benzene_tm"]
+            tm["computed"] = spec["computed"]
+            tm["error_pct"] = _err(spec["computed"], spec["measured"])
+            tm["formula"] = spec["formula"]
+            tm["orifice_note"] = spec["note"]
             n += 1
         hv = node.get("h_vap_kJ_mol")
         if isinstance(hv, dict) and _target_is(hv, 1.71) and str(hv.get("formula") or "") in {"E-1", "e-1"}:

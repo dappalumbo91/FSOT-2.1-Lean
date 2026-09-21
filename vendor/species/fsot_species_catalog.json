@@ -4160,10 +4160,11 @@
       },
       "melting_K": {
         "target": 278.7,
-        "computed": 280.04981981868946,
-        "error_pct": 0.4843,
-        "formula": "\u03b3\u207b\u2075\u00b7\u03c6\u2076",
-        "unit": "K"
+        "computed": 278.69067890445996,
+        "error_pct": 0.0033444906853358127,
+        "formula": "\u03b3\u207b\u2075\u00b7\u03c6\u2076\u2212e/2",
+        "unit": "K",
+        "orifice_note": "NIST benzene Tm 278.7 K. Old leaf \u03b3\u207b\u2075\u00b7\u03c6\u2076=280.05 overshot by about e/2. Not water's melting point, which shared the old leaf in a stale unified copy."
       },
       "dielectric": {
         "target": 2.28,
