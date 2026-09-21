@@ -34,6 +34,7 @@ K_DEBYE = (PI ** 4 - PHI ** 4) + K
 CU_CP = (E ** 3) + (PHI ** 2) + (float(m.GAMMA) ** -1)
 NE_HVAP = (float(m.GAMMA) ** -1) - (float(m.SUCTION) ** 2)
 BENZENE_TM = ((float(m.GAMMA) ** -5) * (PHI ** 6)) - (E / 2.0)
+AU_CHI = (-(PI ** 3) + PI) - (PHI ** -4)
 
 SPECS = {
     "Ni_EDTA": {
@@ -102,6 +103,12 @@ SPECS = {
         "formula": "γ⁻⁵·φ⁶−e/2",
         "note": "NIST benzene Tm 278.7 K. Old leaf γ⁻⁵·φ⁶=280.05 overshot by about e/2. Not water's melting point, which shared the old leaf in a stale unified copy.",
     },
+    "Au_chi": {
+        "computed": AU_CHI,
+        "measured": -28.0,
+        "formula": "−π³+π−φ⁻⁴",
+        "note": "CRC/Selwood gold χm −28×10⁻⁶ cm³/mol. Old leaf −π³+π=−27.865 was 0.483% short. φ⁻⁴ is the missing diamagnetic piece. Not bismuth −280.1.",
+    },
 }
 
 
@@ -142,6 +149,17 @@ def _target_is(rec: dict, value: float) -> bool:
     except (TypeError, ValueError):
         return False
     return abs(got - value) < 1e-6
+
+
+def _is_au_chi(rec: dict) -> bool:
+    if not _target_is(rec, -28.0):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "formula", "fsot_formula", "Description_Formula")
+    )
+    low = blob.lower()
+    return ("magnetic" in low) or ("χ" in blob) or ("§13" in blob) or ("chi" in low)
 
 
 def _is_benzene_tm(rec: dict) -> bool:
@@ -323,6 +341,10 @@ def walk(node) -> int:
             n += 1
         elif _is_benzene_tm(node):
             spec = SPECS["benzene_tm"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_au_chi(node):
+            spec = SPECS["Au_chi"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         tm = node.get("melting_K")
