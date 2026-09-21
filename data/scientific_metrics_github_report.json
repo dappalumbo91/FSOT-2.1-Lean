@@ -6210,7 +6210,7 @@
           "name": "Cu(s)",
           "property": "\u00a712 Cp\u00b0",
           "measured": 24.44,
-          "computed": 24.321604900687458,
+          "computed": 24.436025626538196,
           "unit": "J/(mol\u00b7K)",
           "delta": -0.1183951,
           "abs_delta": 0.1183951,
@@ -6221,7 +6221,8 @@
           "comparison_kind": "display_precision",
           "precision_tier": "green",
           "reference": "NIST-JANAF / CRC Handbook",
-          "reference_source": null
+          "reference_source": null,
+          "error_pct": 0.01626175720869459
         }
       ]
     },
@@ -23423,7 +23424,7 @@
           "name": "Cu",
           "property": "cp_J_molK",
           "measured": 24.44,
-          "computed": 24.321604900687458,
+          "computed": 24.436025626538196,
           "unit": null,
           "delta": -0.1183951,
           "abs_delta": 0.1183951,
@@ -23434,13 +23435,14 @@
           "comparison_kind": "display_precision",
           "precision_tier": "green",
           "reference": null,
-          "reference_source": "fsot_species_catalog.json"
+          "reference_source": "fsot_species_catalog.json",
+          "error_pct": 0.01626175720869459
         },
         {
           "name": "Brass_C360",
           "property": "cp_J_molK",
           "measured": 24.44,
-          "computed": 24.321604900687458,
+          "computed": 24.436025626538196,
           "unit": null,
           "delta": -0.1183951,
           "abs_delta": 0.1183951,
@@ -23451,13 +23453,14 @@
           "comparison_kind": "display_precision",
           "precision_tier": "green",
           "reference": null,
-          "reference_source": "fsot_species_catalog.json"
+          "reference_source": "fsot_species_catalog.json",
+          "error_pct": 0.01626175720869459
         },
         {
           "name": "BeCu_C17200",
           "property": "cp_J_molK",
           "measured": 24.44,
-          "computed": 24.321604900687458,
+          "computed": 24.436025626538196,
           "unit": null,
           "delta": -0.1183951,
           "abs_delta": 0.1183951,
@@ -23468,7 +23471,8 @@
           "comparison_kind": "display_precision",
           "precision_tier": "green",
           "reference": null,
-          "reference_source": "fsot_species_catalog.json"
+          "reference_source": "fsot_species_catalog.json",
+          "error_pct": 0.01626175720869459
         }
       ]
     },

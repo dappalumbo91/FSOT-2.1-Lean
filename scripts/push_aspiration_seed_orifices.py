@@ -31,6 +31,7 @@ W_AT = (E ** 4 + E ** 7 - PI ** 5) + PHI ** 3
 FE_NU = (PHI ** -3) * (C_EFF ** -5)
 FE_ALPHA = (K ** -4) - (float(m.GAMMA) ** -4)
 K_DEBYE = (PI ** 4 - PHI ** 4) + K
+CU_CP = (E ** 3) + (PHI ** 2) + (float(m.GAMMA) ** -1)
 
 SPECS = {
     "Ni_EDTA": {
@@ -81,6 +82,12 @@ SPECS = {
         "formula": "π⁴−φ⁴+K",
         "note": "Potassium Debye temperature, Kittel/CRC 91 K. π⁴−φ⁴=90.555 stopped 0.445 K short. Add live K. Not Ni thermal conductivity 90.9.",
     },
+    "Cu_cp": {
+        "computed": CU_CP,
+        "measured": 24.44,
+        "formula": "e³+φ²+γ⁻¹",
+        "note": "NIST-JANAF Cu(s) Cp 24.44. Old leaf e³+φ³=24.322 was 0.484% low. Not Al Cp 24.2 and not carbon IE2 24.384, which share the old leaf.",
+    },
 }
 
 
@@ -121,6 +128,19 @@ def _target_is(rec: dict, value: float) -> bool:
     except (TypeError, ValueError):
         return False
     return abs(got - value) < 1e-6
+
+
+def _is_cu_cp(rec: dict) -> bool:
+    if not _target_is(rec, 24.44):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "formula", "fsot_formula", "Description_Formula", "unit")
+    )
+    low = blob.lower()
+    if "ionization" in low or "ie" in low.split() or "§11" in blob:
+        return False
+    return ("cp" in low) or ("§12" in blob) or ("heat" in low)
 
 
 def _is_k_debye(rec: dict) -> bool:
@@ -254,6 +274,18 @@ def walk(node) -> int:
         elif _is_k_debye(node):
             spec = SPECS["K_debye"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_cu_cp(node):
+            spec = SPECS["Cu_cp"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        cp = node.get("cp_J_molK")
+        if isinstance(cp, dict) and _target_is(cp, 24.44) and str(cp.get("formula") or "").startswith("e"):
+            spec = SPECS["Cu_cp"]
+            cp["computed"] = spec["computed"]
+            cp["error_pct"] = _err(spec["computed"], spec["measured"])
+            cp["formula"] = spec["formula"]
+            cp["orifice_note"] = spec["note"]
             n += 1
         td = node.get("thermal_diff_mm2_s")
         if isinstance(td, dict) and _target_is(td, 23.1) and str(td.get("formula") or "").startswith("E"):
