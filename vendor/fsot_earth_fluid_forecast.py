@@ -582,7 +582,7 @@ def weather_forecasts(
                     "basin": basin,
                 },
                 "kill_if": (
-                    f"NDBC {bid} next 48h: "
+                    f"NDBC {bid} next {weather_horizon_hours()}h: "
                     + (
                         "pressure stays ≥1010 hPa AND gust <8 m/s"
                         if storm

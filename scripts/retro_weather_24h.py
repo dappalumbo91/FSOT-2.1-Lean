@@ -7,6 +7,7 @@ would hold/kill change? Uses NDBC realtime/stdmet (same parser as the scorer).
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 import urllib.request
@@ -29,20 +30,37 @@ OUT = ROOT / "results" / "dated_forecast_scores" / "WEATHER_24H_RETRO.json"
 DOC = ROOT / "results" / "dated_forecast_scores" / "WEATHER_24H_RETRO.md"
 
 
-def _stormish(rows: list[dict], expect_storm: bool) -> tuple[bool, bool]:
-    saw_storm = any(
-        (r.get("pres") is not None and r["pres"] < 1010.0)
-        or (r.get("gst") is not None and r["gst"] >= 8.0)
-        for r in rows
-        if r.get("pres") is not None or r.get("gst") is not None
-    )
-    quiet_broken = any(
-        (r.get("pres") is not None and r["pres"] < 1005.0)
-        or (r.get("gst") is not None and r["gst"] >= 12.0)
-        for r in rows
-    )
+def _nums(rows: list[dict], key: str) -> list[float]:
+    out: list[float] = []
+    for r in rows:
+        v = r.get(key)
+        if v is None:
+            continue
+        try:
+            out.append(float(v))
+        except (TypeError, ValueError):
+            continue
+    return out
+
+
+def _stormish(rows: list[dict], expect_storm: bool) -> tuple[bool, bool, bool, dict]:
+    """Quiet kill is pres<1005 or gust≥12. Mild saw_storm is pres<1010 or gust≥8.
+
+    A quiet cell can 'see' a mild dip on day 1 and still hold, then break on day 2.
+    Those are two process days. Do not move 1005/1010 to swallow one of them.
+    """
+    pres = _nums(rows, "pres")
+    gst = _nums(rows, "gst")
+    saw_storm = any(p < 1010.0 for p in pres) or any(g >= 8.0 for g in gst)
+    quiet_broken = any(p < 1005.0 for p in pres) or any(g >= 12.0 for g in gst)
     ok = saw_storm if expect_storm else (not quiet_broken)
-    return ok, saw_storm
+    stats = {
+        "min_pres": min(pres) if pres else None,
+        "max_gst": max(gst) if gst else None,
+        "quiet_broken": quiet_broken,
+        "saw_storm": saw_storm,
+    }
+    return ok, saw_storm, quiet_broken, stats
 
 
 def _fetch_rows(bid: str, start: datetime, end: datetime) -> list[dict]:
@@ -114,8 +132,19 @@ def main() -> int:
                     }
                 )
                 continue
-            ok48, saw48 = _stormish(all_rows, storm)
-            ok24, saw24 = _stormish(first, storm) if first else (False, False)
+            second = [r for r in all_rows if datetime.fromisoformat(str(r["t"]).replace("Z", "+00:00")) > mid]
+            ok48, saw48, br48, st48 = _stormish(all_rows, storm)
+            ok24, saw24, br24, st24 = _stormish(first, storm) if first else (False, False, False, {})
+            ok2, saw2, br2, st2 = _stormish(second, storm) if second else (False, False, False, {})
+            same = (ok48 == ok24) if first else False
+            if first and (not storm) and ok24 and not ok48:
+                split = "second_process_day"
+            elif not first:
+                split = "no_obs"
+            elif same:
+                split = "agree"
+            else:
+                split = "disagree"
             rows_out.append(
                 {
                     "id": fc.get("id"),
@@ -124,24 +153,43 @@ def main() -> int:
                     "issued_hours": (end - start).total_seconds() / 3600.0,
                     "n_obs_48h": len(all_rows),
                     "n_obs_24h": len(first),
+                    "n_obs_day2": len(second),
                     "saw_storm_48h": saw48,
                     "saw_storm_24h": saw24,
+                    "saw_storm_day2": saw2,
+                    "quiet_broken_24h": br24,
+                    "quiet_broken_48h": br48,
+                    "quiet_broken_day2": br2,
+                    "min_pres_24h": st24.get("min_pres"),
+                    "max_gst_24h": st24.get("max_gst"),
+                    "min_pres_day2": st2.get("min_pres"),
+                    "max_gst_day2": st2.get("max_gst"),
+                    "min_pres_48h": st48.get("min_pres"),
+                    "max_gst_48h": st48.get("max_gst"),
                     "result_48h": "hold" if ok48 else "kill",
                     "result_24h": "hold" if ok24 else "kill",
-                    "same": (ok48 == ok24) if first else False,
+                    "result_day2": ("hold" if ok2 else "kill") if second else "no_obs",
+                    "same": same,
+                    "split": split,
                 }
             )
 
     n = len(rows_out)
     n_same = sum(1 for r in rows_out if r.get("same"))
     n_obs = sum(1 for r in rows_out if r.get("n_obs_48h", 0) > 0)
+    n_second = sum(1 for r in rows_out if r.get("split") == "second_process_day")
+    pin = hashlib.sha256((ROOT / "vendor" / "fsot_compute.py").read_bytes()).hexdigest()[:6].upper()
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "pin": "D1D38A",
-        "note": "Frozen 48 h issues not rewritten. 24 h is the next increment for NEW issues.",
+        "pin": pin,
+        "note": (
+            "Frozen 48 h issues not rewritten. A quiet hold on day 1 that breaks on day 2 "
+            "is the next process day, not a day-1 miss. Bars stay 1010/1005 and 8/12 m/s."
+        ),
         "n": n,
         "n_with_obs": n_obs,
         "n_24h_agrees_48h": n_same,
+        "n_second_process_day": n_second,
         "rows": rows_out,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -149,25 +197,27 @@ def main() -> int:
     lines = [
         "# Weather 24 h retrospective",
         "",
-        f"*Generated {payload['generated_at']} · pin D1D38A*",
+        f"*Generated {payload['generated_at']} · pin {pin}*",
         "",
-        "Issued JSON is **frozen**. This asks whether the first SI day of a 48 h",
-        "window would have given the same hold/kill. New issues use 24 h.",
+        "Issued JSON is **frozen**. 48 h is two process days. Day 1 is the competitive window.",
+        "Day 2 is the next window. Bars are not moved.",
         "",
-        f"Compared **{n_same}/{n_obs}** windows with observations (agree 24 h vs 48 h).",
+        f"Agree **{n_same}/{n_obs}**. Second-process-day breaks: **{n_second}**.",
         "",
-        "| ID | Buoy | 48 h | 24 h | Same | n24 / n48 |",
-        "|----|------|------|------|:----:|----------:|",
+        "| ID | Buoy | 48 h | day1 | day2 | split | minP day1 | minP day2 | maxG day1 | maxG day2 |",
+        "|----|------|------|------|------|-------|----------:|----------:|----------:|----------:|",
     ]
     for r in rows_out:
         lines.append(
             f"| `{r.get('id')}` | {r.get('buoy_id')} | {r.get('result_48h')} | "
-            f"{r.get('result_24h')} | {r.get('same')} | "
-            f"{r.get('n_obs_24h')}/{r.get('n_obs_48h')} |"
+            f"{r.get('result_24h')} | {r.get('result_day2')} | {r.get('split')} | "
+            f"{r.get('min_pres_24h')} | {r.get('min_pres_day2')} | "
+            f"{r.get('max_gst_24h')} | {r.get('max_gst_day2')} |"
         )
     lines += [
         "",
-        "Kill: rewriting issued JSON. Kill: retuning POOF to swallow a miss.",
+        "Quiet kill: pressure < 1005 hPa or gust ≥ 12 m/s. Mild saw-storm: < 1010 hPa or gust ≥ 8 m/s.",
+        "Kill: rewriting issued JSON. Kill: retuning POOF or the bars to swallow PTIT2.",
         "",
         "Refresh: `python scripts/retro_weather_24h.py`",
         "",

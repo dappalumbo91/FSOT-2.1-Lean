@@ -1,47 +1,48 @@
 # Weather 24 h retrospective
 
-*Generated 2026-09-17T21:07:51.551136+00:00 · pin D1D38A*
+*Generated 2026-09-21T21:13:11.636799+00:00 · pin AEB2AD*
 
-Issued JSON is **frozen**. This asks whether the first SI day of a 48 h
-window would have given the same hold/kill. New issues use 24 h.
+Issued JSON is **frozen**. 48 h is two process days. Day 1 is the competitive window.
+Day 2 is the next window. Bars are not moved.
 
-Compared **25/26** windows with observations (agree 24 h vs 48 h).
+Agree **25/26**. Second-process-day breaks: **1**.
 
-| ID | Buoy | 48 h | 24 h | Same | n24 / n48 |
-|----|------|------|------|:----:|----------:|
-| `FCAST-WX-20260825-01` | RDDA2 | hold | hold | True | 234/471 |
-| `FCAST-WX-20260825-02` | WRXA2 | hold | hold | True | 144/288 |
-| `FCAST-WX-20260825-03` | UQXA2 | hold | hold | True | 144/286 |
-| `FCAST-WX-20260825-04` | KOZA2 | hold | hold | True | 144/287 |
-| `FCAST-WX-20260825-05` | DHXA2 | hold | hold | True | 144/288 |
-| `FCAST-WX-20260825T0121-01` | WRXA2 | hold | hold | True | 144/288 |
-| `FCAST-WX-20260825T0121-02` | SGXA2 | hold | hold | True | 144/288 |
-| `FCAST-WX-20260825T0121-03` | OLCN6 | kill | kill | True | 144/288 |
-| `FCAST-WX-20260825T0121-04` | 45144 | no_obs | no_obs | None | 0/0 |
-| `FCAST-WX-20260825T0121-05` | 42058 | kill | kill | True | 143/284 |
-| `FCAST-WX-20260825T0121-06` | BABT2 | hold | hold | True | 237/474 |
-| `FCAST-WX-20260825T0222-01` | UQXA2 | hold | hold | True | 142/286 |
-| `FCAST-WX-20260825T0222-02` | 46208 | no_obs | no_obs | None | 0/0 |
-| `FCAST-WX-20260825T0222-03` | OLCN6 | kill | kill | True | 144/288 |
-| `FCAST-WX-20260825T0222-04` | 45145 | no_obs | no_obs | None | 0/0 |
-| `FCAST-WX-20260825T0222-05` | 42058 | kill | kill | True | 143/284 |
-| `FCAST-WX-20260825T0222-06` | EPTT2 | hold | hold | True | 240/478 |
-| `FCAST-WX-20260831T2357-01` | MDXA2 | hold | hold | True | 144/288 |
-| `FCAST-WX-20260831T2357-02` | PPXA2 | hold | hold | True | 144/288 |
-| `FCAST-WX-20260831T2357-03` | APRP7 | hold | hold | True | 240/480 |
-| `FCAST-WX-20260831T2357-04` | BZST2 | hold | hold | True | 240/480 |
-| `FCAST-WX-20260831T2357-05` | 44078 | kill | kill | True | 144/288 |
-| `FCAST-WX-20260901T0032-01` | MDXA2 | hold | hold | True | 144/288 |
-| `FCAST-WX-20260901T0032-02` | PPXA2 | hold | hold | True | 144/288 |
-| `FCAST-WX-20260901T0032-03` | 42013 | hold | hold | True | 48/95 |
-| `FCAST-WX-20260901T0032-04` | APRP7 | hold | hold | True | 240/480 |
-| `FCAST-WX-20260901T0032-05` | 62146 | no_obs | no_obs | None | 0/0 |
-| `FCAST-WX-20260909T1854-01` | 62442 | no_obs | no_obs | None | 0/0 |
-| `FCAST-WX-20260909T1854-02` | 46070 | hold | hold | True | 109/227 |
-| `FCAST-WX-20260909T1854-03` | 64046 | no_obs | no_obs | None | 0/0 |
-| `FCAST-WX-20260909T1854-04` | 51002 | hold | hold | True | 115/235 |
-| `FCAST-WX-20260909T1854-05` | PTIT2 | kill | hold | False | 240/480 |
+| ID | Buoy | 48 h | day1 | day2 | split | minP day1 | minP day2 | maxG day1 | maxG day2 |
+|----|------|------|------|------|-------|----------:|----------:|----------:|----------:|
+| `FCAST-WX-20260825-01` | RDDA2 | hold | hold | hold | agree | 993.2 | 1007.7 | 12.4 | 13.4 |
+| `FCAST-WX-20260825-02` | WRXA2 | hold | hold | hold | agree | 988.0 | 1002.7 | 20.1 | 16.5 |
+| `FCAST-WX-20260825-03` | UQXA2 | hold | hold | hold | agree | 988.2 | 1000.8 | 22.1 | 18.5 |
+| `FCAST-WX-20260825-04` | KOZA2 | hold | hold | hold | agree | 997.6 | 1008.6 | 16.5 | 11.8 |
+| `FCAST-WX-20260825-05` | DHXA2 | hold | hold | hold | agree | 994.7 | 1003.0 | 13.9 | 10.3 |
+| `FCAST-WX-20260825T0121-01` | WRXA2 | hold | hold | hold | agree | 988.0 | 1003.2 | 20.1 | 16.5 |
+| `FCAST-WX-20260825T0121-02` | SGXA2 | hold | hold | hold | agree | 1012.4 | 1022.9 | 19.6 | 11.3 |
+| `FCAST-WX-20260825T0121-03` | OLCN6 | kill | kill | kill | agree | 1004.4 | 1003.4 | 13.9 | 9.3 |
+| `FCAST-WX-20260825T0121-04` | 45144 | no_obs | no_obs | None | None | None | None | None | None |
+| `FCAST-WX-20260825T0121-05` | 42058 | kill | kill | kill | agree | 1009.0 | 1008.4 | 15.0 | 15.0 |
+| `FCAST-WX-20260825T0121-06` | BABT2 | hold | hold | hold | agree | 1013.4 | 1012.9 | 11.3 | 9.8 |
+| `FCAST-WX-20260825T0222-01` | UQXA2 | hold | hold | hold | agree | 988.2 | 1002.9 | 22.1 | 17.0 |
+| `FCAST-WX-20260825T0222-02` | 46208 | no_obs | no_obs | None | None | None | None | None | None |
+| `FCAST-WX-20260825T0222-03` | OLCN6 | kill | kill | kill | agree | 1004.7 | 1003.0 | 13.9 | 9.3 |
+| `FCAST-WX-20260825T0222-04` | 45145 | no_obs | no_obs | None | None | None | None | None | None |
+| `FCAST-WX-20260825T0222-05` | 42058 | kill | kill | kill | agree | 1009.0 | 1008.4 | 15.0 | 15.0 |
+| `FCAST-WX-20260825T0222-06` | EPTT2 | hold | hold | hold | agree | 1013.1 | 1011.5 | 10.3 | 9.8 |
+| `FCAST-WX-20260831T2357-01` | MDXA2 | hold | hold | hold | agree | 991.4 | 1003.4 | 19.6 | 8.8 |
+| `FCAST-WX-20260831T2357-02` | PPXA2 | hold | hold | hold | agree | 996.2 | 1004.5 | 20.1 | 16.0 |
+| `FCAST-WX-20260831T2357-03` | APRP7 | hold | hold | hold | agree | 1007.6 | 1006.9 | 10.3 | 8.8 |
+| `FCAST-WX-20260831T2357-04` | BZST2 | hold | hold | hold | agree | 1010.5 | 1009.9 | 7.2 | 8.2 |
+| `FCAST-WX-20260831T2357-05` | 44078 | kill | kill | kill | agree | 1004.7 | 1002.8 | None | None |
+| `FCAST-WX-20260901T0032-01` | MDXA2 | hold | hold | hold | agree | 991.6 | 1003.5 | 19.6 | 8.8 |
+| `FCAST-WX-20260901T0032-02` | PPXA2 | hold | hold | hold | agree | 996.6 | 1004.5 | 20.1 | 16.0 |
+| `FCAST-WX-20260901T0032-03` | 42013 | hold | hold | hold | agree | 1014.2 | 1012.5 | 19.0 | 16.0 |
+| `FCAST-WX-20260901T0032-04` | APRP7 | hold | hold | hold | agree | 1007.6 | 1006.9 | 10.3 | 8.8 |
+| `FCAST-WX-20260901T0032-05` | 62146 | no_obs | no_obs | None | None | None | None | None | None |
+| `FCAST-WX-20260909T1854-01` | 62442 | no_obs | no_obs | None | None | None | None | None | None |
+| `FCAST-WX-20260909T1854-02` | 46070 | hold | hold | hold | agree | 1005.6 | 1007.3 | 20.0 | 12.0 |
+| `FCAST-WX-20260909T1854-03` | 64046 | no_obs | no_obs | None | None | None | None | None | None |
+| `FCAST-WX-20260909T1854-04` | 51002 | hold | hold | hold | agree | 1008.8 | 1008.9 | 7.0 | 11.0 |
+| `FCAST-WX-20260909T1854-05` | PTIT2 | kill | hold | kill | second_process_day | 1013.6 | 1010.7 | 11.8 | 12.4 |
 
-Kill: rewriting issued JSON. Kill: retuning POOF to swallow a miss.
+Quiet kill: pressure < 1005 hPa or gust ≥ 12 m/s. Mild saw-storm: < 1010 hPa or gust ≥ 8 m/s.
+Kill: rewriting issued JSON. Kill: retuning POOF or the bars to swallow PTIT2.
 
 Refresh: `python scripts/retro_weather_24h.py`

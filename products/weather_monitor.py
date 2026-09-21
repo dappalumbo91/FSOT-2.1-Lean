@@ -36,6 +36,20 @@ def main() -> int:
     kill = sum(1 for r in rows if r.get("result") == "kill")
     awaiting = sum(1 for r in rows if r.get("result") == "awaiting")
     print(f"weather_cells hold={hold} kill={kill} awaiting={awaiting} (missing NDBC ≠ retune)")
+    retro = ROOT / "results" / "dated_forecast_scores" / "WEATHER_24H_RETRO.json"
+    if retro.is_file():
+        rj = json.loads(retro.read_text(encoding="utf-8"))
+        print(
+            f"24h_vs_48h agree={rj.get('n_24h_agrees_48h')}/{rj.get('n_with_obs')} "
+            f"second_process_day={rj.get('n_second_process_day')}"
+        )
+        for r in rj.get("rows") or []:
+            if r.get("split") == "second_process_day":
+                print(
+                    f"  {r.get('id')} {r.get('buoy_id')} day1={r.get('result_24h')} "
+                    f"minP={r.get('min_pres_24h')} day2={r.get('result_day2')} "
+                    f"minP={r.get('min_pres_day2')} maxG={r.get('max_gst_day2')}"
+                )
     print("window=24h_process  not_claimed: week-3 S2S skill")
     for r in rows[-5:]:
         print(f"  {r.get('id')} {r.get('result')} {r.get('detail') or r.get('reason') or ''}")
