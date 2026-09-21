@@ -79,7 +79,7 @@ from fsot_seed_flavor import (  # type: ignore
     seed_sin2_theta_W,
     seed_sin2_theta_W_onshell,
     seed_string_tension_GeV,
-    seed_glueball_over_sqrt_sigma,
+    seed_glueball_sigma_coupled,
     seed_triangle_sides,
     seed_unitarity_triangle,
 )
@@ -767,15 +767,15 @@ def run_gr_recovery_suite() -> list[dict]:
             sector="QCD",
         )
     )
-    # Closed gluonic mode m(0++)/√σ. Not Λ. Default look, not Atomic e/π.
-    m_glue_over_sqrt_sig = seed_glueball_over_sqrt_sigma()
+    # σ-unit 0++. Isolated φ²+1 is not this row. Teper quotes m/√σ.
+    m_glue_over_sqrt_sig = seed_glueball_sigma_coupled()
     rows.append(
         _row(
             "glueball_over_sqrt_sigma",
             m_glue_over_sqrt_sig,
             3.65,  # Teper continuum 0++ / √σ (hep-lat/9711011)
             claim="T4_path_integral_glueball",
-            formula="PHI**2 + 1  [closed gluonic mode / string scale; not Λ]",
+            formula="PHI**2 + 1 + POOF/D_particle  [σ-unit loop; isolated φ²+1 is not this row]",
             sector="QCD",
         )
     )

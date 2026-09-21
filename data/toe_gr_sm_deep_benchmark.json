@@ -723,15 +723,16 @@
       "lab": "toe_gr_sm_lab",
       "name": "glueball_over_sqrt_sigma",
       "property": "glueball_over_sqrt_sigma",
-      "computed": 3.48328996818216,
-      "measured": 3.5,
-      "error_pct": 0.4774294805097184,
+      "computed": 3.648730431728785,
+      "measured": 3.65,
+      "error_pct": 0.034782692362047014,
       "eval_kind": "seed_closed_form",
       "claim": "T4_path_integral_glueball",
-      "formula": "PHI**2 + E/PI  [glueball / string-scale probe]",
+      "formula": "PHI**2 + 1 + POOF/D_particle  [\u03c3-unit loop; isolated \u03c6\u00b2+1 is not this row]",
       "limit_sector": "QCD",
       "zero_free_parameters": true,
-      "derivation": "seed_closed_form"
+      "derivation": "seed_closed_form",
+      "orifice_note": "Teper hep-lat/9711011 3.65. Not the round 3.5. Isolated phi^2+1 not retuned."
     },
     {
       "lab": "toe_gr_sm_lab",
@@ -2107,15 +2108,16 @@
       "lab": "toe_gr_sm_lab",
       "name": "glueball_over_sqrt_sigma",
       "property": "glueball_over_sqrt_sigma",
-      "computed": 3.48328996818216,
-      "measured": 3.5,
-      "error_pct": 0.4774294805097184,
+      "computed": 3.648730431728785,
+      "measured": 3.65,
+      "error_pct": 0.034782692362047014,
       "eval_kind": "seed_closed_form",
       "claim": "T4_path_integral_glueball",
-      "formula": "PHI**2 + E/PI  [glueball / string-scale probe]",
+      "formula": "PHI**2 + 1 + POOF/D_particle  [\u03c3-unit loop; isolated \u03c6\u00b2+1 is not this row]",
       "limit_sector": "QCD",
       "zero_free_parameters": true,
-      "derivation": "seed_closed_form"
+      "derivation": "seed_closed_form",
+      "orifice_note": "Teper hep-lat/9711011 3.65. Not the round 3.5. Isolated phi^2+1 not retuned."
     },
     {
       "lab": "toe_gr_sm_lab",
