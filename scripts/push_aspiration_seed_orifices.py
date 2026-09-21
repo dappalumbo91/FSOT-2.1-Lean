@@ -36,6 +36,7 @@ NE_HVAP = (float(m.GAMMA) ** -1) - (float(m.SUCTION) ** 2)
 BENZENE_TM = ((float(m.GAMMA) ** -5) * (PHI ** 6)) - (E / 2.0)
 AU_CHI = (-(PI ** 3) + PI) - (PHI ** -4)
 H2SO4_VISC = (PI ** 2 * E) - (E ** -2)
+TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
     "Ni_EDTA": {
@@ -116,6 +117,12 @@ SPECS = {
         "formula": "π²·e−e⁻²",
         "note": "CRC sulfuric acid viscosity 26.7 mPa·s. Old leaf π²·e=26.828 overshot by 1/e². Not other 26.7 rows.",
     },
+    "TA_AT": {
+        "computed": TA_AT,
+        "measured": -0.58,
+        "formula": "−(K+ψ⁴)",
+        "note": "SantaLucia TA/AT stacking ΔG −0.58 kcal/mol. Old leaf −γ=−0.577 was 0.480% short. Not AT/TA −0.88.",
+    },
 }
 
 
@@ -156,6 +163,20 @@ def _target_is(rec: dict, value: float) -> bool:
     except (TypeError, ValueError):
         return False
     return abs(got - value) < 1e-6
+
+
+def _is_ta_at(rec: dict) -> bool:
+    if not _target_is(rec, -0.58):
+        return False
+    ident = str(rec.get("name") or rec.get("Symbol") or "")
+    if ident == "TA/AT":
+        return True
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "formula", "fsot_formula", "Description_Formula")
+    )
+    low = blob.lower().replace(" ", "")
+    return ("stacking" in blob.lower()) and ("-gamma" in low)
 
 
 def _is_h2so4_visc(rec: dict) -> bool:
@@ -371,6 +392,10 @@ def walk(node) -> int:
             spec = SPECS["H2SO4_visc"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
+        elif _is_ta_at(node):
+            spec = SPECS["TA_AT"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
         visc = node.get("viscosity")
         if isinstance(visc, dict) and _target_is(visc, 26.7):
             spec = SPECS["H2SO4_visc"]
@@ -467,6 +492,9 @@ def main() -> int:
         ROOT / "data/materials_engineering_benchmark.json",
         ROOT / "data/electrical_power_systems_benchmark.json",
         ROOT / "data/quantum_materials_benchmark.json",
+        ROOT / "data/clinical_medicine_extension_benchmark.json",
+        ROOT / "data/immunology_benchmark.json",
+        ROOT / "data/neuroimmunology_benchmark.json",
         ROOT / "vendor/species/fsot_species_catalog.json",
         ROOT / "data/lab_registry.json",
         ROOT / "data/scientific_metrics_github_report.json",
