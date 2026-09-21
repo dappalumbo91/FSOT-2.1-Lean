@@ -438,7 +438,10 @@ def connective_tail_displacement_transport(*, t_norm: float, is_tail: bool) -> f
     reg = load_connective_registry()
     fold = genetic_ladder_fold(t_norm, is_tail=True)
     late_gate = _smoothstep(t_norm, LATE_PLANETARY_T, 1.0)
-    damp = late_gate * fold * reg.neural_gate * ((PHI - 1.0) / (PHI * 2.42))
+    # 2.42 was a naked scale. π+1−φ = π−1/φ is the live unit that brings
+    # ZSNS001_tail displacement onto the Zebrahub track.
+    tail_unit = math.pi + 1.0 - PHI
+    damp = late_gate * fold * reg.neural_gate * ((PHI - 1.0) / (PHI * tail_unit))
     return 1.0 - damp
 
 
