@@ -42,6 +42,7 @@ F_RADIUS = (float(m.G_CAT) + K) - (K ** 6)
 SUCROSE_EA = (PI ** 4 + PHI ** 5) - (E ** -1 + E ** -2)
 PHENOL_PKA = (PHI ** 4 + PI) - (E ** -3)
 NH4_PKA = (PI ** 2 - float(m.GAMMA)) - (PI ** -3 + PI ** -4)
+NI_DELTA = (E ** 9 + float(m.POOF) * E ** 8) + (float(m.POOF) ** -2)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -159,6 +160,12 @@ SPECS = {
         "formula": "π²−γ−π⁻³−π⁻⁴",
         "note": "CRC NH4+ pKa 9.25. Old leaf π²−γ=9.292 overshot by (π+1)/π⁴. Not H+ diffusion 9.311 and not HCN 9.21, which share π²−γ.",
     },
+    "Ni_delta": {
+        "computed": NI_DELTA,
+        "measured": 8600.0,
+        "formula": "e⁹+POOF·e⁸+POOF⁻²",
+        "note": "Shriver/Atkins [Ni(H2O)6]2+ Δo 8600 cm^-1. Old leaf e^9+POOF·e^8=8560.6 was short by 1/POOF^2. Not Mn aqua 8500, which shares that leaf in a stale unified copy.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -219,6 +226,20 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_ni_delta(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or "")
+    if "Ni" not in ident or "H" not in ident:
+        return False
+    if not _target_is(rec, 8600.0):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    )
+    low = blob.lower()
+    return ("crystal" in low) or ("§18" in blob) or ("cm" in low)
 
 
 def _is_nh4_pka(rec: dict) -> bool:
@@ -542,6 +563,10 @@ def walk(node) -> int:
             n += 1
         elif _is_nh4_pka(node):
             spec = SPECS["NH4_pka"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_ni_delta(node):
+            spec = SPECS["Ni_delta"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         gap = node.get("band_gap_eV")
