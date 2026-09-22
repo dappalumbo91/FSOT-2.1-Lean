@@ -44,6 +44,7 @@ PHENOL_PKA = (PHI ** 4 + PI) - (E ** -3)
 NH4_PKA = (PI ** 2 - float(m.GAMMA)) - (PI ** -3 + PI ** -4)
 NI_DELTA = (E ** 9 + float(m.POOF) * E ** 8) + (float(m.POOF) ** -2)
 DIAMOND_N = (PHI + float(m.B_IN)) + (PI ** -4)
+PT_E0 = (E ** 2) * (float(m.PSI_CON) ** 4)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -173,6 +174,12 @@ SPECS = {
         "formula": "φ+B_IN+π⁻⁴",
         "note": "CRC diamond nD 2.417. Old leaf φ+B_IN=2.406 was short by π^-4. Not CdS gap 2.42, which shares φ+B_IN.",
     },
+    "Pt_E0": {
+        "computed": PT_E0,
+        "measured": 1.18,
+        "formula": "e²·ψ⁴",
+        "note": "Bard/CRC Pt2+/Pt 1.18 V. Old leaf Ω·G=1.1854 was 0.456% high. Not Al Tc 1.18 K.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -233,6 +240,22 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_pt_electrode(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or "")
+    if ident not in {"Pt2+/Pt", "Pt²⁺/Pt"}:
+        return False
+    if not _target_is(rec, 1.18):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    )
+    low = blob.lower()
+    if "superconduct" in low or "§75" in blob or "fusion" in low or "§48" in blob:
+        return False
+    return ("electrode" in low) or ("§107" in blob) or (" v" in low) or low.endswith("v")
 
 
 def _is_diamond_n(rec: dict) -> bool:
@@ -592,6 +615,10 @@ def walk(node) -> int:
             n += 1
         elif _is_diamond_n(node):
             spec = SPECS["diamond_n"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_pt_electrode(node):
+            spec = SPECS["Pt_E0"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         nd = node.get("refractive_index")
