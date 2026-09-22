@@ -4755,10 +4755,11 @@
       },
       "refractive_index": {
         "target": 1.479,
-        "computed": 1.464551773855444,
-        "error_pct": 0.9769,
-        "formula": "PHI-POOF",
-        "unit": "dimensionless"
+        "computed": 1.4791695057466303,
+        "error_pct": 0.011460834795822605,
+        "formula": "\u03c6\u2212POOF+B_IN/100+e\u207b\u2075",
+        "unit": "dimensionless",
+        "orifice_note": "CRC DMSO nD 1.479. Gated leaf \u03c6\u2212POOF+B_IN/100=1.472 was short by e^-5. Live C_EFF^6+C_EFF^8 is 0.052% and was not used. Not glycerol 1.474."
       },
       "molar_vol_cm3_mol": {
         "target": 71.03,

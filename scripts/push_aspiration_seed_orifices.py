@@ -48,6 +48,7 @@ PT_E0 = (E ** 2) * (float(m.PSI_CON) ** 4)
 GA_CT = -(float(m.OMEGA) + (K ** 6))
 R2CH2 = float(m.OMEGA) + (K ** 6)
 BE9_EA = (PHI ** 4 - K) + (K ** 4)
+DMSO_N = (PHI - float(m.POOF) + float(m.B_IN) / 100.0) + (E ** -5)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -201,6 +202,12 @@ SPECS = {
         "formula": "φ⁴−K+K⁴",
         "note": "AME2016 Be-9 binding energy per nucleon 6.463 MeV. Old leaf φ⁴−K=6.434 was short by K^4.",
     },
+    "DMSO_n": {
+        "computed": DMSO_N,
+        "measured": 1.479,
+        "formula": "φ−POOF+B_IN/100+e⁻⁵",
+        "note": "CRC DMSO nD 1.479. Gated leaf φ−POOF+B_IN/100=1.472 was short by e^-5. Live C_EFF^6+C_EFF^8 is 0.052% and was not used. Not glycerol 1.474.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -261,6 +268,20 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_dmso_n(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident != "DMSO":
+        return False
+    if not _target_is(rec, 1.479):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name")
+    )
+    low = blob.lower()
+    return ("refract" in low) or ("§30" in blob) or ("nd" in low)
 
 
 def _is_be9_ea(rec: dict) -> bool:
@@ -697,6 +718,18 @@ def walk(node) -> int:
         elif _is_be9_ea(node):
             spec = SPECS["Be9_EA"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_dmso_n(node):
+            spec = SPECS["DMSO_n"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        nd = node.get("refractive_index")
+        if isinstance(nd, dict) and _target_is(nd, 1.479):
+            spec = SPECS["DMSO_n"]
+            nd["computed"] = spec["computed"]
+            nd["error_pct"] = _err(spec["computed"], spec["measured"])
+            nd["formula"] = spec["formula"]
+            nd["orifice_note"] = spec["note"]
             n += 1
         nd = node.get("refractive_index")
         if isinstance(nd, dict) and _target_is(nd, 2.417):
