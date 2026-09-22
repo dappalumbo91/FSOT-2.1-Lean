@@ -43,6 +43,7 @@ SUCROSE_EA = (PI ** 4 + PHI ** 5) - (E ** -1 + E ** -2)
 PHENOL_PKA = (PHI ** 4 + PI) - (E ** -3)
 NH4_PKA = (PI ** 2 - float(m.GAMMA)) - (PI ** -3 + PI ** -4)
 NI_DELTA = (E ** 9 + float(m.POOF) * E ** 8) + (float(m.POOF) ** -2)
+DIAMOND_N = (PHI + float(m.B_IN)) + (PI ** -4)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -166,6 +167,12 @@ SPECS = {
         "formula": "e⁹+POOF·e⁸+POOF⁻²",
         "note": "Shriver/Atkins [Ni(H2O)6]2+ Δo 8600 cm^-1. Old leaf e^9+POOF·e^8=8560.6 was short by 1/POOF^2. Not Mn aqua 8500, which shares that leaf in a stale unified copy.",
     },
+    "diamond_n": {
+        "computed": DIAMOND_N,
+        "measured": 2.417,
+        "formula": "φ+B_IN+π⁻⁴",
+        "note": "CRC diamond nD 2.417. Old leaf φ+B_IN=2.406 was short by π^-4. Not CdS gap 2.42, which shares φ+B_IN.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -226,6 +233,20 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_diamond_n(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident not in {"Diamond", "diamond"}:
+        return False
+    if not _target_is(rec, 2.417):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name")
+    )
+    low = blob.lower()
+    return ("refract" in low) or ("§30" in blob) or ("nd" in low)
 
 
 def _is_ni_delta(rec: dict) -> bool:
@@ -568,6 +589,18 @@ def walk(node) -> int:
         elif _is_ni_delta(node):
             spec = SPECS["Ni_delta"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_diamond_n(node):
+            spec = SPECS["diamond_n"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        nd = node.get("refractive_index")
+        if isinstance(nd, dict) and _target_is(nd, 2.417):
+            spec = SPECS["diamond_n"]
+            nd["computed"] = spec["computed"]
+            nd["error_pct"] = _err(spec["computed"], spec["measured"])
+            nd["formula"] = spec["formula"]
+            nd["orifice_note"] = spec["note"]
             n += 1
         gap = node.get("band_gap_eV")
         if isinstance(gap, dict) and _target_is(gap, 3.37):

@@ -4821,10 +4821,11 @@
       ],
       "refractive_index": {
         "target": 2.417,
-        "computed": 2.4059747810263383,
-        "error_pct": 0.4562,
-        "formula": "\u03c6+B_IN",
-        "unit": "dimensionless"
+        "computed": 2.4162784602146647,
+        "error_pct": 0.029852701089576668,
+        "formula": "\u03c6+B_IN+\u03c0\u207b\u2074",
+        "unit": "dimensionless",
+        "orifice_note": "CRC diamond nD 2.417. Old leaf \u03c6+B_IN=2.406 was short by \u03c0^-4. Not CdS gap 2.42, which shares \u03c6+B_IN."
       },
       "band_gap_eV": {
         "target": 5.47,
