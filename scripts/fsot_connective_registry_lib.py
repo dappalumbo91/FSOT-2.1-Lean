@@ -492,8 +492,13 @@ def connective_stability_transport(
     else:
         fold = reg.fold_steps.get("cellular_to_organismic_adjacent_fold", 0.0)
         gate = reg.biochemistry_gate
+        # 4.0 was a naked mid-stage weight. φ+1/φ brings ZSNS005 stability
+        # onto the Zebrahub proxy. ZSNS004 shares this branch and is not rebuilt.
         stage_gate = (
-            4.0 * min(t_norm, 1.0 - t_norm, 0.25) if 0.25 < t_norm < LATE_PLANETARY_T else 0.0
+            (PHI + 1.0 / PHI)
+            * min(t_norm, 1.0 - t_norm, 0.25)
+            if 0.25 < t_norm < LATE_PLANETARY_T
+            else 0.0
         )
     return 1.0 + stage_gate * fold * gate * ((PHI - 1.0) / (PHI * 3.0))
 
