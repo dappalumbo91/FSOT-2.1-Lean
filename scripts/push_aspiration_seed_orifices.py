@@ -45,6 +45,7 @@ NH4_PKA = (PI ** 2 - float(m.GAMMA)) - (PI ** -3 + PI ** -4)
 NI_DELTA = (E ** 9 + float(m.POOF) * E ** 8) + (float(m.POOF) ** -2)
 DIAMOND_N = (PHI + float(m.B_IN)) + (PI ** -4)
 PT_E0 = (E ** 2) * (float(m.PSI_CON) ** 4)
+GA_CT = -(float(m.OMEGA) + (K ** 6))
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -180,6 +181,12 @@ SPECS = {
         "formula": "e²·ψ⁴",
         "note": "Bard/CRC Pt2+/Pt 1.18 V. Old leaf Ω·G=1.1854 was 0.456% high. Not Al Tc 1.18 K.",
     },
+    "GA_CT": {
+        "computed": GA_CT,
+        "measured": -1.3,
+        "formula": "−Ω−K⁶",
+        "note": "SantaLucia GA/CT and TC/AG stacking ΔG −1.3 kcal/mol. Old leaf −Ω=−1.294 was short by K^6. Not Tyr hydrophobicity −1.3.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -240,6 +247,22 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_ga_ct(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or "")
+    if ident not in {"GA/CT", "TC/AG"}:
+        return False
+    if not _target_is(rec, -1.3):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name")
+    )
+    low = blob.lower()
+    if "hydrophob" in low or "§36" in blob:
+        return False
+    return ("stacking" in low) or ("§71" in blob)
 
 
 def _is_pt_electrode(rec: dict) -> bool:
@@ -619,6 +642,10 @@ def walk(node) -> int:
             n += 1
         elif _is_pt_electrode(node):
             spec = SPECS["Pt_E0"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_ga_ct(node):
+            spec = SPECS["GA_CT"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         nd = node.get("refractive_index")
