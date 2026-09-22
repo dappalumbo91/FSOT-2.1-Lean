@@ -389,7 +389,9 @@ def connective_midstage_division_transport(
     bright_gate = _smoothstep(photic, 0.55, 1.20)
     bright_term = mid_gate * bright_gate * fold * gate_mix * coeff
     dim_gate = (1.0 - _smoothstep(photic, 0.45, 0.90)) * reg.em_gate
-    dim_term = mid_gate * dim_gate * fold * reg.molecular_gate * coeff * 0.55
+    # 0.55 was a naked dim-photic weight. 1/φ brings ZSNS005 division
+    # onto the Zebrahub rate. Bright mid-stage embryos do not use this term.
+    dim_term = mid_gate * dim_gate * fold * reg.molecular_gate * coeff * (1.0 / PHI)
     low_div_gate = _smoothstep(0.26 - division_rate, 0.0, 0.10)
     nuclear_norm = min(reg.nuclear_gate / PHI, 1.0)
     nuclear_term = mid_gate * low_div_gate * nuclear_norm * fold * gate_mix * coeff * 0.70

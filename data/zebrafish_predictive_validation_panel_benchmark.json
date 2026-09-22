@@ -18,8 +18,8 @@
   "observable_count": 20,
   "scalar_record_count": 20,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.157708,
-  "pooled_median_error_pct": 0.157708,
+  "median_error_pct": 0.152136,
+  "pooled_median_error_pct": 0.152136,
   "headline_median_error_pct": 0.37159,
   "sota_comparison": {
     "fsot_free_parameters": 0,
@@ -39,9 +39,9 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.157708,
+      "computed": 0.152136,
       "measured": 0.0,
-      "error_pct": 0.157708,
+      "error_pct": 0.152136,
       "observable_count": 20
     },
     {
@@ -113,14 +113,15 @@
       "lab": "zebrafish_predictive_validation_lab",
       "property": "division_rate",
       "name": "ZSNS005",
-      "computed": 0.28799746,
+      "computed": 0.28931797,
       "measured": 0.28928612,
-      "error_pct": 0.445461,
-      "abs_residual": 0.00128866,
+      "error_pct": 0.011009,
+      "abs_residual": 3.185e-05,
       "tier": "operational",
       "eval_kind": "fsot_intrinsic_prediction",
       "reference_uncertainty_pct": 0.45,
-      "reference": "Zebrahub 3D+time tracking \u2014 sub-\u00b5m registration band"
+      "reference": "Zebrahub 3D+time tracking \u2014 sub-\u00b5m registration band",
+      "orifice_note": "dim-photic division weight is 1/phi, not naked 0.55"
     },
     {
       "lab": "zebrafish_predictive_validation_lab",
