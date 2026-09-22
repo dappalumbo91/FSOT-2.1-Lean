@@ -1,12 +1,13 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-17T21:07:43.688551+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-22T13:27:34.924461+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
 
 This page is the other question: **does the native math hit the same *function* more accurately than what is currently public?**
 Consensus is not the scoring rule. Closed precision is. A miss stays a miss.
+The Clay *formula* is not automatically that function — see [`FUNCTION_NOT_FORMULA.md`](FUNCTION_NOT_FORMULA.md).
 
 **Two bars, never collapsed.** Beating a public competitor is not the same as landing inside the rest-of-system residual gates (**0.5%** green, **0.05%** aspiration). A SOTA beat outside 0.5% is **FSOT accuracy WIP**.
 
@@ -79,7 +80,7 @@ Kill: calling a 4% SOTA-beat “0.5% green.”
 | Navier–Stokes existence and smoothness | CRC water melting T=273.15 K on Physical_Chemistry (lab phase change of the tank) | 0.04776 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | CRC water boiling T=373.15 K on Physical_Chemistry (lab phase change of the tank) | 0.04776 | 0.5 | beats/meets | pass | pass | beats_sota_in_aspiration |
 | Navier–Stokes existence and smoothness | Reality bar: lab κ, CRC sound-speed ratio, diatomic γ, 3D viscous TG decay. Not Euler, not 2D theorems | 0 | — | — | n/a | n/a | structure |
-| Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 4.167 | beats/meets | n/a | n/a | beats_sota_right_object |
+| Navier–Stokes existence and smoothness | Storm-sector 24 h persistence (named marine object). Thin n_obs<24 is awaiting. | 0 | 3.846 | beats/meets | n/a | n/a | beats_sota_right_object |
 | Navier–Stokes existence and smoothness | Gap-zone quiet (1000–1010 hPa / 8–15 m/s) — should not issue (transferred_weather) | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Latitude-belt transfer: quiet kill coupled to a same-issue storm hold (|Δlat|<POOF·180/π) | 0 | — | — | n/a | n/a | structure |
 | Navier–Stokes existence and smoothness | Clean quiet 24 h persistence (pres≥1010, gst<8, not lat-coupled to a storm hold) | 0 | — | beats/meets | n/a | n/a | beats_sota_right_object |
