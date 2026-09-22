@@ -47,6 +47,7 @@ DIAMOND_N = (PHI + float(m.B_IN)) + (PI ** -4)
 PT_E0 = (E ** 2) * (float(m.PSI_CON) ** 4)
 GA_CT = -(float(m.OMEGA) + (K ** 6))
 R2CH2 = float(m.OMEGA) + (K ** 6)
+BE9_EA = (PHI ** 4 - K) + (K ** 4)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -194,6 +195,12 @@ SPECS = {
         "formula": "Ω+K⁶",
         "note": "Silverstein R2CH2 proton shift 1.3 ppm. Old leaf Ω=1.294 was short by K^6. Not CO2/CH4 heat-capacity ratios that use bare Ω.",
     },
+    "Be9_EA": {
+        "computed": BE9_EA,
+        "measured": 6.463,
+        "formula": "φ⁴−K+K⁴",
+        "note": "AME2016 Be-9 binding energy per nucleon 6.463 MeV. Old leaf φ⁴−K=6.434 was short by K^4.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -254,6 +261,20 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_be9_ea(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or "")
+    if ident != "Be-9":
+        return False
+    if not _target_is(rec, 6.463):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    )
+    low = blob.lower()
+    return ("binding" in low) or ("§42" in blob) or ("mev" in low)
 
 
 def _is_r2ch2(rec: dict) -> bool:
@@ -671,6 +692,10 @@ def walk(node) -> int:
             n += 1
         elif _is_r2ch2(node):
             spec = SPECS["R2CH2"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_be9_ea(node):
+            spec = SPECS["Be9_EA"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
         nd = node.get("refractive_index")

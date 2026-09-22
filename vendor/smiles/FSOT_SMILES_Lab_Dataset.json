@@ -7659,10 +7659,11 @@
       "target_value": 6.463,
       "unit": "MeV",
       "source": "Audi et al., AME2016 (2017)",
-      "fsot_formula": "\u03c6\u2074-K",
-      "computed_value": 6.433880302088988,
-      "error_pct": 0.45056,
-      "matched": true
+      "fsot_formula": "\u03c6\u2074\u2212K+K\u2074",
+      "computed_value": 6.465142407447507,
+      "error_pct": 0.03314880779060704,
+      "matched": true,
+      "computed": 6.465142407447507
     },
     {
       "section": "\u00a742 Binding E/A",
