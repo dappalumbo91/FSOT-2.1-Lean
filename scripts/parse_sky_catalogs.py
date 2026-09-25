@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Turn the game-drive VizieR dumps into position JSON. No network."""
+"""Turn the game-drive catalog dumps into position JSON. No network."""
 from __future__ import annotations
 
+import csv
 import json
+import math
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -28,9 +30,19 @@ def tsv_rows(path: Path) -> list[dict[str, str]]:
 
 def fnum(text: str) -> float | None:
     try:
-        return float(text)
+        value = float(text)
     except (TypeError, ValueError):
         return None
+    if not math.isfinite(value):
+        return None
+    return value
+
+
+def flag_num(text: str) -> int:
+    try:
+        return int(float(text))
+    except (TypeError, ValueError):
+        return 0
 
 
 def main() -> int:
@@ -88,11 +100,92 @@ def main() -> int:
     (ROOT / "extragalactic_structure" / "abell_clusters.json").write_text(
         json.dumps(abell_doc), encoding="utf-8"
     )
-    print(f"chime_unique={len(seen)} abell={len(objects)}")
-    if not seen or not objects:
+    cat2 = parse_chime_catalog2(now)
+    print(
+        f"chime_unique={len(seen)} abell={len(objects)} "
+        f"cat2_sky={cat2['n_with_position']} cat2_rows={cat2['n_csv_rows']} "
+        f"cat2_sources={cat2['n_source_keys']} cat2_sidelobe_rows={cat2['n_sidelobe_rows']}"
+    )
+    if not seen or not objects or not cat2["n_with_position"]:
         print("abell headers", list(abell_rows[0]) if abell_rows else None)
         return 1
     return 0
+
+
+def parse_chime_catalog2(now: str) -> dict:
+    """One sky position per Catalog 2 source.
+
+    A repeater_name groups that source's bursts. Otherwise the source is the
+    TNS name. Sub-bursts share a burst. The lowest sub_num row with a finite
+    non-sidelobe position supplies the coordinate. Sidelobe rows in this file
+    have no RA or Dec and are not stored as (0, 0).
+    """
+    path = ROOT / "frb" / "chimefrbcat2.csv"
+    by_source: dict[str, dict] = {}
+    n_rows = 0
+    n_missing = 0
+    n_sidelobe_rows = 0
+    source_keys: set[str] = set()
+    with path.open(encoding="utf-8", newline="") as handle:
+        for row in csv.DictReader(handle):
+            n_rows += 1
+            tns = (row.get("tns_name") or "").replace(" ", "")
+            repeater = (row.get("repeater_name") or "").strip()
+            source = repeater or tns
+            if source:
+                source_keys.add(source)
+            if flag_num(row.get("sidelobe_flag") or ""):
+                n_sidelobe_rows += 1
+            ra = fnum(row.get("ra") or "")
+            dec = fnum(row.get("dec") or "")
+            if not source or ra is None or dec is None:
+                n_missing += 1
+                continue
+            if flag_num(row.get("sidelobe_flag") or ""):
+                continue
+            sub = flag_num(row.get("sub_num") or "")
+            item = {
+                "name": source,
+                "ra_deg": ra,
+                "dec_deg": dec,
+                "repeater_name": repeater,
+                "burst_name": tns,
+                "dm_pc": fnum(row.get("dm_fitb") or ""),
+                "dm_excess_ne2001": fnum(row.get("dm_exc_ne2001") or ""),
+                "excluded_flag": flag_num(row.get("excluded_flag") or ""),
+                "sub_num": sub,
+            }
+            prior = by_source.get(source)
+            if prior is None or (sub, tns) < (int(prior["sub_num"]), prior["burst_name"]):
+                by_source[source] = item
+    frbs = []
+    for item in by_source.values():
+        kept = dict(item)
+        kept.pop("sub_num", None)
+        frbs.append(kept)
+    doc = {
+        "fetched_at": now,
+        "citation": (
+            "CHIME/FRB Collaboration 2026, ApJS 283 34, arXiv:2601.09399; "
+            "CISTI.CANFAR/25.0066 table/chimefrbcat2.csv"
+        ),
+        "n_csv_rows": n_rows,
+        "n_source_keys": len(source_keys),
+        "n_rows_missing_position": n_missing,
+        "n_sidelobe_rows": n_sidelobe_rows,
+        "n_with_position": len(frbs),
+        "position_rule": (
+            "One row per source. repeater_name groups bursts of that source; "
+            "otherwise the source is tns_name. Lowest sub_num with finite RA and Dec. "
+            "sidelobe rows have no coordinates and are omitted. "
+            "Missing coordinates are not stored as (0, 0)."
+        ),
+        "frbs": frbs,
+    }
+    (ROOT / "frb" / "chime_frb_catalog2_positions.json").write_text(
+        json.dumps(doc), encoding="utf-8"
+    )
+    return doc
 
 
 if __name__ == "__main__":

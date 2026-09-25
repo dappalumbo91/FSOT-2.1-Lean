@@ -1,9 +1,9 @@
 # Mathlib re-derivation campaign
 
-**Generated:** 2026-09-09T17:32:50.906775+00:00  
+**Generated:** 2026-09-25T01:45:18.782741+00:00  
 **Verdict:** `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`  
 **Engine core closed:** True  
-**Corpus Mathlib-depth %:** 100.0%  (5248/5248)
+**Corpus Mathlib-depth %:** 98.65%  (5343/5416)
 
 ## What this campaign is
 
@@ -21,10 +21,10 @@ across `FSOT/Formal` — beyond residual multiprover numeric certificate replay.
 
 | Wave | Role | Thms | Mathlib% | Lake | OK |
 |------|------|-----:|---------:|:----:|:--:|
-| `W0_scalar_defs` | engine | 50 | 100.0 | passed | ✓ |
-| `W1_bounds` | engine | 291 | 100.0 | passed | ✓ |
-| `W2_theorems` | engine | 54 | 100.0 | passed | ✓ |
-| `W3_domains` | engine | 43 | 100.0 | passed | ✓ |
+| `W0_scalar_defs` | engine | 60 | 100.0 | passed | ✓ |
+| `W1_bounds` | engine | 317 | 100.0 | passed | ✓ |
+| `W2_theorems` | engine | 53 | 100.0 | passed | ✓ |
+| `W3_domains` | engine | 47 | 100.0 | passed | ✓ |
 | `W4_cosmology` | engine | 64 | 100.0 | passed | ✓ |
 | `W5_bridge` | engine | 54 | 100.0 | passed | ✓ |
 | `W6_priors_00` | priors | 171 | 100.0 | passed | ✓ |

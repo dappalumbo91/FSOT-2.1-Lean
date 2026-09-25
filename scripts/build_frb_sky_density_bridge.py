@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
 from bubble_bleed_physics import local_sky_density, sky_kernel_theta0_deg  # noqa: E402
-from sky_catalog_paths import load_chime_positions  # noqa: E402
+from sky_catalog_paths import CHIME_POSITIONS, load_chime_positions  # noqa: E402
 
 FRB = ROOT / "data" / "frb_repeater_cache.json"
 NEB = ROOT / "data" / "nebula_lensing_cache.json"
@@ -31,7 +31,9 @@ DM_CLASS = 200.0
 def main() -> int:
     frbs_all = json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
     nebulae = json.loads(NEB.read_text(encoding="utf-8")).get("nebulae") or []
-    frbs = load_chime_positions()
+    positioned = load_chime_positions()
+    frbs = [row for row in positioned if row.get("excluded_flag") not in (1, "1", True)]
+    n_excluded_omitted = len(positioned) - len(frbs)
     rows = []
     for i, row in enumerate(frbs):
         others = [x for j, x in enumerate(frbs) if j != i]
@@ -71,8 +73,14 @@ def main() -> int:
         ],
         "n_name_cache_without_dec": len(frbs_all),
         "n_with_ra_and_dec": len(frbs),
-        "position_catalog": r"D:\FSOT_Benchmarks\anomaly_observables\frb\chime_frb_catalog1_positions.json",
-        "position_rule": "CHIME Catalog 1 positions. The name cache has no Dec and is not placed at (0, 0).",
+        "n_excluded_omitted": n_excluded_omitted,
+        "position_catalog": str(CHIME_POSITIONS),
+        "position_rule": (
+            "CHIME Catalog 2, one position per source, from CISTI.CANFAR/25.0066. "
+            "Sidelobe rows have no coordinates and are omitted. "
+            "excluded_flag=1 is left out of this population comparison. "
+            "The name cache is not placed at (0, 0)."
+        ),
         "n_with_dm_excess": len(with_ex),
         "median_error_pct_200x1pdens": med_err,
         "high_density_n": len(hi),

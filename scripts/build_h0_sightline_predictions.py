@@ -276,7 +276,7 @@ def main() -> int:
         host_path=HOST_COORDS,
         frbs_override=load_chime_positions(),
     )
-    doc["catalog"] = "extragalactic_structure_catalog"
+    doc["catalog"] = "abell_vii4a_plus_chime_catalog2"
     doc["directional_status"] = "exploratory"
     doc["ugc9391_old_map_counterfactual"] = (
         "On the frozen sky-density map, moving UGC9391 into sector 3 "

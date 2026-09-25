@@ -29,7 +29,7 @@ Until the next data drop freezes the choices below, the directional rule is expl
 | Which rows get a direction | Host galaxies only. Hubble-flow supernovae inherit the host mix and have no direction rule. |
 | Density catalog | Abell clusters, VizieR VII/4A, on `D:\FSOT_Benchmarks\anomaly_observables\extragalactic_structure\abell_clusters.json`. The 20-row nebula cache stays a lensing seed. |
 | Line-of-sight structure | Not entered. |
-| FRB positions | CHIME/FRB Catalog 1, 536 bursts with J2000 RA and Dec, on `D:\FSOT_Benchmarks\anomaly_observables\frb\chime_frb_catalog1_positions.json`. The 3390-row name cache still has no declinations and is not placed at (0°, 0°). |
+| FRB positions | CHIME/FRB Catalog 2, CISTI.CANFAR/25.0066 `chimefrbcat2.csv`, one J2000 position per source (repeater name, otherwise TNS name), on `D:\FSOT_Benchmarks\anomaly_observables\frb\chime_frb_catalog2_positions.json`. Sidelobe rows have no coordinates and are omitted. Catalog 1 (536) stays on disk as the 2021 subset. The name cache is not placed at (0°, 0°). |
 
 ## Null for supernova samples
 

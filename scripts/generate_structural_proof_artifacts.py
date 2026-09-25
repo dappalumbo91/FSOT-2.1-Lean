@@ -191,19 +191,24 @@ def gen_isabelle(bundles: list[dict]) -> str:
 
 
 def _merge_coq_project() -> None:
+    """Keep every file already listed. Insert the structural spine if it is absent.
+
+    A whitelist here dropped FSOTScalarMath.v and the scientific catalog
+    spines on the Mathlib campaign's aux pass.
+    """
     project = COQ_DIR / "_CoqProject"
     existing = project.read_text(encoding="utf-8").splitlines() if project.exists() else ["-R ."]
-    spine = [ln for ln in existing if ln == "-R ." or ln == "ConnectiveSpine.v" or ln.startswith("FullFormalSpine_")]
-    transcendental = [ln for ln in existing if ln.startswith("Transcendental")]
-    if "StructuralProofSpine.v" not in spine:
+    kept = [ln for ln in existing if ln.strip()]
+    if not kept or kept[0] != "-R .":
+        kept = ["-R .", *[ln for ln in kept if ln != "-R ."]]
+    if "StructuralProofSpine.v" not in kept:
         insert_at = 1
-        for i, ln in enumerate(spine):
+        for i, ln in enumerate(kept):
             if ln == "ConnectiveSpine.v":
                 insert_at = i + 1
                 break
-        spine.insert(insert_at, "StructuralProofSpine.v")
-    merged = spine + [ln for ln in transcendental if ln not in spine]
-    project.write_text("\n".join(merged) + "\n", encoding="utf-8")
+        kept.insert(insert_at, "StructuralProofSpine.v")
+    project.write_text("\n".join(kept) + "\n", encoding="utf-8")
 
 
 def _merge_isabelle_root() -> None:

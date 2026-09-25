@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-09-09T17:32:30.003237+00:00",
+  "generated_at": "2026-09-25T01:43:23.216149+00:00",
   "version": "1.0",
-  "theorem_count": 5248,
-  "mathlib_depth_count": 5248,
-  "mathlib_depth_pct": 100.0,
+  "theorem_count": 5416,
+  "mathlib_depth_count": 5343,
+  "mathlib_depth_pct": 98.65,
   "by_tier": {
-    "L0_definitional": 1930,
-    "L3_chain": 3030,
-    "L2_analytic": 288
+    "L0_definitional": 2010,
+    "L3_chain": 3025,
+    "L2_analytic": 308,
+    "L1_certificate": 73
   },
   "by_module": {
     "AcousticResonanceMaterialsPriors": {
@@ -418,13 +419,13 @@
       "path": "FSOT/Formal/BoundaryPartitionTighteningPriors.lean"
     },
     "Bounds": {
-      "theorem_count": 291,
-      "mathlib_depth_count": 291,
+      "theorem_count": 317,
+      "mathlib_depth_count": 317,
       "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L2_analytic": 193,
+        "L2_analytic": 208,
         "L0_definitional": 13,
-        "L3_chain": 85
+        "L3_chain": 96
       },
       "has_sorry": false,
       "path": "FSOT/Formal/Bounds.lean"
@@ -1253,6 +1254,16 @@
       "has_sorry": false,
       "path": "FSOT/Formal/DarkSectorOpenProblemsPriors.lean"
     },
+    "DerivedNest": {
+      "theorem_count": 7,
+      "mathlib_depth_count": 7,
+      "mathlib_depth_pct": 100.0,
+      "tier_counts": {
+        "L0_definitional": 7
+      },
+      "has_sorry": false,
+      "path": "FSOT/Formal/DerivedNest.lean"
+    },
     "DesiEdrFitsResidualPriors": {
       "theorem_count": 4,
       "mathlib_depth_count": 4,
@@ -1375,13 +1386,13 @@
       "path": "FSOT/Formal/DomainPrecisionPriors.lean"
     },
     "Domains": {
-      "theorem_count": 43,
-      "mathlib_depth_count": 43,
+      "theorem_count": 47,
+      "mathlib_depth_count": 47,
       "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 14,
-        "L2_analytic": 4,
-        "L3_chain": 25
+        "L0_definitional": 16,
+        "L2_analytic": 2,
+        "L3_chain": 29
       },
       "has_sorry": false,
       "path": "FSOT/Formal/Domains.lean"
@@ -3474,6 +3485,17 @@
       "has_sorry": false,
       "path": "FSOT/Formal/MicrotubuleQuantumConsciousnessPanelPriors.lean"
     },
+    "MillenniumTrack": {
+      "theorem_count": 9,
+      "mathlib_depth_count": 7,
+      "mathlib_depth_pct": 77.78,
+      "tier_counts": {
+        "L0_definitional": 7,
+        "L1_certificate": 2
+      },
+      "has_sorry": false,
+      "path": "FSOT/Formal/MillenniumTrack.lean"
+    },
     "MpcorbMinorPlanetCatalogPriors": {
       "theorem_count": 6,
       "mathlib_depth_count": 6,
@@ -4895,13 +4917,13 @@
       "path": "FSOT/Formal/RustLeanBridgePriors.lean"
     },
     "ScalarEngineStructure": {
-      "theorem_count": 50,
-      "mathlib_depth_count": 50,
+      "theorem_count": 60,
+      "mathlib_depth_count": 60,
       "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 27,
-        "L3_chain": 12,
-        "L2_analytic": 11
+        "L0_definitional": 28,
+        "L3_chain": 14,
+        "L2_analytic": 18
       },
       "has_sorry": false,
       "path": "FSOT/Formal/ScalarEngineStructure.lean"
@@ -5444,12 +5466,12 @@
       "path": "FSOT/Formal/Term3AcousticBleedDepthPriors.lean"
     },
     "Theorems": {
-      "theorem_count": 54,
-      "mathlib_depth_count": 54,
+      "theorem_count": 53,
+      "mathlib_depth_count": 53,
       "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L3_chain": 10,
-        "L2_analytic": 40,
+        "L3_chain": 14,
+        "L2_analytic": 35,
         "L0_definitional": 4
       },
       "has_sorry": false,
@@ -5851,13 +5873,25 @@
       "has_sorry": false,
       "path": "FSOT/Formal/UniProtStructureAnnotationsDeepPriors.lean"
     },
-    "UniquenessResearchSpine": {
-      "theorem_count": 59,
-      "mathlib_depth_count": 59,
+    "UniquenessAttractor": {
+      "theorem_count": 15,
+      "mathlib_depth_count": 15,
       "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L3_chain": 31,
-        "L0_definitional": 28
+        "L0_definitional": 5,
+        "L2_analytic": 5,
+        "L3_chain": 5
+      },
+      "has_sorry": false,
+      "path": "FSOT/Formal/UniquenessAttractor.lean"
+    },
+    "UniquenessResearchSpine": {
+      "theorem_count": 157,
+      "mathlib_depth_count": 86,
+      "mathlib_depth_pct": 54.78,
+      "tier_counts": {
+        "L1_certificate": 71,
+        "L0_definitional": 86
       },
       "has_sorry": false,
       "path": "FSOT/Formal/UniquenessResearchSpine.lean"
