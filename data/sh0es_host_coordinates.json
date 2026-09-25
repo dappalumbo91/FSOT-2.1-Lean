@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "source": "NED approximate coordinates for SH0ES R22 hosts; extra hosts from Table 2 Cepheid-field means",
-  "updated": "2026-08-18",
+  "source": "SIMBAD ICRS J2000 for the six hosts logged in results/host_coordinate_audit.json (2026-09-24). Other rows stay the 2026-08-18 NED/Table-2 copy. Frozen predictions/h0_sightline_predictions.json is not this file.",
+  "updated": "2026-09-24",
   "hosts": [
     {
       "name": "M31",
@@ -35,8 +35,8 @@
     },
     {
       "name": "NGC1309",
-      "ra_deg": 50.423,
-      "dec_deg": -19.427,
+      "ra_deg": 50.527,
+      "dec_deg": -15.4,
       "method": "SH0ES_Cepheid"
     },
     {
@@ -53,14 +53,14 @@
     },
     {
       "name": "NGC1559",
-      "ra_deg": 67.767,
-      "dec_deg": -62.787,
+      "ra_deg": 64.399,
+      "dec_deg": -62.784,
       "method": "SH0ES_Cepheid"
     },
     {
       "name": "NGC2442",
-      "ra_deg": 111.108,
-      "dec_deg": -50.45,
+      "ra_deg": 114.099,
+      "dec_deg": -69.531,
       "method": "SH0ES_Cepheid"
     },
     {
@@ -149,20 +149,20 @@
     },
     {
       "name": "NGC5917",
-      "ra_deg": 232.288,
-      "dec_deg": -60.458,
+      "ra_deg": 230.377,
+      "dec_deg": -7.377,
       "method": "SH0ES_Cepheid"
     },
     {
       "name": "NGC7250",
-      "ra_deg": 334.215,
+      "ra_deg": 334.574,
       "dec_deg": 40.562,
       "method": "SH0ES_Cepheid"
     },
     {
       "name": "UGC9391",
-      "ra_deg": 175.628,
-      "dec_deg": 33.195,
+      "ra_deg": 218.654,
+      "dec_deg": 59.338,
       "method": "SH0ES_Cepheid"
     },
     {

@@ -1,4 +1,12 @@
-"""FSOT BH→WH bubble-bleed physics — closure, suction, observability."""
+"""FSOT BH→WH bubble-bleed physics — closure, suction, observability.
+
+Density seeds 5.1 (Cepheid class), 1.85 (TRGB), 2.0 (maser) and the Planck
+sector proxy −1 are assigned priors. They are not derived from π, e, φ, γ, G.
+The bleed fraction 0.015431 is ε = H0_global/67.4 − 1, so it is anchored to
+the Planck 67.4 figure. See docs/H0_DIRECTION_PRIORS.md.
+
+Sky density ignores a row that lacks RA or Dec. Missing position is not (0°, 0°).
+"""
 
 from __future__ import annotations
 
@@ -45,6 +53,23 @@ H0_CONTESTED_SECTORS = frozenset(
         "h0_bridge_scalar",
     }
 )
+
+
+def sky_rows_with_position(rows: list[dict]) -> list[dict]:
+    """Rows that actually carry both coordinates. Do not invent (0°, 0°)."""
+    kept: list[dict] = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        if row.get("ra_deg") is None or row.get("dec_deg") is None:
+            continue
+        try:
+            float(row["ra_deg"])
+            float(row["dec_deg"])
+        except (TypeError, ValueError):
+            continue
+        kept.append(row)
+    return kept
 
 
 def sky_sector(ra_deg: float) -> str:
@@ -162,8 +187,10 @@ def bubble_density_for_sector(
     frbs: list[dict],
     sector_name: str,
 ) -> float:
-    n = sum(1 for r in nebulae if sky_sector(float(r.get("ra_deg") or 0)) == sector_name)
-    f = sum(1 for r in frbs if sky_sector(float(r.get("ra_deg") or 0)) == sector_name)
+    nebulae = sky_rows_with_position(nebulae)
+    frbs = sky_rows_with_position(frbs)
+    n = sum(1 for r in nebulae if sky_sector(float(r["ra_deg"])) == sector_name)
+    f = sum(1 for r in frbs if sky_sector(float(r["ra_deg"])) == sector_name)
     total = max(len(nebulae) + len(frbs), 1)
     return (n + 0.5 * f) / total * 6.0 - 1.0
 
@@ -206,18 +233,20 @@ def local_sky_density(
     Uniform catalog around the host → 0. Overdense → +. Underdense → −.
     Replaces 60° RA bins. No extra stretch.
     """
+    nebulae = sky_rows_with_position(nebulae)
+    frbs = sky_rows_with_position(frbs)
     theta0 = sky_kernel_theta0_deg(mod)
     w_bar = sky_mean_kernel(theta0)
     n_w = 0.0
     f_w = 0.0
     for row in nebulae:
         th = angular_separation_deg(
-            ra_deg, dec_deg, float(row.get("ra_deg") or 0.0), float(row.get("dec_deg") or 0.0)
+            ra_deg, dec_deg, float(row["ra_deg"]), float(row["dec_deg"])
         )
         n_w += 1.0 / (1.0 + th / theta0)
     for row in frbs:
         th = angular_separation_deg(
-            ra_deg, dec_deg, float(row.get("ra_deg") or 0.0), float(row.get("dec_deg") or 0.0)
+            ra_deg, dec_deg, float(row["ra_deg"]), float(row["dec_deg"])
         )
         f_w += 1.0 / (1.0 + th / theta0)
     total = len(nebulae) + 0.5 * len(frbs)
@@ -233,7 +262,10 @@ def ladder_object_density_model(
     *,
     cepheid_class_seed: float = 5.1,
 ) -> tuple[float, str]:
-    """Per-object interface: geometric/TRGB anchors vs Cepheid SN hosts."""
+    """Per-object interface: geometric/TRGB anchors vs Cepheid SN hosts.
+
+    5.1, 1.85, and 2.0 are assigned density priors, not seed-derived constants.
+    """
     m = str(method or "")
     if "Maser" in m:
         return float(sector_h0_density_model("carnegie_h0", 2.0, density_sky, mod)), "anchor"

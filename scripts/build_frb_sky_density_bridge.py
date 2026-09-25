@@ -19,7 +19,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
-from bubble_bleed_physics import local_sky_density, sky_kernel_theta0_deg  # noqa: E402
+from bubble_bleed_physics import (  # noqa: E402
+    local_sky_density,
+    sky_kernel_theta0_deg,
+    sky_rows_with_position,
+)
 
 FRB = ROOT / "data" / "frb_repeater_cache.json"
 NEB = ROOT / "data" / "nebula_lensing_cache.json"
@@ -28,15 +32,15 @@ DM_CLASS = 200.0
 
 
 def main() -> int:
-    frbs = json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
+    frbs_all = json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
     nebulae = json.loads(NEB.read_text(encoding="utf-8")).get("nebulae") or []
+    frbs = sky_rows_with_position(frbs_all)
     rows = []
     for i, row in enumerate(frbs):
-        ra = row.get("ra_deg")
-        if ra is None:
-            continue
         others = [x for j, x in enumerate(frbs) if j != i]
-        dens = local_sky_density(float(ra), float(row.get("dec_deg") or 0.0), nebulae, others)
+        dens = local_sky_density(
+            float(row["ra_deg"]), float(row["dec_deg"]), nebulae, others
+        )
         ex = row.get("dm_excess_pc")
         pred = DM_CLASS * (1.0 + dens)
         err = None
@@ -45,7 +49,8 @@ def main() -> int:
         rows.append(
             {
                 "name": row.get("name"),
-                "ra_deg": float(ra),
+                "ra_deg": float(row["ra_deg"]),
+                "dec_deg": float(row["dec_deg"]),
                 "density_sky": round(dens, 6),
                 "dm_pc": row.get("dm_pc"),
                 "dm_excess_pc": ex,
@@ -67,8 +72,10 @@ def main() -> int:
             "do_not_stuff_70pct_into_0_5pct_gate",
             "pred_052_keeps_200_class",
         ],
-        "n_frb": len(frbs),
-        "n_with_ra": len(rows),
+        "n_frb_cache": len(frbs_all),
+        "n_with_ra_and_dec": len(frbs),
+        "n_dropped_missing_position": len(frbs_all) - len(frbs),
+        "position_rule": "missing RA or Dec is dropped; it is not (0, 0)",
         "n_with_dm_excess": len(with_ex),
         "median_error_pct_200x1pdens": med_err,
         "high_density_n": len(hi),

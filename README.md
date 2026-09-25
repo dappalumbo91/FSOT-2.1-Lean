@@ -56,7 +56,17 @@ FSOT is put forward as a **candidate Theory of Everything** under a **frozen tec
 1. One seed-derived scalar engine (π, e, φ, γ, G / Catalan) — live pin **AEB2AD** (Paper 03 freeze remains **D1D38A**; [`docs/PIN_LINEAGE.md`](docs/PIN_LINEAGE.md)) — no post-hoc fits; 35 folds frozen.  
 2. Continuum / fluid dynamics (`vendor/fsot_dynamics.py`) + limit-recovery probes (GR weak field, QM scales, SM bridges).  
 3. Ledger B residual atlas green (live count in [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md), ≤0.5% pooled) — not a Ledger A headline.  
-4. Contested-sector public anchors (H₀ Planck/SH0ES, DESI *w_a*, N_eff, σ₈, Higgs, …) with utilization fixes, not excuses.  
+4. Contested-sector public anchors (H₀ Planck/SH0ES, DESI *w_a*, N_eff, σ₈, Higgs, …) with utilization fixes, not excuses.
+
+Against the same public measurements, the external 2026-09-24 comparison has FSOT closer than Planck ΛCDM on three locks. N_eff = 3.046 matches the Standard Model value and does not discriminate.
+
+| Lock | FSOT | Planck ΛCDM |
+|------|------|-------------|
+| H₀ vs CCHP | 70.75, 0.3σ | 67.4, 2.5σ |
+| S₈ vs DES Y6 | 0.805, 1.3σ | 3.8σ |
+| wₐ | −1.018, 2.2σ | 3.0σ |
+
+Directional H₀ on Hubble-flow supernovae is a null, not a sector map. See [`docs/H0_DIRECTION_PRIORS.md`](docs/H0_DIRECTION_PRIORS.md).  
 5. Preregistered freeze + falsification registry.  
 6. Multi-prover triangulation (Lean master + Coq/Isabelle/F*/Rust + SMT + TLA+).
 

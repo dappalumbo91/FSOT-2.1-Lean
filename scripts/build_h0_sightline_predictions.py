@@ -44,7 +44,11 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def build() -> dict:
+def build(
+    *,
+    nebula_path: Path | None = None,
+    host_path: Path | None = None,
+) -> dict:
     seed = json.loads(SECTOR_SEED.read_text(encoding="utf-8"))
     h0_global = float(seed.get("h0_global_fsot") or H0_CANONICAL)
     bleed = float(seed.get("bubble_bleed_fraction") or 0.015431)
@@ -55,10 +59,13 @@ def build() -> dict:
     sh0es_density_seed = float(sh0es_seed.get("bubble_density_proxy") or 5.1)
     sh0es_measured = float(sh0es_seed.get("measured_h0") or 73.04)
 
+    nebula_file = nebula_path or NEBULA
+    host_file = host_path or HOST_COORDS
     nebulae = []
     frbs = []
-    if NEBULA.is_file():
-        nebulae = json.loads(NEBULA.read_text(encoding="utf-8")).get("nebulae") or []
+    if nebula_file.is_file():
+        payload = json.loads(nebula_file.read_text(encoding="utf-8"))
+        nebulae = payload.get("nebulae") or payload.get("objects") or []
     if FRB.is_file():
         frbs = json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
 
@@ -66,14 +73,16 @@ def build() -> dict:
     authority = str(authority).replace("\\", "/")
 
     hosts_raw = []
-    if HOST_COORDS.is_file():
-        hosts_raw = json.loads(HOST_COORDS.read_text(encoding="utf-8")).get("hosts") or []
+    if host_file.is_file():
+        hosts_raw = json.loads(host_file.read_text(encoding="utf-8")).get("hosts") or []
 
     host_preds = []
     for row in hosts_raw:
         name = str(row.get("name") or "")
-        ra = float(row.get("ra_deg") or 0.0)
-        dec = float(row.get("dec_deg") or 0.0)
+        if row.get("ra_deg") is None or row.get("dec_deg") is None:
+            continue
+        ra = float(row["ra_deg"])
+        dec = float(row["dec_deg"])
         method = str(row.get("method") or "SH0ES_Cepheid")
         sector = sky_sector(ra)
         density_sky = bubble_density_for_sector(nebulae, frbs, sector)
@@ -238,16 +247,45 @@ def write_md(doc: dict) -> None:
     OUT_MD.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
+FREEZE_SHA256 = "1e050028958296538ccacf9c83bb7373985f191559dc4035b5525cbdda17ac27"
+LIVE_PREVIEW = ROOT / "results" / "exploratory" / "h0_sightline_live_preview.json"
+STRUCTURE = ROOT / "data" / "extragalactic_structure_catalog.json"
+
+
+def _sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 def main() -> int:
-    doc = build()
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    write_md(doc)
-    print(f"Wrote {OUT_JSON}")
-    print(f"Wrote {OUT_MD}")
-    print(
-        f"  hosts={doc['host_count']} sectors={doc['sky_sector_count']} "
-        f"mean={doc['host_mean_fsot_h0']} span={doc['span_km_s_mpc']}"
+    live = "--live-preview" in sys.argv
+    if not live:
+        if OUT_JSON.is_file() and _sha256(OUT_JSON) == FREEZE_SHA256:
+            print(
+                "Frozen h0_sightline_predictions.json matches the prereg hash. "
+                "Not rewritten. Pass --live-preview for the live-pin catalog."
+            )
+            return 0
+        print("Refusing to write the sightline file: it is not the pinned freeze copy.")
+        return 2
+    doc = build(nebula_path=STRUCTURE, host_path=HOST_COORDS)
+    doc["catalog"] = "extragalactic_structure_catalog"
+    doc["directional_status"] = "exploratory"
+    doc["ugc9391_old_map_counterfactual"] = (
+        "On the frozen sky-density map, moving UGC9391 into sector 3 "
+        "reads 73.497 instead of the frozen 73.470. This preview uses the "
+        "extragalactic cluster catalog, so its H0 is not that number. "
+        "The frozen file was not rewritten."
     )
+    doc["frozen_file_untouched"] = str(OUT_JSON.relative_to(ROOT)).replace("\\", "/")
+    LIVE_PREVIEW.parent.mkdir(parents=True, exist_ok=True)
+    LIVE_PREVIEW.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    print(f"Wrote {LIVE_PREVIEW}")
+    for h in doc.get("hosts") or []:
+        if h.get("host") == "UGC9391":
+            print(
+                f"  UGC9391 sector={h.get('sky_sector')} "
+                f"H0={h.get('fsot_predicted_h0')}"
+            )
     return 0
 
 

@@ -24,7 +24,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
-from bubble_bleed_physics import local_sky_density, sky_kernel_theta0_deg  # noqa: E402
+from bubble_bleed_physics import (  # noqa: E402
+    local_sky_density,
+    sky_kernel_theta0_deg,
+    sky_rows_with_position,
+)
 
 FRB = ROOT / "data" / "frb_repeater_cache.json"
 NEB = ROOT / "data" / "nebula_lensing_cache.json"
@@ -35,15 +39,16 @@ PIN = "D1D38A"
 
 
 def main() -> int:
-    frbs = json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
+    frbs = sky_rows_with_position(
+        json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
+    )
     nebulae = json.loads(NEB.read_text(encoding="utf-8")).get("nebulae") or []
     rows = []
     for i, row in enumerate(frbs):
-        ra = row.get("ra_deg")
-        if ra is None:
-            continue
         others = [x for j, x in enumerate(frbs) if j != i]
-        dens = local_sky_density(float(ra), float(row.get("dec_deg") or 0.0), nebulae, others)
+        dens = local_sky_density(
+            float(row["ra_deg"]), float(row["dec_deg"]), nebulae, others
+        )
         ex = row.get("dm_excess_pc")
         pred = DM_CLASS * (1.0 + dens)
         err = None
@@ -52,7 +57,8 @@ def main() -> int:
         rows.append(
             {
                 "name": row.get("name"),
-                "ra_deg": float(ra),
+                "ra_deg": float(row["ra_deg"]),
+                "dec_deg": float(row["dec_deg"]),
                 "density_sky": round(dens, 6),
                 "dm_pc": row.get("dm_pc"),
                 "dm_excess_pc": ex,

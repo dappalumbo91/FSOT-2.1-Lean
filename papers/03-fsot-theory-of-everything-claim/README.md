@@ -20,6 +20,16 @@ Claim check: `python verify_paper_claims.py --fsot-root <clone>`
 
 The PDF is the checklist paper, not the 477-domain atlas. GitHub is the authority preprint (not an arXiv upload).
 
+### FSOT vs Planck ΛCDM (same measurements)
+
+External comparison, 2026-09-24. These σ values are not a retune of the D1D38A freeze. N_eff = 3.046 matches ΛCDM and is not a discriminating lock.
+
+| Lock | FSOT | Planck ΛCDM |
+|------|------|-------------|
+| H₀ vs CCHP | 70.75 at 0.3σ | 67.4 at 2.5σ |
+| S₈ vs DES Y6 | 1.3σ (lock 0.805) | 3.8σ |
+| wₐ | 2.2σ (lock −1.018) | 3.0σ |
+
 | Use | Doc |
 |-----|-----|
 | How to apply | [`docs/WORKED_EXAMPLES.md`](../../docs/WORKED_EXAMPLES.md) (cells, chemistry, astronomy) |

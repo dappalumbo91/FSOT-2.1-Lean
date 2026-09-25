@@ -19,3 +19,7 @@ Forbidden: rewriting a freeze file to say AEB2AD so a miss looks closed.
 Allowed: live prose says AEB2AD; freeze files keep D1D38A and point here.
 
 Confirm live: `python scripts/build_repo_status_snapshot.py` → `authority.pin_prefix`.
+
+## Freeze file bytes
+
+The prereg hashes for `predictions/h0_sightline_predictions.json` (`1e050028…ac27`) and `predictions/h0_multi_tool_predictions.json` (`298c71f1…15fc`) match the files as stored: Windows CRLF, and no extra final newline. An LF-normalized copy does not match. Do not rewrite those files to LF. That would change the hash without changing the numbers.
