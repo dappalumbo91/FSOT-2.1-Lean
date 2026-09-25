@@ -5,7 +5,7 @@
 | Track | Accurate answer today | Goal | Kill |
 |-------|----------------------|------|------|
 | **Timing** | Process window at the right fold (7 d / 24 h weather / 1 d economics) | Sharper SI stamp via finer `dt` | UTC hypocenter as a 0.5% central |
-| **ECMWF S2S** | 24 h agrees with 48 h on **25/26**. PTIT2 day 1 holds (min 1013.6 hPa). Day 2 breaks on gust **12.4 m/s** (pressure stays 1010.7). Not a beat. | Beat week-3 skill on the **same** path | Claiming the beat; moving 12 m/s or 1005 hPa to swallow PTIT2 |
+| **ECMWF S2S** | 24 h card matches the frozen 48 h card on **25/26**. PTIT2 day 1 holds (1013.6 hPa, gust 11.8). Day 2 is four NDBC samples at 12.4 m/s, pressure stays 1010.7. Not a beat. | Beat week-3 skill on the **same** path | Claiming the beat; moving 12 m/s or 1005 hPa to swallow those four samples |
 | **Prices** | Economics class median ~0.07%; 1-day window; CLI `products/market_windows.py` | Dated quiet/storm prints, then finer dt | Ticker close / crash date as 0.5% |
 | **Sickness** | Host mt CDS ~0.052%; pathogen CDS ~0.076%; κ coupling; CLI `products/sickness_coupling.py` | Genetics structure product on public genomes | Person-level onset as 0.5% |
 | **Path integral** | Discrete path-sum P1–P10 (valve + \(\varphi^4\) process time + \(a_0/\gamma\)) | Deeper native sum; classical YM still named | “Millennium theorem proved” |
@@ -44,7 +44,7 @@ Three catalog matches are not three-decimal matches to the sharper table, and th
 
 The green gate still scores the number written in each file. Worst gated scalar after DMSO is ZSNS004 mean displacement at 0.441% (frozen 82.016 against Zebrahub 82.379). The live mid-stage bright branch is a separate ~2% miss and was not rebuilt. Next handbook scalar is ammonia §47 \(\Delta H_{\mathrm{vap}}\): \(e^3+\pi=23.227\) against NIST/CRC 23.33 kJ/mol, 0.441%.
 
-Weather: `FCAST-WX-20260909T1854-05` (PTIT2, Gulf) was issued as a **48 h quiet** cell. Day 1 held (min pressure 1013.6 hPa, quiet bar not broken). Day 2 killed on gust **12.4 m/s** while pressure stayed **1010.7 hPa** (above the 1005 hPa quiet-break). That is the next process day, not a day-1 miss. Issued JSON stays. New issues say `{horizon}h` from `weather_horizon_hours()` (24). Do not move 12 m/s or 1005 hPa.
+Weather: `FCAST-WX-20260909T1854-05` (PTIT2, Gulf) was issued as a **48 h quiet** cell at 1017.6 hPa and 7.7 m/s. The law's window is 24 h. That day held: min pressure 1013.6 hPa, max gust 11.8 m/s, no sample at or above 12. The frozen card's second day is the break. NDBC 6-minute realtime shows gust 12.4 m/s at 2026-09-10T22:00, 23:48, 2026-09-11T00:00, and 18:48 UTC, with pressure on those samples near 1011 hPa. The day's minimum pressure is 1010.7, so the 1005 hPa bar never fires. Four samples, 0.4 m/s over the gust bar, not one bad point. That second day stays a kill of the frozen 48 h sentence. It is not a miss of the 24 h window, and it is not a reason to move 12 m/s or 1005 hPa. Issued JSON stays. New issues say `{horizon}h` from `weather_horizon_hours()` (24).
 
 ## Commands
 

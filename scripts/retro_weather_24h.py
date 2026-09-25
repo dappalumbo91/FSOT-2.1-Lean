@@ -43,6 +43,19 @@ def _nums(rows: list[dict], key: str) -> list[float]:
     return out
 
 
+def _gust_at_or_above(rows: list[dict], bar: float = 12.0) -> list[dict]:
+    """6-minute samples whose gust meets the quiet-kill bar. Times stay on the row."""
+    hits: list[dict] = []
+    for r in rows:
+        try:
+            g = float(r.get("gst"))
+        except (TypeError, ValueError):
+            continue
+        if g >= bar:
+            hits.append({"t": r.get("t"), "gst": g, "pres": r.get("pres")})
+    return hits
+
+
 def _stormish(rows: list[dict], expect_storm: bool) -> tuple[bool, bool, bool, dict]:
     """Quiet kill is pres<1005 or gust≥12. Mild saw_storm is pres<1010 or gust≥8.
 
@@ -171,6 +184,8 @@ def main() -> int:
                     "result_day2": ("hold" if ok2 else "kill") if second else "no_obs",
                     "same": same,
                     "split": split,
+                    "gust_ge_12_day1": _gust_at_or_above(first),
+                    "gust_ge_12_day2": _gust_at_or_above(second),
                 }
             )
 
@@ -184,7 +199,8 @@ def main() -> int:
         "pin": pin,
         "note": (
             "Frozen 48 h issues not rewritten. A quiet hold on day 1 that breaks on day 2 "
-            "is the next process day, not a day-1 miss. Bars stay 1010/1005 and 8/12 m/s."
+            "is the next process day, not a day-1 miss. gust_ge_12_day2 lists the "
+            "NDBC samples on that next day. Bars stay 1010/1005 and 8/12 m/s."
         ),
         "n": n,
         "n_with_obs": n_obs,
@@ -202,7 +218,12 @@ def main() -> int:
         "Issued JSON is **frozen**. 48 h is two process days. Day 1 is the competitive window.",
         "Day 2 is the next window. Bars are not moved.",
         "",
-        f"Agree **{n_same}/{n_obs}**. Second-process-day breaks: **{n_second}**.",
+        f"The frozen 48 h card matches the first day on **{n_same}/{n_obs}**.",
+        f"Second-process-day breaks: **{n_second}**.",
+        "",
+        "The law's window is that first day. A quiet hold that breaks only on day 2",
+        "is the next process day. The samples that cross 12 m/s are listed below.",
+        "The bar stays 12 m/s. Issued JSON stays frozen.",
         "",
         "| ID | Buoy | 48 h | day1 | day2 | split | minP day1 | minP day2 | maxG day1 | maxG day2 |",
         "|----|------|------|------|------|-------|----------:|----------:|----------:|----------:|",
@@ -214,6 +235,21 @@ def main() -> int:
             f"{r.get('min_pres_24h')} | {r.get('min_pres_day2')} | "
             f"{r.get('max_gst_24h')} | {r.get('max_gst_day2')} |"
         )
+    lines.append("")
+    for r in rows_out:
+        hits = r.get("gust_ge_12_day2") or []
+        if r.get("split") != "second_process_day" or not hits:
+            continue
+        lines.append(
+            f"`{r.get('id')}` {r.get('buoy_id')}: day 1 held "
+            f"(min {r.get('min_pres_24h')} hPa, max gust {r.get('max_gst_24h')} m/s, "
+            f"{len(r.get('gust_ge_12_day1') or [])} samples at or above 12). "
+            f"Day 2 has {len(hits)} samples at or above 12 m/s. "
+            f"Window min pressure {r.get('min_pres_day2')} hPa stays above 1005."
+        )
+        for h in hits:
+            lines.append(f"- {h.get('t')}  gust {h.get('gst')} m/s  pressure {h.get('pres')} hPa")
+        lines.append("")
     lines += [
         "",
         "Quiet kill: pressure < 1005 hPa or gust ≥ 12 m/s. Mild saw-storm: < 1010 hPa or gust ≥ 8 m/s.",

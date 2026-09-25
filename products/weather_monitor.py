@@ -47,8 +47,10 @@ def main() -> int:
             if r.get("split") == "second_process_day":
                 print(
                     f"  {r.get('id')} {r.get('buoy_id')} day1={r.get('result_24h')} "
-                    f"minP={r.get('min_pres_24h')} day2={r.get('result_day2')} "
-                    f"minP={r.get('min_pres_day2')} maxG={r.get('max_gst_day2')}"
+                    f"minP={r.get('min_pres_24h')} maxG={r.get('max_gst_24h')} "
+                    f"day2={r.get('result_day2')} minP={r.get('min_pres_day2')} "
+                    f"maxG={r.get('max_gst_day2')} "
+                    f"gust_ge_12_day2={len(r.get('gust_ge_12_day2') or [])}"
                 )
     print("window=24h_process  not_claimed: week-3 S2S skill")
     for r in rows[-5:]:

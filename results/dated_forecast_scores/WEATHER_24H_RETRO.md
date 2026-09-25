@@ -1,11 +1,16 @@
 # Weather 24 h retrospective
 
-*Generated 2026-09-22T13:27:52.347707+00:00 · pin AEB2AD*
+*Generated 2026-09-22T13:42:23.224723+00:00 · pin AEB2AD*
 
 Issued JSON is **frozen**. 48 h is two process days. Day 1 is the competitive window.
 Day 2 is the next window. Bars are not moved.
 
-Agree **25/26**. Second-process-day breaks: **1**.
+The frozen 48 h card matches the first day on **25/26**.
+Second-process-day breaks: **1**.
+
+The law's window is that first day. A quiet hold that breaks only on day 2
+is the next process day. The samples that cross 12 m/s are listed below.
+The bar stays 12 m/s. Issued JSON stays frozen.
 
 | ID | Buoy | 48 h | day1 | day2 | split | minP day1 | minP day2 | maxG day1 | maxG day2 |
 |----|------|------|------|------|-------|----------:|----------:|----------:|----------:|
@@ -41,6 +46,13 @@ Agree **25/26**. Second-process-day breaks: **1**.
 | `FCAST-WX-20260909T1854-03` | 64046 | no_obs | no_obs | None | None | None | None | None | None |
 | `FCAST-WX-20260909T1854-04` | 51002 | hold | hold | hold | agree | 1008.8 | 1008.9 | 7.0 | 11.0 |
 | `FCAST-WX-20260909T1854-05` | PTIT2 | kill | hold | kill | second_process_day | 1013.6 | 1010.7 | 11.8 | 12.4 |
+
+`FCAST-WX-20260909T1854-05` PTIT2: day 1 held (min 1013.6 hPa, max gust 11.8 m/s, 0 samples at or above 12). Day 2 has 4 samples at or above 12 m/s. Window min pressure 1010.7 hPa stays above 1005.
+- 2026-09-11T18:48:00+00:00  gust 12.4 m/s  pressure 1011.0 hPa
+- 2026-09-11T00:00:00+00:00  gust 12.4 m/s  pressure 1011.0 hPa
+- 2026-09-10T23:48:00+00:00  gust 12.4 m/s  pressure 1011.0 hPa
+- 2026-09-10T22:00:00+00:00  gust 12.4 m/s  pressure 1011.0 hPa
+
 
 Quiet kill: pressure < 1005 hPa or gust ≥ 12 m/s. Mild saw-storm: < 1010 hPa or gust ≥ 8 m/s.
 Kill: rewriting issued JSON. Kill: retuning POOF or the bars to swallow PTIT2.
