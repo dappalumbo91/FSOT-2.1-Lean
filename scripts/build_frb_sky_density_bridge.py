@@ -19,11 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 
-from bubble_bleed_physics import (  # noqa: E402
-    local_sky_density,
-    sky_kernel_theta0_deg,
-    sky_rows_with_position,
-)
+from bubble_bleed_physics import local_sky_density, sky_kernel_theta0_deg  # noqa: E402
+from sky_catalog_paths import load_chime_positions  # noqa: E402
 
 FRB = ROOT / "data" / "frb_repeater_cache.json"
 NEB = ROOT / "data" / "nebula_lensing_cache.json"
@@ -34,7 +31,7 @@ DM_CLASS = 200.0
 def main() -> int:
     frbs_all = json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
     nebulae = json.loads(NEB.read_text(encoding="utf-8")).get("nebulae") or []
-    frbs = sky_rows_with_position(frbs_all)
+    frbs = load_chime_positions()
     rows = []
     for i, row in enumerate(frbs):
         others = [x for j, x in enumerate(frbs) if j != i]
@@ -72,10 +69,10 @@ def main() -> int:
             "do_not_stuff_70pct_into_0_5pct_gate",
             "pred_052_keeps_200_class",
         ],
-        "n_frb_cache": len(frbs_all),
+        "n_name_cache_without_dec": len(frbs_all),
         "n_with_ra_and_dec": len(frbs),
-        "n_dropped_missing_position": len(frbs_all) - len(frbs),
-        "position_rule": "missing RA or Dec is dropped; it is not (0, 0)",
+        "position_catalog": r"D:\FSOT_Benchmarks\anomaly_observables\frb\chime_frb_catalog1_positions.json",
+        "position_rule": "CHIME Catalog 1 positions. The name cache has no Dec and is not placed at (0, 0).",
         "n_with_dm_excess": len(with_ex),
         "median_error_pct_200x1pdens": med_err,
         "high_density_n": len(hi),

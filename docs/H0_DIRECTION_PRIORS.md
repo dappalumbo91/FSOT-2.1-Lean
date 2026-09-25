@@ -27,9 +27,9 @@ Until the next data drop freezes the choices below, the directional rule is expl
 | Choice | Status now |
 |--------|------------|
 | Which rows get a direction | Host galaxies only. Hubble-flow supernovae inherit the host mix and have no direction rule. |
-| Density catalog | `data/extragalactic_structure_catalog.json` (nearby cluster centers). The 20-row nebula cache is a lensing seed: 19 of those nebulae are in the Milky Way. It is not the H₀ direction catalog. |
+| Density catalog | Abell clusters, VizieR VII/4A, on `D:\FSOT_Benchmarks\anomaly_observables\extragalactic_structure\abell_clusters.json`. The 20-row nebula cache stays a lensing seed. |
 | Line-of-sight structure | Not entered. |
-| FRB positions | The live cache has 3390 rows, 3352 with no RA and none with a Dec. Those rows are dropped. Missing position is not (0°, 0°). |
+| FRB positions | CHIME/FRB Catalog 1, 536 bursts with J2000 RA and Dec, on `D:\FSOT_Benchmarks\anomaly_observables\frb\chime_frb_catalog1_positions.json`. The 3390-row name cache still has no declinations and is not placed at (0°, 0°). |
 
 ## Null for supernova samples
 

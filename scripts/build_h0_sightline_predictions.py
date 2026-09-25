@@ -29,6 +29,7 @@ from bubble_bleed_physics import (  # noqa: E402
     sector_h0_density_model,
     sky_sector,
 )
+from sky_catalog_paths import ABELL_CLUSTERS, load_chime_positions  # noqa: E402
 from cosmology_lambda import H0_CANONICAL  # noqa: E402
 from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
@@ -48,6 +49,7 @@ def build(
     *,
     nebula_path: Path | None = None,
     host_path: Path | None = None,
+    frbs_override: list[dict] | None = None,
 ) -> dict:
     seed = json.loads(SECTOR_SEED.read_text(encoding="utf-8"))
     h0_global = float(seed.get("h0_global_fsot") or H0_CANONICAL)
@@ -66,7 +68,9 @@ def build(
     if nebula_file.is_file():
         payload = json.loads(nebula_file.read_text(encoding="utf-8"))
         nebulae = payload.get("nebulae") or payload.get("objects") or []
-    if FRB.is_file():
+    if frbs_override is not None:
+        frbs = frbs_override
+    elif FRB.is_file():
         frbs = json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
 
     mod, authority = load_fsot_compute()
@@ -267,7 +271,11 @@ def main() -> int:
             return 0
         print("Refusing to write the sightline file: it is not the pinned freeze copy.")
         return 2
-    doc = build(nebula_path=STRUCTURE, host_path=HOST_COORDS)
+    doc = build(
+        nebula_path=ABELL_CLUSTERS,
+        host_path=HOST_COORDS,
+        frbs_override=load_chime_positions(),
+    )
     doc["catalog"] = "extragalactic_structure_catalog"
     doc["directional_status"] = "exploratory"
     doc["ugc9391_old_map_counterfactual"] = (
