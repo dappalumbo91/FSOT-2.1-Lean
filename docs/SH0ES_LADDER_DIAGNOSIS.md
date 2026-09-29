@@ -25,7 +25,19 @@ H_0^{\mathrm{tool}} = H_0^{\mathrm{global}}\,(1 + \rho\,\varepsilon),
 
 The leftover is this: we scored the **published SH0ES central** as one **class bin** (ρ = 5.05 → **73.773**) while Riess publishes a **three-rung ladder average** (**73.04**). Those rungs do not all live at ρ = 5.05.
 
-Implied ρ to hit 73.04 exactly: **4.3556**. Assigned class ρ: **5.05**. Overshoot: **0.7334 km/s/Mpc** (1.00%, 0.7σ of SH0ES ±1.04). Inside the **2.5%** contested band on purpose.
+Implied ρ to hit 73.04 exactly: **4.3556**. Assigned class ρ: **5.05**. Overshoot: **0.7334 km/s/Mpc** (1.00%, 0.71 of the SH0ES ±1.04). Inside the **2.5%** contested band on purpose. ρ stays 5.05.
+
+Each stored rung, scored on the uncertainty published with that measurement (`scripts/sh0es_ladder_seed_check.py`):
+
+| Rung | FSOT | Published | Where it sits |
+|------|-----:|-----------|---------------|
+| Cepheid-count chain | 72.860 | Riess et al. 2022, \(73.04\pm 1.04\) | **0.17 uncertainties low** |
+| Geometric anchors | 70.511 | Freedman et al. 2025, \(70.39\pm 1.22\) stat \(\pm 1.33\) sys \(\pm 0.70\) SN | **0.06 uncertainties high** of the combined 1.94 |
+| Hosts only | 73.802 | JWST Perfect Host, \(73.49\pm 0.93\) | **0.34 uncertainties high** |
+| Hosts only | 73.802 | A&A 2026 local network, \(73.50\pm 0.81\) | **0.37 uncertainties high** |
+| Frozen class bin ρ = 5.05 | 73.773 | same \(73.04\pm 1.04\) | **0.71 uncertainties high** |
+
+The 1% on the class bin is inside the SH0ES uncertainty. It is not a miss of that bar, and it is not a reason to move ρ.
 
 ---
 

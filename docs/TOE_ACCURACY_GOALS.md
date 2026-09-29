@@ -54,7 +54,9 @@ The catalog still has 434 benchmark domains. Their median percent error is not t
 
 The 40.53 figure on `data/structure_calibration_benchmark.json` is 100 minus burial accuracy for 68 proteins against AlphaFold DB labels. It is not a Cα residual, and it is not a scalar gate. The genetics ledger refreshed from FSOT-Genetics is the AlphaFold comparison: the 10-protein product is 0.13 Å against AlphaFold 0.47 Å, hemoglobin alpha on that freeze is 0.21 Å against 0.27 Å, and the 19-protein medical panel is 0.26 Å against 3.98 Å. It beats AlphaFold on 16 of the 16 targets that have an AlphaFold model. A chain with no measured homolog stays off that product. Those ångström numbers are not interchangeable.
 
-Cosmology stays in \(\sigma\) against the named catalog. The SH0ES ladder and the frozen \(H_0\) sightline are not retuned in this pass. Chemistry stays on half of the last quoted digit. The frozen zebrafish panel is not rebuilt. Biology stays on the experiment's own scatter.
+The SH0ES ladder is inside the uncertainties published with those measurements. The Cepheid-count chain is 72.860 against \(73.04\pm 1.04\), 0.17 uncertainties low. The geometric anchors are 70.511 against Freedman's \(70.39\), 0.06 uncertainties high of the combined 1.94 bar. The host-only rung is 73.802, 0.34 uncertainties high of \(73.49\pm 0.93\) and 0.37 high of \(73.50\pm 0.81\). The frozen class bin, 73.773, is 0.71 uncertainties high of the same \(\pm 1.04\). That 1% is inside the SH0ES bar. ρ stays 5.05, and the hashed sightline is not rewritten. `scripts/sh0es_ladder_seed_check.py` prints the comparison.
+
+Chemistry stays on half of the last quoted digit. The frozen zebrafish panel is not rebuilt. Biology stays on the experiment's own scatter.
 
 ## What is on the row
 
