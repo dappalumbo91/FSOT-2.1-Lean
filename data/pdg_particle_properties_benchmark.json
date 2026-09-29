@@ -18,9 +18,9 @@
   "observable_count": 27,
   "scalar_record_count": 27,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0005575218307150491,
-  "pooled_median_error_pct": 0.0005575218307150491,
-  "headline_median_error_pct": 0.0005575218307150491,
+  "median_error_pct": 0.000650490524241112,
+  "pooled_median_error_pct": 0.000650490524241112,
+  "headline_median_error_pct": 0.000650490524241112,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -193,11 +193,11 @@
       "lab": "pdg_particle",
       "property": "\u00a766 Particle Masses",
       "name": "Higgs",
-      "computed": 125200.01875723811,
+      "computed": 125158.09774433903,
       "measured": 125200.0,
-      "error_pct": 1.5e-05,
+      "error_pct": 0.03346825532026414,
       "unit": "MeV",
-      "fsot_formula": "(THETA+E\u00b3)*C_FAC\u207b\u2077",
+      "fsot_formula": "(THETA_S+E^3)/C_FACTOR^7",
       "reference": "PDG 2024 / Zyla et al.",
       "source_corpus": "FSOT_SMILES_Lab_Dataset"
     },
