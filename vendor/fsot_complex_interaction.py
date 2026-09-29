@@ -149,16 +149,24 @@ def sector_bare_scalar(name: str) -> float:
     return f(domain_scalar(dom))
 
 
-def sector_scalar_at_interface(name: str, *, observed: bool = True) -> float:
-    """Full scalar engine at sector D_eff (includes observer channel)."""
-    D = sector_D_eff(name)
+def sector_scalar_at_interface(name: str, *, observed: bool | None = None) -> float:
+    """Full scalar engine at the sector domain's own look, hits, and observer bit.
+
+    Gravity is the unobserved cosmology medium. Forcing observed=True flipped
+    its sign before the coupling ran, so the reported contrast averaged a
+    negative equilibrium with a positive start.
+    """
+    dom_name = SECTOR_NODES[name]["domain"]
+    dom = DOMAINS[dom_name]
+    if observed is None:
+        observed = bool(dom.observed)
     si = ScalarInput(
         N=mpf(1),
         P=mpf(1),
-        D_eff=mpf(D),
-        delta_psi=mpf(1),
+        D_eff=mpf(sector_D_eff(name)),
+        delta_psi=dom.delta_psi,
         delta_theta=mpf(1),
-        recent_hits=mpf(0),
+        recent_hits=mpf(dom.hits),
         observed=observed,
         rho=mpf(1),
         scale=mpf(1),
