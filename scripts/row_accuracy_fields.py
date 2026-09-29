@@ -112,7 +112,43 @@ def attest_row(row: dict, *, file_name: str = "") -> dict:
             "comparison_can_fail": False,
         }
         return fields
-    if codata_file or existing in {"scale_stamp", "uncomputed_stamp"}:
+    if existing == "codata_measured":
+        return {
+            "accuracy_class": "codata_measured",
+            "field_bar": row.get("field_bar")
+            or _bar(1.5e-4, "ppm", "CODATA relative uncertainty"),
+            "value_computed": computed_ok,
+            "comparison_can_fail": True,
+        }
+    if existing == "derived_from_alpha":
+        return {
+            "accuracy_class": "derived_from_alpha",
+            "field_bar": _bar(1.5e-4, "ppm", "fixed by alpha once the SI definitions are adopted"),
+            "value_computed": computed_ok,
+            "comparison_can_fail": True,
+        }
+    if existing == "derived_exact":
+        return {
+            "accuracy_class": "derived_exact",
+            "field_bar": _bar(0, "exact", "fixed by h, c, and k"),
+            "value_computed": computed_ok,
+            "comparison_can_fail": True,
+        }
+    if existing == "file_metadata":
+        return {
+            "accuracy_class": "file_metadata",
+            "field_bar": _bar(0, "exact", "file count, not a physical constant"),
+            "value_computed": computed_ok,
+            "comparison_can_fail": False,
+        }
+    if existing == "uncomputed_stamp" or (codata_file and not computed_ok):
+        return {
+            "accuracy_class": "uncomputed_stamp",
+            "field_bar": _bar(1.5e-4, "ppm", "no leaf yet; CODATA uncertainty is the bar when a leaf exists"),
+            "value_computed": False,
+            "comparison_can_fail": False,
+        }
+    if codata_file or existing in {"scale_stamp"}:
         kind = "uncomputed_stamp" if not computed_ok else "scale_stamp"
         return {
             "accuracy_class": kind,
