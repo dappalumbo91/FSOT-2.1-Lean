@@ -36,7 +36,7 @@ Then \(S = (K T_2)\,\gamma_{\mathrm{FSOT}}\). The rest unit is \(K T_2\). The ex
 
 The other half of the limit is dimensional. \(T_1\) carries \(\ln(D/25)\) and the valve carries \((D-25)/25\). Both are identically zero at the home dimension \(D = 25\). That is the unstrained fluid. It is the same kind of reduction as \(v/c \to 0\): the extra strain drops out, and what remains is the rest unit plus the observer dressing that belongs to that dimension.
 
-Checked by `python scripts/fsot_correspondence_limit.py`. On the live pin the home unobserved scalar equals \(S_{\mathrm{cosm}}\), and the Chemistry fold equals \(S_{\mathrm{chem}}\). `vendor/fsot_compute.py` is not rewritten.
+Checked by `python scripts/fsot_correspondence_limit.py`. On the live pin the home unobserved scalar equals \(S_{\mathrm{cosm}}\), and the Chemistry fold equals \(S_{\mathrm{chem}}\). `vendor/fsot_compute.py` is not rewritten. The reading in Newtonian, relativistic, and electroweak language is `docs/FSOT_STANDARD_PHYSICS.md`.
 
 ## Weak field, from term 1
 
