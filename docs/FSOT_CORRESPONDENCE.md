@@ -78,4 +78,33 @@ The tree theorem is the identity \(m_W^2/m_Z^2 = 1-\sin^2\theta_W^{\mathrm{os}}\
 
 Checked by `python scripts/fsot_scalar_reduction.py`.
 
-Chemistry leaves (ammonia and methane vaporization, ammonia \(C_p\), \(C_p/C_v\), and critical temperature) evaluate these same constants in kJ/mol or kelvin. The fold value \(S_{\mathrm{chem}}=0.955289\) is what the scalar returns on the Chemistry inputs. The next reduction is to write each of those laboratory numbers as \(K\) times a power of that fold, the way \(m_Z\) is already \(m_W\) over the cosine.
+## Vaporization enthalpies, as a power of the chemistry fold
+
+On the chemistry fold, \(S_{\mathrm{chem}} = K\,\gamma_{\mathrm{chem}}\) with \(\gamma_{\mathrm{chem}} = S_{\mathrm{chem}}/K\). Every handbook §47 \(\Delta H_{\mathrm{vap}}\) leaf \(L\) is that rest unit times a power of the fold:
+
+\[
+L = K\left(\frac{S_{\mathrm{chem}}}{K}\right)^{p}, \qquad p = \frac{\ln(L/K)}{\ln(S_{\mathrm{chem}}/K)}.
+\]
+
+\(p\) is the logarithm of the leaf that is already in the benchmark. Rebuilding \(L\) from \(K\) and \(S_{\mathrm{chem}}\) returns that same leaf. The handbook target is not used to choose \(p\), so the residual against NIST/CRC stays the residual of the leaf. The 18 powers are in `data/enthalpy_fold_powers.json`. Checked by `python scripts/fsot_enthalpy_reduction.py`.
+
+| Substance | Leaf | \(p\) |
+|-----------|------|------|
+| He | \(\pi^{-2}-e^{-4}\) | \(-1.973956\) |
+| H₂ | \(G-\mathrm{CHAOS}^{4}\) | \(0.932768\) |
+| Ne | \(\gamma^{-1}-\mathrm{SUCTION}^{2}\) | \(1.709340\) |
+| N₂ | \(\Omega^{2}/P_{\mathrm{new}}\) | \(3.147758\) |
+| O₂ | \(\varphi^{4}-\varphi^{-7}\) | \(3.392634\) |
+| Ar | \(\mathrm{POOF}^{-1}-\theta^{2}\) | \(3.321165\) |
+| CH₄ | \(\pi\cdot\varphi^{2}-\pi^{-3}\) | \(3.615903\) |
+| C₂H₆ | \(S_{\mathrm{cosm}}^{-4}-1\) | \(4.326682\) |
+| C₃H₈ | \(A_{\mathrm{IN}}^{6}-K^{-1}\) | \(4.644263\) |
+| NH₃ | \(e^{3}+\pi+\pi^{-2}\) | \(4.889729\) |
+| HCl | \(\Omega^{6}/\theta\) | \(4.441949\) |
+| Cl₂ | \(G^{-3}S_{\mathrm{cosm}}^{-4}\) | \(4.727398\) |
+| H₂O | \(\theta^{-3}+\theta^{3}\) | \(5.565681\) |
+| ethanol | \(\pi^{3}+e^{2}\) | \(5.496256\) |
+| acetone | \(e^{2}\varphi^{3}\) | \(5.247564\) |
+| benzene | \(S_{\mathrm{cosm}}-S_{\mathrm{cosm}}^{-5}\) | \(5.224897\) |
+| CCl₄ | \(P_{\mathrm{var}}^{8}C_{\mathrm{fac}}^{-3}\) | \(5.188586\) |
+| diethyl ether | \(C_{\mathrm{cosm}}^{-2}/\pi^{2}\) | \(5.046102\) |

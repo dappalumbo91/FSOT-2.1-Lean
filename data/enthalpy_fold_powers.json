@@ -1,0 +1,170 @@
+{
+  "K": "0.42010876364988794091537199035249421857574511746219",
+  "S_chem": "0.95528934009164053391099688811029838960680173241104",
+  "gamma_chem": "2.2739095747304231370239068470916725887538269575646",
+  "identity": "L = K*(S_chem/K)^p with p = ln(L/K)/ln(S_chem/K)",
+  "rows": [
+    {
+      "name": "He",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "0.08300554475360358",
+      "measured": 0.083,
+      "leaf_formula": "PI\u207b\u00b2-E\u207b\u2074",
+      "fold_power": "-1.9739561607097235119724112660767845311833048822566",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "H\u2082",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "0.9039584731721868",
+      "measured": 0.904,
+      "leaf_formula": "G-CHAOS\u2074",
+      "fold_power": "0.93276834620109217960112130189746271374813013807158",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "Ne",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "1.7108357217297618",
+      "measured": 1.71,
+      "leaf_formula": "\u03b3\u207b\u00b9\u2212SUCTION\u00b2",
+      "fold_power": "1.7093396726635704416522228811791811767106352345898",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "N\u2082",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "5.576960559968696",
+      "measured": 5.577,
+      "leaf_formula": "OMEGA\u00b2*P_NEW\u207b\u00b9",
+      "fold_power": "3.1477584705157311332532178437697350155938373506727",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "O\u2082",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "6.819660112501053",
+      "measured": 6.82,
+      "leaf_formula": "PHI\u2074-PHI\u207b\u2077",
+      "fold_power": "3.3926343732146737778495661467762922358213731523287",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "Ar",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "6.430792084169818",
+      "measured": 6.43,
+      "leaf_formula": "POOF\u207b\u00b9-THETA\u00b2",
+      "fold_power": "3.3211652650560279332724544613423696651280780910174",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "CH\u2084",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "8.192544811471855",
+      "measured": 8.19,
+      "leaf_formula": "\u03c0\u00b7\u03c6\u00b2\u2212\u03c0\u207b\u00b3",
+      "fold_power": "3.615902537629098974559939489716951418907175062735",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "C\u2082H\u2086",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "14.689461556027789",
+      "measured": 14.69,
+      "leaf_formula": "S_cosm\u207b\u2074-1",
+      "fold_power": "4.3266819859268111683527608786938963950019105490923",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "C\u2083H\u2088",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "19.068220891949853",
+      "measured": 19.04,
+      "leaf_formula": "A_IN\u2076-K\u207b\u00b9",
+      "fold_power": "4.6442627357662220873631992036296933637152889763894",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "NH\u2083",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "23.328450760419795",
+      "measured": 23.33,
+      "leaf_formula": "e\u00b3+\u03c0+\u03c0\u207b\u00b2",
+      "fold_power": "4.8897288369049638224247066089051102331557008054012",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "HCl",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "16.148420033135196",
+      "measured": 16.15,
+      "leaf_formula": "OMEGA\u2076\u00b7THETA\u207b\u00b9",
+      "fold_power": "4.441948943683742259056037342636073358733368860336",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "Cl\u2082",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "20.415995288129096",
+      "measured": 20.41,
+      "leaf_formula": "G\u207b\u00b3\u00b7S_cosm\u207b\u2074",
+      "fold_power": "4.7273978572667198325306622760922268748849590423223",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "H\u2082O",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "40.64876996138748",
+      "measured": 40.65,
+      "leaf_formula": "THETA\u207b\u00b3+THETA\u00b3",
+      "fold_power": "5.5656807203928011087107128942380330361277313706326",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "ethanol",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "38.39533277923047",
+      "measured": 38.56,
+      "leaf_formula": "PI\u00b3+E\u00b2",
+      "fold_power": "5.4962557385690477144238882077046327847562707824841",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "acetone",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "31.300543924629643",
+      "measured": 31.3,
+      "leaf_formula": "E\u00b2\u00b7PHI\u00b3",
+      "fold_power": "5.2475639817553999235775690302757892717544308926111",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "benzene",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "30.723090640254416",
+      "measured": 30.72,
+      "leaf_formula": "S_cosm-S_cosm\u207b\u2075",
+      "fold_power": "5.2248969690863628369035007508843977992000084824729",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "CCl\u2084",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "29.820164681745908",
+      "measured": 29.82,
+      "leaf_formula": "P_VAR\u2078*C_FAC\u207b\u00b3",
+      "fold_power": "5.1885857636264461538147476734480947880751056866875",
+      "form": "K*(S_chem/K)^p"
+    },
+    {
+      "name": "diethyl_ether",
+      "property": "\u00a747 \u0394Hvap",
+      "leaf": "26.526230255601014",
+      "measured": 26.52,
+      "leaf_formula": "C_COSM\u207b\u00b2/PI\u00b2",
+      "fold_power": "5.0461016763238280557003951812877746492167139955955",
+      "form": "K*(S_chem/K)^p"
+    }
+  ]
+}
