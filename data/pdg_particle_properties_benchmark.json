@@ -14,13 +14,13 @@
     "atomic"
   ],
   "D_eff": 9,
-  "record_count": 27,
-  "observable_count": 27,
-  "scalar_record_count": 27,
+  "record_count": 28,
+  "observable_count": 28,
+  "scalar_record_count": 28,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.000650490524241112,
-  "pooled_median_error_pct": 0.000650490524241112,
-  "headline_median_error_pct": 0.000650490524241112,
+  "median_error_pct": 0.0006704883596874779,
+  "pooled_median_error_pct": 0.0006704883596874779,
+  "headline_median_error_pct": 0.0006704883596874779,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -56,7 +56,7 @@
       "computed": 0.00816,
       "measured": 0.0,
       "error_pct": 0.008159790326533337,
-      "observable_count": 27
+      "observable_count": 28
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -65,7 +65,7 @@
       "computed": 0.00816,
       "measured": 0.0,
       "error_pct": 0.008159790326533337,
-      "observable_count": 27
+      "observable_count": 28
     }
   ],
   "material_records": [
@@ -390,6 +390,18 @@
       "error_pct": 0.04882588921749745,
       "eval_kind": "fsot_quantum_fold",
       "formula": "C_cosm/P_base + alpha*sqrt(phi)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "dm2_32",
+      "name": "quantum_dm2_32",
+      "computed": 0.002444059579688144,
+      "measured": 0.002438,
+      "error_pct": 0.24854715701984986,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "(G_Catalan*SUCTION)^3 * (1+(POOF*SUCTION)^2)",
       "source": "FSOT-Quantum results/formula_catalog.json",
       "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
