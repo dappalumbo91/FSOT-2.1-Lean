@@ -13,20 +13,21 @@ noncomputable section
 open Real
 
 def blackhole_whitehole_cycle_observable_count : ℕ := 24
-def blackhole_whitehole_cycle_median_error_pct : ℝ := (0.026472 : ℝ)
+def blackhole_whitehole_cycle_median_error_pct : ℝ := (0.071654 : ℝ)
 def blackhole_whitehole_cycle_D_eff : ℕ := 23
+
 theorem blackhole_whitehole_cycle_observable_count_pos : 0 < blackhole_whitehole_cycle_observable_count := by
   unfold blackhole_whitehole_cycle_observable_count; decide
 
 theorem blackhole_whitehole_cycle_median_error_under_five_pct :
     blackhole_whitehole_cycle_median_error_pct < (5 : ℝ) := by
   unfold blackhole_whitehole_cycle_median_error_pct
-  exact (by norm_num : (0.026472 : ℝ) < (5 : ℝ))
+  exact (by norm_num : (0.071654 : ℝ) < (5 : ℝ))
 
 theorem blackhole_whitehole_cycle_median_error_under_half_pct :
     blackhole_whitehole_cycle_median_error_pct < (0.5 : ℝ) := by
   unfold blackhole_whitehole_cycle_median_error_pct
-  exact (by norm_num : (0.026472 : ℝ) < (0.5 : ℝ))
+  exact (by norm_num : (0.071654 : ℝ) < (0.5 : ℝ))
 
 theorem blackhole_whitehole_cycle_bundle :
     blackhole_whitehole_cycle_observable_count = 24 ∧

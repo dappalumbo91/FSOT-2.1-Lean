@@ -13,8 +13,9 @@ noncomputable section
 open Real
 
 def star_trek_transporter_observable_count : ℕ := 1575
-def star_trek_transporter_median_error_pct : ℝ := (0.012464 : ℝ)
+def star_trek_transporter_median_error_pct : ℝ := (0.077084 : ℝ)
 def star_trek_transporter_D_eff : ℕ := 25
+
 def star_trek_transporter_info_preservation_proxy : ℝ := (0.981227203621 : ℝ)
 def star_trek_transporter_psi_entangle_gate : ℝ := (0.04803163401 : ℝ)
 def star_trek_transporter_psi_gate_pair : ℝ := (0.043599802456 : ℝ)
@@ -68,12 +69,12 @@ theorem star_trek_transporter_observable_count_pos : 0 < star_trek_transporter_o
 theorem star_trek_transporter_median_error_under_five_pct :
     star_trek_transporter_median_error_pct < (5 : ℝ) := by
   unfold star_trek_transporter_median_error_pct
-  exact (by norm_num : (0.012464 : ℝ) < (5 : ℝ))
+  exact (by norm_num : (0.077084 : ℝ) < (5 : ℝ))
 
 theorem star_trek_transporter_median_error_under_half_pct :
     star_trek_transporter_median_error_pct < (0.5 : ℝ) := by
   unfold star_trek_transporter_median_error_pct
-  exact (by norm_num : (0.012464 : ℝ) < (0.5 : ℝ))
+  exact (by norm_num : (0.077084 : ℝ) < (0.5 : ℝ))
 
 theorem star_trek_transporter_bundle :
     star_trek_transporter_observable_count = 1575 ∧
