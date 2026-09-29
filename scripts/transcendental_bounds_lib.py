@@ -67,8 +67,13 @@ def extract_lemma_types(text: str, ids: list[str]) -> dict[str, str]:
     return found
 
 
+def _expand_pi_inv4(lean_type: str) -> str:
+    """Formal/Scalar.lean defines pi_inv4 as 1 / pi ^ 4. Replay targets have no such name."""
+    return lean_type.replace("pi_inv4", "(1 / (pi * pi * pi * pi))")
+
+
 def lean_type_to_coq(lean_type: str) -> str:
-    out = lean_type
+    out = _expand_pi_inv4(lean_type)
     if "consciousness_factor" in out:
         out = "exp (0.2903 : ℝ) < (1.338 : ℝ)"
     if "Set.Icc" in out or "∈" in out:
@@ -84,7 +89,7 @@ def lean_type_to_coq(lean_type: str) -> str:
 
 
 def lean_type_to_isabelle(lean_type: str) -> str:
-    out = lean_type
+    out = _expand_pi_inv4(lean_type)
     if "consciousness_factor" in out:
         out = "exp (0.2903 :: real) < (1.338 :: real)"
     if "Set.Icc" in out or "∈" in out:
@@ -102,7 +107,7 @@ def _eval_lean_expr(expr: str) -> Decimal | None:
     certified lower digit string 3.14159265358979323846 when compared naively —
     so pi_gt / pi_lt high-digit lemmas must never go through float.
     """
-    e = expr.strip()
+    e = _expand_pi_inv4(expr.strip())
     if "Set." in e or "∈" in e or "Icc" in e:
         return None
     e = e.replace("π", "pi")

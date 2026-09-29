@@ -130,6 +130,9 @@ def _lean_term_to_rust(term: str) -> str:
     t = term.strip()
     if t in ("pi",):
         return "PI"
+    if t == "pi_inv4":
+        # Formal/Scalar.lean: pi_inv4 = 1 / pi ^ 4.
+        return "(1.0 / (PI * PI * PI * PI))"
     if t == "e":
         return "E"
     if re.fullmatch(r"-?[\d.]+", t):
