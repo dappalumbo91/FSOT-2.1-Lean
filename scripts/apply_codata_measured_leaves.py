@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Replace the shared CODATA stamp with each measured constant's own leaf.
 
-Alpha uses the wave-2 leaf with the 23 observed domains set against the
-12 unobserved ones: subtract (POOF*SUCTION)^2 * (n_unobserved/n_observed).
-Vacuum mu0, epsilon0,
+Alpha uses the wave-2 leaf e^3 * phi^4 - psi_con. The 12/23 observer
+weight was tried and it crosses the measured value, so it is not part
+of this leaf. Vacuum mu0, epsilon0,
 and Z0 follow from that alpha and the adopted SI definitions. The
 Stefan-Boltzmann constant and Wien's b follow from h, c, and k alone.
 Constants with no leaf lose the copied 736 ppm and stay uncomputed.
@@ -26,19 +26,9 @@ C = 299792458.0
 H = 6.62607015e-34
 E_CHARGE = 1.602176634e-19
 K_B = 1.380649e-23
-_N_OBS = sum(1 for domain in F.DOMAINS.values() if domain.observed)
-_N_DARK = sum(1 for domain in F.DOMAINS.values() if not domain.observed)
-_YY = (float(F.POOF) * float(F.SUCTION)) ** 2
-ALPHA_INV = (
-    float(F.E) ** 3 * float(F.PHI) ** 4
-    - float(F.PSI_CON)
-    - _YY * (_N_DARK / _N_OBS)
-)
+ALPHA_INV = float(F.E) ** 3 * float(F.PHI) ** 4 - float(F.PSI_CON)
 ALPHA = 1.0 / ALPHA_INV
-ALPHA_FORMULA = (
-    "e^3*phi^4 - psi_con - (POOF*SUCTION)^2"
-    f"*({_N_DARK}/{_N_OBS})"
-)
+ALPHA_FORMULA = "e^3*phi^4 - psi_con"
 A_E = (float(F.E) / float(F.PI) - math.log(2.0)) / float(F.E) ** 5
 G_E = 2.0 * (1.0 + A_E)
 MU0 = 2.0 * ALPHA * H / (E_CHARGE ** 2 * C)
@@ -153,8 +143,10 @@ def main() -> int:
     attest = doc.setdefault("accuracy_attestation", {})
     attest["measured_leaves_applied"] = True
     attest["alpha_leaf"] = ALPHA_FORMULA
-    attest["observer_domains"] = _N_OBS
-    attest["unobserved_domains"] = _N_DARK
+    attest["alpha_flow"] = (
+        "e^3*phi^4 is 4614 ppm high. Subtracting psi_con leaves the leaf "
+        "1.45 ppm high. The 12/23 weight crosses the measured value."
+    )
     attest["alpha_inv_ppm"] = _ppm(ALPHA_INV, 137.035999177)
     attest["stamp_removed_from_measured_rows"] = True
     PATH.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
