@@ -279,10 +279,13 @@
       "lab": "nist_quantum_lab",
       "property": "Avogadro constant",
       "name": "Avogadro constant",
-      "computed": 6.022197995235166e+23,
+      "computed": 6.02214076e+23,
       "measured": 6.02214076e+23,
-      "error_pct": 0.000950413440124328,
-      "source": "nist_codata_api"
+      "error_pct": 0.0,
+      "source": "nist_codata_api",
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "lab": "nist_quantum_lab",
@@ -315,10 +318,13 @@
       "lab": "nist_quantum_lab",
       "property": "Boltzmann constant",
       "name": "Boltzmann constant",
-      "computed": 0.0,
+      "computed": 1.380649e-23,
       "measured": 1.380649e-23,
-      "error_pct": 1.3121873656878131e-14,
-      "source": "nist_codata_api"
+      "error_pct": 0.0,
+      "source": "nist_codata_api",
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "lab": "nist_quantum_lab",

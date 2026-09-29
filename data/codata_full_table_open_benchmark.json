@@ -57,9 +57,9 @@
       "lab": "codata_full_lab",
       "property": "c_m_s",
       "name": "speed_of_light_in_vacuum",
-      "computed": 300013052.4454,
+      "computed": 299792458.0,
       "measured": 299792458.0,
-      "error_pct": 0.073582,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -76,15 +76,16 @@
         "rule": "adopted definition, not a prediction"
       },
       "value_computed": true,
-      "comparison_can_fail": false
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "lab": "codata_full_lab",
       "property": "h_J_s",
       "name": "Planck_constant",
-      "computed": 0.0,
+      "computed": 6.62607015e-34,
       "measured": 6.62607015e-34,
-      "error_pct": 0.073582,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -100,16 +101,17 @@
         "unit": "exact",
         "rule": "adopted definition, not a prediction"
       },
-      "value_computed": false,
-      "comparison_can_fail": false
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "lab": "codata_full_lab",
       "property": "e_C",
       "name": "elementary_charge",
-      "computed": 0.0,
+      "computed": 1.602176634e-19,
       "measured": 1.602176634e-19,
-      "error_pct": 0.073582,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -125,16 +127,17 @@
         "unit": "exact",
         "rule": "adopted definition, not a prediction"
       },
-      "value_computed": false,
-      "comparison_can_fail": false
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "lab": "codata_full_lab",
       "property": "k_J_K",
       "name": "Boltzmann_constant",
-      "computed": 0.0,
+      "computed": 1.380649e-23,
       "measured": 1.380649e-23,
-      "error_pct": 0.073582,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -150,16 +153,17 @@
         "unit": "exact",
         "rule": "adopted definition, not a prediction"
       },
-      "value_computed": false,
-      "comparison_can_fail": false
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "lab": "codata_full_lab",
       "property": "N_A",
       "name": "Avogadro_constant",
-      "computed": 6.026571994894793e+23,
+      "computed": 6.02214076e+23,
       "measured": 6.02214076e+23,
-      "error_pct": 0.073582,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -176,20 +180,21 @@
         "rule": "adopted definition, not a prediction"
       },
       "value_computed": true,
-      "comparison_can_fail": false
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "lab": "codata_full_lab",
       "property": "R_J_mol_K",
       "name": "molar_gas_constant",
-      "computed": 8.320581,
-      "measured": 8.314462618,
-      "error_pct": 0.073582,
+      "computed": 8.31446261815324,
+      "measured": 8.31446261815324,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
       "frontier_id": "codata_full_table",
-      "accepted_reference": 8.314462618,
+      "accepted_reference": 8.31446261815324,
       "live_parse": 8.314462618,
       "parse_vs_accepted_pct": 0.0,
       "math": "fsot_scaled_only",
@@ -201,7 +206,8 @@
         "rule": "adopted definition, not a prediction"
       },
       "value_computed": true,
-      "comparison_can_fail": false
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 exact product N_A*k"
     },
     {
       "lab": "codata_full_lab",
@@ -507,14 +513,14 @@
       "lab": "codata_full_lab",
       "property": "K_J",
       "name": "Josephson_constant",
-      "computed": 483953.691238,
-      "measured": 483597.8484,
-      "error_pct": 0.073582,
+      "computed": 483597.8484169836,
+      "measured": 483597.8484169836,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
       "frontier_id": "codata_full_table",
-      "accepted_reference": 483597848400000.0,
+      "accepted_reference": 483597.8484169836,
       "live_parse": 483597.8484,
       "parse_vs_accepted_pct": 99.9999999,
       "math": "fsot_scaled_only",
@@ -526,20 +532,21 @@
         "rule": "adopted definition, not a prediction"
       },
       "value_computed": true,
-      "comparison_can_fail": false
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 exact product 2e/h, GHz/V"
     },
     {
       "lab": "codata_full_lab",
       "property": "R_K",
       "name": "von_Klitzing_constant",
-      "computed": 25831.80113,
-      "measured": 25812.80745,
-      "error_pct": 0.073582,
+      "computed": 25812.807459304513,
+      "measured": 25812.807459304513,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
       "frontier_id": "codata_full_table",
-      "accepted_reference": 25812.80745,
+      "accepted_reference": 25812.807459304513,
       "live_parse": 25812.80745,
       "parse_vs_accepted_pct": 0.0,
       "math": "fsot_scaled_only",
@@ -551,20 +558,21 @@
         "rule": "adopted definition, not a prediction"
       },
       "value_computed": true,
-      "comparison_can_fail": false
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 exact product h/e^2"
     },
     {
       "lab": "codata_full_lab",
       "property": "F_C_mol",
       "name": "Faraday_constant",
-      "computed": 96556.32833,
-      "measured": 96485.33212,
-      "error_pct": 0.073582,
+      "computed": 96485.33212331001,
+      "measured": 96485.33212331001,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
       "frontier_id": "codata_full_table",
-      "accepted_reference": 96485.33212,
+      "accepted_reference": 96485.33212331001,
       "live_parse": 96485.33212,
       "parse_vs_accepted_pct": 0.0,
       "math": "fsot_scaled_only",
@@ -576,7 +584,8 @@
         "rule": "adopted definition, not a prediction"
       },
       "value_computed": true,
-      "comparison_can_fail": false
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 exact product N_A*e"
     },
     {
       "lab": "codata_full_lab",
@@ -732,9 +741,9 @@
       "lab": "codata_full_lab",
       "property": "eV_J",
       "name": "electron_volt",
-      "computed": 0.0,
+      "computed": 1.602176634e-19,
       "measured": 1.602176634e-19,
-      "error_pct": 0.073582,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -750,16 +759,17 @@
         "unit": "exact",
         "rule": "adopted definition, not a prediction"
       },
-      "value_computed": false,
-      "comparison_can_fail": false
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 exact product of the elementary charge and one volt"
     },
     {
       "lab": "codata_full_lab",
       "property": "g_n",
       "name": "standard_acceleration_of_gravity",
-      "computed": 9.813866,
+      "computed": 9.80665,
       "measured": 9.80665,
-      "error_pct": 0.073582,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -776,15 +786,16 @@
         "rule": "adopted definition, not a prediction"
       },
       "value_computed": true,
-      "comparison_can_fail": false
+      "comparison_can_fail": false,
+      "adoption": "conventional standard gravity, exact"
     },
     {
       "lab": "codata_full_lab",
       "property": "atm_Pa",
       "name": "standard_atmosphere",
-      "computed": 101399.557353,
+      "computed": 101325.0,
       "measured": 101325.0,
-      "error_pct": 0.073582,
+      "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -801,7 +812,8 @@
         "rule": "adopted definition, not a prediction"
       },
       "value_computed": true,
-      "comparison_can_fail": false
+      "comparison_can_fail": false,
+      "adoption": "conventional standard atmosphere, exact"
     },
     {
       "lab": "codata_full_lab",
@@ -1036,6 +1048,8 @@
       "g_n",
       "atm_Pa"
     ],
-    "goal": "Adopt SI definitions at residual 0. Judge each measured constant against its own CODATA uncertainty. alpha is the first open metrology row."
+    "goal": "Adopt SI definitions at residual 0. Judge each measured constant against its own CODATA uncertainty. alpha is the first open metrology row.",
+    "si_definitions_adopted": true,
+    "adopted_residual": 0
   }
 }

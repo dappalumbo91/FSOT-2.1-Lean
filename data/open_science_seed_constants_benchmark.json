@@ -232,7 +232,11 @@
       "scientific_metric": "relative_percent_error_or_ppm",
       "ppm": 0.0,
       "green_eligible": true,
-      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
+      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)",
+      "computed": 299792458.0,
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "id": "nist_planck_constant",
@@ -246,7 +250,11 @@
       "scientific_metric": "relative_percent_error_or_ppm",
       "ppm": 0.0,
       "green_eligible": true,
-      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
+      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)",
+      "computed": 6.62607015e-34,
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "id": "nist_boltzmann_constant",
@@ -260,7 +268,11 @@
       "scientific_metric": "relative_percent_error_or_ppm",
       "ppm": 0.0,
       "green_eligible": true,
-      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
+      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)",
+      "computed": 1.380649e-23,
+      "value_computed": true,
+      "comparison_can_fail": false,
+      "adoption": "SI 2019 defining constant"
     },
     {
       "id": "nist_fine_structure",

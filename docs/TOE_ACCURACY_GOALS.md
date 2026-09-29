@@ -8,7 +8,7 @@ Where the work stands today: 185,642 gated scalars, median residual 225 ppm, eve
 
 | Silo | What the field already uses | Bar | Where we are |
 |------|-----------------------------|-----|----------------|
-| Exact definitions | SI 2019 fixes \(c\), \(h\), \(e\), \(k\), \(N_A\). \(R\), \(K_J\), \(R_K\), and the faraday are products of those. Standard gravity 9.80665 m/s² and 1 atm = 101325 Pa are conventional exact values. | Residual 0. The number is adopted, not predicted. | The CODATA file stamps all of these at 736 ppm, including \(c = 299792458\) m/s. |
+| Exact definitions | SI 2019 fixes \(c\), \(h\), \(e\), \(k\), \(N_A\), and the caesium hyperfine frequency. \(R\), \(K_J\), \(R_K\), the faraday, and the electronvolt are products of those. Standard gravity 9.80665 m/s² and 1 atm = 101325 Pa are conventional exact values. | Residual 0. The number is adopted, not predicted. | Adopted. Those rows now use the defined value on both sides and the residual is 0. |
 | Metrology | CODATA uncertainty on a measured constant. \(\alpha\) is known to about \(1.5\times 10^{-10}\) relative, which is \(1.5\times 10^{-4}\) ppm. \(G\) is known to tens of ppm. | \(\lvert \mathrm{pred}-\mathrm{meas}\rvert \le 1\sigma_{\mathrm{CODATA}}\). | Inverse fine structure on that file is 137.136834 against 137.035999177, **736 ppm**. That is about five million times coarser than the CODATA uncertainty on \(\alpha\). The live seed \((\varphi G_{\mathrm{Catalan}}/C_{\mathrm{factor}})^3\) is 136.827, **1,528 ppm**. |
 | Particle physics | PDG total uncertainty, quoted in mass units or in \(\sigma\). A 0.1 GeV uncertainty on a 125 GeV Higgs is about 800 ppm. Muon \(g-2\) is a \(\sigma\)-level comparison, not a percent. | Inside the experimental \(\sigma\), and the sign of a discrepancy reported separately. | The Higgs row \(125.264\) against \(125.25\) GeV is **110 ppm**, inside a 0.1 GeV bar. The \(W/Z\) tree identity is exact on the seeds. |
 | Cosmology | Percent-level centrals and a tension in \(\sigma\). \(H_0\) at 1% is 10,000 ppm. \(S_8\) is a few percent. | Report \(\sigma\) against the named dataset. ppm is the wrong headline. | The frozen sightline stays hashed. A directional host preview is exploratory. \(N_{\mathrm{eff}}=3.046\) matches a \(\Lambda\)CDM input; it does not discriminate. |
@@ -29,11 +29,11 @@ Every gated scalar now carries these four fields. They are written on the CODATA
 
 `data/codata_full_table_open_benchmark.json` gives every material row the same `error_pct` of 0.073582. That number is \(0.1\) times a domain scalar, multiplied onto the measured value. Rows whose computed field is `0.0` (Planck's constant, the elementary charge, the electron mass, \(G\), and others) did not receive a value at all. The file's comparison baseline is `sota_typical_error_pct: 5.0`. Five percent is not the CODATA bar, so "beats sota" on that file is not a metrology result.
 
-The attestation block on that file names the exact definitions, the conventional exact values, and the measured constants. The errors are left as they are, so the catalog gate does not gain a free zero.
+The defining constants and their exact products are adopted: computed and measured are the defined value, and `error_pct` is 0. The shared 736 ppm stamp remains on the measured constants, including \(\alpha\), and on the rows that still have no computed value. The file median stays 0.073582 because those stamped rows are still the majority. `scripts/adopt_si_definitions.py` is the adoption step.
 
 ## The goal, in order
 
-1. Adopt the SI definitions exactly. Do not predict a second value of \(c\) or \(h\).
+1. Adopt the SI definitions exactly. Done for \(c\), \(h\), \(e\), \(k\), \(N_A\), the caesium hyperfine frequency, the exact products \(R\), \(K_J\), \(R_K\), the faraday, and the electronvolt, plus standard gravity and 1 atm.
 2. For each measured CODATA constant, replace the shared 736 ppm stamp with that constant's own leaf, and judge it against its CODATA uncertainty. \(\alpha\) is the first of these. The present leaves are hundreds to about 1,500 ppm; the uncertainty is \(1.5\times 10^{-4}\) ppm.
 3. For particle masses and \(g-2\), report \(\sigma\), not only ppm. The Higgs central value is already inside a 0.1 GeV bar.
 4. For cosmology, keep the score in \(\sigma\) against the named catalog. Do not convert \(H_0\) into a ppm contest.
