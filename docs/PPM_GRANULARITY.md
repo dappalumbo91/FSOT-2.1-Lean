@@ -31,4 +31,4 @@ Three handbook rows that were coarser than the printed place are now inside it. 
 
 The zebrafish displacement and the SH0ES ladder are finely quoted and still miss by about 4,000 ppm. The frozen zebrafish panel is not rebuilt from the live bright branch. The frozen H₀ sightline is not rewritten. Lysozyme’s −9.2 kcal/mol is quoted to one decimal place; 4,286 ppm is inside half of that place.
 
-The translation of the scalar into Newtonian gravity, special relativity, the Schwarzschild relation, and the electroweak mass relation is `docs/FSOT_STANDARD_PHYSICS.md`.
+The translation of the scalar into Newtonian gravity, special relativity, the Schwarzschild relation, and the electroweak mass relation is `docs/FSOT_STANDARD_PHYSICS.md`. The per-silo bar, and the reason one ppm number is not the theory-of-everything goal, is `docs/TOE_ACCURACY_GOALS.md`.
