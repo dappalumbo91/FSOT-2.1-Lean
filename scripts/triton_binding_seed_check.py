@@ -2,17 +2,20 @@
 """Check the triton binding.
 
 The wave formula is e^2 + 1/G_Catalan. It sits about 1 keV low of the
-AME2020 total. The fractional gap divided by the adopted alpha^2 is
-2.205505. That number is not a short ratio of e and Catalan's G.
-G^-6 + G^2 on the e^2 term would sit inside, and so would several
-unrelated products, so none is installed. This script only prints.
+AME2020 total. The fractional gap divided by (POOF*SUCTION)^2 is
+gamma*(1 - 1/e)^2, and 1 - 1/e is psi_con. The leaf multiplies the
+wave formula by 1 + (POOF*SUCTION)^2*gamma*psi_con^2. Dividing the
+same gap by alpha^2 returns 2.205505, which is not a short ratio of
+e and Catalan's G, and several unrelated products sit in that wider
+window. G^3*P_new also fits the suction window and is not the leaf.
+This script only prints.
 """
 from __future__ import annotations
 
 import sys
 from pathlib import Path
 
-from mpmath import mpf, power
+from mpmath import mpf, pi, power
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "vendor"))
@@ -58,46 +61,34 @@ def main() -> int:
     bare = F.E**2 + 1 / F.G_CAT
     a2 = alpha() ** 2
     yy = (F.POOF * F.SUCTION) ** 2
-    frac = (ROUNDED - bare) / bare
-    inv_g = 1 / F.G_CAT
+    piece = F.GAMMA * F.PSI_CON**2
+    leaf = bare * (1 + yy * piece)
+    # Also inside the suction window, farther from the mass excess.
+    g3 = bare * (1 + yy * (F.G_CAT**3 * F.P_NEW))
+    # The alpha^2 window is wider. These are not the leaf.
+    wider = bare * (1 + a2 * (pi - 1 + F.C_COSM))
+    integer_part = bare * (1 + a2 * (2 + F.GAMMA**2 / F.PHI))
     print(f"bare={bare}")
-    print(f"alpha2={a2}")
     print(f"yy={yy}")
-    print(f"gap_over_alpha2={frac / a2}")
-    print(f"gap_over_yy={frac / yy}")
+    print(f"gamma_psi2={piece}")
+    print(f"gap_over_yy={(ROUNDED - bare) / bare / yy}")
+    print(f"gap_over_yy_excess={(EXCESS - bare) / bare / yy}")
+    print(f"gap_over_alpha2={(ROUNDED - bare) / bare / a2}")
+    report("leaf_vs_rounded", leaf, ROUNDED, ROUNDED_BAR)
     print(f"rounded={ROUNDED}")
     print(f"rounded_bar_MeV={ROUNDED_BAR}")
-    report("bare_vs_rounded", bare, ROUNDED, ROUNDED_BAR)
+    report("leaf_vs_excess", leaf, EXCESS, EXCESS_BAR)
     print(f"excess={EXCESS}")
     print(f"excess_bar_MeV={EXCESS_BAR}")
+    report("bare_vs_rounded", bare, ROUNDED, ROUNDED_BAR)
     report("bare_vs_excess", bare, EXCESS, EXCESS_BAR)
-    # Found by comparing the gap to powers of e and G. Just outside.
-    g9 = bare * (1 + a2 * power(F.G_CAT, -9))
-    report("G_to_minus9_vs_rounded", g9, ROUNDED, ROUNDED_BAR)
-    # Same comparison, on the e^2 term only. Inside, and not unique.
-    g_pow = power(F.G_CAT, -6) + F.G_CAT**2
-    on_e2 = F.E**2 * (1 + a2 * g_pow) + inv_g
-    report("Gpow_on_e2_vs_rounded", on_e2, ROUNDED, ROUNDED_BAR)
-    same_side = F.P_NEW**3 + power(F.PSI_CON, -2)
-    foreign_low = F.E**2 * (1 + a2 * same_side) + inv_g
-    report("Pnew3_psi_on_e2_vs_rounded", foreign_low, ROUNDED, ROUNDED_BAR)
-    crosses = 3 - F.ETA_EFF
-    foreign_high = F.E**2 * (1 + a2 * crosses) + inv_g
-    report("three_minus_eta_on_e2_vs_rounded", foreign_high, ROUNDED, ROUNDED_BAR)
-    phi_g = F.E**2 * (1 + a2 * (F.PHI + F.G_CAT)) + inv_g
-    report("phi_plus_G_on_e2_vs_rounded", phi_g, ROUNDED, ROUNDED_BAR)
-    two = bare * (1 + a2 * (2 + F.GAMMA**2 / F.PHI))
-    report("two_plus_gamma2_over_phi_vs_rounded", two, ROUNDED, ROUNDED_BAR)
-    yy_piece = bare * (1 + yy * (F.GAMMA * F.PSI_CON**2))
-    report("gamma_psi2_yy_vs_rounded", yy_piece, ROUNDED, ROUNDED_BAR)
+    report("G3_Pnew_vs_excess", g3, EXCESS, EXCESS_BAR)
+    report("pi_minus_1_plus_C_cosm_vs_excess", wider, EXCESS, EXCESS_BAR)
+    report("two_plus_gamma2_over_phi_vs_excess", integer_part, EXCESS, EXCESS_BAR)
     stale_gap = STALE - ROUNDED
     print(
         f"stale_8.481798_sigmas={abs(stale_gap) / ROUNDED_BAR} "
         f"side={side(stale_gap)}"
-    )
-    print(
-        "note=the formula stays e^2 + 1/G. "
-        "G^-6+G^2 is inside, and other short products fit the same windows."
     )
     return 0
 
