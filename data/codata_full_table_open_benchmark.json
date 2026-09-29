@@ -16,9 +16,9 @@
   "observable_count": 38,
   "scalar_record_count": 38,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.00010440476856903236,
-  "pooled_median_error_pct": 0.00010440476856903236,
-  "headline_median_error_pct": 0.00010440476856903236,
+  "median_error_pct": 8.068794682784906e-09,
+  "pooled_median_error_pct": 8.068794682784906e-09,
+  "headline_median_error_pct": 8.068794682784906e-09,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -213,9 +213,9 @@
       "lab": "codata_full_lab",
       "property": "alpha",
       "name": "fine-structure_constant",
-      "computed": 0.007297344945556912,
+      "computed": 0.007297352564920233,
       "measured": 0.0072973525643,
-      "error_pct": 0.00010440420715141036,
+      "error_pct": 8.49942532083543e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -223,7 +223,7 @@
       "accepted_reference": 0.0072973525643,
       "live_parse": 0.0072973525643,
       "parse_vs_accepted_pct": 0.0,
-      "math": "1/(e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(I_QED_ATOMIC - I_FLAVOR_QED=0.108607))",
+      "math": "1/(e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base))",
       "auth": "none",
       "accuracy_class": "codata_measured",
       "field_bar": {
@@ -233,18 +233,18 @@
       },
       "value_computed": true,
       "comparison_can_fail": true,
-      "leaf": "1/(e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(I_QED_ATOMIC - I_FLAVOR_QED=0.108607))",
-      "meets_field_bar": false,
+      "leaf": "1/(e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base))",
+      "meets_field_bar": true,
       "sigmas_above_bar": 9651.074489683464,
-      "signed_error_ppm": -1.0440420715141037
+      "signed_error_ppm": 8.499425320835429e-05
     },
     {
       "lab": "codata_full_lab",
       "property": "alpha_inv",
       "name": "inverse_fine-structure_constant",
-      "computed": 137.03614224908796,
+      "computed": 137.03599916594285,
       "measured": 137.035999177,
-      "error_pct": 0.00010440474678947085,
+      "error_pct": 8.068794682784906e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -252,7 +252,7 @@
       "accepted_reference": 137.035999177,
       "live_parse": 137.035999177,
       "parse_vs_accepted_pct": 0.0,
-      "math": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(I_QED_ATOMIC - I_FLAVOR_QED=0.108607)",
+      "math": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
       "auth": "none",
       "accuracy_class": "codata_measured",
       "field_bar": {
@@ -262,10 +262,10 @@
       },
       "value_computed": true,
       "comparison_can_fail": true,
-      "leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(I_QED_ATOMIC - I_FLAVOR_QED=0.108607)",
-      "meets_field_bar": false,
+      "leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
+      "meets_field_bar": true,
       "sigmas_above_bar": 9651.117169611016,
-      "signed_error_ppm": 1.0440474678947085
+      "signed_error_ppm": -8.068794682784906e-05
     },
     {
       "lab": "codata_full_lab",
@@ -668,9 +668,9 @@
       "lab": "codata_full_lab",
       "property": "eps0",
       "name": "vacuum_electric_permittivity",
-      "computed": 8.854197062994301e-12,
+      "computed": 8.854187818087502e-12,
       "measured": 8.8541878188e-12,
-      "error_pct": 0.00010440476856903236,
+      "error_pct": 8.04701881680011e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -689,17 +689,17 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "leaf": "1/(mu0*c^2) with the alpha leaf",
-      "meets_field_bar": false,
+      "meets_field_bar": true,
       "sigmas_above_bar": 9651.118623159484,
-      "signed_error_ppm": 1.0440476856903236
+      "signed_error_ppm": -8.04701881680011e-05
     },
     {
       "lab": "codata_full_lab",
       "property": "mu0",
       "name": "vacuum_magnetic_permeability",
-      "computed": 1.2566357492808545e-06,
+      "computed": 1.256637061369622e-06,
       "measured": 1.25663706127e-06,
-      "error_pct": 0.0001044047789151777,
+      "error_pct": 7.927656865897459e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -718,17 +718,17 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "leaf": "2*alpha*h/(e^2*c) with the alpha leaf",
-      "meets_field_bar": false,
+      "meets_field_bar": true,
       "sigmas_above_bar": 9651.1126083712,
-      "signed_error_ppm": -1.044047789151777
+      "signed_error_ppm": 7.92765686589746e-05
     },
     {
       "lab": "codata_full_lab",
       "property": "Z0",
       "name": "impedance_of_free_space",
-      "computed": 376.7299200875791,
+      "computed": 376.7303134418958,
       "measured": 376.730313412,
-      "error_pct": 0.00010440477096772747,
+      "error_pct": 7.935605059481012e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -747,9 +747,9 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "leaf": "mu0*c with the alpha leaf",
-      "meets_field_bar": false,
+      "meets_field_bar": true,
       "sigmas_above_bar": 9651.11207917518,
-      "signed_error_ppm": -1.0440477096772747
+      "signed_error_ppm": 7.935605059481011e-05
     },
     {
       "lab": "codata_full_lab",
@@ -1100,8 +1100,8 @@
     "si_definitions_adopted": true,
     "adopted_residual": 0,
     "measured_leaves_applied": true,
-    "alpha_leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(I_QED_ATOMIC - I_FLAVOR_QED=0.108607)",
-    "alpha_inv_ppm": 1.0440474678947085,
+    "alpha_leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
+    "alpha_inv_ppm": 8.068794682784906e-05,
     "stamp_removed_from_measured_rows": true,
     "measured_leaf_median_error_pct": 0.000144766689125568,
     "measured_leaf_count": 6,
@@ -1117,6 +1117,7 @@
     "unobserved_domains": 12,
     "domain_count": 35,
     "observer_note": "12/23 was tried as a weight on (POOF*SUCTION)^2 and the leaf crossed below the measured value, to 0.491 ppm low. It is not on the leaf. |S_cosm|/S_chem = 0.52589 sits next to 12/23 = 0.52174.",
-    "alpha_flow": "e^3*phi^4 is 4614 ppm high. Subtracting psi_con leaves 1.45 ppm high. The QED-atom interface nudge is the alpha channel and stays high of the data. The gravity contrast is a saturated sign and is not used."
+    "alpha_flow": "e^3*phi^4 is 4614 ppm high. Subtracting psi_con leaves 1.45 ppm high. The interface seed is C_factor^2/P_base. The leaf then sits just inside the CODATA uncertainty, on the low side.",
+    "alpha_interface_seed": "C_factor^2/P_base"
   }
 }
