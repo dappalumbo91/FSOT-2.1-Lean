@@ -18,9 +18,9 @@
   "observable_count": 27,
   "scalar_record_count": 27,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.000650490524241112,
-  "pooled_median_error_pct": 0.000650490524241112,
-  "headline_median_error_pct": 0.000650490524241112,
+  "median_error_pct": 0.0005575218307150491,
+  "pooled_median_error_pct": 0.0005575218307150491,
+  "headline_median_error_pct": 0.0005575218307150491,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -253,11 +253,11 @@
       "lab": "pdg_particle_properties_quantum_lab",
       "property": "m_pi/m_p",
       "name": "quantum_m_pi/m_p",
-      "computed": 0.14445749655332277,
-      "measured": 0.14446,
-      "error_pct": 0.0017329687645284413,
+      "computed": 0.14875252356579935,
+      "measured": 0.14875257568947636,
+      "error_pct": 3.5040520657786406e-05,
       "eval_kind": "fsot_quantum_fold",
-      "formula": "K\u00b7P_new\u00b7ln(\u03c0)",
+      "formula": "charged-pion leaf / proton-mass leaf",
       "source": "FSOT-Quantum results/formula_catalog.json",
       "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     },
