@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Replace the shared CODATA stamp with each measured constant's own leaf.
 
-Alpha uses the wave-2 leaf e^3 * phi^4 - psi_con. Vacuum mu0, epsilon0,
+Alpha uses the wave-2 leaf with the 23 observed domains set against the
+12 unobserved ones: subtract (POOF*SUCTION)^2 * (n_unobserved/n_observed).
+Vacuum mu0, epsilon0,
 and Z0 follow from that alpha and the adopted SI definitions. The
 Stefan-Boltzmann constant and Wien's b follow from h, c, and k alone.
 Constants with no leaf lose the copied 736 ppm and stay uncomputed.
@@ -24,8 +26,19 @@ C = 299792458.0
 H = 6.62607015e-34
 E_CHARGE = 1.602176634e-19
 K_B = 1.380649e-23
-ALPHA_INV = float(F.E) ** 3 * float(F.PHI) ** 4 - float(F.PSI_CON)
+_N_OBS = sum(1 for domain in F.DOMAINS.values() if domain.observed)
+_N_DARK = sum(1 for domain in F.DOMAINS.values() if not domain.observed)
+_YY = (float(F.POOF) * float(F.SUCTION)) ** 2
+ALPHA_INV = (
+    float(F.E) ** 3 * float(F.PHI) ** 4
+    - float(F.PSI_CON)
+    - _YY * (_N_DARK / _N_OBS)
+)
 ALPHA = 1.0 / ALPHA_INV
+ALPHA_FORMULA = (
+    "e^3*phi^4 - psi_con - (POOF*SUCTION)^2"
+    f"*({_N_DARK}/{_N_OBS})"
+)
 A_E = (float(F.E) / float(F.PI) - math.log(2.0)) / float(F.E) ** 5
 G_E = 2.0 * (1.0 + A_E)
 MU0 = 2.0 * ALPHA * H / (E_CHARGE ** 2 * C)
@@ -94,8 +107,8 @@ def main() -> int:
     doc = json.loads(PATH.read_text(encoding="utf-8"))
     alpha_rule = "CODATA 2022 relative uncertainty of alpha, about 1.5e-10"
     leaves = {
-        "alpha_inv": (ALPHA_INV, "e^3*phi^4 - psi_con", "codata_measured", ALPHA_BAR_PPM, alpha_rule),
-        "alpha": (ALPHA, "1/(e^3*phi^4 - psi_con)", "codata_measured", ALPHA_BAR_PPM, alpha_rule),
+        "alpha_inv": (ALPHA_INV, ALPHA_FORMULA, "codata_measured", ALPHA_BAR_PPM, alpha_rule),
+        "alpha": (ALPHA, f"1/({ALPHA_FORMULA})", "codata_measured", ALPHA_BAR_PPM, alpha_rule),
         "g_e": (
             G_E,
             "2*(1 + (e/pi - ln2)/e^5)",
@@ -139,7 +152,9 @@ def main() -> int:
     doc["headline_median_error_pct"] = mid
     attest = doc.setdefault("accuracy_attestation", {})
     attest["measured_leaves_applied"] = True
-    attest["alpha_leaf"] = "e^3*phi^4 - psi_con"
+    attest["alpha_leaf"] = ALPHA_FORMULA
+    attest["observer_domains"] = _N_OBS
+    attest["unobserved_domains"] = _N_DARK
     attest["alpha_inv_ppm"] = _ppm(ALPHA_INV, 137.035999177)
     attest["stamp_removed_from_measured_rows"] = True
     PATH.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
