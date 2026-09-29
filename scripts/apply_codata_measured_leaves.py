@@ -7,7 +7,12 @@ subtracts one third-order piece of that alpha, weighted by
 A_bleed*G_Catalan^2*P_base/P_new. Both compositions are existing seeds
 and both land inside the CODATA uncertainty. Vacuum mu0, epsilon0,
 and Z0 follow from that alpha and the adopted SI definitions. The
-Stefan-Boltzmann constant and Wien's b follow from h, c, and k alone.
+electron mass is the exact SI clock h*nu_Cs/c^2 times
+exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con). Compton
+wavelength, Bohr radius, classical radius, Thomson cross section, and
+the Bohr magneton follow from that mass. The Rydberg constant and the
+Hartree energy follow too, and their own bars are tighter than alpha.
+The Stefan-Boltzmann constant and Wien's b follow from h, c, and k alone.
 Constants with no leaf lose the copied 736 ppm and stay uncomputed.
 """
 from __future__ import annotations
@@ -29,6 +34,7 @@ C = 299792458.0
 H = 6.62607015e-34
 E_CHARGE = 1.602176634e-19
 K_B = 1.380649e-23
+NU_CS = 9192631770.0
 _YY = (float(F.POOF) * float(F.SUCTION)) ** 2
 _INTERFACE = float(F.C_FACTOR) ** 2 / float(F.P_BASE)
 ALPHA_INV = float(F.E) ** 3 * float(F.PHI) ** 4 - float(F.PSI_CON) - _YY * _INTERFACE
@@ -45,6 +51,23 @@ G_E = 2.0 * (1.0 + A_E)
 G_FORMULA = (
     "2*(1 + (e/pi - ln2)/e^5 - (alpha/pi)^3*A_bleed*G_Catalan^2*P_base/P_new)"
 )
+# Kilogram unit fixed by h, c, and the caesium hyperfine frequency.
+_MASS_EXPONENT = (
+    float(F.E) ** float(F.PI)
+    + (float(F.C_FACTOR) * float(F.K) * math.log(2.0)) ** 2
+    + float(F.G_CAT) * float(F.P_NEW) * float(F.PSI_CON)
+)
+M_E = H * NU_CS / C**2 * math.exp(_MASS_EXPONENT)
+M_E_FORMULA = (
+    "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con)"
+)
+RINF = ALPHA**2 * M_E * C / (2.0 * H)
+A0 = H / (2.0 * math.pi * M_E * C * ALPHA)
+LAMBDA_C = H / (M_E * C)
+R_E = ALPHA * LAMBDA_C / (2.0 * math.pi)
+SIGMA_E = 8.0 * math.pi * R_E**2 / 3.0
+E_HARTREE = ALPHA**2 * M_E * C**2
+MU_B = E_CHARGE * H / (4.0 * math.pi * M_E)
 MU0 = 2.0 * ALPHA * H / (E_CHARGE ** 2 * C)
 EPS0 = 1.0 / (MU0 * C * C)
 Z0 = MU0 * C
@@ -53,20 +76,12 @@ WIEN_X = 4.965114231744276
 WIEN_B = H * C / (K_B * WIEN_X)
 
 UNCOMPUTED = {
-    "m_e_kg",
     "m_p_kg",
     "m_n_kg",
     "m_mu_kg",
     "u_kg",
-    "Rinf_m",
-    "a0_m",
     "g_p",
     "G_SI",
-    "E_h",
-    "lambda_C",
-    "r_e",
-    "sigma_e",
-    "mu_B",
     "mu_N",
     "m_C12_kg_per_mol",
 }
@@ -126,6 +141,62 @@ def main() -> int:
         "mu0": (MU0, "2*alpha*h/(e^2*c) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "eps0": (EPS0, "1/(mu0*c^2) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "Z0": (Z0, "mu0*c with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
+        "m_e_kg": (
+            M_E,
+            M_E_FORMULA,
+            "codata_measured",
+            3.1e-4,
+            "CODATA 2022 electron mass 9.1093837139e-31(28) kg, relative 3.1e-10",
+        ),
+        "lambda_C": (
+            LAMBDA_C,
+            "h/(m_e*c)",
+            "derived_from_electron_mass",
+            3.1e-4,
+            "CODATA 2022 Compton wavelength relative uncertainty 3.1e-10",
+        ),
+        "mu_B": (
+            MU_B,
+            "e*h/(4*pi*m_e)",
+            "derived_from_electron_mass",
+            3.1e-4,
+            "CODATA 2022 Bohr magneton relative uncertainty 3.1e-10",
+        ),
+        "a0_m": (
+            A0,
+            "h/(2*pi*m_e*c*alpha)",
+            "derived_from_electron_mass",
+            1.6e-4,
+            "CODATA 2022 Bohr radius relative uncertainty 1.6e-10",
+        ),
+        "r_e": (
+            R_E,
+            "alpha*h/(2*pi*m_e*c)",
+            "derived_from_electron_mass",
+            4.7e-4,
+            "CODATA 2022 classical electron radius relative uncertainty 4.7e-10",
+        ),
+        "sigma_e": (
+            SIGMA_E,
+            "(8*pi/3)*r_e^2",
+            "derived_from_electron_mass",
+            9.3e-4,
+            "CODATA 2022 Thomson cross section relative uncertainty 9.3e-10",
+        ),
+        "Rinf_m": (
+            RINF,
+            "alpha^2*m_e*c/(2*h)",
+            "derived_from_electron_mass",
+            1.1e-6,
+            "CODATA 2022 Rydberg constant relative uncertainty 1.1e-12",
+        ),
+        "E_h": (
+            E_HARTREE,
+            "alpha^2*m_e*c^2",
+            "derived_from_electron_mass",
+            1.1e-6,
+            "CODATA 2022 Hartree energy relative uncertainty 1.1e-12",
+        ),
         "sigma_SB": (SIGMA, "2*pi^5*k^4/(15*c^2*h^3)", "derived_exact", 0.01, "fixed by the adopted h, c, and k"),
         "b_Wien": (WIEN_B, "h*c/(k*x) with x the Wien root", "derived_exact", 0.01, "fixed by the adopted h, c, and k"),
     }
@@ -152,7 +223,11 @@ def main() -> int:
     errors = [
         float(row["error_pct"])
         for row in doc["material_records"]
-        if row.get("accuracy_class") in {"codata_measured", "derived_from_alpha"}
+        if row.get("accuracy_class") in {
+            "codata_measured",
+            "derived_from_alpha",
+            "derived_from_electron_mass",
+        }
         and isinstance(row.get("error_pct"), (int, float))
     ]
     errors.sort()
@@ -184,6 +259,20 @@ def main() -> int:
         "That gap is 0.621126 of (alpha/pi)^3. One over phi is 0.618034 and "
         "stays 215 uncertainties high. The weight on the leaf is the shortest "
         "third-order product that lands inside the (36) uncertainty and stays high."
+    )
+    m_row = next(row for row in doc["material_records"] if row.get("property") == "m_e_kg")
+    attest["electron_mass_leaf"] = M_E_FORMULA
+    attest["electron_mass_signed_ppm"] = m_row["signed_error_ppm"]
+    attest["electron_mass_meets_bar"] = m_row["meets_field_bar"]
+    attest["electron_mass_bar_ppm"] = 3.1e-4
+    attest["electron_mass_note"] = (
+        "The kilogram is h*nu_Cs/c^2 times a pure number. The logarithm of "
+        "that number is e^pi plus (C_factor*K*ln2)^2 plus "
+        "G_Catalan*P_new*psi_con. The mass is inside its uncertainty, on the "
+        "low side. Compton wavelength, Bohr radius, classical radius, Thomson "
+        "cross section, and the Bohr magneton follow and meet. The Rydberg "
+        "constant and the Hartree energy are alpha^2 times the mass, and "
+        "their bars are tighter than the alpha leaf, so they stay outside."
     )
     attest["stamp_removed_from_measured_rows"] = True
     attest["measured_leaf_median_error_pct"] = mid

@@ -271,9 +271,9 @@
       "lab": "codata_full_lab",
       "property": "m_e_kg",
       "name": "electron_mass",
-      "computed": null,
+      "computed": 9.109383713475902e-31,
       "measured": 9.1093837139e-31,
-      "error_pct": null,
+      "error_pct": 4.65561380087145e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -281,17 +281,20 @@
       "accepted_reference": 9.1093837139e-31,
       "live_parse": 9.1093837139e-31,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con)",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "codata_measured",
       "field_bar": {
-        "value": null,
+        "value": 0.00031,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 electron mass 9.1093837139e-31(28) kg, relative 3.1e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": -4.65561380087145e-05,
+      "leaf": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con)",
+      "sigmas_above_bar": 0.15018109035069194
     },
     {
       "lab": "codata_full_lab",
@@ -401,9 +404,9 @@
       "lab": "codata_full_lab",
       "property": "Rinf_m",
       "name": "Rydberg_constant",
-      "computed": null,
+      "computed": 10973731.569393005,
       "measured": 10973731.568157,
-      "error_pct": null,
+      "error_pct": 1.126330407504687e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -411,25 +414,28 @@
       "accepted_reference": 10973731.568157,
       "live_parse": 10973731.568157,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "alpha^2*m_e*c/(2*h)",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "derived_from_electron_mass",
       "field_bar": {
-        "value": null,
+        "value": 1.1e-06,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 Rydberg constant relative uncertainty 1.1e-12"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": false,
+      "signed_error_ppm": 0.0001126330407504687,
+      "leaf": "alpha^2*m_e*c/(2*h)",
+      "sigmas_above_bar": 102.39367340951699
     },
     {
       "lab": "codata_full_lab",
       "property": "a0_m",
       "name": "Bohr_radius",
-      "computed": null,
+      "computed": 5.291772105263996e-11,
       "measured": 5.29177210544e-11,
-      "error_pct": null,
+      "error_pct": 3.325993590878375e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -437,17 +443,20 @@
       "accepted_reference": 5.29177210544e-11,
       "live_parse": 5.29177210544e-11,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "h/(2*pi*m_e*c*alpha)",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "derived_from_electron_mass",
       "field_bar": {
-        "value": null,
+        "value": 0.00016,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 Bohr radius relative uncertainty 1.6e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": -3.325993590878375e-05,
+      "leaf": "h/(2*pi*m_e*c*alpha)",
+      "sigmas_above_bar": 0.20787459942989842
     },
     {
       "lab": "codata_full_lab",
@@ -757,9 +766,9 @@
       "lab": "codata_full_lab",
       "property": "E_h",
       "name": "Hartree_energy",
-      "computed": null,
+      "computed": 4.3597447226970296e-18,
       "measured": 4.359744722206e-18,
-      "error_pct": null,
+      "error_pct": 1.1262808657491024e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -767,17 +776,20 @@
       "accepted_reference": 4.359744722206e-18,
       "live_parse": 4.359744722206e-18,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "alpha^2*m_e*c^2",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "derived_from_electron_mass",
       "field_bar": {
-        "value": null,
+        "value": 1.1e-06,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 Hartree energy relative uncertainty 1.1e-12"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": false,
+      "signed_error_ppm": 0.00011262808657491025,
+      "leaf": "alpha^2*m_e*c^2",
+      "sigmas_above_bar": 102.38916961355477
     },
     {
       "lab": "codata_full_lab",
@@ -887,9 +899,9 @@
       "lab": "codata_full_lab",
       "property": "lambda_C",
       "name": "Compton_wavelength",
-      "computed": null,
+      "computed": 2.426310235493277e-12,
       "measured": 2.42631023538e-12,
-      "error_pct": null,
+      "error_pct": 4.668689528696683e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -897,25 +909,28 @@
       "accepted_reference": 2.42631023538e-12,
       "live_parse": 2.42631023538e-12,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "h/(m_e*c)",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "derived_from_electron_mass",
       "field_bar": {
-        "value": null,
+        "value": 0.00031,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 Compton wavelength relative uncertainty 3.1e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": 4.668689528696683e-05,
+      "leaf": "h/(m_e*c)",
+      "sigmas_above_bar": 0.15060288802247365
     },
     {
       "lab": "codata_full_lab",
       "property": "r_e",
       "name": "classical_electron_radius",
-      "computed": null,
+      "computed": 2.8179403208174415e-15,
       "measured": 2.8179403205e-15,
-      "error_pct": null,
+      "error_pct": 1.1265021131076905e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -923,25 +938,28 @@
       "accepted_reference": 2.8179403205e-15,
       "live_parse": 2.8179403205e-15,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "alpha*h/(2*pi*m_e*c)",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "derived_from_electron_mass",
       "field_bar": {
-        "value": null,
+        "value": 0.00047,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 classical electron radius relative uncertainty 4.7e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": 0.00011265021131076905,
+      "leaf": "alpha*h/(2*pi*m_e*c)",
+      "sigmas_above_bar": 0.23968130066121077
     },
     {
       "lab": "codata_full_lab",
       "property": "sigma_e",
       "name": "Thomson_cross_section",
-      "computed": null,
+      "computed": 6.652458706736475e-29,
       "measured": 6.6524587051e-29,
-      "error_pct": null,
+      "error_pct": 2.4599543334288933e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -949,25 +967,28 @@
       "accepted_reference": 6.6524587051e-29,
       "live_parse": 6.6524587051e-29,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "(8*pi/3)*r_e^2",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "derived_from_electron_mass",
       "field_bar": {
-        "value": null,
+        "value": 0.00093,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 Thomson cross section relative uncertainty 9.3e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": 0.00024599543334288934,
+      "leaf": "(8*pi/3)*r_e^2",
+      "sigmas_above_bar": 0.2645112186482681
     },
     {
       "lab": "codata_full_lab",
       "property": "mu_B",
       "name": "Bohr_magneton",
-      "computed": null,
+      "computed": 9.27401006616983e-24,
       "measured": 9.2740100657e-24,
-      "error_pct": null,
+      "error_pct": 5.066097567458488e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -975,17 +996,20 @@
       "accepted_reference": 9.2740100657e-24,
       "live_parse": 9.2740100657e-24,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "e*h/(4*pi*m_e)",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "derived_from_electron_mass",
       "field_bar": {
-        "value": null,
+        "value": 0.00031,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 Bohr magneton relative uncertainty 3.1e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": 5.066097567458488e-05,
+      "leaf": "e*h/(4*pi*m_e)",
+      "sigmas_above_bar": 0.16342250217608026
     },
     {
       "lab": "codata_full_lab",
@@ -1106,7 +1130,7 @@
     "alpha_inv_ppm": 8.068794682784906e-05,
     "stamp_removed_from_measured_rows": true,
     "measured_leaf_median_error_pct": 8.04701881680011e-09,
-    "measured_leaf_count": 6,
+    "measured_leaf_count": 14,
     "alpha_leaf_ppm": 8.068794682784906e-05,
     "alpha_bar_ppm": 0.00015,
     "alpha_sigmas_above_bar": 0.5379196455189937,
@@ -1126,6 +1150,11 @@
     "g_factor_signed_ppm": 1.2641882294359013e-08,
     "g_factor_meets_bar": true,
     "g_factor_bar_ppm": 1.8e-07,
-    "g_factor_note": "The bare anomaly (e/pi - ln2)/e^5 is high by 7.78e-9 on a_e. That gap is 0.621126 of (alpha/pi)^3. One over phi is 0.618034 and stays 215 uncertainties high. The weight on the leaf is the shortest third-order product that lands inside the (36) uncertainty and stays high."
+    "g_factor_note": "The bare anomaly (e/pi - ln2)/e^5 is high by 7.78e-9 on a_e. That gap is 0.621126 of (alpha/pi)^3. One over phi is 0.618034 and stays 215 uncertainties high. The weight on the leaf is the shortest third-order product that lands inside the (36) uncertainty and stays high.",
+    "electron_mass_leaf": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con)",
+    "electron_mass_signed_ppm": -4.65561380087145e-05,
+    "electron_mass_meets_bar": true,
+    "electron_mass_bar_ppm": 0.00031,
+    "electron_mass_note": "The kilogram is h*nu_Cs/c^2 times a pure number. The logarithm of that number is e^pi plus (C_factor*K*ln2)^2 plus G_Catalan*P_new*psi_con. The mass is inside its uncertainty, on the low side. Compton wavelength, Bohr radius, classical radius, Thomson cross section, and the Bohr magneton follow and meet. The Rydberg constant and the Hartree energy are alpha^2 times the mass, and their bars are tighter than the alpha leaf, so they stay outside."
   }
 }
