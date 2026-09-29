@@ -30,6 +30,7 @@ CANDIDATES = {
 
 GENETICS_FILES = [
     ("data/product_vs_alphafold.json", "product_vs_alphafold.json"),
+    ("data/wetlab_af_eval.json", "wetlab_af_eval.json"),
     ("docs/PRODUCT_FREEZE.md", "PRODUCT_FREEZE.md"),
     ("docs/OPEN.md", "OPEN.md"),
     ("docs/AUDIT.md", "AUDIT.md"),
@@ -102,6 +103,23 @@ def main() -> int:
             "product_sub2A": s.get("product_sub2A"),
             "free_parameters": s.get("free_parameters"),
             "freeze": "2026-08-17",
+        }
+        for row in p.get("results") or []:
+            if row.get("name") == "Hemoglobin alpha":
+                headlines["genetics_hemoglobin_alpha"] = {
+                    "fsot_product_A": row.get("fsot_product_rmsd_A"),
+                    "alphafold_A": row.get("alphafold_rmsd_A"),
+                }
+    wet = OUT / "genetics" / "wetlab_af_eval.json"
+    if wet.is_file():
+        w = json.loads(wet.read_text(encoding="utf-8"))
+        summary = w.get("structure_summary") or {}
+        headlines["genetics_medical_panel"] = {
+            "n_ok": summary.get("n_ok"),
+            "fsot_median_A": summary.get("fsot_median_A"),
+            "af_median_A": summary.get("af_median_A"),
+            "fsot_beats_af": summary.get("fsot_beats_af"),
+            "n_with_af": summary.get("n_with_af"),
         }
     h0 = OUT / "quantum" / "h0_tension.json"
     if h0.is_file():

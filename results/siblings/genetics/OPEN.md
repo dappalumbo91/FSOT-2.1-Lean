@@ -18,15 +18,16 @@ This list is what to clear next. One mechanism at a time. Pin `D1D38A`. 0 free p
 | Joint `predict_system` | **0.013 Å** protein · DNA C1′ **0.016 Å** · SC **0.016 Å** — apparatus min now matches the DNA job. |
 | Protein–RNA | U1A prot **0.23 Å** · RNA seed C1′ **0.28 Å** (9 nt). Full hairpin register still Superposed. |
 | Ligand site | trypsin–BEN **0.60 Å** (was 0.24 on 3PTB/1PPH). First-shell springs; not a Cα freeze item. |
-| Organism 3-D / lineage | Proxy find **1.00**, follow **1.00 / 1.00**, Jaccard **1.00**. Dense find **0.96**, follow **0.84 / 0.94**, Jaccard **0.82 (adj. 0.83)** — TP 1538 / FP 6 / FN 333. Leftover-length dests yield when 2-opt cannot swap. Kaggle U-Net leftover public **0.821** (not Final; 0.848 holds). |
+| Medical kinases / antigens | Product cap 1.0, apparatus min: EGFR **1.00 Å** (was no template), ABL1 **0.81** (was 12.7), RBD **0.52** (was 5.7), BCL-2 **1.93** (was 5.8). Panel median **0.26 Å**, 19/19 sub-2 Å. The 0.95 handicap is a different bench. |
+| Organism 3-D / lineage | **Biohub back burner** (`docs/BIOHUB_FREEZE.md`): photon claim dense Jaccard **0.82**, proxy **1.00**; steal-shell eye fill **0.848** on one holdout train video (not public LB). Next organism: **FlyWire** adult Drosophila connectome (`docs/FLY_CONNECTOME.md`). |
 
 ## Historical wet-lab (not the 10-protein freeze)
 
-See `docs/MECHANISM_GAP_MAP.md` (historical wet-lab ledger — not the freeze scoreboard). Still open there: EGFR coverage, vaccine-antigen domain scope, CASP/CAMEO blind. P72R specificity is **closed** (`common_polymorphism`).
+See `docs/MECHANISM_GAP_MAP.md` (historical wet-lab ledger — not the freeze scoreboard). EGFR coverage and the kinase/antigen poses are closed on the product path. Still open: CASP/CAMEO blind, and BCL-2 at the NMR ensemble floor (**1.90 Å**). P72R specificity is **closed** (`common_polymorphism`).
 
 Medical expansion: `docs/MEDICAL_PLATFORM.md`. Experimental PGx: **10/10** (`scripts/bench_experimental_pgx.py`, disclosure required).
 
-- **P72R** → `common_polymorphism` (pop AF ≥ 1/φ³).
+- **P72R** → `common_polymorphism` on the full UniProt sequence (pop AF 0.46 ≥ 1/φ³). The 1TUP crystal does not contain residue 72.
 - **HBB E122Q** (Hb D-Punjab) is not a failed driver: mid-conservation, α1β1 interface, compound-sickle apparatus. Catalog role is `context_dependent`. Solo call stays `uncertain`. PGx: `on_ppi_site` on 1A3N B121.
 
 ## CASP / CAMEO blind (OPEN — Grok Build owns the run)
@@ -43,7 +44,8 @@ Hub copy of the protocol: Lean `docs/CASP_CAMEO_BLIND_PROTOCOL.md`.
 
 ## Anti-goals (do not “fix” these)
 
-- Grinding 3-D MDS bulk toward AlphaFold. Backbone is unobserved; pairwise contacts underdetermine a Cα fold. That path is **retired as a product** (`no_measured_map`). F01–F15 formulas (CA_CA, Rg target, secondary) stay — they still feed the measured product.
+- Grinding 3-D MDS bulk toward AlphaFold. Backbone is unobserved; pairwise contacts underdetermine a Cα fold. Fresh check (`scripts/test_coevolution_fold.py`): ubiquitin bulk **10.86 Å**, coevolution contacts **10.93 Å**; RNase A bulk **13.81 Å**, coevolution **13.38 Å**. MSA-as-data does not close the orphan coordinate gap. That path stays **retired as a product** (`no_measured_map`). F01–F15 formulas stay — they still feed the measured product.
+- Calling a remote domain map product when identity is below 1/φ. PIF3 HLH 4ATK is **0.52**.
 - Residual picking DFG-in vs DFG-out.
 - Bond-idealizing intact crystals.
 - Geometric shotgun (medoid-all, invented contacts).

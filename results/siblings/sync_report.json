@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T23:45:53.039968+00:00",
+  "generated_at": "2026-09-29T16:03:47.800371+00:00",
   "authority_pin_prefix": "D1D38A",
   "hub": "FSOT-2.1-Lean",
   "siblings": {
@@ -14,6 +14,12 @@
           "bytes": 3454
         },
         {
+          "src": "data/wetlab_af_eval.json",
+          "dest": "results\\siblings\\genetics\\wetlab_af_eval.json",
+          "ok": true,
+          "bytes": 26537
+        },
+        {
           "src": "docs/PRODUCT_FREEZE.md",
           "dest": "results\\siblings\\genetics\\PRODUCT_FREEZE.md",
           "ok": true,
@@ -23,7 +29,7 @@
           "src": "docs/OPEN.md",
           "dest": "results\\siblings\\genetics\\OPEN.md",
           "ok": true,
-          "bytes": 3498
+          "bytes": 4178
         },
         {
           "src": "docs/AUDIT.md",
@@ -77,7 +83,7 @@
           "src": "docs/STATUS.md",
           "dest": "results\\siblings\\quantum\\STATUS.md",
           "ok": true,
-          "bytes": 17767
+          "bytes": 18063
         },
         {
           "src": "docs/H0_TENSION.md",
@@ -122,6 +128,17 @@
       "product_sub2A": 10,
       "free_parameters": 0,
       "freeze": "2026-08-17"
+    },
+    "genetics_hemoglobin_alpha": {
+      "fsot_product_A": 0.20664720921987362,
+      "alphafold_A": 0.2697832925375286
+    },
+    "genetics_medical_panel": {
+      "n_ok": 19,
+      "fsot_median_A": 0.25576396895095804,
+      "af_median_A": 3.9806235776416807,
+      "fsot_beats_af": 16,
+      "n_with_af": 16
     },
     "quantum_h0_bubble": {
       "overall_ok": true,

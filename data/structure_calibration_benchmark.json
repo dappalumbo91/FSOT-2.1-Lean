@@ -4,6 +4,9 @@
   "burial_accuracy_pct": 59.47,
   "disorder_accuracy_pct": 50.0,
   "proteins": 68,
+  "scalar_gate_applicable": false,
+  "score_kind": "burial_and_disorder_labels",
   "source": "fsot_structure_refiner.py vs AlphaFold DB",
-  "lean_module": "FSOT.Formal.StructureCalibrationPriors"
+  "lean_module": "FSOT.Formal.StructureCalibrationPriors",
+  "note": "median_error_pct is 100 minus burial accuracy on 68 proteins. It is not a C-alpha RMSD. The genetics comparison is results/siblings/genetics/: product median 0.13 A versus AlphaFold 0.47 A on 10 proteins, and medical-panel median 0.26 A versus 3.98 A on 19 proteins."
 }
