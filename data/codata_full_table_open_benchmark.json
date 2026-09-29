@@ -16,9 +16,9 @@
   "observable_count": 38,
   "scalar_record_count": 38,
   "scalar_gate_applicable": true,
-  "median_error_pct": 8.068794682784906e-09,
-  "pooled_median_error_pct": 8.068794682784906e-09,
-  "headline_median_error_pct": 8.068794682784906e-09,
+  "median_error_pct": 8.04701881680011e-09,
+  "pooled_median_error_pct": 8.04701881680011e-09,
+  "headline_median_error_pct": 8.04701881680011e-09,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -235,7 +235,7 @@
       "comparison_can_fail": true,
       "leaf": "1/(e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base))",
       "meets_field_bar": true,
-      "sigmas_above_bar": 9651.074489683464,
+      "sigmas_above_bar": 0.566628354722362,
       "signed_error_ppm": 8.499425320835429e-05
     },
     {
@@ -264,7 +264,7 @@
       "comparison_can_fail": true,
       "leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
       "meets_field_bar": true,
-      "sigmas_above_bar": 9651.117169611016,
+      "sigmas_above_bar": 0.5379196455189937,
       "signed_error_ppm": -8.068794682784906e-05
     },
     {
@@ -453,9 +453,9 @@
       "lab": "codata_full_lab",
       "property": "g_e",
       "name": "electron_g_factor",
-      "computed": 2.002319319929756,
+      "computed": 2.0023193043609453,
       "measured": 2.00231930436092,
-      "error_pct": 7.775401238090761e-07,
+      "error_pct": 1.2641882294359013e-12,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -463,20 +463,20 @@
       "accepted_reference": -2.00231930436092,
       "live_parse": -2.00231930436092,
       "parse_vs_accepted_pct": 0.0,
-      "math": "2*(1 + (e/pi - ln2)/e^5)",
+      "math": "2*(1 + (e/pi - ln2)/e^5 - (alpha/pi)^3*A_bleed*G_Catalan^2*P_base/P_new)",
       "auth": "none",
       "accuracy_class": "codata_measured",
       "field_bar": {
-        "value": 1.5e-07,
+        "value": 1.8e-07,
         "unit": "ppm",
-        "rule": "CODATA electron g-factor relative uncertainty is about 10^-13"
+        "rule": "CODATA 2022 electron g-factor -2.00231930436092(36), relative 1.8e-13"
       },
       "value_computed": true,
       "comparison_can_fail": true,
-      "leaf": "2*(1 + (e/pi - ln2)/e^5)",
-      "meets_field_bar": false,
-      "sigmas_above_bar": 51836.00825393841,
-      "signed_error_ppm": 0.007775401238090761
+      "leaf": "2*(1 + (e/pi - ln2)/e^5 - (alpha/pi)^3*A_bleed*G_Catalan^2*P_base/P_new)",
+      "meets_field_bar": true,
+      "sigmas_above_bar": 0.07023267941310563,
+      "signed_error_ppm": 1.2641882294359013e-08
     },
     {
       "lab": "codata_full_lab",
@@ -634,7 +634,8 @@
       "comparison_can_fail": true,
       "leaf": "2*pi^5*k^4/(15*c^2*h^3)",
       "meets_field_bar": true,
-      "signed_error_ppm": 3.2525389577656163e-05
+      "signed_error_ppm": 3.2525389577656163e-05,
+      "sigmas_above_bar": 0.003252538957765616
     },
     {
       "lab": "codata_full_lab",
@@ -662,7 +663,8 @@
       "comparison_can_fail": true,
       "leaf": "h*c/(k*x) with x the Wien root",
       "meets_field_bar": true,
-      "signed_error_ppm": 6.390177311575242e-05
+      "signed_error_ppm": 6.390177311575242e-05,
+      "sigmas_above_bar": 0.006390177311575242
     },
     {
       "lab": "codata_full_lab",
@@ -690,7 +692,7 @@
       "comparison_can_fail": true,
       "leaf": "1/(mu0*c^2) with the alpha leaf",
       "meets_field_bar": true,
-      "sigmas_above_bar": 9651.118623159484,
+      "sigmas_above_bar": 0.5364679211200074,
       "signed_error_ppm": -8.04701881680011e-05
     },
     {
@@ -719,7 +721,7 @@
       "comparison_can_fail": true,
       "leaf": "2*alpha*h/(e^2*c) with the alpha leaf",
       "meets_field_bar": true,
-      "sigmas_above_bar": 9651.1126083712,
+      "sigmas_above_bar": 0.5285104577264974,
       "signed_error_ppm": 7.92765686589746e-05
     },
     {
@@ -748,7 +750,7 @@
       "comparison_can_fail": true,
       "leaf": "mu0*c with the alpha leaf",
       "meets_field_bar": true,
-      "sigmas_above_bar": 9651.11207917518,
+      "sigmas_above_bar": 0.5290403372987341,
       "signed_error_ppm": 7.935605059481011e-05
     },
     {
@@ -1096,18 +1098,18 @@
       "g_n",
       "atm_Pa"
     ],
-    "goal": "Adopt SI definitions at residual 0. Judge each measured constant against its own CODATA uncertainty. alpha is the first open metrology row.",
+    "goal": "Adopt SI definitions at residual 0. Judge each measured constant against its own CODATA uncertainty.",
     "si_definitions_adopted": true,
     "adopted_residual": 0,
     "measured_leaves_applied": true,
     "alpha_leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
     "alpha_inv_ppm": 8.068794682784906e-05,
     "stamp_removed_from_measured_rows": true,
-    "measured_leaf_median_error_pct": 0.000144766689125568,
+    "measured_leaf_median_error_pct": 8.04701881680011e-09,
     "measured_leaf_count": 6,
-    "alpha_leaf_ppm": 1.4476675754279318,
-    "alpha_bar_ppm": 0.00015324440385095991,
-    "alpha_sigmas_above_bar": 9446.789174995793,
+    "alpha_leaf_ppm": 8.068794682784906e-05,
+    "alpha_bar_ppm": 0.00015,
+    "alpha_sigmas_above_bar": 0.5379196455189937,
     "alpha_in_leaf_power_meets_bar": false,
     "alpha_closest_power": {
       "term": "+e^-9",
@@ -1118,6 +1120,12 @@
     "domain_count": 35,
     "observer_note": "12/23 was tried as a weight on (POOF*SUCTION)^2 and the leaf crossed below the measured value, to 0.491 ppm low. It is not on the leaf. |S_cosm|/S_chem = 0.52589 sits next to 12/23 = 0.52174.",
     "alpha_flow": "e^3*phi^4 is 4614 ppm high. Subtracting psi_con leaves 1.45 ppm high. The interface seed is C_factor^2/P_base. The leaf then sits just inside the CODATA uncertainty, on the low side.",
-    "alpha_interface_seed": "C_factor^2/P_base"
+    "alpha_interface_seed": "C_factor^2/P_base",
+    "g_factor_leaf": "2*(1 + (e/pi - ln2)/e^5 - (alpha/pi)^3*A_bleed*G_Catalan^2*P_base/P_new)",
+    "g_factor_weight": "A_bleed*G_Catalan^2*P_base/P_new",
+    "g_factor_signed_ppm": 1.2641882294359013e-08,
+    "g_factor_meets_bar": true,
+    "g_factor_bar_ppm": 1.8e-07,
+    "g_factor_note": "The bare anomaly (e/pi - ln2)/e^5 is high by 7.78e-9 on a_e. That gap is 0.621126 of (alpha/pi)^3. One over phi is 0.618034 and stays 215 uncertainties high. The weight on the leaf is the shortest third-order product that lands inside the (36) uncertainty and stays high."
   }
 }

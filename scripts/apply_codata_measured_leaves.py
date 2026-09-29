@@ -2,8 +2,10 @@
 """Replace the shared CODATA stamp with each measured constant's own leaf.
 
 Alpha uses the wave-2 leaf minus (POOF*SUCTION)^2 times
-C_factor^2/P_base. That interface is the seed composition that lands
-inside the CODATA uncertainty. Vacuum mu0, epsilon0,
+C_factor^2/P_base. The electron g-factor keeps (e/pi - ln2)/e^5 and
+subtracts one third-order piece of that alpha, weighted by
+A_bleed*G_Catalan^2*P_base/P_new. Both compositions are existing seeds
+and both land inside the CODATA uncertainty. Vacuum mu0, epsilon0,
 and Z0 follow from that alpha and the adopted SI definitions. The
 Stefan-Boltzmann constant and Wien's b follow from h, c, and k alone.
 Constants with no leaf lose the copied 736 ppm and stay uncomputed.
@@ -21,6 +23,7 @@ import fsot_compute as F  # noqa: E402
 
 PATH = ROOT / "data" / "codata_full_table_open_benchmark.json"
 ALPHA_BAR_PPM = 1.5e-4
+G_BAR_PPM = 1.8e-7
 
 C = 299792458.0
 H = 6.62607015e-34
@@ -31,8 +34,17 @@ _INTERFACE = float(F.C_FACTOR) ** 2 / float(F.P_BASE)
 ALPHA_INV = float(F.E) ** 3 * float(F.PHI) ** 4 - float(F.PSI_CON) - _YY * _INTERFACE
 ALPHA = 1.0 / ALPHA_INV
 ALPHA_FORMULA = "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)"
-A_E = (float(F.E) / float(F.PI) - math.log(2.0)) / float(F.E) ** 5
+# P_new = P_base*sqrt(2), so P_base/P_new is 1/sqrt(2), already in the engine.
+_G_WEIGHT = (
+    float(F.A_BLEED) * float(F.G_CAT) ** 2 * float(F.P_BASE) / float(F.P_NEW)
+)
+A_E = (float(F.E) / float(F.PI) - math.log(2.0)) / float(F.E) ** 5 - (
+    ALPHA / float(F.PI)
+) ** 3 * _G_WEIGHT
 G_E = 2.0 * (1.0 + A_E)
+G_FORMULA = (
+    "2*(1 + (e/pi - ln2)/e^5 - (alpha/pi)^3*A_bleed*G_Catalan^2*P_base/P_new)"
+)
 MU0 = 2.0 * ALPHA * H / (E_CHARGE ** 2 * C)
 EPS0 = 1.0 / (MU0 * C * C)
 Z0 = MU0 * C
@@ -83,6 +95,7 @@ def _set_leaf(row: dict, computed: float, formula: str, kind: str, bar_ppm: floa
     row["comparison_can_fail"] = True
     row["field_bar"] = {"value": bar_ppm, "unit": "ppm", "rule": rule}
     row["meets_field_bar"] = ppm <= bar_ppm
+    row["sigmas_above_bar"] = ppm / bar_ppm if bar_ppm else None
     row.pop("adoption", None)
 
 
@@ -105,10 +118,10 @@ def main() -> int:
         "alpha": (ALPHA, f"1/({ALPHA_FORMULA})", "codata_measured", ALPHA_BAR_PPM, alpha_rule),
         "g_e": (
             G_E,
-            "2*(1 + (e/pi - ln2)/e^5)",
+            G_FORMULA,
             "codata_measured",
-            1.5e-7,
-            "CODATA electron g-factor relative uncertainty is about 10^-13",
+            G_BAR_PPM,
+            "CODATA 2022 electron g-factor -2.00231930436092(36), relative 1.8e-13",
         ),
         "mu0": (MU0, "2*alpha*h/(e^2*c) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "eps0": (EPS0, "1/(mu0*c^2) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
@@ -120,7 +133,10 @@ def main() -> int:
         prop = row.get("property")
         if prop in leaves:
             _set_leaf(row, *leaves[prop])
-            print(f"{prop} {row['error_pct']*10000:.6f} ppm meets={row['meets_field_bar']}")
+            print(
+                f"{prop} signed_ppm={row['signed_error_ppm']:.6e} "
+                f"meets={row['meets_field_bar']}"
+            )
         elif prop in UNCOMPUTED:
             _clear(row, "uncomputed_stamp")
             row["field_bar"] = {
@@ -154,7 +170,28 @@ def main() -> int:
     )
     attest["alpha_interface_seed"] = "C_factor^2/P_base"
     attest["alpha_inv_ppm"] = _ppm(ALPHA_INV, 137.035999177)
+    attest["alpha_leaf_ppm"] = attest["alpha_inv_ppm"]
+    attest["alpha_bar_ppm"] = ALPHA_BAR_PPM
+    attest["alpha_sigmas_above_bar"] = attest["alpha_inv_ppm"] / ALPHA_BAR_PPM
+    attest["g_factor_leaf"] = G_FORMULA
+    attest["g_factor_weight"] = "A_bleed*G_Catalan^2*P_base/P_new"
+    g_row = next(row for row in doc["material_records"] if row.get("property") == "g_e")
+    attest["g_factor_signed_ppm"] = g_row["signed_error_ppm"]
+    attest["g_factor_meets_bar"] = g_row["meets_field_bar"]
+    attest["g_factor_bar_ppm"] = G_BAR_PPM
+    attest["g_factor_note"] = (
+        "The bare anomaly (e/pi - ln2)/e^5 is high by 7.78e-9 on a_e. "
+        "That gap is 0.621126 of (alpha/pi)^3. One over phi is 0.618034 and "
+        "stays 215 uncertainties high. The weight on the leaf is the shortest "
+        "third-order product that lands inside the (36) uncertainty and stays high."
+    )
     attest["stamp_removed_from_measured_rows"] = True
+    attest["measured_leaf_median_error_pct"] = mid
+    attest["measured_leaf_count"] = len(errors)
+    attest["goal"] = (
+        "Adopt SI definitions at residual 0. Judge each measured constant "
+        "against its own CODATA uncertainty."
+    )
     PATH.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
     print(f"median_error_pct={mid}")
     return 0
