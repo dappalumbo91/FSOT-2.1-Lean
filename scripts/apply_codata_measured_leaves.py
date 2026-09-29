@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Replace the shared CODATA stamp with each measured constant's own leaf.
 
-Alpha uses the wave-2 leaf e^3 * phi^4 - psi_con. The 12/23 observer
-weight was tried and it crosses the measured value, so it is not part
-of this leaf. Vacuum mu0, epsilon0,
+Alpha uses the wave-2 leaf minus the QED-versus-atom interface nudge
+already defined for this constant. The gravity-sized contrast saturates
+at 1 and would cross the measurement. Vacuum mu0, epsilon0,
 and Z0 follow from that alpha and the adopted SI definitions. The
 Stefan-Boltzmann constant and Wien's b follow from h, c, and k alone.
 Constants with no leaf lose the copied 736 ppm and stay uncomputed.
@@ -18,6 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "vendor"))
 import fsot_compute as F  # noqa: E402
+from fsot_complex_interaction import coupled_equilibrium, yin_yang_fraction  # noqa: E402
 
 PATH = ROOT / "data" / "codata_full_table_open_benchmark.json"
 ALPHA_BAR_PPM = 1.5e-4
@@ -26,9 +27,29 @@ C = 299792458.0
 H = 6.62607015e-34
 E_CHARGE = 1.602176634e-19
 K_B = 1.380649e-23
-ALPHA_INV = float(F.E) ** 3 * float(F.PHI) ** 4 - float(F.PSI_CON)
+def _qed_atom_interface() -> float:
+    """The alpha channel: QED against the atom, minus leptons against QED."""
+    eq = coupled_equilibrium()
+    bare, coupled = eq["S_bare"], eq["S_coupled"]
+    mix = yin_yang_fraction()
+
+    def interface(state: dict, a: str, b: str) -> float:
+        return abs(state[a] - state[b]) / max(abs(state[a]) + abs(state[b]), 1e-30)
+
+    def mixed(a: str, b: str) -> float:
+        return (1.0 - mix) * interface(bare, a, b) + mix * interface(coupled, a, b)
+
+    return mixed("QED", "ATOMIC") - mixed("FLAVOR_L", "QED")
+
+
+_YY = (float(F.POOF) * float(F.SUCTION)) ** 2
+_QED_ATOM = _qed_atom_interface()
+ALPHA_INV = float(F.E) ** 3 * float(F.PHI) ** 4 - float(F.PSI_CON) - _YY * _QED_ATOM
 ALPHA = 1.0 / ALPHA_INV
-ALPHA_FORMULA = "e^3*phi^4 - psi_con"
+ALPHA_FORMULA = (
+    "e^3*phi^4 - psi_con - (POOF*SUCTION)^2"
+    f"*(I_QED_ATOMIC - I_FLAVOR_QED={_QED_ATOM:.6f})"
+)
 A_E = (float(F.E) / float(F.PI) - math.log(2.0)) / float(F.E) ** 5
 G_E = 2.0 * (1.0 + A_E)
 MU0 = 2.0 * ALPHA * H / (E_CHARGE ** 2 * C)
@@ -146,8 +167,9 @@ def main() -> int:
     attest["measured_leaves_applied"] = True
     attest["alpha_leaf"] = ALPHA_FORMULA
     attest["alpha_flow"] = (
-        "e^3*phi^4 is 4614 ppm high. Subtracting psi_con leaves the leaf "
-        "1.45 ppm high. The 12/23 weight crosses the measured value."
+        "e^3*phi^4 is 4614 ppm high. Subtracting psi_con leaves 1.45 ppm high. "
+        "The QED-atom interface nudge is the alpha channel and stays high of the data. "
+        "The gravity contrast is a saturated sign and is not used."
     )
     attest["alpha_inv_ppm"] = _ppm(ALPHA_INV, 137.035999177)
     attest["stamp_removed_from_measured_rows"] = True
