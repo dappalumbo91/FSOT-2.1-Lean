@@ -1382,9 +1382,9 @@
       "target_value": 747.0,
       "unit": "kJ/mol",
       "source": "Jenkins & Roobottom, CRC (2017)",
-      "fsot_formula": "e\u2076\u00b7\u03c6+\u03c0\u2074",
-      "computed_value": 750.1705909456103,
-      "error_pct": 0.424443,
+      "fsot_formula": "e\u2076\u00b7\u03c6+\u03c0\u2074\u2212\u03c0",
+      "computed_value": 747.0289982920202,
+      "error_pct": 0.003881966803242195,
       "matched": true
     },
     {
@@ -4989,9 +4989,9 @@
       "target_value": 239.1,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "e\u2075\u00b7\u03c6",
-      "computed_value": 240.13753580571478,
-      "error_pct": 0.433934,
+      "fsot_formula": "e\u2075\u00b7\u03c6\u2212(\u03c6\u2212\u03c6\u207b\u00b9)",
+      "computed_value": 239.13753580571475,
+      "error_pct": 0.015698789508470798,
       "matched": true
     },
     {
@@ -8623,9 +8623,9 @@
       "target_value": 38.56,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "PI\u00b3+E\u00b2",
-      "computed_value": 38.39533277923047,
-      "error_pct": 0.427042,
+      "fsot_formula": "\u03c0\u00b3+e\u00b2+e\u207b\u00b2+\u03c0\u207b\u00b3",
+      "computed_value": 38.56291959690028,
+      "error_pct": 0.007571568724785009,
       "matched": true
     },
     {

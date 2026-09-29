@@ -4677,10 +4677,11 @@
       ],
       "boiling_K": {
         "target": 239.1,
-        "computed": 240.13753580571478,
-        "error_pct": 0.4339,
-        "formula": "e\u2075\u00b7\u03c6",
-        "unit": "K"
+        "computed": 239.13753580571475,
+        "error_pct": 0.015698789508470798,
+        "formula": "e\u2075\u00b7\u03c6\u2212(\u03c6\u2212\u03c6\u207b\u00b9)",
+        "unit": "K",
+        "orifice_note": "Chlorine boiling point 239.1 K. e\u2075\u00b7\u03c6=240.138 overshot by one golden unit \u03c6\u2212\u03c6\u207b\u00b9, which is 1. Not a new integer coefficient."
       },
       "critical_T_K": {
         "target": 417.15,

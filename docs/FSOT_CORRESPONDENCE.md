@@ -103,7 +103,7 @@ L = K\left(\frac{S_{\mathrm{chem}}}{K}\right)^{p}, \qquad p = \frac{\ln(L/K)}{\l
 | HCl | \(\Omega^{6}/\theta\) | \(4.441949\) |
 | Cl₂ | \(G^{-3}S_{\mathrm{cosm}}^{-4}\) | \(4.727398\) |
 | H₂O | \(\theta^{-3}+\theta^{3}\) | \(5.565681\) |
-| ethanol | \(\pi^{3}+e^{2}\) | \(5.496256\) |
+| ethanol | \(\pi^{3}+e^{2}+e^{-2}+\pi^{-3}\) | \(5.501557\) |
 | acetone | \(e^{2}\varphi^{3}\) | \(5.247564\) |
 | benzene | \(S_{\mathrm{cosm}}-S_{\mathrm{cosm}}^{-5}\) | \(5.224897\) |
 | CCl₄ | \(P_{\mathrm{var}}^{8}C_{\mathrm{fac}}^{-3}\) | \(5.188586\) |

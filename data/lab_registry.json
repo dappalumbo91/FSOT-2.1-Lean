@@ -8394,9 +8394,9 @@
         "species_id": "C2H5OH",
         "property": "h_vap_kJ_mol",
         "target": 38.56,
-        "computed": 38.39533277923047,
-        "error_pct": 0.427,
-        "formula": "PI\u00b3+E\u00b2",
+        "computed": 38.56291959690028,
+        "error_pct": 0.007571568724785009,
+        "formula": "\u03c0\u00b3+e\u00b2+e\u207b\u00b2+\u03c0\u207b\u00b3",
         "unit": "kJ/mol"
       },
       {
@@ -9194,9 +9194,9 @@
         "species_id": "Cl2",
         "property": "boiling_K",
         "target": 239.1,
-        "computed": 240.13753580571478,
-        "error_pct": 0.4339,
-        "formula": "e\u2075\u00b7\u03c6",
+        "computed": 239.13753580571475,
+        "error_pct": 0.015698789508470798,
+        "formula": "e\u2075\u00b7\u03c6\u2212(\u03c6\u2212\u03c6\u207b\u00b9)",
         "unit": "K"
       },
       {

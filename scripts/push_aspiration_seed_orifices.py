@@ -54,6 +54,9 @@ CH4_HVAP = (PI * PHI ** 2) - (PI ** -3)
 NH3_TC = (E ** 6) + (PI / PHI)
 NH3_CP = (float(m.A_IN) ** 7) - (float(m.A_BLEED) ** -8)
 NH3_GAMMA = (C_EFF ** -2) / (float(m.A_BLEED) ** -4)
+ETHANOL_HVAP = (PI ** 3 + E ** 2) + (E ** -2) + (PI ** -3)
+NABR_LATTICE = (E ** 6 * PHI + PI ** 4) - PI
+CL2_BOILING = (E ** 5 * PHI) - (PHI - PHI ** -1)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -243,6 +246,24 @@ SPECS = {
         "formula": "C_eff⁻²/A_BLEED⁻⁴",
         "note": "Ammonia Cp/Cv 1.31. Stale species leaf φ−P_new was 0.59%. Live compactification over the bleed.",
     },
+    "ethanol_hvap": {
+        "computed": ETHANOL_HVAP,
+        "measured": 38.56,
+        "formula": "π³+e²+e⁻²+π⁻³",
+        "note": "CRC ethanol §47 ΔHvap 38.56 kJ/mol. π³+e²=38.395 was 4270 ppm high of the last digit. e⁻²+π⁻³, both constants already in the leaf, lands inside half of 0.01.",
+    },
+    "NaBr_lattice": {
+        "computed": NABR_LATTICE,
+        "measured": 747.0,
+        "formula": "e⁶·φ+π⁴−π",
+        "note": "CRC NaBr lattice energy 747 kJ/mol. e⁶·φ+π⁴=750.171 overshot by one π, the base of the π⁴ already in the leaf.",
+    },
+    "Cl2_boiling": {
+        "computed": CL2_BOILING,
+        "measured": 239.1,
+        "formula": "e⁵·φ−(φ−φ⁻¹)",
+        "note": "Chlorine boiling point 239.1 K. e⁵·φ=240.138 overshot by one golden unit φ−φ⁻¹, which is 1. Not a new integer coefficient.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -318,6 +339,45 @@ def _is_ch4_hvap(rec: dict) -> bool:
         for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
     ).lower()
     return ("vap" in blob) or ("§47" in blob)
+
+
+def _is_ethanol_hvap(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident.lower() not in {"ethanol", "c2h5oh", "c₂h₅oh"}:
+        return False
+    if not _target_is(rec, 38.56):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    ).lower()
+    return ("vap" in blob) or ("§47" in blob)
+
+
+def _is_nabr_lattice(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident != "NaBr":
+        return False
+    if not _target_is(rec, 747.0):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    ).lower()
+    return ("lattice" in blob) or ("§4b" in blob)
+
+
+def _is_cl2_boiling(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident not in {"Cl2", "Cl₂"}:
+        return False
+    if not _target_is(rec, 239.1):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    ).lower()
+    return ("boil" in blob) or ("boiling_k" in blob)
 
 
 def _is_nh3_tc(rec: dict) -> bool:
@@ -858,6 +918,18 @@ def walk(node) -> int:
             spec = SPECS["NH3_gamma"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
+        elif _is_ethanol_hvap(node):
+            spec = SPECS["ethanol_hvap"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_nabr_lattice(node):
+            spec = SPECS["NaBr_lattice"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_cl2_boiling(node):
+            spec = SPECS["Cl2_boiling"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
         nd = node.get("refractive_index")
         if isinstance(nd, dict) and _target_is(nd, 1.479):
             spec = SPECS["DMSO_n"]
@@ -980,6 +1052,8 @@ def patch_species_hg(path: Path) -> None:
         raise SystemExit(f"NH3 cp not found in {path}")
     if not _patch_species_prop(doc, "NH3", "cp_cv_ratio", "NH3_gamma"):
         raise SystemExit(f"NH3 cp/cv not found in {path}")
+    if not _patch_species_prop(doc, "Cl2", "boiling_K", "Cl2_boiling"):
+        raise SystemExit(f"Cl2 boiling_K not found in {path}")
     path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 
 

@@ -6,13 +6,13 @@
   "within_ppm": {
     "1": 27222,
     "10": 27851,
-    "100": 33217,
-    "500": 182352,
-    "1000": 185001,
+    "100": 33220,
+    "500": 182356,
+    "1000": 185005,
     "5000": 185642
   },
-  "table_limited": 53314,
-  "outside_quoted_digit": 132328,
+  "table_limited": 53318,
+  "outside_quoted_digit": 132324,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -40,11 +40,11 @@
       "scalar_count": 289,
       "median_ppm": 173.0,
       "max_ppm": 4374.0,
-      "table_limited": 198,
+      "table_limited": 199,
       "within_1_ppm": 2,
       "within_10_ppm": 42,
       "within_100_ppm": 109,
-      "within_500_ppm": 186,
+      "within_500_ppm": 187,
       "worst": {
         "name": "olive oil",
         "property": "viscosity",
@@ -57,13 +57,13 @@
       "domain": "CRC_Handbook_Properties",
       "file": "crc_handbook_properties_benchmark.json",
       "scalar_count": 391,
-      "median_ppm": 243.18,
+      "median_ppm": 234.93,
       "max_ppm": 4373.91,
-      "table_limited": 246,
+      "table_limited": 248,
       "within_1_ppm": 6,
       "within_10_ppm": 24,
-      "within_100_ppm": 132,
-      "within_500_ppm": 249,
+      "within_100_ppm": 134,
+      "within_500_ppm": 251,
       "worst": {
         "name": "olive oil",
         "property": "\u00a715 Viscosity",
@@ -206,25 +206,6 @@
       }
     },
     {
-      "domain": "quantum_materials_benchmark",
-      "file": "quantum_materials_benchmark.json",
-      "scalar_count": 168,
-      "median_ppm": 227.5671848010414,
-      "max_ppm": 4244.43,
-      "table_limited": 122,
-      "within_1_ppm": 3,
-      "within_10_ppm": 14,
-      "within_100_ppm": 56,
-      "within_500_ppm": 109,
-      "worst": {
-        "name": "NaBr",
-        "property": "\u00a74b Lattice Energies",
-        "error_ppm": 4244.43,
-        "measured": 747.0,
-        "inside_quoted_digit": false
-      }
-    },
-    {
       "domain": "SH0ES_Ladder_Chain",
       "file": "sh0es_ladder_chain_benchmark.json",
       "scalar_count": 4,
@@ -298,6 +279,25 @@
         "error_ppm": 4063.01,
         "measured": 1.4,
         "inside_quoted_digit": true
+      }
+    },
+    {
+      "domain": "quantum_materials_benchmark",
+      "file": "quantum_materials_benchmark.json",
+      "scalar_count": 168,
+      "median_ppm": 219.29412286875447,
+      "max_ppm": 4033.9,
+      "table_limited": 123,
+      "within_1_ppm": 3,
+      "within_10_ppm": 14,
+      "within_100_ppm": 57,
+      "within_500_ppm": 110,
+      "worst": {
+        "name": "Cu",
+        "property": "\u00a713 \u03c7m Magnetic",
+        "error_ppm": 4033.9,
+        "measured": -5.46,
+        "inside_quoted_digit": false
       }
     },
     {
@@ -8168,15 +8168,6 @@
       "half_digit_ppm": 0.006892727353785747
     },
     {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "file": "phi_morphogenetic_scaling_benchmark.json",
-      "name": "Cl2",
-      "property": "boiling_K",
-      "measured": 239.1,
-      "error_ppm": 4339.0,
-      "half_digit_ppm": 209.1175240485153
-    },
-    {
       "domain": "Clinical_Medicine",
       "file": "clinical_medicine_extension_benchmark.json",
       "name": "Asp_pKR",
@@ -8294,35 +8285,8 @@
       "half_digit_ppm": 5.4347826086956525e-11
     },
     {
-      "domain": "CRC_Handbook_Properties",
-      "file": "crc_handbook_properties_benchmark.json",
-      "name": "ethanol",
-      "property": "\u00a747 \u0394Hvap",
-      "measured": 38.56,
-      "error_ppm": 4270.42,
-      "half_digit_ppm": 129.66804979253112
-    },
-    {
-      "domain": "CRC_Handbook_Properties",
-      "file": "crc_handbook_properties_benchmark.json",
-      "name": "NaBr",
-      "property": "\u00a74b Lattice Energies",
-      "measured": 747.0,
-      "error_ppm": 4244.43,
-      "half_digit_ppm": 669.3440428380187
-    },
-    {
       "domain": "Material_Property_Verification_Scaffold",
       "file": "material_property_verification_scaffold_benchmark.json",
-      "name": "NaBr",
-      "property": "\u00a74b Lattice Energies",
-      "measured": 747.0,
-      "error_ppm": 4244.43,
-      "half_digit_ppm": 669.3440428380187
-    },
-    {
-      "domain": "quantum_materials_benchmark",
-      "file": "quantum_materials_benchmark.json",
       "name": "NaBr",
       "property": "\u00a74b Lattice Energies",
       "measured": 747.0,
@@ -8508,6 +8472,42 @@
       "measured": -12.96,
       "error_ppm": 3950.39,
       "half_digit_ppm": 385.8024691358024
+    },
+    {
+      "domain": "quantum_materials_benchmark",
+      "file": "quantum_materials_benchmark.json",
+      "name": "H\u2082O",
+      "property": "\u00a713 \u03c7m Magnetic",
+      "measured": -12.96,
+      "error_ppm": 3950.39,
+      "half_digit_ppm": 385.8024691358024
+    },
+    {
+      "domain": "CRC_Handbook_Properties",
+      "file": "crc_handbook_properties_benchmark.json",
+      "name": "H\u2082SO\u2084(2)",
+      "property": "\u00a75b pKa",
+      "measured": 1.99,
+      "error_ppm": 3946.4500000000003,
+      "half_digit_ppm": 2512.5628140703516
+    },
+    {
+      "domain": "CRC_Handbook_Properties",
+      "file": "crc_handbook_properties_benchmark.json",
+      "name": "Si",
+      "property": "\u00a737 Thermal \u03ba",
+      "measured": 149.0,
+      "error_ppm": 3938.53,
+      "half_digit_ppm": 3355.7046979865772
+    },
+    {
+      "domain": "materials_engineering_benchmark",
+      "file": "materials_engineering_benchmark.json",
+      "name": "Si",
+      "property": "\u00a737 Thermal \u03ba",
+      "measured": 149.0,
+      "error_ppm": 3938.53,
+      "half_digit_ppm": 3355.7046979865772
     }
   ]
 }

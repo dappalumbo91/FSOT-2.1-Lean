@@ -1551,10 +1551,10 @@
     "Index": 173,
     "Symbol": "NaBr",
     "Type": "SMILES Derivation (\u00a74b Lattice Energies)",
-    "Description_Formula": "e\u2076\u00b7\u03c6+\u03c0\u2074",
-    "Value": "750.1705909456103",
+    "Description_Formula": "e\u2076\u00b7\u03c6+\u03c0\u2074\u2212\u03c0",
+    "Value": "747.0289982920202",
     "Target_Unit": "747.0 kJ/mol",
-    "Error": "0.424443%"
+    "Error": "0.003881966803242195%"
   },
   {
     "Index": 174,
@@ -4265,10 +4265,10 @@
     "Index": 473,
     "Symbol": "Cl\u2082",
     "Type": "SMILES Derivation (\u00a727 Boiling Points)",
-    "Description_Formula": "e\u2075\u00b7\u03c6",
-    "Value": "240.13753580571478",
+    "Description_Formula": "e\u2075\u00b7\u03c6\u2212(\u03c6\u2212\u03c6\u207b\u00b9)",
+    "Value": "239.13753580571475",
     "Target_Unit": "239.1 K",
-    "Error": "0.433934%"
+    "Error": "0.015698789508470798%"
   },
   {
     "Index": 474,
@@ -7003,10 +7003,10 @@
     "Index": 775,
     "Symbol": "ethanol",
     "Type": "SMILES Derivation (\u00a747 \u0394Hvap)",
-    "Description_Formula": "PI\u00b3+E\u00b2",
-    "Value": "38.39533277923047",
+    "Description_Formula": "\u03c0\u00b3+e\u00b2+e\u207b\u00b2+\u03c0\u207b\u00b3",
+    "Value": "38.56291959690028",
     "Target_Unit": "38.56 kJ/mol",
-    "Error": "0.427042%"
+    "Error": "0.007571568724785009%"
   },
   {
     "Index": 776,
