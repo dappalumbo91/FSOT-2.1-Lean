@@ -34,7 +34,7 @@ The defining constants and their exact products are adopted: computed and measur
 ## The goal, in order
 
 1. Adopt the SI definitions exactly. Done for \(c\), \(h\), \(e\), \(k\), \(N_A\), the caesium hyperfine frequency, the exact products \(R\), \(K_J\), \(R_K\), the faraday, and the electronvolt, plus standard gravity and 1 atm.
-2. For each measured CODATA constant, replace the shared 736 ppm stamp with that constant's own leaf, and judge it against its CODATA uncertainty. Done for \(\alpha\) and the quantities fixed by \(\alpha\) or by \(h,c,k\). \(\alpha^{-1}\) is 1.45 ppm against an uncertainty of \(1.5\times 10^{-4}\) ppm. \(G\), the masses, and the Rydberg constant are still waiting on a leaf.
+2. For each measured CODATA constant, replace the shared 736 ppm stamp with that constant's own leaf, and judge it against its CODATA uncertainty. The leaf is on the row. \(\alpha^{-1}=e^3\varphi^4-\psi_{\mathrm{con}}=137.036198\) against 137.035999177 is 1.45 ppm, about 9,450 times the CODATA uncertainty of \(2.1\times 10^{-8}\). One more power of \(e\), \(\varphi\), or \(\psi_{\mathrm{con}}\) does not land inside that uncertainty. Of the 35 domains, 23 are observed specimens and 12 are unobserved bulk media. Atomic physics is observed, and the observer factor on that fold is negative. The bar is not met, so the particle-physics \(\sigma\) pass stays waiting.
 3. For particle masses and \(g-2\), report \(\sigma\), not only ppm. The Higgs central value is already inside a 0.1 GeV bar.
 4. For cosmology, keep the score in \(\sigma\) against the named catalog. Do not convert \(H_0\) into a ppm contest.
 5. For chemistry, keep pushing any leaf that is still outside half of its printed digit. Leaves already inside that digit are done.
