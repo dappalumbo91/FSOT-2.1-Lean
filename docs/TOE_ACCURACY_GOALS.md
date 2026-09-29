@@ -16,14 +16,14 @@ Where the work stands today: 185,642 gated scalars, median residual 225 ppm, eve
 | Biology and medicine | Experimental scatter, often 1–10%, or an absolute length in µm or Å. A 0.5% gate can be tighter than the experiment. | Residual \(\le\) the stated experimental uncertainty. | ZSNS004 is 4,410 ppm on a finely stored micrometre value. The panel's own reference band is 0.45%. The frozen panel is not rebuilt from the live bright branch. |
 | Mathematics | An identity. | Residual 0. | \(g_{00}(25)=-1\), \(m_W^2/m_Z^2=1-\sin^2\theta_W\), and the CKM angles sum to \(\pi\). |
 
-## What every domain still has to carry
+## What is on the row
 
-The catalog mostly stores one relative percent. These silos do not all want that percent. A row that is going to count toward a theory of everything needs four fields the gate does not yet require:
+Every gated scalar now carries these four fields. They are written on the CODATA material rows themselves. For the rest of the benchmarks they are in `data/row_accuracy_attestation.jsonl`, one line per row, joined by file, name, and property. `python scripts/row_accuracy_fields.py` rebuilds both. The computed numbers and the error percents are not changed.
 
-1. **Accuracy class.** One of `si_definition`, `conventional_exact`, `codata_measured`, `particle_sigma`, `cosmology_sigma`, `quoted_digit`, `experimental_scatter`, `exact_identity`.
-2. **The field bar, in the field's unit.** ppm, or \(\sigma\), or Å, or exact.
-3. **Whether a value was computed.** A computed `0.0` with a copied percent is not a prediction of that constant.
-4. **Whether the comparison can fail.** Matching a rounded central value, or matching a \(\Lambda\)CDM input such as \(N_{\mathrm{eff}}=3.046\), is not the same as landing inside a measured uncertainty.
+1. **accuracy_class.** `si_definition`, `conventional_exact`, `scale_stamp`, `uncomputed_stamp`, `particle_sigma`, `cosmology_sigma`, `quoted_digit`, `experimental_scatter`, or `exact_identity`.
+2. **field_bar.** `value`, `unit`, and `rule`. The unit is `exact`, `ppm`, or `sigma`.
+3. **value_computed.** False when the computed field is missing, or is 0 while the measured value is not 0.
+4. **comparison_can_fail.** False for a definition, for a row with no computed value, and for `math: fsot_scaled_only`. A copied scale cannot fail on its own. A leaf, a \(\sigma\), and an identity can.
 
 ## The CODATA table is one stamp
 
