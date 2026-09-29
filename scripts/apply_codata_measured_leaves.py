@@ -90,6 +90,17 @@ _NEUTRON_RATIO = 1.0 + float(F.E) * (float(F.POOF) * float(F.SUCTION)) ** 2 - (
 )
 M_N = M_P * _NEUTRON_RATIO
 M_N_FORMULA = "m_p*(1 + e*(POOF*SUCTION)^2 - B_in/(P_new*e^13))"
+_MUON_RATIO = (float(F.PI) ** 3 - float(F.G_CAT) ** 2) * float(F.PHI) ** 4 - (
+    float(F.E)
+    * (float(F.POOF) * float(F.SUCTION)) ** 2
+    * math.log(2.0)
+    * float(F.P_NEW)
+    / float(F.P_BASE)
+)
+M_MU = M_E * _MUON_RATIO
+M_MU_FORMULA = (
+    "m_e*((pi^3 - G_Catalan^2)*phi^4 - e*(POOF*SUCTION)^2*ln2*P_new/P_base)"
+)
 _G_EXPONENT = (
     float(F.E) ** 2 * float(F.PHI) ** 3 / math.log(2.0) ** 3
     + float(F.PHI) * float(F.OMEGA) / (float(F.GAMMA) ** 2 * math.log(2.0))
@@ -106,7 +117,6 @@ WIEN_X = 4.965114231744276
 WIEN_B = H * C / (K_B * WIEN_X)
 
 UNCOMPUTED = {
-    "m_mu_kg",
     "u_kg",
     "m_C12_kg_per_mol",
 }
@@ -179,6 +189,13 @@ def main() -> int:
             "codata_measured",
             22.474,
             "CODATA 2022 Newtonian constant 6.67430e-11(15), relative 2.2e-5",
+        ),
+        "m_mu_kg": (
+            M_MU,
+            M_MU_FORMULA,
+            "codata_measured",
+            0.0223,
+            "CODATA 2022 muon mass 1.883531627e-28(42) kg, relative 2.2e-8",
         ),
         "m_n_kg": (
             M_N,
@@ -357,6 +374,18 @@ def main() -> int:
     attest["neutron_mass_meets_bar"] = n_row["meets_field_bar"]
     attest["neutron_mass_bar_ppm"] = 5.1e-4
     attest["neutron_ratio"] = _NEUTRON_RATIO
+    mu_row = next(row for row in doc["material_records"] if row.get("property") == "m_mu_kg")
+    attest["muon_mass_leaf"] = M_MU_FORMULA
+    attest["muon_mass_signed_ppm"] = mu_row["signed_error_ppm"]
+    attest["muon_mass_meets_bar"] = mu_row["meets_field_bar"]
+    attest["muon_mass_bar_ppm"] = 0.0223
+    attest["muon_ratio"] = _MUON_RATIO
+    attest["muon_mass_note"] = (
+        "The wave ratio (pi^3 - G_Catalan^2)*phi^4 is high. Subtracting "
+        "e*(POOF*SUCTION)^2*ln2*sqrt(2) brings the ratio inside its bar, "
+        "on the low side. P_new/P_base is sqrt(2). The kilogram follows "
+        "the electron mass."
+    )
     attest["neutron_mass_note"] = (
         "The neutron-proton ratio is 1 plus e*(POOF*SUCTION)^2 minus "
         "B_in/(P_new*e^13). The excess is a hair high of its own bar. "

@@ -16,9 +16,9 @@
   "observable_count": 38,
   "scalar_record_count": 38,
   "scalar_gate_applicable": true,
-  "median_error_pct": 8.49942532083543e-09,
-  "pooled_median_error_pct": 8.49942532083543e-09,
-  "headline_median_error_pct": 8.49942532083543e-09,
+  "median_error_pct": 1.4007082866919938e-08,
+  "pooled_median_error_pct": 1.4007082866919938e-08,
+  "headline_median_error_pct": 1.4007082866919938e-08,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -358,9 +358,9 @@
       "lab": "codata_full_lab",
       "property": "m_mu_kg",
       "name": "muon_mass",
-      "computed": null,
+      "computed": 1.8835316164420635e-28,
       "measured": 1.883531627e-28,
-      "error_pct": null,
+      "error_pct": 5.60539387618365e-07,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -368,17 +368,20 @@
       "accepted_reference": 1.883531627e-28,
       "live_parse": 1.883531627e-28,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "m_e*((pi^3 - G_Catalan^2)*phi^4 - e*(POOF*SUCTION)^2*ln2*P_new/P_base)",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "codata_measured",
       "field_bar": {
-        "value": null,
+        "value": 0.0223,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 muon mass 1.883531627e-28(42) kg, relative 2.2e-8"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": -0.00560539387618365,
+      "leaf": "m_e*((pi^3 - G_Catalan^2)*phi^4 - e*(POOF*SUCTION)^2*ln2*P_new/P_base)",
+      "sigmas_above_bar": 0.25136295408895293
     },
     {
       "lab": "codata_full_lab",
@@ -1144,8 +1147,8 @@
     "alpha_leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
     "alpha_inv_ppm": 8.068794682784906e-05,
     "stamp_removed_from_measured_rows": true,
-    "measured_leaf_median_error_pct": 8.49942532083543e-09,
-    "measured_leaf_count": 19,
+    "measured_leaf_median_error_pct": 1.4007082866919938e-08,
+    "measured_leaf_count": 20,
     "alpha_leaf_ppm": 8.068794682784906e-05,
     "alpha_bar_ppm": 0.00015,
     "alpha_sigmas_above_bar": 0.5379196455189937,
@@ -1192,6 +1195,12 @@
     "proton_g_signed_ppm": -7.671444265688372e-05,
     "proton_g_meets_bar": true,
     "proton_g_bar_ppm": 0.00028645,
-    "proton_g_note": "P_new/P_base is sqrt(2), so the leading piece is (A_in*sqrt(2))^2. The second piece is alpha/psi_con^3 times one plus (POOF*SUCTION)^4. The result is inside the (16), on the low side."
+    "proton_g_note": "P_new/P_base is sqrt(2), so the leading piece is (A_in*sqrt(2))^2. The second piece is alpha/psi_con^3 times one plus (POOF*SUCTION)^4. The result is inside the (16), on the low side.",
+    "muon_mass_leaf": "m_e*((pi^3 - G_Catalan^2)*phi^4 - e*(POOF*SUCTION)^2*ln2*P_new/P_base)",
+    "muon_mass_signed_ppm": -0.00560539387618365,
+    "muon_mass_meets_bar": true,
+    "muon_mass_bar_ppm": 0.0223,
+    "muon_ratio": 206.76828157628938,
+    "muon_mass_note": "The wave ratio (pi^3 - G_Catalan^2)*phi^4 is high. Subtracting e*(POOF*SUCTION)^2*ln2*sqrt(2) brings the ratio inside its bar, on the low side. P_new/P_base is sqrt(2). The kilogram follows the electron mass."
   }
 }
