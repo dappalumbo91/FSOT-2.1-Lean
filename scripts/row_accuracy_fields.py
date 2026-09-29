@@ -120,6 +120,14 @@ def attest_row(row: dict, *, file_name: str = "") -> dict:
             "value_computed": computed_ok,
             "comparison_can_fail": True,
         }
+    if existing == "derived_from_atomic_mass":
+        return {
+            "accuracy_class": "derived_from_atomic_mass",
+            "field_bar": row.get("field_bar")
+            or _bar(3.1e-4, "ppm", "CODATA uncertainty of the atomic mass constant"),
+            "value_computed": computed_ok,
+            "comparison_can_fail": True,
+        }
     if existing == "derived_from_proton_mass":
         return {
             "accuracy_class": "derived_from_proton_mass",

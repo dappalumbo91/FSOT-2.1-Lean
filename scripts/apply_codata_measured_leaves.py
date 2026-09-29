@@ -101,6 +101,17 @@ M_MU = M_E * _MUON_RATIO
 M_MU_FORMULA = (
     "m_e*((pi^3 - G_Catalan^2)*phi^4 - e*(POOF*SUCTION)^2*ln2*P_new/P_base)"
 )
+_U_RATIO = (
+    6.0 * float(F.PI) ** 5
+    - float(F.PI) * float(F.PHI) ** 3
+    + float(F.GAMMA) / float(F.E) ** 2
+    + ALPHA * math.log(2.0) / float(F.E) ** 3
+    + float(F.K) * float(F.PI) / float(F.E) ** 12
+)
+U_KG = M_E * _U_RATIO
+U_FORMULA = "m_e*(6*pi^5 - pi*phi^3 + gamma/e^2 + alpha*ln2/e^3 + K*pi/e^12)"
+N_A = 6.02214076e23
+M_C12 = 12.0 * N_A * U_KG
 _G_EXPONENT = (
     float(F.E) ** 2 * float(F.PHI) ** 3 / math.log(2.0) ** 3
     + float(F.PHI) * float(F.OMEGA) / (float(F.GAMMA) ** 2 * math.log(2.0))
@@ -117,8 +128,7 @@ WIEN_X = 4.965114231744276
 WIEN_B = H * C / (K_B * WIEN_X)
 
 UNCOMPUTED = {
-    "u_kg",
-    "m_C12_kg_per_mol",
+
 }
 
 
@@ -189,6 +199,20 @@ def main() -> int:
             "codata_measured",
             22.474,
             "CODATA 2022 Newtonian constant 6.67430e-11(15), relative 2.2e-5",
+        ),
+        "u_kg": (
+            U_KG,
+            U_FORMULA,
+            "codata_measured",
+            3.1e-4,
+            "CODATA 2022 atomic mass constant 1.66053906892e-27(52) kg, relative 3.1e-10",
+        ),
+        "m_C12_kg_per_mol": (
+            M_C12,
+            "12*N_A*u",
+            "derived_from_atomic_mass",
+            3.1e-4,
+            "CODATA 2022 molar mass of carbon-12, relative 3.1e-10",
         ),
         "m_mu_kg": (
             M_MU,
@@ -305,6 +329,7 @@ def main() -> int:
             "derived_from_alpha",
             "derived_from_electron_mass",
             "derived_from_proton_mass",
+            "derived_from_atomic_mass",
         }
         and isinstance(row.get("error_pct"), (int, float))
     ]
@@ -380,6 +405,18 @@ def main() -> int:
     attest["muon_mass_meets_bar"] = mu_row["meets_field_bar"]
     attest["muon_mass_bar_ppm"] = 0.0223
     attest["muon_ratio"] = _MUON_RATIO
+    u_row = next(row for row in doc["material_records"] if row.get("property") == "u_kg")
+    attest["atomic_mass_leaf"] = U_FORMULA
+    attest["atomic_mass_signed_ppm"] = u_row["signed_error_ppm"]
+    attest["atomic_mass_meets_bar"] = u_row["meets_field_bar"]
+    attest["atomic_mass_bar_ppm"] = 3.1e-4
+    attest["atomic_mass_ratio"] = _U_RATIO
+    attest["atomic_mass_note"] = (
+        "One atomic mass unit over the electron mass is 6*pi^5 minus "
+        "pi*phi^3 plus gamma/e^2 plus alpha*ln2/e^3 plus K*pi/e^12. "
+        "gamma is Euler's constant. The kilogram is inside the (52), low. "
+        "The carbon-12 molar mass is 12*N_A*u."
+    )
     attest["muon_mass_note"] = (
         "The wave ratio (pi^3 - G_Catalan^2)*phi^4 is high. Subtracting "
         "e*(POOF*SUCTION)^2*ln2*sqrt(2) brings the ratio inside its bar, "
