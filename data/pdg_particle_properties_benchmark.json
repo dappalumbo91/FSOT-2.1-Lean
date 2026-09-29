@@ -18,9 +18,9 @@
   "observable_count": 27,
   "scalar_record_count": 27,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0006904861951338439,
-  "pooled_median_error_pct": 0.0006904861951338439,
-  "headline_median_error_pct": 0.0006904861951338439,
+  "median_error_pct": 0.000650490524241112,
+  "pooled_median_error_pct": 0.000650490524241112,
+  "headline_median_error_pct": 0.000650490524241112,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -241,11 +241,11 @@
       "lab": "pdg_particle_properties_quantum_lab",
       "property": "M_W/M_Z",
       "name": "quantum_M_W/M_Z",
-      "computed": 0.8814508416055906,
-      "measured": 0.88147,
-      "error_pct": 0.002173459608308579,
+      "computed": 0.8813583680213826,
+      "measured": 0.8813571961222968,
+      "error_pct": 0.00013296528251295945,
       "eval_kind": "fsot_quantum_fold",
-      "formula": "S_quant\u00b7ln(\u03c0) \u2212 P_base",
+      "formula": "W leaf / Z leaf",
       "source": "FSOT-Quantum results/formula_catalog.json",
       "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     },
