@@ -48,6 +48,10 @@ _G_WEIGHT = (
 A_E = (float(F.E) / float(F.PI) - math.log(2.0)) / float(F.E) ** 5 - (
     ALPHA / float(F.PI)
 ) ** 3 * _G_WEIGHT
+G_P = (float(F.A_IN) * float(F.P_NEW) / float(F.P_BASE)) ** 2 + (
+    ALPHA / float(F.PSI_CON) ** 3
+) * (1.0 + (float(F.POOF) * float(F.SUCTION)) ** 4)
+G_P_FORMULA = "(A_in*P_new/P_base)^2 + alpha/psi_con^3*(1 + (POOF*SUCTION)^4)"
 G_E = 2.0 * (1.0 + A_E)
 G_FORMULA = (
     "2*(1 + (e/pi - ln2)/e^5 - (alpha/pi)^3*A_bleed*G_Catalan^2*P_base/P_new)"
@@ -104,7 +108,6 @@ WIEN_B = H * C / (K_B * WIEN_X)
 UNCOMPUTED = {
     "m_mu_kg",
     "u_kg",
-    "g_p",
     "m_C12_kg_per_mol",
 }
 
@@ -153,6 +156,13 @@ def main() -> int:
     leaves = {
         "alpha_inv": (ALPHA_INV, ALPHA_FORMULA, "codata_measured", ALPHA_BAR_PPM, alpha_rule),
         "alpha": (ALPHA, f"1/({ALPHA_FORMULA})", "codata_measured", ALPHA_BAR_PPM, alpha_rule),
+        "g_p": (
+            G_P,
+            G_P_FORMULA,
+            "codata_measured",
+            2.8645e-4,
+            "CODATA 2022 proton g-factor 5.5856946893(16), relative 2.9e-10",
+        ),
         "g_e": (
             G_E,
             G_FORMULA,
@@ -299,6 +309,16 @@ def main() -> int:
     attest["alpha_leaf_ppm"] = attest["alpha_inv_ppm"]
     attest["alpha_bar_ppm"] = ALPHA_BAR_PPM
     attest["alpha_sigmas_above_bar"] = attest["alpha_inv_ppm"] / ALPHA_BAR_PPM
+    gp_row = next(row for row in doc["material_records"] if row.get("property") == "g_p")
+    attest["proton_g_leaf"] = G_P_FORMULA
+    attest["proton_g_signed_ppm"] = gp_row["signed_error_ppm"]
+    attest["proton_g_meets_bar"] = gp_row["meets_field_bar"]
+    attest["proton_g_bar_ppm"] = 2.8645e-4
+    attest["proton_g_note"] = (
+        "P_new/P_base is sqrt(2), so the leading piece is (A_in*sqrt(2))^2. "
+        "The second piece is alpha/psi_con^3 times one plus (POOF*SUCTION)^4. "
+        "The result is inside the (16), on the low side."
+    )
     attest["g_factor_leaf"] = G_FORMULA
     attest["g_factor_weight"] = "A_bleed*G_Catalan^2*P_base/P_new"
     g_row = next(row for row in doc["material_records"] if row.get("property") == "g_e")
