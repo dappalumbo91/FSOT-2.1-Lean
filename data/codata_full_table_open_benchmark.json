@@ -16,9 +16,9 @@
   "observable_count": 38,
   "scalar_record_count": 38,
   "scalar_gate_applicable": true,
-  "median_error_pct": 8.04701881680011e-09,
-  "pooled_median_error_pct": 8.04701881680011e-09,
-  "headline_median_error_pct": 8.04701881680011e-09,
+  "median_error_pct": 8.068794682784906e-09,
+  "pooled_median_error_pct": 8.068794682784906e-09,
+  "headline_median_error_pct": 8.068794682784906e-09,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -271,9 +271,9 @@
       "lab": "codata_full_lab",
       "property": "m_e_kg",
       "name": "electron_mass",
-      "computed": 9.109383713475902e-31,
+      "computed": 9.109383712448731e-31,
       "measured": 9.1093837139e-31,
-      "error_pct": 4.65561380087145e-09,
+      "error_pct": 1.5931580150127503e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -281,7 +281,7 @@
       "accepted_reference": 9.1093837139e-31,
       "live_parse": 9.1093837139e-31,
       "parse_vs_accepted_pct": 0.0,
-      "math": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con)",
+      "math": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con - alpha^5*phi^2/ln2^2)",
       "auth": "none",
       "accuracy_class": "codata_measured",
       "field_bar": {
@@ -292,9 +292,9 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "meets_field_bar": true,
-      "signed_error_ppm": -4.65561380087145e-05,
-      "leaf": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con)",
-      "sigmas_above_bar": 0.15018109035069194
+      "signed_error_ppm": -0.00015931580150127503,
+      "leaf": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con - alpha^5*phi^2/ln2^2)",
+      "sigmas_above_bar": 0.5139219403266937
     },
     {
       "lab": "codata_full_lab",
@@ -404,9 +404,9 @@
       "lab": "codata_full_lab",
       "property": "Rinf_m",
       "name": "Rydberg_constant",
-      "computed": 10973731.569393005,
+      "computed": 10973731.568155611,
       "measured": 10973731.568157,
-      "error_pct": 1.126330407504687e-08,
+      "error_pct": 1.2662358949606247e-11,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -424,18 +424,18 @@
       },
       "value_computed": true,
       "comparison_can_fail": true,
-      "meets_field_bar": false,
-      "signed_error_ppm": 0.0001126330407504687,
+      "meets_field_bar": true,
+      "signed_error_ppm": -1.2662358949606246e-07,
       "leaf": "alpha^2*m_e*c/(2*h)",
-      "sigmas_above_bar": 102.39367340951699
+      "sigmas_above_bar": 0.1151123540873295
     },
     {
       "lab": "codata_full_lab",
       "property": "a0_m",
       "name": "Bohr_radius",
-      "computed": 5.291772105263996e-11,
+      "computed": 5.291772105860695e-11,
       "measured": 5.29177210544e-11,
-      "error_pct": 3.325993590878375e-09,
+      "error_pct": 7.949983557002409e-09,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -454,9 +454,9 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "meets_field_bar": true,
-      "signed_error_ppm": -3.325993590878375e-05,
+      "signed_error_ppm": 7.949983557002408e-05,
       "leaf": "h/(2*pi*m_e*c*alpha)",
-      "sigmas_above_bar": 0.20787459942989842
+      "sigmas_above_bar": 0.49687397231265046
     },
     {
       "lab": "codata_full_lab",
@@ -766,9 +766,9 @@
       "lab": "codata_full_lab",
       "property": "E_h",
       "name": "Hartree_energy",
-      "computed": 4.3597447226970296e-18,
+      "computed": 4.359744722205426e-18,
       "measured": 4.359744722206e-18,
-      "error_pct": 1.1262808657491024e-08,
+      "error_pct": 1.3164236899104342e-11,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -786,10 +786,10 @@
       },
       "value_computed": true,
       "comparison_can_fail": true,
-      "meets_field_bar": false,
-      "signed_error_ppm": 0.00011262808657491025,
+      "meets_field_bar": true,
+      "signed_error_ppm": -1.3164236899104342e-07,
       "leaf": "alpha^2*m_e*c^2",
-      "sigmas_above_bar": 102.38916961355477
+      "sigmas_above_bar": 0.11967488090094855
     },
     {
       "lab": "codata_full_lab",
@@ -899,9 +899,9 @@
       "lab": "codata_full_lab",
       "property": "lambda_C",
       "name": "Compton_wavelength",
-      "computed": 2.426310235493277e-12,
+      "computed": 2.4263102357668665e-12,
       "measured": 2.42631023538e-12,
-      "error_pct": 4.668689528696683e-09,
+      "error_pct": 1.5944641783923506e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -920,17 +920,17 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "meets_field_bar": true,
-      "signed_error_ppm": 4.668689528696683e-05,
+      "signed_error_ppm": 0.00015944641783923507,
       "leaf": "h/(m_e*c)",
-      "sigmas_above_bar": 0.15060288802247365
+      "sigmas_above_bar": 0.5143432833523712
     },
     {
       "lab": "codata_full_lab",
       "property": "r_e",
       "name": "classical_electron_radius",
-      "computed": 2.8179403208174415e-15,
+      "computed": 2.817940321135191e-15,
       "measured": 2.8179403205e-15,
-      "error_pct": 1.1265021131076905e-08,
+      "error_pct": 2.2540974011887748e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -949,17 +949,17 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "meets_field_bar": true,
-      "signed_error_ppm": 0.00011265021131076905,
+      "signed_error_ppm": 0.0002254097401188775,
       "leaf": "alpha*h/(2*pi*m_e*c)",
-      "sigmas_above_bar": 0.23968130066121077
+      "sigmas_above_bar": 0.47959519174229254
     },
     {
       "lab": "codata_full_lab",
       "property": "sigma_e",
       "name": "Thomson_cross_section",
-      "computed": 6.652458706736475e-29,
+      "computed": 6.652458708236732e-29,
       "measured": 6.6524587051e-29,
-      "error_pct": 2.4599543334288933e-08,
+      "error_pct": 4.7151461464746723e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -978,17 +978,17 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "meets_field_bar": true,
-      "signed_error_ppm": 0.00024599543334288934,
+      "signed_error_ppm": 0.0004715146146474672,
       "leaf": "(8*pi/3)*r_e^2",
-      "sigmas_above_bar": 0.2645112186482681
+      "sigmas_above_bar": 0.5070049619865239
     },
     {
       "lab": "codata_full_lab",
       "property": "mu_B",
       "name": "Bohr_magneton",
-      "computed": 9.27401006616983e-24,
+      "computed": 9.274010067215565e-24,
       "measured": 9.2740100657e-24,
-      "error_pct": 5.066097567458488e-09,
+      "error_pct": 1.634206622354772e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -1007,9 +1007,9 @@
       "value_computed": true,
       "comparison_can_fail": true,
       "meets_field_bar": true,
-      "signed_error_ppm": 5.066097567458488e-05,
+      "signed_error_ppm": 0.0001634206622354772,
       "leaf": "e*h/(4*pi*m_e)",
-      "sigmas_above_bar": 0.16342250217608026
+      "sigmas_above_bar": 0.5271634265660555
     },
     {
       "lab": "codata_full_lab",
@@ -1129,7 +1129,7 @@
     "alpha_leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
     "alpha_inv_ppm": 8.068794682784906e-05,
     "stamp_removed_from_measured_rows": true,
-    "measured_leaf_median_error_pct": 8.04701881680011e-09,
+    "measured_leaf_median_error_pct": 8.068794682784906e-09,
     "measured_leaf_count": 14,
     "alpha_leaf_ppm": 8.068794682784906e-05,
     "alpha_bar_ppm": 0.00015,
@@ -1151,10 +1151,10 @@
     "g_factor_meets_bar": true,
     "g_factor_bar_ppm": 1.8e-07,
     "g_factor_note": "The bare anomaly (e/pi - ln2)/e^5 is high by 7.78e-9 on a_e. That gap is 0.621126 of (alpha/pi)^3. One over phi is 0.618034 and stays 215 uncertainties high. The weight on the leaf is the shortest third-order product that lands inside the (36) uncertainty and stays high.",
-    "electron_mass_leaf": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con)",
-    "electron_mass_signed_ppm": -4.65561380087145e-05,
+    "electron_mass_leaf": "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con - alpha^5*phi^2/ln2^2)",
+    "electron_mass_signed_ppm": -0.00015931580150127503,
     "electron_mass_meets_bar": true,
     "electron_mass_bar_ppm": 0.00031,
-    "electron_mass_note": "The kilogram is h*nu_Cs/c^2 times a pure number. The logarithm of that number is e^pi plus (C_factor*K*ln2)^2 plus G_Catalan*P_new*psi_con. The mass is inside its uncertainty, on the low side. Compton wavelength, Bohr radius, classical radius, Thomson cross section, and the Bohr magneton follow and meet. The Rydberg constant and the Hartree energy are alpha^2 times the mass, and their bars are tighter than the alpha leaf, so they stay outside."
+    "electron_mass_note": "The kilogram is h*nu_Cs/c^2 times a pure number. The logarithm is e^pi plus (C_factor*K*ln2)^2 plus G_Catalan*P_new*psi_con, minus alpha^5*phi^2/ln2^2. That last piece is the adopted alpha to the fifth over gamma_c squared. The mass, the Rydberg constant, and the Hartree energy then all sit inside their own uncertainties, on the low side. Compton wavelength, Bohr radius, classical radius, Thomson cross section, and the Bohr magneton follow and meet on the high side."
   }
 }

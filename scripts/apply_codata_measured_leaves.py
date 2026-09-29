@@ -9,9 +9,10 @@ and both land inside the CODATA uncertainty. Vacuum mu0, epsilon0,
 and Z0 follow from that alpha and the adopted SI definitions. The
 electron mass is the exact SI clock h*nu_Cs/c^2 times
 exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con). Compton
-wavelength, Bohr radius, classical radius, Thomson cross section, and
-the Bohr magneton follow from that mass. The Rydberg constant and the
-Hartree energy follow too, and their own bars are tighter than alpha.
+wavelength, Bohr radius, classical radius, Thomson cross section, the
+Bohr magneton, the Rydberg constant, and the Hartree energy follow from
+that mass and the adopted alpha. The exponent also subtracts
+alpha^5*phi^2/ln2^2 so the two tighter bars are inside.
 The Stefan-Boltzmann constant and Wien's b follow from h, c, and k alone.
 Constants with no leaf lose the copied 736 ppm and stay uncomputed.
 """
@@ -52,14 +53,17 @@ G_FORMULA = (
     "2*(1 + (e/pi - ln2)/e^5 - (alpha/pi)^3*A_bleed*G_Catalan^2*P_base/P_new)"
 )
 # Kilogram unit fixed by h, c, and the caesium hyperfine frequency.
+# gamma_c = -ln(2)/phi, so 1/gamma_c^2 = phi^2/ln(2)^2.
 _MASS_EXPONENT = (
     float(F.E) ** float(F.PI)
     + (float(F.C_FACTOR) * float(F.K) * math.log(2.0)) ** 2
     + float(F.G_CAT) * float(F.P_NEW) * float(F.PSI_CON)
+    - ALPHA**5 * float(F.PHI) ** 2 / math.log(2.0) ** 2
 )
 M_E = H * NU_CS / C**2 * math.exp(_MASS_EXPONENT)
 M_E_FORMULA = (
-    "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con)"
+    "h*nu_Cs/c^2 * exp(e^pi + (C_factor*K*ln2)^2 + G_Catalan*P_new*psi_con"
+    " - alpha^5*phi^2/ln2^2)"
 )
 RINF = ALPHA**2 * M_E * C / (2.0 * H)
 A0 = H / (2.0 * math.pi * M_E * C * ALPHA)
@@ -266,13 +270,13 @@ def main() -> int:
     attest["electron_mass_meets_bar"] = m_row["meets_field_bar"]
     attest["electron_mass_bar_ppm"] = 3.1e-4
     attest["electron_mass_note"] = (
-        "The kilogram is h*nu_Cs/c^2 times a pure number. The logarithm of "
-        "that number is e^pi plus (C_factor*K*ln2)^2 plus "
-        "G_Catalan*P_new*psi_con. The mass is inside its uncertainty, on the "
+        "The kilogram is h*nu_Cs/c^2 times a pure number. The logarithm is "
+        "e^pi plus (C_factor*K*ln2)^2 plus G_Catalan*P_new*psi_con, minus "
+        "alpha^5*phi^2/ln2^2. That last piece is the adopted alpha to the "
+        "fifth over gamma_c squared. The mass, the Rydberg constant, and the "
+        "Hartree energy then all sit inside their own uncertainties, on the "
         "low side. Compton wavelength, Bohr radius, classical radius, Thomson "
-        "cross section, and the Bohr magneton follow and meet. The Rydberg "
-        "constant and the Hartree energy are alpha^2 times the mass, and "
-        "their bars are tighter than the alpha leaf, so they stay outside."
+        "cross section, and the Bohr magneton follow and meet on the high side."
     )
     attest["stamp_removed_from_measured_rows"] = True
     attest["measured_leaf_median_error_pct"] = mid

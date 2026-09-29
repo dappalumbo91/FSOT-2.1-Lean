@@ -2,8 +2,9 @@
 """Check the electron mass against the caesium-clock pure number.
 
 SI fixes h, c, and the caesium frequency, so the kilogram mass is that
-unit times a pure number. The logarithm of the pure number is e^pi plus
-(C_factor*K*ln2)^2 plus G_Catalan*P_new*psi_con. This script only prints.
+unit times a pure number. The logarithm is e^pi plus
+(C_factor*K*ln2)^2 plus G_Catalan*P_new*psi_con, minus
+alpha^5*phi^2/ln2^2. This script only prints.
 """
 from __future__ import annotations
 
@@ -32,12 +33,15 @@ def main() -> int:
     )
     square = (F.C_FACTOR * F.K * log(2)) ** 2
     bulk = F.G_CAT * F.P_NEW * F.PSI_CON
-    exponent = power(F.E, F.PI) + square + bulk
+    # gamma_c = -ln(2)/phi, so phi^2/ln(2)^2 = 1/gamma_c^2.
+    finer = alpha**5 * F.PHI**2 / log(2) ** 2
+    exponent = power(F.E, F.PI) + square + bulk - finer
     mass = H * NU / C**2 * exp(exponent)
     diff = mass - M
     print(f"e^pi={power(F.E, F.PI)}")
     print(f"square={square}")
     print(f"bulk={bulk}")
+    print(f"alpha5_over_gamma_c2={finer}")
     print(f"exponent={exponent}")
     print(f"target_ln={log(M * C**2 / (H * NU))}")
     print(f"mass={mass}")
