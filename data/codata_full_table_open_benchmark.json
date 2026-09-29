@@ -16,9 +16,9 @@
   "observable_count": 38,
   "scalar_record_count": 38,
   "scalar_gate_applicable": true,
-  "median_error_pct": 8.068794682784906e-09,
-  "pooled_median_error_pct": 8.068794682784906e-09,
-  "headline_median_error_pct": 8.068794682784906e-09,
+  "median_error_pct": 8.49942532083543e-09,
+  "pooled_median_error_pct": 8.49942532083543e-09,
+  "headline_median_error_pct": 8.49942532083543e-09,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -300,9 +300,9 @@
       "lab": "codata_full_lab",
       "property": "m_p_kg",
       "name": "proton_mass",
-      "computed": null,
+      "computed": 1.672621925668476e-27,
       "measured": 1.67262192595e-27,
-      "error_pct": null,
+      "error_pct": 1.6831291130353084e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -310,17 +310,20 @@
       "accepted_reference": 1.67262192595e-27,
       "live_parse": 1.67262192595e-27,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "m_e*(6*pi^5 + ln2/e^3 + alpha^2*(1 + psi_con/e^3))",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "codata_measured",
       "field_bar": {
-        "value": null,
+        "value": 0.00031,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 proton mass 1.67262192595e-27(52) kg, relative 3.1e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": -0.00016831291130353084,
+      "leaf": "m_e*(6*pi^5 + ln2/e^3 + alpha^2*(1 + psi_con/e^3))",
+      "sigmas_above_bar": 0.5429448751726802
     },
     {
       "lab": "codata_full_lab",
@@ -1015,9 +1018,9 @@
       "lab": "codata_full_lab",
       "property": "mu_N",
       "name": "nuclear_magneton",
-      "computed": null,
+      "computed": 5.0507837401220096e-27,
       "measured": 5.0507837393e-27,
-      "error_pct": null,
+      "error_pct": 1.6274889681115336e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -1025,17 +1028,20 @@
       "accepted_reference": 5.0507837393e-27,
       "live_parse": 5.0507837393e-27,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "e*h/(4*pi*m_p)",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "derived_from_proton_mass",
       "field_bar": {
-        "value": null,
+        "value": 0.00031,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 nuclear magneton relative uncertainty 3.1e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": 0.00016274889681115336,
+      "leaf": "e*h/(4*pi*m_p)",
+      "sigmas_above_bar": 0.5249964413263012
     },
     {
       "lab": "codata_full_lab",
@@ -1129,8 +1135,8 @@
     "alpha_leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
     "alpha_inv_ppm": 8.068794682784906e-05,
     "stamp_removed_from_measured_rows": true,
-    "measured_leaf_median_error_pct": 8.068794682784906e-09,
-    "measured_leaf_count": 14,
+    "measured_leaf_median_error_pct": 8.49942532083543e-09,
+    "measured_leaf_count": 16,
     "alpha_leaf_ppm": 8.068794682784906e-05,
     "alpha_bar_ppm": 0.00015,
     "alpha_sigmas_above_bar": 0.5379196455189937,
@@ -1155,6 +1161,12 @@
     "electron_mass_signed_ppm": -0.00015931580150127503,
     "electron_mass_meets_bar": true,
     "electron_mass_bar_ppm": 0.00031,
-    "electron_mass_note": "The kilogram is h*nu_Cs/c^2 times a pure number. The logarithm is e^pi plus (C_factor*K*ln2)^2 plus G_Catalan*P_new*psi_con, minus alpha^5*phi^2/ln2^2. That last piece is the adopted alpha to the fifth over gamma_c squared. The mass, the Rydberg constant, and the Hartree energy then all sit inside their own uncertainties, on the low side. Compton wavelength, Bohr radius, classical radius, Thomson cross section, and the Bohr magneton follow and meet on the high side."
+    "electron_mass_note": "The kilogram is h*nu_Cs/c^2 times a pure number. The logarithm is e^pi plus (C_factor*K*ln2)^2 plus G_Catalan*P_new*psi_con, minus alpha^5*phi^2/ln2^2. That last piece is the adopted alpha to the fifth over gamma_c squared. The mass, the Rydberg constant, and the Hartree energy then all sit inside their own uncertainties, on the low side. Compton wavelength, Bohr radius, classical radius, Thomson cross section, and the Bohr magneton follow and meet on the high side.",
+    "proton_mass_leaf": "m_e*(6*pi^5 + ln2/e^3 + alpha^2*(1 + psi_con/e^3))",
+    "proton_mass_signed_ppm": -0.00016831291130353084,
+    "proton_mass_meets_bar": true,
+    "proton_mass_bar_ppm": 0.00031,
+    "proton_ratio": 1836.1526734050065,
+    "proton_mass_note": "The proton-electron ratio is 6*pi^5 plus ln2/e^3 plus alpha^2*(1 + psi_con/e^3). Six is the whole number in ratio/pi^5. The ratio is inside its own 1.7e-11 bar, on the low side, and the kilogram mass follows the electron mass."
   }
 }

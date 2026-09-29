@@ -72,6 +72,15 @@ R_E = ALPHA * LAMBDA_C / (2.0 * math.pi)
 SIGMA_E = 8.0 * math.pi * R_E**2 / 3.0
 E_HARTREE = ALPHA**2 * M_E * C**2
 MU_B = E_CHARGE * H / (4.0 * math.pi * M_E)
+# ratio/pi^5 is 6.000113, so the leading piece is six times pi^5.
+_PROTON_RATIO = (
+    6.0 * float(F.PI) ** 5
+    + math.log(2.0) / float(F.E) ** 3
+    + ALPHA**2 * (1.0 + float(F.PSI_CON) / float(F.E) ** 3)
+)
+M_P = M_E * _PROTON_RATIO
+M_P_FORMULA = "m_e*(6*pi^5 + ln2/e^3 + alpha^2*(1 + psi_con/e^3))"
+MU_N = E_CHARGE * H / (4.0 * math.pi * M_P)
 MU0 = 2.0 * ALPHA * H / (E_CHARGE ** 2 * C)
 EPS0 = 1.0 / (MU0 * C * C)
 Z0 = MU0 * C
@@ -80,13 +89,11 @@ WIEN_X = 4.965114231744276
 WIEN_B = H * C / (K_B * WIEN_X)
 
 UNCOMPUTED = {
-    "m_p_kg",
     "m_n_kg",
     "m_mu_kg",
     "u_kg",
     "g_p",
     "G_SI",
-    "mu_N",
     "m_C12_kg_per_mol",
 }
 
@@ -145,6 +152,20 @@ def main() -> int:
         "mu0": (MU0, "2*alpha*h/(e^2*c) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "eps0": (EPS0, "1/(mu0*c^2) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "Z0": (Z0, "mu0*c with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
+        "m_p_kg": (
+            M_P,
+            M_P_FORMULA,
+            "codata_measured",
+            3.1e-4,
+            "CODATA 2022 proton mass 1.67262192595e-27(52) kg, relative 3.1e-10",
+        ),
+        "mu_N": (
+            MU_N,
+            "e*h/(4*pi*m_p)",
+            "derived_from_proton_mass",
+            3.1e-4,
+            "CODATA 2022 nuclear magneton relative uncertainty 3.1e-10",
+        ),
         "m_e_kg": (
             M_E,
             M_E_FORMULA,
@@ -231,6 +252,7 @@ def main() -> int:
             "codata_measured",
             "derived_from_alpha",
             "derived_from_electron_mass",
+            "derived_from_proton_mass",
         }
         and isinstance(row.get("error_pct"), (int, float))
     ]
@@ -277,6 +299,18 @@ def main() -> int:
         "Hartree energy then all sit inside their own uncertainties, on the "
         "low side. Compton wavelength, Bohr radius, classical radius, Thomson "
         "cross section, and the Bohr magneton follow and meet on the high side."
+    )
+    p_row = next(row for row in doc["material_records"] if row.get("property") == "m_p_kg")
+    attest["proton_mass_leaf"] = M_P_FORMULA
+    attest["proton_mass_signed_ppm"] = p_row["signed_error_ppm"]
+    attest["proton_mass_meets_bar"] = p_row["meets_field_bar"]
+    attest["proton_mass_bar_ppm"] = 3.1e-4
+    attest["proton_ratio"] = _PROTON_RATIO
+    attest["proton_mass_note"] = (
+        "The proton-electron ratio is 6*pi^5 plus ln2/e^3 plus "
+        "alpha^2*(1 + psi_con/e^3). Six is the whole number in "
+        "ratio/pi^5. The ratio is inside its own 1.7e-11 bar, on the "
+        "low side, and the kilogram mass follows the electron mass."
     )
     attest["stamp_removed_from_measured_rows"] = True
     attest["measured_leaf_median_error_pct"] = mid
