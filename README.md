@@ -518,13 +518,19 @@ Authoritative artifact: `data/cross_proof_verification_report.json` → **`overa
 
 ![Verification spine walkthrough](data/figures/spine_walkthrough.png)
 
+The chain text is the walkthrough recorded on 2026-07-16. The box for the public cross-check still says 374 benchmark files. The live catalog count is the 477 in the tables below.
+
 <!-- README_OBLIGATION_MAP_START -->
 ### 5.2.1 Five-prover obligation map
 
 ![Five-prover obligation map](data/figures/obligation_map_five_provers.png)
 
-*Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F* → Rust executable replay of **2030** atomic obligations. Authoritative report: `data/cross_proof_verification_report.json`.*
+*Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F* → Rust executable replay of **2130** obligations (2030 atomic, plus the transcendental and connective rows in that replay). Authoritative report: `data/cross_proof_verification_report.json`.*
 <!-- README_OBLIGATION_MAP_END -->
+
+![Cross-proof outcomes](data/figures/prover_outcome_board.png)
+
+The counts and the pass rows are read from that same report, plus the Lean library rebuild in `data/fresh_clone_lean_repro_report.md` (2206 jobs). ESP32 was skipped, so eight-way hardware stays false.
 
 ### 5.2.2 Lean Mathlib re-derivation campaign
 
@@ -608,17 +614,29 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 | Formula authority | **CLOSED** · ZERO_FREE · live pin **AEB2AD** (stored stamp D1D38A) |
 | Clean-clone Lean rebuild | **PASS** (2206 jobs, `95a1113`) |
 | Clean-clone Mathlib path | **PASS** |
-| Tier A_strong (status) | **117** |
-| Tier B_verified (status) | **338** |
+| Tier A_strong (status snapshot 2026-09-17) | **118** |
+| Tier B_verified (status snapshot 2026-09-17) | **340** |
 
 ![Empirical headline summary](data/figures/empirical_headline_summary.png)
 
 ![Domain error envelope](data/figures/domain_error_envelope.png)
 
+The envelope is a logarithmic histogram of the positive prediction-domain medians. 142 of the 414 medians are exactly zero, and one is negative, so those sit in the title instead of in a bar. The purple line is the median of all 414, **0.005537779313588844%**.
+
+![Prediction-domain median distribution](data/figures/prediction_median_ecdf.png)
+
 ![Predicted vs measured scatter](data/figures/predicted_vs_measured_scatter.png)
+
+Each point is a prediction row, kept in the unit stored on that row. At most 16 rows are taken from each file. The right-hand panel is the absolute percent error of that sample.
+
+![Nuclear binding residuals](data/figures/nuclear_binding_sigma.png)
+
+Helium-4, the triton, and the deuteron, in the published uncertainties written in `docs/TOE_ACCURACY_GOALS.md`. Positive means the reading is above the central value.
 
 <!-- README_VI_EXTRA_FIGURES_START -->
 ![Coverage tier distribution](data/figures/coverage_surface_pie.png)
+
+The bars are the tier rollup in `data/repo_status_snapshot.json` (2026-09-17): A_strong 118, B_verified 340, B_process 8, B_named 2.
 
 ![Tier precision heatmap](data/figures/tier_precision_heatmap.png)
 <!-- README_VI_EXTRA_FIGURES_END -->
@@ -709,13 +727,13 @@ python scripts/merge_readme_domain_chapters.py
 
 ## VII. Contested Sectors â€” Where Current Models Struggle
 
-Thirteen observables where Î›CDM / SM sectors typically show large tension:
+Fourteen stored readouts. The median of those row errors is **0.041258%**. The file also stores a 15% typical baseline. That baseline is not a measured residual, so the figure does not draw it.
 
-| Metric | FSOT | Typical baseline |
-|--------|-----:|-----------------:|
-| Pooled median error | **0.030%** | ~15% |
+| Metric | Stored row errors | Stored typical baseline |
+|--------|------------------:|------------------------:|
+| Median | **0.041258%** | 15% |
 
-![Contested FSOT vs Î›CDM](data/figures/contested_fsot_vs_lcdm.png)
+![Contested readouts](data/figures/contested_fsot_vs_lcdm.png)
 
 <!-- README_BUBBLE_BLEED_START -->
 ### 7.2 Bubble-bleed cosmology mechanism
@@ -728,7 +746,7 @@ In words:
 2. **Dual-anchor readout** â€” CMB inference (Planck Collaboration 2018: 67.36 km/s/Mpc) and local distance ladder (Riess et al. 2024: 73.04 km/s/Mpc) are not fitted separately; they emerge from the same seed engine at different observer routes.
 3. FSOT **Hâ‚€ bridge scalar** (PRED-001) lands strictly between anchors â€” unified prediction where Î›CDM carries separate posteriors.
 
-This is why contested-sector pooled median reaches **0.030%** without introducing dark-energy density as a per-row fit parameter. Mechanism chain: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md#d41-cosmology--hâ‚€-planck-cmb-anchor).
+This is why the median of these stored row errors is **0.041258%** without introducing dark-energy density as a per-row fit parameter. Mechanism chain: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md#d41-cosmology--hâ‚€-planck-cmb-anchor).
 <!-- README_BUBBLE_BLEED_END -->
 
 ### 7.1 Hâ‚€ landscape
@@ -741,7 +759,9 @@ This is why contested-sector pooled median reaches **0.030%** without introducin
 | SH0ES local Hâ‚€ | 0.662 | Riess2024 |
 | FSOT local anchor | 0.829 | dual-anchor bubble bleed |
 
-![Hâ‚€ landscape](data/figures/h0_landscape.png)
+![Hubble rows on the contested closure](data/figures/h0_landscape.png)
+
+The figure draws the three Hubble rows stored on that closure (SH0ES–Planck tension, Carnegie–Planck tension, and the Planck CMB row). The table above also lists the SH0ES local anchor and the dual-anchor readout.
 
 **Worked example â€” Planck CMB:**
 

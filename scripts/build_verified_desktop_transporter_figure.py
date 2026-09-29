@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import statistics
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -98,7 +99,7 @@ def _layer_medians(bench: dict) -> dict[str, float]:
         if rec.get("extra", {}).get("channel"):
             layer = str(rec["extra"]["channel"])
         buckets[layer].append(err)
-    return {k: sum(v) / len(v) for k, v in buckets.items() if v}
+    return {k: float(statistics.median(v)) for k, v in buckets.items() if v}
 
 
 def figure_transporter_stack(out: Path) -> dict:
@@ -121,13 +122,12 @@ def figure_transporter_stack(out: Path) -> dict:
     ax = axes[0]
     y = np.arange(len(labels))
     ax.barh(y, values, color=colors, alpha=0.9)
-    ax.axvline(0.05, color="#f59e0b", linestyle=":", linewidth=1.2, label="0.05% tier aspiration")
-    ax.axvline(0.5, color="#dc2626", linestyle="--", linewidth=1.2, label="0.5% verification gate")
-    ax.axvline(pooled, color="#1e3a8a", linewidth=2.0, label=f"pooled {pooled:.4f}%")
+    ax.axvline(0.05, color="#f59e0b", linestyle=":", linewidth=1.2, label="0.05% prediction score")
+    ax.axvline(pooled, color="#1e3a8a", linewidth=2.0, label=f"panel scale step {pooled:.6g}%")
     ax.set_yticks(y)
     ax.set_yticklabels(labels, fontsize=9)
-    ax.set_xlabel("FSOT scalar error % (layer median)")
-    ax.set_title("Transporter technology stack — per-layer precision")
+    ax.set_xlabel("Median of the stored row errors (%)")
+    ax.set_title("Median by stack layer")
     ax.legend(fontsize=7, loc="lower right")
     ax.set_xlim(0, max(0.12, max(values) * 1.35))
 
@@ -139,7 +139,7 @@ def figure_transporter_stack(out: Path) -> dict:
         frame.get("mechanism", ""),
         "",
         f"Records verified: {bench.get('record_count', '?')}",
-        f"Pooled median error: {pooled:.5f}%",
+        f"Stored scale step: {pooled:.6g}%",
         "",
         "Stack layers:",
         "  1. Quantum teleportation channel (fidelity, entanglement, no-cloning)",
@@ -155,7 +155,7 @@ def figure_transporter_stack(out: Path) -> dict:
     ax2.text(0.02, 0.98, "\n".join(stack_text), va="top", fontsize=9, family="monospace", wrap=True)
 
     fig.suptitle(
-        "FSOT Transporter Technology — seed-scalar verified engineering stack",
+        "Transporter panel — the blue line is the panel median, not a prediction score",
         fontsize=12,
         fontweight="bold",
     )

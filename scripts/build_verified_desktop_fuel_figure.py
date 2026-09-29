@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import statistics
 import sys
 from pathlib import Path
 
@@ -53,7 +54,7 @@ def _median_error_by_fuel(bench: dict) -> dict[str, float]:
             if name == pid or name.startswith(f"compare_{pid}") or name.startswith(f"hemp_refined_{pid}"):
                 buckets[pid].append(err)
                 break
-    return {pid: (sum(v) / len(v) if v else 0.0) for pid, v in buckets.items()}
+    return {pid: (float(statistics.median(v)) if v else 0.0) for pid, v in buckets.items()}
 
 
 def figure_verified_desktop_fuels(out: Path) -> dict:
@@ -98,22 +99,29 @@ def figure_verified_desktop_fuels(out: Path) -> dict:
         color="#1d4ed8",
         alpha=0.85,
     )
-    ax2.axvline(0.5, color="#dc2626", linestyle="--", linewidth=1.2, label="0.5% verification gate")
-    ax2.axvline(0.05, color="#f59e0b", linestyle=":", linewidth=1.0, label="0.05% tier aspiration")
+    ax2.axvline(0.05, color="#f59e0b", linestyle=":", linewidth=1.0, label="0.05% prediction score")
     pooled = float(bench.get("pooled_median_error_pct") or 0)
-    ax2.axvline(pooled, color="#059669", linestyle="-", linewidth=1.5, label=f"panel pooled {pooled:.3f}%")
-    ax2.set_xlabel("FSOT scalar error % (median per fuel)")
-    ax2.set_title("Per-fuel verification precision (novel molecular states)")
+    ax2.axvline(pooled, color="#059669", linestyle="-", linewidth=1.5, label=f"panel scale step {pooled:.6g}%")
+    ax2.set_xlabel("Median of the stored row errors (%)")
+    ax2.set_title("Median on each fuel")
     ax2.legend(fontsize=7, loc="lower right")
-    ax2.set_xlim(0, max(0.06, max(designed + [pooled]) * 1.4))
+    hi = max(designed + [pooled, 0.05])
+    ax2.set_xlim(0, max(0.06, hi * 1.45))
 
     fig.suptitle(
-        f"Fuel Lab verified desktop evidence — {bench.get('record_count', '?')} records, "
-        f"pooled {pooled:.3f}%",
+        f"Fuel lab — engine simulator and the panel median "
+        f"({bench.get('record_count', '?')} records, {pooled:.6g}%)",
         fontsize=12,
         fontweight="bold",
     )
     fig.tight_layout()
+    fig.text(
+        0.52,
+        0.005,
+        "Each bar is the median. Rows inside one fuel are not all equal.",
+        fontsize=8,
+        color="#475569",
+    )
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=160, bbox_inches="tight")
     plt.close(fig)

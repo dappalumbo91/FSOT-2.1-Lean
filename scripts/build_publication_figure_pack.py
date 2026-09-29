@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import statistics
 import subprocess
 import sys
 from pathlib import Path
@@ -37,13 +38,14 @@ def figure_spine_walkthrough(out: Path, walk: dict) -> None:
     from matplotlib.patches import FancyBboxPatch
 
     steps = walk.get("chain") or []
-    fig, ax = plt.subplots(figsize=(11, 8), facecolor="white")
+    gap = 1.28
+    fig, ax = plt.subplots(figsize=(11, 8.4), facecolor="white")
     ax.set_xlim(0, 10)
-    ax.set_ylim(0, len(steps) + 1)
+    ax.set_ylim(-0.2, len(steps) * gap + 0.45)
     ax.axis("off")
 
     colors = ["#1e3a8a", "#1d4ed8", "#2563eb", "#059669", "#0891b2", "#7c3aed"]
-    y = len(steps) + 0.2
+    y = len(steps) * gap
     for i, step in enumerate(steps):
         color = colors[i % len(colors)]
         label = str(step.get("label") or f"Step {step.get('step')}")
@@ -51,31 +53,32 @@ def figure_spine_walkthrough(out: Path, walk: dict) -> None:
         if isinstance(detail, dict):
             detail_txt = ", ".join(f"{k}={v}" for k, v in list(detail.items())[:4])
         else:
-            detail_txt = str(detail or "")[:120]
+            detail_txt = str(detail or "")[:140]
 
         box = FancyBboxPatch(
-            (0.5, y - 0.85),
-            9.0,
-            0.9,
-            boxstyle="round,pad=0.05,rounding_size=0.08",
+            (0.45, y - 1.0),
+            9.1,
+            0.95,
+            boxstyle="round,pad=0.04,rounding_size=0.08",
             linewidth=1.2,
             edgecolor=color,
             facecolor="#f8fafc",
         )
         ax.add_patch(box)
-        ax.text(0.7, y - 0.25, f"{step.get('step')}. {label}", fontsize=11, fontweight="bold", va="top")
-        ax.text(0.7, y - 0.55, detail_txt, fontsize=8.5, va="top", color="#334155")
+        ax.text(0.65, y - 0.28, f"{step.get('step')}. {label}", fontsize=11, fontweight="bold", va="top")
+        ax.text(0.65, y - 0.62, detail_txt, fontsize=8.5, va="top", color="#334155")
         if i < len(steps) - 1:
             ax.annotate(
                 "",
-                xy=(5, y - 0.95),
-                xytext=(5, y - 1.15),
+                xy=(5, y - gap + 0.06),
+                xytext=(5, y - 1.05),
                 arrowprops=dict(arrowstyle="->", color="#64748b", lw=1.5),
             )
-        y -= 1.35
+        y -= gap
 
+    recorded = str(walk.get("generated_at") or "")[:10]
     ax.set_title(
-        "FSOT Theory of Everything — single seed spine fractals to all observables",
+        f"FSOT seed spine — recorded chain ({recorded})",
         fontsize=13,
         fontweight="bold",
         pad=12,
@@ -90,29 +93,36 @@ def figure_contested_fsot_vs_baseline(out: Path, contested: dict) -> None:
     import matplotlib.pyplot as plt
     import numpy as np
 
-    rows = contested.get("observables") or []
+    rows = list(contested.get("observables") or [])
     if not rows:
         raise RuntimeError("No contested observables in contested_observables_closure.json")
-
+    rows.sort(key=lambda r: float(r.get("fsot_error_pct") or 0))
     names = [str(r.get("name") or r.get("property")) for r in rows]
     fsot_err = [float(r.get("fsot_error_pct") or 0) for r in rows]
-    baseline = float((contested.get("panel_summary") or {}).get("current_model_baseline_pct") or 15.0)
+    pooled = float(np.median(fsot_err))
+    stored_baseline = (contested.get("panel_summary") or {}).get("current_model_baseline_pct")
 
     fig, ax = plt.subplots(figsize=(10, max(6, len(names) * 0.42)), facecolor="white")
     y = np.arange(len(names))
-    ax.barh(y - 0.2, fsot_err, height=0.35, color="#059669", label="FSOT error %", alpha=0.9)
-    ax.barh(y + 0.2, [baseline] * len(names), height=0.35, color="#94a3b8", label="ΛCDM/SM typical (no unified pred.)", alpha=0.7)
-    ax.axvline(0.5, color="#ca8a04", linestyle="--", linewidth=1.2, label="green gate 0.5%")
+    ax.barh(y, fsot_err, height=0.6, color="#059669", label="Stored row error %", alpha=0.9)
+    ax.axvline(0.5, color="#ca8a04", linestyle="--", linewidth=1.2, label="catalog gate 0.5%")
+    ax.axvline(pooled, color="#1d4ed8", linestyle="-", linewidth=1.2, label=f"median of these rows {pooled:.6g}%")
     ax.set_yticks(y)
     ax.set_yticklabels(names, fontsize=8)
-    ax.set_xlabel("Relative error (%)")
-    pooled = (contested.get("panel_summary") or {}).get("pooled_median_error_pct")
+    ax.set_xlabel("Relative error of the stored readout (%)")
     ax.set_title(
-        f"Contested / open-sector observables — FSOT pooled median {pooled:.4f}% vs {baseline}% baseline",
+        f"Contested readouts — median of the {len(rows)} stored row errors is {pooled:.6g}%",
         fontsize=11,
     )
+    note = "The 15% typical baseline stored on this panel is not a measured residual, so it is not drawn."
+    if stored_baseline is not None:
+        note = (
+            f"A {stored_baseline:g}% typical baseline is stored on this panel. "
+            "It is not a measured residual, so it is not drawn."
+        )
     ax.legend(loc="lower right", fontsize=8)
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0.05, 1, 1))
+    fig.text(0.01, 0.012, note, fontsize=8, color="#475569")
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=180, facecolor="white", bbox_inches="tight")
     plt.close(fig)
@@ -130,25 +140,29 @@ def figure_h0_landscape(out: Path, contested: dict) -> None:
     if not h0_rows:
         raise RuntimeError("No H0 rows in contested closure")
 
-    labels, measured, computed, errors = [], [], [], []
+    labels, details, errors = [], [], []
     for r in h0_rows:
-        labels.append(str(r.get("name") or "?")[:28])
-        measured.append(float(r.get("measured") or 0))
-        computed.append(float(r.get("computed") or 0))
+        labels.append(str(r.get("name") or "?")[:40])
+        unit = str(r.get("unit") or "")
+        details.append(
+            f"computed {float(r.get('computed') or 0):.6g}   "
+            f"measured {float(r.get('measured') or 0):.6g} {unit}"
+        )
         errors.append(float(r.get("fsot_error_pct") or 0))
 
-    x = range(len(labels))
-    width = 0.35
-    fig, ax = plt.subplots(figsize=(11, 5.5), facecolor="white")
-    ax.bar([i - width / 2 for i in x], measured, width, label="Literature measured", color="#64748b")
-    ax.bar([i + width / 2 for i in x], computed, width, label="FSOT spine computed", color="#2563eb")
-    ax.set_xticks(list(x))
-    ax.set_xticklabels(labels, rotation=35, ha="right", fontsize=8)
-    ax.set_ylabel("km/s/Mpc (or tension Δ)")
-    ax.set_title("Hubble sector — FSOT unified readouts vs public data (Planck, SH0ES, dual-anchor)")
-    for i, err in enumerate(errors):
-        ax.text(i, max(measured[i], computed[i]) + 0.5, f"{err:.3f}%", ha="center", fontsize=7, color="#059669")
-    ax.legend()
+    fig, ax = plt.subplots(figsize=(11, 5.2), facecolor="white")
+    y = range(len(labels))
+    ax.barh(list(y), errors, color="#2563eb", alpha=0.9)
+    ax.axvline(0.5, color="#ca8a04", linestyle="--", linewidth=1.2, label="catalog gate 0.5%")
+    ax.set_yticks(list(y))
+    ax.set_yticklabels(labels, fontsize=9)
+    ax.set_xlabel("Stored relative error (%)")
+    ax.set_title("Hubble rows stored on the contested closure")
+    span = max(errors + [0.5])
+    for i, (err, detail) in enumerate(zip(errors, details)):
+        ax.text(err + span * 0.03, i, f"{err:.4g}%    {detail}", va="center", fontsize=8, color="#1e293b")
+    ax.set_xlim(0, span * 3.4)
+    ax.legend(fontsize=8, loc="lower right")
     fig.tight_layout()
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=180, facecolor="white", bbox_inches="tight")
@@ -160,29 +174,36 @@ def figure_empirical_headline(out: Path, empirical: dict) -> None:
 
     env = empirical.get("benchmark_envelope") or {}
     labels = [
-        "Domains green",
-        "Median-of-domains (%)",
-        "Worst max scalar (%)",
-        "Unique formulas OK",
-        "SOTA panel beats",
+        "Benchmark files green",
+        "Median of prediction medians (%)",
+        "Medians at or under 0.5%",
+        "Worst record scalar (%)",
+        "Unique formulas recompute",
     ]
+    median_txt = f"{float(env.get('pooled_median_of_domains_pct', 0)):.15g}"
     values = [
         f"{env.get('green_gate_pass_count', 0)}/{env.get('benchmark_file_count', 0)}",
-        f"{float(env.get('pooled_median_of_domains_pct', 0)):.5f}",
-        f"{float(env.get('worst_domain_max_scalar_error_pct', 0)):.4f}",
+        median_txt,
+        str(env.get("domains_under_0_5pct_median", "")),
+        f"{float(env.get('worst_domain_max_scalar_error_pct', 0)):.6g}"
+        f"  ({env.get('worst_scalar_domain', '')})",
         f"{(empirical.get('formula_corpus_unique') or {}).get('live_recompute_ok_ratio', 0) * 100:.1f}%",
-        f"{(empirical.get('sota_external_panel') or {}).get('beats_or_meets_count', 0)}/"
-        f"{(empirical.get('sota_external_panel') or {}).get('observable_count', 0)}",
     ]
 
-    fig, ax = plt.subplots(figsize=(9, 4), facecolor="white")
+    fig, ax = plt.subplots(figsize=(10, 4.4), facecolor="white")
     ax.axis("off")
-    ax.set_title("FSOT empirical closure headline (single intrinsic spine)", fontsize=12, fontweight="bold")
+    ax.set_title("Empirical scoreboard — prediction medians", fontsize=12, fontweight="bold")
     for i, (lab, val) in enumerate(zip(labels, values)):
-        ax.text(0.05, 0.82 - i * 0.16, lab, fontsize=11, fontweight="bold", transform=ax.transAxes)
-        ax.text(0.55, 0.82 - i * 0.16, val, fontsize=11, color="#1d4ed8", transform=ax.transAxes)
-    claim = empirical.get("primary_claim") or ""
-    ax.text(0.05, 0.05, claim[:200] + ("…" if len(claim) > 200 else ""), fontsize=8, color="#475569", wrap=True, transform=ax.transAxes)
+        ax.text(0.04, 0.78 - i * 0.14, lab, fontsize=11, fontweight="bold", transform=ax.transAxes)
+        ax.text(0.48, 0.78 - i * 0.14, val, fontsize=11, color="#1d4ed8", transform=ax.transAxes)
+    ax.text(
+        0.04,
+        0.06,
+        "The median is over prediction-domain pooled medians. Ledger B scale-step rows are not in it.",
+        fontsize=8,
+        color="#475569",
+        transform=ax.transAxes,
+    )
     fig.tight_layout()
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=180, facecolor="white")
@@ -238,7 +259,16 @@ def main() -> int:
             str(CONTESTED),
             str(EMPIRICAL),
         ],
-        "contested_pooled_median_pct": (contested.get("panel_summary") or {}).get(
+        "contested_pooled_median_pct": (
+            float(
+                statistics.median(
+                    [float(r.get("fsot_error_pct") or 0) for r in (contested.get("observables") or [])]
+                )
+            )
+            if contested.get("observables")
+            else None
+        ),
+        "contested_panel_summary_pooled_median_pct": (contested.get("panel_summary") or {}).get(
             "pooled_median_error_pct"
         ),
         "empirical_median_of_domains_pct": (empirical.get("benchmark_envelope") or {}).get(
