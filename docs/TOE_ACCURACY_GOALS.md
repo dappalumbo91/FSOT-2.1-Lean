@@ -38,6 +38,21 @@ The atomic mass unit is the electron mass times a ratio built from the same \(6\
 | Biology and medicine | Experimental scatter, often 1–10%, or an absolute length in µm or Å. A 0.5% gate can be tighter than the experiment. | Residual \(\le\) the stated experimental uncertainty. | ZSNS004 is 4,410 ppm on a finely stored micrometre value. The panel's own reference band is 0.45%. The frozen panel is not rebuilt from the live bright branch. |
 | Mathematics | An identity. | Residual 0. | \(g_{00}(25)=-1\), \(m_W^2/m_Z^2=1-\sin^2\theta_W\), and the CKM angles sum to \(\pi\). |
 
+## Where the audit goes next
+
+The CODATA constants table is closed. Every measured row in that file now has a leaf inside its own uncertainty, and the derived rows (vacuum constants, Rydberg family, nuclear magneton, carbon-12 molar mass) follow those leaves. The class census in `data/row_accuracy_summary.json` was stamped before that pass. The CODATA file is the current record for that table.
+
+The catalog still has 434 benchmark domains. Their median percent error is not the bar. The next silo is particle physics, scored in \(\sigma\) against the PDG uncertainty, not against the 0.5% catalog gate. The electron, muon, proton, and neutron rows in `data/pdg_particle_properties_benchmark.json` now use the kilogram leaves, converted to MeV. They sit inside the rounded MeV figures stored there. Still open in that file, on their own bars:
+
+| Row | Stored residual | Why it is next |
+|-----|-----------------|----------------|
+| \(Z\) boson | 0.26% | A mass, not yet a leaf |
+| Tau | 0.14% | No CODATA kilogram leaf yet |
+| Proton radius | 1.8% | A length, scored in fm |
+| CKM magnitudes | about 0.8–1.0% | Angles and elements, in \(\sigma\) |
+
+Cosmology stays in \(\sigma\) against the named catalog. The SH0ES ladder and the frozen \(H_0\) sightline are not retuned. Chemistry stays on half of the last quoted digit. The frozen zebrafish panel is not rebuilt. Biology stays on the experiment's own scatter.
+
 ## What is on the row
 
 Every gated scalar now carries these four fields. They are written on the CODATA material rows themselves. For the rest of the benchmarks they are in `data/row_accuracy_attestation.jsonl`, one line per row, joined by file, name, and property. `python scripts/row_accuracy_fields.py` rebuilds both. The computed numbers and the error percents are not changed.
