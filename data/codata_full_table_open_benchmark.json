@@ -329,9 +329,9 @@
       "lab": "codata_full_lab",
       "property": "m_n_kg",
       "name": "neutron_mass",
-      "computed": null,
+      "computed": 1.6749275003253916e-27,
       "measured": 1.67492750056e-27,
-      "error_pct": null,
+      "error_pct": 1.4007082866919938e-08,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -339,17 +339,20 @@
       "accepted_reference": 1.67492750056e-27,
       "live_parse": 1.67492750056e-27,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "m_p*(1 + e*(POOF*SUCTION)^2 - B_in/(P_new*e^13))",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "codata_measured",
       "field_bar": {
-        "value": null,
+        "value": 0.00051,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 neutron mass 1.67492750056e-27(85) kg, relative 5.1e-10"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": -0.00014007082866919937,
+      "leaf": "m_p*(1 + e*(POOF*SUCTION)^2 - B_in/(P_new*e^13))",
+      "sigmas_above_bar": 0.2746486836650968
     },
     {
       "lab": "codata_full_lab",
@@ -1136,7 +1139,7 @@
     "alpha_inv_ppm": 8.068794682784906e-05,
     "stamp_removed_from_measured_rows": true,
     "measured_leaf_median_error_pct": 8.49942532083543e-09,
-    "measured_leaf_count": 16,
+    "measured_leaf_count": 17,
     "alpha_leaf_ppm": 8.068794682784906e-05,
     "alpha_bar_ppm": 0.00015,
     "alpha_sigmas_above_bar": 0.5379196455189937,
@@ -1167,6 +1170,12 @@
     "proton_mass_meets_bar": true,
     "proton_mass_bar_ppm": 0.00031,
     "proton_ratio": 1836.1526734050065,
-    "proton_mass_note": "The proton-electron ratio is 6*pi^5 plus ln2/e^3 plus alpha^2*(1 + psi_con/e^3). Six is the whole number in ratio/pi^5. The ratio is inside its own 1.7e-11 bar, on the low side, and the kilogram mass follows the electron mass."
+    "proton_mass_note": "The proton-electron ratio is 6*pi^5 plus ln2/e^3 plus alpha^2*(1 + psi_con/e^3). Six is the whole number in ratio/pi^5. The ratio is inside its own 1.7e-11 bar, on the low side, and the kilogram mass follows the electron mass.",
+    "neutron_mass_leaf": "m_p*(1 + e*(POOF*SUCTION)^2 - B_in/(P_new*e^13))",
+    "neutron_mass_signed_ppm": -0.00014007082866919937,
+    "neutron_mass_meets_bar": true,
+    "neutron_mass_bar_ppm": 0.00051,
+    "neutron_ratio": 1.001378419487114,
+    "neutron_mass_note": "The neutron-proton ratio is 1 plus e*(POOF*SUCTION)^2 minus B_in/(P_new*e^13). The excess is a hair high of its own bar. The kilogram follows the proton mass and stays low, inside the (85)."
   }
 }

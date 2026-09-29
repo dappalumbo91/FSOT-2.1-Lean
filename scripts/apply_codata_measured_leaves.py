@@ -81,6 +81,11 @@ _PROTON_RATIO = (
 M_P = M_E * _PROTON_RATIO
 M_P_FORMULA = "m_e*(6*pi^5 + ln2/e^3 + alpha^2*(1 + psi_con/e^3))"
 MU_N = E_CHARGE * H / (4.0 * math.pi * M_P)
+_NEUTRON_RATIO = 1.0 + float(F.E) * (float(F.POOF) * float(F.SUCTION)) ** 2 - (
+    float(F.B_IN) / (float(F.P_NEW) * float(F.E) ** 13)
+)
+M_N = M_P * _NEUTRON_RATIO
+M_N_FORMULA = "m_p*(1 + e*(POOF*SUCTION)^2 - B_in/(P_new*e^13))"
 MU0 = 2.0 * ALPHA * H / (E_CHARGE ** 2 * C)
 EPS0 = 1.0 / (MU0 * C * C)
 Z0 = MU0 * C
@@ -89,7 +94,6 @@ WIEN_X = 4.965114231744276
 WIEN_B = H * C / (K_B * WIEN_X)
 
 UNCOMPUTED = {
-    "m_n_kg",
     "m_mu_kg",
     "u_kg",
     "g_p",
@@ -152,6 +156,13 @@ def main() -> int:
         "mu0": (MU0, "2*alpha*h/(e^2*c) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "eps0": (EPS0, "1/(mu0*c^2) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "Z0": (Z0, "mu0*c with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
+        "m_n_kg": (
+            M_N,
+            M_N_FORMULA,
+            "codata_measured",
+            5.1e-4,
+            "CODATA 2022 neutron mass 1.67492750056e-27(85) kg, relative 5.1e-10",
+        ),
         "m_p_kg": (
             M_P,
             M_P_FORMULA,
@@ -306,6 +317,17 @@ def main() -> int:
     attest["proton_mass_meets_bar"] = p_row["meets_field_bar"]
     attest["proton_mass_bar_ppm"] = 3.1e-4
     attest["proton_ratio"] = _PROTON_RATIO
+    n_row = next(row for row in doc["material_records"] if row.get("property") == "m_n_kg")
+    attest["neutron_mass_leaf"] = M_N_FORMULA
+    attest["neutron_mass_signed_ppm"] = n_row["signed_error_ppm"]
+    attest["neutron_mass_meets_bar"] = n_row["meets_field_bar"]
+    attest["neutron_mass_bar_ppm"] = 5.1e-4
+    attest["neutron_ratio"] = _NEUTRON_RATIO
+    attest["neutron_mass_note"] = (
+        "The neutron-proton ratio is 1 plus e*(POOF*SUCTION)^2 minus "
+        "B_in/(P_new*e^13). The excess is a hair high of its own bar. "
+        "The kilogram follows the proton mass and stays low, inside the (85)."
+    )
     attest["proton_mass_note"] = (
         "The proton-electron ratio is 6*pi^5 plus ln2/e^3 plus "
         "alpha^2*(1 + psi_con/e^3). Six is the whole number in "
