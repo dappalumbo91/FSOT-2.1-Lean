@@ -4,6 +4,12 @@ A theory of everything is precise enough when each silo is inside **that silo's 
 
 Where the work stands today: 185,642 gated scalars, median residual 225 ppm, every scalar inside the 5,000 ppm catalog gate (0.5%), 98.23% inside 500 ppm. That is handbook and engineering precision. It is the stage the catalog has reached. It is not yet the stage of a finished theory of everything.
 
+## How to read the sign
+
+Zero is the measurement. A positive parts-per-million figure means the prediction is larger than that measurement. A negative figure means the prediction is smaller. Both are misses. The sign is the side of the spec, not a grade. Crossing from plus to minus means the last change was bigger than the gap and the value went past the data.
+
+On the fine-structure leaf the formula's own steps are \(e^3\varphi^4\), which is 4,614 ppm high, then one subtraction of \(\psi_{\mathrm{con}}\), which stops **1.45 ppm high**. A further subtraction weighted by \(12/23\) comes out **0.49 ppm low**. That low reading is not where the leaf belongs. The leaf is the subtraction the formula already contains, and it stays 1.45 ppm high. The CODATA tolerance is about 0.00015 ppm. No further term made of the constants already in the leaf lands inside that tolerance without going past the measurement. This is the stopping place for this constant.
+
 ## The five bars
 
 | Silo | What the field already uses | Bar | Where we are |

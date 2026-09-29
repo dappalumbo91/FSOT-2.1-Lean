@@ -70,8 +70,10 @@ def _set_leaf(row: dict, computed: float, formula: str, kind: str, bar_ppm: floa
     elif row["property"] == "b_Wien" and computed < 0.1:
         computed = computed * 1e3
     ppm = _ppm(computed, measured)
+    signed = (computed - measured) / abs(measured) * 1_000_000.0
     row["computed"] = computed
     row["error_pct"] = ppm / 10_000.0
+    row["signed_error_ppm"] = signed
     row["math"] = formula
     row["leaf"] = formula
     row["accuracy_class"] = kind
