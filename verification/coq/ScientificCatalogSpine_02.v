@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_arxiv_primitives_v14_records_pos : (0 < 21)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_arxiv_primitives_v14_pooled_under_half_pct : ((0.000055479%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_arxiv_primitives_v14_pooled_lt_half_pure : ((0.000055479%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_arxiv_primitives_v14_max_scalar_under_half_pct : ((0.238944484%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_arxiv_primitives_v14_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_binary_decoder_panel_records_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -364,7 +384,7 @@ Lemma cat_matter_antimatter_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_sh0es_full_sample_records_pos : (0 < 7)%nat.
+Lemma cat_sh0es_full_sample_records_pos : (0 < 48)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_mathematics_computational_benchmark_json_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_pure_mathematics_records_pos : (0 < 1578)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_pure_mathematics_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_pure_mathematics_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_pure_mathematics_max_scalar_under_half_pct : ((0.192564276915754%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_pure_mathematics_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

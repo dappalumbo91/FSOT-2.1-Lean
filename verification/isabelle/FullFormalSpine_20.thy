@@ -3,10 +3,22 @@ theory FullFormalSpine_20
 imports Complex_Main
 begin
 
-lemma lab_biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+lemma lab_quantum_raw_S_positive: "0 < (2.2738149448128526 :: real)"
   by eval
 
-lemma lab_cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+lemma lab_particle_raw_S_positive: "0 < (1.751037437187807 :: real)"
+  by eval
+
+lemma lab_nuclear_raw_S_positive: "0 < (2.192436781833356 :: real)"
+  by eval
+
+lemma lab_energy_raw_S_positive: "0 < (1.872760423200424 :: real)"
+  by eval
+
+lemma lab_molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
+  by eval
+
+lemma lab_material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
   by eval
 
 lemma lab_consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
@@ -69,10 +81,16 @@ lemma cross_proof_full_formal_obligation_count_pos: "0 < (1241 :: nat)"
 lemma cross_proof_full_formal_provable_count_pos: "0 < (1241 :: nat)"
   by eval
 
-lemma scalar_engine_structure_theorem_count_pos: "0 < (47 :: nat)"
+lemma omori_c_days_pos: "0 < (0.6180339887498948 :: real)"
   by eval
 
-lemma scalar_engine_structure_theorem_count_eq: "(47 :: nat) = (47 :: nat)"
+lemma scalar_engine_structure_theorem_count_pos: "0 < (57 :: nat)"
+  by eval
+
+lemma scalar_engine_structure_theorem_count_eq: "(57 :: nat) = (57 :: nat)"
+  by eval
+
+lemma omori_p_eq_one: "(1.0 :: real) = (1.0 :: real)"
   by eval
 
 end

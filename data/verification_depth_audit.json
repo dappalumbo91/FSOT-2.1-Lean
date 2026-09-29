@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:51:32.054837+00:00",
+  "generated_at": "2026-09-29T22:06:04.080583+00:00",
   "version": "1.1",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -23,7 +23,7 @@
     "full_mathlib_rederivation_of_all_lemmas": true,
     "mathlib_rederivation_verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
     "engine_core_mathlib_closed": true,
-    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5230 vs 2587 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
+    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5366 vs 2594 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "undeniable_criteria": {
     "cross_ok": true,
@@ -37,33 +37,33 @@
     "label_B": true,
     "residual_closed": true,
     "five_prover_quad": true,
-    "note": "undeniable_toe_claim = Label B + residual closed + multiprover residual gates + residual export debt 0. Does NOT require formal_ob == raw lemma string count (2587 vs 5230).",
+    "note": "undeniable_toe_claim = Label B + residual closed + multiprover residual gates + residual export debt 0. Does NOT require formal_ob == raw lemma string count (2594 vs 5366).",
     "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md"
   },
   "prover_coverage": {
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2587,
-      "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 5230,
-      "export_fraction_pct": 49.46,
+      "full_formal_obligations": 2594,
+      "transcendental_lemmas": 76,
+      "lean_theorem_count_estimate": 5366,
+      "export_fraction_pct": 48.34,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
       "status": "passed",
-      "chunks_passed": 48,
+      "chunks_passed": 49,
       "coverage": "numeric literal replay of exported obligations",
       "axiom_debt": "coq_native_isabelle_native_intervals"
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2587,
+      "provable_obligations": 2593,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 2116,
+      "obligation_count": 2130,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -72,11 +72,11 @@
       "assume_debt": []
     },
     "esp32_qemu": {
-      "status": "passed",
+      "status": "skipped",
       "scope": "single boot scalar UART parity (deferred expansion)"
     },
     "living_fsot_qemu_body": {
-      "status": "passed",
+      "status": "pending",
       "scope": "fsot-trinary-body UEFI kernel + mind ABI + habitat closed loop",
       "report": "data\\living_fsot_hardware_verification_report.json"
     }
@@ -122,14 +122,14 @@
       "severity": "medium",
       "description": "Living FSOT trinary body + mind gym QEMU/hardware loop",
       "remedy": "See data/living_fsot_hardware_verification_report.json; build fsot-trinary-body + run habitat",
-      "closed": true
+      "closed": false
     },
     {
       "id": "esp32_scalar_only",
       "severity": "info",
       "description": "ESP32 RF observer verifies one boot scalar \u2014 distinct from Living FSOT QEMU body",
       "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification",
-      "closed": true,
+      "closed": false,
       "closure_note": "Superseded by living_fsot_hardware when overall_ok passes (see runtime_verification_scope_audit.json)"
     },
     {
@@ -142,9 +142,9 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "0 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
-      "closed": false,
+      "closed": true,
       "monitored": true
     }
   ],
@@ -295,12 +295,19 @@
   },
   "open_gaps": [
     {
-      "id": "tier_scalar_aspiration",
+      "id": "living_fsot_hardware",
+      "severity": "medium",
+      "description": "Living FSOT trinary body + mind gym QEMU/hardware loop",
+      "remedy": "See data/living_fsot_hardware_verification_report.json; build fsot-trinary-body + run habitat",
+      "closed": false
+    },
+    {
+      "id": "esp32_scalar_only",
       "severity": "info",
-      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
-      "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+      "description": "ESP32 RF observer verifies one boot scalar \u2014 distinct from Living FSOT QEMU body",
+      "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification",
       "closed": false,
-      "monitored": true
+      "closure_note": "Superseded by living_fsot_hardware when overall_ok passes (see runtime_verification_scope_audit.json)"
     }
   ]
 }

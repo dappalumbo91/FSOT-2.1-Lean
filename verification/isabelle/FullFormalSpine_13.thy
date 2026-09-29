@@ -177,7 +177,7 @@ lemma star_trek_transporter_psi_portal_doorway_under_half_pct: "(0.009663204175 
 lemma star_trek_transporter_psi_traverse_under_half_pct: "(0.0004641395 :: real) < (0.5 :: real)"
   by eval
 
-lemma star_trek_transporter_median_error_under_half_pct: "(0.012464 :: real) < (0.5 :: real)"
+lemma star_trek_transporter_median_error_under_half_pct: "(0.077084 :: real) < (0.5 :: real)"
   by eval
 
 lemma star_trek_transporter_info_preservation_proxy_pos: "0 < (0.981227203621 :: real)"
@@ -201,7 +201,7 @@ lemma star_trek_transporter_stabilization_margin_pos: "0 < (1.722776467449 :: re
 lemma star_trek_transporter_observable_count_pos: "0 < (1575 :: nat)"
   by eval
 
-lemma star_trek_transporter_median_error_under_five_pct: "(0.012464 :: real) < (5.0 :: real)"
+lemma star_trek_transporter_median_error_under_five_pct: "(0.077084 :: real) < (5.0 :: real)"
   by eval
 
 lemma statistical_mechanics_public_panel_observable_count_pos: "0 < (24 :: nat)"

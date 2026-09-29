@@ -1,7 +1,31 @@
-(* FSOT Tier 83 — transcendental bounds chunk 3/3 (generated). *)
+(* FSOT Tier 83 — transcendental bounds chunk 3/4 (generated). *)
 theory TranscendentalBounds_02
 imports TranscendentalBoundsCert
 begin
+
+lemma exp_02903_lt_1338: "exp (0.2903 :: real) < (1.338 :: real)"
+  by (rule certified_exp_02903_lt_1338)
+
+lemma exp_consciousness_phase_lt_132: "exp (0.2903 :: real) < (1.338 :: real)"
+  by (rule certified_exp_consciousness_phase_lt_132)
+
+lemma exp_1434_gt_4167: "(4.167 :: real) < exp (1.434 :: real)"
+  by (rule certified_exp_1434_gt_4167)
+
+lemma exp_neg_1434_lt_24_div_25: "exp (-1.434) < (6 :: real) / 25"
+  by (rule certified_exp_neg_1434_lt_24_div_25)
+
+lemma exp_162_gt_five: "(5 :: real) < exp (1.62 :: real)"
+  by (rule certified_exp_162_gt_five)
+
+lemma exp_115_gt_25_div_8: "(25 :: real) / 8 < exp (1.15 :: real)"
+  by (rule certified_exp_115_gt_25_div_8)
+
+lemma exp_103_gt_25_div_9: "(25 :: real) / 9 < exp (1.03 :: real)"
+  by (rule certified_exp_103_gt_25_div_9)
+
+lemma exp_040_lt_25_div_24: "exp (0.040 :: real) < (25 :: real) / 24"
+  by (rule certified_exp_040_lt_25_div_24)
 
 lemma exp_neg_040_gt_24_div_25: "(24 :: real) / 25 < exp (-0.040)"
   by (rule certified_exp_neg_040_gt_24_div_25)
@@ -53,8 +77,5 @@ lemma exp_1351_lt_4: "exp (1.351 :: real) < (4 :: real)"
 
 lemma exp_005_lt_115: "exp (0.05 :: real) < (1.15 :: real)"
   by (rule certified_exp_005_lt_115)
-
-lemma exp_1253_gt_34: "(3.4 :: real) < exp (1.253 :: real)"
-  by (rule certified_exp_1253_gt_34)
 
 end

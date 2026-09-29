@@ -3,24 +3,6 @@ theory FullFormalSpine_17
 imports Complex_Main
 begin
 
-lemma sqrt2_gt_14142135623: "(1.4142135623 :: real) < (1.4142135623730951 :: real)"
-  by eval
-
-lemma psi_con_gt_6321205588: "(0.6321205588 :: real) < (0.6321205588287557 :: real)"
-  by eval
-
-lemma eta_eff_gt_466942206: "(0.466942206 :: real) < (0.46694220658433505 :: real)"
-  by eval
-
-lemma acoustic_bleed_gt_10455: "(1.0455 :: real) < (1.046973630587551 :: real)"
-  by eval
-
-lemma acoustic_inflow_gt_16639: "(1.6639 :: real) < (1.6668538450045731 :: real)"
-  by eval
-
-lemma k_gt_0420: "(0.42 :: real) < (0.420222080893624 :: real)"
-  by eval
-
 lemma exp_neg_one_gt_367: "(0.367 :: real) < (0.36787944117144233 :: real)"
   by eval
 
@@ -48,7 +30,7 @@ lemma exp_04813_gt_16181: "(1.6181 :: real) < (1.618176665090559 :: real)"
 lemma exp_185_gt_626: "(6.26 :: real) < (6.359819522601832 :: real)"
   by eval
 
-lemma coherence_correction_gt_one: "(1.0 :: real) < (1.0018019454848168 :: real)"
+lemma atomic_look_gt_07: "(0.7 :: real) < (0.8652559794322651 :: real)"
   by eval
 
 lemma exp_077_gt_184: "(1.84 :: real) < (2.159766253784915 :: real)"
@@ -70,6 +52,9 @@ lemma exp_six_gt_400: "(400.0 :: real) < (403.4287934927351 :: real)"
   by eval
 
 lemma exp_28_gt_410: "(410.0 :: real) < (1446257064291.475098 :: real)"
+  by eval
+
+lemma exp_28_gt_1000: "(1000.0 :: real) < (1446257064291.475098 :: real)"
   by eval
 
 lemma e_gt_27182818283: "(2.7182818283 :: real) < (2.718281828459045 :: real)"
@@ -132,10 +117,31 @@ lemma exp_1146_gt_31416: "(3.1416 :: real) < (3.145585369940555 :: real)"
 lemma exp_11453_gt_pi23847: "(3.141592653589793 :: real) < (3.1433842306702218 :: real)"
   by eval
 
+lemma exp_11448_gt_pi23847: "(3.141592653589793 :: real) < (3.1418129314124363 :: real)"
+  by eval
+
 lemma eta_log_phi_gt_02244: "(0.2244 :: real) < (0.22469811142780627 :: real)"
   by eval
 
 lemma exp_1434_gt_4167: "(4.167 :: real) < (4.195447462901874 :: real)"
+  by eval
+
+lemma exp_162_gt_five: "(5.0 :: real) < (5.053090316563868 :: real)"
+  by eval
+
+lemma log_ratio_D5_gt: "(-1.62 :: real) < (5.0 :: real)"
+  by eval
+
+lemma log_ratio_D8_gt: "(-1.15 :: real) < (8.0 :: real)"
+  by eval
+
+lemma perceived_adjust_lo_D8: "(0.65 :: real) < (8.0 :: real)"
+  by eval
+
+lemma log_ratio_D9_gt: "(-1.03 :: real) < (9.0 :: real)"
+  by eval
+
+lemma perceived_adjust_lo_D9: "(0.68 :: real) < (9.0 :: real)"
   by eval
 
 lemma perceived_adjust_lo_D11: "(0.752 :: real) < (11.0 :: real)"
@@ -183,6 +189,15 @@ lemma pi_gt_314159265358979323846: "(3.14159265358979323846 :: real) < (3.141592
 lemma pi_lt_314159265358979323847: "(3.14159265358979323846 :: real) < (3.14159265358979323847 :: real)"
   by eval
 
+lemma pi_inv4_pos: "(0 :: real) < (0.010265982254684336 :: real)"
+  by eval
+
+lemma pi_inv4_lt_0103: "(0.010265982254684336 :: real) < (0.0103 :: real)"
+  by eval
+
+lemma pi_inv4_gt_01: "(0.01 :: real) < (0.010265982254684336 :: real)"
+  by eval
+
 lemma pi_div_e_lt_pi_div_two: "(1.1557273497909217 :: real) < (1.5707963267948966 :: real)"
   by eval
 
@@ -211,6 +226,12 @@ lemma e_pi_lt_8539736: "(8.539734222673568 :: real) < (8.539736 :: real)"
   by eval
 
 lemma exp_neg_1434_lt_24_div_25: "(0.23835359847607954 :: real) < (0.24 :: real)"
+  by eval
+
+lemma exp_115_gt_25_div_8: "(3.125 :: real) < (3.1581929096897676 :: real)"
+  by eval
+
+lemma exp_103_gt_25_div_9: "(2.7777777777777777 :: real) < (2.801065834699079 :: real)"
   by eval
 
 lemma exp_040_lt_25_div_24: "(1.0408107741923882 :: real) < (1.0416666666666667 :: real)"
@@ -280,27 +301,6 @@ lemma poof_factor_lt_one: "(0.1534822148944508 :: real) < (1.0 :: real)"
   by eval
 
 lemma log_31415_gt_1144: "(1.144 :: real) < (3.1415 :: real)"
-  by eval
-
-lemma log_phi_lt_0482: "(0.48121182505960347 :: real) < (0.482 :: real)"
-  by eval
-
-lemma log_016_gt_m185: "(-1.85 :: real) < (0.16 :: real)"
-  by eval
-
-lemma poof_factor_lt_point_one_six: "(0.1534822148944508 :: real) < (0.16 :: real)"
-  by eval
-
-lemma alpha_nonneg: "(0 :: real) <= (0.0008082937 :: real)"
-  by eval
-
-lemma coherence_efficiency_lt_ten: "(0.9577022026205612 :: real) < (10.0 :: real)"
-  by eval
-
-lemma cosmological_cos_arg_lo: "(3.4 :: real) < (3.4953374011050684 :: real)"
-  by eval
-
-lemma cosmological_cos_arg_hi: "(3.4953374011050684 :: real) < (3.6 :: real)"
   by eval
 
 end

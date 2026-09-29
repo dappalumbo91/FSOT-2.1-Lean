@@ -1,9 +1,29 @@
-(* FSOT Tier 83 — transcendental bounds chunk 2/3 (generated). *)
+(* FSOT Tier 83 — transcendental bounds chunk 2/4 (generated). *)
 From Stdlib Require Import Reals.
 Require Import TranscendentalBoundsBase.
 Require Import TranscendentalBoundsCert.
 From Stdlib Require Import Psatz.
 Local Open Scope R_scope.
+
+Lemma e_lt_27182818286 : exp 1 < (2.7182818286%R).
+Proof.
+exact certified_exp_one_hi.
+Qed.
+
+Lemma pi_gt_314159265358979323846 : (3.14159265358979323846%R) < PI.
+Proof.
+exact certified_pi_lo.
+Qed.
+
+Lemma pi_lt_314159265358979323847 : PI < (3.14159265358979323847%R).
+Proof.
+exact certified_pi_hi.
+Qed.
+
+Lemma e_pi_gt_27182818283_mul_pi : (2.7182818283%R) * (3.14159265358979323846%R) < exp 1 * PI.
+Proof.
+exact certified_e_pi_gt_27182818283_mul_pi.
+Qed.
 
 Lemma e_pi_lt_27182818286_mul_pi : exp 1 * PI < (2.7182818286%R) * (3.14159265358979323847%R).
 Proof.
@@ -105,27 +125,7 @@ Proof.
 exact certified_exp_11453_gt_pi23847.
 Qed.
 
-Lemma exp_02903_lt_1338 : exp (0.2903%R) < (1.338%R).
+Lemma exp_11448_gt_pi23847 : (3.14159265358979323847%R) < exp (1.1448%R).
 Proof.
-exact certified_exp_02903_lt_1338.
-Qed.
-
-Lemma exp_consciousness_phase_lt_132 : exp (0.2903%R) < (1.338%R).
-Proof.
-exact certified_exp_consciousness_phase_lt_132.
-Qed.
-
-Lemma exp_1434_gt_4167 : (4.167%R) < exp (1.434%R).
-Proof.
-exact certified_exp_1434_gt_4167.
-Qed.
-
-Lemma exp_neg_1434_lt_24_div_25 : exp (-1.434) < (6%R) / 25.
-Proof.
-exact certified_exp_neg_1434_lt_24_div_25.
-Qed.
-
-Lemma exp_040_lt_25_div_24 : exp (0.040%R) < (25%R) / 24.
-Proof.
-exact certified_exp_040_lt_25_div_24.
+exact certified_exp_11448_gt_pi23847.
 Qed.

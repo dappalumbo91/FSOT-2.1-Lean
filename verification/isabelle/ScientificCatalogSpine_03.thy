@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_03
 imports Complex_Main
 begin
 
+lemma cat_pure_mathematics_records_pos: "0 < (1578 :: nat)"
+  by eval
+
+lemma cat_pure_mathematics_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pure_mathematics_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pure_mathematics_max_scalar_under_half_pct: "(0.192564276915754 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pure_mathematics_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_unified_db_crosswalk_spine_records_pos: "0 < (43 :: nat)"
   by eval
 
@@ -138,7 +153,7 @@ lemma cat_desi_wa_constraint_max_scalar_under_half_pct: "(0.15 :: real) < (0.5 :
 lemma cat_desi_wa_constraint_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_frb_orifice_outgassing_records_pos: "0 < (44 :: nat)"
+lemma cat_frb_orifice_outgassing_records_pos: "0 < (3396 :: nat)"
   by eval
 
 lemma cat_frb_orifice_outgassing_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -273,21 +288,6 @@ lemma cat_scientific_expansion_depth_spine_max_scalar_under_half_pct: "(0.095551
 lemma cat_scientific_expansion_depth_spine_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_star_trek_transporter_live_panel_records_pos: "0 < (1575 :: nat)"
-  by eval
-
-lemma cat_star_trek_transporter_live_panel_pooled_under_half_pct: "(0.012464 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_star_trek_transporter_live_panel_pooled_lt_half_pure: "(0.012464 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_star_trek_transporter_live_panel_max_scalar_under_half_pct: "(0.095551 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_star_trek_transporter_live_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_the_well_outcomes_verification_panel_records_pos: "0 < (246 :: nat)"
   by eval
 
@@ -348,19 +348,19 @@ lemma cat_time_domain_crosswalk_max_scalar_under_half_pct: "(0.074365 :: real) <
 lemma cat_time_domain_crosswalk_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_codata_full_table_open_records_pos: "0 < (38 :: nat)"
+lemma cat_fsot_physics_all_solved_records_pos: "0 < (287 :: nat)"
   by eval
 
-lemma cat_codata_full_table_open_pooled_under_half_pct: "(0.073582 :: real) < (0.5 :: real)"
+lemma cat_fsot_physics_all_solved_pooled_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_codata_full_table_open_pooled_lt_half_pure: "(0.073582 :: real) < (0.5 :: real)"
+lemma cat_fsot_physics_all_solved_pooled_lt_half_pure: "(0.009504 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_codata_full_table_open_max_scalar_under_half_pct: "(0.073582 :: real) < (0.5 :: real)"
+lemma cat_fsot_physics_all_solved_max_scalar_under_half_pct: "(0.073582 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_codata_full_table_open_green_flag: "(1 :: nat) = (1 :: nat)"
+lemma cat_fsot_physics_all_solved_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

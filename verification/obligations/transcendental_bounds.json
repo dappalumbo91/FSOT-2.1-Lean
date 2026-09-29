@@ -1,10 +1,10 @@
 {
   "tier": "83_transcendental_bounds",
-  "obligation_count": 68,
-  "python_decimal_verified_count": 68,
+  "obligation_count": 76,
+  "python_decimal_verified_count": 76,
   "by_proof_template": {
+    "certified_point": 50,
     "exp_neg_one": 2,
-    "certified_point": 43,
     "exp_add_one": 1,
     "e_minus_one": 1,
     "div_pi_e": 3,
@@ -13,16 +13,49 @@
     "mul_e_pi": 7,
     "pi_fraction": 2,
     "icc_membership": 1,
-    "exp_direct": 4
+    "exp_direct": 5
   },
   "by_strategy": {
+    "certified_point": 55,
     "certified_base": 9,
-    "certified_point": 47,
     "exp_ineq1": 1,
     "lra_chain": 10,
     "chain_interval": 1
   },
   "obligations": [
+    {
+      "id": "pi_inv4_pos",
+      "lean_type": "(0 : \u211d) < pi_inv4",
+      "coq_statement": "(0%R) < (1 / (PI * PI * PI * PI))",
+      "isabelle_statement": "(0 :: real) < (1 / (pi * pi * pi * pi))",
+      "python_decimal_verified": true,
+      "source_file": "Bounds.lean",
+      "source_tier": "transcendental_bounds",
+      "proof_template": "certified_point",
+      "tier83_strategy": "certified_point"
+    },
+    {
+      "id": "pi_inv4_lt_0103",
+      "lean_type": "pi_inv4 < (0.0103 : \u211d)",
+      "coq_statement": "(1 / (PI * PI * PI * PI)) < (0.0103%R)",
+      "isabelle_statement": "(1 / (pi * pi * pi * pi)) < (0.0103 :: real)",
+      "python_decimal_verified": true,
+      "source_file": "Bounds.lean",
+      "source_tier": "transcendental_bounds",
+      "proof_template": "certified_point",
+      "tier83_strategy": "certified_point"
+    },
+    {
+      "id": "pi_inv4_gt_01",
+      "lean_type": "(0.01 : \u211d) < pi_inv4",
+      "coq_statement": "(0.01%R) < (1 / (PI * PI * PI * PI))",
+      "isabelle_statement": "(0.01 :: real) < (1 / (pi * pi * pi * pi))",
+      "python_decimal_verified": true,
+      "source_file": "Bounds.lean",
+      "source_tier": "transcendental_bounds",
+      "proof_template": "certified_point",
+      "tier83_strategy": "certified_point"
+    },
     {
       "id": "exp_neg_one_gt_367",
       "lean_type": "(0.367 : \u211d) < exp (-1)",
@@ -226,6 +259,17 @@
       "lean_type": "(410 : \u211d) < exp 28",
       "coq_statement": "(410%R) < exp (28%R)",
       "isabelle_statement": "(410 :: real) < exp (28 :: real)",
+      "python_decimal_verified": true,
+      "source_file": "Bounds.lean",
+      "source_tier": "transcendental_bounds",
+      "proof_template": "certified_point",
+      "tier83_strategy": "certified_point"
+    },
+    {
+      "id": "exp_28_gt_1000",
+      "lean_type": "(1000 : \u211d) < exp 28",
+      "coq_statement": "(1000%R) < exp (28%R)",
+      "isabelle_statement": "(1000 :: real) < exp (28 :: real)",
       "python_decimal_verified": true,
       "source_file": "Bounds.lean",
       "source_tier": "transcendental_bounds",
@@ -519,6 +563,17 @@
       "tier83_strategy": "certified_point"
     },
     {
+      "id": "exp_11448_gt_pi23847",
+      "lean_type": "(3.14159265358979323847 : \u211d) < exp (1.1448 : \u211d)",
+      "coq_statement": "(3.14159265358979323847%R) < exp (1.1448%R)",
+      "isabelle_statement": "(3.14159265358979323847 :: real) < exp (1.1448 :: real)",
+      "python_decimal_verified": true,
+      "source_file": "Bounds.lean",
+      "source_tier": "transcendental_bounds",
+      "proof_template": "exp_direct",
+      "tier83_strategy": "certified_point"
+    },
+    {
       "id": "exp_02903_lt_1338",
       "lean_type": "exp (0.2903 : \u211d) < (1.338 : \u211d)",
       "coq_statement": "exp (0.2903%R) < (1.338%R)",
@@ -556,6 +611,39 @@
       "lean_type": "exp (-1.434) < (6 : \u211d) / 25",
       "coq_statement": "exp (-1.434) < (6%R) / 25",
       "isabelle_statement": "exp (-1.434) < (6 :: real) / 25",
+      "python_decimal_verified": true,
+      "source_file": "Bounds.lean",
+      "source_tier": "transcendental_bounds",
+      "proof_template": "certified_point",
+      "tier83_strategy": "certified_point"
+    },
+    {
+      "id": "exp_162_gt_five",
+      "lean_type": "(5 : \u211d) < exp 1.62",
+      "coq_statement": "(5%R) < exp (1.62%R)",
+      "isabelle_statement": "(5 :: real) < exp (1.62 :: real)",
+      "python_decimal_verified": true,
+      "source_file": "Bounds.lean",
+      "source_tier": "transcendental_bounds",
+      "proof_template": "certified_point",
+      "tier83_strategy": "certified_point"
+    },
+    {
+      "id": "exp_115_gt_25_div_8",
+      "lean_type": "(25 : \u211d) / 8 < exp 1.15",
+      "coq_statement": "(25%R) / 8 < exp (1.15%R)",
+      "isabelle_statement": "(25 :: real) / 8 < exp (1.15 :: real)",
+      "python_decimal_verified": true,
+      "source_file": "Bounds.lean",
+      "source_tier": "transcendental_bounds",
+      "proof_template": "certified_point",
+      "tier83_strategy": "certified_point"
+    },
+    {
+      "id": "exp_103_gt_25_div_9",
+      "lean_type": "(25 : \u211d) / 9 < exp 1.03",
+      "coq_statement": "(25%R) / 9 < exp (1.03%R)",
+      "isabelle_statement": "(25 :: real) / 9 < exp (1.03 :: real)",
       "python_decimal_verified": true,
       "source_file": "Bounds.lean",
       "source_tier": "transcendental_bounds",

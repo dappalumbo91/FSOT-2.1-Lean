@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-09T16:26:42.573946+00:00",
+  "generated_at": "2026-09-29T22:05:29.604961+00:00",
   "tier": "83_transcendental_bounds_gap",
   "bounds_lean_file": "FSOT\\Formal\\Bounds.lean",
   "lean_pi_e_interval_proved": true,
   "lean_proof_chain": "exp_one_lt_d9 + pi_gt_d20 + pi_lt_d20 (Mathlib)",
   "coq_float_export_deferred_count": 2,
-  "exported_float_obligations_from_bounds": 280,
+  "exported_float_obligations_from_bounds": 299,
   "excluded_pi_e_interval_lemmas": [
     {
       "id": "e_lt_27182818286",
@@ -26,6 +26,9 @@
   ],
   "excluded_pi_e_interval_count": 2,
   "transcendental_lemma_inventory": [
+    "pi_inv4_pos",
+    "pi_inv4_lt_0103",
+    "pi_inv4_gt_01",
     "exp_neg_one_gt_367",
     "exp_neg_one_lt_368",
     "exp_neg_0298_lt_08",
@@ -45,6 +48,7 @@
     "exp_three_gt_twenty",
     "exp_six_gt_400",
     "exp_28_gt_410",
+    "exp_28_gt_1000",
     "pi_div_e_lt_pi_div_two",
     "e_gt_27182818283",
     "e_lt_27182818286",
@@ -71,10 +75,14 @@
     "exp_01534_lt_1168",
     "exp_1146_gt_31416",
     "exp_11453_gt_pi23847",
+    "exp_11448_gt_pi23847",
     "exp_02903_lt_1338",
     "exp_consciousness_phase_lt_132",
     "exp_1434_gt_4167",
     "exp_neg_1434_lt_24_div_25",
+    "exp_162_gt_five",
+    "exp_115_gt_25_div_8",
+    "exp_103_gt_25_div_9",
     "exp_040_lt_25_div_24",
     "exp_neg_040_gt_24_div_25",
     "exp_0822_gt_25_div_11",
@@ -95,11 +103,11 @@
     "exp_005_lt_115",
     "exp_1253_gt_34"
   ],
-  "transcendental_lemma_count": 68,
+  "transcendental_lemma_count": 76,
   "tier_83_status": "coq_and_isabelle_artifacts_generated",
   "tier_83_obligations_json": "verification/obligations/transcendental_bounds.json",
   "multiprover_status": {
-    "inventory_lemmas": 68,
+    "inventory_lemmas": 76,
     "exported_to_transcendental_bounds_json": true,
     "note": "The 68-name inventory is the full exp/pi/e lemma list in Bounds.lean \u2014 not an open to-do list. All inventory IDs are exported in verification/obligations/transcendental_bounds.json and included in Rust/Coq/Isabelle transcendental chunks + python_decimal checks."
   },

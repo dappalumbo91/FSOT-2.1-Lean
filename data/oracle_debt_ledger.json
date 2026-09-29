@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-09T16:27:48.670783+00:00",
+  "generated_at": "2026-09-29T22:06:04.356256+00:00",
   "version": "1.0",
   "summary": {
-    "obligation_total": 2587,
-    "atomic_triangulated": 2024,
+    "obligation_total": 2594,
+    "atomic_triangulated": 2030,
     "oracle_replay": 0,
-    "proof_depth_oracle_tagged": 49,
-    "structural_index": 563,
+    "proof_depth_oracle_tagged": 55,
+    "structural_index": 564,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 78.24,
+    "atomic_fraction_pct": 78.26,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -25,12 +25,12 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "by_triangulation_class": {
-    "atomic_triangulated": 2024,
-    "structural_index": 563
+    "atomic_triangulated": 2030,
+    "structural_index": 564
   },
   "by_proof_class": {
-    "(none)": 2538,
-    "decimal_eval_chain": 33,
+    "(none)": 2539,
+    "decimal_eval_chain": 39,
     "certified_interval": 2,
     "witness_instantiation": 8,
     "grid_decimal_eval_chain": 6
@@ -177,6 +177,16 @@
       "lean_module": "Bounds"
     },
     {
+      "id": "exp_11448_gt_pi23847",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(3.14159265358979323847 : \u211d) < exp (1.1448 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
       "id": "pi_gt_314159265358979323846",
       "kind": "gt_lit",
       "proof_class": "certified_interval",
@@ -194,6 +204,36 @@
       "grid_step": null,
       "grid_margin": null,
       "statement": "3.14159265358979323846 < 3.14159265358979323847",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "pi_inv4_pos",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(0 : \u211d) < pi_inv4",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "pi_inv4_lt_0103",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "pi_inv4 < (0.0103 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "pi_inv4_gt_01",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(0.01 : \u211d) < pi_inv4",
       "lean_module": "Bounds"
     },
     {
@@ -294,6 +334,26 @@
       "grid_step": null,
       "grid_margin": null,
       "statement": "exp (-1.434) < (6 : \u211d) / 25",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_115_gt_25_div_8",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(25 : \u211d) / 8 < exp 1.15",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_103_gt_25_div_9",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(25 : \u211d) / 9 < exp 1.03",
       "lean_module": "Bounds"
     },
     {

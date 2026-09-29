@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-09-09T16:26:41.753756+00:00",
+  "generated_at": "2026-09-29T22:05:29.058185+00:00",
   "tier": "82_cross_refinement_lean_isabelle",
-  "obligation_count_total": 2587,
-  "obligation_count_provable": 2587,
-  "obligation_count_atomic_provable": 2024,
-  "obligation_count_bundle_conj": 563,
+  "obligation_count_total": 2594,
+  "obligation_count_provable": 2593,
+  "obligation_count_atomic_provable": 2030,
+  "obligation_count_bundle_conj": 564,
   "obligation_count_bundle_provable": 563,
-  "obligation_count_structural_bundle_excluded": 0,
+  "obligation_count_structural_bundle_excluded": 1,
   "obligation_count_margin_violations": 0,
   "isabelle_chunks_found": 22,
-  "isabelle_lemmas_indexed": 2024,
+  "isabelle_lemmas_indexed": 2030,
   "triangulation": {
-    "atomic_triangulated_ok": 2024,
+    "atomic_triangulated_ok": 2030,
     "atomic_triangulated_fail": 0,
-    "bundle_conj_triangulated_ok": 563,
+    "bundle_conj_triangulated_ok": 564,
     "bundle_conj_triangulated_fail": 0,
     "pct_atomic_triangulated": 100.0
   },
@@ -25,13 +25,13 @@
       "max_margin": "1554101"
     },
     "r_lt_lit_pure": {
-      "count": 324,
+      "count": 330,
       "min_margin": "0.000192875570426",
-      "median_margin": "0.486658",
+      "median_margin": "0.486997",
       "max_margin": "19.102"
     },
     "lt_lit": {
-      "count": 231,
+      "count": 234,
       "min_margin": "0E-15",
       "median_margin": "0.199999999999999973057896320053298",
       "max_margin": "3269016.3724721107"
@@ -39,13 +39,13 @@
     "lt_half": {
       "count": 239,
       "min_margin": "0.007472",
-      "median_margin": "0.482163937115593848",
+      "median_margin": "0.481997",
       "max_margin": "0.5"
     },
     "gt_lit": {
-      "count": 135,
+      "count": 136,
       "min_margin": "0E-15",
-      "median_margin": "0.0482032061315143",
+      "median_margin": "0.0352943611198906",
       "max_margin": "1446257063881.475"
     },
     "nat_le_sym": {
@@ -61,9 +61,9 @@
       "max_margin": "1.0"
     },
     "pos": {
-      "count": 104,
+      "count": 100,
       "min_margin": "5.5E-19",
-      "median_margin": "0.7961830900509372",
+      "median_margin": "0.7287135707250552",
       "max_margin": "58.493466"
     },
     "nat_gt_lit": {
@@ -103,9 +103,9 @@
       "max_margin": "176"
     },
     "r_le_sym": {
-      "count": 11,
+      "count": 13,
       "min_margin": "0E-12",
-      "median_margin": "0.28681121455426756",
+      "median_margin": "0.2511450936457113",
       "max_margin": "2.85069611304461995"
     },
     "r_interval_le_conj": {
@@ -127,8 +127,15 @@
       "max_margin": "5.37899567E-8"
     }
   },
-  "lt_half_pooled_median_margin_to_bound": "0.482163937115593848",
-  "structural_bundle_excluded": [],
+  "lt_half_pooled_median_margin_to_bound": "0.481997",
+  "structural_bundle_excluded": [
+    {
+      "id": "dark_core_unobserved",
+      "module": "ScalarEngineStructure",
+      "unparsed_conjunct_count": 6,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
+    }
+  ],
   "margin_violations_excluded": [],
   "issue_counts": {},
   "failures_sample": [],

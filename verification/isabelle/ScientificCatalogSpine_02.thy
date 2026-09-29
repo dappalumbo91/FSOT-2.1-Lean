@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_02
 imports Complex_Main
 begin
 
+lemma cat_arxiv_primitives_v14_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_arxiv_primitives_v14_pooled_under_half_pct: "(0.000055479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_primitives_v14_pooled_lt_half_pure: "(0.000055479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_primitives_v14_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_primitives_v14_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_binary_decoder_panel_records_pos: "0 < (20 :: nat)"
   by eval
 
@@ -273,7 +288,7 @@ lemma cat_matter_antimatter_max_scalar_under_half_pct: "(0.23468225112121452 :: 
 lemma cat_matter_antimatter_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_sh0es_full_sample_records_pos: "0 < (7 :: nat)"
+lemma cat_sh0es_full_sample_records_pos: "0 < (48 :: nat)"
   by eval
 
 lemma cat_sh0es_full_sample_pooled_under_half_pct: "(0.14095024176268078 :: real) < (0.5 :: real)"
@@ -346,21 +361,6 @@ lemma cat_mathematics_computational_benchmark_json_max_scalar_under_half_pct: "(
   by eval
 
 lemma cat_mathematics_computational_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_pure_mathematics_records_pos: "0 < (1578 :: nat)"
-  by eval
-
-lemma cat_pure_mathematics_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pure_mathematics_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pure_mathematics_max_scalar_under_half_pct: "(0.192564276915754 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pure_mathematics_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

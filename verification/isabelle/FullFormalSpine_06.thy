@@ -159,7 +159,7 @@ lemma fuel_candidate_prereg_scaffold_observable_count_pos: "0 < (33 :: nat)"
 lemma fuel_candidate_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fuel_lab_live_median_error_under_half_pct: "(0.039349 :: real) < (0.5 :: real)"
+lemma fuel_lab_live_median_error_under_half_pct: "(0.075688 :: real) < (0.5 :: real)"
   by eval
 
 lemma fuel_lab_live_designed_fuel_count_pos: "0 < (7.0 :: real)"
@@ -168,7 +168,7 @@ lemma fuel_lab_live_designed_fuel_count_pos: "0 < (7.0 :: real)"
 lemma fuel_lab_live_observable_count_pos: "0 < (366 :: nat)"
   by eval
 
-lemma fuel_lab_live_median_error_under_five_pct: "(0.039349 :: real) < (5.0 :: real)"
+lemma fuel_lab_live_median_error_under_five_pct: "(0.075688 :: real) < (5.0 :: real)"
   by eval
 
 lemma fuel_profile_count_pos: "0 < (6 :: nat)"

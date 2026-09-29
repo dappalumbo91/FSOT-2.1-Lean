@@ -23,255 +23,255 @@
 (assert (! (< 0.0 0.000000000001) :named o8))
 ; seed_psi_con_from_e_pos kind=pos
 (assert (! (> 0.6321205588285577 0.0) :named o9))
-; cat_phi_morphogenetic_scaling_records_pos kind=nat_pos
-(assert (! (> 289 0) :named o10))
-; cat_phi_morphogenetic_scaling_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01760779720633292 0.5) :named o11))
-; cat_phi_morphogenetic_scaling_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01760779720633292 0.5) :named o12))
-; cat_phi_morphogenetic_scaling_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.4989 0.5) :named o13))
-; cat_phi_morphogenetic_scaling_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o14))
-; cat_crc_handbook_properties_records_pos kind=nat_pos
-(assert (! (> 391 0) :named o15))
-; cat_crc_handbook_properties_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.026922 0.5) :named o16))
-; cat_crc_handbook_properties_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.026922 0.5) :named o17))
-; cat_crc_handbook_properties_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.498862 0.5) :named o18))
-; cat_crc_handbook_properties_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o19))
-; cat_geochemistry_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 153 0) :named o20))
-; cat_geochemistry_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006625234573930708 0.5) :named o21))
-; cat_geochemistry_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006625234573930708 0.5) :named o22))
-; cat_geochemistry_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.498368 0.5) :named o23))
-; cat_geochemistry_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o24))
 ; cat_zebrafish_predictive_validation_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o25))
+(assert (! (> 20 0) :named o10))
 ; cat_zebrafish_predictive_validation_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.3579695 0.5) :named o26))
+(assert (! (< 0.14416099999999998 0.5) :named o11))
 ; cat_zebrafish_predictive_validation_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.3579695 0.5) :named o27))
+(assert (! (< 0.14416099999999998 0.5) :named o12))
 ; cat_zebrafish_predictive_validation_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.492044 0.5) :named o28))
+(assert (! (< 0.441042 0.5) :named o13))
 ; cat_zebrafish_predictive_validation_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o29))
-; cat_materials_engineering_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 87 0) :named o30))
-; cat_materials_engineering_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.027170334947435038 0.5) :named o31))
-; cat_materials_engineering_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.027170334947435038 0.5) :named o32))
-; cat_materials_engineering_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.491159 0.5) :named o33))
-; cat_materials_engineering_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o34))
-; cat_electrical_power_systems_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o35))
-; cat_electrical_power_systems_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o36))
-; cat_electrical_power_systems_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o37))
-; cat_electrical_power_systems_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.489023002 0.5) :named o38))
-; cat_electrical_power_systems_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o39))
-; cat_quantum_materials_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 168 0) :named o40))
-; cat_quantum_materials_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.023804590101153683 0.5) :named o41))
-; cat_quantum_materials_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.023804590101153683 0.5) :named o42))
-; cat_quantum_materials_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.489023 0.5) :named o43))
-; cat_quantum_materials_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o44))
+(assert (! (= 1 1) :named o14))
+; cat_phi_morphogenetic_scaling_records_pos kind=nat_pos
+(assert (! (> 289 0) :named o15))
+; cat_phi_morphogenetic_scaling_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0173 0.5) :named o16))
+; cat_phi_morphogenetic_scaling_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0173 0.5) :named o17))
+; cat_phi_morphogenetic_scaling_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.4374 0.5) :named o18))
+; cat_phi_morphogenetic_scaling_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o19))
+; cat_crc_handbook_properties_records_pos kind=nat_pos
+(assert (! (> 391 0) :named o20))
+; cat_crc_handbook_properties_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.023493 0.5) :named o21))
+; cat_crc_handbook_properties_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.023493 0.5) :named o22))
+; cat_crc_handbook_properties_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.437391 0.5) :named o23))
+; cat_crc_handbook_properties_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o24))
 ; cat_clinical_medicine_records_pos kind=nat_pos
-(assert (! (> 260 0) :named o45))
+(assert (! (> 260 0) :named o25))
 ; cat_clinical_medicine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.002458296751538192 0.5) :named o46))
+(assert (! (< 0.002458296751538192 0.5) :named o26))
 ; cat_clinical_medicine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.002458296751538192 0.5) :named o47))
+(assert (! (< 0.002458296751538192 0.5) :named o27))
 ; cat_clinical_medicine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.480058 0.5) :named o48))
+(assert (! (< 0.431577 0.5) :named o28))
 ; cat_clinical_medicine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o49))
+(assert (! (= 1 1) :named o29))
 ; cat_immunology_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 84 0) :named o50))
+(assert (! (> 84 0) :named o30))
 ; cat_immunology_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.060853500000000005 0.5) :named o51))
+(assert (! (< 0.05041956982053305 0.5) :named o31))
 ; cat_immunology_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.060853500000000005 0.5) :named o52))
+(assert (! (< 0.05041956982053305 0.5) :named o32))
 ; cat_immunology_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.480058 0.5) :named o53))
+(assert (! (< 0.431577 0.5) :named o33))
 ; cat_immunology_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o54))
-; cat_neuroimmunology_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 92 0) :named o55))
-; cat_neuroimmunology_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.05041956982053305 0.5) :named o56))
-; cat_neuroimmunology_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.05041956982053305 0.5) :named o57))
-; cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.480058 0.5) :named o58))
-; cat_neuroimmunology_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o59))
-; cat_toe_gr_sm_deep_records_pos kind=nat_pos
-(assert (! (> 99 0) :named o60))
-; cat_toe_gr_sm_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.004719617111680276 0.5) :named o61))
-; cat_toe_gr_sm_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.004719617111680276 0.5) :named o62))
-; cat_toe_gr_sm_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.4774294805097184 0.5) :named o63))
-; cat_toe_gr_sm_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o64))
-; cat_between_scale_interconnects_records_pos kind=nat_pos
-(assert (! (> 1118 0) :named o65))
-; cat_between_scale_interconnects_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02620375479862548 0.5) :named o66))
-; cat_between_scale_interconnects_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02620375479862548 0.5) :named o67))
-; cat_between_scale_interconnects_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.4746956066563968 0.5) :named o68))
-; cat_between_scale_interconnects_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o69))
-; cat_creative_arts_math_spine_records_pos kind=nat_pos
-(assert (! (> 56 0) :named o70))
-; cat_creative_arts_math_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o71))
-; cat_creative_arts_math_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o72))
-; cat_creative_arts_math_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.462279 0.5) :named o73))
-; cat_creative_arts_math_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o74))
-; cat_culinary_arts_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 52 0) :named o75))
-; cat_culinary_arts_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.04761518705782039 0.5) :named o76))
-; cat_culinary_arts_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.04761518705782039 0.5) :named o77))
-; cat_culinary_arts_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.462279 0.5) :named o78))
-; cat_culinary_arts_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o79))
+(assert (! (= 1 1) :named o34))
 ; cat_malware_threat_intelligence_records_pos kind=nat_pos
-(assert (! (> 85 0) :named o80))
+(assert (! (> 85 0) :named o35))
 ; cat_malware_threat_intelligence_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.04593318440797134 0.5) :named o81))
+(assert (! (< 0.04593318440797134 0.5) :named o36))
 ; cat_malware_threat_intelligence_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.04593318440797134 0.5) :named o82))
+(assert (! (< 0.04593318440797134 0.5) :named o37))
 ; cat_malware_threat_intelligence_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.431577 0.5) :named o83))
+(assert (! (< 0.431577 0.5) :named o38))
 ; cat_malware_threat_intelligence_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o84))
+(assert (! (= 1 1) :named o39))
+; cat_neuroimmunology_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 92 0) :named o40))
+; cat_neuroimmunology_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.050107427053603854 0.5) :named o41))
+; cat_neuroimmunology_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.050107427053603854 0.5) :named o42))
+; cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.431577 0.5) :named o43))
+; cat_neuroimmunology_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o44))
 ; cat_virology_records_pos kind=nat_pos
-(assert (! (> 50 0) :named o85))
+(assert (! (> 50 0) :named o45))
 ; cat_virology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.04593318440797596 0.5) :named o86))
+(assert (! (< 0.04593318440797596 0.5) :named o46))
 ; cat_virology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.04593318440797596 0.5) :named o87))
+(assert (! (< 0.04593318440797596 0.5) :named o47))
 ; cat_virology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.431577 0.5) :named o88))
+(assert (! (< 0.431577 0.5) :named o48))
 ; cat_virology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o89))
+(assert (! (= 1 1) :named o49))
 ; cat_oncology_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 67 0) :named o90))
+(assert (! (> 67 0) :named o50))
 ; cat_oncology_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.05041956982053305 0.5) :named o91))
+(assert (! (< 0.05041956982053305 0.5) :named o51))
 ; cat_oncology_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.05041956982053305 0.5) :named o92))
+(assert (! (< 0.05041956982053305 0.5) :named o52))
 ; cat_oncology_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.428925 0.5) :named o93))
+(assert (! (< 0.428925 0.5) :named o53))
 ; cat_oncology_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o94))
+(assert (! (= 1 1) :named o54))
 ; cat_material_property_verification_scaffold_records_pos kind=nat_pos
-(assert (! (> 79 0) :named o95))
+(assert (! (> 79 0) :named o55))
 ; cat_material_property_verification_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.00206 0.5) :named o96))
+(assert (! (< 0.00206 0.5) :named o56))
 ; cat_material_property_verification_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.00206 0.5) :named o97))
+(assert (! (< 0.00206 0.5) :named o57))
 ; cat_material_property_verification_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.424443 0.5) :named o98))
+(assert (! (< 0.424443 0.5) :named o58))
 ; cat_material_property_verification_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o99))
+(assert (! (= 1 1) :named o59))
+; cat_sh0es_ladder_chain_records_pos kind=nat_pos
+(assert (! (> 5 0) :named o60))
+; cat_sh0es_ladder_chain_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.328405 0.5) :named o61))
+; cat_sh0es_ladder_chain_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.328405 0.5) :named o62))
+; cat_sh0es_ladder_chain_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.424434 0.5) :named o63))
+; cat_sh0es_ladder_chain_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o64))
+; cat_geochemistry_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 153 0) :named o65))
+; cat_geochemistry_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.006554162171987832 0.5) :named o66))
+; cat_geochemistry_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.006554162171987832 0.5) :named o67))
+; cat_geochemistry_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.422935 0.5) :named o68))
+; cat_geochemistry_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o69))
+; cat_materials_engineering_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 87 0) :named o70))
+; cat_materials_engineering_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.023259895459434028 0.5) :named o71))
+; cat_materials_engineering_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.023259895459434028 0.5) :named o72))
+; cat_materials_engineering_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.412118 0.5) :named o73))
+; cat_materials_engineering_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o74))
 ; cat_speleology_records_pos kind=nat_pos
-(assert (! (> 65 0) :named o100))
+(assert (! (> 65 0) :named o75))
 ; cat_speleology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.04459015721103052 0.5) :named o101))
+(assert (! (< 0.04459015721103052 0.5) :named o76))
 ; cat_speleology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.04459015721103052 0.5) :named o102))
+(assert (! (< 0.04459015721103052 0.5) :named o77))
 ; cat_speleology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.406301 0.5) :named o103))
+(assert (! (< 0.406301 0.5) :named o78))
 ; cat_speleology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o104))
-; cat_toe_ckm_pmns_flavor_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o105))
-; cat_toe_ckm_pmns_flavor_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.05235314586422479 0.5) :named o106))
-; cat_toe_ckm_pmns_flavor_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.05235314586422479 0.5) :named o107))
-; cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.3712743059251006 0.5) :named o108))
-; cat_toe_ckm_pmns_flavor_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o109))
+(assert (! (= 1 1) :named o79))
+; cat_quantum_materials_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 168 0) :named o80))
+; cat_quantum_materials_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.02192941228687545 0.5) :named o81))
+; cat_quantum_materials_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.02192941228687545 0.5) :named o82))
+; cat_quantum_materials_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.40339 0.5) :named o83))
+; cat_quantum_materials_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o84))
+; cat_between_scale_interconnects_records_pos kind=nat_pos
+(assert (! (> 7730 0) :named o85))
+; cat_between_scale_interconnects_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.03294447195047839 0.5) :named o86))
+; cat_between_scale_interconnects_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.03294447195047839 0.5) :named o87))
+; cat_between_scale_interconnects_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.39284865529600077 0.5) :named o88))
+; cat_between_scale_interconnects_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o89))
+; cat_toe_dynamics_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o90))
+; cat_toe_dynamics_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o91))
+; cat_toe_dynamics_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o92))
+; cat_toe_dynamics_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.39284865529600077 0.5) :named o93))
+; cat_toe_dynamics_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o94))
+; cat_toe_gr_sm_deep_records_pos kind=nat_pos
+(assert (! (> 99 0) :named o95))
+; cat_toe_gr_sm_deep_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.004719617111680276 0.5) :named o96))
+; cat_toe_gr_sm_deep_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.004719617111680276 0.5) :named o97))
+; cat_toe_gr_sm_deep_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.3712743059251006 0.5) :named o98))
+; cat_toe_gr_sm_deep_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o99))
 ; cat_dark_energy_cpl_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o110))
+(assert (! (> 20 0) :named o100))
 ; cat_dark_energy_cpl_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0018162973530366992 0.5) :named o111))
+(assert (! (< 0.0018162973530366992 0.5) :named o101))
 ; cat_dark_energy_cpl_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0018162973530366992 0.5) :named o112))
+(assert (! (< 0.0018162973530366992 0.5) :named o102))
 ; cat_dark_energy_cpl_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.368503 0.5) :named o113))
+(assert (! (< 0.368503 0.5) :named o103))
 ; cat_dark_energy_cpl_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o114))
+(assert (! (= 1 1) :named o104))
 ; cat_dark_sector_open_problems_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o115))
+(assert (! (> 24 0) :named o105))
 ; cat_dark_sector_open_problems_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o116))
+(assert (! (< 0.000561846 0.5) :named o106))
 ; cat_dark_sector_open_problems_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o117))
+(assert (! (< 0.000561846 0.5) :named o107))
 ; cat_dark_sector_open_problems_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.368503 0.5) :named o118))
+(assert (! (< 0.368503 0.5) :named o108))
 ; cat_dark_sector_open_problems_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o119))
+(assert (! (= 1 1) :named o109))
 ; cat_desi_edr_table_slice_open_records_pos kind=nat_pos
-(assert (! (> 22 0) :named o120))
+(assert (! (> 22 0) :named o110))
 ; cat_desi_edr_table_slice_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.010049 0.5) :named o121))
+(assert (! (< 0.010049 0.5) :named o111))
 ; cat_desi_edr_table_slice_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.010049 0.5) :named o122))
+(assert (! (< 0.010049 0.5) :named o112))
 ; cat_desi_edr_table_slice_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.3685028152534126 0.5) :named o123))
+(assert (! (< 0.3685028152534126 0.5) :named o113))
 ; cat_desi_edr_table_slice_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o124))
+(assert (! (= 1 1) :named o114))
 ; cat_desi_public_depth_open_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o125))
+(assert (! (> 20 0) :named o115))
 ; cat_desi_public_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.010049 0.5) :named o126))
+(assert (! (< 0.010049 0.5) :named o116))
 ; cat_desi_public_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.010049 0.5) :named o127))
+(assert (! (< 0.010049 0.5) :named o117))
 ; cat_desi_public_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.3685028152534126 0.5) :named o128))
+(assert (! (< 0.3685028152534126 0.5) :named o118))
 ; cat_desi_public_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o129))
+(assert (! (= 1 1) :named o119))
+; cat_toe_ckm_pmns_flavor_records_pos kind=nat_pos
+(assert (! (> 40 0) :named o120))
+; cat_toe_ckm_pmns_flavor_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.05258568507587487 0.5) :named o121))
+; cat_toe_ckm_pmns_flavor_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.05258568507587487 0.5) :named o122))
+; cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.36301157961075986 0.5) :named o123))
+; cat_toe_ckm_pmns_flavor_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o124))
 ; cat_acoustic_resonance_materials_records_pos kind=nat_pos
-(assert (! (> 29 0) :named o130))
+(assert (! (> 29 0) :named o125))
 ; cat_acoustic_resonance_materials_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.008381497018411083 0.5) :named o131))
+(assert (! (< 0.008381497018411083 0.5) :named o126))
 ; cat_acoustic_resonance_materials_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.008381497018411083 0.5) :named o132))
+(assert (! (< 0.008381497018411083 0.5) :named o127))
 ; cat_acoustic_resonance_materials_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.3555 0.5) :named o133))
+(assert (! (< 0.3555 0.5) :named o128))
 ; cat_acoustic_resonance_materials_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o129))
+; cat_creative_arts_math_spine_records_pos kind=nat_pos
+(assert (! (> 56 0) :named o130))
+; cat_creative_arts_math_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o131))
+; cat_creative_arts_math_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o132))
+; cat_creative_arts_math_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.3555 0.5) :named o133))
+; cat_creative_arts_math_spine_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o134))
 ; cat_formula_precision_spine_records_pos kind=nat_pos
 (assert (! (> 26 0) :named o135))
@@ -293,45 +293,45 @@
 (assert (! (< 0.3555 0.5) :named o143))
 ; cat_term3_acoustic_bleed_depth_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o144))
-; cat_lab_synthesis_metamaterial_spine_records_pos kind=nat_pos
-(assert (! (> 43 0) :named o145))
-; cat_lab_synthesis_metamaterial_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o146))
-; cat_lab_synthesis_metamaterial_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000095 0.5) :named o147))
-; cat_lab_synthesis_metamaterial_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.343283 0.5) :named o148))
-; cat_lab_synthesis_metamaterial_spine_green_flag kind=eq_nat
+; cat_culinary_arts_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 52 0) :named o145))
+; cat_culinary_arts_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.04761518705781907 0.5) :named o146))
+; cat_culinary_arts_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.04761518705781907 0.5) :named o147))
+; cat_culinary_arts_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.355486 0.5) :named o148))
+; cat_culinary_arts_benchmark_json_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o149))
-; cat_cosmology_anomalies_records_pos kind=nat_pos
-(assert (! (> 28 0) :named o150))
-; cat_cosmology_anomalies_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015148134304819393 0.5) :named o151))
-; cat_cosmology_anomalies_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015148134304819393 0.5) :named o152))
-; cat_cosmology_anomalies_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.34102444848136776 0.5) :named o153))
-; cat_cosmology_anomalies_green_flag kind=eq_nat
+; cat_lab_synthesis_metamaterial_spine_records_pos kind=nat_pos
+(assert (! (> 43 0) :named o150))
+; cat_lab_synthesis_metamaterial_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o151))
+; cat_lab_synthesis_metamaterial_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000095 0.5) :named o152))
+; cat_lab_synthesis_metamaterial_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.343283 0.5) :named o153))
+; cat_lab_synthesis_metamaterial_spine_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o154))
-; cat_stumped_observables_panel_records_pos kind=nat_pos
-(assert (! (> 22 0) :named o155))
-; cat_stumped_observables_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.007871 0.5) :named o156))
-; cat_stumped_observables_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.007871 0.5) :named o157))
-; cat_stumped_observables_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.341024 0.5) :named o158))
-; cat_stumped_observables_panel_green_flag kind=eq_nat
+; cat_cosmology_anomalies_records_pos kind=nat_pos
+(assert (! (> 28 0) :named o155))
+; cat_cosmology_anomalies_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.015148134304819393 0.5) :named o156))
+; cat_cosmology_anomalies_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.015148134304819393 0.5) :named o157))
+; cat_cosmology_anomalies_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.34102444848136776 0.5) :named o158))
+; cat_cosmology_anomalies_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o159))
-; cat_pdg_particle_properties_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o160))
-; cat_pdg_particle_properties_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.008159790326533337 0.5) :named o161))
-; cat_pdg_particle_properties_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.008159790326533337 0.5) :named o162))
-; cat_pdg_particle_properties_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.323111 0.5) :named o163))
-; cat_pdg_particle_properties_green_flag kind=eq_nat
+; cat_stumped_observables_panel_records_pos kind=nat_pos
+(assert (! (> 22 0) :named o160))
+; cat_stumped_observables_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.007871 0.5) :named o161))
+; cat_stumped_observables_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.007871 0.5) :named o162))
+; cat_stumped_observables_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.341024 0.5) :named o163))
+; cat_stumped_observables_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o164))
 ; cat_periodic_table_completion_spine_records_pos kind=nat_pos
 (assert (! (> 36 0) :named o165))
@@ -363,555 +363,555 @@
 (assert (! (< 0.323110639 0.5) :named o178))
 ; cat_nist_codata_constants_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o179))
-; cat_magnetosphere_extended_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o180))
-; cat_magnetosphere_extended_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000038622500000000005 0.5) :named o181))
-; cat_magnetosphere_extended_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000038622500000000005 0.5) :named o182))
-; cat_magnetosphere_extended_max_scalar_under_half_pct kind=lt_half
+; cat_electrical_power_systems_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o180))
+; cat_electrical_power_systems_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o181))
+; cat_electrical_power_systems_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o182))
+; cat_electrical_power_systems_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.322515247 0.5) :named o183))
-; cat_magnetosphere_extended_green_flag kind=eq_nat
+; cat_electrical_power_systems_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o184))
-; cat_semiconductor_physics_public_panel_records_pos kind=nat_pos
+; cat_magnetosphere_extended_records_pos kind=nat_pos
 (assert (! (> 24 0) :named o185))
-; cat_semiconductor_physics_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o186))
-; cat_semiconductor_physics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o187))
-; cat_semiconductor_physics_public_panel_max_scalar_under_half_pct kind=lt_half
+; cat_magnetosphere_extended_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000038622500000000005 0.5) :named o186))
+; cat_magnetosphere_extended_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000038622500000000005 0.5) :named o187))
+; cat_magnetosphere_extended_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.322515247 0.5) :named o188))
-; cat_semiconductor_physics_public_panel_green_flag kind=eq_nat
+; cat_magnetosphere_extended_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o189))
-; cat_rd_interval_tightening_panel_records_pos kind=nat_pos
+; cat_semiconductor_physics_public_panel_records_pos kind=nat_pos
 (assert (! (> 24 0) :named o190))
-; cat_rd_interval_tightening_panel_pooled_under_half_pct kind=lt_half
+; cat_semiconductor_physics_public_panel_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.0 0.5) :named o191))
-; cat_rd_interval_tightening_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_semiconductor_physics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.0 0.5) :named o192))
-; cat_rd_interval_tightening_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.292338 0.5) :named o193))
-; cat_rd_interval_tightening_panel_green_flag kind=eq_nat
+; cat_semiconductor_physics_public_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.322515247 0.5) :named o193))
+; cat_semiconductor_physics_public_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o194))
-; cat_higgs_mass_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o195))
-; cat_higgs_mass_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.03990518384195136 0.5) :named o196))
-; cat_higgs_mass_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.03990518384195136 0.5) :named o197))
-; cat_higgs_mass_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.27079952979037436 0.5) :named o198))
-; cat_higgs_mass_green_flag kind=eq_nat
+; cat_rd_interval_tightening_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o195))
+; cat_rd_interval_tightening_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o196))
+; cat_rd_interval_tightening_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o197))
+; cat_rd_interval_tightening_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.292338 0.5) :named o198))
+; cat_rd_interval_tightening_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o199))
-; cat_materials_genome_crosswalk_records_pos kind=nat_pos
-(assert (! (> 38 0) :named o200))
-; cat_materials_genome_crosswalk_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o201))
-; cat_materials_genome_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o202))
-; cat_materials_genome_crosswalk_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.26423885832201555 0.5) :named o203))
-; cat_materials_genome_crosswalk_green_flag kind=eq_nat
+; cat_higgs_mass_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o200))
+; cat_higgs_mass_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.03990518384195136 0.5) :named o201))
+; cat_higgs_mass_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.03990518384195136 0.5) :named o202))
+; cat_higgs_mass_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.27079952979037436 0.5) :named o203))
+; cat_higgs_mass_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o204))
-; cat_materials_species_bridge_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 34 0) :named o205))
-; cat_materials_species_bridge_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o206))
-; cat_materials_species_bridge_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o207))
-; cat_materials_species_bridge_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.26423885832201555 0.5) :named o208))
-; cat_materials_species_bridge_benchmark_json_green_flag kind=eq_nat
+; cat_pdg_particle_properties_records_pos kind=nat_pos
+(assert (! (> 28 0) :named o205))
+; cat_pdg_particle_properties_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0006704883596874779 0.5) :named o206))
+; cat_pdg_particle_properties_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0006704883596874779 0.5) :named o207))
+; cat_pdg_particle_properties_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.2677779349767224 0.5) :named o208))
+; cat_pdg_particle_properties_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o209))
-; cat_fsot_hardware_depth_spine_records_pos kind=nat_pos
-(assert (! (> 170 0) :named o210))
-; cat_fsot_hardware_depth_spine_pooled_under_half_pct kind=lt_half
+; cat_materials_genome_crosswalk_records_pos kind=nat_pos
+(assert (! (> 38 0) :named o210))
+; cat_materials_genome_crosswalk_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.0 0.5) :named o211))
-; cat_fsot_hardware_depth_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_materials_genome_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.0 0.5) :named o212))
-; cat_fsot_hardware_depth_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.261955886 0.5) :named o213))
-; cat_fsot_hardware_depth_spine_green_flag kind=eq_nat
+; cat_materials_genome_crosswalk_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.26423885832201555 0.5) :named o213))
+; cat_materials_genome_crosswalk_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o214))
-; cat_fsot_ram_function_panel_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o215))
-; cat_fsot_ram_function_panel_pooled_under_half_pct kind=lt_half
+; cat_materials_species_bridge_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 34 0) :named o215))
+; cat_materials_species_bridge_benchmark_json_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.0 0.5) :named o216))
-; cat_fsot_ram_function_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_materials_species_bridge_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.0 0.5) :named o217))
-; cat_fsot_ram_function_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.261955886 0.5) :named o218))
-; cat_fsot_ram_function_panel_green_flag kind=eq_nat
+; cat_materials_species_bridge_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.26423885832201555 0.5) :named o218))
+; cat_materials_species_bridge_benchmark_json_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o219))
-; cat_sh0es_ladder_chain_records_pos kind=nat_pos
-(assert (! (> 2 0) :named o220))
-; cat_sh0es_ladder_chain_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.212101 0.5) :named o221))
-; cat_sh0es_ladder_chain_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.212101 0.5) :named o222))
-; cat_sh0es_ladder_chain_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.252234 0.5) :named o223))
-; cat_sh0es_ladder_chain_green_flag kind=eq_nat
+; cat_fsot_hardware_depth_spine_records_pos kind=nat_pos
+(assert (! (> 170 0) :named o220))
+; cat_fsot_hardware_depth_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o221))
+; cat_fsot_hardware_depth_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o222))
+; cat_fsot_hardware_depth_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.261955886 0.5) :named o223))
+; cat_fsot_hardware_depth_spine_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o224))
-; cat_cepheid_pl_interconnect_records_pos kind=nat_pos
-(assert (! (> 8 0) :named o225))
-; cat_cepheid_pl_interconnect_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.1349881432328604 0.5) :named o226))
-; cat_cepheid_pl_interconnect_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.1349881432328604 0.5) :named o227))
-; cat_cepheid_pl_interconnect_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.2390607110557222 0.5) :named o228))
-; cat_cepheid_pl_interconnect_green_flag kind=eq_nat
+; cat_fsot_ram_function_panel_records_pos kind=nat_pos
+(assert (! (> 32 0) :named o225))
+; cat_fsot_ram_function_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o226))
+; cat_fsot_ram_function_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o227))
+; cat_fsot_ram_function_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.261955886 0.5) :named o228))
+; cat_fsot_ram_function_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o229))
-; cat_alternate_base_mathematics_spine_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o230))
-; cat_alternate_base_mathematics_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o231))
-; cat_alternate_base_mathematics_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o232))
-; cat_alternate_base_mathematics_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.238944484 0.5) :named o233))
-; cat_alternate_base_mathematics_spine_green_flag kind=eq_nat
+; cat_cepheid_pl_interconnect_records_pos kind=nat_pos
+(assert (! (> 12 0) :named o230))
+; cat_cepheid_pl_interconnect_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.1349881432328604 0.5) :named o231))
+; cat_cepheid_pl_interconnect_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.1349881432328604 0.5) :named o232))
+; cat_cepheid_pl_interconnect_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.2390607110557222 0.5) :named o233))
+; cat_cepheid_pl_interconnect_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o234))
-; cat_arxiv_primitives_v14_records_pos kind=nat_pos
+; cat_alternate_base_mathematics_spine_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o235))
-; cat_arxiv_primitives_v14_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000055479 0.5) :named o236))
-; cat_arxiv_primitives_v14_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000055479 0.5) :named o237))
-; cat_arxiv_primitives_v14_max_scalar_under_half_pct kind=lt_half
+; cat_alternate_base_mathematics_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o236))
+; cat_alternate_base_mathematics_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o237))
+; cat_alternate_base_mathematics_spine_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o238))
-; cat_arxiv_primitives_v14_green_flag kind=eq_nat
+; cat_alternate_base_mathematics_spine_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o239))
-; cat_binary_decoder_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o240))
-; cat_binary_decoder_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000021766 0.5) :named o241))
-; cat_binary_decoder_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000021766 0.5) :named o242))
-; cat_binary_decoder_panel_max_scalar_under_half_pct kind=lt_half
+; cat_arxiv_primitives_v14_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o240))
+; cat_arxiv_primitives_v14_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000055479 0.5) :named o241))
+; cat_arxiv_primitives_v14_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000055479 0.5) :named o242))
+; cat_arxiv_primitives_v14_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o243))
-; cat_binary_decoder_panel_green_flag kind=eq_nat
+; cat_arxiv_primitives_v14_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o244))
-; cat_binary_decoder_rendlesham_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o245))
-; cat_binary_decoder_rendlesham_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000055479 0.5) :named o246))
-; cat_binary_decoder_rendlesham_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000055479 0.5) :named o247))
-; cat_binary_decoder_rendlesham_max_scalar_under_half_pct kind=lt_half
+; cat_binary_decoder_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o245))
+; cat_binary_decoder_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000021766 0.5) :named o246))
+; cat_binary_decoder_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000021766 0.5) :named o247))
+; cat_binary_decoder_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o248))
-; cat_binary_decoder_rendlesham_green_flag kind=eq_nat
+; cat_binary_decoder_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o249))
-; cat_certified_agent_formal_panel_records_pos kind=nat_pos
+; cat_binary_decoder_rendlesham_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o250))
-; cat_certified_agent_formal_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o251))
-; cat_certified_agent_formal_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o252))
-; cat_certified_agent_formal_panel_max_scalar_under_half_pct kind=lt_half
+; cat_binary_decoder_rendlesham_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000055479 0.5) :named o251))
+; cat_binary_decoder_rendlesham_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000055479 0.5) :named o252))
+; cat_binary_decoder_rendlesham_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o253))
-; cat_certified_agent_formal_panel_green_flag kind=eq_nat
+; cat_binary_decoder_rendlesham_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o254))
-; cat_certified_agent_qwen_records_pos kind=nat_pos
+; cat_certified_agent_formal_panel_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o255))
-; cat_certified_agent_qwen_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000055479 0.5) :named o256))
-; cat_certified_agent_qwen_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000055479 0.5) :named o257))
-; cat_certified_agent_qwen_max_scalar_under_half_pct kind=lt_half
+; cat_certified_agent_formal_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o256))
+; cat_certified_agent_formal_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.014767 0.5) :named o257))
+; cat_certified_agent_formal_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o258))
-; cat_certified_agent_qwen_green_flag kind=eq_nat
+; cat_certified_agent_formal_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o259))
-; cat_early_lean_mc_panel_records_pos kind=nat_pos
+; cat_certified_agent_qwen_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o260))
-; cat_early_lean_mc_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000021766 0.5) :named o261))
-; cat_early_lean_mc_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000021766 0.5) :named o262))
-; cat_early_lean_mc_panel_max_scalar_under_half_pct kind=lt_half
+; cat_certified_agent_qwen_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000055479 0.5) :named o261))
+; cat_certified_agent_qwen_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000055479 0.5) :named o262))
+; cat_certified_agent_qwen_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o263))
-; cat_early_lean_mc_panel_green_flag kind=eq_nat
+; cat_certified_agent_qwen_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o264))
-; cat_information_theory_public_panel_records_pos kind=nat_pos
+; cat_early_lean_mc_panel_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o265))
-; cat_information_theory_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o266))
-; cat_information_theory_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o267))
-; cat_information_theory_public_panel_max_scalar_under_half_pct kind=lt_half
+; cat_early_lean_mc_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000021766 0.5) :named o266))
+; cat_early_lean_mc_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000021766 0.5) :named o267))
+; cat_early_lean_mc_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o268))
-; cat_information_theory_public_panel_green_flag kind=eq_nat
+; cat_early_lean_mc_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o269))
-; cat_intrinsic_llm_validators_records_pos kind=nat_pos
+; cat_information_theory_public_panel_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o270))
-; cat_intrinsic_llm_validators_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000055479 0.5) :named o271))
-; cat_intrinsic_llm_validators_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000055479 0.5) :named o272))
-; cat_intrinsic_llm_validators_max_scalar_under_half_pct kind=lt_half
+; cat_information_theory_public_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o271))
+; cat_information_theory_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o272))
+; cat_information_theory_public_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o273))
-; cat_intrinsic_llm_validators_green_flag kind=eq_nat
+; cat_information_theory_public_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o274))
-; cat_network_science_public_panel_records_pos kind=nat_pos
+; cat_intrinsic_llm_validators_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o275))
-; cat_network_science_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o276))
-; cat_network_science_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o277))
-; cat_network_science_public_panel_max_scalar_under_half_pct kind=lt_half
+; cat_intrinsic_llm_validators_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000055479 0.5) :named o276))
+; cat_intrinsic_llm_validators_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000055479 0.5) :named o277))
+; cat_intrinsic_llm_validators_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o278))
-; cat_network_science_public_panel_green_flag kind=eq_nat
+; cat_intrinsic_llm_validators_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o279))
-; cat_quantum_information_records_pos kind=nat_pos
+; cat_network_science_public_panel_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o280))
-; cat_quantum_information_pooled_under_half_pct kind=lt_half
+; cat_network_science_public_panel_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.0 0.5) :named o281))
-; cat_quantum_information_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_network_science_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.0 0.5) :named o282))
-; cat_quantum_information_max_scalar_under_half_pct kind=lt_half
+; cat_network_science_public_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o283))
-; cat_quantum_information_green_flag kind=eq_nat
+; cat_network_science_public_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o284))
-; cat_quantum_mechanics_entanglement_depth_panel_records_pos kind=nat_pos
+; cat_quantum_information_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o285))
-; cat_quantum_mechanics_entanglement_depth_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o286))
-; cat_quantum_mechanics_entanglement_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o287))
-; cat_quantum_mechanics_entanglement_depth_panel_max_scalar_under_half_pct kind=lt_half
+; cat_quantum_information_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o286))
+; cat_quantum_information_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o287))
+; cat_quantum_information_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o288))
-; cat_quantum_mechanics_entanglement_depth_panel_green_flag kind=eq_nat
+; cat_quantum_information_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o289))
-; cat_rust_lean_bridge_panel_records_pos kind=nat_pos
+; cat_quantum_mechanics_entanglement_depth_panel_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o290))
-; cat_rust_lean_bridge_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o291))
-; cat_rust_lean_bridge_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o292))
-; cat_rust_lean_bridge_panel_max_scalar_under_half_pct kind=lt_half
+; cat_quantum_mechanics_entanglement_depth_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o291))
+; cat_quantum_mechanics_entanglement_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.014767 0.5) :named o292))
+; cat_quantum_mechanics_entanglement_depth_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o293))
-; cat_rust_lean_bridge_panel_green_flag kind=eq_nat
+; cat_quantum_mechanics_entanglement_depth_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o294))
-; cat_scalar_solver_35_panel_records_pos kind=nat_pos
+; cat_rust_lean_bridge_panel_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o295))
-; cat_scalar_solver_35_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.007394383 0.5) :named o296))
-; cat_scalar_solver_35_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.007394383 0.5) :named o297))
-; cat_scalar_solver_35_panel_max_scalar_under_half_pct kind=lt_half
+; cat_rust_lean_bridge_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o296))
+; cat_rust_lean_bridge_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o297))
+; cat_rust_lean_bridge_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o298))
-; cat_scalar_solver_35_panel_green_flag kind=eq_nat
+; cat_rust_lean_bridge_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o299))
-; cat_tokenization_smoke_records_pos kind=nat_pos
+; cat_scalar_solver_35_panel_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o300))
-; cat_tokenization_smoke_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000055479 0.5) :named o301))
-; cat_tokenization_smoke_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000055479 0.5) :named o302))
-; cat_tokenization_smoke_max_scalar_under_half_pct kind=lt_half
+; cat_scalar_solver_35_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.007394383 0.5) :named o301))
+; cat_scalar_solver_35_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.007394383 0.5) :named o302))
+; cat_scalar_solver_35_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o303))
-; cat_tokenization_smoke_green_flag kind=eq_nat
+; cat_scalar_solver_35_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o304))
-; cat_trinary_hardware_motif_records_pos kind=nat_pos
+; cat_tokenization_smoke_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o305))
-; cat_trinary_hardware_motif_pooled_under_half_pct kind=lt_half
+; cat_tokenization_smoke_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.000055479 0.5) :named o306))
-; cat_trinary_hardware_motif_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_tokenization_smoke_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.000055479 0.5) :named o307))
-; cat_trinary_hardware_motif_max_scalar_under_half_pct kind=lt_half
+; cat_tokenization_smoke_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o308))
-; cat_trinary_hardware_motif_green_flag kind=eq_nat
+; cat_tokenization_smoke_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o309))
-; cat_trinary_os_portable_records_pos kind=nat_pos
+; cat_trinary_hardware_motif_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o310))
-; cat_trinary_os_portable_pooled_under_half_pct kind=lt_half
+; cat_trinary_hardware_motif_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.000055479 0.5) :named o311))
-; cat_trinary_os_portable_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_trinary_hardware_motif_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.000055479 0.5) :named o312))
-; cat_trinary_os_portable_max_scalar_under_half_pct kind=lt_half
+; cat_trinary_hardware_motif_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o313))
-; cat_trinary_os_portable_green_flag kind=eq_nat
+; cat_trinary_hardware_motif_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o314))
-; cat_vl_agent_distill_panel_records_pos kind=nat_pos
+; cat_trinary_os_portable_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o315))
-; cat_vl_agent_distill_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o316))
-; cat_vl_agent_distill_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.031506 0.5) :named o317))
-; cat_vl_agent_distill_panel_max_scalar_under_half_pct kind=lt_half
+; cat_trinary_os_portable_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000055479 0.5) :named o316))
+; cat_trinary_os_portable_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000055479 0.5) :named o317))
+; cat_trinary_os_portable_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o318))
-; cat_vl_agent_distill_panel_green_flag kind=eq_nat
+; cat_trinary_os_portable_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o319))
-; cat_vl_distill_atlas_records_pos kind=nat_pos
+; cat_vl_agent_distill_panel_records_pos kind=nat_pos
 (assert (! (> 21 0) :named o320))
-; cat_vl_distill_atlas_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000055479 0.5) :named o321))
-; cat_vl_distill_atlas_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000055479 0.5) :named o322))
-; cat_vl_distill_atlas_max_scalar_under_half_pct kind=lt_half
+; cat_vl_agent_distill_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.031506 0.5) :named o321))
+; cat_vl_agent_distill_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.031506 0.5) :named o322))
+; cat_vl_agent_distill_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.238944484 0.5) :named o323))
-; cat_vl_distill_atlas_green_flag kind=eq_nat
+; cat_vl_agent_distill_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o324))
-; cat_matter_antimatter_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o325))
-; cat_matter_antimatter_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o326))
-; cat_matter_antimatter_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o327))
-; cat_matter_antimatter_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.23468225112121452 0.5) :named o328))
-; cat_matter_antimatter_green_flag kind=eq_nat
+; cat_vl_distill_atlas_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o325))
+; cat_vl_distill_atlas_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000055479 0.5) :named o326))
+; cat_vl_distill_atlas_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000055479 0.5) :named o327))
+; cat_vl_distill_atlas_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.238944484 0.5) :named o328))
+; cat_vl_distill_atlas_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o329))
-; cat_sh0es_full_sample_records_pos kind=nat_pos
-(assert (! (> 7 0) :named o330))
-; cat_sh0es_full_sample_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.14095024176268078 0.5) :named o331))
-; cat_sh0es_full_sample_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.14095024176268078 0.5) :named o332))
-; cat_sh0es_full_sample_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.2167094952691788 0.5) :named o333))
-; cat_sh0es_full_sample_green_flag kind=eq_nat
+; cat_matter_antimatter_records_pos kind=nat_pos
+(assert (! (> 27 0) :named o330))
+; cat_matter_antimatter_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o331))
+; cat_matter_antimatter_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o332))
+; cat_matter_antimatter_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.23468225112121452 0.5) :named o333))
+; cat_matter_antimatter_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o334))
-; cat_toe_limit_recovery_records_pos kind=nat_pos
-(assert (! (> 43 0) :named o335))
-; cat_toe_limit_recovery_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0047099996121108675 0.5) :named o336))
-; cat_toe_limit_recovery_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0047099996121108675 0.5) :named o337))
-; cat_toe_limit_recovery_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.209488435890309 0.5) :named o338))
-; cat_toe_limit_recovery_green_flag kind=eq_nat
+; cat_sh0es_full_sample_records_pos kind=nat_pos
+(assert (! (> 48 0) :named o335))
+; cat_sh0es_full_sample_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.14095024176268078 0.5) :named o336))
+; cat_sh0es_full_sample_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.14095024176268078 0.5) :named o337))
+; cat_sh0es_full_sample_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.2167094952691788 0.5) :named o338))
+; cat_sh0es_full_sample_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o339))
-; cat_proton_lean_route_credibility_records_pos kind=nat_pos
-(assert (! (> 58 0) :named o340))
-; cat_proton_lean_route_credibility_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o341))
-; cat_proton_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o342))
-; cat_proton_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.20397136583906664 0.5) :named o343))
-; cat_proton_lean_route_credibility_green_flag kind=eq_nat
+; cat_toe_limit_recovery_records_pos kind=nat_pos
+(assert (! (> 43 0) :named o340))
+; cat_toe_limit_recovery_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0047099996121108675 0.5) :named o341))
+; cat_toe_limit_recovery_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0047099996121108675 0.5) :named o342))
+; cat_toe_limit_recovery_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.209488435890309 0.5) :named o343))
+; cat_toe_limit_recovery_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o344))
-; cat_foundational_ontology_spine_records_pos kind=nat_pos
-(assert (! (> 60 0) :named o345))
-; cat_foundational_ontology_spine_pooled_under_half_pct kind=lt_half
+; cat_proton_lean_route_credibility_records_pos kind=nat_pos
+(assert (! (> 58 0) :named o345))
+; cat_proton_lean_route_credibility_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.009504 0.5) :named o346))
-; cat_foundational_ontology_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_proton_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.009504 0.5) :named o347))
-; cat_foundational_ontology_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.192564276915754 0.5) :named o348))
-; cat_foundational_ontology_spine_green_flag kind=eq_nat
+; cat_proton_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.20397136583906664 0.5) :named o348))
+; cat_proton_lean_route_credibility_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o349))
-; cat_mathematics_computational_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o350))
-; cat_mathematics_computational_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000000000000013580558531290437 0.5) :named o351))
-; cat_mathematics_computational_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000000000000013580558531290437 0.5) :named o352))
-; cat_mathematics_computational_benchmark_json_max_scalar_under_half_pct kind=lt_half
+; cat_foundational_ontology_spine_records_pos kind=nat_pos
+(assert (! (> 60 0) :named o350))
+; cat_foundational_ontology_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o351))
+; cat_foundational_ontology_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.009504 0.5) :named o352))
+; cat_foundational_ontology_spine_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.192564276915754 0.5) :named o353))
-; cat_mathematics_computational_benchmark_json_green_flag kind=eq_nat
+; cat_foundational_ontology_spine_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o354))
-; cat_pure_mathematics_records_pos kind=nat_pos
-(assert (! (> 1578 0) :named o355))
-; cat_pure_mathematics_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o356))
-; cat_pure_mathematics_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o357))
-; cat_pure_mathematics_max_scalar_under_half_pct kind=lt_half
+; cat_mathematics_computational_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o355))
+; cat_mathematics_computational_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000000000000013580558531290437 0.5) :named o356))
+; cat_mathematics_computational_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000000000000013580558531290437 0.5) :named o357))
+; cat_mathematics_computational_benchmark_json_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.192564276915754 0.5) :named o358))
-; cat_pure_mathematics_green_flag kind=eq_nat
+; cat_mathematics_computational_benchmark_json_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o359))
-; cat_unified_db_crosswalk_spine_records_pos kind=nat_pos
-(assert (! (> 43 0) :named o360))
-; cat_unified_db_crosswalk_spine_pooled_under_half_pct kind=lt_half
+; cat_pure_mathematics_records_pos kind=nat_pos
+(assert (! (> 1578 0) :named o360))
+; cat_pure_mathematics_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.0 0.5) :named o361))
-; cat_unified_db_crosswalk_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_pure_mathematics_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.0 0.5) :named o362))
-; cat_unified_db_crosswalk_spine_max_scalar_under_half_pct kind=lt_half
+; cat_pure_mathematics_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.192564276915754 0.5) :named o363))
-; cat_unified_db_crosswalk_spine_green_flag kind=eq_nat
+; cat_pure_mathematics_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o364))
-; cat_evolution_operon_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o365))
-; cat_evolution_operon_pooled_under_half_pct kind=lt_half
+; cat_unified_db_crosswalk_spine_records_pos kind=nat_pos
+(assert (! (> 43 0) :named o365))
+; cat_unified_db_crosswalk_spine_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.0 0.5) :named o366))
-; cat_evolution_operon_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_unified_db_crosswalk_spine_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.0 0.5) :named o367))
-; cat_evolution_operon_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.19157088122605362 0.5) :named o368))
-; cat_evolution_operon_green_flag kind=eq_nat
+; cat_unified_db_crosswalk_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.192564276915754 0.5) :named o368))
+; cat_unified_db_crosswalk_spine_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o369))
-; cat_igem_parts_expanded_records_pos kind=nat_pos
-(assert (! (> 111 0) :named o370))
-; cat_igem_parts_expanded_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000059357506661387664 0.5) :named o371))
-; cat_igem_parts_expanded_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000059357506661387664 0.5) :named o372))
-; cat_igem_parts_expanded_max_scalar_under_half_pct kind=lt_half
+; cat_evolution_operon_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o370))
+; cat_evolution_operon_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o371))
+; cat_evolution_operon_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o372))
+; cat_evolution_operon_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.19157088122605362 0.5) :named o373))
-; cat_igem_parts_expanded_green_flag kind=eq_nat
+; cat_evolution_operon_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o374))
-; cat_igem_synthetic_biology_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 54 0) :named o375))
-; cat_igem_synthetic_biology_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02223625038520325 0.5) :named o376))
-; cat_igem_synthetic_biology_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02223625038520325 0.5) :named o377))
-; cat_igem_synthetic_biology_benchmark_json_max_scalar_under_half_pct kind=lt_half
+; cat_igem_parts_expanded_records_pos kind=nat_pos
+(assert (! (> 111 0) :named o375))
+; cat_igem_parts_expanded_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000059357506661387664 0.5) :named o376))
+; cat_igem_parts_expanded_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000059357506661387664 0.5) :named o377))
+; cat_igem_parts_expanded_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.19157088122605362 0.5) :named o378))
-; cat_igem_synthetic_biology_benchmark_json_green_flag kind=eq_nat
+; cat_igem_parts_expanded_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o379))
-; cat_synthetic_biology_benchmark_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o380))
-; cat_synthetic_biology_benchmark_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o381))
-; cat_synthetic_biology_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o382))
-; cat_synthetic_biology_benchmark_max_scalar_under_half_pct kind=lt_half
+; cat_igem_synthetic_biology_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 54 0) :named o380))
+; cat_igem_synthetic_biology_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.02223625038520325 0.5) :named o381))
+; cat_igem_synthetic_biology_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.02223625038520325 0.5) :named o382))
+; cat_igem_synthetic_biology_benchmark_json_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.19157088122605362 0.5) :named o383))
-; cat_synthetic_biology_benchmark_green_flag kind=eq_nat
+; cat_igem_synthetic_biology_benchmark_json_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o384))
-; cat_planetary_atmospheres_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o385))
-; cat_planetary_atmospheres_benchmark_json_pooled_under_half_pct kind=lt_half
+; cat_synthetic_biology_benchmark_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o385))
+; cat_synthetic_biology_benchmark_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.0 0.5) :named o386))
-; cat_planetary_atmospheres_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_synthetic_biology_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.0 0.5) :named o387))
-; cat_planetary_atmospheres_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.176451 0.5) :named o388))
-; cat_planetary_atmospheres_benchmark_json_green_flag kind=eq_nat
+; cat_synthetic_biology_benchmark_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.19157088122605362 0.5) :named o388))
+; cat_synthetic_biology_benchmark_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o389))
-; cat_consciousness_econ_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o390))
-; cat_consciousness_econ_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.020728 0.5) :named o391))
-; cat_consciousness_econ_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.020728 0.5) :named o392))
-; cat_consciousness_econ_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.16971 0.5) :named o393))
-; cat_consciousness_econ_green_flag kind=eq_nat
+; cat_planetary_atmospheres_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o390))
+; cat_planetary_atmospheres_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o391))
+; cat_planetary_atmospheres_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o392))
+; cat_planetary_atmospheres_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.176451 0.5) :named o393))
+; cat_planetary_atmospheres_benchmark_json_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o394))
-; cat_microtubule_quantum_consciousness_panel_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o395))
-; cat_microtubule_quantum_consciousness_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0094425 0.5) :named o396))
-; cat_microtubule_quantum_consciousness_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0094425 0.5) :named o397))
-; cat_microtubule_quantum_consciousness_panel_max_scalar_under_half_pct kind=lt_half
+; cat_consciousness_econ_records_pos kind=nat_pos
+(assert (! (> 32 0) :named o395))
+; cat_consciousness_econ_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.020728 0.5) :named o396))
+; cat_consciousness_econ_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.020728 0.5) :named o397))
+; cat_consciousness_econ_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.16971 0.5) :named o398))
-; cat_microtubule_quantum_consciousness_panel_green_flag kind=eq_nat
+; cat_consciousness_econ_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o399))
-; cat_desi_wa_constraint_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o400))
-; cat_desi_wa_constraint_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o401))
-; cat_desi_wa_constraint_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o402))
-; cat_desi_wa_constraint_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.15 0.5) :named o403))
-; cat_desi_wa_constraint_green_flag kind=eq_nat
+; cat_microtubule_quantum_consciousness_panel_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o400))
+; cat_microtubule_quantum_consciousness_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0094425 0.5) :named o401))
+; cat_microtubule_quantum_consciousness_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0094425 0.5) :named o402))
+; cat_microtubule_quantum_consciousness_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.16971 0.5) :named o403))
+; cat_microtubule_quantum_consciousness_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o404))
-; cat_frb_orifice_outgassing_records_pos kind=nat_pos
-(assert (! (> 44 0) :named o405))
-; cat_frb_orifice_outgassing_pooled_under_half_pct kind=lt_half
+; cat_desi_wa_constraint_records_pos kind=nat_pos
+(assert (! (> 27 0) :named o405))
+; cat_desi_wa_constraint_pooled_under_half_pct kind=lt_half
 (assert (! (< 0.0 0.5) :named o406))
-; cat_frb_orifice_outgassing_pooled_lt_half_pure kind=r_lt_lit_pure
+; cat_desi_wa_constraint_pooled_lt_half_pure kind=r_lt_lit_pure
 (assert (! (< 0.0 0.5) :named o407))
-; cat_frb_orifice_outgassing_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.1468057694259493 0.5) :named o408))
-; cat_frb_orifice_outgassing_green_flag kind=eq_nat
+; cat_desi_wa_constraint_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.15 0.5) :named o408))
+; cat_desi_wa_constraint_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o409))
-; cat_stumped_observables_spine_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o410))
-; cat_stumped_observables_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000038622500000000005 0.5) :named o411))
-; cat_stumped_observables_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000038622500000000005 0.5) :named o412))
-; cat_stumped_observables_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.140126 0.5) :named o413))
-; cat_stumped_observables_spine_green_flag kind=eq_nat
+; cat_frb_orifice_outgassing_records_pos kind=nat_pos
+(assert (! (> 3396 0) :named o410))
+; cat_frb_orifice_outgassing_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o411))
+; cat_frb_orifice_outgassing_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o412))
+; cat_frb_orifice_outgassing_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.1468057694259493 0.5) :named o413))
+; cat_frb_orifice_outgassing_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o414))
-; cat_formula_corpus_closure_records_pos kind=nat_pos
-(assert (! (> 203 0) :named o415))
-; cat_formula_corpus_closure_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o416))
-; cat_formula_corpus_closure_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o417))
-; cat_formula_corpus_closure_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.12920090413715177 0.5) :named o418))
-; cat_formula_corpus_closure_green_flag kind=eq_nat
+; cat_stumped_observables_spine_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o415))
+; cat_stumped_observables_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000038622500000000005 0.5) :named o416))
+; cat_stumped_observables_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000038622500000000005 0.5) :named o417))
+; cat_stumped_observables_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.140126 0.5) :named o418))
+; cat_stumped_observables_spine_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o419))
-; cat_existence_simulation_refinement_panel_records_pos kind=nat_pos
-(assert (! (> 26 0) :named o420))
-; cat_existence_simulation_refinement_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0141195 0.5) :named o421))
-; cat_existence_simulation_refinement_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0141195 0.5) :named o422))
-; cat_existence_simulation_refinement_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.117868 0.5) :named o423))
-; cat_existence_simulation_refinement_panel_green_flag kind=eq_nat
+; cat_formula_corpus_closure_records_pos kind=nat_pos
+(assert (! (> 203 0) :named o420))
+; cat_formula_corpus_closure_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o421))
+; cat_formula_corpus_closure_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.009504 0.5) :named o422))
+; cat_formula_corpus_closure_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.12920090413715177 0.5) :named o423))
+; cat_formula_corpus_closure_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o424))
-; cat_neuroeconomics_records_pos kind=nat_pos
-(assert (! (> 65 0) :named o425))
-; cat_neuroeconomics_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.10502056403980387 0.5) :named o426))
-; cat_neuroeconomics_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.10502056403980387 0.5) :named o427))
-; cat_neuroeconomics_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.10502056403981022 0.5) :named o428))
-; cat_neuroeconomics_green_flag kind=eq_nat
+; cat_existence_simulation_refinement_panel_records_pos kind=nat_pos
+(assert (! (> 26 0) :named o425))
+; cat_existence_simulation_refinement_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0141195 0.5) :named o426))
+; cat_existence_simulation_refinement_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0141195 0.5) :named o427))
+; cat_existence_simulation_refinement_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.117868 0.5) :named o428))
+; cat_existence_simulation_refinement_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o429))
-; cat_pure_mathematics_panel_records_pos kind=nat_pos
-(assert (! (> 44 0) :named o430))
-; cat_pure_mathematics_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o431))
-; cat_pure_mathematics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02584 0.5) :named o432))
-; cat_pure_mathematics_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.095551 0.5) :named o433))
-; cat_pure_mathematics_panel_green_flag kind=eq_nat
+; cat_neuroeconomics_records_pos kind=nat_pos
+(assert (! (> 65 0) :named o430))
+; cat_neuroeconomics_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.10502056403980387 0.5) :named o431))
+; cat_neuroeconomics_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.10502056403980387 0.5) :named o432))
+; cat_neuroeconomics_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.10502056403981022 0.5) :named o433))
+; cat_neuroeconomics_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o434))
-; cat_quantum_computing_math_depth_panel_records_pos kind=nat_pos
-(assert (! (> 77 0) :named o435))
-; cat_quantum_computing_math_depth_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o436))
-; cat_quantum_computing_math_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o437))
-; cat_quantum_computing_math_depth_panel_max_scalar_under_half_pct kind=lt_half
+; cat_pure_mathematics_panel_records_pos kind=nat_pos
+(assert (! (> 44 0) :named o435))
+; cat_pure_mathematics_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o436))
+; cat_pure_mathematics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.02584 0.5) :named o437))
+; cat_pure_mathematics_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.095551 0.5) :named o438))
-; cat_quantum_computing_math_depth_panel_green_flag kind=eq_nat
+; cat_pure_mathematics_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o439))
-; cat_quantum_trinary_syntax_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o440))
-; cat_quantum_trinary_syntax_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.005907 0.5) :named o441))
-; cat_quantum_trinary_syntax_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.005907 0.5) :named o442))
-; cat_quantum_trinary_syntax_max_scalar_under_half_pct kind=lt_half
+; cat_quantum_computing_math_depth_panel_records_pos kind=nat_pos
+(assert (! (> 77 0) :named o440))
+; cat_quantum_computing_math_depth_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o441))
+; cat_quantum_computing_math_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.014767 0.5) :named o442))
+; cat_quantum_computing_math_depth_panel_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.095551 0.5) :named o443))
-; cat_quantum_trinary_syntax_green_flag kind=eq_nat
+; cat_quantum_computing_math_depth_panel_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o444))
-; cat_scientific_expansion_depth_spine_records_pos kind=nat_pos
-(assert (! (> 72 0) :named o445))
-; cat_scientific_expansion_depth_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.033841 0.5) :named o446))
-; cat_scientific_expansion_depth_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.033841 0.5) :named o447))
-; cat_scientific_expansion_depth_spine_max_scalar_under_half_pct kind=lt_half
+; cat_quantum_trinary_syntax_records_pos kind=nat_pos
+(assert (! (> 27 0) :named o445))
+; cat_quantum_trinary_syntax_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.005907 0.5) :named o446))
+; cat_quantum_trinary_syntax_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.005907 0.5) :named o447))
+; cat_quantum_trinary_syntax_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.095551 0.5) :named o448))
-; cat_scientific_expansion_depth_spine_green_flag kind=eq_nat
+; cat_quantum_trinary_syntax_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o449))
-; cat_star_trek_transporter_live_panel_records_pos kind=nat_pos
-(assert (! (> 1575 0) :named o450))
-; cat_star_trek_transporter_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.012464 0.5) :named o451))
-; cat_star_trek_transporter_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.012464 0.5) :named o452))
-; cat_star_trek_transporter_live_panel_max_scalar_under_half_pct kind=lt_half
+; cat_scientific_expansion_depth_spine_records_pos kind=nat_pos
+(assert (! (> 72 0) :named o450))
+; cat_scientific_expansion_depth_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.033841 0.5) :named o451))
+; cat_scientific_expansion_depth_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.033841 0.5) :named o452))
+; cat_scientific_expansion_depth_spine_max_scalar_under_half_pct kind=lt_half
 (assert (! (< 0.095551 0.5) :named o453))
-; cat_star_trek_transporter_live_panel_green_flag kind=eq_nat
+; cat_scientific_expansion_depth_spine_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o454))
 ; cat_the_well_outcomes_verification_panel_records_pos kind=nat_pos
 (assert (! (> 246 0) :named o455))
@@ -953,3567 +953,3465 @@
 (assert (! (< 0.074365 0.5) :named o473))
 ; cat_time_domain_crosswalk_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o474))
-; cat_codata_full_table_open_records_pos kind=nat_pos
-(assert (! (> 38 0) :named o475))
-; cat_codata_full_table_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.073582 0.5) :named o476))
-; cat_codata_full_table_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.073582 0.5) :named o477))
-; cat_codata_full_table_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.073582 0.5) :named o478))
-; cat_codata_full_table_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o479))
 ; cat_fsot_physics_all_solved_records_pos kind=nat_pos
-(assert (! (> 287 0) :named o480))
+(assert (! (> 287 0) :named o475))
 ; cat_fsot_physics_all_solved_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o481))
+(assert (! (< 0.009504 0.5) :named o476))
 ; cat_fsot_physics_all_solved_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o482))
+(assert (! (< 0.009504 0.5) :named o477))
 ; cat_fsot_physics_all_solved_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.073582 0.5) :named o483))
+(assert (! (< 0.073582 0.5) :named o478))
 ; cat_fsot_physics_all_solved_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o484))
+(assert (! (= 1 1) :named o479))
 ; cat_nufit_neutrino_open_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o485))
+(assert (! (> 20 0) :named o480))
 ; cat_nufit_neutrino_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o486))
+(assert (! (< 0.009504 0.5) :named o481))
 ; cat_nufit_neutrino_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o487))
+(assert (! (< 0.009504 0.5) :named o482))
 ; cat_nufit_neutrino_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.06890100520055274 0.5) :named o488))
+(assert (! (< 0.06890100520055274 0.5) :named o483))
 ; cat_nufit_neutrino_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o489))
+(assert (! (= 1 1) :named o484))
 ; cat_cryptography_technology_records_pos kind=nat_pos
-(assert (! (> 44 0) :named o490))
+(assert (! (> 44 0) :named o485))
 ; cat_cryptography_technology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o491))
+(assert (! (< 0.0 0.5) :named o486))
 ; cat_cryptography_technology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o492))
+(assert (! (< 0.0 0.5) :named o487))
 ; cat_cryptography_technology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.057024806407479645 0.5) :named o493))
+(assert (! (< 0.057024806407479645 0.5) :named o488))
 ; cat_cryptography_technology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o494))
+(assert (! (= 1 1) :named o489))
 ; cat_observer_channel_derivation_records_pos kind=nat_pos
-(assert (! (> 372 0) :named o495))
+(assert (! (> 372 0) :named o490))
 ; cat_observer_channel_derivation_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.052510282019890844 0.5) :named o496))
+(assert (! (< 0.052510282019890844 0.5) :named o491))
 ; cat_observer_channel_derivation_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.052510282019890844 0.5) :named o497))
+(assert (! (< 0.052510282019890844 0.5) :named o492))
 ; cat_observer_channel_derivation_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.05251028201989949 0.5) :named o498))
+(assert (! (< 0.05251028201989949 0.5) :named o493))
 ; cat_observer_channel_derivation_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o499))
+(assert (! (= 1 1) :named o494))
 ; cat_observer_effect_cross_species_panel_records_pos kind=nat_pos
-(assert (! (> 289 0) :named o500))
+(assert (! (> 289 0) :named o495))
 ; cat_observer_effect_cross_species_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o501))
+(assert (! (< 0.0 0.5) :named o496))
 ; cat_observer_effect_cross_species_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o502))
+(assert (! (< 0.0 0.5) :named o497))
 ; cat_observer_effect_cross_species_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.05251 0.5) :named o503))
+(assert (! (< 0.05251 0.5) :named o498))
 ; cat_observer_effect_cross_species_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o504))
+(assert (! (= 1 1) :named o499))
 ; cat_hubble_dark_sector_crosswalk_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o505))
+(assert (! (> 32 0) :named o500))
 ; cat_hubble_dark_sector_crosswalk_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.004252889935064887 0.5) :named o506))
+(assert (! (< 0.004252889935064887 0.5) :named o501))
 ; cat_hubble_dark_sector_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.004252889935064887 0.5) :named o507))
+(assert (! (< 0.004252889935064887 0.5) :named o502))
 ; cat_hubble_dark_sector_crosswalk_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.051014 0.5) :named o508))
+(assert (! (< 0.051014 0.5) :named o503))
 ; cat_hubble_dark_sector_crosswalk_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o509))
+(assert (! (= 1 1) :named o504))
 ; cat_exogeology_panel_records_pos kind=nat_pos
-(assert (! (> 100 0) :named o510))
+(assert (! (> 100 0) :named o505))
 ; cat_exogeology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o511))
+(assert (! (< 0.026472 0.5) :named o506))
 ; cat_exogeology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.026472 0.5) :named o512))
+(assert (! (< 0.026472 0.5) :named o507))
 ; cat_exogeology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.050246 0.5) :named o513))
+(assert (! (< 0.050246 0.5) :named o508))
 ; cat_exogeology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o514))
+(assert (! (= 1 1) :named o509))
 ; cat_immunology_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o515))
+(assert (! (> 24 0) :named o510))
 ; cat_immunology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o516))
+(assert (! (< 0.040788 0.5) :named o511))
 ; cat_immunology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.040788 0.5) :named o517))
+(assert (! (< 0.040788 0.5) :named o512))
 ; cat_immunology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.048946 0.5) :named o518))
+(assert (! (< 0.048946 0.5) :named o513))
 ; cat_immunology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o519))
+(assert (! (= 1 1) :named o514))
 ; cat_pubchem_live_deep_records_pos kind=nat_pos
-(assert (! (> 5043 0) :named o520))
+(assert (! (> 5043 0) :named o515))
 ; cat_pubchem_live_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.032631 0.5) :named o521))
+(assert (! (< 0.032631 0.5) :named o516))
 ; cat_pubchem_live_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.032631 0.5) :named o522))
+(assert (! (< 0.032631 0.5) :named o517))
 ; cat_pubchem_live_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.048946 0.5) :named o523))
+(assert (! (< 0.048946 0.5) :named o518))
 ; cat_pubchem_live_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o524))
+(assert (! (= 1 1) :named o519))
 ; cat_founding_quantum_vacuum_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o525))
+(assert (! (> 20 0) :named o520))
 ; cat_founding_quantum_vacuum_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.047775 0.5) :named o526))
+(assert (! (< 0.047775 0.5) :named o521))
 ; cat_founding_quantum_vacuum_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.047775 0.5) :named o527))
+(assert (! (< 0.047775 0.5) :named o522))
 ; cat_founding_quantum_vacuum_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.047775 0.5) :named o528))
+(assert (! (< 0.047775 0.5) :named o523))
 ; cat_founding_quantum_vacuum_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o529))
+(assert (! (= 1 1) :named o524))
 ; cat_mycology_records_pos kind=nat_pos
-(assert (! (> 420 0) :named o530))
+(assert (! (> 420 0) :named o525))
 ; cat_mycology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236250385193487 0.5) :named o531))
+(assert (! (< 0.022236250385193487 0.5) :named o526))
 ; cat_mycology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236250385193487 0.5) :named o532))
+(assert (! (< 0.022236250385193487 0.5) :named o527))
 ; cat_mycology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.047615187057828696 0.5) :named o533))
+(assert (! (< 0.047615187057828696 0.5) :named o528))
 ; cat_mycology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o534))
+(assert (! (= 1 1) :named o529))
 ; cat_endf_iaea_nuclear_open_records_pos kind=nat_pos
-(assert (! (> 517 0) :named o535))
+(assert (! (> 517 0) :named o530))
 ; cat_endf_iaea_nuclear_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.046065 0.5) :named o536))
+(assert (! (< 0.046065 0.5) :named o531))
 ; cat_endf_iaea_nuclear_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.046065 0.5) :named o537))
+(assert (! (< 0.046065 0.5) :named o532))
 ; cat_endf_iaea_nuclear_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.046065 0.5) :named o538))
+(assert (! (< 0.046065 0.5) :named o533))
 ; cat_endf_iaea_nuclear_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o539))
+(assert (! (= 1 1) :named o534))
 ; cat_nuclear_iaea_open_records_pos kind=nat_pos
-(assert (! (> 360 0) :named o540))
+(assert (! (> 360 0) :named o535))
 ; cat_nuclear_iaea_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.046065 0.5) :named o541))
+(assert (! (< 0.046065 0.5) :named o536))
 ; cat_nuclear_iaea_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.046065 0.5) :named o542))
+(assert (! (< 0.046065 0.5) :named o537))
 ; cat_nuclear_iaea_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.046065 0.5) :named o543))
+(assert (! (< 0.046065 0.5) :named o538))
 ; cat_nuclear_iaea_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o544))
+(assert (! (= 1 1) :named o539))
 ; cat_cardiology_records_pos kind=nat_pos
-(assert (! (> 45 0) :named o545))
+(assert (! (> 45 0) :named o540))
 ; cat_cardiology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.030622122938654326 0.5) :named o546))
+(assert (! (< 0.030622122938654326 0.5) :named o541))
 ; cat_cardiology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.030622122938654326 0.5) :named o547))
+(assert (! (< 0.030622122938654326 0.5) :named o542))
 ; cat_cardiology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.04593318440798318 0.5) :named o548))
+(assert (! (< 0.04593318440798318 0.5) :named o543))
 ; cat_cardiology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o549))
+(assert (! (= 1 1) :named o544))
 ; cat_founding_pulsar_glitch_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o550))
+(assert (! (> 20 0) :named o545))
 ; cat_founding_pulsar_glitch_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.044923 0.5) :named o551))
+(assert (! (< 0.044923 0.5) :named o546))
 ; cat_founding_pulsar_glitch_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.044923 0.5) :named o552))
+(assert (! (< 0.044923 0.5) :named o547))
 ; cat_founding_pulsar_glitch_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.044923 0.5) :named o553))
+(assert (! (< 0.044923 0.5) :named o548))
 ; cat_founding_pulsar_glitch_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o554))
+(assert (! (= 1 1) :named o549))
 ; cat_founding_white_dwarf_cooling_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o555))
+(assert (! (> 20 0) :named o550))
 ; cat_founding_white_dwarf_cooling_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.044923 0.5) :named o556))
+(assert (! (< 0.044923 0.5) :named o551))
 ; cat_founding_white_dwarf_cooling_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.044923 0.5) :named o557))
+(assert (! (< 0.044923 0.5) :named o552))
 ; cat_founding_white_dwarf_cooling_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.044923 0.5) :named o558))
+(assert (! (< 0.044923 0.5) :named o553))
 ; cat_founding_white_dwarf_cooling_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o559))
+(assert (! (= 1 1) :named o554))
 ; cat_speleology_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o560))
+(assert (! (> 24 0) :named o555))
 ; cat_speleology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000637597 0.5) :named o561))
+(assert (! (< 0.000637597 0.5) :named o556))
 ; cat_speleology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000637597 0.5) :named o562))
+(assert (! (< 0.000637597 0.5) :named o557))
 ; cat_speleology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.04459 0.5) :named o563))
+(assert (! (< 0.04459 0.5) :named o558))
 ; cat_speleology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o564))
+(assert (! (= 1 1) :named o559))
 ; cat_volcanology_panel_records_pos kind=nat_pos
-(assert (! (> 90 0) :named o565))
+(assert (! (> 90 0) :named o560))
 ; cat_volcanology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.023502 0.5) :named o566))
+(assert (! (< 0.023502 0.5) :named o561))
 ; cat_volcanology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.023502 0.5) :named o567))
+(assert (! (< 0.023502 0.5) :named o562))
 ; cat_volcanology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.04459 0.5) :named o568))
+(assert (! (< 0.04459 0.5) :named o563))
 ; cat_volcanology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o569))
+(assert (! (= 1 1) :named o564))
 ; cat_marine_biology_records_pos kind=nat_pos
-(assert (! (> 540 0) :named o570))
+(assert (! (> 540 0) :named o565))
 ; cat_marine_biology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236250385193522 0.5) :named o571))
+(assert (! (< 0.022236250385193522 0.5) :named o566))
 ; cat_marine_biology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236250385193522 0.5) :named o572))
+(assert (! (< 0.022236250385193522 0.5) :named o567))
 ; cat_marine_biology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.04447250077038671 0.5) :named o573))
+(assert (! (< 0.04447250077038671 0.5) :named o568))
 ; cat_marine_biology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o574))
+(assert (! (= 1 1) :named o569))
 ; cat_fsot_processor_function_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o575))
+(assert (! (> 24 0) :named o570))
 ; cat_fsot_processor_function_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o576))
+(assert (! (< 0.0 0.5) :named o571))
 ; cat_fsot_processor_function_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o577))
+(assert (! (< 0.0 0.5) :named o572))
 ; cat_fsot_processor_function_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.044346326 0.5) :named o578))
+(assert (! (< 0.044346326 0.5) :named o573))
 ; cat_fsot_processor_function_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o579))
+(assert (! (= 1 1) :named o574))
 ; cat_founding_cosmic_dust_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o580))
+(assert (! (> 20 0) :named o575))
 ; cat_founding_cosmic_dust_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.044121 0.5) :named o581))
+(assert (! (< 0.044121 0.5) :named o576))
 ; cat_founding_cosmic_dust_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.044121 0.5) :named o582))
+(assert (! (< 0.044121 0.5) :named o577))
 ; cat_founding_cosmic_dust_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.044121 0.5) :named o583))
+(assert (! (< 0.044121 0.5) :named o578))
 ; cat_founding_cosmic_dust_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o584))
+(assert (! (= 1 1) :named o579))
 ; cat_robotics_control_systems_records_pos kind=nat_pos
-(assert (! (> 44 0) :named o585))
+(assert (! (> 44 0) :named o580))
 ; cat_robotics_control_systems_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o586))
+(assert (! (< 0.0 0.5) :named o581))
 ; cat_robotics_control_systems_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o587))
+(assert (! (< 0.0 0.5) :named o582))
 ; cat_robotics_control_systems_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.04114895703267507 0.5) :named o588))
+(assert (! (< 0.04114895703267507 0.5) :named o583))
 ; cat_robotics_control_systems_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o589))
+(assert (! (= 1 1) :named o584))
 ; cat_time_emergence_simulation_records_pos kind=nat_pos
-(assert (! (> 28 0) :named o590))
+(assert (! (> 28 0) :named o585))
 ; cat_time_emergence_simulation_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o591))
+(assert (! (< 0.0 0.5) :named o586))
 ; cat_time_emergence_simulation_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o592))
+(assert (! (< 0.0 0.5) :named o587))
 ; cat_time_emergence_simulation_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.041099 0.5) :named o593))
+(assert (! (< 0.041099 0.5) :named o588))
 ; cat_time_emergence_simulation_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o594))
+(assert (! (= 1 1) :named o589))
 ; cat_circuit_component_emergence_panel_records_pos kind=nat_pos
-(assert (! (> 57 0) :named o595))
+(assert (! (> 57 0) :named o590))
 ; cat_circuit_component_emergence_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.020755 0.5) :named o596))
+(assert (! (< 0.020755 0.5) :named o591))
 ; cat_circuit_component_emergence_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.020755 0.5) :named o597))
+(assert (! (< 0.020755 0.5) :named o592))
 ; cat_circuit_component_emergence_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040817 0.5) :named o598))
+(assert (! (< 0.040817 0.5) :named o593))
 ; cat_circuit_component_emergence_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o599))
+(assert (! (= 1 1) :named o594))
 ; cat_optics_interferometry_depth_panel_records_pos kind=nat_pos
-(assert (! (> 82 0) :named o600))
+(assert (! (> 82 0) :named o595))
 ; cat_optics_interferometry_depth_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.026954 0.5) :named o601))
+(assert (! (< 0.026954 0.5) :named o596))
 ; cat_optics_interferometry_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.026954 0.5) :named o602))
+(assert (! (< 0.026954 0.5) :named o597))
 ; cat_optics_interferometry_depth_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040817 0.5) :named o603))
+(assert (! (< 0.040817 0.5) :named o598))
 ; cat_optics_interferometry_depth_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o604))
+(assert (! (= 1 1) :named o599))
 ; cat_schematic_netlist_intrinsic_panel_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o605))
+(assert (! (> 27 0) :named o600))
 ; cat_schematic_netlist_intrinsic_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.020755 0.5) :named o606))
+(assert (! (< 0.020755 0.5) :named o601))
 ; cat_schematic_netlist_intrinsic_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.020755 0.5) :named o607))
+(assert (! (< 0.020755 0.5) :named o602))
 ; cat_schematic_netlist_intrinsic_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040817 0.5) :named o608))
+(assert (! (< 0.040817 0.5) :named o603))
 ; cat_schematic_netlist_intrinsic_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o609))
+(assert (! (= 1 1) :named o604))
 ; cat_tier_96_circuit_spine_records_pos kind=nat_pos
-(assert (! (> 37 0) :named o610))
+(assert (! (> 37 0) :named o605))
 ; cat_tier_96_circuit_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.020755 0.5) :named o611))
+(assert (! (< 0.020755 0.5) :named o606))
 ; cat_tier_96_circuit_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.020755 0.5) :named o612))
+(assert (! (< 0.020755 0.5) :named o607))
 ; cat_tier_96_circuit_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040817 0.5) :named o613))
+(assert (! (< 0.040817 0.5) :named o608))
 ; cat_tier_96_circuit_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o614))
+(assert (! (= 1 1) :named o609))
 ; cat_chemical_engineering_records_pos kind=nat_pos
-(assert (! (> 186 0) :named o615))
+(assert (! (> 186 0) :named o610))
 ; cat_chemical_engineering_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0010224497788791555 0.5) :named o616))
+(assert (! (< 0.0010224497788791555 0.5) :named o611))
 ; cat_chemical_engineering_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0010224497788791555 0.5) :named o617))
+(assert (! (< 0.0010224497788791555 0.5) :named o612))
 ; cat_chemical_engineering_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.04078840642308449 0.5) :named o618))
+(assert (! (< 0.04078840642308449 0.5) :named o613))
 ; cat_chemical_engineering_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o619))
+(assert (! (= 1 1) :named o614))
 ; cat_chembl_deep_open_records_pos kind=nat_pos
-(assert (! (> 188 0) :named o620))
+(assert (! (> 188 0) :named o615))
 ; cat_chembl_deep_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o621))
+(assert (! (< 0.040788 0.5) :named o616))
 ; cat_chembl_deep_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.040788 0.5) :named o622))
+(assert (! (< 0.040788 0.5) :named o617))
 ; cat_chembl_deep_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o623))
+(assert (! (< 0.040788 0.5) :named o618))
 ; cat_chembl_deep_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o624))
+(assert (! (= 1 1) :named o619))
 ; cat_culinary_fermentation_maillard_panel_records_pos kind=nat_pos
-(assert (! (> 151 0) :named o625))
+(assert (! (> 151 0) :named o620))
 ; cat_culinary_fermentation_maillard_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o626))
+(assert (! (< 0.040788 0.5) :named o621))
 ; cat_culinary_fermentation_maillard_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.040788 0.5) :named o627))
+(assert (! (< 0.040788 0.5) :named o622))
 ; cat_culinary_fermentation_maillard_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o628))
+(assert (! (< 0.040788 0.5) :named o623))
 ; cat_culinary_fermentation_maillard_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o629))
+(assert (! (= 1 1) :named o624))
 ; cat_petrology_geochemistry_panel_records_pos kind=nat_pos
-(assert (! (> 80 0) :named o630))
+(assert (! (> 80 0) :named o625))
 ; cat_petrology_geochemistry_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.030428 0.5) :named o631))
+(assert (! (< 0.030428 0.5) :named o626))
 ; cat_petrology_geochemistry_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.030428 0.5) :named o632))
+(assert (! (< 0.030428 0.5) :named o627))
 ; cat_petrology_geochemistry_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o633))
+(assert (! (< 0.040788 0.5) :named o628))
 ; cat_petrology_geochemistry_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o634))
-; cat_pubchem_compound_properties_records_pos kind=nat_pos
-(assert (! (> 500 0) :named o635))
-; cat_pubchem_compound_properties_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.002633 0.5) :named o636))
-; cat_pubchem_compound_properties_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.002633 0.5) :named o637))
-; cat_pubchem_compound_properties_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o638))
-; cat_pubchem_compound_properties_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o639))
+(assert (! (= 1 1) :named o629))
 ; cat_pubchem_depth_open_records_pos kind=nat_pos
-(assert (! (> 149 0) :named o640))
+(assert (! (> 149 0) :named o630))
 ; cat_pubchem_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o641))
+(assert (! (< 0.040788 0.5) :named o631))
 ; cat_pubchem_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.040788 0.5) :named o642))
+(assert (! (< 0.040788 0.5) :named o632))
 ; cat_pubchem_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o643))
+(assert (! (< 0.040788 0.5) :named o633))
 ; cat_pubchem_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o644))
-; cat_rcsb_pdb_structures_records_pos kind=nat_pos
-(assert (! (> 45 0) :named o645))
-; cat_rcsb_pdb_structures_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0265185 0.5) :named o646))
-; cat_rcsb_pdb_structures_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0265185 0.5) :named o647))
-; cat_rcsb_pdb_structures_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.040788 0.5) :named o648))
-; cat_rcsb_pdb_structures_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o649))
+(assert (! (= 1 1) :named o634))
 ; cat_fluid_spacetime_observable_spine_records_pos kind=nat_pos
-(assert (! (> 29 0) :named o650))
+(assert (! (> 29 0) :named o635))
 ; cat_fluid_spacetime_observable_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0111155 0.5) :named o651))
+(assert (! (< 0.0111155 0.5) :named o636))
 ; cat_fluid_spacetime_observable_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0111155 0.5) :named o652))
+(assert (! (< 0.0111155 0.5) :named o637))
 ; cat_fluid_spacetime_observable_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.039797 0.5) :named o653))
+(assert (! (< 0.039797 0.5) :named o638))
 ; cat_fluid_spacetime_observable_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o654))
+(assert (! (= 1 1) :named o639))
 ; cat_fluid_spacetime_prereg_validation_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o655))
+(assert (! (> 20 0) :named o640))
 ; cat_fluid_spacetime_prereg_validation_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o656))
+(assert (! (< 0.0 0.5) :named o641))
 ; cat_fluid_spacetime_prereg_validation_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o657))
+(assert (! (< 0.0 0.5) :named o642))
 ; cat_fluid_spacetime_prereg_validation_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.039797 0.5) :named o658))
+(assert (! (< 0.039797 0.5) :named o643))
 ; cat_fluid_spacetime_prereg_validation_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o659))
+(assert (! (= 1 1) :named o644))
 ; cat_fpc_fluidlink_timing_deep_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o660))
+(assert (! (> 24 0) :named o645))
 ; cat_fpc_fluidlink_timing_deep_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000010883 0.5) :named o661))
+(assert (! (< 0.000010883 0.5) :named o646))
 ; cat_fpc_fluidlink_timing_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000010883 0.5) :named o662))
+(assert (! (< 0.000010883 0.5) :named o647))
 ; cat_fpc_fluidlink_timing_deep_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.039797 0.5) :named o663))
+(assert (! (< 0.039797 0.5) :named o648))
 ; cat_fpc_fluidlink_timing_deep_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o664))
+(assert (! (= 1 1) :named o649))
 ; cat_energy_lean_route_credibility_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o665))
+(assert (! (> 40 0) :named o650))
 ; cat_energy_lean_route_credibility_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.039349 0.5) :named o666))
+(assert (! (< 0.039349 0.5) :named o651))
 ; cat_energy_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.039349 0.5) :named o667))
+(assert (! (< 0.039349 0.5) :named o652))
 ; cat_energy_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.039349 0.5) :named o668))
+(assert (! (< 0.039349 0.5) :named o653))
 ; cat_energy_lean_route_credibility_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o669))
+(assert (! (= 1 1) :named o654))
 ; cat_engineering_hardware_code_spine_records_pos kind=nat_pos
-(assert (! (> 93 0) :named o670))
+(assert (! (> 93 0) :named o655))
 ; cat_engineering_hardware_code_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o671))
+(assert (! (< 0.0 0.5) :named o656))
 ; cat_engineering_hardware_code_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o672))
+(assert (! (< 0.0 0.5) :named o657))
 ; cat_engineering_hardware_code_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.039349 0.5) :named o673))
+(assert (! (< 0.039349 0.5) :named o658))
 ; cat_engineering_hardware_code_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o674))
+(assert (! (= 1 1) :named o659))
 ; cat_esp32_platform_engineering_panel_records_pos kind=nat_pos
-(assert (! (> 34 0) :named o675))
+(assert (! (> 34 0) :named o660))
 ; cat_esp32_platform_engineering_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.020755 0.5) :named o676))
+(assert (! (< 0.020755 0.5) :named o661))
 ; cat_esp32_platform_engineering_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.020755 0.5) :named o677))
+(assert (! (< 0.020755 0.5) :named o662))
 ; cat_esp32_platform_engineering_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.039349 0.5) :named o678))
+(assert (! (< 0.039349 0.5) :named o663))
 ; cat_esp32_platform_engineering_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o679))
-; cat_fuel_lab_live_panel_records_pos kind=nat_pos
-(assert (! (> 366 0) :named o680))
-; cat_fuel_lab_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.039349 0.5) :named o681))
-; cat_fuel_lab_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.039349 0.5) :named o682))
-; cat_fuel_lab_live_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.039349 0.5) :named o683))
-; cat_fuel_lab_live_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o684))
+(assert (! (= 1 1) :named o664))
 ; cat_mechanical_engineering_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o685))
+(assert (! (> 20 0) :named o665))
 ; cat_mechanical_engineering_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.039349 0.5) :named o686))
+(assert (! (< 0.039349 0.5) :named o666))
 ; cat_mechanical_engineering_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.039349 0.5) :named o687))
+(assert (! (< 0.039349 0.5) :named o667))
 ; cat_mechanical_engineering_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.039349 0.5) :named o688))
+(assert (! (< 0.039349 0.5) :named o668))
 ; cat_mechanical_engineering_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o689))
+(assert (! (= 1 1) :named o669))
 ; cat_formula_branching_fractal_records_pos kind=nat_pos
-(assert (! (> 380 0) :named o690))
+(assert (! (> 380 0) :named o670))
 ; cat_formula_branching_fractal_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.038016537604979236 0.5) :named o691))
+(assert (! (< 0.038016537604979236 0.5) :named o671))
 ; cat_formula_branching_fractal_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.038016537604979236 0.5) :named o692))
+(assert (! (< 0.038016537604979236 0.5) :named o672))
 ; cat_formula_branching_fractal_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.038016537604988035 0.5) :named o693))
+(assert (! (< 0.038016537604988035 0.5) :named o673))
 ; cat_formula_branching_fractal_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o694))
+(assert (! (= 1 1) :named o674))
 ; cat_adjacent_rung_coupling_records_pos kind=nat_pos
-(assert (! (> 36 0) :named o695))
+(assert (! (> 36 0) :named o675))
 ; cat_adjacent_rung_coupling_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.029432954634510528 0.5) :named o696))
+(assert (! (< 0.029432954634510528 0.5) :named o676))
 ; cat_adjacent_rung_coupling_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.029432954634510528 0.5) :named o697))
+(assert (! (< 0.029432954634510528 0.5) :named o677))
 ; cat_adjacent_rung_coupling_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.038016537604979236 0.5) :named o698))
+(assert (! (< 0.038016537604979236 0.5) :named o678))
 ; cat_adjacent_rung_coupling_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o699))
+(assert (! (= 1 1) :named o679))
 ; cat_complexity_folding_emergence_panel_records_pos kind=nat_pos
-(assert (! (> 29 0) :named o700))
+(assert (! (> 29 0) :named o680))
 ; cat_complexity_folding_emergence_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02658792169940266 0.5) :named o701))
+(assert (! (< 0.02658792169940266 0.5) :named o681))
 ; cat_complexity_folding_emergence_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02658792169940266 0.5) :named o702))
+(assert (! (< 0.02658792169940266 0.5) :named o682))
 ; cat_complexity_folding_emergence_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.038016537604979236 0.5) :named o703))
+(assert (! (< 0.038016537604979236 0.5) :named o683))
 ; cat_complexity_folding_emergence_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o704))
+(assert (! (= 1 1) :named o684))
 ; cat_nist_asd_spectroscopy_open_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o705))
+(assert (! (> 24 0) :named o685))
 ; cat_nist_asd_spectroscopy_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.036791 0.5) :named o706))
+(assert (! (< 0.036791 0.5) :named o686))
 ; cat_nist_asd_spectroscopy_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.036791 0.5) :named o707))
+(assert (! (< 0.036791 0.5) :named o687))
 ; cat_nist_asd_spectroscopy_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03679119329314672 0.5) :named o708))
+(assert (! (< 0.03679119329314672 0.5) :named o688))
 ; cat_nist_asd_spectroscopy_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o709))
+(assert (! (= 1 1) :named o689))
 ; cat_nist_asd_multi_species_open_records_pos kind=nat_pos
-(assert (! (> 26 0) :named o710))
+(assert (! (> 26 0) :named o690))
 ; cat_nist_asd_multi_species_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.036791 0.5) :named o711))
+(assert (! (< 0.036791 0.5) :named o691))
 ; cat_nist_asd_multi_species_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.036791 0.5) :named o712))
+(assert (! (< 0.036791 0.5) :named o692))
 ; cat_nist_asd_multi_species_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.036791 0.5) :named o713))
+(assert (! (< 0.036791 0.5) :named o693))
 ; cat_nist_asd_multi_species_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o714))
+(assert (! (= 1 1) :named o694))
 ; cat_consciousness_galactic_orbital_bridge_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o715))
+(assert (! (> 48 0) :named o695))
 ; cat_consciousness_galactic_orbital_bridge_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.03675719741393878 0.5) :named o716))
+(assert (! (< 0.03675719741393878 0.5) :named o696))
 ; cat_consciousness_galactic_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.03675719741393878 0.5) :named o717))
+(assert (! (< 0.03675719741393878 0.5) :named o697))
 ; cat_consciousness_galactic_orbital_bridge_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.036757197413945335 0.5) :named o718))
+(assert (! (< 0.036757197413945335 0.5) :named o698))
 ; cat_consciousness_galactic_orbital_bridge_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o719))
+(assert (! (= 1 1) :named o699))
 ; cat_nuclear_lean_route_credibility_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o720))
+(assert (! (> 24 0) :named o700))
 ; cat_nuclear_lean_route_credibility_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000637597 0.5) :named o721))
+(assert (! (< 0.000637597 0.5) :named o701))
 ; cat_nuclear_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000637597 0.5) :named o722))
+(assert (! (< 0.000637597 0.5) :named o702))
 ; cat_nuclear_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.036559739 0.5) :named o723))
+(assert (! (< 0.036559739 0.5) :named o703))
 ; cat_nuclear_lean_route_credibility_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o724))
+(assert (! (= 1 1) :named o704))
 ; cat_condensed_matter_superconductivity_depth_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o725))
+(assert (! (> 24 0) :named o705))
 ; cat_condensed_matter_superconductivity_depth_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.033841 0.5) :named o726))
+(assert (! (< 0.033841 0.5) :named o706))
 ; cat_condensed_matter_superconductivity_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.033841 0.5) :named o727))
+(assert (! (< 0.033841 0.5) :named o707))
 ; cat_condensed_matter_superconductivity_depth_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.033841 0.5) :named o728))
+(assert (! (< 0.033841 0.5) :named o708))
 ; cat_condensed_matter_superconductivity_depth_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o729))
+(assert (! (= 1 1) :named o709))
 ; cat_materials_species_bridge_live_panel_records_pos kind=nat_pos
-(assert (! (> 150 0) :named o730))
+(assert (! (> 150 0) :named o710))
 ; cat_materials_species_bridge_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o731))
+(assert (! (< 0.01341 0.5) :named o711))
 ; cat_materials_species_bridge_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01341 0.5) :named o732))
+(assert (! (< 0.01341 0.5) :named o712))
 ; cat_materials_species_bridge_live_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.033841 0.5) :named o733))
+(assert (! (< 0.033841 0.5) :named o713))
 ; cat_materials_species_bridge_live_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o734))
+(assert (! (= 1 1) :named o714))
 ; cat_civil_engineering_records_pos kind=nat_pos
-(assert (! (> 37 0) :named o735))
+(assert (! (> 37 0) :named o715))
 ; cat_civil_engineering_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0335259880736416 0.5) :named o736))
+(assert (! (< 0.0335259880736416 0.5) :named o716))
 ; cat_civil_engineering_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0335259880736416 0.5) :named o737))
+(assert (! (< 0.0335259880736416 0.5) :named o717))
 ; cat_civil_engineering_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03352598807365344 0.5) :named o738))
+(assert (! (< 0.03352598807365344 0.5) :named o718))
 ; cat_civil_engineering_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o739))
+(assert (! (= 1 1) :named o719))
 ; cat_toxicology_panel_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o740))
+(assert (! (> 21 0) :named o720))
 ; cat_toxicology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.033401 0.5) :named o741))
+(assert (! (< 0.033401 0.5) :named o721))
 ; cat_toxicology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.033401 0.5) :named o742))
+(assert (! (< 0.033401 0.5) :named o722))
 ; cat_toxicology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.033401 0.5) :named o743))
+(assert (! (< 0.033401 0.5) :named o723))
 ; cat_toxicology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o744))
+(assert (! (= 1 1) :named o724))
 ; cat_particle_neural_orbital_bridge_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o745))
+(assert (! (> 48 0) :named o725))
 ; cat_particle_neural_orbital_bridge_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.03326447040434832 0.5) :named o746))
+(assert (! (< 0.03326447040434832 0.5) :named o726))
 ; cat_particle_neural_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.03326447040434832 0.5) :named o747))
+(assert (! (< 0.03326447040434832 0.5) :named o727))
 ; cat_particle_neural_orbital_bridge_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03326447040435723 0.5) :named o748))
+(assert (! (< 0.03326447040435723 0.5) :named o728))
 ; cat_particle_neural_orbital_bridge_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o749))
+(assert (! (= 1 1) :named o729))
 ; cat_fold_depth_metrics_records_pos kind=nat_pos
-(assert (! (> 51 0) :named o750))
+(assert (! (> 51 0) :named o730))
 ; cat_fold_depth_metrics_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.025753835305195434 0.5) :named o751))
+(assert (! (< 0.025753835305195434 0.5) :named o731))
 ; cat_fold_depth_metrics_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.025753835305195434 0.5) :named o752))
+(assert (! (< 0.025753835305195434 0.5) :named o732))
 ; cat_fold_depth_metrics_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03326447040435376 0.5) :named o753))
+(assert (! (< 0.03326447040435376 0.5) :named o733))
 ; cat_fold_depth_metrics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o754))
+(assert (! (= 1 1) :named o734))
 ; cat_law_policy_records_pos kind=nat_pos
-(assert (! (> 180 0) :named o755))
+(assert (! (> 180 0) :named o735))
 ; cat_law_policy_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.019504399572479875 0.5) :named o756))
+(assert (! (< 0.019504399572479875 0.5) :named o736))
 ; cat_law_policy_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.019504399572479875 0.5) :named o757))
+(assert (! (< 0.019504399572479875 0.5) :named o737))
 ; cat_law_policy_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03250733262079721 0.5) :named o758))
+(assert (! (< 0.03250733262079721 0.5) :named o738))
 ; cat_law_policy_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o759))
+(assert (! (= 1 1) :named o739))
 ; cat_domain_coupling_simulation_records_pos kind=nat_pos
-(assert (! (> 18617 0) :named o760))
+(assert (! (> 18617 0) :named o740))
 ; cat_domain_coupling_simulation_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o761))
+(assert (! (< 0.0 0.5) :named o741))
 ; cat_domain_coupling_simulation_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o762))
+(assert (! (< 0.0 0.5) :named o742))
 ; cat_domain_coupling_simulation_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.032418 0.5) :named o763))
+(assert (! (< 0.032418 0.5) :named o743))
 ; cat_domain_coupling_simulation_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o764))
+(assert (! (= 1 1) :named o744))
 ; cat_fpc_temporal_coupling_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o765))
+(assert (! (> 24 0) :named o745))
 ; cat_fpc_temporal_coupling_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000637597 0.5) :named o766))
+(assert (! (< 0.000637597 0.5) :named o746))
 ; cat_fpc_temporal_coupling_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000637597 0.5) :named o767))
+(assert (! (< 0.000637597 0.5) :named o747))
 ; cat_fpc_temporal_coupling_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.032418 0.5) :named o768))
+(assert (! (< 0.032418 0.5) :named o748))
 ; cat_fpc_temporal_coupling_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o769))
+(assert (! (= 1 1) :named o749))
 ; cat_finance_markets_records_pos kind=nat_pos
-(assert (! (> 150 0) :named o770))
+(assert (! (> 150 0) :named o750))
 ; cat_finance_markets_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02584018082743169 0.5) :named o771))
+(assert (! (< 0.02584018082743169 0.5) :named o751))
 ; cat_finance_markets_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02584018082743169 0.5) :named o772))
+(assert (! (< 0.02584018082743169 0.5) :named o752))
 ; cat_finance_markets_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03230022603429596 0.5) :named o773))
+(assert (! (< 0.03230022603429596 0.5) :named o753))
 ; cat_finance_markets_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o774))
+(assert (! (= 1 1) :named o754))
 ; cat_supply_chain_logistics_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o775))
+(assert (! (> 40 0) :named o755))
 ; cat_supply_chain_logistics_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02515962546361099 0.5) :named o776))
+(assert (! (< 0.02515962546361099 0.5) :named o756))
 ; cat_supply_chain_logistics_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02515962546361099 0.5) :named o777))
+(assert (! (< 0.02515962546361099 0.5) :named o757))
 ; cat_supply_chain_logistics_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03230022603429461 0.5) :named o778))
+(assert (! (< 0.03230022603429461 0.5) :named o758))
 ; cat_supply_chain_logistics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o779))
+(assert (! (= 1 1) :named o759))
 ; cat_arxiv_primitives_panel_records_pos kind=nat_pos
-(assert (! (> 22 0) :named o780))
+(assert (! (> 22 0) :named o760))
 ; cat_arxiv_primitives_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o781))
+(assert (! (< 0.031506 0.5) :named o761))
 ; cat_arxiv_primitives_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.031506 0.5) :named o782))
+(assert (! (< 0.031506 0.5) :named o762))
 ; cat_arxiv_primitives_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o783))
+(assert (! (< 0.031506 0.5) :named o763))
 ; cat_arxiv_primitives_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o784))
+(assert (! (= 1 1) :named o764))
 ; cat_coding_structure_verifier_panel_records_pos kind=nat_pos
-(assert (! (> 43 0) :named o785))
+(assert (! (> 43 0) :named o765))
 ; cat_coding_structure_verifier_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o786))
+(assert (! (< 0.0 0.5) :named o766))
 ; cat_coding_structure_verifier_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o787))
+(assert (! (< 0.0 0.5) :named o767))
 ; cat_coding_structure_verifier_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o788))
+(assert (! (< 0.031506 0.5) :named o768))
 ; cat_coding_structure_verifier_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o789))
+(assert (! (= 1 1) :named o769))
 ; cat_consciousness_genetics_coupling_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o790))
+(assert (! (> 24 0) :named o770))
 ; cat_consciousness_genetics_coupling_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o791))
+(assert (! (< 0.031506 0.5) :named o771))
 ; cat_consciousness_genetics_coupling_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.031506 0.5) :named o792))
+(assert (! (< 0.031506 0.5) :named o772))
 ; cat_consciousness_genetics_coupling_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o793))
+(assert (! (< 0.031506 0.5) :named o773))
 ; cat_consciousness_genetics_coupling_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o794))
+(assert (! (= 1 1) :named o774))
 ; cat_consciousness_genetics_species_panel_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o795))
+(assert (! (> 27 0) :named o775))
 ; cat_consciousness_genetics_species_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o796))
+(assert (! (< 0.022236 0.5) :named o776))
 ; cat_consciousness_genetics_species_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o797))
+(assert (! (< 0.022236 0.5) :named o777))
 ; cat_consciousness_genetics_species_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o798))
+(assert (! (< 0.031506 0.5) :named o778))
 ; cat_consciousness_genetics_species_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o799))
+(assert (! (= 1 1) :named o779))
 ; cat_consciousness_species_multi_panel_records_pos kind=nat_pos
-(assert (! (> 269 0) :named o800))
+(assert (! (> 269 0) :named o780))
 ; cat_consciousness_species_multi_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0201195 0.5) :named o801))
+(assert (! (< 0.0201195 0.5) :named o781))
 ; cat_consciousness_species_multi_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0201195 0.5) :named o802))
+(assert (! (< 0.0201195 0.5) :named o782))
 ; cat_consciousness_species_multi_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o803))
+(assert (! (< 0.031506 0.5) :named o783))
 ; cat_consciousness_species_multi_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o804))
+(assert (! (= 1 1) :named o784))
 ; cat_federal_science_registry_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o805))
+(assert (! (> 24 0) :named o785))
 ; cat_federal_science_registry_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.013294 0.5) :named o806))
+(assert (! (< 0.013294 0.5) :named o786))
 ; cat_federal_science_registry_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.013294 0.5) :named o807))
+(assert (! (< 0.013294 0.5) :named o787))
 ; cat_federal_science_registry_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o808))
+(assert (! (< 0.031506 0.5) :named o788))
 ; cat_federal_science_registry_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o809))
+(assert (! (= 1 1) :named o789))
 ; cat_hybrid_fi_sim_stratum_deep_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o810))
+(assert (! (> 24 0) :named o790))
 ; cat_hybrid_fi_sim_stratum_deep_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015311 0.5) :named o811))
+(assert (! (< 0.015311 0.5) :named o791))
 ; cat_hybrid_fi_sim_stratum_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015311 0.5) :named o812))
+(assert (! (< 0.015311 0.5) :named o792))
 ; cat_hybrid_fi_sim_stratum_deep_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o813))
+(assert (! (< 0.031506 0.5) :named o793))
 ; cat_hybrid_fi_sim_stratum_deep_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o814))
+(assert (! (= 1 1) :named o794))
 ; cat_living_fsot_hardware_panel_records_pos kind=nat_pos
-(assert (! (> 152 0) :named o815))
+(assert (! (> 152 0) :named o795))
 ; cat_living_fsot_hardware_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o816))
+(assert (! (< 0.014767 0.5) :named o796))
 ; cat_living_fsot_hardware_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o817))
+(assert (! (< 0.014767 0.5) :named o797))
 ; cat_living_fsot_hardware_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o818))
+(assert (! (< 0.031506 0.5) :named o798))
 ; cat_living_fsot_hardware_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o819))
+(assert (! (= 1 1) :named o799))
 ; cat_longevity_consciousness_coupling_panel_records_pos kind=nat_pos
-(assert (! (> 890 0) :named o820))
+(assert (! (> 890 0) :named o800))
 ; cat_longevity_consciousness_coupling_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022424 0.5) :named o821))
+(assert (! (< 0.022424 0.5) :named o801))
 ; cat_longevity_consciousness_coupling_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022424 0.5) :named o822))
+(assert (! (< 0.022424 0.5) :named o802))
 ; cat_longevity_consciousness_coupling_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o823))
+(assert (! (< 0.031506 0.5) :named o803))
 ; cat_longevity_consciousness_coupling_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o824))
+(assert (! (= 1 1) :named o804))
 ; cat_mpcorb_minor_planet_catalog_records_pos kind=nat_pos
-(assert (! (> 1554101 0) :named o825))
+(assert (! (> 1554101 0) :named o805))
 ; cat_mpcorb_minor_planet_catalog_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o826))
+(assert (! (< 0.023015 0.5) :named o806))
 ; cat_mpcorb_minor_planet_catalog_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.023015 0.5) :named o827))
+(assert (! (< 0.023015 0.5) :named o807))
 ; cat_mpcorb_minor_planet_catalog_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o828))
+(assert (! (< 0.031506 0.5) :named o808))
 ; cat_mpcorb_minor_planet_catalog_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o829))
+(assert (! (= 1 1) :named o809))
 ; cat_neuroeconomics_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o830))
+(assert (! (> 20 0) :named o810))
 ; cat_neuroeconomics_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o831))
+(assert (! (< 0.031506 0.5) :named o811))
 ; cat_neuroeconomics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.031506 0.5) :named o832))
+(assert (! (< 0.031506 0.5) :named o812))
 ; cat_neuroeconomics_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o833))
+(assert (! (< 0.031506 0.5) :named o813))
 ; cat_neuroeconomics_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o834))
+(assert (! (= 1 1) :named o814))
 ; cat_neuroscience_connectomics_depth_panel_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o835))
+(assert (! (> 27 0) :named o815))
 ; cat_neuroscience_connectomics_depth_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0201195 0.5) :named o836))
+(assert (! (< 0.0201195 0.5) :named o816))
 ; cat_neuroscience_connectomics_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0201195 0.5) :named o837))
+(assert (! (< 0.0201195 0.5) :named o817))
 ; cat_neuroscience_connectomics_depth_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o838))
+(assert (! (< 0.031506 0.5) :named o818))
 ; cat_neuroscience_connectomics_depth_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o839))
+(assert (! (= 1 1) :named o819))
 ; cat_omni_theory_humanities_panel_records_pos kind=nat_pos
-(assert (! (> 37 0) :named o840))
+(assert (! (> 37 0) :named o820))
 ; cat_omni_theory_humanities_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0222545 0.5) :named o841))
+(assert (! (< 0.0222545 0.5) :named o821))
 ; cat_omni_theory_humanities_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0222545 0.5) :named o842))
+(assert (! (< 0.0222545 0.5) :named o822))
 ; cat_omni_theory_humanities_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o843))
+(assert (! (< 0.031506 0.5) :named o823))
 ; cat_omni_theory_humanities_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o844))
+(assert (! (= 1 1) :named o824))
 ; cat_overflow_carry_emergence_panel_records_pos kind=nat_pos
-(assert (! (> 29 0) :named o845))
+(assert (! (> 29 0) :named o825))
 ; cat_overflow_carry_emergence_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o846))
+(assert (! (< 0.009504 0.5) :named o826))
 ; cat_overflow_carry_emergence_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o847))
+(assert (! (< 0.009504 0.5) :named o827))
 ; cat_overflow_carry_emergence_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o848))
+(assert (! (< 0.031506 0.5) :named o828))
 ; cat_overflow_carry_emergence_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o849))
+(assert (! (= 1 1) :named o829))
 ; cat_psychology_psychometrics_depth_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o850))
+(assert (! (> 24 0) :named o830))
 ; cat_psychology_psychometrics_depth_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009282423000000001 0.5) :named o851))
+(assert (! (< 0.009282423000000001 0.5) :named o831))
 ; cat_psychology_psychometrics_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009282423000000001 0.5) :named o852))
+(assert (! (< 0.009282423000000001 0.5) :named o832))
 ; cat_psychology_psychometrics_depth_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o853))
+(assert (! (< 0.031506 0.5) :named o833))
 ; cat_psychology_psychometrics_depth_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o854))
+(assert (! (= 1 1) :named o834))
 ; cat_tokenization_live_panel_records_pos kind=nat_pos
-(assert (! (> 51 0) :named o855))
+(assert (! (> 51 0) :named o835))
 ; cat_tokenization_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o856))
+(assert (! (< 0.031506 0.5) :named o836))
 ; cat_tokenization_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.031506 0.5) :named o857))
+(assert (! (< 0.031506 0.5) :named o837))
 ; cat_tokenization_live_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o858))
+(assert (! (< 0.031506 0.5) :named o838))
 ; cat_tokenization_live_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o859))
+(assert (! (= 1 1) :named o839))
 ; cat_zenodo_records_depth_open_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o860))
+(assert (! (> 32 0) :named o840))
 ; cat_zenodo_records_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o861))
+(assert (! (< 0.031506 0.5) :named o841))
 ; cat_zenodo_records_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.031506 0.5) :named o862))
+(assert (! (< 0.031506 0.5) :named o842))
 ; cat_zenodo_records_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031506 0.5) :named o863))
+(assert (! (< 0.031506 0.5) :named o843))
 ; cat_zenodo_records_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o864))
+(assert (! (= 1 1) :named o844))
 ; cat_chaos_mediated_phase_transitions_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o865))
+(assert (! (> 21 0) :named o845))
 ; cat_chaos_mediated_phase_transitions_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.03147898006445882 0.5) :named o866))
+(assert (! (< 0.03147898006445882 0.5) :named o846))
 ; cat_chaos_mediated_phase_transitions_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.03147898006445882 0.5) :named o867))
+(assert (! (< 0.03147898006445882 0.5) :named o847))
 ; cat_chaos_mediated_phase_transitions_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03147898006445882 0.5) :named o868))
+(assert (! (< 0.03147898006445882 0.5) :named o848))
 ; cat_chaos_mediated_phase_transitions_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o869))
+(assert (! (= 1 1) :named o849))
 ; cat_stsci_mast_telescope_panel_records_pos kind=nat_pos
-(assert (! (> 377 0) :named o870))
+(assert (! (> 377 0) :named o850))
 ; cat_stsci_mast_telescope_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.026954 0.5) :named o871))
+(assert (! (< 0.026954 0.5) :named o851))
 ; cat_stsci_mast_telescope_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.026954 0.5) :named o872))
+(assert (! (< 0.026954 0.5) :named o852))
 ; cat_stsci_mast_telescope_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031446 0.5) :named o873))
+(assert (! (< 0.031446 0.5) :named o853))
 ; cat_stsci_mast_telescope_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o874))
+(assert (! (= 1 1) :named o854))
 ; cat_vizier_wds_tap_live_deep_records_pos kind=nat_pos
-(assert (! (> 91 0) :named o875))
+(assert (! (> 91 0) :named o855))
 ; cat_vizier_wds_tap_live_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.026954 0.5) :named o876))
+(assert (! (< 0.026954 0.5) :named o856))
 ; cat_vizier_wds_tap_live_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.026954 0.5) :named o877))
+(assert (! (< 0.026954 0.5) :named o857))
 ; cat_vizier_wds_tap_live_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031446 0.5) :named o878))
+(assert (! (< 0.031446 0.5) :named o858))
 ; cat_vizier_wds_tap_live_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o879))
+(assert (! (= 1 1) :named o859))
 ; cat_wds_live_multiplicity_deep_records_pos kind=nat_pos
-(assert (! (> 281 0) :named o880))
+(assert (! (> 281 0) :named o860))
 ; cat_wds_live_multiplicity_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.026954 0.5) :named o881))
+(assert (! (< 0.026954 0.5) :named o861))
 ; cat_wds_live_multiplicity_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.026954 0.5) :named o882))
+(assert (! (< 0.026954 0.5) :named o862))
 ; cat_wds_live_multiplicity_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031446 0.5) :named o883))
+(assert (! (< 0.031446 0.5) :named o863))
 ; cat_wds_live_multiplicity_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o884))
+(assert (! (= 1 1) :named o864))
 ; cat_the_well_spot_check_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o885))
+(assert (! (> 24 0) :named o865))
 ; cat_the_well_spot_check_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015860423 0.5) :named o886))
+(assert (! (< 0.015860423 0.5) :named o866))
 ; cat_the_well_spot_check_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015860423 0.5) :named o887))
+(assert (! (< 0.015860423 0.5) :named o867))
 ; cat_the_well_spot_check_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.031159 0.5) :named o888))
+(assert (! (< 0.031159 0.5) :named o868))
 ; cat_the_well_spot_check_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o889))
+(assert (! (= 1 1) :named o869))
 ; cat_fluid_phase_current_spine_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o890))
+(assert (! (> 24 0) :named o870))
 ; cat_fluid_phase_current_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000038622500000000005 0.5) :named o891))
+(assert (! (< 0.000038622500000000005 0.5) :named o871))
 ; cat_fluid_phase_current_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000038622500000000005 0.5) :named o892))
+(assert (! (< 0.000038622500000000005 0.5) :named o872))
 ; cat_fluid_phase_current_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0310845 0.5) :named o893))
+(assert (! (< 0.0310845 0.5) :named o873))
 ; cat_fluid_phase_current_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o894))
+(assert (! (= 1 1) :named o874))
 ; cat_epidemiology_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o895))
+(assert (! (> 20 0) :named o875))
 ; cat_epidemiology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.03062212293865052 0.5) :named o896))
+(assert (! (< 0.03062212293865052 0.5) :named o876))
 ; cat_epidemiology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.03062212293865052 0.5) :named o897))
+(assert (! (< 0.03062212293865052 0.5) :named o877))
 ; cat_epidemiology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0306221229386594 0.5) :named o898))
+(assert (! (< 0.0306221229386594 0.5) :named o878))
 ; cat_epidemiology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o899))
+(assert (! (= 1 1) :named o879))
 ; cat_adversarial_fractal_break_tests_records_pos kind=nat_pos
-(assert (! (> 13 0) :named o900))
+(assert (! (> 13 0) :named o880))
 ; cat_adversarial_fractal_break_tests_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o901))
+(assert (! (< 0.0 0.5) :named o881))
 ; cat_adversarial_fractal_break_tests_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o902))
+(assert (! (< 0.0 0.5) :named o882))
 ; cat_adversarial_fractal_break_tests_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03062212293865052 0.5) :named o903))
+(assert (! (< 0.03062212293865052 0.5) :named o883))
 ; cat_adversarial_fractal_break_tests_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o904))
+(assert (! (= 1 1) :named o884))
 ; cat_cve_codon_hole_falsification_records_pos kind=nat_pos
-(assert (! (> 29 0) :named o905))
+(assert (! (> 29 0) :named o885))
 ; cat_cve_codon_hole_falsification_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009186636881580057 0.5) :named o906))
+(assert (! (< 0.009186636881580057 0.5) :named o886))
 ; cat_cve_codon_hole_falsification_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009186636881580057 0.5) :named o907))
+(assert (! (< 0.009186636881580057 0.5) :named o887))
 ; cat_cve_codon_hole_falsification_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.03062212293865052 0.5) :named o908))
+(assert (! (< 0.03062212293865052 0.5) :named o888))
 ; cat_cve_codon_hole_falsification_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o909))
+(assert (! (= 1 1) :named o889))
 ; cat_limnology_panel_records_pos kind=nat_pos
-(assert (! (> 2010 0) :named o910))
+(assert (! (> 2010 0) :named o890))
 ; cat_limnology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.030173 0.5) :named o911))
+(assert (! (< 0.030173 0.5) :named o891))
 ; cat_limnology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.030173 0.5) :named o912))
+(assert (! (< 0.030173 0.5) :named o892))
 ; cat_limnology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.030173 0.5) :named o913))
+(assert (! (< 0.030173 0.5) :named o893))
 ; cat_limnology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o914))
+(assert (! (= 1 1) :named o894))
 ; cat_marine_biology_panel_records_pos kind=nat_pos
-(assert (! (> 90 0) :named o915))
+(assert (! (> 90 0) :named o895))
 ; cat_marine_biology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o916))
+(assert (! (< 0.006006 0.5) :named o896))
 ; cat_marine_biology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006006 0.5) :named o917))
+(assert (! (< 0.006006 0.5) :named o897))
 ; cat_marine_biology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.030173 0.5) :named o918))
+(assert (! (< 0.030173 0.5) :named o898))
 ; cat_marine_biology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o919))
-; cat_noaa_coastal_tides_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o920))
-; cat_noaa_coastal_tides_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.030173 0.5) :named o921))
-; cat_noaa_coastal_tides_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.030173 0.5) :named o922))
-; cat_noaa_coastal_tides_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.030173 0.5) :named o923))
-; cat_noaa_coastal_tides_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o924))
-; cat_noaa_ndbc_buoy_panel_records_pos kind=nat_pos
-(assert (! (> 596 0) :named o925))
-; cat_noaa_ndbc_buoy_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.028287 0.5) :named o926))
-; cat_noaa_ndbc_buoy_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.028287 0.5) :named o927))
-; cat_noaa_ndbc_buoy_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.030173 0.5) :named o928))
-; cat_noaa_ndbc_buoy_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o929))
+(assert (! (= 1 1) :named o899))
 ; cat_noaa_tides_multi_station_open_records_pos kind=nat_pos
-(assert (! (> 209 0) :named o930))
+(assert (! (> 209 0) :named o900))
 ; cat_noaa_tides_multi_station_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.030173 0.5) :named o931))
+(assert (! (< 0.030173 0.5) :named o901))
 ; cat_noaa_tides_multi_station_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.030173 0.5) :named o932))
+(assert (! (< 0.030173 0.5) :named o902))
 ; cat_noaa_tides_multi_station_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.030173 0.5) :named o933))
+(assert (! (< 0.030173 0.5) :named o903))
 ; cat_noaa_tides_multi_station_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o934))
+(assert (! (= 1 1) :named o904))
 ; cat_ncei_climate_open_records_pos kind=nat_pos
-(assert (! (> 607 0) :named o935))
+(assert (! (> 607 0) :named o905))
 ; cat_ncei_climate_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0291 0.5) :named o936))
+(assert (! (< 0.0291 0.5) :named o906))
 ; cat_ncei_climate_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0291 0.5) :named o937))
+(assert (! (< 0.0291 0.5) :named o907))
 ; cat_ncei_climate_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0291 0.5) :named o938))
+(assert (! (< 0.0291 0.5) :named o908))
 ; cat_ncei_climate_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o939))
+(assert (! (= 1 1) :named o909))
 ; cat_ncei_climate_open_records_pos kind=nat_pos
-(assert (! (> 607 0) :named o940))
+(assert (! (> 607 0) :named o910))
 ; cat_ncei_climate_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0291 0.5) :named o941))
+(assert (! (< 0.0291 0.5) :named o911))
 ; cat_ncei_climate_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0291 0.5) :named o942))
+(assert (! (< 0.0291 0.5) :named o912))
 ; cat_ncei_climate_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0291 0.5) :named o943))
+(assert (! (< 0.0291 0.5) :named o913))
 ; cat_ncei_climate_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o944))
-; cat_open_meteo_live_panel_records_pos kind=nat_pos
-(assert (! (> 432 0) :named o945))
-; cat_open_meteo_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.026204 0.5) :named o946))
-; cat_open_meteo_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.026204 0.5) :named o947))
-; cat_open_meteo_live_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0291 0.5) :named o948))
-; cat_open_meteo_live_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o949))
+(assert (! (= 1 1) :named o914))
 ; cat_compactification_ladder_records_pos kind=nat_pos
-(assert (! (> 60 0) :named o950))
+(assert (! (> 60 0) :named o915))
 ; cat_compactification_ladder_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015073678386290368 0.5) :named o951))
+(assert (! (< 0.015073678386290368 0.5) :named o916))
 ; cat_compactification_ladder_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015073678386290368 0.5) :named o952))
+(assert (! (< 0.015073678386290368 0.5) :named o917))
 ; cat_compactification_ladder_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.028512403203747722 0.5) :named o953))
+(assert (! (< 0.028512403203747722 0.5) :named o918))
 ; cat_compactification_ladder_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o954))
+(assert (! (= 1 1) :named o919))
 ; cat_zero_boundary_not_entity_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o955))
+(assert (! (> 24 0) :named o920))
 ; cat_zero_boundary_not_entity_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000055479 0.5) :named o956))
+(assert (! (< 0.000055479 0.5) :named o921))
 ; cat_zero_boundary_not_entity_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000055479 0.5) :named o957))
+(assert (! (< 0.000055479 0.5) :named o922))
 ; cat_zero_boundary_not_entity_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.028512 0.5) :named o958))
+(assert (! (< 0.028512 0.5) :named o923))
 ; cat_zero_boundary_not_entity_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o959))
+(assert (! (= 1 1) :named o924))
+; cat_pubchem_compound_properties_records_pos kind=nat_pos
+(assert (! (> 500 0) :named o925))
+; cat_pubchem_compound_properties_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0024064677142409036 0.5) :named o926))
+; cat_pubchem_compound_properties_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0024064677142409036 0.5) :named o927))
+; cat_pubchem_compound_properties_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.028340080971654597 0.5) :named o928))
+; cat_pubchem_compound_properties_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o929))
 ; cat_energy_ai_orbital_bridge_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o960))
+(assert (! (> 48 0) :named o930))
 ; cat_energy_ai_orbital_bridge_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02754410755640712 0.5) :named o961))
+(assert (! (< 0.02754410755640712 0.5) :named o931))
 ; cat_energy_ai_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02754410755640712 0.5) :named o962))
+(assert (! (< 0.02754410755640712 0.5) :named o932))
 ; cat_energy_ai_orbital_bridge_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.027544107556418167 0.5) :named o963))
+(assert (! (< 0.027544107556418167 0.5) :named o933))
 ; cat_energy_ai_orbital_bridge_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o964))
+(assert (! (= 1 1) :named o934))
 ; cat_fusion_lab_certificate_spine_records_pos kind=nat_pos
-(assert (! (> 50 0) :named o965))
+(assert (! (> 50 0) :named o935))
 ; cat_fusion_lab_certificate_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o966))
+(assert (! (< 0.0 0.5) :named o936))
 ; cat_fusion_lab_certificate_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o967))
+(assert (! (< 0.0 0.5) :named o937))
 ; cat_fusion_lab_certificate_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.027544107556414246 0.5) :named o968))
+(assert (! (< 0.027544107556414246 0.5) :named o938))
 ; cat_fusion_lab_certificate_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o969))
+(assert (! (= 1 1) :named o939))
 ; cat_cartography_gis_panel_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o970))
+(assert (! (> 48 0) :named o940))
 ; cat_cartography_gis_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.018855999999999998 0.5) :named o971))
+(assert (! (< 0.018855999999999998 0.5) :named o941))
 ; cat_cartography_gis_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.018855999999999998 0.5) :named o972))
+(assert (! (< 0.018855999999999998 0.5) :named o942))
 ; cat_cartography_gis_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.027455 0.5) :named o973))
+(assert (! (< 0.027455 0.5) :named o943))
 ; cat_cartography_gis_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o974))
+(assert (! (= 1 1) :named o944))
 ; cat_paleontology_panel_records_pos kind=nat_pos
-(assert (! (> 120 0) :named o975))
+(assert (! (> 120 0) :named o945))
 ; cat_paleontology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0167305 0.5) :named o976))
+(assert (! (< 0.0167305 0.5) :named o946))
 ; cat_paleontology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0167305 0.5) :named o977))
+(assert (! (< 0.0167305 0.5) :named o947))
 ; cat_paleontology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.027455 0.5) :named o978))
+(assert (! (< 0.027455 0.5) :named o948))
 ; cat_paleontology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o979))
+(assert (! (= 1 1) :named o949))
 ; cat_h0_planck_cmb_sector_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o980))
+(assert (! (> 20 0) :named o950))
 ; cat_h0_planck_cmb_sector_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o981))
+(assert (! (< 0.0 0.5) :named o951))
 ; cat_h0_planck_cmb_sector_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o982))
+(assert (! (< 0.0 0.5) :named o952))
 ; cat_h0_planck_cmb_sector_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.027018411789274284 0.5) :named o983))
+(assert (! (< 0.027018411789274284 0.5) :named o953))
 ; cat_h0_planck_cmb_sector_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o984))
-; cat_alphafold_batch_meta_open_records_pos kind=nat_pos
-(assert (! (> 182 0) :named o985))
-; cat_alphafold_batch_meta_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015311 0.5) :named o986))
-; cat_alphafold_batch_meta_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015311 0.5) :named o987))
-; cat_alphafold_batch_meta_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026684 0.5) :named o988))
-; cat_alphafold_batch_meta_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o989))
-; cat_ncbi_gene_public_panel_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o990))
-; cat_ncbi_gene_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.025571999999999998 0.5) :named o991))
-; cat_ncbi_gene_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.025571999999999998 0.5) :named o992))
-; cat_ncbi_gene_public_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026684 0.5) :named o993))
-; cat_ncbi_gene_public_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o994))
-; cat_uniprot_protein_annotations_records_pos kind=nat_pos
-(assert (! (> 22 0) :named o995))
-; cat_uniprot_protein_annotations_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0209975 0.5) :named o996))
-; cat_uniprot_protein_annotations_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0209975 0.5) :named o997))
-; cat_uniprot_protein_annotations_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026684 0.5) :named o998))
-; cat_uniprot_protein_annotations_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o999))
-; cat_uniprot_proteome_slice_open_records_pos kind=nat_pos
-(assert (! (> 68 0) :named o1000))
-; cat_uniprot_proteome_slice_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1001))
-; cat_uniprot_proteome_slice_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o1002))
-; cat_uniprot_proteome_slice_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026684 0.5) :named o1003))
-; cat_uniprot_proteome_slice_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1004))
-; cat_arxiv_gravitational_waves_panel_records_pos kind=nat_pos
-(assert (! (> 60 0) :named o1005))
-; cat_arxiv_gravitational_waves_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01748 0.5) :named o1006))
-; cat_arxiv_gravitational_waves_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01748 0.5) :named o1007))
-; cat_arxiv_gravitational_waves_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o1008))
-; cat_arxiv_gravitational_waves_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1009))
-; cat_blackhole_whitehole_cycle_live_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1010))
-; cat_blackhole_whitehole_cycle_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o1011))
-; cat_blackhole_whitehole_cycle_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.026472 0.5) :named o1012))
-; cat_blackhole_whitehole_cycle_live_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o1013))
-; cat_blackhole_whitehole_cycle_live_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1014))
-; cat_desi_edr_fits_residual_records_pos kind=nat_pos
-(assert (! (> 97144 0) :named o1015))
-; cat_desi_edr_fits_residual_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1016))
-; cat_desi_edr_fits_residual_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022461 0.5) :named o1017))
-; cat_desi_edr_fits_residual_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o1018))
-; cat_desi_edr_fits_residual_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1019))
-; cat_gaia_astrometry_panel_deep_records_pos kind=nat_pos
-(assert (! (> 62 0) :named o1020))
-; cat_gaia_astrometry_panel_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1021))
-; cat_gaia_astrometry_panel_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022461 0.5) :named o1022))
-; cat_gaia_astrometry_panel_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o1023))
-; cat_gaia_astrometry_panel_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1024))
-; cat_gaia_dr3_source_sample_open_records_pos kind=nat_pos
-(assert (! (> 3459 0) :named o1025))
-; cat_gaia_dr3_source_sample_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1026))
-; cat_gaia_dr3_source_sample_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022461 0.5) :named o1027))
-; cat_gaia_dr3_source_sample_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o1028))
-; cat_gaia_dr3_source_sample_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1029))
-; cat_nothing_perfection_friction_origin_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1030))
-; cat_nothing_perfection_friction_origin_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1031))
-; cat_nothing_perfection_friction_origin_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1032))
-; cat_nothing_perfection_friction_origin_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o1033))
-; cat_nothing_perfection_friction_origin_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1034))
-; cat_radio_astronomy_panel_records_pos kind=nat_pos
-(assert (! (> 30 0) :named o1035))
-; cat_radio_astronomy_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1036))
-; cat_radio_astronomy_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022461 0.5) :named o1037))
-; cat_radio_astronomy_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.026472 0.5) :named o1038))
-; cat_radio_astronomy_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1039))
-; cat_actuarial_science_panel_records_pos kind=nat_pos
-(assert (! (> 60 0) :named o1040))
-; cat_actuarial_science_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02261 0.5) :named o1041))
-; cat_actuarial_science_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02261 0.5) :named o1042))
-; cat_actuarial_science_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1043))
-; cat_actuarial_science_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1044))
-; cat_finance_markets_panel_records_pos kind=nat_pos
-(assert (! (> 36 0) :named o1045))
-; cat_finance_markets_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1046))
-; cat_finance_markets_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02584 0.5) :named o1047))
-; cat_finance_markets_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1048))
-; cat_finance_markets_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1049))
-; cat_history_panel_records_pos kind=nat_pos
-(assert (! (> 60 0) :named o1050))
-; cat_history_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01382 0.5) :named o1051))
-; cat_history_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01382 0.5) :named o1052))
-; cat_history_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1053))
-; cat_history_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1054))
-; cat_supply_chain_logistics_panel_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o1055))
-; cat_supply_chain_logistics_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1056))
-; cat_supply_chain_logistics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02584 0.5) :named o1057))
-; cat_supply_chain_logistics_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1058))
-; cat_supply_chain_logistics_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1059))
-; cat_world_bank_development_records_pos kind=nat_pos
-(assert (! (> 395 0) :named o1060))
-; cat_world_bank_development_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1061))
-; cat_world_bank_development_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02584 0.5) :named o1062))
-; cat_world_bank_development_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1063))
-; cat_world_bank_development_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1064))
-; cat_world_bank_macro_open_records_pos kind=nat_pos
-(assert (! (> 605 0) :named o1065))
-; cat_world_bank_macro_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1066))
-; cat_world_bank_macro_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02584 0.5) :named o1067))
-; cat_world_bank_macro_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.02584 0.5) :named o1068))
-; cat_world_bank_macro_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1069))
-; cat_reality_folding_spine_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1070))
-; cat_reality_folding_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000637597 0.5) :named o1071))
-; cat_reality_folding_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000637597 0.5) :named o1072))
-; cat_reality_folding_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.025753835305195434 0.5) :named o1073))
-; cat_reality_folding_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1074))
-; cat_founding_galactic_halo_rotation_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1075))
-; cat_founding_galactic_halo_rotation_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.025123 0.5) :named o1076))
-; cat_founding_galactic_halo_rotation_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.025123 0.5) :named o1077))
-; cat_founding_galactic_halo_rotation_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.025123 0.5) :named o1078))
-; cat_founding_galactic_halo_rotation_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1079))
-; cat_usgs_seismic_history_open_records_pos kind=nat_pos
-(assert (! (> 398 0) :named o1080))
-; cat_usgs_seismic_history_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022295 0.5) :named o1081))
-; cat_usgs_seismic_history_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022295 0.5) :named o1082))
-; cat_usgs_seismic_history_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.024709 0.5) :named o1083))
-; cat_usgs_seismic_history_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1084))
-; cat_code_genome_structure_records_pos kind=nat_pos
-(assert (! (> 176 0) :named o1085))
-; cat_code_genome_structure_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1086))
-; cat_code_genome_structure_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1087))
-; cat_code_genome_structure_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.02449769835093818 0.5) :named o1088))
-; cat_code_genome_structure_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1089))
-; cat_founding_atmospheric_ozone_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1090))
-; cat_founding_atmospheric_ozone_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.023822 0.5) :named o1091))
-; cat_founding_atmospheric_ozone_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.023822 0.5) :named o1092))
-; cat_founding_atmospheric_ozone_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.023822 0.5) :named o1093))
-; cat_founding_atmospheric_ozone_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1094))
-; cat_ionospheric_chemistry_coupling_records_pos kind=nat_pos
-(assert (! (> 85 0) :named o1095))
-; cat_ionospheric_chemistry_coupling_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.023609235048340338 0.5) :named o1096))
-; cat_ionospheric_chemistry_coupling_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.023609235048340338 0.5) :named o1097))
-; cat_ionospheric_chemistry_coupling_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.023609235048340338 0.5) :named o1098))
-; cat_ionospheric_chemistry_coupling_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1099))
-; cat_dzhanibekov_intermediate_axis_fsot_panel_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o1100))
-; cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1101))
-; cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1102))
-; cat_dzhanibekov_intermediate_axis_fsot_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o1103))
-; cat_dzhanibekov_intermediate_axis_fsot_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1104))
-; cat_exoplanet_archive_depth_open_records_pos kind=nat_pos
-(assert (! (> 1976 0) :named o1105))
-; cat_exoplanet_archive_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o1106))
-; cat_exoplanet_archive_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.023015 0.5) :named o1107))
-; cat_exoplanet_archive_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o1108))
-; cat_exoplanet_archive_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1109))
-; cat_grace_cryosphere_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 505 0) :named o1110))
-; cat_grace_cryosphere_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o1111))
-; cat_grace_cryosphere_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.023015 0.5) :named o1112))
-; cat_grace_cryosphere_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o1113))
-; cat_grace_cryosphere_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1114))
-; cat_nasa_exoplanet_archive_records_pos kind=nat_pos
-(assert (! (> 158 0) :named o1115))
-; cat_nasa_exoplanet_archive_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o1116))
-; cat_nasa_exoplanet_archive_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.023015 0.5) :named o1117))
-; cat_nasa_exoplanet_archive_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o1118))
-; cat_nasa_exoplanet_archive_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1119))
-; cat_nasa_neo_feed_panel_records_pos kind=nat_pos
-(assert (! (> 56 0) :named o1120))
-; cat_nasa_neo_feed_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.021097 0.5) :named o1121))
-; cat_nasa_neo_feed_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.021097 0.5) :named o1122))
-; cat_nasa_neo_feed_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.023015 0.5) :named o1123))
-; cat_nasa_neo_feed_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1124))
-; cat_compact_object_binary_events_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o1125))
-; cat_compact_object_binary_events_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.010049 0.5) :named o1126))
-; cat_compact_object_binary_events_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.010049 0.5) :named o1127))
-; cat_compact_object_binary_events_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1128))
-; cat_compact_object_binary_events_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1129))
-; cat_gaia_dr3_tap_deep_records_pos kind=nat_pos
-(assert (! (> 1826 0) :named o1130))
-; cat_gaia_dr3_tap_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1131))
-; cat_gaia_dr3_tap_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022461 0.5) :named o1132))
-; cat_gaia_dr3_tap_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1133))
-; cat_gaia_dr3_tap_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1134))
-; cat_nasa_donki_solar_panel_records_pos kind=nat_pos
-(assert (! (> 2148 0) :named o1135))
-; cat_nasa_donki_solar_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.020755 0.5) :named o1136))
-; cat_nasa_donki_solar_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.020755 0.5) :named o1137))
-; cat_nasa_donki_solar_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1138))
-; cat_nasa_donki_solar_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1139))
-; cat_simbad_identity_depth_open_records_pos kind=nat_pos
-(assert (! (> 1365 0) :named o1140))
-; cat_simbad_identity_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1141))
-; cat_simbad_identity_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022461 0.5) :named o1142))
-; cat_simbad_identity_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1143))
-; cat_simbad_identity_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1144))
-; cat_simbad_stellar_identity_deep_records_pos kind=nat_pos
-(assert (! (> 520 0) :named o1145))
-; cat_simbad_stellar_identity_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1146))
-; cat_simbad_stellar_identity_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022461 0.5) :named o1147))
-; cat_simbad_stellar_identity_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1148))
-; cat_simbad_stellar_identity_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1149))
-; cat_toe_dynamics_records_pos kind=nat_pos
-(assert (! (> 18 0) :named o1150))
-; cat_toe_dynamics_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1151))
-; cat_toe_dynamics_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1152))
-; cat_toe_dynamics_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022461 0.5) :named o1153))
-; cat_toe_dynamics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1154))
-; cat_entomology_records_pos kind=nat_pos
-(assert (! (> 430 0) :named o1155))
-; cat_entomology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.020012625346676673 0.5) :named o1156))
-; cat_entomology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.020012625346676673 0.5) :named o1157))
-; cat_entomology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.02223625038520915 0.5) :named o1158))
-; cat_entomology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1159))
-; cat_botany_records_pos kind=nat_pos
-(assert (! (> 426 0) :named o1160))
-; cat_botany_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236250385193387 0.5) :named o1161))
-; cat_botany_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236250385193387 0.5) :named o1162))
-; cat_botany_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236250385208895 0.5) :named o1163))
-; cat_botany_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1164))
-; cat_zoology_records_pos kind=nat_pos
-(assert (! (> 1000 0) :named o1165))
-; cat_zoology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.017789000308156326 0.5) :named o1166))
-; cat_zoology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.017789000308156326 0.5) :named o1167))
-; cat_zoology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236250385207747 0.5) :named o1168))
-; cat_zoology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1169))
-; cat_biology_developmental_structural_depth_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1170))
-; cat_biology_developmental_structural_depth_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015311 0.5) :named o1171))
-; cat_biology_developmental_structural_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015311 0.5) :named o1172))
-; cat_biology_developmental_structural_depth_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1173))
-; cat_biology_developmental_structural_depth_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1174))
-; cat_ethology_panel_records_pos kind=nat_pos
-(assert (! (> 100 0) :named o1175))
-; cat_ethology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006607 0.5) :named o1176))
-; cat_ethology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006607 0.5) :named o1177))
-; cat_ethology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1178))
-; cat_ethology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1179))
-; cat_gwas_catalog_depth_open_records_pos kind=nat_pos
-(assert (! (> 81 0) :named o1180))
-; cat_gwas_catalog_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1181))
-; cat_gwas_catalog_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o1182))
-; cat_gwas_catalog_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1183))
-; cat_gwas_catalog_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1184))
-; cat_longevity_anage_catalog_panel_records_pos kind=nat_pos
-(assert (! (> 966 0) :named o1185))
-; cat_longevity_anage_catalog_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1186))
-; cat_longevity_anage_catalog_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o1187))
-; cat_longevity_anage_catalog_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1188))
-; cat_longevity_anage_catalog_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1189))
-; cat_longevity_extreme_species_panel_records_pos kind=nat_pos
-(assert (! (> 164 0) :named o1190))
-; cat_longevity_extreme_species_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.017789 0.5) :named o1191))
-; cat_longevity_extreme_species_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.017789 0.5) :named o1192))
-; cat_longevity_extreme_species_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1193))
-; cat_longevity_extreme_species_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1194))
-; cat_longevity_genetic_mechanics_panel_records_pos kind=nat_pos
-(assert (! (> 35 0) :named o1195))
-; cat_longevity_genetic_mechanics_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1196))
-; cat_longevity_genetic_mechanics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o1197))
-; cat_longevity_genetic_mechanics_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1198))
-; cat_longevity_genetic_mechanics_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1199))
-; cat_longevity_megadeep_ncbi_panel_records_pos kind=nat_pos
-(assert (! (> 1746 0) :named o1200))
-; cat_longevity_megadeep_ncbi_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.017789 0.5) :named o1201))
-; cat_longevity_megadeep_ncbi_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.017789 0.5) :named o1202))
-; cat_longevity_megadeep_ncbi_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1203))
-; cat_longevity_megadeep_ncbi_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1204))
-; cat_longevity_telomere_repair_panel_records_pos kind=nat_pos
-(assert (! (> 60 0) :named o1205))
-; cat_longevity_telomere_repair_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1206))
-; cat_longevity_telomere_repair_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o1207))
-; cat_longevity_telomere_repair_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1208))
-; cat_longevity_telomere_repair_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1209))
-; cat_mycology_panel_records_pos kind=nat_pos
-(assert (! (> 90 0) :named o1210))
-; cat_mycology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1211))
-; cat_mycology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006006 0.5) :named o1212))
-; cat_mycology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1213))
-; cat_mycology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1214))
-; cat_owid_epidemiology_open_records_pos kind=nat_pos
-(assert (! (> 1778 0) :named o1215))
-; cat_owid_epidemiology_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1216))
-; cat_owid_epidemiology_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o1217))
-; cat_owid_epidemiology_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1218))
-; cat_owid_epidemiology_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1219))
-; cat_physarum_biological_cuda_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1220))
-; cat_physarum_biological_cuda_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0003086625 0.5) :named o1221))
-; cat_physarum_biological_cuda_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0003086625 0.5) :named o1222))
-; cat_physarum_biological_cuda_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1223))
-; cat_physarum_biological_cuda_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1224))
-; cat_rcsb_structure_batch_open_records_pos kind=nat_pos
-(assert (! (> 91 0) :named o1225))
-; cat_rcsb_structure_batch_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1226))
-; cat_rcsb_structure_batch_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o1227))
-; cat_rcsb_structure_batch_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1228))
-; cat_rcsb_structure_batch_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1229))
-; cat_virology_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1230))
-; cat_virology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000637597 0.5) :named o1231))
-; cat_virology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000637597 0.5) :named o1232))
-; cat_virology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1233))
-; cat_virology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1234))
-; cat_zebrafish_cell_tracking_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1235))
-; cat_zebrafish_cell_tracking_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1236))
-; cat_zebrafish_cell_tracking_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.022236 0.5) :named o1237))
-; cat_zebrafish_cell_tracking_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1238))
-; cat_zebrafish_cell_tracking_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1239))
-; cat_zebrafish_developmental_mechanics_panel_records_pos kind=nat_pos
-(assert (! (> 31 0) :named o1240))
-; cat_zebrafish_developmental_mechanics_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.017789 0.5) :named o1241))
-; cat_zebrafish_developmental_mechanics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.017789 0.5) :named o1242))
-; cat_zebrafish_developmental_mechanics_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.022236 0.5) :named o1243))
-; cat_zebrafish_developmental_mechanics_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1244))
-; cat_founding_cosmic_ray_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1245))
-; cat_founding_cosmic_ray_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.021221 0.5) :named o1246))
-; cat_founding_cosmic_ray_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.021221 0.5) :named o1247))
-; cat_founding_cosmic_ray_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.021221 0.5) :named o1248))
-; cat_founding_cosmic_ray_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1249))
-; cat_fsot_gpu_engineering_spine_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o1250))
-; cat_fsot_gpu_engineering_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1251))
-; cat_fsot_gpu_engineering_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1252))
-; cat_fsot_gpu_engineering_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.020755 0.5) :named o1253))
-; cat_fsot_gpu_engineering_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1254))
-; cat_preregistered_predictions_records_pos kind=nat_pos
-(assert (! (> 35 0) :named o1255))
-; cat_preregistered_predictions_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.02009823784840936 0.5) :named o1256))
-; cat_preregistered_predictions_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.02009823784840936 0.5) :named o1257))
-; cat_preregistered_predictions_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.020098237848419454 0.5) :named o1258))
-; cat_preregistered_predictions_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1259))
-; cat_pubchem_stability_panel_records_pos kind=nat_pos
-(assert (! (> 59 0) :named o1260))
-; cat_pubchem_stability_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0024239449292213135 0.5) :named o1261))
-; cat_pubchem_stability_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0024239449292213135 0.5) :named o1262))
-; cat_pubchem_stability_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.019259259259258584 0.5) :named o1263))
-; cat_pubchem_stability_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1264))
-; cat_chemical_structure_stability_panel_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o1265))
-; cat_chemical_structure_stability_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.00206 0.5) :named o1266))
-; cat_chemical_structure_stability_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.00206 0.5) :named o1267))
-; cat_chemical_structure_stability_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.019259 0.5) :named o1268))
-; cat_chemical_structure_stability_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1269))
-; cat_toe_unification_spine_records_pos kind=nat_pos
-(assert (! (> 8 0) :named o1270))
-; cat_toe_unification_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1271))
-; cat_toe_unification_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1272))
-; cat_toe_unification_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.019008268802504343 0.5) :named o1273))
-; cat_toe_unification_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1274))
-; cat_arxiv_brain_knowledge_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1275))
-; cat_arxiv_brain_knowledge_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1276))
-; cat_arxiv_brain_knowledge_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.018003 0.5) :named o1277))
-; cat_arxiv_brain_knowledge_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1278))
-; cat_arxiv_brain_knowledge_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1279))
-; cat_consciousness_lean_route_credibility_records_pos kind=nat_pos
-(assert (! (> 101 0) :named o1280))
-; cat_consciousness_lean_route_credibility_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1281))
-; cat_consciousness_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.018003 0.5) :named o1282))
-; cat_consciousness_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1283))
-; cat_consciousness_lean_route_credibility_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1284))
-; cat_intelligence_compression_records_pos kind=nat_pos
-(assert (! (> 87 0) :named o1285))
-; cat_intelligence_compression_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1286))
-; cat_intelligence_compression_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.018003 0.5) :named o1287))
-; cat_intelligence_compression_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1288))
-; cat_intelligence_compression_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1289))
-; cat_observer_lean_route_credibility_records_pos kind=nat_pos
-(assert (! (> 53 0) :named o1290))
-; cat_observer_lean_route_credibility_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1291))
-; cat_observer_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.018003 0.5) :named o1292))
-; cat_observer_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1293))
-; cat_observer_lean_route_credibility_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1294))
-; cat_openneuro_depth_open_records_pos kind=nat_pos
-(assert (! (> 47 0) :named o1295))
-; cat_openneuro_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1296))
-; cat_openneuro_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.018003 0.5) :named o1297))
-; cat_openneuro_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1298))
-; cat_openneuro_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1299))
-; cat_perceived_lean_route_credibility_records_pos kind=nat_pos
-(assert (! (> 58 0) :named o1300))
-; cat_perceived_lean_route_credibility_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1301))
-; cat_perceived_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.018003 0.5) :named o1302))
-; cat_perceived_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.018003 0.5) :named o1303))
-; cat_perceived_lean_route_credibility_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1304))
-; cat_energy_neural_orbital_bridge_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o1305))
-; cat_energy_neural_orbital_bridge_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.018002668701796783 0.5) :named o1306))
-; cat_energy_neural_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.018002668701796783 0.5) :named o1307))
-; cat_energy_neural_orbital_bridge_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.018002668701808056 0.5) :named o1308))
-; cat_energy_neural_orbital_bridge_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1309))
-; cat_neural_galactic_orbital_bridge_records_pos kind=nat_pos
-(assert (! (> 49 0) :named o1310))
-; cat_neural_galactic_orbital_bridge_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0180026687017961 0.5) :named o1311))
-; cat_neural_galactic_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0180026687017961 0.5) :named o1312))
-; cat_neural_galactic_orbital_bridge_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.018002668701806005 0.5) :named o1313))
-; cat_neural_galactic_orbital_bridge_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1314))
-; cat_paleontology_records_pos kind=nat_pos
-(assert (! (> 630 0) :named o1315))
-; cat_paleontology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.017836062884406152 0.5) :named o1316))
-; cat_paleontology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.017836062884406152 0.5) :named o1317))
-; cat_paleontology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.017836062884422174 0.5) :named o1318))
-; cat_paleontology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1319))
-; cat_zebrafish_longevity_genetics_coupling_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1320))
-; cat_zebrafish_longevity_genetics_coupling_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.013342 0.5) :named o1321))
-; cat_zebrafish_longevity_genetics_coupling_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.013342 0.5) :named o1322))
-; cat_zebrafish_longevity_genetics_coupling_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.015565 0.5) :named o1323))
-; cat_zebrafish_longevity_genetics_coupling_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1324))
-; cat_openneuro_full_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1325))
-; cat_openneuro_full_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015431 0.5) :named o1326))
-; cat_openneuro_full_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015431 0.5) :named o1327))
-; cat_openneuro_full_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.015431 0.5) :named o1328))
-; cat_openneuro_full_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1329))
-; cat_cardiology_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1330))
-; cat_cardiology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015311 0.5) :named o1331))
-; cat_cardiology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015311 0.5) :named o1332))
-; cat_cardiology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.015311 0.5) :named o1333))
-; cat_cardiology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1334))
-; cat_epidemiology_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1335))
-; cat_epidemiology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015311 0.5) :named o1336))
-; cat_epidemiology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015311 0.5) :named o1337))
-; cat_epidemiology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.015311 0.5) :named o1338))
-; cat_epidemiology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1339))
-; cat_jarvis_dft_open_panel_records_pos kind=nat_pos
-(assert (! (> 77 0) :named o1340))
-; cat_jarvis_dft_open_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1341))
-; cat_jarvis_dft_open_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01341 0.5) :named o1342))
-; cat_jarvis_dft_open_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.015087 0.5) :named o1343))
-; cat_jarvis_dft_open_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1344))
-; cat_materials_creep_fracture_depth_panel_records_pos kind=nat_pos
-(assert (! (> 47 0) :named o1345))
-; cat_materials_creep_fracture_depth_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1346))
-; cat_materials_creep_fracture_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01341 0.5) :named o1347))
-; cat_materials_creep_fracture_depth_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.015087 0.5) :named o1348))
-; cat_materials_creep_fracture_depth_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1349))
-; cat_materials_project_live_panel_records_pos kind=nat_pos
-(assert (! (> 141 0) :named o1350))
-; cat_materials_project_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.011734 0.5) :named o1351))
-; cat_materials_project_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.011734 0.5) :named o1352))
-; cat_materials_project_live_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.015087 0.5) :named o1353))
-; cat_materials_project_live_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1354))
-; cat_paleoclimate_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o1355))
-; cat_paleoclimate_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.015015854077438107 0.5) :named o1356))
-; cat_paleoclimate_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.015015854077438107 0.5) :named o1357))
-; cat_paleoclimate_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.015015854077446988 0.5) :named o1358))
-; cat_paleoclimate_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1359))
-; cat_lmfdb_elliptic_curves_open_records_pos kind=nat_pos
-(assert (! (> 1016 0) :named o1360))
-; cat_lmfdb_elliptic_curves_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1361))
-; cat_lmfdb_elliptic_curves_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o1362))
-; cat_lmfdb_elliptic_curves_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1363))
-; cat_lmfdb_elliptic_curves_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1364))
-; cat_lmfdb_oeis_math_open_records_pos kind=nat_pos
-(assert (! (> 3918 0) :named o1365))
-; cat_lmfdb_oeis_math_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1366))
-; cat_lmfdb_oeis_math_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o1367))
-; cat_lmfdb_oeis_math_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1368))
-; cat_lmfdb_oeis_math_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1369))
-; cat_oeis_family_sweep_open_records_pos kind=nat_pos
-(assert (! (> 394 0) :named o1370))
-; cat_oeis_family_sweep_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1371))
-; cat_oeis_family_sweep_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o1372))
-; cat_oeis_family_sweep_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1373))
-; cat_oeis_family_sweep_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1374))
-; cat_trinary_hardware_live_panel_records_pos kind=nat_pos
-(assert (! (> 28 0) :named o1375))
-; cat_trinary_hardware_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1376))
-; cat_trinary_hardware_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o1377))
-; cat_trinary_hardware_live_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1378))
-; cat_trinary_hardware_live_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1379))
-; cat_intrinsic_llm_validators_panel_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o1380))
-; cat_intrinsic_llm_validators_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1381))
-; cat_intrinsic_llm_validators_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.014767 0.5) :named o1382))
-; cat_intrinsic_llm_validators_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.014767 0.5) :named o1383))
-; cat_intrinsic_llm_validators_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1384))
-; cat_crossref_scholarly_panel_records_pos kind=nat_pos
-(assert (! (> 200 0) :named o1385))
-; cat_crossref_scholarly_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01382 0.5) :named o1386))
-; cat_crossref_scholarly_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01382 0.5) :named o1387))
-; cat_crossref_scholarly_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.01382 0.5) :named o1388))
-; cat_crossref_scholarly_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1389))
-; cat_osti_doe_science_panel_records_pos kind=nat_pos
-(assert (! (> 100 0) :named o1390))
-; cat_osti_doe_science_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01382 0.5) :named o1391))
-; cat_osti_doe_science_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01382 0.5) :named o1392))
-; cat_osti_doe_science_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.01382 0.5) :named o1393))
-; cat_osti_doe_science_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1394))
-; cat_civil_engineering_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1395))
-; cat_civil_engineering_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1396))
-; cat_civil_engineering_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01341 0.5) :named o1397))
-; cat_civil_engineering_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1398))
-; cat_civil_engineering_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1399))
-; cat_cod_optimade_structures_records_pos kind=nat_pos
-(assert (! (> 682 0) :named o1400))
-; cat_cod_optimade_structures_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1401))
-; cat_cod_optimade_structures_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01341 0.5) :named o1402))
-; cat_cod_optimade_structures_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1403))
-; cat_cod_optimade_structures_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1404))
-; cat_machine_and_molecule_live_panel_records_pos kind=nat_pos
-(assert (! (> 120 0) :named o1405))
-; cat_machine_and_molecule_live_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1406))
-; cat_machine_and_molecule_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01341 0.5) :named o1407))
-; cat_machine_and_molecule_live_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1408))
-; cat_machine_and_molecule_live_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1409))
-; cat_robotics_control_systems_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1410))
-; cat_robotics_control_systems_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1411))
-; cat_robotics_control_systems_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01341 0.5) :named o1412))
-; cat_robotics_control_systems_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1413))
-; cat_robotics_control_systems_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1414))
-; cat_soil_science_panel_records_pos kind=nat_pos
-(assert (! (> 96 0) :named o1415))
-; cat_soil_science_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1416))
-; cat_soil_science_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006006 0.5) :named o1417))
-; cat_soil_science_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.01341 0.5) :named o1418))
-; cat_soil_science_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1419))
-; cat_bibliography_corpus_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1420))
-; cat_bibliography_corpus_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.013294 0.5) :named o1421))
-; cat_bibliography_corpus_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.013294 0.5) :named o1422))
-; cat_bibliography_corpus_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.013294 0.5) :named o1423))
-; cat_bibliography_corpus_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1424))
-; cat_canonical_oracle_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1425))
-; cat_canonical_oracle_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1426))
-; cat_canonical_oracle_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1427))
-; cat_canonical_oracle_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.013294 0.5) :named o1428))
-; cat_canonical_oracle_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1429))
-; cat_cern_open_data_lhc_records_pos kind=nat_pos
-(assert (! (> 83 0) :named o1430))
-; cat_cern_open_data_lhc_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.013294 0.5) :named o1431))
-; cat_cern_open_data_lhc_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.013294 0.5) :named o1432))
-; cat_cern_open_data_lhc_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.013294 0.5) :named o1433))
-; cat_cern_open_data_lhc_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1434))
-; cat_secure_software_engineering_records_pos kind=nat_pos
-(assert (! (> 59 0) :named o1435))
-; cat_secure_software_engineering_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1436))
-; cat_secure_software_engineering_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1437))
-; cat_secure_software_engineering_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.013290579327048134 0.5) :named o1438))
-; cat_secure_software_engineering_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1439))
-; cat_law_policy_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1440))
-; cat_law_policy_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.013003 0.5) :named o1441))
-; cat_law_policy_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.013003 0.5) :named o1442))
-; cat_law_policy_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.013003 0.5) :named o1443))
-; cat_law_policy_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1444))
-; cat_uap_war_gov_release_panel_records_pos kind=nat_pos
-(assert (! (> 542 0) :named o1445))
-; cat_uap_war_gov_release_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.008488 0.5) :named o1446))
-; cat_uap_war_gov_release_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.008488 0.5) :named o1447))
-; cat_uap_war_gov_release_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.013003 0.5) :named o1448))
-; cat_uap_war_gov_release_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1449))
-; cat_climate_observed_benchmark_records_pos kind=nat_pos
-(assert (! (> 17325 0) :named o1450))
-; cat_climate_observed_benchmark_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.01201268326195996 0.5) :named o1451))
-; cat_climate_observed_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.01201268326195996 0.5) :named o1452))
-; cat_climate_observed_benchmark_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.01201268326197121 0.5) :named o1453))
-; cat_climate_observed_benchmark_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1454))
-; cat_medical_galactic_orbital_bridge_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o1455))
-; cat_medical_galactic_orbital_bridge_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.010717743028515674 0.5) :named o1456))
-; cat_medical_galactic_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.010717743028515674 0.5) :named o1457))
-; cat_medical_galactic_orbital_bridge_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.010717743028528433 0.5) :named o1458))
-; cat_medical_galactic_orbital_bridge_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1459))
-; cat_network_internet_protocols_records_pos kind=nat_pos
-(assert (! (> 22 0) :named o1460))
-; cat_network_internet_protocols_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.010337117254355377 0.5) :named o1461))
-; cat_network_internet_protocols_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.010337117254355377 0.5) :named o1462))
-; cat_network_internet_protocols_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.010337117254363452 0.5) :named o1463))
-; cat_network_internet_protocols_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1464))
-; cat_zero_day_risk_evaluator_records_pos kind=nat_pos
-(assert (! (> 25 0) :named o1465))
-; cat_zero_day_risk_evaluator_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.010337117254355377 0.5) :named o1466))
-; cat_zero_day_risk_evaluator_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.010337117254355377 0.5) :named o1467))
-; cat_zero_day_risk_evaluator_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.010337117254360602 0.5) :named o1468))
-; cat_zero_day_risk_evaluator_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1469))
-; cat_alternate_base_mathematics_explorer_panel_records_pos kind=nat_pos
-(assert (! (> 56 0) :named o1470))
-; cat_alternate_base_mathematics_explorer_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1471))
-; cat_alternate_base_mathematics_explorer_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o1472))
-; cat_alternate_base_mathematics_explorer_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1473))
-; cat_alternate_base_mathematics_explorer_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1474))
-; cat_experimental_base_mathematics_panel_records_pos kind=nat_pos
-(assert (! (> 36 0) :named o1475))
-; cat_experimental_base_mathematics_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1476))
-; cat_experimental_base_mathematics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o1477))
-; cat_experimental_base_mathematics_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1478))
-; cat_experimental_base_mathematics_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1479))
-; cat_fusion_lean_route_credibility_records_pos kind=nat_pos
-(assert (! (> 81 0) :named o1480))
-; cat_fusion_lean_route_credibility_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1481))
-; cat_fusion_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o1482))
-; cat_fusion_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1483))
-; cat_fusion_lean_route_credibility_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1484))
-; cat_higgs_branching_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o1485))
-; cat_higgs_branching_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1486))
-; cat_higgs_branching_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1487))
-; cat_higgs_branching_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1488))
-; cat_higgs_branching_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1489))
-; cat_neutrino_physics_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1490))
-; cat_neutrino_physics_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1491))
-; cat_neutrino_physics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o1492))
-; cat_neutrino_physics_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1493))
-; cat_neutrino_physics_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1494))
-; cat_oph_fsot_challenge_panel_records_pos kind=nat_pos
-(assert (! (> 31 0) :named o1495))
-; cat_oph_fsot_challenge_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1496))
-; cat_oph_fsot_challenge_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1497))
-; cat_oph_fsot_challenge_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1498))
-; cat_oph_fsot_challenge_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1499))
-; cat_pdg_live_depth_open_records_pos kind=nat_pos
-(assert (! (> 33 0) :named o1500))
-; cat_pdg_live_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1501))
-; cat_pdg_live_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009504 0.5) :named o1502))
-; cat_pdg_live_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.009504 0.5) :named o1503))
-; cat_pdg_live_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1504))
-; cat_environmental_engineering_records_pos kind=nat_pos
-(assert (! (> 1117 0) :named o1505))
-; cat_environmental_engineering_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.009009512446467327 0.5) :named o1506))
-; cat_environmental_engineering_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.009009512446467327 0.5) :named o1507))
-; cat_environmental_engineering_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.009009512446477413 0.5) :named o1508))
-; cat_environmental_engineering_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1509))
-; cat_openalex_citation_depth_open_records_pos kind=nat_pos
-(assert (! (> 150 0) :named o1510))
-; cat_openalex_citation_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.008863 0.5) :named o1511))
-; cat_openalex_citation_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.008863 0.5) :named o1512))
-; cat_openalex_citation_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.008863 0.5) :named o1513))
-; cat_openalex_citation_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1514))
-; cat_gwosc_live_event_deep_records_pos kind=nat_pos
-(assert (! (> 185 0) :named o1515))
-; cat_gwosc_live_event_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.008488 0.5) :named o1516))
-; cat_gwosc_live_event_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.008488 0.5) :named o1517))
-; cat_gwosc_live_event_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.008488 0.5) :named o1518))
-; cat_gwosc_live_event_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1519))
-; cat_gwosc_strain_metadata_open_records_pos kind=nat_pos
-(assert (! (> 54 0) :named o1520))
-; cat_gwosc_strain_metadata_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.008488 0.5) :named o1521))
-; cat_gwosc_strain_metadata_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.008488 0.5) :named o1522))
-; cat_gwosc_strain_metadata_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.008488 0.5) :named o1523))
-; cat_gwosc_strain_metadata_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1524))
-; cat_gwtc_catalog_open_records_pos kind=nat_pos
-(assert (! (> 1972 0) :named o1525))
-; cat_gwtc_catalog_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.008488 0.5) :named o1526))
-; cat_gwtc_catalog_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.008488 0.5) :named o1527))
-; cat_gwtc_catalog_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.008488 0.5) :named o1528))
-; cat_gwtc_catalog_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1529))
-; cat_inaturalist_observation_panel_records_pos kind=nat_pos
-(assert (! (> 288 0) :named o1530))
-; cat_inaturalist_observation_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1531))
-; cat_inaturalist_observation_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006006 0.5) :named o1532))
-; cat_inaturalist_observation_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.007508 0.5) :named o1533))
-; cat_inaturalist_observation_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1534))
-; cat_pharmacology_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 120 0) :named o1535))
-; cat_pharmacology_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.001166649119945485 0.5) :named o1536))
-; cat_pharmacology_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.001166649119945485 0.5) :named o1537))
-; cat_pharmacology_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.007388748950458895 0.5) :named o1538))
-; cat_pharmacology_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1539))
-; cat_mechanistic_coupling_records_pos kind=nat_pos
-(assert (! (> 39 0) :named o1540))
-; cat_mechanistic_coupling_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0073836551816993294 0.5) :named o1541))
-; cat_mechanistic_coupling_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0073836551816993294 0.5) :named o1542))
-; cat_mechanistic_coupling_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0073836551816993294 0.5) :named o1543))
-; cat_mechanistic_coupling_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1544))
-; cat_entomology_panel_records_pos kind=nat_pos
-(assert (! (> 90 0) :named o1545))
-; cat_entomology_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1546))
-; cat_entomology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006006 0.5) :named o1547))
-; cat_entomology_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1548))
-; cat_entomology_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1549))
-; cat_gbif_species_occurrence_records_pos kind=nat_pos
-(assert (! (> 240 0) :named o1550))
-; cat_gbif_species_occurrence_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1551))
-; cat_gbif_species_occurrence_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006006 0.5) :named o1552))
-; cat_gbif_species_occurrence_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1553))
-; cat_gbif_species_occurrence_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1554))
-; cat_gbif_taxon_depth_open_records_pos kind=nat_pos
-(assert (! (> 203 0) :named o1555))
-; cat_gbif_taxon_depth_open_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1556))
-; cat_gbif_taxon_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006006 0.5) :named o1557))
-; cat_gbif_taxon_depth_open_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1558))
-; cat_gbif_taxon_depth_open_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1559))
-; cat_paleoclimate_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1560))
-; cat_paleoclimate_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1561))
-; cat_paleoclimate_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.006006 0.5) :named o1562))
-; cat_paleoclimate_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.006006 0.5) :named o1563))
-; cat_paleoclimate_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1564))
-; cat_proof_carrying_code_genome_records_pos kind=nat_pos
-(assert (! (> 25 0) :named o1565))
-; cat_proof_carrying_code_genome_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0051685586271776884 0.5) :named o1566))
-; cat_proof_carrying_code_genome_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0051685586271776884 0.5) :named o1567))
-; cat_proof_carrying_code_genome_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.005906924145354116 0.5) :named o1568))
-; cat_proof_carrying_code_genome_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1569))
-; cat_ai_galactic_orbital_bridge_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o1570))
-; cat_ai_galactic_orbital_bridge_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.005168558627175254 0.5) :named o1571))
-; cat_ai_galactic_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.005168558627175254 0.5) :named o1572))
-; cat_ai_galactic_orbital_bridge_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.005168558627188476 0.5) :named o1573))
-; cat_ai_galactic_orbital_bridge_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1574))
-; cat_bibliography_lean_corpus_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1575))
-; cat_bibliography_lean_corpus_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1576))
-; cat_bibliography_lean_corpus_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1577))
-; cat_bibliography_lean_corpus_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1578))
-; cat_bibliography_lean_corpus_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1579))
-; cat_cosmology_extended_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1580))
-; cat_cosmology_extended_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1581))
-; cat_cosmology_extended_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1582))
-; cat_cosmology_extended_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1583))
-; cat_cosmology_extended_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1584))
-; cat_formula_corpus_cnc_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1585))
-; cat_formula_corpus_cnc_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1586))
-; cat_formula_corpus_cnc_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1587))
-; cat_formula_corpus_cnc_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1588))
-; cat_formula_corpus_cnc_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1589))
-; cat_fsot_aggregate_unified_db_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1590))
-; cat_fsot_aggregate_unified_db_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1591))
-; cat_fsot_aggregate_unified_db_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1592))
-; cat_fsot_aggregate_unified_db_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1593))
-; cat_fsot_aggregate_unified_db_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1594))
-; cat_hvac_thermal_systems_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1595))
-; cat_hvac_thermal_systems_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1596))
-; cat_hvac_thermal_systems_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1597))
-; cat_hvac_thermal_systems_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1598))
-; cat_hvac_thermal_systems_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1599))
-; cat_linguistics_formal_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1600))
-; cat_linguistics_formal_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1601))
-; cat_linguistics_formal_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1602))
-; cat_linguistics_formal_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1603))
-; cat_linguistics_formal_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1604))
-; cat_math_generator_airfoil_rmse_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1605))
-; cat_math_generator_airfoil_rmse_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1606))
-; cat_math_generator_airfoil_rmse_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1607))
-; cat_math_generator_airfoil_rmse_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1608))
-; cat_math_generator_airfoil_rmse_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1609))
-; cat_math_generator_benchmark_formula_eval_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1610))
-; cat_math_generator_benchmark_formula_eval_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1611))
-; cat_math_generator_benchmark_formula_eval_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1612))
-; cat_math_generator_benchmark_formula_eval_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1613))
-; cat_math_generator_benchmark_formula_eval_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1614))
-; cat_prediction_rederivation_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1615))
-; cat_prediction_rederivation_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1616))
-; cat_prediction_rederivation_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1617))
-; cat_prediction_rederivation_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1618))
-; cat_prediction_rederivation_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1619))
-; cat_small_body_orbits_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1620))
-; cat_small_body_orbits_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1621))
-; cat_small_body_orbits_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000561846 0.5) :named o1622))
-; cat_small_body_orbits_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00423739 0.5) :named o1623))
-; cat_small_body_orbits_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1624))
-; cat_anthropology_records_pos kind=nat_pos
-(assert (! (> 160 0) :named o1625))
-; cat_anthropology_pooled_under_half_pct kind=lt_half
-(assert (! (< -0.0007873774796219538 0.5) :named o1626))
-; cat_anthropology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< -0.0007873774796219538 0.5) :named o1627))
-; cat_anthropology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.002670068252275115 0.5) :named o1628))
-; cat_anthropology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1629))
-; cat_programming_language_laws_records_pos kind=nat_pos
-(assert (! (> 105 0) :named o1630))
-; cat_programming_language_laws_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1631))
-; cat_programming_language_laws_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1632))
-; cat_programming_language_laws_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.002670068252275115 0.5) :named o1633))
-; cat_programming_language_laws_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1634))
-; cat_desktop_observer_loop_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1635))
-; cat_desktop_observer_loop_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0010245 0.5) :named o1636))
-; cat_desktop_observer_loop_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0010245 0.5) :named o1637))
-; cat_desktop_observer_loop_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00205 0.5) :named o1638))
-; cat_desktop_observer_loop_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1639))
-; cat_music_harmonics_public_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1640))
-; cat_music_harmonics_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1641))
-; cat_music_harmonics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1642))
-; cat_music_harmonics_public_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.001716 0.5) :named o1643))
-; cat_music_harmonics_public_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1644))
-; cat_hubble_bubble_tension_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o1645))
-; cat_hubble_bubble_tension_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1646))
-; cat_hubble_bubble_tension_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1647))
-; cat_hubble_bubble_tension_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00115123 0.5) :named o1648))
-; cat_hubble_bubble_tension_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1649))
-; cat_z164_distant_island_prereg_scaffold_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1650))
-; cat_z164_distant_island_prereg_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1651))
-; cat_z164_distant_island_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1652))
-; cat_z164_distant_island_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00111504 0.5) :named o1653))
-; cat_z164_distant_island_prereg_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1654))
-; cat_open_science_live_concordance_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1655))
-; cat_open_science_live_concordance_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1656))
-; cat_open_science_live_concordance_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1657))
-; cat_open_science_live_concordance_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0011101366578278788 0.5) :named o1658))
-; cat_open_science_live_concordance_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1659))
-; cat_boundary_partition_tightening_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1660))
-; cat_boundary_partition_tightening_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1661))
-; cat_boundary_partition_tightening_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1662))
-; cat_boundary_partition_tightening_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.001011769 0.5) :named o1663))
-; cat_boundary_partition_tightening_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1664))
-; cat_element_synthesis_condition_scaffold_records_pos kind=nat_pos
-(assert (! (> 45 0) :named o1665))
-; cat_element_synthesis_condition_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000787 0.5) :named o1666))
-; cat_element_synthesis_condition_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000787 0.5) :named o1667))
-; cat_element_synthesis_condition_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00095 0.5) :named o1668))
-; cat_element_synthesis_condition_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1669))
-; cat_cold_fusion_lab_synthesis_crosswalk_records_pos kind=nat_pos
-(assert (! (> 49 0) :named o1670))
-; cat_cold_fusion_lab_synthesis_crosswalk_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000079 0.5) :named o1671))
-; cat_cold_fusion_lab_synthesis_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000079 0.5) :named o1672))
-; cat_cold_fusion_lab_synthesis_crosswalk_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000787 0.5) :named o1673))
-; cat_cold_fusion_lab_synthesis_crosswalk_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1674))
-; cat_fusion_physics_public_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1675))
-; cat_fusion_physics_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1676))
-; cat_fusion_physics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000095 0.5) :named o1677))
-; cat_fusion_physics_public_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000787 0.5) :named o1678))
-; cat_fusion_physics_public_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1679))
-; cat_heavy_ion_lab_synthesis_panel_records_pos kind=nat_pos
-(assert (! (> 39 0) :named o1680))
-; cat_heavy_ion_lab_synthesis_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1681))
-; cat_heavy_ion_lab_synthesis_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000095 0.5) :named o1682))
-; cat_heavy_ion_lab_synthesis_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000787 0.5) :named o1683))
-; cat_heavy_ion_lab_synthesis_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1684))
-; cat_superheavy_island_completion_spine_records_pos kind=nat_pos
-(assert (! (> 41 0) :named o1685))
-; cat_superheavy_island_completion_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1686))
-; cat_superheavy_island_completion_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1687))
-; cat_superheavy_island_completion_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000787 0.5) :named o1688))
-; cat_superheavy_island_completion_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1689))
-; cat_z120_z126_beam_synthesis_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1690))
-; cat_z120_z126_beam_synthesis_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1691))
-; cat_z120_z126_beam_synthesis_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000095 0.5) :named o1692))
-; cat_z120_z126_beam_synthesis_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000787 0.5) :named o1693))
-; cat_z120_z126_beam_synthesis_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1694))
-; cat_fsot_aggregate_organized_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1695))
-; cat_fsot_aggregate_organized_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1696))
-; cat_fsot_aggregate_organized_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1697))
-; cat_fsot_aggregate_organized_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000785396 0.5) :named o1698))
-; cat_fsot_aggregate_organized_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1699))
-; cat_initiation_transformation_archetype_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1700))
-; cat_initiation_transformation_archetype_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1701))
-; cat_initiation_transformation_archetype_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1702))
-; cat_initiation_transformation_archetype_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000785396 0.5) :named o1703))
-; cat_initiation_transformation_archetype_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1704))
-; cat_nist_dlmf_special_functions_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o1705))
-; cat_nist_dlmf_special_functions_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1706))
-; cat_nist_dlmf_special_functions_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1707))
-; cat_nist_dlmf_special_functions_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000785396 0.5) :named o1708))
-; cat_nist_dlmf_special_functions_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1709))
-; cat_statistical_mechanics_public_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1710))
-; cat_statistical_mechanics_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1711))
-; cat_statistical_mechanics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1712))
-; cat_statistical_mechanics_public_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000785396 0.5) :named o1713))
-; cat_statistical_mechanics_public_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1714))
-; cat_biophysics_public_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1715))
-; cat_biophysics_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1716))
-; cat_biophysics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1717))
-; cat_biophysics_public_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000713348 0.5) :named o1718))
-; cat_biophysics_public_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1719))
-; cat_the_well_verification_spine_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1720))
-; cat_the_well_verification_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1721))
-; cat_the_well_verification_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1722))
-; cat_the_well_verification_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000713348 0.5) :named o1723))
-; cat_the_well_verification_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1724))
-; cat_warp_bh_wh_portal_panel_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1725))
-; cat_warp_bh_wh_portal_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1726))
-; cat_warp_bh_wh_portal_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1727))
-; cat_warp_bh_wh_portal_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000713348 0.5) :named o1728))
-; cat_warp_bh_wh_portal_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1729))
-; cat_ecology_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1730))
-; cat_ecology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1731))
-; cat_ecology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1732))
-; cat_ecology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1733))
-; cat_ecology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1734))
-; cat_econophysics_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1735))
-; cat_econophysics_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1736))
-; cat_econophysics_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1737))
-; cat_econophysics_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000561846 0.5) :named o1738))
-; cat_econophysics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1739))
-; cat_biological_cuda_physarum_benchmark_records_pos kind=nat_pos
-(assert (! (> 34 0) :named o1740))
-; cat_biological_cuda_physarum_benchmark_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1741))
-; cat_biological_cuda_physarum_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1742))
-; cat_biological_cuda_physarum_benchmark_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00015625000000518696 0.5) :named o1743))
-; cat_biological_cuda_physarum_benchmark_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1744))
-; cat_igem_live_fasta_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 42 0) :named o1745))
-; cat_igem_live_fasta_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1746))
-; cat_igem_live_fasta_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1747))
-; cat_igem_live_fasta_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.00010000009999062986 0.5) :named o1748))
-; cat_igem_live_fasta_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1749))
-; cat_breakthrough_fusion_spine_records_pos kind=nat_pos
-(assert (! (> 146 0) :named o1750))
-; cat_breakthrough_fusion_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1751))
-; cat_breakthrough_fusion_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1752))
-; cat_breakthrough_fusion_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1753))
-; cat_breakthrough_fusion_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1754))
-; cat_distant_island_z128_z132_deep_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1755))
-; cat_distant_island_z128_z132_deep_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1756))
-; cat_distant_island_z128_z132_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1757))
-; cat_distant_island_z128_z132_deep_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1758))
-; cat_distant_island_z128_z132_deep_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1759))
-; cat_fusion_decay_chain_prereg_scaffold_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1760))
-; cat_fusion_decay_chain_prereg_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1761))
-; cat_fusion_decay_chain_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1762))
-; cat_fusion_decay_chain_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1763))
-; cat_fusion_decay_chain_prereg_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1764))
-; cat_inertial_confinement_fusion_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1765))
-; cat_inertial_confinement_fusion_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1766))
-; cat_inertial_confinement_fusion_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1767))
-; cat_inertial_confinement_fusion_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1768))
-; cat_inertial_confinement_fusion_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1769))
-; cat_island_of_stability_deep_panel_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1770))
-; cat_island_of_stability_deep_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000001 0.5) :named o1771))
-; cat_island_of_stability_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000001 0.5) :named o1772))
-; cat_island_of_stability_deep_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1773))
-; cat_island_of_stability_deep_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1774))
-; cat_periodic_table_extension_closure_spine_records_pos kind=nat_pos
-(assert (! (> 39 0) :named o1775))
-; cat_periodic_table_extension_closure_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1776))
-; cat_periodic_table_extension_closure_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1777))
-; cat_periodic_table_extension_closure_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1778))
-; cat_periodic_table_extension_closure_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1779))
-; cat_periodic_table_public_panel_records_pos kind=nat_pos
-(assert (! (> 52 0) :named o1780))
-; cat_periodic_table_public_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1781))
-; cat_periodic_table_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000095 0.5) :named o1782))
-; cat_periodic_table_public_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1783))
-; cat_periodic_table_public_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1784))
-; cat_undiscovered_element_candidate_prereg_scaffold_records_pos kind=nat_pos
-(assert (! (> 25 0) :named o1785))
-; cat_undiscovered_element_candidate_prereg_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1786))
-; cat_undiscovered_element_candidate_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1787))
-; cat_undiscovered_element_candidate_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000095 0.5) :named o1788))
-; cat_undiscovered_element_candidate_prereg_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1789))
-; cat_cold_fusion_candidate_prereg_scaffold_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1790))
-; cat_cold_fusion_candidate_prereg_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1791))
-; cat_cold_fusion_candidate_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1792))
-; cat_cold_fusion_candidate_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000079 0.5) :named o1793))
-; cat_cold_fusion_candidate_prereg_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1794))
-; cat_knowledge_base_portable_bundle_panel_records_pos kind=nat_pos
-(assert (! (> 23 0) :named o1795))
-; cat_knowledge_base_portable_bundle_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1796))
-; cat_knowledge_base_portable_bundle_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1797))
-; cat_knowledge_base_portable_bundle_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000055479 0.5) :named o1798))
-; cat_knowledge_base_portable_bundle_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1799))
-; cat_metamaterial_fluid_design_prereg_scaffold_records_pos kind=nat_pos
-(assert (! (> 25 0) :named o1800))
-; cat_metamaterial_fluid_design_prereg_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.000034 0.5) :named o1801))
-; cat_metamaterial_fluid_design_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.000034 0.5) :named o1802))
-; cat_metamaterial_fluid_design_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000034 0.5) :named o1803))
-; cat_metamaterial_fluid_design_prereg_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1804))
-; cat_fuel_thermochemistry_public_anchors_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1805))
-; cat_fuel_thermochemistry_public_anchors_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1806))
-; cat_fuel_thermochemistry_public_anchors_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1807))
-; cat_fuel_thermochemistry_public_anchors_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000021766 0.5) :named o1808))
-; cat_fuel_thermochemistry_public_anchors_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1809))
-; cat_natural_formation_element_simulation_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o1810))
-; cat_natural_formation_element_simulation_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1811))
-; cat_natural_formation_element_simulation_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1812))
-; cat_natural_formation_element_simulation_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000001 0.5) :named o1813))
-; cat_natural_formation_element_simulation_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1814))
-; cat_superheavy_island_emergence_simulation_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o1815))
-; cat_superheavy_island_emergence_simulation_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1816))
-; cat_superheavy_island_emergence_simulation_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1817))
-; cat_superheavy_island_emergence_simulation_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000001 0.5) :named o1818))
-; cat_superheavy_island_emergence_simulation_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1819))
+(assert (! (= 1 1) :named o954))
 ; cat_living_fsot_hardware_records_pos kind=nat_pos
-(assert (! (> 4 0) :named o1820))
+(assert (! (> 4 0) :named o955))
 ; cat_living_fsot_hardware_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1821))
+(assert (! (< 0.0 0.5) :named o956))
 ; cat_living_fsot_hardware_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1822))
+(assert (! (< 0.0 0.5) :named o957))
 ; cat_living_fsot_hardware_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.000000000000013209968920124464 0.5) :named o1823))
+(assert (! (< 0.026874114652580907 0.5) :named o958))
 ; cat_living_fsot_hardware_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1824))
-; cat_agriculture_agroecology_records_pos kind=nat_pos
-(assert (! (> 276 0) :named o1825))
-; cat_agriculture_agroecology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1826))
-; cat_architecture_building_science_records_pos kind=nat_pos
-(assert (! (> 43 0) :named o1827))
-; cat_architecture_building_science_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1828))
-; cat_astrophysical_structure_crosswalk_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1829))
-; cat_astrophysical_structure_crosswalk_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1830))
-; cat_astrophysical_structure_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1831))
-; cat_astrophysical_structure_crosswalk_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1832))
-; cat_astrophysical_structure_crosswalk_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1833))
-; cat_atmospheric_physics_records_pos kind=nat_pos
-(assert (! (> 47 0) :named o1834))
-; cat_atmospheric_physics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1835))
-; cat_atomic_physics_records_pos kind=nat_pos
-(assert (! (> 80 0) :named o1836))
-; cat_atomic_physics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1837))
-; cat_breakthrough_discoveries_2024_2026_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o1838))
-; cat_breakthrough_discoveries_2024_2026_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1839))
-; cat_breakthrough_discoveries_2024_2026_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1840))
-; cat_breakthrough_discoveries_2024_2026_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1841))
-; cat_breakthrough_discoveries_2024_2026_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1842))
-; cat_clinicaltrials_medical_panel_records_pos kind=nat_pos
-(assert (! (> 394 0) :named o1843))
-; cat_clinicaltrials_medical_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1844))
-; cat_computational_reasoning_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 577 0) :named o1845))
-; cat_computational_reasoning_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1846))
-; cat_computational_reasoning_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1847))
-; cat_computational_reasoning_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1848))
-; cat_computational_reasoning_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1849))
-; cat_consciousness_expansion_spine_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1850))
-; cat_consciousness_expansion_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1851))
-; cat_consciousness_expansion_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1852))
-; cat_consciousness_expansion_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1853))
-; cat_consciousness_expansion_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1854))
-; cat_consciousness_soul_bridge_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1855))
-; cat_consciousness_soul_bridge_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1856))
-; cat_cosmology_anomaly_deep_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1857))
-; cat_cosmology_anomaly_deep_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1858))
-; cat_cosmology_anomaly_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1859))
-; cat_cosmology_anomaly_deep_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1860))
-; cat_cosmology_anomaly_deep_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1861))
-; cat_cosmology_bubble_bleed_benchmark_records_pos kind=nat_pos
-(assert (! (> 110 0) :named o1862))
-; cat_cosmology_bubble_bleed_benchmark_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1863))
-; cat_cosmology_bubble_bleed_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1864))
-; cat_cosmology_bubble_bleed_benchmark_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1865))
-; cat_cosmology_bubble_bleed_benchmark_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1866))
-; cat_cross_proof_verification_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1867))
-; cat_cryosphere_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 2399 0) :named o1868))
-; cat_cryosphere_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1869))
-; cat_desktop_application_wiring_spine_records_pos kind=nat_pos
-(assert (! (> 81 0) :named o1870))
-; cat_desktop_application_wiring_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1871))
-; cat_desktop_application_wiring_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1872))
-; cat_desktop_application_wiring_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1873))
-; cat_desktop_application_wiring_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1874))
-; cat_distant_island_emergence_simulation_records_pos kind=nat_pos
-(assert (! (> 26 0) :named o1875))
-; cat_distant_island_emergence_simulation_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1876))
-; cat_distant_island_emergence_simulation_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1877))
-; cat_distant_island_emergence_simulation_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1878))
-; cat_distant_island_emergence_simulation_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1879))
-; cat_domain_orbital_predictions_records_pos kind=nat_pos
-(assert (! (> 12 0) :named o1880))
-; cat_domain_orbital_predictions_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1881))
+(assert (! (= 1 1) :named o959))
+; cat_alphafold_batch_meta_open_records_pos kind=nat_pos
+(assert (! (> 182 0) :named o960))
+; cat_alphafold_batch_meta_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.015311 0.5) :named o961))
+; cat_alphafold_batch_meta_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.015311 0.5) :named o962))
+; cat_alphafold_batch_meta_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.026684 0.5) :named o963))
+; cat_alphafold_batch_meta_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o964))
+; cat_uniprot_proteome_slice_open_records_pos kind=nat_pos
+(assert (! (> 68 0) :named o965))
+; cat_uniprot_proteome_slice_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o966))
+; cat_uniprot_proteome_slice_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236 0.5) :named o967))
+; cat_uniprot_proteome_slice_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.026684 0.5) :named o968))
+; cat_uniprot_proteome_slice_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o969))
+; cat_arxiv_gravitational_waves_panel_records_pos kind=nat_pos
+(assert (! (> 60 0) :named o970))
+; cat_arxiv_gravitational_waves_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01748 0.5) :named o971))
+; cat_arxiv_gravitational_waves_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01748 0.5) :named o972))
+; cat_arxiv_gravitational_waves_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.026472 0.5) :named o973))
+; cat_arxiv_gravitational_waves_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o974))
+; cat_desi_edr_fits_residual_records_pos kind=nat_pos
+(assert (! (> 97144 0) :named o975))
+; cat_desi_edr_fits_residual_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o976))
+; cat_desi_edr_fits_residual_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022461 0.5) :named o977))
+; cat_desi_edr_fits_residual_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.026472 0.5) :named o978))
+; cat_desi_edr_fits_residual_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o979))
+; cat_gaia_astrometry_panel_deep_records_pos kind=nat_pos
+(assert (! (> 62 0) :named o980))
+; cat_gaia_astrometry_panel_deep_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o981))
+; cat_gaia_astrometry_panel_deep_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022461 0.5) :named o982))
+; cat_gaia_astrometry_panel_deep_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.026472 0.5) :named o983))
+; cat_gaia_astrometry_panel_deep_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o984))
+; cat_gaia_dr3_source_sample_open_records_pos kind=nat_pos
+(assert (! (> 3459 0) :named o985))
+; cat_gaia_dr3_source_sample_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o986))
+; cat_gaia_dr3_source_sample_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022461 0.5) :named o987))
+; cat_gaia_dr3_source_sample_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.026472 0.5) :named o988))
+; cat_gaia_dr3_source_sample_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o989))
+; cat_nothing_perfection_friction_origin_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o990))
+; cat_nothing_perfection_friction_origin_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o991))
+; cat_nothing_perfection_friction_origin_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o992))
+; cat_nothing_perfection_friction_origin_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.026472 0.5) :named o993))
+; cat_nothing_perfection_friction_origin_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o994))
+; cat_radio_astronomy_panel_records_pos kind=nat_pos
+(assert (! (> 30 0) :named o995))
+; cat_radio_astronomy_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o996))
+; cat_radio_astronomy_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022461 0.5) :named o997))
+; cat_radio_astronomy_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.026472 0.5) :named o998))
+; cat_radio_astronomy_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o999))
+; cat_actuarial_science_panel_records_pos kind=nat_pos
+(assert (! (> 60 0) :named o1000))
+; cat_actuarial_science_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.02261 0.5) :named o1001))
+; cat_actuarial_science_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.02261 0.5) :named o1002))
+; cat_actuarial_science_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o1003))
+; cat_actuarial_science_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1004))
+; cat_finance_markets_panel_records_pos kind=nat_pos
+(assert (! (> 36 0) :named o1005))
+; cat_finance_markets_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o1006))
+; cat_finance_markets_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.02584 0.5) :named o1007))
+; cat_finance_markets_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o1008))
+; cat_finance_markets_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1009))
+; cat_history_panel_records_pos kind=nat_pos
+(assert (! (> 60 0) :named o1010))
+; cat_history_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01382 0.5) :named o1011))
+; cat_history_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01382 0.5) :named o1012))
+; cat_history_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o1013))
+; cat_history_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1014))
+; cat_supply_chain_logistics_panel_records_pos kind=nat_pos
+(assert (! (> 40 0) :named o1015))
+; cat_supply_chain_logistics_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o1016))
+; cat_supply_chain_logistics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.02584 0.5) :named o1017))
+; cat_supply_chain_logistics_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o1018))
+; cat_supply_chain_logistics_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1019))
+; cat_world_bank_macro_open_records_pos kind=nat_pos
+(assert (! (> 605 0) :named o1020))
+; cat_world_bank_macro_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o1021))
+; cat_world_bank_macro_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.02584 0.5) :named o1022))
+; cat_world_bank_macro_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.02584 0.5) :named o1023))
+; cat_world_bank_macro_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1024))
+; cat_reality_folding_spine_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1025))
+; cat_reality_folding_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000637597 0.5) :named o1026))
+; cat_reality_folding_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000637597 0.5) :named o1027))
+; cat_reality_folding_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.025753835305195434 0.5) :named o1028))
+; cat_reality_folding_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1029))
+; cat_founding_galactic_halo_rotation_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1030))
+; cat_founding_galactic_halo_rotation_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.025123 0.5) :named o1031))
+; cat_founding_galactic_halo_rotation_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.025123 0.5) :named o1032))
+; cat_founding_galactic_halo_rotation_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.025123 0.5) :named o1033))
+; cat_founding_galactic_halo_rotation_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1034))
+; cat_usgs_seismic_history_open_records_pos kind=nat_pos
+(assert (! (> 398 0) :named o1035))
+; cat_usgs_seismic_history_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022295 0.5) :named o1036))
+; cat_usgs_seismic_history_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022295 0.5) :named o1037))
+; cat_usgs_seismic_history_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.024709 0.5) :named o1038))
+; cat_usgs_seismic_history_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1039))
+; cat_code_genome_structure_records_pos kind=nat_pos
+(assert (! (> 176 0) :named o1040))
+; cat_code_genome_structure_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1041))
+; cat_code_genome_structure_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1042))
+; cat_code_genome_structure_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.02449769835093818 0.5) :named o1043))
+; cat_code_genome_structure_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1044))
+; cat_founding_atmospheric_ozone_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1045))
+; cat_founding_atmospheric_ozone_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.023822 0.5) :named o1046))
+; cat_founding_atmospheric_ozone_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.023822 0.5) :named o1047))
+; cat_founding_atmospheric_ozone_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.023822 0.5) :named o1048))
+; cat_founding_atmospheric_ozone_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1049))
+; cat_ionospheric_chemistry_coupling_records_pos kind=nat_pos
+(assert (! (> 85 0) :named o1050))
+; cat_ionospheric_chemistry_coupling_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.023609235048340338 0.5) :named o1051))
+; cat_ionospheric_chemistry_coupling_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.023609235048340338 0.5) :named o1052))
+; cat_ionospheric_chemistry_coupling_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.023609235048340338 0.5) :named o1053))
+; cat_ionospheric_chemistry_coupling_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1054))
+; cat_dzhanibekov_intermediate_axis_fsot_panel_records_pos kind=nat_pos
+(assert (! (> 32 0) :named o1055))
+; cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1056))
+; cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1057))
+; cat_dzhanibekov_intermediate_axis_fsot_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.023015 0.5) :named o1058))
+; cat_dzhanibekov_intermediate_axis_fsot_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1059))
+; cat_exoplanet_archive_depth_open_records_pos kind=nat_pos
+(assert (! (> 1976 0) :named o1060))
+; cat_exoplanet_archive_depth_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.023015 0.5) :named o1061))
+; cat_exoplanet_archive_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.023015 0.5) :named o1062))
+; cat_exoplanet_archive_depth_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.023015 0.5) :named o1063))
+; cat_exoplanet_archive_depth_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1064))
+; cat_nasa_neo_feed_panel_records_pos kind=nat_pos
+(assert (! (> 56 0) :named o1065))
+; cat_nasa_neo_feed_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.021097 0.5) :named o1066))
+; cat_nasa_neo_feed_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.021097 0.5) :named o1067))
+; cat_nasa_neo_feed_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.023015 0.5) :named o1068))
+; cat_nasa_neo_feed_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1069))
+; cat_compact_object_binary_events_records_pos kind=nat_pos
+(assert (! (> 40 0) :named o1070))
+; cat_compact_object_binary_events_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.010049 0.5) :named o1071))
+; cat_compact_object_binary_events_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.010049 0.5) :named o1072))
+; cat_compact_object_binary_events_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o1073))
+; cat_compact_object_binary_events_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1074))
+; cat_gaia_dr3_tap_deep_records_pos kind=nat_pos
+(assert (! (> 1826 0) :named o1075))
+; cat_gaia_dr3_tap_deep_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o1076))
+; cat_gaia_dr3_tap_deep_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022461 0.5) :named o1077))
+; cat_gaia_dr3_tap_deep_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o1078))
+; cat_gaia_dr3_tap_deep_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1079))
+; cat_nasa_donki_solar_panel_records_pos kind=nat_pos
+(assert (! (> 2148 0) :named o1080))
+; cat_nasa_donki_solar_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.020755 0.5) :named o1081))
+; cat_nasa_donki_solar_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.020755 0.5) :named o1082))
+; cat_nasa_donki_solar_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o1083))
+; cat_nasa_donki_solar_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1084))
+; cat_simbad_identity_depth_open_records_pos kind=nat_pos
+(assert (! (> 1365 0) :named o1085))
+; cat_simbad_identity_depth_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o1086))
+; cat_simbad_identity_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022461 0.5) :named o1087))
+; cat_simbad_identity_depth_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o1088))
+; cat_simbad_identity_depth_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1089))
+; cat_simbad_stellar_identity_deep_records_pos kind=nat_pos
+(assert (! (> 520 0) :named o1090))
+; cat_simbad_stellar_identity_deep_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o1091))
+; cat_simbad_stellar_identity_deep_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022461 0.5) :named o1092))
+; cat_simbad_stellar_identity_deep_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022461 0.5) :named o1093))
+; cat_simbad_stellar_identity_deep_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1094))
+; cat_entomology_records_pos kind=nat_pos
+(assert (! (> 430 0) :named o1095))
+; cat_entomology_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.020012625346676673 0.5) :named o1096))
+; cat_entomology_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.020012625346676673 0.5) :named o1097))
+; cat_entomology_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.02223625038520915 0.5) :named o1098))
+; cat_entomology_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1099))
+; cat_botany_records_pos kind=nat_pos
+(assert (! (> 426 0) :named o1100))
+; cat_botany_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236250385193387 0.5) :named o1101))
+; cat_botany_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236250385193387 0.5) :named o1102))
+; cat_botany_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236250385208895 0.5) :named o1103))
+; cat_botany_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1104))
+; cat_zoology_records_pos kind=nat_pos
+(assert (! (> 1000 0) :named o1105))
+; cat_zoology_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.017789000308156326 0.5) :named o1106))
+; cat_zoology_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.017789000308156326 0.5) :named o1107))
+; cat_zoology_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236250385207747 0.5) :named o1108))
+; cat_zoology_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1109))
+; cat_biology_developmental_structural_depth_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1110))
+; cat_biology_developmental_structural_depth_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.015311 0.5) :named o1111))
+; cat_biology_developmental_structural_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.015311 0.5) :named o1112))
+; cat_biology_developmental_structural_depth_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1113))
+; cat_biology_developmental_structural_depth_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1114))
+; cat_ethology_panel_records_pos kind=nat_pos
+(assert (! (> 100 0) :named o1115))
+; cat_ethology_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.006607 0.5) :named o1116))
+; cat_ethology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.006607 0.5) :named o1117))
+; cat_ethology_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1118))
+; cat_ethology_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1119))
+; cat_gwas_catalog_depth_open_records_pos kind=nat_pos
+(assert (! (> 81 0) :named o1120))
+; cat_gwas_catalog_depth_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1121))
+; cat_gwas_catalog_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236 0.5) :named o1122))
+; cat_gwas_catalog_depth_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1123))
+; cat_gwas_catalog_depth_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1124))
+; cat_longevity_anage_catalog_panel_records_pos kind=nat_pos
+(assert (! (> 966 0) :named o1125))
+; cat_longevity_anage_catalog_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1126))
+; cat_longevity_anage_catalog_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236 0.5) :named o1127))
+; cat_longevity_anage_catalog_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1128))
+; cat_longevity_anage_catalog_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1129))
+; cat_longevity_extreme_species_panel_records_pos kind=nat_pos
+(assert (! (> 164 0) :named o1130))
+; cat_longevity_extreme_species_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.017789 0.5) :named o1131))
+; cat_longevity_extreme_species_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.017789 0.5) :named o1132))
+; cat_longevity_extreme_species_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1133))
+; cat_longevity_extreme_species_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1134))
+; cat_longevity_genetic_mechanics_panel_records_pos kind=nat_pos
+(assert (! (> 35 0) :named o1135))
+; cat_longevity_genetic_mechanics_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1136))
+; cat_longevity_genetic_mechanics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236 0.5) :named o1137))
+; cat_longevity_genetic_mechanics_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1138))
+; cat_longevity_genetic_mechanics_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1139))
+; cat_longevity_megadeep_ncbi_panel_records_pos kind=nat_pos
+(assert (! (> 1746 0) :named o1140))
+; cat_longevity_megadeep_ncbi_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.017789 0.5) :named o1141))
+; cat_longevity_megadeep_ncbi_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.017789 0.5) :named o1142))
+; cat_longevity_megadeep_ncbi_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1143))
+; cat_longevity_megadeep_ncbi_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1144))
+; cat_longevity_telomere_repair_panel_records_pos kind=nat_pos
+(assert (! (> 60 0) :named o1145))
+; cat_longevity_telomere_repair_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1146))
+; cat_longevity_telomere_repair_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236 0.5) :named o1147))
+; cat_longevity_telomere_repair_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1148))
+; cat_longevity_telomere_repair_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1149))
+; cat_mycology_panel_records_pos kind=nat_pos
+(assert (! (> 90 0) :named o1150))
+; cat_mycology_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.006006 0.5) :named o1151))
+; cat_mycology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.006006 0.5) :named o1152))
+; cat_mycology_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1153))
+; cat_mycology_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1154))
+; cat_owid_epidemiology_open_records_pos kind=nat_pos
+(assert (! (> 1778 0) :named o1155))
+; cat_owid_epidemiology_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1156))
+; cat_owid_epidemiology_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236 0.5) :named o1157))
+; cat_owid_epidemiology_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1158))
+; cat_owid_epidemiology_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1159))
+; cat_physarum_biological_cuda_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1160))
+; cat_physarum_biological_cuda_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0003086625 0.5) :named o1161))
+; cat_physarum_biological_cuda_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0003086625 0.5) :named o1162))
+; cat_physarum_biological_cuda_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1163))
+; cat_physarum_biological_cuda_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1164))
+; cat_rcsb_structure_batch_open_records_pos kind=nat_pos
+(assert (! (> 91 0) :named o1165))
+; cat_rcsb_structure_batch_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1166))
+; cat_rcsb_structure_batch_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236 0.5) :named o1167))
+; cat_rcsb_structure_batch_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1168))
+; cat_rcsb_structure_batch_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1169))
+; cat_virology_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1170))
+; cat_virology_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000637597 0.5) :named o1171))
+; cat_virology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000637597 0.5) :named o1172))
+; cat_virology_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1173))
+; cat_virology_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1174))
+; cat_zebrafish_cell_tracking_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1175))
+; cat_zebrafish_cell_tracking_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1176))
+; cat_zebrafish_cell_tracking_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.022236 0.5) :named o1177))
+; cat_zebrafish_cell_tracking_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1178))
+; cat_zebrafish_cell_tracking_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1179))
+; cat_zebrafish_developmental_mechanics_panel_records_pos kind=nat_pos
+(assert (! (> 31 0) :named o1180))
+; cat_zebrafish_developmental_mechanics_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.017789 0.5) :named o1181))
+; cat_zebrafish_developmental_mechanics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.017789 0.5) :named o1182))
+; cat_zebrafish_developmental_mechanics_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.022236 0.5) :named o1183))
+; cat_zebrafish_developmental_mechanics_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1184))
+; cat_founding_cosmic_ray_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1185))
+; cat_founding_cosmic_ray_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.021221 0.5) :named o1186))
+; cat_founding_cosmic_ray_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.021221 0.5) :named o1187))
+; cat_founding_cosmic_ray_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.021221 0.5) :named o1188))
+; cat_founding_cosmic_ray_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1189))
+; cat_fsot_gpu_engineering_spine_records_pos kind=nat_pos
+(assert (! (> 40 0) :named o1190))
+; cat_fsot_gpu_engineering_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1191))
+; cat_fsot_gpu_engineering_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1192))
+; cat_fsot_gpu_engineering_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.020755 0.5) :named o1193))
+; cat_fsot_gpu_engineering_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1194))
+; cat_preregistered_predictions_records_pos kind=nat_pos
+(assert (! (> 35 0) :named o1195))
+; cat_preregistered_predictions_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.02009823784840936 0.5) :named o1196))
+; cat_preregistered_predictions_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.02009823784840936 0.5) :named o1197))
+; cat_preregistered_predictions_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.020098237848419454 0.5) :named o1198))
+; cat_preregistered_predictions_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1199))
+; cat_pubchem_stability_panel_records_pos kind=nat_pos
+(assert (! (> 59 0) :named o1200))
+; cat_pubchem_stability_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0024239449292213135 0.5) :named o1201))
+; cat_pubchem_stability_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0024239449292213135 0.5) :named o1202))
+; cat_pubchem_stability_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.019259259259258584 0.5) :named o1203))
+; cat_pubchem_stability_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1204))
+; cat_chemical_structure_stability_panel_records_pos kind=nat_pos
+(assert (! (> 32 0) :named o1205))
+; cat_chemical_structure_stability_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.00206 0.5) :named o1206))
+; cat_chemical_structure_stability_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.00206 0.5) :named o1207))
+; cat_chemical_structure_stability_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.019259 0.5) :named o1208))
+; cat_chemical_structure_stability_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1209))
+; cat_toe_unification_spine_records_pos kind=nat_pos
+(assert (! (> 8 0) :named o1210))
+; cat_toe_unification_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1211))
+; cat_toe_unification_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1212))
+; cat_toe_unification_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.019008268802504343 0.5) :named o1213))
+; cat_toe_unification_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1214))
+; cat_arxiv_brain_knowledge_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1215))
+; cat_arxiv_brain_knowledge_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1216))
+; cat_arxiv_brain_knowledge_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.018003 0.5) :named o1217))
+; cat_arxiv_brain_knowledge_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1218))
+; cat_arxiv_brain_knowledge_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1219))
+; cat_consciousness_lean_route_credibility_records_pos kind=nat_pos
+(assert (! (> 101 0) :named o1220))
+; cat_consciousness_lean_route_credibility_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1221))
+; cat_consciousness_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.018003 0.5) :named o1222))
+; cat_consciousness_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1223))
+; cat_consciousness_lean_route_credibility_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1224))
+; cat_intelligence_compression_records_pos kind=nat_pos
+(assert (! (> 87 0) :named o1225))
+; cat_intelligence_compression_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1226))
+; cat_intelligence_compression_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.018003 0.5) :named o1227))
+; cat_intelligence_compression_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1228))
+; cat_intelligence_compression_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1229))
+; cat_observer_lean_route_credibility_records_pos kind=nat_pos
+(assert (! (> 53 0) :named o1230))
+; cat_observer_lean_route_credibility_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1231))
+; cat_observer_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.018003 0.5) :named o1232))
+; cat_observer_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1233))
+; cat_observer_lean_route_credibility_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1234))
+; cat_openneuro_depth_open_records_pos kind=nat_pos
+(assert (! (> 47 0) :named o1235))
+; cat_openneuro_depth_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1236))
+; cat_openneuro_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.018003 0.5) :named o1237))
+; cat_openneuro_depth_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1238))
+; cat_openneuro_depth_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1239))
+; cat_perceived_lean_route_credibility_records_pos kind=nat_pos
+(assert (! (> 58 0) :named o1240))
+; cat_perceived_lean_route_credibility_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1241))
+; cat_perceived_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.018003 0.5) :named o1242))
+; cat_perceived_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.018003 0.5) :named o1243))
+; cat_perceived_lean_route_credibility_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1244))
+; cat_energy_neural_orbital_bridge_records_pos kind=nat_pos
+(assert (! (> 48 0) :named o1245))
+; cat_energy_neural_orbital_bridge_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.018002668701796783 0.5) :named o1246))
+; cat_energy_neural_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.018002668701796783 0.5) :named o1247))
+; cat_energy_neural_orbital_bridge_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.018002668701808056 0.5) :named o1248))
+; cat_energy_neural_orbital_bridge_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1249))
+; cat_neural_galactic_orbital_bridge_records_pos kind=nat_pos
+(assert (! (> 49 0) :named o1250))
+; cat_neural_galactic_orbital_bridge_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0180026687017961 0.5) :named o1251))
+; cat_neural_galactic_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0180026687017961 0.5) :named o1252))
+; cat_neural_galactic_orbital_bridge_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.018002668701806005 0.5) :named o1253))
+; cat_neural_galactic_orbital_bridge_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1254))
+; cat_paleontology_records_pos kind=nat_pos
+(assert (! (> 630 0) :named o1255))
+; cat_paleontology_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.017836062884406152 0.5) :named o1256))
+; cat_paleontology_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.017836062884406152 0.5) :named o1257))
+; cat_paleontology_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.017836062884422174 0.5) :named o1258))
+; cat_paleontology_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1259))
+; cat_zebrafish_longevity_genetics_coupling_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1260))
+; cat_zebrafish_longevity_genetics_coupling_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.013342 0.5) :named o1261))
+; cat_zebrafish_longevity_genetics_coupling_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.013342 0.5) :named o1262))
+; cat_zebrafish_longevity_genetics_coupling_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.015565 0.5) :named o1263))
+; cat_zebrafish_longevity_genetics_coupling_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1264))
+; cat_openneuro_full_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1265))
+; cat_openneuro_full_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.015431 0.5) :named o1266))
+; cat_openneuro_full_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.015431 0.5) :named o1267))
+; cat_openneuro_full_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.015431 0.5) :named o1268))
+; cat_openneuro_full_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1269))
+; cat_cardiology_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1270))
+; cat_cardiology_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.015311 0.5) :named o1271))
+; cat_cardiology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.015311 0.5) :named o1272))
+; cat_cardiology_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.015311 0.5) :named o1273))
+; cat_cardiology_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1274))
+; cat_epidemiology_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1275))
+; cat_epidemiology_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.015311 0.5) :named o1276))
+; cat_epidemiology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.015311 0.5) :named o1277))
+; cat_epidemiology_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.015311 0.5) :named o1278))
+; cat_epidemiology_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1279))
+; cat_jarvis_dft_open_panel_records_pos kind=nat_pos
+(assert (! (> 77 0) :named o1280))
+; cat_jarvis_dft_open_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1281))
+; cat_jarvis_dft_open_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01341 0.5) :named o1282))
+; cat_jarvis_dft_open_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.015087 0.5) :named o1283))
+; cat_jarvis_dft_open_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1284))
+; cat_materials_creep_fracture_depth_panel_records_pos kind=nat_pos
+(assert (! (> 47 0) :named o1285))
+; cat_materials_creep_fracture_depth_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1286))
+; cat_materials_creep_fracture_depth_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01341 0.5) :named o1287))
+; cat_materials_creep_fracture_depth_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.015087 0.5) :named o1288))
+; cat_materials_creep_fracture_depth_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1289))
+; cat_materials_project_live_panel_records_pos kind=nat_pos
+(assert (! (> 141 0) :named o1290))
+; cat_materials_project_live_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.011734 0.5) :named o1291))
+; cat_materials_project_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.011734 0.5) :named o1292))
+; cat_materials_project_live_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.015087 0.5) :named o1293))
+; cat_materials_project_live_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1294))
+; cat_paleoclimate_records_pos kind=nat_pos
+(assert (! (> 40 0) :named o1295))
+; cat_paleoclimate_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.015015854077438107 0.5) :named o1296))
+; cat_paleoclimate_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.015015854077438107 0.5) :named o1297))
+; cat_paleoclimate_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.015015854077446988 0.5) :named o1298))
+; cat_paleoclimate_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1299))
+; cat_lmfdb_elliptic_curves_open_records_pos kind=nat_pos
+(assert (! (> 1016 0) :named o1300))
+; cat_lmfdb_elliptic_curves_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1301))
+; cat_lmfdb_elliptic_curves_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.014767 0.5) :named o1302))
+; cat_lmfdb_elliptic_curves_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1303))
+; cat_lmfdb_elliptic_curves_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1304))
+; cat_lmfdb_oeis_math_open_records_pos kind=nat_pos
+(assert (! (> 3918 0) :named o1305))
+; cat_lmfdb_oeis_math_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1306))
+; cat_lmfdb_oeis_math_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.014767 0.5) :named o1307))
+; cat_lmfdb_oeis_math_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1308))
+; cat_lmfdb_oeis_math_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1309))
+; cat_oeis_family_sweep_open_records_pos kind=nat_pos
+(assert (! (> 394 0) :named o1310))
+; cat_oeis_family_sweep_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1311))
+; cat_oeis_family_sweep_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.014767 0.5) :named o1312))
+; cat_oeis_family_sweep_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1313))
+; cat_oeis_family_sweep_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1314))
+; cat_trinary_hardware_live_panel_records_pos kind=nat_pos
+(assert (! (> 28 0) :named o1315))
+; cat_trinary_hardware_live_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1316))
+; cat_trinary_hardware_live_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.014767 0.5) :named o1317))
+; cat_trinary_hardware_live_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1318))
+; cat_trinary_hardware_live_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1319))
+; cat_intrinsic_llm_validators_panel_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o1320))
+; cat_intrinsic_llm_validators_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1321))
+; cat_intrinsic_llm_validators_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.014767 0.5) :named o1322))
+; cat_intrinsic_llm_validators_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.014767 0.5) :named o1323))
+; cat_intrinsic_llm_validators_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1324))
+; cat_osti_doe_science_panel_records_pos kind=nat_pos
+(assert (! (> 100 0) :named o1325))
+; cat_osti_doe_science_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01382 0.5) :named o1326))
+; cat_osti_doe_science_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01382 0.5) :named o1327))
+; cat_osti_doe_science_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.01382 0.5) :named o1328))
+; cat_osti_doe_science_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1329))
+; cat_civil_engineering_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1330))
+; cat_civil_engineering_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1331))
+; cat_civil_engineering_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01341 0.5) :named o1332))
+; cat_civil_engineering_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1333))
+; cat_civil_engineering_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1334))
+; cat_cod_optimade_structures_records_pos kind=nat_pos
+(assert (! (> 682 0) :named o1335))
+; cat_cod_optimade_structures_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1336))
+; cat_cod_optimade_structures_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01341 0.5) :named o1337))
+; cat_cod_optimade_structures_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1338))
+; cat_cod_optimade_structures_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1339))
+; cat_robotics_control_systems_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1340))
+; cat_robotics_control_systems_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1341))
+; cat_robotics_control_systems_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01341 0.5) :named o1342))
+; cat_robotics_control_systems_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1343))
+; cat_robotics_control_systems_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1344))
+; cat_soil_science_panel_records_pos kind=nat_pos
+(assert (! (> 96 0) :named o1345))
+; cat_soil_science_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.006006 0.5) :named o1346))
+; cat_soil_science_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.006006 0.5) :named o1347))
+; cat_soil_science_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.01341 0.5) :named o1348))
+; cat_soil_science_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1349))
+; cat_bibliography_corpus_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1350))
+; cat_bibliography_corpus_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.013294 0.5) :named o1351))
+; cat_bibliography_corpus_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.013294 0.5) :named o1352))
+; cat_bibliography_corpus_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.013294 0.5) :named o1353))
+; cat_bibliography_corpus_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1354))
+; cat_canonical_oracle_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1355))
+; cat_canonical_oracle_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1356))
+; cat_canonical_oracle_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1357))
+; cat_canonical_oracle_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.013294 0.5) :named o1358))
+; cat_canonical_oracle_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1359))
+; cat_secure_software_engineering_records_pos kind=nat_pos
+(assert (! (> 59 0) :named o1360))
+; cat_secure_software_engineering_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1361))
+; cat_secure_software_engineering_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1362))
+; cat_secure_software_engineering_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.013290579327048134 0.5) :named o1363))
+; cat_secure_software_engineering_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1364))
+; cat_law_policy_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1365))
+; cat_law_policy_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.013003 0.5) :named o1366))
+; cat_law_policy_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.013003 0.5) :named o1367))
+; cat_law_policy_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.013003 0.5) :named o1368))
+; cat_law_policy_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1369))
+; cat_uap_war_gov_release_panel_records_pos kind=nat_pos
+(assert (! (> 542 0) :named o1370))
+; cat_uap_war_gov_release_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.008488 0.5) :named o1371))
+; cat_uap_war_gov_release_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.008488 0.5) :named o1372))
+; cat_uap_war_gov_release_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.013003 0.5) :named o1373))
+; cat_uap_war_gov_release_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1374))
+; cat_climate_observed_benchmark_records_pos kind=nat_pos
+(assert (! (> 17325 0) :named o1375))
+; cat_climate_observed_benchmark_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.01201268326195996 0.5) :named o1376))
+; cat_climate_observed_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.01201268326195996 0.5) :named o1377))
+; cat_climate_observed_benchmark_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.01201268326197121 0.5) :named o1378))
+; cat_climate_observed_benchmark_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1379))
+; cat_medical_galactic_orbital_bridge_records_pos kind=nat_pos
+(assert (! (> 48 0) :named o1380))
+; cat_medical_galactic_orbital_bridge_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.010717743028515674 0.5) :named o1381))
+; cat_medical_galactic_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.010717743028515674 0.5) :named o1382))
+; cat_medical_galactic_orbital_bridge_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.010717743028528433 0.5) :named o1383))
+; cat_medical_galactic_orbital_bridge_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1384))
+; cat_network_internet_protocols_records_pos kind=nat_pos
+(assert (! (> 22 0) :named o1385))
+; cat_network_internet_protocols_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.010337117254355377 0.5) :named o1386))
+; cat_network_internet_protocols_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.010337117254355377 0.5) :named o1387))
+; cat_network_internet_protocols_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.010337117254363452 0.5) :named o1388))
+; cat_network_internet_protocols_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1389))
+; cat_zero_day_risk_evaluator_records_pos kind=nat_pos
+(assert (! (> 25 0) :named o1390))
+; cat_zero_day_risk_evaluator_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.010337117254355377 0.5) :named o1391))
+; cat_zero_day_risk_evaluator_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.010337117254355377 0.5) :named o1392))
+; cat_zero_day_risk_evaluator_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.010337117254360602 0.5) :named o1393))
+; cat_zero_day_risk_evaluator_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1394))
+; cat_alternate_base_mathematics_explorer_panel_records_pos kind=nat_pos
+(assert (! (> 56 0) :named o1395))
+; cat_alternate_base_mathematics_explorer_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1396))
+; cat_alternate_base_mathematics_explorer_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.009504 0.5) :named o1397))
+; cat_alternate_base_mathematics_explorer_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1398))
+; cat_alternate_base_mathematics_explorer_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1399))
+; cat_experimental_base_mathematics_panel_records_pos kind=nat_pos
+(assert (! (> 36 0) :named o1400))
+; cat_experimental_base_mathematics_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1401))
+; cat_experimental_base_mathematics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.009504 0.5) :named o1402))
+; cat_experimental_base_mathematics_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1403))
+; cat_experimental_base_mathematics_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1404))
+; cat_fusion_lean_route_credibility_records_pos kind=nat_pos
+(assert (! (> 81 0) :named o1405))
+; cat_fusion_lean_route_credibility_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1406))
+; cat_fusion_lean_route_credibility_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.009504 0.5) :named o1407))
+; cat_fusion_lean_route_credibility_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1408))
+; cat_fusion_lean_route_credibility_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1409))
+; cat_higgs_branching_records_pos kind=nat_pos
+(assert (! (> 27 0) :named o1410))
+; cat_higgs_branching_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1411))
+; cat_higgs_branching_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1412))
+; cat_higgs_branching_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1413))
+; cat_higgs_branching_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1414))
+; cat_neutrino_physics_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1415))
+; cat_neutrino_physics_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1416))
+; cat_neutrino_physics_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.009504 0.5) :named o1417))
+; cat_neutrino_physics_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1418))
+; cat_neutrino_physics_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1419))
+; cat_oph_fsot_challenge_panel_records_pos kind=nat_pos
+(assert (! (> 31 0) :named o1420))
+; cat_oph_fsot_challenge_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1421))
+; cat_oph_fsot_challenge_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1422))
+; cat_oph_fsot_challenge_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1423))
+; cat_oph_fsot_challenge_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1424))
+; cat_pdg_live_depth_open_records_pos kind=nat_pos
+(assert (! (> 33 0) :named o1425))
+; cat_pdg_live_depth_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1426))
+; cat_pdg_live_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.009504 0.5) :named o1427))
+; cat_pdg_live_depth_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.009504 0.5) :named o1428))
+; cat_pdg_live_depth_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1429))
+; cat_environmental_engineering_records_pos kind=nat_pos
+(assert (! (> 1117 0) :named o1430))
+; cat_environmental_engineering_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.009009512446467327 0.5) :named o1431))
+; cat_environmental_engineering_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.009009512446467327 0.5) :named o1432))
+; cat_environmental_engineering_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.009009512446477413 0.5) :named o1433))
+; cat_environmental_engineering_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1434))
+; cat_openalex_citation_depth_open_records_pos kind=nat_pos
+(assert (! (> 150 0) :named o1435))
+; cat_openalex_citation_depth_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.008863 0.5) :named o1436))
+; cat_openalex_citation_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.008863 0.5) :named o1437))
+; cat_openalex_citation_depth_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.008863 0.5) :named o1438))
+; cat_openalex_citation_depth_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1439))
+; cat_gwosc_live_event_deep_records_pos kind=nat_pos
+(assert (! (> 185 0) :named o1440))
+; cat_gwosc_live_event_deep_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.008488 0.5) :named o1441))
+; cat_gwosc_live_event_deep_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.008488 0.5) :named o1442))
+; cat_gwosc_live_event_deep_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.008488 0.5) :named o1443))
+; cat_gwosc_live_event_deep_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1444))
+; cat_gwosc_strain_metadata_open_records_pos kind=nat_pos
+(assert (! (> 54 0) :named o1445))
+; cat_gwosc_strain_metadata_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.008488 0.5) :named o1446))
+; cat_gwosc_strain_metadata_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.008488 0.5) :named o1447))
+; cat_gwosc_strain_metadata_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.008488 0.5) :named o1448))
+; cat_gwosc_strain_metadata_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1449))
+; cat_gwtc_catalog_open_records_pos kind=nat_pos
+(assert (! (> 1972 0) :named o1450))
+; cat_gwtc_catalog_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.008488 0.5) :named o1451))
+; cat_gwtc_catalog_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.008488 0.5) :named o1452))
+; cat_gwtc_catalog_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.008488 0.5) :named o1453))
+; cat_gwtc_catalog_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1454))
+; cat_pharmacology_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 120 0) :named o1455))
+; cat_pharmacology_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.001166649119945485 0.5) :named o1456))
+; cat_pharmacology_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.001166649119945485 0.5) :named o1457))
+; cat_pharmacology_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.007388748950458895 0.5) :named o1458))
+; cat_pharmacology_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1459))
+; cat_mechanistic_coupling_records_pos kind=nat_pos
+(assert (! (> 39 0) :named o1460))
+; cat_mechanistic_coupling_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0073836551816993294 0.5) :named o1461))
+; cat_mechanistic_coupling_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0073836551816993294 0.5) :named o1462))
+; cat_mechanistic_coupling_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0073836551816993294 0.5) :named o1463))
+; cat_mechanistic_coupling_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1464))
+; cat_entomology_panel_records_pos kind=nat_pos
+(assert (! (> 90 0) :named o1465))
+; cat_entomology_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.006006 0.5) :named o1466))
+; cat_entomology_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.006006 0.5) :named o1467))
+; cat_entomology_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.006006 0.5) :named o1468))
+; cat_entomology_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1469))
+; cat_gbif_taxon_depth_open_records_pos kind=nat_pos
+(assert (! (> 203 0) :named o1470))
+; cat_gbif_taxon_depth_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.006006 0.5) :named o1471))
+; cat_gbif_taxon_depth_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.006006 0.5) :named o1472))
+; cat_gbif_taxon_depth_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.006006 0.5) :named o1473))
+; cat_gbif_taxon_depth_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1474))
+; cat_paleoclimate_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1475))
+; cat_paleoclimate_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.006006 0.5) :named o1476))
+; cat_paleoclimate_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.006006 0.5) :named o1477))
+; cat_paleoclimate_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.006006 0.5) :named o1478))
+; cat_paleoclimate_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1479))
+; cat_proof_carrying_code_genome_records_pos kind=nat_pos
+(assert (! (> 25 0) :named o1480))
+; cat_proof_carrying_code_genome_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0051685586271776884 0.5) :named o1481))
+; cat_proof_carrying_code_genome_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0051685586271776884 0.5) :named o1482))
+; cat_proof_carrying_code_genome_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.005906924145354116 0.5) :named o1483))
+; cat_proof_carrying_code_genome_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1484))
+; cat_ai_galactic_orbital_bridge_records_pos kind=nat_pos
+(assert (! (> 48 0) :named o1485))
+; cat_ai_galactic_orbital_bridge_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.005168558627175254 0.5) :named o1486))
+; cat_ai_galactic_orbital_bridge_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.005168558627175254 0.5) :named o1487))
+; cat_ai_galactic_orbital_bridge_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.005168558627188476 0.5) :named o1488))
+; cat_ai_galactic_orbital_bridge_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1489))
+; cat_bibliography_lean_corpus_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1490))
+; cat_bibliography_lean_corpus_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1491))
+; cat_bibliography_lean_corpus_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1492))
+; cat_bibliography_lean_corpus_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1493))
+; cat_bibliography_lean_corpus_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1494))
+; cat_cosmology_extended_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1495))
+; cat_cosmology_extended_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1496))
+; cat_cosmology_extended_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1497))
+; cat_cosmology_extended_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1498))
+; cat_cosmology_extended_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1499))
+; cat_formula_corpus_cnc_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1500))
+; cat_formula_corpus_cnc_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1501))
+; cat_formula_corpus_cnc_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1502))
+; cat_formula_corpus_cnc_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1503))
+; cat_formula_corpus_cnc_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1504))
+; cat_fsot_aggregate_unified_db_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1505))
+; cat_fsot_aggregate_unified_db_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1506))
+; cat_fsot_aggregate_unified_db_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1507))
+; cat_fsot_aggregate_unified_db_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1508))
+; cat_fsot_aggregate_unified_db_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1509))
+; cat_hvac_thermal_systems_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1510))
+; cat_hvac_thermal_systems_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1511))
+; cat_hvac_thermal_systems_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1512))
+; cat_hvac_thermal_systems_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1513))
+; cat_hvac_thermal_systems_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1514))
+; cat_linguistics_formal_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1515))
+; cat_linguistics_formal_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1516))
+; cat_linguistics_formal_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1517))
+; cat_linguistics_formal_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1518))
+; cat_linguistics_formal_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1519))
+; cat_math_generator_airfoil_rmse_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1520))
+; cat_math_generator_airfoil_rmse_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1521))
+; cat_math_generator_airfoil_rmse_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1522))
+; cat_math_generator_airfoil_rmse_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1523))
+; cat_math_generator_airfoil_rmse_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1524))
+; cat_math_generator_benchmark_formula_eval_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1525))
+; cat_math_generator_benchmark_formula_eval_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1526))
+; cat_math_generator_benchmark_formula_eval_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1527))
+; cat_math_generator_benchmark_formula_eval_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1528))
+; cat_math_generator_benchmark_formula_eval_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1529))
+; cat_prediction_rederivation_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1530))
+; cat_prediction_rederivation_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1531))
+; cat_prediction_rederivation_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1532))
+; cat_prediction_rederivation_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1533))
+; cat_prediction_rederivation_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1534))
+; cat_small_body_orbits_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1535))
+; cat_small_body_orbits_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1536))
+; cat_small_body_orbits_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000561846 0.5) :named o1537))
+; cat_small_body_orbits_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00423739 0.5) :named o1538))
+; cat_small_body_orbits_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1539))
+; cat_anthropology_records_pos kind=nat_pos
+(assert (! (> 160 0) :named o1540))
+; cat_anthropology_pooled_under_half_pct kind=lt_half
+(assert (! (< -0.0007873774796219538 0.5) :named o1541))
+; cat_anthropology_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< -0.0007873774796219538 0.5) :named o1542))
+; cat_anthropology_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.002670068252275115 0.5) :named o1543))
+; cat_anthropology_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1544))
+; cat_programming_language_laws_records_pos kind=nat_pos
+(assert (! (> 105 0) :named o1545))
+; cat_programming_language_laws_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1546))
+; cat_programming_language_laws_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1547))
+; cat_programming_language_laws_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.002670068252275115 0.5) :named o1548))
+; cat_programming_language_laws_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1549))
+; cat_desktop_observer_loop_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1550))
+; cat_desktop_observer_loop_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0010245 0.5) :named o1551))
+; cat_desktop_observer_loop_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0010245 0.5) :named o1552))
+; cat_desktop_observer_loop_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00205 0.5) :named o1553))
+; cat_desktop_observer_loop_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1554))
+; cat_music_harmonics_public_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1555))
+; cat_music_harmonics_public_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1556))
+; cat_music_harmonics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1557))
+; cat_music_harmonics_public_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.001716 0.5) :named o1558))
+; cat_music_harmonics_public_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1559))
+; cat_hubble_bubble_tension_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o1560))
+; cat_hubble_bubble_tension_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1561))
+; cat_hubble_bubble_tension_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1562))
+; cat_hubble_bubble_tension_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00115123 0.5) :named o1563))
+; cat_hubble_bubble_tension_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1564))
+; cat_z164_distant_island_prereg_scaffold_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1565))
+; cat_z164_distant_island_prereg_scaffold_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1566))
+; cat_z164_distant_island_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1567))
+; cat_z164_distant_island_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00111504 0.5) :named o1568))
+; cat_z164_distant_island_prereg_scaffold_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1569))
+; cat_open_science_live_concordance_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1570))
+; cat_open_science_live_concordance_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1571))
+; cat_open_science_live_concordance_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1572))
+; cat_open_science_live_concordance_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0011101366578278788 0.5) :named o1573))
+; cat_open_science_live_concordance_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1574))
+; cat_boundary_partition_tightening_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1575))
+; cat_boundary_partition_tightening_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1576))
+; cat_boundary_partition_tightening_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1577))
+; cat_boundary_partition_tightening_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.001011769 0.5) :named o1578))
+; cat_boundary_partition_tightening_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1579))
+; cat_element_synthesis_condition_scaffold_records_pos kind=nat_pos
+(assert (! (> 45 0) :named o1580))
+; cat_element_synthesis_condition_scaffold_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000787 0.5) :named o1581))
+; cat_element_synthesis_condition_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000787 0.5) :named o1582))
+; cat_element_synthesis_condition_scaffold_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00095 0.5) :named o1583))
+; cat_element_synthesis_condition_scaffold_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1584))
+; cat_cold_fusion_lab_synthesis_crosswalk_records_pos kind=nat_pos
+(assert (! (> 49 0) :named o1585))
+; cat_cold_fusion_lab_synthesis_crosswalk_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000079 0.5) :named o1586))
+; cat_cold_fusion_lab_synthesis_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000079 0.5) :named o1587))
+; cat_cold_fusion_lab_synthesis_crosswalk_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000787 0.5) :named o1588))
+; cat_cold_fusion_lab_synthesis_crosswalk_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1589))
+; cat_fusion_physics_public_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1590))
+; cat_fusion_physics_public_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1591))
+; cat_fusion_physics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000095 0.5) :named o1592))
+; cat_fusion_physics_public_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000787 0.5) :named o1593))
+; cat_fusion_physics_public_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1594))
+; cat_heavy_ion_lab_synthesis_panel_records_pos kind=nat_pos
+(assert (! (> 39 0) :named o1595))
+; cat_heavy_ion_lab_synthesis_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1596))
+; cat_heavy_ion_lab_synthesis_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000095 0.5) :named o1597))
+; cat_heavy_ion_lab_synthesis_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000787 0.5) :named o1598))
+; cat_heavy_ion_lab_synthesis_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1599))
+; cat_superheavy_island_completion_spine_records_pos kind=nat_pos
+(assert (! (> 41 0) :named o1600))
+; cat_superheavy_island_completion_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1601))
+; cat_superheavy_island_completion_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1602))
+; cat_superheavy_island_completion_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000787 0.5) :named o1603))
+; cat_superheavy_island_completion_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1604))
+; cat_z120_z126_beam_synthesis_panel_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1605))
+; cat_z120_z126_beam_synthesis_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1606))
+; cat_z120_z126_beam_synthesis_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000095 0.5) :named o1607))
+; cat_z120_z126_beam_synthesis_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000787 0.5) :named o1608))
+; cat_z120_z126_beam_synthesis_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1609))
+; cat_fsot_aggregate_organized_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1610))
+; cat_fsot_aggregate_organized_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1611))
+; cat_fsot_aggregate_organized_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1612))
+; cat_fsot_aggregate_organized_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000785396 0.5) :named o1613))
+; cat_fsot_aggregate_organized_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1614))
+; cat_initiation_transformation_archetype_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1615))
+; cat_initiation_transformation_archetype_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1616))
+; cat_initiation_transformation_archetype_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1617))
+; cat_initiation_transformation_archetype_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000785396 0.5) :named o1618))
+; cat_initiation_transformation_archetype_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1619))
+; cat_nist_dlmf_special_functions_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o1620))
+; cat_nist_dlmf_special_functions_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1621))
+; cat_nist_dlmf_special_functions_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1622))
+; cat_nist_dlmf_special_functions_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000785396 0.5) :named o1623))
+; cat_nist_dlmf_special_functions_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1624))
+; cat_statistical_mechanics_public_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1625))
+; cat_statistical_mechanics_public_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1626))
+; cat_statistical_mechanics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1627))
+; cat_statistical_mechanics_public_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000785396 0.5) :named o1628))
+; cat_statistical_mechanics_public_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1629))
+; cat_biophysics_public_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1630))
+; cat_biophysics_public_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1631))
+; cat_biophysics_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1632))
+; cat_biophysics_public_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000713348 0.5) :named o1633))
+; cat_biophysics_public_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1634))
+; cat_the_well_verification_spine_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1635))
+; cat_the_well_verification_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1636))
+; cat_the_well_verification_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1637))
+; cat_the_well_verification_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000713348 0.5) :named o1638))
+; cat_the_well_verification_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1639))
+; cat_warp_bh_wh_portal_panel_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1640))
+; cat_warp_bh_wh_portal_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1641))
+; cat_warp_bh_wh_portal_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1642))
+; cat_warp_bh_wh_portal_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000713348 0.5) :named o1643))
+; cat_warp_bh_wh_portal_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1644))
 ; cat_ecology_records_pos kind=nat_pos
-(assert (! (> 627 0) :named o1882))
+(assert (! (> 24 0) :named o1645))
+; cat_ecology_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1646))
+; cat_ecology_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1647))
+; cat_ecology_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1648))
 ; cat_ecology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1883))
+(assert (! (= 1 1) :named o1649))
+; cat_econophysics_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1650))
+; cat_econophysics_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1651))
+; cat_econophysics_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1652))
+; cat_econophysics_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000561846 0.5) :named o1653))
+; cat_econophysics_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1654))
+; cat_biological_cuda_physarum_benchmark_records_pos kind=nat_pos
+(assert (! (> 34 0) :named o1655))
+; cat_biological_cuda_physarum_benchmark_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1656))
+; cat_biological_cuda_physarum_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1657))
+; cat_biological_cuda_physarum_benchmark_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00015625000000518696 0.5) :named o1658))
+; cat_biological_cuda_physarum_benchmark_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1659))
+; cat_codata_full_table_open_records_pos kind=nat_pos
+(assert (! (> 38 0) :named o1660))
+; cat_codata_full_table_open_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000000007799550565792915 0.5) :named o1661))
+; cat_codata_full_table_open_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000000007799550565792915 0.5) :named o1662))
+; cat_codata_full_table_open_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0001281127358921839 0.5) :named o1663))
+; cat_codata_full_table_open_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1664))
+; cat_igem_live_fasta_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 42 0) :named o1665))
+; cat_igem_live_fasta_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1666))
+; cat_igem_live_fasta_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1667))
+; cat_igem_live_fasta_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.00010000009999062986 0.5) :named o1668))
+; cat_igem_live_fasta_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1669))
+; cat_breakthrough_fusion_spine_records_pos kind=nat_pos
+(assert (! (> 146 0) :named o1670))
+; cat_breakthrough_fusion_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1671))
+; cat_breakthrough_fusion_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1672))
+; cat_breakthrough_fusion_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1673))
+; cat_breakthrough_fusion_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1674))
+; cat_distant_island_z128_z132_deep_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1675))
+; cat_distant_island_z128_z132_deep_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1676))
+; cat_distant_island_z128_z132_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1677))
+; cat_distant_island_z128_z132_deep_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1678))
+; cat_distant_island_z128_z132_deep_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1679))
+; cat_fusion_decay_chain_prereg_scaffold_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1680))
+; cat_fusion_decay_chain_prereg_scaffold_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1681))
+; cat_fusion_decay_chain_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1682))
+; cat_fusion_decay_chain_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1683))
+; cat_fusion_decay_chain_prereg_scaffold_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1684))
+; cat_inertial_confinement_fusion_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1685))
+; cat_inertial_confinement_fusion_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1686))
+; cat_inertial_confinement_fusion_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1687))
+; cat_inertial_confinement_fusion_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1688))
+; cat_inertial_confinement_fusion_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1689))
+; cat_island_of_stability_deep_panel_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1690))
+; cat_island_of_stability_deep_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000001 0.5) :named o1691))
+; cat_island_of_stability_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000001 0.5) :named o1692))
+; cat_island_of_stability_deep_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1693))
+; cat_island_of_stability_deep_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1694))
+; cat_periodic_table_extension_closure_spine_records_pos kind=nat_pos
+(assert (! (> 39 0) :named o1695))
+; cat_periodic_table_extension_closure_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1696))
+; cat_periodic_table_extension_closure_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1697))
+; cat_periodic_table_extension_closure_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1698))
+; cat_periodic_table_extension_closure_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1699))
+; cat_periodic_table_public_panel_records_pos kind=nat_pos
+(assert (! (> 52 0) :named o1700))
+; cat_periodic_table_public_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1701))
+; cat_periodic_table_public_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000095 0.5) :named o1702))
+; cat_periodic_table_public_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1703))
+; cat_periodic_table_public_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1704))
+; cat_undiscovered_element_candidate_prereg_scaffold_records_pos kind=nat_pos
+(assert (! (> 25 0) :named o1705))
+; cat_undiscovered_element_candidate_prereg_scaffold_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1706))
+; cat_undiscovered_element_candidate_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1707))
+; cat_undiscovered_element_candidate_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000095 0.5) :named o1708))
+; cat_undiscovered_element_candidate_prereg_scaffold_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1709))
+; cat_cold_fusion_candidate_prereg_scaffold_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1710))
+; cat_cold_fusion_candidate_prereg_scaffold_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1711))
+; cat_cold_fusion_candidate_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1712))
+; cat_cold_fusion_candidate_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000079 0.5) :named o1713))
+; cat_cold_fusion_candidate_prereg_scaffold_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1714))
+; cat_knowledge_base_portable_bundle_panel_records_pos kind=nat_pos
+(assert (! (> 23 0) :named o1715))
+; cat_knowledge_base_portable_bundle_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1716))
+; cat_knowledge_base_portable_bundle_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1717))
+; cat_knowledge_base_portable_bundle_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000055479 0.5) :named o1718))
+; cat_knowledge_base_portable_bundle_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1719))
+; cat_metamaterial_fluid_design_prereg_scaffold_records_pos kind=nat_pos
+(assert (! (> 25 0) :named o1720))
+; cat_metamaterial_fluid_design_prereg_scaffold_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.000034 0.5) :named o1721))
+; cat_metamaterial_fluid_design_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.000034 0.5) :named o1722))
+; cat_metamaterial_fluid_design_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000034 0.5) :named o1723))
+; cat_metamaterial_fluid_design_prereg_scaffold_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1724))
+; cat_fuel_thermochemistry_public_anchors_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1725))
+; cat_fuel_thermochemistry_public_anchors_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1726))
+; cat_fuel_thermochemistry_public_anchors_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1727))
+; cat_fuel_thermochemistry_public_anchors_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000021766 0.5) :named o1728))
+; cat_fuel_thermochemistry_public_anchors_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1729))
+; cat_natural_formation_element_simulation_records_pos kind=nat_pos
+(assert (! (> 32 0) :named o1730))
+; cat_natural_formation_element_simulation_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1731))
+; cat_natural_formation_element_simulation_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1732))
+; cat_natural_formation_element_simulation_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000001 0.5) :named o1733))
+; cat_natural_formation_element_simulation_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1734))
+; cat_superheavy_island_emergence_simulation_records_pos kind=nat_pos
+(assert (! (> 32 0) :named o1735))
+; cat_superheavy_island_emergence_simulation_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1736))
+; cat_superheavy_island_emergence_simulation_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1737))
+; cat_superheavy_island_emergence_simulation_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.000001 0.5) :named o1738))
+; cat_superheavy_island_emergence_simulation_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1739))
+; cat_agriculture_agroecology_records_pos kind=nat_pos
+(assert (! (> 276 0) :named o1740))
+; cat_agriculture_agroecology_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1741))
+; cat_architecture_building_science_records_pos kind=nat_pos
+(assert (! (> 43 0) :named o1742))
+; cat_architecture_building_science_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1743))
+; cat_astrophysical_structure_crosswalk_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1744))
+; cat_astrophysical_structure_crosswalk_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1745))
+; cat_astrophysical_structure_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1746))
+; cat_astrophysical_structure_crosswalk_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1747))
+; cat_astrophysical_structure_crosswalk_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1748))
+; cat_atmospheric_physics_records_pos kind=nat_pos
+(assert (! (> 47 0) :named o1749))
+; cat_atmospheric_physics_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1750))
+; cat_atomic_physics_records_pos kind=nat_pos
+(assert (! (> 80 0) :named o1751))
+; cat_atomic_physics_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1752))
+; cat_blackhole_whitehole_cycle_live_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1753))
+; cat_blackhole_whitehole_cycle_live_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1754))
+; cat_breakthrough_discoveries_2024_2026_records_pos kind=nat_pos
+(assert (! (> 21 0) :named o1755))
+; cat_breakthrough_discoveries_2024_2026_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1756))
+; cat_breakthrough_discoveries_2024_2026_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1757))
+; cat_breakthrough_discoveries_2024_2026_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1758))
+; cat_breakthrough_discoveries_2024_2026_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1759))
+; cat_cern_open_data_lhc_records_pos kind=nat_pos
+(assert (! (> 83 0) :named o1760))
+; cat_cern_open_data_lhc_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1761))
+; cat_clinicaltrials_medical_panel_records_pos kind=nat_pos
+(assert (! (> 394 0) :named o1762))
+; cat_clinicaltrials_medical_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1763))
+; cat_computational_reasoning_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 577 0) :named o1764))
+; cat_computational_reasoning_benchmark_json_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1765))
+; cat_computational_reasoning_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1766))
+; cat_computational_reasoning_benchmark_json_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1767))
+; cat_computational_reasoning_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1768))
+; cat_consciousness_expansion_spine_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1769))
+; cat_consciousness_expansion_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1770))
+; cat_consciousness_expansion_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1771))
+; cat_consciousness_expansion_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1772))
+; cat_consciousness_expansion_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1773))
+; cat_consciousness_soul_bridge_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1774))
+; cat_consciousness_soul_bridge_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1775))
+; cat_cosmology_anomaly_deep_panel_records_pos kind=nat_pos
+(assert (! (> 24 0) :named o1776))
+; cat_cosmology_anomaly_deep_panel_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1777))
+; cat_cosmology_anomaly_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1778))
+; cat_cosmology_anomaly_deep_panel_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1779))
+; cat_cosmology_anomaly_deep_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1780))
+; cat_cosmology_bubble_bleed_benchmark_records_pos kind=nat_pos
+(assert (! (> 110 0) :named o1781))
+; cat_cosmology_bubble_bleed_benchmark_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1782))
+; cat_cosmology_bubble_bleed_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1783))
+; cat_cosmology_bubble_bleed_benchmark_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1784))
+; cat_cosmology_bubble_bleed_benchmark_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1785))
+; cat_cross_proof_verification_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1786))
+; cat_crossref_scholarly_panel_records_pos kind=nat_pos
+(assert (! (> 198 0) :named o1787))
+; cat_crossref_scholarly_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1788))
+; cat_cryosphere_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 2399 0) :named o1789))
+; cat_cryosphere_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1790))
+; cat_desktop_application_wiring_spine_records_pos kind=nat_pos
+(assert (! (> 81 0) :named o1791))
+; cat_desktop_application_wiring_spine_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1792))
+; cat_desktop_application_wiring_spine_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1793))
+; cat_desktop_application_wiring_spine_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1794))
+; cat_desktop_application_wiring_spine_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1795))
+; cat_distant_island_emergence_simulation_records_pos kind=nat_pos
+(assert (! (> 26 0) :named o1796))
+; cat_distant_island_emergence_simulation_pooled_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1797))
+; cat_distant_island_emergence_simulation_pooled_lt_half_pure kind=r_lt_lit_pure
+(assert (! (< 0.0 0.5) :named o1798))
+; cat_distant_island_emergence_simulation_max_scalar_under_half_pct kind=lt_half
+(assert (! (< 0.0 0.5) :named o1799))
+; cat_distant_island_emergence_simulation_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1800))
+; cat_domain_orbital_predictions_records_pos kind=nat_pos
+(assert (! (> 12 0) :named o1801))
+; cat_domain_orbital_predictions_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1802))
+; cat_ecology_records_pos kind=nat_pos
+(assert (! (> 627 0) :named o1803))
+; cat_ecology_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1804))
 ; cat_econometrics_records_pos kind=nat_pos
-(assert (! (> 172 0) :named o1884))
+(assert (! (> 172 0) :named o1805))
 ; cat_econometrics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1885))
+(assert (! (= 1 1) :named o1806))
 ; cat_economics_records_pos kind=nat_pos
-(assert (! (> 157 0) :named o1886))
+(assert (! (> 157 0) :named o1807))
 ; cat_economics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1887))
+(assert (! (= 1 1) :named o1808))
 ; cat_emergent_domains_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 29 0) :named o1888))
+(assert (! (> 29 0) :named o1809))
 ; cat_emergent_domains_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1889))
+(assert (! (= 1 1) :named o1810))
 ; cat_existence_simulation_gap_fill_panel_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o1890))
+(assert (! (> 20 0) :named o1811))
 ; cat_existence_simulation_gap_fill_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1891))
+(assert (! (= 1 1) :named o1812))
 ; cat_exogeology_records_pos kind=nat_pos
-(assert (! (> 316 0) :named o1892))
+(assert (! (> 316 0) :named o1813))
 ; cat_exogeology_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1893))
+(assert (! (< 0.0 0.5) :named o1814))
 ; cat_exogeology_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1894))
+(assert (! (< 0.0 0.5) :named o1815))
 ; cat_exogeology_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1895))
+(assert (! (< 0.0 0.5) :named o1816))
 ; cat_exogeology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1896))
+(assert (! (= 1 1) :named o1817))
 ; cat_exoplanet_system_architecture_records_pos kind=nat_pos
-(assert (! (> 882 0) :named o1897))
+(assert (! (> 882 0) :named o1818))
 ; cat_exoplanet_system_architecture_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1898))
+(assert (! (< 0.0 0.5) :named o1819))
 ; cat_exoplanet_system_architecture_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1899))
+(assert (! (< 0.0 0.5) :named o1820))
 ; cat_exoplanet_system_architecture_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1900))
+(assert (! (< 0.0 0.5) :named o1821))
 ; cat_exoplanet_system_architecture_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1901))
+(assert (! (= 1 1) :named o1822))
 ; cat_external_oss_code_genome_records_pos kind=nat_pos
-(assert (! (> 161 0) :named o1902))
+(assert (! (> 161 0) :named o1823))
 ; cat_external_oss_code_genome_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1903))
+(assert (! (< 0.0 0.5) :named o1824))
 ; cat_external_oss_code_genome_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1904))
+(assert (! (< 0.0 0.5) :named o1825))
 ; cat_external_oss_code_genome_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1905))
+(assert (! (< 0.0 0.5) :named o1826))
 ; cat_external_oss_code_genome_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1906))
+(assert (! (= 1 1) :named o1827))
 ; cat_fluid_dynamics_records_pos kind=nat_pos
-(assert (! (> 55 0) :named o1907))
+(assert (! (> 55 0) :named o1828))
 ; cat_fluid_dynamics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1908))
+(assert (! (= 1 1) :named o1829))
 ; cat_food_microbiology_records_pos kind=nat_pos
-(assert (! (> 30 0) :named o1909))
+(assert (! (> 30 0) :named o1830))
 ; cat_food_microbiology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1910))
+(assert (! (= 1 1) :named o1831))
 ; cat_fractal_constant_recursion_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o1911))
+(assert (! (> 21 0) :named o1832))
 ; cat_fractal_constant_recursion_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1912))
+(assert (! (< 0.0 0.5) :named o1833))
 ; cat_fractal_constant_recursion_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1913))
+(assert (! (< 0.0 0.5) :named o1834))
 ; cat_fractal_constant_recursion_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1914))
+(assert (! (< 0.0 0.5) :named o1835))
 ; cat_fractal_constant_recursion_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1915))
+(assert (! (= 1 1) :named o1836))
 ; cat_fsot_c_pack_parity_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1916))
+(assert (! (> 24 0) :named o1837))
 ; cat_fsot_c_pack_parity_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1917))
+(assert (! (< 0.0 0.5) :named o1838))
 ; cat_fsot_c_pack_parity_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1918))
+(assert (! (< 0.0 0.5) :named o1839))
 ; cat_fsot_c_pack_parity_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1919))
+(assert (! (< 0.0 0.5) :named o1840))
 ; cat_fsot_c_pack_parity_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1920))
+(assert (! (= 1 1) :named o1841))
 ; cat_fsot_cache_hierarchy_panel_records_pos kind=nat_pos
-(assert (! (> 61 0) :named o1921))
+(assert (! (> 61 0) :named o1842))
 ; cat_fsot_cache_hierarchy_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1922))
+(assert (! (< 0.0 0.5) :named o1843))
 ; cat_fsot_cache_hierarchy_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1923))
+(assert (! (< 0.0 0.5) :named o1844))
 ; cat_fsot_cache_hierarchy_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1924))
+(assert (! (< 0.0 0.5) :named o1845))
 ; cat_fsot_cache_hierarchy_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1925))
+(assert (! (= 1 1) :named o1846))
 ; cat_fsot_gpu_cuda_competitive_panel_records_pos kind=nat_pos
-(assert (! (> 27 0) :named o1926))
+(assert (! (> 27 0) :named o1847))
 ; cat_fsot_gpu_cuda_competitive_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1927))
+(assert (! (< 0.0 0.5) :named o1848))
 ; cat_fsot_gpu_cuda_competitive_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1928))
+(assert (! (< 0.0 0.5) :named o1849))
 ; cat_fsot_gpu_cuda_competitive_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1929))
+(assert (! (< 0.0 0.5) :named o1850))
 ; cat_fsot_gpu_cuda_competitive_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1930))
+(assert (! (= 1 1) :named o1851))
 ; cat_fsot_gpu_parity_verify_panel_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o1931))
+(assert (! (> 48 0) :named o1852))
 ; cat_fsot_gpu_parity_verify_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1932))
+(assert (! (< 0.0 0.5) :named o1853))
 ; cat_fsot_gpu_parity_verify_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1933))
+(assert (! (< 0.0 0.5) :named o1854))
 ; cat_fsot_gpu_parity_verify_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1934))
+(assert (! (< 0.0 0.5) :named o1855))
 ; cat_fsot_gpu_parity_verify_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1935))
+(assert (! (= 1 1) :named o1856))
 ; cat_fsot_interconnect_coherence_panel_records_pos kind=nat_pos
-(assert (! (> 62 0) :named o1936))
+(assert (! (> 62 0) :named o1857))
 ; cat_fsot_interconnect_coherence_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1937))
+(assert (! (< 0.0 0.5) :named o1858))
 ; cat_fsot_interconnect_coherence_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1938))
+(assert (! (< 0.0 0.5) :named o1859))
 ; cat_fsot_interconnect_coherence_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1939))
+(assert (! (< 0.0 0.5) :named o1860))
 ; cat_fsot_interconnect_coherence_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1940))
+(assert (! (= 1 1) :named o1861))
 ; cat_fuel_candidate_prereg_scaffold_records_pos kind=nat_pos
-(assert (! (> 33 0) :named o1941))
+(assert (! (> 33 0) :named o1862))
 ; cat_fuel_candidate_prereg_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1942))
+(assert (! (< 0.0 0.5) :named o1863))
 ; cat_fuel_candidate_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1943))
+(assert (! (< 0.0 0.5) :named o1864))
 ; cat_fuel_candidate_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1944))
+(assert (! (< 0.0 0.5) :named o1865))
 ; cat_fuel_candidate_prereg_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1945))
+(assert (! (= 1 1) :named o1866))
+; cat_fuel_lab_live_panel_records_pos kind=nat_pos
+(assert (! (> 366 0) :named o1867))
+; cat_fuel_lab_live_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1868))
 ; cat_galactic_structure_sample_records_pos kind=nat_pos
-(assert (! (> 101 0) :named o1946))
+(assert (! (> 101 0) :named o1869))
 ; cat_galactic_structure_sample_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1947))
+(assert (! (< 0.0 0.5) :named o1870))
 ; cat_galactic_structure_sample_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1948))
+(assert (! (< 0.0 0.5) :named o1871))
 ; cat_galactic_structure_sample_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1949))
+(assert (! (< 0.0 0.5) :named o1872))
 ; cat_galactic_structure_sample_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1950))
+(assert (! (= 1 1) :named o1873))
+; cat_gbif_species_occurrence_records_pos kind=nat_pos
+(assert (! (> 240 0) :named o1874))
+; cat_gbif_species_occurrence_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1875))
 ; cat_genomic_sciences_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1951))
+(assert (! (> 24 0) :named o1876))
 ; cat_genomic_sciences_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1952))
+(assert (! (< 0.0 0.5) :named o1877))
 ; cat_genomic_sciences_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1953))
+(assert (! (< 0.0 0.5) :named o1878))
 ; cat_genomic_sciences_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1954))
+(assert (! (< 0.0 0.5) :named o1879))
 ; cat_genomic_sciences_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1955))
+(assert (! (= 1 1) :named o1880))
 ; cat_geology_stratigraphy_records_pos kind=nat_pos
-(assert (! (> 1957 0) :named o1956))
+(assert (! (> 1957 0) :named o1881))
 ; cat_geology_stratigraphy_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1957))
+(assert (! (= 1 1) :named o1882))
 ; cat_geomagnetism_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 524 0) :named o1958))
+(assert (! (> 524 0) :named o1883))
 ; cat_geomagnetism_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1959))
+(assert (! (< 0.0 0.5) :named o1884))
 ; cat_geomagnetism_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1960))
+(assert (! (< 0.0 0.5) :named o1885))
 ; cat_geomagnetism_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1961))
+(assert (! (< 0.0 0.5) :named o1886))
 ; cat_geomagnetism_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1962))
+(assert (! (= 1 1) :named o1887))
 ; cat_government_open_data_spine_records_pos kind=nat_pos
-(assert (! (> 28 0) :named o1963))
+(assert (! (> 28 0) :named o1888))
 ; cat_government_open_data_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1964))
+(assert (! (< 0.0 0.5) :named o1889))
 ; cat_government_open_data_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1965))
+(assert (! (< 0.0 0.5) :named o1890))
 ; cat_government_open_data_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1966))
+(assert (! (< 0.0 0.5) :named o1891))
 ; cat_government_open_data_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1967))
+(assert (! (= 1 1) :named o1892))
+; cat_grace_cryosphere_benchmark_json_records_pos kind=nat_pos
+(assert (! (> 505 0) :named o1893))
+; cat_grace_cryosphere_benchmark_json_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1894))
 ; cat_history_records_pos kind=nat_pos
-(assert (! (> 170 0) :named o1968))
+(assert (! (> 170 0) :named o1895))
 ; cat_history_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1969))
+(assert (! (= 1 1) :named o1896))
 ; cat_hybrid_fi_sim_multi_hero_panel_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o1970))
+(assert (! (> 32 0) :named o1897))
 ; cat_hybrid_fi_sim_multi_hero_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1971))
+(assert (! (< 0.0 0.5) :named o1898))
 ; cat_hybrid_fi_sim_multi_hero_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1972))
+(assert (! (< 0.0 0.5) :named o1899))
 ; cat_hybrid_fi_sim_multi_hero_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1973))
+(assert (! (< 0.0 0.5) :named o1900))
 ; cat_hybrid_fi_sim_multi_hero_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1974))
+(assert (! (= 1 1) :named o1901))
 ; cat_hydrology_benchmark_records_pos kind=nat_pos
-(assert (! (> 957 0) :named o1975))
+(assert (! (> 957 0) :named o1902))
 ; cat_hydrology_benchmark_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1976))
+(assert (! (= 1 1) :named o1903))
+; cat_inaturalist_observation_panel_records_pos kind=nat_pos
+(assert (! (> 281 0) :named o1904))
+; cat_inaturalist_observation_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1905))
 ; cat_interactive_media_prereg_scaffold_records_pos kind=nat_pos
-(assert (! (> 42 0) :named o1977))
+(assert (! (> 42 0) :named o1906))
 ; cat_interactive_media_prereg_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1978))
+(assert (! (< 0.0 0.5) :named o1907))
 ; cat_interactive_media_prereg_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1979))
+(assert (! (< 0.0 0.5) :named o1908))
 ; cat_interactive_media_prereg_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1980))
+(assert (! (< 0.0 0.5) :named o1909))
 ; cat_interactive_media_prereg_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1981))
+(assert (! (= 1 1) :named o1910))
 ; cat_interdisciplinary_spine_crosswalk_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o1982))
+(assert (! (> 24 0) :named o1911))
 ; cat_interdisciplinary_spine_crosswalk_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1983))
+(assert (! (< 0.0 0.5) :named o1912))
 ; cat_interdisciplinary_spine_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1984))
+(assert (! (< 0.0 0.5) :named o1913))
 ; cat_interdisciplinary_spine_crosswalk_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1985))
+(assert (! (< 0.0 0.5) :named o1914))
 ; cat_interdisciplinary_spine_crosswalk_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1986))
+(assert (! (= 1 1) :named o1915))
 ; cat_live_ingest_spine_records_pos kind=nat_pos
-(assert (! (> 28 0) :named o1987))
+(assert (! (> 28 0) :named o1916))
 ; cat_live_ingest_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1988))
+(assert (! (= 1 1) :named o1917))
+; cat_machine_and_molecule_live_panel_records_pos kind=nat_pos
+(assert (! (> 120 0) :named o1918))
+; cat_machine_and_molecule_live_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1919))
 ; cat_magnetic_confinement_fusion_panel_records_pos kind=nat_pos
-(assert (! (> 22 0) :named o1989))
+(assert (! (> 22 0) :named o1920))
 ; cat_magnetic_confinement_fusion_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1990))
+(assert (! (< 0.0 0.5) :named o1921))
 ; cat_magnetic_confinement_fusion_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1991))
+(assert (! (< 0.0 0.5) :named o1922))
 ; cat_magnetic_confinement_fusion_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1992))
+(assert (! (< 0.0 0.5) :named o1923))
 ; cat_magnetic_confinement_fusion_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1993))
+(assert (! (= 1 1) :named o1924))
 ; cat_magnetosphere_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 167 0) :named o1994))
+(assert (! (> 167 0) :named o1925))
 ; cat_magnetosphere_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1995))
+(assert (! (< 0.0 0.5) :named o1926))
 ; cat_magnetosphere_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o1996))
+(assert (! (< 0.0 0.5) :named o1927))
 ; cat_magnetosphere_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o1997))
+(assert (! (< 0.0 0.5) :named o1928))
 ; cat_magnetosphere_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o1998))
+(assert (! (= 1 1) :named o1929))
 ; cat_maillard_chemistry_records_pos kind=nat_pos
-(assert (! (> 30 0) :named o1999))
+(assert (! (> 30 0) :named o1930))
 ; cat_maillard_chemistry_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2000))
+(assert (! (= 1 1) :named o1931))
 ; cat_material_in_silico_screening_scaffold_records_pos kind=nat_pos
-(assert (! (> 42 0) :named o2001))
+(assert (! (> 42 0) :named o1932))
 ; cat_material_in_silico_screening_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2002))
+(assert (! (< 0.0 0.5) :named o1933))
 ; cat_material_in_silico_screening_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2003))
+(assert (! (< 0.0 0.5) :named o1934))
 ; cat_material_in_silico_screening_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2004))
+(assert (! (< 0.0 0.5) :named o1935))
 ; cat_material_in_silico_screening_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2005))
+(assert (! (= 1 1) :named o1936))
 ; cat_math_generator_rules_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 1552 0) :named o2006))
+(assert (! (> 1552 0) :named o1937))
 ; cat_math_generator_rules_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2007))
+(assert (! (= 1 1) :named o1938))
 ; cat_math_generator_rules_eval_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 1552 0) :named o2008))
+(assert (! (> 1552 0) :named o1939))
 ; cat_math_generator_rules_eval_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2009))
+(assert (! (< 0.0 0.5) :named o1940))
 ; cat_math_generator_rules_eval_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2010))
+(assert (! (< 0.0 0.5) :named o1941))
 ; cat_math_generator_rules_eval_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2011))
+(assert (! (< 0.0 0.5) :named o1942))
 ; cat_math_generator_rules_eval_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2012))
+(assert (! (= 1 1) :named o1943))
 ; cat_meteorology_records_pos kind=nat_pos
-(assert (! (> 47 0) :named o2013))
+(assert (! (> 47 0) :named o1944))
 ; cat_meteorology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2014))
+(assert (! (= 1 1) :named o1945))
 ; cat_multi_hero_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 32 0) :named o2015))
+(assert (! (> 32 0) :named o1946))
 ; cat_multi_hero_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2016))
+(assert (! (= 1 1) :named o1947))
+; cat_nasa_exoplanet_archive_records_pos kind=nat_pos
+(assert (! (> 158 0) :named o1948))
+; cat_nasa_exoplanet_archive_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1949))
+; cat_ncbi_gene_public_panel_records_pos kind=nat_pos
+(assert (! (> 48 0) :named o1950))
+; cat_ncbi_gene_public_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1951))
 ; cat_neurolab_gaps_math_spine_records_pos kind=nat_pos
-(assert (! (> 35 0) :named o2017))
+(assert (! (> 35 0) :named o1952))
 ; cat_neurolab_gaps_math_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2018))
+(assert (! (< 0.0 0.5) :named o1953))
 ; cat_neurolab_gaps_math_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2019))
+(assert (! (< 0.0 0.5) :named o1954))
 ; cat_neurolab_gaps_math_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2020))
+(assert (! (< 0.0 0.5) :named o1955))
 ; cat_neurolab_gaps_math_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2021))
+(assert (! (= 1 1) :named o1956))
 ; cat_neurolab_residual_math_spine_records_pos kind=nat_pos
-(assert (! (> 28 0) :named o2022))
+(assert (! (> 28 0) :named o1957))
 ; cat_neurolab_residual_math_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2023))
+(assert (! (< 0.0 0.5) :named o1958))
 ; cat_neurolab_residual_math_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2024))
+(assert (! (< 0.0 0.5) :named o1959))
 ; cat_neurolab_residual_math_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2025))
+(assert (! (< 0.0 0.5) :named o1960))
 ; cat_neurolab_residual_math_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2026))
+(assert (! (= 1 1) :named o1961))
 ; cat_neuron_zig_mind_panel_records_pos kind=nat_pos
-(assert (! (> 25 0) :named o2027))
+(assert (! (> 25 0) :named o1962))
 ; cat_neuron_zig_mind_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2028))
+(assert (! (< 0.0 0.5) :named o1963))
 ; cat_neuron_zig_mind_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2029))
+(assert (! (< 0.0 0.5) :named o1964))
 ; cat_neuron_zig_mind_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2030))
+(assert (! (< 0.0 0.5) :named o1965))
 ; cat_neuron_zig_mind_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2031))
+(assert (! (= 1 1) :named o1966))
 ; cat_neuron_zig_os_path_panel_records_pos kind=nat_pos
-(assert (! (> 41 0) :named o2032))
+(assert (! (> 41 0) :named o1967))
 ; cat_neuron_zig_os_path_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2033))
+(assert (! (< 0.0 0.5) :named o1968))
 ; cat_neuron_zig_os_path_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2034))
+(assert (! (< 0.0 0.5) :named o1969))
 ; cat_neuron_zig_os_path_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2035))
+(assert (! (< 0.0 0.5) :named o1970))
 ; cat_neuron_zig_os_path_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2036))
+(assert (! (= 1 1) :named o1971))
 ; cat_neuroscience_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o2037))
+(assert (! (> 20 0) :named o1972))
 ; cat_neuroscience_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2038))
+(assert (! (< 0.0 0.5) :named o1973))
 ; cat_neuroscience_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2039))
+(assert (! (< 0.0 0.5) :named o1974))
 ; cat_neuroscience_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2040))
+(assert (! (< 0.0 0.5) :named o1975))
 ; cat_neuroscience_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2041))
+(assert (! (= 1 1) :named o1976))
+; cat_noaa_coastal_tides_records_pos kind=nat_pos
+(assert (! (> 20 0) :named o1977))
+; cat_noaa_coastal_tides_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1978))
+; cat_noaa_ndbc_buoy_panel_records_pos kind=nat_pos
+(assert (! (> 625 0) :named o1979))
+; cat_noaa_ndbc_buoy_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1980))
 ; cat_oceanography_records_pos kind=nat_pos
-(assert (! (> 65 0) :named o2042))
+(assert (! (> 65 0) :named o1981))
 ; cat_oceanography_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2043))
+(assert (! (= 1 1) :named o1982))
 ; cat_omni_theory_genesis_benchmark_records_pos kind=nat_pos
-(assert (! (> 26 0) :named o2044))
+(assert (! (> 26 0) :named o1983))
 ; cat_omni_theory_genesis_benchmark_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2045))
+(assert (! (< 0.0 0.5) :named o1984))
 ; cat_omni_theory_genesis_benchmark_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2046))
+(assert (! (< 0.0 0.5) :named o1985))
 ; cat_omni_theory_genesis_benchmark_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2047))
+(assert (! (< 0.0 0.5) :named o1986))
 ; cat_omni_theory_genesis_benchmark_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2048))
+(assert (! (= 1 1) :named o1987))
+; cat_open_meteo_live_panel_records_pos kind=nat_pos
+(assert (! (> 432 0) :named o1988))
+; cat_open_meteo_live_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o1989))
 ; cat_open_science_seed_constants_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o2049))
+(assert (! (> 21 0) :named o1990))
 ; cat_open_science_seed_constants_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2050))
+(assert (! (< 0.0 0.5) :named o1991))
 ; cat_open_science_seed_constants_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2051))
+(assert (! (< 0.0 0.5) :named o1992))
 ; cat_open_science_seed_constants_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2052))
+(assert (! (< 0.0 0.5) :named o1993))
 ; cat_open_science_seed_constants_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2053))
+(assert (! (= 1 1) :named o1994))
 ; cat_openalex_citation_graph_records_pos kind=nat_pos
-(assert (! (> 80 0) :named o2054))
+(assert (! (> 80 0) :named o1995))
 ; cat_openalex_citation_graph_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2055))
+(assert (! (= 1 1) :named o1996))
 ; cat_orbital_mechanics_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o2056))
+(assert (! (> 21 0) :named o1997))
 ; cat_orbital_mechanics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2057))
+(assert (! (= 1 1) :named o1998))
 ; cat_particle_physics_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 98 0) :named o2058))
+(assert (! (> 98 0) :named o1999))
 ; cat_particle_physics_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2059))
+(assert (! (= 1 1) :named o2000))
 ; cat_particle_physics_records_pos kind=nat_pos
-(assert (! (> 98 0) :named o2060))
+(assert (! (> 98 0) :named o2001))
 ; cat_particle_physics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2061))
+(assert (! (= 1 1) :named o2002))
 ; cat_periodic_extension_decay_topology_scaffold_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o2062))
+(assert (! (> 24 0) :named o2003))
 ; cat_periodic_extension_decay_topology_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2063))
+(assert (! (< 0.0 0.5) :named o2004))
 ; cat_periodic_extension_decay_topology_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2064))
+(assert (! (< 0.0 0.5) :named o2005))
 ; cat_periodic_extension_decay_topology_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2065))
+(assert (! (< 0.0 0.5) :named o2006))
 ; cat_periodic_extension_decay_topology_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2066))
+(assert (! (= 1 1) :named o2007))
 ; cat_pharmacokinetics_records_pos kind=nat_pos
-(assert (! (> 56 0) :named o2067))
+(assert (! (> 56 0) :named o2008))
 ; cat_pharmacokinetics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2068))
+(assert (! (= 1 1) :named o2009))
 ; cat_planetary_structure_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o2069))
+(assert (! (> 20 0) :named o2010))
 ; cat_planetary_structure_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2070))
+(assert (! (< 0.0 0.5) :named o2011))
 ; cat_planetary_structure_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2071))
+(assert (! (< 0.0 0.5) :named o2012))
 ; cat_planetary_structure_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2072))
+(assert (! (< 0.0 0.5) :named o2013))
 ; cat_planetary_structure_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2073))
+(assert (! (= 1 1) :named o2014))
 ; cat_plasma_physics_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o2074))
+(assert (! (> 20 0) :named o2015))
 ; cat_plasma_physics_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2075))
+(assert (! (< 0.0 0.5) :named o2016))
 ; cat_plasma_physics_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2076))
+(assert (! (< 0.0 0.5) :named o2017))
 ; cat_plasma_physics_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2077))
+(assert (! (< 0.0 0.5) :named o2018))
 ; cat_plasma_physics_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2078))
+(assert (! (= 1 1) :named o2019))
 ; cat_portable_clone_verify_records_pos kind=nat_pos
-(assert (! (> 419 0) :named o2079))
+(assert (! (> 419 0) :named o2020))
 ; cat_portable_clone_verify_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2080))
+(assert (! (< 0.0 0.5) :named o2021))
 ; cat_portable_clone_verify_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2081))
+(assert (! (< 0.0 0.5) :named o2022))
 ; cat_portable_clone_verify_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2082))
+(assert (! (< 0.0 0.5) :named o2023))
 ; cat_portable_clone_verify_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2083))
+(assert (! (= 1 1) :named o2024))
 ; cat_preregistered_outcome_tracking_records_pos kind=nat_pos
-(assert (! (> 72 0) :named o2084))
+(assert (! (> 72 0) :named o2025))
 ; cat_preregistered_outcome_tracking_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2085))
+(assert (! (< 0.0 0.5) :named o2026))
 ; cat_preregistered_outcome_tracking_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2086))
+(assert (! (< 0.0 0.5) :named o2027))
 ; cat_preregistered_outcome_tracking_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2087))
+(assert (! (< 0.0 0.5) :named o2028))
 ; cat_preregistered_outcome_tracking_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2088))
+(assert (! (= 1 1) :named o2029))
 ; cat_preregistered_predictions_verification_scaffold_records_pos kind=nat_pos
-(assert (! (> 60 0) :named o2089))
+(assert (! (> 60 0) :named o2030))
 ; cat_preregistered_predictions_verification_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2090))
+(assert (! (< 0.0 0.5) :named o2031))
 ; cat_preregistered_predictions_verification_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2091))
+(assert (! (< 0.0 0.5) :named o2032))
 ; cat_preregistered_predictions_verification_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2092))
+(assert (! (< 0.0 0.5) :named o2033))
 ; cat_preregistered_predictions_verification_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2093))
+(assert (! (= 1 1) :named o2034))
 ; cat_proof_ledger_closure_spine_records_pos kind=nat_pos
-(assert (! (> 17 0) :named o2094))
+(assert (! (> 17 0) :named o2035))
 ; cat_proof_ledger_closure_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2095))
+(assert (! (< 0.0 0.5) :named o2036))
 ; cat_proof_ledger_closure_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2096))
+(assert (! (< 0.0 0.5) :named o2037))
 ; cat_proof_ledger_closure_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2097))
+(assert (! (< 0.0 0.5) :named o2038))
 ; cat_proof_ledger_closure_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2098))
+(assert (! (= 1 1) :named o2039))
 ; cat_psychology_records_pos kind=nat_pos
-(assert (! (> 160 0) :named o2099))
+(assert (! (> 160 0) :named o2040))
 ; cat_psychology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2100))
+(assert (! (= 1 1) :named o2041))
 ; cat_public_verifiable_spine_records_pos kind=nat_pos
-(assert (! (> 20 0) :named o2101))
+(assert (! (> 20 0) :named o2042))
 ; cat_public_verifiable_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2102))
+(assert (! (< 0.0 0.5) :named o2043))
 ; cat_public_verifiable_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2103))
+(assert (! (< 0.0 0.5) :named o2044))
 ; cat_public_verifiable_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2104))
+(assert (! (< 0.0 0.5) :named o2045))
 ; cat_public_verifiable_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2105))
+(assert (! (= 1 1) :named o2046))
 ; cat_published_fuel_property_panel_records_pos kind=nat_pos
-(assert (! (> 31 0) :named o2106))
+(assert (! (> 31 0) :named o2047))
 ; cat_published_fuel_property_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2107))
+(assert (! (< 0.0 0.5) :named o2048))
 ; cat_published_fuel_property_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2108))
+(assert (! (< 0.0 0.5) :named o2049))
 ; cat_published_fuel_property_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2109))
+(assert (! (< 0.0 0.5) :named o2050))
 ; cat_published_fuel_property_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2110))
+(assert (! (= 1 1) :named o2051))
 ; cat_qce_elm_fusion_edge_panel_records_pos kind=nat_pos
-(assert (! (> 45 0) :named o2111))
+(assert (! (> 45 0) :named o2052))
 ; cat_qce_elm_fusion_edge_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2112))
+(assert (! (< 0.0 0.5) :named o2053))
 ; cat_qce_elm_fusion_edge_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2113))
+(assert (! (< 0.0 0.5) :named o2054))
 ; cat_qce_elm_fusion_edge_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2114))
+(assert (! (< 0.0 0.5) :named o2055))
 ; cat_qce_elm_fusion_edge_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2115))
+(assert (! (= 1 1) :named o2056))
 ; cat_quantum_computing_records_pos kind=nat_pos
-(assert (! (> 177 0) :named o2116))
+(assert (! (> 177 0) :named o2057))
 ; cat_quantum_computing_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2117))
+(assert (! (= 1 1) :named o2058))
 ; cat_quantum_mechanics_records_pos kind=nat_pos
-(assert (! (> 50 0) :named o2118))
+(assert (! (> 50 0) :named o2059))
 ; cat_quantum_mechanics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2119))
+(assert (! (= 1 1) :named o2060))
 ; cat_quantum_optics_records_pos kind=nat_pos
-(assert (! (> 50 0) :named o2120))
+(assert (! (> 50 0) :named o2061))
 ; cat_quantum_optics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2121))
+(assert (! (= 1 1) :named o2062))
+; cat_rcsb_pdb_structures_records_pos kind=nat_pos
+(assert (! (> 45 0) :named o2063))
+; cat_rcsb_pdb_structures_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o2064))
 ; cat_recent_breakthroughs_expansion_panel_records_pos kind=nat_pos
-(assert (! (> 63 0) :named o2122))
+(assert (! (> 63 0) :named o2065))
 ; cat_recent_breakthroughs_expansion_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2123))
+(assert (! (< 0.0 0.5) :named o2066))
 ; cat_recent_breakthroughs_expansion_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2124))
+(assert (! (< 0.0 0.5) :named o2067))
 ; cat_recent_breakthroughs_expansion_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2125))
+(assert (! (< 0.0 0.5) :named o2068))
 ; cat_recent_breakthroughs_expansion_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2126))
+(assert (! (= 1 1) :named o2069))
 ; cat_rust_lean_bridge_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 9 0) :named o2127))
+(assert (! (> 9 0) :named o2070))
 ; cat_rust_lean_bridge_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2128))
+(assert (! (< 0.0 0.5) :named o2071))
 ; cat_rust_lean_bridge_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2129))
+(assert (! (< 0.0 0.5) :named o2072))
 ; cat_rust_lean_bridge_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2130))
+(assert (! (< 0.0 0.5) :named o2073))
 ; cat_rust_lean_bridge_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2131))
+(assert (! (= 1 1) :named o2074))
 ; cat_scientific_expansion_depth_wave2_spine_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o2132))
+(assert (! (> 40 0) :named o2075))
 ; cat_scientific_expansion_depth_wave2_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2133))
+(assert (! (< 0.0 0.5) :named o2076))
 ; cat_scientific_expansion_depth_wave2_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2134))
+(assert (! (< 0.0 0.5) :named o2077))
 ; cat_scientific_expansion_depth_wave2_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2135))
+(assert (! (< 0.0 0.5) :named o2078))
 ; cat_scientific_expansion_depth_wave2_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2136))
+(assert (! (= 1 1) :named o2079))
 ; cat_scientific_expansion_spine_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o2137))
+(assert (! (> 40 0) :named o2080))
 ; cat_scientific_expansion_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2138))
+(assert (! (< 0.0 0.5) :named o2081))
 ; cat_scientific_expansion_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2139))
+(assert (! (< 0.0 0.5) :named o2082))
 ; cat_scientific_expansion_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2140))
+(assert (! (< 0.0 0.5) :named o2083))
 ; cat_scientific_expansion_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2141))
+(assert (! (= 1 1) :named o2084))
 ; cat_scientific_expansion_wave2_spine_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o2142))
+(assert (! (> 40 0) :named o2085))
 ; cat_scientific_expansion_wave2_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2143))
+(assert (! (< 0.0 0.5) :named o2086))
 ; cat_scientific_expansion_wave2_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2144))
+(assert (! (< 0.0 0.5) :named o2087))
 ; cat_scientific_expansion_wave2_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2145))
+(assert (! (< 0.0 0.5) :named o2088))
 ; cat_scientific_expansion_wave2_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2146))
+(assert (! (= 1 1) :named o2089))
 ; cat_scientific_expansion_wave3_spine_records_pos kind=nat_pos
-(assert (! (> 40 0) :named o2147))
+(assert (! (> 40 0) :named o2090))
 ; cat_scientific_expansion_wave3_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2148))
+(assert (! (< 0.0 0.5) :named o2091))
 ; cat_scientific_expansion_wave3_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2149))
+(assert (! (< 0.0 0.5) :named o2092))
 ; cat_scientific_expansion_wave3_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2150))
+(assert (! (< 0.0 0.5) :named o2093))
 ; cat_scientific_expansion_wave3_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2151))
+(assert (! (= 1 1) :named o2094))
 ; cat_seismology_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 500 0) :named o2152))
+(assert (! (> 500 0) :named o2095))
 ; cat_seismology_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2153))
+(assert (! (= 1 1) :named o2096))
 ; cat_seismology_deep_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 1000 0) :named o2154))
+(assert (! (> 1000 0) :named o2097))
 ; cat_seismology_deep_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2155))
+(assert (! (= 1 1) :named o2098))
 ; cat_sh0es_refined_records_pos kind=nat_pos
-(assert (! (> 7 0) :named o2156))
+(assert (! (> 32 0) :named o2099))
 ; cat_sh0es_refined_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2157))
+(assert (! (= 1 1) :named o2100))
 ; cat_sociology_records_pos kind=nat_pos
-(assert (! (> 200 0) :named o2158))
+(assert (! (> 200 0) :named o2101))
 ; cat_sociology_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2159))
+(assert (! (= 1 1) :named o2102))
 ; cat_solar_system_structure_deep_records_pos kind=nat_pos
-(assert (! (> 48 0) :named o2160))
+(assert (! (> 48 0) :named o2103))
 ; cat_solar_system_structure_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2161))
+(assert (! (= 1 1) :named o2104))
 ; cat_space_propulsion_systems_records_pos kind=nat_pos
-(assert (! (> 21 0) :named o2162))
+(assert (! (> 21 0) :named o2105))
 ; cat_space_propulsion_systems_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2163))
+(assert (! (< 0.0 0.5) :named o2106))
 ; cat_space_propulsion_systems_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2164))
+(assert (! (< 0.0 0.5) :named o2107))
 ; cat_space_propulsion_systems_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2165))
+(assert (! (< 0.0 0.5) :named o2108))
 ; cat_space_propulsion_systems_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2166))
+(assert (! (= 1 1) :named o2109))
 ; cat_space_weather_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 271813 0) :named o2167))
+(assert (! (> 271813 0) :named o2110))
 ; cat_space_weather_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2168))
+(assert (! (= 1 1) :named o2111))
 ; cat_space_weather_summary_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 271813 0) :named o2169))
+(assert (! (> 271813 0) :named o2112))
 ; cat_space_weather_summary_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2170))
+(assert (! (= 1 1) :named o2113))
 ; cat_sports_biomechanics_records_pos kind=nat_pos
-(assert (! (> 35 0) :named o2171))
+(assert (! (> 35 0) :named o2114))
 ; cat_sports_biomechanics_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2172))
+(assert (! (= 1 1) :named o2115))
+; cat_star_trek_transporter_live_panel_records_pos kind=nat_pos
+(assert (! (> 1575 0) :named o2116))
+; cat_star_trek_transporter_live_panel_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o2117))
 ; cat_stellar_multiplicity_catalog_records_pos kind=nat_pos
-(assert (! (> 68 0) :named o2173))
+(assert (! (> 68 0) :named o2118))
 ; cat_stellar_multiplicity_catalog_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2174))
+(assert (! (< 0.0 0.5) :named o2119))
 ; cat_stellar_multiplicity_catalog_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2175))
+(assert (! (< 0.0 0.5) :named o2120))
 ; cat_stellar_multiplicity_catalog_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2176))
+(assert (! (< 0.0 0.5) :named o2121))
 ; cat_stellar_multiplicity_catalog_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2177))
+(assert (! (= 1 1) :named o2122))
 ; cat_stellar_multiplicity_live_deep_records_pos kind=nat_pos
-(assert (! (> 69 0) :named o2178))
+(assert (! (> 69 0) :named o2123))
 ; cat_stellar_multiplicity_live_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2179))
+(assert (! (< 0.0 0.5) :named o2124))
 ; cat_stellar_multiplicity_live_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2180))
+(assert (! (< 0.0 0.5) :named o2125))
 ; cat_stellar_multiplicity_live_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2181))
+(assert (! (< 0.0 0.5) :named o2126))
 ; cat_stellar_multiplicity_live_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2182))
+(assert (! (= 1 1) :named o2127))
 ; cat_symbolic_archetype_panel_records_pos kind=nat_pos
-(assert (! (> 22 0) :named o2183))
+(assert (! (> 22 0) :named o2128))
 ; cat_symbolic_archetype_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2184))
+(assert (! (= 1 1) :named o2129))
 ; cat_tectonics_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 500 0) :named o2185))
+(assert (! (> 500 0) :named o2130))
 ; cat_tectonics_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2186))
+(assert (! (= 1 1) :named o2131))
 ; cat_theory_completeness_spine_records_pos kind=nat_pos
-(assert (! (> 6 0) :named o2187))
+(assert (! (> 6 0) :named o2132))
 ; cat_theory_completeness_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2188))
+(assert (! (< 0.0 0.5) :named o2133))
 ; cat_theory_completeness_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2189))
+(assert (! (< 0.0 0.5) :named o2134))
 ; cat_theory_completeness_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2190))
+(assert (! (< 0.0 0.5) :named o2135))
 ; cat_theory_completeness_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2191))
+(assert (! (= 1 1) :named o2136))
 ; cat_thesis_simulation_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 156 0) :named o2192))
+(assert (! (> 156 0) :named o2137))
 ; cat_thesis_simulation_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2193))
+(assert (! (= 1 1) :named o2138))
 ; cat_tier_93_dual_wave_spine_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o2194))
+(assert (! (> 24 0) :named o2139))
 ; cat_tier_93_dual_wave_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2195))
+(assert (! (< 0.0 0.5) :named o2140))
 ; cat_tier_93_dual_wave_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2196))
+(assert (! (< 0.0 0.5) :named o2141))
 ; cat_tier_93_dual_wave_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2197))
+(assert (! (< 0.0 0.5) :named o2142))
 ; cat_tier_93_dual_wave_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2198))
+(assert (! (= 1 1) :named o2143))
 ; cat_tier_94_longevity_spine_records_pos kind=nat_pos
-(assert (! (> 34 0) :named o2199))
+(assert (! (> 34 0) :named o2144))
 ; cat_tier_94_longevity_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2200))
+(assert (! (< 0.0 0.5) :named o2145))
 ; cat_tier_94_longevity_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2201))
+(assert (! (< 0.0 0.5) :named o2146))
 ; cat_tier_94_longevity_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2202))
+(assert (! (< 0.0 0.5) :named o2147))
 ; cat_tier_94_longevity_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2203))
+(assert (! (= 1 1) :named o2148))
 ; cat_tier_95_zebrafish_spine_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o2204))
+(assert (! (> 24 0) :named o2149))
 ; cat_tier_95_zebrafish_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2205))
+(assert (! (< 0.0 0.5) :named o2150))
 ; cat_tier_95_zebrafish_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2206))
+(assert (! (< 0.0 0.5) :named o2151))
 ; cat_tier_95_zebrafish_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2207))
+(assert (! (< 0.0 0.5) :named o2152))
 ; cat_tier_95_zebrafish_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2208))
+(assert (! (= 1 1) :named o2153))
 ; cat_time_emergence_deep_panel_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o2209))
+(assert (! (> 24 0) :named o2154))
 ; cat_time_emergence_deep_panel_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2210))
+(assert (! (< 0.0 0.5) :named o2155))
 ; cat_time_emergence_deep_panel_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2211))
+(assert (! (< 0.0 0.5) :named o2156))
 ; cat_time_emergence_deep_panel_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2212))
+(assert (! (< 0.0 0.5) :named o2157))
 ; cat_time_emergence_deep_panel_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2213))
+(assert (! (= 1 1) :named o2158))
 ; cat_toe_claim_certificate_bundle_records_pos kind=nat_pos
-(assert (! (> 7 0) :named o2214))
+(assert (! (> 7 0) :named o2159))
 ; cat_toe_claim_certificate_bundle_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2215))
+(assert (! (< 0.0 0.5) :named o2160))
 ; cat_toe_claim_certificate_bundle_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2216))
+(assert (! (< 0.0 0.5) :named o2161))
 ; cat_toe_claim_certificate_bundle_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2217))
+(assert (! (< 0.0 0.5) :named o2162))
 ; cat_toe_claim_certificate_bundle_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2218))
+(assert (! (= 1 1) :named o2163))
 ; cat_toe_gap_closure_spine_records_pos kind=nat_pos
-(assert (! (> 7 0) :named o2219))
+(assert (! (> 7 0) :named o2164))
 ; cat_toe_gap_closure_spine_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2220))
+(assert (! (< 0.0 0.5) :named o2165))
 ; cat_toe_gap_closure_spine_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2221))
+(assert (! (< 0.0 0.5) :named o2166))
 ; cat_toe_gap_closure_spine_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2222))
+(assert (! (< 0.0 0.5) :named o2167))
 ; cat_toe_gap_closure_spine_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2223))
+(assert (! (= 1 1) :named o2168))
 ; cat_trinary_os_isa_rebuild_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 38 0) :named o2224))
+(assert (! (> 38 0) :named o2169))
 ; cat_trinary_os_isa_rebuild_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2225))
+(assert (! (< 0.0 0.5) :named o2170))
 ; cat_trinary_os_isa_rebuild_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2226))
+(assert (! (< 0.0 0.5) :named o2171))
 ; cat_trinary_os_isa_rebuild_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2227))
+(assert (! (< 0.0 0.5) :named o2172))
 ; cat_trinary_os_isa_rebuild_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2228))
+(assert (! (= 1 1) :named o2173))
 ; cat_trinary_os_round_trip_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 22 0) :named o2229))
+(assert (! (> 22 0) :named o2174))
 ; cat_trinary_os_round_trip_benchmark_json_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2230))
+(assert (! (< 0.0 0.5) :named o2175))
 ; cat_trinary_os_round_trip_benchmark_json_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2231))
+(assert (! (< 0.0 0.5) :named o2176))
 ; cat_trinary_os_round_trip_benchmark_json_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2232))
+(assert (! (< 0.0 0.5) :named o2177))
 ; cat_trinary_os_round_trip_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2233))
+(assert (! (= 1 1) :named o2178))
 ; cat_trinary_os_tier_e_records_pos kind=nat_pos
-(assert (! (> 68 0) :named o2234))
+(assert (! (> 68 0) :named o2179))
 ; cat_trinary_os_tier_e_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2235))
+(assert (! (< 0.0 0.5) :named o2180))
 ; cat_trinary_os_tier_e_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2236))
+(assert (! (< 0.0 0.5) :named o2181))
 ; cat_trinary_os_tier_e_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2237))
+(assert (! (< 0.0 0.5) :named o2182))
 ; cat_trinary_os_tier_e_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2238))
+(assert (! (= 1 1) :named o2183))
 ; cat_unified_db_candidate_crosswalk_records_pos kind=nat_pos
-(assert (! (> 45 0) :named o2239))
+(assert (! (> 45 0) :named o2184))
 ; cat_unified_db_candidate_crosswalk_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2240))
+(assert (! (< 0.0 0.5) :named o2185))
 ; cat_unified_db_candidate_crosswalk_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2241))
+(assert (! (< 0.0 0.5) :named o2186))
 ; cat_unified_db_candidate_crosswalk_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2242))
+(assert (! (< 0.0 0.5) :named o2187))
 ; cat_unified_db_candidate_crosswalk_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2243))
+(assert (! (= 1 1) :named o2188))
+; cat_uniprot_protein_annotations_records_pos kind=nat_pos
+(assert (! (> 22 0) :named o2189))
+; cat_uniprot_protein_annotations_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o2190))
 ; cat_uniprot_structure_annotations_deep_records_pos kind=nat_pos
-(assert (! (> 121 0) :named o2244))
+(assert (! (> 121 0) :named o2191))
 ; cat_uniprot_structure_annotations_deep_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2245))
+(assert (! (< 0.0 0.5) :named o2192))
 ; cat_uniprot_structure_annotations_deep_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2246))
+(assert (! (< 0.0 0.5) :named o2193))
 ; cat_uniprot_structure_annotations_deep_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2247))
+(assert (! (< 0.0 0.5) :named o2194))
 ; cat_uniprot_structure_annotations_deep_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2248))
+(assert (! (= 1 1) :named o2195))
 ; cat_weather_observed_benchmark_json_records_pos kind=nat_pos
-(assert (! (> 47 0) :named o2249))
+(assert (! (> 47 0) :named o2196))
 ; cat_weather_observed_benchmark_json_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2250))
+(assert (! (= 1 1) :named o2197))
+; cat_world_bank_development_records_pos kind=nat_pos
+(assert (! (> 395 0) :named o2198))
+; cat_world_bank_development_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o2199))
 ; cat_xr_interactive_media_math_scaffold_records_pos kind=nat_pos
-(assert (! (> 24 0) :named o2251))
+(assert (! (> 24 0) :named o2200))
 ; cat_xr_interactive_media_math_scaffold_pooled_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2252))
+(assert (! (< 0.0 0.5) :named o2201))
 ; cat_xr_interactive_media_math_scaffold_pooled_lt_half_pure kind=r_lt_lit_pure
-(assert (! (< 0.0 0.5) :named o2253))
+(assert (! (< 0.0 0.5) :named o2202))
 ; cat_xr_interactive_media_math_scaffold_max_scalar_under_half_pct kind=lt_half
-(assert (! (< 0.0 0.5) :named o2254))
+(assert (! (< 0.0 0.5) :named o2203))
 ; cat_xr_interactive_media_math_scaffold_green_flag kind=eq_nat
-(assert (! (= 1 1) :named o2255))
+(assert (! (= 1 1) :named o2204))
 (check-sat)
 (exit)

@@ -99,13 +99,13 @@ lemma longevity_telomere_repair_observable_count_pos: "0 < (60 :: nat)"
 lemma longevity_telomere_repair_median_error_under_five_pct: "(0.022236 :: real) < (5.0 :: real)"
   by eval
 
-lemma machine_and_molecule_live_median_error_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
+lemma machine_and_molecule_live_median_error_under_half_pct: "(0.077084 :: real) < (0.5 :: real)"
   by eval
 
 lemma machine_and_molecule_live_observable_count_pos: "0 < (120 :: nat)"
   by eval
 
-lemma machine_and_molecule_live_median_error_under_five_pct: "(0.01341 :: real) < (5.0 :: real)"
+lemma machine_and_molecule_live_median_error_under_five_pct: "(0.077084 :: real) < (5.0 :: real)"
   by eval
 
 lemma magic_min_resonance_lt_internalized: "(0.45 :: real) < (0.92 :: real)"

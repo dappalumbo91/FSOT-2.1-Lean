@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-09T16:28:00.364962+00:00",
+  "generated_at": "2026-09-29T22:06:14.521110+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
     "good_cop": [
       "Five-prover quad: Lean 4 + Coq (coqc+coqchk) + Isabelle/HOL + F* + Rust \u2014 1820/1820 atomic triangulation.",
       "407 scientific domains, 2,190,672 empirical records \u2014 255/272 benchmark files non-cosmo.",
-      "477/477 benchmark domains green; median-of-medians 0.006625234573930708% across geochemistry, genomics, materials, medicine, magnetosphere, etc.",
+      "477/477 benchmark domains green; median-of-medians 0.007871% across geochemistry, genomics, materials, medicine, magnetosphere, etc.",
       "13 contested open-science observables: FSOT panel 0.04% pooled vs 15% current-model baseline; w_a 0.0006% vs DESI.",
       "Preregistered falsification registry; refinement queue for sector readouts not yet at SOTA."
     ],
     "bad_cop": [
       "undeniable_toe_claim is numeric replay unanimity \u2014 not independent deep proof in four provers.",
-      "0 bundle_conj rows sit off the cross-proof spine by design.",
-      "49 proof_depth_oracle-tagged rows are replay certificates, not Mathlib forall proofs.",
+      "1 bundle_conj rows sit off the cross-proof spine by design.",
+      "55 proof_depth_oracle-tagged rows are replay certificates, not Mathlib forall proofs.",
       "Green gate uses pooled median \u22640.5%, not per-record universal max \u2014 worst single scalar 0.499%.",
       "13 stumped observables remain scientifically contested \u2014 kill criteria registered, not resolved.",
       "Formula corpus headline 7941 rows is ~6\u00d7 triplication of 1325 unique observables."
     ],
     "skeptic_verdict": "EMPIRICALLY_GROUNDED_PUBLISHABLE",
-    "skeptic_summary": "Repo is audit-honest and mechanically green. Cross-domain empirical envelope (476 domains, median-of-medians 0.006625234573930708%) supports physical-description claim when wrong-theory coincidence is excluded. Falsification registry and claims alignment close the epistemic/rhetorical gaps \u2014 stumped observables remain contested science with pre-stated kill criteria, not hidden pipeline failures."
+    "skeptic_summary": "Repo is audit-honest and mechanically green. Cross-domain empirical envelope (477 domains, median-of-medians 0.007871%) supports physical-description claim when wrong-theory coincidence is excluded. Falsification registry and claims alignment close the epistemic/rhetorical gaps \u2014 stumped observables remain contested science with pre-stated kill criteria, not hidden pipeline failures."
   },
   "gates": {
     "overall_ok": true,
@@ -27,12 +27,19 @@
     "undeniable_toe_claim": true,
     "open_gaps_depth_audit": [
       {
-        "id": "tier_scalar_aspiration",
+        "id": "living_fsot_hardware",
+        "severity": "medium",
+        "description": "Living FSOT trinary body + mind gym QEMU/hardware loop",
+        "remedy": "See data/living_fsot_hardware_verification_report.json; build fsot-trinary-body + run habitat",
+        "closed": false
+      },
+      {
+        "id": "esp32_scalar_only",
         "severity": "info",
-        "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
-        "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+        "description": "ESP32 RF observer verifies one boot scalar \u2014 distinct from Living FSOT QEMU body",
+        "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification",
         "closed": false,
-        "monitored": true
+        "closure_note": "Superseded by living_fsot_hardware when overall_ok passes (see runtime_verification_scope_audit.json)"
       }
     ]
   },
@@ -40,9 +47,9 @@
     {
       "id": "structural_bundle_conjunct_linkage",
       "severity": "low",
-      "attack": "99.84% total conjunct witness resolution; 99.89% explicit linked_obligation_id hit rate on spine.",
+      "attack": "98.21% total conjunct witness resolution; 98.06% explicit linked_obligation_id hit rate on spine.",
       "mitigation": "structural_bundle_ledger.json v1.1: 100% explicit link hit; residual eq_nat inventory conjuncts are Lean-only tautologies.",
-      "closed": true,
+      "closed": false,
       "evidence": "data/structural_bundle_ledger.json"
     },
     {
@@ -64,9 +71,9 @@
     {
       "id": "tier_scalar_0_05_aspiration",
       "severity": "info",
-      "attack": "2 benchmark domains fail tier_scalar_pass (pooled median \u22640.05%).",
+      "attack": "0 benchmark domains fail tier_scalar_pass (pooled median \u22640.05%).",
       "mitigation": "tier_scalar_precision_closure.json; gate uses pooled/effective median per fsot_precision_constants.",
-      "closed": false,
+      "closed": true,
       "evidence": "data/tier_scalar_precision_closure.json"
     },
     {
@@ -120,7 +127,7 @@
     {
       "id": "cross_domain_empirical_envelope",
       "severity": "info",
-      "attack": "477/477 domains green; median-of-medians 0.006625234573930708% \u2014 wrong theory would not maintain centi-percent envelope across unrelated domains.",
+      "attack": "477/477 domains green; median-of-medians 0.007871% \u2014 wrong theory would not maintain centi-percent envelope across unrelated domains.",
       "mitigation": "empirical_accuracy_closure.json quantifies cross-domain error envelope + null-hypothesis framing.",
       "closed": true,
       "evidence": "data/empirical_accuracy_closure.json"
@@ -144,7 +151,7 @@
     {
       "id": "five_prover_quad_verification",
       "severity": "info",
-      "attack": "Lean+Coq+Isabelle+F*+Rust: 2024 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
+      "attack": "Lean+Coq+Isabelle+F*+Rust: 2025 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
       "mitigation": "five_prover_quad_closure.json \u2014 strictest multi-prover formal stack on exported spine.",
       "closed": true,
       "evidence": "data/five_prover_quad_closure.json"
@@ -160,18 +167,18 @@
   ],
   "open_gaps": [
     {
-      "id": "tier_scalar_0_05_aspiration",
-      "severity": "info",
-      "attack": "2 benchmark domains fail tier_scalar_pass (pooled median \u22640.05%).",
-      "mitigation": "tier_scalar_precision_closure.json; gate uses pooled/effective median per fsot_precision_constants.",
+      "id": "structural_bundle_conjunct_linkage",
+      "severity": "low",
+      "attack": "98.21% total conjunct witness resolution; 98.06% explicit linked_obligation_id hit rate on spine.",
+      "mitigation": "structural_bundle_ledger.json v1.1: 100% explicit link hit; residual eq_nat inventory conjuncts are Lean-only tautologies.",
       "closed": false,
-      "evidence": "data/tier_scalar_precision_closure.json"
+      "evidence": "data/structural_bundle_ledger.json"
     }
   ],
   "open_gap_count": 1,
   "blocking_open_count": 0,
   "documented_debt_open_count": 0,
   "remediation_priority": [
-    "tier_scalar_0_05_aspiration"
+    "structural_bundle_conjunct_linkage"
   ]
 }

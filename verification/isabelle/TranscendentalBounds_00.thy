@@ -1,7 +1,16 @@
-(* FSOT Tier 83 — transcendental bounds chunk 1/3 (generated). *)
+(* FSOT Tier 83 — transcendental bounds chunk 1/4 (generated). *)
 theory TranscendentalBounds_00
 imports TranscendentalBoundsCert
 begin
+
+lemma pi_inv4_pos: "(0 :: real) < (1 / (pi * pi * pi * pi))"
+  by (rule certified_pi_inv4_pos)
+
+lemma pi_inv4_lt_0103: "(1 / (pi * pi * pi * pi)) < (0.0103 :: real)"
+  by (rule certified_pi_inv4_lt_0103)
+
+lemma pi_inv4_gt_01: "(0.01 :: real) < (1 / (pi * pi * pi * pi))"
+  by (rule certified_pi_inv4_gt_01)
 
 lemma exp_neg_one_gt_367: "(0.367 :: real) < exp (-1)"
   by (rule certified_exp_neg_one_gt_367)
@@ -60,22 +69,13 @@ lemma exp_six_gt_400: "(400 :: real) < exp (6 :: real)"
 lemma exp_28_gt_410: "(410 :: real) < exp (28 :: real)"
   by (rule certified_exp_28_gt_410)
 
+lemma exp_28_gt_1000: "(1000 :: real) < exp (28 :: real)"
+  by (rule certified_exp_28_gt_1000)
+
 lemma pi_div_e_lt_pi_div_two: "pi / (exp (1 :: real)) < pi / 2"
   by (rule certified_pi_div_e_lt_pi_div_two)
 
 lemma e_gt_27182818283: "(2.7182818283 :: real) < (exp (1 :: real))"
   by (rule certified_exp_one_lo)
-
-lemma e_lt_27182818286: "(exp (1 :: real)) < (2.7182818286 :: real)"
-  by (rule certified_exp_one_hi)
-
-lemma pi_gt_314159265358979323846: "(3.14159265358979323846 :: real) < pi"
-  by (rule certified_pi_lo)
-
-lemma pi_lt_314159265358979323847: "pi < (3.14159265358979323847 :: real)"
-  by (rule certified_pi_hi)
-
-lemma e_pi_gt_27182818283_mul_pi: "(2.7182818283 :: real) * (3.14159265358979323846 :: real) < (exp (1 :: real)) * pi"
-  by (rule certified_e_pi_gt_27182818283_mul_pi)
 
 end

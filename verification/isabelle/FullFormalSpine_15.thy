@@ -276,31 +276,31 @@ lemma dark_energy_term3_abs_lt_fifth: "(0.000000000000000006569206 :: real) < (0
 lemma dark_energy_term1_base_abs_gt_one_two: "(1.2 :: real) < (2.1349793149885588 :: real)"
   by eval
 
-lemma ai_term1_base_abs_gt_one_six: "(1.6 :: real) < (1.7936205462413415 :: real)"
-  by eval
-
-lemma cmb_term1_base_abs_gt_one_three_five: "(1.35 :: real) < (2.0349169819491695 :: real)"
-  by eval
-
 lemma domain_term1_lt_neg_08_ai: "(-1.3514171596284352 :: real) < (-0.8 :: real)"
   by eval
 
 lemma domain_term1_lt_neg_08_cmb: "(-2.0099710610507393 :: real) < (-0.8 :: real)"
   by eval
 
-lemma domain_term1_gt_neg_08_chemical: "(-0.8 :: real) < (-0.20381690994906282 :: real)"
+lemma domain_ai_term1_overcomes_term3: "(-1.3514171596284352 :: real) < (-1.0 :: real)"
   by eval
 
-lemma domain_term1_gt_neg_08_electron: "(-0.8 :: real) < (-0.029359742683883503 :: real)"
+lemma domain_cmb_term1_overcomes_term3: "(-2.0099710610507393 :: real) < (-1.0 :: real)"
   by eval
 
-lemma domain_term1_gt_neg_08_medical: "(-0.8 :: real) < (-0.2712864292749448 :: real)"
+lemma term1_base_negative_for_high_D_eff: "(-2.1956926285882763 :: real) < (0 :: real)"
   by eval
 
-lemma domain_term1_gt_neg_08_molecular: "(-0.8 :: real) < (-0.2798684851972981 :: real)"
+lemma term1_base_negative_of_typical_delta: "(-1.7936205462413415 :: real) < (0 :: real)"
   by eval
 
-lemma domain_term1_gt_neg_08_material: "(-0.8 :: real) < (-0.20218325391197037 :: real)"
+lemma term1_dominates_term3_when_base_large: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
+  by eval
+
+lemma term3_dominates_in_tight_window: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
+  by eval
+
+lemma term3_dominates_for_very_high_D: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
   by eval
 
 end

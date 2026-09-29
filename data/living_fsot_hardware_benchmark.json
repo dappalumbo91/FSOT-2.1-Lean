@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:27:25.571917+00:00",
+  "generated_at": "2026-09-29T22:05:50.168636+00:00",
   "source": "data\\living_fsot_hardware_verification_report.json",
   "domain": "Living_FSOT_Hardware",
   "display_name": "Living FSOT Hardware (QEMU body)",
@@ -11,8 +11,8 @@
       "property": "fsot_scalar_k",
       "name": "scalar_k_parity",
       "computed": 0.42022166416069673,
-      "measured": 0.4202216641606967,
-      "error_pct": 1.3209968920124464e-14,
+      "measured": 0.4201087636498879,
+      "error_pct": 0.026874114652580907,
       "unit": "dimensionless",
       "eval_kind": "hardware_verification_gate",
       "domain_display_name": "living fsot hardware",
@@ -53,6 +53,6 @@
       "display_name": "task battery pass rate"
     }
   ],
-  "audit_overall_ok": true,
+  "audit_overall_ok": false,
   "living_root": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462"
 }

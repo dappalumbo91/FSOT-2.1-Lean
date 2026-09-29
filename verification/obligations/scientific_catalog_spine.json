@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-09T16:12:31.694507+00:00",
+  "generated_at": "2026-09-29T21:53:16.427797+00:00",
   "purpose": "Scientific catalog multi-prover spine: re-prove domain residual gates and seed identities in Coq/Isabelle/Lean-export form. This is the intended cross-prover scientific verification path \u2014 not structure-only bookkeeping.",
   "green_gate_pct": 0.5,
   "domain_count": 477,
-  "obligation_count": 2256,
+  "obligation_count": 2205,
   "seed_obligation_count": 10,
-  "catalog_obligation_count": 2246,
+  "catalog_obligation_count": 2195,
   "by_claim": {
     "seed_identity": 5,
     "seed_positive": 5,
     "catalog_nonempty": 476,
-    "empirical_pooled_median_gate": 862,
-    "empirical_max_scalar_gate": 431,
+    "empirical_pooled_median_gate": 828,
+    "empirical_max_scalar_gate": 414,
     "green_gate_pass_flag": 477
   },
   "obligations": [
@@ -126,6 +126,62 @@
       "claim": "seed_positive"
     },
     {
+      "id": "cat_zebrafish_predictive_validation_panel_records_pos",
+      "coq_id": "cat_zebrafish_predictive_validation_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 20,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Zebrafish_Predictive_Validation_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_zebrafish_predictive_validation_panel_pooled_under_half_pct",
+      "coq_id": "cat_zebrafish_predictive_validation_panel_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.14416099999999998,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Zebrafish_Predictive_Validation_Panel",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.14416099999999998 < 0.5"
+    },
+    {
+      "id": "cat_zebrafish_predictive_validation_panel_pooled_lt_half_pure",
+      "coq_id": "cat_zebrafish_predictive_validation_panel_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.14416099999999998,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Zebrafish_Predictive_Validation_Panel",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_zebrafish_predictive_validation_panel_max_scalar_under_half_pct",
+      "coq_id": "cat_zebrafish_predictive_validation_panel_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.441042,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Zebrafish_Predictive_Validation_Panel",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_zebrafish_predictive_validation_panel_green_flag",
+      "coq_id": "cat_zebrafish_predictive_validation_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Zebrafish_Predictive_Validation_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_phi_morphogenetic_scaling_records_pos",
       "coq_id": "cat_phi_morphogenetic_scaling_records_pos",
       "kind": "nat_pos",
@@ -139,20 +195,20 @@
       "id": "cat_phi_morphogenetic_scaling_pooled_under_half_pct",
       "coq_id": "cat_phi_morphogenetic_scaling_pooled_under_half_pct",
       "kind": "lt_half",
-      "value": 0.01760779720633292,
+      "value": 0.0173,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Phi_Morphogenetic_Scaling",
       "claim": "empirical_pooled_median_gate",
       "green_gate_pass": true,
-      "statement": "0.01760779720633292 < 0.5"
+      "statement": "0.0173 < 0.5"
     },
     {
       "id": "cat_phi_morphogenetic_scaling_pooled_lt_half_pure",
       "coq_id": "cat_phi_morphogenetic_scaling_pooled_lt_half_pure",
       "kind": "r_lt_lit_pure",
-      "left_value": 0.01760779720633292,
+      "left_value": 0.0173,
       "right_value": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
@@ -163,7 +219,7 @@
       "id": "cat_phi_morphogenetic_scaling_max_scalar_under_half_pct",
       "coq_id": "cat_phi_morphogenetic_scaling_max_scalar_under_half_pct",
       "kind": "lt_half",
-      "value": 0.4989,
+      "value": 0.4374,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
@@ -195,20 +251,20 @@
       "id": "cat_crc_handbook_properties_pooled_under_half_pct",
       "coq_id": "cat_crc_handbook_properties_pooled_under_half_pct",
       "kind": "lt_half",
-      "value": 0.026922,
+      "value": 0.023493,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "CRC_Handbook_Properties",
       "claim": "empirical_pooled_median_gate",
       "green_gate_pass": true,
-      "statement": "0.026922 < 0.5"
+      "statement": "0.023493 < 0.5"
     },
     {
       "id": "cat_crc_handbook_properties_pooled_lt_half_pure",
       "coq_id": "cat_crc_handbook_properties_pooled_lt_half_pure",
       "kind": "r_lt_lit_pure",
-      "left_value": 0.026922,
+      "left_value": 0.023493,
       "right_value": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
@@ -219,7 +275,7 @@
       "id": "cat_crc_handbook_properties_max_scalar_under_half_pct",
       "coq_id": "cat_crc_handbook_properties_max_scalar_under_half_pct",
       "kind": "lt_half",
-      "value": 0.498862,
+      "value": 0.437391,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
@@ -235,286 +291,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "CRC_Handbook_Properties",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_geochemistry_benchmark_json_records_pos",
-      "coq_id": "cat_geochemistry_benchmark_json_records_pos",
-      "kind": "nat_pos",
-      "value": 153,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "geochemistry_benchmark.json",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_geochemistry_benchmark_json_pooled_under_half_pct",
-      "coq_id": "cat_geochemistry_benchmark_json_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.006625234573930708,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "geochemistry_benchmark.json",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.006625234573930708 < 0.5"
-    },
-    {
-      "id": "cat_geochemistry_benchmark_json_pooled_lt_half_pure",
-      "coq_id": "cat_geochemistry_benchmark_json_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.006625234573930708,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "geochemistry_benchmark.json",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_geochemistry_benchmark_json_max_scalar_under_half_pct",
-      "coq_id": "cat_geochemistry_benchmark_json_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.498368,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "geochemistry_benchmark.json",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_geochemistry_benchmark_json_green_flag",
-      "coq_id": "cat_geochemistry_benchmark_json_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "geochemistry_benchmark.json",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_zebrafish_predictive_validation_panel_records_pos",
-      "coq_id": "cat_zebrafish_predictive_validation_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 20,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Zebrafish_Predictive_Validation_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_zebrafish_predictive_validation_panel_pooled_under_half_pct",
-      "coq_id": "cat_zebrafish_predictive_validation_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.3579695,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Zebrafish_Predictive_Validation_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.3579695 < 0.5"
-    },
-    {
-      "id": "cat_zebrafish_predictive_validation_panel_pooled_lt_half_pure",
-      "coq_id": "cat_zebrafish_predictive_validation_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.3579695,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Zebrafish_Predictive_Validation_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_zebrafish_predictive_validation_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_zebrafish_predictive_validation_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.492044,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Zebrafish_Predictive_Validation_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_zebrafish_predictive_validation_panel_green_flag",
-      "coq_id": "cat_zebrafish_predictive_validation_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Zebrafish_Predictive_Validation_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_materials_engineering_benchmark_json_records_pos",
-      "coq_id": "cat_materials_engineering_benchmark_json_records_pos",
-      "kind": "nat_pos",
-      "value": 87,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "materials_engineering_benchmark.json",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_materials_engineering_benchmark_json_pooled_under_half_pct",
-      "coq_id": "cat_materials_engineering_benchmark_json_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.027170334947435038,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "materials_engineering_benchmark.json",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.027170334947435038 < 0.5"
-    },
-    {
-      "id": "cat_materials_engineering_benchmark_json_pooled_lt_half_pure",
-      "coq_id": "cat_materials_engineering_benchmark_json_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.027170334947435038,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "materials_engineering_benchmark.json",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_materials_engineering_benchmark_json_max_scalar_under_half_pct",
-      "coq_id": "cat_materials_engineering_benchmark_json_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.491159,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "materials_engineering_benchmark.json",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_materials_engineering_benchmark_json_green_flag",
-      "coq_id": "cat_materials_engineering_benchmark_json_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "materials_engineering_benchmark.json",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_electrical_power_systems_records_pos",
-      "coq_id": "cat_electrical_power_systems_records_pos",
-      "kind": "nat_pos",
-      "value": 23,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Electrical_Power_Systems",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_electrical_power_systems_pooled_under_half_pct",
-      "coq_id": "cat_electrical_power_systems_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.000561846,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Electrical_Power_Systems",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.000561846 < 0.5"
-    },
-    {
-      "id": "cat_electrical_power_systems_pooled_lt_half_pure",
-      "coq_id": "cat_electrical_power_systems_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.000561846,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Electrical_Power_Systems",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_electrical_power_systems_max_scalar_under_half_pct",
-      "coq_id": "cat_electrical_power_systems_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.489023002,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Electrical_Power_Systems",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_electrical_power_systems_green_flag",
-      "coq_id": "cat_electrical_power_systems_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Electrical_Power_Systems",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_quantum_materials_benchmark_json_records_pos",
-      "coq_id": "cat_quantum_materials_benchmark_json_records_pos",
-      "kind": "nat_pos",
-      "value": 168,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "quantum_materials_benchmark.json",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_quantum_materials_benchmark_json_pooled_under_half_pct",
-      "coq_id": "cat_quantum_materials_benchmark_json_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.023804590101153683,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "quantum_materials_benchmark.json",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.023804590101153683 < 0.5"
-    },
-    {
-      "id": "cat_quantum_materials_benchmark_json_pooled_lt_half_pure",
-      "coq_id": "cat_quantum_materials_benchmark_json_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.023804590101153683,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "quantum_materials_benchmark.json",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_quantum_materials_benchmark_json_max_scalar_under_half_pct",
-      "coq_id": "cat_quantum_materials_benchmark_json_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.489023,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "quantum_materials_benchmark.json",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_quantum_materials_benchmark_json_green_flag",
-      "coq_id": "cat_quantum_materials_benchmark_json_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "quantum_materials_benchmark.json",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -555,7 +331,7 @@
       "id": "cat_clinical_medicine_max_scalar_under_half_pct",
       "coq_id": "cat_clinical_medicine_max_scalar_under_half_pct",
       "kind": "lt_half",
-      "value": 0.480058,
+      "value": 0.431577,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
@@ -587,20 +363,20 @@
       "id": "cat_immunology_benchmark_json_pooled_under_half_pct",
       "coq_id": "cat_immunology_benchmark_json_pooled_under_half_pct",
       "kind": "lt_half",
-      "value": 0.060853500000000005,
+      "value": 0.05041956982053305,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "immunology_benchmark.json",
       "claim": "empirical_pooled_median_gate",
       "green_gate_pass": true,
-      "statement": "0.060853500000000005 < 0.5"
+      "statement": "0.05041956982053305 < 0.5"
     },
     {
       "id": "cat_immunology_benchmark_json_pooled_lt_half_pure",
       "coq_id": "cat_immunology_benchmark_json_pooled_lt_half_pure",
       "kind": "r_lt_lit_pure",
-      "left_value": 0.060853500000000005,
+      "left_value": 0.05041956982053305,
       "right_value": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
@@ -611,7 +387,7 @@
       "id": "cat_immunology_benchmark_json_max_scalar_under_half_pct",
       "coq_id": "cat_immunology_benchmark_json_max_scalar_under_half_pct",
       "kind": "lt_half",
-      "value": 0.480058,
+      "value": 0.431577,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
@@ -627,286 +403,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "immunology_benchmark.json",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_neuroimmunology_benchmark_json_records_pos",
-      "coq_id": "cat_neuroimmunology_benchmark_json_records_pos",
-      "kind": "nat_pos",
-      "value": 92,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "neuroimmunology_benchmark.json",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_neuroimmunology_benchmark_json_pooled_under_half_pct",
-      "coq_id": "cat_neuroimmunology_benchmark_json_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.05041956982053305,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "neuroimmunology_benchmark.json",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.05041956982053305 < 0.5"
-    },
-    {
-      "id": "cat_neuroimmunology_benchmark_json_pooled_lt_half_pure",
-      "coq_id": "cat_neuroimmunology_benchmark_json_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.05041956982053305,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "neuroimmunology_benchmark.json",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct",
-      "coq_id": "cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.480058,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "neuroimmunology_benchmark.json",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_neuroimmunology_benchmark_json_green_flag",
-      "coq_id": "cat_neuroimmunology_benchmark_json_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "neuroimmunology_benchmark.json",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_toe_gr_sm_deep_records_pos",
-      "coq_id": "cat_toe_gr_sm_deep_records_pos",
-      "kind": "nat_pos",
-      "value": 99,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_GR_SM_Deep",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_toe_gr_sm_deep_pooled_under_half_pct",
-      "coq_id": "cat_toe_gr_sm_deep_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.004719617111680276,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_GR_SM_Deep",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.004719617111680276 < 0.5"
-    },
-    {
-      "id": "cat_toe_gr_sm_deep_pooled_lt_half_pure",
-      "coq_id": "cat_toe_gr_sm_deep_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.004719617111680276,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_GR_SM_Deep",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_toe_gr_sm_deep_max_scalar_under_half_pct",
-      "coq_id": "cat_toe_gr_sm_deep_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.4774294805097184,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_GR_SM_Deep",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_toe_gr_sm_deep_green_flag",
-      "coq_id": "cat_toe_gr_sm_deep_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_GR_SM_Deep",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_between_scale_interconnects_records_pos",
-      "coq_id": "cat_between_scale_interconnects_records_pos",
-      "kind": "nat_pos",
-      "value": 1118,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Between_Scale_Interconnects",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_between_scale_interconnects_pooled_under_half_pct",
-      "coq_id": "cat_between_scale_interconnects_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.02620375479862548,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Between_Scale_Interconnects",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.02620375479862548 < 0.5"
-    },
-    {
-      "id": "cat_between_scale_interconnects_pooled_lt_half_pure",
-      "coq_id": "cat_between_scale_interconnects_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.02620375479862548,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Between_Scale_Interconnects",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_between_scale_interconnects_max_scalar_under_half_pct",
-      "coq_id": "cat_between_scale_interconnects_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.4746956066563968,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Between_Scale_Interconnects",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_between_scale_interconnects_green_flag",
-      "coq_id": "cat_between_scale_interconnects_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Between_Scale_Interconnects",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_creative_arts_math_spine_records_pos",
-      "coq_id": "cat_creative_arts_math_spine_records_pos",
-      "kind": "nat_pos",
-      "value": 56,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Creative_Arts_Math_Spine",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_creative_arts_math_spine_pooled_under_half_pct",
-      "coq_id": "cat_creative_arts_math_spine_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.0,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Creative_Arts_Math_Spine",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.0 < 0.5"
-    },
-    {
-      "id": "cat_creative_arts_math_spine_pooled_lt_half_pure",
-      "coq_id": "cat_creative_arts_math_spine_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.0,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Creative_Arts_Math_Spine",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_creative_arts_math_spine_max_scalar_under_half_pct",
-      "coq_id": "cat_creative_arts_math_spine_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.462279,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Creative_Arts_Math_Spine",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_creative_arts_math_spine_green_flag",
-      "coq_id": "cat_creative_arts_math_spine_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Creative_Arts_Math_Spine",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_culinary_arts_benchmark_json_records_pos",
-      "coq_id": "cat_culinary_arts_benchmark_json_records_pos",
-      "kind": "nat_pos",
-      "value": 52,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "culinary_arts_benchmark.json",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_culinary_arts_benchmark_json_pooled_under_half_pct",
-      "coq_id": "cat_culinary_arts_benchmark_json_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.04761518705782039,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "culinary_arts_benchmark.json",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.04761518705782039 < 0.5"
-    },
-    {
-      "id": "cat_culinary_arts_benchmark_json_pooled_lt_half_pure",
-      "coq_id": "cat_culinary_arts_benchmark_json_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.04761518705782039,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "culinary_arts_benchmark.json",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_culinary_arts_benchmark_json_max_scalar_under_half_pct",
-      "coq_id": "cat_culinary_arts_benchmark_json_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.462279,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "culinary_arts_benchmark.json",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_culinary_arts_benchmark_json_green_flag",
-      "coq_id": "cat_culinary_arts_benchmark_json_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "culinary_arts_benchmark.json",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -963,6 +459,62 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Malware_Threat_Intelligence",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_neuroimmunology_benchmark_json_records_pos",
+      "coq_id": "cat_neuroimmunology_benchmark_json_records_pos",
+      "kind": "nat_pos",
+      "value": 92,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "neuroimmunology_benchmark.json",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_neuroimmunology_benchmark_json_pooled_under_half_pct",
+      "coq_id": "cat_neuroimmunology_benchmark_json_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.050107427053603854,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "neuroimmunology_benchmark.json",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.050107427053603854 < 0.5"
+    },
+    {
+      "id": "cat_neuroimmunology_benchmark_json_pooled_lt_half_pure",
+      "coq_id": "cat_neuroimmunology_benchmark_json_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.050107427053603854,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "neuroimmunology_benchmark.json",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct",
+      "coq_id": "cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.431577,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "neuroimmunology_benchmark.json",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_neuroimmunology_benchmark_json_green_flag",
+      "coq_id": "cat_neuroimmunology_benchmark_json_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "neuroimmunology_benchmark.json",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -1134,6 +686,174 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_sh0es_ladder_chain_records_pos",
+      "coq_id": "cat_sh0es_ladder_chain_records_pos",
+      "kind": "nat_pos",
+      "value": 5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "SH0ES_Ladder_Chain",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_sh0es_ladder_chain_pooled_under_half_pct",
+      "coq_id": "cat_sh0es_ladder_chain_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.328405,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "SH0ES_Ladder_Chain",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.328405 < 0.5"
+    },
+    {
+      "id": "cat_sh0es_ladder_chain_pooled_lt_half_pure",
+      "coq_id": "cat_sh0es_ladder_chain_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.328405,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "SH0ES_Ladder_Chain",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_sh0es_ladder_chain_max_scalar_under_half_pct",
+      "coq_id": "cat_sh0es_ladder_chain_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.424434,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "SH0ES_Ladder_Chain",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_sh0es_ladder_chain_green_flag",
+      "coq_id": "cat_sh0es_ladder_chain_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "SH0ES_Ladder_Chain",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_geochemistry_benchmark_json_records_pos",
+      "coq_id": "cat_geochemistry_benchmark_json_records_pos",
+      "kind": "nat_pos",
+      "value": 153,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "geochemistry_benchmark.json",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_geochemistry_benchmark_json_pooled_under_half_pct",
+      "coq_id": "cat_geochemistry_benchmark_json_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.006554162171987832,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "geochemistry_benchmark.json",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.006554162171987832 < 0.5"
+    },
+    {
+      "id": "cat_geochemistry_benchmark_json_pooled_lt_half_pure",
+      "coq_id": "cat_geochemistry_benchmark_json_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.006554162171987832,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "geochemistry_benchmark.json",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_geochemistry_benchmark_json_max_scalar_under_half_pct",
+      "coq_id": "cat_geochemistry_benchmark_json_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.422935,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "geochemistry_benchmark.json",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_geochemistry_benchmark_json_green_flag",
+      "coq_id": "cat_geochemistry_benchmark_json_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "geochemistry_benchmark.json",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_materials_engineering_benchmark_json_records_pos",
+      "coq_id": "cat_materials_engineering_benchmark_json_records_pos",
+      "kind": "nat_pos",
+      "value": 87,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "materials_engineering_benchmark.json",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_materials_engineering_benchmark_json_pooled_under_half_pct",
+      "coq_id": "cat_materials_engineering_benchmark_json_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.023259895459434028,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "materials_engineering_benchmark.json",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.023259895459434028 < 0.5"
+    },
+    {
+      "id": "cat_materials_engineering_benchmark_json_pooled_lt_half_pure",
+      "coq_id": "cat_materials_engineering_benchmark_json_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.023259895459434028,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "materials_engineering_benchmark.json",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_materials_engineering_benchmark_json_max_scalar_under_half_pct",
+      "coq_id": "cat_materials_engineering_benchmark_json_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.412118,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "materials_engineering_benchmark.json",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_materials_engineering_benchmark_json_green_flag",
+      "coq_id": "cat_materials_engineering_benchmark_json_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "materials_engineering_benchmark.json",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_speleology_records_pos",
       "coq_id": "cat_speleology_records_pos",
       "kind": "nat_pos",
@@ -1190,59 +910,227 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_toe_ckm_pmns_flavor_records_pos",
-      "coq_id": "cat_toe_ckm_pmns_flavor_records_pos",
+      "id": "cat_quantum_materials_benchmark_json_records_pos",
+      "coq_id": "cat_quantum_materials_benchmark_json_records_pos",
       "kind": "nat_pos",
-      "value": 40,
+      "value": 168,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
-      "domain": "TOE_CKM_PMNS_Flavor",
+      "domain": "quantum_materials_benchmark.json",
       "claim": "catalog_nonempty"
     },
     {
-      "id": "cat_toe_ckm_pmns_flavor_pooled_under_half_pct",
-      "coq_id": "cat_toe_ckm_pmns_flavor_pooled_under_half_pct",
+      "id": "cat_quantum_materials_benchmark_json_pooled_under_half_pct",
+      "coq_id": "cat_quantum_materials_benchmark_json_pooled_under_half_pct",
       "kind": "lt_half",
-      "value": 0.05235314586422479,
+      "value": 0.02192941228687545,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
-      "domain": "TOE_CKM_PMNS_Flavor",
+      "domain": "quantum_materials_benchmark.json",
       "claim": "empirical_pooled_median_gate",
       "green_gate_pass": true,
-      "statement": "0.05235314586422479 < 0.5"
+      "statement": "0.02192941228687545 < 0.5"
     },
     {
-      "id": "cat_toe_ckm_pmns_flavor_pooled_lt_half_pure",
-      "coq_id": "cat_toe_ckm_pmns_flavor_pooled_lt_half_pure",
+      "id": "cat_quantum_materials_benchmark_json_pooled_lt_half_pure",
+      "coq_id": "cat_quantum_materials_benchmark_json_pooled_lt_half_pure",
       "kind": "r_lt_lit_pure",
-      "left_value": 0.05235314586422479,
+      "left_value": 0.02192941228687545,
       "right_value": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
-      "domain": "TOE_CKM_PMNS_Flavor",
+      "domain": "quantum_materials_benchmark.json",
       "claim": "empirical_pooled_median_gate"
     },
     {
-      "id": "cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct",
-      "coq_id": "cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct",
+      "id": "cat_quantum_materials_benchmark_json_max_scalar_under_half_pct",
+      "coq_id": "cat_quantum_materials_benchmark_json_max_scalar_under_half_pct",
       "kind": "lt_half",
-      "value": 0.3712743059251006,
+      "value": 0.40339,
       "bound": 0.5,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
-      "domain": "TOE_CKM_PMNS_Flavor",
+      "domain": "quantum_materials_benchmark.json",
       "claim": "empirical_max_scalar_gate"
     },
     {
-      "id": "cat_toe_ckm_pmns_flavor_green_flag",
-      "coq_id": "cat_toe_ckm_pmns_flavor_green_flag",
+      "id": "cat_quantum_materials_benchmark_json_green_flag",
+      "coq_id": "cat_quantum_materials_benchmark_json_green_flag",
       "kind": "eq_nat",
       "value": 1,
       "right_value": 1,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
-      "domain": "TOE_CKM_PMNS_Flavor",
+      "domain": "quantum_materials_benchmark.json",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_between_scale_interconnects_records_pos",
+      "coq_id": "cat_between_scale_interconnects_records_pos",
+      "kind": "nat_pos",
+      "value": 7730,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Between_Scale_Interconnects",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_between_scale_interconnects_pooled_under_half_pct",
+      "coq_id": "cat_between_scale_interconnects_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.03294447195047839,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Between_Scale_Interconnects",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.03294447195047839 < 0.5"
+    },
+    {
+      "id": "cat_between_scale_interconnects_pooled_lt_half_pure",
+      "coq_id": "cat_between_scale_interconnects_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.03294447195047839,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Between_Scale_Interconnects",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_between_scale_interconnects_max_scalar_under_half_pct",
+      "coq_id": "cat_between_scale_interconnects_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.39284865529600077,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Between_Scale_Interconnects",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_between_scale_interconnects_green_flag",
+      "coq_id": "cat_between_scale_interconnects_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Between_Scale_Interconnects",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_toe_dynamics_records_pos",
+      "coq_id": "cat_toe_dynamics_records_pos",
+      "kind": "nat_pos",
+      "value": 21,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_Dynamics",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_toe_dynamics_pooled_under_half_pct",
+      "coq_id": "cat_toe_dynamics_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_Dynamics",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0 < 0.5"
+    },
+    {
+      "id": "cat_toe_dynamics_pooled_lt_half_pure",
+      "coq_id": "cat_toe_dynamics_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_Dynamics",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_toe_dynamics_max_scalar_under_half_pct",
+      "coq_id": "cat_toe_dynamics_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.39284865529600077,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_Dynamics",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_toe_dynamics_green_flag",
+      "coq_id": "cat_toe_dynamics_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_Dynamics",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_toe_gr_sm_deep_records_pos",
+      "coq_id": "cat_toe_gr_sm_deep_records_pos",
+      "kind": "nat_pos",
+      "value": 99,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_GR_SM_Deep",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_toe_gr_sm_deep_pooled_under_half_pct",
+      "coq_id": "cat_toe_gr_sm_deep_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.004719617111680276,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_GR_SM_Deep",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.004719617111680276 < 0.5"
+    },
+    {
+      "id": "cat_toe_gr_sm_deep_pooled_lt_half_pure",
+      "coq_id": "cat_toe_gr_sm_deep_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.004719617111680276,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_GR_SM_Deep",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_toe_gr_sm_deep_max_scalar_under_half_pct",
+      "coq_id": "cat_toe_gr_sm_deep_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.3712743059251006,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_GR_SM_Deep",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_toe_gr_sm_deep_green_flag",
+      "coq_id": "cat_toe_gr_sm_deep_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_GR_SM_Deep",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -1470,6 +1358,62 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_toe_ckm_pmns_flavor_records_pos",
+      "coq_id": "cat_toe_ckm_pmns_flavor_records_pos",
+      "kind": "nat_pos",
+      "value": 40,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_toe_ckm_pmns_flavor_pooled_under_half_pct",
+      "coq_id": "cat_toe_ckm_pmns_flavor_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.05258568507587487,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.05258568507587487 < 0.5"
+    },
+    {
+      "id": "cat_toe_ckm_pmns_flavor_pooled_lt_half_pure",
+      "coq_id": "cat_toe_ckm_pmns_flavor_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.05258568507587487,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct",
+      "coq_id": "cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.36301157961075986,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_toe_ckm_pmns_flavor_green_flag",
+      "coq_id": "cat_toe_ckm_pmns_flavor_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_acoustic_resonance_materials_records_pos",
       "coq_id": "cat_acoustic_resonance_materials_records_pos",
       "kind": "nat_pos",
@@ -1523,6 +1467,62 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Acoustic_Resonance_Materials",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_creative_arts_math_spine_records_pos",
+      "coq_id": "cat_creative_arts_math_spine_records_pos",
+      "kind": "nat_pos",
+      "value": 56,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Creative_Arts_Math_Spine",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_creative_arts_math_spine_pooled_under_half_pct",
+      "coq_id": "cat_creative_arts_math_spine_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Creative_Arts_Math_Spine",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0 < 0.5"
+    },
+    {
+      "id": "cat_creative_arts_math_spine_pooled_lt_half_pure",
+      "coq_id": "cat_creative_arts_math_spine_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Creative_Arts_Math_Spine",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_creative_arts_math_spine_max_scalar_under_half_pct",
+      "coq_id": "cat_creative_arts_math_spine_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.3555,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Creative_Arts_Math_Spine",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_creative_arts_math_spine_green_flag",
+      "coq_id": "cat_creative_arts_math_spine_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Creative_Arts_Math_Spine",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -1635,6 +1635,62 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Term3_Acoustic_Bleed_Depth",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_culinary_arts_benchmark_json_records_pos",
+      "coq_id": "cat_culinary_arts_benchmark_json_records_pos",
+      "kind": "nat_pos",
+      "value": 52,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "culinary_arts_benchmark.json",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_culinary_arts_benchmark_json_pooled_under_half_pct",
+      "coq_id": "cat_culinary_arts_benchmark_json_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.04761518705781907,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "culinary_arts_benchmark.json",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.04761518705781907 < 0.5"
+    },
+    {
+      "id": "cat_culinary_arts_benchmark_json_pooled_lt_half_pure",
+      "coq_id": "cat_culinary_arts_benchmark_json_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.04761518705781907,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "culinary_arts_benchmark.json",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_culinary_arts_benchmark_json_max_scalar_under_half_pct",
+      "coq_id": "cat_culinary_arts_benchmark_json_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.355486,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "culinary_arts_benchmark.json",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_culinary_arts_benchmark_json_green_flag",
+      "coq_id": "cat_culinary_arts_benchmark_json_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "culinary_arts_benchmark.json",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -1806,62 +1862,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_pdg_particle_properties_records_pos",
-      "coq_id": "cat_pdg_particle_properties_records_pos",
-      "kind": "nat_pos",
-      "value": 27,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PDG_Particle_Properties",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_pdg_particle_properties_pooled_under_half_pct",
-      "coq_id": "cat_pdg_particle_properties_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.008159790326533337,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PDG_Particle_Properties",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.008159790326533337 < 0.5"
-    },
-    {
-      "id": "cat_pdg_particle_properties_pooled_lt_half_pure",
-      "coq_id": "cat_pdg_particle_properties_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.008159790326533337,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PDG_Particle_Properties",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_pdg_particle_properties_max_scalar_under_half_pct",
-      "coq_id": "cat_pdg_particle_properties_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.323111,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PDG_Particle_Properties",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_pdg_particle_properties_green_flag",
-      "coq_id": "cat_pdg_particle_properties_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PDG_Particle_Properties",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_periodic_table_completion_spine_records_pos",
       "coq_id": "cat_periodic_table_completion_spine_records_pos",
       "kind": "nat_pos",
@@ -2027,6 +2027,62 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "NIST_CODATA_Constants",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_electrical_power_systems_records_pos",
+      "coq_id": "cat_electrical_power_systems_records_pos",
+      "kind": "nat_pos",
+      "value": 23,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Electrical_Power_Systems",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_electrical_power_systems_pooled_under_half_pct",
+      "coq_id": "cat_electrical_power_systems_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.000561846,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Electrical_Power_Systems",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.000561846 < 0.5"
+    },
+    {
+      "id": "cat_electrical_power_systems_pooled_lt_half_pure",
+      "coq_id": "cat_electrical_power_systems_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.000561846,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Electrical_Power_Systems",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_electrical_power_systems_max_scalar_under_half_pct",
+      "coq_id": "cat_electrical_power_systems_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.322515247,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Electrical_Power_Systems",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_electrical_power_systems_green_flag",
+      "coq_id": "cat_electrical_power_systems_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Electrical_Power_Systems",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -2254,6 +2310,62 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_pdg_particle_properties_records_pos",
+      "coq_id": "cat_pdg_particle_properties_records_pos",
+      "kind": "nat_pos",
+      "value": 28,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PDG_Particle_Properties",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_pdg_particle_properties_pooled_under_half_pct",
+      "coq_id": "cat_pdg_particle_properties_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0006704883596874779,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PDG_Particle_Properties",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0006704883596874779 < 0.5"
+    },
+    {
+      "id": "cat_pdg_particle_properties_pooled_lt_half_pure",
+      "coq_id": "cat_pdg_particle_properties_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0006704883596874779,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PDG_Particle_Properties",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_pdg_particle_properties_max_scalar_under_half_pct",
+      "coq_id": "cat_pdg_particle_properties_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.2677779349767224,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PDG_Particle_Properties",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_pdg_particle_properties_green_flag",
+      "coq_id": "cat_pdg_particle_properties_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PDG_Particle_Properties",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_materials_genome_crosswalk_records_pos",
       "coq_id": "cat_materials_genome_crosswalk_records_pos",
       "kind": "nat_pos",
@@ -2478,66 +2590,10 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_sh0es_ladder_chain_records_pos",
-      "coq_id": "cat_sh0es_ladder_chain_records_pos",
-      "kind": "nat_pos",
-      "value": 2,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "SH0ES_Ladder_Chain",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_sh0es_ladder_chain_pooled_under_half_pct",
-      "coq_id": "cat_sh0es_ladder_chain_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.212101,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "SH0ES_Ladder_Chain",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.212101 < 0.5"
-    },
-    {
-      "id": "cat_sh0es_ladder_chain_pooled_lt_half_pure",
-      "coq_id": "cat_sh0es_ladder_chain_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.212101,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "SH0ES_Ladder_Chain",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_sh0es_ladder_chain_max_scalar_under_half_pct",
-      "coq_id": "cat_sh0es_ladder_chain_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.252234,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "SH0ES_Ladder_Chain",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_sh0es_ladder_chain_green_flag",
-      "coq_id": "cat_sh0es_ladder_chain_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "SH0ES_Ladder_Chain",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_cepheid_pl_interconnect_records_pos",
       "coq_id": "cat_cepheid_pl_interconnect_records_pos",
       "kind": "nat_pos",
-      "value": 8,
+      "value": 12,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Cepheid_PL_Interconnect",
@@ -3713,7 +3769,7 @@
       "id": "cat_sh0es_full_sample_records_pos",
       "coq_id": "cat_sh0es_full_sample_records_pos",
       "kind": "nat_pos",
-      "value": 7,
+      "value": 48,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "SH0ES_Full_Sample",
@@ -4553,7 +4609,7 @@
       "id": "cat_frb_orifice_outgassing_records_pos",
       "coq_id": "cat_frb_orifice_outgassing_records_pos",
       "kind": "nat_pos",
-      "value": 44,
+      "value": 3396,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "FRB_Orifice_Outgassing",
@@ -5054,62 +5110,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_star_trek_transporter_live_panel_records_pos",
-      "coq_id": "cat_star_trek_transporter_live_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 1575,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Star_Trek_Transporter_Live_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_star_trek_transporter_live_panel_pooled_under_half_pct",
-      "coq_id": "cat_star_trek_transporter_live_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.012464,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Star_Trek_Transporter_Live_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.012464 < 0.5"
-    },
-    {
-      "id": "cat_star_trek_transporter_live_panel_pooled_lt_half_pure",
-      "coq_id": "cat_star_trek_transporter_live_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.012464,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Star_Trek_Transporter_Live_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_star_trek_transporter_live_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_star_trek_transporter_live_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.095551,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Star_Trek_Transporter_Live_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_star_trek_transporter_live_panel_green_flag",
-      "coq_id": "cat_star_trek_transporter_live_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Star_Trek_Transporter_Live_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_the_well_outcomes_verification_panel_records_pos",
       "coq_id": "cat_the_well_outcomes_verification_panel_records_pos",
       "kind": "nat_pos",
@@ -5331,62 +5331,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Time_Domain_Crosswalk",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_codata_full_table_open_records_pos",
-      "coq_id": "cat_codata_full_table_open_records_pos",
-      "kind": "nat_pos",
-      "value": 38,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CODATA_Full_Table_Open",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_codata_full_table_open_pooled_under_half_pct",
-      "coq_id": "cat_codata_full_table_open_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.073582,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CODATA_Full_Table_Open",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.073582 < 0.5"
-    },
-    {
-      "id": "cat_codata_full_table_open_pooled_lt_half_pure",
-      "coq_id": "cat_codata_full_table_open_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.073582,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CODATA_Full_Table_Open",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_codata_full_table_open_max_scalar_under_half_pct",
-      "coq_id": "cat_codata_full_table_open_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.073582,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CODATA_Full_Table_Open",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_codata_full_table_open_green_flag",
-      "coq_id": "cat_codata_full_table_open_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CODATA_Full_Table_Open",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -7126,62 +7070,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_pubchem_compound_properties_records_pos",
-      "coq_id": "cat_pubchem_compound_properties_records_pos",
-      "kind": "nat_pos",
-      "value": 500,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PubChem_Compound_Properties",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_pubchem_compound_properties_pooled_under_half_pct",
-      "coq_id": "cat_pubchem_compound_properties_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.002633,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PubChem_Compound_Properties",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.002633 < 0.5"
-    },
-    {
-      "id": "cat_pubchem_compound_properties_pooled_lt_half_pure",
-      "coq_id": "cat_pubchem_compound_properties_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.002633,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PubChem_Compound_Properties",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_pubchem_compound_properties_max_scalar_under_half_pct",
-      "coq_id": "cat_pubchem_compound_properties_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.040788,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PubChem_Compound_Properties",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_pubchem_compound_properties_green_flag",
-      "coq_id": "cat_pubchem_compound_properties_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "PubChem_Compound_Properties",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_pubchem_depth_open_records_pos",
       "coq_id": "cat_pubchem_depth_open_records_pos",
       "kind": "nat_pos",
@@ -7235,62 +7123,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "PubChem_Depth_Open",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_rcsb_pdb_structures_records_pos",
-      "coq_id": "cat_rcsb_pdb_structures_records_pos",
-      "kind": "nat_pos",
-      "value": 45,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "RCSB_PDB_Structures",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_rcsb_pdb_structures_pooled_under_half_pct",
-      "coq_id": "cat_rcsb_pdb_structures_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.0265185,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "RCSB_PDB_Structures",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.0265185 < 0.5"
-    },
-    {
-      "id": "cat_rcsb_pdb_structures_pooled_lt_half_pure",
-      "coq_id": "cat_rcsb_pdb_structures_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.0265185,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "RCSB_PDB_Structures",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_rcsb_pdb_structures_max_scalar_under_half_pct",
-      "coq_id": "cat_rcsb_pdb_structures_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.040788,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "RCSB_PDB_Structures",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_rcsb_pdb_structures_green_flag",
-      "coq_id": "cat_rcsb_pdb_structures_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "RCSB_PDB_Structures",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -7627,62 +7459,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "ESP32_Platform_Engineering_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_fuel_lab_live_panel_records_pos",
-      "coq_id": "cat_fuel_lab_live_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 366,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Fuel_Lab_Live_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_fuel_lab_live_panel_pooled_under_half_pct",
-      "coq_id": "cat_fuel_lab_live_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.039349,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Fuel_Lab_Live_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.039349 < 0.5"
-    },
-    {
-      "id": "cat_fuel_lab_live_panel_pooled_lt_half_pure",
-      "coq_id": "cat_fuel_lab_live_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.039349,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Fuel_Lab_Live_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_fuel_lab_live_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_fuel_lab_live_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.039349,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Fuel_Lab_Live_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_fuel_lab_live_panel_green_flag",
-      "coq_id": "cat_fuel_lab_live_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Fuel_Lab_Live_Panel",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -10318,118 +10094,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_noaa_coastal_tides_records_pos",
-      "coq_id": "cat_noaa_coastal_tides_records_pos",
-      "kind": "nat_pos",
-      "value": 20,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_Coastal_Tides",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_noaa_coastal_tides_pooled_under_half_pct",
-      "coq_id": "cat_noaa_coastal_tides_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.030173,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_Coastal_Tides",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.030173 < 0.5"
-    },
-    {
-      "id": "cat_noaa_coastal_tides_pooled_lt_half_pure",
-      "coq_id": "cat_noaa_coastal_tides_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.030173,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_Coastal_Tides",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_noaa_coastal_tides_max_scalar_under_half_pct",
-      "coq_id": "cat_noaa_coastal_tides_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.030173,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_Coastal_Tides",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_noaa_coastal_tides_green_flag",
-      "coq_id": "cat_noaa_coastal_tides_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_Coastal_Tides",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_noaa_ndbc_buoy_panel_records_pos",
-      "coq_id": "cat_noaa_ndbc_buoy_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 596,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_NDBC_Buoy_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_noaa_ndbc_buoy_panel_pooled_under_half_pct",
-      "coq_id": "cat_noaa_ndbc_buoy_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.028287,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_NDBC_Buoy_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.028287 < 0.5"
-    },
-    {
-      "id": "cat_noaa_ndbc_buoy_panel_pooled_lt_half_pure",
-      "coq_id": "cat_noaa_ndbc_buoy_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.028287,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_NDBC_Buoy_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_noaa_ndbc_buoy_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_noaa_ndbc_buoy_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.030173,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_NDBC_Buoy_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_noaa_ndbc_buoy_panel_green_flag",
-      "coq_id": "cat_noaa_ndbc_buoy_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NOAA_NDBC_Buoy_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_noaa_tides_multi_station_open_records_pos",
       "coq_id": "cat_noaa_tides_multi_station_open_records_pos",
       "kind": "nat_pos",
@@ -10598,62 +10262,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_open_meteo_live_panel_records_pos",
-      "coq_id": "cat_open_meteo_live_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 432,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Open_Meteo_Live_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_open_meteo_live_panel_pooled_under_half_pct",
-      "coq_id": "cat_open_meteo_live_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.026204,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Open_Meteo_Live_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.026204 < 0.5"
-    },
-    {
-      "id": "cat_open_meteo_live_panel_pooled_lt_half_pure",
-      "coq_id": "cat_open_meteo_live_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.026204,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Open_Meteo_Live_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_open_meteo_live_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_open_meteo_live_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.0291,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Open_Meteo_Live_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_open_meteo_live_panel_green_flag",
-      "coq_id": "cat_open_meteo_live_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Open_Meteo_Live_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_compactification_ladder_records_pos",
       "coq_id": "cat_compactification_ladder_records_pos",
       "kind": "nat_pos",
@@ -10763,6 +10371,62 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Zero_Boundary_Not_Entity_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_pubchem_compound_properties_records_pos",
+      "coq_id": "cat_pubchem_compound_properties_records_pos",
+      "kind": "nat_pos",
+      "value": 500,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PubChem_Compound_Properties",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_pubchem_compound_properties_pooled_under_half_pct",
+      "coq_id": "cat_pubchem_compound_properties_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0024064677142409036,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PubChem_Compound_Properties",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0024064677142409036 < 0.5"
+    },
+    {
+      "id": "cat_pubchem_compound_properties_pooled_lt_half_pure",
+      "coq_id": "cat_pubchem_compound_properties_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0024064677142409036,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PubChem_Compound_Properties",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_pubchem_compound_properties_max_scalar_under_half_pct",
+      "coq_id": "cat_pubchem_compound_properties_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.028340080971654597,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PubChem_Compound_Properties",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_pubchem_compound_properties_green_flag",
+      "coq_id": "cat_pubchem_compound_properties_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "PubChem_Compound_Properties",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -11046,6 +10710,62 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_living_fsot_hardware_records_pos",
+      "coq_id": "cat_living_fsot_hardware_records_pos",
+      "kind": "nat_pos",
+      "value": 4,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_living_fsot_hardware_pooled_under_half_pct",
+      "coq_id": "cat_living_fsot_hardware_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0 < 0.5"
+    },
+    {
+      "id": "cat_living_fsot_hardware_pooled_lt_half_pure",
+      "coq_id": "cat_living_fsot_hardware_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_living_fsot_hardware_max_scalar_under_half_pct",
+      "coq_id": "cat_living_fsot_hardware_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.026874114652580907,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_living_fsot_hardware_green_flag",
+      "coq_id": "cat_living_fsot_hardware_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_alphafold_batch_meta_open_records_pos",
       "coq_id": "cat_alphafold_batch_meta_open_records_pos",
       "kind": "nat_pos",
@@ -11099,118 +10819,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "AlphaFold_Batch_Meta_Open",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_ncbi_gene_public_panel_records_pos",
-      "coq_id": "cat_ncbi_gene_public_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 48,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NCBI_Gene_Public_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_ncbi_gene_public_panel_pooled_under_half_pct",
-      "coq_id": "cat_ncbi_gene_public_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.025571999999999998,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NCBI_Gene_Public_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.025571999999999998 < 0.5"
-    },
-    {
-      "id": "cat_ncbi_gene_public_panel_pooled_lt_half_pure",
-      "coq_id": "cat_ncbi_gene_public_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.025571999999999998,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NCBI_Gene_Public_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_ncbi_gene_public_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_ncbi_gene_public_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.026684,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NCBI_Gene_Public_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_ncbi_gene_public_panel_green_flag",
-      "coq_id": "cat_ncbi_gene_public_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NCBI_Gene_Public_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_uniprot_protein_annotations_records_pos",
-      "coq_id": "cat_uniprot_protein_annotations_records_pos",
-      "kind": "nat_pos",
-      "value": 22,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "UniProt_Protein_Annotations",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_uniprot_protein_annotations_pooled_under_half_pct",
-      "coq_id": "cat_uniprot_protein_annotations_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.0209975,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "UniProt_Protein_Annotations",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.0209975 < 0.5"
-    },
-    {
-      "id": "cat_uniprot_protein_annotations_pooled_lt_half_pure",
-      "coq_id": "cat_uniprot_protein_annotations_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.0209975,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "UniProt_Protein_Annotations",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_uniprot_protein_annotations_max_scalar_under_half_pct",
-      "coq_id": "cat_uniprot_protein_annotations_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.026684,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "UniProt_Protein_Annotations",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_uniprot_protein_annotations_green_flag",
-      "coq_id": "cat_uniprot_protein_annotations_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "UniProt_Protein_Annotations",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -11323,62 +10931,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Arxiv_Gravitational_Waves_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_blackhole_whitehole_cycle_live_panel_records_pos",
-      "coq_id": "cat_blackhole_whitehole_cycle_live_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 24,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_blackhole_whitehole_cycle_live_panel_pooled_under_half_pct",
-      "coq_id": "cat_blackhole_whitehole_cycle_live_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.026472,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.026472 < 0.5"
-    },
-    {
-      "id": "cat_blackhole_whitehole_cycle_live_panel_pooled_lt_half_pure",
-      "coq_id": "cat_blackhole_whitehole_cycle_live_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.026472,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_blackhole_whitehole_cycle_live_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_blackhole_whitehole_cycle_live_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.026472,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_blackhole_whitehole_cycle_live_panel_green_flag",
-      "coq_id": "cat_blackhole_whitehole_cycle_live_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -11886,62 +11438,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_world_bank_development_records_pos",
-      "coq_id": "cat_world_bank_development_records_pos",
-      "kind": "nat_pos",
-      "value": 395,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "World_Bank_Development",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_world_bank_development_pooled_under_half_pct",
-      "coq_id": "cat_world_bank_development_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.02584,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "World_Bank_Development",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.02584 < 0.5"
-    },
-    {
-      "id": "cat_world_bank_development_pooled_lt_half_pure",
-      "coq_id": "cat_world_bank_development_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.02584,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "World_Bank_Development",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_world_bank_development_max_scalar_under_half_pct",
-      "coq_id": "cat_world_bank_development_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.02584,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "World_Bank_Development",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_world_bank_development_green_flag",
-      "coq_id": "cat_world_bank_development_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "World_Bank_Development",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_world_bank_macro_open_records_pos",
       "coq_id": "cat_world_bank_macro_open_records_pos",
       "kind": "nat_pos",
@@ -12446,118 +11942,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_grace_cryosphere_benchmark_json_records_pos",
-      "coq_id": "cat_grace_cryosphere_benchmark_json_records_pos",
-      "kind": "nat_pos",
-      "value": 505,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "grace_cryosphere_benchmark.json",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_grace_cryosphere_benchmark_json_pooled_under_half_pct",
-      "coq_id": "cat_grace_cryosphere_benchmark_json_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.023015,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "grace_cryosphere_benchmark.json",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.023015 < 0.5"
-    },
-    {
-      "id": "cat_grace_cryosphere_benchmark_json_pooled_lt_half_pure",
-      "coq_id": "cat_grace_cryosphere_benchmark_json_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.023015,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "grace_cryosphere_benchmark.json",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_grace_cryosphere_benchmark_json_max_scalar_under_half_pct",
-      "coq_id": "cat_grace_cryosphere_benchmark_json_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.023015,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "grace_cryosphere_benchmark.json",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_grace_cryosphere_benchmark_json_green_flag",
-      "coq_id": "cat_grace_cryosphere_benchmark_json_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "grace_cryosphere_benchmark.json",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_nasa_exoplanet_archive_records_pos",
-      "coq_id": "cat_nasa_exoplanet_archive_records_pos",
-      "kind": "nat_pos",
-      "value": 158,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NASA_Exoplanet_Archive",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_nasa_exoplanet_archive_pooled_under_half_pct",
-      "coq_id": "cat_nasa_exoplanet_archive_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.023015,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NASA_Exoplanet_Archive",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.023015 < 0.5"
-    },
-    {
-      "id": "cat_nasa_exoplanet_archive_pooled_lt_half_pure",
-      "coq_id": "cat_nasa_exoplanet_archive_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.023015,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NASA_Exoplanet_Archive",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_nasa_exoplanet_archive_max_scalar_under_half_pct",
-      "coq_id": "cat_nasa_exoplanet_archive_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.023015,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NASA_Exoplanet_Archive",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_nasa_exoplanet_archive_green_flag",
-      "coq_id": "cat_nasa_exoplanet_archive_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "NASA_Exoplanet_Archive",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_nasa_neo_feed_panel_records_pos",
       "coq_id": "cat_nasa_neo_feed_panel_records_pos",
       "kind": "nat_pos",
@@ -12891,62 +12275,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "SIMBAD_Stellar_Identity_Deep",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_toe_dynamics_records_pos",
-      "coq_id": "cat_toe_dynamics_records_pos",
-      "kind": "nat_pos",
-      "value": 18,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_Dynamics",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_toe_dynamics_pooled_under_half_pct",
-      "coq_id": "cat_toe_dynamics_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.0,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_Dynamics",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.0 < 0.5"
-    },
-    {
-      "id": "cat_toe_dynamics_pooled_lt_half_pure",
-      "coq_id": "cat_toe_dynamics_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.0,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_Dynamics",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_toe_dynamics_max_scalar_under_half_pct",
-      "coq_id": "cat_toe_dynamics_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.022461,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_Dynamics",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_toe_dynamics_green_flag",
-      "coq_id": "cat_toe_dynamics_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "TOE_Dynamics",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -15526,62 +14854,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_crossref_scholarly_panel_records_pos",
-      "coq_id": "cat_crossref_scholarly_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 200,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Crossref_Scholarly_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_crossref_scholarly_panel_pooled_under_half_pct",
-      "coq_id": "cat_crossref_scholarly_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.01382,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Crossref_Scholarly_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.01382 < 0.5"
-    },
-    {
-      "id": "cat_crossref_scholarly_panel_pooled_lt_half_pure",
-      "coq_id": "cat_crossref_scholarly_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.01382,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Crossref_Scholarly_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_crossref_scholarly_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_crossref_scholarly_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.01382,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Crossref_Scholarly_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_crossref_scholarly_panel_green_flag",
-      "coq_id": "cat_crossref_scholarly_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Crossref_Scholarly_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_osti_doe_science_panel_records_pos",
       "coq_id": "cat_osti_doe_science_panel_records_pos",
       "kind": "nat_pos",
@@ -15747,62 +15019,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "COD_OPTIMADE_Structures",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_machine_and_molecule_live_panel_records_pos",
-      "coq_id": "cat_machine_and_molecule_live_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 120,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Machine_And_Molecule_Live_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_machine_and_molecule_live_panel_pooled_under_half_pct",
-      "coq_id": "cat_machine_and_molecule_live_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.01341,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Machine_And_Molecule_Live_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.01341 < 0.5"
-    },
-    {
-      "id": "cat_machine_and_molecule_live_panel_pooled_lt_half_pure",
-      "coq_id": "cat_machine_and_molecule_live_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.01341,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Machine_And_Molecule_Live_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_machine_and_molecule_live_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_machine_and_molecule_live_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.01341,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Machine_And_Molecule_Live_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_machine_and_molecule_live_panel_green_flag",
-      "coq_id": "cat_machine_and_molecule_live_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Machine_And_Molecule_Live_Panel",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -16027,62 +15243,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Canonical_Oracle_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_cern_open_data_lhc_records_pos",
-      "coq_id": "cat_cern_open_data_lhc_records_pos",
-      "kind": "nat_pos",
-      "value": 83,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CERN_Open_Data_LHC",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_cern_open_data_lhc_pooled_under_half_pct",
-      "coq_id": "cat_cern_open_data_lhc_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.013294,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CERN_Open_Data_LHC",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.013294 < 0.5"
-    },
-    {
-      "id": "cat_cern_open_data_lhc_pooled_lt_half_pure",
-      "coq_id": "cat_cern_open_data_lhc_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.013294,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CERN_Open_Data_LHC",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_cern_open_data_lhc_max_scalar_under_half_pct",
-      "coq_id": "cat_cern_open_data_lhc_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.013294,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CERN_Open_Data_LHC",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_cern_open_data_lhc_green_flag",
-      "coq_id": "cat_cern_open_data_lhc_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "CERN_Open_Data_LHC",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -17150,62 +16310,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_inaturalist_observation_panel_records_pos",
-      "coq_id": "cat_inaturalist_observation_panel_records_pos",
-      "kind": "nat_pos",
-      "value": 288,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "iNaturalist_Observation_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_inaturalist_observation_panel_pooled_under_half_pct",
-      "coq_id": "cat_inaturalist_observation_panel_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.006006,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "iNaturalist_Observation_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.006006 < 0.5"
-    },
-    {
-      "id": "cat_inaturalist_observation_panel_pooled_lt_half_pure",
-      "coq_id": "cat_inaturalist_observation_panel_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.006006,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "iNaturalist_Observation_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_inaturalist_observation_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_inaturalist_observation_panel_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.007508,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "iNaturalist_Observation_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_inaturalist_observation_panel_green_flag",
-      "coq_id": "cat_inaturalist_observation_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "iNaturalist_Observation_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_pharmacology_benchmark_json_records_pos",
       "coq_id": "cat_pharmacology_benchmark_json_records_pos",
       "kind": "nat_pos",
@@ -17371,62 +16475,6 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Entomology_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_gbif_species_occurrence_records_pos",
-      "coq_id": "cat_gbif_species_occurrence_records_pos",
-      "kind": "nat_pos",
-      "value": 240,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "GBIF_Species_Occurrence",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_gbif_species_occurrence_pooled_under_half_pct",
-      "coq_id": "cat_gbif_species_occurrence_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.006006,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "GBIF_Species_Occurrence",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.006006 < 0.5"
-    },
-    {
-      "id": "cat_gbif_species_occurrence_pooled_lt_half_pure",
-      "coq_id": "cat_gbif_species_occurrence_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.006006,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "GBIF_Species_Occurrence",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_gbif_species_occurrence_max_scalar_under_half_pct",
-      "coq_id": "cat_gbif_species_occurrence_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.006006,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "GBIF_Species_Occurrence",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_gbif_species_occurrence_green_flag",
-      "coq_id": "cat_gbif_species_occurrence_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "GBIF_Species_Occurrence",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -19558,6 +18606,62 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_codata_full_table_open_records_pos",
+      "coq_id": "cat_codata_full_table_open_records_pos",
+      "kind": "nat_pos",
+      "value": 38,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "CODATA_Full_Table_Open",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_codata_full_table_open_pooled_under_half_pct",
+      "coq_id": "cat_codata_full_table_open_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 7.799550565792915e-09,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "CODATA_Full_Table_Open",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "7.799550565792915e-09 < 0.5"
+    },
+    {
+      "id": "cat_codata_full_table_open_pooled_lt_half_pure",
+      "coq_id": "cat_codata_full_table_open_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 7.799550565792915e-09,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "CODATA_Full_Table_Open",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_codata_full_table_open_max_scalar_under_half_pct",
+      "coq_id": "cat_codata_full_table_open_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0001281127358921839,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "CODATA_Full_Table_Open",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_codata_full_table_open_green_flag",
+      "coq_id": "cat_codata_full_table_open_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "CODATA_Full_Table_Open",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_igem_live_fasta_benchmark_json_records_pos",
       "coq_id": "cat_igem_live_fasta_benchmark_json_records_pos",
       "kind": "nat_pos",
@@ -20398,62 +19502,6 @@
       "claim": "green_gate_pass_flag"
     },
     {
-      "id": "cat_living_fsot_hardware_records_pos",
-      "coq_id": "cat_living_fsot_hardware_records_pos",
-      "kind": "nat_pos",
-      "value": 4,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_living_fsot_hardware_pooled_under_half_pct",
-      "coq_id": "cat_living_fsot_hardware_pooled_under_half_pct",
-      "kind": "lt_half",
-      "value": 0.0,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.0 < 0.5"
-    },
-    {
-      "id": "cat_living_fsot_hardware_pooled_lt_half_pure",
-      "coq_id": "cat_living_fsot_hardware_pooled_lt_half_pure",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.0,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_living_fsot_hardware_max_scalar_under_half_pct",
-      "coq_id": "cat_living_fsot_hardware_max_scalar_under_half_pct",
-      "kind": "lt_half",
-      "value": 1.3209968920124464e-14,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_living_fsot_hardware_green_flag",
-      "coq_id": "cat_living_fsot_hardware_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware",
-      "claim": "green_gate_pass_flag"
-    },
-    {
       "id": "cat_agriculture_agroecology_records_pos",
       "coq_id": "cat_agriculture_agroecology_records_pos",
       "kind": "nat_pos",
@@ -20594,6 +19642,27 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_blackhole_whitehole_cycle_live_panel_records_pos",
+      "coq_id": "cat_blackhole_whitehole_cycle_live_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 24,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_blackhole_whitehole_cycle_live_panel_green_flag",
+      "coq_id": "cat_blackhole_whitehole_cycle_live_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_breakthrough_discoveries_2024_2026_records_pos",
       "coq_id": "cat_breakthrough_discoveries_2024_2026_records_pos",
       "kind": "nat_pos",
@@ -20647,6 +19716,27 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Breakthrough_Discoveries_2024_2026",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_cern_open_data_lhc_records_pos",
+      "coq_id": "cat_cern_open_data_lhc_records_pos",
+      "kind": "nat_pos",
+      "value": 83,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "CERN_Open_Data_LHC",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_cern_open_data_lhc_green_flag",
+      "coq_id": "cat_cern_open_data_lhc_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "CERN_Open_Data_LHC",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -20924,6 +20014,27 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Cross_Proof_Verification_Spine",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_crossref_scholarly_panel_records_pos",
+      "coq_id": "cat_crossref_scholarly_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 198,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Crossref_Scholarly_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_crossref_scholarly_panel_green_flag",
+      "coq_id": "cat_crossref_scholarly_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Crossref_Scholarly_Panel",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -21788,6 +20899,27 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_fuel_lab_live_panel_records_pos",
+      "coq_id": "cat_fuel_lab_live_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 366,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Fuel_Lab_Live_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_fuel_lab_live_panel_green_flag",
+      "coq_id": "cat_fuel_lab_live_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Fuel_Lab_Live_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_galactic_structure_sample_records_pos",
       "coq_id": "cat_galactic_structure_sample_records_pos",
       "kind": "nat_pos",
@@ -21841,6 +20973,27 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Galactic_Structure_Sample",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_gbif_species_occurrence_records_pos",
+      "coq_id": "cat_gbif_species_occurrence_records_pos",
+      "kind": "nat_pos",
+      "value": 240,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "GBIF_Species_Occurrence",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_gbif_species_occurrence_green_flag",
+      "coq_id": "cat_gbif_species_occurrence_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "GBIF_Species_Occurrence",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -22033,6 +21186,27 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_grace_cryosphere_benchmark_json_records_pos",
+      "coq_id": "cat_grace_cryosphere_benchmark_json_records_pos",
+      "kind": "nat_pos",
+      "value": 505,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "grace_cryosphere_benchmark.json",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_grace_cryosphere_benchmark_json_green_flag",
+      "coq_id": "cat_grace_cryosphere_benchmark_json_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "grace_cryosphere_benchmark.json",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_history_records_pos",
       "coq_id": "cat_history_records_pos",
       "kind": "nat_pos",
@@ -22128,6 +21302,27 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "hydrology_benchmark",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_inaturalist_observation_panel_records_pos",
+      "coq_id": "cat_inaturalist_observation_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 281,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "iNaturalist_Observation_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_inaturalist_observation_panel_green_flag",
+      "coq_id": "cat_inaturalist_observation_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "iNaturalist_Observation_Panel",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -22261,6 +21456,27 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Live_Ingest_Spine",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_machine_and_molecule_live_panel_records_pos",
+      "coq_id": "cat_machine_and_molecule_live_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 120,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Machine_And_Molecule_Live_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_machine_and_molecule_live_panel_green_flag",
+      "coq_id": "cat_machine_and_molecule_live_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Machine_And_Molecule_Live_Panel",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -22572,6 +21788,48 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_nasa_exoplanet_archive_records_pos",
+      "coq_id": "cat_nasa_exoplanet_archive_records_pos",
+      "kind": "nat_pos",
+      "value": 158,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "NASA_Exoplanet_Archive",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_nasa_exoplanet_archive_green_flag",
+      "coq_id": "cat_nasa_exoplanet_archive_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "NASA_Exoplanet_Archive",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_ncbi_gene_public_panel_records_pos",
+      "coq_id": "cat_ncbi_gene_public_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 48,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "NCBI_Gene_Public_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_ncbi_gene_public_panel_green_flag",
+      "coq_id": "cat_ncbi_gene_public_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "NCBI_Gene_Public_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_neurolab_gaps_math_spine_records_pos",
       "coq_id": "cat_neurolab_gaps_math_spine_records_pos",
       "kind": "nat_pos",
@@ -22852,6 +22110,48 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_noaa_coastal_tides_records_pos",
+      "coq_id": "cat_noaa_coastal_tides_records_pos",
+      "kind": "nat_pos",
+      "value": 20,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "NOAA_Coastal_Tides",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_noaa_coastal_tides_green_flag",
+      "coq_id": "cat_noaa_coastal_tides_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "NOAA_Coastal_Tides",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_noaa_ndbc_buoy_panel_records_pos",
+      "coq_id": "cat_noaa_ndbc_buoy_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 625,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "NOAA_NDBC_Buoy_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_noaa_ndbc_buoy_panel_green_flag",
+      "coq_id": "cat_noaa_ndbc_buoy_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "NOAA_NDBC_Buoy_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_oceanography_records_pos",
       "coq_id": "cat_oceanography_records_pos",
       "kind": "nat_pos",
@@ -22926,6 +22226,27 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "omni_theory_genesis_benchmark",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_open_meteo_live_panel_records_pos",
+      "coq_id": "cat_open_meteo_live_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 432,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Open_Meteo_Live_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_open_meteo_live_panel_green_flag",
+      "coq_id": "cat_open_meteo_live_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Open_Meteo_Live_Panel",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -23734,6 +23055,27 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_rcsb_pdb_structures_records_pos",
+      "coq_id": "cat_rcsb_pdb_structures_records_pos",
+      "kind": "nat_pos",
+      "value": 45,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "RCSB_PDB_Structures",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_rcsb_pdb_structures_green_flag",
+      "coq_id": "cat_rcsb_pdb_structures_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "RCSB_PDB_Structures",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_recent_breakthroughs_expansion_panel_records_pos",
       "coq_id": "cat_recent_breakthroughs_expansion_panel_records_pos",
       "kind": "nat_pos",
@@ -24115,7 +23457,7 @@
       "id": "cat_sh0es_refined_records_pos",
       "coq_id": "cat_sh0es_refined_records_pos",
       "kind": "nat_pos",
-      "value": 7,
+      "value": 32,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "SH0ES_Refined",
@@ -24291,6 +23633,27 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Sports_Biomechanics",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_star_trek_transporter_live_panel_records_pos",
+      "coq_id": "cat_star_trek_transporter_live_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 1575,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Star_Trek_Transporter_Live_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_star_trek_transporter_live_panel_green_flag",
+      "coq_id": "cat_star_trek_transporter_live_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Star_Trek_Transporter_Live_Panel",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -25085,6 +24448,27 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_uniprot_protein_annotations_records_pos",
+      "coq_id": "cat_uniprot_protein_annotations_records_pos",
+      "kind": "nat_pos",
+      "value": 22,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "UniProt_Protein_Annotations",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_uniprot_protein_annotations_green_flag",
+      "coq_id": "cat_uniprot_protein_annotations_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "UniProt_Protein_Annotations",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_uniprot_structure_annotations_deep_records_pos",
       "coq_id": "cat_uniprot_structure_annotations_deep_records_pos",
       "kind": "nat_pos",
@@ -25159,6 +24543,27 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "weather_observed_benchmark.json",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_world_bank_development_records_pos",
+      "coq_id": "cat_world_bank_development_records_pos",
+      "kind": "nat_pos",
+      "value": 395,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "World_Bank_Development",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_world_bank_development_green_flag",
+      "coq_id": "cat_world_bank_development_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "World_Bank_Development",
       "claim": "green_gate_pass_flag"
     },
     {

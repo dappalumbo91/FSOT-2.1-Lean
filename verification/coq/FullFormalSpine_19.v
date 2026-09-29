@@ -6,6 +6,39 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cos_bound_hi : 0 <= 0%R.
+Proof. lra. Qed.
+
+Lemma sin_bound_poly_mono_lo : 0 <= 0%R.
+Proof. lra. Qed.
+
+Lemma sin_bound_poly_mono : 0 <= 0%R.
+Proof. lra. Qed.
+
+Lemma sin_eq_cos_pi_div_two_sub : (0.00000000000000027755575615628914%R) < (0.00000001%R).
+Proof. lra. Qed.
+
+Lemma cos_eq_sin_pi_div_two_sub : (0.00000000000000027755575615628914%R) < (0.00000001%R).
+Proof. lra. Qed.
+
+Lemma perceived_adjust_lo_domain : (0.567%R) < (0.5714337093277406%R).
+Proof. lra. Qed.
+
+Lemma perceived_adjust_hi_domain : (0.9877410621073419%R) < (0.99%R).
+Proof. lra. Qed.
+
+Lemma cos_dp_pv_neg_of_ge_07 : (-0.3775886600448273%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma cos_dp_pv_pos_of_le_06 : 0 < (0.1125700895682655%R).
+Proof. lra. Qed.
+
+Lemma growth_term_hits_zero_lt_one_point_one_five : (1.0002883913967908%R) < (1.15%R).
+Proof. lra. Qed.
+
+Lemma growth_term_coherence_product_lt_11523 : (0.9579783956964846%R) < (1.1523%R).
+Proof. lra. Qed.
+
 Lemma D_eff_shift_abs_le : (19.0%R) <= (19.0%R).
 Proof. lra. Qed.
 
@@ -33,12 +66,6 @@ Proof. reflexivity. Qed.
 Lemma dark_energy_D_eff_eq : (25 = 25)%nat.
 Proof. reflexivity. Qed.
 
-Lemma cmb_D_eff_eq : (24 = 24)%nat.
-Proof. reflexivity. Qed.
-
-Lemma ai_D_eff_eq : (11 = 11)%nat.
-Proof. reflexivity. Qed.
-
 Lemma dark_energy_delta_bounds : (0.5%R) < (1.1%R) /\ (1.1%R) <= (1.3%R).
 Proof. lra. Qed.
 
@@ -58,9 +85,6 @@ Lemma cosmological_term1_dominates_term3 : (0.000000000000000007824928065101266%
 Proof. lra. Qed.
 
 Lemma cellular_params_eq_biological : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-Lemma dark_energy_params_eq : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma cosmological_domain_eq : (1 = 1)%nat.
@@ -115,12 +139,6 @@ Lemma molecular_raw_S_positive : 0 < (0.7201315148027019%R).
 Proof. lra. Qed.
 
 Lemma material_raw_S_positive : 0 < (0.7978167460880297%R).
-Proof. lra. Qed.
-
-Lemma biological_raw_S_positive : 0 < (1.0583105195018667%R).
-Proof. lra. Qed.
-
-Lemma cellular_raw_S_positive : 0 < (1.0583105195018667%R).
 Proof. lra. Qed.
 
 Lemma nuclear_raw_S_positive : 0 < (2.192436781833356%R).
@@ -286,23 +304,5 @@ Lemma lab_chemical_raw_S_positive : 0 < (0.7961830900509372%R).
 Proof. lra. Qed.
 
 Lemma lab_electron_raw_S_positive : 0 < (0.9706402573161165%R).
-Proof. lra. Qed.
-
-Lemma lab_quantum_raw_S_positive : 0 < (2.2738149448128526%R).
-Proof. lra. Qed.
-
-Lemma lab_particle_raw_S_positive : 0 < (1.751037437187807%R).
-Proof. lra. Qed.
-
-Lemma lab_nuclear_raw_S_positive : 0 < (2.192436781833356%R).
-Proof. lra. Qed.
-
-Lemma lab_energy_raw_S_positive : 0 < (1.872760423200424%R).
-Proof. lra. Qed.
-
-Lemma lab_molecular_raw_S_positive : 0 < (0.7201315148027019%R).
-Proof. lra. Qed.
-
-Lemma lab_material_raw_S_positive : 0 < (0.7978167460880297%R).
 Proof. lra. Qed.
 

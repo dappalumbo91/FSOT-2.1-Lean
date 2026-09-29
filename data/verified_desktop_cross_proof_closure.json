@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:12:30.058407+00:00",
+  "generated_at": "2026-09-29T21:53:14.994854+00:00",
   "version": "1.0",
   "verdict": "VERIFIED_DESKTOP_CROSS_PROOF_READY",
   "panels": [
@@ -7,101 +7,101 @@
       "panel": "Machine_And_Molecule_Live_Panel",
       "lean_module": "FSOT.Formal.MachineAndMoleculeLivePanelPriors",
       "record_count": 120,
-      "pooled_median_error_pct": 0.01341,
+      "pooled_median_error_pct": 0.077084,
       "python_oracle_samples": [
         {
           "name": "metals_Fe_cp_J_molK",
           "property": "cp_J_molK",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_melting_K",
           "property": "melting_K",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_work_function_eV",
           "property": "work_function_eV",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_thermal_cond_W_mK",
           "property": "thermal_cond_W_mK",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_resistivity_uOhm_cm",
           "property": "resistivity_uOhm_cm",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_h_fus_kJ_mol",
           "property": "h_fus_kJ_mol",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_bulk_GPa",
           "property": "bulk_GPa",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_shear_GPa",
           "property": "shear_GPa",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_expansion_e6_per_K",
           "property": "expansion_e6_per_K",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_cohesive_eV",
           "property": "cohesive_eV",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_poisson_ratio",
           "property": "poisson_ratio",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "metals_Fe_thermal_diff_mm2_s",
           "property": "thermal_diff_mm2_s",
-          "stored_error_pct": 0.01341,
-          "replay_error_pct": 0.01341,
+          "stored_error_pct": 0.077084,
+          "replay_error_pct": 0.077084,
           "delta_pct": 0.0,
           "ok": true
         }
@@ -118,101 +118,101 @@
       "panel": "Fuel_Lab_Live_Panel",
       "lean_module": "FSOT.Formal.FuelLabLivePanelPriors",
       "record_count": 366,
-      "pooled_median_error_pct": 0.039349,
+      "pooled_median_error_pct": 0.075688,
       "python_oracle_samples": [
         {
           "name": "fsot_hemp_waste_grounded",
           "property": "lhv_kj_per_kg",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_grounded",
           "property": "stoich_afr",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_grounded",
           "property": "density_kg_m3",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_grounded",
           "property": "clean_index",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_grounded",
           "property": "emissions_index",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_grounded",
           "property": "octane_rating",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_grounded",
           "property": "flame_speed_m_s",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_advanced",
           "property": "lhv_kj_per_kg",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_advanced",
           "property": "stoich_afr",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_advanced",
           "property": "density_kg_m3",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_advanced",
           "property": "clean_index",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "fsot_hemp_waste_advanced",
           "property": "emissions_index",
-          "stored_error_pct": 0.039349,
-          "replay_error_pct": 0.039349,
+          "stored_error_pct": 0.075688,
+          "replay_error_pct": 0.075688,
           "delta_pct": 0.0,
           "ok": true
         }
@@ -230,101 +230,101 @@
       "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
       "lean_module": "FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors",
       "record_count": 24,
-      "pooled_median_error_pct": 0.026472,
+      "pooled_median_error_pct": 0.071654,
       "python_oracle_samples": [
         {
           "name": "cycle_cost_score_proxy",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "information_density_delta_proxy",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "phase_activity_infall_ratio",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "phase_activity_outflow_ratio",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "accretion_compression_ratio",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "outflow_lensing_factor",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "poof_event_rate_hz",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "white_hole_reassembly_efficiency",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "scalar_invariant_preservation",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "cycle_entropy_budget",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "poof",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "suction",
           "property": "value",
-          "stored_error_pct": 0.026472,
-          "replay_error_pct": 0.026472,
+          "stored_error_pct": 0.071654,
+          "replay_error_pct": 0.071654,
           "delta_pct": 0.0,
           "ok": true
         }
@@ -341,101 +341,101 @@
       "panel": "Star_Trek_Transporter_Live_Panel",
       "lean_module": "FSOT.Formal.StarTrekTransporterLivePanelPriors",
       "record_count": 1575,
-      "pooled_median_error_pct": 0.012464,
+      "pooled_median_error_pct": 0.077084,
       "python_oracle_samples": [
         {
           "name": "qubit_teleport_fidelity_typical",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "entanglement_swapping_fidelity",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "classical_bits_per_qubit",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "no_cloning_theorem",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "linear_entropy_threshold",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "landauer_energy_kT_per_bit",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "channel_capacity_qubit_per_use",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "error_correction_overhead_factor",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "decoherence_time_us_typical",
           "property": "value",
-          "stored_error_pct": 0.095551,
-          "replay_error_pct": 0.095551,
+          "stored_error_pct": 0.076804,
+          "replay_error_pct": 0.076804,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "poof_tunneling_proxy",
           "property": "value",
-          "stored_error_pct": 0.010512,
-          "replay_error_pct": 0.010512,
+          "stored_error_pct": 0.043139,
+          "replay_error_pct": 0.043139,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "suction_recompact_proxy",
           "property": "value",
-          "stored_error_pct": 0.010512,
-          "replay_error_pct": 0.010512,
+          "stored_error_pct": 0.043139,
+          "replay_error_pct": 0.043139,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "coherence_efficiency_proxy",
           "property": "value",
-          "stored_error_pct": 0.010512,
-          "replay_error_pct": 0.010512,
+          "stored_error_pct": 0.043139,
+          "replay_error_pct": 0.043139,
           "delta_pct": 0.0,
           "ok": true
         }

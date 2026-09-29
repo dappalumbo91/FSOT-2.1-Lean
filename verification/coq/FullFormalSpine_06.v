@@ -162,7 +162,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma fuel_candidate_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fuel_lab_live_median_error_under_half_pct : (0.039349%R) < (0.5%R).
+Lemma fuel_lab_live_median_error_under_half_pct : (0.075688%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma fuel_lab_live_designed_fuel_count_pos : 0 < (7.0%R).
@@ -171,7 +171,7 @@ Proof. lra. Qed.
 Lemma fuel_lab_live_observable_count_pos : (0 < 366)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fuel_lab_live_median_error_under_five_pct : (0.039349%R) < (5.0%R).
+Lemma fuel_lab_live_median_error_under_five_pct : (0.075688%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma fuel_profile_count_pos : (0 < 6)%nat.

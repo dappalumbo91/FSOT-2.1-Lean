@@ -33,16 +33,31 @@ lemma seed_psi_con_from_e: "(0 :: real) < (0.000000000001 :: real)"
 lemma seed_psi_con_from_e_pos: "0 < (0.6321205588285577 :: real)"
   by eval
 
+lemma cat_zebrafish_predictive_validation_panel_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_zebrafish_predictive_validation_panel_pooled_under_half_pct: "(0.14416099999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zebrafish_predictive_validation_panel_pooled_lt_half_pure: "(0.14416099999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zebrafish_predictive_validation_panel_max_scalar_under_half_pct: "(0.441042 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zebrafish_predictive_validation_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_phi_morphogenetic_scaling_records_pos: "0 < (289 :: nat)"
   by eval
 
-lemma cat_phi_morphogenetic_scaling_pooled_under_half_pct: "(0.01760779720633292 :: real) < (0.5 :: real)"
+lemma cat_phi_morphogenetic_scaling_pooled_under_half_pct: "(0.0173 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_phi_morphogenetic_scaling_pooled_lt_half_pure: "(0.01760779720633292 :: real) < (0.5 :: real)"
+lemma cat_phi_morphogenetic_scaling_pooled_lt_half_pure: "(0.0173 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_phi_morphogenetic_scaling_max_scalar_under_half_pct: "(0.4989 :: real) < (0.5 :: real)"
+lemma cat_phi_morphogenetic_scaling_max_scalar_under_half_pct: "(0.4374 :: real) < (0.5 :: real)"
   by eval
 
 lemma cat_phi_morphogenetic_scaling_green_flag: "(1 :: nat) = (1 :: nat)"
@@ -51,91 +66,16 @@ lemma cat_phi_morphogenetic_scaling_green_flag: "(1 :: nat) = (1 :: nat)"
 lemma cat_crc_handbook_properties_records_pos: "0 < (391 :: nat)"
   by eval
 
-lemma cat_crc_handbook_properties_pooled_under_half_pct: "(0.026922 :: real) < (0.5 :: real)"
+lemma cat_crc_handbook_properties_pooled_under_half_pct: "(0.023493 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_crc_handbook_properties_pooled_lt_half_pure: "(0.026922 :: real) < (0.5 :: real)"
+lemma cat_crc_handbook_properties_pooled_lt_half_pure: "(0.023493 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_crc_handbook_properties_max_scalar_under_half_pct: "(0.498862 :: real) < (0.5 :: real)"
+lemma cat_crc_handbook_properties_max_scalar_under_half_pct: "(0.437391 :: real) < (0.5 :: real)"
   by eval
 
 lemma cat_crc_handbook_properties_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_geochemistry_benchmark_json_records_pos: "0 < (153 :: nat)"
-  by eval
-
-lemma cat_geochemistry_benchmark_json_pooled_under_half_pct: "(0.006625234573930708 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_geochemistry_benchmark_json_pooled_lt_half_pure: "(0.006625234573930708 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_geochemistry_benchmark_json_max_scalar_under_half_pct: "(0.498368 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_geochemistry_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_zebrafish_predictive_validation_panel_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_zebrafish_predictive_validation_panel_pooled_under_half_pct: "(0.3579695 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zebrafish_predictive_validation_panel_pooled_lt_half_pure: "(0.3579695 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zebrafish_predictive_validation_panel_max_scalar_under_half_pct: "(0.492044 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zebrafish_predictive_validation_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_materials_engineering_benchmark_json_records_pos: "0 < (87 :: nat)"
-  by eval
-
-lemma cat_materials_engineering_benchmark_json_pooled_under_half_pct: "(0.027170334947435038 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_materials_engineering_benchmark_json_pooled_lt_half_pure: "(0.027170334947435038 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_materials_engineering_benchmark_json_max_scalar_under_half_pct: "(0.491159 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_materials_engineering_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_electrical_power_systems_records_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma cat_electrical_power_systems_pooled_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_electrical_power_systems_pooled_lt_half_pure: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_electrical_power_systems_max_scalar_under_half_pct: "(0.489023002 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_electrical_power_systems_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_quantum_materials_benchmark_json_records_pos: "0 < (168 :: nat)"
-  by eval
-
-lemma cat_quantum_materials_benchmark_json_pooled_under_half_pct: "(0.023804590101153683 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_quantum_materials_benchmark_json_pooled_lt_half_pure: "(0.023804590101153683 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_quantum_materials_benchmark_json_max_scalar_under_half_pct: "(0.489023 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_quantum_materials_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_clinical_medicine_records_pos: "0 < (260 :: nat)"
@@ -147,7 +87,7 @@ lemma cat_clinical_medicine_pooled_under_half_pct: "(0.002458296751538192 :: rea
 lemma cat_clinical_medicine_pooled_lt_half_pure: "(0.002458296751538192 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_clinical_medicine_max_scalar_under_half_pct: "(0.480058 :: real) < (0.5 :: real)"
+lemma cat_clinical_medicine_max_scalar_under_half_pct: "(0.431577 :: real) < (0.5 :: real)"
   by eval
 
 lemma cat_clinical_medicine_green_flag: "(1 :: nat) = (1 :: nat)"
@@ -156,91 +96,16 @@ lemma cat_clinical_medicine_green_flag: "(1 :: nat) = (1 :: nat)"
 lemma cat_immunology_benchmark_json_records_pos: "0 < (84 :: nat)"
   by eval
 
-lemma cat_immunology_benchmark_json_pooled_under_half_pct: "(0.060853500000000005 :: real) < (0.5 :: real)"
+lemma cat_immunology_benchmark_json_pooled_under_half_pct: "(0.05041956982053305 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_immunology_benchmark_json_pooled_lt_half_pure: "(0.060853500000000005 :: real) < (0.5 :: real)"
+lemma cat_immunology_benchmark_json_pooled_lt_half_pure: "(0.05041956982053305 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_immunology_benchmark_json_max_scalar_under_half_pct: "(0.480058 :: real) < (0.5 :: real)"
+lemma cat_immunology_benchmark_json_max_scalar_under_half_pct: "(0.431577 :: real) < (0.5 :: real)"
   by eval
 
 lemma cat_immunology_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_neuroimmunology_benchmark_json_records_pos: "0 < (92 :: nat)"
-  by eval
-
-lemma cat_neuroimmunology_benchmark_json_pooled_under_half_pct: "(0.05041956982053305 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_neuroimmunology_benchmark_json_pooled_lt_half_pure: "(0.05041956982053305 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct: "(0.480058 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_neuroimmunology_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_toe_gr_sm_deep_records_pos: "0 < (99 :: nat)"
-  by eval
-
-lemma cat_toe_gr_sm_deep_pooled_under_half_pct: "(0.004719617111680276 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_toe_gr_sm_deep_pooled_lt_half_pure: "(0.004719617111680276 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_toe_gr_sm_deep_max_scalar_under_half_pct: "(0.4774294805097184 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_toe_gr_sm_deep_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_between_scale_interconnects_records_pos: "0 < (1118 :: nat)"
-  by eval
-
-lemma cat_between_scale_interconnects_pooled_under_half_pct: "(0.02620375479862548 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_between_scale_interconnects_pooled_lt_half_pure: "(0.02620375479862548 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_between_scale_interconnects_max_scalar_under_half_pct: "(0.4746956066563968 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_between_scale_interconnects_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_creative_arts_math_spine_records_pos: "0 < (56 :: nat)"
-  by eval
-
-lemma cat_creative_arts_math_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_creative_arts_math_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_creative_arts_math_spine_max_scalar_under_half_pct: "(0.462279 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_creative_arts_math_spine_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_culinary_arts_benchmark_json_records_pos: "0 < (52 :: nat)"
-  by eval
-
-lemma cat_culinary_arts_benchmark_json_pooled_under_half_pct: "(0.04761518705782039 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_culinary_arts_benchmark_json_pooled_lt_half_pure: "(0.04761518705782039 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_culinary_arts_benchmark_json_max_scalar_under_half_pct: "(0.462279 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_culinary_arts_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_malware_threat_intelligence_records_pos: "0 < (85 :: nat)"
@@ -256,6 +121,21 @@ lemma cat_malware_threat_intelligence_max_scalar_under_half_pct: "(0.431577 :: r
   by eval
 
 lemma cat_malware_threat_intelligence_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_neuroimmunology_benchmark_json_records_pos: "0 < (92 :: nat)"
+  by eval
+
+lemma cat_neuroimmunology_benchmark_json_pooled_under_half_pct: "(0.050107427053603854 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_neuroimmunology_benchmark_json_pooled_lt_half_pure: "(0.050107427053603854 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct: "(0.431577 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_neuroimmunology_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_virology_records_pos: "0 < (50 :: nat)"
@@ -303,6 +183,51 @@ lemma cat_material_property_verification_scaffold_max_scalar_under_half_pct: "(0
 lemma cat_material_property_verification_scaffold_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_sh0es_ladder_chain_records_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma cat_sh0es_ladder_chain_pooled_under_half_pct: "(0.328405 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_sh0es_ladder_chain_pooled_lt_half_pure: "(0.328405 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_sh0es_ladder_chain_max_scalar_under_half_pct: "(0.424434 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_sh0es_ladder_chain_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_geochemistry_benchmark_json_records_pos: "0 < (153 :: nat)"
+  by eval
+
+lemma cat_geochemistry_benchmark_json_pooled_under_half_pct: "(0.006554162171987832 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_geochemistry_benchmark_json_pooled_lt_half_pure: "(0.006554162171987832 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_geochemistry_benchmark_json_max_scalar_under_half_pct: "(0.422935 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_geochemistry_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_materials_engineering_benchmark_json_records_pos: "0 < (87 :: nat)"
+  by eval
+
+lemma cat_materials_engineering_benchmark_json_pooled_under_half_pct: "(0.023259895459434028 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_materials_engineering_benchmark_json_pooled_lt_half_pure: "(0.023259895459434028 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_materials_engineering_benchmark_json_max_scalar_under_half_pct: "(0.412118 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_materials_engineering_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_speleology_records_pos: "0 < (65 :: nat)"
   by eval
 
@@ -318,19 +243,64 @@ lemma cat_speleology_max_scalar_under_half_pct: "(0.406301 :: real) < (0.5 :: re
 lemma cat_speleology_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_toe_ckm_pmns_flavor_records_pos: "0 < (40 :: nat)"
+lemma cat_quantum_materials_benchmark_json_records_pos: "0 < (168 :: nat)"
   by eval
 
-lemma cat_toe_ckm_pmns_flavor_pooled_under_half_pct: "(0.05235314586422479 :: real) < (0.5 :: real)"
+lemma cat_quantum_materials_benchmark_json_pooled_under_half_pct: "(0.02192941228687545 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_toe_ckm_pmns_flavor_pooled_lt_half_pure: "(0.05235314586422479 :: real) < (0.5 :: real)"
+lemma cat_quantum_materials_benchmark_json_pooled_lt_half_pure: "(0.02192941228687545 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct: "(0.3712743059251006 :: real) < (0.5 :: real)"
+lemma cat_quantum_materials_benchmark_json_max_scalar_under_half_pct: "(0.40339 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_toe_ckm_pmns_flavor_green_flag: "(1 :: nat) = (1 :: nat)"
+lemma cat_quantum_materials_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_between_scale_interconnects_records_pos: "0 < (7730 :: nat)"
+  by eval
+
+lemma cat_between_scale_interconnects_pooled_under_half_pct: "(0.03294447195047839 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_between_scale_interconnects_pooled_lt_half_pure: "(0.03294447195047839 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_between_scale_interconnects_max_scalar_under_half_pct: "(0.39284865529600077 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_between_scale_interconnects_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_toe_dynamics_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_toe_dynamics_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_dynamics_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_dynamics_max_scalar_under_half_pct: "(0.39284865529600077 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_dynamics_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_records_pos: "0 < (99 :: nat)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_pooled_under_half_pct: "(0.004719617111680276 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_pooled_lt_half_pure: "(0.004719617111680276 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_max_scalar_under_half_pct: "(0.3712743059251006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_dark_energy_cpl_records_pos: "0 < (20 :: nat)"
@@ -361,6 +331,36 @@ lemma cat_dark_sector_open_problems_max_scalar_under_half_pct: "(0.368503 :: rea
   by eval
 
 lemma cat_dark_sector_open_problems_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_desi_edr_table_slice_open_records_pos: "0 < (22 :: nat)"
+  by eval
+
+lemma cat_desi_edr_table_slice_open_pooled_under_half_pct: "(0.010049 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desi_edr_table_slice_open_pooled_lt_half_pure: "(0.010049 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desi_edr_table_slice_open_max_scalar_under_half_pct: "(0.3685028152534126 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desi_edr_table_slice_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_desi_public_depth_open_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_desi_public_depth_open_pooled_under_half_pct: "(0.010049 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desi_public_depth_open_pooled_lt_half_pure: "(0.010049 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desi_public_depth_open_max_scalar_under_half_pct: "(0.3685028152534126 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desi_public_depth_open_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

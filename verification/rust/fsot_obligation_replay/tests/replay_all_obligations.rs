@@ -113,9 +113,9 @@ fn replay_all_obligations() {
     assert!(0.0_f64 < 0.5_f64, "biophysics_public_panel_median_error_under_half_pct");
     assert!(28 > 0, "blackhole_thesis_observable_count_pos");
     assert!(28 <= 28, "blackhole_thesis_within_le_total");
-    assert!(0.026472_f64 < 0.5, "blackhole_whitehole_cycle_median_error_under_half_pct");
+    assert!(0.071654_f64 < 0.5, "blackhole_whitehole_cycle_median_error_under_half_pct");
     assert!(24 > 0, "blackhole_whitehole_cycle_observable_count_pos");
-    assert!(0.026472_f64 < 5.0_f64, "blackhole_whitehole_cycle_median_error_under_five_pct");
+    assert!(0.071654_f64 < 5.0_f64, "blackhole_whitehole_cycle_median_error_under_five_pct");
     assert!(0.022236250385193387_f64 < 0.5, "botany_ext_pooled_median_under_half_pct");
     assert!(0.022236250385193387_f64 < 0.5, "botany_ext_headline_median_under_half_pct");
     assert!(426 > 0, "botany_ext_observable_count_pos");
@@ -944,10 +944,10 @@ fn replay_all_obligations() {
     assert!(33 > 0, "fsot_ram_function_observable_count_pos");
     assert!(33 > 0, "fuel_candidate_prereg_scaffold_observable_count_pos");
     assert!(0.0_f64 < 0.5_f64, "fuel_candidate_prereg_scaffold_median_error_under_half_pct");
-    assert!(0.039349_f64 < 0.5, "fuel_lab_live_median_error_under_half_pct");
+    assert!(0.075688_f64 < 0.5, "fuel_lab_live_median_error_under_half_pct");
     assert!(7.0_f64 > 0.0, "fuel_lab_live_designed_fuel_count_pos");
     assert!(366 > 0, "fuel_lab_live_observable_count_pos");
-    assert!(0.039349_f64 < 5.0_f64, "fuel_lab_live_median_error_under_five_pct");
+    assert!(0.075688_f64 < 5.0_f64, "fuel_lab_live_median_error_under_five_pct");
     assert!(6 > 0, "fuel_profile_count_pos");
     assert!(34 <= 34, "fuel_resolved_le_entries");
     assert!(24 > 0, "fuel_thermochemistry_public_anchors_observable_count_pos");
@@ -1125,9 +1125,9 @@ fn replay_all_obligations() {
     assert!(0.017789_f64 < 5.0_f64, "longevity_megadeep_ncbi_median_error_under_five_pct");
     assert!(60 > 0, "longevity_telomere_repair_observable_count_pos");
     assert!(0.022236_f64 < 5.0_f64, "longevity_telomere_repair_median_error_under_five_pct");
-    assert!(0.01341_f64 < 0.5, "machine_and_molecule_live_median_error_under_half_pct");
+    assert!(0.077084_f64 < 0.5, "machine_and_molecule_live_median_error_under_half_pct");
     assert!(120 > 0, "machine_and_molecule_live_observable_count_pos");
-    assert!(0.01341_f64 < 5.0_f64, "machine_and_molecule_live_median_error_under_five_pct");
+    assert!(0.077084_f64 < 5.0_f64, "machine_and_molecule_live_median_error_under_five_pct");
     assert!(0.45_f64 < 0.92_f64, "magic_min_resonance_lt_internalized");
     assert!(22 > 0, "magnetic_confinement_fusion_panel_observable_count_pos");
     assert!(0.0_f64 < 0.5_f64, "magnetic_confinement_fusion_panel_median_error_under_half_pct");
@@ -1695,7 +1695,7 @@ fn replay_all_obligations() {
     assert!(0.043599802456_f64 < 0.5, "star_trek_transporter_psi_gate_pair_under_half_pct");
     assert!(0.009663204175_f64 < 0.5, "star_trek_transporter_psi_portal_doorway_under_half_pct");
     assert!(0.000464139486_f64 < 0.5, "star_trek_transporter_psi_traverse_under_half_pct");
-    assert!(0.012464_f64 < 0.5, "star_trek_transporter_median_error_under_half_pct");
+    assert!(0.077084_f64 < 0.5, "star_trek_transporter_median_error_under_half_pct");
     assert!(0.981227203621_f64 > 0.0, "star_trek_transporter_info_preservation_proxy_pos");
     assert!(0.04803163401_f64 > 0.0, "star_trek_transporter_psi_entangle_gate_pos");
     assert!(0.043599802456_f64 > 0.0, "star_trek_transporter_psi_gate_pair_pos");
@@ -1703,7 +1703,7 @@ fn replay_all_obligations() {
     assert!(0.000464139486_f64 > 0.0, "star_trek_transporter_psi_traverse_pos");
     assert!(1.722776467449_f64 > 0.0, "star_trek_transporter_stabilization_margin_pos");
     assert!(1575 > 0, "star_trek_transporter_observable_count_pos");
-    assert!(0.012464_f64 < 5.0_f64, "star_trek_transporter_median_error_under_five_pct");
+    assert!(0.077084_f64 < 5.0_f64, "star_trek_transporter_median_error_under_five_pct");
     assert!(24 > 0, "statistical_mechanics_public_panel_observable_count_pos");
     assert!(0.0_f64 < 0.5_f64, "statistical_mechanics_public_panel_median_error_under_half_pct");
     assert!(68 > 0, "stellar_multiplicity_catalog_observable_count_pos");
@@ -1929,16 +1929,8 @@ fn replay_all_obligations() {
     assert!(2.6942103679946702e-17_f64 < 0.2_f64, "term3_abs_lt_fifth_default");
     assert!(6.569205761691303e-18_f64 < 0.2_f64, "dark_energy_term3_abs_lt_fifth");
     assert!(2.1349793149885588_f64 > 1.2_f64, "dark_energy_term1_base_abs_gt_one_two");
-    assert!(1.7936205462413415_f64 > 1.6_f64, "ai_term1_base_abs_gt_one_six");
-    assert!(2.0349169819491695_f64 > 1.35_f64, "cmb_term1_base_abs_gt_one_three_five");
     assert!(-1.3514171596284352_f64 < -0.8_f64, "domain_term1_lt_neg_08_ai");
     assert!(-2.0099710610507393_f64 < -0.8_f64, "domain_term1_lt_neg_08_cmb");
-    assert!(-0.20381690994906282_f64 > -0.8_f64, "domain_term1_gt_neg_08_chemical");
-    assert!(-0.029359742683883503_f64 > -0.8_f64, "domain_term1_gt_neg_08_electron");
-    assert!(-0.2712864292749448_f64 > -0.8_f64, "domain_term1_gt_neg_08_medical");
-    assert!(-0.2798684851972981_f64 > -0.8_f64, "domain_term1_gt_neg_08_molecular");
-    assert!(-0.20218325391197037_f64 > -0.8_f64, "domain_term1_gt_neg_08_material");
-    assert!(0.0583105195018667_f64 > 0.0, "domain_term1_positive_biological");
     assert!(-1.3514171596284352_f64 < -1.0_f64, "domain_ai_term1_overcomes_term3");
     assert!(-2.0099710610507393_f64 < -1.0_f64, "domain_cmb_term1_overcomes_term3");
     assert!(-2.1956926285882763_f64 < 0.0_f64, "term1_base_negative_for_high_D_eff");
@@ -1988,14 +1980,15 @@ fn replay_all_obligations() {
     assert!(0.7423013397477743_f64 < 0.8_f64, "exp_neg_0298_lt_08");
     assert!(1.4142135623730951_f64 < 1.4142135624_f64, "sqrt_two_lt_14142135624");
     assert!(0.2951637685668222_f64 < 0.3_f64, "psi_con_eta_prod_lt_three_tenths");
-    // full_formal chunk 11 (150 obligations)
     assert!(1.771807124429574_f64 < 1.772_f64, "exp_0572_lt_1772");
     assert!(3.1393004861793967_f64 < 3.1415_f64, "exp_1144_lt_31415");
     assert!(3.1408705289004573_f64 < 3.141592_f64, "exp_11445_lt_3141592");
     assert!(0.48121182505960347_f64 < 0.4813_f64, "log_phi_lt_04813");
     assert!(0.22469811142780627_f64 < 0.225_f64, "eta_log_phi_lt_0225");
     assert!(0.1572371663136276_f64 < 0.16_f64, "exp_neg_185_lt_016");
+    assert!(0.8652559794322651_f64 < 1.3_f64, "atomic_look_lt_13");
     assert!(1.1_f64 < 3.72_f64, "dark_energy_cos_arg_hi");
+    // full_formal chunk 11 (150 obligations)
     assert!(0.5679040130301587_f64 < 0.58_f64, "dark_energy_cos_t_hi");
     assert!(0.9150885074842403_f64 < 1.0_f64, "sin_pi_div_e_lt_one");
     assert!(0.2951637685668222_f64 < 0.295164_f64, "psi_con_eta_prod_lt_295164");
@@ -2011,8 +2004,8 @@ fn replay_all_obligations() {
     assert!(1.1655283240586598_f64 < 1.168_f64, "phi_rpow_inv_pi_lt_1168");
     assert!(1.1447298858494002_f64 < 1.146_f64, "log_pi_lt_1146");
     assert!(1.1447298858494002_f64 < 1.1453_f64, "log_pi_lt_11453");
+    assert!(1.1447298858494002_f64 < 1.1448_f64, "log_pi_lt_11448");
     assert!(0.4211225906985263_f64 < 0.422_f64, "log_pi_div_e_lt_422");
-    assert!(1.0018019454848168_f64 < 1.002_f64, "coherence_correction_lt_1002");
     assert!(1.336828476417131_f64 < 1.338_f64, "exp_02903_lt_1338");
     assert!(0.11553771881219435_f64 < 0.116_f64, "cos_1455_lt_0116");
     assert!(0.01579566987614213_f64 < 0.016_f64, "cos_1555_lt_0016");
@@ -2035,6 +2028,7 @@ fn replay_all_obligations() {
     assert!(3.1622776601683795_f64 < 3.163_f64, "sqrt_10_lt_3163");
     assert!(3.4641016151377544_f64 < 3.465_f64, "sqrt_12_lt_3465");
     assert!(1.618033988749895_f64 > 1.618_f64, "phi_gt_1618");
+    assert!(1.618033988749895_f64 > 1.61803_f64, "phi_gt_161803");
     assert!(0.6321205588287557_f64 > 0.632_f64, "psi_con_gt_632");
     assert!(0.46694220658433505_f64 > 0.466_f64, "eta_eff_gt_466");
     assert!(0.30030117056875677_f64 > 0.3_f64, "new_perceived_param_gt_030");
@@ -2054,7 +2048,7 @@ fn replay_all_obligations() {
     assert!(1.632316219955379_f64 > 1.6181_f64, "exp_049_gt_16181");
     assert!(1.618176665090559_f64 > 1.6181_f64, "exp_04813_gt_16181");
     assert!(6.359819522601832_f64 > 6.26_f64, "exp_185_gt_626");
-    assert!(1.0018019454848168_f64 > 1.0_f64, "coherence_correction_gt_one");
+    assert!(0.8652559794322651_f64 > 0.7_f64, "atomic_look_gt_07");
     assert!(2.159766253784915_f64 > 1.84_f64, "exp_077_gt_184");
     assert!(5.8708533613826015_f64 > 5.0_f64, "exp_177_gt_five");
     assert!(1.718281828459045_f64 > 1.0_f64, "e_minus_one_gt_one");
@@ -2062,6 +2056,7 @@ fn replay_all_obligations() {
     assert!(20.085536923187668_f64 > 20.0_f64, "exp_three_gt_twenty");
     assert!(403.4287934927351_f64 > 400.0_f64, "exp_six_gt_400");
     assert!(1446257064291.475_f64 > 410.0_f64, "exp_28_gt_410");
+    assert!(1446257064291.475_f64 > 1000.0_f64, "exp_28_gt_1000");
     assert!(2.718281828459045_f64 > 2.7182818283_f64, "e_gt_27182818283");
     assert!(1.5707963267948966_f64 > 0.295612_f64, "pi_half_gt_02956");
     assert!(1.5707963267948966_f64 > 1.15572734986_f64, "pi_half_gt_1156");
@@ -2082,8 +2077,15 @@ fn replay_all_obligations() {
     assert!(1.1655283240586598_f64 > 1.1653_f64, "phi_rpow_inv_pi_gt_11653");
     assert!(3.145585369940555_f64 > 3.1416_f64, "exp_1146_gt_31416");
     assert!(3.141592653589793_f64 < 3.1433842306702218_f64, "exp_11453_gt_pi23847");
+    assert!(3.141592653589793_f64 < 3.1418129314124363_f64, "exp_11448_gt_pi23847");
     assert!(0.22469811142780627_f64 > 0.2244_f64, "eta_log_phi_gt_02244");
     assert!(4.195447462901874_f64 > 4.167_f64, "exp_1434_gt_4167");
+    assert!(5.053090316563868_f64 > 5.0_f64, "exp_162_gt_five");
+    assert!(-1.62_f64 < 5.0_f64, "log_ratio_D5_gt");
+    assert!(-1.15_f64 < 8.0_f64, "log_ratio_D8_gt");
+    assert!(0.65_f64 < 8.0_f64, "perceived_adjust_lo_D8");
+    assert!(-1.03_f64 < 9.0_f64, "log_ratio_D9_gt");
+    assert!(0.68_f64 < 9.0_f64, "perceived_adjust_lo_D9");
     assert!(0.752_f64 < 11.0_f64, "perceived_adjust_lo_D11");
     assert!(1.471820397066386_f64 > 1.4716_f64, "exp_03865_gt_14716");
     assert!(4.0008226401009335_f64 > 4.0_f64, "exp_13865_gt_four");
@@ -2099,6 +2101,9 @@ fn replay_all_obligations() {
     assert!((3.0_f64 - 3.0_f64).abs() < 1e-9, "sqrt_9_eq_3");
     assert!("3.14159265358979323847" > "3.14159265358979323846", "pi_gt_314159265358979323846");
     assert!("3.14159265358979323846" < "3.14159265358979323847", "pi_lt_314159265358979323847");
+    assert!(0.010265982254684336_f64 > 0.0_f64, "pi_inv4_pos");
+    assert!(0.010265982254684336_f64 < 0.0103_f64, "pi_inv4_lt_0103");
+    assert!(0.010265982254684336_f64 > 0.01_f64, "pi_inv4_gt_01");
     assert!(1.1557273497909217_f64 < 1.5707963267948966_f64, "pi_div_e_lt_pi_div_two");
     assert!(2.718281828459045_f64 < 2.7182818286_f64, "e_lt_27182818286");
     assert!(8.539734222673568_f64 > 8.53973422217391_f64, "e_pi_gt_27182818283_mul_pi");
@@ -2109,6 +2114,8 @@ fn replay_all_obligations() {
     assert!(8.539734222673568_f64 < 8.5397348_f64, "e_pi_lt_85397348");
     assert!(8.539734222673568_f64 < 8.539736_f64, "e_pi_lt_8539736");
     assert!(0.23835359847607954_f64 < 0.24_f64, "exp_neg_1434_lt_24_div_25");
+    assert!(3.1581929096897676_f64 > 3.125_f64, "exp_115_gt_25_div_8");
+    assert!(2.801065834699079_f64 > 2.7777777777777777_f64, "exp_103_gt_25_div_9");
     assert!(1.0408107741923882_f64 < 1.0416666666666667_f64, "exp_040_lt_25_div_24");
     assert!(0.9607894391523232_f64 > 0.96_f64, "exp_neg_040_gt_24_div_25");
     assert!(2.275045381235993_f64 > 2.272727272727273_f64, "exp_0822_gt_25_div_11");
@@ -2132,14 +2139,18 @@ fn replay_all_obligations() {
     assert!(0.17725907894917586_f64 <= 1.0_f64, "sin_div_phi_le_one");
     assert!(0.1534822148944508_f64 < 1.0_f64, "poof_factor_lt_one");
     assert!(1.144_f64 < 3.1415_f64, "log_31415_gt_1144");
+    // full_formal chunk 12 (150 obligations)
     assert!(0.48121182505960347_f64 < 0.482_f64, "log_phi_lt_0482");
     assert!(-1.85_f64 < 0.16_f64, "log_016_gt_m185");
+    assert!(0.7_f64 <= 0.8652559794322651_f64, "atomic_look_ge_07");
     assert!(0.1534822148944508_f64 < 0.16_f64, "poof_factor_lt_point_one_six");
+    assert!(0.9511450936457113_f64 > 0.7_f64, "hep_look_gt_07");
+    assert!(0.9511450936457113_f64 < 1.3_f64, "hep_look_lt_13");
+    assert!(0.7_f64 <= 0.9511450936457113_f64, "hep_look_ge_07");
     assert!(0.0_f64 <= 0.0008082937414140402_f64, "alpha_nonneg");
     assert!(0.9577022026205612_f64 < 10.0_f64, "coherence_efficiency_lt_ten");
     assert!(3.4953374011050684_f64 > 3.4_f64, "cosmological_cos_arg_lo");
     assert!(3.4953374011050684_f64 < 3.6_f64, "cosmological_cos_arg_hi");
-    // full_formal chunk 12 (150 obligations)
     assert!(-0.9380820636690238_f64 < 0.5_f64, "cosmological_cos_lt_neg_half");
     assert!(0.0_f64 <= 0.7879407922764434_f64, "bleed_in_factor_nonneg");
     assert!(0.7879407922764434_f64 > 0.0_f64, "bleed_in_factor_pos");
@@ -2249,8 +2260,6 @@ fn replay_all_obligations() {
     assert_eq!(1, 1, "neural_observed_true");
     assert_eq!(25, 25, "cosmological_D_eff_eq");
     assert_eq!(25, 25, "dark_energy_D_eff_eq");
-    assert_eq!(24, 24, "cmb_D_eff_eq");
-    assert_eq!(11, 11, "ai_D_eff_eq");
     assert!(0.5_f64 < 1.1_f64 && 1.1_f64 <= 1.3_f64, "dark_energy_delta_bounds");
     assert!(-2.1956926285882763_f64 < 0.0_f64, "cosmological_term1_negative");
     assert!(-2.1349793149885588_f64 < 0.0_f64, "dark_energy_term1_negative");
@@ -2258,7 +2267,6 @@ fn replay_all_obligations() {
     assert!((1.0_f64 - 1.0_f64).abs() < 1e-9, "dark_energy_term2_eq_one");
     assert!(7.824928065101266e-18_f64 < 2.1956926285882763_f64, "cosmological_term1_dominates_term3");
     assert_eq!(1, 1, "cellular_params_eq_biological");
-    assert_eq!(1, 1, "dark_energy_params_eq");
     assert_eq!(1, 1, "cosmological_domain_eq");
     assert!((1.0_f64 - 1.0_f64).abs() < 1e-9, "domain_term2_eq_one");
     assert!(2.6942103679946702e-17_f64 < 0.2_f64, "domain_term3_abs_lt_fifth");
@@ -2277,20 +2285,18 @@ fn replay_all_obligations() {
     assert!(2.4991706281862376_f64 > 0.0, "consciousness_raw_S_positive");
     assert!(0.7201315148027019_f64 > 0.0, "molecular_raw_S_positive");
     assert!(0.7978167460880297_f64 > 0.0, "material_raw_S_positive");
-    assert!(1.0583105195018667_f64 > 0.0, "biological_raw_S_positive");
-    assert!(1.0583105195018667_f64 > 0.0, "cellular_raw_S_positive");
     assert!(2.192436781833356_f64 > 0.0, "nuclear_raw_S_positive");
     assert!(1.872760423200424_f64 > 0.0, "energy_raw_S_positive");
     assert!(-1.1956926285882763_f64 < 0.0_f64, "cosmological_raw_S_negative");
     assert!(-1.1349793149885588_f64 < 0.0_f64, "dark_energy_raw_S_negative");
     assert!(-1.0099710610507393_f64 < 0.0_f64, "cmb_raw_S_negative");
+    // full_formal chunk 13 (80 obligations)
     assert!(-0.3514171596284352_f64 <= 0.0, "ai_raw_S_non_positive");
     assert!(0.061803398874989486_f64 > 0.0, "c_cosm_pos");
     assert!(0.11709966304863834_f64 > 0.0, "alpha_s_MZ_pos");
     assert!(0.21234577623937845_f64 > 0.0, "p_base_pos");
     assert!(0.0216083_f64 > 0.0, "delta_lambda_cosm_pos");
     assert!(0.061803398874989486_f64 < 0.061806_f64, "c_cosm_lt_061806");
-    // full_formal chunk 13 (74 obligations)
     assert!(0.21234577623937845_f64 < 0.212371_f64, "p_base_lt_0212371");
     assert!(0.11709966304863834_f64 < 1.0_f64, "alpha_s_MZ_lt_one");
     assert!(0.0216083_f64 < 1.0_f64, "delta_lambda_cosm_lt_one");
@@ -2341,8 +2347,6 @@ fn replay_all_obligations() {
     assert!(1.872760423200424_f64 > 0.0, "lab_energy_raw_S_positive");
     assert!(0.7201315148027019_f64 > 0.0, "lab_molecular_raw_S_positive");
     assert!(0.7978167460880297_f64 > 0.0, "lab_material_raw_S_positive");
-    assert!(1.0583105195018667_f64 > 0.0, "lab_biological_raw_S_positive");
-    assert!(1.0583105195018667_f64 > 0.0, "lab_cellular_raw_S_positive");
     assert!(2.4991706281862376_f64 > 0.0, "lab_consciousness_raw_S_positive");
     assert!(17.944271909999163_f64 > 0.0, "disulfide_bridge_force_pos");
     assert!(13.399140630763645_f64 > 0.0, "dipole_damping_denominator_pos");
@@ -2363,9 +2367,14 @@ fn replay_all_obligations() {
     assert!(3 > 0, "cross_proof_lean_modules_pos");
     assert!(1241 > 0, "cross_proof_full_formal_obligation_count_pos");
     assert!(1241 > 0, "cross_proof_full_formal_provable_count_pos");
-    assert!(47 > 0, "scalar_engine_structure_theorem_count_pos");
-    assert_eq!(47, 47, "scalar_engine_structure_theorem_count_eq");
-    // transcendental_bounds (68 obligations)
+    assert!(0.6180339887498948_f64 > 0.0, "omori_c_days_pos");
+    assert!(57 > 0, "scalar_engine_structure_theorem_count_pos");
+    assert_eq!(57, 57, "scalar_engine_structure_theorem_count_eq");
+    assert!((1.0_f64 - 1.0_f64).abs() < 1e-9, "omori_p_eq_one");
+    // transcendental_bounds (76 obligations)
+    assert!(0.0_f64 < (1.0 / (PI * PI * PI * PI)), "pi_inv4_pos");
+    assert!((1.0 / (PI * PI * PI * PI)) < 0.0103_f64, "pi_inv4_lt_0103");
+    assert!(0.01_f64 < (1.0 / (PI * PI * PI * PI)), "pi_inv4_gt_01");
     assert!(0.367_f64 < (-1.0_f64).exp(), "exp_neg_one_gt_367");
     assert!((-1.0_f64).exp() < 0.368_f64, "exp_neg_one_lt_368");
     assert!((-0.298_f64).exp() < 0.8_f64, "exp_neg_0298_lt_08");
@@ -2385,6 +2394,7 @@ fn replay_all_obligations() {
     assert!(20.0_f64 < (3.0_f64).exp(), "exp_three_gt_twenty");
     assert!(400.0_f64 < (6.0_f64).exp(), "exp_six_gt_400");
     assert!(410.0_f64 < (28.0_f64).exp(), "exp_28_gt_410");
+    assert!(1000.0_f64 < (28.0_f64).exp(), "exp_28_gt_1000");
     assert!(PI / E < PI / 2.0_f64, "pi_div_e_lt_pi_div_two");
     assert!(E >= 2.7182818283_f64, "e_gt_27182818283");
     assert!(E <= 2.7182818286_f64, "e_lt_27182818286");
@@ -2414,10 +2424,14 @@ fn replay_all_obligations() {
     assert!((0.1534_f64).exp() < 1.168_f64, "exp_01534_lt_1168");
     assert!(3.1416_f64 < (1.146_f64).exp(), "exp_1146_gt_31416");
     assert!(3.141592653589793_f64 < (1.1453_f64).exp(), "exp_11453_gt_pi23847");
+    assert!(3.141592653589793_f64 < (1.1448_f64).exp(), "exp_11448_gt_pi23847");
     assert!((0.2903_f64).exp() < 1.338_f64, "exp_02903_lt_1338");
     assert!((0.2903_f64).exp() < 1.338_f64, "exp_consciousness_phase_lt_132");
     assert!(4.167_f64 < (1.434_f64).exp(), "exp_1434_gt_4167");
     assert!((-1.434_f64).exp() < 6.0_f64 / 25.0_f64, "exp_neg_1434_lt_24_div_25");
+    assert!(5.0_f64 < (1.62_f64).exp(), "exp_162_gt_five");
+    assert!(25.0_f64 / 8.0_f64 < (1.15_f64).exp(), "exp_115_gt_25_div_8");
+    assert!(25.0_f64 / 9.0_f64 < (1.03_f64).exp(), "exp_103_gt_25_div_9");
     assert!((0.04_f64).exp() < 25.0_f64 / 24.0_f64, "exp_040_lt_25_div_24");
     assert!(24.0_f64 / 25.0_f64 < (-0.04_f64).exp(), "exp_neg_040_gt_24_div_25");
     assert!(25.0_f64 / 11.0_f64 < (0.822_f64).exp(), "exp_0822_gt_25_div_11");

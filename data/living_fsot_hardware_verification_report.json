@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-09T16:27:25.480939+00:00",
+  "generated_at": "2026-09-29T22:05:50.123035+00:00",
   "version": "1.0",
   "tier": "93_living_fsot_hardware",
-  "overall_ok": true,
+  "overall_ok": false,
   "project_found": true,
   "living_root": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462",
   "components": {
@@ -13,7 +13,7 @@
   "checks_passed": {
     "project_layout": true,
     "build_artifacts": true,
-    "scalar_k_parity": true,
+    "scalar_k_parity": false,
     "live_or_export_evidence": true,
     "task_battery_green": true,
     "qemu_runtime_available": true
@@ -66,13 +66,13 @@
     "path": "C:\\Program Files\\qemu\\qemu-system-x86_64.EXE"
   },
   "scalar_k_parity": {
-    "ok": true,
-    "canonical_k": 0.4202216641606967,
+    "ok": false,
+    "canonical_k": 0.4201087636498879,
     "living_rust_k": 0.42022166416069673,
-    "abs_delta": 5.551115123125783e-17,
-    "rel_delta": 1.3209968920124463e-16
+    "abs_delta": 0.00011290051080881103,
+    "rel_delta": 0.0002687411465258091
   },
-  "canonical_k": 0.4202216641606967,
+  "canonical_k": 0.4201087636498879,
   "live_operational": {
     "body_online": true,
     "body_transport": "file",

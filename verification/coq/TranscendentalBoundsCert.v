@@ -10,6 +10,21 @@ Local Open Scope R_scope.
 
 (* certified_exp_one_lo/hi + certified_pi_lo/hi come from Native (Interval). *)
 
+Lemma certified_pi_inv4_pos : (0%R) < (1 / (PI * PI * PI * PI)).
+Proof.
+  interval with (i_prec 80).
+Qed.
+
+Lemma certified_pi_inv4_lt_0103 : (1 / (PI * PI * PI * PI)) < (0.0103%R).
+Proof.
+  interval with (i_prec 80).
+Qed.
+
+Lemma certified_pi_inv4_gt_01 : (0.01%R) < (1 / (PI * PI * PI * PI)).
+Proof.
+  interval with (i_prec 80).
+Qed.
+
 Lemma certified_exp_neg_one_gt_367 : (0.367%R) < exp (-1).
 Proof.
   interval with (i_prec 40).
@@ -96,6 +111,11 @@ Proof.
 Qed.
 
 Lemma certified_exp_28_gt_410 : (410%R) < exp (28%R).
+Proof.
+  interval with (i_prec 40).
+Qed.
+
+Lemma certified_exp_28_gt_1000 : (1000%R) < exp (28%R).
 Proof.
   interval with (i_prec 40).
 Qed.
@@ -210,6 +230,11 @@ Proof.
   interval with (i_prec 80).
 Qed.
 
+Lemma certified_exp_11448_gt_pi23847 : (3.14159265358979323847%R) < exp (1.1448%R).
+Proof.
+  interval with (i_prec 80).
+Qed.
+
 Lemma certified_exp_02903_lt_1338 : exp (0.2903%R) < (1.338%R).
 Proof.
   interval with (i_prec 40).
@@ -226,6 +251,21 @@ Proof.
 Qed.
 
 Lemma certified_exp_neg_1434_lt_24_div_25 : exp (-1.434) < (6%R) / 25.
+Proof.
+  interval with (i_prec 40).
+Qed.
+
+Lemma certified_exp_162_gt_five : (5%R) < exp (1.62%R).
+Proof.
+  interval with (i_prec 40).
+Qed.
+
+Lemma certified_exp_115_gt_25_div_8 : (25%R) / 8 < exp (1.15%R).
+Proof.
+  interval with (i_prec 40).
+Qed.
+
+Lemma certified_exp_103_gt_25_div_9 : (25%R) / 9 < exp (1.03%R).
 Proof.
   interval with (i_prec 40).
 Qed.

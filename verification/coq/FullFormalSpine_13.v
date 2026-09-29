@@ -180,7 +180,7 @@ Proof. lra. Qed.
 Lemma star_trek_transporter_psi_traverse_under_half_pct : (0.000464139486%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma star_trek_transporter_median_error_under_half_pct : (0.012464%R) < (0.5%R).
+Lemma star_trek_transporter_median_error_under_half_pct : (0.077084%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma star_trek_transporter_info_preservation_proxy_pos : 0 < (0.981227203621%R).
@@ -204,7 +204,7 @@ Proof. lra. Qed.
 Lemma star_trek_transporter_observable_count_pos : (0 < 1575)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma star_trek_transporter_median_error_under_five_pct : (0.012464%R) < (5.0%R).
+Lemma star_trek_transporter_median_error_under_five_pct : (0.077084%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma statistical_mechanics_public_panel_observable_count_pos : (0 < 24)%nat.

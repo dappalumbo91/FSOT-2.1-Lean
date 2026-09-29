@@ -279,30 +279,30 @@ Proof. lra. Qed.
 Lemma dark_energy_term1_base_abs_gt_one_two : (1.2%R) < (2.1349793149885588%R).
 Proof. lra. Qed.
 
-Lemma ai_term1_base_abs_gt_one_six : (1.6%R) < (1.7936205462413415%R).
-Proof. lra. Qed.
-
-Lemma cmb_term1_base_abs_gt_one_three_five : (1.35%R) < (2.0349169819491695%R).
-Proof. lra. Qed.
-
 Lemma domain_term1_lt_neg_08_ai : (-1.3514171596284352%R) < (-0.8%R).
 Proof. lra. Qed.
 
 Lemma domain_term1_lt_neg_08_cmb : (-2.0099710610507393%R) < (-0.8%R).
 Proof. lra. Qed.
 
-Lemma domain_term1_gt_neg_08_chemical : (-0.8%R) < (-0.20381690994906282%R).
+Lemma domain_ai_term1_overcomes_term3 : (-1.3514171596284352%R) < (-1.0%R).
 Proof. lra. Qed.
 
-Lemma domain_term1_gt_neg_08_electron : (-0.8%R) < (-0.029359742683883503%R).
+Lemma domain_cmb_term1_overcomes_term3 : (-2.0099710610507393%R) < (-1.0%R).
 Proof. lra. Qed.
 
-Lemma domain_term1_gt_neg_08_medical : (-0.8%R) < (-0.2712864292749448%R).
+Lemma term1_base_negative_for_high_D_eff : (-2.1956926285882763%R) < 0%R.
 Proof. lra. Qed.
 
-Lemma domain_term1_gt_neg_08_molecular : (-0.8%R) < (-0.2798684851972981%R).
+Lemma term1_base_negative_of_typical_delta : (-1.7936205462413415%R) < 0%R.
 Proof. lra. Qed.
 
-Lemma domain_term1_gt_neg_08_material : (-0.8%R) < (-0.20218325391197037%R).
+Lemma term1_dominates_term3_when_base_large : (0.000000000000000007824928065101266%R) < (2.1956926285882763%R).
+Proof. lra. Qed.
+
+Lemma term3_dominates_in_tight_window : (0.000000000000000007824928065101266%R) < (2.1956926285882763%R).
+Proof. lra. Qed.
+
+Lemma term3_dominates_for_very_high_D : (0.000000000000000007824928065101266%R) < (2.1956926285882763%R).
 Proof. lra. Qed.
 

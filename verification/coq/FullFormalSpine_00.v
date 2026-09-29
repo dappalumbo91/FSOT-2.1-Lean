@@ -249,13 +249,13 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma blackhole_thesis_within_le_total : (28 <= 28)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
-Lemma blackhole_whitehole_cycle_median_error_under_half_pct : (0.026472%R) < (0.5%R).
+Lemma blackhole_whitehole_cycle_median_error_under_half_pct : (0.071654%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma blackhole_whitehole_cycle_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma blackhole_whitehole_cycle_median_error_under_five_pct : (0.026472%R) < (5.0%R).
+Lemma blackhole_whitehole_cycle_median_error_under_five_pct : (0.071654%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma botany_ext_pooled_median_under_half_pct : (0.022236250385193387%R) < (0.5%R).

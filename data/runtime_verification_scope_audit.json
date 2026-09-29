@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-09T16:27:49.138448+00:00",
+  "generated_at": "2026-09-29T22:06:04.595218+00:00",
   "version": "1.0",
-  "overall_runtime_ok": true,
-  "esp32_scalar_only_gap_closed": true,
+  "overall_runtime_ok": false,
+  "esp32_scalar_only_gap_closed": false,
   "layers": [
     {
       "id": "lean_coq_isabelle_rust",
@@ -26,14 +26,14 @@
     {
       "id": "esp32_uart",
       "scope": "single boot scalar UART on CP210x",
-      "status": "passed",
+      "status": "skipped",
       "undeniable_for": "hardware UART boot scalar",
       "note": "One scalar only \u2014 not full FSOT theory on chip"
     },
     {
       "id": "living_fsot_qemu_body",
       "scope": "fsot-trinary-body UEFI + mind ABI + habitat loop",
-      "status": "passed",
+      "status": "pending",
       "undeniable_for": "closed-loop trinary body verification",
       "supersedes": "esp32_scalar_only info gap when living_fsot passes"
     }

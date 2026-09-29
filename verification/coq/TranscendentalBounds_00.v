@@ -1,9 +1,24 @@
-(* FSOT Tier 83 — transcendental bounds chunk 1/3 (generated). *)
+(* FSOT Tier 83 — transcendental bounds chunk 1/4 (generated). *)
 From Stdlib Require Import Reals.
 Require Import TranscendentalBoundsBase.
 Require Import TranscendentalBoundsCert.
 From Stdlib Require Import Psatz.
 Local Open Scope R_scope.
+
+Lemma pi_inv4_pos : (0%R) < (1 / (PI * PI * PI * PI)).
+Proof.
+exact certified_pi_inv4_pos.
+Qed.
+
+Lemma pi_inv4_lt_0103 : (1 / (PI * PI * PI * PI)) < (0.0103%R).
+Proof.
+exact certified_pi_inv4_lt_0103.
+Qed.
+
+Lemma pi_inv4_gt_01 : (0.01%R) < (1 / (PI * PI * PI * PI)).
+Proof.
+exact certified_pi_inv4_gt_01.
+Qed.
 
 Lemma exp_neg_one_gt_367 : (0.367%R) < exp (-1).
 Proof.
@@ -101,6 +116,11 @@ Proof.
 exact certified_exp_28_gt_410.
 Qed.
 
+Lemma exp_28_gt_1000 : (1000%R) < exp (28%R).
+Proof.
+exact certified_exp_28_gt_1000.
+Qed.
+
 Lemma pi_div_e_lt_pi_div_two : PI / exp 1 < PI / 2.
 Proof.
 exact certified_pi_div_e_lt_pi_div_two.
@@ -109,24 +129,4 @@ Qed.
 Lemma e_gt_27182818283 : (2.7182818283%R) < exp 1.
 Proof.
 exact certified_exp_one_lo.
-Qed.
-
-Lemma e_lt_27182818286 : exp 1 < (2.7182818286%R).
-Proof.
-exact certified_exp_one_hi.
-Qed.
-
-Lemma pi_gt_314159265358979323846 : (3.14159265358979323846%R) < PI.
-Proof.
-exact certified_pi_lo.
-Qed.
-
-Lemma pi_lt_314159265358979323847 : PI < (3.14159265358979323847%R).
-Proof.
-exact certified_pi_hi.
-Qed.
-
-Lemma e_pi_gt_27182818283_mul_pi : (2.7182818283%R) * (3.14159265358979323846%R) < exp 1 * PI.
-Proof.
-exact certified_e_pi_gt_27182818283_mul_pi.
 Qed.

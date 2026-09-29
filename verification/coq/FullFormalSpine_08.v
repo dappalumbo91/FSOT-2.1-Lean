@@ -102,13 +102,13 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma longevity_telomere_repair_median_error_under_five_pct : (0.022236%R) < (5.0%R).
 Proof. lra. Qed.
 
-Lemma machine_and_molecule_live_median_error_under_half_pct : (0.01341%R) < (0.5%R).
+Lemma machine_and_molecule_live_median_error_under_half_pct : (0.077084%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma machine_and_molecule_live_observable_count_pos : (0 < 120)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma machine_and_molecule_live_median_error_under_five_pct : (0.01341%R) < (5.0%R).
+Lemma machine_and_molecule_live_median_error_under_five_pct : (0.077084%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma magic_min_resonance_lt_internalized : (0.45%R) < (0.92%R).

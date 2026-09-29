@@ -246,13 +246,13 @@ lemma blackhole_thesis_observable_count_pos: "0 < (28 :: nat)"
 lemma blackhole_thesis_within_le_total: "(28 :: nat) <= (28 :: nat)"
   by eval
 
-lemma blackhole_whitehole_cycle_median_error_under_half_pct: "(0.026472 :: real) < (0.5 :: real)"
+lemma blackhole_whitehole_cycle_median_error_under_half_pct: "(0.071654 :: real) < (0.5 :: real)"
   by eval
 
 lemma blackhole_whitehole_cycle_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma blackhole_whitehole_cycle_median_error_under_five_pct: "(0.026472 :: real) < (5.0 :: real)"
+lemma blackhole_whitehole_cycle_median_error_under_five_pct: "(0.071654 :: real) < (5.0 :: real)"
   by eval
 
 lemma botany_ext_pooled_median_under_half_pct: "(0.022236250385193387 :: real) < (0.5 :: real)"

@@ -4,26 +4,6 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma cat_fsot_physics_all_solved_records_pos : (0 < 287)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_fsot_physics_all_solved_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fsot_physics_all_solved_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_fsot_physics_all_solved_max_scalar_under_half_pct : ((0.073582%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fsot_physics_all_solved_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_nufit_neutrino_open_records_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -481,5 +461,25 @@ Proof. lra. Qed.
 
 
 Lemma cat_circuit_component_emergence_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_optics_interferometry_depth_panel_records_pos : (0 < 82)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_optics_interferometry_depth_panel_pooled_under_half_pct : ((0.026954%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_optics_interferometry_depth_panel_pooled_lt_half_pure : ((0.026954%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_optics_interferometry_depth_panel_max_scalar_under_half_pct : ((0.040817%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_optics_interferometry_depth_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

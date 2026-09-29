@@ -1,7 +1,19 @@
-(* FSOT Tier 83 — transcendental bounds chunk 2/3 (generated). *)
+(* FSOT Tier 83 — transcendental bounds chunk 2/4 (generated). *)
 theory TranscendentalBounds_01
 imports TranscendentalBoundsCert
 begin
+
+lemma e_lt_27182818286: "(exp (1 :: real)) < (2.7182818286 :: real)"
+  by (rule certified_exp_one_hi)
+
+lemma pi_gt_314159265358979323846: "(3.14159265358979323846 :: real) < pi"
+  by (rule certified_pi_lo)
+
+lemma pi_lt_314159265358979323847: "pi < (3.14159265358979323847 :: real)"
+  by (rule certified_pi_hi)
+
+lemma e_pi_gt_27182818283_mul_pi: "(2.7182818283 :: real) * (3.14159265358979323846 :: real) < (exp (1 :: real)) * pi"
+  by (rule certified_e_pi_gt_27182818283_mul_pi)
 
 lemma e_pi_lt_27182818286_mul_pi: "(exp (1 :: real)) * pi < (2.7182818286 :: real) * (3.14159265358979323847 :: real)"
   by (rule certified_e_pi_lt_27182818286_mul_pi)
@@ -63,19 +75,7 @@ lemma exp_1146_gt_31416: "(3.1416 :: real) < exp (1.146 :: real)"
 lemma exp_11453_gt_pi23847: "(3.14159265358979323847 :: real) < exp (1.1453 :: real)"
   by (rule certified_exp_11453_gt_pi23847)
 
-lemma exp_02903_lt_1338: "exp (0.2903 :: real) < (1.338 :: real)"
-  by (rule certified_exp_02903_lt_1338)
-
-lemma exp_consciousness_phase_lt_132: "exp (0.2903 :: real) < (1.338 :: real)"
-  by (rule certified_exp_consciousness_phase_lt_132)
-
-lemma exp_1434_gt_4167: "(4.167 :: real) < exp (1.434 :: real)"
-  by (rule certified_exp_1434_gt_4167)
-
-lemma exp_neg_1434_lt_24_div_25: "exp (-1.434) < (6 :: real) / 25"
-  by (rule certified_exp_neg_1434_lt_24_div_25)
-
-lemma exp_040_lt_25_div_24: "exp (0.040 :: real) < (25 :: real) / 24"
-  by (rule certified_exp_040_lt_25_div_24)
+lemma exp_11448_gt_pi23847: "(3.14159265358979323847 :: real) < exp (1.1448 :: real)"
+  by (rule certified_exp_11448_gt_pi23847)
 
 end
