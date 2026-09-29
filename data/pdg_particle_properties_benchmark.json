@@ -385,11 +385,11 @@
       "lab": "pdg_particle_properties_quantum_lab",
       "property": "m_c/m_b",
       "name": "quantum_m_c/m_b",
-      "computed": 0.2910507567869785,
-      "measured": 0.291,
-      "error_pct": 0.017442194837980426,
+      "computed": 0.3041784476285588,
+      "measured": 0.3043270380109969,
+      "error_pct": 0.04882588921749745,
       "eval_kind": "fsot_quantum_fold",
-      "formula": "C_cosm/P_base",
+      "formula": "C_cosm/P_base + alpha*sqrt(phi)",
       "source": "FSOT-Quantum results/formula_catalog.json",
       "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
