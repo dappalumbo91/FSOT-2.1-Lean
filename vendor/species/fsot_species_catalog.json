@@ -3854,10 +3854,11 @@
       },
       "h_vap_kJ_mol": {
         "target": 23.33,
-        "computed": 23.22712957677746,
-        "error_pct": 0.4409,
-        "formula": "E\u00b3+PI",
-        "unit": "kJ/mol"
+        "computed": 23.328450760419795,
+        "error_pct": 0.006640546850422102,
+        "formula": "e\u00b3+\u03c0+\u03c0\u207b\u00b2",
+        "unit": "kJ/mol",
+        "orifice_note": "NIST/CRC ammonia \u00a747 \u0394Hvap 23.33 kJ/mol. Leaf e\u00b3+\u03c0=23.227 was short by \u03c0\u207b\u00b2. \u03c0\u207b\u00b9 overshoots and \u03c0\u207b\u00b3 is too small. Not the 23.338 eV row."
       },
       "cp_cv_ratio": {
         "target": 1.31,

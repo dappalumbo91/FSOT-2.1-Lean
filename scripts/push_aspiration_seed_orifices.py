@@ -49,6 +49,7 @@ GA_CT = -(float(m.OMEGA) + (K ** 6))
 R2CH2 = float(m.OMEGA) + (K ** 6)
 BE9_EA = (PHI ** 4 - K) + (K ** 4)
 DMSO_N = (PHI - float(m.POOF) + float(m.B_IN) / 100.0) + (E ** -5)
+NH3_HVAP = (E ** 3 + PI) + (PI ** -2)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -208,6 +209,12 @@ SPECS = {
         "formula": "φ−POOF+B_IN/100+e⁻⁵",
         "note": "CRC DMSO nD 1.479. Gated leaf φ−POOF+B_IN/100=1.472 was short by e^-5. Live C_EFF^6+C_EFF^8 is 0.052% and was not used. Not glycerol 1.474.",
     },
+    "NH3_hvap": {
+        "computed": NH3_HVAP,
+        "measured": 23.33,
+        "formula": "e³+π+π⁻²",
+        "note": "NIST/CRC ammonia §47 ΔHvap 23.33 kJ/mol. Leaf e³+π=23.227 was short by π⁻². π⁻¹ overshoots and π⁻³ is too small. Not the 23.338 eV row.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -268,6 +275,32 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_nh3_hvap(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident not in {"NH3", "NH₃"}:
+        return False
+    if not _target_is(rec, 23.33):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in (
+            "property",
+            "Type",
+            "section",
+            "section_display_name",
+            "unit",
+            "Target_Unit",
+            "formula",
+            "fsot_formula",
+            "Description_Formula",
+        )
+    )
+    low = blob.lower().replace(" ", "")
+    if "ev" in low and "kj" not in low:
+        return False
+    return ("vap" in low) or ("§47" in blob) or ("h_vap" in low) or ("e³+pi" in low) or ("e^3+pi" in low)
 
 
 def _is_dmso_n(rec: dict) -> bool:
@@ -723,6 +756,10 @@ def walk(node) -> int:
             spec = SPECS["DMSO_n"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
+        elif _is_nh3_hvap(node):
+            spec = SPECS["NH3_hvap"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
         nd = node.get("refractive_index")
         if isinstance(nd, dict) and _target_is(nd, 1.479):
             spec = SPECS["DMSO_n"]
@@ -835,6 +872,8 @@ def patch_species_hg(path: Path) -> None:
         raise SystemExit(f"Hg speed_sound not found in {path}")
     if not _patch_species_prop(doc, "polyisoprene", "glass_Tg_K", "polyisoprene_Tg"):
         raise SystemExit(f"polyisoprene glass_Tg not found in {path}")
+    if not _patch_species_prop(doc, "NH3", "h_vap_kJ_mol", "NH3_hvap"):
+        raise SystemExit(f"NH3 h_vap not found in {path}")
     path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 
 
@@ -864,9 +903,11 @@ def main() -> int:
         if not path.is_file():
             print("skip", path)
             continue
-        doc = json.loads(path.read_text(encoding="utf-8"))
+        original = path.read_text(encoding="utf-8")
+        doc = json.loads(original)
         n = walk(doc)
-        path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        if n:
+            path.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
         print(f"{path.name}: updated {n}")
     patch_species_hg(ROOT / "vendor/species/fsot_species_catalog.json")
     print("species Hg sound patched")
