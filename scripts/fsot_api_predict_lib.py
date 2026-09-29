@@ -29,6 +29,20 @@ ATOMIC_MASS = {
     "Fe": 55.845,
     "Br": 79.904,
     "I": 126.904,
+    "B": 10.81,
+    "Mg": 24.305,
+    "Al": 26.982,
+    "Si": 28.085,
+    "Ti": 47.867,
+    "Cu": 63.546,
+    "Co": 58.933,
+    "Zn": 65.38,
+    "As": 74.922,
+    "Ag": 107.868,
+    "Cd": 112.414,
+    "Gd": 157.25,
+    "Pt": 195.084,
+    "Hg": 200.592,
 }
 
 def domain_modulation_factor(_domain: str) -> float:
@@ -317,6 +331,18 @@ def make_fsot_record(
         formula=formula,
         factor=factor,
     )
+    formula_hit = bool(
+        formula
+        and property_name in {"molecular_weight", "mol_weight"}
+        and formula_mass(str(formula)) is not None
+    )
+    # The scale path is Ledger B. A parsed formula mass is the mass sum.
+    if formula_hit:
+        kind = "live_formula"
+    elif eval_kind in {"", "fsot_prediction"}:
+        kind = "fsot_correction"
+    else:
+        kind = eval_kind
     rec: dict[str, Any] = {
         "lab": lab,
         "property": property_name,
@@ -324,10 +350,12 @@ def make_fsot_record(
         "computed": round(computed, 6) if abs(computed) < 1e6 else round(computed, 4),
         "measured": measured,
         "error_pct": round(error, 6),
-        "eval_kind": eval_kind,
+        "eval_kind": kind,
         "fsot_domain": fsot_domain,
         "fsot_scalar": round(domain_scalar(fsot_domain), 6),
     }
+    if kind == "fsot_correction":
+        rec["ledger"] = "B"
     if formula:
         rec["formula"] = formula
     if extra:

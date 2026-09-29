@@ -75,6 +75,8 @@ Geometric moduli stay literature (Pietrzyński 2019 18.477; Reid 2019 29.397). W
 
 Pooled median **0.135%**. GREEN. No fitted \(b\) or \(Z_W\).
 
+The tight score uses the published bar, not a new slope. Ripepi \(W_{VI}\) is \(\pm 0.01\). \(R_H=0.4\) is one printed digit. The two intercept rows carry the Pietrzyński 2019 modulus bar (\(\pm 0.004\) stat, \(\pm 0.026\) sys) in quadrature with the Reid, Pesce & Riess 2019 NGC 4258 distance (\(7.576\pm 0.082\) stat \(\pm 0.076\) sys Mpc). The release-note slope 3.285 and the §4.6 LMC slope 3.284 are point quotes with no sigma in these notes, so those two residuals stay 0.209% and 0.239%. One seed slope is not moved to sit inside 0.05% of all three literature slopes at once.
+
 Per-host moduli (not \(cz/d\) H₀ — Riess does not publish host H₀): NIR intercept relative to NGC 4258 vs independent JWST TRGB (Li+2024 Table 2). Ensemble mean offset **+0.004 mag**. Individual host scatter (N1448 ~0.62% of \(\mu\)) is **structural** — TRGB vs Cepheid zeropoint, not a 0.5% central. The named object is the mean.
 
 ### Full Table 2 sample (the other unpublished object)

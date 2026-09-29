@@ -15,6 +15,7 @@ public Cepheid counts (Riess+2022 table). Sky density is host-local
 from __future__ import annotations
 
 import json
+import math
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -150,7 +151,8 @@ def main() -> int:
             "eval_kind": "fsot_prediction",
             "record_kind": "scalar",
             "unit": "km/s/Mpc",
-            "note": "Cepheid-count weighted mixture of anchor + host FSOT H0. Not a ρ retune.",
+            "measured_uncertainty": 1.04,
+            "note": "Cepheid-count weighted mixture of anchor + host FSOT H0. Not a ρ retune. Bar ±1.04 is Riess+2022.",
         },
         {
             "lab": "sh0es_ladder_chain_lab",
@@ -162,7 +164,8 @@ def main() -> int:
             "eval_kind": "fsot_prediction",
             "record_kind": "scalar",
             "unit": "km/s/Mpc",
-            "note": "LMC+NGC4258 count-weighted vs Freedman JWST TRGB (same mild sector).",
+            "measured_uncertainty": math.sqrt(1.22 ** 2 + 1.33 ** 2 + 0.70 ** 2),
+            "note": "LMC+NGC4258 count-weighted vs Freedman JWST TRGB. Bar is 1.22 stat, 1.33 sys, 0.70 SN.",
         },
         {
             "lab": "sh0es_ladder_chain_lab",
@@ -174,6 +177,7 @@ def main() -> int:
             "eval_kind": "fsot_prediction",
             "record_kind": "scalar",
             "unit": "km/s/Mpc",
+            "measured_uncertainty": 0.93,
             "note": (
                 "JWST Perfect Host 73.49±0.93 is the local Cepheid ladder "
                 "(PRED-024 / hosts-only), not PRED-001 70.75."
@@ -189,6 +193,7 @@ def main() -> int:
             "eval_kind": "fsot_prediction",
             "record_kind": "scalar",
             "unit": "km/s/Mpc",
+            "measured_uncertainty": 0.81,
             "note": (
                 "A&A 2026 local distance network 73.50±0.81 is the same "
                 "local-ladder object as Perfect Host, not the bridge."

@@ -52,6 +52,12 @@ except ImportError:  # pragma: no cover
 # Geometric distance moduli (measured, not FSOT).
 MU_LMC = 18.477  # Pietrzyński et al. 2019
 MU_N4258 = 29.398  # Reid et al. 2019 / Riess+2022 §4.7
+# Pietrzyński et al. 2019: ±0.004 stat ± 0.026 sys mag.
+# Reid, Pesce & Riess 2019: 7.576 ± 0.082 stat ± 0.076 sys Mpc.
+_LMC_MU_BAR = math.hypot(0.004, 0.026)
+_N4258_MU_BAR = (5.0 / math.log(10.0)) * math.hypot(0.082, 0.076) / 7.576
+ANCHOR_DELTA_MU_BAR = math.hypot(_LMC_MU_BAR, _N4258_MU_BAR)
+RIPEPI_SLOPE_BAR = 0.01  # Ripepi+2020 W_VI, mag per decade in period
 
 # N4258 nucleus (NED) for crowding split.
 N4258_RA, N4258_DEC = 184.740, 47.304
@@ -310,7 +316,8 @@ def suite_rows(table_path: Path, nir_path: Path | None = None) -> list[dict[str,
             "error_pct": err(slope, SLOPE_RIPEPI_WVI),
             "eval_kind": "fsot_prediction",
             "record_kind": "scalar",
-            "note": "same seed slope vs Ripepi 2020 W_VI",
+            "measured_uncertainty": RIPEPI_SLOPE_BAR,
+            "note": "same seed slope vs Ripepi 2020 W_VI ±0.01",
         },
     ]
     # γ and R match literature *bands* (±0.069 mag/dex, R~1.3–1.5), not 0.5% on the central.
@@ -330,7 +337,8 @@ def suite_rows(table_path: Path, nir_path: Path | None = None) -> list[dict[str,
                     "eval_kind": "fsot_prediction",
                     "record_kind": "scalar",
                     "unit": "mag",
-                    "note": "Δμ_geom + γ_FSOT·Δ[O/H] vs R22 intercepts",
+                    "measured_uncertainty": ANCHOR_DELTA_MU_BAR,
+                    "note": "Δμ_geom + γ_FSOT·Δ[O/H] vs R22 intercepts; bar is Pietrzyński 2019 and Reid 2019",
                     "delta_mu": t["geometric_delta_mu"],
                     "delta_metal": t["delta_metal"],
                 }
@@ -348,6 +356,7 @@ def suite_rows(table_path: Path, nir_path: Path | None = None) -> list[dict[str,
                 "error_pct": err(r_nir, R_NIR_LIT),
                 "eval_kind": "fsot_prediction",
                 "record_kind": "scalar",
+                "measured_display_decimals": 1,
                 "note": "POOF·e·C_eff vs Riess+2022 extinction-law R_H=0.4",
             }
         )
@@ -377,7 +386,8 @@ def suite_rows(table_path: Path, nir_path: Path | None = None) -> list[dict[str,
                     "eval_kind": "fsot_prediction",
                     "record_kind": "scalar",
                     "unit": "mag",
-                    "note": "NIR W_H intercepts: Δμ_geom + γ·ΔZ",
+                    "measured_uncertainty": ANCHOR_DELTA_MU_BAR,
+                    "note": "NIR W_H intercepts: Δμ_geom + γ·ΔZ; bar is Pietrzyński 2019 and Reid 2019",
                 }
             )
         host_rows = host_mu_vs_trgb(nir_hosts) if "N4258" in nir_hosts else []

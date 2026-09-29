@@ -28,6 +28,7 @@ STRUCTURAL_EVAL_KINDS = frozenset(
         "gap_detection",
         "classifier_match",
         "panel_relay",
+        "cross_panel_relay",
         "stability_index",
         "skipped",
         "jpl_physical",
@@ -212,6 +213,11 @@ GAP_FILL_STRUCTURAL_PROPERTIES = frozenset(
 
 def classify_record(r: dict, *, file_name: str = "") -> str:
     """Return record kind: scalar | classifier | structural."""
+    # c = m (1 + |S| ALPHA) is the Ledger B step. It is not a prediction,
+    # even when a builder also stamped record_kind scalar.
+    if str(r.get("eval_kind") or "").lower() == "fsot_correction":
+        return "structural"
+
     explicit = r.get("record_kind")
     if explicit in ("scalar", "classifier", "structural"):
         return str(explicit)
