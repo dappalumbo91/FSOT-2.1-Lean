@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.13 — living gauntlet lock · **2026-09-09**  
+**Edition:** v2.13 — living gauntlet lock · **2026-09-29**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
 **Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · what the numbers mean: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md) · kill-command map: [`docs/EMPIRICAL_CLAIM_EVIDENCE.md`](docs/EMPIRICAL_CLAIM_EVIDENCE.md)  
 **New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Scientist read** → [docs/SCIENTIST_INTERFACE.md](docs/SCIENTIST_INTERFACE.md) · **Concepts** → [docs/CONCEPTS.md](docs/CONCEPTS.md) · **Directory** → [docs/SYSTEM_DIRECTORY.md](docs/SYSTEM_DIRECTORY.md) · **Apply** → [docs/APPLY.md](docs/APPLY.md)
@@ -16,12 +16,12 @@ Do not mix these. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md) · knobs: [`docs/FR
 | Ledger | Verb | Live | Forbidden |
 |--------|------|------|-----------|
 | **A closed-form** | **predict** (no measured in the formula) | `python scripts/predict_closed_form.py --observable T_CMB` then compare | quoting 477/477 as this |
-| **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | **477 / 477** files ≤0.5% pooled · median-of-medians ~0.0066% | calling this ToE accuracy or a first-principles hit |
+| **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | **477 / 477** files ≤0.5% pooled · median-of-medians **0.005537779313588844%** over 414 prediction medians · 0.05% score closed | calling this ToE accuracy or a first-principles hit |
 | **C live integrity** | **check** pin / stream / hash | pin **AEB2AD** match · multiprover `overall_ok` | promoting C into A or B |
 
 Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **AEB2AD** — nest \(D_{\mathrm{eff}}\), derived observed/species, named `_fold_C` unused by \(S\), baryon/DM at Chemistry, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
-> **477** is green *benchmark files*. **~407** is named coverage-map domains. **~403** is atlas CSV rows. **2024** is live atomic obligations. Do not mix them. Ledger: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md).  
+> **477** is green *benchmark files*. **~407** is named coverage-map domains. **~403** is atlas CSV rows. **2030** is live atomic obligations (full formal **2594**, catalog **2205**). Do not mix them. Ledger: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md).  
 > Older prose saying **394/394**, **405/405**, **430/432**, **433/433**, **1,863 atomic**, **57% Mathlib**, or **~1912** obligations is **stale**.
 
 ```bash
@@ -75,8 +75,8 @@ Directional H₀ on Hubble-flow supernovae is a null, not a sector map. See [`do
 | Remaining | Role |
 |-----------|------|
 | **Peer review** (arXiv + journals) | Social/scientific acceptance path |
-| **Independent clean-clone reproduction** | **Shipped for Mathlib close:** cold clone of `main` re-ran campaign + formula authority + green gate — **PASS** ([report](data/fresh_clone_corpus_mathlib_repro_report.md)); generic harness: `pwsh scripts/fresh_clone_repro.ps1` |
-| **Multiprover re-pass after Lean depth wave** | Cross-verify Coq / Isabelle / F* / Rust / SMT / TLA+ / QEMU on tip after full-corpus Mathlib upgrade: `python scripts/run_cross_proof_verification.py` |
+| **Independent clean-clone reproduction** | **PASS** on 2026-09-29: a clone of `95a1113` ran `lake build FSOT` and finished **2206** jobs, pin **AEB2AD** ([report](data/fresh_clone_lean_repro_report.md)). The earlier Mathlib close also **PASS** ([report](data/fresh_clone_corpus_mathlib_repro_report.md)). Harness: `pwsh scripts/fresh_clone_repro.ps1` |
+| **Multiprover re-pass** | **PASS** at 2026-09-29T22:05:48Z, `overall_ok: true`. Coq 49/49, Isabelle 46/46, F* passed, Lean connective passed, Rust replay 2130. QEMU passed. ESP32 was skipped, so eight-way hardware is false. Report: `data/cross_proof_verification_report.json` |
 | **Deeper T3/T4 research** | **Shipped:** GR+SM force package + CKM/PMNS multi-prover (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+) — [docs/GR_SM_CKM_MULTIPROVER.md](docs/GR_SM_CKM_MULTIPROVER.md); uniqueness/QFT phases still open |
 
 We are **not** hiding the ToE claim. We are separating **technical Label B (closed under frozen T1–T6)** from **peer acknowledgment** (open). Domain count and prover count strengthen Label A; they do not redefine Label B.
@@ -88,7 +88,7 @@ We are **not** hiding the ToE claim. We are separating **technical Label B (clos
 | Full Formal Mathlib-class depth | **5248/5248 · 100% · L1=0** | `python scripts/run_mathlib_rederivation_campaign.py` |
 | Campaign | **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** | same |
 | Formula authority (pin · ZERO_FREE · residual · lake · depth) | **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** | `python scripts/run_formula_authority_closure.py` |
-| Clean clone (GitHub tip, no local patches) | **PASS** | [data/fresh_clone_corpus_mathlib_repro_report.md](data/fresh_clone_corpus_mathlib_repro_report.md) |
+| Clean clone (GitHub tip, no local patches) | **PASS** | Lean rebuild [data/fresh_clone_lean_repro_report.md](data/fresh_clone_lean_repro_report.md) · Mathlib path [data/fresh_clone_corpus_mathlib_repro_report.md](data/fresh_clone_corpus_mathlib_repro_report.md) |
 
 Depth tiers are honest: L0 definitional · L2 analytic Mathlib · L3 constructive chains. Pure `norm_num` certificates (L1) were upgraded to L0/L3 **without changing residual law or free parameters** — same statements, stronger proof shape. Docs: [`docs/MATHLIB_REDERIVATION_CAMPAIGN.md`](docs/MATHLIB_REDERIVATION_CAMPAIGN.md).
 
@@ -102,7 +102,7 @@ Depth tiers are honest: L0 definitional · L2 analytic Mathlib · L3 constructiv
 | 4. Mathlib + formula authority | `python scripts/run_mathlib_rederivation_campaign.py` · `python scripts/run_formula_authority_closure.py` |
 | 5. ToE labels | `python scripts/build_toe_gap_closure.py` → `data/toe_gap_closure_report.json` |
 | 6. Cross-proof | `python scripts/run_cross_proof_verification.py` → `overall_ok: true` |
-| 7. Fresh clone | `pwsh scripts/fresh_clone_repro.ps1` · Mathlib path: [clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md) |
+| 7. Fresh clone | `pwsh scripts/fresh_clone_repro.ps1` · Lean rebuild: [data/fresh_clone_lean_repro_report.md](data/fresh_clone_lean_repro_report.md) · Mathlib path: [clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md) |
 
 **Kill criteria:** any green-gate fail after clean clone; Mathlib campaign not closed; formula authority not closed; `overall_ok: false`; prereg PRED violation; free-parameter audit finding.
 
@@ -118,9 +118,9 @@ Math key (scientists): [`docs/FSOT_MATH_KEY.md`](docs/FSOT_MATH_KEY.md) · one-p
 
 ---
 
-## Related embodiments (same pin)
+## Related embodiments
 
-Cosmology and the neural mind are **domain folds of one** scalar engine (pin D1D38A). This repository is the public verification face of the Physical Archive.
+Cosmology and the neural mind are **domain folds of one** scalar engine. This repository is the public verification face of the Physical Archive, live pin **AEB2AD**. The genetics sibling stays on the Paper 03 freeze **D1D38A**.
 
 | Project | Link |
 |---------|------|
@@ -158,12 +158,12 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — π, e, φ, γ, and G (Catalan), **no post-hoc fits**, with \(D_{\mathrm{eff}}\) **derived from the nest** ([`docs/FROZEN_KNOBS.md`](docs/FROZEN_KNOBS.md)).
 
-Ledger **A** predicts from closed forms (`predict_closed_form.py`). Ledger **B** is catalog *correction* \(c=m(1+|S|f)\) — **477/477** files at ≤0.5% pooled, median-of-medians ~0.0066%, **not** a ToE headline. Ledger **C** is pin/stream integrity. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md). Formal corpus Mathlib-class depth **5248/5248** and formula-authority **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**) are Ledger C / formal, not Ledger A. Densify: [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md).
+Ledger **A** predicts from closed forms (`predict_closed_form.py`). Ledger **B** is catalog *correction* \(c=m(1+|S|f)\) — **477/477** files at ≤0.5% pooled, median-of-medians **0.005537779313588844%** over the 414 domains that still have a prediction median. Ledger **C** is pin/stream integrity. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md). Formal corpus Mathlib-class depth **5248/5248** and formula-authority **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** are Ledger C / formal. The live pin is **AEB2AD**. The stored authority file still stamps the earlier close **D1D38A**. Densify: [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md).
 
-Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator + Mathlib depth campaign), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2256** multiprover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
+Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator + Mathlib depth campaign), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2205** multiprover obligations). The 2026-09-29 pass is `overall_ok: true` (Coq 49/49, Isabelle 46/46, Rust replay 2130, QEMU passed). ESP32 was skipped, so the eight-way hardware flag is false.
 
 
-FSOT further demonstrates that the same engine guides grounded engineering readouts: FSOT-designed alternative fuels (366 records, 0.039% pooled median), species-scale molecular catalogs, and black-hole / white-hole information-cycle panels â€” cross-verified against seed-scalar predictions, not post-hoc curve fits.
+FSOT further demonstrates that the same engine guides grounded engineering readouts. The fuel lab (366 records), the machine-and-molecule panel (120), and the black-hole / white-hole cycle (24) store the Ledger B scale step: medians 0.075688%, 0.077084%, and 0.071654%. That median is one number for the whole panel.
 
 This document explains **why the universe exists the way it does** through FSOT: one 25-dimensional fluid medium, one arithmetic heartbeat, observation as physical coupling, and fractal repetition from quanta to cosmos. Every numerical claim in this thesis is independently reproducible from this repository.
 
@@ -274,10 +274,10 @@ This is not poetry layered on curve fits. It is a **falsifiable engineering spec
 
 This work makes five contributions at arXiv preprint standard:
 
-1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across a **~407-name coverage map** and **477 / 477** green residual benchmark files (**181,477** scalar-record envelope), with **no per-observable least-squares tuning**.
-2. **Ledger B catalog residual** — **477/477** files pass a ≤0.5% pooled median *correction* gate; median-of-medians ≈ **0.0066%**. This is not Ledger A and is not a ToE accuracy claim.
+1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across a **~407-name coverage map** and **477 / 477** green residual benchmark files (**183,196** scalar-record envelope), with **no per-observable least-squares tuning**.
+2. **Ledger B catalog residual** — **477/477** files pass a ≤0.5% pooled median *correction* gate; median-of-medians **0.005537779313588844%** over 414 prediction medians. The tighter 0.05% score is closed, with 0 failing. This is not Ledger A and is not a ToE accuracy claim.
 3. **Ledger A contested-sector closed forms** — H₀, σ₈, BBN, hierarchy, dark-energy proxies are emitted with `predict_closed_form.py` / seed expressions, then compared. Do not quote the 477-file gate as those numbers.
-4. **Five-prover formal triangulation** — **2024** atomic obligations (full formal **2587**) exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` — proof assistants as scientific instruments, not software-only checks.
+4. **Five-prover formal triangulation** — **2030** atomic obligations (full formal **2594**) exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` — proof assistants as scientific instruments, not software-only checks.
 5. **Executable falsification registry** â€” Preregistered predictions **PRED-001–084**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
 
 Seed-to-formula derivations with worked examples: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md).
@@ -304,7 +304,7 @@ String/M-theory, loop quantum gravity, and emergent-gravity programs pursue unif
 
 ### Formal methods in science
 
-Proof assistants (Lean, Coq, Isabelle) are standard in software verification; their use as **scientific instruments** for physics claims remains rare. FSOT exports **2024 atomic obligations** (full formal **2587**) to five independent proof frameworks with `overall_ok: true` (§V.2) — positioning this repository as a **reproducible proof artifact**, not a prose-only preprint.
+Proof assistants (Lean, Coq, Isabelle) are standard in software verification; their use as **scientific instruments** for physics claims remains rare. FSOT exports **2030 atomic obligations** (full formal **2594**) to five independent proof frameworks with `overall_ok: true` (§V.2) — positioning this repository as a **reproducible proof artifact**, not a prose-only preprint.
 
 ### What FSOT adds relative to prior art
 
@@ -514,7 +514,7 @@ Deep dive: [`docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`](docs/FSOT_PHILOSO
 | F* | Programming-language specification | PASS |
 | Rust | Executable obligation replay | PASS |
 
-Authoritative artifact: `data/cross_proof_verification_report.json` → **`overall_ok: true`**, **2024 atomic obligations** (full formal **2587**).
+Authoritative artifact: `data/cross_proof_verification_report.json` → **`overall_ok: true`** at 2026-09-29T22:05:48Z, **2030 atomic obligations** (full formal **2594**). A separate clone of that commit built the Lean library: **2206** jobs, exit 0 ([report](data/fresh_clone_lean_repro_report.md)).
 
 ![Verification spine walkthrough](data/figures/spine_walkthrough.png)
 
@@ -523,7 +523,7 @@ Authoritative artifact: `data/cross_proof_verification_report.json` → **`overa
 
 ![Five-prover obligation map](data/figures/obligation_map_five_provers.png)
 
-*Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F* → Rust executable replay of **2024** atomic obligations. Authoritative report: `data/cross_proof_verification_report.json`.*
+*Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F* → Rust executable replay of **2030** atomic obligations. Authoritative report: `data/cross_proof_verification_report.json`.*
 <!-- README_OBLIGATION_MAP_END -->
 
 ### 5.2.2 Lean Mathlib re-derivation campaign
@@ -599,12 +599,14 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 | Empirical records (panel sum) | **~2.19M** |
 | MPCORB catalog objects | **1,554,101** (~0.023% residual) |
 | Benchmark files green (≤0.5%) | **477/477** |
-| Median-of-medians residual | **~0.0066%** (live status) |
-| Worst domain max scalar error | **0.4989%** |
-| Catalog multiprover obligations | **2256** |
+| Median-of-medians residual | **0.005537779313588844%** (414 prediction medians) |
+| Worst domain max scalar error | **0.441042%** (Zebrafish predictive panel) |
+| Tighter 0.05% score | **closed, 0 failing** |
+| Catalog multiprover obligations | **2205** |
 | Lean formal modules | **562** |
 | Lean Mathlib depth (full Formal) | **5248/5248 (100%)** |
-| Formula authority | **CLOSED** (pin D1D38A · ZERO_FREE) |
+| Formula authority | **CLOSED** · ZERO_FREE · live pin **AEB2AD** (stored stamp D1D38A) |
+| Clean-clone Lean rebuild | **PASS** (2206 jobs, `95a1113`) |
 | Clean-clone Mathlib path | **PASS** |
 | Tier A_strong (status) | **117** |
 | Tier B_verified (status) | **338** |
@@ -761,22 +763,22 @@ Seven novel molecular states plus gasoline baseline:
 - fsot_hemp_waste_grounded, fsot_hemp_waste_advanced, fsot_algae_oil_biodiesel  
 - fsot_mushroom_spore_fuel, fsot_green_hydrogen, fsot_optimax, fsot_bio_spark  
 
-| Panel | Records | Pooled median % |
+| Panel | Records | Stored median % |
 |-------|--------:|----------------:|
-| Fuel Lab | 366 | 0.039 |
+| Fuel Lab | 366 | 0.075688 |
 
-Cross-referenced with grounded thermochemistry and Prius engine simulator outputs. Preregistered: **PRED-034**.
+The stored median is the Ledger B scale step for the panel. Preregistered: **PRED-034**.
 
 ![Verified desktop fuels](data/figures/verified_desktop_fuels.png)
 
 ### 8.2 Machine, molecule, and horizon cycle
 
-| Panel | Records | Pooled median % |
+| Panel | Records | Stored median % |
 |-------|--------:|----------------:|
-| Machine & Molecule | 120 | 0.013 |
-| Black-hole / white-hole cycle | 24 | 0.026 |
+| Machine & Molecule | 120 | 0.077084 |
+| Black-hole / white-hole cycle | 24 | 0.071654 |
 
-Species-scale molecular catalogs and information-cycle panels at the black-hole horizon â€” seed-scalar predictions cross-checked against simulator outputs, not post-hoc fits.
+Species-scale molecular catalogs and information-cycle panels at the black-hole horizon. These stored medians are the same Ledger B scale step, one number for each panel.
 
 ```bash
 python scripts/reproduce_domain_panel.py --panel Machine_And_Molecule_Live_Panel --deep
