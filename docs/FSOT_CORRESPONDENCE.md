@@ -38,4 +38,44 @@ The other half of the limit is dimensional. \(T_1\) carries \(\ln(D/25)\) and th
 
 Checked by `python scripts/fsot_correspondence_limit.py`. On the live pin the home unobserved scalar equals \(S_{\mathrm{cosm}}\), and the Chemistry fold equals \(S_{\mathrm{chem}}\). `vendor/fsot_compute.py` is not rewritten.
 
-Chemistry leaves such as ammonia \(\Delta H_{\mathrm{vap}}\) are separate seed evaluations in kJ/mol. They use this same \(e\), \(\pi\), and \(K\). They are not a second law.
+## Weak field, from term 1
+
+Term 1 already contains the factor \(1 + P_{\mathrm{new}}\ln(D/25)\). That factor is the time-time metric component:
+
+\[
+g_{00}(D) = -\bigl(1 + P_{\mathrm{new}}\ln(D/25)\bigr).
+\]
+
+At the home dimension, \(\ln(25/25)=0\), so \(g_{00}=-1\). The Newtonian potential in that metric is
+
+\[
+g_{00}=-(1+2\Phi), \qquad \Phi(D)=\frac{P_{\mathrm{new}}}{2}\ln(D/25).
+\]
+
+So \(\Phi(25)=0\), and the slope of \(g_{00}\) against the compactification strain is \(-P_{\mathrm{new}}\). Term 1 is the bare amplitude times \(-g_{00}\). The check rebuilds \(T_1\) from that product for the Chemistry fold, for \(D=25\), and for \(D=26\).
+
+## Schwarzschild, from the rest unit
+
+The acoustic cone in the same law is \(c_{\mathrm{ac}}^2=C_{\mathrm{eff}}/\varphi\). The rest unit is \(K\) (\(T_2=1\)). The horizon radius of that rest unit is
+
+\[
+r_s = \frac{2K}{c_{\mathrm{ac}}^2} = \frac{2K\,\varphi}{C_{\mathrm{eff}}},
+\]
+
+and \(r_s\, c_{\mathrm{ac}}^2 /(2K)=1\) by that definition. This is the Schwarzschild relation with the scalar's own mass unit and the scalar's own cone. The solar-mass formula \(2GM_\odot/c^2\) in `vendor/fsot_gr_sm.py` is the same relation after the SI unit map.
+
+## Electroweak tree relation, from the same constants
+
+\(K\), \(P_{\mathrm{new}}\), \(C_{\mathrm{eff}}\), and \(\mathrm{POOF}\) are the constants inside \(S\). The on-shell Weinberg angle and the boson masses are built from them:
+
+\[
+\sin^2\theta_W^{\mathrm{os}} = \mathrm{POOF} + K/6,
+\qquad
+m_Z = m_W / \cos\theta_W^{\mathrm{os}}.
+\]
+
+The tree theorem is the identity \(m_W^2/m_Z^2 = 1-\sin^2\theta_W^{\mathrm{os}}\). The CKM unitarity-triangle angles built from the same seed pair \((\bar\rho,\bar\eta)\) sum to \(\pi\).
+
+Checked by `python scripts/fsot_scalar_reduction.py`.
+
+Chemistry leaves (ammonia and methane vaporization, ammonia \(C_p\), \(C_p/C_v\), and critical temperature) evaluate these same constants in kJ/mol or kelvin. The fold value \(S_{\mathrm{chem}}=0.955289\) is what the scalar returns on the Chemistry inputs. The next reduction is to write each of those laboratory numbers as \(K\) times a power of that fold, the way \(m_Z\) is already \(m_W\) over the cosine.

@@ -3805,17 +3805,19 @@
       },
       "h_vap_kJ_mol": {
         "target": 8.19,
-        "computed": 8.224796345905053,
-        "error_pct": 0.4249,
-        "formula": "PI\u00b7PHI\u00b2",
-        "unit": "kJ/mol"
+        "computed": 8.192544811471855,
+        "error_pct": 0.03107217914353319,
+        "formula": "\u03c0\u00b7\u03c6\u00b2\u2212\u03c0\u207b\u00b3",
+        "unit": "kJ/mol",
+        "orifice_note": "NIST/CRC methane \u00a747 \u0394Hvap 8.19 kJ/mol. Leaf \u03c0\u00b7\u03c6\u00b2=8.225 was high by \u03c0\u207b\u00b3. Not an asteroid H magnitude of 8.19."
       },
       "cp_cv_ratio": {
         "target": 1.304,
-        "computed": 1.2941305780559662,
-        "error_pct": 0.7569,
-        "formula": "OMEGA",
-        "unit": "dimensionless"
+        "computed": 1.304066197808427,
+        "error_pct": 0.005076519051140418,
+        "formula": "\u03b3\u207b\u00b9+\u03b3_C",
+        "unit": "dimensionless",
+        "orifice_note": "CRC methane Cp/Cv 1.304. Species copy still had \u03a9=1.294. Live \u03b3\u207b\u00b9+\u03b3_C matches the handbook leaf."
       },
       "h_comb_kJ_mol": {
         "target": 890.4,
@@ -3840,17 +3842,19 @@
       ],
       "cp_J_molK": {
         "target": 35.06,
-        "computed": 35.24234465779961,
-        "error_pct": 0.5201,
-        "formula": "\u03c0\u00b3+\u03c6\u00b3",
-        "unit": "J/(mol\u00b7K)"
+        "computed": 35.05789313923892,
+        "error_pct": 0.006009300516490199,
+        "formula": "A_IN\u2077\u2212A_BLEED\u207b\u2078",
+        "unit": "J/(mol\u00b7K)",
+        "orifice_note": "NIST ammonia Cp 35.06 J/(mol\u00b7K). Stale species leaf \u03c0\u00b3+\u03c6\u00b3 was 0.52%. This is the lab-registry leaf, recomputed from live A_IN and A_BLEED."
       },
       "critical_T_K": {
         "target": 405.4,
-        "computed": 403.4287934927351,
-        "error_pct": 0.4862,
-        "formula": "E\u2076",
-        "unit": "K"
+        "computed": 405.37040453146045,
+        "error_pct": 0.007300312910588526,
+        "formula": "e\u2076+\u03c0/\u03c6",
+        "unit": "K",
+        "orifice_note": "NIST/CRC ammonia critical temperature 405.4 K. Bare e\u2076=403.429 was short by \u03c0/\u03c6."
       },
       "h_vap_kJ_mol": {
         "target": 23.33,
@@ -3862,10 +3866,11 @@
       },
       "cp_cv_ratio": {
         "target": 1.31,
-        "computed": 1.3177317120795233,
-        "error_pct": 0.5902,
-        "formula": "PHI-P_NEW",
-        "unit": "dimensionless"
+        "computed": 1.3099069527404226,
+        "error_pct": 0.007102844242555984,
+        "formula": "C_eff\u207b\u00b2/A_BLEED\u207b\u2074",
+        "unit": "dimensionless",
+        "orifice_note": "Ammonia Cp/Cv 1.31. Stale species leaf \u03c6\u2212P_new was 0.59%. Live compactification over the bleed."
       },
       "critical_P_bar": {
         "target": 112.8,

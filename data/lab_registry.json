@@ -8104,9 +8104,9 @@
         "species_id": "CH4",
         "property": "h_vap_kJ_mol",
         "target": 8.19,
-        "computed": 8.224796345905053,
-        "error_pct": 0.4249,
-        "formula": "PI\u00b7PHI\u00b2",
+        "computed": 8.192544811471855,
+        "error_pct": 0.03107217914353319,
+        "formula": "\u03c0\u00b7\u03c6\u00b2\u2212\u03c0\u207b\u00b3",
         "unit": "kJ/mol"
       },
       {
@@ -8144,9 +8144,9 @@
         "species_id": "NH3",
         "property": "cp_J_molK",
         "target": 35.06,
-        "computed": 35.05789313923886,
-        "error_pct": 0.006009300516672597,
-        "formula": "A_IN\u2077-A_BL\u207b\u2078",
+        "computed": 35.05789313923892,
+        "error_pct": 0.006009300516490199,
+        "formula": "A_IN\u2077\u2212A_BLEED\u207b\u2078",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -8154,9 +8154,9 @@
         "species_id": "NH3",
         "property": "critical_T_K",
         "target": 405.4,
-        "computed": 403.4287934927351,
-        "error_pct": 0.4862,
-        "formula": "E\u2076",
+        "computed": 405.37040453146045,
+        "error_pct": 0.007300312910588526,
+        "formula": "e\u2076+\u03c0/\u03c6",
         "unit": "K"
       },
       {
@@ -8174,9 +8174,9 @@
         "species_id": "NH3",
         "property": "cp_cv_ratio",
         "target": 1.31,
-        "computed": 1.3100322937740994,
-        "error_pct": 0.002465173595366506,
-        "formula": "C_EFF\u207b\u00b2/A_BLEED\u207b\u2074",
+        "computed": 1.3099069527404226,
+        "error_pct": 0.007102844242555984,
+        "formula": "C_eff\u207b\u00b2/A_BLEED\u207b\u2074",
         "unit": "dimensionless"
       },
       {

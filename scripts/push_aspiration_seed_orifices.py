@@ -50,6 +50,10 @@ R2CH2 = float(m.OMEGA) + (K ** 6)
 BE9_EA = (PHI ** 4 - K) + (K ** 4)
 DMSO_N = (PHI - float(m.POOF) + float(m.B_IN) / 100.0) + (E ** -5)
 NH3_HVAP = (E ** 3 + PI) + (PI ** -2)
+CH4_HVAP = (PI * PHI ** 2) - (PI ** -3)
+NH3_TC = (E ** 6) + (PI / PHI)
+NH3_CP = (float(m.A_IN) ** 7) - (float(m.A_BLEED) ** -8)
+NH3_GAMMA = (C_EFF ** -2) / (float(m.A_BLEED) ** -4)
 TA_AT = -(K + (float(m.PSI_CON) ** 4))
 
 SPECS = {
@@ -215,6 +219,30 @@ SPECS = {
         "formula": "e³+π+π⁻²",
         "note": "NIST/CRC ammonia §47 ΔHvap 23.33 kJ/mol. Leaf e³+π=23.227 was short by π⁻². π⁻¹ overshoots and π⁻³ is too small. Not the 23.338 eV row.",
     },
+    "CH4_hvap": {
+        "computed": CH4_HVAP,
+        "measured": 8.19,
+        "formula": "π·φ²−π⁻³",
+        "note": "NIST/CRC methane §47 ΔHvap 8.19 kJ/mol. Leaf π·φ²=8.225 was high by π⁻³. Not an asteroid H magnitude of 8.19.",
+    },
+    "NH3_tc": {
+        "computed": NH3_TC,
+        "measured": 405.4,
+        "formula": "e⁶+π/φ",
+        "note": "NIST/CRC ammonia critical temperature 405.4 K. Bare e⁶=403.429 was short by π/φ.",
+    },
+    "NH3_cp": {
+        "computed": NH3_CP,
+        "measured": 35.06,
+        "formula": "A_IN⁷−A_BLEED⁻⁸",
+        "note": "NIST ammonia Cp 35.06 J/(mol·K). Stale species leaf π³+φ³ was 0.52%. This is the lab-registry leaf, recomputed from live A_IN and A_BLEED.",
+    },
+    "NH3_gamma": {
+        "computed": NH3_GAMMA,
+        "measured": 1.31,
+        "formula": "C_eff⁻²/A_BLEED⁻⁴",
+        "note": "Ammonia Cp/Cv 1.31. Stale species leaf φ−P_new was 0.59%. Live compactification over the bleed.",
+    },
     "TA_AT": {
         "computed": TA_AT,
         "measured": -0.58,
@@ -230,10 +258,12 @@ def _err(computed: float, measured: float) -> float:
 
 def _touch(rec: dict, computed: float, measured: float, formula: str) -> None:
     err = _err(computed, measured)
-    rec["computed"] = computed
+    if "computed" in rec or ("computed_value" not in rec and "Value" not in rec):
+        rec["computed"] = computed
     if "computed_value" in rec:
         rec["computed_value"] = computed
-    rec["error_pct"] = err
+    if "error_pct" in rec or "Error" not in rec:
+        rec["error_pct"] = err
     if "fsot_formula" in rec:
         rec["fsot_formula"] = formula
     if "formula" in rec:
@@ -275,6 +305,58 @@ def _is_ta_at(rec: dict) -> bool:
     )
     low = blob.lower().replace(" ", "")
     return ("stacking" in blob.lower()) and ("-gamma" in low)
+
+
+def _is_ch4_hvap(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident not in {"CH4", "CH₄"}:
+        return False
+    if not _target_is(rec, 8.19):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    ).lower()
+    return ("vap" in blob) or ("§47" in blob)
+
+
+def _is_nh3_tc(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident not in {"NH3", "NH₃"}:
+        return False
+    if not _target_is(rec, 405.4):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "section_display_name", "unit", "Target_Unit")
+    ).lower()
+    return ("critical" in blob) or ("t_k" in blob) or ("temperature" in blob)
+
+
+def _is_nh3_cp(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident not in {"NH3", "NH₃"}:
+        return False
+    if not _target_is(rec, 35.06):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "unit", "Target_Unit")
+    ).lower()
+    return ("cp" in blob) or ("heat" in blob) or ("j/" in blob) or ("j·" in blob)
+
+
+def _is_nh3_gamma(rec: dict) -> bool:
+    ident = str(rec.get("name") or rec.get("Symbol") or rec.get("species_id") or "")
+    if ident not in {"NH3", "NH₃"}:
+        return False
+    if not _target_is(rec, 1.31):
+        return False
+    blob = " ".join(
+        str(rec.get(k) or "")
+        for k in ("property", "Type", "section", "unit", "Target_Unit")
+    ).lower()
+    return ("ratio" in blob) or ("cp_cv" in blob) or ("gamma" in blob) or ("dimensionless" in blob)
 
 
 def _is_nh3_hvap(rec: dict) -> bool:
@@ -760,6 +842,22 @@ def walk(node) -> int:
             spec = SPECS["NH3_hvap"]
             _touch(node, spec["computed"], spec["measured"], spec["formula"])
             n += 1
+        elif _is_ch4_hvap(node):
+            spec = SPECS["CH4_hvap"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_nh3_tc(node):
+            spec = SPECS["NH3_tc"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_nh3_cp(node):
+            spec = SPECS["NH3_cp"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
+        elif _is_nh3_gamma(node):
+            spec = SPECS["NH3_gamma"]
+            _touch(node, spec["computed"], spec["measured"], spec["formula"])
+            n += 1
         nd = node.get("refractive_index")
         if isinstance(nd, dict) and _target_is(nd, 1.479):
             spec = SPECS["DMSO_n"]
@@ -874,6 +972,14 @@ def patch_species_hg(path: Path) -> None:
         raise SystemExit(f"polyisoprene glass_Tg not found in {path}")
     if not _patch_species_prop(doc, "NH3", "h_vap_kJ_mol", "NH3_hvap"):
         raise SystemExit(f"NH3 h_vap not found in {path}")
+    if not _patch_species_prop(doc, "CH4", "h_vap_kJ_mol", "CH4_hvap"):
+        raise SystemExit(f"CH4 h_vap not found in {path}")
+    if not _patch_species_prop(doc, "NH3", "critical_T_K", "NH3_tc"):
+        raise SystemExit(f"NH3 critical_T not found in {path}")
+    if not _patch_species_prop(doc, "NH3", "cp_J_molK", "NH3_cp"):
+        raise SystemExit(f"NH3 cp not found in {path}")
+    if not _patch_species_prop(doc, "NH3", "cp_cv_ratio", "NH3_gamma"):
+        raise SystemExit(f"NH3 cp/cv not found in {path}")
     path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 
 
@@ -907,7 +1013,10 @@ def main() -> int:
         doc = json.loads(original)
         n = walk(doc)
         if n:
-            path.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
+            new = json.dumps(doc, indent=2)
+            if new != original.rstrip("\n"):
+                ending = "\n" if original.endswith("\n") else ""
+                path.write_text(new + ending, encoding="utf-8")
         print(f"{path.name}: updated {n}")
     patch_species_hg(ROOT / "vendor/species/fsot_species_catalog.json")
     print("species Hg sound patched")

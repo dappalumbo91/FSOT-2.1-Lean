@@ -8334,9 +8334,9 @@
       "target_value": 405.4,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "E\u2076",
-      "computed_value": 403.4287934927351,
-      "error_pct": 0.486237,
+      "fsot_formula": "e\u2076+\u03c0/\u03c6",
+      "computed_value": 405.37040453146045,
+      "error_pct": 0.007300312910588526,
       "matched": true
     },
     {
@@ -8539,9 +8539,9 @@
       "target_value": 8.19,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "PI\u00b7PHI\u00b2",
-      "computed_value": 8.224796345905053,
-      "error_pct": 0.424864,
+      "fsot_formula": "\u03c0\u00b7\u03c6\u00b2\u2212\u03c0\u207b\u00b3",
+      "computed_value": 8.192544811471855,
+      "error_pct": 0.03107217914353319,
       "matched": true
     },
     {
@@ -14716,9 +14716,9 @@
       "target_value": 1.31,
       "unit": "dimensionless",
       "source": "Lide, CRC (2008)",
-      "fsot_formula": "C_EFF\u207b\u00b2/A_BLEED\u207b\u2074",
-      "computed_value": 1.3100322937740994,
-      "error_pct": 0.002465173595366506,
+      "fsot_formula": "C_eff\u207b\u00b2/A_BLEED\u207b\u2074",
+      "computed_value": 1.3099069527404226,
+      "error_pct": 0.007102844242555984,
       "matched": true
     },
     {

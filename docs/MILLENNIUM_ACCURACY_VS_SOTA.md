@@ -1,6 +1,6 @@
 # Millennium functions — accuracy vs public SOTA
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-22T13:27:34.924461+00:00`
+**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `2026-09-29T12:11:42.203745+00:00`
 
 Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.
 They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.
