@@ -86,6 +86,14 @@ _NEUTRON_RATIO = 1.0 + float(F.E) * (float(F.POOF) * float(F.SUCTION)) ** 2 - (
 )
 M_N = M_P * _NEUTRON_RATIO
 M_N_FORMULA = "m_p*(1 + e*(POOF*SUCTION)^2 - B_in/(P_new*e^13))"
+_G_EXPONENT = (
+    float(F.E) ** 2 * float(F.PHI) ** 3 / math.log(2.0) ** 3
+    + float(F.PHI) * float(F.OMEGA) / (float(F.GAMMA) ** 2 * math.log(2.0))
+)
+G_NEWTON = H * C / (2.0 * math.pi * M_E**2) * math.exp(-_G_EXPONENT)
+G_FORMULA_NEWTON = (
+    "h*c/(2*pi*m_e^2) * exp(-(e^2*phi^3/ln2^3 + phi*omega/(gamma^2*ln2)))"
+)
 MU0 = 2.0 * ALPHA * H / (E_CHARGE ** 2 * C)
 EPS0 = 1.0 / (MU0 * C * C)
 Z0 = MU0 * C
@@ -97,7 +105,6 @@ UNCOMPUTED = {
     "m_mu_kg",
     "u_kg",
     "g_p",
-    "G_SI",
     "m_C12_kg_per_mol",
 }
 
@@ -156,6 +163,13 @@ def main() -> int:
         "mu0": (MU0, "2*alpha*h/(e^2*c) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "eps0": (EPS0, "1/(mu0*c^2) with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
         "Z0": (Z0, "mu0*c with the alpha leaf", "derived_from_alpha", ALPHA_BAR_PPM, alpha_rule),
+        "G_SI": (
+            G_NEWTON,
+            G_FORMULA_NEWTON,
+            "codata_measured",
+            22.474,
+            "CODATA 2022 Newtonian constant 6.67430e-11(15), relative 2.2e-5",
+        ),
         "m_n_kg": (
             M_N,
             M_N_FORMULA,
@@ -333,6 +347,16 @@ def main() -> int:
         "alpha^2*(1 + psi_con/e^3). Six is the whole number in "
         "ratio/pi^5. The ratio is inside its own 1.7e-11 bar, on the "
         "low side, and the kilogram mass follows the electron mass."
+    )
+    g_row_newton = next(row for row in doc["material_records"] if row.get("property") == "G_SI")
+    attest["newton_g_leaf"] = G_FORMULA_NEWTON
+    attest["newton_g_signed_ppm"] = g_row_newton["signed_error_ppm"]
+    attest["newton_g_meets_bar"] = g_row_newton["meets_field_bar"]
+    attest["newton_g_bar_ppm"] = 22.474
+    attest["newton_g_note"] = (
+        "G is hbar*c/m_e^2 times a pure number near 1.75e-45. The logarithm "
+        "of that number is e^2*phi^3/ln2^3 plus phi*omega/(gamma^2*ln2). "
+        "gamma is Euler's constant. The result is inside the (15), high."
     )
     attest["stamp_removed_from_measured_rows"] = True
     attest["measured_leaf_median_error_pct"] = mid

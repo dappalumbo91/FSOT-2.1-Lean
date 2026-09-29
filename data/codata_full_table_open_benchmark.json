@@ -16,9 +16,9 @@
   "observable_count": 38,
   "scalar_record_count": 38,
   "scalar_gate_applicable": true,
-  "median_error_pct": 8.49942532083543e-09,
-  "pooled_median_error_pct": 8.49942532083543e-09,
-  "headline_median_error_pct": 8.49942532083543e-09,
+  "median_error_pct": 1.4007082866919938e-08,
+  "pooled_median_error_pct": 1.4007082866919938e-08,
+  "headline_median_error_pct": 1.4007082866919938e-08,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -523,9 +523,9 @@
       "lab": "codata_full_lab",
       "property": "G_SI",
       "name": "Newtonian_constant_of_gravitation",
-      "computed": null,
+      "computed": 6.674308550628331e-11,
       "measured": 6.6743e-11,
-      "error_pct": null,
+      "error_pct": 0.0001281127358921839,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
@@ -533,17 +533,20 @@
       "accepted_reference": 6.6743e-11,
       "live_parse": 6.6743e-11,
       "parse_vs_accepted_pct": 0.0,
-      "math": "no_leaf",
+      "math": "h*c/(2*pi*m_e^2) * exp(-(e^2*phi^3/ln2^3 + phi*omega/(gamma^2*ln2)))",
       "auth": "none",
-      "accuracy_class": "uncomputed_stamp",
+      "accuracy_class": "codata_measured",
       "field_bar": {
-        "value": null,
+        "value": 22.474,
         "unit": "ppm",
-        "rule": "no leaf yet; judge against that constant's own CODATA uncertainty when one exists"
+        "rule": "CODATA 2022 Newtonian constant 6.67430e-11(15), relative 2.2e-5"
       },
-      "value_computed": false,
-      "comparison_can_fail": false,
-      "meets_field_bar": false
+      "value_computed": true,
+      "comparison_can_fail": true,
+      "meets_field_bar": true,
+      "signed_error_ppm": 1.281127358921839,
+      "leaf": "h*c/(2*pi*m_e^2) * exp(-(e^2*phi^3/ln2^3 + phi*omega/(gamma^2*ln2)))",
+      "sigmas_above_bar": 0.05700486601948203
     },
     {
       "lab": "codata_full_lab",
@@ -1138,8 +1141,8 @@
     "alpha_leaf": "e^3*phi^4 - psi_con - (POOF*SUCTION)^2*(C_factor^2/P_base)",
     "alpha_inv_ppm": 8.068794682784906e-05,
     "stamp_removed_from_measured_rows": true,
-    "measured_leaf_median_error_pct": 8.49942532083543e-09,
-    "measured_leaf_count": 17,
+    "measured_leaf_median_error_pct": 1.4007082866919938e-08,
+    "measured_leaf_count": 18,
     "alpha_leaf_ppm": 8.068794682784906e-05,
     "alpha_bar_ppm": 0.00015,
     "alpha_sigmas_above_bar": 0.5379196455189937,
@@ -1176,6 +1179,11 @@
     "neutron_mass_meets_bar": true,
     "neutron_mass_bar_ppm": 0.00051,
     "neutron_ratio": 1.001378419487114,
-    "neutron_mass_note": "The neutron-proton ratio is 1 plus e*(POOF*SUCTION)^2 minus B_in/(P_new*e^13). The excess is a hair high of its own bar. The kilogram follows the proton mass and stays low, inside the (85)."
+    "neutron_mass_note": "The neutron-proton ratio is 1 plus e*(POOF*SUCTION)^2 minus B_in/(P_new*e^13). The excess is a hair high of its own bar. The kilogram follows the proton mass and stays low, inside the (85).",
+    "newton_g_leaf": "h*c/(2*pi*m_e^2) * exp(-(e^2*phi^3/ln2^3 + phi*omega/(gamma^2*ln2)))",
+    "newton_g_signed_ppm": 1.281127358921839,
+    "newton_g_meets_bar": true,
+    "newton_g_bar_ppm": 22.474,
+    "newton_g_note": "G is hbar*c/m_e^2 times a pure number near 1.75e-45. The logarithm of that number is e^2*phi^3/ln2^3 plus phi*omega/(gamma^2*ln2). gamma is Euler's constant. The result is inside the (15), high."
   }
 }
