@@ -18,9 +18,9 @@
   "observable_count": 27,
   "scalar_record_count": 27,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0017329687645284413,
-  "pooled_median_error_pct": 0.0017329687645284413,
-  "headline_median_error_pct": 0.0017329687645284413,
+  "median_error_pct": 0.0008775832239925928,
+  "pooled_median_error_pct": 0.0008775832239925928,
+  "headline_median_error_pct": 0.0008775832239925928,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -133,11 +133,11 @@
       "lab": "pdg_particle",
       "property": "\u00a766 Particle Masses",
       "name": "pion_pm",
-      "computed": 139.56693362840684,
-      "measured": 139.57,
-      "error_pct": 0.002197,
+      "computed": 139.57034107031816,
+      "measured": 139.57039,
+      "error_pct": 3.505735123235807e-05,
       "unit": "MeV",
-      "fsot_formula": "THETA\u207b\u2074-THETA\u00b2",
+      "fsot_formula": "THETA_S^-4 - THETA_S^2 + alpha/(pi-1)",
       "reference": "PDG 2024 / Zyla et al.",
       "source_corpus": "FSOT_SMILES_Lab_Dataset"
     },
