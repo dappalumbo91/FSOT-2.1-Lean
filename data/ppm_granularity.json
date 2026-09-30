@@ -6,13 +6,13 @@
   "within_ppm": {
     "1": 27222,
     "10": 27851,
-    "100": 33221,
-    "500": 182363,
-    "1000": 185012,
+    "100": 33222,
+    "500": 182364,
+    "1000": 185013,
     "5000": 185642
   },
-  "table_limited": 53325,
-  "outside_quoted_digit": 132317,
+  "table_limited": 53326,
+  "outside_quoted_digit": 132316,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -229,18 +229,18 @@
       "file": "geochemistry_benchmark.json",
       "scalar_count": 153,
       "median_ppm": 65.54162171987832,
-      "max_ppm": 4229.35,
-      "table_limited": 112,
+      "max_ppm": 4063.01,
+      "table_limited": 113,
       "within_1_ppm": 29,
       "within_10_ppm": 41,
-      "within_100_ppm": 85,
-      "within_500_ppm": 113,
+      "within_100_ppm": 86,
+      "within_500_ppm": 114,
       "worst": {
-        "name": "Ca",
-        "property": "\u00a726 Polarizability",
-        "error_ppm": 4229.35,
-        "measured": 22.8,
-        "inside_quoted_digit": false
+        "name": "He",
+        "property": "\u00a725 vdW Radii",
+        "error_ppm": 4063.01,
+        "measured": 1.4,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -8238,15 +8238,6 @@
       "measured": 73.49,
       "error_ppm": 4244.34,
       "half_digit_ppm": 6.8036467546605e-11
-    },
-    {
-      "domain": "geochemistry_benchmark",
-      "file": "geochemistry_benchmark.json",
-      "name": "Ca",
-      "property": "\u00a726 Polarizability",
-      "measured": 22.8,
-      "error_ppm": 4229.35,
-      "half_digit_ppm": 2192.9824561403507
     },
     {
       "domain": "materials_engineering_benchmark",

@@ -13,7 +13,9 @@ and phi. Those are different dressings. The bare sum stays.
 
 The deuteron moment, the printed water angle, and Asp pKR are printed
 the same way. Asp's alpha window holds gamma on the low side of 3.65.
-The leaf is (e+G)*(1+alpha*gamma). This script only prints.
+The leaf is (e+G)*(1+alpha*gamma). Calcium polarizability is the same
+reading: (e^3+phi^2)*(1+alpha*gamma), gamma on the low side of 22.8.
+This script only prints.
 """
 from __future__ import annotations
 
@@ -60,6 +62,10 @@ ANGLE_WAVE = mpf("0.1")
 # Printed Asp side-chain pKR. Half of the last place on 3.65 is 0.005.
 ASP = mpf("3.65")
 ASP_HALF = mpf("0.005")
+
+# Printed calcium polarizability, angstrom^3. Half of the last place on 22.8 is 0.05.
+CA = mpf("22.8")
+CA_HALF = mpf("0.05")
 
 
 def alpha():
@@ -220,6 +226,15 @@ def main() -> int:
     leaf = asp * (1 + a * F.GAMMA)
     print("asp_leaf_formula=(e+G)*(1+alpha*gamma)")
     report("asp_leaf", leaf, ASP, ASP_HALF)
+    ca = F.E**3 + F.PHI**2
+    report("ca_polarizability_half_digit", ca, CA, CA_HALF)
+    quotient_window("ca", ca, CA, CA_HALF, a, "alpha")
+    quotient_window("ca", ca, CA, CA_HALF, a2, "alpha2")
+    quotient_window("ca", ca, CA, CA_HALF, yy, "yy")
+    # The adopted alpha quotient for calcium is Euler's gamma, on the low side.
+    ca_leaf = ca * (1 + a * F.GAMMA)
+    print("ca_leaf_formula=(e^3+phi^2)*(1+alpha*gamma)")
+    report("ca_leaf", ca_leaf, CA, CA_HALF)
     return 0
 
 
