@@ -37,7 +37,10 @@ high of 411. Gamma is the nearest named seed and finishes low.
 No named seed in that window stays high. Water's molar
 magnetic susceptibility is (-PI^2-PI)*(1-alpha*gamma). The bare
 sum is low of -12.96. Gamma is the only named seed and finishes
-high. No named seed in that window stays low. This script
+high. No named seed in that window stays low. Sulfuric acid's
+second pKa is (G^-4+GAMMA)*(1-alpha*gamma*psi_con^2). The bare
+sum is high of 1.99. Gamma, 1/phi, and psi_con finish low.
+gamma*psi_con^2 stays high. This script
 only prints.
 """
 from __future__ import annotations
@@ -122,6 +125,10 @@ W_YOUNG_HALF = mpf("0.5")
 # Printed water molar susceptibility, 10^-6 cm^3/mol (CRC Handbook / Selwood). Half of 0.01 is 0.005.
 H2O_XM = mpf("-12.96")
 H2O_XM_HALF = mpf("0.005")
+
+# Printed sulfuric acid second pKa (CRC Handbook 97th ed). Half of 0.01 is 0.005.
+H2SO4_PKA = mpf("1.99")
+H2SO4_PKA_HALF = mpf("0.005")
 
 
 def alpha():
@@ -374,6 +381,17 @@ def main() -> int:
     h2o_xm_leaf = h2o_xm * (1 - a * F.GAMMA)
     print("h2o_xm_leaf_formula=(-PI^2-PI)*(1-alpha*gamma)")
     report("h2o_xm_leaf", h2o_xm_leaf, H2O_XM, H2O_XM_HALF)
+    # GAMMA in the handbook formula is Euler's gamma. G is G_CAT.
+    h2so4 = F.G_CAT ** (-4) + F.GAMMA
+    report("h2so4_pka_half_digit", h2so4, H2SO4_PKA, H2SO4_PKA_HALF)
+    quotient_window("h2so4_pka", h2so4, H2SO4_PKA, H2SO4_PKA_HALF, -a, "minus_alpha")
+    quotient_window("h2so4_pka", h2so4, H2SO4_PKA, H2SO4_PKA_HALF, -a2, "minus_alpha2")
+    quotient_window("h2so4_pka", h2so4, H2SO4_PKA, H2SO4_PKA_HALF, -(a**3), "minus_alpha3")
+    quotient_window("h2so4_pka", h2so4, H2SO4_PKA, H2SO4_PKA_HALF, -yy, "minus_yy")
+    # gamma*psi_con^2 stays high. Gamma, 1/phi, and psi_con cross 1.99.
+    h2so4_leaf = h2so4 * (1 - a * F.GAMMA * F.PSI_CON ** 2)
+    print("h2so4_pka_leaf_formula=(G^-4+GAMMA)*(1-alpha*gamma*psi_con^2)")
+    report("h2so4_pka_leaf", h2so4_leaf, H2SO4_PKA, H2SO4_PKA_HALF)
     return 0
 
 

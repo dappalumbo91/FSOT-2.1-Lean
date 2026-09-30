@@ -1551,9 +1551,9 @@
       "target_value": 1.99,
       "unit": "dimensionless",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "G\u207b\u2074+GAMMA",
-      "computed_value": 1.9978534338158238,
-      "error_pct": 0.394645,
+      "fsot_formula": "(G\u207b\u2074+GAMMA)*(1-alpha*gamma*psi_con^2)",
+      "computed_value": 1.9944908981985554,
+      "error_pct": 0.225673,
       "matched": true
     },
     {
