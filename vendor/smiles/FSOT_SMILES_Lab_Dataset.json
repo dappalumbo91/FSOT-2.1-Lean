@@ -6758,9 +6758,9 @@
       "target_value": 149.0,
       "unit": "W/(m\u00b7K)",
       "source": "CRC Handbook",
-      "fsot_formula": "e\u2075",
-      "computed_value": 148.4131591025766,
-      "error_pct": 0.393853,
+      "fsot_formula": "(e\u2075)*(1+alpha*gamma*psi_con^2)",
+      "computed_value": 148.66294946512616,
+      "error_pct": 0.226208,
       "matched": true
     },
     {

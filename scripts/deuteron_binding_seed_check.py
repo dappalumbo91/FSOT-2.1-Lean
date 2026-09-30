@@ -40,7 +40,10 @@ sum is low of -12.96. Gamma is the only named seed and finishes
 high. No named seed in that window stays low. Sulfuric acid's
 second pKa is (G^-4+GAMMA)*(1-alpha*gamma*psi_con^2). The bare
 sum is high of 1.99. Gamma, 1/phi, and psi_con finish low.
-gamma*psi_con^2 stays high. This script
+gamma*psi_con^2 stays high. Silicon's thermal conductivity is
+(e^5)*(1+alpha*gamma*psi_con^2). The bare power is low of 149.
+Gamma, 1/phi, psi_con, G, and 1 finish high. gamma*psi_con^2
+stays low. This script
 only prints.
 """
 from __future__ import annotations
@@ -129,6 +132,11 @@ H2O_XM_HALF = mpf("0.005")
 # Printed sulfuric acid second pKa (CRC Handbook 97th ed). Half of 0.01 is 0.005.
 H2SO4_PKA = mpf("1.99")
 H2SO4_PKA_HALF = mpf("0.005")
+
+# Printed silicon thermal conductivity, W/(m·K) (CRC Handbook).
+# format(149.0, ".16g") is 149, so half of the units place is 0.5.
+SI_K = mpf("149")
+SI_K_HALF = mpf("0.5")
 
 
 def alpha():
@@ -392,6 +400,17 @@ def main() -> int:
     h2so4_leaf = h2so4 * (1 - a * F.GAMMA * F.PSI_CON ** 2)
     print("h2so4_pka_leaf_formula=(G^-4+GAMMA)*(1-alpha*gamma*psi_con^2)")
     report("h2so4_pka_leaf", h2so4_leaf, H2SO4_PKA, H2SO4_PKA_HALF)
+    # e^5 is low of 149. gamma*psi_con^2 stays low.
+    # Gamma, 1/phi, psi_con, G, and 1 finish high.
+    si_k = F.E ** 5
+    report("si_k_half_digit", si_k, SI_K, SI_K_HALF)
+    quotient_window("si_k", si_k, SI_K, SI_K_HALF, a, "alpha")
+    quotient_window("si_k", si_k, SI_K, SI_K_HALF, a2, "alpha2")
+    quotient_window("si_k", si_k, SI_K, SI_K_HALF, a**3, "alpha3")
+    quotient_window("si_k", si_k, SI_K, SI_K_HALF, yy, "yy")
+    si_k_leaf = si_k * (1 + a * F.GAMMA * F.PSI_CON ** 2)
+    print("si_k_leaf_formula=(e^5)*(1+alpha*gamma*psi_con^2)")
+    report("si_k_leaf", si_k_leaf, SI_K, SI_K_HALF)
     return 0
 
 

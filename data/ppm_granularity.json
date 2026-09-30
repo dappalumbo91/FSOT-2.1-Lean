@@ -11,8 +11,8 @@
     "1000": 185031,
     "5000": 185642
   },
-  "table_limited": 53345,
-  "outside_quoted_digit": 132297,
+  "table_limited": 53347,
+  "outside_quoted_digit": 132295,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -59,7 +59,7 @@
       "scalar_count": 391,
       "median_ppm": 234.93,
       "max_ppm": 4373.91,
-      "table_limited": 254,
+      "table_limited": 255,
       "within_1_ppm": 6,
       "within_10_ppm": 24,
       "within_100_ppm": 134,
@@ -249,7 +249,7 @@
       "scalar_count": 87,
       "median_ppm": 232.59895459434028,
       "max_ppm": 4121.18,
-      "table_limited": 72,
+      "table_limited": 73,
       "within_1_ppm": 2,
       "within_10_ppm": 4,
       "within_100_ppm": 23,
@@ -8247,24 +8247,6 @@
       "measured": 73.5,
       "error_ppm": 4107.71,
       "half_digit_ppm": 680.2721088435375
-    },
-    {
-      "domain": "CRC_Handbook_Properties",
-      "file": "crc_handbook_properties_benchmark.json",
-      "name": "Si",
-      "property": "\u00a737 Thermal \u03ba",
-      "measured": 149.0,
-      "error_ppm": 3938.53,
-      "half_digit_ppm": 3355.7046979865772
-    },
-    {
-      "domain": "materials_engineering_benchmark",
-      "file": "materials_engineering_benchmark.json",
-      "name": "Si",
-      "property": "\u00a737 Thermal \u03ba",
-      "measured": 149.0,
-      "error_ppm": 3938.53,
-      "half_digit_ppm": 3355.7046979865772
     }
   ]
 }

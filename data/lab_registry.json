@@ -9474,9 +9474,9 @@
         "species_id": "Si",
         "property": "thermal_cond_W_mK",
         "target": 149.0,
-        "computed": 148.4131591025766,
-        "error_pct": 0.3939,
-        "formula": "e\u2075",
+        "computed": 148.66294946512616,
+        "error_pct": 0.2262,
+        "formula": "(e\u2075)*(1+alpha*gamma*psi_con^2)",
         "unit": "W/(m\u00b7K)"
       },
       {
