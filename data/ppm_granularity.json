@@ -7,12 +7,12 @@
     "1": 27222,
     "10": 27851,
     "100": 33227,
-    "500": 182373,
-    "1000": 185023,
+    "500": 182374,
+    "1000": 185024,
     "5000": 185642
   },
-  "table_limited": 53336,
-  "outside_quoted_digit": 132306,
+  "table_limited": 53337,
+  "outside_quoted_digit": 132305,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -59,11 +59,11 @@
       "scalar_count": 391,
       "median_ppm": 234.93,
       "max_ppm": 4373.91,
-      "table_limited": 251,
+      "table_limited": 252,
       "within_1_ppm": 6,
       "within_10_ppm": 24,
       "within_100_ppm": 134,
-      "within_500_ppm": 254,
+      "within_500_ppm": 255,
       "worst": {
         "name": "olive oil",
         "property": "\u00a715 Viscosity",
@@ -8247,15 +8247,6 @@
       "measured": 73.5,
       "error_ppm": 4107.71,
       "half_digit_ppm": 680.2721088435375
-    },
-    {
-      "domain": "CRC_Handbook_Properties",
-      "file": "crc_handbook_properties_benchmark.json",
-      "name": "CO2",
-      "property": "\u00a787 Heat Cap Ratio Cp/Cv",
-      "measured": 1.289,
-      "error_ppm": 3980.2799999999997,
-      "half_digit_ppm": 387.8975950349108
     },
     {
       "domain": "Phi_Morphogenetic_Scaling",

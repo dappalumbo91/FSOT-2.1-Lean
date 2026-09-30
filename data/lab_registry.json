@@ -8054,9 +8054,9 @@
         "species_id": "CO2",
         "property": "cp_cv_ratio",
         "target": 1.289,
-        "computed": 1.2941305780559662,
-        "error_pct": 0.398,
-        "formula": "OMEGA",
+        "computed": 1.288679510842763,
+        "error_pct": 0.025,
+        "formula": "OMEGA*(1-alpha*gamma)",
         "unit": "dimensionless"
       },
       {

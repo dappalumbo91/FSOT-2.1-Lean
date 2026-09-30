@@ -28,7 +28,10 @@ Gamma is the nearest named seed and finishes high. No named seed
 in that window stays low. Calcium fluoride solubility product is
 (PI^2+PSI)*(1-alpha*gamma). PSI in that formula is psi_con.
 The bare sum is high of 10.46. Gamma is the only named seed and
-finishes low. No named seed in that window stays high. This script
+finishes low. No named seed in that window stays high. Carbon dioxide's
+heat-capacity ratio is OMEGA*(1-alpha*gamma). The bare value is
+high of 1.289. Gamma is the only named seed and finishes low.
+No named seed in that window stays high. This script
 only prints.
 """
 from __future__ import annotations
@@ -101,6 +104,10 @@ MEOH_HALF = mpf("0.5")
 # Printed CaF2 solubility product, pKsp (CRC Handbook). Half of 0.01 is 0.005.
 CAF2 = mpf("10.46")
 CAF2_HALF = mpf("0.005")
+
+# Printed CO2 heat-capacity ratio Cp/Cv (Lide, CRC 2008). Half of 0.001 is 0.0005.
+CO2 = mpf("1.289")
+CO2_HALF = mpf("0.0005")
 
 
 def alpha():
@@ -323,6 +330,16 @@ def main() -> int:
     caf2_leaf = caf2 * (1 - a * F.GAMMA)
     print("caf2_pksp_leaf_formula=(PI^2+PSI)*(1-alpha*gamma)")
     report("caf2_pksp_leaf", caf2_leaf, CAF2, CAF2_HALF)
+    co2 = F.OMEGA
+    report("co2_cpcv_half_digit", co2, CO2, CO2_HALF)
+    quotient_window("co2_cpcv", co2, CO2, CO2_HALF, -a, "minus_alpha")
+    quotient_window("co2_cpcv", co2, CO2, CO2_HALF, -a2, "minus_alpha2")
+    quotient_window("co2_cpcv", co2, CO2, CO2_HALF, -(a**3), "minus_alpha3")
+    quotient_window("co2_cpcv", co2, CO2, CO2_HALF, -yy, "minus_yy")
+    # Gamma is the only named seed. It crosses 1.289. No named seed stays high.
+    co2_leaf = co2 * (1 - a * F.GAMMA)
+    print("co2_cpcv_leaf_formula=OMEGA*(1-alpha*gamma)")
+    report("co2_cpcv_leaf", co2_leaf, CO2, CO2_HALF)
     return 0
 
 
