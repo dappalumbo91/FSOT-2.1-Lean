@@ -19,7 +19,10 @@ Aluminum's Poisson ratio is (P_base*phi)*(1+alpha*gamma). Gamma is the
 nearest named seed and finishes high of 0.345. No named seed in that
 window stays low. Copper stays on the bare product. Lead cohesive energy
 is (PHI+K)*(1-alpha*K). K is the seed already in the sum and stays high
-of 2.03. Gamma meets that window and crosses low. This script only prints.
+of 2.03. Gamma meets that window and crosses low. Copper magnetic
+susceptibility is (-phi^3*Omega)*(1-alpha*gamma). The bare product is
+low of -5.46. Gamma is the nearest named seed and finishes high. No
+named seed in that window stays low. This script only prints.
 """
 from __future__ import annotations
 
@@ -79,6 +82,10 @@ CU_NU = mpf("0.343")
 # Printed lead cohesive energy, eV/atom (Kittel 2005). Half of 2.03 is 0.005.
 PB = mpf("2.03")
 PB_HALF = mpf("0.005")
+
+# Printed copper molar susceptibility, 10^-6 cm^3/mol. Half of -5.46 is 0.005.
+CU_XM = mpf("-5.46")
+CU_XM_HALF = mpf("0.005")
 
 
 def alpha():
@@ -270,6 +277,16 @@ def main() -> int:
     pb_leaf = pb * (1 - a * F.K)
     print("pb_cohesive_leaf_formula=(PHI+K)*(1-alpha*K)")
     report("pb_cohesive_leaf", pb_leaf, PB, PB_HALF)
+    cu_xm = -(F.PHI**3) * F.OMEGA
+    report("cu_xm_half_digit", cu_xm, CU_XM, CU_XM_HALF)
+    quotient_window("cu_xm", cu_xm, CU_XM, CU_XM_HALF, -a, "minus_alpha")
+    quotient_window("cu_xm", cu_xm, CU_XM, CU_XM_HALF, -a2, "minus_alpha2")
+    quotient_window("cu_xm", cu_xm, CU_XM, CU_XM_HALF, -(a**3), "minus_alpha3")
+    quotient_window("cu_xm", cu_xm, CU_XM, CU_XM_HALF, -yy, "minus_yy")
+    # Gamma is the nearest named seed. It crosses -5.46. No named seed stays low.
+    cu_xm_leaf = cu_xm * (1 - a * F.GAMMA)
+    print("cu_xm_leaf_formula=(-phi^3*Omega)*(1-alpha*gamma)")
+    report("cu_xm_leaf", cu_xm_leaf, CU_XM, CU_XM_HALF)
     return 0
 
 

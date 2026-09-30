@@ -7,12 +7,12 @@
     "1": 27222,
     "10": 27851,
     "100": 33227,
-    "500": 182369,
-    "1000": 185019,
+    "500": 182371,
+    "1000": 185021,
     "5000": 185642
   },
-  "table_limited": 53332,
-  "outside_quoted_digit": 132310,
+  "table_limited": 53334,
+  "outside_quoted_digit": 132308,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -59,11 +59,11 @@
       "scalar_count": 391,
       "median_ppm": 234.93,
       "max_ppm": 4373.91,
-      "table_limited": 248,
+      "table_limited": 249,
       "within_1_ppm": 6,
       "within_10_ppm": 24,
       "within_100_ppm": 134,
-      "within_500_ppm": 251,
+      "within_500_ppm": 252,
       "worst": {
         "name": "olive oil",
         "property": "\u00a715 Viscosity",
@@ -286,17 +286,17 @@
       "file": "quantum_materials_benchmark.json",
       "scalar_count": 168,
       "median_ppm": 219.29412286875447,
-      "max_ppm": 4033.9,
-      "table_limited": 123,
+      "max_ppm": 3950.39,
+      "table_limited": 124,
       "within_1_ppm": 3,
       "within_10_ppm": 14,
       "within_100_ppm": 57,
-      "within_500_ppm": 110,
+      "within_500_ppm": 111,
       "worst": {
-        "name": "Cu",
+        "name": "H\u2082O",
         "property": "\u00a713 \u03c7m Magnetic",
-        "error_ppm": 4033.9,
-        "measured": -5.46,
+        "error_ppm": 3950.39,
+        "measured": -12.96,
         "inside_quoted_digit": false
       }
     },
@@ -8247,24 +8247,6 @@
       "measured": 73.5,
       "error_ppm": 4107.71,
       "half_digit_ppm": 680.2721088435375
-    },
-    {
-      "domain": "CRC_Handbook_Properties",
-      "file": "crc_handbook_properties_benchmark.json",
-      "name": "Cu",
-      "property": "\u00a713 \u03c7m Magnetic",
-      "measured": -5.46,
-      "error_ppm": 4033.9,
-      "half_digit_ppm": 915.7509157509157
-    },
-    {
-      "domain": "quantum_materials_benchmark",
-      "file": "quantum_materials_benchmark.json",
-      "name": "Cu",
-      "property": "\u00a713 \u03c7m Magnetic",
-      "measured": -5.46,
-      "error_ppm": 4033.9,
-      "half_digit_ppm": 915.7509157509157
     },
     {
       "domain": "CRC_Handbook_Properties",
