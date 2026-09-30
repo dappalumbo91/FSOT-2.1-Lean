@@ -3977,9 +3977,9 @@
       },
       "autoignition_K": {
         "target": 658.0,
-        "computed": 655.3695087900228,
-        "error_pct": 0.3998,
-        "formula": "PI^6-PI^5",
+        "computed": 658.1300209844452,
+        "error_pct": 0.0198,
+        "formula": "(PI^6-PI^5)*(1+alpha*gamma)",
         "unit": "K"
       }
     },

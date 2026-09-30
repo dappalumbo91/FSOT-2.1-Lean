@@ -22,7 +22,10 @@ is (PHI+K)*(1-alpha*K). K is the seed already in the sum and stays high
 of 2.03. Gamma meets that window and crosses low. Copper magnetic
 susceptibility is (-phi^3*Omega)*(1-alpha*gamma). The bare product is
 low of -5.46. Gamma is the nearest named seed and finishes high. No
-named seed in that window stays low. This script only prints.
+named seed in that window stays low. Methanol autoignition is
+(PI^6-PI^5)*(1+alpha*gamma). The bare difference is low of 658 K.
+Gamma is the nearest named seed and finishes high. No named seed
+in that window stays low. This script only prints.
 """
 from __future__ import annotations
 
@@ -86,6 +89,10 @@ PB_HALF = mpf("0.005")
 # Printed copper molar susceptibility, 10^-6 cm^3/mol. Half of -5.46 is 0.005.
 CU_XM = mpf("-5.46")
 CU_XM_HALF = mpf("0.005")
+
+# Printed methanol autoignition temperature, kelvin (NFPA / CRC). Half of 658 is 0.5.
+MEOH = mpf("658")
+MEOH_HALF = mpf("0.5")
 
 
 def alpha():
@@ -287,6 +294,16 @@ def main() -> int:
     cu_xm_leaf = cu_xm * (1 - a * F.GAMMA)
     print("cu_xm_leaf_formula=(-phi^3*Omega)*(1-alpha*gamma)")
     report("cu_xm_leaf", cu_xm_leaf, CU_XM, CU_XM_HALF)
+    meoh = pi**6 - pi**5
+    report("meoh_ait_half_digit", meoh, MEOH, MEOH_HALF)
+    quotient_window("meoh_ait", meoh, MEOH, MEOH_HALF, a, "alpha")
+    quotient_window("meoh_ait", meoh, MEOH, MEOH_HALF, a2, "alpha2")
+    quotient_window("meoh_ait", meoh, MEOH, MEOH_HALF, a**3, "alpha3")
+    quotient_window("meoh_ait", meoh, MEOH, MEOH_HALF, yy, "yy")
+    # Gamma is the nearest named seed. It crosses 658. No named seed stays low.
+    meoh_leaf = meoh * (1 + a * F.GAMMA)
+    print("meoh_ait_leaf_formula=(PI^6-PI^5)*(1+alpha*gamma)")
+    report("meoh_ait_leaf", meoh_leaf, MEOH, MEOH_HALF)
     return 0
 
 

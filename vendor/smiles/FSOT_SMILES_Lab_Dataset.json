@@ -17393,9 +17393,9 @@
       "target_value": 658.0,
       "unit": "K",
       "source": "NFPA / CRC Handbook",
-      "fsot_formula": "PI^6-PI^5",
-      "computed_value": 655.3695087900228,
-      "error_pct": 0.399771,
+      "fsot_formula": "(PI^6-PI^5)*(1+alpha*gamma)",
+      "computed_value": 658.1300209844452,
+      "error_pct": 0.019760,
       "matched": true
     },
     {
