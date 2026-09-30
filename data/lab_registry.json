@@ -3974,9 +3974,9 @@
         "species_id": "Pb",
         "property": "cohesive_eV",
         "target": 2.03,
-        "computed": 2.0382556529105917,
-        "error_pct": 0.4067,
-        "formula": "PHI+K",
+        "computed": 2.0318944553313916,
+        "error_pct": 0.0933,
+        "formula": "(PHI+K)*(1-alpha*K)",
         "unit": "eV/atom"
       },
       {

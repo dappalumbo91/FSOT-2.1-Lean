@@ -13886,9 +13886,9 @@
       "target_value": 2.03,
       "unit": "eV/atom",
       "source": "Kittel (2005)",
-      "fsot_formula": "PHI+K",
-      "computed_value": 2.0382556529105917,
-      "error_pct": 0.406682,
+      "fsot_formula": "(PHI+K)*(1-alpha*K)",
+      "computed_value": 2.0318944553313916,
+      "error_pct": 0.093323,
       "matched": true
     },
     {

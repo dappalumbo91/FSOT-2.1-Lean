@@ -17,7 +17,9 @@ The leaf is (e+G)*(1+alpha*gamma). Calcium polarizability is the same
 reading: (e^3+phi^2)*(1+alpha*gamma), gamma on the low side of 22.8.
 Aluminum's Poisson ratio is (P_base*phi)*(1+alpha*gamma). Gamma is the
 nearest named seed and finishes high of 0.345. No named seed in that
-window stays low. Copper stays on the bare product. This script only prints.
+window stays low. Copper stays on the bare product. Lead cohesive energy
+is (PHI+K)*(1-alpha*K). K is the seed already in the sum and stays high
+of 2.03. Gamma meets that window and crosses low. This script only prints.
 """
 from __future__ import annotations
 
@@ -73,6 +75,10 @@ CA_HALF = mpf("0.05")
 AL_NU = mpf("0.345")
 AL_NU_HALF = mpf("0.0005")
 CU_NU = mpf("0.343")
+
+# Printed lead cohesive energy, eV/atom (Kittel 2005). Half of 2.03 is 0.005.
+PB = mpf("2.03")
+PB_HALF = mpf("0.005")
 
 
 def alpha():
@@ -253,6 +259,17 @@ def main() -> int:
     print("al_poisson_leaf_formula=(P_base*phi)*(1+alpha*gamma)")
     report("al_poisson_leaf", al_leaf, AL_NU, AL_NU_HALF)
     report("cu_poisson_bare", al, CU_NU, AL_NU_HALF)
+    pb = F.PHI + F.K
+    report("pb_cohesive_half_digit", pb, PB, PB_HALF)
+    quotient_window("pb_cohesive", pb, PB, PB_HALF, -a, "minus_alpha")
+    quotient_window("pb_cohesive", pb, PB, PB_HALF, -a2, "minus_alpha2")
+    quotient_window("pb_cohesive", pb, PB, PB_HALF, -(a**3), "minus_alpha3")
+    quotient_window("pb_cohesive", pb, PB, PB_HALF, -yy, "minus_yy")
+    # K is already in PHI+K. The named-seed list does not include K.
+    # The leaf keeps that seed on the high side of 2.03.
+    pb_leaf = pb * (1 - a * F.K)
+    print("pb_cohesive_leaf_formula=(PHI+K)*(1-alpha*K)")
+    report("pb_cohesive_leaf", pb_leaf, PB, PB_HALF)
     return 0
 
 

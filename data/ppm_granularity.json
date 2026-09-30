@@ -8,11 +8,11 @@
     "10": 27851,
     "100": 33227,
     "500": 182369,
-    "1000": 185018,
+    "1000": 185019,
     "5000": 185642
   },
-  "table_limited": 53331,
-  "outside_quoted_digit": 132311,
+  "table_limited": 53332,
+  "outside_quoted_digit": 132310,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -40,7 +40,7 @@
       "scalar_count": 289,
       "median_ppm": 173.0,
       "max_ppm": 4374.0,
-      "table_limited": 203,
+      "table_limited": 204,
       "within_1_ppm": 2,
       "within_10_ppm": 42,
       "within_100_ppm": 113,
@@ -8247,15 +8247,6 @@
       "measured": 73.5,
       "error_ppm": 4107.71,
       "half_digit_ppm": 680.2721088435375
-    },
-    {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "file": "phi_morphogenetic_scaling_benchmark.json",
-      "name": "Pb",
-      "property": "cohesive_eV",
-      "measured": 2.03,
-      "error_ppm": 4067.0,
-      "half_digit_ppm": 2463.0541871921187
     },
     {
       "domain": "CRC_Handbook_Properties",
