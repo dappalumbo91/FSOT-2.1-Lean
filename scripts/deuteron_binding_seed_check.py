@@ -34,7 +34,10 @@ high of 1.289. Gamma is the only named seed and finishes low.
 No named seed in that window stays high. Tungsten Young's
 modulus is (PI^4*PHI^3)*(1-alpha*gamma). The bare product is
 high of 411. Gamma is the nearest named seed and finishes low.
-No named seed in that window stays high. This script
+No named seed in that window stays high. Water's molar
+magnetic susceptibility is (-PI^2-PI)*(1-alpha*gamma). The bare
+sum is low of -12.96. Gamma is the only named seed and finishes
+high. No named seed in that window stays low. This script
 only prints.
 """
 from __future__ import annotations
@@ -115,6 +118,10 @@ CO2_HALF = mpf("0.0005")
 # Printed tungsten Young's modulus, GPa (ASM International). Half of 1 is 0.5.
 W_YOUNG = mpf("411")
 W_YOUNG_HALF = mpf("0.5")
+
+# Printed water molar susceptibility, 10^-6 cm^3/mol (CRC Handbook / Selwood). Half of 0.01 is 0.005.
+H2O_XM = mpf("-12.96")
+H2O_XM_HALF = mpf("0.005")
 
 
 def alpha():
@@ -357,6 +364,16 @@ def main() -> int:
     w_young_leaf = w_young * (1 - a * F.GAMMA)
     print("w_youngs_leaf_formula=(PI^4*PHI^3)*(1-alpha*gamma)")
     report("w_youngs_leaf", w_young_leaf, W_YOUNG, W_YOUNG_HALF)
+    h2o_xm = -(pi**2) - pi
+    report("h2o_xm_half_digit", h2o_xm, H2O_XM, H2O_XM_HALF)
+    quotient_window("h2o_xm", h2o_xm, H2O_XM, H2O_XM_HALF, -a, "minus_alpha")
+    quotient_window("h2o_xm", h2o_xm, H2O_XM, H2O_XM_HALF, -a2, "minus_alpha2")
+    quotient_window("h2o_xm", h2o_xm, H2O_XM, H2O_XM_HALF, -(a**3), "minus_alpha3")
+    quotient_window("h2o_xm", h2o_xm, H2O_XM, H2O_XM_HALF, -yy, "minus_yy")
+    # Gamma is the only named seed. It crosses -12.96. No named seed stays low.
+    h2o_xm_leaf = h2o_xm * (1 - a * F.GAMMA)
+    print("h2o_xm_leaf_formula=(-PI^2-PI)*(1-alpha*gamma)")
+    report("h2o_xm_leaf", h2o_xm_leaf, H2O_XM, H2O_XM_HALF)
     return 0
 
 

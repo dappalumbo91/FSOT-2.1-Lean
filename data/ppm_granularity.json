@@ -7,12 +7,12 @@
     "1": 27222,
     "10": 27851,
     "100": 33227,
-    "500": 182378,
-    "1000": 185028,
+    "500": 182381,
+    "1000": 185031,
     "5000": 185642
   },
-  "table_limited": 53341,
-  "outside_quoted_digit": 132301,
+  "table_limited": 53344,
+  "outside_quoted_digit": 132298,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -59,11 +59,11 @@
       "scalar_count": 391,
       "median_ppm": 234.93,
       "max_ppm": 4373.91,
-      "table_limited": 252,
+      "table_limited": 253,
       "within_1_ppm": 6,
       "within_10_ppm": 24,
       "within_100_ppm": 134,
-      "within_500_ppm": 255,
+      "within_500_ppm": 256,
       "worst": {
         "name": "olive oil",
         "property": "\u00a715 Viscosity",
@@ -191,18 +191,18 @@
       "file": "material_property_verification_scaffold_benchmark.json",
       "scalar_count": 67,
       "median_ppm": 20.6,
-      "max_ppm": 3950.39,
-      "table_limited": 55,
+      "max_ppm": 3606.82,
+      "table_limited": 56,
       "within_1_ppm": 22,
       "within_10_ppm": 30,
       "within_100_ppm": 48,
-      "within_500_ppm": 56,
+      "within_500_ppm": 57,
       "worst": {
-        "name": "H\u2082O",
-        "property": "\u00a713 \u03c7m Magnetic",
-        "error_ppm": 3950.39,
-        "measured": -12.96,
-        "inside_quoted_digit": false
+        "name": "Cu",
+        "property": "\u00a734 Young's Modulus",
+        "error_ppm": 3606.82,
+        "measured": 130.0,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -286,18 +286,18 @@
       "file": "quantum_materials_benchmark.json",
       "scalar_count": 168,
       "median_ppm": 219.29412286875447,
-      "max_ppm": 3950.39,
-      "table_limited": 124,
+      "max_ppm": 3688.0099999999998,
+      "table_limited": 125,
       "within_1_ppm": 3,
       "within_10_ppm": 14,
       "within_100_ppm": 57,
-      "within_500_ppm": 111,
+      "within_500_ppm": 112,
       "worst": {
-        "name": "H\u2082O",
+        "name": "N\u2082",
         "property": "\u00a713 \u03c7m Magnetic",
-        "error_ppm": 3950.39,
-        "measured": -12.96,
-        "inside_quoted_digit": false
+        "error_ppm": 3688.0099999999998,
+        "measured": -12.0,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -8247,33 +8247,6 @@
       "measured": 73.5,
       "error_ppm": 4107.71,
       "half_digit_ppm": 680.2721088435375
-    },
-    {
-      "domain": "CRC_Handbook_Properties",
-      "file": "crc_handbook_properties_benchmark.json",
-      "name": "H\u2082O",
-      "property": "\u00a713 \u03c7m Magnetic",
-      "measured": -12.96,
-      "error_ppm": 3950.39,
-      "half_digit_ppm": 385.8024691358024
-    },
-    {
-      "domain": "Material_Property_Verification_Scaffold",
-      "file": "material_property_verification_scaffold_benchmark.json",
-      "name": "H\u2082O",
-      "property": "\u00a713 \u03c7m Magnetic",
-      "measured": -12.96,
-      "error_ppm": 3950.39,
-      "half_digit_ppm": 385.8024691358024
-    },
-    {
-      "domain": "quantum_materials_benchmark",
-      "file": "quantum_materials_benchmark.json",
-      "name": "H\u2082O",
-      "property": "\u00a713 \u03c7m Magnetic",
-      "measured": -12.96,
-      "error_ppm": 3950.39,
-      "half_digit_ppm": 385.8024691358024
     },
     {
       "domain": "CRC_Handbook_Properties",
