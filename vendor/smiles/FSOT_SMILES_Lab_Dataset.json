@@ -14198,9 +14198,9 @@
       "target_value": 0.345,
       "unit": "dimensionless",
       "source": "ASM International (2002)",
-      "fsot_formula": "P_BASE\u00b7PHI",
-      "computed_value": 0.3435826833227941,
-      "error_pct": 0.410816,
+      "fsot_formula": "(P_BASE\u00b7PHI)*(1+alpha*gamma)",
+      "computed_value": 0.34502990382112947,
+      "error_pct": 0.008668,
       "matched": true
     },
     {

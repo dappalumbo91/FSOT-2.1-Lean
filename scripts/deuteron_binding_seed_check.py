@@ -15,7 +15,9 @@ The deuteron moment, the printed water angle, and Asp pKR are printed
 the same way. Asp's alpha window holds gamma on the low side of 3.65.
 The leaf is (e+G)*(1+alpha*gamma). Calcium polarizability is the same
 reading: (e^3+phi^2)*(1+alpha*gamma), gamma on the low side of 22.8.
-This script only prints.
+Aluminum's Poisson ratio is (P_base*phi)*(1+alpha*gamma). Gamma is the
+nearest named seed and finishes high of 0.345. No named seed in that
+window stays low. Copper stays on the bare product. This script only prints.
 """
 from __future__ import annotations
 
@@ -66,6 +68,11 @@ ASP_HALF = mpf("0.005")
 # Printed calcium polarizability, angstrom^3. Half of the last place on 22.8 is 0.05.
 CA = mpf("22.8")
 CA_HALF = mpf("0.05")
+
+# Printed aluminum Poisson ratio. Half of the last place on 0.345 is 0.0005.
+AL_NU = mpf("0.345")
+AL_NU_HALF = mpf("0.0005")
+CU_NU = mpf("0.343")
 
 
 def alpha():
@@ -235,6 +242,17 @@ def main() -> int:
     ca_leaf = ca * (1 + a * F.GAMMA)
     print("ca_leaf_formula=(e^3+phi^2)*(1+alpha*gamma)")
     report("ca_leaf", ca_leaf, CA, CA_HALF)
+    al = F.P_BASE * F.PHI
+    report("al_poisson_half_digit", al, AL_NU, AL_NU_HALF)
+    quotient_window("al_poisson", al, AL_NU, AL_NU_HALF, a, "alpha")
+    quotient_window("al_poisson", al, AL_NU, AL_NU_HALF, a2, "alpha2")
+    quotient_window("al_poisson", al, AL_NU, AL_NU_HALF, a**3, "alpha3")
+    quotient_window("al_poisson", al, AL_NU, AL_NU_HALF, yy, "yy")
+    # Gamma is the nearest named seed. It crosses 0.345 and still meets the half-digit.
+    al_leaf = al * (1 + a * F.GAMMA)
+    print("al_poisson_leaf_formula=(P_base*phi)*(1+alpha*gamma)")
+    report("al_poisson_leaf", al_leaf, AL_NU, AL_NU_HALF)
+    report("cu_poisson_bare", al, CU_NU, AL_NU_HALF)
     return 0
 
 

@@ -6,13 +6,13 @@
   "within_ppm": {
     "1": 27222,
     "10": 27851,
-    "100": 33222,
-    "500": 182364,
-    "1000": 185013,
+    "100": 33227,
+    "500": 182369,
+    "1000": 185018,
     "5000": 185642
   },
-  "table_limited": 53326,
-  "outside_quoted_digit": 132316,
+  "table_limited": 53331,
+  "outside_quoted_digit": 132311,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -40,11 +40,11 @@
       "scalar_count": 289,
       "median_ppm": 173.0,
       "max_ppm": 4374.0,
-      "table_limited": 199,
+      "table_limited": 203,
       "within_1_ppm": 2,
       "within_10_ppm": 42,
-      "within_100_ppm": 109,
-      "within_500_ppm": 187,
+      "within_100_ppm": 113,
+      "within_500_ppm": 191,
       "worst": {
         "name": "olive oil",
         "property": "viscosity",
@@ -249,11 +249,11 @@
       "scalar_count": 87,
       "median_ppm": 232.59895459434028,
       "max_ppm": 4121.18,
-      "table_limited": 70,
+      "table_limited": 71,
       "within_1_ppm": 2,
       "within_10_ppm": 4,
-      "within_100_ppm": 22,
-      "within_500_ppm": 53,
+      "within_100_ppm": 23,
+      "within_500_ppm": 54,
       "worst": {
         "name": "Al",
         "property": "\u00a770 Shear Modulus",
@@ -8238,51 +8238,6 @@
       "measured": 73.49,
       "error_ppm": 4244.34,
       "half_digit_ppm": 6.8036467546605e-11
-    },
-    {
-      "domain": "materials_engineering_benchmark",
-      "file": "materials_engineering_benchmark.json",
-      "name": "Al",
-      "property": "\u00a784 Poisson Ratio \u03bd",
-      "measured": 0.345,
-      "error_ppm": 4108.16,
-      "half_digit_ppm": 1449.2753623188407
-    },
-    {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "file": "phi_morphogenetic_scaling_benchmark.json",
-      "name": "Al",
-      "property": "poisson_ratio",
-      "measured": 0.345,
-      "error_ppm": 4108.0,
-      "half_digit_ppm": 1449.2753623188407
-    },
-    {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "file": "phi_morphogenetic_scaling_benchmark.json",
-      "name": "AL_6061-T6",
-      "property": "poisson_ratio",
-      "measured": 0.345,
-      "error_ppm": 4108.0,
-      "half_digit_ppm": 1449.2753623188407
-    },
-    {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "file": "phi_morphogenetic_scaling_benchmark.json",
-      "name": "AL_7075-T6",
-      "property": "poisson_ratio",
-      "measured": 0.345,
-      "error_ppm": 4108.0,
-      "half_digit_ppm": 1449.2753623188407
-    },
-    {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "file": "phi_morphogenetic_scaling_benchmark.json",
-      "name": "AL_2024-T3",
-      "property": "poisson_ratio",
-      "measured": 0.345,
-      "error_ppm": 4108.0,
-      "half_digit_ppm": 1449.2753623188407
     },
     {
       "domain": "SH0ES_Ladder_Chain",
