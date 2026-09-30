@@ -7,12 +7,12 @@
     "1": 27222,
     "10": 27851,
     "100": 33227,
-    "500": 182372,
-    "1000": 185022,
+    "500": 182373,
+    "1000": 185023,
     "5000": 185642
   },
-  "table_limited": 53335,
-  "outside_quoted_digit": 132307,
+  "table_limited": 53336,
+  "outside_quoted_digit": 132306,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -59,11 +59,11 @@
       "scalar_count": 391,
       "median_ppm": 234.93,
       "max_ppm": 4373.91,
-      "table_limited": 250,
+      "table_limited": 251,
       "within_1_ppm": 6,
       "within_10_ppm": 24,
       "within_100_ppm": 134,
-      "within_500_ppm": 253,
+      "within_500_ppm": 254,
       "worst": {
         "name": "olive oil",
         "property": "\u00a715 Viscosity",
@@ -8247,15 +8247,6 @@
       "measured": 73.5,
       "error_ppm": 4107.71,
       "half_digit_ppm": 680.2721088435375
-    },
-    {
-      "domain": "CRC_Handbook_Properties",
-      "file": "crc_handbook_properties_benchmark.json",
-      "name": "CaF\u2082",
-      "property": "\u00a716 pKsp",
-      "measured": 10.46,
-      "error_ppm": 3988.9999999999995,
-      "half_digit_ppm": 478.0114722753346
     },
     {
       "domain": "CRC_Handbook_Properties",

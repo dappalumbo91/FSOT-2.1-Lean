@@ -3259,9 +3259,9 @@
       "target_value": 10.46,
       "unit": "dimensionless",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "\u03c0\u00b2+PSI",
-      "computed_value": 10.501724959917917,
-      "error_pct": 0.3989,
+      "fsot_formula": "(\u03c0\u00b2+PSI)*(1-alpha*gamma)",
+      "computed_value": 10.457490158900328,
+      "error_pct": 0.0240,
       "matched": true
     },
     {

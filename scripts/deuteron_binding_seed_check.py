@@ -25,7 +25,11 @@ low of -5.46. Gamma is the nearest named seed and finishes high. No
 named seed in that window stays low. Methanol autoignition is
 (PI^6-PI^5)*(1+alpha*gamma). The bare difference is low of 658 K.
 Gamma is the nearest named seed and finishes high. No named seed
-in that window stays low. This script only prints.
+in that window stays low. Calcium fluoride solubility product is
+(PI^2+PSI)*(1-alpha*gamma). PSI in that formula is psi_con.
+The bare sum is high of 10.46. Gamma is the only named seed and
+finishes low. No named seed in that window stays high. This script
+only prints.
 """
 from __future__ import annotations
 
@@ -93,6 +97,10 @@ CU_XM_HALF = mpf("0.005")
 # Printed methanol autoignition temperature, kelvin (NFPA / CRC). Half of 658 is 0.5.
 MEOH = mpf("658")
 MEOH_HALF = mpf("0.5")
+
+# Printed CaF2 solubility product, pKsp (CRC Handbook). Half of 0.01 is 0.005.
+CAF2 = mpf("10.46")
+CAF2_HALF = mpf("0.005")
 
 
 def alpha():
@@ -304,6 +312,17 @@ def main() -> int:
     meoh_leaf = meoh * (1 + a * F.GAMMA)
     print("meoh_ait_leaf_formula=(PI^6-PI^5)*(1+alpha*gamma)")
     report("meoh_ait_leaf", meoh_leaf, MEOH, MEOH_HALF)
+    # PSI in the handbook formula is psi_con.
+    caf2 = pi**2 + F.PSI_CON
+    report("caf2_pksp_half_digit", caf2, CAF2, CAF2_HALF)
+    quotient_window("caf2_pksp", caf2, CAF2, CAF2_HALF, -a, "minus_alpha")
+    quotient_window("caf2_pksp", caf2, CAF2, CAF2_HALF, -a2, "minus_alpha2")
+    quotient_window("caf2_pksp", caf2, CAF2, CAF2_HALF, -(a**3), "minus_alpha3")
+    quotient_window("caf2_pksp", caf2, CAF2, CAF2_HALF, -yy, "minus_yy")
+    # Gamma is the only named seed. It crosses 10.46. No named seed stays high.
+    caf2_leaf = caf2 * (1 - a * F.GAMMA)
+    print("caf2_pksp_leaf_formula=(PI^2+PSI)*(1-alpha*gamma)")
+    report("caf2_pksp_leaf", caf2_leaf, CAF2, CAF2_HALF)
     return 0
 
 
