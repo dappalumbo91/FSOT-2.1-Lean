@@ -43,7 +43,16 @@ sum is high of 1.99. Gamma, 1/phi, and psi_con finish low.
 gamma*psi_con^2 stays high. Silicon's thermal conductivity is
 (e^5)*(1+alpha*gamma*psi_con^2). The bare power is low of 149.
 Gamma, 1/phi, psi_con, G, and 1 finish high. gamma*psi_con^2
-stays low. This script
+stays low. The water-to-air sound-speed ratio is e+phi. The
+printed speeds are 1482.4 and 343.2, each to one tenth. The bar
+is the box of those two half-tenths. No named seed meets it.
+Euler's gamma is the nearest named seed and finishes below the
+box. gamma*psi_con^2 stays high and also misses. Products and
+quotients of e, phi, pi, gamma, G, and psi_con put four
+dressings in that box. gamma*G, sqrt(e)/pi, and phi/pi stay
+high. G/sqrt(e) crosses. Those are different dressings. The
+bare sum stays.
+This script
 only prints.
 """
 from __future__ import annotations
@@ -411,6 +420,81 @@ def main() -> int:
     si_k_leaf = si_k * (1 + a * F.GAMMA * F.PSI_CON ** 2)
     print("si_k_leaf_formula=(e^5)*(1+alpha*gamma*psi_con^2)")
     report("si_k_leaf", si_k_leaf, SI_K, SI_K_HALF)
+    # e+phi is high of 1482.4/343.2. The bar is the corner box of
+    # half a tenth on each printed speed. No named seed meets it.
+    cair = F.E + F.PHI
+    cair_meas = mpf("1482.4") / mpf("343.2")
+    cair_lo = mpf("1482.35") / mpf("343.25")
+    cair_hi = mpf("1482.45") / mpf("343.15")
+    cair_bar = min(cair_meas - cair_lo, cair_hi - cair_meas)
+    print(f"cair_meas={cair_meas}")
+    print(f"cair_box_lo={cair_lo}")
+    print(f"cair_box_hi={cair_hi}")
+    report("cair_bare", cair, cair_meas, cair_bar)
+    for fname, factor in (
+        ("minus_alpha", -a),
+        ("alpha", a),
+        ("minus_alpha2", -(a**2)),
+        ("alpha2", a**2),
+        ("minus_alpha3", -(a**3)),
+        ("alpha3", a**3),
+        ("minus_yy", -yy),
+        ("yy", yy),
+    ):
+        inside = []
+        for name, val in named_seeds():
+            pred = cair * (1 + factor * val)
+            if cair_lo <= pred <= cair_hi:
+                inside.append(name)
+        print(f"cair_{fname}_box_inside={len(inside)}")
+        quotient_window("cair", cair, cair_meas, cair_bar, factor, fname)
+    nearest = []
+    for name, val in named_seeds():
+        pred = cair * (1 - a * val)
+        gap = pred - cair_meas
+        in_box = cair_lo <= pred <= cair_hi
+        nearest.append((abs(gap), name, pred, gap, in_box))
+    nearest.sort(key=lambda row: row[0])
+    for _dist, name, pred, gap, in_box in nearest[:4]:
+        print(f"cair_minus_alpha_{name}_pred={pred}")
+        print(f"cair_minus_alpha_{name}_gap={gap} in_box={in_box}")
+    g_over_phi = F.G_CAT / F.PHI
+    g_pred = cair * (1 - a * g_over_phi)
+    print(f"cair_G_over_phi={g_over_phi}")
+    print(f"cair_G_over_phi_pred={g_pred}")
+    print(f"cair_G_over_phi_in_box={cair_lo <= g_pred <= cair_hi}")
+    # Two-factor products of the seeds in this reading. Several hits
+    # are different dressings. The bare sum stays.
+    pair_atoms = (
+        ("1", mpf(1)),
+        ("e", F.E),
+        ("phi", F.PHI),
+        ("sqrt(e)", sqrt(F.E)),
+        ("sqrt(phi)", sqrt(F.PHI)),
+        ("pi", pi),
+        ("gamma", F.GAMMA),
+        ("G", F.G_CAT),
+        ("psi", F.PSI_CON),
+    )
+    seed_lo = (1 - cair_hi / cair) / a
+    seed_hi = (1 - cair_lo / cair) / a
+    pair_hits = []
+    for i, (na, va) in enumerate(pair_atoms):
+        for nb, vb in pair_atoms[i:]:
+            cands = [(f"{na}*{nb}", va * vb), (f"{na}/{nb}", va / vb)]
+            if na != nb:
+                cands.append((f"{nb}/{na}", vb / va))
+            for name, val in cands:
+                if seed_lo <= val <= seed_hi:
+                    pred = cair * (1 - a * val)
+                    pair_hits.append((abs(val - ((cair_meas - cair) / cair) / (-a)), name, pred, val))
+    pair_hits.sort(key=lambda row: row[0])
+    print(f"cair_pair_inside={len(pair_hits)}")
+    for _dist, name, pred, val in pair_hits:
+        gap = pred - cair_meas
+        print(f"cair_pair_{name}={val}")
+        print(f"cair_pair_{name}_pred={pred} side={side(gap)} in_box={cair_lo <= pred <= cair_hi}")
+    print("cair_formula=e+phi")
     return 0
 
 
