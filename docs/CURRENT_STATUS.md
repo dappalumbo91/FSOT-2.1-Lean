@@ -4,7 +4,7 @@
 **Edition stamp:** 2026-09-17  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
-> Authoritative live numbers for expansion. Prefer this file over hand-edited counts in README when they disagree.
+> These tables are the 17 September 2026 snapshot. The later record is the README lock of 2026-09-29: prediction median of medians 0.005537779313588844% over 414 medians, scalar envelope 183196, atomic obligations 2030, full formal obligations 2594, catalog obligations 2205, and eight-way hardware false.
 
 ## Authority
 

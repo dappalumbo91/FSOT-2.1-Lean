@@ -204,7 +204,7 @@ def write_md(doc: dict) -> str:
         f"**Edition stamp:** {doc['edition_stamp']}  ",
         f"**Regenerate:** `python scripts/build_repo_status_snapshot.py`",
         "",
-        "> Authoritative live numbers for expansion. Prefer this file over hand-edited counts in README when they disagree.",
+        "> The tables in this file are the snapshot written on the edition stamp. Later scoreboard numbers are the README lock, data/empirical_accuracy_closure.json, and data/cross_proof_verification_report.json.",
         "",
         "## Authority",
         "",

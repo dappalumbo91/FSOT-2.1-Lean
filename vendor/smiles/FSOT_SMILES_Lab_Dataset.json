@@ -4113,9 +4113,9 @@
       "target_value": 3.65,
       "unit": "dimensionless",
       "source": "Lehninger 7th ed",
-      "fsot_formula": "e+G",
-      "computed_value": 3.6342474226362644,
-      "error_pct": 0.431577,
+      "fsot_formula": "(e+G)*(1+alpha*gamma)",
+      "computed_value": 3.649555404153832,
+      "error_pct": 0.012181,
       "matched": true
     },
     {

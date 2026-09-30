@@ -6,13 +6,13 @@
   "within_ppm": {
     "1": 27222,
     "10": 27851,
-    "100": 33220,
-    "500": 182356,
-    "1000": 185005,
+    "100": 33221,
+    "500": 182363,
+    "1000": 185012,
     "5000": 185642
   },
-  "table_limited": 53318,
-  "outside_quoted_digit": 132324,
+  "table_limited": 53325,
+  "outside_quoted_digit": 132317,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -77,18 +77,18 @@
       "file": "clinical_medicine_extension_benchmark.json",
       "scalar_count": 260,
       "median_ppm": 24.58296751538192,
-      "max_ppm": 4315.7699999999995,
-      "table_limited": 196,
+      "max_ppm": 4289.25,
+      "table_limited": 197,
       "within_1_ppm": 14,
       "within_10_ppm": 76,
       "within_100_ppm": 179,
-      "within_500_ppm": 214,
+      "within_500_ppm": 215,
       "worst": {
-        "name": "Asp_pKR",
-        "property": "\u00a722 Amino Acid pKa",
-        "error_ppm": 4315.7699999999995,
-        "measured": 3.65,
-        "inside_quoted_digit": false
+        "name": "sildenafil_PDE5",
+        "property": "\u00a765 Enzyme pKi",
+        "error_ppm": 4289.25,
+        "measured": 8.4,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -96,18 +96,18 @@
       "file": "immunology_benchmark.json",
       "scalar_count": 84,
       "median_ppm": 504.1956982053305,
-      "max_ppm": 4315.7699999999995,
-      "table_limited": 66,
+      "max_ppm": 4289.25,
+      "table_limited": 67,
       "within_1_ppm": 3,
       "within_10_ppm": 6,
       "within_100_ppm": 19,
-      "within_500_ppm": 38,
+      "within_500_ppm": 39,
       "worst": {
-        "name": "Asp_pKR",
-        "property": "\u00a722 Amino Acid pKa",
-        "error_ppm": 4315.7699999999995,
-        "measured": 3.65,
-        "inside_quoted_digit": false
+        "name": "sildenafil_PDE5",
+        "property": "\u00a765 Enzyme pKi",
+        "error_ppm": 4289.25,
+        "measured": 8.4,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -115,18 +115,18 @@
       "file": "malware_threat_intelligence_cybersecurity_benchmark.json",
       "scalar_count": 82,
       "median_ppm": 459.3318440797134,
-      "max_ppm": 4315.7699999999995,
-      "table_limited": 55,
+      "max_ppm": 4285.62,
+      "table_limited": 57,
       "within_1_ppm": 3,
       "within_10_ppm": 7,
       "within_100_ppm": 15,
-      "within_500_ppm": 57,
+      "within_500_ppm": 59,
       "worst": {
-        "name": "Asp_pKR",
-        "property": "\u00a722 Amino Acid pKa",
-        "error_ppm": 4315.7699999999995,
-        "measured": 3.65,
-        "inside_quoted_digit": false
+        "name": "lysozyme",
+        "property": "\u00a721 Protein \u0394G",
+        "error_ppm": 4285.62,
+        "measured": -9.2,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -134,18 +134,18 @@
       "file": "neuroimmunology_benchmark.json",
       "scalar_count": 92,
       "median_ppm": 501.0742705360385,
-      "max_ppm": 4315.7699999999995,
-      "table_limited": 74,
+      "max_ppm": 4289.25,
+      "table_limited": 75,
       "within_1_ppm": 11,
       "within_10_ppm": 14,
       "within_100_ppm": 27,
-      "within_500_ppm": 46,
+      "within_500_ppm": 47,
       "worst": {
-        "name": "Asp_pKR",
-        "property": "\u00a722 Amino Acid pKa",
-        "error_ppm": 4315.7699999999995,
-        "measured": 3.65,
-        "inside_quoted_digit": false
+        "name": "sildenafil_PDE5",
+        "property": "\u00a765 Enzyme pKi",
+        "error_ppm": 4289.25,
+        "measured": 8.4,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -153,18 +153,18 @@
       "file": "virology_extension_benchmark.json",
       "scalar_count": 50,
       "median_ppm": 459.3318440797596,
-      "max_ppm": 4315.7699999999995,
-      "table_limited": 33,
+      "max_ppm": 4285.62,
+      "table_limited": 34,
       "within_1_ppm": 1,
       "within_10_ppm": 3,
       "within_100_ppm": 8,
-      "within_500_ppm": 33,
+      "within_500_ppm": 34,
       "worst": {
-        "name": "Asp_pKR",
-        "property": "\u00a722 Amino Acid pKa",
-        "error_ppm": 4315.7699999999995,
-        "measured": 3.65,
-        "inside_quoted_digit": false
+        "name": "lysozyme",
+        "property": "\u00a721 Protein \u0394G",
+        "error_ppm": 4285.62,
+        "measured": -9.2,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -191,17 +191,17 @@
       "file": "material_property_verification_scaffold_benchmark.json",
       "scalar_count": 67,
       "median_ppm": 20.6,
-      "max_ppm": 4244.43,
-      "table_limited": 53,
+      "max_ppm": 3969.66,
+      "table_limited": 54,
       "within_1_ppm": 22,
       "within_10_ppm": 30,
-      "within_100_ppm": 47,
-      "within_500_ppm": 54,
+      "within_100_ppm": 48,
+      "within_500_ppm": 55,
       "worst": {
-        "name": "NaBr",
-        "property": "\u00a74b Lattice Energies",
-        "error_ppm": 4244.43,
-        "measured": 747.0,
+        "name": "W",
+        "property": "\u00a734 Young's Modulus",
+        "error_ppm": 3969.66,
+        "measured": 411.0,
         "inside_quoted_digit": false
       }
     },
@@ -8170,60 +8170,6 @@
     {
       "domain": "Clinical_Medicine",
       "file": "clinical_medicine_extension_benchmark.json",
-      "name": "Asp_pKR",
-      "property": "\u00a722 Amino Acid pKa",
-      "measured": 3.65,
-      "error_ppm": 4315.7699999999995,
-      "half_digit_ppm": 1369.86301369863
-    },
-    {
-      "domain": "immunology_benchmark",
-      "file": "immunology_benchmark.json",
-      "name": "Asp_pKR",
-      "property": "\u00a722 Amino Acid pKa",
-      "measured": 3.65,
-      "error_ppm": 4315.7699999999995,
-      "half_digit_ppm": 1369.86301369863
-    },
-    {
-      "domain": "Malware_Threat_Intelligence",
-      "file": "malware_threat_intelligence_cybersecurity_benchmark.json",
-      "name": "Asp_pKR",
-      "property": "\u00a722 Amino Acid pKa",
-      "measured": 3.65,
-      "error_ppm": 4315.7699999999995,
-      "half_digit_ppm": 1369.86301369863
-    },
-    {
-      "domain": "Malware_Threat_Intelligence",
-      "file": "malware_threat_intelligence_cybersecurity_benchmark.json",
-      "name": "Asp_pKR",
-      "property": "\u00a722 Amino Acid pKa",
-      "measured": 3.65,
-      "error_ppm": 4315.7699999999995,
-      "half_digit_ppm": 1369.86301369863
-    },
-    {
-      "domain": "neuroimmunology_benchmark",
-      "file": "neuroimmunology_benchmark.json",
-      "name": "Asp_pKR",
-      "property": "\u00a722 Amino Acid pKa",
-      "measured": 3.65,
-      "error_ppm": 4315.7699999999995,
-      "half_digit_ppm": 1369.86301369863
-    },
-    {
-      "domain": "Virology",
-      "file": "virology_extension_benchmark.json",
-      "name": "Asp_pKR",
-      "property": "\u00a722 Amino Acid pKa",
-      "measured": 3.65,
-      "error_ppm": 4315.7699999999995,
-      "half_digit_ppm": 1369.86301369863
-    },
-    {
-      "domain": "Clinical_Medicine",
-      "file": "clinical_medicine_extension_benchmark.json",
       "name": "lysozyme",
       "property": "\u00a721 Protein \u0394G",
       "measured": -9.2,
@@ -8283,15 +8229,6 @@
       "measured": -9.2,
       "error_ppm": 4285.62,
       "half_digit_ppm": 5.4347826086956525e-11
-    },
-    {
-      "domain": "Material_Property_Verification_Scaffold",
-      "file": "material_property_verification_scaffold_benchmark.json",
-      "name": "NaBr",
-      "property": "\u00a74b Lattice Energies",
-      "measured": 747.0,
-      "error_ppm": 4244.43,
-      "half_digit_ppm": 669.3440428380187
     },
     {
       "domain": "SH0ES_Ladder_Chain",

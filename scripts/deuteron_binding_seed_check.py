@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
-"""Check the deuteron binding.
+"""Check the deuteron binding and the other leftovers printed with it.
 
 The wave formula is sqrt(e)/e + phi. It sits a few electronvolts low of
 the AME2020 total. One uncertainty is about a quarter of that gap, so
 dividing the fractional gap by alpha^2, by alpha^3, or by
 (POOF*SUCTION)^2 leaves a window that holds a ladder of short products
-of e and phi. The second product is about as close as the first. The
-bare sum stays. This script only prints.
+of e and phi. The second product is about as close as the first.
+
+A second reading asks whether that same quotient equals one named seed.
+The alpha^2 window holds pi^-4. The alpha^3 window holds both sqrt(e)
+and phi. Those are different dressings. The bare sum stays.
+
+The deuteron moment, the printed water angle, and Asp pKR are printed
+the same way. Asp's alpha window holds gamma on the low side of 3.65.
+The leaf is (e+G)*(1+alpha*gamma). This script only prints.
 """
 from __future__ import annotations
 
@@ -45,8 +52,14 @@ MS_MD_LO = mpf("17")
 MS_MD_HI = mpf("22")
 
 # The printed water angle is 104.5 degrees. Half of the last place is 0.05.
+# The wave row's own tolerance is 0.1 degree.
 ANGLE = mpf("104.5")
 ANGLE_HALF = mpf("0.05")
+ANGLE_WAVE = mpf("0.1")
+
+# Printed Asp side-chain pKR. Half of the last place on 3.65 is 0.005.
+ASP = mpf("3.65")
+ASP_HALF = mpf("0.005")
 
 
 def alpha():
@@ -66,6 +79,42 @@ def report(label, pred, meas, bar) -> None:
     print(f"{label}={pred}")
     print(f"{label}_gap={gap}")
     print(f"{label}_sigmas={abs(gap) / bar} side={side(gap)}")
+
+
+def named_seeds():
+    """Seeds already named in the engine. Not a product scan."""
+    return (
+        ("1", mpf(1)),
+        ("e", F.E),
+        ("phi", F.PHI),
+        ("sqrt(e)", sqrt(F.E)),
+        ("sqrt(phi)", sqrt(F.PHI)),
+        ("gamma", F.GAMMA),
+        ("G", F.G_CAT),
+        ("psi_con", F.PSI_CON),
+        ("1/phi", 1 / F.PHI),
+        ("pi^{-4}", pi ** (-4)),
+        ("e^{-4}", F.E ** (-4)),
+        ("pi+P_base", pi + F.P_BASE),
+        ("gamma*psi_con^2", F.GAMMA * F.PSI_CON ** 2),
+    )
+
+
+def quotient_window(tag, bare, meas, bar, factor, factor_name) -> None:
+    """Print named seeds that land inside the bar as bare * (1 + factor * seed)."""
+    frac = (meas - bare) / bare
+    q = frac / factor
+    tol = bar / (abs(factor) * abs(bare))
+    found = []
+    for name, val in named_seeds():
+        if abs(val - q) <= tol:
+            pred = bare * (1 + factor * val)
+            found.append((abs(val - q), name, pred))
+    found.sort(key=lambda row: row[0])
+    print(f"{tag}_{factor_name}_q={nstr(q, 12)}")
+    print(f"{tag}_{factor_name}_named_inside={len(found)}")
+    for _dist, name, pred in found:
+        report(f"{tag}_{factor_name}_{name}", pred, meas, bar)
 
 
 def seed_pieces():
@@ -152,6 +201,25 @@ def main() -> int:
     print(f"m_s_over_m_d_pdg_range={MS_MD_LO} to {MS_MD_HI}")
     angle = F.E**3 / F.GAMMA**3
     report("water_angle_half_digit", angle, ANGLE, ANGLE_HALF)
+    report("water_angle_wave_tolerance", angle, ANGLE, ANGLE_WAVE)
+    asp = F.E + F.G_CAT
+    report("asp_pkr_half_digit", asp, ASP, ASP_HALF)
+
+    # Named-seed reading of the same quotients. A hit here is bare times
+    # (1 + factor * seed). Several hits, or hits on different factors,
+    # are not one leaf.
+    quotient_window("rounded", bare, ROUNDED, ROUNDED_BAR, a2, "alpha2")
+    quotient_window("rounded", bare, ROUNDED, ROUNDED_BAR, a3, "alpha3")
+    quotient_window("excess", bare, EXCESS, EXCESS_BAR, a2, "alpha2")
+    quotient_window("excess", bare, EXCESS, EXCESS_BAR, a3, "alpha3")
+    quotient_window("moment", moment, MU, MU_BAR, a2, "alpha2")
+    report("moment_one_alpha2", moment * (1 + a2), MU, MU_BAR)
+    quotient_window("water", angle, ANGLE, ANGLE_HALF, yy, "yy")
+    quotient_window("asp", asp, ASP, ASP_HALF, a, "alpha")
+    # The adopted alpha quotient for Asp is Euler's gamma, on the low side.
+    leaf = asp * (1 + a * F.GAMMA)
+    print("asp_leaf_formula=(e+G)*(1+alpha*gamma)")
+    report("asp_leaf", leaf, ASP, ASP_HALF)
     return 0
 
 
