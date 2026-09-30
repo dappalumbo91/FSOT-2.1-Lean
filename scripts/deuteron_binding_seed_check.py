@@ -31,6 +31,9 @@ The bare sum is high of 10.46. Gamma is the only named seed and
 finishes low. No named seed in that window stays high. Carbon dioxide's
 heat-capacity ratio is OMEGA*(1-alpha*gamma). The bare value is
 high of 1.289. Gamma is the only named seed and finishes low.
+No named seed in that window stays high. Tungsten Young's
+modulus is (PI^4*PHI^3)*(1-alpha*gamma). The bare product is
+high of 411. Gamma is the nearest named seed and finishes low.
 No named seed in that window stays high. This script
 only prints.
 """
@@ -108,6 +111,10 @@ CAF2_HALF = mpf("0.005")
 # Printed CO2 heat-capacity ratio Cp/Cv (Lide, CRC 2008). Half of 0.001 is 0.0005.
 CO2 = mpf("1.289")
 CO2_HALF = mpf("0.0005")
+
+# Printed tungsten Young's modulus, GPa (ASM International). Half of 1 is 0.5.
+W_YOUNG = mpf("411")
+W_YOUNG_HALF = mpf("0.5")
 
 
 def alpha():
@@ -340,6 +347,16 @@ def main() -> int:
     co2_leaf = co2 * (1 - a * F.GAMMA)
     print("co2_cpcv_leaf_formula=OMEGA*(1-alpha*gamma)")
     report("co2_cpcv_leaf", co2_leaf, CO2, CO2_HALF)
+    w_young = F.PI**4 * F.PHI**3
+    report("w_youngs_half_digit", w_young, W_YOUNG, W_YOUNG_HALF)
+    quotient_window("w_youngs", w_young, W_YOUNG, W_YOUNG_HALF, -a, "minus_alpha")
+    quotient_window("w_youngs", w_young, W_YOUNG, W_YOUNG_HALF, -a2, "minus_alpha2")
+    quotient_window("w_youngs", w_young, W_YOUNG, W_YOUNG_HALF, -(a**3), "minus_alpha3")
+    quotient_window("w_youngs", w_young, W_YOUNG, W_YOUNG_HALF, -yy, "minus_yy")
+    # Gamma is the nearest named seed. It crosses 411. No named seed stays high.
+    w_young_leaf = w_young * (1 - a * F.GAMMA)
+    print("w_youngs_leaf_formula=(PI^4*PHI^3)*(1-alpha*gamma)")
+    report("w_youngs_leaf", w_young_leaf, W_YOUNG, W_YOUNG_HALF)
     return 0
 
 

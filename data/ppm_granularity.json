@@ -7,12 +7,12 @@
     "1": 27222,
     "10": 27851,
     "100": 33227,
-    "500": 182374,
-    "1000": 185024,
+    "500": 182378,
+    "1000": 185028,
     "5000": 185642
   },
-  "table_limited": 53337,
-  "outside_quoted_digit": 132305,
+  "table_limited": 53341,
+  "outside_quoted_digit": 132301,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -40,11 +40,11 @@
       "scalar_count": 289,
       "median_ppm": 173.0,
       "max_ppm": 4374.0,
-      "table_limited": 204,
+      "table_limited": 206,
       "within_1_ppm": 2,
       "within_10_ppm": 42,
       "within_100_ppm": 113,
-      "within_500_ppm": 191,
+      "within_500_ppm": 193,
       "worst": {
         "name": "olive oil",
         "property": "viscosity",
@@ -191,17 +191,17 @@
       "file": "material_property_verification_scaffold_benchmark.json",
       "scalar_count": 67,
       "median_ppm": 20.6,
-      "max_ppm": 3969.66,
-      "table_limited": 54,
+      "max_ppm": 3950.39,
+      "table_limited": 55,
       "within_1_ppm": 22,
       "within_10_ppm": 30,
       "within_100_ppm": 48,
-      "within_500_ppm": 55,
+      "within_500_ppm": 56,
       "worst": {
-        "name": "W",
-        "property": "\u00a734 Young's Modulus",
-        "error_ppm": 3969.66,
-        "measured": 411.0,
+        "name": "H\u2082O",
+        "property": "\u00a713 \u03c7m Magnetic",
+        "error_ppm": 3950.39,
+        "measured": -12.96,
         "inside_quoted_digit": false
       }
     },
@@ -249,11 +249,11 @@
       "scalar_count": 87,
       "median_ppm": 232.59895459434028,
       "max_ppm": 4121.18,
-      "table_limited": 71,
+      "table_limited": 72,
       "within_1_ppm": 2,
       "within_10_ppm": 4,
       "within_100_ppm": 23,
-      "within_500_ppm": 54,
+      "within_500_ppm": 55,
       "worst": {
         "name": "Al",
         "property": "\u00a770 Shear Modulus",
@@ -8247,42 +8247,6 @@
       "measured": 73.5,
       "error_ppm": 4107.71,
       "half_digit_ppm": 680.2721088435375
-    },
-    {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "file": "phi_morphogenetic_scaling_benchmark.json",
-      "name": "W",
-      "property": "youngs_GPa",
-      "measured": 411.0,
-      "error_ppm": 3970.0,
-      "half_digit_ppm": 1216.54501216545
-    },
-    {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "file": "phi_morphogenetic_scaling_benchmark.json",
-      "name": "Tungsten",
-      "property": "youngs_GPa",
-      "measured": 411.0,
-      "error_ppm": 3970.0,
-      "half_digit_ppm": 1216.54501216545
-    },
-    {
-      "domain": "Material_Property_Verification_Scaffold",
-      "file": "material_property_verification_scaffold_benchmark.json",
-      "name": "W",
-      "property": "\u00a734 Young's Modulus",
-      "measured": 411.0,
-      "error_ppm": 3969.66,
-      "half_digit_ppm": 1216.54501216545
-    },
-    {
-      "domain": "materials_engineering_benchmark",
-      "file": "materials_engineering_benchmark.json",
-      "name": "W",
-      "property": "\u00a734 Young's Modulus",
-      "measured": 411.0,
-      "error_ppm": 3969.66,
-      "half_digit_ppm": 1216.54501216545
     },
     {
       "domain": "CRC_Handbook_Properties",
