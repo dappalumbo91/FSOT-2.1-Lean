@@ -159,8 +159,8 @@ fits(alloc) ⇔ alloc ≤ formal_boundary
 
 ## External paths referenced
 
-- `I:\fsot-neuron-zig` — live bio mind + Lean wet-lab certificate  
-- `I:\Protofluid-Language-Translator-2.0-Zig` — multi-lang densify ship baseline  
+- `fsot-neuron-zig` — live bio mind + Lean wet-lab certificate  
+- `Protofluid-Language-Translator-2.0-Zig` — multi-lang densify ship baseline  
 - `Desktop\fsot code language` — multi-implementation FSOT language parity  
 - `Desktop\gpu exparment for lean coq isabell andf star` — **FSOT-GPU** (CUDA consensus stack)  
 - `verification/esp32/fsot_esp32_observer` — existing ESP32 Rust observer firmware  

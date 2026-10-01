@@ -6,7 +6,7 @@ O–C in arcseconds between raw MPC optical observations we download and JPL Hor
 
 **Ephemeris:** JPL Horizons geocentric OBSERVER (DE441-class)  
 **Observations:** MPC Observations API ADES (optical RA/Dec)  
-**Store:** `G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations`
+**Store:** `<local folder, not included in repo: FSOT-PublicData/anomaly_observables/mpcorb_raw_observations>`
 
 Not a re-fit of orbits. Catalog rms remains the MPC's own orbit-fit residual; Horizons O–C is an independent industrial ephemeris check.
 

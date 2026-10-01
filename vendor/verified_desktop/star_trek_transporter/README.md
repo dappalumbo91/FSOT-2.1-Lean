@@ -38,14 +38,14 @@ Produces `t3_acoustic_valve_hardware_results.json` — piezo-stack drive, resona
 ## Cross-proof (Lean / Coq / Isabelle / F* / Rust)
 
 ```powershell
-cd I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full
+cd FSOT-2.1-Lean
 python scripts/build_verified_desktop_cross_proof_closure.py
 python scripts/run_cross_proof_verification.py
 ```
 
 ## Reproduce verification
 
-From `I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full`:
+From `.`:
 
 ```powershell
 python scripts/reproduce_domain_panel.py --panel Star_Trek_Transporter_Live_Panel --deep

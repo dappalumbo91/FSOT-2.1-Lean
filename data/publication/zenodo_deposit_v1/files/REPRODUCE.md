@@ -272,7 +272,7 @@ Layers: quantum teleportation → information theory → poof/suction portal →
 python scripts/sync_verified_desktop_projects.py
 ```
 
-Simulators live under `vendor/verified_desktop/` (GitHub) and `I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects/` (archive master). Re-run sims before `--deep` ingest:
+Simulators live under `vendor/verified_desktop/` (GitHub) and `<local folder, not included in repo: FSOT-Physical-Archive/08_Verified-Desktop-Projects>` (archive master). Re-run sims before `--deep` ingest:
 
 ```powershell
 python vendor/verified_desktop/star_trek_transporter/pattern_buffer_beam_simulator.py --deep

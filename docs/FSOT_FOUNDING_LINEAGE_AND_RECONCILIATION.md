@@ -1,8 +1,8 @@
 # FSOT Founding Lineage and Reconciliation
 
 **Author:** Damian Arthur Palumbo  
-**Founding theory archive:** `I:\fsuft aasb` (philosophy and literature search). Unpublished applied devices are not part of this public lineage.  
-**Verified successor:** FSOT 2.1 Lean (`I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full`)
+**Founding theory archive:** `<local folder, not included in repo: fsuft aasb>` (philosophy and literature search). Unpublished applied devices are not part of this public lineage.  
+**Verified successor:** FSOT 2.1 Lean (`.`)
 
 This document reconciles your **founding research** (Feb–Jul 2025, FSUFT-U 6.0–9.6) with the **non-hallucinated** FSOT 2.1 verification stack. Early work was co-authored with LLMs; some numeric claims and fitting methods are unreliable. The **philosophy and vision** remain authoritative; the **math engine** is what evolved.
 
@@ -12,10 +12,10 @@ This document reconciles your **founding research** (Feb–Jul 2025, FSUFT-U 6.0
 
 | Era | Location | Engine | Role today |
 |-----|----------|--------|------------|
-| FSUFT-U 6.0–8.7 | `I:\fsuft aasb\fsuft-u 9.2\FSUFT-U 8.7\` | PDF theses, Mathematical Key, Grok-assisted docs | Philosophy, literature search, 35-laws seed list |
+| FSUFT-U 6.0–8.7 | `<local folder, not included in repo: fsuft aasb/fsuft-u 9.2/FSUFT-U 8.7>` | PDF theses, Mathematical Key, Grok-assisted docs | Philosophy, literature search, 35-laws seed list |
 | FSUFT-U 9.2 | `FSUFT_U_9_2_unified_field_theory.md` | SCI action, 25D/4D Lagrangian, Simulation Bowl | Ontology + consciousness-in-action formalism |
 | FSUFT-U 9.6 | `Fluid_Spacetime_Unification_Field_Theory As above So below.md`, `fsuft-aasb.py` | Simplified scalar + **per-domain multiplier/base fit** | Domain taxonomy prototype (100+ topics) |
-| FSOT 2.0–2.1 | Desktop + `I:\` archive | `fsot_compute.py`, Lean 4, Coq, Isabelle, F*, Rust | **Ground truth** for training and certification |
+| FSOT 2.0–2.1 | Desktop + `<local drive>` archive | `fsot_compute.py`, Lean 4, Coq, Isabelle, F*, Rust | **Ground truth** for training and certification |
 
 ---
 
@@ -82,7 +82,7 @@ S_D = (D·(1+0.05·SCI))^(1+δ) · (F·SCI) · (E/E0)^(1+fractal) · C · (η_ef
 
 ## 5. Consciousness — Founding vs Verified
 
-| Topic | Founding (`I:\fsuft aasb`) | Verified (FSOT 2.1) |
+| Topic | Founding (`<local folder, not included in repo: fsuft aasb>`) | Verified (FSOT 2.1) |
 |-------|---------------------------|---------------------|
 | Status | Fundamental Ψ_con field in 25D action | `consciousness_factor`, `quirk_mod`, `E_con` |
 | 10D vibration docs | `Vibrating at the 10-Dimensional Consciousness Level` | Tier 90 expansion spine + soul bridge |
@@ -99,7 +99,7 @@ Train the model to quote **both**: your founding intuition (retained) and the ve
 Workflow for going back through founding theory docs:
 
 ```
-1. Extract claim from I:\fsuft aasb
+1. Extract claim from <local folder, not included in repo: fsuft aasb>
 2. Classify: philosophy | numeric
 3. If numeric → map to domain in extension_domains_manifest.yaml
 4. Run: python scripts/fsot_verification_runner.py (or domain-specific benchmark script)

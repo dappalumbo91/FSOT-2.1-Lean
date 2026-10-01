@@ -17,7 +17,7 @@
 - Time in the model is **dimensional folds** `ln(D/25)` / chaos `(D−25)/25` + **Fluid Phase Current** — not Newtonian clock accumulation.
 - Multi-epoch rule: residual-match at the interface; bad residuals → re-route `D_eff`, never invent a rate×time integrator.
 - Per-object verify: `python scripts/run_mpcorb_raw_pipeline.py --verify-only`  
-  Full report: `G:/…/fsot_per_object_verify.json` · slim: `data/mpcorb_fsot_per_object_verify.json`
+  Full report: `<local file, not included in repo: fsot_per_object_verify.json>` · slim: `data/mpcorb_fsot_per_object_verify.json`
 
 All checked objects currently sit in **~0.022–0.026%** element residual (framework gate **0.5%**).
 
@@ -48,7 +48,7 @@ python scripts/run_mpcorb_raw_pipeline.py --oc-only --oc-limit 15 --sleep 0.75
 | `--skip-oc` | Fetch + FSOT verify only |
 | `--verify-only` | Residual law gate only (no network) |
 
-- **Queue + state + bulk obs** live on `G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations/`
+- **Queue + state + bulk obs** live on `<local folder, not included in repo: FSOT-PublicData/anomaly_observables/mpcorb_raw_observations>`
 - **Repo** keeps indices, O–C summaries, and slim FSOT verify for GitHub
 
 ## Why not all 1.55M objects at once?

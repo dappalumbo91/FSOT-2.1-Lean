@@ -59,7 +59,7 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Honest claims: `data/ho
 | Parameter honesty | **Not literal zero-fit** — see `data/parameter_count_audit.json` + `honest_claims_manifest.yaml` |
 | Expansion candidates | **0** (roadmap tiers 51–77 complete) |
 
-**External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
+**External data cache** (bulk API ingest): `<local folder, not included in repo: FSOT-PublicData>` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `<local file, not included in repo: space_weather_full_benchmark.json>` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
 
 **Self-contained clone-and-verify**: `strict_empirical.jsonl` (7,941 formulas) bundled under `vendor/formula_corpus/`.
 - Genomic exact identities (`FSOT.Formal.Genomic`)
@@ -80,9 +80,9 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Honest claims: `data/ho
 - Linguistics anchors (`FSOT.Formal.LinguisticsPriors`) — 10 targets within 5% FSOT derivations
 - Unified DB inventory (`FSOT.Formal.UnifiedDBPriors`) — 30,984 indexed records, 26 projects (inventory tier)
 - Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4Priors`) — 16 observables (PMNS/CKM/nuclear/dark-energy); legacy `CosmologyWave4.lean` is a deprecation shim
-- GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match; portable **501-record** summary in repo, full arc on `G:/FSOT-PublicData`
+- GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match; portable **501-record** summary in repo, full arc on `<local folder, not included in repo: FSOT-PublicData>`
 - Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **246** nodes, **12,840** coupling edges, 0% pooled median
-- Tier 43 cybersecurity (`FSOT.Formal.ZeroDayRiskEvaluatorPriors`) — **9-language** code-genome bridges (Lean/Rust/Python/C/JS/Go/Zig/WASM/FSOTB_ISA), MalwareBazaar **200** samples + CISA KEV **1,635** CVEs on `G:/FSOT-PublicData/cybersecurity`
+- Tier 43 cybersecurity (`FSOT.Formal.ZeroDayRiskEvaluatorPriors`) — **9-language** code-genome bridges (Lean/Rust/Python/C/JS/Go/Zig/WASM/FSOTB_ISA), MalwareBazaar **200** samples + CISA KEV **1,635** CVEs on `<local folder, not included in repo: FSOT-PublicData/cybersecurity>`
 - Malware threat intelligence depth (`FSOT.Formal.MalwareThreatIntelligencePriors`) — **301** records, virology structural bridge
 - Code genome structure (`FSOT.Formal.CodeGenomeStructurePriors`) — **205** records, genomic codon hole detection
 - Formula corpus closure (`FSOT.Formal.FormulaCorpusClosurePriors`) — **7,941** strict-empirical formulas + **127** extension bridges

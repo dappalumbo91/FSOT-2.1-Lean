@@ -51,7 +51,7 @@
 
 - **Git commit SHA** = preregistration clock (see `docs/PREDICTION_MONITORING_POLICY.md`).
 - **Do not freeze development** while waiting for survey drops — log outcomes when data lands.
-- **Large catalogs** (CCHP hosts, open-science dumps) live on `G:/FSOT-PublicData/…`, not on C:.
+- **Large catalogs** (CCHP hosts, open-science dumps) live on `<local folder, not included in repo: FSOT-PublicData>`, not on C:.
 
 ## Rebuild
 

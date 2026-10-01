@@ -40,8 +40,8 @@ If weights dataset is attached, set `BIOHUB_ENGINE=fsot_unet` — still runs on 
 cd vendor\kaggle_biohub_review\v49
 python -m venv .venv
 .\.venv\Scripts\pip install -r requirements-cpu-smoke.txt
-python make_smoke_zarr.py --out D:\Kaggle_Biohub_Data\test
-$env:KAGGLE_TEST_DIR = "D:\Kaggle_Biohub_Data\test"
+python make_smoke_zarr.py --out <local folder, not included in repo: Kaggle_Biohub_Data/test>
+$env:KAGGLE_TEST_DIR = "<local folder, not included in repo: Kaggle_Biohub_Data/test>"
 .\.venv\Scripts\python kaggle_main_runner_cpu.py
 ```
 
@@ -53,7 +53,7 @@ csv_to_geffs: OK
 train proxy score: 0.6764 (adj_edge_jaccard=0.6764)
 ```
 
-**Local data layout** (`D:\Kaggle_Biohub_Data`):
+**Local data layout** (`<local folder, not included in repo: Kaggle_Biohub_Data>`):
 
 | Path | Source |
 |------|--------|

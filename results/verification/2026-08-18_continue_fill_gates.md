@@ -1,6 +1,6 @@
 # Session gates — 2026-08-18 continue fill
 
-Working tree: `C:\Users\damia\Desktop\FSOT-2.1-Lean`  
+Working tree: `.`  
 Commit: `f04fd27` Continue C_thin fill from Quantum, JPL Kepler, and NIST handbook.
 
 ## Ran this pass

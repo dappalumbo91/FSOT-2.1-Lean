@@ -88,7 +88,7 @@ Windows Task Scheduler / cron example:
 
 ```text
 # every Sunday 06:00 local
-python C:\Users\damia\Desktop\FSOT-2.1-Lean\scripts\run_prediction_monitor.py
+python scripts/run_prediction_monitor.py
 ```
 
 Or use the Grok/session scheduler to fire the same prompt weekly.

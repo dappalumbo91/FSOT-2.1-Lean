@@ -43,20 +43,20 @@ Graceful stop while running:
 
 ```powershell
 # create stop file on external store
-New-Item -ItemType File -Force "G:\FSOT-PublicData\anomaly_observables\mpcorb_raw_observations\STOP_EPOCHS"
+New-Item -ItemType File -Force "<local folder, not included in repo: FSOT-PublicData/anomaly_observables/mpcorb_raw_observations/STOP_EPOCHS>"
 ```
 
 ## Watch progress
 
 ```powershell
-Get-Content "G:\FSOT-PublicData\anomaly_observables\mpcorb_raw_observations\epoch_status.json"
+Get-Content "<local file, not included in repo: epoch_status.json>"
 # or repo mirror:
 Get-Content data\mpcorb_epoch_status.json
 ```
 
 Final report:
 
-- `G:/…/epoch_baseline_report.json`
+- `<local file, not included in repo: epoch_baseline_report.json>`
 - `data/mpcorb_epoch_baseline_report.json`
 
 ## After baseline

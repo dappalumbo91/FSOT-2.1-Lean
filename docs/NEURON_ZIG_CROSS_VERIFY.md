@@ -65,7 +65,7 @@ zig build -Doptimize=ReleaseFast
 1. `FSOT-2.1-Lean/vendor/neuron_zig/FSOT_MIND_VERIFY_STAMP.json`  
 2. `FSOT-2.1-Lean/data/neuron_zig_stamp/FSOT_MIND_VERIFY_STAMP.json`  
 3. `Desktop/fsot neuron family/fsot-neuron-zig/data/results/FSOT_MIND_VERIFY_STAMP.json`  
-4. `I:\fsot-neuron-zig\data\results\FSOT_MIND_VERIFY_STAMP.json`  
+4. `<local file, not included in repo: FSOT_MIND_VERIFY_STAMP.json>`  
 
 ---
 

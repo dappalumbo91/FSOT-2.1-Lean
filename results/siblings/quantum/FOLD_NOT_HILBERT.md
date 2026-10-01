@@ -42,7 +42,7 @@ Complexity as domain folds (D_eff routes) + modular/algebraic structure + collap
 ## Reproduce
 
 ```powershell
-cd "C:\Users\damia\Desktop\fsot quantum"
+cd "FSOT-Quantum"
 $env:PYTHONPATH = (Get-Location).Path
 python -m fsot_quantum.fold_suite
 ```

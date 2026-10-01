@@ -2,7 +2,7 @@
 
 > **Historical session note (2026-08-03).** Live green / obligation counts below are **stale**. Use [`CURRENT_STATUS.md`](CURRENT_STATUS.md) and [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md): **477/477** green, **2024** atomic, **2587** full formal. Latest API probe: `data/live_api_health_report.json`.
 
-**Workspace:** `C:\Users\damia\Desktop\FSOT-2.1-Lean`  
+**Workspace:** `.`  
 **Date:** 2026-08-03 (session); counts superseded 2026-08-18  
 **Policy:** Stream/live probe preferred; full bulk re-download not required for verification.
 
@@ -124,7 +124,7 @@ You are **not** blocked on formal mathematics or on re-touching scientific APIs.
 ## 6. Commands to re-verify anytime
 
 ```powershell
-cd C:\Users\damia\Desktop\FSOT-2.1-Lean
+cd FSOT-2.1-Lean
 
 # Live APIs (stream probes)
 python scripts/live_api_health_check.py

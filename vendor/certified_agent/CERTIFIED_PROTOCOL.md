@@ -29,4 +29,4 @@ All certified results must be presented as:
 ---
 
 ## 5. Precision Requirement
-All constants must be used to the maximum precision available in `C:\Users\damia\Desktop\FSOTLean\FSOTLean\FSOT\Formal\Constants.lean`. Any approximation is considered a failure of the protocol.
+All constants must be used to the maximum precision available in `<local file, not included in repo: Constants.lean>`. Any approximation is considered a failure of the protocol.

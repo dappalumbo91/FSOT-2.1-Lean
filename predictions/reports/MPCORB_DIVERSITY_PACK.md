@@ -8,7 +8,7 @@ Wrong method: treat residual scale on mean motion as a constant rate error and m
 
 ## Storage
 
-- Path: `G:/FSOT-PublicData/anomaly_observables/mpcorb_diversity_pack`
+- Path: `<local folder, not included in repo: FSOT-PublicData/anomaly_observables/mpcorb_diversity_pack>`
 - Used: **0.24 MB** / budget 80.0 MB
 - Within budget: True
 

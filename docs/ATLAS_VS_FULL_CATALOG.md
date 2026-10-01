@@ -15,7 +15,7 @@ You are right about the math: **the same FSOT residual law** (`make_fsot_record`
 
 | Layer | What it stores | Purpose |
 |-------|----------------|---------|
-| **Authority residual solve** | Full (or quality-full) stats in `data/*_benchmark.json` + optional external arrays on `G:\FSOT-PublicData\...` | Green gate: pooled median ≤ 0.5% under FSOT law |
+| **Authority residual solve** | Full (or quality-full) stats in `data/*_benchmark.json` + optional external arrays on `<local folder, not included in repo: FSOT-PublicData>` | Green gate: pooled median ≤ 0.5% under FSOT law |
 | **Atlas SQLite view** | Domain metadata + **sampled** `material_records` (cap **5,000** rows when panel ≥ 10k) | Inventory / search / open-science map |
 
 Atlas builder rule (`scripts/build_fsot_atlas_sqlite.py`):
@@ -71,8 +71,8 @@ python scripts/run_cross_proof_verification.py
 External full DESI product (after full residual run):
 
 ```text
-G:\FSOT-PublicData\open_science_large\desi\full_quality_residual_summary.json
-G:\FSOT-PublicData\open_science_large\desi\full_quality_error_pct.npz
+<local file, not included in repo: full_quality_residual_summary.json>
+<local file, not included in repo: full_quality_error_pct.npz>
 ```
 
 ---

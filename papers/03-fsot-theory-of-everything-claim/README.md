@@ -12,7 +12,7 @@
 
 **Manuscript (LaTeX + PDF)** lives in the standardized pipeline folder:
 
-`C:\Users\damia\Desktop\arxiv-papers\03-fsot-theory-of-everything-claim\`
+`<local folder, not included in repo: 03-fsot-theory-of-everything-claim>`
 
 Topic-named PDF: `03-fsot-theory-of-everything-claim.pdf`  
 Build: `pwsh build-pdf.ps1`  

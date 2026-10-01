@@ -45,7 +45,7 @@ Find an alternative fuel that:
 
 ## Use of existing FSOT reference
 
-The folder `C:\Users\damia\Desktop\FSOT_Machine_And_Molecule` is a strong source for this work.
+The folder `<local folder, not included in repo: FSOT_Machine_And_Molecule>` is a strong source for this work.
 
 - It includes a chemical/SMILES simulator and embedded species catalog.
 - It already encodes FSOT-derived formulas for chemical properties and fluid behavior.

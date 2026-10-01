@@ -192,9 +192,9 @@ Philosophy and consciousness narrative is **distributed**. This spine consolidat
 
 | Source | Path | Content |
 |--------|------|---------|
-| Formal hub | `FSOT-2.1-Lean` / `I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full` | Lean, benchmarks, manifests |
+| Formal hub | `FSOT-2.1-Lean` / `.` | Lean, benchmarks, manifests |
 | Cosmic thesis | `Desktop/FSOT Cosmology Lab/FSOT 3.0 Cosmic Skeleton Key Thesis.md` | Part V consciousness, 25D fluid ontology |
-| SR-ITE axioms | `I:\...\01_SR-ITE-USB-Original\3_driver_zig\fsot_axiomatic_laws.txt` | ROM laws, consciousness directives |
+| SR-ITE axioms | `<local file, not included in repo: fsot_axiomatic_laws.txt>` | ROM laws, consciousness directives |
 | Consciousness kill map | [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) | Claim → panel n / residual / command |
 | Soul bridge | `data/consciousness_soul_bridge_reference.json` | Substrate/packet framework |
 | Tier 90 | `data/tier90_consciousness_expansion_manifest.yaml` | Species, microtubule, observer panels |

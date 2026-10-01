@@ -103,7 +103,7 @@ Open **research** (not failed A/B): path-integral confinement uniqueness, spin-2
 | [FSOT-Quantum](https://github.com/dappalumbo91/FSOT-Quantum) | QM/QC folds, not Hilbert \(2^n\) |
 | [fsot-neuron-zig](https://github.com/dappalumbo91/fsot-neuron-zig) | Neural mind |
 | [FSOT-GPU](https://github.com/dappalumbo91/FSOT-GPU) | Owned operators |
-| Physical Archive | `I:\FSOT-Physical-Archive` |
+| Physical Archive | `<local folder, not included in repo: FSOT-Physical-Archive>` |
 
 Map: [`../RELATED_EMBODIMENTS.md`](../RELATED_EMBODIMENTS.md)
 

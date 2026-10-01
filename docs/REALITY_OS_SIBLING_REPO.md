@@ -5,7 +5,7 @@ The **standalone Reality OS** lives in a separate project so it can become a rea
 | | |
 |--|--|
 | **GitHub** | https://github.com/dappalumbo91/FSOT-Reality-OS |
-| **Sibling path (local)** | `C:\Users\damia\Desktop\FSOT-Reality-OS` |
+| **Sibling path (local)** | `FSOT-Reality-OS` |
 | **Role** | **Real OS:** Rust `no_std` kernel + QEMU in `kernel/` (v0.1 booting) |
 | **This monorepo** | Formula authority, residual atlas, multiprover, reference crates |
 
