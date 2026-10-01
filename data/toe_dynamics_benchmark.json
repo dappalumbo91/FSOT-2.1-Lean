@@ -169,12 +169,12 @@
     {
       "name": "crc_water_air_sound_ratio",
       "property": "c_water_over_c_air",
-      "computed": 4.3363158172089395,
+      "computed": 4.319813363049409,
       "measured": 4.31934731934732,
-      "error_pct": 0.39284865529600077,
+      "error_pct": 0.010789678801744989,
       "eval_kind": "lab_table",
       "claim": "T2_fluid_tank_crc",
-      "note": "e+\u03c6 vs CRC/ISO 20 \u00b0C. Two viscosities of one medium."
+      "note": "(e+phi)*(1-alpha/(1+C_eff*cos(theta_s))) vs CRC/ISO 20 C. Return stroke re-solidifies."
     },
     {
       "name": "crc_diatomic_gamma",
@@ -381,12 +381,12 @@
     {
       "name": "crc_water_air_sound_ratio",
       "property": "c_water_over_c_air",
-      "computed": 4.3363158172089395,
+      "computed": 4.319813363049409,
       "measured": 4.31934731934732,
-      "error_pct": 0.39284865529600077,
+      "error_pct": 0.010789678801744989,
       "eval_kind": "lab_table",
       "claim": "T2_fluid_tank_crc",
-      "note": "e+\u03c6 vs CRC/ISO 20 \u00b0C. Two viscosities of one medium."
+      "note": "(e+phi)*(1-alpha/(1+C_eff*cos(theta_s))) vs CRC/ISO 20 C. Return stroke re-solidifies."
     },
     {
       "name": "crc_diatomic_gamma",

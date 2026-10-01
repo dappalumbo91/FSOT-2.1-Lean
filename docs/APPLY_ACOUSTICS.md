@@ -50,7 +50,7 @@ Look-split vs light **folds onto \(D=9\)**:
 | Handle | Form | Use |
 |--------|------|-----|
 | Poisson of the mafic solid | \(\nu=D_{\mathrm{atomic}}/25=0.28\) | \(v_P/v_S\) vs PREM lid |
-| Two viscosities | \(c_{\mathrm{water}}/c_{\mathrm{air}}=e+\varphi\) | CRC/ISO 20 °C |
+| Two viscosities | \(c_{\mathrm{water}}/c_{\mathrm{air}}=(e+\varphi)(1-\alpha/(1+C_{\mathrm{eff}}\cos\theta_S))\) | CRC/ISO 20 °C |
 | Sound vs light | look-split onto \(D=9\) | CRC \(c\) vs \(n_D\) |
 | Sound vs bulk | look-split 0.3/0.5 onto \(D=9\) | CRC \(c\) vs \(\rho\) |
 
@@ -58,7 +58,7 @@ Look-split vs light **folds onto \(D=9\)**:
 
 ## 4. Green gate
 
-Domain **median** ≤ **0.5%**. CRC \(c\) dual-route is the tight scalar. Lithosphere \(v_P/v_S\) is the crustal tight scalar. Live vs 1 stays **retired**. Water/air \(e+\varphi\) is a **named seed** (under 0.5%) — do not retune it.
+Domain **median** ≤ **0.5%**. CRC \(c\) dual-route is the tight scalar. Lithosphere \(v_P/v_S\) is the crustal tight scalar. Live vs 1 stays **retired**. Water/air is \((e+\varphi)(1-\alpha/(1+C_{\mathrm{eff}}\cos\theta_S))\), inside the printed tenth. Do not retune it.
 
 ---
 
@@ -68,7 +68,7 @@ Domain **median** ≤ **0.5%**. CRC \(c\) dual-route is the tight scalar. Lithos
 |---------|---------|--------|
 | Live \(S\) vs 1 ~24% | Fold 0.3/0.6 onto \(D=9\) | Stuff \(\sqrt{\varphi}\) |
 | Crustal \(v_P/v_S\) ugly | Mafic/lid, not granite/sandstone | Fit a new Poisson |
-| Water/air ~0.4% | Named \(e+\varphi\) object; leave it | A new viscosity \(f\) |
+| Water/air outside the tenth | Return stroke \(1/(1+C_{\mathrm{eff}}\cos\theta_S)\) on \(\alpha\) | A new viscosity \(f\) |
 
 Worked interconnect: `python scripts/build_scale_interconnect_benchmark.py`
 

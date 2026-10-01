@@ -6,13 +6,13 @@
   "within_ppm": {
     "1": 27222,
     "10": 27851,
-    "100": 33227,
-    "500": 182381,
-    "1000": 185031,
+    "100": 33228,
+    "500": 182390,
+    "1000": 185040,
     "5000": 185642
   },
-  "table_limited": 53347,
-  "outside_quoted_digit": 132295,
+  "table_limited": 53354,
+  "outside_quoted_digit": 132288,
   "median_ppm": 224.60999999999999,
   "domains": [
     {
@@ -40,11 +40,11 @@
       "scalar_count": 289,
       "median_ppm": 173.0,
       "max_ppm": 4374.0,
-      "table_limited": 206,
+      "table_limited": 207,
       "within_1_ppm": 2,
       "within_10_ppm": 42,
-      "within_100_ppm": 113,
-      "within_500_ppm": 193,
+      "within_100_ppm": 114,
+      "within_500_ppm": 194,
       "worst": {
         "name": "olive oil",
         "property": "viscosity",
@@ -305,17 +305,17 @@
       "file": "between_scale_interconnect_benchmark.json",
       "scalar_count": 7504,
       "median_ppm": 329.4447195047839,
-      "max_ppm": 3928.486552960008,
+      "max_ppm": 1945.3912122606619,
       "table_limited": 1361,
       "within_1_ppm": 1,
       "within_10_ppm": 1,
       "within_100_ppm": 70,
-      "within_500_ppm": 7383,
+      "within_500_ppm": 7384,
       "worst": {
-        "name": "c_water_over_c_air_20C",
-        "property": "fluid_water_air_sound_ratio",
-        "error_ppm": 3928.486552960008,
-        "measured": 4.31934731934732,
+        "name": "basalt_typical",
+        "property": "seismic_acoustic_vp_vs",
+        "error_ppm": 1945.3912122606619,
+        "measured": 1.8055555555555556,
         "inside_quoted_digit": false
       }
     },
@@ -324,17 +324,17 @@
       "file": "toe_dynamics_benchmark.json",
       "scalar_count": 21,
       "median_ppm": 0.0,
-      "max_ppm": 3928.486552960008,
+      "max_ppm": 768.04,
       "table_limited": 14,
       "within_1_ppm": 16,
       "within_10_ppm": 16,
       "within_100_ppm": 17,
-      "within_500_ppm": 17,
+      "within_500_ppm": 18,
       "worst": {
-        "name": "crc_water_air_sound_ratio",
-        "property": "c_water_over_c_air",
-        "error_ppm": 3928.486552960008,
-        "measured": 4.31934731934732,
+        "name": "POOF",
+        "property": "poof_valve_channel",
+        "error_ppm": 768.04,
+        "measured": 0.1534822148944508,
         "inside_quoted_digit": false
       }
     },
@@ -457,18 +457,18 @@
       "file": "acoustic_resonance_materials_benchmark.json",
       "scalar_count": 29,
       "median_ppm": 83.81497018411083,
-      "max_ppm": 3555.0,
-      "table_limited": 21,
+      "max_ppm": 3297.0,
+      "table_limited": 22,
       "within_1_ppm": 2,
       "within_10_ppm": 3,
       "within_100_ppm": 19,
-      "within_500_ppm": 24,
+      "within_500_ppm": 25,
       "worst": {
-        "name": "Water_20C",
+        "name": "Aluminum",
         "property": "acoustic_impedance_MRayl",
-        "error_ppm": 3555.0,
-        "measured": 1.48,
-        "inside_quoted_digit": false
+        "error_ppm": 3297.0,
+        "measured": 17.0,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -476,18 +476,18 @@
       "file": "creative_arts_math_spine_benchmark.json",
       "scalar_count": 54,
       "median_ppm": 1.9923493045825584,
-      "max_ppm": 3555.0,
-      "table_limited": 42,
+      "max_ppm": 3297.0,
+      "table_limited": 44,
       "within_1_ppm": 27,
       "within_10_ppm": 30,
       "within_100_ppm": 36,
-      "within_500_ppm": 47,
+      "within_500_ppm": 49,
       "worst": {
-        "name": "Water_20C",
+        "name": "Aluminum",
         "property": "acoustic_impedance_MRayl",
-        "error_ppm": 3555.0,
-        "measured": 1.48,
-        "inside_quoted_digit": false
+        "error_ppm": 3297.0,
+        "measured": 17.0,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -495,18 +495,18 @@
       "file": "formula_precision_spine_benchmark.json",
       "scalar_count": 21,
       "median_ppm": 0.0,
-      "max_ppm": 3555.0,
-      "table_limited": 19,
+      "max_ppm": 3297.0,
+      "table_limited": 20,
       "within_1_ppm": 15,
       "within_10_ppm": 15,
       "within_100_ppm": 16,
-      "within_500_ppm": 16,
+      "within_500_ppm": 17,
       "worst": {
-        "name": "Water_20C",
+        "name": "Aluminum",
         "property": "acoustic_impedance_MRayl",
-        "error_ppm": 3555.0,
-        "measured": 1.48,
-        "inside_quoted_digit": false
+        "error_ppm": 3297.0,
+        "measured": 17.0,
+        "inside_quoted_digit": true
       }
     },
     {
@@ -514,36 +514,36 @@
       "file": "term3_acoustic_bleed_depth_benchmark.json",
       "scalar_count": 23,
       "median_ppm": 83.81497018408523,
-      "max_ppm": 3555.0,
-      "table_limited": 19,
+      "max_ppm": 3297.0,
+      "table_limited": 20,
       "within_1_ppm": 5,
       "within_10_ppm": 5,
       "within_100_ppm": 17,
-      "within_500_ppm": 17,
+      "within_500_ppm": 18,
       "worst": {
-        "name": "Water_20C",
+        "name": "Aluminum",
         "property": "acoustic_impedance_MRayl",
-        "error_ppm": 3555.0,
-        "measured": 1.48,
-        "inside_quoted_digit": false
+        "error_ppm": 3297.0,
+        "measured": 17.0,
+        "inside_quoted_digit": true
       }
     },
     {
       "domain": "culinary_arts_benchmark",
       "file": "culinary_arts_benchmark.json",
       "scalar_count": 52,
-      "median_ppm": 476.15187057819077,
-      "max_ppm": 3554.86,
-      "table_limited": 47,
+      "median_ppm": 476.15187057818,
+      "max_ppm": 1615.0600000000002,
+      "table_limited": 48,
       "within_1_ppm": 2,
       "within_10_ppm": 2,
       "within_100_ppm": 3,
-      "within_500_ppm": 43,
+      "within_500_ppm": 44,
       "worst": {
-        "name": "Water_20C",
-        "property": "\u00a774 Acoustic Impedance",
-        "error_ppm": 3554.86,
-        "measured": 1.48,
+        "name": "Water",
+        "property": "\u00a798 Vapor Pressure",
+        "error_ppm": 1615.0600000000002,
+        "measured": 23.76,
         "inside_quoted_digit": false
       }
     },

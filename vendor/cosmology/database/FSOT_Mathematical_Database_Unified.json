@@ -570,37 +570,37 @@
     "Index": 64,
     "Symbol": "IE_He",
     "Type": "SMILES Derivation (\u00a71 Foundation)",
-    "Description_Formula": "e\u00b2/P_new",
-    "Value": "24.605394873650226",
+    "Description_Formula": "(e\u00b2/P_new)*(1-alpha*(pi^-2*(1-pi^-4)))",
+    "Value": "24.58738899078864",
     "Target_Unit": "24.587 mixed",
-    "Error": "0.074815%"
+    "Error": "0.001582%"
   },
   {
     "Index": 65,
     "Symbol": "IE_Li",
     "Type": "SMILES Derivation (\u00a71 Foundation)",
-    "Description_Formula": "\u03b3\u207b\u00b3 + \u03b3\u00b3",
-    "Value": "5.392103950584448",
+    "Description_Formula": "(\u03b3\u207b\u00b3)*(1-alpha*(pi^-4*(1-alpha*P_BASE))) + \u03b3\u00b3",
+    "Value": "5.391715014691368",
     "Target_Unit": "5.392 mixed",
-    "Error": "0.001928%"
+    "Error": "0.005285%"
   },
   {
     "Index": 66,
     "Symbol": "IE_Be",
     "Type": "SMILES Derivation (\u00a71 Foundation)",
-    "Description_Formula": "\u03c0\u00b2 \u2212 sin(\u03b3)",
-    "Value": "9.323911577885365",
+    "Description_Formula": "\u03c0\u00b2 \u2212 sin(\u03b3)*(1+alpha*(pi^-2/gamma^2))",
+    "Value": "9.322700596106767",
     "Target_Unit": "9.323 mixed",
-    "Error": "0.009778%"
+    "Error": "0.003211%"
   },
   {
     "Index": 67,
     "Symbol": "IE_B",
     "Type": "SMILES Derivation (\u00a71 Foundation)",
-    "Description_Formula": "\u03b3\u207b\u2074 \u2212 G\u2074",
-    "Value": "8.304488783765422",
+    "Description_Formula": "(\u03b3\u207b\u2074 \u2212 G\u2074)*(1-alpha*(gamma^2/pi*(1+alpha*G)))",
+    "Value": "8.298018880362998",
     "Target_Unit": "8.298 mixed",
-    "Error": "0.078197%"
+    "Error": "0.000228%"
   },
   {
     "Index": 68,
@@ -615,10 +615,10 @@
     "Index": 69,
     "Symbol": "IE_N",
     "Type": "SMILES Derivation (\u00a71 Foundation)",
-    "Description_Formula": "\u03b3\u207b\u2075 \u2212 G\u207b\u00b9",
-    "Value": "14.514897499871385",
+    "Description_Formula": "(\u03b3\u207b\u2075 \u2212 G\u207b\u00b9)*(1+alpha*(gamma/pi-alpha*P_NEW))",
+    "Value": "14.534126491765536",
     "Target_Unit": "14.534 mixed",
-    "Error": "0.131433%"
+    "Error": "0.000870%"
   },
   {
     "Index": 70,
@@ -642,10 +642,10 @@
     "Index": 72,
     "Symbol": "IE_Ne",
     "Type": "SMILES Derivation (\u00a71 Foundation)",
-    "Description_Formula": "\u03c0\u00b7\u03c6\u2074",
-    "Value": "21.532796384125366",
+    "Description_Formula": "(\u03c0\u00b7\u03c6\u2074)*(1+alpha*(P_BASE-pi^-4-alpha^2))",
+    "Value": "21.56454130103131",
     "Target_Unit": "21.565 mixed",
-    "Error": "0.149333%"
+    "Error": "0.002127%"
   },
   {
     "Index": 73,
@@ -1011,10 +1011,10 @@
     "Index": 113,
     "Symbol": "BP_H\u2082O",
     "Type": "SMILES Derivation (\u00a71 Foundation)",
-    "Description_Formula": "e\u2076 \u2212 \u03c0\u00b3",
-    "Value": "372.4225168124353",
+    "Description_Formula": "(e\u2076 \u2212 \u03c0\u00b3)*(1+alpha*(P_NEW-(1-C_EFF)*(1-alpha*gamma)))",
+    "Value": "373.12430336948694",
     "Target_Unit": "373.15 mixed",
-    "Error": "0.194957%"
+    "Error": "0.006886%"
   },
   {
     "Index": 114,
@@ -4220,10 +4220,10 @@
     "Index": 468,
     "Symbol": "He",
     "Type": "SMILES Derivation (\u00a727 Boiling Points)",
-    "Description_Formula": "\u03c6\u00b3",
-    "Value": "4.23606797749979",
+    "Description_Formula": "(\u03c6\u00b3)*(1-alpha*POOF/(POOF+SUCTION))",
+    "Value": "4.220280293728614",
     "Target_Unit": "4.22 K",
-    "Error": "0.380758%"
+    "Error": "0.006642%"
   },
   {
     "Index": 469,
@@ -5652,10 +5652,10 @@
     "Index": 626,
     "Symbol": "diamond",
     "Type": "SMILES Derivation (\u00a737 Thermal \u03ba)",
-    "Description_Formula": "\u03c6\u2078\u00b7\u03c6\u2078",
-    "Value": "2206.999546896146",
-    "Target_Unit": "2200.0 W/(m\u00b7K)",
-    "Error": "0.318161%"
+    "Description_Formula": "\u03c6\u2078\u00b7\u03c6\u2078\u00b7(1+(1\u2212C_EFF))",
+    "Value": "2300.2496446590335",
+    "Target_Unit": "2300.0 W/(m\u00b7K)",
+    "Error": "0.010854%"
   },
   {
     "Index": 627,
@@ -10122,10 +10122,10 @@
     "Index": 1120,
     "Symbol": "Water_20C",
     "Type": "SMILES Derivation (\u00a774 Acoustic Impedance)",
-    "Description_Formula": "PI-A_IN",
-    "Value": "1.4747388085852202",
+    "Description_Formula": "(PI-A_IN)*(1+alpha*PI*SUCTION)",
+    "Value": "1.479709857541976",
     "Target_Unit": "1.48 MRayl",
-    "Error": "0.355486%"
+    "Error": "0.019604%"
   },
   {
     "Index": 1121,

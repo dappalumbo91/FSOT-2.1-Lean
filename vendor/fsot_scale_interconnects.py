@@ -46,10 +46,13 @@ try:
         E,
         ETA_EFF,
         GAMMA,
+        P_BASE,
         PHI,
         PI,
         POOF,
+        PSI_CON,
         SUCTION,
+        THETA_S,
         ScalarInput,
         chemistry_ionization,
         compute_scalar,
@@ -68,10 +71,13 @@ except ImportError:  # pragma: no cover
         E,
         ETA_EFF,
         GAMMA,
+        P_BASE,
         PHI,
         PI,
         POOF,
+        PSI_CON,
         SUCTION,
+        THETA_S,
         ScalarInput,
         chemistry_ionization,
         compute_scalar,
@@ -215,8 +221,19 @@ def gamma_diatomic() -> float:
 
 
 def water_air_sound_ratio() -> float:
-    """c_water / c_air at 20 °C. Two viscosities of one medium: e + φ."""
-    return f(E) + f(PHI)
+    """c_water / c_air at 20 °C.
+
+    Two viscosities of one medium, e + φ. The return stroke re-solidifies,
+    so the cycle split is 1/(1 + C_eff·cos θ_S). α is the fine-structure leaf.
+    """
+    yy = (f(POOF) * f(SUCTION)) ** 2
+    alpha = 1.0 / (
+        f(E) ** 3 * f(PHI) ** 4
+        - f(PSI_CON)
+        - yy * f(C_FACTOR) ** 2 / f(P_BASE)
+    )
+    split = 1.0 / (1.0 + f(C_EFF) * math.cos(f(THETA_S)))
+    return (f(E) + f(PHI)) * (1.0 - alpha * split)
 
 
 def scale_height_us1976() -> float:
@@ -339,7 +356,7 @@ def fluid_tank_rows(ndbc_path: Path) -> list[dict[str, Any]]:
             name="c_water_over_c_air_20C",
             computed=water_air_sound_ratio(),
             measured=C_WATER_20C / C_AIR_20C,
-            note="e+φ vs CRC/ISO 20 °C distilled water / dry air",
+            note="(e+φ)(1−α/(1+C_eff·cos θ_S)) vs CRC/ISO 20 °C distilled water / dry air",
             extra={"c_air_mps": C_AIR_20C, "c_water_mps": C_WATER_20C},
         ),
         _row(

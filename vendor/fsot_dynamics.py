@@ -593,7 +593,7 @@ def run_dynamics_consistency_suite() -> list[dict]:
             "error_pct": _lab_err(ratio, ratio_m),
             "eval_kind": "lab_table",
             "claim": "T2_fluid_tank_crc",
-            "note": "e+φ vs CRC/ISO 20 °C. Two viscosities of one medium.",
+            "note": "(e+φ)(1−α/(1+C_eff·cos θ_S)) vs CRC/ISO 20 °C. Return stroke re-solidifies.",
         }
     )
     g_air = gamma_diatomic()

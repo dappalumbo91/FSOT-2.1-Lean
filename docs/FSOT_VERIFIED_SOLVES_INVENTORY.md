@@ -47,7 +47,7 @@ We do **not** re-claim these as new. Physics residual coverage is **massive and 
 | Fluid_Spacetime_Observable_Spine | `fluid_spacetime_observable_spine_benchmark.json` | 0.0111155 | 0.039797 |
 | Fluid_Spacetime_Prereg_Validation_Panel | `fluid_spacetime_prereg_validation_panel_benchmark.json` | 0.0 | 0.039797 |
 | Formula_Branching_Fractal | `formula_branching_fractal_benchmark.json` | 0.038016537604979236 | 0.038016537604988035 |
-| Formula_Precision_Spine | `formula_precision_spine_benchmark.json` | 0.0 | 0.3555 |
+| Formula_Precision_Spine | `formula_precision_spine_benchmark.json` | 0.0 | 0.3297 |
 | Foundational_Ontology_Spine | `foundational_ontology_spine_benchmark.json` | 0.009504 | 0.192564276915754 |
 | Founding_Atmospheric_Ozone_Panel | `founding_atmospheric_ozone_panel_benchmark.json` | 0.023822 | 0.023822 |
 | Founding_Cosmic_Dust_Panel | `founding_cosmic_dust_panel_benchmark.json` | 0.044121 | 0.044121 |

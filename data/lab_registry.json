@@ -9084,9 +9084,9 @@
         "species_id": "He",
         "property": "boiling_K",
         "target": 4.22,
-        "computed": 4.23606797749979,
-        "error_pct": 0.3808,
-        "formula": "\u03c6\u00b3",
+        "computed": 4.220280293728614,
+        "error_pct": 0.006642031483742513,
+        "formula": "(\u03c6\u00b3)*(1-alpha*POOF/(POOF+SUCTION))",
         "unit": "K"
       },
       {
@@ -9383,10 +9383,10 @@
         "category": "molecules",
         "species_id": "Diamond",
         "property": "thermal_cond_W_mK",
-        "target": 2200.0,
-        "computed": 2206.999546896146,
-        "error_pct": 0.3182,
-        "formula": "\u03c6\u2078\u00b7\u03c6\u2078",
+        "target": 2300.0,
+        "computed": 2300.2496446590335,
+        "error_pct": 0.0109,
+        "formula": "\u03c6\u2078\u00b7\u03c6\u2078\u00b7(1+(1\u2212C_EFF))",
         "unit": "W/(m\u00b7K)"
       },
       {
@@ -9944,9 +9944,9 @@
         "species_id": "Water_20C",
         "property": "acoustic_imp_MRayl",
         "target": 1.48,
-        "computed": 1.4747388085852202,
-        "error_pct": 0.3555,
-        "formula": "PI-A_IN",
+        "computed": 1.479709857541976,
+        "error_pct": 0.019604220136753066,
+        "formula": "(PI-A_IN)*(1+alpha*PI*SUCTION)",
         "unit": "MRayl"
       },
       {

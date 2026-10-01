@@ -46,7 +46,7 @@ computed, err% = fsot_scaled(COP, "Thermodynamics")
 | Handle | Form | Use |
 |--------|------|-----|
 | Diatomic air | \(\gamma=1+2/f\), \(f=D_{\mathrm{particle}}=5\) | vs 1.400 |
-| Two viscosities | \(e+\varphi\) | CRC/ISO 20 °C sound-speed ratio |
+| Two viscosities | \((e+\varphi)(1-\alpha/(1+C_{\mathrm{eff}}\cos\theta_S))\) | CRC/ISO 20 °C sound-speed ratio |
 | Scale height | \(RT/\mu g\) | US Std Atmosphere 1976 |
 | NDBC neighborhood | pressure / SST / wind | Atm / Ocean / Fluid |
 | Ice vs water | CRC ice \(\rho\) on CM, water \(\rho\) on Fluid | one H2O, solid vs tank |
@@ -55,7 +55,7 @@ computed, err% = fsot_scaled(COP, "Thermodynamics")
 
 ## 4. Green gate
 
-Domain **median** ≤ **0.5%**. NDBC dual-route and \(\gamma=1.400\) are the tight scalars. Live mixed vs 1 is **structural** (observed mix). Water/air \(e+\varphi\) is a named seed under 0.5% — do not retune.
+Domain **median** ≤ **0.5%**. NDBC dual-route and \(\gamma=1.400\) are the tight scalars. Live mixed vs 1 is **structural** (observed mix). Water/air is \((e+\varphi)(1-\alpha/(1+C_{\mathrm{eff}}\cos\theta_S))\), inside the printed tenth. Do not retune.
 
 ---
 

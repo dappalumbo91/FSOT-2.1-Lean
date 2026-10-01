@@ -1774,7 +1774,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
     rows.append(
         _row(
             problem="Navier–Stokes existence and smoothness",
-            function_object="c_water/c_air at 20 °C = e+φ (CRC/ISO lab sound speeds). Two viscosities of one medium. Not Euler",
+            function_object="c_water/c_air at 20 °C = (e+φ)(1−α/(1+C_eff·cos θ_S)). Return stroke re-solidifies. Not Euler",
             clay_object="Global smooth (or blow-up) 3D incompressible NSE",
             name="ns_c_water_over_c_air_crc",
             computed=c_ratio,
@@ -1785,7 +1785,7 @@ def run_accuracy_scoreboard() -> list[dict[str, Any]]:
             verdict="beats_crc_sound_ratio" if c_err < 1.0 else "miss_crc_sound_ratio",
             beats_or_meets_sota=c_err < 1.0,
             native_status="EXECUTABLE",
-            extra={"formula": "e+phi", "c_air_mps": C_AIR_20C, "c_water_mps": C_WATER_20C},
+            extra={"formula": "(e+phi)*(1-alpha/(1+C_eff*cos(theta_s)))", "c_air_mps": C_AIR_20C, "c_water_mps": C_WATER_20C},
             note="Observable. Fluid dark. Do not retune. Not Clay smoothness.",
         )
     )
