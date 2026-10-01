@@ -121,9 +121,9 @@
       "name": "IE_C",
       "target_value": 11.26,
       "unit": "mixed",
-      "fsot_formula": "e\u2077/\u03c0\u2074",
-      "computed_value": 11.258016544324992,
-      "error_pct": 0.017615,
+      "fsot_formula": "(e\u2077/\u03c0\u2074)*(1+alpha*((e/pi^4)*(1-alpha*(4/pi))))",
+      "computed_value": 11.260287811317392,
+      "error_pct": 0.002556,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
