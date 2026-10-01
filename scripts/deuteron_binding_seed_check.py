@@ -43,15 +43,16 @@ sum is high of 1.99. Gamma, 1/phi, and psi_con finish low.
 gamma*psi_con^2 stays high. Silicon's thermal conductivity is
 (e^5)*(1+alpha*gamma*psi_con^2). The bare power is low of 149.
 Gamma, 1/phi, psi_con, G, and 1 finish high. gamma*psi_con^2
-stays low. The water-to-air sound-speed ratio is e+phi. The
-printed speeds are 1482.4 and 343.2, each to one tenth. The bar
-is the box of those two half-tenths. No named seed meets it.
-Euler's gamma is the nearest named seed and finishes below the
-box. gamma*psi_con^2 stays high and also misses. Products and
-quotients of e, phi, pi, gamma, G, and psi_con put four
-dressings in that box. gamma*G, sqrt(e)/pi, and phi/pi stay
-high. G/sqrt(e) crosses. Those are different dressings. The
-bare sum stays.
+stays low. The water-to-air sound-speed ratio is
+(e+phi)*(1-alpha/(1+C_eff*cos(theta_s))). The printed speeds
+are 1482.4 and 343.2, each to one tenth. The bare sum is high
+of that box. The written split 1/(1+cos(theta_s)) finishes just
+above the high edge. C_eff scales the return cosine. That leaf
+stays high and inside the box.
+Water's acoustic impedance at 20 C is
+(PI-A_IN)*(1+alpha*PI*SUCTION). The inlet is a piece of pi.
+The return stroke counted on that pi meets rho times c.
+The suction share sits on the rounded 1.48.
 This script
 only prints.
 """
@@ -463,8 +464,8 @@ def main() -> int:
     print(f"cair_G_over_phi={g_over_phi}")
     print(f"cair_G_over_phi_pred={g_pred}")
     print(f"cair_G_over_phi_in_box={cair_lo <= g_pred <= cair_hi}")
-    # Two-factor products of the seeds in this reading. Several hits
-    # are different dressings. The bare sum stays.
+    # Two-factor products of the seeds in this reading.
+    # The installed leaf is the return stroke printed below.
     pair_atoms = (
         ("1", mpf(1)),
         ("e", F.E),
@@ -494,7 +495,34 @@ def main() -> int:
         gap = pred - cair_meas
         print(f"cair_pair_{name}={val}")
         print(f"cair_pair_{name}_pred={pred} side={side(gap)} in_box={cair_lo <= pred <= cair_hi}")
-    print("cair_formula=e+phi")
+    # The return stroke re-solidifies: cos θ_S is scaled by C_eff.
+    cair_split = 1 / (1 + F.C_EFF * F.cos(F.THETA_S))
+    cair_leaf = cair * (1 - a * cair_split)
+    print(f"cair_return_split={cair_split}")
+    print("cair_leaf_formula=(e+phi)*(1-alpha/(1+C_eff*cos(theta_s)))")
+    report("cair_leaf", cair_leaf, cair_meas, cair_bar)
+    print("cair_formula=(e+phi)*(1-alpha/(1+C_eff*cos(theta_s)))")
+    # Helium boiling is the liquid opening into vapor. The opening share
+    # stays high of printed 4.22. The return stroke crosses that center.
+    he_bare = F.PHI ** 3
+    he_meas = mpf("4.22")
+    he_bar = mpf("0.005")
+    he_open = F.POOF / (F.POOF + F.SUCTION)
+    he_leaf = he_bare * (1 - a * he_open)
+    print(f"he_opening={he_open}")
+    print("he_leaf_formula=phi^3*(1-alpha*POOF/(POOF+SUCTION))")
+    report("he_leaf", he_leaf, he_meas, he_bar)
+    # Water acoustic impedance at 20 C. The inlet already carries the
+    # return cosine. The piece on alpha is the suction share.
+    zw_bare = pi - F.A_IN
+    zw_meas = mpf("1.48")
+    zw_bar = mpf("0.005")
+    zw_piece = pi * F.SUCTION
+    zw_leaf = zw_bare * (1 + a * zw_piece)
+    print(f"zw_pi_suction={zw_piece}")
+    print("zw_leaf_formula=(PI-A_IN)*(1+alpha*PI*SUCTION)")
+    report("zw_leaf", zw_leaf, zw_meas, zw_bar)
+    print("zw_formula=(PI-A_IN)*(1+alpha*PI*SUCTION)")
     return 0
 
 
