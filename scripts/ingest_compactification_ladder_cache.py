@@ -1,6 +1,18 @@
 #!/usr/bin/env python3
-"""Cache compactification ladder validation data on external drive (G:/FSOT-PublicData)."""
+"""Cache compactification ladder validation data on external drive ($FSOT_EXTERNAL_DATA_ROOT)."""
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import json
 import os
@@ -9,7 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
-EXTERNAL = Path(os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "G:/FSOT-PublicData")) / "compactification_ladder"
+EXTERNAL = Path(os.environ.get("FSOT_EXTERNAL_DATA_ROOT", _os.fspath(_REPO_ROOT / 'data_external/public_data'))) / "compactification_ladder"
 
 
 def _load_json(path: Path) -> dict:

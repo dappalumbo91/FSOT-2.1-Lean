@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import os
 import sys
@@ -23,7 +35,7 @@ def main() -> int:
     if args.deep:
         os.environ["FSOT_TIER95_DEEP"] = "1"
     if not os.environ.get("FSOT_ZEBRAHUB_CACHE_ROOT"):
-        candidate = Path(r"I:\FSOT-Physical-Archive\05_Zebrahub-Development")
+        candidate = _fsot_local_path('FSOT_ARCHIVE_ROOT', 'data_external/physical_archive') / '05_Zebrahub-Development'
         if candidate.parent.exists():
             os.environ["FSOT_ZEBRAHUB_CACHE_ROOT"] = str(candidate)
     print(f"Zebrahub cache: {cache_root()}")

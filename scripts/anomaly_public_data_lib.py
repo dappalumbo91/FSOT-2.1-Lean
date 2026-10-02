@@ -2,6 +2,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import csv
 import json
 import os
@@ -12,7 +24,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CACHE = Path(r"G:\FSOT-PublicData\anomaly_observables")
+DEFAULT_CACHE = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables'
 
 SH0ES_FILES = (
     "SH0ES_Data/optical_wes_R22_for19fromR16.dat",

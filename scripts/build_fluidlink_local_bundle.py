@@ -41,7 +41,7 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "steps": results,
         "all_ok": all(r["ok"] for r in results),
-        "kronos_archive": r"I:\FSOT-Physical-Archive\06_Kronos-FluidLink\Kronos",
+        "kronos_archive": r"$FSOT_ARCHIVE_ROOT/06_Kronos-FluidLink/Kronos",
         "esp32": "deferred",
         "observer": "timing+display_proxy (no mic/camera)",
     }

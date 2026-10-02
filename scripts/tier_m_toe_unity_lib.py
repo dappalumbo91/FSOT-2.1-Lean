@@ -1,6 +1,18 @@
 """Tier M (48) — ToE unity: remaining cross-scale bridges + unification spine."""
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import os
 from datetime import datetime, timezone
@@ -10,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 EXT_MANIFEST = DATA / "extension_domains_manifest.yaml"
 REGISTRY_PATH = DATA / "orbital_predictions_registry.yaml"
-EXTERNAL_ROOT = Path(os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "G:/FSOT-PublicData"))
+EXTERNAL_ROOT = Path(os.environ.get("FSOT_EXTERNAL_DATA_ROOT", _os.fspath(_REPO_ROOT / 'data_external/public_data')))
 
 MED_GAL_BENCH = DATA / "medical_galactic_orbital_bridge_benchmark.json"
 AI_GAL_BENCH = DATA / "ai_galactic_orbital_bridge_benchmark.json"

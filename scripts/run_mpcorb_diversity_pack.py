@@ -37,6 +37,18 @@ Examples
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import math
@@ -65,9 +77,9 @@ RAW = ROOT / "vendor" / "mpcorb"
 NEA = RAW / "NEA.txt"
 DISTANT = RAW / "Distant.txt"
 COMETS = RAW / "AllCometEls.txt"
-EXTERNAL = Path(r"G:\FSOT-PublicData\anomaly_observables\mpcorb_diversity_pack")
+EXTERNAL = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'mpcorb_diversity_pack'
 LOCAL = ROOT / "vendor" / "mpcorb" / "diversity_pack"
-EXISTING_MAIN = Path(r"G:\FSOT-PublicData\anomaly_observables\mpcorb_raw_observations\objects")
+EXISTING_MAIN = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'mpcorb_raw_observations' / 'objects'
 
 OUT_JSON = ROOT / "data" / "mpcorb_diversity_pack.json"
 OUT_MD = ROOT / "predictions" / "reports" / "MPCORB_DIVERSITY_PACK.md"

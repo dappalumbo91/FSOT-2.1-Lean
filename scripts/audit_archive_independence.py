@@ -37,7 +37,7 @@ def main() -> int:
 
     issues: list[str] = []
     if not canonical_archive_mode():
-        issues.append("not running from I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full")
+        issues.append("not running from .")
 
     compute = fsot_compute_path()
     if "desktop" in str(compute).lower():
@@ -65,7 +65,7 @@ def main() -> int:
         "critical_authority_path_desktop": critical[:50],
         "critical_count": len(critical),
         "other_desktop_refs": issues[:100],
-        "policy": "I:/FSOT-Physical-Archive is the definitive hub synced to GitHub; C: Desktop is legacy only.",
+        "policy": "$FSOT_ARCHIVE_ROOT is the definitive hub synced to GitHub; C: Desktop is legacy only.",
     }
     OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps(report, indent=2))

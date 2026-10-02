@@ -80,6 +80,18 @@ Outputs:
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import math
 import statistics
@@ -105,7 +117,7 @@ from time_emergence_lib import (  # noqa: E402
     _orbital_year_omega,
 )
 
-EXTERNAL = Path(r"G:\FSOT-PublicData\anomaly_observables\mpcorb_raw_observations")
+EXTERNAL = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'mpcorb_raw_observations'
 LOCAL = ROOT / "vendor" / "mpcorb" / "raw_observations"
 OUT_JSON = ROOT / "data" / "mpcorb_fsot_vs_standard_oc.json"
 OUT_MD = ROOT / "predictions" / "reports" / "MPCORB_FSOT_VS_STANDARD_OC.md"

@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 from datetime import datetime, timezone
@@ -1169,12 +1181,12 @@ def build_progress() -> dict:
                 "pubchem_records": pubchem_bench.get("record_count"),
                 "cern_opendata_records": cern_opendata_bench.get("record_count"),
                 "uniprot_records": uniprot_bench.get("record_count"),
-                "external_data_root": "D:/FSOT-2.1-Lean-PublicData",
+                "external_data_root": "$FSOT_LEAN_PUBLIC_DATA",
             },
             "artifacts": [
                 "data/tier38_public_apis_manifest.yaml",
                 "vendor/public_data",
-                "D:/FSOT-2.1-Lean-PublicData",
+                _os.fspath(_fsot_local_path('FSOT_LEAN_PUBLIC_DATA', 'data_external/lean_public_data')),
                 "FSOT.Formal.NistCodataConstantsPriors",
                 "FSOT.Formal.GbifSpeciesOccurrencePriors",
                 "FSOT.Formal.NoaaCoastalTidesPriors",
@@ -1206,12 +1218,12 @@ def build_progress() -> dict:
                 "electrical_power_records": electrical_power_bench.get("record_count"),
                 "hvac_thermal_records": hvac_thermal_bench.get("record_count"),
                 "breakthroughs_records": breakthroughs_bench.get("record_count"),
-                "external_data_root": "D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical",
+                "external_data_root": "$FSOT_LEAN_PUBLIC_DATA/tier39_propulsion_electrical",
             },
             "artifacts": [
                 "data/tier39_propulsion_electrical_manifest.yaml",
                 "vendor/propulsion_electrical",
-                "D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical",
+                _os.fspath(_fsot_local_path('FSOT_LEAN_PUBLIC_DATA', 'data_external/lean_public_data') / 'tier39_propulsion_electrical'),
                 "FSOT.Formal.SpacePropulsionSystemsPriors",
                 "FSOT.Formal.ElectricalPowerSystemsPriors",
                 "FSOT.Formal.HvacThermalSystemsPriors",
@@ -1253,12 +1265,12 @@ def build_progress() -> dict:
                     .values()
                     if ok
                 ),
-                "external_cache_root": "G:/FSOT-PublicData/trinary_os",
+                "external_cache_root": "$FSOT_EXTERNAL_DATA_ROOT/trinary_os",
             },
             "artifacts": [
                 "data/trinary_os_tier_e_manifest.yaml",
                 "vendor/trinary_os",
-                "G:/FSOT-PublicData/trinary_os",
+                _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'trinary_os'),
                 "FSOT.Formal.TrinaryOSTierEPriors",
             ],
         },
@@ -1277,13 +1289,13 @@ def build_progress() -> dict:
                     )
                     or []
                 ),
-                "external_cache_root": "G:/FSOT-PublicData/tier_f_gaps",
+                "external_cache_root": "$FSOT_EXTERNAL_DATA_ROOT/tier_f_gaps",
             },
             "artifacts": [
                 "scripts/tier_f_extension_lib.py",
                 "scripts/build_tier_f_extension_benchmarks.py",
                 "scripts/gen_tier_f_extension_lean.py",
-                "G:/FSOT-PublicData/tier_f_gaps",
+                _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'tier_f_gaps'),
                 "FSOT.Formal.PaleontologyExtensionPriors",
                 "FSOT.Formal.MarineBiologyExtensionPriors",
                 "FSOT.Formal.MycologyExtensionPriors",
@@ -1339,7 +1351,7 @@ def build_progress() -> dict:
                 "data/domain_coupling_simulation_benchmark.json",
                 "data/formula_corpus_closure_benchmark.json",
                 "data/space_weather_summary_benchmark.json",
-                "G:/FSOT-PublicData/space_weather",
+                _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'space_weather'),
                 "FSOT.Formal.DomainCouplingSimulationPriors",
                 "FSOT.Formal.FormulaCorpusClosurePriors",
             ],
@@ -1383,7 +1395,7 @@ def build_progress() -> dict:
                 "zero_day_risk_tier": zero_day_bench.get("risk_tier"),
                 "zero_day_hole_count": zero_day_bench.get("detected_hole_count"),
                 "coupling_node_count": coupling_bench.get("node_count"),
-                "external_cache_root": "G:/FSOT-PublicData/cybersecurity",
+                "external_cache_root": "$FSOT_EXTERNAL_DATA_ROOT/cybersecurity",
             },
             "artifacts": [
                 "scripts/ingest_cybersecurity_public_data.py",
@@ -1392,7 +1404,7 @@ def build_progress() -> dict:
                 "scripts/code_genome_lib.py",
                 "data/code_genome_crosswalk.yaml",
                 "vendor/cybersecurity",
-                "G:/FSOT-PublicData/cybersecurity",
+                _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'cybersecurity'),
                 "FSOT.Formal.CryptographyTechnologyPriors",
                 "FSOT.Formal.MalwareThreatIntelligencePriors",
                 "FSOT.Formal.CodeGenomeStructurePriors",
@@ -1423,7 +1435,7 @@ def build_progress() -> dict:
                 "code_genome_bridge_count": pl_laws_bench.get("code_genome_bridge_count"),
                 "oss_refresh_cadence_days": 7,
                 "coupling_node_count": coupling_bench.get("node_count"),
-                "external_cache_root": "G:/FSOT-PublicData/github_oss",
+                "external_cache_root": "$FSOT_EXTERNAL_DATA_ROOT/github_oss",
             },
             "artifacts": [
                 "scripts/ingest_github_oss_code_genome.py",
@@ -1435,7 +1447,7 @@ def build_progress() -> dict:
                 "data/programming_language_crosswalk.yaml",
                 "vendor/math_generator/rules/PROGRAMMING_LANGUAGE_RULES.json",
                 "vendor/github_oss",
-                "G:/FSOT-PublicData/github_oss",
+                _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'github_oss'),
                 "FSOT.Formal.ExternalOSSCodeGenomePriors",
                 "FSOT.Formal.ProgrammingLanguageLawsPriors",
                 "FSOT.Formal.LinguisticsFormalPriors",
@@ -1566,7 +1578,7 @@ def build_progress() -> dict:
                 "toe_unification_status": toe_unity_bench.get("unification_status"),
                 "coupling_node_count": coupling_bench.get("node_count"),
                 "mechanistic_channel_count": mech_bench.get("mechanism_count"),
-                "external_cache_root": "G:/FSOT-PublicData/cross_scale_bridges",
+                "external_cache_root": "$FSOT_EXTERNAL_DATA_ROOT/cross_scale_bridges",
             },
             "artifacts": [
                 "data/orbital_bridge_scientific_framing.yaml",
@@ -1575,7 +1587,7 @@ def build_progress() -> dict:
                 "scripts/tier_m_toe_unity_lib.py",
                 "scripts/ingest_cross_scale_bridge_cache.py",
                 "scripts/build_tier_m_toe_unity_benchmarks.py",
-                "G:/FSOT-PublicData/cross_scale_bridges",
+                _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'cross_scale_bridges'),
                 "FSOT.Formal.ToEUnificationSpinePriors",
                 "FSOT.Formal.MedicalGalacticOrbitalBridgePriors",
             ],
@@ -1603,14 +1615,14 @@ def build_progress() -> dict:
                 "folding_spine_status": folding_spine_bench.get("folding_status"),
                 "mechanistic_channel_count": mech_bench.get("mechanism_count"),
                 "coupling_node_count": coupling_bench.get("node_count"),
-                "external_cache_root": "G:/FSOT-PublicData/compactification_ladder",
+                "external_cache_root": "$FSOT_EXTERNAL_DATA_ROOT/compactification_ladder",
             },
             "artifacts": [
                 "data/compactification_ladder_manifest.yaml",
                 "scripts/tier_n_compactification_ladder_lib.py",
                 "scripts/build_tier_n_compactification_ladder_benchmarks.py",
                 "scripts/ingest_compactification_ladder_cache.py",
-                "G:/FSOT-PublicData/compactification_ladder",
+                _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'compactification_ladder'),
                 "FSOT.Formal.RealityFoldingSpinePriors",
                 "FSOT.Formal.CompactificationLadderPriors",
             ],

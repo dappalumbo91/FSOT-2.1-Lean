@@ -6,7 +6,7 @@ All prediction manifests, freezes, atlases, and human reports live under:
       *.json / *.yaml     — machine artifacts
       reports/            — human-readable MD tables
 
-Large raw catalogs stay on external drive G:/FSOT-PublicData (see external_data_pointers.json).
+Large raw catalogs stay on external drive $FSOT_EXTERNAL_DATA_ROOT (see external_data_pointers.json).
 """
 
 from __future__ import annotations

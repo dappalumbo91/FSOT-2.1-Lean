@@ -18,6 +18,18 @@ Storage-capped for home PC (Omen-class). No full proteome dump.
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import sys
@@ -34,7 +46,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from fsot_structure_engine import predict_ca_coords, write_ca_pdb, clean_sequence  # noqa: E402
 
-EXTERNAL = Path(r"G:\FSOT-PublicData\anomaly_observables\fsot_vs_alphafold")
+EXTERNAL = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'fsot_vs_alphafold'
 LOCAL = ROOT / "vendor" / "fsot_vs_alphafold"
 OUT_JSON = ROOT / "data" / "fsot_vs_alphafold_structure.json"
 OUT_MD = ROOT / "predictions" / "reports" / "FSOT_VS_ALPHAFOLD_STRUCTURE.md"

@@ -2,6 +2,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -49,7 +61,7 @@ def cache_root() -> Path:
 
     raw = os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "").strip()
     if not raw:
-        for candidate in (Path("G:/FSOT-PublicData"), Path("D:/FSOT-2.1-Lean-PublicData")):
+        for candidate in (_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data'), _fsot_local_path('FSOT_LEAN_PUBLIC_DATA', 'data_external/lean_public_data')):
             if candidate.exists():
                 raw = str(candidate)
                 break

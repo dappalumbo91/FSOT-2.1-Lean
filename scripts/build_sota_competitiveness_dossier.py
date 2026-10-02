@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 from datetime import datetime, timezone
@@ -13,7 +25,7 @@ DOMAIN_REPORT = ROOT / "data" / "sota_competitiveness_report.json"
 OBS_REPORT = ROOT / "data" / "sota_observable_ledger_report.json"
 OUTPUT_MD = ROOT / "data" / "sota_competitiveness_dossier.md"
 OUTPUT_JSON = ROOT / "data" / "sota_competitiveness_dossier.json"
-EXTERNAL_ROOT = Path("G:/FSOT-Cosmology-Lab/literature")
+EXTERNAL_ROOT = _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'FSOT-Cosmology-Lab' / 'literature'
 
 
 def _load(path: Path) -> dict:

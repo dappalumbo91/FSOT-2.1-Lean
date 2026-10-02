@@ -20,6 +20,18 @@ External path (read-only):
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import sys
 from pathlib import Path
@@ -33,9 +45,9 @@ sys.path.insert(0, str(SCRIPTS))
 from tier_gap_fill_lib import _bench_v11, _load_fsot, _load_json  # noqa: E402
 
 FSOT_GPU_CANDIDATES = [
-    Path(r"C:\Users\damia\Desktop\gpu exparment for lean coq isabell andf star"),
-    Path(r"C:\Users\damia\Desktop\FSOT-GPU"),
-    Path(r"I:\FSOT-GPU"),
+    _fsot_local_path('FSOT_GPU_ROOT', '../FSOT-GPU'),
+    _fsot_local_path('FSOT_GPU_ROOT', '../FSOT-GPU'),
+    _fsot_local_path('FSOT_GPU_ROOT', '../FSOT-GPU'),
 ]
 
 

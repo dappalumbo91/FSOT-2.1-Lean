@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ingest Tier 51 anomaly public data to G:/FSOT-PublicData/anomaly_observables."""
+"""Ingest Tier 51 anomaly public data to $FSOT_EXTERNAL_DATA_ROOT/anomaly_observables."""
 
 from __future__ import annotations
 

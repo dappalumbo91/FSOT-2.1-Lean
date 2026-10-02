@@ -9,13 +9,25 @@ Pipeline:
 This uses **granular observations** (not literature summaries) and an industrial
 ephemeris (Horizons / DE441) — the same class of tools the catalog is based on.
 
-Storage: G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations/
+Storage: $FSOT_EXTERNAL_DATA_ROOT/anomaly_observables/mpcorb_raw_observations
 Outputs:
   data/mpcorb_raw_oc_residuals.json
   predictions/reports/MPCORB_RAW_OC_RESIDUALS.md
 """
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import json
 import math
@@ -29,7 +41,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-EXTERNAL = Path(r"G:\FSOT-PublicData\anomaly_observables\mpcorb_raw_observations")
+EXTERNAL = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'mpcorb_raw_observations'
 LOCAL = ROOT / "vendor" / "mpcorb" / "raw_observations"
 OUT_JSON = ROOT / "data" / "mpcorb_raw_oc_residuals.json"
 OUT_MD = ROOT / "predictions" / "reports" / "MPCORB_RAW_OC_RESIDUALS.md"

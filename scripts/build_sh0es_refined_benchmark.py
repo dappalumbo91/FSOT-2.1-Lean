@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import sys
@@ -11,7 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "sh0es_refined_benchmark.json"
 HOST_COORDS = ROOT / "data" / "sh0es_host_coordinates.json"
-SH0ES_PARSED = Path(r"G:\FSOT-PublicData\anomaly_observables\sh0es\sh0es_hosts_parsed.json")
+SH0ES_PARSED = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'sh0es' / 'sh0es_hosts_parsed.json'
 HOST_ALIASES = {
     "N1015": "NGC1015",
     "N1309": "NGC1309",
@@ -185,7 +197,7 @@ def main() -> int:
         d_eff=25,
         authority_path=str(fsot_compute_path()),
         source=[
-            "G:/FSOT-PublicData/anomaly_observables/sh0es",
+            _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'sh0es'),
             "data/sh0es_host_coordinates.json",
             "predictions/sector_h0_seed.json",
         ],

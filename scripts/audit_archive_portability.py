@@ -3,6 +3,12 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
 import argparse
 import json
 import os
@@ -23,9 +29,7 @@ from fsot_paths import (  # noqa: E402
 )
 
 OUT = ROOT / "data" / "archive_portability_audit.json"
-DESKTOP_MIRROR = Path(
-    r"C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main"
-)
+DESKTOP_MIRROR = _REPO_ROOT
 GITHUB_REMOTE = "https://github.com/dappalumbo91/FSOT-2.1-Lean.git"
 REQUIRED_PYTHON = ("numpy", "mpmath", "sympy", "yaml", "pypdf", "pytest")
 HOST_TOOLS = ("python", "lake", "elan", "rustc", "cargo", "coqc")

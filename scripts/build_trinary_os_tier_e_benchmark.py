@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import shutil
@@ -89,7 +101,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
     isa = _load(ROOT / src["isa_rebuild_benchmark"])
     round_trip = _load(ROOT / src["round_trip_benchmark"])
 
-    external_root = Path(src.get("external_cache_root", r"G:\FSOT-PublicData\trinary_os"))
+    external_root = Path(src.get("external_cache_root", _os.fspath(_REPO_ROOT / 'data_external/public_data' / 'trinary_os')))
     _sync_external_cache(external_root)
 
     material_records: list[dict] = []

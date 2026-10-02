@@ -48,7 +48,7 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "steps": results,
         "all_ok": all(r["ok"] for r in results),
-        "archive_root": r"I:\FSOT-Physical-Archive\09_Local-Verification-Stack",
+        "archive_root": r"$FSOT_ARCHIVE_ROOT/09_Local-Verification-Stack",
         "existence_simulation": sim_summary,
         "independent_prediction_ledger": "data/publication/independent_prediction_ledger.yaml",
         "policy": "synthetic gap fill + locked FSOT predictions for real-data verification",

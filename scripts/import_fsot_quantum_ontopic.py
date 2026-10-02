@@ -8,13 +8,25 @@ Branching ratios are High_Energy_Physics fold, same pin. BR(H→gg) uses YR4
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-QCAT = Path(r"C:\Users\damia\Desktop\fsot quantum\results\formula_catalog.json")
+QCAT = _fsot_local_path('FSOT_QUANTUM_ROOT', '../FSOT-Quantum') / 'results' / 'formula_catalog.json'
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from c_thin_depth_lib import _tier  # noqa: E402

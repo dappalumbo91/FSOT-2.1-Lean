@@ -2,6 +2,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import csv
 import json
 import math
@@ -38,7 +50,7 @@ def cache_root() -> Path:
     if dedicated:
         root = Path(dedicated).expanduser()
     else:
-        i_dedicated = Path(r"I:/FSOT-Physical-Archive/05_Zebrahub-Development")
+        i_dedicated = _fsot_local_path('FSOT_ARCHIVE_ROOT', 'data_external/physical_archive') / '05_Zebrahub-Development'
         if i_dedicated.parent.exists():
             root = i_dedicated
         else:
@@ -242,7 +254,7 @@ def _longevity_zebrafish() -> dict:
     lg = os.environ.get("FSOT_LONGEVITY_CACHE_ROOT", "").strip()
     candidates = [
         Path(lg) / "tier94_anage_longevity_catalog.json" if lg else None,
-        Path(r"I:/FSOT-Physical-Archive/04_Genetics-Longevity/tier94_anage_longevity_catalog.json"),
+        _fsot_local_path('FSOT_ARCHIVE_ROOT', 'data_external/physical_archive') / '04_Genetics-Longevity' / 'tier94_anage_longevity_catalog.json',
         ROOT / "vendor" / "longevity_genetics" / "tier94_anage_longevity_catalog.json",
     ]
     for path in candidates:

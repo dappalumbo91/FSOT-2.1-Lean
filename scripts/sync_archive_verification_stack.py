@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
-"""Sync local verification stack → I:/FSOT-Physical-Archive/09_Local-Verification-Stack."""
+"""Sync local verification stack → $FSOT_ARCHIVE_ROOT/09_Local-Verification-Stack."""
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import json
 import shutil
@@ -14,7 +26,7 @@ except ImportError:
     yaml = None
 
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE_ROOT = Path(r"I:\FSOT-Physical-Archive\09_Local-Verification-Stack")
+ARCHIVE_ROOT = _fsot_local_path('FSOT_ARCHIVE_ROOT', 'data_external/physical_archive') / '09_Local-Verification-Stack'
 REPORT = ROOT / "data" / "publication" / "archive_verification_sync_report.json"
 
 COPY_FILES = [

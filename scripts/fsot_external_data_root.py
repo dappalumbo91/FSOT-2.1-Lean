@@ -3,13 +3,25 @@
 
 Preference order:
   1. FSOT_EXTERNAL_DATA_ROOT env
-  2. G:/FSOT-PublicData (existing public-data volume)
-  3. I:/FSOT-PublicData (physical archive drive — created if I: present)
-  4. D:/FSOT-PublicData
+  2. $FSOT_EXTERNAL_DATA_ROOT (existing public-data volume)
+  3. $FSOT_EXTERNAL_DATA_ROOT (physical archive drive — created if I: present)
+  4. $FSOT_EXTERNAL_DATA_ROOT
   5. vendor/public_data/cache (repo-local fallback)
 """
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import os
 from pathlib import Path
@@ -17,10 +29,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 _CANDIDATES = (
-    Path(r"G:\FSOT-PublicData"),
-    Path(r"I:\FSOT-PublicData"),
-    Path(r"D:\FSOT-PublicData"),
-    Path(r"I:\FSOT-Physical-Archive\FSOT-PublicData"),
+    _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data'),
+    _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data'),
+    _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data'),
+    _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data'),
 )
 
 

@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import sys
@@ -12,9 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 FORMAL = ROOT / "FSOT" / "Formal"
 BENCH = DATA / "warp_bh_wh_portal_benchmark.json"
-LEGACY_FORMULA = Path(
-    r"C:\Users\damia\Desktop\FSOT-Legacy-Physics-Connections\concept_refinement\warp_actuation_formula_fsot21.json"
-)
+LEGACY_FORMULA = _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'FSOT-Legacy-Physics-Connections' / 'concept_refinement' / 'warp_actuation_formula_fsot21.json'
 
 
 def _r(v: float) -> str:

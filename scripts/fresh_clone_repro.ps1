@@ -3,7 +3,7 @@
 # Usage:
 #   pwsh scripts/fresh_clone_repro.ps1
 #   pwsh scripts/fresh_clone_repro.ps1 -SkipBundle
-#   pwsh scripts/fresh_clone_repro.ps1 -OutDir D:\tmp\fsot-clone
+#   pwsh scripts/fresh_clone_repro.ps1 -OutDir $env:TEMP\fsot-clone
 
 param(
     [string]$RepoUrl = "https://github.com/dappalumbo91/FSOT-2.1-Lean.git",

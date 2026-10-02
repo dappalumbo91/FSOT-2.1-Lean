@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
-"""Copy Kronos from Desktop → I:/FSOT-Physical-Archive/06_Kronos-FluidLink (internal verification)."""
+"""Copy Kronos from Desktop → $FSOT_ARCHIVE_ROOT/06_Kronos-FluidLink (internal verification)."""
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import json
 import shutil
@@ -13,8 +25,8 @@ MANIFEST = ROOT / "data" / "kronos_manifest.yaml"
 FLUIDLINK_MANIFEST = ROOT / "data" / "fluidlink_local_manifest.yaml"
 REPORT = ROOT / "data" / "publication" / "kronos_archive_sync_report.json"
 
-DESKTOP_SRC = Path(r"C:\Users\damia\Desktop\Kronos")
-ARCHIVE_ROOT = Path(r"I:\FSOT-Physical-Archive\06_Kronos-FluidLink")
+DESKTOP_SRC = _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'Kronos'
+ARCHIVE_ROOT = _fsot_local_path('FSOT_ARCHIVE_ROOT', 'data_external/physical_archive') / '06_Kronos-FluidLink'
 ARCHIVE_DEST = ARCHIVE_ROOT / "Kronos"
 
 SKIP_DIRS = {"__pycache__", ".git", "node_modules"}

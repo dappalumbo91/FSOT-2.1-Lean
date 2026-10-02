@@ -2,6 +2,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import math
 import shutil
@@ -31,7 +43,7 @@ def resolve_living_root(explicit: str | Path | None = None) -> Path | None:
         if p.exists():
             return p
     for candidate in (
-        Path(r"C:\Users\damia\Desktop\living fsot\files-e5887462"),
+        _fsot_local_path('FSOT_LIVING_ROOT', '../FSOT-Living'),
         Path.home() / "Desktop" / "living fsot" / "files-e5887462",
     ):
         if candidate.exists():

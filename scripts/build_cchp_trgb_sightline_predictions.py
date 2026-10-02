@@ -2,7 +2,7 @@
 """CCHP / Carnegie TRGB galaxy sightline H0 predictions.
 
 Bulk host catalog lives on external drive:
-  G:/FSOT-PublicData/anomaly_observables/carnegie_trgb/
+  $FSOT_EXTERNAL_DATA_ROOT/anomaly_observables/carnegie_trgb
 
 Monorepo outputs (lightweight):
   predictions/cchp_trgb_sightline_predictions.json
@@ -10,6 +10,18 @@ Monorepo outputs (lightweight):
 """
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import hashlib
 import json
@@ -31,7 +43,7 @@ from cosmology_lambda import H0_CANONICAL  # noqa: E402
 from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
 # Prefer external Seagate; fall back to monorepo vendor mirror if present
-EXTERNAL_HOSTS = Path(r"G:\FSOT-PublicData\anomaly_observables\carnegie_trgb\cchp_trgb_hosts.json")
+EXTERNAL_HOSTS = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'carnegie_trgb' / 'cchp_trgb_hosts.json'
 LOCAL_MIRROR = ROOT / "vendor" / "public_data_pointers" / "cchp_trgb_hosts.json"
 SECTOR_SEED = ROOT / "predictions" / "sector_h0_seed.json"
 NEBULA = ROOT / "data" / "nebula_lensing_cache.json"
@@ -168,7 +180,7 @@ def build() -> dict:
         "authority_pin_prefix": "D1D38A",
         "external_catalog_path": str(source_path).replace("\\", "/"),
         "external_drive_policy": (
-            "Large catalogs stay on G:/FSOT-PublicData; monorepo stores predictions only."
+            "Large catalogs stay on $FSOT_EXTERNAL_DATA_ROOT; monorepo stores predictions only."
         ),
         "theory": {
             "mechanism": "black_hole_white_hole_bubble_bleed",
@@ -239,7 +251,7 @@ def write_pointer(doc: dict) -> None:
             ptr = json.loads(POINTER.read_text(encoding="utf-8"))
         except Exception:
             ptr = {}
-    ptr.setdefault("external_root", "G:/FSOT-PublicData")
+    ptr.setdefault("external_root", _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data')))
     ptr.setdefault("datasets", {})
     ptr["datasets"]["carnegie_trgb"] = {
         "path": doc.get("external_catalog_path"),
@@ -248,7 +260,7 @@ def write_pointer(doc: dict) -> None:
         "host_count": doc.get("host_count"),
     }
     ptr["policy"] = (
-        "Store large open-science dumps on G:/FSOT-PublicData. "
+        "Store large open-science dumps on $FSOT_EXTERNAL_DATA_ROOT. "
         "Monorepo keeps engines, predictions, and path pointers only."
     )
     POINTER.write_text(json.dumps(ptr, indent=2), encoding="utf-8")

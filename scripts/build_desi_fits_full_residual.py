@@ -16,6 +16,18 @@ Outputs:
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import sys
 from datetime import datetime, timezone
@@ -43,8 +55,8 @@ def _now() -> str:
 def _find_fits() -> Path:
     for p in (
         open_science_large_dir("desi") / "zall-pix-fuji.fits",
-        Path(r"G:\FSOT-PublicData\open_science_large\desi\zall-pix-fuji.fits"),
-        Path(r"I:\FSOT-PublicData\open_science_large\desi\zall-pix-fuji.fits"),
+        _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'open_science_large' / 'desi' / 'zall-pix-fuji.fits',
+        _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'open_science_large' / 'desi' / 'zall-pix-fuji.fits',
     ):
         if p.is_file() and p.stat().st_size > 1_000_000:
             return p
