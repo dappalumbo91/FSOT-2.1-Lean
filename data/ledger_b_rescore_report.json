@@ -1,0 +1,811 @@
+{
+  "law": "c = m (1 + |S| ALPHA)",
+  "pin": "AEB2AD",
+  "stored_values_overwritten": false,
+  "decision": "Left for Damian. This file is the side-by-side count only.",
+  "rows_scored": 139471,
+  "rows_matching_live_at_6_decimal_grain": 15096,
+  "rows_unrouted": 0,
+  "law_version_counts": {
+    "pre-ALPHA-domain-table": 129619,
+    "unresolved": 4949,
+    "measured_zero": 615,
+    "AEB2AD-ALPHA": 4903,
+    "missing_pair": 2
+  },
+  "law_version_source": {
+    "inferred": true,
+    "alpha_writer_commit": "ba6a8288c03945a81ed2ffeceb73e58d1cd2feff",
+    "alpha_writer_committed_at": "2026-09-11T15:19:52-04:00",
+    "subject": "Replace decimal knobs with pi identities; look/hits named seeds; f_domain=ALPHA. New pin 3090BC.",
+    "note": "Rows that match c = m(1+|S|ALPHA) are labeled AEB2AD-ALPHA. Rows whose implied factor is one of the older per-domain constants are labeled pre-ALPHA-domain-table. Stored files were not rewritten."
+  },
+  "examples": {
+    "AEB2AD-ALPHA": [
+      {
+        "file": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "name": "cycle_cost_score_proxy",
+        "property": "value",
+        "fsot_domain": "Astrophysics",
+        "stored_computed": 1.00071654,
+        "live_computed": 1.00071653743,
+        "stored_error_pct": 0.071654,
+        "live_error_pct": 0.0716537428752,
+        "law_version": "AEB2AD-ALPHA"
+      },
+      {
+        "file": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "name": "information_density_delta_proxy",
+        "property": "value",
+        "fsot_domain": "Astrophysics",
+        "stored_computed": 0.4203009468,
+        "live_computed": 0.42030094572,
+        "stored_error_pct": 0.071654,
+        "live_error_pct": 0.0716537428752,
+        "law_version": "AEB2AD-ALPHA"
+      },
+      {
+        "file": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "name": "phase_activity_infall_ratio",
+        "property": "value",
+        "fsot_domain": "Astrophysics",
+        "stored_computed": 0.350250789,
+        "live_computed": 0.3502507881,
+        "stored_error_pct": 0.071654,
+        "live_error_pct": 0.0716537428752,
+        "law_version": "AEB2AD-ALPHA"
+      },
+      {
+        "file": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "name": "phase_activity_outflow_ratio",
+        "property": "value",
+        "fsot_domain": "Astrophysics",
+        "stored_computed": 0.650465751,
+        "live_computed": 0.650465749329,
+        "stored_error_pct": 0.071654,
+        "live_error_pct": 0.0716537428752,
+        "law_version": "AEB2AD-ALPHA"
+      },
+      {
+        "file": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "name": "accretion_compression_ratio",
+        "property": "value",
+        "fsot_domain": "Astrophysics",
+        "stored_computed": 0.8806305552,
+        "live_computed": 0.880630552937,
+        "stored_error_pct": 0.071654,
+        "live_error_pct": 0.0716537428752,
+        "law_version": "AEB2AD-ALPHA"
+      },
+      {
+        "file": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "name": "outflow_lensing_factor",
+        "property": "value",
+        "fsot_domain": "Astrophysics",
+        "stored_computed": 1.1208025248,
+        "live_computed": 1.12080252192,
+        "stored_error_pct": 0.071654,
+        "live_error_pct": 0.0716537428752,
+        "law_version": "AEB2AD-ALPHA"
+      },
+      {
+        "file": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "name": "poof_event_rate_hz",
+        "property": "value",
+        "fsot_domain": "Astrophysics",
+        "stored_computed": 0.50035827,
+        "live_computed": 0.500358268714,
+        "stored_error_pct": 0.071654,
+        "live_error_pct": 0.0716537428752,
+        "law_version": "AEB2AD-ALPHA"
+      },
+      {
+        "file": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "name": "white_hole_reassembly_efficiency",
+        "property": "value",
+        "fsot_domain": "Astrophysics",
+        "stored_computed": 0.958386230358,
+        "live_computed": 0.958386227896,
+        "stored_error_pct": 0.071654,
+        "live_error_pct": 0.0716537428752,
+        "law_version": "AEB2AD-ALPHA"
+      }
+    ],
+    "pre-ALPHA-domain-table": [
+      {
+        "file": "actuarial_science_panel_benchmark.json",
+        "name": "obs",
+        "property": "qx",
+        "fsot_domain": "Economics",
+        "stored_computed": 0.005821503888,
+        "live_computed": 0.00582426906845,
+        "stored_error_pct": 0.02584,
+        "live_error_pct": 0.0733516915448,
+        "law_version": "pre-ALPHA-domain-table"
+      },
+      {
+        "file": "actuarial_science_panel_benchmark.json",
+        "name": "obs",
+        "property": "ex",
+        "fsot_domain": "Sociology",
+        "stored_computed": 77.01001231,
+        "live_computed": 77.0573575525,
+        "stored_error_pct": 0.013003,
+        "live_error_pct": 0.0744903279654,
+        "law_version": "pre-ALPHA-domain-table"
+      },
+      {
+        "file": "actuarial_science_panel_benchmark.json",
+        "name": "obs",
+        "property": "lx",
+        "fsot_domain": "Economics",
+        "stored_computed": 100022.610158,
+        "live_computed": 100073.351692,
+        "stored_error_pct": 0.02261,
+        "live_error_pct": 0.0733516915448,
+        "law_version": "pre-ALPHA-domain-table"
+      },
+      {
+        "file": "actuarial_science_panel_benchmark.json",
+        "name": "10",
+        "property": "qx",
+        "fsot_domain": "Economics",
+        "stored_computed": 0.000120031008,
+        "live_computed": 0.00012008802203,
+        "stored_error_pct": 0.02584,
+        "live_error_pct": 0.0733516915448,
+        "law_version": "pre-ALPHA-domain-table"
+      },
+      {
+        "file": "actuarial_science_panel_benchmark.json",
+        "name": "10",
+        "property": "ex",
+        "fsot_domain": "Sociology",
+        "stored_computed": 68.208868046,
+        "live_computed": 68.2508024037,
+        "stored_error_pct": 0.013003,
+        "live_error_pct": 0.0744903279654,
+        "law_version": "pre-ALPHA-domain-table"
+      },
+      {
+        "file": "actuarial_science_panel_benchmark.json",
+        "name": "10",
+        "property": "lx",
+        "fsot_domain": "Economics",
+        "stored_computed": 99442.479019,
+        "live_computed": 99492.9262517,
+        "stored_error_pct": 0.02261,
+        "live_error_pct": 0.0733516915448,
+        "law_version": "pre-ALPHA-domain-table"
+      },
+      {
+        "file": "actuarial_science_panel_benchmark.json",
+        "name": "20",
+        "property": "qx",
+        "fsot_domain": "Economics",
+        "stored_computed": 0.000980253232,
+        "live_computed": 0.000980718846577,
+        "stored_error_pct": 0.02584,
+        "live_error_pct": 0.0733516915448,
+        "law_version": "pre-ALPHA-domain-table"
+      },
+      {
+        "file": "actuarial_science_panel_benchmark.json",
+        "name": "20",
+        "property": "ex",
+        "fsot_domain": "Sociology",
+        "stored_computed": 58.507606755,
+        "live_computed": 58.5435768419,
+        "stored_error_pct": 0.013003,
+        "live_error_pct": 0.0744903279654,
+        "law_version": "pre-ALPHA-domain-table"
+      }
+    ],
+    "unresolved": [
+      {
+        "file": "alphafold_batch_meta_open_benchmark.json",
+        "name": "P04637",
+        "property": "sequence_length",
+        "fsot_domain": "Biology",
+        "stored_computed": 393.104866,
+        "live_computed": 393.205101171,
+        "stored_error_pct": 0.026684,
+        "live_error_pct": 0.0521885932284,
+        "law_version": "unresolved"
+      },
+      {
+        "file": "alphafold_batch_meta_open_benchmark.json",
+        "name": "P04637",
+        "property": "sequence_length",
+        "fsot_domain": "Biology",
+        "stored_computed": 214.057103,
+        "live_computed": 214.11168359,
+        "stored_error_pct": 0.026684,
+        "live_error_pct": 0.0521885932284,
+        "law_version": "unresolved"
+      },
+      {
+        "file": "alphafold_batch_meta_open_benchmark.json",
+        "name": "P04637",
+        "property": "sequence_length",
+        "fsot_domain": "Biology",
+        "stored_computed": 209.055769,
+        "live_computed": 209.10907416,
+        "stored_error_pct": 0.026684,
+        "live_error_pct": 0.0521885932284,
+        "law_version": "unresolved"
+      },
+      {
+        "file": "alphafold_batch_meta_open_benchmark.json",
+        "name": "P04637",
+        "property": "sequence_length",
+        "fsot_domain": "Biology",
+        "stored_computed": 261.069644,
+        "live_computed": 261.136212228,
+        "stored_error_pct": 0.026684,
+        "live_error_pct": 0.0521885932284,
+        "law_version": "unresolved"
+      },
+      {
+        "file": "alphafold_batch_meta_open_benchmark.json",
+        "name": "P04637",
+        "property": "sequence_length",
+        "fsot_domain": "Biology",
+        "stored_computed": 307.081918,
+        "live_computed": 307.160218981,
+        "stored_error_pct": 0.026684,
+        "live_error_pct": 0.0521885932284,
+        "law_version": "unresolved"
+      },
+      {
+        "file": "alphafold_batch_meta_open_benchmark.json",
+        "name": "P04637",
+        "property": "sequence_length",
+        "fsot_domain": "Biology",
+        "stored_computed": 302.080584,
+        "live_computed": 302.157609552,
+        "stored_error_pct": 0.026684,
+        "live_error_pct": 0.0521885932284,
+        "law_version": "unresolved"
+      },
+      {
+        "file": "alphafold_batch_meta_open_benchmark.json",
+        "name": "P04637",
+        "property": "sequence_length",
+        "fsot_domain": "Biology",
+        "stored_computed": 354.09446,
+        "live_computed": 354.18474762,
+        "stored_error_pct": 0.026684,
+        "live_error_pct": 0.0521885932284,
+        "law_version": "unresolved"
+      },
+      {
+        "file": "alphafold_batch_meta_open_benchmark.json",
+        "name": "P04637",
+        "property": "sequence_length",
+        "fsot_domain": "Biology",
+        "stored_computed": 346.092325,
+        "live_computed": 346.180572533,
+        "stored_error_pct": 0.026684,
+        "live_error_pct": 0.0521885932284,
+        "law_version": "unresolved"
+      }
+    ]
+  },
+  "by_file": {
+    "actuarial_science_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 60
+    },
+    "alphafold_batch_meta_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 151,
+      "unresolved": 31
+    },
+    "alternate_base_mathematics_explorer_panel_benchmark.json": {
+      "unresolved": 56
+    },
+    "arxiv_brain_knowledge_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 20
+    },
+    "arxiv_gravitational_waves_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 60
+    },
+    "arxiv_primitives_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 21,
+      "measured_zero": 1
+    },
+    "between_scale_interconnect_benchmark.json": {
+      "unresolved": 397
+    },
+    "bibliography_corpus_panel_benchmark.json": {
+      "unresolved": 15
+    },
+    "binary_decoder_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 8
+    },
+    "biology_developmental_structural_depth_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 13
+    },
+    "blackhole_whitehole_cycle_live_panel_benchmark.json": {
+      "AEB2AD-ALPHA": 23
+    },
+    "canonical_oracle_panel_benchmark.json": {
+      "unresolved": 6
+    },
+    "cardiology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 20
+    },
+    "cartography_gis_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 36,
+      "unresolved": 12
+    },
+    "cern_open_data_lhc_benchmark.json": {
+      "AEB2AD-ALPHA": 83
+    },
+    "certified_agent_formal_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 13
+    },
+    "chembl_deep_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 167,
+      "measured_zero": 21
+    },
+    "circuit_component_emergence_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 55,
+      "unresolved": 1,
+      "measured_zero": 1
+    },
+    "civil_engineering_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 20
+    },
+    "clinicaltrials_medical_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 189,
+      "unresolved": 144,
+      "measured_zero": 61
+    },
+    "cod_optimade_structures_benchmark.json": {
+      "pre-ALPHA-domain-table": 682
+    },
+    "codata_full_table_open_benchmark.json": {
+      "unresolved": 36,
+      "missing_pair": 2
+    },
+    "coding_structure_verifier_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 2
+    },
+    "compact_object_binary_events_benchmark.json": {
+      "pre-ALPHA-domain-table": 40
+    },
+    "complexity_folding_emergence_panel_benchmark.json": {
+      "unresolved": 2
+    },
+    "condensed_matter_superconductivity_depth_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 15
+    },
+    "consciousness_lean_route_credibility_benchmark.json": {
+      "pre-ALPHA-domain-table": 100,
+      "measured_zero": 1
+    },
+    "crossref_scholarly_panel_benchmark.json": {
+      "measured_zero": 57,
+      "AEB2AD-ALPHA": 141
+    },
+    "culinary_fermentation_maillard_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 151
+    },
+    "desi_edr_fits_residual_benchmark.json": {
+      "pre-ALPHA-domain-table": 97142,
+      "unresolved": 2
+    },
+    "desi_edr_table_slice_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 18
+    },
+    "desi_public_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 10
+    },
+    "dzhanibekov_intermediate_axis_fsot_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 1
+    },
+    "early_lean_mc_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 10
+    },
+    "endf_iaea_nuclear_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 517
+    },
+    "energy_lean_route_credibility_benchmark.json": {
+      "pre-ALPHA-domain-table": 40
+    },
+    "entomology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 90
+    },
+    "epidemiology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 15
+    },
+    "esp32_platform_engineering_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 33,
+      "measured_zero": 1
+    },
+    "ethology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 80,
+      "unresolved": 20
+    },
+    "exogeology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 100
+    },
+    "exoplanet_archive_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 1976
+    },
+    "experimental_base_mathematics_panel_benchmark.json": {
+      "unresolved": 36
+    },
+    "federal_science_registry_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 12,
+      "unresolved": 4
+    },
+    "finance_markets_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 36
+    },
+    "fsot_physics_all_solved_benchmark.json": {
+      "pre-ALPHA-domain-table": 113,
+      "unresolved": 165,
+      "measured_zero": 2
+    },
+    "fuel_lab_live_panel_benchmark.json": {
+      "AEB2AD-ALPHA": 366
+    },
+    "fusion_lean_route_credibility_benchmark.json": {
+      "unresolved": 74,
+      "measured_zero": 7
+    },
+    "gaia_astrometry_panel_deep_benchmark.json": {
+      "pre-ALPHA-domain-table": 47,
+      "measured_zero": 1
+    },
+    "gaia_dr3_source_sample_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 3459
+    },
+    "gaia_dr3_tap_deep_benchmark.json": {
+      "pre-ALPHA-domain-table": 1524
+    },
+    "gbif_species_occurrence_benchmark.json": {
+      "AEB2AD-ALPHA": 240
+    },
+    "gbif_taxon_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 203
+    },
+    "grace_cryosphere_benchmark.json": {
+      "AEB2AD-ALPHA": 252
+    },
+    "gwas_catalog_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 81
+    },
+    "gwosc_live_event_deep_benchmark.json": {
+      "pre-ALPHA-domain-table": 180
+    },
+    "gwosc_strain_metadata_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 54
+    },
+    "gwtc_catalog_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 1972
+    },
+    "higgs_branching_benchmark.json": {
+      "unresolved": 9
+    },
+    "history_panel_benchmark.json": {
+      "measured_zero": 14,
+      "unresolved": 20,
+      "pre-ALPHA-domain-table": 26
+    },
+    "hybrid_fi_sim_stratum_deep_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 19
+    },
+    "immunology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 15,
+      "unresolved": 7,
+      "measured_zero": 2
+    },
+    "inaturalist_observation_panel_benchmark.json": {
+      "AEB2AD-ALPHA": 281
+    },
+    "intelligence_compression_benchmark.json": {
+      "pre-ALPHA-domain-table": 83
+    },
+    "jarvis_dft_open_panel_benchmark.json": {
+      "measured_zero": 16,
+      "unresolved": 20,
+      "pre-ALPHA-domain-table": 41
+    },
+    "law_policy_panel_benchmark.json": {
+      "measured_zero": 6,
+      "pre-ALPHA-domain-table": 14
+    },
+    "limnology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 2010
+    },
+    "living_fsot_hardware_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 127,
+      "measured_zero": 25
+    },
+    "lmfdb_elliptic_curves_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 1016
+    },
+    "lmfdb_oeis_math_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 3918
+    },
+    "machine_and_molecule_live_panel_benchmark.json": {
+      "AEB2AD-ALPHA": 120
+    },
+    "marine_biology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 73,
+      "measured_zero": 17
+    },
+    "materials_creep_fracture_depth_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 31,
+      "measured_zero": 10,
+      "unresolved": 6
+    },
+    "materials_project_live_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 66,
+      "unresolved": 24,
+      "measured_zero": 30
+    },
+    "materials_species_bridge_live_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 140,
+      "measured_zero": 10
+    },
+    "matter_antimatter_benchmark.json": {
+      "unresolved": 2
+    },
+    "mechanical_engineering_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 20
+    },
+    "mpcorb_fsot_benchmark.json": {
+      "pre-ALPHA-domain-table": 830,
+      "unresolved": 2
+    },
+    "mycology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 90
+    },
+    "nasa_donki_solar_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 2148
+    },
+    "nasa_exoplanet_archive_benchmark.json": {
+      "AEB2AD-ALPHA": 158
+    },
+    "nasa_neo_feed_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 56
+    },
+    "ncbi_gene_public_panel_benchmark.json": {
+      "AEB2AD-ALPHA": 48
+    },
+    "ncei_climate_open_benchmark.json": {
+      "unresolved": 607
+    },
+    "ncei_multivar_climate_open_benchmark.json": {
+      "unresolved": 607
+    },
+    "neuroeconomics_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 20
+    },
+    "neuroscience_connectomics_depth_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 27
+    },
+    "neutrino_physics_panel_benchmark.json": {
+      "unresolved": 20
+    },
+    "nist_asd_multi_species_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 26
+    },
+    "nist_asd_spectroscopy_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 24
+    },
+    "noaa_coastal_tides_benchmark.json": {
+      "AEB2AD-ALPHA": 20
+    },
+    "noaa_ndbc_buoy_panel_benchmark.json": {
+      "AEB2AD-ALPHA": 625
+    },
+    "noaa_tides_multi_station_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 209
+    },
+    "nuclear_iaea_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 359,
+      "measured_zero": 1
+    },
+    "nufit_neutrino_open_benchmark.json": {
+      "unresolved": 10
+    },
+    "observer_lean_route_credibility_benchmark.json": {
+      "pre-ALPHA-domain-table": 52,
+      "measured_zero": 1
+    },
+    "oeis_family_sweep_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 394
+    },
+    "omni_theory_humanities_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 37
+    },
+    "open_meteo_live_panel_benchmark.json": {
+      "AEB2AD-ALPHA": 432
+    },
+    "openalex_citation_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 100,
+      "unresolved": 50
+    },
+    "openalex_citation_graph_benchmark.json": {
+      "AEB2AD-ALPHA": 80
+    },
+    "openneuro_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 47
+    },
+    "openneuro_full_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 19
+    },
+    "oph_fsot_challenge_panel_benchmark.json": {
+      "unresolved": 2
+    },
+    "optics_interferometry_depth_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 80,
+      "measured_zero": 2
+    },
+    "osti_doe_science_panel_benchmark.json": {
+      "unresolved": 100
+    },
+    "overflow_carry_emergence_panel_benchmark.json": {
+      "unresolved": 28,
+      "pre-ALPHA-domain-table": 1
+    },
+    "owid_epidemiology_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 1770,
+      "measured_zero": 8
+    },
+    "paleoclimate_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 20
+    },
+    "paleontology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 120
+    },
+    "pdg_live_depth_open_benchmark.json": {
+      "unresolved": 33
+    },
+    "perceived_lean_route_credibility_benchmark.json": {
+      "pre-ALPHA-domain-table": 58
+    },
+    "petrology_geochemistry_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 80
+    },
+    "physarum_biological_cuda_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 9,
+      "measured_zero": 1
+    },
+    "proton_lean_route_credibility_benchmark.json": {
+      "unresolved": 48
+    },
+    "psychology_psychometrics_depth_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 12
+    },
+    "pubchem_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 96,
+      "unresolved": 53
+    },
+    "pubchem_live_deep_benchmark.json": {
+      "unresolved": 2156,
+      "pre-ALPHA-domain-table": 1498,
+      "measured_zero": 299
+    },
+    "pure_mathematics_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 44
+    },
+    "quantum_computing_math_depth_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 77
+    },
+    "quantum_mechanics_entanglement_depth_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 11
+    },
+    "quantum_trinary_syntax_benchmark.json": {
+      "pre-ALPHA-domain-table": 17
+    },
+    "radio_astronomy_panel_benchmark.json": {
+      "measured_zero": 2,
+      "pre-ALPHA-domain-table": 28
+    },
+    "rcsb_pdb_structures_benchmark.json": {
+      "AEB2AD-ALPHA": 45
+    },
+    "rcsb_structure_batch_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 91
+    },
+    "robotics_control_systems_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 19
+    },
+    "rust_lean_bridge_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 7,
+      "measured_zero": 1
+    },
+    "scalar_solver_35_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 10
+    },
+    "schematic_netlist_intrinsic_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 17
+    },
+    "simbad_identity_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 1365
+    },
+    "simbad_stellar_identity_deep_benchmark.json": {
+      "pre-ALPHA-domain-table": 520
+    },
+    "soil_science_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 96
+    },
+    "speleology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 10
+    },
+    "star_trek_transporter_live_panel_benchmark.json": {
+      "AEB2AD-ALPHA": 1572,
+      "measured_zero": 2
+    },
+    "stsci_mast_telescope_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 225,
+      "measured_zero": 15
+    },
+    "supply_chain_logistics_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 40
+    },
+    "toe_limit_recovery_benchmark.json": {
+      "pre-ALPHA-domain-table": 14
+    },
+    "tokenization_live_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 51
+    },
+    "toxicology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 21
+    },
+    "trinary_hardware_live_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 28
+    },
+    "uap_war_gov_release_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 270
+    },
+    "uniprot_protein_annotations_benchmark.json": {
+      "AEB2AD-ALPHA": 22
+    },
+    "uniprot_proteome_slice_open_benchmark.json": {
+      "unresolved": 17,
+      "pre-ALPHA-domain-table": 51
+    },
+    "usgs_seismic_history_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 298,
+      "unresolved": 100
+    },
+    "validators_intrinsic_llm_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 21
+    },
+    "virology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 8
+    },
+    "vizier_wds_tap_live_deep_benchmark.json": {
+      "pre-ALPHA-domain-table": 90
+    },
+    "vl_agent_distill_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 11
+    },
+    "volcanology_panel_benchmark.json": {
+      "pre-ALPHA-domain-table": 75,
+      "unresolved": 15
+    },
+    "wds_live_multiplicity_deep_benchmark.json": {
+      "pre-ALPHA-domain-table": 160
+    },
+    "world_bank_development_benchmark.json": {
+      "AEB2AD-ALPHA": 395
+    },
+    "world_bank_macro_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 605
+    },
+    "zenodo_records_depth_open_benchmark.json": {
+      "pre-ALPHA-domain-table": 22,
+      "unresolved": 10
+    },
+    "zero_boundary_not_entity_panel_benchmark.json": {
+      "unresolved": 2
+    }
+  }
+}
