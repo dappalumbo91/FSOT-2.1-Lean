@@ -13,6 +13,18 @@ Does not invent OS features. Does not open history corpus. free_params=0.
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import math
 import sys
@@ -33,8 +45,8 @@ DOC = ROOT / "docs" / "NEURON_ZIG_CROSS_VERIFY.md"
 STAMP_CANDIDATES = [
     ROOT / "vendor" / "neuron_zig" / "FSOT_MIND_VERIFY_STAMP.json",
     ROOT / "data" / "neuron_zig_stamp" / "FSOT_MIND_VERIFY_STAMP.json",
-    Path(r"C:\Users\damia\Desktop\fsot neuron family\fsot-neuron-zig\data\results\FSOT_MIND_VERIFY_STAMP.json"),
-    Path(r"I:\fsot-neuron-zig\data\results\FSOT_MIND_VERIFY_STAMP.json"),
+    _fsot_local_path('FSOT_NEURON_ZIG_ROOT', '../fsot-neuron-zig') / 'data' / 'results' / 'FSOT_MIND_VERIFY_STAMP.json',
+    _fsot_local_path('FSOT_NEURON_ZIG_ROOT', '../fsot-neuron-zig') / 'data' / 'results' / 'FSOT_MIND_VERIFY_STAMP.json',
     Path.home() / "Desktop" / "fsot neuron family" / "fsot-neuron-zig" / "data" / "results" / "FSOT_MIND_VERIFY_STAMP.json",
 ]
 

@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import os
 from pathlib import Path
 
@@ -12,7 +24,7 @@ DATA_ROOT = REPO_ROOT / "data"
 CANONICAL_HUB_MARKER = ".fsot-canonical-hub"
 CANONICAL_LEAN_HUB_NAME = "02_FSOT-2.1-Lean-Full"
 # Legacy default when this repo was always mounted as I: (fallback only).
-CANONICAL_ARCHIVE_ROOT = Path(r"I:\FSOT-Physical-Archive")
+CANONICAL_ARCHIVE_ROOT = _fsot_local_path('FSOT_ARCHIVE_ROOT', 'data_external/physical_archive')
 CANONICAL_LEAN_HUB = CANONICAL_ARCHIVE_ROOT / CANONICAL_LEAN_HUB_NAME
 
 
@@ -54,10 +66,10 @@ def founding_archive_roots() -> list[Path]:
         [
             Path(f"{drive}/fsuft aasb"),
             Path(f"{drive}/fsot tech"),
-            Path(r"I:\fsuft aasb"),
+            _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'fsuft aasb',
             # Local unpublished-tech folder (author machine only).
             # Never write this path, extracts, or specs into public docs.
-            Path(r"I:\fsot tech"),
+            _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'fsot tech',
         ]
     )
     seen: set[str] = set()
@@ -839,7 +851,7 @@ def external_data_root(*, require: bool = False) -> Path:
         candidates.append(Path(raw).expanduser())
     candidates.extend(
         [
-            Path(r"G:\FSOT-PublicData"),
+            _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data'),
             CANONICAL_ARCHIVE_ROOT / "03_FSOT-PublicData",
         ]
     )
@@ -934,7 +946,7 @@ def trinary_os_isa_registry_path(*, require: bool = True) -> Path:
 def the_well_cache_root(*, require: bool = False) -> Path | None:
     path = _resolve(
         "FSOT_THE_WELL_CACHE",
-        Path(os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "G:/FSOT-PublicData")).expanduser() / "the_well",
+        Path(os.environ.get("FSOT_EXTERNAL_DATA_ROOT", _os.fspath(_REPO_ROOT / 'data_external/public_data'))).expanduser() / "the_well",
         VENDOR_ROOT / "the_well",
     )
     if path is None and require:
@@ -951,7 +963,7 @@ VERIFIED_DESKTOP_SLUGS = (
 
 
 def verified_desktop_archive_projects_root() -> Path | None:
-    """I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects (canonical copy)."""
+    """$FSOT_ARCHIVE_ROOT/08_Verified-Desktop-Projects (canonical copy)."""
     ar = archive_root()
     if ar is None:
         return None

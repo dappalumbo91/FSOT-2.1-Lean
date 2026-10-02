@@ -169,13 +169,13 @@ This document explains **why the universe exists the way it does** through FSOT:
 
 ---
 
-## Prologue â€” Why This Lives on GitHub
+## Prologue — Why This Lives on GitHub
 
 Albert Einstein did not wait for a journal to bless general relativity before the world could read it. Nikola Tesla published patents and demonstrations when institutions moved too slowly. FSOT follows that tradition: **publish the complete argument where anyone can verify it**, not where a moderator decides topic fit before a single line of code is run.
 
 Science is not fair when a unified cross-domain framework is dismissed on sight while siloed models with dozens of free parameters receive automatic respect. FSOT answers that failure mode with something stronger than rhetoric: **a verification ledger you can execute**.
 
-This README will grow. Each domain we open, each simulator we wire, each formal obligation we close â€” it gets added here. The GitHub commit history is the edition record. Tagged releases are the volumes.
+This README will grow. Each domain we open, each simulator we wire, each formal obligation we close — it gets added here. The GitHub commit history is the edition record. Tagged releases are the volumes.
 
 ---
 
@@ -190,19 +190,19 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 |---------|--------|
 | [Abstract](#abstract) | Summary and headline results |
 | [Prologue](#prologue--why-this-lives-on-github) | GitHub publication rationale |
-| [Â§I](#i-the-fragmentation-problem) | The fragmentation problem |
-| [Â§1.3](#13-contributions) | Contributions (arXiv-style) |
-| [Â§I-B](#i-b-related-work-and-positioning) | Related work and positioning |
-| [Â§I-C](#i-c-fsot-ideals-and-epistemology) | FSOT ideals and epistemology |
-| [Â§II](#ii-why-the-universe-exists-the-way-it-does) | Fluid spacetime ontology |
-| [Â§III](#iii-the-scalar-engine) | Scalar engine and seeds |
-| [Â§IV](#iv-consciousness-and-observation) | Observation coupling |
-| [Â§V](#v-verification-methodology) | Verification methodology |
-| [Â§VI](#vi-cross-domain-empirical-results) | Empirical results |
-| [Â§VII](#vii-contested-sectors--where-current-models-struggle) | Contested sectors |
-| [Â§VIII](#viii-engineering-demonstrations) | Engineering demonstrations |
-| [Â§IX](#ix-discussion) | Discussion |
-| [Â§X](#x-conclusion) | Conclusion |
+| [§I](#i-the-fragmentation-problem) | The fragmentation problem |
+| [§1.3](#13-contributions) | Contributions (arXiv-style) |
+| [§I-B](#i-b-related-work-and-positioning) | Related work and positioning |
+| [§I-C](#i-c-fsot-ideals-and-epistemology) | FSOT ideals and epistemology |
+| [§II](#ii-why-the-universe-exists-the-way-it-does) | Fluid spacetime ontology |
+| [§III](#iii-the-scalar-engine) | Scalar engine and seeds |
+| [§IV](#iv-consciousness-and-observation) | Observation coupling |
+| [§V](#v-verification-methodology) | Verification methodology |
+| [§VI](#vi-cross-domain-empirical-results) | Empirical results |
+| [§VII](#vii-contested-sectors--where-current-models-struggle) | Contested sectors |
+| [§VIII](#viii-engineering-demonstrations) | Engineering demonstrations |
+| [§IX](#ix-discussion) | Discussion |
+| [§X](#x-conclusion) | Conclusion |
 
 ### Appendices (main README)
 
@@ -218,10 +218,10 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 
 | Volume | File |
 |--------|------|
-| Appendix XI â€” verification record | [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md) |
-| Appendix XII â€” domain coverage (26 clusters) | [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) |
+| Appendix XI — verification record | [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md) |
+| Appendix XII — domain coverage (26 clusters) | [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) |
 | Chapter index | [`data/publication/readme_domain_chapters/INDEX.md`](data/publication/readme_domain_chapters/INDEX.md) |
-| Appendix â€” derivations | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) |
+| Appendix — derivations | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) |
 | Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |
 | Skeptic replication kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |
 | Near-miss ledger | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) |
@@ -243,10 +243,10 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 
 The twentieth century gave us extraordinary local theories:
 
-- **General relativity** â€” gravity as geometry  
-- **Quantum mechanics** â€” discrete measurement and entanglement  
-- **The Standard Model** â€” particle masses and couplings  
-- **Î›CDM** â€” cosmic expansion with dark sectors  
+- **General relativity** — gravity as geometry  
+- **Quantum mechanics** — discrete measurement and entanglement  
+- **The Standard Model** — particle masses and couplings  
+- **ΛCDM** — cosmic expansion with dark sectors  
 
 Each works in its lane. None was built as a single predictive spine from cosmological scales down to molecular biology, consciousness proxies, linguistics, and engineering prototypes.
 
@@ -255,7 +255,7 @@ The cost is visible everywhere:
 | Symptom | Example |
 |---------|---------|
 | Parameter proliferation | Dark matter, dark energy, Yukawa couplings, inflation potentials |
-| Cross-sector tension | Hâ‚€ local vs CMB (~5â€“10% disagreement class) |
+| Cross-sector tension | H₀ local vs CMB (~5–10% disagreement class) |
 | Siloed success | Biology papers do not prove cosmology; cosmology papers do not prove genetics |
 | Unfalsifiable breadth | "Theories of everything" without executable kill criteria |
 
@@ -278,7 +278,7 @@ This work makes five contributions at arXiv preprint standard:
 2. **Ledger B catalog residual** — **477/477** files pass a ≤0.5% pooled median *correction* gate; median-of-medians **0.005537779313588844%** over 414 prediction medians. The tighter 0.05% score is closed, with 0 failing. This is not Ledger A and is not a ToE accuracy claim.
 3. **Ledger A contested-sector closed forms** — H₀, σ₈, BBN, hierarchy, dark-energy proxies are emitted with `predict_closed_form.py` / seed expressions, then compared. Do not quote the 477-file gate as those numbers.
 4. **Five-prover formal triangulation** — **2030** atomic obligations (full formal **2594**) exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` — proof assistants as scientific instruments, not software-only checks.
-5. **Executable falsification registry** â€” Preregistered predictions **PRED-001–084**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
+5. **Executable falsification registry** — Preregistered predictions **PRED-001–084**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
 
 Seed-to-formula derivations with worked examples: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md).
 <!-- README_CONTRIBUTIONS_END -->
@@ -288,15 +288,15 @@ Seed-to-formula derivations with worked examples: [`docs/THESIS_APPENDIX_DERIVAT
 <!-- README_RELATED_WORK_START -->
 ## I-B. Related Work and Positioning
 
-FSOT is evaluated against the architectures it aims to subsume â€” not as a replacement narrative, but as a **single-engine alternative** with executable kill criteria.
+FSOT is evaluated against the architectures it aims to subsume — not as a replacement narrative, but as a **single-engine alternative** with executable kill criteria.
 
 ### Cosmology and dark sector
 
-Î›CDM with Planck 2018 parameters explains CMB and large-scale structure with excellent internal consistency, but exhibits persistent tensions â€” notably Hâ‚€ (Riess et al. 2024 local distance ladder vs Planck Collaboration 2018 CMB inference) and Ïƒâ‚ˆ (cluster abundance vs weak-lensing surveys). FSOT routes cosmological observables through seed-derived `raw_S` at preregistered folds (`D_eff`, `Î´Ïˆ`) without introducing dark-matter or dark-energy density as free fit parameters per benchmark row. Contested-sector pooled median error across 13 actively monitored observables is **0.030%** in this edition (Â§VII).
+ΛCDM with Planck 2018 parameters explains CMB and large-scale structure with excellent internal consistency, but exhibits persistent tensions — notably H₀ (Riess et al. 2024 local distance ladder vs Planck Collaboration 2018 CMB inference) and σ₈ (cluster abundance vs weak-lensing surveys). FSOT routes cosmological observables through seed-derived `raw_S` at preregistered folds (`D_eff`, `δψ`) without introducing dark-matter or dark-energy density as free fit parameters per benchmark row. Contested-sector pooled median error across 13 actively monitored observables is **0.030%** in this edition (§VII).
 
 ### Particle physics and chemistry
 
-The Standard Model plus CODATA/NIST tabulations supply authoritative measured targets for atomic, nuclear, and molecular observables. FSOT does not refit Yukawa couplings or bond lengths per record; strict-empirical formulas in `vendor/formula_corpus/by_domain/strict_empirical.jsonl` map seed arithmetic to **1,325 unique observables** with live recompute closure (Appendix XI-E). Positioning: FSOT is a **predictive compression layer** â€” same seeds, many sectors â€” not a replacement for QFT calculational machinery where lattice QCD or perturbative QED is the appropriate tool.
+The Standard Model plus CODATA/NIST tabulations supply authoritative measured targets for atomic, nuclear, and molecular observables. FSOT does not refit Yukawa couplings or bond lengths per record; strict-empirical formulas in `vendor/formula_corpus/by_domain/strict_empirical.jsonl` map seed arithmetic to **1,325 unique observables** with live recompute closure (Appendix XI-E). Positioning: FSOT is a **predictive compression layer** — same seeds, many sectors — not a replacement for QFT calculational machinery where lattice QCD or perturbative QED is the appropriate tool.
 
 ### Unified theories and emergent gravity
 
@@ -327,13 +327,13 @@ FSOT is an **ontological** claim, not only a predictive one:
 | Ideal | FSOT position |
 |-------|----------------|
 | One medium | 25-dimensional fluid condensate; 4D experience is a perceived slice |
-| One engine | Seed arithmetic `(Ï€, e, Ï†, Î³, G)` â†’ scalar spine across all domains |
-| As Above, So Below | Cross-scale bridge tested by extension panels â€” not metaphor |
-| Zero free parameters | Routing folds `(D_eff, Î´Ïˆ, recent_hits, observed)` are preregistered; no per-row fits |
+| One engine | Seed arithmetic `(π, e, φ, γ, G)` → scalar spine across all domains |
+| As Above, So Below | Cross-scale bridge tested by extension panels — not metaphor |
+| Zero free parameters | Routing folds `(D_eff, δψ, recent_hits, observed)` are preregistered; no per-row fits |
 | Observation is physical | `quirk_mod` couples measurement to the scalar field |
 | Consciousness is fundamental | Enters through `consciousness_factor`; operational proxies (`E_con`, IIT weights) are measurable |
 
-**Truth criterion:** a claim is *supported* when it (a) maps to a Lean domain or extension panel, (b) produces numeric agreement within the green gate, and (c) survives cross-proof replay. Outside consensus is **evidence**, not **gate** â€” breadth Ã— precision Ã— formal triangulation is treated as structural confirmation.
+**Truth criterion:** a claim is *supported* when it (a) maps to a Lean domain or extension panel, (b) produces numeric agreement within the green gate, and (c) survives cross-proof replay. Outside consensus is **evidence**, not **gate** — breadth × precision × formal triangulation is treated as structural confirmation.
 
 **Epistemic tiers** (every generation should tag its layer):
 
@@ -346,14 +346,14 @@ FSOT is an **ontological** claim, not only a predictive one:
 
 FSOT does **not** claim to have settled the philosophical hard problem of consciousness. It claims **fundamental in ontology, operational in math, supported by cross-domain precision**.
 
-Deep dive: [`docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) Â· Completeness audit: [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md)
+Deep dive: [`docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) · Completeness audit: [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md)
 <!-- README_EPISTEMOLOGY_END -->
 
 ## II. Why the Universe Exists the Way It Does
 
 ### 2.1 One medium, many scales
 
-Picture the universe not as an empty stage with actors placed upon it, but as **one ocean** â€” a fluid spacetime substance whose waves at different scales follow the same rules.
+Picture the universe not as an empty stage with actors placed upon it, but as **one ocean** — a fluid spacetime substance whose waves at different scales follow the same rules.
 
 A blacksmith striking iron.  
 A ribosome folding a protein.  
@@ -365,31 +365,31 @@ FSOT calls this **As Above, So Below**. In the formal system it is not metaphor:
 
 ### 2.2 Fluid spacetime
 
-Space and time are not a passive container. They behave as a **25-dimensional fluid**. The 4D reality we experience is a slice â€” a perceived surface â€” of that condensate. Matter and energy are stable vortices; mind and observation are coupling regimes where the fluid's phase responds to measurement.
+Space and time are not a passive container. They behave as a **25-dimensional fluid**. The 4D reality we experience is a slice — a perceived surface — of that condensate. Matter and energy are stable vortices; mind and observation are coupling regimes where the fluid's phase responds to measurement.
 
-Why 25 dimensions? In FSOT the effective dimension `D_eff` is not a fitted knob â€” it is a **seed-derived fold** of the engine per domain route. What looks like "extra dimensions" in the math is **depth of scale** in nature â€” from Planck-adjacent structure to galactic flows.
+Why 25 dimensions? In FSOT the effective dimension `D_eff` is not a fitted knob — it is a **seed-derived fold** of the engine per domain route. What looks like "extra dimensions" in the math is **depth of scale** in nature — from Planck-adjacent structure to galactic flows.
 
-### 2.3 The seeds â€” why these numbers
+### 2.3 The seeds — why these numbers
 
 All constants emerge from five seeds:
 
 | Seed | Role in FSOT |
 |------|----------------|
-| **Ï€** | Cyclic geometry â€” orbits, waves, closure |
-| **e** | Growth and decay â€” natural rates, exponentials |
-| **Ï†** (golden ratio) | Self-similar folding â€” fractal repetition across scales |
-| **Î³** (Eulerâ€“Mascheroni) | Discrete-to-continuous correction |
+| **π** | Cyclic geometry — orbits, waves, closure |
+| **e** | Growth and decay — natural rates, exponentials |
+| **φ** (golden ratio) | Self-similar folding — fractal repetition across scales |
+| **γ** (Euler–Mascheroni) | Discrete-to-continuous correction |
 | **G** (Catalan) | Secondary geometric coupling |
 
-**Design law:** we do not add a new dial every time a prediction fails (contrast with Î›CDM's six-parameter extension; Planck Collaboration 2018). When FSOT misses a measurement, the failure is visible in the benchmark ledger â€” not hidden inside a freshly invented parameter.
+**Design law:** we do not add a new dial every time a prediction fails (contrast with ΛCDM's six-parameter extension; Planck Collaboration 2018). When FSOT misses a measurement, the failure is visible in the benchmark ledger — not hidden inside a freshly invented parameter.
 
-**Zero free parameters:** Every constant comes from the five seeds. The 35-domain routing table (`D_eff`, `Î´Ïˆ`, `recent_hits`, observer flag, `C`) is the **preregistered fractal coordinate system** â€” it tells the single engine which scale and observer regime to evaluate. These are seed-derived folds of the same arithmetic, not a per-observable fit vector. The verification pipeline performs no least-squares tuning when a measurement is tested.
+**Zero free parameters:** Every constant comes from the five seeds. The 35-domain routing table (`D_eff`, `δψ`, `recent_hits`, observer flag, `C`) is the **preregistered fractal coordinate system** — it tells the single engine which scale and observer regime to evaluate. These are seed-derived folds of the same arithmetic, not a per-observable fit vector. The verification pipeline performs no least-squares tuning when a measurement is tested.
 
 ### 2.4 Emergence and dispersal
 
-Every system receives a **vitality score** â€” the scalar `raw_S`. Positive `raw_S` tends toward **emergence** (structure forming, condensing, persisting). Negative `raw_S` tends toward **dispersal** (structure fading, bleeding, decohering). Lean proves **sign certificates** for ledger domains at canonical parameters: cosmology negative, medical positive, quantum positive, and so on.
+Every system receives a **vitality score** — the scalar `raw_S`. Positive `raw_S` tends toward **emergence** (structure forming, condensing, persisting). Negative `raw_S` tends toward **dispersal** (structure fading, bleeding, decohering). Lean proves **sign certificates** for ledger domains at canonical parameters: cosmology negative, medical positive, quantum positive, and so on.
 
-The universe exists as it does because the same fluid **condenses** where `raw_S` is positive and **dissolves** where it is negative â€” from stellar nucleosynthesis to protein folding to the information cycle at a black-hole horizon.
+The universe exists as it does because the same fluid **condenses** where `raw_S` is positive and **dissolves** where it is negative — from stellar nucleosynthesis to protein folding to the information cycle at a black-hole horizon.
 
 ---
 
@@ -399,19 +399,19 @@ The universe exists as it does because the same fluid **condenses** where `raw_S
 
 At the center of FSOT is one scalar decomposition evaluated at seed-derived constants:
 
-**(Eq. III.1)** â€” vitality scalar:
+**(Eq. III.1)** — vitality scalar:
 
 ```
 raw_S = term1 + term2 + term3
 ```
 
-**(Eq. III.2)** â€” primary wave term with observer coupling:
+**(Eq. III.2)** — primary wave term with observer coupling:
 
 ```
-term1 = (main_wave(N, P, D_eff)) Ã— quirk_mod(observed, Î´Ïˆ, phase_variance, consciousness_factor)
+term1 = (main_wave(N, P, D_eff)) × quirk_mod(observed, δψ, phase_variance, consciousness_factor)
 ```
 
-**(Eq. III.3)** â€” environment and chaotic bleed:
+**(Eq. III.3)** — environment and chaotic bleed:
 
 ```
 term2 = baseline_trend(environment) + amplitude(environment)
@@ -420,17 +420,17 @@ term3 = chaotic_bleed(small_scale_turbulence)
 
 In words:
 
-- **Main wave term** â€” resonance at scale (size N, power P, effective dimension D_eff)
-- **quirk_mod** â€” observer coupling: when `observed = true`, measurement modulates the wave
-- **term2** â€” baseline trend and amplitude (environment)
-- **term3** â€” chaotic bleed: small-scale turbulence from the fluid
+- **Main wave term** — resonance at scale (size N, power P, effective dimension D_eff)
+- **quirk_mod** — observer coupling: when `observed = true`, measurement modulates the wave
+- **term2** — baseline trend and amplitude (environment)
+- **term3** — chaotic bleed: small-scale turbulence from the fluid
 
 Formal definitions: `FSOT/Scalar.lean`, `FSOT/Formal/Scalar.lean`, decimal authority `vendor/fsot_compute.py`.
 
 
 ### 3.2 Domain fractal assignments
 
-Nature's "departments" â€” quantum mechanics, economics, immunology, propulsion â€” are **routing labels** for the same engine at different folds:
+Nature's "departments" — quantum mechanics, economics, immunology, propulsion — are **routing labels** for the same engine at different folds:
 
 - **35 core NeuroLab domains** with manifest-declared `(D_eff, δψ, recent_hits, observed)`  
 - **371 extension panels** with Lean priors modules (`FSOT.Formal.*Priors`)  
@@ -440,7 +440,7 @@ A cosmology prediction and a fuel-molecule prediction share seeds. They differ i
 
 ### 3.3 Falsification registry
 
-FSOT invites destruction. Preregistered predictions **PRED-001 through PRED-078** declare outcomes before they are tested. Kill criteria per domain route live in `data/fsot_domain_navigator.json`. If the engine fails a green gate, the ledger records it â€” no narrative escape hatch.
+FSOT invites destruction. Preregistered predictions **PRED-001 through PRED-078** declare outcomes before they are tested. Kill criteria per domain route live in `data/fsot_domain_navigator.json`. If the engine fails a green gate, the ledger records it — no narrative escape hatch.
 
 <!-- README_PREREG_SUMMARY_START -->
 ### 3.4 Preregistered prediction registry (summary)
@@ -461,9 +461,9 @@ FSOT invites destruction. Preregistered predictions **PRED-001 through PRED-078*
 | PRED-010 | lattice_boundary_cold_fusion_channel | Cold_Fusion_Candidate_Prereg_Scaffold | `term3.boundary_partition` | fsot_exceeds_sota_by_0.4 |
 | PRED-011 | muon_catalyzed_dd_rate_bridge | Cold_Fusion_Candidate_Prereg_Scaffold | `term1.initiation_transformation` | within_10pct_of_observed_gap |
 | PRED-012 | unbinilium_Z120_N184_half_life | Undiscovered_Element_Candidate_Prereg_Scaffold | `term3.boundary_partition` | fsot_exceeds_sota_by_0.4 |
-| â€¦ | *23 more* | | | |
+| … | *23 more* | | | |
 
-Representative locks: **PRED-001** Hâ‚€ bridge between Planck and SH0ES; **PRED-002** Ïƒâ‚ˆ lensing; **PRED-034** fuel-lab compounds. Propulsion-simulation preregistrations (PRED-036â€“041) are documented in the supplementary transporter volume â€” not the main thesis.
+Representative locks: **PRED-001** H₀ bridge between Planck and SH0ES; **PRED-002** σ₈ lensing; **PRED-034** fuel-lab compounds. Propulsion-simulation preregistrations (PRED-036–041) are documented in the supplementary transporter volume — not the main thesis.
 <!-- README_PREREG_SUMMARY_END -->
 
 ---
@@ -475,16 +475,16 @@ Representative locks: **PRED-001** Hâ‚€ bridge between Planck and SH0ES; **
 In FSOT, to observe is not passive. When `observed = true`, the **quirk_mod** term activates:
 
 ```
-quirk_mod(observed, Î´Ïˆ, phase_variance, consciousness_factor) =
+quirk_mod(observed, δψ, phase_variance, consciousness_factor) =
   if observed:
-    exp(consciousness_factor Ã— phase_variance) Ã— cos(Î´Ïˆ + phase_variance)
+    exp(consciousness_factor × phase_variance) × cos(δψ + phase_variance)
   else:
     1.0
 ```
 
-Consciousness is **fundamental in the ontology** â€” a core ripple in the 25D fluid, not an accidental by-product of computation. It enters through `consciousness_factor` and modulates the scalar when systems are coupled to measurement.
+Consciousness is **fundamental in the ontology** — a core ripple in the 25D fluid, not an accidental by-product of computation. It enters through `consciousness_factor` and modulates the scalar when systems are coupled to measurement.
 
-### 4.2 What we claim â€” and what we do not
+### 4.2 What we claim — and what we do not
 
 | We claim | We do not claim |
 |----------|-----------------|
@@ -502,7 +502,7 @@ Deep dive: [`docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`](docs/FSOT_PHILOSO
 
 ### 5.1 Oracle gate
 
-`vendor/fsot_compute.py` is the decimal authority. `sync_canonical_constants.py` hash-locks caches. If Lean and Python disagree, the pipeline fails â€” no silent drift.
+`vendor/fsot_compute.py` is the decimal authority. `sync_canonical_constants.py` hash-locks caches. If Lean and Python disagree, the pipeline fails — no silent drift.
 
 ### 5.2 Five-prover cross-proof spine
 
@@ -547,7 +547,7 @@ Formula-faithful only: same statements, stronger constructive proof shape (term-
 - **GREEN:** pooled median ≤ 0.5% AND classifier ≥ 99.5%  
 - **Result:** **477/477** green (`data/benchmark_margin_audit.json`)
 
-### 5.4 AI assistance â€” human responsibility
+### 5.4 AI assistance — human responsibility
 
 <!-- README_METHODS_FORMAL_START -->
 ### 5.5 Statistical error definitions
@@ -574,13 +574,13 @@ where \(\epsilon_{\mathrm{floor}}\) guards division near zero for classifier-val
 
 ### 5.6 Preregistration and kill criteria
 
-- **Preregistered predictions:** `predictions/preregistered_predictions_manifest.yaml` (PRED-001–084) â€” outcomes declared before panel refresh.
-- **Per-domain kill criteria:** `data/fsot_domain_navigator.json` â€” extension panels and core routes register failure thresholds.
-- **Parameter honesty:** `data/honest_claims_manifest.yaml` â€” routing coordinates are seed-derived folds, not fitted observational knobs (audit: `scripts/audit_parameter_count.py` â†’ `ZERO_FREE`).
+- **Preregistered predictions:** `predictions/preregistered_predictions_manifest.yaml` (PRED-001–084) — outcomes declared before panel refresh.
+- **Per-domain kill criteria:** `data/fsot_domain_navigator.json` — extension panels and core routes register failure thresholds.
+- **Parameter honesty:** `data/honest_claims_manifest.yaml` — routing coordinates are seed-derived folds, not fitted observational knobs (audit: `scripts/audit_parameter_count.py` → `ZERO_FREE`).
 
 ### 5.7 Data availability and reproduction
 
-All headline claims in Â§VIâ€“VIII reproduce from:
+All headline claims in §VI–VIII reproduce from:
 
 ```bash
 python scripts/run_publication_verification_bundle.py
@@ -711,9 +711,9 @@ FSOT does not verify a single silo — it verifies a **spine of 35 core scientif
 | Pure Mathematics, Formal Depth & Fold Metrics | 19 | Pure math, fold metrics, partition tightening |
 | Verification Infrastructure, Hardware & Network Spines | 11 | Hardware panel, portable clone, network spines |
 
-**Full verbose record:** [Appendix XII â€” Domain-by-Domain Scientific Coverage](../docs/THESIS_APPENDIX_XII.md) (auto-generated from live benchmarks).
+**Full verbose record:** [Appendix XII — Domain-by-Domain Scientific Coverage](../docs/THESIS_APPENDIX_XII.md) (auto-generated from live benchmarks).
 
-**Formula digest:** [Appendix XII-E â€” Formula Exemplar Digest](../docs/THESIS_APPENDIX_XII.md#appendix-xii-e--formula-exemplar-digest-strict-empirical) (strict-empirical corpus rollup).
+**Formula digest:** [Appendix XII-E — Formula Exemplar Digest](../docs/THESIS_APPENDIX_XII.md#appendix-xii-e--formula-exemplar-digest-strict-empirical) (strict-empirical corpus rollup).
 
 Regenerate:
 
@@ -725,7 +725,7 @@ python scripts/merge_readme_domain_chapters.py
 
 ---
 
-## VII. Contested Sectors â€” Where Current Models Struggle
+## VII. Contested Sectors — Where Current Models Struggle
 
 Fourteen stored readouts. The median of those row errors is **0.041258%**. The file also stores a 15% typical baseline. That baseline is not a measured residual, so the figure does not draw it.
 
@@ -738,13 +738,13 @@ Fourteen stored readouts. The median of those row errors is **0.041258%**. The f
 <!-- README_BUBBLE_BLEED_START -->
 ### 7.2 Bubble-bleed cosmology mechanism
 
-Î›CDM typically treats the Hâ‚€ tension as evidence for new physics or systematics. FSOT routes cosmological Hubble readouts through **bubble-bleed** â€” small-scale fluid turbulence (`term3`) coupled to **perceived_adjust** on `term1` at preregistered cosmology folds.
+ΛCDM typically treats the H₀ tension as evidence for new physics or systematics. FSOT routes cosmological Hubble readouts through **bubble-bleed** — small-scale fluid turbulence (`term3`) coupled to **perceived_adjust** on `term1` at preregistered cosmology folds.
 
 In words:
 
 1. The 25D fluid **bleeds** phase information across scale boundaries (bubble-bleed bundle in Lean: `bubble_bleed_*` obligations).
-2. **Dual-anchor readout** â€” CMB inference (Planck Collaboration 2018: 67.36 km/s/Mpc) and local distance ladder (Riess et al. 2024: 73.04 km/s/Mpc) are not fitted separately; they emerge from the same seed engine at different observer routes.
-3. FSOT **Hâ‚€ bridge scalar** (PRED-001) lands strictly between anchors â€” unified prediction where Î›CDM carries separate posteriors.
+2. **Dual-anchor readout** — CMB inference (Planck Collaboration 2018: 67.36 km/s/Mpc) and local distance ladder (Riess et al. 2024: 73.04 km/s/Mpc) are not fitted separately; they emerge from the same seed engine at different observer routes.
+3. FSOT **H₀ bridge scalar** (PRED-001) lands strictly between anchors — unified prediction where ΛCDM carries separate posteriors.
 
 This is why the median of these stored row errors is **0.041258%** without introducing dark-energy density as a per-row fit parameter. Mechanism chain: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md#d41-cosmology--hâ‚€-planck-cmb-anchor).
 <!-- README_BUBBLE_BLEED_END -->
@@ -763,9 +763,9 @@ This is why the median of these stored row errors is **0.041258%** without intro
 
 The figure draws the three Hubble rows stored on that closure (SH0ES–Planck tension, Carnegie–Planck tension, and the Planck CMB row). The table above also lists the SH0ES local anchor and the dual-anchor readout.
 
-**Worked example â€” Planck CMB:**
+**Worked example — Planck CMB:**
 
-- Measured: 67.36 Â± 0.54 km/s/Mpc (Planck Collaboration 2018)  
+- Measured: 67.36 ± 0.54 km/s/Mpc (Planck Collaboration 2018)  
 - FSOT computed: 67.270 km/s/Mpc  
 - Error: 0.13%  
 
@@ -774,7 +774,7 @@ The figure draws the three Hubble rows stored on that closure (SH0ES–Planck te
 <!-- README_ENGINEERING_VIII_START -->
 ## VIII. Engineering Demonstrations
 
-*These stacks show the seed engine can guide **grounded** engineering readouts â€” thermochemistry, molecular catalogs, and horizon-cycle proxies. They supplement the empirical spine; they are not its primary proof.*
+*These stacks show the seed engine can guide **grounded** engineering readouts — thermochemistry, molecular catalogs, and horizon-cycle proxies. They supplement the empirical spine; they are not its primary proof.*
 
 ### 8.1 FSOT-designed alternative fuels
 
@@ -809,7 +809,7 @@ Simulators: `vendor/verified_desktop/` (machine-and-molecule, fuel lab, horizon 
 
 ### 8.3 Wet-lab & longevity genetics (Tier 94/95)
 
-Cross-species longevity and zebrafish developmental wet-lab panels â€” measured biology (HAGR AnAge, NCBI, CZ Biohub) vs seed-scalar readouts, not post-hoc curve fits.
+Cross-species longevity and zebrafish developmental wet-lab panels — measured biology (HAGR AnAge, NCBI, CZ Biohub) vs seed-scalar readouts, not post-hoc curve fits.
 
 | Panel | Records | Pooled median % |
 |-------|--------:|----------------:|
@@ -834,7 +834,7 @@ python scripts/verify_tier95_genetics_system.py
 
 ### 9.1 Unified spine vs siloed models
 
-When one engine passes quantum mechanics, sociology, seismology, and fuel chemistry at sub-percent precision, the default "coincidence" explanation strains credibility. FSOT's structural argument is **breadth Ã— precision Ã— formal triangulation** â€” the same pattern that convinced Maxwell that electricity and magnetism were one field.
+When one engine passes quantum mechanics, sociology, seismology, and fuel chemistry at sub-percent precision, the default "coincidence" explanation strains credibility. FSOT's structural argument is **breadth × precision × formal triangulation** — the same pattern that convinced Maxwell that electricity and magnetism were one field.
 
 ### 9.2 Formal verification as scientific instrument
 
@@ -843,32 +843,32 @@ Numeric agreement alone cannot guard against silent code drift. Exporting Lean o
 <!-- README_DISCUSSION_OPEN_WORK_START -->
 ### 9.3 Open work (not model failures)
 
-- **Contested-sector monitoring:** 13 actively-measured open problems (Hâ‚€, Ïƒâ‚ˆ, BBN, hierarchy, w_a) tracked against live survey updates â€” FSOT pooled median **0.030%** as of this edition  
-- **Hard credibility expansion:** ten-pillar audit (`CREDIBILITY_HARDENING_AUDIT.md`) â€” formal + empirical + transparency surfaces aggregated  
+- **Contested-sector monitoring:** 13 actively-measured open problems (H₀, σ₈, BBN, hierarchy, w_a) tracked against live survey updates — FSOT pooled median **0.030%** as of this edition  
+- **Hard credibility expansion:** ten-pillar audit (`CREDIBILITY_HARDENING_AUDIT.md`) — formal + empirical + transparency surfaces aggregated  
 - **Wet-lab longevity depth:** Tier 94/95 biology panels restored as first-class credibility layer (`WETLAB_LONGEVITY_DEPTH.md`)  
-- **Circuitry emergence (Tier 96):** component-variable atlas scaffold â€” BOM from seed math + industry tables (`CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`)  
-- **ESP32 hardware observer:** eight-way UART closure **convenience-deferred** until boot-sequence workflow is ergonomic (laptop bench); QEMU bare-metal and `Trinary_Hardware_Live_Panel` remain authoritative â€” not a math gap  
+- **Circuitry emergence (Tier 96):** component-variable atlas scaffold — BOM from seed math + industry tables (`CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`)  
+- **ESP32 hardware observer:** eight-way UART closure **convenience-deferred** until boot-sequence workflow is ergonomic (laptop bench); QEMU bare-metal and `Trinary_Hardware_Live_Panel` remain authoritative — not a math gap  
 - **Domain atlas rollup:** **~403** atlas CSV rows · **~407** named coverage-map domains · **477 / 477** green residual benchmarks (see [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md))
 <!-- README_DISCUSSION_OPEN_WORK_END -->
 
 <!-- README_NEAR_MISS_START -->
 ### 9.5 Benchmark near-miss transparency
 
-FSOT publishes domains that pass the green gate but approach the â‰¤0.5% boundary â€” no post-hoc parameter rescue when a row fails.
+FSOT publishes domains that pass the green gate but approach the ≤0.5% boundary — no post-hoc parameter rescue when a row fails.
 
 | Transparency artifact | Role |
 |-----------------------|------|
 | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) | Top domains by max single-record error (still green) |
-| [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](predictions/reports/CONTESTED_SECTOR_WATCH.md) | Living Hâ‚€, Ïƒâ‚ˆ, BBN, w_a monitor vs Planck 2018 / Riess 2024 |
+| [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](predictions/reports/CONTESTED_SECTOR_WATCH.md) | Living H₀, σ₈, BBN, w_a monitor vs Planck 2018 / Riess 2024 |
 | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute falsification path for independent reviewers |
 
-Regenerate: `python scripts/build_benchmark_near_miss_ledger.py` Â· `python scripts/build_contested_sector_watch.py`
+Regenerate: `python scripts/build_benchmark_near_miss_ledger.py` · `python scripts/build_contested_sector_watch.py`
 <!-- README_NEAR_MISS_END -->
 
 <!-- README_CREDIBILITY_HARDENING_START -->
 ### 9.6 Hard credibility expansion
 
-FSOT credibility is not rhetorical â€” every pillar must reproduce independently. The hardening audit aggregates formal triangulation, benchmark gates, parameter honesty, wet-lab biology, live catalog ingest, and skeptic replication into one scorecard.
+FSOT credibility is not rhetorical — every pillar must reproduce independently. The hardening audit aggregates formal triangulation, benchmark gates, parameter honesty, wet-lab biology, live catalog ingest, and skeptic replication into one scorecard.
 
 | Artifact | Role |
 |----------|------|
@@ -880,43 +880,43 @@ FSOT credibility is not rhetorical â€” every pillar must reproduce independ
 
 Regenerate: `python scripts/build_credibility_depth_bundle.py` (lean routes + live ingest + wet-lab + Tier 96 + hardening audit).
 
-**Scheduled live ingest:** `data/publication/live_ingest_schedule.yaml` â€” weekly `build_live_ingest_refresh_bundle.py`.
+**Scheduled live ingest:** `data/publication/live_ingest_schedule.yaml` — weekly `build_live_ingest_refresh_bundle.py`.
 <!-- README_CREDIBILITY_HARDENING_END -->
 
 <!-- README_CIRCUITRY_ROADMAP_START -->
 ### 9.7 Circuitry & component emergence roadmap (Tier 96)
 
-**Vision:** schematic variables (R, C, L, V, I, f, Ï„, Q, package, tolerance) labeled in a seed-derived atlas so BOM selection **emerges** from industry parametric tables â€” the math names the parts; you do not guess values from memory.
+**Vision:** schematic variables (R, C, L, V, I, f, τ, Q, package, tolerance) labeled in a seed-derived atlas so BOM selection **emerges** from industry parametric tables — the math names the parts; you do not guess values from memory.
 
 | Phase | Status | Deliverable |
 |-------|--------|-------------|
-| 0 â€” scaffold | complete | Component-class manifest + existing panel crosswalk |
-| 1 â€” ingest | **active** | Industry catalog (`vendor/circuit_components/`) |
-| 2 â€” benchmark | **active** | `Circuit_Component_Emergence_Panel` green gate |
-| 3 â€” BOM emergence | planned | Netlist â†’ ranked industry BOM lines |
+| 0 — scaffold | complete | Component-class manifest + existing panel crosswalk |
+| 1 — ingest | **active** | Industry catalog (`vendor/circuit_components/`) |
+| 2 — benchmark | **active** | `Circuit_Component_Emergence_Panel` green gate |
+| 3 — BOM emergence | planned | Netlist → ranked industry BOM lines |
 
-**Spine:** [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) Â· **Manifest:** `data/circuit_component_emergence_manifest.yaml`
+**Spine:** [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) · **Manifest:** `data/circuit_component_emergence_manifest.yaml`
 
 Existing verified electrical panels (`Electrical_Power_Systems`, `Desktop_Application_Wiring_Spine`, `Trinary_Hardware_Live_Panel`) anchor Phase 0. ESP32 physical closure remains convenience-deferred; simulation panels stay authoritative.
 <!-- README_CIRCUITRY_ROADMAP_END -->
 
 <!-- README_PRACTICAL_PIPELINE_START -->
-### 9.8 Practical pipeline â€” local application
+### 9.8 Practical pipeline — local application
 
-Validation â†’ recognition â†’ application. The practical pipeline documents what comes **down** from verified math into local, owned, subscription-free systems.
+Validation → recognition → application. The practical pipeline documents what comes **down** from verified math into local, owned, subscription-free systems.
 
 | Volume | Role |
 |--------|------|
-| [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) | Master pipeline â€” X-style predictions, applied domains, outcomes |
+| [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) | Master pipeline — X-style predictions, applied domains, outcomes |
 | [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Local observer loop (QEMU + desktop sensors; **ESP32 deferred**) |
-| [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) | ~40 engineering blueprints â†’ FSOT panel crosswalk |
-| [`data/intuitive_observation_fsot_map.yaml`](data/intuitive_observation_fsot_map.yaml) | Intuitive observations â†’ testable FSOT derivations |
+| [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) | ~40 engineering blueprints → FSOT panel crosswalk |
+| [`data/intuitive_observation_fsot_map.yaml`](data/intuitive_observation_fsot_map.yaml) | Intuitive observations → testable FSOT derivations |
 | [`docs/FSOT_NARRATIVE_CORE.md`](docs/FSOT_NARRATIVE_CORE.md) | Plain-language viewpoint + how it holds up to data and proof |
 
 Regenerate: `python scripts/build_practical_pipeline_bundle.py`
 <!-- README_PRACTICAL_PIPELINE_END -->
 
-### 9.4 Founding 35 laws â€” verification status
+### 9.4 Founding 35 laws — verification status
 
 All **35/35** founding physics laws are mapped and verified in this repository:
 
@@ -925,7 +925,7 @@ All **35/35** founding physics laws are mapped and verified in this repository:
 | Strict empirical corpus | 7 |
 | Extension panel verified | 28 |
 
-Dedicated founding panels include `Founding_Quantum_Vacuum_Panel`, `Founding_Cosmic_Ray_Panel`, `Founding_Galactic_Halo_Rotation_Panel`, `Founding_Cosmic_Dust_Panel`, `Founding_White_Dwarf_Cooling_Panel`, `Founding_Atmospheric_Ozone_Panel`, `Founding_Pulsar_Glitch_Panel` â€” each with live benchmarks under `data/founding_*_panel_benchmark.json`.
+Dedicated founding panels include `Founding_Quantum_Vacuum_Panel`, `Founding_Cosmic_Ray_Panel`, `Founding_Galactic_Halo_Rotation_Panel`, `Founding_Cosmic_Dust_Panel`, `Founding_White_Dwarf_Cooling_Panel`, `Founding_Atmospheric_Ozone_Panel`, `Founding_Pulsar_Glitch_Panel` — each with live benchmarks under `data/founding_*_panel_benchmark.json`.
 
 Full audit: [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md)
 
@@ -933,7 +933,7 @@ Full audit: [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md)
 
 ## X. Conclusion
 
-The universe does not present itself as a hundred separate accidents. It presents as **repetition with variation** â€” the same mathematics in stellar fusion and mitochondrial chemistry, in Hubble tension and brain metabolism, in molecular bonds and thermochemistry readouts.
+The universe does not present itself as a hundred separate accidents. It presents as **repetition with variation** — the same mathematics in stellar fusion and mitochondrial chemistry, in Hubble tension and brain metabolism, in molecular bonds and thermochemistry readouts.
 
 FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across the residual atlas (**477/477 green**, Mathlib Formal **100%**, multiprover `overall_ok`)**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
 
@@ -943,7 +943,7 @@ This thesis will expand. The repository will deepen. The invitation is unchanged
 
 ---
 
-## Appendix A â€” One-Command Reproduction
+## Appendix A — One-Command Reproduction
 
 ```bash
 python scripts/run_publication_verification_bundle.py
@@ -962,7 +962,7 @@ python scripts/run_cross_proof_verification.py
 
 ---
 
-## Appendix B â€” Machine-Readable Artifacts
+## Appendix B — Machine-Readable Artifacts
 
 | Artifact | Purpose |
 |----------|---------|
@@ -983,7 +983,7 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 
 ---
 
-## Appendix C â€” Further Reading
+## Appendix C — Further Reading
 
 | Document | Audience |
 |----------|----------|
@@ -1013,9 +1013,9 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 ---
 
 <!-- README_APPENDIX_XI_STUB_START -->
-## Appendix XI â€” Full Verification Record (summary)
+## Appendix XI — Full Verification Record (summary)
 
-*Full volume:* [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md) Â· *Regenerated:* 2026-07-16
+*Full volume:* [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md) · *Regenerated:* 2026-07-16
 
 | Section | Content |
 |---------|---------|
@@ -1035,7 +1035,7 @@ python scripts/merge_readme_thesis_expansion.py
 <!-- README_APPENDIX_XI_STUB_END -->
 
 <!-- README_APPENDIX_XII_STUB_START -->
-## Appendix XII â€” Domain-by-Domain Scientific Coverage (summary)
+## Appendix XII — Domain-by-Domain Scientific Coverage (summary)
 
 *Full volume:* [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) · *26 clusters · **371** extension panels · live scoreboard on this README · Regenerated: 2026-08-05
 
@@ -1077,30 +1077,30 @@ python scripts/merge_readme_arxiv_thesis.py
 <!-- README_APPENDIX_XII_STUB_END -->
 
 <!-- README_APPENDIX_NOTATION_START -->
-## Appendix D â€” Notation and Conventions
+## Appendix D — Notation and Conventions
 
 | Symbol | Meaning |
 |--------|---------|
-| `raw_S` | FSOT vitality scalar â€” emergence (+) vs dispersal (âˆ’) regime |
+| `raw_S` | FSOT vitality scalar — emergence (+) vs dispersal (−) regime |
 | `D_eff` | Effective fold dimension (seed-derived route coordinate, not a fit parameter) |
-| `Î´Ïˆ` | Phase offset in domain fractal routing table |
+| `δψ` | Phase offset in domain fractal routing table |
 | `quirk_mod` | Observer coupling modifier when `observed = true` |
-| `consciousness_factor` | Consciousness-route coupling strength in Â§IV |
-| `Îµ_i` | Per-record percent error (Â§5.5) |
-| `ÎµÌƒ` | Pooled median error for a domain/panel |
-| GREEN | Benchmark gate: pooled median â‰¤ 0.5% |
+| `consciousness_factor` | Consciousness-route coupling strength in §IV |
+| `ε_i` | Per-record percent error (§5.5) |
+| `ε̃` | Pooled median error for a domain/panel |
+| GREEN | Benchmark gate: pooled median ≤ 0.5% |
 | A_strong / B_verified | Coverage tiers in domain atlas |
-| Lean route | Ledger domain label (`cosmological`, `particle`, `medical`, â€¦) |
+| Lean route | Ledger domain label (`cosmological`, `particle`, `medical`, …) |
 | Strict empirical | Formula row in `strict_empirical.jsonl` with measured target + citation grade |
 
-**Seeds (global, no per-observable tuning):** Ï€, e, Ï† (golden ratio), Î³ (Eulerâ€“Mascheroni), G (Catalan).
+**Seeds (global, no per-observable tuning):** π, e, φ (golden ratio), γ (Euler–Mascheroni), G (Catalan).
 
-**Equation numbering:** Main-text display equations use Â§section numbering (e.g. Â§III.1). Appendix XII-E provides formula-level strict-empirical exemplars by Lean route.
+**Equation numbering:** Main-text display equations use §section numbering (e.g. §III.1). Appendix XII-E provides formula-level strict-empirical exemplars by Lean route.
 
-**Edition tags:** README front matter `Edition:` field; git tags (`fsot-monograph-v1`, â€¦) for citeable snapshots; commit SHA for living thesis.
+**Edition tags:** README front matter `Edition:` field; git tags (`fsot-monograph-v1`, …) for citeable snapshots; commit SHA for living thesis.
 <!-- README_APPENDIX_NOTATION_END -->
 
-## Appendix E â€” How to Cite This Work
+## Appendix E — How to Cite This Work
 
 ```
 Palumbo, D. A. (2026). Fluid Spacetime Omni-Theory (FSOT):
@@ -1119,8 +1119,8 @@ https://github.com/dappalumbo91/FSOT-2.1-Lean/releases/tag/fsot-monograph-v1
 
 ## License
 
-Apache 2.0 â€” consistent with the reference implementation.
+Apache 2.0 — consistent with the reference implementation.
 
 ---
 
-*Fluid Spacetime Omni-Theory (FSOT) â€” created and architected by Damian Arthur Palumbo.*
+*Fluid Spacetime Omni-Theory (FSOT) — created and architected by Damian Arthur Palumbo.*

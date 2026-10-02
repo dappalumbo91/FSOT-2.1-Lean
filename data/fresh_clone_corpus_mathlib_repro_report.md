@@ -3,8 +3,8 @@
 - **When:** 2026-09-09T16:53:43.136189+00:00
 - **Repo:** https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 - **Commit:** `e23a2c73461ffdf8e2c9dddf7b8b02d969fc8137`
-- **Clone dir:** `C:\Users\damia\Desktop\FSOT-2.1-Lean-clean-repro-20260909`
-- **Working tree:** `C:\Users\damia\Desktop\FSOT-2.1-Lean`
+- **Clone dir:** `<local folder, not included in repo: FSOT-2.1-Lean-clean-repro-20260909>`
+- **Working tree:** `.`
 - **Overall:** **PASS**
 
 ## Bootstrap (independent machine path)

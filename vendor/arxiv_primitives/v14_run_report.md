@@ -6,8 +6,8 @@
 
 ## Stdout
 ```text
-[ARXIV] Loading scientific paper topics from C:\Users\damia\Desktop\loop\arxiv-metadata-oai-snapshot.json...
-[ARXIV] Successfully loaded 2963163 paper topics from C:\Users\damia\Desktop\loop\arxiv-metadata-oai-snapshot.json
+[ARXIV] Loading scientific paper topics from <local file, not included in repo: arxiv-metadata-oai-snapshot.json>
+[ARXIV] Successfully loaded 2963163 paper topics from <local file, not included in repo: arxiv-metadata-oai-snapshot.json>
 [ARXIV] Prepared 2963163 query variations from arXiv metadata
 
 Sample queries:

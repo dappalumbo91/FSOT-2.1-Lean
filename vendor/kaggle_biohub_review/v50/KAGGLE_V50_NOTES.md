@@ -54,7 +54,7 @@ Tune locally: `python tune_v50_params.py --max-frames 50`
 Download FT weights locally:
 
 ```powershell
-python download_ft_weights.py --out D:\Kaggle_Biohub_Data\cellmot
+python download_ft_weights.py --out <local folder, not included in repo: Kaggle_Biohub_Data/cellmot>
 ```
 
 ## FSOT-Living bridge (`fsot_living_emergence.py`)
@@ -82,15 +82,15 @@ when train-proxy drops below 0.62 to stimulate emergence regions.
 ```powershell
 cd vendor\kaggle_biohub_review\v50
 pip install -r requirements-v50.txt
-python download_ft_weights.py --out D:\Kaggle_Biohub_Data\cellmot
-$env:KAGGLE_TEST_DIR = "D:\Kaggle_Biohub_Data\test"
-$env:CELLMOT_UNET_WEIGHTS = "D:\Kaggle_Biohub_Data\cellmot\cellmot-ft-detector-biohub\edge_predictor_best.pth"
+python download_ft_weights.py --out <local folder, not included in repo: Kaggle_Biohub_Data/cellmot>
+$env:KAGGLE_TEST_DIR = "<local folder, not included in repo: Kaggle_Biohub_Data/test>"
+$env:CELLMOT_UNET_WEIGHTS = "<local file, not included in repo: edge_predictor_best.pth>"
 $env:CELLMOT_DEVICE = "cpu"
 python kaggle_main_runner.py
-python kaggle_submission_score.py submission_v50.csv --gt-dir D:\Kaggle_Biohub_Data\train
+python kaggle_submission_score.py submission_v50.csv --gt-dir <local folder, not included in repo: Kaggle_Biohub_Data/train>
 ```
 
-Download all four test zarrs: `python download_kaggle_assets.py --out D:\Kaggle_Biohub_Data`
+Download all four test zarrs: `python download_kaggle_assets.py --out <local folder, not included in repo: Kaggle_Biohub_Data>`
 
 ## Fast fallback
 

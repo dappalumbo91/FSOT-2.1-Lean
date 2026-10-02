@@ -8,10 +8,22 @@ legal/scientific prereg clock for anything already committed.
 Outputs:
   predictions/nearest_data_drop_ranking.json
   predictions/reports/NEAREST_DATA_DROPS.md
-  Optional copy to G:/FSOT-PublicData/anomaly_observables/prediction_monitor_logs/
+  Optional copy to $FSOT_EXTERNAL_DATA_ROOT/anomaly_observables/prediction_monitor_logs
 """
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import json
 import shutil
@@ -21,9 +33,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT_JSON = ROOT / "predictions" / "nearest_data_drop_ranking.json"
 OUT_MD = ROOT / "predictions" / "reports" / "NEAREST_DATA_DROPS.md"
-EXTERNAL_LOG = Path(
-    r"G:\FSOT-PublicData\anomaly_observables\prediction_monitor_logs"
-)
+EXTERNAL_LOG = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'prediction_monitor_logs'
 
 # As-of research snapshot 2026-08-06. Update windows as facilities announce.
 # "as_of" is today's session date for ranking.

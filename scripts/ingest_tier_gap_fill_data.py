@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import os
 import subprocess
@@ -15,7 +27,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--external-root", default=r"G:\FSOT-PublicData")
+    parser.add_argument("--external-root", default=_os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data')))
     parser.add_argument("--skip-tier38", action="store_true")
     parser.add_argument("--skip-weather", action="store_true")
     args = parser.parse_args()

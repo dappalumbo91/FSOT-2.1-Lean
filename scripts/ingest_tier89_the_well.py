@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import os
 import sys
@@ -21,7 +33,7 @@ def main() -> int:
     parser.add_argument(
         "--external-root",
         default="",
-        help="Override FSOT_EXTERNAL_DATA_ROOT (e.g. G:/FSOT-PublicData)",
+        help="Override FSOT_EXTERNAL_DATA_ROOT (e.g. $FSOT_EXTERNAL_DATA_ROOT)",
     )
     args = parser.parse_args()
     if args.deep:
@@ -29,7 +41,7 @@ def main() -> int:
     if args.external_root:
         os.environ["FSOT_EXTERNAL_DATA_ROOT"] = args.external_root
     elif not os.environ.get("FSOT_EXTERNAL_DATA_ROOT"):
-        for candidate in ("G:/FSOT-PublicData", "D:/FSOT-2.1-Lean-PublicData"):
+        for candidate in (_os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data')), _os.fspath(_fsot_local_path('FSOT_LEAN_PUBLIC_DATA', 'data_external/lean_public_data'))):
             if Path(candidate).exists():
                 os.environ["FSOT_EXTERNAL_DATA_ROOT"] = candidate
                 break

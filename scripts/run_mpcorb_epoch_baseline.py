@@ -20,7 +20,7 @@ Examples:
   python scripts/run_mpcorb_epoch_baseline.py --max-minutes 20 --epochs 2 --fetch-per-epoch 40 --oc-per-epoch 15
 
   # stop gracefully: create the stop file
-  #   G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations/STOP_EPOCHS
+  #   $FSOT_EXTERNAL_DATA_ROOT/anomaly_observables/mpcorb_raw_observations/STOP_EPOCHS
 """
 
 from __future__ import annotations

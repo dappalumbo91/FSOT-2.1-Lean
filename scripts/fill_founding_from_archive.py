@@ -160,7 +160,7 @@ def main() -> int:
                     "measured": measured,
                     "unit": unit,
                     "reference": citation,
-                    "source_note": "public literature named in founding archive (I:/fsuft aasb)",
+                    "source_note": "public literature named in founding archive ($FSOT_LOCAL_DATA/fsuft aasb)",
                 }
             )
             have.add(name.strip())
@@ -169,7 +169,7 @@ def main() -> int:
     ref["policy"] = (
         "Published literature anchors only — founding-era accuracy claims are not trusted "
         "until FSOT 2.1 panel verification. Extra rows are the public catalogs the "
-        "I:/fsuft aasb archive was pointing at, not FSUFT 4.2/8.7 chat numbers."
+        "$FSOT_LOCAL_DATA/fsuft aasb archive was pointing at, not FSUFT 4.2/8.7 chat numbers."
     )
     REFERENCE.write_text(json.dumps(ref, indent=2), encoding="utf-8")
 

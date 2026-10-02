@@ -1,12 +1,12 @@
 # Open science expansion (no credentials)
 
-**Workspace:** `C:\Users\damia\Desktop\FSOT-2.1-Lean`  
+**Workspace:** `.`  
 **Policy:** every stream is **public**, **no signup**, **no API keys**.
 
 ## Commands
 
 ```powershell
-cd C:\Users\damia\Desktop\FSOT-2.1-Lean
+cd FSOT-2.1-Lean
 python scripts/ingest_open_science_expansion.py
 python scripts/build_open_science_expansion_benchmarks.py
 python scripts/evaluate_open_science_holdouts.py

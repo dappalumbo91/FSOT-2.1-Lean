@@ -2,7 +2,7 @@
 """FSOT sequence → Cα structure — PORT of Genetics/fsot_protein math (F01–F15).
 
 Authority:
-  - I:/FSOT-Physical-Archive/04_Genetics-Longevity/fsot_protein/formulas/
+  - $FSOT_ARCHIVE_ROOT/04_Genetics-Longevity/fsot_protein/formulas
   - Desktop/Genetics/fsot_protein/src/{secondary,chemical,distogram,regions}.rs
   - FSOT_PROTEIN_DERIVATIONS.md v7
 

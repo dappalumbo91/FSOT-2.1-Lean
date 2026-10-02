@@ -9,6 +9,18 @@ run parameters (vc, f, ap) from the dataset.
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import sqlite3
@@ -27,7 +39,7 @@ def _resolve_db(cli_db: Path | None) -> Path:
             "FSOT_UNIFIED.db not found in vendor/fsot_aggregate. Set FSOT_UNIFIED_DB."
         )
     return path
-DEFAULT_CSV = Path(r"D:\training data\cnc_data\Exp1.csv")
+DEFAULT_CSV = _fsot_local_path('FSOT_TRAINING_DATA', 'data_external/training_data') / 'cnc_data' / 'Exp1.csv'
 EVALUATOR_VERSION = "fsot_numeric_eval_v4"
 NUMERIC_TABLE = "verification_numeric"
 MRR_CONCEPT = "Material Removal Rate (Turning)"

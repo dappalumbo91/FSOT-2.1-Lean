@@ -6,6 +6,18 @@ Does not rewrite predictions. Writes results/siblings/ only.
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import shutil
 from datetime import datetime, timezone
@@ -16,13 +28,13 @@ OUT = ROOT / "results" / "siblings"
 
 CANDIDATES = {
     "genetics": [
-        Path(r"C:\Users\damia\Desktop\FSOT-Genetics"),
+        _fsot_local_path('FSOT_GENETICS_ROOT', '../FSOT-Genetics'),
         ROOT.parent / "FSOT-Genetics",
         ROOT / "_ref" / "FSOT-Genetics",
     ],
     "quantum": [
-        Path(r"C:\Users\damia\Desktop\fsot quantum"),
-        Path(r"C:\Users\damia\Desktop\FSOT-Quantum"),
+        _fsot_local_path('FSOT_QUANTUM_ROOT', '../FSOT-Quantum'),
+        _fsot_local_path('FSOT_QUANTUM_ROOT', '../FSOT-Quantum'),
         ROOT.parent / "FSOT-Quantum",
         ROOT / "_ref" / "FSOT-Quantum",
     ],

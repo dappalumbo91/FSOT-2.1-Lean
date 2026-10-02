@@ -106,7 +106,7 @@ That problem lives in FSOT-GPU, not this QC job fold.
 ## Reproduce the living checks
 
 ```powershell
-cd "C:\Users\damia\Desktop\fsot quantum"
+cd "FSOT-Quantum"
 $env:PYTHONPATH = (Get-Location).Path
 python -m fsot_quantum.medium_next
 python -m fsot_quantum.keep_going

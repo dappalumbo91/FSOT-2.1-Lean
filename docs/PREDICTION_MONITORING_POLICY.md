@@ -6,7 +6,7 @@
 2. **Git commit SHA + timestamp** is the preregistration clock for any prediction already on GitHub.  
 3. When data lands, **log the outcome** against that SHA in **`results/`** — do not retune the predicted centrals in `predictions/`.  
 4. New model work continues on `main` with new commits; outcomes go in the results scoreboard.  
-5. Large raw datasets live on **external drive** (`G:/FSOT-PublicData/…` or `I:\FSOT-Physical-Archive\03_FSOT-PublicData`); monorepo keeps engines + predictions + results pointers.
+5. Large raw datasets live on **external drive** (`<local folder, not included in repo: FSOT-PublicData>` or `<local folder, not included in repo: FSOT-Physical-Archive/03_FSOT-PublicData>`); monorepo keeps engines + predictions + results pointers.
 
 ## Closest calendar drops (update with ranker)
 
@@ -58,8 +58,8 @@ Also write a dated pack under `results/literature/YYYY-MM-DD_crossref.md` and re
 
 Optional external mirror:
 
-`G:/FSOT-PublicData/anomaly_observables/prediction_monitor_logs/`  
-`I:\FSOT-Physical-Archive\03_FSOT-PublicData\` (same role on the physical archive)
+`<local folder, not included in repo: FSOT-PublicData/anomaly_observables/prediction_monitor_logs>`  
+`<local folder, not included in repo: FSOT-Physical-Archive/03_FSOT-PublicData>` (same role on the physical archive)
 
 ## Separate predictions repository?
 

@@ -4,7 +4,7 @@
 
 CCHP TRGB galaxies are intermediate-ladder sightlines — milder bubble density than SH0ES Cepheid hosts, distinct from CMB-depleted sectors. Each galaxy gets its own FSOT H0 prediction.
 
-**External catalog:** `G:/FSOT-PublicData/anomaly_observables/carnegie_trgb/cchp_trgb_hosts.json`  
+**External catalog:** `<local file, not included in repo: cchp_trgb_hosts.json>`  
 **Host-mean FSOT H₀** = `70.264756`  
 **Literature program H₀** ≈ `70.39`  
 **Span** = `{'min_fsot': 70.107586, 'max_fsot': 70.66578}`

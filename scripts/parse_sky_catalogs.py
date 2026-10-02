@@ -2,13 +2,25 @@
 """Turn the game-drive catalog dumps into position JSON. No network."""
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import csv
 import json
 import math
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(r"D:\FSOT_Benchmarks\anomaly_observables")
+ROOT = _fsot_local_path('FSOT_BENCHMARKS_ROOT', 'data_external/benchmarks') / 'anomaly_observables'
 
 
 def tsv_rows(path: Path) -> list[dict[str, str]]:

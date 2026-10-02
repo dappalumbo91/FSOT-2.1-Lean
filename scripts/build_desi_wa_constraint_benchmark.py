@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import shutil
@@ -12,7 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REFERENCE = ROOT / "data" / "dark_energy_cpl_reference.json"
 OUTPUT = ROOT / "data" / "desi_wa_constraint_benchmark.json"
-PUBLIC_MIRROR = Path("D:/fsot_skeptic_public_data/desi_wa_constraint_reference.json")
+PUBLIC_MIRROR = _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'fsot_skeptic_public_data' / 'desi_wa_constraint_reference.json'
 
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))

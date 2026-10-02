@@ -43,47 +43,47 @@ def _external_roots() -> list[dict]:
     return [
         {
             "id": "fsot_compute_authority",
-            "path": r"C:\Users\damia\Desktop\FSOT document update\fsot_compute.py",
+            "path": r"$FSOT_LOCAL_DATA/FSOT document update/fsot_compute.py",
             "role": "canonical scalar oracle",
         },
         {
             "id": "allen_neuron_hybrid",
-            "path": r"C:\Users\damia\Desktop\nuron\cell data",
+            "path": r"$FSOT_LOCAL_DATA/nuron/cell data",
             "role": "Allen hybrid neuron + hero FI certification",
         },
         {
             "id": "allen_cell_catalog",
-            "path": r"C:\Users\damia\Desktop\nuron\cell data\allen_cell_types",
+            "path": r"$FSOT_LOCAL_DATA/nuron/cell data/allen_cell_types",
             "role": "2333-cell Allen Cell Types cohort",
         },
         {
             "id": "neurolab",
-            "path": r"C:\Users\damia\Desktop\FSOT NeuroLab",
+            "path": r"$FSOT_LOCAL_DATA/FSOT NeuroLab",
             "role": "brain pathways + component priors",
         },
         {
             "id": "smiles_lab",
-            "path": r"C:\Users\damia\Desktop\FSOT SMILES Lab",
+            "path": r"$FSOT_LOCAL_DATA/FSOT SMILES Lab",
             "role": "1470 mapped physical/chemical constants",
         },
         {
             "id": "aether_prime",
-            "path": r"D:\fsot llm expariments\Aether Prime",
+            "path": r"$FSOT_LLM_EXPERIMENTS/Aether Prime",
             "role": "deterministic solver + verifier distill",
         },
         {
             "id": "magic_circle",
-            "path": r"C:\Users\damia\Desktop\fsot magic circle",
+            "path": r"$FSOT_LOCAL_DATA/fsot magic circle",
             "role": "glyph resonance simulator",
         },
         {
             "id": "llm_experiments",
-            "path": r"D:\fsot llm expariments",
+            "path": r"$FSOT_LLM_EXPERIMENTS",
             "role": "21 intelligence experiment folders",
         },
         {
             "id": "weather_lab",
-            "path": r"C:\Users\damia\Desktop\weather",
+            "path": r"$FSOT_LOCAL_DATA/weather",
             "role": "atmospheric FSOT priors",
         },
     ]

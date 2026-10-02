@@ -116,7 +116,7 @@ Builder: `scripts/build_open_frontier_wave3.py` (FSOT residual only)
 ## Multi-drive bulk data
 
 External root resolver: `scripts/fsot_external_data_root.py`  
-Preference: `FSOT_EXTERNAL_DATA_ROOT` → `G:\FSOT-PublicData` → `I:\FSOT-PublicData` → repo cache.
+Preference: `FSOT_EXTERNAL_DATA_ROOT` → `<local folder, not included in repo: FSOT-PublicData>` → `<local folder, not included in repo: FSOT-PublicData>` → repo cache.
 
 Large open downloads land under:
 `{external}/open_science_large/{codata,gaia,simbad,lmfdb,climate_ncei,desi}/`
@@ -132,7 +132,7 @@ Wave 4 large builder: `scripts/build_open_frontier_wave4_large.py`
 | SIMBAD TAP | ~1365 rows | TOP 250 cached on G: |
 | LMFDB nf+ec | ~3918 / ~1016 | degrees 2–5 + EC 150 |
 | NCEI multivar climate | ~607 | land/ocean/NHem/SHem series |
-| DESI bulk | portal + anchors | full zall FITS → G:\…\desi\ |
+| DESI bulk | portal + anchors | full zall FITS → <local folder, not included in repo: desi> |
 
 ## DESI FITS residual attach — COVERED
 
@@ -140,7 +140,7 @@ Builder: `scripts/build_desi_fits_residual_panel.py`
 
 | Item | Value |
 |------|-------|
-| FITS | `G:\FSOT-PublicData\open_science_large\desi\zall-pix-fuji.fits` (~2.1 GB) |
+| FITS | `<local file, not included in repo: zall-pix-fuji.fits>` (~2.1 GB) |
 | Catalog rows | **2,847,435** |
 | Quality sample | ZWARN=0 · **2500** objects |
 | Residual records | **~37,080** (Z, ZERR, fluxes, χ², Δχ², mags, TSNR…) |

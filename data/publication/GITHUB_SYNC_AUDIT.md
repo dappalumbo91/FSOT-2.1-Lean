@@ -18,7 +18,7 @@
 ## Expansive run pipeline
 
 ```bash
-cd I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full
+cd FSOT-2.1-Lean
 python scripts/sync_verified_desktop_projects.py
 python scripts/run_publication_verification_bundle.py --full-cross-proof
 python scripts/export_publication_domain_atlas.py

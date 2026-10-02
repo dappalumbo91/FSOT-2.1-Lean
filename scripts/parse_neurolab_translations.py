@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import math
@@ -10,7 +22,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_JL = Path(r"C:\Users\damia\Desktop\FSOT NeuroLab\DataAnalysisExpert\scripts\fsot_translations.jl")
+DEFAULT_JL = _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'FSOT NeuroLab' / 'DataAnalysisExpert' / 'scripts' / 'fsot_translations.jl'
 OUTPUT = ROOT / "data" / "neurolab_translations_bio.json"
 
 TARGET_DOMAINS = ("NEUROSCIENCE", "BIOPHYSICS", "GENOMIC_SCIENCES")

@@ -13,7 +13,7 @@ powershell -ExecutionPolicy Bypass -File scripts/setup_verification_tools.ps1 -P
 | Z3 | `tools/z3/**/bin/z3.exe` |
 | CVC5 | `tools/cvc5/**/bin/cvc5.exe` |
 | TLA+/TLC | `tools/tla/tla2tools.jar` + `tlc.cmd` |
-| F* | Portable `I:\...\fstar` or `FSTAR_HOME` (not always under `tools/`) |
+| F* | Portable `<local folder, not included in repo: fstar>` or `FSTAR_HOME` (not always under `tools/`) |
 | Isabelle | Desktop `Isabelle2025-2` (detected by cross-proof runner) |
 | Coq/Rocq | Platform install (already on PATH if coqc works) |
 | Lean | elan/lake |

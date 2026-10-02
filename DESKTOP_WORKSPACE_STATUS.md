@@ -1,6 +1,6 @@
-# Desktop workspace status — `C:\Users\damia\Desktop\FSOT-2.1-Lean`
+# Desktop workspace status — `.`
 
-**Canonical working root while `I:\` is under repair.**  
+**Canonical working root while `<local drive>` is under repair.**  
 **Reviewed:** 2026-08-05  
 **Remote:** `https://github.com/dappalumbo91/FSOT-2.1-Lean`  
 **Live stamp:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)
@@ -16,7 +16,7 @@
 | Authority pin | **AEB2AD** — `vendor/fsot_compute.py` SHA-256 matches pin |
 | Not included | Full Physical Archive offline mass (~17–39+ GB: `.lake`, bulk API dumps, SR-ITE runtime, genetics blobs, etc.) |
 
-This is the **verification + mathematics** face of the project. It is **not** a byte-for-byte restore of the entire `I:\FSOT-Physical-Archive` tree. Catalog **results** and portable caches are here; multi-GB raw downloads often lived only on `I:`.
+This is the **verification + mathematics** face of the project. It is **not** a byte-for-byte restore of the entire `<local folder, not included in repo: FSOT-Physical-Archive>` tree. Catalog **results** and portable caches are here; multi-GB raw downloads often lived only on `I:`.
 
 ---
 
@@ -121,7 +121,7 @@ Not the Lean math definitions (those are here). Typically:
 ## 6. How to work from here
 
 ```powershell
-cd C:\Users\damia\Desktop\FSOT-2.1-Lean
+cd FSOT-2.1-Lean
 
 # Numeric / publication verification (Python)
 pip install -r requirements.txt
@@ -134,7 +134,7 @@ python scripts/run_cross_proof_verification.py
 lake build
 ```
 
-**Do not** treat `C:\Users\damia\fsot_work\` as authority if it still exists — use **this Desktop path**.
+**Do not** treat `<local folder, not included in repo: fsot_work>` as authority if it still exists — use **this Desktop path**.
 
 ---
 

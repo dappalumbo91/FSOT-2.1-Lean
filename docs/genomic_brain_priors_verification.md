@@ -2,7 +2,7 @@
 
 **Last verified:** 2026-06-20  
 **Repo:** `FSOT-2.1-Lean-main`  
-**Authority:** `C:\Users\damia\Desktop\FSOT document update\fsot_compute.py`  
+**Authority:** `<local file, not included in repo: fsot_compute.py>`  
 **Runner:** `python scripts/fsot_verification_runner.py`
 
 ---
@@ -162,7 +162,7 @@ Authority SHA-256:     D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C1963
 ## Reproduce
 
 ```powershell
-cd "C:\Users\damia\Desktop\New folder (9)\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main"
+cd "FSOT-2.1-Lean"
 python scripts/fsot_verification_runner.py
 ```
 

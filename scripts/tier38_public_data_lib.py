@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import math
 import os
@@ -14,7 +26,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-DEFAULT_EXTERNAL_ROOT = Path(r"G:\FSOT-PublicData")
+DEFAULT_EXTERNAL_ROOT = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data')
 
 
 def _deep_mode() -> bool:

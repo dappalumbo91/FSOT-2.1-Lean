@@ -1,7 +1,7 @@
 # Verification honesty ledger — what each prover actually checks
 
 **Edition:** 2026-08-03 (Isabelle math core upgrade)  
-**Repo:** `FSOT-2.1-Lean` · Physical Archive map: `I:\FSOT-Physical-Archive`  
+**Repo:** `FSOT-2.1-Lean` · Physical Archive map: `<local folder, not included in repo: FSOT-Physical-Archive>`  
 **Purpose:** Make claims **unquestionable to other AIs** by separating machine-checked math from empirical certificates and from structural bookkeeping.
 
 ---
@@ -168,7 +168,7 @@ Do not conflate literal certificate replay with derivation of the scalar field.
 
 ## 7. Physical Archive note (I: drive)
 
-Windows reports the archive volume (`I:\`, exFAT) as **HealthStatus: Warning / OperationalStatus: Full Repair Needed**.  
+Windows reports the archive volume (`<local drive>`, exFAT) as **HealthStatus: Warning / OperationalStatus: Full Repair Needed**.  
 Directory metadata remains visible; **file content reads** can fail with I/O device errors until the volume is repaired (`chkdsk I: /f` after a clean unmount, preferably with backup).  
 
 This is a **filesystem repair state**, not proof that the archive contents were intentionally deleted. The GitHub repo `dappalumbo91/FSOT-2.1-Lean` remains the public verification face; work continues from a healthy clone until `I:` is repaired and re-synced.

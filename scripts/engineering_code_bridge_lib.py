@@ -6,12 +6,24 @@ style as linguistics/Protofluid/code-genome: seed residuals against structure,
 parity rates, and genome statistics already produced by your other repos.
 
 External paths (read-only, optional):
-  I:\\fsot-neuron-zig
-  I:\\Protofluid-Language-Translator-2.0-Zig
+  fsot-neuron-zig
+  Protofluid-Language-Translator-2.0-Zig
   Desktop\\fsot code language
 """
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import json
 from datetime import datetime, timezone
@@ -31,14 +43,14 @@ from tier_gap_fill_lib import _bench_v11, _load_fsot, _load_json  # noqa: E402
 
 # Preferred external roots (Windows desktop / I: archive)
 NEURON_ZIG_CANDIDATES = [
-    Path(r"I:\fsot-neuron-zig"),
-    Path(r"C:\Users\damia\Desktop\fsot neuron family\fsot-neuron-zig"),
+    _fsot_local_path('FSOT_NEURON_ZIG_ROOT', '../fsot-neuron-zig'),
+    _fsot_local_path('FSOT_NEURON_ZIG_ROOT', '../fsot-neuron-zig'),
 ]
 PFLT_CANDIDATES = [
-    Path(r"I:\Protofluid-Language-Translator-2.0-Zig"),
+    _fsot_local_path('PROTOFLUID_LANGUAGE_TRANSLATOR_2_0_ZIG_ROOT', '../Protofluid-Language-Translator-2.0-Zig'),
 ]
 CODE_LANG_CANDIDATES = [
-    Path(r"C:\Users\damia\Desktop\fsot code language"),
+    _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'fsot code language',
 ]
 
 

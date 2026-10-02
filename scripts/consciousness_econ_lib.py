@@ -2,6 +2,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import csv
 import json
 import math
@@ -12,7 +24,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 REFERENCE = ROOT / "data" / "consciousness_reference_observables.json"
 RESONANCE_REF = ROOT / "data" / "consciousness_resonance_reference.json"
-DEFAULT_ANAGE = Path(r"G:\FSOT-PublicData\anomaly_observables\consciousness\anage\anage_data.txt")
+DEFAULT_ANAGE = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'consciousness' / 'anage' / 'anage_data.txt'
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_paths import fsot_compute_path  # noqa: E402

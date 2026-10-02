@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import re
@@ -16,7 +28,7 @@ except ImportError:
     yaml = None  # type: ignore
 
 ROOT = Path(__file__).resolve().parents[1]
-FSOT_20_REPO = Path(r"C:\Users\damia\Desktop\FSOT-2.0-code")
+FSOT_20_REPO = _fsot_local_path('FSOT_2_0_CODE_ROOT', '../FSOT-2.0-code')
 EXPANSION_DOC = FSOT_20_REPO / "continued domain expansion"
 PRECISION_REPORT = ROOT / "data" / "domain_precision_report.json"
 REGISTRY_35 = ROOT / "data" / "fsot_35_domain_registry.yaml"

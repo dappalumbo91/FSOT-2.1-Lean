@@ -1,8 +1,8 @@
 # Session gates — 2026-08-17 / 2026-08-18 UTC
 
-Working tree: `C:\Users\damia\Desktop\FSOT-2.1-Lean`  
+Working tree: `.`  
 GitHub: https://github.com/dappalumbo91/FSOT-2.1-Lean @ `aeb0679`  
-Physical archive: `I:\FSOT-Physical-Archive`
+Physical archive: `<local folder, not included in repo: FSOT-Physical-Archive>`
 
 ## Ran this session
 
@@ -22,7 +22,7 @@ Full seven-way cross-proof and `lake build` were last certified on the 2026-08-0
 | Copy | Commit | Notes |
 |------|--------|-------|
 | Desktop / GitHub | `aeb0679` | Current public state. Has `predictions/`. |
-| `I:\…\02_FSOT-2.1-Lean-Full` | `dfebff1` | **123 commits behind** + local dirty experiments. Do not reset. Mirror `predictions/` + `results/` onto it. |
+| `.` | `dfebff1` | **123 commits behind** + local dirty experiments. Do not reset. Mirror `predictions/` + `results/` onto it. |
 
 ## What this session added
 

@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import sys
@@ -15,7 +27,7 @@ except ImportError:
     requests = None  # type: ignore
 
 ROOT = Path(__file__).resolve().parents[1]
-WEATHER_ROOT = Path(r"C:\Users\damia\Desktop\weather")
+WEATHER_ROOT = _fsot_local_path('FSOT_LOCAL_DATA', 'data_external/local') / 'weather'
 SIM_LOG = WEATHER_ROOT / "fsot_weather_sim_log.json"
 OUTPUT = ROOT / "data" / "weather_observed_benchmark.json"
 ARCHIVE_URL = "https://archive-api.open-meteo.com/v1/archive"

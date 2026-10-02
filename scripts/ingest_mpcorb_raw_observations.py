@@ -5,7 +5,7 @@ Uses the official MPC Observations API (ADES JSON) — granular data that orbits
 are based on, not literature summaries.
 
 Storage (external drive preferred — large):
-  G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations/
+  $FSOT_EXTERNAL_DATA_ROOT/anomaly_observables/mpcorb_raw_observations
 
 Monorepo keeps a lightweight pointer + sample index only.
 
@@ -14,6 +14,18 @@ API: https://data.minorplanetcenter.net/api/get-obs
 """
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import argparse
 import json
@@ -25,7 +37,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MPCORB = ROOT / "vendor" / "mpcorb" / "MPCORB.DAT"
-EXTERNAL = Path(r"G:\FSOT-PublicData\anomaly_observables\mpcorb_raw_observations")
+EXTERNAL = _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'mpcorb_raw_observations'
 LOCAL_FALLBACK = ROOT / "vendor" / "mpcorb" / "raw_observations"
 POINTER = ROOT / "predictions" / "external_data_pointers.json"
 API = "https://data.minorplanetcenter.net/api/get-obs"
@@ -286,7 +298,7 @@ def main() -> int:
             ptr = json.loads(POINTER.read_text(encoding="utf-8"))
         except Exception:
             ptr = {}
-    ptr.setdefault("external_root", "G:/FSOT-PublicData")
+    ptr.setdefault("external_root", _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data')))
     ptr.setdefault("datasets", {})
     ptr["datasets"]["mpcorb_raw_observations"] = {
         "path": str(store).replace("\\", "/"),

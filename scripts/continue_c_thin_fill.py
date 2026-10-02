@@ -8,6 +8,18 @@ stay thin until another public table exists.
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 import re
 import sys
@@ -15,7 +27,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-QCAT = Path(r"C:\Users\damia\Desktop\fsot quantum\results\formula_catalog.json")
+QCAT = _fsot_local_path('FSOT_QUANTUM_ROOT', '../FSOT-Quantum') / 'results' / 'formula_catalog.json'
 DATA = ROOT / "data"
 OUT = ROOT / "results" / "verification" / "c_thin_continue_fill.json"
 

@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import os
 import sys
@@ -31,8 +43,8 @@ def main() -> int:
         os.environ["FSOT_EXTERNAL_DATA_ROOT"] = args.external_root
     elif not os.environ.get("FSOT_EXTERNAL_DATA_ROOT"):
         for candidate in (
-            r"I:\FSOT-Physical-Archive\03_FSOT-PublicData",
-            r"G:\FSOT-PublicData",
+            _os.fspath(_fsot_local_path('FSOT_ARCHIVE_ROOT', 'data_external/physical_archive') / '03_FSOT-PublicData'),
+            _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data')),
         ):
             if Path(candidate).exists():
                 os.environ["FSOT_EXTERNAL_DATA_ROOT"] = candidate

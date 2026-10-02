@@ -88,7 +88,7 @@ In the OS path it becomes:
 Hub map: [`../RELATED_EMBODIMENTS.md`](../RELATED_EMBODIMENTS.md).  
 Engineering note: [`ENGINEERING_HARDWARE_CODE_DIRECTION.md`](ENGINEERING_HARDWARE_CODE_DIRECTION.md).
 
-When the local archive path (`I:\fsot-neuron-zig`) is online, prefer live stamp ingest; when offline, residual-gate public ABI + hub panels only.
+When the local archive path (`fsot-neuron-zig`) is online, prefer live stamp ingest; when offline, residual-gate public ABI + hub panels only.
 
 ---
 

@@ -3,6 +3,18 @@
 
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import argparse
 import json
 import sys
@@ -62,7 +74,7 @@ def main() -> int:
         source=[
             "data/consciousness_reference_observables.json",
             "data/consciousness_resonance_reference.json",
-            "G:/FSOT-PublicData/anomaly_observables/consciousness/anage",
+            _os.fspath(_fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'anomaly_observables' / 'consciousness' / 'anage'),
             "scripts/consciousness_econ_lib.py",
         ],
         channel_stats=[("econ", "brain_metabolic_panel", errs)],

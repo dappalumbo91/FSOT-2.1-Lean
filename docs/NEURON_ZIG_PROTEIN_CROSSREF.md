@@ -7,9 +7,9 @@
 
 | Location | Role |
 |----------|------|
-| `C:\Users\damia\Desktop\fsot neuron family\fsot-neuron-zig\` | **Working FSOT neuron implementation (Zig)** |
+| `fsot-neuron-zig` | **Working FSOT neuron implementation (Zig)** |
 | GitHub | `dappalumbo91/fsot-neuron-zig` (when synced) |
-| Archive notes | `I:\FSOT-Physical-Archive\` + monorepo `docs/NEURON_ZIG_TO_OS_ROADMAP.md` |
+| Archive notes | `<local folder, not included in repo: FSOT-Physical-Archive>` + monorepo `docs/NEURON_ZIG_TO_OS_ROADMAP.md` |
 
 **Doctrine (from Zig docs):** one scalar law \(S=K(T_1+T_2+T_3)\); Zig is **embodiment**, not a second theory. Language (Zig vs Rust vs Python) is secondary — **binary parity of seeds + pair laws** is primary.
 
@@ -77,7 +77,7 @@ Matches protein doctrine: **F15 distogram first**, coordinates second — not cl
 ## Paths checked on this machine
 
 ```
-C:\Users\damia\Desktop\fsot neuron family\fsot-neuron-zig\
-I:\FSOT-Physical-Archive\04_Genetics-Longevity\fsot_protein\
-C:\Users\damia\Desktop\Genetics\fsot_protein\
+fsot-neuron-zig
+<local folder, not included in repo: FSOT-Physical-Archive/04_Genetics-Longevity/fsot_protein>
+<local folder, not included in repo: fsot_protein>
 ```

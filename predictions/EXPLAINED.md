@@ -212,7 +212,7 @@ WIP model: wrong residual on a future gate is information. A registered **kill**
 | `reports/*.md` | `toe_prereg_freeze.json` |
 | `docs/FSOT_EXPLAINED_LAYMAN.md` | `prediction_monitor_report.json` |
 
-Bulk raw catalogs (TRGB host lists, etc.): **external drive** `G:/FSOT-PublicData/` — see `external_data_pointers.json`.
+Bulk raw catalogs (TRGB host lists, etc.): **external drive** `<local folder, not included in repo: FSOT-PublicData>` — see `external_data_pointers.json`.
 
 ---
 

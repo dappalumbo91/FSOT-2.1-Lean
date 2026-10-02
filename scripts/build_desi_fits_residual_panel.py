@@ -2,7 +2,7 @@
 """Attach DESI EDR zcatalog FITS residual panel (FSOT mathematics only).
 
 Reads the public zall-pix-fuji.fits from multi-drive external root
-(default G:/FSOT-PublicData/open_science_large/desi/).
+(default $FSOT_EXTERNAL_DATA_ROOT/open_science_large/desi).
 
 Residual law: make_fsot_record → fsot_scaled only (formula=None).
 No free-fit parameters. Samples high-quality ZWARN==0 rows for a portable
@@ -10,6 +10,18 @@ green residual certificate (full 2.8M-row catalog remains on external disk).
 """
 
 from __future__ import annotations
+
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
 
 import json
 import sys
@@ -58,16 +70,16 @@ def fsot_row(
 def _find_fits() -> Path:
     candidates = [
         open_science_large_dir("desi") / "zall-pix-fuji.fits",
-        Path(r"G:\FSOT-PublicData\open_science_large\desi\zall-pix-fuji.fits"),
-        Path(r"I:\FSOT-PublicData\open_science_large\desi\zall-pix-fuji.fits"),
-        Path(r"D:\FSOT-PublicData\open_science_large\desi\zall-pix-fuji.fits"),
+        _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'open_science_large' / 'desi' / 'zall-pix-fuji.fits',
+        _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'open_science_large' / 'desi' / 'zall-pix-fuji.fits',
+        _fsot_local_path('FSOT_EXTERNAL_DATA_ROOT', 'data_external/public_data') / 'open_science_large' / 'desi' / 'zall-pix-fuji.fits',
     ]
     for p in candidates:
         if p.is_file() and p.stat().st_size > 1_000_000:
             return p
     raise FileNotFoundError(
         "DESI zall-pix-fuji.fits not found under open_science_large/desi. "
-        "Download with: curl -L -o G:/FSOT-PublicData/open_science_large/desi/zall-pix-fuji.fits "
+        "Download with: curl -L -o $FSOT_EXTERNAL_DATA_ROOT/open_science_large/desi/zall-pix-fuji.fits "
         "https://data.desi.lbl.gov/public/edr/spectro/redux/fuji/zcatalog/zall-pix-fuji.fits"
     )
 

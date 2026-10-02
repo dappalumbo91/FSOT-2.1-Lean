@@ -788,8 +788,48 @@ def write_bibtex(doc: dict[str, Any]) -> None:
     OUT_BIB.write_text(header + "\n\n".join(entries) + "\n", encoding="utf-8")
 
 
+_DRIVE_PATH_RE = re.compile(r"(?<![A-Za-z0-9])[A-Za-z]:[\\/][^|`\n\"]*")
+_LEAN_DIR_NAMES = {"02_FSOT-2.1-Lean-Full", "FSOT-2.1-Lean", "FSOT-2.1-Lean-main"}
+
+
+def _portable_path_text(text: str) -> str:
+    """Replace local drive paths (e.g. from panel `source` fields) with repo-relative text.
+
+    Paths inside this repo become repo-relative; anything else becomes a neutral
+    placeholder, so generated docs never carry machine-specific drive paths.
+    """
+
+    def _sub(m: re.Match) -> str:
+        raw = m.group(0).rstrip(" .,;)")
+        tail = m.group(0)[len(raw):]
+        parts = [x for x in re.split(r"[\\/]+", raw[2:]) if x]
+        for i, part in enumerate(parts):
+            if part in _LEAN_DIR_NAMES:
+                rest = [x for x in parts[i + 1:] if x not in _LEAN_DIR_NAMES]
+                return ("/".join(rest) or ".") + tail
+        return f"<local path, not in repo: {parts[-1] if parts else ''}>" + tail
+
+    return _DRIVE_PATH_RE.sub(_sub, text)
+
+
+def _portable_doc(obj: Any, key: str = "") -> Any:
+    if isinstance(obj, dict):
+        return {k: _portable_doc(v, k) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_portable_doc(v, key) for v in obj]
+    if isinstance(obj, tuple):
+        return tuple(_portable_doc(v, key) for v in obj)
+    if isinstance(obj, str) and _DRIVE_PATH_RE.search(obj):
+        new = _portable_path_text(obj)
+        if key == "url" and "<local path" in new:
+            return ""
+        return new
+    return obj
+
+
 def main() -> int:
     doc = build()
+    doc = _portable_doc(doc)
     OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     write_markdown(doc)
     write_bibtex(doc)

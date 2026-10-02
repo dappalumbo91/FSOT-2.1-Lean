@@ -11,7 +11,7 @@ Guide: [`GENETICS_PIVOT_GUIDE.md`](GENETICS_PIVOT_GUIDE.md)
 ## Storage
 
 - **0.022 MB** / budget 50.0 MB
-- Path: `G:/FSOT-PublicData/anomaly_observables/genetics_diversity_pack`
+- Path: `<local folder, not included in repo: FSOT-PublicData/anomaly_observables/genetics_diversity_pack>`
 
 ## FSOT residual
 

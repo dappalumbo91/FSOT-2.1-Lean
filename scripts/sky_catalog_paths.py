@@ -1,10 +1,22 @@
 """Game-drive paths for public sky catalogs. Not a freeze file."""
 from __future__ import annotations
 
+import os as _os
+from pathlib import Path as _Path
+
+_REPO_ROOT = _Path(__file__).resolve().parents[1]
+
+
+def _fsot_local_path(env, default):
+    """Local path outside the repo: $env if set, else a path relative to the repo root."""
+    _v = _os.environ.get(env, "").strip()
+    return _Path(_v) if _v else _REPO_ROOT / default
+
+
 import json
 from pathlib import Path
 
-GAME = Path(r"D:\FSOT_Benchmarks\anomaly_observables")
+GAME = _fsot_local_path('FSOT_BENCHMARKS_ROOT', 'data_external/benchmarks') / 'anomaly_observables'
 CHIME_CATALOG1 = GAME / "frb" / "chime_frb_catalog1_positions.json"
 CHIME_POSITIONS = GAME / "frb" / "chime_frb_catalog2_positions.json"
 ABELL_CLUSTERS = GAME / "extragalactic_structure" / "abell_clusters.json"

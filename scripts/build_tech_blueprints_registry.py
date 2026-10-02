@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Public names-only tech index.
 
-Does **not** scan I:\\fsot tech, founding PDF extracts, or any private
+Does **not** scan $FSOT_LOCAL_DATA/fsot tech, founding PDF extracts, or any private
 blueprint file. Titles and fold labels only. Specs stay unpublished.
 """
 
