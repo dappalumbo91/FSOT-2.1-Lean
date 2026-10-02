@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -26,6 +27,8 @@ except ImportError:
     yaml = None
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from check_internal_links import resolve_repo_path, tracked_index  # noqa: E402
 MARGIN = ROOT / "data" / "benchmark_margin_audit.json"
 EXT_MANIFEST = ROOT / "data" / "extension_domains_manifest.yaml"
 API_REQ = ROOT / "data" / "api_requirements.yaml"
@@ -415,24 +418,61 @@ def _resolve_token(token: str, api_index: dict[str, dict], open_index: dict[str,
             "title": token,
             "note": "internal densify/process/noise tag — not a measurement authority",
         }
-    # GitHub owner/repo corpora
+    # GitHub owner/repo corpora. A repo-relative path is not an owner/repo.
     if re.fullmatch(r"[a-z0-9_.-]+/[a-z0-9_.-]+", t):
+        files, by_name = tracked_index()
+        rel = resolve_repo_path(token, files, by_name)
+        if rel is not None:
+            return {
+                "kind": "vendor_cache",
+                "title": rel,
+                "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/" + rel,
+                "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+            }
         return {
             "kind": "dataset",
             "title": f"GitHub OSS corpus {token}",
             "url": f"https://github.com/{token}",
             "note": "Code-genome / OSS structure panel source",
         }
+    # A public URL that happens to end in .json is the link. Do not wrap it.
+    if t.startswith("http://") or t.startswith("https://"):
+        return {"kind": "url", "title": token.strip(), "url": token.strip()}
     # path-like vendor/data
     if "strict_empirical" in t or "formula_corpus" in t:
         return dict(PUBLIC_ANCHORS["strict_empirical"])
     if "fsot_compute" in t:
         return dict(PUBLIC_ANCHORS["fsot_compute"])
-    if t.endswith(".json") or t.endswith(".yaml") or t.startswith("data/") or t.startswith("vendor/"):
+    if (
+        t.endswith(".json")
+        or t.endswith(".yaml")
+        or t.endswith(".yml")
+        or t.startswith("data/")
+        or t.startswith("vendor/")
+        or t.startswith("results/")
+        or t.startswith("predictions/")
+        or t.startswith("scripts/")
+    ):
+        slashed = token.strip().replace("\\", "/")
+        if re.match(r"^[A-Za-z]:/", slashed):
+            return {
+                "kind": "vendor_cache",
+                "title": token,
+                "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/" + slashed,
+                "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+            }
+        files, by_name = tracked_index()
+        rel = resolve_repo_path(token, files, by_name)
+        if rel is None:
+            return {
+                "kind": "vendor_cache",
+                "title": token,
+                "note": "not tracked in this repository",
+            }
         return {
             "kind": "vendor_cache",
             "title": token,
-            "url": f"https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/{token.replace(chr(92), '/')}",
+            "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/" + rel,
             "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
         }
     # direct curated
@@ -560,7 +600,8 @@ def build() -> dict[str, Any]:
                     {
                         "kind": "ingest_script",
                         "title": tok.split(":", 1)[1],
-                        "url": f"https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/{tok.split(':',1)[1]}",
+                        "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/"
+                        + tok.split(":", 1)[1],
                         "note": "Rebuild path for live public fetch when network available",
                     }
                 )

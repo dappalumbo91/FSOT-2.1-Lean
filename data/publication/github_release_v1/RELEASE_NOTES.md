@@ -44,6 +44,6 @@ responsibility.
 ## Cite
 
 ```
-dappalumbo91/FSOT-2.1-Lean (fsot-monograph-v1). GitHub Release.
-https://github.com/dappalumbo91/FSOT-2.1-Lean/releases/tag/fsot-monograph-v1
+dappalumbo91/FSOT-2.1-Lean. The tag fsot-monograph-v1 is not a published GitHub release.
+https://github.com/dappalumbo91/FSOT-2.1-Lean
 ```

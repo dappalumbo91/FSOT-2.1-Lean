@@ -32,6 +32,9 @@ jobs:
       - name: Evidence tiers (Tier 3 freeze must predate data)
         run: python scripts/evidence_tiers.py --check
 
+      - name: Internal links (hub paths must exist)
+        run: python scripts/check_internal_links.py
+
       # --- HARD kill gate: official green residual ≤0.5% ---
       - name: Benchmark margin audit (green gate)
         run: python scripts/audit_all_benchmark_margins.py

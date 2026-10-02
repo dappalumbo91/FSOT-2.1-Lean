@@ -20,7 +20,7 @@ Then in your browser (already logged into GitHub):
 5. Paste text from `data/publication/github_release_v1/RELEASE_NOTES.md`
 6. Click **Publish release**
 
-**Citable URL:** `https://github.com/dappalumbo91/FSOT-2.1-Lean/releases/tag/fsot-monograph-v1`
+**Citable URL today:** `https://github.com/dappalumbo91/FSOT-2.1-Lean`. The tag `fsot-monograph-v1` is not published.
 
 No DOI, but permanent and accepted for preprint citation. Competitions and GitHub-native workflows use this.
 

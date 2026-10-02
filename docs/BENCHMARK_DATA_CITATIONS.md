@@ -71,64 +71,64 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | dataset | GitHub OSS corpus USGS/GVP | https://github.com/USGS/GVP | 1 |
 | dataset | GitHub OSS corpus WDS/literature | https://github.com/WDS/literature | 1 |
 | dataset | GitHub OSS corpus apple/swift | https://github.com/apple/swift | 1 |
-| dataset | GitHub OSS corpus data/acoustic_resonance_materials_benchmark.json | https://github.com/data/acoustic_resonance_materials_benchmark.json | 3 |
-| dataset | GitHub OSS corpus data/adjacent_rung_coupling_benchmark.json | https://github.com/data/adjacent_rung_coupling_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/adversarial_fractal_break_benchmark.json | https://github.com/data/adversarial_fractal_break_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/agriculture_agroecology_gap_fill_benchmark.json | https://github.com/data/agriculture_agroecology_gap_fill_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/ai_galactic_orbital_bridge_benchmark.json | https://github.com/data/ai_galactic_orbital_bridge_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/alternate_base_mathematics_explorer_panel_benchmark.json | https://github.com/data/alternate_base_mathematics_explorer_panel_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/alternate_base_mathematics_spine_benchmark.json | https://github.com/data/alternate_base_mathematics_spine_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/anthropology_extension_benchmark.json | https://github.com/data/anthropology_extension_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/architecture_building_science_gap_fill_benchmark.json | https://github.com/data/architecture_building_science_gap_fill_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/arxiv_brain_knowledge_panel_benchmark.json | https://github.com/data/arxiv_brain_knowledge_panel_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/arxiv_primitives_panel_benchmark.json | https://github.com/data/arxiv_primitives_panel_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/arxiv_primitives_v14_benchmark.json | https://github.com/data/arxiv_primitives_v14_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/astrophysical_structure_crosswalk_benchmark.json | https://github.com/data/astrophysical_structure_crosswalk_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/atomic_physics_gap_fill_benchmark.json | https://github.com/data/atomic_physics_gap_fill_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/bibliography_lean_corpus_benchmark.json | https://github.com/data/bibliography_lean_corpus_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/binary_decoder_rendlesham_benchmark.json | https://github.com/data/binary_decoder_rendlesham_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/biological_cuda_physarum_benchmark.json | https://github.com/data/biological_cuda_physarum_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/biology_developmental_structural_depth_panel_benchmark.json | https://github.com/data/biology_developmental_structural_depth_panel_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/biology_strict_empirical.json | https://github.com/data/biology_strict_empirical.json | 1 |
-| dataset | GitHub OSS corpus data/boundary_partition_tightening_benchmark.json | https://github.com/data/boundary_partition_tightening_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/breakthrough_discoveries_2024_2026_benchmark.json | https://github.com/data/breakthrough_discoveries_2024_2026_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/canonical_constants.json | https://github.com/data/canonical_constants.json | 1 |
-| dataset | GitHub OSS corpus data/chaos_mediated_phase_transitions_benchmark.json | https://github.com/data/chaos_mediated_phase_transitions_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/climate_observed_benchmark.json | https://github.com/data/climate_observed_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/consciousness_econ_benchmark.json | https://github.com/data/consciousness_econ_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/consciousness_reference_observables.json | https://github.com/data/consciousness_reference_observables.json | 2 |
-| dataset | GitHub OSS corpus data/consciousness_resonance_reference.json | https://github.com/data/consciousness_resonance_reference.json | 1 |
-| dataset | GitHub OSS corpus data/consciousness_soul_bridge_reference.json | https://github.com/data/consciousness_soul_bridge_reference.json | 1 |
-| dataset | GitHub OSS corpus data/cosmology_extended_benchmark.json | https://github.com/data/cosmology_extended_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/culinary_recipe_observables.json | https://github.com/data/culinary_recipe_observables.json | 1 |
-| dataset | GitHub OSS corpus data/dark_energy_cpl_reference.json | https://github.com/data/dark_energy_cpl_reference.json | 1 |
-| dataset | GitHub OSS corpus data/external_oss_code_genome_benchmark.json | https://github.com/data/external_oss_code_genome_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/founding_unmapped_laws_reference.json | https://github.com/data/founding_unmapped_laws_reference.json | 7 |
-| dataset | GitHub OSS corpus data/higgs_mass_benchmark.json | https://github.com/data/higgs_mass_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/higgs_mass_reference_observables.json | https://github.com/data/higgs_mass_reference_observables.json | 1 |
-| dataset | GitHub OSS corpus data/immunology_benchmark.json | https://github.com/data/immunology_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/materials_species_bridge_benchmark.json | https://github.com/data/materials_species_bridge_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/observer_channel_derivation_benchmark.json | https://github.com/data/observer_channel_derivation_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/particle_physics_gap_fill_benchmark.json | https://github.com/data/particle_physics_gap_fill_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/planetary_jpl_cache.json | https://github.com/data/planetary_jpl_cache.json | 1 |
-| dataset | GitHub OSS corpus data/planetary_structure_benchmark.json | https://github.com/data/planetary_structure_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/programming_language_laws_benchmark.json | https://github.com/data/programming_language_laws_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/quantum_computing_math_depth_panel_benchmark.json | https://github.com/data/quantum_computing_math_depth_panel_benchmark.json | 1 |
-| dataset | GitHub OSS corpus predictions/sector_h0_seed.json | https://github.com/predictions/sector_h0_seed.json | 3 |
-| dataset | GitHub OSS corpus data/sh0es_host_coordinates.json | https://github.com/data/sh0es_host_coordinates.json | 1 |
-| dataset | GitHub OSS corpus data/stumped_observables_reference.json | https://github.com/data/stumped_observables_reference.json | 2 |
-| dataset | GitHub OSS corpus data/symbolic_archetype_reference.json | https://github.com/data/symbolic_archetype_reference.json | 1 |
-| dataset | GitHub OSS corpus data/synthetic_biology_benchmark.json | https://github.com/data/synthetic_biology_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/trinary_os_isa_rebuild_benchmark.json | https://github.com/data/trinary_os_isa_rebuild_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/trinary_os_manifest.yaml | https://github.com/data/trinary_os_manifest.yaml | 1 |
-| dataset | GitHub OSS corpus data/trinary_os_portable_benchmark.json | https://github.com/data/trinary_os_portable_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/trinary_os_round_trip_benchmark.json | https://github.com/data/trinary_os_round_trip_benchmark.json | 1 |
-| dataset | GitHub OSS corpus docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md | https://github.com/docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md | 1 |
-| dataset | GitHub OSS corpus docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md | https://github.com/docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md | 1 |
-| dataset | GitHub OSS corpus docs/NEURON_ZIG_TO_OS_ROADMAP.md | https://github.com/docs/NEURON_ZIG_TO_OS_ROADMAP.md | 1 |
-| dataset | GitHub OSS corpus docs/OPH_FSOT_CHALLENGE_RESPONSE.md | https://github.com/docs/OPH_FSOT_CHALLENGE_RESPONSE.md | 1 |
-| dataset | GitHub OSS corpus docs/T3_T4_GR_SM_DEEPENING.md | https://github.com/docs/T3_T4_GR_SM_DEEPENING.md | 1 |
-| dataset | GitHub OSS corpus docs/TOE_CLAIM_BOUNDARIES.md | https://github.com/docs/TOE_CLAIM_BOUNDARIES.md | 1 |
+| dataset | data/acoustic_resonance_materials_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/acoustic_resonance_materials_benchmark.json | 3 |
+| dataset | data/adjacent_rung_coupling_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adjacent_rung_coupling_benchmark.json | 2 |
+| dataset | data/adversarial_fractal_break_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adversarial_fractal_break_benchmark.json | 2 |
+| dataset | data/agriculture_agroecology_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/agriculture_agroecology_gap_fill_benchmark.json | 2 |
+| dataset | data/ai_galactic_orbital_bridge_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/ai_galactic_orbital_bridge_benchmark.json | 1 |
+| dataset | data/alternate_base_mathematics_explorer_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/alternate_base_mathematics_explorer_panel_benchmark.json | 1 |
+| dataset | data/alternate_base_mathematics_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/alternate_base_mathematics_spine_benchmark.json | 1 |
+| dataset | data/anthropology_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/anthropology_extension_benchmark.json | 1 |
+| dataset | data/architecture_building_science_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/architecture_building_science_gap_fill_benchmark.json | 2 |
+| dataset | data/arxiv_brain_knowledge_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_brain_knowledge_panel_benchmark.json | 1 |
+| dataset | data/arxiv_primitives_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_panel_benchmark.json | 1 |
+| dataset | data/arxiv_primitives_v14_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_v14_benchmark.json | 2 |
+| dataset | data/astrophysical_structure_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/astrophysical_structure_crosswalk_benchmark.json | 1 |
+| dataset | data/atomic_physics_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/atomic_physics_gap_fill_benchmark.json | 1 |
+| dataset | data/bibliography_lean_corpus_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/bibliography_lean_corpus_benchmark.json | 1 |
+| dataset | data/binary_decoder_rendlesham_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/binary_decoder_rendlesham_benchmark.json | 2 |
+| dataset | data/biological_cuda_physarum_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biological_cuda_physarum_benchmark.json | 1 |
+| dataset | data/biology_developmental_structural_depth_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biology_developmental_structural_depth_panel_benchmark.json | 1 |
+| dataset | data/biology_strict_empirical.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biology_strict_empirical.json | 1 |
+| dataset | data/boundary_partition_tightening_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/boundary_partition_tightening_benchmark.json | 1 |
+| dataset | data/breakthrough_discoveries_2024_2026_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/breakthrough_discoveries_2024_2026_benchmark.json | 1 |
+| dataset | data/canonical_constants.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/canonical_constants.json | 1 |
+| dataset | data/chaos_mediated_phase_transitions_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/chaos_mediated_phase_transitions_benchmark.json | 2 |
+| dataset | data/climate_observed_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/climate_observed_benchmark.json | 1 |
+| dataset | data/consciousness_econ_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_econ_benchmark.json | 1 |
+| dataset | data/consciousness_reference_observables.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_reference_observables.json | 2 |
+| dataset | data/consciousness_resonance_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_resonance_reference.json | 1 |
+| dataset | data/consciousness_soul_bridge_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_soul_bridge_reference.json | 1 |
+| dataset | data/cosmology_extended_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_extended_benchmark.json | 1 |
+| dataset | data/culinary_recipe_observables.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/culinary_recipe_observables.json | 1 |
+| dataset | data/dark_energy_cpl_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/dark_energy_cpl_reference.json | 1 |
+| dataset | data/external_oss_code_genome_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/external_oss_code_genome_benchmark.json | 1 |
+| dataset | data/founding_unmapped_laws_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/founding_unmapped_laws_reference.json | 7 |
+| dataset | data/higgs_mass_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/higgs_mass_benchmark.json | 1 |
+| dataset | data/higgs_mass_reference_observables.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/higgs_mass_reference_observables.json | 1 |
+| dataset | data/immunology_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/immunology_benchmark.json | 1 |
+| dataset | data/materials_species_bridge_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/materials_species_bridge_benchmark.json | 1 |
+| dataset | data/observer_channel_derivation_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/observer_channel_derivation_benchmark.json | 2 |
+| dataset | data/particle_physics_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/particle_physics_gap_fill_benchmark.json | 1 |
+| dataset | data/planetary_jpl_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/planetary_jpl_cache.json | 1 |
+| dataset | data/planetary_structure_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/planetary_structure_benchmark.json | 1 |
+| dataset | data/programming_language_laws_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/programming_language_laws_benchmark.json | 1 |
+| dataset | data/quantum_computing_math_depth_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/quantum_computing_math_depth_panel_benchmark.json | 1 |
+| dataset | predictions/sector_h0_seed.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/predictions/sector_h0_seed.json | 3 |
+| dataset | data/sh0es_host_coordinates.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/sh0es_host_coordinates.json | 1 |
+| dataset | data/stumped_observables_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_reference.json | 2 |
+| dataset | data/symbolic_archetype_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/symbolic_archetype_reference.json | 1 |
+| dataset | data/synthetic_biology_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/synthetic_biology_benchmark.json | 1 |
+| dataset | data/trinary_os_isa_rebuild_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/trinary_os_isa_rebuild_benchmark.json | 1 |
+| dataset | data/trinary_os_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/trinary_os_manifest.yaml | 1 |
+| dataset | data/trinary_os_portable_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/trinary_os_portable_benchmark.json | 1 |
+| dataset | data/trinary_os_round_trip_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/trinary_os_round_trip_benchmark.json | 1 |
+| dataset | docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md | 1 |
+| dataset | docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md | 1 |
+| dataset | docs/NEURON_ZIG_TO_OS_ROADMAP.md | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/NEURON_ZIG_TO_OS_ROADMAP.md | 1 |
+| dataset | docs/OPH_FSOT_CHALLENGE_RESPONSE.md | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/OPH_FSOT_CHALLENGE_RESPONSE.md | 1 |
+| dataset | docs/T3_T4_GR_SM_DEEPENING.md | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/T3_T4_GR_SM_DEEPENING.md | 1 |
+| dataset | docs/TOE_CLAIM_BOUNDARIES.md | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/TOE_CLAIM_BOUNDARIES.md | 1 |
 | dataset | GitHub OSS corpus expressjs/express | https://github.com/expressjs/express | 1 |
 | dataset | GitHub OSS corpus facebook/react | https://github.com/facebook/react | 1 |
 | dataset | GitHub OSS corpus golang/go | https://github.com/golang/go | 1 |
@@ -144,30 +144,30 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | dataset | GitHub OSS corpus pytorch/pytorch | https://github.com/pytorch/pytorch | 1 |
 | dataset | GitHub OSS corpus redis/redis | https://github.com/redis/redis | 1 |
 | dataset | GitHub OSS corpus rust-lang/rust | https://github.com/rust-lang/rust | 3 |
-| dataset | GitHub OSS corpus scripts/build_cosmology_bubble_bleed_benchmark.py | https://github.com/scripts/build_cosmology_bubble_bleed_benchmark.py | 1 |
-| dataset | GitHub OSS corpus scripts/consciousness_econ_lib.py | https://github.com/scripts/consciousness_econ_lib.py | 1 |
-| dataset | GitHub OSS corpus scripts/consciousness_soul_bridge_lib.py | https://github.com/scripts/consciousness_soul_bridge_lib.py | 1 |
-| dataset | GitHub OSS corpus scripts/dark_energy_dual_readout_lib.py | https://github.com/scripts/dark_energy_dual_readout_lib.py | 3 |
-| dataset | GitHub OSS corpus scripts/higgs_mass_formula_eval.py | https://github.com/scripts/higgs_mass_formula_eval.py | 2 |
-| dataset | GitHub OSS corpus scripts/math_generator_benchmark_formula_eval.py | https://github.com/scripts/math_generator_benchmark_formula_eval.py | 1 |
-| dataset | GitHub OSS corpus scripts/symbolic_archetype_lib.py | https://github.com/scripts/symbolic_archetype_lib.py | 1 |
+| dataset | scripts/build_cosmology_bubble_bleed_benchmark.py | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/build_cosmology_bubble_bleed_benchmark.py | 1 |
+| dataset | scripts/consciousness_econ_lib.py | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/consciousness_econ_lib.py | 1 |
+| dataset | scripts/consciousness_soul_bridge_lib.py | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/consciousness_soul_bridge_lib.py | 1 |
+| dataset | scripts/dark_energy_dual_readout_lib.py | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/dark_energy_dual_readout_lib.py | 3 |
+| dataset | scripts/higgs_mass_formula_eval.py | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/higgs_mass_formula_eval.py | 2 |
+| dataset | scripts/math_generator_benchmark_formula_eval.py | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/math_generator_benchmark_formula_eval.py | 1 |
+| dataset | scripts/symbolic_archetype_lib.py | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/symbolic_archetype_lib.py | 1 |
 | dataset | GitHub OSS corpus simonmar/async | https://github.com/simonmar/async | 1 |
 | dataset | GitHub OSS corpus sqlite/sqlite | https://github.com/sqlite/sqlite | 1 |
 | dataset | GitHub OSS corpus torvalds/linux | https://github.com/torvalds/linux | 4 |
-| dataset | GitHub OSS corpus vendor/bibliography_corpus | https://github.com/vendor/bibliography_corpus | 1 |
-| dataset | GitHub OSS corpus vendor/certified_agent | https://github.com/vendor/certified_agent | 1 |
-| dataset | GitHub OSS corpus vendor/cybersecurity | https://github.com/vendor/cybersecurity | 1 |
-| dataset | GitHub OSS corpus vendor/formula_corpus_cnc | https://github.com/vendor/formula_corpus_cnc | 1 |
-| dataset | GitHub OSS corpus vendor/fsot_compute.py | https://github.com/vendor/fsot_compute.py | 9 |
-| dataset | GitHub OSS corpus vendor/physarum | https://github.com/vendor/physarum | 1 |
-| dataset | GitHub OSS corpus vendor/propulsion_electrical | https://github.com/vendor/propulsion_electrical | 1 |
-| dataset | GitHub OSS corpus vendor/public_data | https://github.com/vendor/public_data | 1 |
-| dataset | GitHub OSS corpus vendor/reference_anchors | https://github.com/vendor/reference_anchors | 1 |
-| dataset | GitHub OSS corpus vendor/rust_lean_bridge | https://github.com/vendor/rust_lean_bridge | 1 |
-| dataset | GitHub OSS corpus vendor/thesis | https://github.com/vendor/thesis | 1 |
-| dataset | GitHub OSS corpus vendor/tokenization | https://github.com/vendor/tokenization | 1 |
-| dataset | GitHub OSS corpus vendor/trinary_os | https://github.com/vendor/trinary_os | 4 |
-| dataset | GitHub OSS corpus vendor/vl_distill | https://github.com/vendor/vl_distill | 1 |
+| dataset | vendor/bibliography_corpus | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/bibliography_corpus | 1 |
+| dataset | vendor/certified_agent | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/certified_agent | 1 |
+| dataset | vendor/cybersecurity | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/cybersecurity | 1 |
+| dataset | vendor/formula_corpus_cnc | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/formula_corpus_cnc | 1 |
+| dataset | vendor/fsot_compute.py | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py | 9 |
+| dataset | vendor/physarum | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/physarum | 1 |
+| dataset | vendor/propulsion_electrical | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/propulsion_electrical | 1 |
+| dataset | vendor/public_data | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data | 1 |
+| dataset | vendor/reference_anchors | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/reference_anchors | 1 |
+| dataset | vendor/rust_lean_bridge | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/rust_lean_bridge | 1 |
+| dataset | vendor/thesis | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/thesis | 1 |
+| dataset | vendor/tokenization | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/tokenization | 1 |
+| dataset | vendor/trinary_os | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os | 4 |
+| dataset | vendor/vl_distill | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/vl_distill | 1 |
 | dataset | GitHub OSS corpus ziglang/zig | https://github.com/ziglang/zig | 1 |
 | dataset | Minor Planet Center Orbit Database (MPCORB) | https://minorplanetcenter.net/data | 7 |
 | dataset | Minor Planet Center data services | https://minorplanetcenter.net/ | 7 |
@@ -592,8 +592,8 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\scientific_expansion\tier87_cache\quantum_computing_math_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\scientific_expansion\tier87_cache\quantum_mechanics_entanglement_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-Legacy-Physics-Connections\concept_refinement\warp_actuation_formula_fsot21.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-Legacy-Physics-Connections/concept_refinement/warp_actuation_formula_fsot21.json | 1 |
-| vendor_cache | CRYPTOGRAPHY_RULES.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/CRYPTOGRAPHY_RULES.json | 1 |
-| vendor_cache | FSOT_VERIFIED_SCOPE.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/FSOT_VERIFIED_SCOPE.yaml | 1 |
+| vendor_cache | CRYPTOGRAPHY_RULES.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/math_generator/rules/CRYPTOGRAPHY_RULES.json | 1 |
+| vendor_cache | FSOT_VERIFIED_SCOPE.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/FSOT_VERIFIED_SCOPE.yaml | 1 |
 | vendor_cache | G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json | 1 |
 | vendor_cache | G:\FSOT-PublicData\anomaly_observables\consciousness\tier90_microtubule_observer_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/anomaly_observables/consciousness/tier90_microtubule_observer_cache.json | 1 |
 | vendor_cache | G:\FSOT-PublicData\anomaly_observables\consciousness\tier90_species_panel_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/anomaly_observables/consciousness/tier90_species_panel_cache.json | 1 |
@@ -622,171 +622,171 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full\vendor\verified_desktop\legacy_physics\warp_actuation_formula_fsot21.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json | 1 |
 | vendor_cache | I:\FSOT-Physical-Archive\04_Genetics-Longevity\tier94_anage_longevity_catalog.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/04_Genetics-Longevity/tier94_anage_longevity_catalog.json | 1 |
 | vendor_cache | I:\FSOT-Physical-Archive\08_Verified-Desktop-Projects\star_trek_transporter\pattern_buffer_scan_results.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects/star_trek_transporter/pattern_buffer_scan_results.json | 1 |
-| vendor_cache | PROGRAMMING_LANGUAGE_RULES.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/PROGRAMMING_LANGUAGE_RULES.json | 1 |
-| vendor_cache | acoustic_resonance_materials_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/acoustic_resonance_materials_benchmark.json | 3 |
-| vendor_cache | actuarial_science_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/actuarial_science_panel_benchmark.json | 1 |
-| vendor_cache | adjacent_rung_coupling_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/adjacent_rung_coupling_benchmark.json | 2 |
-| vendor_cache | adversarial_fractal_break_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/adversarial_fractal_break_benchmark.json | 1 |
-| vendor_cache | agriculture_agroecology_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/agriculture_agroecology_gap_fill_benchmark.json | 1 |
-| vendor_cache | ai_galactic_orbital_bridge_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/ai_galactic_orbital_bridge_benchmark.json | 1 |
-| vendor_cache | alternate_base_mathematics_explorer_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/alternate_base_mathematics_explorer_panel_benchmark.json | 1 |
-| vendor_cache | alternate_base_mathematics_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/alternate_base_mathematics_spine_benchmark.json | 1 |
-| vendor_cache | anthropology_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/anthropology_extension_benchmark.json | 1 |
-| vendor_cache | architecture_building_science_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/architecture_building_science_gap_fill_benchmark.json | 3 |
-| vendor_cache | arxiv_brain_knowledge_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/arxiv_brain_knowledge_panel_benchmark.json | 1 |
-| vendor_cache | arxiv_gravitational_waves_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/arxiv_gravitational_waves_panel_benchmark.json | 1 |
-| vendor_cache | arxiv_primitives_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/arxiv_primitives_panel_benchmark.json | 1 |
-| vendor_cache | arxiv_primitives_v14_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/arxiv_primitives_v14_benchmark.json | 1 |
-| vendor_cache | astrophysical_structure_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/astrophysical_structure_crosswalk_benchmark.json | 1 |
-| vendor_cache | atmospheric_physics_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/atmospheric_physics_gap_fill_benchmark.json | 1 |
-| vendor_cache | atomic_physics_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/atomic_physics_gap_fill_benchmark.json | 1 |
-| vendor_cache | bibliography_corpus_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/bibliography_corpus_panel_benchmark.json | 1 |
-| vendor_cache | bibliography_lean_corpus_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/bibliography_lean_corpus_benchmark.json | 1 |
-| vendor_cache | binary_decoder_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/binary_decoder_panel_benchmark.json | 1 |
-| vendor_cache | binary_decoder_rendlesham_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/binary_decoder_rendlesham_benchmark.json | 1 |
-| vendor_cache | biological_cuda_physarum_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/biological_cuda_physarum_benchmark.json | 1 |
-| vendor_cache | biology_developmental_structural_depth_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/biology_developmental_structural_depth_panel_benchmark.json | 1 |
-| vendor_cache | biophysics_public_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/biophysics_public_panel_benchmark.json | 1 |
-| vendor_cache | blackhole_whitehole_cycle_live_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/blackhole_whitehole_cycle_live_panel_benchmark.json | 1 |
-| vendor_cache | botany_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/botany_extension_benchmark.json | 1 |
-| vendor_cache | boundary_partition_tightening_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/boundary_partition_tightening_benchmark.json | 1 |
-| vendor_cache | breakthrough_discoveries_2024_2026_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/breakthrough_discoveries_2024_2026_benchmark.json | 1 |
-| vendor_cache | canonical_oracle_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/canonical_oracle_panel_benchmark.json | 1 |
-| vendor_cache | cardiology_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cardiology_extension_benchmark.json | 1 |
-| vendor_cache | cardiology_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cardiology_panel_benchmark.json | 1 |
-| vendor_cache | cartography_gis_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cartography_gis_panel_benchmark.json | 1 |
-| vendor_cache | cern_open_data_lhc_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cern_open_data_lhc_benchmark.json | 1 |
-| vendor_cache | certificate.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/certificate.json | 1 |
-| vendor_cache | certified_agent_formal_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/certified_agent_formal_panel_benchmark.json | 1 |
-| vendor_cache | certified_agent_qwen_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/certified_agent_qwen_benchmark.json | 1 |
-| vendor_cache | chaos_mediated_phase_transitions_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/chaos_mediated_phase_transitions_benchmark.json | 1 |
-| vendor_cache | chemical_engineering_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/chemical_engineering_extension_benchmark.json | 1 |
-| vendor_cache | cisa_kev_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cisa_kev_summary.json | 1 |
-| vendor_cache | code_genome_structure_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/code_genome_structure_cybersecurity_benchmark.json | 1 |
-| vendor_cache | cold_fusion_candidate_prereg_scaffold_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cold_fusion_candidate_prereg_scaffold_benchmark.json | 1 |
-| vendor_cache | cold_fusion_lab_synthesis_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cold_fusion_lab_synthesis_crosswalk_benchmark.json | 1 |
-| vendor_cache | compactification_ladder_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compactification_ladder_benchmark.json | 1 |
-| vendor_cache | compactification_ladder_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compactification_ladder_manifest.yaml | 3 |
-| vendor_cache | compare_full_20260526.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compare_full_20260526.json | 1 |
-| vendor_cache | compare_optimax_wave_20260715.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compare_optimax_wave_20260715.json | 1 |
-| vendor_cache | computational_reasoning_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/computational_reasoning_benchmark.json | 1 |
-| vendor_cache | consciousness_reference_observables.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/consciousness_reference_observables.json | 1 |
-| vendor_cache | core_formula_fractal_branch_index.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/core_formula_fractal_branch_index.json | 1 |
-| vendor_cache | cosmology_anomalies_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cosmology_anomalies_benchmark.json | 1 |
-| vendor_cache | cosmology_anomaly_deep_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cosmology_anomaly_deep_panel_benchmark.json | 1 |
-| vendor_cache | cosmology_extended_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cosmology_extended_benchmark.json | 1 |
-| vendor_cache | cryptography_technology_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cryptography_technology_cybersecurity_benchmark.json | 1 |
-| vendor_cache | culinary_arts_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/culinary_arts_benchmark.json | 2 |
-| vendor_cache | dark_sector_open_problems_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/dark_sector_open_problems_benchmark.json | 2 |
-| vendor_cache | data/*_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/*_benchmark.json | 1 |
+| vendor_cache | PROGRAMMING_LANGUAGE_RULES.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/math_generator/rules/PROGRAMMING_LANGUAGE_RULES.json | 1 |
+| vendor_cache | acoustic_resonance_materials_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/acoustic_resonance_materials_benchmark.json | 3 |
+| vendor_cache | actuarial_science_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/actuarial_science_panel_benchmark.json | 1 |
+| vendor_cache | adjacent_rung_coupling_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adjacent_rung_coupling_benchmark.json | 2 |
+| vendor_cache | adversarial_fractal_break_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adversarial_fractal_break_benchmark.json | 1 |
+| vendor_cache | agriculture_agroecology_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/agriculture_agroecology_gap_fill_benchmark.json | 1 |
+| vendor_cache | ai_galactic_orbital_bridge_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/ai_galactic_orbital_bridge_benchmark.json | 1 |
+| vendor_cache | alternate_base_mathematics_explorer_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/alternate_base_mathematics_explorer_panel_benchmark.json | 1 |
+| vendor_cache | alternate_base_mathematics_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/alternate_base_mathematics_spine_benchmark.json | 1 |
+| vendor_cache | anthropology_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/anthropology_extension_benchmark.json | 1 |
+| vendor_cache | architecture_building_science_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/architecture_building_science_gap_fill_benchmark.json | 3 |
+| vendor_cache | arxiv_brain_knowledge_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_brain_knowledge_panel_benchmark.json | 1 |
+| vendor_cache | arxiv_gravitational_waves_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_gravitational_waves_panel_benchmark.json | 1 |
+| vendor_cache | arxiv_primitives_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_panel_benchmark.json | 1 |
+| vendor_cache | arxiv_primitives_v14_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_v14_benchmark.json | 1 |
+| vendor_cache | astrophysical_structure_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/astrophysical_structure_crosswalk_benchmark.json | 1 |
+| vendor_cache | atmospheric_physics_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/atmospheric_physics_gap_fill_benchmark.json | 1 |
+| vendor_cache | atomic_physics_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/atomic_physics_gap_fill_benchmark.json | 1 |
+| vendor_cache | bibliography_corpus_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/bibliography_corpus_panel_benchmark.json | 1 |
+| vendor_cache | bibliography_lean_corpus_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/bibliography_lean_corpus_benchmark.json | 1 |
+| vendor_cache | binary_decoder_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/binary_decoder_panel_benchmark.json | 1 |
+| vendor_cache | binary_decoder_rendlesham_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/binary_decoder_rendlesham_benchmark.json | 1 |
+| vendor_cache | biological_cuda_physarum_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biological_cuda_physarum_benchmark.json | 1 |
+| vendor_cache | biology_developmental_structural_depth_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biology_developmental_structural_depth_panel_benchmark.json | 1 |
+| vendor_cache | biophysics_public_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biophysics_public_panel_benchmark.json | 1 |
+| vendor_cache | blackhole_whitehole_cycle_live_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/blackhole_whitehole_cycle_live_panel_benchmark.json | 1 |
+| vendor_cache | botany_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/botany_extension_benchmark.json | 1 |
+| vendor_cache | boundary_partition_tightening_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/boundary_partition_tightening_benchmark.json | 1 |
+| vendor_cache | breakthrough_discoveries_2024_2026_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/breakthrough_discoveries_2024_2026_benchmark.json | 1 |
+| vendor_cache | canonical_oracle_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/canonical_oracle_panel_benchmark.json | 1 |
+| vendor_cache | cardiology_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cardiology_extension_benchmark.json | 1 |
+| vendor_cache | cardiology_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cardiology_panel_benchmark.json | 1 |
+| vendor_cache | cartography_gis_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cartography_gis_panel_benchmark.json | 1 |
+| vendor_cache | cern_open_data_lhc_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cern_open_data_lhc_benchmark.json | 1 |
+| vendor_cache | certificate.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/certificate.json | 1 |
+| vendor_cache | certified_agent_formal_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/certified_agent_formal_panel_benchmark.json | 1 |
+| vendor_cache | certified_agent_qwen_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/certified_agent_qwen_benchmark.json | 1 |
+| vendor_cache | chaos_mediated_phase_transitions_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/chaos_mediated_phase_transitions_benchmark.json | 1 |
+| vendor_cache | chemical_engineering_extension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/chemical_engineering_extension_benchmark.json | 1 |
+| vendor_cache | cisa_kev_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/cybersecurity/cisa_kev_summary.json | 1 |
+| vendor_cache | code_genome_structure_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/code_genome_structure_cybersecurity_benchmark.json | 1 |
+| vendor_cache | cold_fusion_candidate_prereg_scaffold_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cold_fusion_candidate_prereg_scaffold_benchmark.json | 1 |
+| vendor_cache | cold_fusion_lab_synthesis_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cold_fusion_lab_synthesis_crosswalk_benchmark.json | 1 |
+| vendor_cache | compactification_ladder_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/compactification_ladder_benchmark.json | 1 |
+| vendor_cache | compactification_ladder_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/compactification_ladder_manifest.yaml | 3 |
+| vendor_cache | compare_full_20260526.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/fuel_lab/engine_simulator/results/compare_full_20260526.json | 1 |
+| vendor_cache | compare_optimax_wave_20260715.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/fuel_lab/engine_simulator/results/compare_optimax_wave_20260715.json | 1 |
+| vendor_cache | computational_reasoning_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/computational_reasoning_benchmark.json | 1 |
+| vendor_cache | consciousness_reference_observables.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_reference_observables.json | 1 |
+| vendor_cache | core_formula_fractal_branch_index.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/core_formula_fractal_branch_index.json | 1 |
+| vendor_cache | cosmology_anomalies_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_anomalies_benchmark.json | 1 |
+| vendor_cache | cosmology_anomaly_deep_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_anomaly_deep_panel_benchmark.json | 1 |
+| vendor_cache | cosmology_extended_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_extended_benchmark.json | 1 |
+| vendor_cache | cryptography_technology_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cryptography_technology_cybersecurity_benchmark.json | 1 |
+| vendor_cache | culinary_arts_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/culinary_arts_benchmark.json | 2 |
+| vendor_cache | dark_sector_open_problems_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/dark_sector_open_problems_benchmark.json | 2 |
+| vendor_cache | data/*_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data | 1 |
 | vendor_cache | data/cosmology_extended_benchmark.json lambda_cdm H0 | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_extended_benchmark.json lambda_cdm H0 | 1 |
 | vendor_cache | data\living_fsot_hardware_verification_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/living_fsot_hardware_verification_report.json | 1 |
-| vendor_cache | domain_coupling_simulation_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json | 10 |
-| vendor_cache | domain_orbital_prediction_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_orbital_prediction_report.json | 1 |
-| vendor_cache | electrical_power_systems_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/electrical_power_systems_benchmark.json | 1 |
-| vendor_cache | existence_simulation_failure_clusters_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/existence_simulation_failure_clusters_manifest.yaml | 1 |
-| vendor_cache | extension_domains_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/extension_domains_manifest.yaml | 3 |
-| vendor_cache | external_data_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/external_data_manifest.yaml | 1 |
-| vendor_cache | external_oss_code_genome_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/external_oss_code_genome_benchmark.json | 1 |
-| vendor_cache | fluid_phase_current_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fluid_phase_current_spine_benchmark.json | 1 |
-| vendor_cache | fluid_spacetime_observable_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fluid_spacetime_observable_spine_benchmark.json | 1 |
-| vendor_cache | fold_depth_metrics_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fold_depth_metrics_benchmark.json | 1 |
-| vendor_cache | food_microbiology_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/food_microbiology_gap_fill_benchmark.json | 1 |
-| vendor_cache | fpc_fluidlink_timing_deep_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fpc_fluidlink_timing_deep_panel_benchmark.json | 1 |
-| vendor_cache | fpc_temporal_coupling_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fpc_temporal_coupling_benchmark.json | 2 |
-| vendor_cache | fractal_constant_recursion.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fractal_constant_recursion.yaml | 1 |
-| vendor_cache | fsot_aggregate_unified_db_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_aggregate_unified_db_benchmark.json | 1 |
-| vendor_cache | fsot_formula_spine.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_formula_spine.yaml | 3 |
-| vendor_cache | fsot_species_catalog.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_species_catalog.json | 3 |
-| vendor_cache | fsot_verification_progress.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_verification_progress.yaml | 2 |
-| vendor_cache | fuel_thermochemistry_public_anchors_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fuel_thermochemistry_public_anchors_benchmark.json | 1 |
-| vendor_cache | fusion_decay_chain_prereg_scaffold_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_decay_chain_prereg_scaffold_benchmark.json | 2 |
-| vendor_cache | fusion_lab_certificate_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_lab_certificate_spine_benchmark.json | 1 |
-| vendor_cache | fusion_physics_public_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_physics_public_panel_benchmark.json | 3 |
-| vendor_cache | galactic_structure_sample.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/galactic_structure_sample.json | 1 |
-| vendor_cache | galactic_structure_sample_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/galactic_structure_sample_benchmark.json | 1 |
-| vendor_cache | geomagnetism_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/geomagnetism_benchmark.json | 1 |
-| vendor_cache | github_oss_adversarial_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/github_oss_adversarial_manifest.yaml | 1 |
-| vendor_cache | gwosc_live_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/gwosc_live_cache.json | 1 |
-| vendor_cache | heavy_ion_lab_synthesis_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/heavy_ion_lab_synthesis_panel_benchmark.json | 1 |
-| vendor_cache | higgs_branching_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/higgs_branching_benchmark.json | 1 |
-| vendor_cache | https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json | 1 |
-| vendor_cache | hubble_bubble_tension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/hubble_bubble_tension_benchmark.json | 2 |
-| vendor_cache | hubble_dark_sector_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/hubble_dark_sector_crosswalk_benchmark.json | 1 |
-| vendor_cache | igem_live_fasta_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/igem_live_fasta_benchmark.json | 1 |
-| vendor_cache | igem_synthetic_biology_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/igem_synthetic_biology_benchmark.json | 1 |
-| vendor_cache | knowledge_base_formula_verification_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/knowledge_base_formula_verification_summary.json | 1 |
-| vendor_cache | lab_synthesis_metamaterial_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/lab_synthesis_metamaterial_spine_benchmark.json | 1 |
-| vendor_cache | linguistics_formal_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/linguistics_formal_benchmark.json | 1 |
-| vendor_cache | longevity_telomere_repair_anchors.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/longevity_telomere_repair_anchors.json | 1 |
-| vendor_cache | magnetosphere_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/magnetosphere_benchmark.json | 1 |
-| vendor_cache | magnetosphere_extended_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/magnetosphere_extended_benchmark.json | 1 |
-| vendor_cache | maillard_chemistry_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/maillard_chemistry_gap_fill_benchmark.json | 1 |
-| vendor_cache | malware_threat_intelligence_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/malware_threat_intelligence_cybersecurity_benchmark.json | 1 |
-| vendor_cache | material_compatibility_comparison.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/material_compatibility_comparison.json | 1 |
-| vendor_cache | materials_engineering_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/materials_engineering_benchmark.json | 1 |
-| vendor_cache | materials_species_bridge_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/materials_species_bridge_benchmark.json | 1 |
-| vendor_cache | math_generator_airfoil_rmse_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/math_generator_airfoil_rmse_benchmark.json | 1 |
-| vendor_cache | mechanistic_coupling_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/mechanistic_coupling_manifest.yaml | 1 |
-| vendor_cache | multi_hero_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/multi_hero_benchmark.json | 1 |
-| vendor_cache | music_harmonics_public_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/music_harmonics_public_panel_benchmark.json | 1 |
-| vendor_cache | network_internet_protocols_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/network_internet_protocols_cybersecurity_benchmark.json | 1 |
-| vendor_cache | nist_codata_constants_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/nist_codata_constants_benchmark.json | 1 |
-| vendor_cache | openneuro_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/openneuro_summary.json | 1 |
-| vendor_cache | orbital_predictions_registry.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/orbital_predictions_registry.yaml | 1 |
-| vendor_cache | particle_physics_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/particle_physics_benchmark.json | 2 |
-| vendor_cache | periodic_table_completion_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/periodic_table_completion_spine_benchmark.json | 2 |
-| vendor_cache | pharmacology_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/pharmacology_benchmark.json | 1 |
-| vendor_cache | plasma_physics_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/plasma_physics_benchmark.json | 6 |
-| vendor_cache | prediction_rederivation_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/prediction_rederivation_benchmark.json | 1 |
-| vendor_cache | preregistered_predictions_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_benchmark.json | 1 |
-| vendor_cache | preregistered_predictions_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_manifest.yaml | 3 |
-| vendor_cache | preregistered_predictions_verification_scaffold_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_verification_scaffold_benchmark.json | 1 |
-| vendor_cache | proof_ledger.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/proof_ledger.yaml | 1 |
-| vendor_cache | pubchem_compound_properties_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/pubchem_compound_properties_benchmark.json | 2 |
-| vendor_cache | pubchem_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/pubchem_summary.json | 1 |
-| vendor_cache | public_fuel_property_catalog.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/public_fuel_property_catalog.json | 1 |
-| vendor_cache | quantum_materials_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/quantum_materials_benchmark.json | 1 |
-| vendor_cache | rcsb_pdb_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/rcsb_pdb_summary.json | 1 |
-| vendor_cache | reality_folding_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/reality_folding_spine_benchmark.json | 1 |
-| vendor_cache | refined_grounded_hemp.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/refined_grounded_hemp.json | 1 |
-| vendor_cache | results/competitive/beat_cuda.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/competitive/beat_cuda.json | 3 |
-| vendor_cache | results/competitive/flash_attention_track.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/competitive/flash_attention_track.json | 1 |
-| vendor_cache | results/competitive/long_seq_and_norm.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/competitive/long_seq_and_norm.json | 1 |
-| vendor_cache | results/industry_lm/fsot21_verify.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/industry_lm/fsot21_verify.json | 1 |
-| vendor_cache | results/parity/parity_ledger.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/parity/parity_ledger.json | 3 |
-| vendor_cache | results/phase0/fsot_scalar_gpu.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/phase0/fsot_scalar_gpu.json | 2 |
-| vendor_cache | results/phase0/gpu_probe.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/phase0/gpu_probe.json | 2 |
-| vendor_cache | rust_lean_bridge_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/rust_lean_bridge_benchmark.json | 1 |
-| vendor_cache | scientific_domain_expansion_map.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scientific_domain_expansion_map.json | 1 |
-| vendor_cache | secure_software_engineering_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/secure_software_engineering_cybersecurity_benchmark.json | 1 |
-| vendor_cache | space_weather_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/space_weather_benchmark.json | 1 |
-| vendor_cache | stellar_multiplicity_catalog_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/stellar_multiplicity_catalog_benchmark.json | 1 |
-| vendor_cache | stumped_observables_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/stumped_observables_panel_benchmark.json | 1 |
-| vendor_cache | stumped_observables_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/stumped_observables_reference.json | 1 |
-| vendor_cache | stumped_observables_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/stumped_observables_spine_benchmark.json | 1 |
-| vendor_cache | superheavy_element_stability_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/superheavy_element_stability_panel_benchmark.json | 1 |
-| vendor_cache | superheavy_island_completion_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/superheavy_island_completion_spine_benchmark.json | 1 |
-| vendor_cache | symbolic_archetype_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/symbolic_archetype_panel_benchmark.json | 1 |
-| vendor_cache | term3_acoustic_bleed_depth_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/term3_acoustic_bleed_depth_benchmark.json | 2 |
-| vendor_cache | thermochemistry_public_anchors.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/thermochemistry_public_anchors.json | 1 |
-| vendor_cache | tier65_prereg_channels_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier65_prereg_channels_manifest.yaml | 3 |
-| vendor_cache | tier92_base_analysis_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier92_base_analysis_cache.json | 1 |
-| vendor_cache | tier93_consciousness_genetics_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier93_consciousness_genetics_cache.json | 3 |
-| vendor_cache | tier93_experimental_base_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier93_experimental_base_cache.json | 1 |
-| vendor_cache | tier94_anage_longevity_catalog.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_anage_longevity_catalog.json | 1 |
-| vendor_cache | tier94_extreme_species_ncbi_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_extreme_species_ncbi_cache.json | 1 |
-| vendor_cache | tier94_megadeep_extreme_ncbi_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_megadeep_extreme_ncbi_cache.json | 2 |
-| vendor_cache | tier94_telomere_repair_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_telomere_repair_cache.json | 1 |
-| vendor_cache | tier95_zebrahub_gpu_imaging_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier95_zebrahub_gpu_imaging_cache.json | 1 |
-| vendor_cache | tier95_zebrahub_tracks_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier95_zebrahub_tracks_cache.json | 2 |
-| vendor_cache | time_domain_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/time_domain_crosswalk_benchmark.json | 1 |
-| vendor_cache | time_emergence_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/time_emergence_manifest.yaml | 2 |
-| vendor_cache | time_emergence_simulation_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/time_emergence_simulation_benchmark.json | 2 |
-| vendor_cache | toe_unification_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/toe_unification_spine_benchmark.json | 1 |
-| vendor_cache | undiscovered_element_candidate_prereg_scaffold_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/undiscovered_element_candidate_prereg_scaffold_benchmark.json | 1 |
-| vendor_cache | unified_db_domain_index.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/unified_db_domain_index.json | 1 |
-| vendor_cache | uniprot_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/uniprot_summary.json | 1 |
+| vendor_cache | domain_coupling_simulation_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json | 10 |
+| vendor_cache | domain_orbital_prediction_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_orbital_prediction_report.json | 1 |
+| vendor_cache | electrical_power_systems_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/electrical_power_systems_benchmark.json | 1 |
+| vendor_cache | existence_simulation_failure_clusters_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/existence_simulation_failure_clusters_manifest.yaml | 1 |
+| vendor_cache | extension_domains_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/extension_domains_manifest.yaml | 3 |
+| vendor_cache | external_data_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/external_data_manifest.yaml | 1 |
+| vendor_cache | external_oss_code_genome_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/external_oss_code_genome_benchmark.json | 1 |
+| vendor_cache | fluid_phase_current_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fluid_phase_current_spine_benchmark.json | 1 |
+| vendor_cache | fluid_spacetime_observable_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fluid_spacetime_observable_spine_benchmark.json | 1 |
+| vendor_cache | fold_depth_metrics_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fold_depth_metrics_benchmark.json | 1 |
+| vendor_cache | food_microbiology_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/food_microbiology_gap_fill_benchmark.json | 1 |
+| vendor_cache | fpc_fluidlink_timing_deep_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fpc_fluidlink_timing_deep_panel_benchmark.json | 1 |
+| vendor_cache | fpc_temporal_coupling_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fpc_temporal_coupling_benchmark.json | 2 |
+| vendor_cache | fractal_constant_recursion.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fractal_constant_recursion.yaml | 1 |
+| vendor_cache | fsot_aggregate_unified_db_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_aggregate_unified_db_benchmark.json | 1 |
+| vendor_cache | fsot_formula_spine.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_formula_spine.yaml | 3 |
+| vendor_cache | fsot_species_catalog.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/species/fsot_species_catalog.json | 3 |
+| vendor_cache | fsot_verification_progress.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_verification_progress.yaml | 2 |
+| vendor_cache | fuel_thermochemistry_public_anchors_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fuel_thermochemistry_public_anchors_benchmark.json | 1 |
+| vendor_cache | fusion_decay_chain_prereg_scaffold_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_decay_chain_prereg_scaffold_benchmark.json | 2 |
+| vendor_cache | fusion_lab_certificate_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_lab_certificate_spine_benchmark.json | 1 |
+| vendor_cache | fusion_physics_public_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_physics_public_panel_benchmark.json | 3 |
+| vendor_cache | galactic_structure_sample.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/stellar_structures/galactic_structure_sample.json | 1 |
+| vendor_cache | galactic_structure_sample_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/galactic_structure_sample_benchmark.json | 1 |
+| vendor_cache | geomagnetism_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/geomagnetism_benchmark.json | 1 |
+| vendor_cache | github_oss_adversarial_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/github_oss_adversarial_manifest.yaml | 1 |
+| vendor_cache | gwosc_live_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/stellar_structures/gwosc_live_cache.json | 1 |
+| vendor_cache | heavy_ion_lab_synthesis_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/heavy_ion_lab_synthesis_panel_benchmark.json | 1 |
+| vendor_cache | higgs_branching_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/higgs_branching_benchmark.json | 1 |
+| vendor_cache | https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json | https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json | 1 |
+| vendor_cache | hubble_bubble_tension_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/hubble_bubble_tension_benchmark.json | 2 |
+| vendor_cache | hubble_dark_sector_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/hubble_dark_sector_crosswalk_benchmark.json | 1 |
+| vendor_cache | igem_live_fasta_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/igem_live_fasta_benchmark.json | 1 |
+| vendor_cache | igem_synthetic_biology_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/igem_synthetic_biology_benchmark.json | 1 |
+| vendor_cache | knowledge_base_formula_verification_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/knowledge_base_formula_verification_summary.json | 1 |
+| vendor_cache | lab_synthesis_metamaterial_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/lab_synthesis_metamaterial_spine_benchmark.json | 1 |
+| vendor_cache | linguistics_formal_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/linguistics_formal_benchmark.json | 1 |
+| vendor_cache | longevity_telomere_repair_anchors.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/longevity_telomere_repair_anchors.json | 1 |
+| vendor_cache | magnetosphere_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/magnetosphere_benchmark.json | 1 |
+| vendor_cache | magnetosphere_extended_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/magnetosphere_extended_benchmark.json | 1 |
+| vendor_cache | maillard_chemistry_gap_fill_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/maillard_chemistry_gap_fill_benchmark.json | 1 |
+| vendor_cache | malware_threat_intelligence_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/malware_threat_intelligence_cybersecurity_benchmark.json | 1 |
+| vendor_cache | material_compatibility_comparison.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/fuel_lab/engine_simulator/results/material_compatibility_comparison.json | 1 |
+| vendor_cache | materials_engineering_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/materials_engineering_benchmark.json | 1 |
+| vendor_cache | materials_species_bridge_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/materials_species_bridge_benchmark.json | 1 |
+| vendor_cache | math_generator_airfoil_rmse_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/math_generator_airfoil_rmse_benchmark.json | 1 |
+| vendor_cache | mechanistic_coupling_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/mechanistic_coupling_manifest.yaml | 1 |
+| vendor_cache | multi_hero_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/multi_hero_benchmark.json | 1 |
+| vendor_cache | music_harmonics_public_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/music_harmonics_public_panel_benchmark.json | 1 |
+| vendor_cache | network_internet_protocols_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/network_internet_protocols_cybersecurity_benchmark.json | 1 |
+| vendor_cache | nist_codata_constants_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/nist_codata_constants_benchmark.json | 1 |
+| vendor_cache | openneuro_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/consciousness/openneuro_summary.json | 1 |
+| vendor_cache | orbital_predictions_registry.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/orbital_predictions_registry.yaml | 1 |
+| vendor_cache | particle_physics_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/particle_physics_benchmark.json | 2 |
+| vendor_cache | periodic_table_completion_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/periodic_table_completion_spine_benchmark.json | 2 |
+| vendor_cache | pharmacology_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/pharmacology_benchmark.json | 1 |
+| vendor_cache | plasma_physics_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/plasma_physics_benchmark.json | 6 |
+| vendor_cache | prediction_rederivation_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/prediction_rederivation_benchmark.json | 1 |
+| vendor_cache | preregistered_predictions_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/preregistered_predictions_benchmark.json | 1 |
+| vendor_cache | preregistered_predictions_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/publication/zenodo_deposit_v1/files/data/preregistered_predictions_manifest.yaml | 3 |
+| vendor_cache | preregistered_predictions_verification_scaffold_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/preregistered_predictions_verification_scaffold_benchmark.json | 1 |
+| vendor_cache | proof_ledger.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/proof_ledger.yaml | 1 |
+| vendor_cache | pubchem_compound_properties_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/pubchem_compound_properties_benchmark.json | 2 |
+| vendor_cache | pubchem_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/pubchem/pubchem_summary.json | 1 |
+| vendor_cache | public_fuel_property_catalog.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fuel/public_fuel_property_catalog.json | 1 |
+| vendor_cache | quantum_materials_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/quantum_materials_benchmark.json | 1 |
+| vendor_cache | rcsb_pdb_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/rcsb_pdb/rcsb_pdb_summary.json | 1 |
+| vendor_cache | reality_folding_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/reality_folding_spine_benchmark.json | 1 |
+| vendor_cache | refined_grounded_hemp.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/fuel_lab/engine_simulator/results/refined_grounded_hemp.json | 1 |
+| vendor_cache | results/competitive/beat_cuda.json | not tracked in this repository | 3 |
+| vendor_cache | results/competitive/flash_attention_track.json | not tracked in this repository | 1 |
+| vendor_cache | results/competitive/long_seq_and_norm.json | not tracked in this repository | 1 |
+| vendor_cache | results/industry_lm/fsot21_verify.json | not tracked in this repository | 1 |
+| vendor_cache | results/parity/parity_ledger.json | not tracked in this repository | 3 |
+| vendor_cache | results/phase0/fsot_scalar_gpu.json | not tracked in this repository | 2 |
+| vendor_cache | results/phase0/gpu_probe.json | not tracked in this repository | 2 |
+| vendor_cache | rust_lean_bridge_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/rust_lean_bridge_benchmark.json | 1 |
+| vendor_cache | scientific_domain_expansion_map.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/scientific_domain_expansion_map.json | 1 |
+| vendor_cache | secure_software_engineering_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/secure_software_engineering_cybersecurity_benchmark.json | 1 |
+| vendor_cache | space_weather_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/space_weather_benchmark.json | 1 |
+| vendor_cache | stellar_multiplicity_catalog_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stellar_multiplicity_catalog_benchmark.json | 1 |
+| vendor_cache | stumped_observables_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_panel_benchmark.json | 1 |
+| vendor_cache | stumped_observables_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_reference.json | 1 |
+| vendor_cache | stumped_observables_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_spine_benchmark.json | 1 |
+| vendor_cache | superheavy_element_stability_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/superheavy_element_stability_panel_benchmark.json | 1 |
+| vendor_cache | superheavy_island_completion_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/superheavy_island_completion_spine_benchmark.json | 1 |
+| vendor_cache | symbolic_archetype_panel_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/symbolic_archetype_panel_benchmark.json | 1 |
+| vendor_cache | term3_acoustic_bleed_depth_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/term3_acoustic_bleed_depth_benchmark.json | 2 |
+| vendor_cache | thermochemistry_public_anchors.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fuel/thermochemistry_public_anchors.json | 1 |
+| vendor_cache | tier65_prereg_channels_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/tier65_prereg_channels_manifest.yaml | 3 |
+| vendor_cache | tier92_base_analysis_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/alternate_base_mathematics/tier92_base_analysis_cache.json | 1 |
+| vendor_cache | tier93_consciousness_genetics_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/consciousness_genetics/tier93_consciousness_genetics_cache.json | 3 |
+| vendor_cache | tier93_experimental_base_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/alternate_base_mathematics/tier93_experimental_base_cache.json | 1 |
+| vendor_cache | tier94_anage_longevity_catalog.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_anage_longevity_catalog.json | 1 |
+| vendor_cache | tier94_extreme_species_ncbi_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_extreme_species_ncbi_cache.json | 1 |
+| vendor_cache | tier94_megadeep_extreme_ncbi_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_megadeep_extreme_ncbi_cache.json | 2 |
+| vendor_cache | tier94_telomere_repair_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_telomere_repair_cache.json | 1 |
+| vendor_cache | tier95_zebrahub_gpu_imaging_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/zebrahub_development/tier95_zebrahub_gpu_imaging_cache.json | 1 |
+| vendor_cache | tier95_zebrahub_tracks_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/zebrahub_development/tier95_zebrahub_tracks_cache.json | 2 |
+| vendor_cache | time_domain_crosswalk_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/time_domain_crosswalk_benchmark.json | 1 |
+| vendor_cache | time_emergence_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/time_emergence_manifest.yaml | 2 |
+| vendor_cache | time_emergence_simulation_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/time_emergence_simulation_benchmark.json | 2 |
+| vendor_cache | toe_unification_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/toe_unification_spine_benchmark.json | 1 |
+| vendor_cache | undiscovered_element_candidate_prereg_scaffold_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/undiscovered_element_candidate_prereg_scaffold_benchmark.json | 1 |
+| vendor_cache | unified_db_domain_index.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/unified_db_domain_index.json | 1 |
+| vendor_cache | uniprot_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/uniprot/uniprot_summary.json | 1 |
 | vendor_cache | vendor/arxiv_primitives/v14_run_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/arxiv_primitives/v14_run_summary.json | 2 |
 | vendor_cache | vendor/bibliography_corpus/bibliography_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/bibliography_corpus/bibliography_summary.json | 1 |
 | vendor_cache | vendor/binary_decoder/rendlesham_page14_trace.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/binary_decoder/rendlesham_page14_trace.json | 2 |
@@ -854,8 +854,8 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | vendor/vl_distill/fsot_domain_registry.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/vl_distill/fsot_domain_registry.json | 1 |
 | vendor_cache | vendor\neuron_cohort\cells.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/neuron_cohort/cells.json | 2 |
 | vendor_cache | vendor\public_data\oph_challenge_public_anchors.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/oph_challenge_public_anchors.json | 1 |
-| vendor_cache | wds_live_multiplicity_deep_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/wds_live_multiplicity_deep_benchmark.json | 1 |
-| vendor_cache | wds_multiplicity_expanded.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/wds_multiplicity_expanded.json | 1 |
+| vendor_cache | wds_live_multiplicity_deep_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/wds_live_multiplicity_deep_benchmark.json | 1 |
+| vendor_cache | wds_multiplicity_expanded.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/stellar_structures/wds_multiplicity_expanded.json | 1 |
 
 ## Unresolved source tokens (need explicit public URL)
 
@@ -914,11 +914,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/ai_galactic_orbital_bridge_benchmark.json` · records=48 · median%=0.005168558627176023
 - Lean: `FSOT.Formal.AIGalacticOrbitalBridgePriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **dataset**: GitHub OSS corpus data/ai_galactic_orbital_bridge_benchmark.json — https://github.com/data/ai_galactic_orbital_bridge_benchmark.json
-  - **dataset**: GitHub OSS corpus data/adversarial_fractal_break_benchmark.json — https://github.com/data/adversarial_fractal_break_benchmark.json
-  - **dataset**: GitHub OSS corpus data/alternate_base_mathematics_explorer_panel_benchmark.json — https://github.com/data/alternate_base_mathematics_explorer_panel_benchmark.json
-  - **dataset**: GitHub OSS corpus data/alternate_base_mathematics_spine_benchmark.json — https://github.com/data/alternate_base_mathematics_spine_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
+  - **dataset**: data/ai_galactic_orbital_bridge_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/ai_galactic_orbital_bridge_benchmark.json
+  - **dataset**: data/adversarial_fractal_break_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adversarial_fractal_break_benchmark.json
+  - **dataset**: data/alternate_base_mathematics_explorer_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/alternate_base_mathematics_explorer_panel_benchmark.json
+  - **dataset**: data/alternate_base_mathematics_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/alternate_base_mathematics_spine_benchmark.json
   - **unresolved**: cross_scale_motif — Named in panel source; add explicit public URL if this is an external authority
 
 ### Acoustic_Resonance_Materials
@@ -926,9 +926,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/acoustic_resonance_materials_benchmark.json` · records=29 · median%=0.008381497018411083
 - Lean: `FSOT.Formal.AcousticResonanceMaterialsPriors`
 - Public / portable anchors:
-  - **vendor_cache**: fsot_species_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_species_catalog.json
-  - **vendor_cache**: architecture_building_science_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/architecture_building_science_gap_fill_benchmark.json
-  - **vendor_cache**: math_generator_airfoil_rmse_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/math_generator_airfoil_rmse_benchmark.json
+  - **vendor_cache**: fsot_species_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/species/fsot_species_catalog.json
+  - **vendor_cache**: architecture_building_science_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/architecture_building_science_gap_fill_benchmark.json
+  - **vendor_cache**: math_generator_airfoil_rmse_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/math_generator_airfoil_rmse_benchmark.json
 
 ### Actuarial_Science_Panel
 
@@ -945,14 +945,14 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/adjacent_rung_coupling_benchmark.json` · records=36 · median%=0.020098237848404983
 - Lean: `FSOT.Formal.AdjacentRungCouplingPriors`
 - Public / portable anchors:
-  - **vendor_cache**: compactification_ladder_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compactification_ladder_manifest.yaml
+  - **vendor_cache**: compactification_ladder_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/compactification_ladder_manifest.yaml
 
 ### Adversarial_Fractal_Break_Tests
 
 - Benchmark: `data/adversarial_fractal_break_benchmark.json` · records=13 · median%=0.0
 - Lean: `FSOT.Formal.AdversarialFractalBreakPriors`
 - Public / portable anchors:
-  - **vendor_cache**: github_oss_adversarial_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/github_oss_adversarial_manifest.yaml
+  - **vendor_cache**: github_oss_adversarial_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/github_oss_adversarial_manifest.yaml
   - **vendor_cache**: vendor/github_oss/adversarial/broken_memcpy_chain.c — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/github_oss/adversarial/broken_memcpy_chain.c
   - **unresolved**: formula_branching_fractal — Named in panel source; add explicit public URL if this is an external authority
   - **vendor_cache**: vendor/github_oss/adversarial/double_free_pattern.c — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/github_oss/adversarial/double_free_pattern.c
@@ -978,7 +978,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.AlternateBaseMathematicsExplorerPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: tier92_base_analysis_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier92_base_analysis_cache.json
+  - **vendor_cache**: tier92_base_analysis_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/alternate_base_mathematics/tier92_base_analysis_cache.json
   - **ingest_script**: scripts/ingest_tier92_alternate_base_mathematics.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier92_alternate_base_mathematics.py
 
 ### Alternate_Base_Mathematics_Spine
@@ -1251,7 +1251,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: magnetic_confinement — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: fusion_lab — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: public ELM literature + TechTimes/PRL summary — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/plasma_physics_benchmark.json
+  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/plasma_physics_benchmark.json
 
 ### CERN_Open_Data_LHC
 
@@ -1274,7 +1274,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/cve_codon_hole_falsification_benchmark.json` · records=29 · median%=0.009186636881580057
 - Lean: `FSOT.Formal.CVECodonHoleFalsificationPriors`
 - Public / portable anchors:
-  - **vendor_cache**: cisa_kev_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cisa_kev_summary.json
+  - **vendor_cache**: cisa_kev_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/cybersecurity/cisa_kev_summary.json
   - **unresolved**: code_genome_lib — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: external_oss_code_genome — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: vendor\cybersecurity\samples\vulnerable_legacy.c — Named in panel source; add explicit public URL if this is an external authority
@@ -1381,9 +1381,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/chaos_mediated_phase_transitions_benchmark.json` · records=21 · median%=0.03147898006445882
 - Lean: `FSOT.Formal.ChaosMediatedPhaseTransitionsPriors`
 - Public / portable anchors:
-  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/plasma_physics_benchmark.json
-  - **vendor_cache**: particle_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/particle_physics_benchmark.json
-  - **vendor_cache**: higgs_branching_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/higgs_branching_benchmark.json
+  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/plasma_physics_benchmark.json
+  - **vendor_cache**: particle_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/particle_physics_benchmark.json
+  - **vendor_cache**: higgs_branching_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/higgs_branching_benchmark.json
 
 ### Chemical_Engineering
 
@@ -1401,8 +1401,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/chemical_structure_stability_panel_benchmark.json` · records=32 · median%=0.00206
 - Lean: `FSOT.Formal.ChemicalStructureStabilityPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: pubchem_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/pubchem_summary.json
-  - **vendor_cache**: nist_codata_constants_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/nist_codata_constants_benchmark.json
+  - **vendor_cache**: pubchem_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/pubchem/pubchem_summary.json
+  - **vendor_cache**: nist_codata_constants_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/nist_codata_constants_benchmark.json
 
 ### Circuit_Component_Emergence_Panel
 
@@ -1484,8 +1484,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 - Benchmark: `data/coding_structure_verifier_panel_benchmark.json` · records=43 · median%=0.0
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/programming_language_laws_benchmark.json — https://github.com/data/programming_language_laws_benchmark.json
-  - **dataset**: GitHub OSS corpus data/external_oss_code_genome_benchmark.json — https://github.com/data/external_oss_code_genome_benchmark.json
+  - **dataset**: data/programming_language_laws_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/programming_language_laws_benchmark.json
+  - **dataset**: data/external_oss_code_genome_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/external_oss_code_genome_benchmark.json
   - **unresolved**: I:\Protofluid-Language-Translator-2.0-Zig — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: C:\Users\damia\Desktop\fsot code language — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: I:\fsot-neuron-zig — Named in panel source; add explicit public URL if this is an external authority
@@ -1502,7 +1502,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: term3_acoustic_bleed_depth_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/term3_acoustic_bleed_depth_benchmark.json
+  - **vendor_cache**: term3_acoustic_bleed_depth_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/term3_acoustic_bleed_depth_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -1512,8 +1512,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/cold_fusion_lab_synthesis_crosswalk_benchmark.json` · records=49 · median%=7.9e-05
 - Lean: `FSOT.Formal.ColdFusionLabSynthesisCrosswalkPriors`
 - Public / portable anchors:
-  - **vendor_cache**: cold_fusion_candidate_prereg_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cold_fusion_candidate_prereg_scaffold_benchmark.json
-  - **vendor_cache**: undiscovered_element_candidate_prereg_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/undiscovered_element_candidate_prereg_scaffold_benchmark.json
+  - **vendor_cache**: cold_fusion_candidate_prereg_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cold_fusion_candidate_prereg_scaffold_benchmark.json
+  - **vendor_cache**: undiscovered_element_candidate_prereg_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/undiscovered_element_candidate_prereg_scaffold_benchmark.json
   - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\lab_synthesis\heavy_ion_reaction_anchors.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/lab_synthesis/heavy_ion_reaction_anchors.json
   - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\lab_synthesis\metamaterial_fluid_prereg_candidates.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json
 
@@ -1529,17 +1529,17 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/compactification_ladder_benchmark.json` · records=60 · median%=0.0220747159758794
 - Lean: `FSOT.Formal.CompactificationLadderPriors`
 - Public / portable anchors:
-  - **vendor_cache**: compactification_ladder_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compactification_ladder_manifest.yaml
-  - **dataset**: GitHub OSS corpus data/higgs_mass_benchmark.json — https://github.com/data/higgs_mass_benchmark.json
-  - **dataset**: GitHub OSS corpus data/particle_physics_gap_fill_benchmark.json — https://github.com/data/particle_physics_gap_fill_benchmark.json
-  - **dataset**: GitHub OSS corpus data/atomic_physics_gap_fill_benchmark.json — https://github.com/data/atomic_physics_gap_fill_benchmark.json
-  - **dataset**: GitHub OSS corpus data/materials_species_bridge_benchmark.json — https://github.com/data/materials_species_bridge_benchmark.json
-  - **dataset**: GitHub OSS corpus data/synthetic_biology_benchmark.json — https://github.com/data/synthetic_biology_benchmark.json
-  - **dataset**: GitHub OSS corpus data/immunology_benchmark.json — https://github.com/data/immunology_benchmark.json
-  - **dataset**: GitHub OSS corpus data/planetary_structure_benchmark.json — https://github.com/data/planetary_structure_benchmark.json
-  - **dataset**: GitHub OSS corpus data/breakthrough_discoveries_2024_2026_benchmark.json — https://github.com/data/breakthrough_discoveries_2024_2026_benchmark.json
-  - **dataset**: GitHub OSS corpus data/climate_observed_benchmark.json — https://github.com/data/climate_observed_benchmark.json
-  - **dataset**: GitHub OSS corpus data/cosmology_extended_benchmark.json — https://github.com/data/cosmology_extended_benchmark.json
+  - **vendor_cache**: compactification_ladder_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/compactification_ladder_manifest.yaml
+  - **dataset**: data/higgs_mass_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/higgs_mass_benchmark.json
+  - **dataset**: data/particle_physics_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/particle_physics_gap_fill_benchmark.json
+  - **dataset**: data/atomic_physics_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/atomic_physics_gap_fill_benchmark.json
+  - **dataset**: data/materials_species_bridge_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/materials_species_bridge_benchmark.json
+  - **dataset**: data/synthetic_biology_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/synthetic_biology_benchmark.json
+  - **dataset**: data/immunology_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/immunology_benchmark.json
+  - **dataset**: data/planetary_structure_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/planetary_structure_benchmark.json
+  - **dataset**: data/breakthrough_discoveries_2024_2026_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/breakthrough_discoveries_2024_2026_benchmark.json
+  - **dataset**: data/climate_observed_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/climate_observed_benchmark.json
+  - **dataset**: data/cosmology_extended_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_extended_benchmark.json
 
 ### Complexity_Folding_Emergence_Panel
 
@@ -1549,7 +1549,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: core_formula_fractal_branch_index.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/core_formula_fractal_branch_index.json
+  - **vendor_cache**: core_formula_fractal_branch_index.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/core_formula_fractal_branch_index.json
 
 ### Condensed_Matter_Superconductivity_Depth_Panel
 
@@ -1573,10 +1573,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_anomaly_public_data.py`
 - Lean: `FSOT.Formal.ConsciousnessEconPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/consciousness_reference_observables.json — https://github.com/data/consciousness_reference_observables.json
-  - **dataset**: GitHub OSS corpus data/consciousness_resonance_reference.json — https://github.com/data/consciousness_resonance_reference.json
+  - **dataset**: data/consciousness_reference_observables.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_reference_observables.json
+  - **dataset**: data/consciousness_resonance_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_resonance_reference.json
   - **api**: anage — https://genomics.senescence.info/species/dataset.zip
-  - **dataset**: GitHub OSS corpus scripts/consciousness_econ_lib.py — https://github.com/scripts/consciousness_econ_lib.py
+  - **dataset**: scripts/consciousness_econ_lib.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/consciousness_econ_lib.py
   - **ingest_script**: scripts/ingest_anomaly_public_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_anomaly_public_data.py
 
 ### Consciousness_Expansion_Spine
@@ -1596,11 +1596,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/consciousness_galactic_orbital_bridge_benchmark.json` · records=48 · median%=0.036757197413939124
 - Lean: `FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **dataset**: GitHub OSS corpus data/anthropology_extension_benchmark.json — https://github.com/data/anthropology_extension_benchmark.json
-  - **dataset**: GitHub OSS corpus data/arxiv_primitives_v14_benchmark.json — https://github.com/data/arxiv_primitives_v14_benchmark.json
-  - **dataset**: GitHub OSS corpus data/binary_decoder_rendlesham_benchmark.json — https://github.com/data/binary_decoder_rendlesham_benchmark.json
-  - **dataset**: GitHub OSS corpus data/boundary_partition_tightening_benchmark.json — https://github.com/data/boundary_partition_tightening_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
+  - **dataset**: data/anthropology_extension_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/anthropology_extension_benchmark.json
+  - **dataset**: data/arxiv_primitives_v14_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_v14_benchmark.json
+  - **dataset**: data/binary_decoder_rendlesham_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/binary_decoder_rendlesham_benchmark.json
+  - **dataset**: data/boundary_partition_tightening_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/boundary_partition_tightening_benchmark.json
 
 ### Consciousness_Genetics_Coupling_Panel
 
@@ -1608,7 +1608,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier93_dual_wave.py`
 - Lean: `FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: tier93_consciousness_genetics_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier93_consciousness_genetics_cache.json
+  - **vendor_cache**: tier93_consciousness_genetics_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/consciousness_genetics/tier93_consciousness_genetics_cache.json
   - **unresolved**: tier90_observer_effect — Named in panel source; add explicit public URL if this is an external authority
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -1638,11 +1638,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_fringe_desktop_data.py`
 - Lean: `FSOT.Formal.ConsciousnessSoulBridgePriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/consciousness_soul_bridge_reference.json — https://github.com/data/consciousness_soul_bridge_reference.json
+  - **dataset**: data/consciousness_soul_bridge_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_soul_bridge_reference.json
   - **vendor_cache**: vendor/fringe_desktop/soul_simulator_manifest_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fringe_desktop/soul_simulator_manifest_summary.json
   - **vendor_cache**: vendor/fringe_desktop/intelligence_compressor_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fringe_desktop/intelligence_compressor_summary.json
   - **vendor_cache**: vendor/fringe_desktop/vibrafsot_progress_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fringe_desktop/vibrafsot_progress_summary.json
-  - **dataset**: GitHub OSS corpus scripts/consciousness_soul_bridge_lib.py — https://github.com/scripts/consciousness_soul_bridge_lib.py
+  - **dataset**: scripts/consciousness_soul_bridge_lib.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/consciousness_soul_bridge_lib.py
   - **ingest_script**: scripts/ingest_fringe_desktop_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_fringe_desktop_data.py
 
 ### Consciousness_Species_Multi_Panel
@@ -1694,8 +1694,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.CreativeArtsMathSpinePriors`
 - Public / portable anchors:
   - **unresolved**: tier61_creative_panels — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: culinary_arts_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/culinary_arts_benchmark.json
-  - **vendor_cache**: linguistics_formal_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/linguistics_formal_benchmark.json
+  - **vendor_cache**: culinary_arts_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/culinary_arts_benchmark.json
+  - **vendor_cache**: linguistics_formal_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/linguistics_formal_benchmark.json
 
 ### Crossref_Scholarly_Panel
 
@@ -1716,7 +1716,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: CRYPTOGRAPHY_RULES — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: cryptography_reference — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: cryptography_technology_reference_observables — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: CRYPTOGRAPHY_RULES.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/CRYPTOGRAPHY_RULES.json
+  - **vendor_cache**: CRYPTOGRAPHY_RULES.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/math_generator/rules/CRYPTOGRAPHY_RULES.json
   - **unresolved**: math_generator_rules_eval — Named in panel source; add explicit public URL if this is an external authority
 
 ### Culinary_Fermentation_Maillard_Panel
@@ -1735,7 +1735,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/desi_wa_constraint_benchmark.json` · records=27 · median%=0.0
 - Public / portable anchors:
   - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\data\dark_energy_cpl_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/dark_energy_cpl_reference.json
-  - **dataset**: GitHub OSS corpus scripts/dark_energy_dual_readout_lib.py — https://github.com/scripts/dark_energy_dual_readout_lib.py
+  - **dataset**: scripts/dark_energy_dual_readout_lib.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/dark_energy_dual_readout_lib.py
 
 ### Dark_Energy_CPL
 
@@ -1743,9 +1743,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_anomaly_public_data.py`
 - Lean: `FSOT.Formal.DarkEnergyCPLPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/dark_energy_cpl_reference.json — https://github.com/data/dark_energy_cpl_reference.json
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
-  - **dataset**: GitHub OSS corpus scripts/dark_energy_dual_readout_lib.py — https://github.com/scripts/dark_energy_dual_readout_lib.py
+  - **dataset**: data/dark_energy_cpl_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/dark_energy_cpl_reference.json
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
+  - **dataset**: scripts/dark_energy_dual_readout_lib.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/dark_energy_dual_readout_lib.py
   - **ingest_script**: scripts/ingest_anomaly_public_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_anomaly_public_data.py
 
 ### Dark_Sector_Open_Problems
@@ -1753,9 +1753,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/dark_sector_open_problems_benchmark.json` · records=24 · median%=0.000561846
 - Lean: `FSOT.Formal.DarkSectorOpenProblemsPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
-  - **dataset**: GitHub OSS corpus data/stumped_observables_reference.json — https://github.com/data/stumped_observables_reference.json
-  - **dataset**: GitHub OSS corpus scripts/dark_energy_dual_readout_lib.py — https://github.com/scripts/dark_energy_dual_readout_lib.py
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
+  - **dataset**: data/stumped_observables_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_reference.json
+  - **dataset**: scripts/dark_energy_dual_readout_lib.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/dark_energy_dual_readout_lib.py
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -1779,7 +1779,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/desktop_observer_loop_panel_benchmark.json` · records=24 · median%=0.0010245
 - Public / portable anchors:
   - **unresolved**: desktop_observer_loop_lib — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
 
 ### Distant_Island_Emergence_Simulation
 
@@ -1821,15 +1821,15 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/domain_coupling_simulation_refresh_panel_benchmark.json` · records=22 · median%=0.0
 - Lean: `FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **vendor_cache**: fluid_spacetime_observable_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fluid_spacetime_observable_spine_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
+  - **vendor_cache**: fluid_spacetime_observable_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fluid_spacetime_observable_spine_benchmark.json
 
 ### Domain_Orbital_Predictions
 
 - Benchmark: `data/domain_orbital_predictions_benchmark.json` · records=12 · median%=0.0
 - Lean: `FSOT.Formal.DomainOrbitalPredictionsPriors`
 - Public / portable anchors:
-  - **vendor_cache**: orbital_predictions_registry.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/orbital_predictions_registry.yaml
+  - **vendor_cache**: orbital_predictions_registry.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/orbital_predictions_registry.yaml
   - **unresolved**: tier_l_orbital_gap_fill — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: tier_m_toe_unity — Named in panel source; add explicit public URL if this is an external authority
 
@@ -1960,18 +1960,18 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.ElementSynthesisConditionScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: superheavy_element_stability_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/superheavy_element_stability_panel_benchmark.json
+  - **vendor_cache**: superheavy_element_stability_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/superheavy_element_stability_panel_benchmark.json
 
 ### Energy_AI_Orbital_Bridge
 
 - Benchmark: `data/energy_ai_orbital_bridge_benchmark.json` · records=48 · median%=0.027544107556407217
 - Lean: `FSOT.Formal.EnergyAIOrbitalBridgePriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **dataset**: GitHub OSS corpus data/acoustic_resonance_materials_benchmark.json — https://github.com/data/acoustic_resonance_materials_benchmark.json
-  - **dataset**: GitHub OSS corpus data/agriculture_agroecology_gap_fill_benchmark.json — https://github.com/data/agriculture_agroecology_gap_fill_benchmark.json
-  - **dataset**: GitHub OSS corpus data/architecture_building_science_gap_fill_benchmark.json — https://github.com/data/architecture_building_science_gap_fill_benchmark.json
-  - **dataset**: GitHub OSS corpus data/chaos_mediated_phase_transitions_benchmark.json — https://github.com/data/chaos_mediated_phase_transitions_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
+  - **dataset**: data/acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/acoustic_resonance_materials_benchmark.json
+  - **dataset**: data/agriculture_agroecology_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/agriculture_agroecology_gap_fill_benchmark.json
+  - **dataset**: data/architecture_building_science_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/architecture_building_science_gap_fill_benchmark.json
+  - **dataset**: data/chaos_mediated_phase_transitions_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/chaos_mediated_phase_transitions_benchmark.json
 
 ### Energy_Lean_Route_Credibility
 
@@ -1984,11 +1984,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/energy_neural_orbital_bridge_benchmark.json` · records=48 · median%=0.018002668701796887
 - Lean: `FSOT.Formal.EnergyNeuralOrbitalBridgePriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **dataset**: GitHub OSS corpus data/acoustic_resonance_materials_benchmark.json — https://github.com/data/acoustic_resonance_materials_benchmark.json
-  - **dataset**: GitHub OSS corpus data/agriculture_agroecology_gap_fill_benchmark.json — https://github.com/data/agriculture_agroecology_gap_fill_benchmark.json
-  - **dataset**: GitHub OSS corpus data/architecture_building_science_gap_fill_benchmark.json — https://github.com/data/architecture_building_science_gap_fill_benchmark.json
-  - **dataset**: GitHub OSS corpus data/chaos_mediated_phase_transitions_benchmark.json — https://github.com/data/chaos_mediated_phase_transitions_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
+  - **dataset**: data/acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/acoustic_resonance_materials_benchmark.json
+  - **dataset**: data/agriculture_agroecology_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/agriculture_agroecology_gap_fill_benchmark.json
+  - **dataset**: data/architecture_building_science_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/architecture_building_science_gap_fill_benchmark.json
+  - **dataset**: data/chaos_mediated_phase_transitions_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/chaos_mediated_phase_transitions_benchmark.json
 
 ### Engineering_Hardware_Code_Spine
 
@@ -2003,8 +2003,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **dataset**: GitHub OSS corpus torvalds/linux — https://github.com/torvalds/linux
   - **dataset**: GitHub OSS corpus rust-lang/rust — https://github.com/rust-lang/rust
   - **dataset**: GitHub OSS corpus parity/golden.json — https://github.com/parity/golden.json
-  - **vendor_cache**: results/competitive/beat_cuda.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/competitive/beat_cuda.json
-  - **vendor_cache**: results/parity/parity_ledger.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/parity/parity_ledger.json
+  - **vendor_cache**: results/competitive/beat_cuda.json — not tracked in this repository
+  - **vendor_cache**: results/parity/parity_ledger.json — not tracked in this repository
 
 ### Entomology
 
@@ -2094,8 +2094,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **unresolved**: existence_simulation_lib — Named in panel source; add explicit public URL if this is an external authority
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **vendor_cache**: stumped_observables_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/stumped_observables_reference.json
-  - **vendor_cache**: domain_orbital_prediction_report.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_orbital_prediction_report.json
+  - **vendor_cache**: stumped_observables_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_reference.json
+  - **vendor_cache**: domain_orbital_prediction_report.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_orbital_prediction_report.json
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
@@ -2113,7 +2113,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **unresolved**: existence_simulation_refinement_lib — Named in panel source; add explicit public URL if this is an external authority
   - **vendor_cache**: vendor/smiles/FSOT_SMILES_Lab_Dataset.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/smiles/FSOT_SMILES_Lab_Dataset.json
-  - **vendor_cache**: existence_simulation_failure_clusters_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/existence_simulation_failure_clusters_manifest.yaml
+  - **vendor_cache**: existence_simulation_failure_clusters_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/existence_simulation_failure_clusters_manifest.yaml
 
 ### Exogeology
 
@@ -2148,7 +2148,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.ExperimentalBaseMathematicsPanelPriors`
 - Public / portable anchors:
   - **unresolved**: tier92_base_analysis — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: tier93_experimental_base_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier93_experimental_base_cache.json
+  - **vendor_cache**: tier93_experimental_base_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/alternate_base_mathematics/tier93_experimental_base_cache.json
   - **ingest_script**: scripts/ingest_tier93_dual_wave.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier93_dual_wave.py
 
 ### External_OSS_Code_Genome
@@ -2188,7 +2188,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: fpc_temporal_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fpc_temporal_coupling_benchmark.json
+  - **vendor_cache**: fpc_temporal_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fpc_temporal_coupling_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2202,7 +2202,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/fpc_temporal_coupling_benchmark.json` · records=24 · median%=0.000637597
 - Lean: `FSOT.Formal.FPCTemporalCouplingPriors`
 - Public / portable anchors:
-  - **vendor_cache**: time_emergence_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/time_emergence_manifest.yaml
+  - **vendor_cache**: time_emergence_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/time_emergence_manifest.yaml
   - **unresolved**: fluidlink_fpc_timing — Named in panel source; add explicit public URL if this is an external authority
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2221,7 +2221,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.FsotAggregateOrganizedPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: unified_db_domain_index.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/unified_db_domain_index.json
+  - **vendor_cache**: unified_db_domain_index.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/unified_db_domain_index.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2256,7 +2256,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/fsot_c_pack_parity_panel_benchmark.json` · records=24 · median%=0.0
 - Public / portable anchors:
   - **unresolved**: C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\c\fsot_pack_parity\fsot_pack_parity.c — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
 
@@ -2274,12 +2274,12 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **unresolved**: C:\Users\damia\Desktop\gpu exparment for lean coq isabell andf star — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: results/competitive/beat_cuda.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/competitive/beat_cuda.json
+  - **vendor_cache**: results/competitive/beat_cuda.json — not tracked in this repository
   - **dataset**: GitHub OSS corpus parity/golden.json — https://github.com/parity/golden.json
   - **unresolved**: phase2_native_gpu/cuda/fsot_beat_cuda.cu — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: gate=0.50 no_exp — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: results/competitive/flash_attention_track.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/competitive/flash_attention_track.json
-  - **vendor_cache**: results/competitive/long_seq_and_norm.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/competitive/long_seq_and_norm.json
+  - **vendor_cache**: results/competitive/flash_attention_track.json — not tracked in this repository
+  - **vendor_cache**: results/competitive/long_seq_and_norm.json — not tracked in this repository
 
 ### FSOT_GPU_Engineering_Spine
 
@@ -2290,7 +2290,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: esp32_platform — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: coding_structure — Named in panel source; add explicit public URL if this is an external authority
   - **dataset**: GitHub OSS corpus parity/golden.json — https://github.com/parity/golden.json
-  - **vendor_cache**: results/parity/parity_ledger.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/parity/parity_ledger.json
+  - **vendor_cache**: results/parity/parity_ledger.json — not tracked in this repository
   - **dataset**: GitHub OSS corpus openssl/openssl — https://github.com/openssl/openssl
   - **dataset**: GitHub OSS corpus torvalds/linux — https://github.com/torvalds/linux
 
@@ -2300,8 +2300,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **unresolved**: C:\Users\damia\Desktop\gpu exparment for lean coq isabell andf star — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: results/parity/parity_ledger.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/parity/parity_ledger.json
-  - **vendor_cache**: results/industry_lm/fsot21_verify.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/industry_lm/fsot21_verify.json
+  - **vendor_cache**: results/parity/parity_ledger.json — not tracked in this repository
+  - **vendor_cache**: results/industry_lm/fsot21_verify.json — not tracked in this repository
   - **unresolved**: phase1_formal_gpu/ — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: phase2_native_gpu/cuda/ — Named in panel source; add explicit public URL if this is an external authority
 
@@ -2314,7 +2314,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: processor — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: ram — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: c_parity — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: results/phase0/fsot_scalar_gpu.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/phase0/fsot_scalar_gpu.json
+  - **vendor_cache**: results/phase0/fsot_scalar_gpu.json — not tracked in this repository
   - **dataset**: GitHub OSS corpus psutil/host — https://github.com/psutil/host
 
 ### FSOT_Interconnect_Coherence_Panel
@@ -2333,9 +2333,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: C:\Users\damia\Desktop\gpu exparment for lean coq isabell andf star — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: phase1_formal_gpu/lean/Trinary.lean — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: phase1_formal_gpu/isabelle/Trinary.thy — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: results/competitive/beat_cuda.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/competitive/beat_cuda.json
-  - **vendor_cache**: results/phase0/gpu_probe.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/phase0/gpu_probe.json
-  - **vendor_cache**: results/phase0/fsot_scalar_gpu.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/phase0/fsot_scalar_gpu.json
+  - **vendor_cache**: results/competitive/beat_cuda.json — not tracked in this repository
+  - **vendor_cache**: results/phase0/gpu_probe.json — not tracked in this repository
+  - **vendor_cache**: results/phase0/fsot_scalar_gpu.json — not tracked in this repository
   - **dataset**: GitHub OSS corpus psutil/host — https://github.com/psutil/host
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2348,7 +2348,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: C:\Users\damia\Desktop\gpu exparment for lean coq isabell andf star — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: phase1_formal_gpu/lean/GpuMemory.lean — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: phase1_formal_gpu/lean/Trinary.lean — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: results/phase0/gpu_probe.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/results/phase0/gpu_probe.json
+  - **vendor_cache**: results/phase0/gpu_probe.json — not tracked in this repository
   - **dataset**: GitHub OSS corpus parity/golden.json — https://github.com/parity/golden.json
 
 ### Federal_Science_Registry_Panel
@@ -2402,10 +2402,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/fluid_phase_current_spine_benchmark.json` · records=24 · median%=3.8622500000000005e-05
 - Lean: `FSOT.Formal.FluidPhaseCurrentSpinePriors`
 - Public / portable anchors:
-  - **vendor_cache**: time_emergence_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/time_emergence_simulation_benchmark.json
-  - **vendor_cache**: time_domain_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/time_domain_crosswalk_benchmark.json
-  - **vendor_cache**: fpc_temporal_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fpc_temporal_coupling_benchmark.json
-  - **vendor_cache**: reality_folding_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/reality_folding_spine_benchmark.json
+  - **vendor_cache**: time_emergence_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/time_emergence_simulation_benchmark.json
+  - **vendor_cache**: time_domain_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/time_domain_crosswalk_benchmark.json
+  - **vendor_cache**: fpc_temporal_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fpc_temporal_coupling_benchmark.json
+  - **vendor_cache**: reality_folding_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/reality_folding_spine_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **unresolved**: Time_Emergence_Simulation — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: Time_Domain_Crosswalk — Named in panel source; add explicit public URL if this is an external authority
@@ -2427,8 +2427,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.FluidSpacetimeObservableSpinePriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: fluid_phase_current_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fluid_phase_current_spine_benchmark.json
-  - **vendor_cache**: stumped_observables_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/stumped_observables_spine_benchmark.json
+  - **vendor_cache**: fluid_phase_current_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fluid_phase_current_spine_benchmark.json
+  - **vendor_cache**: stumped_observables_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_spine_benchmark.json
 
 ### Fluid_Spacetime_Prereg_Validation_Panel
 
@@ -2436,9 +2436,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.FluidSpacetimePreregValidationPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_manifest.yaml
-  - **vendor_cache**: hubble_dark_sector_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/hubble_dark_sector_crosswalk_benchmark.json
-  - **vendor_cache**: fpc_fluidlink_timing_deep_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fpc_fluidlink_timing_deep_panel_benchmark.json
+  - **vendor_cache**: preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/publication/zenodo_deposit_v1/files/data/preregistered_predictions_manifest.yaml
+  - **vendor_cache**: hubble_dark_sector_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/hubble_dark_sector_crosswalk_benchmark.json
+  - **vendor_cache**: fpc_fluidlink_timing_deep_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fpc_fluidlink_timing_deep_panel_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2448,8 +2448,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/fold_depth_metrics_benchmark.json` · records=51 · median%=0.025753835305195434
 - Lean: `FSOT.Formal.FoldDepthMetricsPriors`
 - Public / portable anchors:
-  - **vendor_cache**: compactification_ladder_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compactification_ladder_manifest.yaml
-  - **vendor_cache**: fsot_formula_spine.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_formula_spine.yaml
+  - **vendor_cache**: compactification_ladder_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/compactification_ladder_manifest.yaml
+  - **vendor_cache**: fsot_formula_spine.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_formula_spine.yaml
 
 ### Food_Microbiology
 
@@ -2465,7 +2465,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/formula_branching_fractal_benchmark.json` · records=380 · median%=0.038016537604979236
 - Lean: `FSOT.Formal.FormulaBranchingFractalPriors`
 - Public / portable anchors:
-  - **vendor_cache**: fsot_formula_spine.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_formula_spine.yaml
+  - **vendor_cache**: fsot_formula_spine.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_formula_spine.yaml
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **unresolved**: term1.quirkMod — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: term3.chaos_factor — Named in panel source; add explicit public URL if this is an external authority
@@ -2512,26 +2512,26 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: lean_priors — Named in panel source; add explicit public URL if this is an external authority
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **unresolved**: FSOT/Formal/*Priors.lean — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: data/*_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/*_benchmark.json
-  - **vendor_cache**: acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/acoustic_resonance_materials_benchmark.json
-  - **vendor_cache**: actuarial_science_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/actuarial_science_panel_benchmark.json
-  - **vendor_cache**: adjacent_rung_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/adjacent_rung_coupling_benchmark.json
-  - **vendor_cache**: adversarial_fractal_break_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/adversarial_fractal_break_benchmark.json
-  - **vendor_cache**: agriculture_agroecology_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/agriculture_agroecology_gap_fill_benchmark.json
-  - **vendor_cache**: ai_galactic_orbital_bridge_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/ai_galactic_orbital_bridge_benchmark.json
-  - **vendor_cache**: alternate_base_mathematics_explorer_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/alternate_base_mathematics_explorer_panel_benchmark.json
-  - **vendor_cache**: alternate_base_mathematics_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/alternate_base_mathematics_spine_benchmark.json
-  - **vendor_cache**: anthropology_extension_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/anthropology_extension_benchmark.json
-  - **vendor_cache**: architecture_building_science_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/architecture_building_science_gap_fill_benchmark.json
-  - **vendor_cache**: arxiv_brain_knowledge_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/arxiv_brain_knowledge_panel_benchmark.json
-  - **vendor_cache**: arxiv_gravitational_waves_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/arxiv_gravitational_waves_panel_benchmark.json
-  - **vendor_cache**: arxiv_primitives_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/arxiv_primitives_panel_benchmark.json
-  - **vendor_cache**: arxiv_primitives_v14_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/arxiv_primitives_v14_benchmark.json
-  - **vendor_cache**: astrophysical_structure_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/astrophysical_structure_crosswalk_benchmark.json
-  - **vendor_cache**: atmospheric_physics_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/atmospheric_physics_gap_fill_benchmark.json
-  - **vendor_cache**: atomic_physics_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/atomic_physics_gap_fill_benchmark.json
-  - **vendor_cache**: bibliography_corpus_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/bibliography_corpus_panel_benchmark.json
-  - **vendor_cache**: bibliography_lean_corpus_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/bibliography_lean_corpus_benchmark.json
+  - **vendor_cache**: data/*_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data
+  - **vendor_cache**: acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/acoustic_resonance_materials_benchmark.json
+  - **vendor_cache**: actuarial_science_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/actuarial_science_panel_benchmark.json
+  - **vendor_cache**: adjacent_rung_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adjacent_rung_coupling_benchmark.json
+  - **vendor_cache**: adversarial_fractal_break_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adversarial_fractal_break_benchmark.json
+  - **vendor_cache**: agriculture_agroecology_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/agriculture_agroecology_gap_fill_benchmark.json
+  - **vendor_cache**: ai_galactic_orbital_bridge_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/ai_galactic_orbital_bridge_benchmark.json
+  - **vendor_cache**: alternate_base_mathematics_explorer_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/alternate_base_mathematics_explorer_panel_benchmark.json
+  - **vendor_cache**: alternate_base_mathematics_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/alternate_base_mathematics_spine_benchmark.json
+  - **vendor_cache**: anthropology_extension_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/anthropology_extension_benchmark.json
+  - **vendor_cache**: architecture_building_science_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/architecture_building_science_gap_fill_benchmark.json
+  - **vendor_cache**: arxiv_brain_knowledge_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_brain_knowledge_panel_benchmark.json
+  - **vendor_cache**: arxiv_gravitational_waves_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_gravitational_waves_panel_benchmark.json
+  - **vendor_cache**: arxiv_primitives_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_panel_benchmark.json
+  - **vendor_cache**: arxiv_primitives_v14_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_v14_benchmark.json
+  - **vendor_cache**: astrophysical_structure_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/astrophysical_structure_crosswalk_benchmark.json
+  - **vendor_cache**: atmospheric_physics_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/atmospheric_physics_gap_fill_benchmark.json
+  - **vendor_cache**: atomic_physics_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/atomic_physics_gap_fill_benchmark.json
+  - **vendor_cache**: bibliography_corpus_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/bibliography_corpus_panel_benchmark.json
+  - **vendor_cache**: bibliography_lean_corpus_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/bibliography_lean_corpus_benchmark.json
   - … +18 more in JSON
 
 ### Formula_Precision_Spine
@@ -2554,7 +2554,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/founding_atmospheric_ozone_panel_benchmark.json` · records=5 · median%=0.023822
 - Lean: `FSOT.Formal.FoundingAtmosphericOzonePanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
+  - **dataset**: data/founding_unmapped_laws_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_26 — Named in panel source; add explicit public URL if this is an external authority
 
 ### Founding_Cosmic_Dust_Panel
@@ -2562,7 +2562,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/founding_cosmic_dust_panel_benchmark.json` · records=5 · median%=0.044121
 - Lean: `FSOT.Formal.FoundingCosmicDustPanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
+  - **dataset**: data/founding_unmapped_laws_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_20 — Named in panel source; add explicit public URL if this is an external authority
 
 ### Founding_Cosmic_Ray_Panel
@@ -2570,7 +2570,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/founding_cosmic_ray_panel_benchmark.json` · records=5 · median%=0.021221
 - Lean: `FSOT.Formal.FoundingCosmicRayPanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
+  - **dataset**: data/founding_unmapped_laws_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_12 — Named in panel source; add explicit public URL if this is an external authority
 
 ### Founding_Galactic_Halo_Rotation_Panel
@@ -2578,7 +2578,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/founding_galactic_halo_rotation_panel_benchmark.json` · records=5 · median%=0.025123
 - Lean: `FSOT.Formal.FoundingGalacticHaloRotationPanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
+  - **dataset**: data/founding_unmapped_laws_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_13 — Named in panel source; add explicit public URL if this is an external authority
 
 ### Founding_Pulsar_Glitch_Panel
@@ -2586,7 +2586,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/founding_pulsar_glitch_panel_benchmark.json` · records=5 · median%=0.044923
 - Lean: `FSOT.Formal.FoundingPulsarGlitchPanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
+  - **dataset**: data/founding_unmapped_laws_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_34 — Named in panel source; add explicit public URL if this is an external authority
 
 ### Founding_Quantum_Vacuum_Panel
@@ -2594,7 +2594,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/founding_quantum_vacuum_panel_benchmark.json` · records=5 · median%=0.047775
 - Lean: `FSOT.Formal.FoundingQuantumVacuumPanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
+  - **dataset**: data/founding_unmapped_laws_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_11 — Named in panel source; add explicit public URL if this is an external authority
 
 ### Founding_White_Dwarf_Cooling_Panel
@@ -2602,7 +2602,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/founding_white_dwarf_cooling_panel_benchmark.json` · records=5 · median%=0.044923
 - Lean: `FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
+  - **dataset**: data/founding_unmapped_laws_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_23 — Named in panel source; add explicit public URL if this is an external authority
 
 ### Fractal_Constant_Recursion
@@ -2610,7 +2610,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/fractal_constant_recursion_benchmark.json` · records=21 · median%=0.0
 - Lean: `FSOT.Formal.FractalConstantRecursionPriors`
 - Public / portable anchors:
-  - **vendor_cache**: fractal_constant_recursion.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fractal_constant_recursion.yaml
+  - **vendor_cache**: fractal_constant_recursion.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fractal_constant_recursion.yaml
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
 
 ### Fuel_Candidate_Prereg_Scaffold
@@ -2619,7 +2619,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.FuelCandidatePreregScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: tier65_prereg_channels_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier65_prereg_channels_manifest.yaml
+  - **vendor_cache**: tier65_prereg_channels_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/tier65_prereg_channels_manifest.yaml
 
 ### Fuel_Lab_Live_Panel
 
@@ -2629,10 +2629,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **vendor_cache**: I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full\vendor\application_wiring\tier88_cache\fuel_lab_live_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json
   - **unresolved**: desktop_fuel_lab_engine_simulator — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: compare_full_20260526.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compare_full_20260526.json
-  - **vendor_cache**: compare_optimax_wave_20260715.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compare_optimax_wave_20260715.json
-  - **vendor_cache**: material_compatibility_comparison.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/material_compatibility_comparison.json
-  - **vendor_cache**: refined_grounded_hemp.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/refined_grounded_hemp.json
+  - **vendor_cache**: compare_full_20260526.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/fuel_lab/engine_simulator/results/compare_full_20260526.json
+  - **vendor_cache**: compare_optimax_wave_20260715.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/fuel_lab/engine_simulator/results/compare_optimax_wave_20260715.json
+  - **vendor_cache**: material_compatibility_comparison.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/fuel_lab/engine_simulator/results/material_compatibility_comparison.json
+  - **vendor_cache**: refined_grounded_hemp.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/fuel_lab/engine_simulator/results/refined_grounded_hemp.json
   - **unresolved**: I:\FSOT-Physical-Archive\08_Verified-Desktop-Projects\fuel_lab\engine_simulator\REAL_DATA_PROVENANCE.md — Named in panel source; add explicit public URL if this is an external authority
   - **ingest_script**: scripts/ingest_tier88_application_wiring.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier88_application_wiring.py
 
@@ -2641,8 +2641,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/fuel_thermochemistry_public_anchors_benchmark.json` · records=24 · median%=0.0
 - Lean: `FSOT.Formal.FuelThermochemistryPublicAnchorsPriors`
 - Public / portable anchors:
-  - **vendor_cache**: thermochemistry_public_anchors.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/thermochemistry_public_anchors.json
-  - **vendor_cache**: public_fuel_property_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/public_fuel_property_catalog.json
+  - **vendor_cache**: thermochemistry_public_anchors.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fuel/thermochemistry_public_anchors.json
+  - **vendor_cache**: public_fuel_property_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fuel/public_fuel_property_catalog.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2656,7 +2656,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.FusionDecayChainPreregScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: cold_fusion_lab_synthesis_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cold_fusion_lab_synthesis_crosswalk_benchmark.json
+  - **vendor_cache**: cold_fusion_lab_synthesis_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cold_fusion_lab_synthesis_crosswalk_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2667,8 +2667,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.FusionLabCertificateSpinePriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/plasma_physics_benchmark.json
-  - **vendor_cache**: fuel_thermochemistry_public_anchors_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fuel_thermochemistry_public_anchors_benchmark.json
+  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/plasma_physics_benchmark.json
+  - **vendor_cache**: fuel_thermochemistry_public_anchors_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fuel_thermochemistry_public_anchors_benchmark.json
 
 ### Fusion_Lean_Route_Credibility
 
@@ -2710,8 +2710,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/gaia_astrometry_panel_deep_benchmark.json` · records=62 · median%=0.022461
 - Lean: `FSOT.Formal.GaiaAstrometryPanelDeepPriors`
 - Public / portable anchors:
-  - **vendor_cache**: galactic_structure_sample.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/galactic_structure_sample.json
-  - **vendor_cache**: galactic_structure_sample_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/galactic_structure_sample_benchmark.json
+  - **vendor_cache**: galactic_structure_sample.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/stellar_structures/galactic_structure_sample.json
+  - **vendor_cache**: galactic_structure_sample_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/galactic_structure_sample_benchmark.json
 
 ### Gaia_DR3_TAP_Deep
 
@@ -2763,7 +2763,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/h0_planck_benchmark.json` · records=20 · median%=0.0
 - Public / portable anchors:
   - **vendor_cache**: vendor/math_generator/benchmark_reports/hubble_report.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/math_generator/benchmark_reports/hubble_report.json
-  - **dataset**: GitHub OSS corpus scripts/math_generator_benchmark_formula_eval.py — https://github.com/scripts/math_generator_benchmark_formula_eval.py
+  - **dataset**: scripts/math_generator_benchmark_formula_eval.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/math_generator_benchmark_formula_eval.py
 
 ### HVAC_Thermal_Systems
 
@@ -2804,7 +2804,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.HeavyIonLabSynthesisPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: fusion_physics_public_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_physics_public_panel_benchmark.json
+  - **vendor_cache**: fusion_physics_public_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_physics_public_panel_benchmark.json
 
 ### Higgs_Branching
 
@@ -2837,8 +2837,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/hubble_bubble_tension_benchmark.json` · records=21 · median%=0.0
 - Lean: `FSOT.Formal.HubbleBubbleTensionPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus predictions/sector_h0_seed.json — https://github.com/predictions/sector_h0_seed.json
-  - **dataset**: GitHub OSS corpus scripts/build_cosmology_bubble_bleed_benchmark.py — https://github.com/scripts/build_cosmology_bubble_bleed_benchmark.py
+  - **dataset**: predictions/sector_h0_seed.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/predictions/sector_h0_seed.json
+  - **dataset**: scripts/build_cosmology_bubble_bleed_benchmark.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/build_cosmology_bubble_bleed_benchmark.py
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2856,8 +2856,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.HubbleDarkSectorCrosswalkPriors`
 - Public / portable anchors:
   - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\fluid_spacetime\cosmology_anomaly_deep_anchors.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json
-  - **vendor_cache**: hubble_bubble_tension_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/hubble_bubble_tension_benchmark.json
-  - **vendor_cache**: dark_sector_open_problems_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/dark_sector_open_problems_benchmark.json
+  - **vendor_cache**: hubble_bubble_tension_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/hubble_bubble_tension_benchmark.json
+  - **vendor_cache**: dark_sector_open_problems_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/dark_sector_open_problems_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
 
 ### Hybrid_FI_Sim_Multi_Hero_Panel
@@ -2865,7 +2865,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/hybrid_fi_sim_multi_hero_panel_benchmark.json` · records=32 · median%=0.0
 - Lean: `FSOT.Formal.HybridFiSimMultiHeroPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: multi_hero_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/multi_hero_benchmark.json
+  - **vendor_cache**: multi_hero_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/multi_hero_benchmark.json
   - **vendor_cache**: vendor/neuron_cohort/inconsistency_rerun_report.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/neuron_cohort/inconsistency_rerun_report.json
 
 ### Hybrid_FI_Sim_Stratum_Deep_Panel
@@ -2886,8 +2886,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/igem_parts_expanded_benchmark.json` · records=111 · median%=5.9357506661387664e-05
 - Lean: `FSOT.Formal.IGEMPartsExpandedPriors`
 - Public / portable anchors:
-  - **vendor_cache**: igem_synthetic_biology_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/igem_synthetic_biology_benchmark.json
-  - **vendor_cache**: igem_live_fasta_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/igem_live_fasta_benchmark.json
+  - **vendor_cache**: igem_synthetic_biology_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/igem_synthetic_biology_benchmark.json
+  - **vendor_cache**: igem_live_fasta_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/igem_live_fasta_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **api**: NCBI E-utilities / Gene / datasets — https://www.ncbi.nlm.nih.gov/books/NBK25501/
 
@@ -2907,7 +2907,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.InertialConfinementFusionPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/plasma_physics_benchmark.json
+  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/plasma_physics_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2935,7 +2935,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.InitiationTransformationArchetypePriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: symbolic_archetype_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/symbolic_archetype_panel_benchmark.json
+  - **vendor_cache**: symbolic_archetype_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/symbolic_archetype_panel_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -2952,7 +2952,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.InteractiveMediaPreregScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: tier65_prereg_channels_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier65_prereg_channels_manifest.yaml
+  - **vendor_cache**: tier65_prereg_channels_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/tier65_prereg_channels_manifest.yaml
 
 ### Interdisciplinary_Spine_Crosswalk
 
@@ -2960,7 +2960,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.InterdisciplinarySpineCrosswalkPriors`
 - Public / portable anchors:
   - **unresolved**: tier52-56_panels — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -3002,11 +3002,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/ionospheric_chemistry_coupling_benchmark.json` · records=85 · median%=0.0
 - Lean: `FSOT.Formal.IonosphericChemistryCouplingPriors`
 - Public / portable anchors:
-  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/plasma_physics_benchmark.json
-  - **vendor_cache**: geomagnetism_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/geomagnetism_benchmark.json
-  - **vendor_cache**: magnetosphere_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/magnetosphere_benchmark.json
-  - **vendor_cache**: space_weather_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/space_weather_benchmark.json
-  - **vendor_cache**: magnetosphere_extended_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/magnetosphere_extended_benchmark.json
+  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/plasma_physics_benchmark.json
+  - **vendor_cache**: geomagnetism_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/geomagnetism_benchmark.json
+  - **vendor_cache**: magnetosphere_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/magnetosphere_benchmark.json
+  - **vendor_cache**: space_weather_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/space_weather_benchmark.json
+  - **vendor_cache**: magnetosphere_extended_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/magnetosphere_extended_benchmark.json
 
 ### Island_Of_Stability_Deep_Panel
 
@@ -3021,7 +3021,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/knowledge_base_portable_bundle_panel_benchmark.json` · records=23 · median%=0.0
 - Lean: `FSOT.Formal.KnowledgeBasePortableBundlePanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: knowledge_base_formula_verification_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/knowledge_base_formula_verification_summary.json
+  - **vendor_cache**: knowledge_base_formula_verification_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/knowledge_base_formula_verification_summary.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
@@ -3039,8 +3039,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: fusion_lab_certificate_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_lab_certificate_spine_benchmark.json
-  - **vendor_cache**: periodic_table_completion_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/periodic_table_completion_spine_benchmark.json
+  - **vendor_cache**: fusion_lab_certificate_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_lab_certificate_spine_benchmark.json
+  - **vendor_cache**: periodic_table_completion_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/periodic_table_completion_spine_benchmark.json
 
 ### Law_Policy
 
@@ -3131,9 +3131,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier94_longevity_genetics.py`
 - Lean: `FSOT.Formal.LongevityConsciousnessCouplingPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: tier94_megadeep_extreme_ncbi_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_megadeep_extreme_ncbi_cache.json
-  - **vendor_cache**: tier93_consciousness_genetics_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier93_consciousness_genetics_cache.json
-  - **vendor_cache**: consciousness_reference_observables.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/consciousness_reference_observables.json
+  - **vendor_cache**: tier94_megadeep_extreme_ncbi_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_megadeep_extreme_ncbi_cache.json
+  - **vendor_cache**: tier93_consciousness_genetics_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/consciousness_genetics/tier93_consciousness_genetics_cache.json
+  - **vendor_cache**: consciousness_reference_observables.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_reference_observables.json
   - **ingest_script**: scripts/ingest_tier94_longevity_genetics.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier94_longevity_genetics.py
 
 ### Longevity_Extreme_Species_Panel
@@ -3142,8 +3142,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier94_longevity_genetics.py`
 - Lean: `FSOT.Formal.LongevityExtremeSpeciesPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: tier94_extreme_species_ncbi_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_extreme_species_ncbi_cache.json
-  - **vendor_cache**: tier93_consciousness_genetics_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier93_consciousness_genetics_cache.json
+  - **vendor_cache**: tier94_extreme_species_ncbi_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_extreme_species_ncbi_cache.json
+  - **vendor_cache**: tier93_consciousness_genetics_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/consciousness_genetics/tier93_consciousness_genetics_cache.json
   - **ingest_script**: scripts/ingest_tier94_longevity_genetics.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier94_longevity_genetics.py
 
 ### Longevity_Genetic_Mechanics_Panel
@@ -3152,7 +3152,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier94_longevity_genetics.py`
 - Lean: `FSOT.Formal.LongevityGeneticMechanicsPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: tier94_anage_longevity_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_anage_longevity_catalog.json
+  - **vendor_cache**: tier94_anage_longevity_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_anage_longevity_catalog.json
   - **ingest_script**: scripts/ingest_tier94_longevity_genetics.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier94_longevity_genetics.py
 
 ### Longevity_MegaDeep_NCBI_Panel
@@ -3161,7 +3161,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier94_longevity_genetics.py`
 - Lean: `FSOT.Formal.LongevityMegaDeepNcbiPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: tier94_megadeep_extreme_ncbi_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_megadeep_extreme_ncbi_cache.json
+  - **vendor_cache**: tier94_megadeep_extreme_ncbi_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_megadeep_extreme_ncbi_cache.json
   - **ingest_script**: scripts/ingest_tier94_longevity_genetics.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier94_longevity_genetics.py
 
 ### Longevity_Telomere_Repair_Panel
@@ -3170,8 +3170,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier94_longevity_genetics.py`
 - Lean: `FSOT.Formal.LongevityTelomereRepairPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: longevity_telomere_repair_anchors.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/longevity_telomere_repair_anchors.json
-  - **vendor_cache**: tier94_telomere_repair_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier94_telomere_repair_cache.json
+  - **vendor_cache**: longevity_telomere_repair_anchors.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/longevity_telomere_repair_anchors.json
+  - **vendor_cache**: tier94_telomere_repair_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_telomere_repair_cache.json
   - **ingest_script**: scripts/ingest_tier94_longevity_genetics.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier94_longevity_genetics.py
 
 ### MPCORB_Minor_Planet_Catalog
@@ -3198,7 +3198,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.MagneticConfinementFusionPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/plasma_physics_benchmark.json
+  - **vendor_cache**: plasma_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/plasma_physics_benchmark.json
 
 ### Magnetosphere_Extended
 
@@ -3284,7 +3284,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.MaterialInSilicoScreeningScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: tier65_prereg_channels_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier65_prereg_channels_manifest.yaml
+  - **vendor_cache**: tier65_prereg_channels_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/tier65_prereg_channels_manifest.yaml
 
 ### Material_Property_Verification_Scaffold
 
@@ -3308,9 +3308,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/materials_genome_crosswalk_benchmark.json` · records=38 · median%=0.0
 - Lean: `FSOT.Formal.MaterialsGenomeCrosswalkPriors`
 - Public / portable anchors:
-  - **vendor_cache**: materials_engineering_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/materials_engineering_benchmark.json
-  - **vendor_cache**: quantum_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/quantum_materials_benchmark.json
-  - **vendor_cache**: materials_species_bridge_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/materials_species_bridge_benchmark.json
+  - **vendor_cache**: materials_engineering_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/materials_engineering_benchmark.json
+  - **vendor_cache**: quantum_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/quantum_materials_benchmark.json
+  - **vendor_cache**: materials_species_bridge_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/materials_species_bridge_benchmark.json
 
 ### Materials_Project_Live_Panel
 
@@ -3399,19 +3399,19 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/mechanistic_coupling_benchmark.json` · records=39 · median%=0.0073836551816993294
 - Lean: `FSOT.Formal.MechanisticCouplingPriors`
 - Public / portable anchors:
-  - **vendor_cache**: mechanistic_coupling_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/mechanistic_coupling_manifest.yaml
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
+  - **vendor_cache**: mechanistic_coupling_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/mechanistic_coupling_manifest.yaml
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
 
 ### Medical_Galactic_Orbital_Bridge
 
 - Benchmark: `data/medical_galactic_orbital_bridge_benchmark.json` · records=48 · median%=0.010717743028516056
 - Lean: `FSOT.Formal.MedicalGalacticOrbitalBridgePriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **dataset**: GitHub OSS corpus data/adjacent_rung_coupling_benchmark.json — https://github.com/data/adjacent_rung_coupling_benchmark.json
-  - **dataset**: GitHub OSS corpus data/adversarial_fractal_break_benchmark.json — https://github.com/data/adversarial_fractal_break_benchmark.json
-  - **dataset**: GitHub OSS corpus data/biological_cuda_physarum_benchmark.json — https://github.com/data/biological_cuda_physarum_benchmark.json
-  - **dataset**: GitHub OSS corpus data/biology_developmental_structural_depth_panel_benchmark.json — https://github.com/data/biology_developmental_structural_depth_panel_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
+  - **dataset**: data/adjacent_rung_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adjacent_rung_coupling_benchmark.json
+  - **dataset**: data/adversarial_fractal_break_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adversarial_fractal_break_benchmark.json
+  - **dataset**: data/biological_cuda_physarum_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biological_cuda_physarum_benchmark.json
+  - **dataset**: data/biology_developmental_structural_depth_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biology_developmental_structural_depth_panel_benchmark.json
   - **unresolved**: cross_scale_motif — Named in panel source; add explicit public URL if this is an external authority
 
 ### Metamaterial_Fluid_Design_Prereg_Scaffold
@@ -3420,7 +3420,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: term3_acoustic_bleed_depth_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/term3_acoustic_bleed_depth_benchmark.json
+  - **vendor_cache**: term3_acoustic_bleed_depth_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/term3_acoustic_bleed_depth_benchmark.json
 
 ### Meteorology
 
@@ -3436,11 +3436,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors`
 - Public / portable anchors:
   - **vendor_cache**: G:\FSOT-PublicData\anomaly_observables\consciousness\tier90_microtubule_observer_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/anomaly_observables/consciousness/tier90_microtubule_observer_cache.json
-  - **dataset**: GitHub OSS corpus data/consciousness_econ_benchmark.json — https://github.com/data/consciousness_econ_benchmark.json
-  - **dataset**: GitHub OSS corpus data/quantum_computing_math_depth_panel_benchmark.json — https://github.com/data/quantum_computing_math_depth_panel_benchmark.json
-  - **dataset**: GitHub OSS corpus data/observer_channel_derivation_benchmark.json — https://github.com/data/observer_channel_derivation_benchmark.json
+  - **dataset**: data/consciousness_econ_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_econ_benchmark.json
+  - **dataset**: data/quantum_computing_math_depth_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/quantum_computing_math_depth_panel_benchmark.json
+  - **dataset**: data/observer_channel_derivation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/observer_channel_derivation_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: GitHub OSS corpus data/canonical_constants.json — https://github.com/data/canonical_constants.json
+  - **dataset**: data/canonical_constants.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/canonical_constants.json
   - **ingest_script**: scripts/ingest_tier90_consciousness_expansion.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier90_consciousness_expansion.py
 
 ### Music_Harmonics_Public_Panel
@@ -3449,7 +3449,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.MusicHarmonicsPublicPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/acoustic_resonance_materials_benchmark.json
+  - **vendor_cache**: acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/acoustic_resonance_materials_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -3484,7 +3484,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.NasaDonkiSolarPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json
+  - **vendor_cache**: https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json — https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json
   - **ingest_script**: scripts/ingest_tier80_government_open_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier80_government_open_data.py
 
 ### NASA_Exoplanet_Archive
@@ -3557,7 +3557,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.NaturalFormationElementSimulationPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: fusion_physics_public_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_physics_public_panel_benchmark.json
+  - **vendor_cache**: fusion_physics_public_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_physics_public_panel_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
 
 ### Network_Internet_Protocols
@@ -3589,11 +3589,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/neural_galactic_orbital_bridge_benchmark.json` · records=49 · median%=0.018002668701796568
 - Lean: `FSOT.Formal.NeuralGalacticOrbitalBridgePriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **dataset**: GitHub OSS corpus data/arxiv_brain_knowledge_panel_benchmark.json — https://github.com/data/arxiv_brain_knowledge_panel_benchmark.json
-  - **dataset**: GitHub OSS corpus data/arxiv_primitives_panel_benchmark.json — https://github.com/data/arxiv_primitives_panel_benchmark.json
-  - **dataset**: GitHub OSS corpus data/arxiv_primitives_v14_benchmark.json — https://github.com/data/arxiv_primitives_v14_benchmark.json
-  - **dataset**: GitHub OSS corpus data/binary_decoder_rendlesham_benchmark.json — https://github.com/data/binary_decoder_rendlesham_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
+  - **dataset**: data/arxiv_brain_knowledge_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_brain_knowledge_panel_benchmark.json
+  - **dataset**: data/arxiv_primitives_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_panel_benchmark.json
+  - **dataset**: data/arxiv_primitives_v14_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/arxiv_primitives_v14_benchmark.json
+  - **dataset**: data/binary_decoder_rendlesham_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/binary_decoder_rendlesham_benchmark.json
   - **unresolved**: cross_scale_motif — Named in panel source; add explicit public URL if this is an external authority
 
 ### Neuroeconomics
@@ -3639,8 +3639,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **vendor_cache**: vendor/trinary_os/isa/fsotb_opcode_registry.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/isa/fsotb_opcode_registry.json
   - **vendor_cache**: vendor/trinary_os/target/ — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/target/
-  - **dataset**: GitHub OSS corpus docs/NEURON_ZIG_TO_OS_ROADMAP.md — https://github.com/docs/NEURON_ZIG_TO_OS_ROADMAP.md
-  - **dataset**: GitHub OSS corpus docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md — https://github.com/docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md
+  - **dataset**: docs/NEURON_ZIG_TO_OS_ROADMAP.md — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/NEURON_ZIG_TO_OS_ROADMAP.md
+  - **dataset**: docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md
   - **unresolved**: RELATED_EMBODIMENTS.md — Named in panel source; add explicit public URL if this is an external authority
   - **url**: https://github.com/dappalumbo91/fsot-neuron-zig — https://github.com/dappalumbo91/fsot-neuron-zig
 
@@ -3718,10 +3718,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **vendor_cache**: vendor\public_data\oph_challenge_public_anchors.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/oph_challenge_public_anchors.json
   - **url**: https://x.com/muellerberndt/status/2079877767416709231 — https://x.com/muellerberndt/status/2079877767416709231
   - **url**: https://github.com/FloatingPragma/observer-patch-holography — https://github.com/FloatingPragma/observer-patch-holography
-  - **dataset**: GitHub OSS corpus docs/OPH_FSOT_CHALLENGE_RESPONSE.md — https://github.com/docs/OPH_FSOT_CHALLENGE_RESPONSE.md
-  - **dataset**: GitHub OSS corpus docs/T3_T4_GR_SM_DEEPENING.md — https://github.com/docs/T3_T4_GR_SM_DEEPENING.md
-  - **dataset**: GitHub OSS corpus docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md — https://github.com/docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md
-  - **dataset**: GitHub OSS corpus docs/TOE_CLAIM_BOUNDARIES.md — https://github.com/docs/TOE_CLAIM_BOUNDARIES.md
+  - **dataset**: docs/OPH_FSOT_CHALLENGE_RESPONSE.md — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/OPH_FSOT_CHALLENGE_RESPONSE.md
+  - **dataset**: docs/T3_T4_GR_SM_DEEPENING.md — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/T3_T4_GR_SM_DEEPENING.md
+  - **dataset**: docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md
+  - **dataset**: docs/TOE_CLAIM_BOUNDARIES.md — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/docs/TOE_CLAIM_BOUNDARIES.md
   - **dataset**: Particle Data Group Review of Particle Physics — https://pdg.lbl.gov/
 
 ### OSTI_DOE_Science_Panel
@@ -3739,8 +3739,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/observer_channel_derivation_benchmark.json` · records=372 · median%=0.052510282019890844
 - Lean: `FSOT.Formal.ObserverChannelDerivationPriors`
 - Public / portable anchors:
-  - **vendor_cache**: fsot_formula_spine.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_formula_spine.yaml
-  - **vendor_cache**: extension_domains_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/extension_domains_manifest.yaml
+  - **vendor_cache**: fsot_formula_spine.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_formula_spine.yaml
+  - **vendor_cache**: extension_domains_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/extension_domains_manifest.yaml
   - **unresolved**: FSOT.Formal.Scalar.consciousness_factor — Named in panel source; add explicit public URL if this is an external authority
 
 ### Observer_Effect_Cross_Species_Panel
@@ -3749,8 +3749,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier90_consciousness_expansion.py`
 - Lean: `FSOT.Formal.ObserverEffectCrossSpeciesPanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/consciousness_reference_observables.json — https://github.com/data/consciousness_reference_observables.json
-  - **dataset**: GitHub OSS corpus data/observer_channel_derivation_benchmark.json — https://github.com/data/observer_channel_derivation_benchmark.json
+  - **dataset**: data/consciousness_reference_observables.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_reference_observables.json
+  - **dataset**: data/observer_channel_derivation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/observer_channel_derivation_benchmark.json
   - **unresolved**: FSOT.Formal.Scalar.consciousness_factor — Named in panel source; add explicit public URL if this is an external authority
   - **ingest_script**: scripts/ingest_tier90_consciousness_expansion.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier90_consciousness_expansion.py
 
@@ -3913,11 +3913,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/particle_neural_orbital_bridge_benchmark.json` · records=48 · median%=0.03326447040434832
 - Lean: `FSOT.Formal.ParticleNeuralOrbitalBridgePriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **dataset**: GitHub OSS corpus data/acoustic_resonance_materials_benchmark.json — https://github.com/data/acoustic_resonance_materials_benchmark.json
-  - **dataset**: GitHub OSS corpus data/adjacent_rung_coupling_benchmark.json — https://github.com/data/adjacent_rung_coupling_benchmark.json
-  - **dataset**: GitHub OSS corpus data/astrophysical_structure_crosswalk_benchmark.json — https://github.com/data/astrophysical_structure_crosswalk_benchmark.json
-  - **dataset**: GitHub OSS corpus data/bibliography_lean_corpus_benchmark.json — https://github.com/data/bibliography_lean_corpus_benchmark.json
+  - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/domain_coupling_simulation_benchmark.json
+  - **dataset**: data/acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/acoustic_resonance_materials_benchmark.json
+  - **dataset**: data/adjacent_rung_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adjacent_rung_coupling_benchmark.json
+  - **dataset**: data/astrophysical_structure_crosswalk_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/astrophysical_structure_crosswalk_benchmark.json
+  - **dataset**: data/bibliography_lean_corpus_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/bibliography_lean_corpus_benchmark.json
 
 ### Particle_Physics
 
@@ -3941,7 +3941,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.PeriodicExtensionDecayTopologyScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: fusion_decay_chain_prereg_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_decay_chain_prereg_scaffold_benchmark.json
+  - **vendor_cache**: fusion_decay_chain_prereg_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_decay_chain_prereg_scaffold_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -3954,7 +3954,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: fusion_physics_public_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_physics_public_panel_benchmark.json
+  - **vendor_cache**: fusion_physics_public_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_physics_public_panel_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
 
 ### Periodic_Table_Extension_Closure_Spine
@@ -3964,8 +3964,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: superheavy_island_completion_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/superheavy_island_completion_spine_benchmark.json
-  - **vendor_cache**: periodic_table_completion_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/periodic_table_completion_spine_benchmark.json
+  - **vendor_cache**: superheavy_island_completion_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/superheavy_island_completion_spine_benchmark.json
+  - **vendor_cache**: periodic_table_completion_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/periodic_table_completion_spine_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
 
 ### Periodic_Table_Public_Panel
@@ -3998,7 +3998,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/phi_morphogenetic_scaling_benchmark.json` · records=289 · median%=0.01760779720633292
 - Lean: `FSOT.Formal.PhiMorphogeneticScalingPriors`
 - Public / portable anchors:
-  - **vendor_cache**: fsot_species_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_species_catalog.json
+  - **vendor_cache**: fsot_species_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/species/fsot_species_catalog.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
 
 ### Physarum_Biological_CUDA_Panel
@@ -4025,9 +4025,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/portable_clone_verify_benchmark.json` · records=419 · median%=0.0
 - Lean: `FSOT.Formal.PortableCloneVerifyPriors`
 - Public / portable anchors:
-  - **vendor_cache**: external_data_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/external_data_manifest.yaml
-  - **vendor_cache**: extension_domains_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/extension_domains_manifest.yaml
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
+  - **vendor_cache**: external_data_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/external_data_manifest.yaml
+  - **vendor_cache**: extension_domains_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/extension_domains_manifest.yaml
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
   - **vendor_cache**: vendor/smiles/FSOT_SMILES_Lab_Dataset.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/smiles/FSOT_SMILES_Lab_Dataset.json
   - **vendor_cache**: vendor/evolution/biological_mt_operons.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/evolution/biological_mt_operons.json
   - **vendor_cache**: vendor/linguistics/data/LINGUISTIC_TARGETS.csv — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/linguistics/data/LINGUISTIC_TARGETS.csv
@@ -4037,7 +4037,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **vendor_cache**: vendor/trinary_os/target — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/target
   - **vendor_cache**: vendor/species/fsot_species_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/species/fsot_species_catalog.json
   - **vendor_cache**: vendor/igem/igem_parts_registry.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/igem/igem_parts_registry.json
-  - **dataset**: GitHub OSS corpus vendor/reference_anchors — https://github.com/vendor/reference_anchors
+  - **dataset**: vendor/reference_anchors — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/reference_anchors
   - **vendor_cache**: vendor/fsot_aggregate/FSOT_UNIFIED.db — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_aggregate/FSOT_UNIFIED.db
   - **vendor_cache**: vendor/neuron_cohort/cells.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/neuron_cohort/cells.json
   - **vendor_cache**: vendor/knowledge_base/kb_portable_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/knowledge_base/kb_portable_summary.json
@@ -4047,7 +4047,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **vendor_cache**: vendor/math_generator/datasets/airfoil_self_noise.csv — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/math_generator/datasets/airfoil_self_noise.csv
   - **vendor_cache**: vendor/trinary_os/fixtures — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/fixtures
   - **vendor_cache**: vendor/trinary_os/round_trip — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/round_trip
-  - **dataset**: GitHub OSS corpus vendor/tokenization — https://github.com/vendor/tokenization
+  - **dataset**: vendor/tokenization — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/tokenization
   - **vendor_cache**: vendor/trinary_hardware/motif_influence_profile_stable.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_hardware/motif_influence_profile_stable.json
   - **vendor_cache**: vendor/intrinsic_llm/benchmark_results_final.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/intrinsic_llm/benchmark_results_final.json
   - … +17 more in JSON
@@ -4077,29 +4077,29 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.PreregisteredOutcomeTrackingPriors`
 - Public / portable anchors:
   - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\data\preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/preregistered_predictions_manifest.yaml
-  - **vendor_cache**: preregistered_predictions_verification_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_verification_scaffold_benchmark.json
+  - **vendor_cache**: preregistered_predictions_verification_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/preregistered_predictions_verification_scaffold_benchmark.json
 
 ### Preregistered_Predictions
 
 - Benchmark: `data/preregistered_predictions_benchmark.json` · records=35 · median%=0.02009823784840936
 - Lean: `FSOT.Formal.PreregisteredPredictionsPriors`
 - Public / portable anchors:
-  - **vendor_cache**: preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_manifest.yaml
+  - **vendor_cache**: preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/publication/zenodo_deposit_v1/files/data/preregistered_predictions_manifest.yaml
 
 ### Preregistered_Predictions_Verification_Scaffold
 
 - Benchmark: `data/preregistered_predictions_verification_scaffold_benchmark.json` · records=60 · median%=0.0
 - Lean: `FSOT.Formal.PreregisteredPredictionsVerificationScaffoldPriors`
 - Public / portable anchors:
-  - **vendor_cache**: preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_manifest.yaml
-  - **vendor_cache**: preregistered_predictions_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_benchmark.json
+  - **vendor_cache**: preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/publication/zenodo_deposit_v1/files/data/preregistered_predictions_manifest.yaml
+  - **vendor_cache**: preregistered_predictions_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/preregistered_predictions_benchmark.json
 
 ### Programming_Language_Laws
 
 - Benchmark: `data/programming_language_laws_benchmark.json` · records=105 · median%=0.0
 - Lean: `FSOT.Formal.ProgrammingLanguageLawsPriors`
 - Public / portable anchors:
-  - **vendor_cache**: PROGRAMMING_LANGUAGE_RULES.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/PROGRAMMING_LANGUAGE_RULES.json
+  - **vendor_cache**: PROGRAMMING_LANGUAGE_RULES.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/math_generator/rules/PROGRAMMING_LANGUAGE_RULES.json
   - **unresolved**: math_generator_rules_eval — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: linguistics_formal — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: linguistics_formal_benchmark — Named in panel source; add explicit public URL if this is an external authority
@@ -4113,18 +4113,18 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/proof_carrying_code_genome_benchmark.json` · records=25 · median%=0.0051685586271776884
 - Lean: `FSOT.Formal.ProofCarryingCodeGenomePriors`
 - Public / portable anchors:
-  - **vendor_cache**: external_oss_code_genome_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/external_oss_code_genome_benchmark.json
-  - **vendor_cache**: rust_lean_bridge_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/rust_lean_bridge_benchmark.json
-  - **vendor_cache**: computational_reasoning_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/computational_reasoning_benchmark.json
+  - **vendor_cache**: external_oss_code_genome_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/external_oss_code_genome_benchmark.json
+  - **vendor_cache**: rust_lean_bridge_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/rust_lean_bridge_benchmark.json
+  - **vendor_cache**: computational_reasoning_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/computational_reasoning_benchmark.json
 
 ### Proof_Ledger_Closure_Spine
 
 - Benchmark: `data/proof_ledger_closure_spine_benchmark.json` · records=17 · median%=0.0
 - Lean: `FSOT.Formal.ProofLedgerClosureSpinePriors`
 - Public / portable anchors:
-  - **vendor_cache**: proof_ledger.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/proof_ledger.yaml
-  - **vendor_cache**: fsot_verification_progress.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_verification_progress.yaml
-  - **vendor_cache**: certificate.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/certificate.json
+  - **vendor_cache**: proof_ledger.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/proof_ledger.yaml
+  - **vendor_cache**: fsot_verification_progress.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_verification_progress.yaml
+  - **vendor_cache**: certificate.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/certificate.json
 
 ### Proton_Lean_Route_Credibility
 
@@ -4180,11 +4180,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **vendor_cache**: vendor/public_data/pubchem/pubchem_culinary_expansion.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/pubchem/pubchem_culinary_expansion.json
   - **vendor_cache**: vendor/public_data/pubchem/pubchem_auto_expansion.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/pubchem/pubchem_auto_expansion.json
   - **vendor_cache**: vendor/public_data/pubchem/pubchem_auto_seed_manifest.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/pubchem/pubchem_auto_seed_manifest.json
-  - **vendor_cache**: pubchem_compound_properties_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/pubchem_compound_properties_benchmark.json
-  - **vendor_cache**: pharmacology_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/pharmacology_benchmark.json
-  - **vendor_cache**: culinary_arts_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/culinary_arts_benchmark.json
-  - **vendor_cache**: maillard_chemistry_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/maillard_chemistry_gap_fill_benchmark.json
-  - **vendor_cache**: food_microbiology_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/food_microbiology_gap_fill_benchmark.json
+  - **vendor_cache**: pubchem_compound_properties_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/pubchem_compound_properties_benchmark.json
+  - **vendor_cache**: pharmacology_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/pharmacology_benchmark.json
+  - **vendor_cache**: culinary_arts_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/culinary_arts_benchmark.json
+  - **vendor_cache**: maillard_chemistry_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/maillard_chemistry_gap_fill_benchmark.json
+  - **vendor_cache**: food_microbiology_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/food_microbiology_gap_fill_benchmark.json
   - **ingest_script**: scripts/ingest_tier68_live_ingest.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier68_live_ingest.py
 
 ### PubChem_Stability_Panel
@@ -4193,7 +4193,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.PubChemStabilityPanelPriors`
 - Public / portable anchors:
   - **vendor_cache**: vendor/public_data/pubchem/pubchem_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/pubchem/pubchem_summary.json
-  - **vendor_cache**: pubchem_compound_properties_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/pubchem_compound_properties_benchmark.json
+  - **vendor_cache**: pubchem_compound_properties_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/pubchem_compound_properties_benchmark.json
 
 ### Public_Verifiable_Spine
 
@@ -4323,7 +4323,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.RdIntervalTighteningPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: cosmology_anomaly_deep_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cosmology_anomaly_deep_panel_benchmark.json
+  - **vendor_cache**: cosmology_anomaly_deep_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_anomaly_deep_panel_benchmark.json
   - **unresolved**: FSOT.Formal.Cosmology — Named in panel source; add explicit public URL if this is an external authority
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -4349,10 +4349,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/reality_folding_spine_benchmark.json` · records=24 · median%=0.000637597
 - Lean: `FSOT.Formal.RealityFoldingSpinePriors`
 - Public / portable anchors:
-  - **vendor_cache**: compactification_ladder_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/compactification_ladder_benchmark.json
-  - **vendor_cache**: adjacent_rung_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/adjacent_rung_coupling_benchmark.json
-  - **vendor_cache**: fold_depth_metrics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fold_depth_metrics_benchmark.json
-  - **vendor_cache**: toe_unification_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/toe_unification_spine_benchmark.json
+  - **vendor_cache**: compactification_ladder_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/compactification_ladder_benchmark.json
+  - **vendor_cache**: adjacent_rung_coupling_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/adjacent_rung_coupling_benchmark.json
+  - **vendor_cache**: fold_depth_metrics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fold_depth_metrics_benchmark.json
+  - **vendor_cache**: toe_unification_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/toe_unification_spine_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **unresolved**: Compactification_Ladder — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: Adjacent_Rung_Coupling — Named in panel source; add explicit public URL if this is an external authority
@@ -4426,8 +4426,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.SH0ESRefinedPriors`
 - Public / portable anchors:
   - **literature**: SH0ES / local distance ladder H0 (Riess et al. series) — https://ui.adsabs.harvard.edu/
-  - **dataset**: GitHub OSS corpus data/sh0es_host_coordinates.json — https://github.com/data/sh0es_host_coordinates.json
-  - **dataset**: GitHub OSS corpus predictions/sector_h0_seed.json — https://github.com/predictions/sector_h0_seed.json
+  - **dataset**: data/sh0es_host_coordinates.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/sh0es_host_coordinates.json
+  - **dataset**: predictions/sector_h0_seed.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/predictions/sector_h0_seed.json
   - **ingest_script**: scripts/ingest_anomaly_public_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_anomaly_public_data.py
 
 ### SIMBAD_Stellar_Identity_Deep
@@ -4594,7 +4594,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_planetary_jpl.py`
 - Lean: `FSOT.Formal.SolarSystemStructureDeepPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/planetary_jpl_cache.json — https://github.com/data/planetary_jpl_cache.json
+  - **dataset**: data/planetary_jpl_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/planetary_jpl_cache.json
   - **api**: JPL Solar System Dynamics / Horizons — https://ssd.jpl.nasa.gov/
   - **ingest_script**: scripts/ingest_planetary_jpl.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_planetary_jpl.py
 
@@ -4682,7 +4682,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.StellarMultiplicityCatalogPriors`
 - Public / portable anchors:
   - **vendor_cache**: vendor/stellar_structures/public_multiplicity_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/stellar_structures/public_multiplicity_catalog.json
-  - **vendor_cache**: wds_multiplicity_expanded.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/wds_multiplicity_expanded.json
+  - **vendor_cache**: wds_multiplicity_expanded.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/stellar_structures/wds_multiplicity_expanded.json
 
 ### Stellar_Multiplicity_Live_Deep
 
@@ -4690,8 +4690,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier58_live_catalogs.py`
 - Lean: `FSOT.Formal.StellarMultiplicityLiveDeepPriors`
 - Public / portable anchors:
-  - **vendor_cache**: stellar_multiplicity_catalog_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/stellar_multiplicity_catalog_benchmark.json
-  - **vendor_cache**: gwosc_live_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/gwosc_live_cache.json
+  - **vendor_cache**: stellar_multiplicity_catalog_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stellar_multiplicity_catalog_benchmark.json
+  - **vendor_cache**: gwosc_live_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/stellar_structures/gwosc_live_cache.json
   - **ingest_script**: scripts/ingest_tier58_live_catalogs.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier58_live_catalogs.py
 
 ### Stumped_Observables_Panel
@@ -4699,10 +4699,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/stumped_observables_panel_benchmark.json` · records=22 · median%=0.007871
 - Lean: `FSOT.Formal.StumpedObservablesPanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/stumped_observables_reference.json — https://github.com/data/stumped_observables_reference.json
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
-  - **dataset**: GitHub OSS corpus scripts/higgs_mass_formula_eval.py — https://github.com/scripts/higgs_mass_formula_eval.py
-  - **dataset**: GitHub OSS corpus predictions/sector_h0_seed.json — https://github.com/predictions/sector_h0_seed.json
+  - **dataset**: data/stumped_observables_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_reference.json
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
+  - **dataset**: scripts/higgs_mass_formula_eval.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/higgs_mass_formula_eval.py
+  - **dataset**: predictions/sector_h0_seed.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/predictions/sector_h0_seed.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -4712,10 +4712,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/stumped_observables_spine_benchmark.json` · records=24 · median%=3.8622500000000005e-05
 - Lean: `FSOT.Formal.StumpedObservablesSpinePriors`
 - Public / portable anchors:
-  - **vendor_cache**: stumped_observables_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/stumped_observables_panel_benchmark.json
-  - **vendor_cache**: hubble_bubble_tension_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/hubble_bubble_tension_benchmark.json
-  - **vendor_cache**: dark_sector_open_problems_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/dark_sector_open_problems_benchmark.json
-  - **vendor_cache**: cosmology_anomalies_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cosmology_anomalies_benchmark.json
+  - **vendor_cache**: stumped_observables_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/stumped_observables_panel_benchmark.json
+  - **vendor_cache**: hubble_bubble_tension_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/hubble_bubble_tension_benchmark.json
+  - **vendor_cache**: dark_sector_open_problems_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/dark_sector_open_problems_benchmark.json
+  - **vendor_cache**: cosmology_anomalies_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_anomalies_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **unresolved**: Stumped_Observables_Panel — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: Hubble_Bubble_Tension — Named in panel source; add explicit public URL if this is an external authority
@@ -4739,7 +4739,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.SuperheavyElementStabilityPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: particle_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/particle_physics_benchmark.json
+  - **vendor_cache**: particle_physics_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/particle_physics_benchmark.json
 
 ### Superheavy_Island_Completion_Spine
 
@@ -4749,7 +4749,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: lab_synthesis_metamaterial_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/lab_synthesis_metamaterial_spine_benchmark.json
+  - **vendor_cache**: lab_synthesis_metamaterial_spine_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/lab_synthesis_metamaterial_spine_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
 
 ### Superheavy_Island_Emergence_Simulation
@@ -4759,7 +4759,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: fusion_decay_chain_prereg_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fusion_decay_chain_prereg_scaffold_benchmark.json
+  - **vendor_cache**: fusion_decay_chain_prereg_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fusion_decay_chain_prereg_scaffold_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
 
 ### Supply_Chain_Logistics
@@ -4789,10 +4789,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_fringe_desktop_data.py`
 - Lean: `FSOT.Formal.SymbolicArchetypePanelPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/symbolic_archetype_reference.json — https://github.com/data/symbolic_archetype_reference.json
+  - **dataset**: data/symbolic_archetype_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/symbolic_archetype_reference.json
   - **vendor_cache**: vendor/fringe_desktop/symbolic_encoding_graph_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fringe_desktop/symbolic_encoding_graph_summary.json
   - **vendor_cache**: G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json
-  - **dataset**: GitHub OSS corpus scripts/symbolic_archetype_lib.py — https://github.com/scripts/symbolic_archetype_lib.py
+  - **dataset**: scripts/symbolic_archetype_lib.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/symbolic_archetype_lib.py
   - **ingest_script**: scripts/ingest_fringe_desktop_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_fringe_desktop_data.py
 
 ### Term3_Acoustic_Bleed_Depth
@@ -4800,10 +4800,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/term3_acoustic_bleed_depth_benchmark.json` · records=23 · median%=0.008381497018408523
 - Lean: `FSOT.Formal.Term3AcousticBleedDepthPriors`
 - Public / portable anchors:
-  - **vendor_cache**: acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/acoustic_resonance_materials_benchmark.json
-  - **vendor_cache**: music_harmonics_public_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/music_harmonics_public_panel_benchmark.json
-  - **vendor_cache**: fsot_species_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_species_catalog.json
-  - **vendor_cache**: architecture_building_science_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/architecture_building_science_gap_fill_benchmark.json
+  - **vendor_cache**: acoustic_resonance_materials_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/acoustic_resonance_materials_benchmark.json
+  - **vendor_cache**: music_harmonics_public_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/music_harmonics_public_panel_benchmark.json
+  - **vendor_cache**: fsot_species_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/species/fsot_species_catalog.json
+  - **vendor_cache**: architecture_building_science_gap_fill_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/architecture_building_science_gap_fill_benchmark.json
 
 ### The_Well_Outcomes_Verification_Panel
 
@@ -4893,23 +4893,23 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/tier_96_circuit_spine_benchmark.json` · records=37 · median%=0.020755
 - Public / portable anchors:
   - **unresolved**: circuit_component_emergence — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: electrical_power_systems_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/electrical_power_systems_benchmark.json
+  - **vendor_cache**: electrical_power_systems_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/electrical_power_systems_benchmark.json
 
 ### Time_Domain_Crosswalk
 
 - Benchmark: `data/time_domain_crosswalk_benchmark.json` · records=371 · median%=0.027551
 - Lean: `FSOT.Formal.TimeDomainCrosswalkPriors`
 - Public / portable anchors:
-  - **vendor_cache**: extension_domains_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/extension_domains_manifest.yaml
-  - **vendor_cache**: time_emergence_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/time_emergence_manifest.yaml
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
+  - **vendor_cache**: extension_domains_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/extension_domains_manifest.yaml
+  - **vendor_cache**: time_emergence_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/time_emergence_manifest.yaml
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
 
 ### Time_Emergence_Deep_Panel
 
 - Benchmark: `data/time_emergence_deep_panel_benchmark.json` · records=24 · median%=0.0
 - Lean: `FSOT.Formal.TimeEmergenceDeepPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: time_emergence_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/time_emergence_simulation_benchmark.json
+  - **vendor_cache**: time_emergence_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/time_emergence_simulation_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -4922,8 +4922,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **unresolved**: IERS Earth sidereal — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: cosmology_extended_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cosmology_extended_benchmark.json
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
+  - **vendor_cache**: cosmology_extended_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_extended_benchmark.json
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
   - **unresolved**: BlackHoleThesisPriors — Named in panel source; add explicit public URL if this is an external authority
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **unresolved**: derived from IERS sidereal period — Named in panel source; add explicit public URL if this is an external authority
@@ -4948,9 +4948,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/toe_claim_certificate_bundle_benchmark.json` · records=7 · median%=0.0
 - Lean: `FSOT.Formal.ToEClaimCertificateBundlePriors`
 - Public / portable anchors:
-  - **vendor_cache**: fsot_verification_progress.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_verification_progress.yaml
-  - **vendor_cache**: FSOT_VERIFIED_SCOPE.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/FSOT_VERIFIED_SCOPE.yaml
-  - **vendor_cache**: scientific_domain_expansion_map.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scientific_domain_expansion_map.json
+  - **vendor_cache**: fsot_verification_progress.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_verification_progress.yaml
+  - **vendor_cache**: FSOT_VERIFIED_SCOPE.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/FSOT_VERIFIED_SCOPE.yaml
+  - **vendor_cache**: scientific_domain_expansion_map.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/scientific_domain_expansion_map.json
 
 ### ToE_Gap_Closure_Spine
 
@@ -5048,8 +5048,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/trinary_os_portable_benchmark.json` · records=21 · median%=5.5479e-05
 - Lean: `FSOT.Formal.TrinaryOSPortablePriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus vendor/trinary_os — https://github.com/vendor/trinary_os
-  - **dataset**: GitHub OSS corpus data/trinary_os_manifest.yaml — https://github.com/data/trinary_os_manifest.yaml
+  - **dataset**: vendor/trinary_os — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os
+  - **dataset**: data/trinary_os_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/trinary_os_manifest.yaml
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: BRENDA enzyme database — https://www.brenda-enzymes.org/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -5068,10 +5068,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/trinary_os_tier_e_benchmark.json` · records=68 · median%=0.0
 - Lean: `FSOT.Formal.TrinaryOSTierEPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus vendor/trinary_os — https://github.com/vendor/trinary_os
-  - **dataset**: GitHub OSS corpus data/trinary_os_portable_benchmark.json — https://github.com/data/trinary_os_portable_benchmark.json
-  - **dataset**: GitHub OSS corpus data/trinary_os_isa_rebuild_benchmark.json — https://github.com/data/trinary_os_isa_rebuild_benchmark.json
-  - **dataset**: GitHub OSS corpus data/trinary_os_round_trip_benchmark.json — https://github.com/data/trinary_os_round_trip_benchmark.json
+  - **dataset**: vendor/trinary_os — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os
+  - **dataset**: data/trinary_os_portable_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/trinary_os_portable_benchmark.json
+  - **dataset**: data/trinary_os_isa_rebuild_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/trinary_os_isa_rebuild_benchmark.json
+  - **dataset**: data/trinary_os_round_trip_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/trinary_os_round_trip_benchmark.json
   - **unresolved**: G:\FSOT-PublicData\trinary_os — Named in panel source; add explicit public URL if this is an external authority
 
 ### UAP_War_Gov_Release_Panel
@@ -5106,17 +5106,17 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/uniprot_structure_annotations_deep_benchmark.json` · records=121 · median%=0.0
 - Lean: `FSOT.Formal.UniProtStructureAnnotationsDeepPriors`
 - Public / portable anchors:
-  - **vendor_cache**: uniprot_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/uniprot_summary.json
-  - **vendor_cache**: rcsb_pdb_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/rcsb_pdb_summary.json
+  - **vendor_cache**: uniprot_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/uniprot/uniprot_summary.json
+  - **vendor_cache**: rcsb_pdb_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/rcsb_pdb/rcsb_pdb_summary.json
 
 ### Unified_DB_Candidate_Crosswalk
 
 - Benchmark: `data/unified_db_candidate_crosswalk_benchmark.json` · records=45 · median%=0.0
 - Lean: `FSOT.Formal.UnifiedDBCandidateCrosswalkPriors`
 - Public / portable anchors:
-  - **vendor_cache**: fsot_aggregate_unified_db_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_aggregate_unified_db_benchmark.json
+  - **vendor_cache**: fsot_aggregate_unified_db_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/fsot_aggregate_unified_db_benchmark.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **vendor_cache**: prediction_rederivation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/prediction_rederivation_benchmark.json
+  - **vendor_cache**: prediction_rederivation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/prediction_rederivation_benchmark.json
 
 ### Unified_DB_Crosswalk_Spine
 
@@ -5201,7 +5201,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.VizieRWdsTapLiveDeepPriors`
 - Public / portable anchors:
   - **vendor_cache**: I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full\vendor\live_cache\tier68\vizier_wds_tap_live_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/vizier_wds_tap_live_cache.json
-  - **vendor_cache**: wds_live_multiplicity_deep_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/wds_live_multiplicity_deep_benchmark.json
+  - **vendor_cache**: wds_live_multiplicity_deep_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/wds_live_multiplicity_deep_benchmark.json
   - **ingest_script**: scripts/ingest_tier68_live_ingest.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier68_live_ingest.py
 
 ### Volcanology_Panel
@@ -5256,7 +5256,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.XRInteractiveMediaMathScaffoldPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: openneuro_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/openneuro_summary.json
+  - **vendor_cache**: openneuro_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/consciousness/openneuro_summary.json
 
 ### Z120_Z126_Beam_Synthesis_Panel
 
@@ -5264,7 +5264,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.Z120Z126BeamSynthesisPanelPriors`
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **vendor_cache**: heavy_ion_lab_synthesis_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/heavy_ion_lab_synthesis_panel_benchmark.json
+  - **vendor_cache**: heavy_ion_lab_synthesis_panel_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/heavy_ion_lab_synthesis_panel_benchmark.json
 
 ### Z164_Distant_Island_Prereg_Scaffold
 
@@ -5291,7 +5291,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Lean: `FSOT.Formal.ZebrafishCellTrackingPanelPriors`
 - Public / portable anchors:
   - **unresolved**: zebrahub.sf.czbiohub.org — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: tier95_zebrahub_tracks_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier95_zebrahub_tracks_cache.json
+  - **vendor_cache**: tier95_zebrahub_tracks_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/zebrahub_development/tier95_zebrahub_tracks_cache.json
   - **ingest_script**: scripts/ingest_tier95_zebrahub_development.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier95_zebrahub_development.py
 
 ### Zebrafish_Developmental_Mechanics_Panel
@@ -5300,8 +5300,8 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Ingest: `scripts/ingest_tier95_zebrahub_development.py`
 - Lean: `FSOT.Formal.ZebrafishDevelopmentalMechanicsPanelPriors`
 - Public / portable anchors:
-  - **vendor_cache**: tier95_zebrahub_tracks_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier95_zebrahub_tracks_cache.json
-  - **vendor_cache**: tier95_zebrahub_gpu_imaging_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/tier95_zebrahub_gpu_imaging_cache.json
+  - **vendor_cache**: tier95_zebrahub_tracks_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/zebrahub_development/tier95_zebrahub_tracks_cache.json
+  - **vendor_cache**: tier95_zebrahub_gpu_imaging_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/zebrahub_development/tier95_zebrahub_gpu_imaging_cache.json
   - **ingest_script**: scripts/ingest_tier95_zebrahub_development.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier95_zebrahub_development.py
 
 ### Zebrafish_Longevity_Genetics_Coupling_Panel
@@ -5358,11 +5358,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: tier_h_child_rollup — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: code_genome_holes — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: zero_day_evaluator_reference_observables — Named in panel source; add explicit public URL if this is an external authority
-  - **vendor_cache**: cryptography_technology_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/cryptography_technology_cybersecurity_benchmark.json
-  - **vendor_cache**: network_internet_protocols_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/network_internet_protocols_cybersecurity_benchmark.json
-  - **vendor_cache**: malware_threat_intelligence_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/malware_threat_intelligence_cybersecurity_benchmark.json
-  - **vendor_cache**: secure_software_engineering_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/secure_software_engineering_cybersecurity_benchmark.json
-  - **vendor_cache**: code_genome_structure_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/code_genome_structure_cybersecurity_benchmark.json
+  - **vendor_cache**: cryptography_technology_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cryptography_technology_cybersecurity_benchmark.json
+  - **vendor_cache**: network_internet_protocols_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/network_internet_protocols_cybersecurity_benchmark.json
+  - **vendor_cache**: malware_threat_intelligence_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/malware_threat_intelligence_cybersecurity_benchmark.json
+  - **vendor_cache**: secure_software_engineering_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/secure_software_engineering_cybersecurity_benchmark.json
+  - **vendor_cache**: code_genome_structure_cybersecurity_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/code_genome_structure_cybersecurity_benchmark.json
 
 ### Zoology
 
@@ -5426,7 +5426,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/culinary_arts_benchmark.json` · records=52 · median%=0.047615187057821064
 - Public / portable anchors:
   - **vendor_cache**: vendor/smiles/FSOT_SMILES_Lab_Dataset.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/smiles/FSOT_SMILES_Lab_Dataset.json
-  - **dataset**: GitHub OSS corpus data/culinary_recipe_observables.json — https://github.com/data/culinary_recipe_observables.json
+  - **dataset**: data/culinary_recipe_observables.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/culinary_recipe_observables.json
   - **unresolved**: smiles_food_chemistry — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: recipe_process — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: coffee_roast — Named in panel source; add explicit public URL if this is an external authority
@@ -5457,9 +5457,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/higgs_mass_benchmark.json` · records=9 · median%=0.018987449514135373
 - Public / portable anchors:
   - **vendor_cache**: vendor/smiles/FSOT_SMILES_Lab_Dataset.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/smiles/FSOT_SMILES_Lab_Dataset.json
-  - **dataset**: GitHub OSS corpus scripts/higgs_mass_formula_eval.py — https://github.com/scripts/higgs_mass_formula_eval.py
-  - **dataset**: GitHub OSS corpus data/higgs_mass_reference_observables.json — https://github.com/data/higgs_mass_reference_observables.json
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
+  - **dataset**: scripts/higgs_mass_formula_eval.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scripts/higgs_mass_formula_eval.py
+  - **dataset**: data/higgs_mass_reference_observables.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/higgs_mass_reference_observables.json
+  - **dataset**: vendor/fsot_compute.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_compute.py
 
 ### hydrology_benchmark
 
@@ -5501,7 +5501,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/igem_synthetic_biology_benchmark.json` · records=54 · median%=0.022236250385203583
 - Public / portable anchors:
   - **vendor_cache**: vendor/igem/igem_parts_registry.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/igem/igem_parts_registry.json
-  - **dataset**: GitHub OSS corpus data/biology_strict_empirical.json — https://github.com/data/biology_strict_empirical.json
+  - **dataset**: data/biology_strict_empirical.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/biology_strict_empirical.json
   - **api**: NCBI E-utilities / Gene / datasets — https://www.ncbi.nlm.nih.gov/books/NBK25501/
 
 ### immunology_benchmark
@@ -5649,14 +5649,14 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/trinary_os_isa_rebuild_benchmark.json` · records=38 · median%=0.0
 - Public / portable anchors:
   - **vendor_cache**: vendor/trinary_os/isa/fsotb_opcode_registry.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/isa/fsotb_opcode_registry.json
-  - **dataset**: GitHub OSS corpus vendor/trinary_os — https://github.com/vendor/trinary_os
+  - **dataset**: vendor/trinary_os — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os
 
 ### trinary_os_round_trip_benchmark
 
 - Benchmark: `data/trinary_os_round_trip_benchmark.json` · records=22 · median%=0.0
 - Public / portable anchors:
   - **vendor_cache**: vendor/trinary_os/isa/fsotb_opcode_registry.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/isa/fsotb_opcode_registry.json
-  - **dataset**: GitHub OSS corpus vendor/trinary_os — https://github.com/vendor/trinary_os
+  - **dataset**: vendor/trinary_os — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os
 
 ### weather_observed_benchmark
 

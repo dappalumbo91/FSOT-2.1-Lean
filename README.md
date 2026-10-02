@@ -1118,11 +1118,7 @@ GitHub repository dappalumbo91/FSOT-2.1-Lean, edition fsot-monograph-v1.
 https://github.com/dappalumbo91/FSOT-2.1-Lean
 ```
 
-Tagged release (when published):
-
-```
-https://github.com/dappalumbo91/FSOT-2.1-Lean/releases/tag/fsot-monograph-v1
-```
+The tag `fsot-monograph-v1` is not a published GitHub release. Cite the repository URL above and a commit SHA.
 
 ---
 
