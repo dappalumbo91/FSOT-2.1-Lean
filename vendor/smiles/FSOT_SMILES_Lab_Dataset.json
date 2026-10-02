@@ -193,9 +193,9 @@
       "name": "IE_Mg",
       "target_value": 7.646,
       "unit": "mixed",
-      "fsot_formula": "\u03c6\u2074 + B_in",
-      "computed_value": 7.642042758526128,
-      "error_pct": 0.051756,
+      "fsot_formula": "\u03c6\u2074 + B_in*(1+alpha*((4*(sin(theta_S)/phi))*(1+alpha*phi^2)))",
+      "computed_value": 7.646235416756722,
+      "error_pct": 0.003079,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
