@@ -1,0 +1,2875 @@
+{
+  "generated_at": "2026-10-02T04:19:52.423047+00:00",
+  "method": "Crossref works API, then DataCite for a Crossref 404. A 200 from either registry counts as resolved.",
+  "scope": "DOI strings in git-tracked *.md, plus git-tracked *.json fields named doi, reference, or references",
+  "unique_dois": 179,
+  "resolved_count": 177,
+  "unresolved_count": 2,
+  "fixes": [
+    {
+      "path": "docs/OBJECT_SCORING.md",
+      "line": 43,
+      "from": "10.1103/PhysRevD.112.083515",
+      "to": "10.1103/tr6y-kpc6",
+      "reason": "Phys. Rev. D 112, 083515 (DESI DR2 Results II, arXiv:2503.14738) resolves as 10.1103/tr6y-kpc6. The journal-page form does not resolve."
+    }
+  ],
+  "unresolved": [
+    "10.5281/",
+    "10.5281/zenodo.1234567"
+  ],
+  "items": [
+    {
+      "doi": "10.1001/archinte.1962.03620190072011",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Skin Vascular Alterations in Diabetes Mellitus",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 480,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1001/jama.1959.03000260008002",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "DIABETES IN A NEW ENGLAND TOWN",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 96,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1002/9781119584414.ch4",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Complete Dental Cleaning",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 6,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1002/mcf2.10318",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Stock-specific spatial overlap among seabird predators and Columbia River juvenile Chinook Salmon suggests a mechanism for predation during early marine residence",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 177,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1002/mcf2.10325",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Implications of increased spatial and trophic overlap between juvenile Pacific salmon and Sablefish in the northern California Current",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 191,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1002/nafm.11044",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Mechanical suppression of invasive Northern Pike in Box Canyon Reservoir, Washington",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 247,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1007/978-0-387-30160-0_1141",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Becke test",
+      "mention_count": 4,
+      "locations": [
+        {
+          "path": "data/publication/readme_domain_chapters/14_government_open_data.md",
+          "line": 32,
+          "field": "markdown"
+        },
+        {
+          "path": "data/publication/readme_domain_chapters/14_government_open_data.md",
+          "line": 35,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/THESIS_APPENDIX_XII.md",
+          "line": 9219,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/THESIS_APPENDIX_XII.md",
+          "line": 9222,
+          "field": "markdown"
+        }
+      ],
+      "note": "line 9219 is a benchmark metadata row, not a supporting citation; line 9222 is a benchmark metadata row, not a supporting citation"
+    },
+    {
+      "doi": "10.1007/978-0-387-74759-0_163",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Equilibrium Networks",
+      "mention_count": 2,
+      "locations": [
+        {
+          "path": "data/publication/readme_domain_chapters/14_government_open_data.md",
+          "line": 36,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/THESIS_APPENDIX_XII.md",
+          "line": 9223,
+          "field": "markdown"
+        }
+      ],
+      "note": "line 9223 is a benchmark metadata row, not a supporting citation"
+    },
+    {
+      "doi": "10.1007/978-3-031-23161-2_300726",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Loot Crates",
+      "mention_count": 2,
+      "locations": [
+        {
+          "path": "data/publication/readme_domain_chapters/21_verification_infrastructure.md",
+          "line": 205,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/THESIS_APPENDIX_XII.md",
+          "line": 11964,
+          "field": "markdown"
+        }
+      ],
+      "note": "line 11964 is a benchmark metadata row, not a supporting citation"
+    },
+    {
+      "doi": "10.1007/bf02021500",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The relationship between diet and composition of bladder bile in mice",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 534,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1007/bfb0086411",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Spherical finite type submanifolds.Applications",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 12,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1007/s10586-023-04231-3",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "A performance evaluation model for users\u2019 satisfaction in federated clouds",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 180,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1007/s11104-024-07097-5",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Plant-specific microbial diversity facilitates functional redundancy at the soil-root interface",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 219,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1007/s11259-005-3081-7",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Extrinsic Cardiac Nerve Distribution in Goitred Gazelle (Gazella subgutturosa)",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 120,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1016/0048-721x(78)90038-6",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The cultural heritage of Ladakh: Volume I David L. Snellgrove, Tadeusz Skorupski, Warminster, Aris and Phillips, 1977. xvi + 144 pp. Illus: 20 colour plates and 144 black and white. E12.50",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 102,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1016/0140-6736(91)90874-o",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Stress proteins and myocardial protection",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 324,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1016/j.denabs.2017.11.037",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Pulp exposure during carious tissue removal in adults",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 72,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1016/j.ijlcj.2013.08.003",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "What do students really know about criminal justice?",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 474,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1016/j.partic.2014.05.004",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Simulation of dynamic fluid\u2013solid interactions with an improved direct-forcing immersed boundary method",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 354,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1016/s0026-0576(03)80495-6",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Powder transfer apparatus",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 48,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1016/s0926-6593(65)80241-7",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Immunodiffusion studies on human liver and erythrocyte arginases",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 582,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1017/9789048529964.002",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Film History as Media Archaeology",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 68,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1017/cbo9780511761942.026",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Bibliography",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 132,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1038/nmat2090",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Complex thermoelectric materials",
+      "mention_count": 68,
+      "locations": [
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 185,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 996,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1062,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1123,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1144,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1160,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1180,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1195,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1230,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1307,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1372,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1567,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1671,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1683,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1764,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1805,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1865,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1879,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 1920,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 2062,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 2103,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 2197,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 2212,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 2230,
+          "field": "markdown"
+        },
+        {
+          "path": "docs/BENCHMARK_DATA_CITATIONS.md",
+          "line": 2246,
+          "field": "markdown"
+        }
+      ]
+    },
+    {
+      "doi": "10.1038/s41587-026-03166-5",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Experiment-guided AlphaFold3 resolves measurement-consistent protein ensembles",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "docs/CASP_CAMEO_BLIND_PROTOCOL.md",
+          "line": 22,
+          "field": "markdown"
+        }
+      ]
+    },
+    {
+      "doi": "10.1042/bst0051540",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The Nature of the Random Experimental Error Encountered when the Kinetics of Acetylcholine Hydrolase are Determined",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 246,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1051/0004-6361/202556861",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "<i>Euclid</i>\n                    preparation",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "docs/OBJECT_SCORING.md",
+          "line": 50,
+          "field": "markdown"
+        }
+      ]
+    },
+    {
+      "doi": "10.1080/00221344408987009",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Interest-Stimulating Device",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 114,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1080/01496398408068585",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Characterization of Steric Field-Flow Fractionation Using Particles to 100 \u03bcm Diameter",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 222,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1086/300499",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Observational Evidence from Supernovae for an Accelerating Universe and a Cosmological Constant",
+      "mention_count": 2,
+      "locations": [
+        {
+          "path": "vendor/open_science/openalex_works_cosmology/live.json",
+          "line": 30,
+          "field": "doi"
+        },
+        {
+          "path": "vendor/open_science/openalex_works_cosmology/live.json",
+          "line": 38,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1088/1742-6596/1382/1/012030",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Flow around the wing models with straight and swept leading edge in case of contact with turbulent wake",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 90,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1088/1742-6596/1524/1/012118",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The role of information systems towards the success of the family planning program: a literature review",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 516,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/bioinformatics/btaf050",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Structural basis of differential gene expression at eQTLs loci from high-resolution ensemble models of 3D single-cell chromatin conformations",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 184,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/ehjopen/oeaf020",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Cognitive behavioural therapy targeting cardiac anxiety post-myocardial infarction: results from two sequential pilot studies",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 142,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/infdis/jiaf155",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Artemether-Lumefantrine Treatment Selects\n                    <i>Plasmodium falciparum</i>\n                    Multidrug Resistance 1 (\n                    <i>pfmdr1</i>\n                    ) Increased Copy Number Among African Malaria Infections",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 58,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/jambio/lxaf037",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "<i>Pseudomonas aeruginosa</i>\n                    : One Health approach to deciphering hidden relationships in Northern Portugal",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 114,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/jambio/lxaf044",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Actinomycetota isolated from the sponge\n                    <i>Hymeniacidon perlevis</i>\n                    as a source of novel compounds with pharmacological applications: diversity, bioactivity screening, and metabolomic analysis",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 128,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/jambio/lxaf064",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The overlooked interaction of emerging contaminants and microbial communities: a threat to ecosystems and public health",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 65,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/jimb/kuae052",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Purple non-sulfur bacteria for biotechnological applications",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 212,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/jn/57.4.469",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Vitamin D and Gastric Secretion",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 552,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/najfmt/vqae009",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Effects of sampling techniques on short-term survival and\u00a0genotyping success of salmonid fry",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 51,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/nq/cxcvi.mar31.151a",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Leveson of Whornes place in Halling, Kent",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 168,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/nq/s6-ii.28.26b",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The changes in grain",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 84,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/oso/9780199550074.001.0001",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Histories of Archaeology",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 40,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/oso/9780199550074.003.0004",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Introduction: Writing Histories of Archaeology",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 47,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/oso/9780199550074.003.0011",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The History, Philosophy, and Sociology of Archaeology: The Case of the Ancient Monuments Protection Act (1882) (1990)",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 54,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/oso/9780199550074.003.0012",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The Role of Biography in Writing the History of Archaeology (1992)",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 33,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/oso/9780199550074.003.0016",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Excavating Women: Towards an Engendered History of Archaeology (1998)",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 26,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/oso/9780199550074.003.0018",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "A History of Archaeology in Brazil (2001).",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 19,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/oso/9780199550074.003.0020",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Historiography (2001)",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 75,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1093/tafafs/vnaf019",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Genomic insights into local adaptation and migration success in reintroduced Coho Salmon of the Wenatchee\u00a0River basin",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 44,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1097/00000441-192504000-00002",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "THE BLOOD PLATELETS IN THE LEUKEMIAS",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 468,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1097/00007611-194708000-00018",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "MASSIVE DOSES OF PURE ANTIRACHITIC VITAMIN",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 42,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1103/revmodphys.61.1",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The cosmological constant problem",
+      "mention_count": 2,
+      "locations": [
+        {
+          "path": "vendor/open_science/openalex_works_cosmology/live.json",
+          "line": 2443,
+          "field": "doi"
+        },
+        {
+          "path": "vendor/open_science/openalex_works_cosmology/live.json",
+          "line": 2451,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1103/tr6y-kpc6",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "DESI DR2 results. II. Measurements of baryon acoustic oscillations and cosmological constraints",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "docs/OBJECT_SCORING.md",
+          "line": 43,
+          "field": "markdown"
+        }
+      ]
+    },
+    {
+      "doi": "10.1107/S2052252526004100",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Atomic resolution cryo-EM at 200\u2005keV",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "docs/CASP_CAMEO_BLIND_PROTOCOL.md",
+          "line": 22,
+          "field": "markdown"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/ccdc.2010.5498169",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Asymptotic stability of time delay systems with unknown uncertainty bounds using adaptive robust control",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 144,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/ccdc.2011.5968776",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "A fuzzy neural network algorithm based on GA",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 498,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/contel.2015.7231229",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Session level network usage patterns of mobile handsets",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 390,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/energytech.2013.6645333",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Operation of energy harvesting devices in different vibration modes",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 198,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/iccad.2010.5653805",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Design of analog circuits using organic field-effect transistors",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 378,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/iceeccot.2016.7955241",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Cantilever and circular disc structure based capacitive shunt RF MEMS switches",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 54,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/iceee.2010.5660408",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Hole-Filling by Rank Sparsity Tensor Decomposition for Medical Imaging",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 546,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/iciecs.2010.5678199",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Underwater Robot Path Planning Methods Based on Immunization Genetic Algorithms",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 282,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/icimw.2002.1076202",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Effects of successive generations of backscattered electrons on the performance of depressed collectors in megawatt class gyrotrons",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 330,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/icniconsmcl.2006.166",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "OSPF-TE Scalability Study based on Internal Performance Measurement",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 576,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/icuwb.2010.5614210",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "UWB cross-polarization discrimination with differentially fed, mirrored antenna elements",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 252,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/ipsn.2006.244131",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "On the interdependence of sensing and estimation complexity in sensor networks",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 318,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/meta.2012.6464961",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "A novel helical metamaterial absorber: Simulation study with the FDTD method",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 126,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/mwscas.2015.7282039",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "STG-based detection of power virus inputs in FSM",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 234,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/nds.2017.8070629",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Order reduction for roesser state-space model based on a certain system of equations",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 348,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/nssmic.2007.4436951",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Optimization of a rotating modulation collimator for neutron stimulated emission computed tomography (NSECT) imaging",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 486,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1109/srii.2012.46",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Innovation Contests as Support Systems for New Service Value",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 156,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1111/cns.70215",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Allopregnanolone as an Adjunct Therapy to Midazolam is More Effective Than Midazolam Alone in Suppressing Soman\u2010Induced Status Epilepticus in Male Rats",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 156,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1111/j.1440-1681.1996.tb02797.x",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "LOW AFFINITY NERVE GROWTH FACTOR RECEPTOR GENE CO\u2010SEGREGATES WITH DECREASED BODYWEIGHT AND INCREASED LEFT VENTRICULAR WEIGHT IN SPONTANEOUSLY HYPERTENSIVE RATS",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 174,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1111/j.1474-919x.1928.tb08740.x",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "XXXVI.\u2014<i>The Birds of the Region South of Lake Nyasa</i>.\u2014Part I. <i>Non\u2010Passerine Birds</i>",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 504,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1111/joim.1898.31.issue-18",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 78,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1111/mpp.70050",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Apple Bitter Rot: Biology, Ecology, Omics, Virulence Factors, and Management of Causal\n                    <i>Colletotrichum</i>\n                    Species",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 163,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/aem.00170-25",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Overexpression of sulfide:quinone reductase (SQR) in\n            <i>Acidithiobacillus ferrooxidans</i>\n            enhances sulfur, pyrite, and pyrrhotite oxidation",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 198,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/aem.00293-25",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "A dynamic protein interactome drives energy conservation and electron flux in\n                    <i>Thermococcus kodakarensis</i>",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 324,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/aem.00360-25",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Robust measurement of microbial reduction of graphene oxide nanoparticles using image analysis",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 268,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/aem.00471-25",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Engineering the hyperthermophilic archaeon\n            <i>Pyrococcus furiosus</i>\n            for 1-propanol production",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 261,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/aem.01968-24",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "A small number of point mutations confer formate tolerance in\n            <i>Shewanella oneidensis</i>",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 233,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/aem.02123-24",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Alternate routes to acetate tolerance lead to varied isoprenol production from mixed carbon sources in\n                    <i>Pseudomonas putida</i>",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 331,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/jcm.12.1.60-62.1980",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Immunoglobulin G and immunoglobulin M antibody responses of patients with malignancies to the O antigens of bacteria causing bacteremia",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 36,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/mbio.00968-25",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Physiological roles of an\n                    <i>Acinetobacter</i>\n                    -specific \u03c3 factor",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 296,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/msphere.00059-25",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Pangenomes suggest ecological-evolutionary responses to experimental soil warming",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 303,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/msphere.00962-24",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Signal sequences target enzymes and structural proteins to bacterial microcompartments and are critical for microcompartment formation",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 282,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/msystems.00030-25",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Separate, separated, and together: the transcriptional program of the\n                    <i>Clostridium acetobutylicum-Clostridium ljungdahlii</i>\n                    syntrophy leading to interspecies cell fusion",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 352,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/msystems.01407-24",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Microbes display broad diversity in cobamide preferences",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 275,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1128/spectrum.02267-24",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Bacterial response to the 2021 Orange County, California, oil spill was episodic but subtle relative to natural fluctuations",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 289,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1136/bmj.2.2646.593",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Remarks ON EXTERNAL POLYPOID TUMOURS OF THE STOMACH",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 240,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.11578/dc.20251002.8",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "datacite",
+      "title": "Responsive Assistant For Navigating And Guiding Engineering With Rigor (ranger)",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 100,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.11578/dc.20260511.1",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "datacite",
+      "title": "BioSTEAMDevelopmentGroup/Bioindustrial-Park/biorefineries/Location_SAF",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 317,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1161/01.res.12.2.145",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Effects of Hemodialysis and of Glucose-Insulin Administration on Plasma Potassium and on the Electrocardiogram",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 66,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1175/2007jcli1900.1",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Initial Tendencies of Cloud Regimes in the Met Office Unified Model",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 192,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1177/014459879801600522",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Book Review: The Petrobras Monopoly and the Regulation of Oil Prices in Brazil",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 300,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1177/0888325488002001005",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Industrial Development of Hungary Since World War II",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 462,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1183/13993003.congress-2020.1632",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Comparison of perioperative and early postoperative results of VATS and thoracotomy in patients underwent pneumonectomy",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 312,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1186/s12859-024-05977-2",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Human limits in machine learning: prediction of potato yield and disease using soil microbiome data",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 254,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1186/s12864-025-11410-6",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Comparative genomics reveals the high diversity and adaptation strategies of Polaromonas from polar environments",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 121,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1186/s12934-025-02665-5",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Cyanobacterial circadian regulation enhances bioproduction under subjective nighttime through rewiring of carbon partitioning dynamics, redox balance orchestration, and cell cycle modulation",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 226,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1186/s12940-025-01164-9",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Risk of longer-term endocrine and metabolic conditions in the Deepwater Horizon Oil Spill Coast Guard cohort study \u2013 five years of follow-up",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 107,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1186/s13007-024-01302-3",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "In-vivo Raman microspectroscopy reveals differential nitrate concentration in different developmental zones in Arabidopsis roots",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 310,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1186/s13068-024-02588-0",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Thermobifida fusca Cel6B moves bidirectionally while processively degrading cellulose",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 338,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1192/bja.2023.10",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "BJA volume 29 issue 2 Cover and Back matter",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 360,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1201/9781439863725-18",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Unified Theory of Identities",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 306,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.13058/raep.2016.v17n3.344",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Compet\u00eancias Gerenciais (esperadas &lt;i&gt;versus&lt;/i&gt; percebidas) de Professores-gestores de Institui\u00e7\u00f5es Federais de Ensino Superior: percep\u00e7\u00f5es dos professores de uma Universidade Federal",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 204,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1353/ajh.2017.0007",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Ekphrasis at the Historical Society",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 450,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1353/lut.2017.0045",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The Routledge Companion to Christianity in Africa ed. by Elias Kifon Bongmba",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 396,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1353/mar.2018.0005",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Have I Told You Enough How Much I Love You?",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 564,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1353/plc.2017.0015",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The Horror",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 528,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1353/plc.2017.0200",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Fine, Fine, Fine, Fine, Fine by Diane Williams",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 426,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1353/rhe.1990.0016",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Title and Author Index to Volume 13",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 402,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1353/tho.2001.0023",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Feminist Reconstructions of Christian Doctrine: Narrative Analysis and Appraisal by Kathryn Greene-Mccreight",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 570,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.14423/smj.0000000000001387",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Webinars and Continuing Medical Education: Pros, Cons, and Controversies",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 342,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1515/9780889779198-fm",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Frontmatter",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 384,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1515/9781894725415-019",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "5. Excerpts from the National Housing Acts, 1949 and 1954",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 372,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.1515/9782766303809-003",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "1. Ce que refl\u00e8tent nos \u00e9crans",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 276,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.15483/1961631",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "datacite",
+      "title": "Passenger Survey - Washington DC Metrorail - 2012",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 30,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.15483/1961632",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "datacite",
+      "title": "Metrobus Survey - Washington DC - 2014",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 23,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.15760/etd.6294",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "A study of the narrative skills in kindergarten children with normal, impaired, and late developing language development",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 18,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.17238/issn2072-909x.2019.3",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 108,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.18203/2320-6012.ijrms20171277",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "An analysis of stromal expression of CD10 in invasive ductal carcinoma of breast and its correlation with histological grade",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 600,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.21015/vtcs.v9i1.1001",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Specification of Operating Rules for Water Reservoir to Manage Flood Using Z-Notation",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 138,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.21125/iceri.2016.0535",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "EDUCATION BY ACCESS TO VISUAL INFORMATION \u2013 METHODOLOGY OF MOULDING BEHAVIOUR BASED ON INTERNATIONAL RESEARCH PROJECT EXPERIENCES",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 30,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2118/0215-0079-jpt",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Drilling of Multilateral Wells in Kuwait Aided With Geochemical Analysis",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 414,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.21203/rs.3.rs-4840802/v1",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Construct validity and reliability of the Thai version of the Brief Illness Perception Questionnaire and its association with overall functioning and health in patients with ankylosing spondylitis",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 432,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.21236/ada461282",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Early Experience with an Internet Broadcast System Based on Overlay Multicast",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 186,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2165/00128413-200414590-00002",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "CBT better value than SSRIs in paediatric patients",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 150,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2172/3020242",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "U.S. Department of Energy Office of Legacy Management 2024 Annual Site Inspection and Monitoring Report for Uranium Mill Tailings Radiation Control Act Title I Disposal Sites",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 240,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2172/3028579",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Updated Commercial Aviation Non-Airport Crash Density Values Using Data Obtained from the U.S. National Transportation Safety Board for 2000 through 2019",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 170,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2172/3374976",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "PNNL Richland Campus Radionuclide Air Emissions Report for Calendar Year 2025",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 135,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2172/3375079",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Title: Benchmarking of High-performance Low-temperature Plasma Particle-in-cell Codes for Modeling Magnetized Plasmas",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 9,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2172/3376071",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "A tale of two extremes: Temperature sensitivity of carbon loss from cool and hot soils",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 16,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2172/3376512",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Integrated Security-Safety Consequence Study of a Heat Pipe Reactor",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 37,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2172/5086730",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Assessment of potential radionuclide transport in site-specific geologic formations",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 492,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.22478/ufpb.1807-8214.2023v36n1.68948",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "La interseccionalidad imaginaria en la escritura l\u00e9sbica de Yolanda Arroyo Pizarro",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 420,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/529639",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "News and Short Contributions",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 594,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/j.ctv2jhjvtv.9",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Jinan in the First Millennium",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 82,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/jj.18530845.12",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Debra",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 510,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/jj.18530902.10",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Chapter Seven",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 438,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/jj.18530904.7",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "On-Site Performance of Latinidad from East Coast to West Coast",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 456,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/jj.18530966.13",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "INDEX",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 540,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/jj.18530966.4",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "WHY FEMININE INTUITION?:",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 408,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/jj.18531016.15",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Selected Bibliography",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 366,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/jj.423450.7",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "GULDET I NORDEN \u2013 KONTEKST OG FORSKNINGSHISTORIE",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 288,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2307/jj.490870.5",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "From These Roots:",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 264,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.2514/1.j055215",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Modal Substructuring of Geometrically Nonlinear Finite Element Models with Interface Reduction",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 24,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.31168/2305-6754.2023.1.05",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Phrase Prosody of Two Eastern Middle-Russian Dialects",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 60,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.32609/0042-8736-2007-5-117-137",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Revision of the Neo-Ricardian Theory of Value and Distribution: New Evidence and New Perspectives",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 588,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.32782/cusu-hist",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "History &amp; Archaeology",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 5,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.32782/cusu-hist-2024-1",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 12,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.32782/cusu-hist-2024-1-5",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "\u041c\u0406\u041a\u0420\u041e\u0406\u0421\u0422\u041e\u0420\u0406\u042f \u0412 \u0421\u0418\u0421\u0422\u0415\u041c\u0406 \u00ab\u041d\u041e\u0412\u041e\u0407 \u0406\u0421\u0422\u041e\u0420\u0418\u0427\u041d\u041e\u0407 \u041d\u0410\u0423\u041a\u0418\u00bb: \u0406\u0421\u0422\u041e\u0420\u0406\u042f, \u0422\u0415\u041e\u0420\u0406\u042f \u0422\u0410 \u0406\u0421\u0422\u041e\u0420\u0406\u041e\u0413\u0420\u0410\u0424\u0406\u0427\u041d\u0410 \u041f\u0420\u0410\u041a\u0422\u0418\u041a\u0410",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/scientific_expansion/tier85_cache/history_cache.json",
+          "line": 61,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3323/jcorr1991.44.37",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "High Temperature Corrosion Resistance of Silicide Ceramics",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 444,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3389/fmed.2025.1570823",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Case Report: Differential diagnosis of hematuria in the emergency department: emphasizing double J stent-inferior vena cava fistula",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 93,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3389/fmicb.2025.1520459",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Transcriptomic and metabolomic analysis of recalcitrant phosphorus solubilization mechanisms in Trametes gibbosa",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 345,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3389/fmicb.2025.1551638",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The role of soil chemical properties and microbial communities on Dendrocalamus brandisii bamboo shoot quality, Yunnan Province, China",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 72,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3389/fnins.2025.1556703",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Comparative study of the effects of prenatal sevoflurane exposure at different cortical stages on forebrain development and maturation in offspring",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 86,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3389/fpubh.2025.1341797",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The relationship between below average cognitive ability at age 5 years and the child\u2019s experience of school at age 9",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 205,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3389/frmbi.2024.1500798",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Microbial partner (MiPner) analysis",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 79,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3389/ftox.2025.1518769",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Comparing computational times for simulations when using PBPK model template and stand-alone implementations of PBPK models",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/government_open_data/live_cache/osti_records_cache.json",
+          "line": 149,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3406/bmsap.1965.1316",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "\u00c9tude h\u00e9motypologique des populations du Tidikelt ; les groupes s\u00e9riques.",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 558,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3412/jsb.14.211",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Studies on Shigella flexneri type 6",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 522,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.36269/jtr.v4i1.988",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Pengaruh Penempatan Lightning Arrester Sebelum Dan Sesudah Fuse Cut Out Terhadap Tegangan Lebih Pada Transformator Distribusi 20 Kv Di PT. PLN (Persero) Rayon Tanjung Karang",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 216,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.3847/2041-8213/ae0ad6",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The Perfect Host: JWST Cepheid Observations in a Background-free Type Ia Supernova Host Confirm No Bias in Hubble-constant Measurements",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "docs/OBJECT_SCORING.md",
+          "line": 12,
+          "field": "markdown"
+        }
+      ]
+    },
+    {
+      "doi": "10.4230/lipics.giscience.2023.43",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "datacite",
+      "title": "Evaluating the Effectiveness of Large Language Models in Representing Textual Descriptions of Geometry and Spatial Relations (Short Paper)",
+      "mention_count": 2,
+      "locations": [
+        {
+          "path": "vendor/open_science/openalex_works_cosmology/live.json",
+          "line": 3210,
+          "field": "doi"
+        },
+        {
+          "path": "vendor/open_science/openalex_works_cosmology/live.json",
+          "line": 3218,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.4324/9781003054429-nan-9",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Conclusion: A hopeful future?",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 210,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.52340/splogos.2025.08",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "The New World Order and the Peculiarities of its Formation",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 258,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.5281/",
+      "resolves": false,
+      "http_status": 404,
+      "registry": "datacite",
+      "title": "",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "data/publication/zenodo_deposit_v1/ZENODO_UPLOAD_README.md",
+          "line": 38,
+          "field": "markdown"
+        }
+      ],
+      "note": "The upload guide says Cite as DOI:10.5281/... after publish. The slash is a placeholder, not a DOI. Not confirmed, and not replaced.",
+      "role": "placeholder"
+    },
+    {
+      "doi": "10.5281/zenodo.1234567",
+      "resolves": false,
+      "http_status": 404,
+      "registry": "datacite",
+      "title": "",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "data/publication/zenodo_deposit_v1/ZENODO_UPLOAD_README.md",
+          "line": 8,
+          "field": "markdown"
+        }
+      ],
+      "note": "Placeholder in the Zenodo upload guide (an example link like 10.5281/zenodo.1234567). Not a citation. No deposit DOI is assigned in this file, so none was invented.",
+      "role": "placeholder"
+    },
+    {
+      "doi": "10.53738/revmed.2014.10.444.1835",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Le risque chez les personnes \u00e2g\u00e9es \u00e0 domicile : un objet relationnel",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 270,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.54751/revistafoco.v16n2-195",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "PODER JUDICI\u00c1RIO E LEI MARIA DA PENHA: O ENFRENTAMENTO \u00c0 VIOL\u00caNCIA DOM\u00c9STICA E FAMILIAR CONTRA A MULHER",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 294,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.5575/geosoc.2022.0051",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Supernovae and the Earth",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 228,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.5962/bhl.title.55633",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Special veterinary therapy",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 162,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.62919/mert2332",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "crossref",
+      "title": "Industry 4.0 Revolution in Automobile Manufacturing: Innovations and Applications",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/public_verifiable/live_cache/crossref_cache.json",
+          "line": 336,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.7483/OPENDATA.DELPHI.37BX.FP6P",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "datacite",
+      "title": "DELPHI collision data xsdst00_c1",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/open_science/cern_opendata_records/live.json",
+          "line": 8469,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.7483/OPENDATA.DELPHI.G0B9.L94R",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "datacite",
+      "title": "DELPHI collision data alld00_e1",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/open_science/cern_opendata_records/live.json",
+          "line": 4955,
+          "field": "doi"
+        }
+      ]
+    },
+    {
+      "doi": "10.7483/OPENDATA.DELPHI.MIX4.CLEJ",
+      "resolves": true,
+      "http_status": 200,
+      "registry": "datacite",
+      "title": "DELPHI collision data stic99_e196_c1",
+      "mention_count": 1,
+      "locations": [
+        {
+          "path": "vendor/open_science/cern_opendata_records/live.json",
+          "line": 1168,
+          "field": "doi"
+        }
+      ]
+    }
+  ]
+}

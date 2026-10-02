@@ -40,7 +40,7 @@ Quoting DES-alone as the kill is the wrong object.
 
 PRED-043 frozen central **−1.018**. Kill remains `desi_or_euclid_3sigma_exclusion` of that *frozen* central — not “we already won 3σ.”
 
-DESI DR2 prefers wₐ<0 / evolving DE (~3.1σ DESI+CMB over ΛCDM in some combinations); SN sample **moves** the significance (doi:10.1103/PhysRevD.112.083515 · arXiv:2503.14738).
+DESI DR2 prefers wₐ<0 / evolving DE (~3.1σ DESI+CMB over ΛCDM in some combinations); SN sample **moves** the significance (doi:10.1103/tr6y-kpc6 · arXiv:2503.14738).
 
 **Status: adjacent / hold-not-kill.** Direction supports. Central stays **−1.018** until Euclid/DESI **joint** names the same object. Do not claim 3σ on −1.018.
 
