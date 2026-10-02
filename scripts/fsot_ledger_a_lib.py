@@ -89,8 +89,11 @@ def _from_fn(fn: Callable[[], list], name: str) -> Callable[[], float]:
     return _emit
 
 
-# kind: FORECAST = next measurement claimed here; CONSTANT_IDENTITY = seed form
-# matches published digits (numerology inventory, not a ToE paragraph).
+# kind: FORECAST = next measurement claimed here.
+# MATH_IDENTITY = the compare value is a mathematical constant, not a future measurement.
+# CONSTANT_IDENTITY = seed form matches published digits (inventory, not a ToE paragraph).
+# anchor_role: "literature anchor" = published measurement used only in the compare step.
+# "math identity" = the anchor is a mathematical constant. The anchor is never an input.
 LEDGER_A: dict[str, dict[str, Any]] = {
     "T_CMB": {
         "units": "K",
@@ -100,6 +103,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 2.72548,
         "anchor_source": "CODATA/PDG CMB monopole (literature, compare step only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If a future CMB monopole leaves [2.724, 2.727] K this expression is dead",
     },
     "H0_PLANCK_CLASS": {
@@ -110,6 +114,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 67.4,
         "anchor_source": "Planck 2018 TT,TE,EE+lowE+lensing class (compare step only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If Planck-class H0 leaves [66.0, 69.0] this expression is dead. Not the SH0ES ladder object.",
     },
     "alpha_s_MZ": {
@@ -120,6 +125,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.1179,
         "anchor_source": "PDG alpha_s(M_Z) (compare step only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If PDG alpha_s(M_Z) leaves [0.116, 0.120] this expression is dead",
     },
     "n_s": {
@@ -130,6 +136,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.9649,
         "anchor_source": "Planck 2018 n_s (compare step only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If n_s leaves [0.95, 0.98] this expression is dead",
     },
     "Omega_b_h2": {
@@ -140,6 +147,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.02237,
         "anchor_source": "Planck 2018 Omega_b h^2 (compare step only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If Omega_b h^2 leaves [0.0215, 0.0232] this expression is dead. Chemistry rung, not QM after nest collapse.",
     },
     "Omega_DM_h2": {
@@ -150,6 +158,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.1200,
         "anchor_source": "Planck 2018 Omega_c h^2 class (compare step only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If Omega_c h^2 leaves [0.110, 0.130] this expression is dead. Sibling of Omega_b at the chemistry rung.",
     },
     "First_Riemann_zero": {
@@ -157,9 +166,10 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "expression": "e/gamma**3",
         "expression_id": "validation.First_Riemann_zero",
         "emit": _riemann_t1,
-        "kind": "FORECAST",
+        "kind": "MATH_IDENTITY",
         "anchor": 14.134725141734693,
         "anchor_source": "Odlyzko / LMFDB Im(rho1) (compare step only)",
+        "anchor_role": "math identity",
         "kill_band": "If tabulated Im(rho1) leaves [14.13, 14.14] this expression is dead",
     },
     "Dark_energy_wa": {
@@ -170,6 +180,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": -0.8081,
         "anchor_source": "w_a class (DESI/Planck-style; compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If DESI w_a leaves [-1.05, -0.60] this expression is dead",
     },
     "sigma_8": {
@@ -180,6 +191,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.8111,
         "anchor_source": "Planck 2018 sigma_8 (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If Planck-class sigma_8 leaves [0.78, 0.85] this expression is dead",
     },
     "N_eff": {
@@ -190,6 +202,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 3.046,
         "anchor_source": "Planck N_eff (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If N_eff leaves [2.8, 3.4] this expression is dead",
     },
     "inv_alpha_em": {
@@ -200,6 +213,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 137.036,
         "anchor_source": "CODATA 1/alpha (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If 1/alpha leaves [136.9, 137.2] this expression is dead",
     },
     "sin2_theta_W": {
@@ -210,6 +224,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.23122,
         "anchor_source": "PDG sin^2 theta_W (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If sin^2 theta_W leaves [0.22, 0.24] this expression is dead",
     },
     "Omega_Lambda": {
@@ -220,6 +235,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.6847,
         "anchor_source": "Planck Omega_Lambda (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If Omega_Lambda leaves [0.65, 0.72] this expression is dead",
     },
     "m_pi_over_m_p": {
@@ -230,6 +246,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.14446,
         "anchor_source": "PDG m_pi+/m_p (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If m_pi/m_p leaves [0.14, 0.15] this expression is dead",
     },
     "m_mu_over_m_e": {
@@ -240,6 +257,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 206.768,
         "anchor_source": "CODATA m_mu/m_e (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If m_mu/m_e leaves [206.0, 207.5] this expression is dead",
     },
     "m_tau_over_m_e": {
@@ -250,6 +268,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 3477.48,
         "anchor_source": "PDG m_tau/m_e (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If m_tau/m_e leaves [3460, 3500] this expression is dead",
     },
     "IE_H": {
@@ -260,6 +279,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 13.598,
         "anchor_source": "NIST H ionization energy (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If IE_H leaves [13.5, 13.7] eV this expression is dead",
     },
     "H2O_bond_angle": {
@@ -270,6 +290,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 104.5,
         "anchor_source": "CRC H2O bond angle (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If the H2O angle leaves [104.0, 105.0] deg this expression is dead",
     },
     "Water_triple_K": {
@@ -280,6 +301,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 273.16,
         "anchor_source": "ITS-90 water triple point (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If T_triple leaves [273.0, 273.3] K this expression is dead",
     },
     "BP_H2O": {
@@ -290,6 +312,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "CONSTANT_IDENTITY",
         "anchor": 373.15,
         "anchor_source": "CRC T_b water (compare only). Exact-digit hits are inventory, not ToE forecasts.",
+        "anchor_role": "literature anchor",
         "kill_band": "Inventory only — not a FORECAST",
     },
     "tau_reion": {
@@ -300,6 +323,7 @@ LEDGER_A: dict[str, dict[str, Any]] = {
         "kind": "FORECAST",
         "anchor": 0.0544,
         "anchor_source": "Planck tau_reion (compare only)",
+        "anchor_role": "literature anchor",
         "kill_band": "If tau_reion leaves [0.04, 0.07] this expression is dead",
     },
 }
@@ -336,6 +360,7 @@ def compare_anchor(observable_id: str) -> dict[str, Any]:
         **pred,
         "anchor": m,
         "anchor_source": spec["anchor_source"],
+        "anchor_role": spec["anchor_role"],
         "error_pct": err,
         "kill_band": spec["kill_band"],
         "kind": spec["kind"],

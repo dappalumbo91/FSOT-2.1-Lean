@@ -59,6 +59,18 @@ The same question appears once more, with a shorter literal: `CMB_tau` at line 9
 
 Line 4 of the docstring says `FSOT 2.0 — Complete Computational Engine`. The printed banner in `full_report()` (line 1194) says the same. The hub and the pin are FSOT 2.1. The next revision should say 2.1.
 
+## G-02 · m_μ/m_e integers 35 and 145, and the twelve-digit exponent
+
+No derivation of the integers 35 and 145 is recorded. `vendor/fsot_compute.py` line 814 is
+
+`v3 = (35*PHI**(-5) + 145) * E**mpf("0.333333333333")`
+
+and the formula string on the next line says `(35φ⁻⁵+145)·e^(1/3)`. The section title above `lepton_ratios` says "Independent Derivations" and does not derive either integer. A search of the docs and the other copies of this line (the two Kaggle bundles) finds the same expression and no derivation.
+
+The exponent literal is twelve 3s. It is the same truncation as line 812 (`m_tau/m_mu_lepton`) and line 987 (`CMB_tau`). It differs from 1/3 by about 3.3×10⁻¹⁶. Because the base is e, replacing the literal with 1/3 moves the product by about 3.3×10⁻¹³ relative. That shift is below the Ledger A relative error against the anchor, about 1.4×10⁻⁶. The literal stays as written. This note does not change the formula.
+
+`docs/DERIVATIONS.md` is not added. There is no derivation to write down.
+
 ## Left off this list
 
 B-04 (older copies of `C_EFF` and `K` in other repos) and B-06 (the 50-digit `GAMMA` and `G_CAT` literals match mpmath) are context from the audit. They are not edits for this pin.
