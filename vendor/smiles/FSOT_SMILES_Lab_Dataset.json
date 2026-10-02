@@ -157,9 +157,9 @@
       "name": "IE_F",
       "target_value": 17.423,
       "unit": "mixed",
-      "fsot_formula": "\u03c6\u2077/A_in",
-      "computed_value": 17.418708869264407,
-      "error_pct": 0.024629,
+      "fsot_formula": "(\u03c6\u2077/A_in)*(1+alpha*((1/phi^7)*(1-alpha*7)))",
+      "computed_value": 17.42286315855886,
+      "error_pct": 0.000785,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
