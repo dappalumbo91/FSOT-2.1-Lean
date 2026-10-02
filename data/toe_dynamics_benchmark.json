@@ -412,37 +412,40 @@
       "lab": "toe_dynamics_lab",
       "property": "dimensional_interface_S",
       "name": "bleed_rate",
-      "computed": 0.300737,
+      "computed": 0.300736634966,
       "measured": 0.30051620032255366,
-      "error_pct": 0.073352,
+      "error_pct": 0.0733520000618,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.907488,
-      "claim": "T2_dynamics_channel"
+      "claim": "T2_dynamics_channel",
+      "error_pct_full": 0.073352
     },
     {
       "lab": "toe_dynamics_lab",
       "property": "consciousness_factor_channel",
       "name": "C_FACTOR",
-      "computed": 0.287833,
+      "computed": 0.2878327337,
       "measured": 0.28761391128429215,
-      "error_pct": 0.076082,
+      "error_pct": 0.0760819999042,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.941271,
-      "claim": "T2_dynamics_channel"
+      "claim": "T2_dynamics_channel",
+      "error_pct_full": 0.076082
     },
     {
       "lab": "toe_dynamics_lab",
       "property": "poof_valve_channel",
       "name": "POOF",
-      "computed": 0.1536,
+      "computed": 0.153600095375,
       "measured": 0.1534822148944508,
-      "error_pct": 0.076804,
+      "error_pct": 0.0768040001444,
       "eval_kind": "dynamics_channel",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.950197,
-      "claim": "T2_dynamics_channel"
+      "claim": "T2_dynamics_channel",
+      "error_pct_full": 0.076804
     }
   ]
 }

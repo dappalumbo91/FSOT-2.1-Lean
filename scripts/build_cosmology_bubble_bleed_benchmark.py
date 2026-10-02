@@ -9,6 +9,7 @@ import math
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 try:
     import yaml
@@ -323,7 +324,7 @@ def _h0_sector_records(
             "lab": "cosmology_bubble_bleed_lab",
             "property": "sector_h0_overlay",
             "name": row.get("name"),
-            "computed": round(computed, 6),
+            "computed": round_sig(computed),
             "measured": measured,
             "error_pct": err,
             "bubble_density_proxy": density_seed,

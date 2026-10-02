@@ -119,7 +119,7 @@
       "property": "fast_tick_log_ratio",
       "name": "atomic_cs133",
       "domain": "Atomic_Physics",
-      "computed": 1.344299,
+      "computed": 1.34429933568,
       "measured": 1.344,
       "error_pct": 0.022272,
       "validation_method": "fpc_direct",
@@ -142,14 +142,15 @@
       },
       "delta_psi_anchor": 0.5,
       "fpc_time_coupling": 0.000540844,
-      "omega_rad_s": 57759008871.57627
+      "omega_rad_s": 57759008871.57627,
+      "error_pct_full": 0.022272
     },
     {
       "lab": "time_emergence_lab",
       "property": "planetary_link_log_ratio",
       "name": "null_island_base",
       "domain": "Planetary_Science",
-      "computed": 1.790574,
+      "computed": 1.7905737129,
       "measured": 1.79,
       "error_pct": 0.032051,
       "validation_method": "fsot_anchor_coupling",
@@ -172,14 +173,15 @@
       },
       "delta_psi_anchor": 1.0,
       "fpc_time_coupling": 0.000347705,
-      "omega_rad_s": 7.292115857915991e-05
+      "omega_rad_s": 7.292115857915991e-05,
+      "error_pct_full": 0.032051
     },
     {
       "lab": "time_emergence_lab",
       "property": "orbital_year_log_ratio",
       "name": "astronomy_kepler",
       "domain": "Astronomy",
-      "computed": 1.80074,
+      "computed": 1.800739782,
       "measured": 1.8,
       "error_pct": 0.041099,
       "validation_method": "fsot_anchor_coupling",
@@ -202,14 +204,15 @@
       },
       "delta_psi_anchor": 1.3704329021880368,
       "fpc_time_coupling": 0.000441446,
-      "omega_rad_s": 1.991021277657232e-07
+      "omega_rad_s": 1.991021277657232e-07,
+      "error_pct_full": 0.041099
     },
     {
       "lab": "time_emergence_lab",
       "property": "cosmic_expansion_log_ratio",
       "name": "cosmology_hubble",
       "domain": "Cosmology",
-      "computed": 0.500111,
+      "computed": 0.500110905,
       "measured": 0.5,
       "error_pct": 0.022181,
       "validation_method": "fsot_anchor_coupling",
@@ -232,16 +235,17 @@
       },
       "delta_psi_anchor": 1.0,
       "fpc_time_coupling": 0.000441446,
-      "omega_rad_s": 1.991021277657232e-16
+      "omega_rad_s": 1.991021277657232e-16,
+      "error_pct_full": 0.022181
     },
     {
       "lab": "time_emergence_lab",
       "property": "gr_dilation_factor",
       "name": "blackhole_valve_sgra",
       "domain": "Particle_Astrophysics",
-      "computed": 0.577305,
+      "computed": 0.577304672252,
       "measured": 0.57735,
-      "error_pct": 0.007851,
+      "error_pct": 0.0078509999134,
       "validation_method": "fpc_direct_dilation",
       "source": "GR d\u03c4/dt at r=3M (photon sphere), M Schwarzschild mass",
       "fpc": {
@@ -266,14 +270,15 @@
       "fold_valve_relief": 1.002082,
       "quantum_tunnel_burst": 1.012485,
       "whirlpool_eddy_horizon": 1.000122,
-      "horizon_froth_fraction": 0.038824
+      "horizon_froth_fraction": 0.038824,
+      "error_pct_full": 0.007851
     },
     {
       "lab": "time_emergence_lab",
       "property": "recycle_coherence_target",
       "name": "backdown_post_poof",
       "domain": "Molecular_Chemistry",
-      "computed": 1.000105,
+      "computed": 1.00010526,
       "measured": 1.0,
       "error_pct": 0.010526,
       "validation_method": "fsot_anchor_coupling",
@@ -296,7 +301,8 @@
       },
       "delta_psi_anchor": 0.4,
       "fpc_time_coupling": 0.000347705,
-      "omega_rad_s": 7.292115857915991e-05
+      "omega_rad_s": 7.292115857915991e-05,
+      "error_pct_full": 0.010526
     },
     {
       "lab": "time_emergence_lab",
@@ -313,16 +319,17 @@
       "lab": "time_emergence_lab",
       "property": "bh_dilation_photon_sphere",
       "name": "sgra_photon_sphere",
-      "computed": 0.577305,
+      "computed": 0.577304672252,
       "measured": 0.57735,
-      "error_pct": 0.007851,
+      "error_pct": 0.0078509999134,
       "source": "GR Schwarzschild vs FPC whirlpool horizon stack",
       "dilation_raw_ratio": 0.568133,
       "dilation_horizon_corrected": 0.577305,
       "fold_valve_relief": 1.002082,
       "quantum_tunnel_burst": 1.012485,
       "whirlpool_eddy_horizon": 1.000122,
-      "horizon_froth_fraction": 0.038824
+      "horizon_froth_fraction": 0.038824,
+      "error_pct_full": 0.007851
     },
     {
       "lab": "time_emergence_lab",

@@ -8,6 +8,7 @@ import math
 import sys
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 REFERENCE = ROOT / "data" / "consciousness_reference_observables.json"
@@ -270,7 +271,7 @@ def build_econ_records(mod=None) -> tuple[list[dict], dict[str, Any]]:
                 "lab": "consciousness_econ_lab",
                 "property": prop,
                 "name": ch.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": round(measured, 6),
                 "error_pct": round(_error_pct(computed, measured), 6),
                 "condition": ch.get("condition"),

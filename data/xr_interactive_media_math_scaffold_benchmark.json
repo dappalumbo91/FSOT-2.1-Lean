@@ -382,7 +382,7 @@
       "lab": "xr_game_math_scaffold_lab",
       "property": "frame_budget_60hz_closure",
       "name": "fps_60_budget",
-      "computed": 16.666667,
+      "computed": 16.6666666667,
       "measured": 16.6666666667,
       "error_pct": 0.0,
       "eval_kind": "timing_consistency",
@@ -398,13 +398,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0
     },
     {
       "lab": "xr_game_math_scaffold_lab",
       "property": "frame_budget_90hz_closure",
       "name": "fps_90_budget",
-      "computed": 11.111111,
+      "computed": 11.1111111111,
       "measured": 11.1111111111,
       "error_pct": 0.0,
       "eval_kind": "timing_consistency",
@@ -420,13 +421,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0
     },
     {
       "lab": "xr_game_math_scaffold_lab",
       "property": "frame_budget_120hz_closure",
       "name": "fps_120_budget",
-      "computed": 8.333333,
+      "computed": 8.3333333333,
       "measured": 8.3333333333,
       "error_pct": 0.0,
       "eval_kind": "timing_consistency",
@@ -442,7 +444,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0
     },
     {
       "lab": "xr_game_math_scaffold_lab",

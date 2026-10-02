@@ -83,9 +83,9 @@
       "lab": "speleology_lab",
       "property": "cave_depth_m",
       "name": "krubera_voronya_depth",
-      "computed": 2197.979646,
+      "computed": 2197.97964575,
       "measured": 2197.0,
-      "error_pct": 0.044590157211034764,
+      "error_pct": 0.0445901570323,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "krubera voronya depth",
@@ -99,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "cave_depth_m",
       "name": "veryovkina_depth",
-      "computed": 2212.986334,
+      "computed": 2212.98633428,
       "measured": 2212.0,
-      "error_pct": 0.0445901572110272,
+      "error_pct": 0.0445901573237,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "veryovkina depth",
@@ -122,15 +123,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "cave_length_km",
       "name": "mammoth_cave_length",
-      "computed": 676.301429,
+      "computed": 676.301429463,
       "measured": 676.0,
-      "error_pct": 0.044590157211030886,
+      "error_pct": 0.0445901572485,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "mammoth cave length",
@@ -145,15 +147,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "cave_depth_m",
       "name": "sistema_huautla_depth",
-      "computed": 1545.688918,
+      "computed": 1545.68891793,
       "measured": 1545.0,
-      "error_pct": 0.044590157211038275,
+      "error_pct": 0.0445901572815,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "sistema huautla depth",
@@ -167,15 +170,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "cave_depth_m",
       "name": "goebbels_schacht_depth",
-      "computed": 1543.688026,
+      "computed": 1543.68802613,
       "measured": 1543.0,
-      "error_pct": 0.04459015721103875,
+      "error_pct": 0.0445901574854,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "goebbels schacht depth",
@@ -189,15 +193,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "air_temperature_c",
       "name": "cave_air_temp_mean",
-      "computed": 12.005351,
+      "computed": 12.0053508189,
       "measured": 12.0,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.0445901575,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave air temp mean",
@@ -211,15 +216,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "relative_humidity_pct",
       "name": "cave_humidity",
-      "computed": 98.043698,
+      "computed": 98.0436983541,
       "measured": 98.0,
-      "error_pct": 0.04459015721102574,
+      "error_pct": 0.0445901572449,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave humidity",
@@ -233,15 +239,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "calcite_growth_mm_yr",
       "name": "stalactite_growth_rate",
-      "computed": 0.100045,
+      "computed": 0.100044590157,
       "measured": 0.1,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.044590157,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "stalactite growth rate",
@@ -255,15 +262,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "co2_ppm",
       "name": "cave_co2_ppm",
-      "computed": 2000.891803,
+      "computed": 2000.89180314,
       "measured": 2000.0,
-      "error_pct": 0.04459015721103015,
+      "error_pct": 0.044590157,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave co2 ppm",
@@ -277,15 +285,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "water_table_depth_m",
       "name": "phreatic_zone_depth",
-      "computed": 50.022295,
+      "computed": 50.0222950786,
       "measured": 50.0,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.0445901572,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "phreatic zone depth",
@@ -299,15 +308,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "drip_rate_ml_min",
       "name": "cave_drip_rate",
-      "computed": 2.000892,
+      "computed": 2.00089180314,
       "measured": 2.0,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.044590157,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave drip rate",
@@ -321,15 +331,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "bats_per_m2",
       "name": "bat_colony_density",
-      "computed": 0.500223,
+      "computed": 0.500222950786,
       "measured": 0.5,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.0445901572,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "bat colony density",
@@ -343,15 +354,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "passage_width_m",
       "name": "cave_passage_width",
-      "computed": 5.00223,
+      "computed": 5.00222950786,
       "measured": 5.0,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.0445901572,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave passage width",
@@ -365,15 +377,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "passage_height_m",
       "name": "cave_passage_height",
-      "computed": 3.001338,
+      "computed": 3.00133770472,
       "measured": 3.0,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.0445901573333,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave passage height",
@@ -387,15 +400,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "discharge_l_s",
       "name": "karst_spring_discharge",
-      "computed": 500.222951,
+      "computed": 500.222950786,
       "measured": 500.0,
-      "error_pct": 0.04459015721103015,
+      "error_pct": 0.0445901572,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "karst spring discharge",
@@ -409,15 +423,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "sediment_thickness_m",
       "name": "cave_sediment_thickness",
-      "computed": 2.000892,
+      "computed": 2.00089180314,
       "measured": 2.0,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.044590157,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave sediment thickness",
@@ -431,15 +446,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "radon_bq_m3",
       "name": "cave_radon_bq_m3",
-      "computed": 500.222951,
+      "computed": 500.222950786,
       "measured": 500.0,
-      "error_pct": 0.04459015721103015,
+      "error_pct": 0.0445901572,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave radon bq m3",
@@ -453,15 +469,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "partial_pressure_co2_pa",
       "name": "cave_pco2_pa",
-      "computed": 500.222951,
+      "computed": 500.222950786,
       "measured": 500.0,
-      "error_pct": 0.04459015721103015,
+      "error_pct": 0.0445901572,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave pco2 pa",
@@ -475,15 +492,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "entrance_altitude_m",
       "name": "cave_entrance_altitude",
-      "computed": 1500.668852,
+      "computed": 1500.66885236,
       "measured": 1500.0,
-      "error_pct": 0.04459015721102636,
+      "error_pct": 0.0445901573333,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave entrance altitude",
@@ -497,15 +515,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "speleology_lab",
       "property": "air_exchange_per_day",
       "name": "cave_ventilation_rate",
-      "computed": 0.500223,
+      "computed": 0.500222950786,
       "measured": 0.5,
-      "error_pct": 0.04459015721103299,
+      "error_pct": 0.0445901572,
       "source": "speleology_reference_observables",
       "domain_display_name": "speleology",
       "display_name": "cave ventilation rate",
@@ -519,7 +538,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.044590157211
     },
     {
       "lab": "hydrology_lab",

@@ -85,7 +85,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Homo_sapiens",
-      "computed": 0.241676,
+      "computed": 0.241676118496,
       "measured": 0.2416,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -106,13 +106,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "Clarke_Sokoloff_1999_brain_20W"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Homo_sapiens",
-      "computed": 20.003601,
+      "computed": 20.0036006,
       "measured": 20.0,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -134,13 +135,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Homo_sapiens",
-      "computed": 82.798407,
+      "computed": 82.7984069608,
       "measured": 82.78,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -159,7 +161,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -188,7 +191,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Mus_musculus",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -209,13 +212,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "rodent_brain_body_metabolic"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Mus_musculus",
-      "computed": 0.027105,
+      "computed": 0.027104878813,
       "measured": 0.027100000000000003,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -237,13 +241,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Mus_musculus",
-      "computed": 0.27106,
+      "computed": 0.27106025956,
       "measured": 0.271,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -262,7 +267,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -291,7 +297,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Rattus_norvegicus",
-      "computed": 0.110035,
+      "computed": 0.1100346566,
       "measured": 0.11,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -312,15 +318,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "rodent_brain_body_metabolic"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Rattus_norvegicus",
-      "computed": 0.154468,
+      "computed": 0.154467803833,
       "measured": 0.15444,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029998705,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -340,13 +347,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Rattus_norvegicus",
-      "computed": 1.404312,
+      "computed": 1.40431219344,
       "measured": 1.404,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -365,7 +373,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -394,7 +403,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Heterocephalus_glaber",
-      "computed": 0.080025,
+      "computed": 0.0800252048,
       "measured": 0.08,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -415,13 +424,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "naked_mole_rat_hypometabolic_brain"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Heterocephalus_glaber",
-      "computed": 0.010242,
+      "computed": 0.0102418435072,
       "measured": 0.01024,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -443,13 +453,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Heterocephalus_glaber",
-      "computed": 0.128028,
+      "computed": 0.12802846208,
       "measured": 0.128,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -468,7 +479,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -497,7 +509,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Elephas_maximus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -518,7 +530,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "elephant_encephalization_metabolic"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -600,7 +613,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Geogale_aurita",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -621,13 +634,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_afrosoricida_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Geogale_aurita",
-      "computed": 0.005161,
+      "computed": 0.0051609289548,
       "measured": 0.00516,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -649,13 +663,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Geogale_aurita",
-      "computed": 0.04301,
+      "computed": 0.04300956148,
       "measured": 0.043,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -674,7 +689,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -703,7 +719,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Hemicentetes_semispinosus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -724,13 +740,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_afrosoricida_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Hemicentetes_semispinosus",
-      "computed": 0.045608,
+      "computed": 0.045608209368,
       "measured": 0.0456,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -752,13 +769,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Hemicentetes_semispinosus",
-      "computed": 0.380084,
+      "computed": 0.3800844968,
       "measured": 0.38,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -777,7 +795,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -806,7 +825,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Echinops_telfairi",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -827,13 +846,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_afrosoricida_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Echinops_telfairi",
-      "computed": 0.090016,
+      "computed": 0.0900162027,
       "measured": 0.09,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -855,13 +875,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Echinops_telfairi",
-      "computed": 0.750167,
+      "computed": 0.75016677,
       "measured": 0.75,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -880,7 +901,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -909,7 +931,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Tragulus_javanicus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -930,15 +952,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_artiodactyla_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Tragulus_javanicus",
-      "computed": 0.586065,
+      "computed": 0.586065490379,
       "measured": 0.5859599999999999,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030000341,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -958,13 +981,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Tragulus_javanicus",
-      "computed": 4.884086,
+      "computed": 4.88408578388,
       "measured": 4.883,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -983,7 +1007,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1012,7 +1037,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Ovis_canadensis",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1033,15 +1058,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_artiodactyla_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Ovis_canadensis",
-      "computed": 13.763357,
+      "computed": 13.7633573712,
       "measured": 13.76088,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029998081,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -1061,15 +1087,16 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Ovis_canadensis",
-      "computed": 114.699499,
+      "computed": 114.699498911,
       "measured": 114.674,
-      "error_pct": 0.022236,
+      "error_pct": 0.0222360003139,
       "eval_kind": "anage_live",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
@@ -1086,7 +1113,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1115,7 +1143,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Bos_taurus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1136,15 +1164,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_artiodactyla_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Bos_taurus",
-      "computed": 36.819027,
+      "computed": 36.8190273364,
       "measured": 36.8124,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030000761,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -1164,7 +1193,8 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1218,7 +1248,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Mustela_erminea",
-      "computed": 0.150047,
+      "computed": 0.150047259,
       "measured": 0.15,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1239,13 +1269,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_carnivora_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Mustela_erminea",
-      "computed": 0.191434,
+      "computed": 0.191434457742,
       "measured": 0.1914,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -1267,13 +1298,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Mustela_erminea",
-      "computed": 1.276284,
+      "computed": 1.27628373136,
       "measured": 1.276,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -1292,7 +1324,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1321,7 +1354,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Vulpes_lagopus",
-      "computed": 0.150047,
+      "computed": 0.150047259,
       "measured": 0.15,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1342,15 +1375,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_carnivora_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Vulpes_lagopus",
-      "computed": 1.149957,
+      "computed": 1.14995698949,
       "measured": 1.14975,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029997825,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -1370,13 +1404,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Vulpes_lagopus",
-      "computed": 7.666704,
+      "computed": 7.6667043894,
       "measured": 7.665,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -1395,7 +1430,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1424,7 +1460,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Panthera_tigris",
-      "computed": 0.150047,
+      "computed": 0.150047259,
       "measured": 0.15,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1445,15 +1481,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_carnivora_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Panthera_tigris",
-      "computed": 20.082465,
+      "computed": 20.0824647954,
       "measured": 20.07885,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030001718,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -1473,15 +1510,16 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Panthera_tigris",
-      "computed": 133.888765,
+      "computed": 133.888764887,
       "measured": 133.859,
-      "error_pct": 0.022236,
+      "error_pct": 0.0222359998207,
       "eval_kind": "anage_live",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
@@ -1498,7 +1536,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1527,7 +1566,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Phocoena_phocoena",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1548,15 +1587,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_cetacea_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Phocoena_phocoena",
-      "computed": 10.769438,
+      "computed": 10.769438473,
       "measured": 10.7675,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029997678,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -1576,13 +1616,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Phocoena_phocoena",
-      "computed": 107.698943,
+      "computed": 107.698942613,
       "measured": 107.675,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -1601,7 +1642,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1630,7 +1672,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Myotis_nigricans",
-      "computed": 0.080025,
+      "computed": 0.0800252048,
       "measured": 0.08,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1651,13 +1693,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_chiroptera_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Myotis_nigricans",
-      "computed": 0.00216,
+      "computed": 0.0021603888648,
       "measured": 0.00216,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -1679,13 +1722,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Myotis_nigricans",
-      "computed": 0.027006,
+      "computed": 0.02700600372,
       "measured": 0.027,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -1704,7 +1748,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1733,7 +1778,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Platyrrhinus_lineatus",
-      "computed": 0.080025,
+      "computed": 0.0800252048,
       "measured": 0.08,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1754,13 +1799,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_chiroptera_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Platyrrhinus_lineatus",
-      "computed": 0.020004,
+      "computed": 0.0200036006,
       "measured": 0.02,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -1782,13 +1828,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Platyrrhinus_lineatus",
-      "computed": 0.250056,
+      "computed": 0.25005559,
       "measured": 0.25,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -1807,7 +1854,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1836,7 +1884,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Pteropus_vampyrus",
-      "computed": 0.080025,
+      "computed": 0.0800252048,
       "measured": 0.08,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1857,15 +1905,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_chiroptera_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Pteropus_vampyrus",
-      "computed": 0.358945,
+      "computed": 0.358944609166,
       "measured": 0.35888,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029998886,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -1885,13 +1934,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Pteropus_vampyrus",
-      "computed": 4.486998,
+      "computed": 4.48699750696,
       "measured": 4.486,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -1910,7 +1960,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -1939,7 +1990,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Tolypeutes_matacus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -1960,15 +2011,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_cingulata_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Tolypeutes_matacus",
-      "computed": 0.140665,
+      "computed": 0.140665319419,
       "measured": 0.14064,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029998578,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -1988,13 +2040,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Tolypeutes_matacus",
-      "computed": 1.172261,
+      "computed": 1.17226060592,
       "measured": 1.172,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2013,7 +2066,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2042,7 +2096,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Chaetophractus_villosus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2063,15 +2117,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_cingulata_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Chaetophractus_villosus",
-      "computed": 0.541057,
+      "computed": 0.541057389029,
       "measured": 0.54096,
-      "error_pct": 0.018003,
+      "error_pct": 0.018003000037,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -2091,13 +2146,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Chaetophractus_villosus",
-      "computed": 4.509002,
+      "computed": 4.50900239888,
       "measured": 4.508,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2116,7 +2172,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2145,7 +2202,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Priodontes_maximus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2166,15 +2223,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_cingulata_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Priodontes_maximus",
-      "computed": 2.027405,
+      "computed": 2.02740492801,
       "measured": 2.02704,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999408,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -2194,15 +2252,16 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Priodontes_maximus",
-      "computed": 16.895756,
+      "computed": 16.8957561051,
       "measured": 16.892,
-      "error_pct": 0.022236,
+      "error_pct": 0.0222359998816,
       "eval_kind": "anage_live",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
@@ -2219,7 +2278,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2248,7 +2308,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Planigale_gilesi",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2269,13 +2329,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_dasyuromorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Planigale_gilesi",
-      "computed": 0.006961,
+      "computed": 0.0069612530088,
       "measured": 0.00696,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -2297,13 +2358,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Planigale_gilesi",
-      "computed": 0.058013,
+      "computed": 0.05801289688,
       "measured": 0.058,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2322,7 +2384,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2351,7 +2414,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Dasycercus_cristicauda",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2372,13 +2435,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_dasyuromorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Dasycercus_cristicauda",
-      "computed": 0.031206,
+      "computed": 0.031205616936,
       "measured": 0.0312,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -2400,13 +2464,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Dasycercus_cristicauda",
-      "computed": 0.260058,
+      "computed": 0.2600578136,
       "measured": 0.26,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2425,7 +2490,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2454,7 +2520,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Sarcophilus_harrisii",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2475,15 +2541,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_dasyuromorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Sarcophilus_harrisii",
-      "computed": 1.039867,
+      "computed": 1.03986717359,
       "measured": 1.03968,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999615,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -2503,13 +2570,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Sarcophilus_harrisii",
-      "computed": 8.665927,
+      "computed": 8.66592652704,
       "measured": 8.664,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2528,7 +2596,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2557,7 +2626,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Monodelphis_domestica",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2578,13 +2647,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_didelphimorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Monodelphis_domestica",
-      "computed": 0.040207,
+      "computed": 0.040207237206,
       "measured": 0.0402,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -2606,13 +2676,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Monodelphis_domestica",
-      "computed": 0.335074,
+      "computed": 0.3350744906,
       "measured": 0.335,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2631,7 +2702,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2660,7 +2732,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Philander_opossum",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2681,15 +2753,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_didelphimorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Philander_opossum",
-      "computed": 0.226361,
+      "computed": 0.22636074439,
       "measured": 0.22631999999999997,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030001768,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -2709,13 +2782,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Philander_opossum",
-      "computed": 1.886419,
+      "computed": 1.88641937096,
       "measured": 1.886,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2734,7 +2808,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2763,7 +2838,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Didelphis_virginiana",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2784,15 +2859,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_didelphimorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Didelphis_virginiana",
-      "computed": 0.635994,
+      "computed": 0.635994477476,
       "measured": 0.63588,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999371,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -2812,13 +2888,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Didelphis_virginiana",
-      "computed": 5.300178,
+      "computed": 5.30017828564,
       "measured": 5.299,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2837,7 +2914,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2866,7 +2944,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Acrobates_pygmaeus",
-      "computed": 0.090028,
+      "computed": 0.0900283554,
       "measured": 0.09,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2887,13 +2965,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_diprotodontia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Acrobates_pygmaeus",
-      "computed": 0.007561,
+      "computed": 0.0075613610268,
       "measured": 0.00756,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -2915,13 +2994,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Acrobates_pygmaeus",
-      "computed": 0.084019,
+      "computed": 0.08401867824,
       "measured": 0.084,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -2940,7 +3020,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -2969,7 +3050,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Trichosurus_vulpecula",
-      "computed": 0.090028,
+      "computed": 0.0900283554,
       "measured": 0.09,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -2990,13 +3071,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_diprotodontia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Trichosurus_vulpecula",
-      "computed": 0.342062,
+      "computed": 0.34206157026,
       "measured": 0.34199999999999997,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -3018,13 +3100,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Trichosurus_vulpecula",
-      "computed": 3.800845,
+      "computed": 3.800844968,
       "measured": 3.8,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3043,7 +3126,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3072,7 +3156,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Macropus_robustus",
-      "computed": 0.090028,
+      "computed": 0.0900283554,
       "measured": 0.09,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3093,15 +3177,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_diprotodontia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Macropus_robustus",
-      "computed": 2.975576,
+      "computed": 2.97557559645,
       "measured": 2.9750399999999995,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999597,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -3121,15 +3206,16 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Macropus_robustus",
-      "computed": 33.06335,
+      "computed": 33.0633503322,
       "measured": 33.056,
-      "error_pct": 0.022236,
+      "error_pct": 0.022236000121,
       "eval_kind": "anage_live",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
@@ -3146,7 +3232,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3175,7 +3262,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Paraechinus_aethiopicus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3196,13 +3283,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_erinaceomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Paraechinus_aethiopicus",
-      "computed": 0.075614,
+      "computed": 0.075613610268,
       "measured": 0.0756,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -3224,13 +3312,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Paraechinus_aethiopicus",
-      "computed": 0.63014,
+      "computed": 0.6301400868,
       "measured": 0.63,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3249,7 +3338,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3278,7 +3368,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Erinaceus_concolor",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3299,15 +3389,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_erinaceomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Erinaceus_concolor",
-      "computed": 0.232482,
+      "computed": 0.232481846173,
       "measured": 0.23244,
-      "error_pct": 0.018003,
+      "error_pct": 0.018002999914,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -3327,13 +3418,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Erinaceus_concolor",
-      "computed": 1.937431,
+      "computed": 1.93743071132,
       "measured": 1.937,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3352,7 +3444,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3381,7 +3474,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Echinosorex_gymnura",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3402,15 +3495,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_erinaceomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Echinosorex_gymnura",
-      "computed": 0.337981,
+      "computed": 0.337980835738,
       "measured": 0.33791999999999994,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030001184,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -3430,13 +3524,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Echinosorex_gymnura",
-      "computed": 2.816626,
+      "computed": 2.81662616576,
       "measured": 2.816,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3455,7 +3550,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3484,7 +3580,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Heterohyrax_brucei",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3505,15 +3601,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_hyracoidea_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Heterohyrax_brucei",
-      "computed": 0.464724,
+      "computed": 0.464723649139,
       "measured": 0.46463999999999994,
-      "error_pct": 0.018003,
+      "error_pct": 0.018002999957,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -3533,13 +3630,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Heterohyrax_brucei",
-      "computed": 3.872861,
+      "computed": 3.87286097792,
       "measured": 3.872,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3558,7 +3656,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3587,7 +3686,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Procavia_capensis",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3608,15 +3707,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_hyracoidea_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Procavia_capensis",
-      "computed": 0.594587,
+      "computed": 0.594587024234,
       "measured": 0.5944799999999999,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999327,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -3636,13 +3736,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Procavia_capensis",
-      "computed": 4.955102,
+      "computed": 4.95510157144,
       "measured": 4.954,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3661,7 +3762,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3690,7 +3792,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Ochotona_princeps",
-      "computed": 0.110035,
+      "computed": 0.1100346566,
       "measured": 0.11,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3711,15 +3813,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_lagomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Ochotona_princeps",
-      "computed": 0.102538,
+      "computed": 0.102538456676,
       "measured": 0.10252,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030003902,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -3739,13 +3842,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Ochotona_princeps",
-      "computed": 0.932207,
+      "computed": 0.93220723952,
       "measured": 0.932,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3764,7 +3868,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3793,7 +3898,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Lepus_californicus",
-      "computed": 0.110035,
+      "computed": 0.1100346566,
       "measured": 0.11,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3814,15 +3919,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_lagomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Lepus_californicus",
-      "computed": 0.804685,
+      "computed": 0.804684841336,
       "measured": 0.80454,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999751,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -3842,13 +3948,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Lepus_californicus",
-      "computed": 7.315626,
+      "computed": 7.31562634104,
       "measured": 7.314,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3867,7 +3974,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3896,7 +4004,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Lepus_timidus",
-      "computed": 0.110035,
+      "computed": 0.1100346566,
       "measured": 0.11,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -3917,15 +4025,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_lagomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Lepus_timidus",
-      "computed": 0.928897,
+      "computed": 0.928897199262,
       "measured": 0.9287299999999999,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030000108,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -3945,13 +4054,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Lepus_timidus",
-      "computed": 8.444877,
+      "computed": 8.44487738548,
       "measured": 8.443,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -3970,7 +4080,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -3999,7 +4110,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Elephantulus_brachyrhynchus",
-      "computed": 0.110035,
+      "computed": 0.1100346566,
       "measured": 0.11,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4020,13 +4131,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_macroscelidea_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Elephantulus_brachyrhynchus",
-      "computed": 0.026845,
+      "computed": 0.0268448320052,
       "measured": 0.02684,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -4048,13 +4160,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Elephantulus_brachyrhynchus",
-      "computed": 0.244054,
+      "computed": 0.24405425584,
       "measured": 0.244,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4073,7 +4186,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4102,7 +4216,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Macroscelides_proboscideus",
-      "computed": 0.110035,
+      "computed": 0.1100346566,
       "measured": 0.11,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4123,13 +4237,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_macroscelidea_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Macroscelides_proboscideus",
-      "computed": 0.032126,
+      "computed": 0.0321257825636,
       "measured": 0.032119999999999996,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -4151,13 +4266,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Macroscelides_proboscideus",
-      "computed": 0.292065,
+      "computed": 0.29206492912,
       "measured": 0.292,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4176,7 +4292,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4205,7 +4322,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Petrodromus_tetradactylus",
-      "computed": 0.110035,
+      "computed": 0.1100346566,
       "measured": 0.11,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4226,13 +4343,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_macroscelidea_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Petrodromus_tetradactylus",
-      "computed": 0.093737,
+      "computed": 0.0937368724116,
       "measured": 0.09372,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -4254,13 +4372,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Petrodromus_tetradactylus",
-      "computed": 0.852189,
+      "computed": 0.85218945072,
       "measured": 0.852,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4279,7 +4398,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4308,7 +4428,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Ornithorhynchus_anatinus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4329,15 +4449,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_monotremata_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Ornithorhynchus_anatinus",
-      "computed": 0.231762,
+      "computed": 0.231761716552,
       "measured": 0.23172,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030001726,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -4357,13 +4478,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Ornithorhynchus_anatinus",
-      "computed": 1.931429,
+      "computed": 1.93142937716,
       "measured": 1.931,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4382,7 +4504,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4411,7 +4534,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Tachyglossus_aculeatus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4432,15 +4555,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_monotremata_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Tachyglossus_aculeatus",
-      "computed": 0.27929,
+      "computed": 0.279290271577,
       "measured": 0.27924,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999284,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -4460,13 +4584,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Tachyglossus_aculeatus",
-      "computed": 2.327517,
+      "computed": 2.32751743172,
       "measured": 2.327,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4485,7 +4610,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4514,7 +4640,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Zaglossus_bruijni",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4535,15 +4661,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_monotremata_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Zaglossus_bruijni",
-      "computed": 0.7793,
+      "computed": 0.779300272175,
       "measured": 0.77916,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030000257,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -4563,13 +4690,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Zaglossus_bruijni",
-      "computed": 6.494444,
+      "computed": 6.49444378348,
       "measured": 6.493,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4588,7 +4716,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4617,7 +4746,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Isoodon_auratus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4638,15 +4767,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_peramelemorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Isoodon_auratus",
-      "computed": 0.100458,
+      "computed": 0.100458082213,
       "measured": 0.10043999999999999,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029998009,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -4666,13 +4796,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Isoodon_auratus",
-      "computed": 0.837186,
+      "computed": 0.83718611532,
       "measured": 0.837,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4691,7 +4822,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4720,7 +4852,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Perameles_gunnii",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4741,15 +4873,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_peramelemorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Perameles_gunnii",
-      "computed": 0.228281,
+      "computed": 0.228281090047,
       "measured": 0.22823999999999997,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999124,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -4769,13 +4902,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Perameles_gunnii",
-      "computed": 1.902423,
+      "computed": 1.90242292872,
       "measured": 1.902,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4794,7 +4928,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4823,7 +4958,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Isoodon_macrourus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4844,15 +4979,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_peramelemorphia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Isoodon_macrourus",
-      "computed": 0.384309,
+      "computed": 0.384309174727,
       "measured": 0.38423999999999997,
-      "error_pct": 0.018003,
+      "error_pct": 0.018002999948,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -4872,13 +5008,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Isoodon_macrourus",
-      "computed": 3.202712,
+      "computed": 3.20271199672,
       "measured": 3.202,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -4897,7 +5034,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -4926,7 +5064,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Equus_asinus",
-      "computed": 0.110035,
+      "computed": 0.1100346566,
       "measured": 0.11,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -4947,15 +5085,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_perissodactyla_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Equus_asinus",
-      "computed": 18.144466,
+      "computed": 18.1444659602,
       "measured": 18.141199999999998,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029998016,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -4975,15 +5114,16 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Equus_asinus",
-      "computed": 164.956672,
+      "computed": 164.956671611,
       "measured": 164.92,
-      "error_pct": 0.022236,
+      "error_pct": 0.0222359998787,
       "eval_kind": "anage_live",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
@@ -5000,7 +5140,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5029,7 +5170,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Manis_pentadactyla",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5050,13 +5191,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_pholidota_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Manis_pentadactyla",
-      "computed": 0.372767,
+      "computed": 0.372767097181,
       "measured": 0.37270000000000003,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -5078,13 +5220,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Manis_pentadactyla",
-      "computed": 3.727829,
+      "computed": 3.72782873572,
       "measured": 3.727,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -5103,7 +5246,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5132,7 +5276,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Manis_crassicaudata",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5153,13 +5297,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_pholidota_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Manis_crassicaudata",
-      "computed": 0.692425,
+      "computed": 0.692424634769,
       "measured": 0.6923,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -5181,13 +5326,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Manis_crassicaudata",
-      "computed": 6.924539,
+      "computed": 6.92453939828,
       "measured": 6.923,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -5206,7 +5352,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5235,7 +5382,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Cyclopes_didactylus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5256,13 +5403,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_pilosa_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Cyclopes_didactylus",
-      "computed": 0.076334,
+      "computed": 0.0763337398896,
       "measured": 0.07632,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -5284,13 +5432,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Cyclopes_didactylus",
-      "computed": 0.636141,
+      "computed": 0.63614142096,
       "measured": 0.636,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -5309,7 +5458,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5338,7 +5488,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Tamandua_tetradactyla",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5359,13 +5509,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_pilosa_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Tamandua_tetradactyla",
-      "computed": 0.601908,
+      "computed": 0.601908342054,
       "measured": 0.6017999999999999,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -5387,13 +5538,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Tamandua_tetradactyla",
-      "computed": 5.016115,
+      "computed": 5.0161151354,
       "measured": 5.015,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -5412,7 +5564,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5441,7 +5594,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Myrmecophaga_tridactyla",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5462,15 +5615,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_pilosa_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Myrmecophaga_tridactyla",
-      "computed": 1.745474,
+      "computed": 1.74547418115,
       "measured": 1.7451599999999998,
-      "error_pct": 0.018003,
+      "error_pct": 0.018002999725,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -5490,15 +5644,16 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Myrmecophaga_tridactyla",
-      "computed": 14.546234,
+      "computed": 14.5462337815,
       "measured": 14.543,
-      "error_pct": 0.022236,
+      "error_pct": 0.0222360001375,
       "eval_kind": "anage_live",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
@@ -5515,7 +5670,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5544,7 +5700,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Galago_moholi",
-      "computed": 0.220069,
+      "computed": 0.2200693132,
       "measured": 0.22,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5565,13 +5721,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_primates_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Galago_moholi",
-      "computed": 0.062711,
+      "computed": 0.062711287881,
       "measured": 0.06269999999999999,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -5593,13 +5750,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Galago_moholi",
-      "computed": 0.285063,
+      "computed": 0.2850633726,
       "measured": 0.285,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -5618,7 +5776,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5647,7 +5806,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Perodicticus_potto",
-      "computed": 0.220069,
+      "computed": 0.2200693132,
       "measured": 0.22,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5668,15 +5827,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_primates_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Perodicticus_potto",
-      "computed": 0.427317,
+      "computed": 0.427316916017,
       "measured": 0.42724,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999532,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -5696,13 +5856,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Perodicticus_potto",
-      "computed": 1.942432,
+      "computed": 1.94243182312,
       "measured": 1.942,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -5721,7 +5882,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5750,7 +5912,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Perognathus_longimembris",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5771,13 +5933,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_rodentia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Perognathus_longimembris",
-      "computed": 0.006101,
+      "computed": 0.006101098183,
       "measured": 0.0061,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -5799,13 +5962,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Perognathus_longimembris",
-      "computed": 0.061014,
+      "computed": 0.06101356396,
       "measured": 0.061,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -5824,7 +5988,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5853,7 +6018,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Tamias_amoenus",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5874,13 +6039,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_rodentia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Tamias_amoenus",
-      "computed": 0.050009,
+      "computed": 0.0500090015,
       "measured": 0.05,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -5902,13 +6068,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Tamias_amoenus",
-      "computed": 0.500111,
+      "computed": 0.50011118,
       "measured": 0.5,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -5927,7 +6094,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -5956,7 +6124,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Hydrochoerus_hydrochaeris",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -5977,15 +6145,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_rodentia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Hydrochoerus_hydrochaeris",
-      "computed": 3.676062,
+      "computed": 3.67606168226,
       "measured": 3.6754,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999456,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -6005,15 +6174,16 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Hydrochoerus_hydrochaeris",
-      "computed": 36.762173,
+      "computed": 36.7621726194,
       "measured": 36.754,
-      "error_pct": 0.022236,
+      "error_pct": 0.0222359998912,
       "eval_kind": "anage_live",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
@@ -6030,7 +6200,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6059,7 +6230,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Ptilocercus_lowii",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6080,13 +6251,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_scandentia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Ptilocercus_lowii",
-      "computed": 0.028805,
+      "computed": 0.028805184864,
       "measured": 0.0288,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -6108,13 +6280,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Ptilocercus_lowii",
-      "computed": 0.240053,
+      "computed": 0.2400533664,
       "measured": 0.24,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -6133,7 +6306,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6162,7 +6336,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Tupaia_glis",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6183,13 +6357,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_scandentia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Tupaia_glis",
-      "computed": 0.062651,
+      "computed": 0.0626512770792,
       "measured": 0.06264,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -6211,13 +6386,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Tupaia_glis",
-      "computed": 0.522116,
+      "computed": 0.52211607192,
       "measured": 0.522,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -6236,7 +6412,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6265,7 +6442,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Urogale_everetti",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6286,13 +6463,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_scandentia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Urogale_everetti",
-      "computed": 0.150027,
+      "computed": 0.1500270045,
       "measured": 0.15,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -6314,13 +6492,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Urogale_everetti",
-      "computed": 1.250278,
+      "computed": 1.25027795,
       "measured": 1.25,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -6339,7 +6518,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6368,7 +6548,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Trichechus_inunguis",
-      "computed": 0.090028,
+      "computed": 0.0900283554,
       "measured": 0.09,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6389,15 +6569,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_sirenia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Trichechus_inunguis",
-      "computed": 4.952241,
+      "computed": 4.95224139154,
       "measured": 4.95135,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999899,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -6417,13 +6598,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Trichechus_inunguis",
-      "computed": 55.027233,
+      "computed": 55.0272331354,
       "measured": 55.015,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -6442,7 +6624,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6471,7 +6654,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Trichechus_manatus",
-      "computed": 0.090028,
+      "computed": 0.0900283554,
       "measured": 0.09,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6492,15 +6675,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_sirenia_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Trichechus_manatus",
-      "computed": 6.301638,
+      "computed": 6.30163827974,
       "measured": 6.300504,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180030000774,
       "eval_kind": "cross_species_metabolic",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
@@ -6520,7 +6704,8 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6574,7 +6759,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Suncus_etruscus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6595,13 +6780,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_soricomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Suncus_etruscus",
-      "computed": 0.007561,
+      "computed": 0.0075613610268,
       "measured": 0.00756,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -6623,13 +6809,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Suncus_etruscus",
-      "computed": 0.063014,
+      "computed": 0.06301400868,
       "measured": 0.063,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -6648,7 +6835,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6677,7 +6865,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Sorex_alpinus",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6698,13 +6886,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_soricomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Sorex_alpinus",
-      "computed": 0.032046,
+      "computed": 0.0320457681612,
       "measured": 0.03204,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -6726,13 +6915,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Sorex_alpinus",
-      "computed": 0.267059,
+      "computed": 0.26705937012,
       "measured": 0.267,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -6751,7 +6941,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6780,7 +6971,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Condylura_cristata",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6801,13 +6992,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_soricomorpha_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Condylura_cristata",
-      "computed": 0.073813,
+      "computed": 0.073813286214,
       "measured": 0.07379999999999999,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -6829,13 +7021,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Condylura_cristata",
-      "computed": 0.615137,
+      "computed": 0.6151367514,
       "measured": 0.615,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -6854,7 +7047,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",
@@ -6883,7 +7077,7 @@
       "lab": "consciousness_species_multi_lab",
       "property": "brain_energy_fraction",
       "name": "Orycteropus_afer",
-      "computed": 0.120038,
+      "computed": 0.1200378072,
       "measured": 0.12,
       "error_pct": 0.031506,
       "eval_kind": "cross_species_metabolic",
@@ -6904,13 +7098,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "AnAge_HAGR_tubulidentata_taxon_fraction"
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "brain_power_w",
       "name": "Orycteropus_afer",
-      "computed": 4.11374,
+      "computed": 4.11374046339,
       "measured": 4.1129999999999995,
       "error_pct": 0.018003,
       "eval_kind": "cross_species_metabolic",
@@ -6932,13 +7127,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_species_multi_lab",
       "property": "total_metabolic_w",
       "name": "Orycteropus_afer",
-      "computed": 34.282621,
+      "computed": 34.282621389,
       "measured": 34.275,
       "error_pct": 0.022236,
       "eval_kind": "anage_live",
@@ -6957,7 +7153,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_species_multi_lab",

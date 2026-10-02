@@ -363,7 +363,7 @@
       "lab": "higgs_branching",
       "property": "m_H/m_t",
       "name": "m_H/m_t",
-      "computed": 0.725669,
+      "computed": 0.725668961024,
       "measured": 0.7256,
       "error_pct": 0.009504,
       "eval_kind": "fsot_prediction",
@@ -374,15 +374,16 @@
       "authority_wave_formula": "A_bleed\u00b7ln(2)",
       "authority_wave_computed": 0.7257068201623708,
       "authority_wave_error_pct": 0.014721632079759569,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_bb",
       "name": "BR_H_bb",
-      "computed": 0.580955,
+      "computed": 0.580955208736,
       "measured": 0.5809,
-      "error_pct": 0.009504,
+      "error_pct": 0.00950400000001,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
@@ -391,15 +392,16 @@
       "authority_wave_formula": "C_eff/\u221ae",
       "authority_wave_computed": 0.5808757487636912,
       "authority_wave_error_pct": 0.004174769548765883,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_WW",
       "name": "BR_H_WW",
-      "computed": 0.21522,
+      "computed": 0.215220452608,
       "measured": 0.2152,
-      "error_pct": 0.009504,
+      "error_pct": 0.00950399999999,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
@@ -408,15 +410,16 @@
       "authority_wave_formula": "ln(\u03c6)/\u221a5",
       "authority_wave_computed": 0.21520447048200203,
       "authority_wave_error_pct": 0.0020773615251059676,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_tautau",
       "name": "BR_H_tautau",
-      "computed": 0.063206,
+      "computed": 0.063206006528,
       "measured": 0.0632,
-      "error_pct": 0.009504,
+      "error_pct": 0.00950399999999,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
@@ -425,13 +428,14 @@
       "authority_wave_formula": "\u03b7_eff/e\u00b2",
       "authority_wave_computed": 0.06319375582922372,
       "authority_wave_error_pct": 0.009880017051083028,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_ZZ",
       "name": "BR_H_ZZ",
-      "computed": 0.026403,
+      "computed": 0.026402509056,
       "measured": 0.0264,
       "error_pct": 0.009504,
       "eval_kind": "fsot_prediction",
@@ -442,13 +446,14 @@
       "authority_wave_formula": "1/(e\u2074ln(2))",
       "authority_wave_computed": 0.026423881395489845,
       "authority_wave_error_pct": 0.09045983140093045,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_gg",
       "name": "BR_H_gg",
-      "computed": 0.078507,
+      "computed": 0.07850746064,
       "measured": 0.0785,
       "error_pct": 0.009504,
       "eval_kind": "fsot_prediction",
@@ -459,15 +464,16 @@
       "authority_wave_formula": "\u03c6\u207b\u2074 \u2212 \u03b3\u2075",
       "authority_wave_computed": 0.08182274913982478,
       "authority_wave_error_pct": 4.232801452006084,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_cc",
       "name": "BR_H_cc",
-      "computed": 0.028903,
+      "computed": 0.028902746656,
       "measured": 0.0289,
-      "error_pct": 0.009504,
+      "error_pct": 0.00950400000001,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
@@ -476,13 +482,14 @@
       "authority_wave_formula": "Suction/(\u03c0\u03c6)",
       "authority_wave_computed": 0.028925456135151035,
       "authority_wave_error_pct": 0.08808351263334355,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_gamgam",
       "name": "BR_H_gamgam",
-      "computed": 0.00228,
+      "computed": 0.0022802166912,
       "measured": 0.00228,
       "error_pct": 0.009504,
       "eval_kind": "fsot_prediction",
@@ -493,13 +500,14 @@
       "authority_wave_formula": "\u03b3\u2076\u00b7C_cosm",
       "authority_wave_computed": 0.0022858146532987495,
       "authority_wave_error_pct": 0.2550286534539278,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_Zgam",
       "name": "BR_H_Zgam",
-      "computed": 0.00153,
+      "computed": 0.0015301454112,
       "measured": 0.00153,
       "error_pct": 0.009504,
       "eval_kind": "fsot_prediction",
@@ -510,7 +518,8 @@
       "authority_wave_formula": "\u03b7_eff/\u03c0\u2075",
       "authority_wave_computed": 0.0015258567671942072,
       "authority_wave_error_pct": 0.27079952979037436,
-      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced"
+      "note": "Gate residual is FSOT domain S; authority seed formula is disclosed, not replaced",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "higgs_branching",

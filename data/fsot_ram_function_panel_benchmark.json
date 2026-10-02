@@ -373,13 +373,14 @@
       "lab": "fsot_ram_lab",
       "property": "pack_u64_word_identity",
       "name": "trinary_ram_layout",
-      "computed": 5.270498306774157e+18,
+      "computed": 5.27049830677e+18,
       "measured": 5.270498306774157e+18,
-      "error_pct": 0.0,
+      "error_pct": 7.88813458996e-11,
       "eval_kind": "live_formula",
       "formula": "pack\u2218unpack identity on 32-trit word",
       "layer": "ram_function",
-      "pack_u64_word": 5270498306774157604
+      "pack_u64_word": 5270498306774157604,
+      "error_pct_full": 0.0
     },
     {
       "lab": "fsot_ram_lab",
@@ -419,14 +420,15 @@
       "lab": "fsot_ram_lab",
       "property": "host_ram_gib",
       "name": "host_system_ram",
-      "computed": 31.598148,
+      "computed": 31.5981483808,
       "measured": 31.593482971191406,
-      "error_pct": 0.014767,
+      "error_pct": 0.0147669999311,
       "eval_kind": "live_formula",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "layer": "ram_function",
-      "class_gib": 32.0
+      "class_gib": 32.0,
+      "error_pct_full": 0.014767
     }
   ],
   "margin_summary": {

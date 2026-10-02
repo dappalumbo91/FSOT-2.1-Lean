@@ -6,6 +6,7 @@ import math
 import sys
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -157,7 +158,7 @@ def build_time_domain_crosswalk() -> dict:
                 "property": "fpc_tau_unity_coupling",
                 "name": name,
                 "source_domain": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": round(fpc_err, 6),
                 "source_median_error_pct": round(median_err, 6),
@@ -194,7 +195,7 @@ def build_time_domain_crosswalk() -> dict:
                 "property": "fpc_anchor_coupling",
                 "name": name,
                 "source_domain": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": float(anchor_val),
                 "error_pct": round(abs(computed - anchor_val) / max(abs(anchor_val), 1e-12) * 100.0, 6),
                 "S": round(S, 6),
@@ -278,7 +279,7 @@ def build_fpc_temporal_coupling() -> dict:
                 "source_domain": "Time_Emergence_Simulation",
                 "target_domain": target,
                 "edge_type": "fluidlink_fpc_timing",
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": 1.0,
                 "error_pct": round(err, 6),
                 "S_time": round(S_time, 6),
@@ -363,7 +364,7 @@ def build_fluid_phase_current_spine() -> dict:
                 "lab": "fluid_phase_current_spine_lab",
                 "property": prop,
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": round(err, 6),
                 "source": "fluid_phase_current_spine",

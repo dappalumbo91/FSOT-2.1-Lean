@@ -8,6 +8,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -117,7 +118,7 @@ def build_fractal_constant_recursion() -> dict:
                 "lab": "fractal_constant_recursion_lab",
                 "property": "constant_family_corpus_count",
                 "name": fam,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "strict_empirical.jsonl",
@@ -177,7 +178,7 @@ def build_preregistered_predictions() -> dict:
                 "lab": "preregistered_predictions_lab",
                 "property": "prediction_discriminant",
                 "name": pred.get("id"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": fsot,
                 "error_pct": err,
                 "source": "preregistered_predictions_manifest.yaml",
@@ -225,7 +226,7 @@ def build_portable_clone_verify() -> dict:
                 "lab": "portable_clone_verify_lab",
                 "property": "bundled_asset_present",
                 "name": key,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err if present else 100.0,
                 "source": rel,
@@ -246,7 +247,7 @@ def build_portable_clone_verify() -> dict:
                 "lab": "portable_clone_verify_lab",
                 "property": "extension_benchmark_present",
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err if present else 100.0,
                 "source": rel,
@@ -340,7 +341,7 @@ def build_observer_channel_derivation() -> dict:
                 "lab": "observer_channel_derivation_lab",
                 "property": "quirkmod_channel_strength",
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "fsot_formula_spine.yaml",
@@ -439,7 +440,7 @@ def build_adversarial_fractal_break() -> dict:
             "lab": "adversarial_fractal_break_lab",
             "property": "adversarial_detection_rate",
             "name": "aggregate_adversarial",
-            "computed": round(computed, 6),
+            "computed": round_sig(computed),
             "measured": round(measured, 6),
             "error_pct": err,
             "source": "adversarial_corpus",

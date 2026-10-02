@@ -317,9 +317,9 @@
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Residential SEER 14 baseline",
-      "computed": 14.001173,
+      "computed": 14.0011734096,
       "measured": 14.0,
-      "error_pct": 0.008381497018409132,
+      "error_pct": 0.00838149714286,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -335,15 +335,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.00838149701841
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Residential SEER 14 baseline",
-      "computed": 3.500293,
+      "computed": 3.5002933524,
       "measured": 3.5,
-      "error_pct": 0.008381497018409132,
+      "error_pct": 0.00838149714286,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -359,15 +360,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.00838149701841
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "High-efficiency SEER 22",
-      "computed": 22.001844,
+      "computed": 22.0018439293,
       "measured": 22.0,
-      "error_pct": 0.008381497018399903,
+      "error_pct": 0.00838149681819,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -383,15 +385,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.0083814970184
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "High-efficiency SEER 22",
-      "computed": 5.500461,
+      "computed": 5.50046098234,
       "measured": 5.5,
-      "error_pct": 0.008381497018399903,
+      "error_pct": 0.00838149709091,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -407,15 +410,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.0083814970184
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Heat pump HSPF 10",
-      "computed": 10.000838,
+      "computed": 10.0008381497,
       "measured": 10.0,
-      "error_pct": 0.008381497018401518,
+      "error_pct": 0.008381497,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -431,15 +435,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.0083814970184
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Heat pump HSPF 10",
-      "computed": 3.000251,
+      "computed": 3.00025144491,
       "measured": 3.0,
-      "error_pct": 0.00838149701841336,
+      "error_pct": 0.008381497,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -455,15 +460,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.00838149701841
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Heat pump HSPF 13",
-      "computed": 13.00109,
+      "computed": 13.0010895946,
       "measured": 13.0,
-      "error_pct": 0.008381497018411083,
+      "error_pct": 0.00838149692308,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -479,15 +485,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.00838149701841
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Heat pump HSPF 13",
-      "computed": 3.800318,
+      "computed": 3.80031849689,
       "measured": 3.8,
-      "error_pct": 0.008381497018404791,
+      "error_pct": 0.00838149710527,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -503,15 +510,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.0083814970184
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Carnot COP (0C cold, 27C hot)",
-      "computed": 11.000922,
+      "computed": 11.0009219647,
       "measured": 11.0,
-      "error_pct": 0.008381497018399903,
+      "error_pct": 0.00838149727273,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -527,15 +535,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.0083814970184
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Carnot COP (0C cold, 27C hot)",
-      "computed": 273.172894,
+      "computed": 273.172894059,
       "measured": 273.15,
-      "error_pct": 0.008381497018412922,
+      "error_pct": 0.00838149697968,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -551,15 +560,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.00838149701841
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "building_acoustical_coupling",
       "name": "Carnot COP (0C cold, 27C hot)",
-      "computed": 300.175157,
+      "computed": 300.175157063,
       "measured": 300.15,
-      "error_pct": 0.008381497018408523,
+      "error_pct": 0.00838149691821,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "term3 acoustic bleed depth",
@@ -575,7 +585,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "acoustic_formula"
+      "eval_kind": "acoustic_formula",
+      "error_pct_full": 0.00838149701841
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",

@@ -130,9 +130,9 @@
       "lab": "inertial_confinement_fusion_lab",
       "property": "fusion_yield_mj",
       "name": "NIF_2022",
-      "computed": 3.150002,
+      "computed": 3.1500024885,
       "measured": 3.15,
-      "error_pct": 7.9e-05,
+      "error_pct": 7.90000000091e-05,
       "eval_kind": "icf_yield",
       "domain_display_name": "inertial confinement fusion",
       "display_name": "NIF 2022",
@@ -146,7 +146,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 7.9e-05
     },
     {
       "lab": "inertial_confinement_fusion_lab",
@@ -197,9 +198,9 @@
       "lab": "inertial_confinement_fusion_lab",
       "property": "fusion_yield_mj",
       "name": "NIF_2021",
-      "computed": 1.300001,
+      "computed": 1.300001027,
       "measured": 1.3,
-      "error_pct": 7.9e-05,
+      "error_pct": 7.89999999947e-05,
       "eval_kind": "icf_yield",
       "domain_display_name": "inertial confinement fusion",
       "display_name": "NIF 2021",
@@ -213,7 +214,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 7.9e-05
     },
     {
       "lab": "inertial_confinement_fusion_lab",
@@ -264,9 +266,9 @@
       "lab": "inertial_confinement_fusion_lab",
       "property": "fusion_yield_mj",
       "name": "OMEGA_direct",
-      "computed": 0.025,
+      "computed": 0.02500001975,
       "measured": 0.025,
-      "error_pct": 7.9e-05,
+      "error_pct": 7.90000000001e-05,
       "eval_kind": "icf_yield",
       "domain_display_name": "inertial confinement fusion",
       "display_name": "OMEGA direct",
@@ -280,15 +282,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 7.9e-05
     },
     {
       "lab": "inertial_confinement_fusion_lab",
       "property": "q_factor_derived",
       "name": "OMEGA_direct",
-      "computed": 0.000833,
+      "computed": 0.00083300079135,
       "measured": 0.000833,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000083e-05,
       "eval_kind": "icf_q_relay",
       "domain_display_name": "inertial confinement fusion",
       "display_name": "OMEGA direct",
@@ -302,7 +305,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "inertial_confinement_fusion_lab",
@@ -331,9 +335,9 @@
       "lab": "inertial_confinement_fusion_lab",
       "property": "fusion_yield_mj",
       "name": "NIF_hohlraum_baseline",
-      "computed": 0.05,
+      "computed": 0.0500000395,
       "measured": 0.05,
-      "error_pct": 7.9e-05,
+      "error_pct": 7.90000000001e-05,
       "eval_kind": "icf_yield",
       "domain_display_name": "inertial confinement fusion",
       "display_name": "NIF hohlraum baseline",
@@ -347,15 +351,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 7.9e-05
     },
     {
       "lab": "inertial_confinement_fusion_lab",
       "property": "q_factor_derived",
       "name": "NIF_hohlraum_baseline",
-      "computed": 0.027778,
+      "computed": 0.0277780263891,
       "measured": 0.027778,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999962e-05,
       "eval_kind": "icf_q_relay",
       "domain_display_name": "inertial confinement fusion",
       "display_name": "NIF hohlraum baseline",
@@ -369,7 +374,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "inertial_confinement_fusion_lab",

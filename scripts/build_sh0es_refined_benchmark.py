@@ -7,6 +7,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "sh0es_refined_benchmark.json"
@@ -127,7 +128,7 @@ def main() -> int:
         host_details.append(
             {
                 "host": host,
-                "computed_h0": round(computed, 6),
+                "computed_h0": round_sig(computed),
                 "ra_deg": round(ra, 4),
                 "bubble_density_sky": round(density_sky, 4),
                 "bubble_density_model": round(density_model, 4),

@@ -8,6 +8,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -121,7 +122,7 @@ def build_external_oss_records(domain_scalar: float) -> tuple[list[dict], list[d
                 "lab": lab,
                 "property": "mean_codon_stability",
                 "name": f"{sid}__stability",
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": round(err, 6),
                 "source": repo,
@@ -283,7 +284,7 @@ def _pl_rules_records(lab: str = "programming_language_laws_lab") -> list[dict]:
                 "lab": lab,
                 "property": "pl_rule_property_count",
                 "name": rule.get("id") or rule.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "PROGRAMMING_LANGUAGE_RULES.json",

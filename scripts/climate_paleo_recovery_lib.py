@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 PALEO_REF = ROOT / "data" / "paleoclimate_reference_observables.json"
@@ -88,7 +89,7 @@ def paleo_scalar_panel(anchors: dict[str, float] | None = None) -> list[dict[str
                 "lab": "climate_paleo_recovery_lab",
                 "property": prop,
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "paleoclimate_reference_observables",

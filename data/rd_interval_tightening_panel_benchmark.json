@@ -86,9 +86,9 @@
       "lab": "rd_interval_tightening_lab",
       "property": "r_d_planck_comparison",
       "name": "planck2018_bao",
-      "computed": 147.52,
+      "computed": 147.519999964,
       "measured": 147.09,
-      "error_pct": 0.292338,
+      "error_pct": 0.292337999864,
       "eval_kind": "observable_comparison",
       "domain_display_name": "rd interval tightening",
       "display_name": "planck2018 bao",
@@ -102,7 +102,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.292338
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -225,9 +226,9 @@
       "lab": "rd_interval_tightening_lab",
       "property": "hubble_constant",
       "name": "h0_sh0es_2024",
-      "computed": 73.040367,
+      "computed": 73.0403666608,
       "measured": 73.04,
-      "error_pct": 0.000502,
+      "error_pct": 0.000501999999997,
       "source_panel": "cosmology_anomaly_deep",
       "eval_kind": "relay",
       "domain_display_name": "rd interval tightening",
@@ -245,15 +246,16 @@
         "reference_uncertainty_pct": 0.742,
         "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
         "observable_status": "fsot_dual_anchor"
-      }
+      },
+      "error_pct_full": 0.000502
     },
     {
       "lab": "rd_interval_tightening_lab",
       "property": "hubble_constant",
       "name": "h0_fsot_bubble",
-      "computed": 72.100362,
+      "computed": 72.100361942,
       "measured": 72.1,
-      "error_pct": 0.000502,
+      "error_pct": 0.000502000000017,
       "source_panel": "cosmology_anomaly_deep",
       "eval_kind": "relay",
       "domain_display_name": "rd interval tightening",
@@ -271,15 +273,16 @@
         "reference_uncertainty_pct": 0.742,
         "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
         "observable_status": "fsot_dual_anchor"
-      }
+      },
+      "error_pct_full": 0.000502
     },
     {
       "lab": "rd_interval_tightening_lab",
       "property": "bao_sound_horizon_mpc",
       "name": "rd_bao_planck",
-      "computed": 147.097391,
+      "computed": 147.097391273,
       "measured": 147.09,
-      "error_pct": 0.005025,
+      "error_pct": 0.00502500033993,
       "eval_kind": "bao_relay",
       "domain_display_name": "rd interval tightening",
       "display_name": "rd bao planck",
@@ -293,7 +296,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.005025
     },
     {
       "lab": "rd_interval_tightening_lab",

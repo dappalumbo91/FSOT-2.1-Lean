@@ -403,9 +403,9 @@
       "lab": "music_harmonics_panel_lab",
       "property": "a4_c4_frequency_ratio",
       "name": "concert_pitch_ratio",
-      "computed": 1.681764,
+      "computed": 1.68176414043,
       "measured": 1.681793,
-      "error_pct": 0.001716,
+      "error_pct": 0.00171600012605,
       "eval_kind": "pitch_ratio_consistency",
       "domain_display_name": "music harmonics panel",
       "display_name": "concert pitch ratio",
@@ -419,7 +419,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.001716
     },
     {
       "lab": "music_harmonics_panel_lab",

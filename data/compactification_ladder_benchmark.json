@@ -85,9 +85,9 @@
       "name": "string_quantum",
       "rung_id": "R01",
       "rung_index": 1,
-      "computed": 0.039916,
+      "computed": 0.0399156099102,
       "measured": 0.039905,
-      "error_pct": 0.026587921699403626,
+      "error_pct": 0.0265879218143,
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
@@ -104,7 +104,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0265879216994
     },
     {
       "lab": "compactification_ladder_lab",
@@ -112,9 +113,9 @@
       "name": "string_quantum",
       "rung_id": "R01",
       "rung_index": 1,
-      "computed": 0.014419,
+      "computed": 0.0144188326489,
       "measured": 0.014415,
-      "error_pct": 0.02658792169940266,
+      "error_pct": 0.0265879216094,
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
@@ -131,7 +132,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0265879216994
     },
     {
       "lab": "compactification_ladder_lab",
@@ -139,9 +141,9 @@
       "name": "string_quantum",
       "rung_id": "R01",
       "rung_index": 1,
-      "computed": 9.002393,
+      "computed": 9.00239291295,
       "measured": 9.0,
-      "error_pct": 0.02658792169939596,
+      "error_pct": 0.0265879216667,
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
@@ -158,7 +160,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0265879216994
     },
     {
       "lab": "compactification_ladder_lab",
@@ -166,9 +169,9 @@
       "name": "string_quantum",
       "rung_id": "R01",
       "rung_index": 1,
-      "computed": 98.026056,
+      "computed": 98.0260561633,
       "measured": 98.0,
-      "error_pct": 0.026587921699411262,
+      "error_pct": 0.0265879217347,
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
@@ -185,7 +188,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0265879216994
     },
     {
       "lab": "compactification_ladder_lab",
@@ -193,9 +197,9 @@
       "name": "string_quantum",
       "rung_id": "R01",
       "rung_index": 1,
-      "computed": 1.683848,
+      "computed": 1.68384758107,
       "measured": 1.6834,
-      "error_pct": 0.026587921699403553,
+      "error_pct": 0.0265879214685,
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
@@ -212,7 +216,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0265879216994
     },
     {
       "lab": "compactification_ladder_lab",
@@ -220,9 +225,9 @@
       "name": "string_quantum",
       "rung_id": "R01",
       "rung_index": 1,
-      "computed": 1.528548,
+      "computed": 1.5285483012,
       "measured": 1.528142,
-      "error_pct": 0.02658792169940167,
+      "error_pct": 0.0265879218031,
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
@@ -239,7 +244,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0265879216994
     },
     {
       "lab": "compactification_ladder_lab",
@@ -274,9 +280,9 @@
       "name": "nuclear",
       "rung_id": "R02",
       "rung_index": 2,
-      "computed": 0.014726,
+      "computed": 0.014726197596,
       "measured": 0.014722,
-      "error_pct": 0.028512403203743705,
+      "error_pct": 0.0285124032061,
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -293,7 +299,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0285124032037
     },
     {
       "lab": "compactification_ladder_lab",
@@ -301,9 +308,9 @@
       "name": "nuclear",
       "rung_id": "R02",
       "rung_index": 2,
-      "computed": 98.027942,
+      "computed": 98.0279421551,
       "measured": 98.0,
-      "error_pct": 0.028512403203744353,
+      "error_pct": 0.0285124031633,
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -320,7 +327,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0285124032037
     },
     {
       "lab": "compactification_ladder_lab",
@@ -328,9 +336,9 @@
       "name": "nuclear",
       "rung_id": "R02",
       "rung_index": 2,
-      "computed": 14.003992,
+      "computed": 14.0039917364,
       "measured": 14.0,
-      "error_pct": 0.02851240320373348,
+      "error_pct": 0.0285124028571,
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -347,7 +355,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0285124032037
     },
     {
       "lab": "compactification_ladder_lab",
@@ -355,9 +364,9 @@
       "name": "nuclear",
       "rung_id": "R02",
       "rung_index": 2,
-      "computed": 2.776691,
+      "computed": 2.7766914758,
       "measured": 2.7759,
-      "error_pct": 0.028512403203744267,
+      "error_pct": 0.0285124031845,
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -374,7 +383,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0285124032037
     },
     {
       "lab": "compactification_ladder_lab",
@@ -382,9 +392,9 @@
       "name": "nuclear",
       "rung_id": "R02",
       "rung_index": 2,
-      "computed": 1.380123,
+      "computed": 1.38012339418,
       "measured": 1.37973,
-      "error_pct": 0.02851240320374559,
+      "error_pct": 0.0285124031513,
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -401,7 +411,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0285124032037
     },
     {
       "lab": "compactification_ladder_lab",
@@ -463,9 +474,9 @@
       "name": "atomic",
       "rung_id": "R03",
       "rung_index": 3,
-      "computed": 80.01766,
+      "computed": 80.0176597728,
       "measured": 80.0,
-      "error_pct": 0.0220747159758794,
+      "error_pct": 0.022074716,
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -482,7 +493,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0220747159759
     },
     {
       "lab": "compactification_ladder_lab",
@@ -490,9 +502,9 @@
       "name": "atomic",
       "rung_id": "R03",
       "rung_index": 3,
-      "computed": 6.001324,
+      "computed": 6.00132448296,
       "measured": 6.0,
-      "error_pct": 0.022074715975891245,
+      "error_pct": 0.022074716,
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -509,7 +521,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0220747159759
     },
     {
       "lab": "compactification_ladder_lab",
@@ -517,9 +530,9 @@
       "name": "atomic",
       "rung_id": "R03",
       "rung_index": 3,
-      "computed": 2.861832,
+      "computed": 2.86183160177,
       "measured": 2.8612,
-      "error_pct": 0.022074715975883067,
+      "error_pct": 0.0220747158535,
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -536,7 +549,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0220747159759
     },
     {
       "lab": "compactification_ladder_lab",
@@ -544,9 +558,9 @@
       "name": "atomic",
       "rung_id": "R03",
       "rung_index": 3,
-      "computed": 1.290222,
+      "computed": 1.29022174993,
       "measured": 1.289937,
-      "error_pct": 0.02207471597589237,
+      "error_pct": 0.022074716052,
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
@@ -563,7 +577,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0220747159759
     },
     {
       "lab": "compactification_ladder_lab",
@@ -571,9 +586,9 @@
       "name": "molecular",
       "rung_id": "R04",
       "rung_index": 4,
-      "computed": 0.00273,
+      "computed": 0.00273027457784,
       "measured": 0.00273,
-      "error_pct": 0.010057796422084389,
+      "error_pct": 0.010057796337,
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
@@ -590,7 +605,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0100577964221
     },
     {
       "lab": "compactification_ladder_lab",
@@ -598,9 +614,9 @@
       "name": "molecular",
       "rung_id": "R04",
       "rung_index": 4,
-      "computed": 0.002424,
+      "computed": 0.00242424380099,
       "measured": 0.002424,
-      "error_pct": 0.010057796422098496,
+      "error_pct": 0.0100577966172,
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
@@ -617,7 +633,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0100577964221
     },
     {
       "lab": "compactification_ladder_lab",
@@ -625,9 +642,9 @@
       "name": "molecular",
       "rung_id": "R04",
       "rung_index": 4,
-      "computed": 45.004526,
+      "computed": 45.0045260084,
       "measured": 45.0,
-      "error_pct": 0.010057796422084191,
+      "error_pct": 0.0100577964444,
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
@@ -644,7 +661,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0100577964221
     },
     {
       "lab": "compactification_ladder_lab",
@@ -652,9 +670,9 @@
       "name": "molecular",
       "rung_id": "R04",
       "rung_index": 4,
-      "computed": 29.002917,
+      "computed": 29.002916761,
       "measured": 29.0,
-      "error_pct": 0.010057796422092357,
+      "error_pct": 0.0100577965517,
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
@@ -671,7 +689,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0100577964221
     },
     {
       "lab": "compactification_ladder_lab",
@@ -679,9 +698,9 @@
       "name": "molecular",
       "rung_id": "R04",
       "rung_index": 4,
-      "computed": 2.941896,
+      "computed": 2.94189586014,
       "measured": 2.9416,
-      "error_pct": 0.010057796422097032,
+      "error_pct": 0.0100577964373,
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
@@ -698,7 +717,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0100577964221
     },
     {
       "lab": "compactification_ladder_lab",
@@ -706,9 +726,9 @@
       "name": "molecular",
       "rung_id": "R04",
       "rung_index": 4,
-      "computed": 1.226826,
+      "computed": 1.22682637929,
       "measured": 1.226703,
-      "error_pct": 0.010057796422083636,
+      "error_pct": 0.0100577963859,
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
@@ -725,7 +745,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0100577964221
     },
     {
       "lab": "compactification_ladder_lab",
@@ -787,9 +808,9 @@
       "name": "cellular",
       "rung_id": "R05",
       "rung_index": 5,
-      "computed": 21.002802,
+      "computed": 21.0028017675,
       "measured": 21.0,
-      "error_pct": 0.01334175023110956,
+      "error_pct": 0.01334175,
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
@@ -806,7 +827,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0133417502311
     },
     {
       "lab": "compactification_ladder_lab",
@@ -814,9 +836,9 @@
       "name": "cellular",
       "rung_id": "R05",
       "rung_index": 5,
-      "computed": 16.002135,
+      "computed": 16.00213468,
       "measured": 16.0,
-      "error_pct": 0.013341750231110616,
+      "error_pct": 0.01334175,
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
@@ -833,7 +855,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0133417502311
     },
     {
       "lab": "compactification_ladder_lab",
@@ -841,9 +864,9 @@
       "name": "cellular",
       "rung_id": "R05",
       "rung_index": 5,
-      "computed": 3.018903,
+      "computed": 3.01890272073,
       "measured": 3.0185,
-      "error_pct": 0.013341750231108259,
+      "error_pct": 0.0133417502071,
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
@@ -860,7 +883,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0133417502311
     },
     {
       "lab": "compactification_ladder_lab",
@@ -868,9 +892,9 @@
       "name": "cellular",
       "rung_id": "R05",
       "rung_index": 5,
-      "computed": 1.178602,
+      "computed": 1.17860222519,
       "measured": 1.178445,
-      "error_pct": 0.013341750231102187,
+      "error_pct": 0.0133417503575,
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
@@ -887,7 +911,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0133417502311
     },
     {
       "lab": "compactification_ladder_lab",
@@ -895,9 +920,9 @@
       "name": "organismic",
       "rung_id": "R06",
       "rung_index": 6,
-      "computed": 0.061211,
+      "computed": 0.0612106226811,
       "measured": 0.061205,
-      "error_pct": 0.009186636881581382,
+      "error_pct": 0.00918663687607,
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
@@ -914,7 +939,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00918663688158
     },
     {
       "lab": "compactification_ladder_lab",
@@ -949,9 +975,9 @@
       "name": "organismic",
       "rung_id": "R06",
       "rung_index": 6,
-      "computed": 84.007717,
+      "computed": 84.007716775,
       "measured": 84.0,
-      "error_pct": 0.009186636881591562,
+      "error_pct": 0.00918663690477,
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
@@ -968,7 +994,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "compactification_ladder_lab",
@@ -976,9 +1003,9 @@
       "name": "organismic",
       "rung_id": "R06",
       "rung_index": 6,
-      "computed": 92.008452,
+      "computed": 92.0084517059,
       "measured": 92.0,
-      "error_pct": 0.009186636881593031,
+      "error_pct": 0.00918663684783,
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
@@ -995,7 +1022,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1003,9 +1031,9 @@
       "name": "organismic",
       "rung_id": "R06",
       "rung_index": 6,
-      "computed": 3.092984,
+      "computed": 3.09298411512,
       "measured": 3.0927,
-      "error_pct": 0.00918663688158756,
+      "error_pct": 0.00918663691921,
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
@@ -1022,7 +1050,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1030,9 +1059,9 @@
       "name": "organismic",
       "rung_id": "R06",
       "rung_index": 6,
-      "computed": 1.139828,
+      "computed": 1.13982770221,
       "measured": 1.139723,
-      "error_pct": 0.009186636881586463,
+      "error_pct": 0.00918663657749,
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
@@ -1049,7 +1078,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1057,9 +1087,9 @@
       "name": "planetary",
       "rung_id": "R07",
       "rung_index": 7,
-      "computed": 0.01791,
+      "computed": 0.0179101211329,
       "measured": 0.017906,
-      "error_pct": 0.023015374156234704,
+      "error_pct": 0.0230153741763,
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
@@ -1076,7 +1106,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0230153741562
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1111,9 +1142,9 @@
       "name": "planetary",
       "rung_id": "R07",
       "rung_index": 7,
-      "computed": 20.004603,
+      "computed": 20.0046030748,
       "measured": 20.0,
-      "error_pct": 0.023015374156223345,
+      "error_pct": 0.023015374,
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
@@ -1130,7 +1161,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0230153741562
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1138,9 +1170,9 @@
       "name": "planetary",
       "rung_id": "R07",
       "rung_index": 7,
-      "computed": 316.072729,
+      "computed": 316.072728582,
       "measured": 316.0,
-      "error_pct": 0.02301537415623279,
+      "error_pct": 0.0230153740506,
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
@@ -1157,7 +1189,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0230153741562
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1165,9 +1198,9 @@
       "name": "planetary",
       "rung_id": "R07",
       "rung_index": 7,
-      "computed": 3.200536,
+      "computed": 3.20053644594,
       "measured": 3.1998,
-      "error_pct": 0.0230153741562277,
+      "error_pct": 0.0230153740859,
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
@@ -1184,7 +1217,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0230153741562
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1192,9 +1226,9 @@
       "name": "planetary",
       "rung_id": "R07",
       "rung_index": 7,
-      "computed": 1.093614,
+      "computed": 1.09361364136,
       "measured": 1.093362,
-      "error_pct": 0.02301537415623326,
+      "error_pct": 0.0230153745969,
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
@@ -1211,7 +1245,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0230153741562
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1273,9 +1308,9 @@
       "name": "stellar",
       "rung_id": "R08",
       "rung_index": 8,
-      "computed": 21.005559,
+      "computed": 21.005559188,
       "measured": 21.0,
-      "error_pct": 0.026472323952543234,
+      "error_pct": 0.0264723238095,
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
@@ -1292,7 +1327,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0264723239525
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1327,9 +1363,9 @@
       "name": "stellar",
       "rung_id": "R08",
       "rung_index": 8,
-      "computed": 3.337383,
+      "computed": 3.33738324909,
       "measured": 3.3365,
-      "error_pct": 0.02647232395254797,
+      "error_pct": 0.0264723239922,
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
@@ -1346,7 +1382,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0264723239525
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1354,9 +1391,9 @@
       "name": "stellar",
       "rung_id": "R08",
       "rung_index": 8,
-      "computed": 1.045917,
+      "computed": 1.04591680521,
       "measured": 1.04564,
-      "error_pct": 0.02647232395254685,
+      "error_pct": 0.0264723241269,
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
@@ -1373,7 +1410,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0264723239525
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1462,9 +1500,9 @@
       "name": "galactic",
       "rung_id": "R09",
       "rung_index": 9,
-      "computed": 167.045013,
+      "computed": 167.045012824,
       "measured": 167.0,
-      "error_pct": 0.02695378704498842,
+      "error_pct": 0.0269537868263,
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
@@ -1481,7 +1519,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.026953787045
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1489,9 +1528,9 @@
       "name": "galactic",
       "rung_id": "R09",
       "rung_index": 9,
-      "computed": 3.403717,
+      "computed": 3.40371718347,
       "measured": 3.4028,
-      "error_pct": 0.026953787044979822,
+      "error_pct": 0.0269537871753,
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
@@ -1508,7 +1547,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.026953787045
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1516,9 +1556,9 @@
       "name": "galactic",
       "rung_id": "R09",
       "rung_index": 9,
-      "computed": 1.026173,
+      "computed": 1.02617251782,
       "measured": 1.025896,
-      "error_pct": 0.026953787044980616,
+      "error_pct": 0.0269537867386,
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
@@ -1535,7 +1575,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.026953787045
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1543,9 +1584,9 @@
       "name": "cosmological",
       "rung_id": "R10",
       "rung_index": 10,
-      "computed": 0.021958,
+      "computed": 0.0219583094261,
       "measured": 0.021955,
-      "error_pct": 0.015073678386295837,
+      "error_pct": 0.0150736784332,
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
@@ -1562,7 +1603,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150736783863
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1597,9 +1639,9 @@
       "name": "cosmological",
       "rung_id": "R10",
       "rung_index": 10,
-      "computed": 58.008743,
+      "computed": 58.0087427335,
       "measured": 58.0,
-      "error_pct": 0.015073678386287304,
+      "error_pct": 0.0150736784483,
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
@@ -1616,7 +1658,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150736783863
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1624,9 +1667,9 @@
       "name": "cosmological",
       "rung_id": "R10",
       "rung_index": 10,
-      "computed": 113.017033,
+      "computed": 113.017033257,
       "measured": 113.0,
-      "error_pct": 0.015073678386292725,
+      "error_pct": 0.0150736787611,
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
@@ -1643,7 +1686,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150736783863
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1651,9 +1695,9 @@
       "name": "cosmological",
       "rung_id": "R10",
       "rung_index": 10,
-      "computed": 2.500377,
+      "computed": 2.50037684196,
       "measured": 2.5,
-      "error_pct": 0.015073678386290368,
+      "error_pct": 0.0150736784,
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
@@ -1670,7 +1714,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150736783863
     },
     {
       "lab": "compactification_ladder_lab",
@@ -1678,9 +1723,9 @@
       "name": "cosmological",
       "rung_id": "R10",
       "rung_index": 10,
-      "computed": 1.000151,
+      "computed": 1.00015073678,
       "measured": 1.0,
-      "error_pct": 0.015073678386290368,
+      "error_pct": 0.015073678,
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
@@ -1697,7 +1742,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150736783863
     }
   ],
   "margin_summary": {

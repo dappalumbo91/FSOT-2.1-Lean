@@ -82,9 +82,9 @@
       "lab": "government_open_data_spine_lab",
       "property": "absolute_magnitude_h",
       "name": "2026 NX",
-      "computed": 28.129473,
+      "computed": 28.1294725085,
       "measured": 28.123,
-      "error_pct": 0.023015,
+      "error_pct": 0.0230150001778,
       "source_panel": "nasa_neo_feed_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "government open data spine",
@@ -99,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.023015
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "estimated_diameter_m",
       "name": "2026 NX",
-      "computed": 8.432588,
+      "computed": 8.43258843541,
       "measured": 8.430648121743106,
-      "error_pct": 0.023015,
+      "error_pct": 0.0230150000199,
       "source_panel": "nasa_neo_feed_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "government open data spine",
@@ -122,15 +123,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.023015
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "relative_velocity_km_s",
       "name": "2026 NX",
-      "computed": 7.896861,
+      "computed": 7.89686073207,
       "measured": 7.89534648356676,
-      "error_pct": 0.019179,
+      "error_pct": 0.0191790000147,
       "source_panel": "nasa_neo_feed_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "government open data spine",
@@ -146,7 +148,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.2
-      }
+      },
+      "error_pct_full": 0.019179
     },
     {
       "lab": "government_open_data_spine_lab",
@@ -200,9 +203,9 @@
       "lab": "government_open_data_spine_lab",
       "property": "goes_flux",
       "name": "2026-07-12T08:22:00Z",
-      "computed": 1e-06,
+      "computed": 7.7816893657e-07,
       "measured": 7.780074611218879e-07,
-      "error_pct": 0.020755,
+      "error_pct": 0.020754999943,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "government open data spine",
@@ -217,15 +220,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.020755
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "goes_observed_flux",
       "name": "2026-07-12T08:22:00Z",
-      "computed": 1e-06,
+      "computed": 8.01891832599e-07,
       "measured": 8.017254344849789e-07,
-      "error_pct": 0.020755,
+      "error_pct": 0.0207550000117,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "government open data spine",
@@ -240,13 +244,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.020755
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "satellite_id",
       "name": "2026-07-12T08:22:00Z",
-      "computed": 18.004043,
+      "computed": 18.00404298,
       "measured": 18.0,
       "error_pct": 0.022461,
       "source_panel": "nasa_donki_solar_panel",
@@ -263,15 +268,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "goes_flux",
       "name": "2026-07-12T08:22:00Z",
-      "computed": 9e-06,
+      "computed": 8.68208996816e-06,
       "measured": 8.680288374307565e-06,
-      "error_pct": 0.020755,
+      "error_pct": 0.020755000004,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "government open data spine",
@@ -286,7 +292,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.020755
     },
     {
       "lab": "government_open_data_spine_lab",
@@ -338,7 +345,7 @@
       "lab": "government_open_data_spine_lab",
       "property": "phase_count",
       "name": "NCT00830635",
-      "computed": 1.000214,
+      "computed": 1.00021435,
       "measured": 1.0,
       "error_pct": 0.021435,
       "source_panel": "clinicaltrials_medical_panel",
@@ -355,13 +362,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.021435
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "enrollment_count",
       "name": "NCT06798935",
-      "computed": 21.005145,
+      "computed": 21.00514458,
       "measured": 21.0,
       "error_pct": 0.024498,
       "source_panel": "clinicaltrials_medical_panel",
@@ -378,13 +386,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.024498
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "phase_count",
       "name": "NCT06798935",
-      "computed": 1.000214,
+      "computed": 1.00021435,
       "measured": 1.0,
       "error_pct": 0.021435,
       "source_panel": "clinicaltrials_medical_panel",
@@ -401,7 +410,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.021435
     },
     {
       "lab": "government_open_data_spine_lab",
@@ -545,7 +555,7 @@
       "lab": "government_open_data_spine_lab",
       "property": "importance_score",
       "name": "18-100754-general-1946-7-vol-2",
-      "computed": 6.400543,
+      "computed": 6.400543232,
       "measured": 6.4,
       "error_pct": 0.008488,
       "source_panel": "uap_war_gov_release_panel",
@@ -562,7 +572,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.008488
     },
     {
       "lab": "government_open_data_spine_lab",
@@ -683,7 +694,7 @@
       "lab": "government_open_data_spine_lab",
       "property": "resource_allocation_tiers",
       "name": "nairr",
-      "computed": 4.001034,
+      "computed": 4.0010336,
       "measured": 4.0,
       "error_pct": 0.02584,
       "source_panel": "federal_science_registry_panel",
@@ -700,7 +711,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     }
   ],
   "margin_summary": {

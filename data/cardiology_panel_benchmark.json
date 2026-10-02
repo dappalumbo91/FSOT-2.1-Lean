@@ -83,7 +83,7 @@
       "lab": "cardiology_panel_lab",
       "property": "heart_rate_bpm",
       "name": "resting_hr_adult",
-      "computed": 72.011024,
+      "computed": 72.01102392,
       "measured": 72.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -102,13 +102,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "max_heart_rate_bpm",
       "name": "max_hr_40yo",
-      "computed": 180.02756,
+      "computed": 180.0275598,
       "measured": 180.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -127,13 +128,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "ejection_fraction_pct",
       "name": "normal_ejection_fraction",
-      "computed": 60.009187,
+      "computed": 60.0091866,
       "measured": 60.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -152,13 +154,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "ejection_fraction_pct",
       "name": "heart_failure_ef_threshold",
-      "computed": 40.006124,
+      "computed": 40.0061244,
       "measured": 40.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -177,13 +180,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "systolic_bp_mmhg",
       "name": "systolic_bp_normal",
-      "computed": 120.018373,
+      "computed": 120.0183732,
       "measured": 120.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -202,13 +206,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "diastolic_bp_mmhg",
       "name": "diastolic_bp_normal",
-      "computed": 80.012249,
+      "computed": 80.0122488,
       "measured": 80.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -227,13 +232,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "cardiac_output_l_min",
       "name": "cardiac_output_rest",
-      "computed": 5.000766,
+      "computed": 5.00076555,
       "measured": 5.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -252,13 +258,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "stroke_volume_ml",
       "name": "stroke_volume_rest",
-      "computed": 70.010718,
+      "computed": 70.0107177,
       "measured": 70.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -277,7 +284,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
@@ -333,7 +341,7 @@
       "lab": "cardiology_panel_lab",
       "property": "pr_interval_ms",
       "name": "pr_interval_normal",
-      "computed": 160.024498,
+      "computed": 160.0244976,
       "measured": 160.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -352,13 +360,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "troponin_ng_ml",
       "name": "troponin_uln",
-      "computed": 0.040006,
+      "computed": 0.0400061244,
       "measured": 0.04,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -377,13 +386,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "ldl_cholesterol_mg_dl",
       "name": "ldl_target_high_risk",
-      "computed": 70.010718,
+      "computed": 70.0107177,
       "measured": 70.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -402,13 +412,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "hdl_cholesterol_mg_dl",
       "name": "hdl_male_reference",
-      "computed": 50.007656,
+      "computed": 50.0076555,
       "measured": 50.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -427,13 +438,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "triglycerides_mg_dl",
       "name": "triglycerides_normal",
-      "computed": 150.022967,
+      "computed": 150.0229665,
       "measured": 150.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -452,13 +464,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "coronary_flow_reserve",
       "name": "coronary_flow_reserve",
-      "computed": 3.000459,
+      "computed": 3.00045933,
       "measured": 3.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -477,13 +490,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "valve_area_cm2",
       "name": "aortic_valve_area_severe",
-      "computed": 1.000153,
+      "computed": 1.00015311,
       "measured": 1.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -502,13 +516,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "paced_rate_bpm",
       "name": "pacemaker_lower_rate",
-      "computed": 60.009187,
+      "computed": 60.0091866,
       "measured": 60.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -527,13 +542,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",
       "property": "vo2max_ml_kg_min",
       "name": "vo2max_cardiac_rehab",
-      "computed": 25.003828,
+      "computed": 25.00382775,
       "measured": 25.0,
       "error_pct": 0.015311,
       "eval_kind": "fsot_prediction",
@@ -552,7 +568,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.015311
     },
     {
       "lab": "cardiology_panel_lab",

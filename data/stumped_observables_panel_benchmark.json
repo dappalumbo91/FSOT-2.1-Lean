@@ -396,7 +396,7 @@
       "lab": "stumped_observables_panel",
       "property": "hubble_constant",
       "name": "H0_Planck_CMB",
-      "computed": 67.270212,
+      "computed": 67.270211864,
       "measured": 67.4,
       "error_pct": 0.192564,
       "unit": "km/s/Mpc",
@@ -422,13 +422,14 @@
         "reference": "Planck2018",
         "observable_status": "fsot_dual_anchor",
         "unit": "km/s/Mpc"
-      }
+      },
+      "error_pct_full": 0.192564
     },
     {
       "lab": "stumped_observables_panel",
       "property": "dark_energy_eos",
       "name": "w0_CMB",
-      "computed": -1.029981,
+      "computed": -1.0299812952,
       "measured": -1.03,
       "error_pct": 0.001816,
       "unit": "dimensionless",
@@ -455,13 +456,14 @@
         "reference": "Planck2018_w0_prior",
         "observable_status": "dark_energy_open",
         "unit": "dimensionless"
-      }
+      },
+      "error_pct_full": 0.001816
     },
     {
       "lab": "stumped_observables_panel",
       "property": "dark_energy_eos",
       "name": "w0_BAO",
-      "computed": -0.729679,
+      "computed": -0.72967901681,
       "measured": -0.727,
       "error_pct": 0.368503,
       "unit": "dimensionless",
@@ -488,7 +490,8 @@
         "reference": "DESI_DR2",
         "observable_status": "dark_energy_open",
         "unit": "dimensionless"
-      }
+      },
+      "error_pct_full": 0.368503
     },
     {
       "lab": "stumped_observables_panel",

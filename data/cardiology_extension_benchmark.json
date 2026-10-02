@@ -81,9 +81,9 @@
       "lab": "cardiology_lab",
       "property": "heart_rate_bpm",
       "name": "resting_hr_adult",
-      "computed": 72.022048,
+      "computed": 72.0220479285,
       "measured": 72.0,
-      "error_pct": 0.030622122938655454,
+      "error_pct": 0.0306221229167,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "resting hr adult",
@@ -97,15 +97,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "max_heart_rate_bpm",
       "name": "max_hr_40yo",
-      "computed": 180.05512,
+      "computed": 180.055119821,
       "measured": 180.0,
-      "error_pct": 0.03062212293864756,
+      "error_pct": 0.0306221227778,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "max hr 40yo",
@@ -119,15 +120,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "cardiology_lab",
       "property": "ejection_fraction_pct",
       "name": "normal_ejection_fraction",
-      "computed": 60.018373,
+      "computed": 60.0183732738,
       "measured": 60.0,
-      "error_pct": 0.03062212293864756,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "normal ejection fraction",
@@ -141,15 +143,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "cardiology_lab",
       "property": "ejection_fraction_pct",
       "name": "heart_failure_ef_threshold",
-      "computed": 40.012249,
+      "computed": 40.0122488492,
       "measured": 40.0,
-      "error_pct": 0.0306221229386594,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "heart failure ef threshold",
@@ -163,15 +166,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "systolic_bp_mmhg",
       "name": "systolic_bp_normal",
-      "computed": 120.036747,
+      "computed": 120.036746548,
       "measured": 120.0,
-      "error_pct": 0.03062212293864756,
+      "error_pct": 0.0306221233333,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "systolic bp normal",
@@ -185,15 +189,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "cardiology_lab",
       "property": "diastolic_bp_mmhg",
       "name": "diastolic_bp_normal",
-      "computed": 80.024498,
+      "computed": 80.0244976984,
       "measured": 80.0,
-      "error_pct": 0.0306221229386594,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "diastolic bp normal",
@@ -207,15 +212,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "cardiac_output_l_min",
       "name": "cardiac_output_rest",
-      "computed": 5.001531,
+      "computed": 5.00153110615,
       "measured": 5.0,
-      "error_pct": 0.0306221229386594,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "cardiac output rest",
@@ -229,15 +235,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "stroke_volume_ml",
       "name": "stroke_volume_rest",
-      "computed": 70.021435,
+      "computed": 70.0214354861,
       "measured": 70.0,
-      "error_pct": 0.030622122938654326,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "stroke volume rest",
@@ -251,15 +258,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "lv_mass_index_g_m2",
       "name": "lv_mass_index_normal",
-      "computed": 95.029091,
+      "computed": 95.0290910168,
       "measured": 95.0,
-      "error_pct": 0.03062212293865753,
+      "error_pct": 0.0306221229474,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "lv mass index normal",
@@ -273,15 +281,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "qt_interval_ms",
       "name": "qt_interval_normal",
-      "computed": 400.122488,
+      "computed": 400.122488492,
       "measured": 400.0,
-      "error_pct": 0.030622122938652296,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "qt interval normal",
@@ -295,15 +304,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "pr_interval_ms",
       "name": "pr_interval_normal",
-      "computed": 160.048995,
+      "computed": 160.048995397,
       "measured": 160.0,
-      "error_pct": 0.0306221229386594,
+      "error_pct": 0.030622123125,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "pr interval normal",
@@ -317,15 +327,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "troponin_ng_ml",
       "name": "troponin_uln",
-      "computed": 0.040012,
+      "computed": 0.0400122488492,
       "measured": 0.04,
-      "error_pct": 0.030622122938646357,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "troponin uln",
@@ -339,15 +350,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "cardiology_lab",
       "property": "ldl_cholesterol_mg_dl",
       "name": "ldl_target_high_risk",
-      "computed": 70.021435,
+      "computed": 70.0214354861,
       "measured": 70.0,
-      "error_pct": 0.030622122938654326,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "ldl target high risk",
@@ -361,15 +373,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "hdl_cholesterol_mg_dl",
       "name": "hdl_male_reference",
-      "computed": 50.015311,
+      "computed": 50.0153110615,
       "measured": 50.0,
-      "error_pct": 0.030622122938652296,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "hdl male reference",
@@ -383,15 +396,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "triglycerides_mg_dl",
       "name": "triglycerides_normal",
-      "computed": 150.045933,
+      "computed": 150.045933184,
       "measured": 150.0,
-      "error_pct": 0.03062212293864756,
+      "error_pct": 0.0306221226667,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "triglycerides normal",
@@ -405,15 +419,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "cardiology_lab",
       "property": "coronary_flow_reserve",
       "name": "coronary_flow_reserve",
-      "computed": 3.000919,
+      "computed": 3.00091866369,
       "measured": 3.0,
-      "error_pct": 0.03062212293865052,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "coronary flow reserve",
@@ -427,15 +442,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "valve_area_cm2",
       "name": "aortic_valve_area_severe",
-      "computed": 1.000306,
+      "computed": 1.00030622123,
       "measured": 1.0,
-      "error_pct": 0.03062212293865052,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "aortic valve area severe",
@@ -449,15 +465,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "paced_rate_bpm",
       "name": "pacemaker_lower_rate",
-      "computed": 60.018373,
+      "computed": 60.0183732738,
       "measured": 60.0,
-      "error_pct": 0.03062212293864756,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "pacemaker lower rate",
@@ -471,15 +488,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "cardiology_lab",
       "property": "vo2max_ml_kg_min",
       "name": "vo2max_cardiac_rehab",
-      "computed": 25.007656,
+      "computed": 25.0076555307,
       "measured": 25.0,
-      "error_pct": 0.030622122938652296,
+      "error_pct": 0.0306221228,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "vo2max cardiac rehab",
@@ -493,15 +511,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "cardiology_lab",
       "property": "bnp_pg_ml",
       "name": "bnp_hf_threshold",
-      "computed": 100.030622,
+      "computed": 100.030622123,
       "measured": 100.0,
-      "error_pct": 0.030622122938652296,
+      "error_pct": 0.030622123,
       "source": "cardiology_reference_observables",
       "domain_display_name": "cardiology",
       "display_name": "bnp hf threshold",
@@ -515,15 +534,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "half_life_h",
       "name": "caffeine",
-      "computed": 5.002297,
+      "computed": 5.00229665922,
       "measured": 5.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331844,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "caffeine",
@@ -537,15 +557,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "oral_bioavailability",
       "name": "caffeine",
-      "computed": 0.990455,
+      "computed": 0.990454738526,
       "measured": 0.99,
-      "error_pct": 0.045933184407972866,
+      "error_pct": 0.0459331844444,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "caffeine",
@@ -559,15 +580,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "half_life_h",
       "name": "acetaminophen",
-      "computed": 2.501148,
+      "computed": 2.50114832961,
       "measured": 2.5,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331844,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "acetaminophen",
@@ -581,15 +603,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "oral_bioavailability",
       "name": "acetaminophen",
-      "computed": 0.880404,
+      "computed": 0.880404212023,
       "measured": 0.88,
-      "error_pct": 0.04593318440797427,
+      "error_pct": 0.0459331844318,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "acetaminophen",
@@ -603,15 +626,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "half_life_h",
       "name": "ibuprofen",
-      "computed": 2.100965,
+      "computed": 2.10096459687,
       "measured": 2.1,
-      "error_pct": 0.04593318440797895,
+      "error_pct": 0.0459331842857,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "ibuprofen",
@@ -625,15 +649,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "oral_bioavailability",
       "name": "ibuprofen",
-      "computed": 0.800367,
+      "computed": 0.800367465475,
       "measured": 0.8,
-      "error_pct": 0.045933184407973005,
+      "error_pct": 0.045933184375,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "ibuprofen",
@@ -647,15 +672,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "half_life_h",
       "name": "morphine",
-      "computed": 2.000919,
+      "computed": 2.00091866369,
       "measured": 2.0,
-      "error_pct": 0.04593318440797578,
+      "error_pct": 0.0459331845,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "morphine",
@@ -669,15 +695,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "oral_bioavailability",
       "name": "morphine",
-      "computed": 0.250115,
+      "computed": 0.250114832961,
       "measured": 0.25,
-      "error_pct": 0.04593318440797578,
+      "error_pct": 0.0459331844,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "morphine",
@@ -691,15 +718,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "half_life_h",
       "name": "warfarin",
-      "computed": 40.018373,
+      "computed": 40.0183732738,
       "measured": 40.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331845,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "warfarin",
@@ -713,15 +741,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "oral_bioavailability",
       "name": "warfarin",
-      "computed": 0.930427,
+      "computed": 0.930427178615,
       "measured": 0.93,
-      "error_pct": 0.045933184407977924,
+      "error_pct": 0.0459331844086,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "warfarin",
@@ -735,15 +764,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "half_life_h",
       "name": "digoxin",
-      "computed": 36.016536,
+      "computed": 36.0165359464,
       "measured": 36.0,
-      "error_pct": 0.04593318440798318,
+      "error_pct": 0.0459331844444,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "digoxin",
@@ -757,15 +787,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "oral_bioavailability",
       "name": "digoxin",
-      "computed": 0.700322,
+      "computed": 0.700321532291,
       "measured": 0.7,
-      "error_pct": 0.04593318440797896,
+      "error_pct": 0.0459331844286,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "digoxin",
@@ -779,15 +810,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "half_life_h",
       "name": "metformin",
-      "computed": 6.202848,
+      "computed": 6.20284785743,
       "measured": 6.2,
-      "error_pct": 0.04593318440797076,
+      "error_pct": 0.0459331843548,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "metformin",
@@ -801,15 +833,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "oral_bioavailability",
       "name": "metformin",
-      "computed": 0.550253,
+      "computed": 0.550252632514,
       "measured": 0.55,
-      "error_pct": 0.04593318440798183,
+      "error_pct": 0.0459331843636,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "metformin",
@@ -823,15 +856,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "half_life_h",
       "name": "amoxicillin",
-      "computed": 1.300597,
+      "computed": 1.3005971314,
       "measured": 1.3,
-      "error_pct": 0.04593318440797407,
+      "error_pct": 0.0459331846154,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "amoxicillin",
@@ -845,15 +879,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacokinetics_lab",
       "property": "oral_bioavailability",
       "name": "amoxicillin",
-      "computed": 0.74034,
+      "computed": 0.740339905565,
       "measured": 0.74,
-      "error_pct": 0.04593318440797938,
+      "error_pct": 0.0459331844595,
       "source": "pk_reference",
       "domain_display_name": "pharmacokinetics",
       "display_name": "amoxicillin",
@@ -867,7 +902,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "pharmacology_lab",

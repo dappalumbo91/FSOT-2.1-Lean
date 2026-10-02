@@ -81,9 +81,9 @@
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "influenza_r0",
-      "computed": 1.800551,
+      "computed": 1.80055119821,
       "measured": 1.8,
-      "error_pct": 0.030622122938645586,
+      "error_pct": 0.0306221227778,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "influenza r0",
@@ -97,15 +97,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "measles_r0",
-      "computed": 15.004593,
+      "computed": 15.0045933184,
       "measured": 15.0,
-      "error_pct": 0.03062212293864756,
+      "error_pct": 0.0306221226667,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "measles r0",
@@ -119,15 +120,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "covid19_r0_wildtype",
-      "computed": 2.500766,
+      "computed": 2.50076555307,
       "measured": 2.5,
-      "error_pct": 0.0306221229386594,
+      "error_pct": 0.0306221228,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "covid19 r0 wildtype",
@@ -141,15 +143,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "case_fatality_rate",
       "name": "ebola_case_fatality",
-      "computed": 0.500153,
+      "computed": 0.500153110615,
       "measured": 0.5,
-      "error_pct": 0.03062212293865052,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "ebola case fatality",
@@ -163,15 +166,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "incidence_per_1000",
       "name": "malaria_incidence_per_1000",
-      "computed": 229.070125,
+      "computed": 229.070124662,
       "measured": 229.0,
-      "error_pct": 0.03062212293865459,
+      "error_pct": 0.0306221231441,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "malaria incidence per 1000",
@@ -185,15 +189,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "incidence_per_100k",
       "name": "tb_incidence_per_100k",
-      "computed": 127.03889,
+      "computed": 127.038890096,
       "measured": 127.0,
-      "error_pct": 0.030622122938655766,
+      "error_pct": 0.0306221228346,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "tb incidence per 100k",
@@ -207,15 +212,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "prevalence_pct",
       "name": "hiv_prevalence_pct",
-      "computed": 0.700214,
+      "computed": 0.700214354861,
       "measured": 0.7,
-      "error_pct": 0.03062212293864735,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "hiv prevalence pct",
@@ -229,15 +235,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "epidemiology_lab",
       "property": "incubation_period_days",
       "name": "cholera_incubation_days",
-      "computed": 2.000612,
+      "computed": 2.00061244246,
       "measured": 2.0,
-      "error_pct": 0.03062212293865052,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "cholera incubation days",
@@ -251,15 +258,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "dengue_r0",
-      "computed": 3.000919,
+      "computed": 3.00091866369,
       "measured": 3.0,
-      "error_pct": 0.03062212293865052,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "dengue r0",
@@ -273,15 +281,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "pertussis_r0",
-      "computed": 5.501684,
+      "computed": 5.50168421676,
       "measured": 5.5,
-      "error_pct": 0.03062212293864648,
+      "error_pct": 0.0306221229091,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "pertussis r0",
@@ -295,15 +304,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "norovirus_r0",
-      "computed": 7.002144,
+      "computed": 7.00214354861,
       "measured": 7.0,
-      "error_pct": 0.030622122938644178,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "norovirus r0",
@@ -317,15 +327,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "epidemiology_lab",
       "property": "chronic_infection_rate",
       "name": "hepatitis_b_chronic_rate",
-      "computed": 0.050015,
+      "computed": 0.0500153110615,
       "measured": 0.05,
-      "error_pct": 0.030622122938653296,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "hepatitis b chronic rate",
@@ -339,15 +350,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "incubation_period_days",
       "name": "zika_incubation_days",
-      "computed": 6.001837,
+      "computed": 6.00183732738,
       "measured": 6.0,
-      "error_pct": 0.03062212293865052,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "zika incubation days",
@@ -361,15 +373,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "mumps_r0",
-      "computed": 10.003062,
+      "computed": 10.0030622123,
       "measured": 10.0,
-      "error_pct": 0.0306221229386594,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "mumps r0",
@@ -383,15 +396,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "rubella_r0",
-      "computed": 6.001837,
+      "computed": 6.00183732738,
       "measured": 6.0,
-      "error_pct": 0.03062212293865052,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "rubella r0",
@@ -405,15 +419,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "basic_reproduction_R0",
       "name": "polio_r0",
-      "computed": 5.001531,
+      "computed": 5.00153110615,
       "measured": 5.0,
-      "error_pct": 0.0306221229386594,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "polio r0",
@@ -427,15 +442,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "attack_rate",
       "name": "meningococcal_attack_rate",
-      "computed": 0.001,
+      "computed": 0.00100030622123,
       "measured": 0.001,
-      "error_pct": 0.03062212293864202,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "meningococcal attack rate",
@@ -449,15 +465,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229386
     },
     {
       "lab": "epidemiology_lab",
       "property": "incubation_period_hours",
       "name": "salmonella_incubation_h",
-      "computed": 12.003675,
+      "computed": 12.0036746548,
       "measured": 12.0,
-      "error_pct": 0.03062212293865052,
+      "error_pct": 0.0306221233333,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "salmonella incubation h",
@@ -471,15 +488,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "carriage_prevalence_pct",
       "name": "strep_pneumo_carriage_pct",
-      "computed": 40.012249,
+      "computed": 40.0122488492,
       "measured": 40.0,
-      "error_pct": 0.0306221229386594,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "strep pneumo carriage pct",
@@ -493,15 +511,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     },
     {
       "lab": "epidemiology_lab",
       "property": "attack_rate",
       "name": "c_diff_attack_rate_hospital",
-      "computed": 0.050015,
+      "computed": 0.0500153110615,
       "measured": 0.05,
-      "error_pct": 0.030622122938653296,
+      "error_pct": 0.030622123,
       "source": "epidemiology_reference_observables",
       "domain_display_name": "epidemiology",
       "display_name": "c diff attack rate hospital",
@@ -515,7 +534,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306221229387
     }
   ],
   "margin_summary": {

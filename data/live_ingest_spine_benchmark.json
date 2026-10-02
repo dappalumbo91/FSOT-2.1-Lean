@@ -69,31 +69,34 @@
       "lab": "live_ingest_spine_lab",
       "property": "band_gap_eV",
       "name": "mp-1023922",
-      "computed": 1.900255,
+      "computed": 1.90025479,
       "measured": 1.9,
       "error_pct": 0.01341,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-1023922",
-      "computed": -1.050158,
+      "computed": -1.0501584135,
       "measured": -1.05,
       "error_pct": 0.015087,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.015087
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1023922",
-      "computed": 54.006336,
+      "computed": 54.00633636,
       "measured": 54.0,
       "error_pct": 0.011734,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -119,11 +122,12 @@
       "lab": "live_ingest_spine_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-106",
-      "computed": 180.021121,
+      "computed": 180.0211212,
       "measured": 180.0,
       "error_pct": 0.011734,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -139,41 +143,45 @@
       "lab": "live_ingest_spine_lab",
       "property": "molecular_weight",
       "name": "2244",
-      "computed": 180.159,
+      "computed": 180.159000112,
       "measured": 180.16,
-      "error_pct": 0.000555,
+      "error_pct": 0.000554999999998,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.000555
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "molecular_weight",
       "name": "1983",
-      "computed": 151.165,
+      "computed": 151.165000373,
       "measured": 151.16,
-      "error_pct": 0.003308,
+      "error_pct": 0.00330800013231,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.003308
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "molecular_weight",
       "name": "3672",
-      "computed": 206.285,
+      "computed": 206.285000227,
       "measured": 206.28,
-      "error_pct": 0.002424,
+      "error_pct": 0.00242399990305,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.002424
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "molecular_weight",
       "name": "3033",
-      "computed": 296.147,
+      "computed": 296.146999953,
       "measured": 296.1,
       "error_pct": 0.015873,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.015873
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -219,51 +227,56 @@
       "lab": "live_ingest_spine_lab",
       "property": "mri_dataset_count",
       "name": "openneuro_mri_dataset_count",
-      "computed": 5.0009,
+      "computed": 5.00090015,
       "measured": 5.0,
       "error_pct": 0.018003,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.018003
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "eeg_dataset_id",
       "name": "ds001785",
-      "computed": 1.000154,
+      "computed": 1.00015431,
       "measured": 1.0,
       "error_pct": 0.015431,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.015431
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "eeg_dataset_id",
       "name": "ds001787",
-      "computed": 1.000154,
+      "computed": 1.00015431,
       "measured": 1.0,
       "error_pct": 0.015431,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.015431
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "eeg_dataset_id",
       "name": "ds001810",
-      "computed": 1.000154,
+      "computed": 1.00015431,
       "measured": 1.0,
       "error_pct": 0.015431,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.015431
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "eeg_dataset_id",
       "name": "ds001849",
-      "computed": 1.000154,
+      "computed": 1.00015431,
       "measured": 1.0,
       "error_pct": 0.015431,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.015431
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -279,11 +292,12 @@
       "lab": "live_ingest_spine_lab",
       "property": "multiplicity",
       "name": "Epsilon_Lyr",
-      "computed": 5.001572,
+      "computed": 5.0015723,
       "measured": 5.0,
       "error_pct": 0.031446,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031446
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -299,21 +313,23 @@
       "lab": "live_ingest_spine_lab",
       "property": "separation_au",
       "name": "Epsilon_Lyr",
-      "computed": 230.061994,
+      "computed": 230.0619942,
       "measured": 230.0,
       "error_pct": 0.026954,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "multiplicity",
       "name": "Zeta_Cas",
-      "computed": 2.000629,
+      "computed": 2.00062892,
       "measured": 2.0,
       "error_pct": 0.031446,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031446
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -329,11 +345,12 @@
       "lab": "live_ingest_spine_lab",
       "property": "separation_au",
       "name": "Zeta_Cas",
-      "computed": 27.007278,
+      "computed": 27.00727758,
       "measured": 27.0,
       "error_pct": 0.026954,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.026954
     }
   ],
   "margin_summary": {

@@ -391,9 +391,9 @@
       "lab": "synthetic_biology_lab",
       "property": "bio_constant",
       "name": "human_body_temp_c",
-      "computed": 37.016455,
+      "computed": 37.0164548253,
       "measured": 37.0,
-      "error_pct": 0.04447250077037312,
+      "error_pct": 0.0444725008108,
       "source": "fsot_biology_scalar",
       "domain_display_name": "synthetic biology",
       "display_name": "human body temp c",
@@ -407,15 +407,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0444725007704
     },
     {
       "lab": "synthetic_biology_lab",
       "property": "bio_constant",
       "name": "blood_ph",
-      "computed": 7.403291,
+      "computed": 7.40329096506,
       "measured": 7.4,
-      "error_pct": 0.04447250077037072,
+      "error_pct": 0.0444725008108,
       "source": "fsot_biology_scalar",
       "domain_display_name": "synthetic biology",
       "display_name": "blood ph",
@@ -429,15 +430,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0444725007704
     },
     {
       "lab": "synthetic_biology_lab",
       "property": "bio_constant",
       "name": "human_genome_gbp",
-      "computed": 3.201423,
+      "computed": 3.20142312002,
       "measured": 3.2,
-      "error_pct": 0.04447250077037335,
+      "error_pct": 0.044472500625,
       "source": "fsot_biology_scalar",
       "domain_display_name": "synthetic biology",
       "display_name": "human genome gbp",
@@ -451,15 +453,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0444725007704
     },
     {
       "lab": "synthetic_biology_lab",
       "property": "bio_constant",
       "name": "rbc_diameter_um",
-      "computed": 7.503335,
+      "computed": 7.50333543756,
       "measured": 7.5,
-      "error_pct": 0.0444725007703776,
+      "error_pct": 0.0444725008,
       "source": "fsot_biology_scalar",
       "domain_display_name": "synthetic biology",
       "display_name": "rbc diameter um",
@@ -473,7 +476,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0444725007704
     },
     {
       "lab": "synthetic_biology_benchmark_fsot_lab",

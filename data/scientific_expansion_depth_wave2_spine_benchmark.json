@@ -69,41 +69,45 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "rule_property_count",
       "name": "QC-001",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "source_panel": "quantum_computing_math_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "rule_property_count",
       "name": "QC-002",
-      "computed": 2.000295,
+      "computed": 2.00029534,
       "measured": 2.0,
       "error_pct": 0.014767,
       "source_panel": "quantum_computing_math_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "rule_property_count",
       "name": "QC-003",
-      "computed": 2.000295,
+      "computed": 2.00029534,
       "measured": 2.0,
       "error_pct": 0.014767,
       "source_panel": "quantum_computing_math_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "rule_property_count",
       "name": "QC-004",
-      "computed": 2.001911,
+      "computed": 2.00191102,
       "measured": 2.0,
       "error_pct": 0.095551,
       "source_panel": "quantum_computing_math_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -139,21 +143,23 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "fi_median_rel_err_pct",
       "name": "Sst_interneuron",
-      "computed": 65.333854,
+      "computed": 65.3338542298,
       "measured": 65.32385249479395,
-      "error_pct": 0.015311,
+      "error_pct": 0.0153109999243,
       "source_panel": "neuroscience_connectomics_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.015311
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "fi_pearson_r",
       "name": "Sst_interneuron",
-      "computed": 0.523274,
+      "computed": 0.523274071782,
       "measured": 0.52310926097775,
-      "error_pct": 0.031506,
+      "error_pct": 0.031506000093,
       "source_panel": "neuroscience_connectomics_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -169,41 +175,45 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "Tc_K",
       "name": "Nb",
-      "computed": 9.25313,
+      "computed": 9.2531302925,
       "measured": 9.25,
       "error_pct": 0.033841,
       "source_panel": "condensed_matter_superconductivity_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.033841
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "Tc_K",
       "name": "Pb",
-      "computed": 7.202437,
+      "computed": 7.202436552,
       "measured": 7.2,
       "error_pct": 0.033841,
       "source_panel": "condensed_matter_superconductivity_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.033841
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "Tc_K",
       "name": "Hg",
-      "computed": 4.151404,
+      "computed": 4.1514044015,
       "measured": 4.15,
       "error_pct": 0.033841,
       "source_panel": "condensed_matter_superconductivity_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.033841
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "Tc_K",
       "name": "Sn",
-      "computed": 3.721259,
+      "computed": 3.7212588852,
       "measured": 3.72,
       "error_pct": 0.033841,
       "source_panel": "condensed_matter_superconductivity_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.033841
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -229,21 +239,23 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "arm_length_km",
       "name": "LIGO_Hanford",
-      "computed": 4.001632,
+      "computed": 4.00163224,
       "measured": 4.0,
       "error_pct": 0.040806,
       "source_panel": "optics_interferometry_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.040806
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "strain_sensitivity",
       "name": "LIGO_Hanford",
-      "computed": 0.0,
+      "computed": 1.00040817e-21,
       "measured": 1e-21,
       "error_pct": 0.040817,
       "source_panel": "optics_interferometry_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -279,31 +291,34 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "mouse_gestation_days",
-      "computed": 19.504336,
+      "computed": 19.50433602,
       "measured": 19.5,
       "error_pct": 0.022236,
       "source_panel": "biology_developmental_structural_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.022236
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "zebrafish_development_hours",
-      "computed": 72.01601,
+      "computed": 72.01600992,
       "measured": 72.0,
       "error_pct": 0.022236,
       "source_panel": "biology_developmental_structural_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.022236
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "drosophila_embryogenesis_hours",
-      "computed": 24.005337,
+      "computed": 24.00533664,
       "measured": 24.0,
       "error_pct": 0.022236,
       "source_panel": "biology_developmental_structural_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.022236
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -319,41 +334,45 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "chsh_classical_bound",
-      "computed": 2.000816,
+      "computed": 2.00081634,
       "measured": 2.0,
       "error_pct": 0.040817,
       "source_panel": "quantum_mechanics_entanglement_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "chsh_tsirelson_bound",
-      "computed": 2.829581,
+      "computed": 2.82958147905,
       "measured": 2.828427,
-      "error_pct": 0.040817,
+      "error_pct": 0.0408170000498,
       "source_panel": "quantum_mechanics_entanglement_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "bell_inequality_margin",
-      "computed": 0.414383,
+      "computed": 0.414383069728,
       "measured": 0.414214,
-      "error_pct": 0.040817,
+      "error_pct": 0.0408169999083,
       "source_panel": "quantum_mechanics_entanglement_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "epr_entangled_pair_spin_correlation",
-      "computed": 1.000408,
+      "computed": 1.00040817,
       "measured": 1.0,
       "error_pct": 0.040817,
       "source_panel": "quantum_mechanics_entanglement_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -369,41 +388,45 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "cronbach_alpha_typical",
-      "computed": 0.850268,
+      "computed": 0.850267801,
       "measured": 0.85,
       "error_pct": 0.031506,
       "source_panel": "psychology_psychometrics_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "test_retest_r_typical",
-      "computed": 0.800252,
+      "computed": 0.800252048,
       "measured": 0.8,
       "error_pct": 0.031506,
       "source_panel": "psychology_psychometrics_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "effect_size_cohens_d_small",
-      "computed": 0.200063,
+      "computed": 0.200063012,
       "measured": 0.2,
       "error_pct": 0.031506,
       "source_panel": "psychology_psychometrics_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "effect_size_cohens_d_medium",
-      "computed": 0.500158,
+      "computed": 0.50015753,
       "measured": 0.5,
       "error_pct": 0.031506,
       "source_panel": "psychology_psychometrics_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -429,11 +452,12 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "polymer_creep_strain_10yr_pct",
-      "computed": 2.000268,
+      "computed": 2.0002682,
       "measured": 2.0,
       "error_pct": 0.01341,
       "source_panel": "materials_creep_fracture_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -449,11 +473,12 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "creep_exponent_n_typical",
-      "computed": 5.000671,
+      "computed": 5.0006705,
       "measured": 5.0,
       "error_pct": 0.01341,
       "source_panel": "materials_creep_fracture_depth_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.01341
     }
   ],
   "margin_summary": {

@@ -83,9 +83,9 @@
       "lab": "secure_software_lab",
       "property": "cvss_base_score",
       "name": "CVSS_v3_max_score",
-      "computed": 10.001329,
+      "computed": 10.0013290579,
       "measured": 10.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.013290579,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "CVSS v3 max score",
@@ -99,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "cvss_critical_cutoff",
       "name": "CVSS_v3_critical_threshold",
-      "computed": 9.001196,
+      "computed": 9.00119615214,
       "measured": 9.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.0132905793333,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "CVSS v3 critical threshold",
@@ -121,15 +122,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "cwe_prevalence_rank",
       "name": "CWE_787_buffer_overflow_rank",
-      "computed": 1.000133,
+      "computed": 1.00013290579,
       "measured": 1.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.013290579,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "CWE 787 buffer overflow rank",
@@ -143,15 +145,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "cwe_prevalence_rank",
       "name": "CWE_79_xss_rank",
-      "computed": 2.000266,
+      "computed": 2.00026581159,
       "measured": 2.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.0132905795,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "CWE 79 xss rank",
@@ -165,15 +168,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "cwe_prevalence_rank",
       "name": "CWE_89_sql_injection_rank",
-      "computed": 3.000399,
+      "computed": 3.00039871738,
       "measured": 3.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.0132905793333,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "CWE 89 sql injection rank",
@@ -187,15 +191,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "cwe_prevalence_rank",
       "name": "CWE_20_input_validation_rank",
-      "computed": 4.000532,
+      "computed": 4.00053162317,
       "measured": 4.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.01329057925,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "CWE 20 input validation rank",
@@ -209,15 +214,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "cwe_prevalence_rank",
       "name": "CWE_125_oob_read_rank",
-      "computed": 5.000665,
+      "computed": 5.00066452897,
       "measured": 5.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.0132905794,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "CWE 125 oob read rank",
@@ -231,15 +237,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "sast_fp_rate",
       "name": "SAST_false_positive_rate_pct",
-      "computed": 35.004652,
+      "computed": 35.0046517028,
       "measured": 35.0,
-      "error_pct": 0.013290579327035956,
+      "error_pct": 0.0132905794286,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "SAST false positive rate pct",
@@ -253,15 +260,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "cve_density",
       "name": "dependency_cve_per_1k_loc",
-      "computed": 2.500332,
+      "computed": 2.50033226448,
       "measured": 2.5,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.0132905792,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "dependency cve per 1k loc",
@@ -275,15 +283,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "isa_opcode_count",
       "name": "trinary_os_opcode_count",
-      "computed": 27.003588,
+      "computed": 27.0035884564,
       "measured": 27.0,
-      "error_pct": 0.013290579327034452,
+      "error_pct": 0.0132905792593,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "trinary os opcode count",
@@ -297,15 +306,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "oracle_pass_rate",
       "name": "trinary_os_oracle_pass_rate",
-      "computed": 1.000133,
+      "computed": 1.00013290579,
       "measured": 1.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.013290579,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "trinary os oracle pass rate",
@@ -319,15 +329,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "unsafe_per_1k_loc",
       "name": "rust_unsafe_block_density",
-      "computed": 0.500066,
+      "computed": 0.500066452897,
       "measured": 0.5,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.0132905794,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "rust unsafe block density",
@@ -341,7 +352,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
@@ -413,9 +425,9 @@
       "lab": "secure_software_lab",
       "property": "review_coverage",
       "name": "code_review_coverage_pct",
-      "computed": 100.013291,
+      "computed": 100.013290579,
       "measured": 100.0,
-      "error_pct": 0.013290579327048134,
+      "error_pct": 0.013290579,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "code review coverage pct",
@@ -429,15 +441,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "sbom_components",
       "name": "sbom_component_count_median",
-      "computed": 150.019936,
+      "computed": 150.019935869,
       "measured": 150.0,
-      "error_pct": 0.01329057932703866,
+      "error_pct": 0.0132905793333,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "sbom component count median",
@@ -451,15 +464,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
       "property": "patch_sla_days",
       "name": "patch_latency_critical_days",
-      "computed": 7.00093,
+      "computed": 7.00093034055,
       "measured": 7.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.0132905792857,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "patch latency critical days",
@@ -473,7 +487,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "secure_software_lab",
@@ -501,9 +516,9 @@
       "lab": "secure_software_lab",
       "property": "aslr_entropy_bits",
       "name": "ASLR_entropy_bits",
-      "computed": 28.003721,
+      "computed": 28.0037213622,
       "measured": 28.0,
-      "error_pct": 0.01329057932704103,
+      "error_pct": 0.0132905792857,
       "source": "secure_software_engineering_reference_observables",
       "domain_display_name": "secure software",
       "display_name": "ASLR entropy bits",
@@ -517,7 +532,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013290579327
     },
     {
       "lab": "rust_lean_bridge",

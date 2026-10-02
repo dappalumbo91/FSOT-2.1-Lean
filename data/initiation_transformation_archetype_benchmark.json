@@ -194,9 +194,9 @@
       "lab": "initiation_transformation_archetype_lab",
       "property": "archetype_mean_S",
       "name": "emergence_creation",
-      "computed": -0.612996,
+      "computed": -0.612996234106,
       "measured": -0.611813,
-      "error_pct": 0.193398,
+      "error_pct": 0.193398000042,
       "node_count": 6,
       "formula": "-(Resonance_Persistence - Ignition_Coherence) * Metatron_Spheres / (Metatron_Spheres - 3 + Resonance_Rate * Inner_coupling / (Consciousness_Gate * 4))",
       "eval_kind": "archetype_precision",
@@ -212,15 +212,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.193398
     },
     {
       "lab": "initiation_transformation_archetype_lab",
       "property": "archetype_mean_S",
       "name": "restoration_integration",
-      "computed": 1.64723,
+      "computed": 1.64723033783,
       "measured": 1.647313,
-      "error_pct": 0.005018,
+      "error_pct": 0.00501800022218,
       "node_count": 1,
       "formula": "W_Binding + W_Integration / Metatron_Spheres * (5.7 + Inner_coupling / 3.3 + Cross_coupling / (2 * Consciousness_Gate))",
       "eval_kind": "archetype_precision",
@@ -236,15 +237,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.005018
     },
     {
       "lab": "initiation_transformation_archetype_lab",
       "property": "archetype_mean_S",
       "name": "observer_theophany",
-      "computed": -0.803471,
+      "computed": -0.803471473586,
       "measured": -0.802492,
-      "error_pct": 0.122054,
+      "error_pct": 0.12205400004,
       "node_count": 1,
       "formula": null,
       "eval_kind": "archetype_precision",
@@ -260,7 +262,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.122054
     },
     {
       "lab": "initiation_transformation_archetype_fsot_lab",

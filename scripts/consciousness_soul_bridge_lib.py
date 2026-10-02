@@ -7,6 +7,7 @@ import math
 import sys
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 REFERENCE = ROOT / "data" / "consciousness_soul_bridge_reference.json"
@@ -174,7 +175,7 @@ def build_bridge_records(mod=None) -> tuple[list[dict], dict[str, Any]]:
                 "lab": "consciousness_soul_bridge_lab",
                 "property": prop,
                 "name": prop,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": round(mval, 6),
                 "error_pct": round(_error_pct(computed, mval), 6),
                 "formula": formula,

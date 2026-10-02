@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -74,7 +75,7 @@ def build_fusion_physics_public_panel() -> dict:
                     "lab": "fusion_physics_public_lab",
                     "property": prop,
                     "name": str(rxn.get("id")),
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": float(measured),
                     "error_pct": round(err, 6),
                     "eval_kind": "reaction_energetics",
@@ -106,7 +107,7 @@ def build_fusion_physics_public_panel() -> dict:
                 "lab": "fusion_physics_public_lab",
                 "property": "power_balance_temp_kev",
                 "name": str(pb.get("id")),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": round(err, 6),
                 "eval_kind": "power_balance",

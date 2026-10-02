@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -56,7 +57,7 @@ def _ref_records(path: Path, lab: str, scalar_name: str, factor: float = 0.0008)
                 "lab": lab,
                 "property": row.get("property"),
                 "name": row.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": path.stem,
@@ -78,7 +79,7 @@ def _crypto_rules_records(lab: str = "cryptography_lab") -> list[dict]:
                 "lab": lab,
                 "property": "crypto_rule_property_count",
                 "name": rule.get("id") or rule.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "CRYPTOGRAPHY_RULES.json",

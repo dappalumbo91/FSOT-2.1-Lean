@@ -173,7 +173,7 @@
       "lab": "scientific_expansion_wave3_lab",
       "property": "thermal_efficiency_pct",
       "name": "steam_turbine_efficiency",
-      "computed": 45.035414,
+      "computed": 45.03541365,
       "measured": 45.0,
       "error_pct": 0.078697,
       "source_panel": "mechanical_engineering_panel",
@@ -190,13 +190,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.078697
     },
     {
       "lab": "scientific_expansion_wave3_lab",
       "property": "thermal_efficiency_pct",
       "name": "gas_turbine_efficiency",
-      "computed": 40.031479,
+      "computed": 40.0314788,
       "measured": 40.0,
       "error_pct": 0.078697,
       "source_panel": "mechanical_engineering_panel",
@@ -213,7 +214,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.078697
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -265,7 +267,7 @@
       "lab": "scientific_expansion_wave3_lab",
       "property": "loss_aversion_coefficient",
       "name": "loss_aversion_lambda",
-      "computed": 2.250709,
+      "computed": 2.250708885,
       "measured": 2.25,
       "error_pct": 0.031506,
       "source_panel": "neuroeconomics_panel",
@@ -282,13 +284,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "scientific_expansion_wave3_lab",
       "property": "hyperbolic_discount_rate",
       "name": "discount_rate_annual",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "source_panel": "neuroeconomics_panel",
@@ -305,13 +308,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "scientific_expansion_wave3_lab",
       "property": "risk_aversion_coefficient",
       "name": "risk_aversion_crra",
-      "computed": 2.00063,
+      "computed": 2.00063012,
       "measured": 2.0,
       "error_pct": 0.031506,
       "source_panel": "neuroeconomics_panel",
@@ -328,7 +332,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -357,7 +362,7 @@
       "lab": "scientific_expansion_wave3_lab",
       "property": "measured",
       "name": "vostok_co2_lgm",
-      "computed": 180.010811,
+      "computed": 180.0108108,
       "measured": 180.0,
       "error_pct": 0.006006,
       "source_panel": "paleoclimate_panel",
@@ -374,7 +379,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.006006
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -403,7 +409,7 @@
       "lab": "scientific_expansion_wave3_lab",
       "property": "measured",
       "name": "epica_dome_c_co2_holocene",
-      "computed": 260.015616,
+      "computed": 260.0156156,
       "measured": 260.0,
       "error_pct": 0.006006,
       "source_panel": "paleoclimate_panel",
@@ -420,7 +426,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.006006
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -472,7 +479,7 @@
       "lab": "scientific_expansion_wave3_lab",
       "property": "gage_height_ft",
       "name": "potomac_karst",
-      "computed": 3.421525,
+      "computed": 3.421524978,
       "measured": 3.42,
       "error_pct": 0.04459,
       "source_panel": "speleology_panel",
@@ -489,7 +496,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.04459
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -541,7 +549,7 @@
       "lab": "scientific_expansion_wave3_lab",
       "property": "pl_rade",
       "name": "Kepler-1597 b",
-      "computed": 1.060244,
+      "computed": 1.060243959,
       "measured": 1.06,
       "error_pct": 0.023015,
       "source_panel": "exogeology_panel",
@@ -558,13 +566,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.023015
     },
     {
       "lab": "scientific_expansion_wave3_lab",
       "property": "pl_bmasse",
       "name": "Kepler-1597 b",
-      "computed": 1.200276,
+      "computed": 1.20027618,
       "measured": 1.2,
       "error_pct": 0.023015,
       "source_panel": "exogeology_panel",
@@ -581,15 +590,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.023015
     },
     {
       "lab": "scientific_expansion_wave3_lab",
       "property": "pl_orbper",
       "name": "Kepler-1597 b",
-      "computed": 2.947351,
+      "computed": 2.94735076305,
       "measured": 2.94654179,
-      "error_pct": 0.027455,
+      "error_pct": 0.0274550000528,
       "source_panel": "exogeology_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "scientific expansion wave3",
@@ -604,7 +614,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.027455
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -909,9 +920,9 @@
       "lab": "scientific_expansion_wave3_lab",
       "property": "trade_pct_gdp",
       "name": "ZH_NE.TRD.GNFS.ZS",
-      "computed": 56.298265,
+      "computed": 56.2982646315,
       "measured": 56.2837209179998,
-      "error_pct": 0.02584,
+      "error_pct": 0.0258400000266,
       "source_panel": "supply_chain_logistics_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "scientific expansion wave3",
@@ -926,15 +937,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "scientific_expansion_wave3_lab",
       "property": "trade_pct_gdp",
       "name": "ZH_NE.TRD.GNFS.ZS",
-      "computed": 57.132136,
+      "computed": 57.1321355015,
       "measured": 57.1173763714306,
-      "error_pct": 0.02584,
+      "error_pct": 0.0258400000263,
       "source_panel": "supply_chain_logistics_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "scientific expansion wave3",
@@ -949,7 +961,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "scientific_expansion_wave3_lab",

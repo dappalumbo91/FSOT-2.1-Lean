@@ -83,9 +83,9 @@
       "lab": "neuroeconomics_lab",
       "property": "loss_aversion_coefficient",
       "name": "loss_aversion_lambda",
-      "computed": 2.252363,
+      "computed": 2.25236296269,
       "measured": 2.25,
-      "error_pct": 0.10502056403980634,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "loss aversion lambda",
@@ -100,15 +100,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "hyperbolic_discount_rate",
       "name": "discount_rate_annual",
-      "computed": 0.100105,
+      "computed": 0.100105020564,
       "measured": 0.1,
-      "error_pct": 0.10502056403979831,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "discount rate annual",
@@ -123,15 +124,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "risk_aversion_coefficient",
       "name": "risk_aversion_crra",
-      "computed": 2.0021,
+      "computed": 2.00210041128,
       "measured": 2.0,
-      "error_pct": 0.10502056403980387,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "risk aversion crra",
@@ -146,15 +148,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "wta_wtp_ratio",
       "name": "endowment_effect_pct",
-      "computed": 2.0021,
+      "computed": 2.00210041128,
       "measured": 2.0,
-      "error_pct": 0.10502056403980387,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "endowment effect pct",
@@ -169,15 +172,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "probability_weighting_alpha",
       "name": "prospect_theory_alpha",
-      "computed": 0.880924,
+      "computed": 0.880924180964,
       "measured": 0.88,
-      "error_pct": 0.10502056403980588,
+      "error_pct": 0.105020564091,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "prospect theory alpha",
@@ -192,15 +196,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "value_function_beta",
       "name": "prospect_theory_beta",
-      "computed": 0.880924,
+      "computed": 0.880924180964,
       "measured": 0.88,
-      "error_pct": 0.10502056403980588,
+      "error_pct": 0.105020564091,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "prospect theory beta",
@@ -215,15 +220,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "minimum_accept_offer_pct",
       "name": "ultimatum_accept_threshold",
-      "computed": 0.20021,
+      "computed": 0.200210041128,
       "measured": 0.2,
-      "error_pct": 0.10502056403979831,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "ultimatum accept threshold",
@@ -238,15 +244,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "trust_return_multiplier",
       "name": "trust_game_return",
-      "computed": 3.003151,
+      "computed": 3.00315061692,
       "measured": 3.0,
-      "error_pct": 0.10502056403979647,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "trust game return",
@@ -261,15 +268,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "dictator_give_fraction",
       "name": "dictator_give_mean",
-      "computed": 0.280294,
+      "computed": 0.280294057579,
       "measured": 0.28,
-      "error_pct": 0.10502056403980226,
+      "error_pct": 0.105020563929,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "dictator give mean",
@@ -284,15 +292,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "contribution_fraction",
       "name": "public_goods_contribution",
-      "computed": 0.450473,
+      "computed": 0.450472592538,
       "measured": 0.45,
-      "error_pct": 0.1050205640398014,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "public goods contribution",
@@ -307,15 +316,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "anchoring_bias_pct",
       "name": "anchoring_adjustment_pct",
-      "computed": 0.150158,
+      "computed": 0.150157530846,
       "measured": 0.15,
-      "error_pct": 0.10502056403980757,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "anchoring adjustment pct",
@@ -330,15 +340,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "framing_shift_pct",
       "name": "framing_effect_pct",
-      "computed": 0.300315,
+      "computed": 0.300315061692,
       "measured": 0.3,
-      "error_pct": 0.10502056403980757,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "framing effect pct",
@@ -353,15 +364,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "present_bias_beta",
       "name": "present_bias_beta",
-      "computed": 0.700735,
+      "computed": 0.700735143948,
       "measured": 0.7,
-      "error_pct": 0.10502056403981022,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "present bias beta",
@@ -376,15 +388,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "altruistic_transfer_pct",
       "name": "altruism_transfer_pct",
-      "computed": 0.250263,
+      "computed": 0.25026255141,
       "measured": 0.25,
-      "error_pct": 0.10502056403980387,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "altruism transfer pct",
@@ -399,15 +412,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "probability_discount_rate",
       "name": "probability_discount",
-      "computed": 0.150158,
+      "computed": 0.150157530846,
       "measured": 0.15,
-      "error_pct": 0.10502056403980757,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "probability discount",
@@ -422,15 +436,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "ambiguity_premium_pct",
       "name": "ambiguity_aversion",
-      "computed": 0.120126,
+      "computed": 0.120126024677,
       "measured": 0.12,
-      "error_pct": 0.10502056403980063,
+      "error_pct": 0.105020564167,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "ambiguity aversion",
@@ -445,15 +460,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "sunk_cost_persistence_pct",
       "name": "mental_accounting_sunk",
-      "computed": 0.350368,
+      "computed": 0.350367571974,
       "measured": 0.35,
-      "error_pct": 0.10502056403981022,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "mental accounting sunk",
@@ -468,15 +484,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "inequity_aversion_alpha",
       "name": "social_preference_inequity",
-      "computed": 0.500525,
+      "computed": 0.50052510282,
       "measured": 0.5,
-      "error_pct": 0.10502056403980387,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "social preference inequity",
@@ -491,15 +508,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "rpe_bold_signal",
       "name": "neural_reward_prediction_error",
-      "computed": 1.501575,
+      "computed": 1.50157530846,
       "measured": 1.5,
-      "error_pct": 0.10502056403979647,
+      "error_pct": 0.105020564,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "neural reward prediction error",
@@ -514,15 +532,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "neuroeconomics_lab",
       "property": "striatal_activation_z",
       "name": "striatal_bold_gain",
-      "computed": 2.802941,
+      "computed": 2.80294057579,
       "measured": 2.8,
-      "error_pct": 0.10502056403981022,
+      "error_pct": 0.105020563929,
       "source": "neuroeconomics_reference_observables",
       "domain_display_name": "neuroeconomics",
       "display_name": "striatal bold gain",
@@ -537,15 +556,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.10502056404
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "An Introduction to Fluid Dynamics",
-      "computed": 12369.896053,
+      "computed": 12369.8960529,
       "measured": 12366.0,
-      "error_pct": 0.03150616921194585,
+      "error_pct": 0.0315061693353,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "An Introduction to Fluid Dynamics",
@@ -559,15 +579,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "An introduction to fluid dynamics",
-      "computed": 6209.955903,
+      "computed": 6209.95590298,
       "measured": 6208.0,
-      "error_pct": 0.03150616921194874,
+      "error_pct": 0.0315061691366,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "An introduction to fluid dynamics",
@@ -581,15 +602,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Geophysical Fluid Dynamics",
-      "computed": 4703.48142,
+      "computed": 4703.48142008,
       "measured": 4702.0,
-      "error_pct": 0.031506169211947786,
+      "error_pct": 0.0315061692897,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Geophysical Fluid Dynamics",
@@ -603,15 +625,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "<i>Computational Methods for Fluid Dynamics</i>",
-      "computed": 6039.902342,
+      "computed": 6039.9023425,
       "measured": 6038.0,
-      "error_pct": 0.03150616921194673,
+      "error_pct": 0.0315061692613,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "<i>Computational Methods for Fluid Dynamics</i>",
@@ -625,15 +648,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Geophysical Fluid Dynamics",
-      "computed": 3365.059868,
+      "computed": 3365.05986753,
       "measured": 3364.0,
-      "error_pct": 0.031506169211947085,
+      "error_pct": 0.0315061691439,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Geophysical Fluid Dynamics",
@@ -647,15 +671,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Computational Methods for Fluid Dynamics",
-      "computed": 3656.15155,
+      "computed": 3656.15155048,
       "measured": 3655.0,
-      "error_pct": 0.03150616921194527,
+      "error_pct": 0.0315061690834,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Computational Methods for Fluid Dynamics",
@@ -669,15 +694,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Spectral Methods in Fluid Dynamics",
-      "computed": 3877.221179,
+      "computed": 3877.22117912,
       "measured": 3876.0,
-      "error_pct": 0.03150616921194718,
+      "error_pct": 0.0315061692467,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Spectral Methods in Fluid Dynamics",
@@ -691,15 +717,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "The Lattice Boltzmann Equation for Fluid Dynamics and Beyond",
-      "computed": 4139.303725,
+      "computed": 4139.30372528,
       "measured": 4138.0,
-      "error_pct": 0.031506169211948036,
+      "error_pct": 0.0315061691639,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "The Lattice Boltzmann Equation for Fluid Dynamics and Beyond",
@@ -713,15 +740,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
-      "computed": 3298.038758,
+      "computed": 3298.0387584,
       "measured": 3297.0,
-      "error_pct": 0.03150616921194138,
+      "error_pct": 0.0315061692448,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
@@ -735,15 +763,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "An Introduction to Computational Fluid Dynamics: The Finite ",
-      "computed": 4481.411476,
+      "computed": 4481.41147638,
       "measured": 4480.0,
-      "error_pct": 0.03150616921195543,
+      "error_pct": 0.0315061691964,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "An Introduction to Computational Fluid Dynamics: The Finite",
@@ -757,15 +786,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506169212
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Spectral Methods in Fluid Dynamics.",
-      "computed": 3100.976691,
+      "computed": 3100.97669125,
       "measured": 3100.0,
-      "error_pct": 0.03150616921194312,
+      "error_pct": 0.0315061693548,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Spectral Methods in Fluid Dynamics.",
@@ -779,15 +809,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "QUANTIFICATION OF UNCERTAINTY IN COMPUTATIONAL FLUID DYNAMIC",
-      "computed": 2254.710149,
+      "computed": 2254.71014905,
       "measured": 2254.0,
-      "error_pct": 0.03150616921194207,
+      "error_pct": 0.0315061690328,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "QUANTIFICATION OF UNCERTAINTY IN COMPUTATIONAL FLUID DYNAMIC",
@@ -801,15 +832,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Geophysical Fluid Dynamics",
-      "computed": 1714.540016,
+      "computed": 1714.54001574,
       "measured": 1714.0,
-      "error_pct": 0.03150616921194875,
+      "error_pct": 0.0315061691949,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Geophysical Fluid Dynamics",
@@ -823,15 +855,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Spectral Methods In Fluid Dynamics",
-      "computed": 2375.748272,
+      "computed": 2375.74827152,
       "measured": 2375.0,
-      "error_pct": 0.03150616921195347,
+      "error_pct": 0.0315061692632,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Spectral Methods In Fluid Dynamics",
@@ -845,15 +878,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506169212
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Volume of fluid (VOF) method for the dynamics of free bounda",
-      "computed": 15707.947414,
+      "computed": 15707.9474138,
       "measured": 15703.0,
-      "error_pct": 0.03150616921194442,
+      "error_pct": 0.0315061695218,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Volume of fluid (VOF) method for the dynamics of free bounda",
@@ -867,15 +901,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics: A ",
-      "computed": 2953.930377,
+      "computed": 2953.93037718,
       "measured": 2953.0,
-      "error_pct": 0.03150616921194184,
+      "error_pct": 0.0315061693193,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Riemann Solvers and Numerical Methods for Fluid Dynamics: A",
@@ -889,15 +924,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "The Lattice Boltzmann Equation: For Fluid Dynamics and Beyon",
-      "computed": 2701.850982,
+      "computed": 2701.85098163,
       "measured": 2701.0,
-      "error_pct": 0.03150616921195614,
+      "error_pct": 0.0315061691966,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "The Lattice Boltzmann Equation: For Fluid Dynamics and Beyon",
@@ -911,15 +947,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506169212
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Atmospheric and Oceanic Fluid Dynamics",
-      "computed": 1880.592316,
+      "computed": 1880.59231598,
       "measured": 1880.0,
-      "error_pct": 0.03150616921194593,
+      "error_pct": 0.0315061691489,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Atmospheric and Oceanic Fluid Dynamics",
@@ -933,15 +970,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Computational fluid dynamics : the basics with applications",
-      "computed": 1893.596412,
+      "computed": 1893.59641178,
       "measured": 1893.0,
-      "error_pct": 0.03150616921195181,
+      "error_pct": 0.0315061690438,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Computational fluid dynamics : the basics with applications",
@@ -955,15 +993,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506169212
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Atmospheric and Oceanic Fluid Dynamics",
-      "computed": 1603.505044,
+      "computed": 1603.50504389,
       "measured": 1603.0,
-      "error_pct": 0.03150616921194533,
+      "error_pct": 0.031506169058,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Atmospheric and Oceanic Fluid Dynamics",
@@ -977,15 +1016,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Dynamics of Fluids in Porous Media",
-      "computed": 9835.097687,
+      "computed": 9835.09768656,
       "measured": 9832.0,
-      "error_pct": 0.03150616921195223,
+      "error_pct": 0.0315061692433,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Dynamics of Fluids in Porous Media",
@@ -999,15 +1039,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506169212
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Physical Fluid Dynamics",
-      "computed": 1681.529619,
+      "computed": 1681.5296187,
       "measured": 1681.0,
-      "error_pct": 0.03150616921194449,
+      "error_pct": 0.031506168947,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Physical Fluid Dynamics",
@@ -1021,15 +1062,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Spectral Methods in Fluid Dynamics",
-      "computed": 1345.423758,
+      "computed": 1345.42375798,
       "measured": 1345.0,
-      "error_pct": 0.03150616921195528,
+      "error_pct": 0.0315061695167,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Spectral Methods in Fluid Dynamics",
@@ -1043,15 +1085,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506169212
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
-      "computed": 2127.670136,
+      "computed": 2127.67013622,
       "measured": 2127.0,
-      "error_pct": 0.031506169211938426,
+      "error_pct": 0.0315061692525,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
@@ -1065,15 +1108,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0315061692119
     },
     {
       "lab": "openalex_psychology_lab",
       "property": "cited_by_count",
       "name": "Thermo-Fluid Dynamics of Two-Phase Flow",
-      "computed": 1610.507249,
+      "computed": 1610.50724932,
       "measured": 1610.0,
-      "error_pct": 0.03150616921195014,
+      "error_pct": 0.0315061689441,
       "source": "openalex_api",
       "domain_display_name": "openalex psychology",
       "display_name": "Thermo-Fluid Dynamics of Two-Phase Flow",
@@ -1087,15 +1131,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506169212
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_panel_cv_pct",
       "name": "2023_cross_country",
-      "computed": 123.386071,
+      "computed": 123.386070594,
       "measured": 123.187122,
-      "error_pct": 0.16150113017143683,
+      "error_pct": 0.161501129964,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2023 cross country",
@@ -1109,7 +1154,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
@@ -1137,9 +1183,9 @@
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_panel_cv_pct",
       "name": "2021_cross_country",
-      "computed": 119.36865,
+      "computed": 119.368649876,
       "measured": 119.176179,
-      "error_pct": 0.16150113017143417,
+      "error_pct": 0.161501130188,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2021 cross country",
@@ -1153,7 +1199,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
@@ -1203,9 +1250,9 @@
       "lab": "econometrics_lab",
       "property": "GDP_per_capita_panel_cv_pct",
       "name": "2023_cross_country",
-      "computed": 64.427029,
+      "computed": 64.4270286078,
       "measured": 64.323146,
-      "error_pct": 0.16150113017143555,
+      "error_pct": 0.161501130246,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2023 cross country",
@@ -1219,15 +1266,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_per_capita_panel_cv_pct",
       "name": "2022_cross_country",
-      "computed": 65.456554,
+      "computed": 65.4565536213,
       "measured": 65.351011,
-      "error_pct": 0.16150113017143364,
+      "error_pct": 0.161501130105,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2022 cross country",
@@ -1241,15 +1289,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_per_capita_panel_cv_pct",
       "name": "2021_cross_country",
-      "computed": 63.230169,
+      "computed": 63.2301687823,
       "measured": 63.128216,
-      "error_pct": 0.16150113017144266,
+      "error_pct": 0.161501130176,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2021 cross country",
@@ -1263,7 +1312,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
@@ -1291,9 +1341,9 @@
       "lab": "econometrics_lab",
       "property": "GDP_per_capita_panel_cv_pct",
       "name": "2019_cross_country",
-      "computed": 62.178375,
+      "computed": 62.1783748622,
       "measured": 62.078118,
-      "error_pct": 0.161501130171441,
+      "error_pct": 0.161501130237,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2019 cross country",
@@ -1307,15 +1357,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "population_total_panel_cv_pct",
       "name": "2023_cross_country",
-      "computed": 149.20157,
+      "computed": 149.201569692,
       "measured": 148.960996,
-      "error_pct": 0.16150113017144085,
+      "error_pct": 0.161501130135,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2023 cross country",
@@ -1329,15 +1380,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "population_total_panel_cv_pct",
       "name": "2022_cross_country",
-      "computed": 149.263308,
+      "computed": 149.26330824,
       "measured": 149.022635,
-      "error_pct": 0.16150113017144377,
+      "error_pct": 0.161501130348,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2022 cross country",
@@ -1351,15 +1403,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "population_total_panel_cv_pct",
       "name": "2021_cross_country",
-      "computed": 149.256431,
+      "computed": 149.256431151,
       "measured": 149.015769,
-      "error_pct": 0.16150113017143403,
+      "error_pct": 0.161501130125,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2021 cross country",
@@ -1373,15 +1426,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "population_total_panel_cv_pct",
       "name": "2020_cross_country",
-      "computed": 149.147275,
+      "computed": 149.147275147,
       "measured": 148.906789,
-      "error_pct": 0.16150113017144527,
+      "error_pct": 0.161501130079,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2020 cross country",
@@ -1395,7 +1449,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
@@ -1423,9 +1478,9 @@
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "AU_2020",
-      "computed": -4.655284,
+      "computed": -4.65528390792,
       "measured": -4.649277,
-      "error_pct": 0.12920090413715746,
+      "error_pct": 0.129200904141,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "AU 2020",
@@ -1439,15 +1494,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "AU_2021",
-      "computed": 17.068061,
+      "computed": 17.0680606339,
       "measured": 17.046037,
-      "error_pct": 0.12920090413714977,
+      "error_pct": 0.129200903999,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "AU 2021",
@@ -1461,15 +1517,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "AU_2022",
-      "computed": 8.662243,
+      "computed": 8.66224325549,
       "measured": 8.651066,
-      "error_pct": 0.1292009041371584,
+      "error_pct": 0.129200904143,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "AU 2022",
@@ -1483,15 +1540,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "AU_2023",
-      "computed": 2.292596,
+      "computed": 2.292596233,
       "measured": 2.289638,
-      "error_pct": 0.12920090413715918,
+      "error_pct": 0.129200904248,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "AU 2023",
@@ -1505,15 +1563,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "BR_2019",
-      "computed": 8.015003,
+      "computed": 8.01500309439,
       "measured": 8.004661,
-      "error_pct": 0.12920090413714402,
+      "error_pct": 0.129200904198,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "BR 2019",
@@ -1527,7 +1586,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     }
   ],
   "margin_summary": {

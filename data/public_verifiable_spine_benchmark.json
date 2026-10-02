@@ -104,7 +104,7 @@
       "lab": "public_verifiable_spine_lab",
       "property": "chromosome_index",
       "name": "BRCA1",
-      "computed": 17.004158,
+      "computed": 17.0041582,
       "measured": 17.0,
       "error_pct": 0.02446,
       "source_panel": "ncbi_gene_public_panel",
@@ -121,7 +121,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02446
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -173,7 +174,7 @@
       "lab": "public_verifiable_spine_lab",
       "property": "citation_count",
       "name": "10.1007/978-3-658-17671-6_18-1",
-      "computed": 2.00063,
+      "computed": 2.00063012,
       "measured": 2.0,
       "error_pct": 0.031506,
       "source_panel": "crossref_scholarly_panel",
@@ -190,7 +191,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -288,9 +290,9 @@
       "lab": "public_verifiable_spine_lab",
       "property": "longitude",
       "name": "380617064",
-      "computed": -3.383725,
+      "computed": -3.38372539704,
       "measured": -3.3835221827,
-      "error_pct": 0.006006,
+      "error_pct": 0.00600599993223,
       "source_panel": "inaturalist_observation_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "public verifiable spine",
@@ -305,7 +307,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.006006
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -357,7 +360,7 @@
       "lab": "public_verifiable_spine_lab",
       "property": "wspd",
       "name": "46026_2026-07-12 13:30",
-      "computed": 1.000264,
+      "computed": 1.00026401,
       "measured": 1.0,
       "error_pct": 0.026401,
       "source_panel": "noaa_ndbc_buoy_panel",
@@ -374,7 +377,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.026401
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -403,7 +407,7 @@
       "lab": "public_verifiable_spine_lab",
       "property": "wtmp",
       "name": "46026_2026-07-12 13:30",
-      "computed": 12.703592,
+      "computed": 12.703592449,
       "measured": 12.7,
       "error_pct": 0.028287,
       "source_panel": "noaa_ndbc_buoy_panel",
@@ -420,7 +424,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.028287
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -472,7 +477,7 @@
       "lab": "public_verifiable_spine_lab",
       "property": "wind_speed_ms",
       "name": "washington_dc_2026-07-12T00:00",
-      "computed": 8.602254,
+      "computed": 8.602253544,
       "measured": 8.6,
       "error_pct": 0.026204,
       "source_panel": "open_meteo_live_panel",
@@ -489,7 +494,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.026204
     },
     {
       "lab": "public_verifiable_spine_lab",

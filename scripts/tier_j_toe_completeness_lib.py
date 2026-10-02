@@ -8,6 +8,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -206,7 +207,7 @@ def build_formula_branching_fractal() -> dict:
                 "lab": "formula_branching_fractal_lab",
                 "property": "domain_divergence_depth",
                 "name": node["name"],
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": node.get("primary_branch"),
@@ -221,7 +222,7 @@ def build_formula_branching_fractal() -> dict:
                 "lab": "formula_branching_fractal_lab",
                 "property": "corpus_branch_attachment_count",
                 "name": branch,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "strict_empirical.jsonl",
@@ -237,7 +238,7 @@ def build_formula_branching_fractal() -> dict:
                 "lab": "formula_branching_fractal_lab",
                 "property": "constant_primitive_corpus_count",
                 "name": node["name"],
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "fsot_formula_spine.yaml",
@@ -282,7 +283,7 @@ def build_mechanistic_coupling() -> dict:
                 "lab": "mechanistic_coupling_lab",
                 "property": "mechanism_channel_weight",
                 "name": m.get("id"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "mechanistic_coupling_manifest.yaml",
@@ -372,7 +373,7 @@ def build_cve_codon_hole_falsification() -> dict:
                 "lab": "cve_codon_falsification_lab",
                 "property": "kev_cwe_frequency",
                 "name": cwe,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "cisa_kev_summary.json",
@@ -433,7 +434,7 @@ def build_cve_codon_hole_falsification() -> dict:
             "lab": "cve_codon_falsification_lab",
             "property": "hole_detection_rate",
             "name": "aggregate_sample_hole_rate",
-            "computed": round(computed, 6),
+            "computed": round_sig(computed),
             "measured": round(measured, 6),
             "error_pct": err,
             "source": "code_genome_lib",

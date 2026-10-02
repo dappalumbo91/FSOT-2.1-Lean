@@ -2666,9 +2666,9 @@
       "lab": "cosmology_bubble_bleed_lab",
       "property": "sector_h0_overlay",
       "name": "global_cmb_background",
-      "computed": 68.440057,
+      "computed": 68.4400568298,
       "measured": 68.44005682979427,
-      "error_pct": 0.0,
+      "error_pct": 8.3678692209e-12,
       "bubble_density_proxy": 0.0,
       "bubble_density_model": 0.0,
       "bubble_density_sky": 0.0,
@@ -2687,13 +2687,14 @@
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0
     },
     {
       "lab": "cosmology_bubble_bleed_lab",
       "property": "sector_h0_overlay",
       "name": "planck_cmb_local",
-      "computed": 67.383958,
+      "computed": 67.383958126,
       "measured": 67.4,
       "error_pct": 0.023801,
       "bubble_density_proxy": -1.0,
@@ -2716,13 +2717,14 @@
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.023801
     },
     {
       "lab": "cosmology_bubble_bleed_lab",
       "property": "sector_h0_overlay",
       "name": "freedman_jwst",
-      "computed": 70.279338,
+      "computed": 70.2793377693,
       "measured": 70.39,
       "error_pct": 0.157213,
       "bubble_density_proxy": 1.85,
@@ -2745,7 +2747,8 @@
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.157213
     }
   ],
   "margin_summary": {

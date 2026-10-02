@@ -213,9 +213,9 @@
       "lab": "law_policy_lab",
       "property": "tax_revenue_pct_gdp",
       "name": "tax_revenue_pct_gdp",
-      "computed": 25.008127,
+      "computed": 25.0081268332,
       "measured": 25.0,
-      "error_pct": 0.03250733262079564,
+      "error_pct": 0.0325073328,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "tax revenue pct gdp",
@@ -229,15 +229,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "public_debt_pct_gdp",
       "name": "public_debt_pct_gdp",
-      "computed": 90.029257,
+      "computed": 90.0292565994,
       "measured": 90.0,
-      "error_pct": 0.03250733262079721,
+      "error_pct": 0.0325073326667,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "public debt pct gdp",
@@ -251,15 +252,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "health_expenditure_pct_gdp",
       "name": "health_spend_pct_gdp",
-      "computed": 10.003251,
+      "computed": 10.0032507333,
       "measured": 10.0,
-      "error_pct": 0.032507332620781426,
+      "error_pct": 0.032507333,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "health spend pct gdp",
@@ -273,15 +275,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "education_expenditure_pct_gdp",
       "name": "education_spend_pct_gdp",
-      "computed": 5.001625,
+      "computed": 5.00162536663,
       "measured": 5.0,
-      "error_pct": 0.032507332620781426,
+      "error_pct": 0.0325073326,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "education spend pct gdp",
@@ -295,15 +298,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "gini_coefficient",
       "name": "gini_coefficient_oecd",
-      "computed": 0.320104,
+      "computed": 0.320104023464,
       "measured": 0.32,
-      "error_pct": 0.032507332620793083,
+      "error_pct": 0.0325073325,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "gini coefficient oecd",
@@ -317,15 +321,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "poverty_rate_pct",
       "name": "poverty_headcount_215",
-      "computed": 10.003251,
+      "computed": 10.0032507333,
       "measured": 10.0,
-      "error_pct": 0.032507332620781426,
+      "error_pct": 0.032507333,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "poverty headcount 215",
@@ -339,15 +344,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "life_expectancy_years",
       "name": "life_expectancy_global",
-      "computed": 73.02373,
+      "computed": 73.0237303528,
       "measured": 73.0,
-      "error_pct": 0.03250733262078727,
+      "error_pct": 0.0325073326027,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "life expectancy global",
@@ -361,15 +367,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "internet_users_pct",
       "name": "internet_penetration_pct",
-      "computed": 65.02113,
+      "computed": 65.0211297662,
       "measured": 65.0,
-      "error_pct": 0.032507332620792355,
+      "error_pct": 0.0325073326154,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "internet penetration pct",
@@ -383,15 +390,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "renewable_energy_pct",
       "name": "renewable_energy_pct",
-      "computed": 30.009752,
+      "computed": 30.0097521998,
       "measured": 30.0,
-      "error_pct": 0.03250733262079327,
+      "error_pct": 0.0325073326667,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "renewable energy pct",
@@ -405,15 +413,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "carbon_price_eur_t",
       "name": "carbon_price_eu_ets",
-      "computed": 60.019504,
+      "computed": 60.0195043996,
       "measured": 60.0,
-      "error_pct": 0.03250733262079327,
+      "error_pct": 0.0325073326667,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "carbon price eu ets",
@@ -427,15 +436,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "minimum_wage_usd_h",
       "name": "minimum_wage_usd_h",
-      "computed": 7.252357,
+      "computed": 7.25235678162,
       "measured": 7.25,
-      "error_pct": 0.03250733262078878,
+      "error_pct": 0.0325073326897,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "minimum wage usd h",
@@ -449,15 +459,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "corporate_tax_rate_pct",
       "name": "corporate_tax_rate_oecd",
-      "computed": 23.007477,
+      "computed": 23.0074766865,
       "measured": 23.0,
-      "error_pct": 0.032507332620784514,
+      "error_pct": 0.0325073326087,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "corporate tax rate oecd",
@@ -471,15 +482,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "trade_pct_gdp",
       "name": "trade_openness_pct_gdp",
-      "computed": 60.019504,
+      "computed": 60.0195043996,
       "measured": 60.0,
-      "error_pct": 0.03250733262079327,
+      "error_pct": 0.0325073326667,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "trade openness pct gdp",
@@ -493,15 +505,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "judicial_independence",
       "name": "judicial_independence_index",
-      "computed": 6.502113,
+      "computed": 6.50211297662,
       "measured": 6.5,
-      "error_pct": 0.032507332620786894,
+      "error_pct": 0.0325073326154,
       "source": "law_policy_reference_observables",
       "domain_display_name": "law policy",
       "display_name": "judicial independence index",
@@ -515,15 +528,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0325073326208
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "US_2023",
-      "computed": 27816941469402.848,
+      "computed": 27816941469400.0,
       "measured": 27811517000000.0,
-      "error_pct": 0.019504399572478036,
+      "error_pct": 0.0195043995622,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2023",
@@ -537,15 +551,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "US_2022",
-      "computed": 26059695796021.63,
+      "computed": 26059695796000.0,
       "measured": 26054614000000.0,
-      "error_pct": 0.01950439957248611,
+      "error_pct": 0.0195043994895,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2022",
@@ -559,15 +574,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "US_2021",
-      "computed": 23730272544601.95,
+      "computed": 23730272544600.0,
       "measured": 23725645000000.0,
-      "error_pct": 0.01950439957248462,
+      "error_pct": 0.0195043995643,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2021",
@@ -581,15 +597,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "US_2020",
-      "computed": 21379450120215.98,
+      "computed": 21379450120200.0,
       "measured": 21375281000000.0,
-      "error_pct": 0.01950439957248033,
+      "error_pct": 0.0195043994977,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2020",
@@ -603,15 +620,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "US_2019",
-      "computed": 21544183244157.12,
+      "computed": 21544183244200.0,
       "measured": 21539982000000.0,
-      "error_pct": 0.01950439957248383,
+      "error_pct": 0.0195043997716,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2019",
@@ -625,15 +643,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "US_2023",
-      "computed": 82602.892827,
+      "computed": 82602.8928273,
       "measured": 82586.7847707894,
-      "error_pct": 0.01950439957247168,
+      "error_pct": 0.0195043995905,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2023",
@@ -647,15 +666,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "US_2022",
-      "computed": 78023.904708,
+      "computed": 78023.9047077,
       "measured": 78008.6895811877,
-      "error_pct": 0.019504399572480194,
+      "error_pct": 0.0195043995662,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2022",
@@ -669,15 +689,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "US_2021",
-      "computed": 71455.166164,
+      "computed": 71455.1661639,
       "measured": 71441.2319805947,
-      "error_pct": 0.019504399572485735,
+      "error_pct": 0.0195043995169,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2021",
@@ -691,15 +712,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "US_2020",
-      "computed": 64477.870711,
+      "computed": 64477.8707107,
       "measured": 64465.2971415748,
-      "error_pct": 0.019504399572476266,
+      "error_pct": 0.0195043995494,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2020",
@@ -713,15 +735,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "US_2019",
-      "computed": 65240.678912,
+      "computed": 65240.6789124,
       "measured": 65227.9565911038,
-      "error_pct": 0.01950439957247884,
+      "error_pct": 0.0195043995874,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "US 2019",
@@ -735,15 +758,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "GB_2023",
-      "computed": 3421463859636.997,
+      "computed": 3421463859640.0,
       "measured": 3420796653789.08,
-      "error_pct": 0.019504399572478383,
+      "error_pct": 0.0195043996603,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2023",
@@ -757,15 +781,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "GB_2022",
-      "computed": 3181864833074.902,
+      "computed": 3181864833070.0,
       "measured": 3181244350465.41,
-      "error_pct": 0.01950439957247936,
+      "error_pct": 0.0195043994184,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2022",
@@ -779,15 +804,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "GB_2021",
-      "computed": 3195182268514.718,
+      "computed": 3195182268510.0,
       "measured": 3194559188925.93,
-      "error_pct": 0.01950439957248338,
+      "error_pct": 0.0195043994248,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2021",
@@ -801,15 +827,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "GB_2020",
-      "computed": 2724532778437.279,
+      "computed": 2724532778440.0,
       "measured": 2724001478304.59,
-      "error_pct": 0.019504399572486446,
+      "error_pct": 0.0195043996724,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2020",
@@ -823,15 +850,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "GB_2019",
-      "computed": 2876270969999.852,
+      "computed": 2876270970000.0,
       "measured": 2875710080015.3,
-      "error_pct": 0.019504399572479226,
+      "error_pct": 0.0195043995776,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2019",
@@ -845,7 +873,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -961,9 +990,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "GB_2023",
-      "computed": 49929.426198,
+      "computed": 49929.4261979,
       "measured": 49919.6896621586,
-      "error_pct": 0.01950439957248294,
+      "error_pct": 0.0195043995812,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2023",
@@ -977,15 +1006,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "GB_2022",
-      "computed": 47043.953413,
+      "computed": 47043.9534135,
       "measured": 47034.7795621476,
-      "error_pct": 0.019504399572471035,
+      "error_pct": 0.0195043995907,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2022",
@@ -999,15 +1029,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "GB_2021",
-      "computed": 47704.951902,
+      "computed": 47704.9519023,
       "measured": 47695.6491523474,
-      "error_pct": 0.019504399572471253,
+      "error_pct": 0.0195043994954,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2021",
@@ -1021,15 +1052,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "GB_2020",
-      "computed": 40823.086282,
+      "computed": 40823.0862816,
       "measured": 40815.1255364787,
-      "error_pct": 0.019504399572487008,
+      "error_pct": 0.0195043994516,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2020",
@@ -1043,15 +1075,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "GB_2019",
-      "computed": 43169.10263,
+      "computed": 43169.1026295,
       "measured": 43160.6843971799,
-      "error_pct": 0.019504399572480464,
+      "error_pct": 0.0195043995193,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "GB 2019",
@@ -1065,15 +1098,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "JP_2023",
-      "computed": 4385709509459.4146,
+      "computed": 4385709509460.0,
       "measured": 4384854269961.93,
-      "error_pct": 0.019504399572481124,
+      "error_pct": 0.0195043995858,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2023",
@@ -1087,15 +1121,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "JP_2022",
-      "computed": 4448843758367.144,
+      "computed": 4448843758370.0,
       "measured": 4447976207314.78,
-      "error_pct": 0.01950439957247472,
+      "error_pct": 0.0195043996367,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2022",
@@ -1109,15 +1144,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "JP_2021",
-      "computed": 5226952807708.379,
+      "computed": 5226952807710.0,
       "measured": 5225933520753.1,
-      "error_pct": 0.01950439957246929,
+      "error_pct": 0.0195043996035,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2021",
@@ -1131,15 +1167,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "JP_2020",
-      "computed": 5190209665468.897,
+      "computed": 5190209665470.0,
       "measured": 5189197543645.38,
-      "error_pct": 0.019504399572473564,
+      "error_pct": 0.0195043995937,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2020",
@@ -1153,15 +1190,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "JP_2019",
-      "computed": 5246778153494.917,
+      "computed": 5246778153490.0,
       "measured": 5245755000479.03,
-      "error_pct": 0.01950439957247883,
+      "error_pct": 0.0195043994787,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2019",
@@ -1175,7 +1213,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -1291,9 +1330,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "JP_2023",
-      "computed": 35221.87201,
+      "computed": 35221.8720104,
       "measured": 35215.003535366,
-      "error_pct": 0.019504399572474664,
+      "error_pct": 0.0195043996719,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2023",
@@ -1307,15 +1346,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "JP_2022",
-      "computed": 35555.197998,
+      "computed": 35555.1979978,
       "measured": 35548.2645222433,
-      "error_pct": 0.01950439957248405,
+      "error_pct": 0.0195043995815,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2022",
@@ -1329,15 +1369,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "JP_2021",
-      "computed": 41588.849114,
+      "computed": 41588.8491142,
       "measured": 41580.739040705,
-      "error_pct": 0.01950439957247949,
+      "error_pct": 0.0195043995901,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2021",
@@ -1351,15 +1392,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "JP_2020",
-      "computed": 41106.990009,
+      "computed": 41106.9900085,
       "measured": 41098.9739004553,
-      "error_pct": 0.019504399572471437,
+      "error_pct": 0.0195043994629,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2020",
@@ -1373,15 +1415,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "JP_2019",
-      "computed": 41432.945231,
+      "computed": 41432.9452315,
       "measured": 41424.8655601543,
-      "error_pct": 0.01950439957248417,
+      "error_pct": 0.0195043996799,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "JP 2019",
@@ -1395,15 +1438,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "DE_2023",
-      "computed": 4563097363676.743,
+      "computed": 4563097363680.0,
       "measured": 4562207532490.28,
-      "error_pct": 0.019504399572484517,
+      "error_pct": 0.0195043996439,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2023",
@@ -1417,15 +1461,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "DE_2022",
-      "computed": 4201841090538.3784,
+      "computed": 4201841090540.0,
       "measured": 4201021706478.62,
-      "error_pct": 0.01950439957248221,
+      "error_pct": 0.0195043996111,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2022",
@@ -1439,15 +1484,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "DE_2021",
-      "computed": 4356101419154.161,
+      "computed": 4356101419150.0,
       "measured": 4355251953410.78,
-      "error_pct": 0.019504399572476985,
+      "error_pct": 0.0195043994769,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2021",
@@ -1461,15 +1507,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "DE_2020",
-      "computed": 3942167703275.273,
+      "computed": 3942167703280.0,
       "measured": 3941398957073.94,
-      "error_pct": 0.019504399572473585,
+      "error_pct": 0.0195043996924,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2020",
@@ -1483,15 +1530,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "DE_2019",
-      "computed": 3960667147742.4893,
+      "computed": 3960667147740.0,
       "measured": 3959894794039.21,
-      "error_pct": 0.019504399572481398,
+      "error_pct": 0.0195043995096,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2019",
@@ -1505,7 +1553,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -1643,9 +1692,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "DE_2022",
-      "computed": 50516.368957,
+      "computed": 50516.3689569,
       "measured": 50506.5179638543,
-      "error_pct": 0.01950439957247619,
+      "error_pct": 0.0195043995168,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2022",
@@ -1659,15 +1708,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "DE_2021",
-      "computed": 52359.456406,
+      "computed": 52359.4564056,
       "measured": 52349.2459994422,
-      "error_pct": 0.019504399572484215,
+      "error_pct": 0.0195043996582,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2021",
@@ -1681,15 +1731,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "DE_2020",
-      "computed": 47404.117536,
+      "computed": 47404.1175359,
       "measured": 47394.8734504469,
-      "error_pct": 0.01950439957248158,
+      "error_pct": 0.0195043994848,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2020",
@@ -1703,15 +1754,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "DE_2019",
-      "computed": 47665.494795,
+      "computed": 47665.4947954,
       "measured": 47656.199739747,
-      "error_pct": 0.019504399572478362,
+      "error_pct": 0.0195043996453,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "DE 2019",
@@ -1725,15 +1777,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IN_2023",
-      "computed": 3501588861345.634,
+      "computed": 3501588861350.0,
       "measured": 3500906030644.76,
-      "error_pct": 0.019504399572480582,
+      "error_pct": 0.0195043996972,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2023",
@@ -1747,15 +1800,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IN_2022",
-      "computed": 3250572373002.8125,
+      "computed": 3250572373000.0,
       "measured": 3249938492013.47,
-      "error_pct": 0.01950439957248452,
+      "error_pct": 0.0195043994859,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2022",
@@ -1769,15 +1823,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IN_2021",
-      "computed": 3167888380378.3726,
+      "computed": 3167888380380.0,
       "measured": 3167270623260.47,
-      "error_pct": 0.019504399572475076,
+      "error_pct": 0.0195043996239,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2021",
@@ -1791,15 +1846,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IN_2020",
-      "computed": 2675373292327.1284,
+      "computed": 2675373292330.0,
       "measured": 2674851578587.27,
-      "error_pct": 0.019504399572478074,
+      "error_pct": 0.0195043996798,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2020",
@@ -1813,15 +1869,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IN_2019",
-      "computed": 2836159324532.7715,
+      "computed": 2836159324530.0,
       "measured": 2835606256558.19,
-      "error_pct": 0.019504399572486744,
+      "error_pct": 0.0195043994747,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2019",
@@ -1835,7 +1892,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -1951,9 +2009,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IN_2023",
-      "computed": 2434.923088,
+      "computed": 2434.92308793,
       "measured": 2434.44826340989,
-      "error_pct": 0.019504399572475486,
+      "error_pct": 0.0195043997133,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2023",
@@ -1967,15 +2025,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IN_2022",
-      "computed": 2280.426154,
+      "computed": 2280.42615389,
       "measured": 2279.98145719369,
-      "error_pct": 0.019504399572471763,
+      "error_pct": 0.0195043996918,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2022",
@@ -1989,15 +2048,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IN_2021",
-      "computed": 2240.050667,
+      "computed": 2240.05066691,
       "measured": 2239.61384367482,
-      "error_pct": 0.019504399572470462,
+      "error_pct": 0.019504399672,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2021",
@@ -2011,15 +2071,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IN_2020",
-      "computed": 1907.414474,
+      "computed": 1907.41447357,
       "measured": 1907.04251637669,
-      "error_pct": 0.019504399572479285,
+      "error_pct": 0.0195043996196,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2020",
@@ -2033,15 +2094,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IN_2019",
-      "computed": 2041.826805,
+      "computed": 2041.82680538,
       "measured": 2041.42863698585,
-      "error_pct": 0.019504399572479934,
+      "error_pct": 0.019504399367,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IN 2019",
@@ -2055,15 +2117,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "BR_2023",
-      "computed": 2191559132779.3684,
+      "computed": 2191559132780.0,
       "measured": 2191131765684.63,
-      "error_pct": 0.019504399572473564,
+      "error_pct": 0.0195043996013,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2023",
@@ -2077,15 +2140,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "BR_2022",
-      "computed": 1952304653128.335,
+      "computed": 1952304653130.0,
       "measured": 1951923942083.32,
-      "error_pct": 0.019504399572483008,
+      "error_pct": 0.0195043996578,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2022",
@@ -2099,15 +2163,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "BR_2021",
-      "computed": 1670973248649.0295,
+      "computed": 1670973248650.0,
       "measured": 1670647398904.9,
-      "error_pct": 0.01950439957247899,
+      "error_pct": 0.0195043996306,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2021",
@@ -2121,15 +2186,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "BR_2020",
-      "computed": 1476395137163.003,
+      "computed": 1476395137160.0,
       "measured": 1476107231310.49,
-      "error_pct": 0.019504399572471184,
+      "error_pct": 0.019504399369,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2020",
@@ -2143,15 +2209,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "BR_2019",
-      "computed": 1873653578676.3489,
+      "computed": 1873653578680.0,
       "measured": 1873288205059.69,
-      "error_pct": 0.019504399572477602,
+      "error_pct": 0.0195043997674,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2019",
@@ -2165,7 +2232,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -2281,9 +2349,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "BR_2023",
-      "computed": 10379.613366,
+      "computed": 10379.6133657,
       "measured": 10377.5892792557,
-      "error_pct": 0.019504399572486647,
+      "error_pct": 0.0195043992379,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2023",
@@ -2297,15 +2365,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "BR_2022",
-      "computed": 9283.143613,
+      "computed": 9283.14361275,
       "measured": 9281.33334441234,
-      "error_pct": 0.019504399572470188,
+      "error_pct": 0.0195043995349,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2022",
@@ -2319,15 +2388,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "BR_2021",
-      "computed": 7974.091645,
+      "computed": 7974.09164527,
       "measured": 7972.5366498646,
-      "error_pct": 0.01950439957247637,
+      "error_pct": 0.0195043995869,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2021",
@@ -2341,15 +2411,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "BR_2020",
-      "computed": 7075.573562,
+      "computed": 7075.5735624,
       "measured": 7074.19378337644,
-      "error_pct": 0.019504399572482747,
+      "error_pct": 0.019504399594,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2020",
@@ -2363,15 +2434,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "BR_2019",
-      "computed": 9031.594482,
+      "computed": 9031.59448157,
       "measured": 9029.83326681073,
-      "error_pct": 0.019504399572475732,
+      "error_pct": 0.0195043995524,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "BR 2019",
@@ -2385,15 +2457,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CN_2023",
-      "computed": 18273920177898.418,
+      "computed": 18273920177900.0,
       "measured": 18270356654533.2,
-      "error_pct": 0.01950439957248769,
+      "error_pct": 0.0195043995811,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2023",
@@ -2407,15 +2480,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CN_2022",
-      "computed": 18320337596728.78,
+      "computed": 18320337596700.0,
       "measured": 18316765021690.2,
-      "error_pct": 0.019504399572476298,
+      "error_pct": 0.0195043994153,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2022",
@@ -2429,15 +2503,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CN_2021",
-      "computed": 18205248851611.242,
+      "computed": 18205248851600.0,
       "measured": 18201698719564.0,
-      "error_pct": 0.01950439957247697,
+      "error_pct": 0.0195043995107,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2021",
@@ -2451,15 +2526,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CN_2020",
-      "computed": 14999339127255.719,
+      "computed": 14999339127300.0,
       "measured": 14996414166715.1,
-      "error_pct": 0.019504399572473536,
+      "error_pct": 0.0195043998678,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2020",
@@ -2473,15 +2549,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CN_2019",
-      "computed": 14563006974453.256,
+      "computed": 14563006974500.0,
       "measured": 14560167101283.4,
-      "error_pct": 0.01950439957248258,
+      "error_pct": 0.0195043998935,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2019",
@@ -2495,7 +2572,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -2611,9 +2689,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "CN_2023",
-      "computed": 12953.704289,
+      "computed": 12953.7042893,
       "measured": 12951.1782397043,
-      "error_pct": 0.01950439957248442,
+      "error_pct": 0.0195043999005,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2023",
@@ -2627,15 +2705,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "CN_2022",
-      "computed": 12973.13548,
+      "computed": 12973.1354802,
       "measured": 12970.6056414327,
-      "error_pct": 0.019504399572480624,
+      "error_pct": 0.019504399696,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2022",
@@ -2649,15 +2728,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "CN_2021",
-      "computed": 12889.949341,
+      "computed": 12889.9493413,
       "measured": 12887.4357242941,
-      "error_pct": 0.01950439957248054,
+      "error_pct": 0.0195043999417,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2021",
@@ -2671,7 +2751,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -2699,9 +2780,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "CN_2019",
-      "computed": 10344.918273,
+      "computed": 10344.9182732,
       "measured": 10342.9009524335,
-      "error_pct": 0.019504399572477356,
+      "error_pct": 0.0195043999336,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CN 2019",
@@ -2715,15 +2796,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CA_2023",
-      "computed": 2197022268786.2456,
+      "computed": 2197022268790.0,
       "measured": 2196593836347.42,
-      "error_pct": 0.0195043995724807,
+      "error_pct": 0.0195043997434,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2023",
@@ -2737,15 +2819,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CA_2022",
-      "computed": 2200991991604.7583,
+      "computed": 2200991991600.0,
       "measured": 2200562785046.32,
-      "error_pct": 0.019504399572468557,
+      "error_pct": 0.0195043993562,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2022",
@@ -2759,15 +2842,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CA_2021",
-      "computed": 2022772403573.1887,
+      "computed": 2022772403570.0,
       "measured": 2022377950896.78,
-      "error_pct": 0.019504399572482473,
+      "error_pct": 0.0195043994148,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2021",
@@ -2781,15 +2865,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CA_2020",
-      "computed": 1656009898683.6802,
+      "computed": 1656009898680.0,
       "measured": 1655686966881.99,
-      "error_pct": 0.019504399572482876,
+      "error_pct": 0.0195043993502,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2020",
@@ -2803,15 +2888,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "CA_2019",
-      "computed": 1744069056019.1396,
+      "computed": 1744069056020.0,
       "measured": 1743728952156.85,
-      "error_pct": 0.019504399572471978,
+      "error_pct": 0.0195043996218,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2019",
@@ -2825,7 +2911,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -2963,9 +3050,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "CA_2022",
-      "computed": 56507.946921,
+      "computed": 56507.9469206,
       "measured": 56496.9275340663,
-      "error_pct": 0.019504399572473206,
+      "error_pct": 0.0195043996455,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2022",
@@ -2979,15 +3066,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "CA_2021",
-      "computed": 52896.956003,
+      "computed": 52896.9560031,
       "measured": 52886.6407813788,
-      "error_pct": 0.019504399572481644,
+      "error_pct": 0.0195043995398,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2021",
@@ -3001,15 +3089,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "CA_2020",
-      "computed": 43546.389925,
+      "computed": 43546.3899255,
       "measured": 43537.8981198851,
-      "error_pct": 0.019504399572471735,
+      "error_pct": 0.0195043995728,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2020",
@@ -3023,15 +3112,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "CA_2019",
-      "computed": 46362.010389,
+      "computed": 46362.0103893,
       "measured": 46352.9695208927,
-      "error_pct": 0.019504399572477647,
+      "error_pct": 0.0195043996118,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "CA 2019",
@@ -3045,15 +3135,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "AU_2023",
-      "computed": 1734789558960.6484,
+      "computed": 1734789558960.0,
       "measured": 1734451264655.6,
-      "error_pct": 0.019504399572478792,
+      "error_pct": 0.0195043995351,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2023",
@@ -3067,15 +3158,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "AU_2022",
-      "computed": 1695958257445.5803,
+      "computed": 1695958257450.0,
       "measured": 1695627535475.8,
-      "error_pct": 0.019504399572484617,
+      "error_pct": 0.0195043998331,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2022",
@@ -3089,15 +3181,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "AU_2021",
-      "computed": 1560921882274.3623,
+      "computed": 1560921882270.0,
       "measured": 1560617493202.69,
-      "error_pct": 0.01950439957248575,
+      "error_pct": 0.019504399293,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2021",
@@ -3111,15 +3204,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "AU_2020",
-      "computed": 1333596520919.2156,
+      "computed": 1333596520920.0,
       "measured": 1333336461648.09,
-      "error_pct": 0.01950439957248587,
+      "error_pct": 0.0195043996313,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2020",
@@ -3133,15 +3227,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "AU_2019",
-      "computed": 1398622342650.3308,
+      "computed": 1398622342650.0,
       "measured": 1398349602956.35,
-      "error_pct": 0.01950439957247419,
+      "error_pct": 0.0195043995488,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2019",
@@ -3155,7 +3250,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -3271,9 +3367,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "AU_2023",
-      "computed": 65071.066561,
+      "computed": 65071.0665605,
       "measured": 65058.3773146674,
-      "error_pct": 0.019504399572477217,
+      "error_pct": 0.0195043995199,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2023",
@@ -3287,15 +3383,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "AU_2022",
-      "computed": 65182.230035,
+      "computed": 65182.2300353,
       "measured": 65169.5191118657,
-      "error_pct": 0.01950439957247328,
+      "error_pct": 0.0195043996143,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2022",
@@ -3309,15 +3406,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "AU_2021",
-      "computed": 60770.755099,
+      "computed": 60770.7550992,
       "measured": 60758.9044397144,
-      "error_pct": 0.019504399572475947,
+      "error_pct": 0.0195043995524,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2021",
@@ -3331,15 +3429,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "AU_2020",
-      "computed": 51993.591427,
+      "computed": 51993.5914269,
       "measured": 51983.4523666382,
-      "error_pct": 0.01950439957247684,
+      "error_pct": 0.0195043995737,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "AU 2020",
@@ -3353,7 +3452,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -3381,9 +3481,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IT_2023",
-      "computed": 2317334190347.0273,
+      "computed": 2317334190350.0,
       "measured": 2316882296366.32,
-      "error_pct": 0.019504399572487865,
+      "error_pct": 0.0195043997008,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2023",
@@ -3397,15 +3497,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IT_2022",
-      "computed": 2104478016077.3525,
+      "computed": 2104478016080.0,
       "measured": 2104067630319.46,
-      "error_pct": 0.019504399572473314,
+      "error_pct": 0.0195043996983,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2022",
@@ -3419,15 +3520,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IT_2021",
-      "computed": 2179632814987.7668,
+      "computed": 2179632814990.0,
       "measured": 2179207773596.09,
-      "error_pct": 0.019504399572481426,
+      "error_pct": 0.019504399675,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2021",
@@ -3441,15 +3543,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IT_2020",
-      "computed": 1907853136813.5886,
+      "computed": 1907853136810.0,
       "measured": 1907481094079.23,
-      "error_pct": 0.019504399572475618,
+      "error_pct": 0.0195043993843,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2020",
@@ -3463,15 +3566,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "IT_2019",
-      "computed": 2020000708762.9287,
+      "computed": 2020000708760.0,
       "measured": 2019606796583.53,
-      "error_pct": 0.019504399572483296,
+      "error_pct": 0.0195043994275,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2019",
@@ -3485,7 +3589,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -3601,9 +3706,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IT_2023",
-      "computed": 39287.361052,
+      "computed": 39287.3610518,
       "measured": 39279.699782164,
-      "error_pct": 0.019504399572482883,
+      "error_pct": 0.0195043996733,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2023",
@@ -3617,15 +3722,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IT_2022",
-      "computed": 35660.85829,
+      "computed": 35660.8582903,
       "measured": 35653.9042103495,
-      "error_pct": 0.019504399572482387,
+      "error_pct": 0.0195043996009,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2022",
@@ -3639,15 +3745,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IT_2021",
-      "computed": 36859.730409,
+      "computed": 36859.7304086,
       "measured": 36852.5425414951,
-      "error_pct": 0.019504399572488146,
+      "error_pct": 0.0195043994503,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2021",
@@ -3661,15 +3768,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IT_2020",
-      "computed": 32097.745914,
+      "computed": 32097.7459139,
       "measured": 32091.4866621366,
-      "error_pct": 0.0195043995724757,
+      "error_pct": 0.0195043994979,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2020",
@@ -3683,15 +3791,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "IT_2019",
-      "computed": 33819.383706,
+      "computed": 33819.3837063,
       "measured": 33812.788724868,
-      "error_pct": 0.01950439957248185,
+      "error_pct": 0.0195043996095,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "IT 2019",
@@ -3705,15 +3814,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "MX_2023",
-      "computed": 1794760336682.439,
+      "computed": 1794760336680.0,
       "measured": 1794410347718.25,
-      "error_pct": 0.01950439957248388,
+      "error_pct": 0.0195043994366,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2023",
@@ -3727,15 +3837,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "MX_2022",
-      "computed": 1467220841053.4639,
+      "computed": 1467220841050.0,
       "measured": 1466934724243.38,
-      "error_pct": 0.019504399572486675,
+      "error_pct": 0.0195043993364,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2022",
@@ -3749,15 +3860,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "MX_2021",
-      "computed": 1316826255803.4004,
+      "computed": 1316826255800.0,
       "measured": 1316569466833.94,
-      "error_pct": 0.019504399572471496,
+      "error_pct": 0.0195043993142,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2021",
@@ -3771,15 +3883,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "MX_2020",
-      "computed": 1121283424120.4548,
+      "computed": 1121283424120.0,
       "measured": 1121064767168.8,
-      "error_pct": 0.01950439957247017,
+      "error_pct": 0.0195043995319,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2020",
@@ -3793,15 +3906,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_current_USD",
       "name": "MX_2019",
-      "computed": 1304360562091.149,
+      "computed": 1304360562090.0,
       "measured": 1304106204006.27,
-      "error_pct": 0.0195043995724817,
+      "error_pct": 0.0195043994844,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2019",
@@ -3815,7 +3929,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -3931,9 +4046,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "MX_2023",
-      "computed": 13833.541472,
+      "computed": 13833.5414719,
       "measured": 13830.843848864,
-      "error_pct": 0.01950439957248458,
+      "error_pct": 0.0195043994819,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2023",
@@ -3947,15 +4062,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "MX_2022",
-      "computed": 11408.018679,
+      "computed": 11408.0186786,
       "measured": 11405.7940469896,
-      "error_pct": 0.019504399572474636,
+      "error_pct": 0.0195043992661,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2022",
@@ -3969,7 +4085,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
@@ -3997,9 +4114,9 @@
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "MX_2020",
-      "computed": 8842.995186,
+      "computed": 8842.99518607,
       "measured": 8841.27074929751,
-      "error_pct": 0.019504399572480166,
+      "error_pct": 0.0195043995528,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2020",
@@ -4013,15 +4130,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     },
     {
       "lab": "law_policy_lab",
       "property": "GDP_per_capita",
       "name": "MX_2019",
-      "computed": 10371.577879,
+      "computed": 10371.5778789,
       "measured": 10369.5553593527,
-      "error_pct": 0.01950439957248286,
+      "error_pct": 0.0195043999208,
       "source": "world_bank_governance",
       "domain_display_name": "law policy",
       "display_name": "MX 2019",
@@ -4035,7 +4153,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0195043995725
     }
   ],
   "margin_summary": {

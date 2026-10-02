@@ -11,6 +11,7 @@ DATA = ROOT / "data"
 JPL_CACHE = DATA / "planetary_jpl_cache.json"
 
 from tier_gap_fill_lib import _bench_v11, _load_fsot  # noqa: E402
+from fsot_api_predict_lib import round_sig
 
 
 def _err_pct(c: float, m: float) -> float:
@@ -56,7 +57,7 @@ def build_solar_system_structure_deep() -> dict:
                     "lab": "solar_system_structure_deep_lab",
                     "property": "mean_density",
                     "name": name,
-                    "computed": round(computed, 4),
+                    "computed": round_sig(computed),
                     "measured": float(published),
                     "error_pct": round(err, 6),
                     "eval_kind": "jpl_physical",

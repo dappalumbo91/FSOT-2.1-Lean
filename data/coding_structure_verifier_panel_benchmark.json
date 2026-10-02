@@ -88,9 +88,9 @@
       "lab": "coding_structure_verifier_lab",
       "property": "mean_codon_stability",
       "name": "openssl_mem_clr__stability",
-      "computed": 0.882534,
+      "computed": 0.88253425028,
       "measured": 0.88243,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999773,
       "source": "openssl/openssl",
       "language": "C",
       "category": "crypto_library",
@@ -107,15 +107,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "coding_structure_verifier_lab",
       "property": "mean_codon_stability",
       "name": "linux_kernel_list__stability",
-      "computed": 0.783437,
+      "computed": 0.78343654426,
       "measured": 0.783344,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999796,
       "source": "torvalds/linux",
       "language": "C",
       "category": "systems_kernel",
@@ -132,7 +133,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "coding_structure_verifier_lab",
@@ -213,9 +215,9 @@
       "lab": "coding_structure_verifier_lab",
       "property": "mean_codon_stability",
       "name": "rust_std_vec__stability",
-      "computed": 0.524433,
+      "computed": 0.52443294919,
       "measured": 0.524371,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000114,
       "source": "rust-lang/rust",
       "language": "Rust",
       "category": "memory_safe_std",
@@ -232,7 +234,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "coding_structure_verifier_lab",
@@ -463,9 +466,9 @@
       "lab": "coding_structure_verifier_lab",
       "property": "mean_codon_stability",
       "name": "python_dictobject__stability",
-      "computed": 0.730043,
+      "computed": 0.73004323712,
       "measured": 0.729957,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000027,
       "source": "python/cpython",
       "language": "C",
       "category": "interpreter_core",
@@ -482,7 +485,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "coding_structure_verifier_lab",
@@ -663,9 +667,9 @@
       "lab": "coding_structure_verifier_lab",
       "property": "mean_codon_stability",
       "name": "cpython_ceval__stability",
-      "computed": 0.813384,
+      "computed": 0.813384081844,
       "measured": 0.813288,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999607,
       "source": "python/cpython",
       "language": "C",
       "category": "interpreter_core",
@@ -682,7 +686,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "coding_structure_verifier_lab",
@@ -788,9 +793,9 @@
       "lab": "coding_structure_verifier_lab",
       "property": "mean_codon_stability",
       "name": "nodejs_buffer__stability",
-      "computed": 0.600869,
+      "computed": 0.600868978276,
       "measured": 0.600798,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000466,
       "source": "nodejs/node",
       "language": "JavaScript",
       "category": "runtime_stdlib",
@@ -807,7 +812,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "coding_structure_verifier_lab",
@@ -838,27 +844,29 @@
       "lab": "coding_structure_verifier_lab",
       "property": "pflt_mean_exact_rate",
       "name": "protofluid_ship_baseline",
-      "computed": 0.653634,
+      "computed": 0.653634440634,
       "measured": 0.6534285714285716,
-      "error_pct": 0.031506,
+      "error_pct": 0.0315059999563,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
       "path": "I:\\Protofluid-Language-Translator-2.0-Zig",
-      "source": "SHIP_BASELINE_MULTILANG"
+      "source": "SHIP_BASELINE_MULTILANG",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "coding_structure_verifier_lab",
       "property": "pflt_usable_fraction",
       "name": "protofluid_ship_baseline",
-      "computed": 0.771672,
+      "computed": 0.771671617714,
       "measured": 0.7714285714285715,
-      "error_pct": 0.031506,
+      "error_pct": 0.031505999963,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
       "path": "I:\\Protofluid-Language-Translator-2.0-Zig",
-      "source": "SHIP_BASELINE_MULTILANG"
+      "source": "SHIP_BASELINE_MULTILANG",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "coding_structure_verifier_lab",

@@ -273,7 +273,7 @@
       "lab": "dzhanibekov_lab",
       "property": "kuiper_cliff_au_literature_class",
       "name": "outer_belt_dropoff",
-      "computed": 48.011047,
+      "computed": 48.0110472,
       "measured": 48.0,
       "error_pct": 0.023015,
       "eval_kind": "fsot_prediction",
@@ -282,7 +282,8 @@
       "layer": "solar_system_class",
       "formula": "fsot_scaled @ Planetary_Science",
       "seed_shell_30phi": 48.54101966249685,
-      "comparison_class": "literature_class_anchor"
+      "comparison_class": "literature_class_anchor",
+      "error_pct_full": 0.023015
     },
     {
       "lab": "dzhanibekov_lab",

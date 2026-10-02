@@ -82,9 +82,9 @@
       "lab": "virology_lab",
       "property": "viral_load_copies_ml",
       "name": "hiv_viral_load_suppressed",
-      "computed": 50.022967,
+      "computed": 50.0229665922,
       "measured": 50.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331844,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "hiv viral load suppressed",
@@ -98,15 +98,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "replication_doubling_h",
       "name": "influenza_replication_h",
-      "computed": 6.002756,
+      "computed": 6.00275599106,
       "measured": 6.0,
-      "error_pct": 0.04593318440798318,
+      "error_pct": 0.0459331843333,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "influenza replication h",
@@ -120,15 +121,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "incubation_period_days",
       "name": "sars_cov2_incubation_days",
-      "computed": 5.002297,
+      "computed": 5.00229665922,
       "measured": 5.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331844,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "sars cov2 incubation days",
@@ -142,15 +144,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "viral_load_log10_iu_ml",
       "name": "hcv_viral_load_log",
-      "computed": 6.002756,
+      "computed": 6.00275599106,
       "measured": 6.0,
-      "error_pct": 0.04593318440798318,
+      "error_pct": 0.0459331843333,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "hcv viral load log",
@@ -164,15 +167,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "viral_load_log10_iu_ml",
       "name": "hbv_viral_load_log",
-      "computed": 5.002297,
+      "computed": 5.00229665922,
       "measured": 5.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331844,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "hbv viral load log",
@@ -186,15 +190,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "replication_doubling_h",
       "name": "rsv_replication_h",
-      "computed": 12.005512,
+      "computed": 12.0055119821,
       "measured": 12.0,
-      "error_pct": 0.04593318440798318,
+      "error_pct": 0.0459331841667,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "rsv replication h",
@@ -208,15 +213,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "viral_load_log10_copies_ml",
       "name": "ebola_viral_load_peak",
-      "computed": 8.003675,
+      "computed": 8.00367465475,
       "measured": 8.0,
-      "error_pct": 0.04593318440797578,
+      "error_pct": 0.045933184375,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "ebola viral load peak",
@@ -230,15 +236,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "viral_load_log10_copies_ml",
       "name": "zika_viral_load_peak",
-      "computed": 5.002297,
+      "computed": 5.00229665922,
       "measured": 5.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331844,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "zika viral load peak",
@@ -252,15 +259,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "molecular_weight_da",
       "name": "remdesivir_mw",
-      "computed": 602.876793,
+      "computed": 602.876793369,
       "measured": 602.6,
-      "error_pct": 0.045933184407974594,
+      "error_pct": 0.0459331843677,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "remdesivir mw",
@@ -274,15 +282,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "molecular_weight_da",
       "name": "oseltamivir_mw",
-      "computed": 312.543495,
+      "computed": 312.543495268,
       "measured": 312.4,
-      "error_pct": 0.045933184407980984,
+      "error_pct": 0.045933184379,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "oseltamivir mw",
@@ -296,15 +305,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "molecular_weight_da",
       "name": "acyclovir_mw",
-      "computed": 225.303442,
+      "computed": 225.303441531,
       "measured": 225.2,
-      "error_pct": 0.04593318440797614,
+      "error_pct": 0.0459331842806,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "acyclovir mw",
@@ -318,15 +328,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "molecular_weight_da",
       "name": "ritonavir_mw",
-      "computed": 721.231132,
+      "computed": 721.231132326,
       "measured": 720.9,
-      "error_pct": 0.04593318440797562,
+      "error_pct": 0.0459331843529,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "ritonavir mw",
@@ -340,15 +351,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "molecular_weight_da",
       "name": "sofosbuvir_mw",
-      "computed": 529.743216,
+      "computed": 529.743216211,
       "measured": 529.5,
-      "error_pct": 0.0459331844079696,
+      "error_pct": 0.0459331843248,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "sofosbuvir mw",
@@ -362,15 +374,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "particle_diameter_nm",
       "name": "viral_particle_diameter_nm",
-      "computed": 100.045933,
+      "computed": 100.045933184,
       "measured": 100.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.045933184,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "viral particle diameter nm",
@@ -384,15 +397,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "genome_size_kb",
       "name": "phage_t4_genome_kb",
-      "computed": 169.077627,
+      "computed": 169.077627082,
       "measured": 169.0,
-      "error_pct": 0.04593318440796881,
+      "error_pct": 0.0459331846154,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "phage t4 genome kb",
@@ -406,15 +420,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "genome_size_kb",
       "name": "influenza_genome_kb",
-      "computed": 13.506201,
+      "computed": 13.5062009799,
       "measured": 13.5,
-      "error_pct": 0.045933184407976606,
+      "error_pct": 0.0459331844444,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "influenza genome kb",
@@ -428,15 +443,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "basic_reproduction_R0",
       "name": "morbillivirus_r0",
-      "computed": 15.00689,
+      "computed": 15.0068899777,
       "measured": 15.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331846667,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "morbillivirus r0",
@@ -450,15 +466,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "latency_period_years",
       "name": "herpes_latency_years",
-      "computed": 40.018373,
+      "computed": 40.0183732738,
       "measured": 40.0,
-      "error_pct": 0.04593318440797134,
+      "error_pct": 0.0459331845,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "herpes latency years",
@@ -472,15 +489,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "shedding_duration_days",
       "name": "norovirus_shed_days",
-      "computed": 14.006431,
+      "computed": 14.0064306458,
       "measured": 14.0,
-      "error_pct": 0.04593318440797895,
+      "error_pct": 0.0459331842857,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "norovirus shed days",
@@ -494,15 +512,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "virology_lab",
       "property": "particle_diameter_nm",
       "name": "poxvirus_particle_nm",
-      "computed": 300.1378,
+      "computed": 300.137799553,
       "measured": 300.0,
-      "error_pct": 0.04593318440798081,
+      "error_pct": 0.0459331843333,
       "source": "virology_reference_observables",
       "domain_display_name": "virology",
       "display_name": "poxvirus particle nm",
@@ -516,7 +535,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.045933184408
     },
     {
       "lab": "immunology_lab",

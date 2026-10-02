@@ -83,9 +83,9 @@
       "property": "fold_depth_composite",
       "name": "string_quantum",
       "rung_id": "R01",
-      "computed": 1.683922,
+      "computed": 1.68392217792,
       "measured": 1.6834,
-      "error_pct": 0.03101924198263529,
+      "error_pct": 0.0310192420102,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
@@ -101,16 +101,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0310192419826
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "string_quantum",
       "rung_id": "R01",
-      "computed": 1.00031,
+      "computed": 1.00031019242,
       "measured": 1.0,
-      "error_pct": 0.031019241982632728,
+      "error_pct": 0.031019242,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
@@ -126,16 +127,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0310192419826
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "string_quantum",
       "rung_id": "R01",
-      "computed": 1.528616,
+      "computed": 1.52861601806,
       "measured": 1.528142,
-      "error_pct": 0.031019241982628013,
+      "error_pct": 0.0310192416673,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
@@ -151,16 +153,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0310192419826
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "string_quantum",
       "rung_id": "R01",
-      "computed": 1.00031,
+      "computed": 1.00031019242,
       "measured": 1.0,
-      "error_pct": 0.031019241982632728,
+      "error_pct": 0.031019242,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
@@ -176,16 +179,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0310192419826
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "string_quantum",
       "rung_id": "R01",
-      "computed": 0.120037,
+      "computed": 0.12003722309,
       "measured": 0.12,
-      "error_pct": 0.031019241982637818,
+      "error_pct": 0.0310192416667,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
@@ -201,16 +205,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0310192419826
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "nuclear",
       "rung_id": "R02",
-      "computed": 3.777156,
+      "computed": 3.77715603314,
       "measured": 3.7759,
-      "error_pct": 0.0332644704043493,
+      "error_pct": 0.0332644704574,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 5,
@@ -226,16 +231,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0332644704043
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "nuclear",
       "rung_id": "R02",
-      "computed": 2.000665,
+      "computed": 2.00066528941,
       "measured": 2.0,
-      "error_pct": 0.03326447040434832,
+      "error_pct": 0.0332644705,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 5,
@@ -251,16 +257,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0332644704043
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "nuclear",
       "rung_id": "R02",
-      "computed": 1.380189,
+      "computed": 1.38018895988,
       "measured": 1.37973,
-      "error_pct": 0.03326447040435376,
+      "error_pct": 0.0332644705848,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 5,
@@ -276,16 +283,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0332644704044
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "nuclear",
       "rung_id": "R02",
-      "computed": 1.000333,
+      "computed": 1.0003326447,
       "measured": 1.0,
-      "error_pct": 0.03326447040434832,
+      "error_pct": 0.03326447,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 5,
@@ -301,16 +309,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0332644704043
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "nuclear",
       "rung_id": "R02",
-      "computed": 0.200067,
+      "computed": 0.200066528941,
       "measured": 0.2,
-      "error_pct": 0.03326447040434555,
+      "error_pct": 0.0332644705,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 5,
@@ -326,16 +335,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0332644704043
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "atomic",
       "rung_id": "R03",
-      "computed": 3.862194,
+      "computed": 3.86219440709,
       "measured": 3.8612,
-      "error_pct": 0.025753835305188516,
+      "error_pct": 0.0257538353362,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 7,
@@ -351,16 +361,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0257538353052
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "atomic",
       "rung_id": "R03",
-      "computed": 2.000515,
+      "computed": 2.00051507671,
       "measured": 2.0,
-      "error_pct": 0.025753835305186712,
+      "error_pct": 0.0257538355,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 7,
@@ -376,16 +387,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0257538353052
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "atomic",
       "rung_id": "R03",
-      "computed": 1.290269,
+      "computed": 1.29026920825,
       "measured": 1.289937,
-      "error_pct": 0.02575383530518194,
+      "error_pct": 0.0257538352648,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 7,
@@ -401,16 +413,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0257538353052
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "atomic",
       "rung_id": "R03",
-      "computed": 1.000258,
+      "computed": 1.00025753835,
       "measured": 1.0,
-      "error_pct": 0.025753835305186712,
+      "error_pct": 0.025753835,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 7,
@@ -426,16 +439,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0257538353052
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "atomic",
       "rung_id": "R03",
-      "computed": 0.280072,
+      "computed": 0.280072110739,
       "measured": 0.28,
-      "error_pct": 0.025753835305195434,
+      "error_pct": 0.0257538353571,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 7,
@@ -451,16 +465,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0257538353052
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "molecular",
       "rung_id": "R04",
-      "computed": 3.442004,
+      "computed": 3.44200384064,
       "measured": 3.4416,
-      "error_pct": 0.011734095825778411,
+      "error_pct": 0.0117340957694,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.trend_bias",
       "D_eff_ladder": 9,
@@ -476,16 +491,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0117340958258
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "molecular",
       "rung_id": "R04",
-      "computed": 2.000235,
+      "computed": 2.00023468192,
       "measured": 2.0,
-      "error_pct": 0.011734095825777224,
+      "error_pct": 0.011734096,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.trend_bias",
       "D_eff_ladder": 9,
@@ -501,16 +517,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0117340958258
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "molecular",
       "rung_id": "R04",
-      "computed": 1.226847,
+      "computed": 1.22684694251,
       "measured": 1.226703,
-      "error_pct": 0.011734095825773293,
+      "error_pct": 0.0117340961912,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.trend_bias",
       "D_eff_ladder": 9,
@@ -526,16 +543,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0117340958258
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "molecular",
       "rung_id": "R04",
-      "computed": 1.000117,
+      "computed": 1.00011734096,
       "measured": 1.0,
-      "error_pct": 0.011734095825777224,
+      "error_pct": 0.011734096,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.trend_bias",
       "D_eff_ladder": 9,
@@ -551,16 +569,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0117340958258
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "molecular",
       "rung_id": "R04",
-      "computed": 0.360042,
+      "computed": 0.360042242745,
       "measured": 0.36,
-      "error_pct": 0.011734095825771057,
+      "error_pct": 0.0117340958333,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.trend_bias",
       "D_eff_ladder": 9,
@@ -576,16 +595,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0117340958258
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "cellular",
       "rung_id": "R05",
-      "computed": 3.01897,
+      "computed": 3.01896984085,
       "measured": 3.0185,
-      "error_pct": 0.015565375269626302,
+      "error_pct": 0.0155653751864,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 11,
@@ -601,16 +621,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0155653752696
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "cellular",
       "rung_id": "R05",
-      "computed": 2.000311,
+      "computed": 2.00031130751,
       "measured": 2.0,
-      "error_pct": 0.015565375269632753,
+      "error_pct": 0.0155653755,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 11,
@@ -626,16 +647,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0155653752696
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "cellular",
       "rung_id": "R05",
-      "computed": 1.178628,
+      "computed": 1.17862842939,
       "measured": 1.178445,
-      "error_pct": 0.015565375269641201,
+      "error_pct": 0.0155653755585,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 11,
@@ -651,16 +673,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0155653752696
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "cellular",
       "rung_id": "R05",
-      "computed": 1.000156,
+      "computed": 1.00015565375,
       "measured": 1.0,
-      "error_pct": 0.015565375269632753,
+      "error_pct": 0.015565375,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 11,
@@ -676,16 +699,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0155653752696
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "cellular",
       "rung_id": "R05",
-      "computed": 0.440068,
+      "computed": 0.440068487651,
       "measured": 0.44,
-      "error_pct": 0.01556537526963376,
+      "error_pct": 0.0155653752273,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 11,
@@ -701,16 +725,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0155653752696
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "organismic",
       "rung_id": "R06",
-      "computed": 4.093139,
+      "computed": 4.09313864507,
       "measured": 4.0927,
-      "error_pct": 0.010717743028513933,
+      "error_pct": 0.0107177430547,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 13,
@@ -726,16 +751,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0107177430285
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "organismic",
       "rung_id": "R06",
-      "computed": 2.000214,
+      "computed": 2.00021435486,
       "measured": 2.0,
-      "error_pct": 0.01071774302852102,
+      "error_pct": 0.010717743,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 13,
@@ -751,16 +777,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0107177430285
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "organismic",
       "rung_id": "R06",
-      "computed": 1.139845,
+      "computed": 1.13984515258,
       "measured": 1.139723,
-      "error_pct": 0.010717743028517539,
+      "error_pct": 0.01071774282,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 13,
@@ -776,16 +803,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0107177430285
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "organismic",
       "rung_id": "R06",
-      "computed": 1.000107,
+      "computed": 1.00010717743,
       "measured": 1.0,
-      "error_pct": 0.01071774302852102,
+      "error_pct": 0.010717743,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 13,
@@ -801,16 +829,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0107177430285
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "organismic",
       "rung_id": "R06",
-      "computed": 0.520056,
+      "computed": 0.520055732264,
       "measured": 0.52,
-      "error_pct": 0.01071774302852529,
+      "error_pct": 0.0107177430769,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.growth_term",
       "D_eff_ladder": 13,
@@ -826,16 +855,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0107177430285
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "planetary",
       "rung_id": "R07",
-      "computed": 3.200659,
+      "computed": 3.20065918693,
       "measured": 3.1998,
-      "error_pct": 0.026851269848941567,
+      "error_pct": 0.0268512697668,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.scale",
       "D_eff_ladder": 16,
@@ -851,16 +881,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0268512698489
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "planetary",
       "rung_id": "R07",
-      "computed": 2.000537,
+      "computed": 2.0005370254,
       "measured": 2.0,
-      "error_pct": 0.026851269848937598,
+      "error_pct": 0.02685127,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.scale",
       "D_eff_ladder": 16,
@@ -876,16 +907,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0268512698489
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "planetary",
       "rung_id": "R07",
-      "computed": 1.093656,
+      "computed": 1.09365558158,
       "measured": 1.093362,
-      "error_pct": 0.026851269848928647,
+      "error_pct": 0.0268512697533,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.scale",
       "D_eff_ladder": 16,
@@ -901,16 +933,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0268512698489
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "planetary",
       "rung_id": "R07",
-      "computed": 1.000269,
+      "computed": 1.0002685127,
       "measured": 1.0,
-      "error_pct": 0.026851269848937598,
+      "error_pct": 0.02685127,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.scale",
       "D_eff_ladder": 16,
@@ -926,16 +959,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0268512698489
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "planetary",
       "rung_id": "R07",
-      "computed": 0.640172,
+      "computed": 0.640171848127,
       "measured": 0.64,
-      "error_pct": 0.02685126984893621,
+      "error_pct": 0.0268512698437,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term2.scale",
       "D_eff_ladder": 16,
@@ -951,16 +985,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0268512698489
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "stellar",
       "rung_id": "R08",
-      "computed": 3.33753,
+      "computed": 3.33753045727,
       "measured": 3.3365,
-      "error_pct": 0.03088437794463486,
+      "error_pct": 0.030884377941,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 20,
@@ -976,16 +1011,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0308843779446
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "stellar",
       "rung_id": "R08",
-      "computed": 2.000618,
+      "computed": 2.00061768756,
       "measured": 2.0,
-      "error_pct": 0.030884377944628838,
+      "error_pct": 0.030884378,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 20,
@@ -1001,16 +1037,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0308843779446
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "stellar",
       "rung_id": "R08",
-      "computed": 1.045963,
+      "computed": 1.04596293941,
       "measured": 1.04564,
-      "error_pct": 0.03088437794463799,
+      "error_pct": 0.0308843779886,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 20,
@@ -1026,16 +1063,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0308843779446
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "stellar",
       "rung_id": "R08",
-      "computed": 1.000309,
+      "computed": 1.00030884378,
       "measured": 1.0,
-      "error_pct": 0.030884377944628838,
+      "error_pct": 0.030884378,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 20,
@@ -1051,16 +1089,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0308843779446
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "stellar",
       "rung_id": "R08",
-      "computed": 0.800247,
+      "computed": 0.800247075024,
       "measured": 0.8,
-      "error_pct": 0.030884377944628838,
+      "error_pct": 0.030884378,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term3.chaos_factor",
       "D_eff_ladder": 20,
@@ -1076,16 +1115,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0308843779446
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "galactic",
       "rung_id": "R09",
-      "computed": 4.404185,
+      "computed": 4.40418450823,
       "measured": 4.4028,
-      "error_pct": 0.03144608488580673,
+      "error_pct": 0.0314460849914,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.coherence_efficiency",
       "D_eff_ladder": 22,
@@ -1101,16 +1141,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0314460848858
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "galactic",
       "rung_id": "R09",
-      "computed": 2.000629,
+      "computed": 2.0006289217,
       "measured": 2.0,
-      "error_pct": 0.03144608488581113,
+      "error_pct": 0.031446085,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.coherence_efficiency",
       "D_eff_ladder": 22,
@@ -1126,16 +1167,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0314460848858
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "galactic",
       "rung_id": "R09",
-      "computed": 1.026219,
+      "computed": 1.02621860413,
       "measured": 1.025896,
-      "error_pct": 0.03144608488581072,
+      "error_pct": 0.0314460851782,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.coherence_efficiency",
       "D_eff_ladder": 22,
@@ -1151,16 +1193,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0314460848858
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "galactic",
       "rung_id": "R09",
-      "computed": 1.000314,
+      "computed": 1.00031446085,
       "measured": 1.0,
-      "error_pct": 0.03144608488581113,
+      "error_pct": 0.031446085,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.coherence_efficiency",
       "D_eff_ladder": 22,
@@ -1176,16 +1219,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0314460848858
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "galactic",
       "rung_id": "R09",
-      "computed": 0.880277,
+      "computed": 0.880276725547,
       "measured": 0.88,
-      "error_pct": 0.03144608488580609,
+      "error_pct": 0.0314460848864,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "term1.coherence_efficiency",
       "D_eff_ladder": 22,
@@ -1201,16 +1245,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0314460848858
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "fold_depth_composite",
       "name": "cosmological",
       "rung_id": "R10",
-      "computed": 3.000528,
+      "computed": 3.00052757874,
       "measured": 3.0,
-      "error_pct": 0.017585958117353563,
+      "error_pct": 0.017585958,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 25,
@@ -1226,16 +1271,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0175859581174
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "divergence_depth",
       "name": "cosmological",
       "rung_id": "R10",
-      "computed": 1.000176,
+      "computed": 1.00017585958,
       "measured": 1.0,
-      "error_pct": 0.017585958117360967,
+      "error_pct": 0.017585958,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 25,
@@ -1251,16 +1297,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0175859581174
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "richardson_compression",
       "name": "cosmological",
       "rung_id": "R10",
-      "computed": 1.000176,
+      "computed": 1.00017585958,
       "measured": 1.0,
-      "error_pct": 0.017585958117360967,
+      "error_pct": 0.017585958,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 25,
@@ -1276,16 +1323,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0175859581174
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "chaos_amplifier",
       "name": "cosmological",
       "rung_id": "R10",
-      "computed": 1.000176,
+      "computed": 1.00017585958,
       "measured": 1.0,
-      "error_pct": 0.017585958117360967,
+      "error_pct": 0.017585958,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 25,
@@ -1301,16 +1349,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0175859581174
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "D_eff_ratio",
       "name": "cosmological",
       "rung_id": "R10",
-      "computed": 1.000176,
+      "computed": 1.00017585958,
       "measured": 1.0,
-      "error_pct": 0.017585958117360967,
+      "error_pct": 0.017585958,
       "source": "fsot_formula_spine.yaml",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 25,
@@ -1326,15 +1375,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0175859581174
     },
     {
       "lab": "fold_depth_metrics_lab",
       "property": "ladder_fold_span",
       "name": "string_to_cosmological",
-      "computed": 2.719673,
+      "computed": 2.71967327574,
       "measured": 2.7194,
-      "error_pct": 0.010049118924195001,
+      "error_pct": 0.0100491189233,
       "source": "compactification_ladder_manifest.yaml",
       "domain_display_name": "fold depth metrics",
       "display_name": "string to cosmological",
@@ -1348,7 +1398,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0100491189242
     }
   ],
   "margin_summary": {

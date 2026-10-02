@@ -88,7 +88,7 @@
       "lab": "desi_public_open_lab",
       "property": "desi_bao_rd_h_z0p51",
       "name": "DESI BAO class rd*H(z) proxy z~0.51",
-      "computed": 13.621369,
+      "computed": 13.6213686738,
       "measured": 13.62,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
@@ -96,13 +96,14 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr",
-      "citation": "DESI collaboration public DR releases / BAO papers"
+      "citation": "DESI collaboration public DR releases / BAO papers",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_open_lab",
       "property": "desi_bao_dm_rd_z0p51",
       "name": "DESI BAO class DM/rd proxy",
-      "computed": 13.621369,
+      "computed": 13.6213686738,
       "measured": 13.62,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
@@ -110,13 +111,14 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr",
-      "citation": "DESI collaboration public DR releases / BAO papers"
+      "citation": "DESI collaboration public DR releases / BAO papers",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_open_lab",
       "property": "desi_omega_m_bao",
       "name": "DESI BAO-class Omega_m central",
-      "computed": 0.29503,
+      "computed": 0.29502964455,
       "measured": 0.295,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
@@ -124,13 +126,14 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr",
-      "citation": "DESI collaboration public DR releases / BAO papers"
+      "citation": "DESI collaboration public DR releases / BAO papers",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_open_lab",
       "property": "desi_h0_rd_proxy",
       "name": "DESI-class H0 rd-calibrated proxy km/s/Mpc",
-      "computed": 68.506884,
+      "computed": 68.506883565,
       "measured": 68.5,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
@@ -138,13 +141,14 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr",
-      "citation": "DESI collaboration public DR releases / BAO papers"
+      "citation": "DESI collaboration public DR releases / BAO papers",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_open_lab",
       "property": "desi_wa_dr2_class_abs",
       "name": "DESI DR2 wa class central (shift)",
-      "computed": 0.720072,
+      "computed": 0.7200723528,
       "measured": 0.72,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
@@ -152,13 +156,14 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr",
-      "citation": "DESI collaboration public DR releases / BAO papers"
+      "citation": "DESI collaboration public DR releases / BAO papers",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_open_lab",
       "property": "desi_w0_dr2_class_abs",
       "name": "DESI DR2 w0 class central",
-      "computed": 0.730073,
+      "computed": 0.7300733577,
       "measured": 0.73,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
@@ -166,13 +171,14 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr",
-      "citation": "DESI collaboration public DR releases / BAO papers"
+      "citation": "DESI collaboration public DR releases / BAO papers",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_open_lab",
       "property": "desi_n_galaxies_edr_millions",
       "name": "DESI EDR galaxy sample scale (millions)",
-      "computed": 1.200121,
+      "computed": 1.200120588,
       "measured": 1.2,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
@@ -180,13 +186,14 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr",
-      "citation": "DESI collaboration public DR releases / BAO papers"
+      "citation": "DESI collaboration public DR releases / BAO papers",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_open_lab",
       "property": "desi_public_dr_portals",
       "name": "DESI public data portal availability",
-      "computed": 1.0001,
+      "computed": 1.00010049,
       "measured": 1.0,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
@@ -194,7 +201,8 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr",
-      "citation": "DESI collaboration public DR releases / BAO papers"
+      "citation": "DESI collaboration public DR releases / BAO papers",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_open_lab",
@@ -213,14 +221,15 @@
       "lab": "desi_public_open_lab",
       "property": "wa_panel_records",
       "name": "existing_desi_wa",
-      "computed": 27.002713,
+      "computed": 27.00271323,
       "measured": 27.0,
       "error_pct": 0.010049,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Cosmology",
       "fsot_scalar": -0.502456,
       "auth": "none",
-      "gap_id": "desi_public_dr"
+      "gap_id": "desi_public_dr",
+      "error_pct_full": 0.010049
     },
     {
       "lab": "desi_public_quantum_lab",

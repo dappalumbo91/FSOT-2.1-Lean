@@ -61,7 +61,7 @@
       "lab": "dark_sector_open_lab",
       "property": "dark_energy_eos",
       "name": "w0_cmb",
-      "computed": -1.029981,
+      "computed": -1.0299812952,
       "measured": -1.03,
       "error_pct": 0.001816,
       "wave": "wave4",
@@ -85,13 +85,14 @@
         "reference_uncertainty_pct": 3.0,
         "reference": "Planck2018",
         "observable_status": "dark_energy_open"
-      }
+      },
+      "error_pct_full": 0.001816
     },
     {
       "lab": "dark_sector_open_lab",
       "property": "dark_energy_eos",
       "name": "w0_bao",
-      "computed": -0.729679,
+      "computed": -0.72967901681,
       "measured": -0.727,
       "error_pct": 0.368503,
       "wave": "wave4",
@@ -115,7 +116,8 @@
         "reference_uncertainty_pct": 3.0,
         "reference": "DESI_DR2",
         "observable_status": "dark_energy_open"
-      }
+      },
+      "error_pct_full": 0.368503
     },
     {
       "lab": "dark_sector_open_lab",
@@ -151,7 +153,7 @@
       "lab": "dark_sector_open_lab",
       "property": "dark_energy_eos_evolution",
       "name": "wa_bao",
-      "computed": -1.020856,
+      "computed": -1.0208556427,
       "measured": -1.018,
       "error_pct": 0.280515,
       "wave": "wave4",
@@ -174,7 +176,8 @@
         "within_aspiration_gate": true,
         "reference": "DESI_DR2",
         "observable_status": "unconfirmed_prediction"
-      }
+      },
+      "error_pct_full": 0.280515
     },
     {
       "lab": "dark_sector_open_lab",

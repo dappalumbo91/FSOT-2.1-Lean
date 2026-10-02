@@ -8,6 +8,7 @@ import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 try:
     import yaml
@@ -126,7 +127,7 @@ def _recipe_records(recipe_json: Path, s_bio: float, s_thermo: float, s_mat: flo
                     "name": f"{rid}:{obs.get('property')}",
                     "recipe_id": rid,
                     "category": recipe.get("category"),
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": measured,
                     "error_pct": err,
                     "source": "recipe_process",
@@ -145,7 +146,7 @@ def _recipe_records(recipe_json: Path, s_bio: float, s_thermo: float, s_mat: flo
                 "lab": "culinary_arts_lab",
                 "property": obs.get("property"),
                 "name": f"coffee_roast:{obs.get('property')}",
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "coffee_roast",

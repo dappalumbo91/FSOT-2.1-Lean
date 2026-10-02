@@ -61,9 +61,9 @@
       "lab": "zero_day_evaluator_lab",
       "property": "unified_codon_count",
       "name": "codon_alphabet_size",
-      "computed": 64.006616,
+      "computed": 64.006615755,
       "measured": 64.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.0103371171875,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "codon alphabet size",
@@ -77,15 +77,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "hole_detection_threshold",
       "name": "stability_match_threshold",
-      "computed": 0.850088,
+      "computed": 0.850087865497,
       "measured": 0.85,
-      "error_pct": 0.010337117254360602,
+      "error_pct": 0.0103371172941,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "stability match threshold",
@@ -99,15 +100,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "gap_window_codons",
       "name": "codon_window_size",
-      "computed": 3.00031,
+      "computed": 3.00031011352,
       "measured": 3.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.0103371173333,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "codon window size",
@@ -121,15 +123,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "mapped_languages",
       "name": "language_bridge_count",
-      "computed": 6.00062,
+      "computed": 6.00062022704,
       "measured": 6.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.0103371173333,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "language bridge count",
@@ -143,15 +146,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "lean_token_classes",
       "name": "lean_codon_units",
-      "computed": 9.00093,
+      "computed": 9.00093034055,
       "measured": 9.0,
-      "error_pct": 0.010337117254345508,
+      "error_pct": 0.0103371172222,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "lean codon units",
@@ -165,15 +169,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172543
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "rust_token_classes",
       "name": "rust_codon_units",
-      "computed": 10.001034,
+      "computed": 10.0010337117,
       "measured": 10.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "rust codon units",
@@ -187,15 +192,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "python_token_classes",
       "name": "python_codon_units",
-      "computed": 10.001034,
+      "computed": 10.0010337117,
       "measured": 10.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "python codon units",
@@ -209,15 +215,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "c_token_classes",
       "name": "c_codon_units",
-      "computed": 10.001034,
+      "computed": 10.0010337117,
       "measured": 10.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "c codon units",
@@ -231,15 +238,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "js_token_classes",
       "name": "javascript_codon_units",
-      "computed": 10.001034,
+      "computed": 10.0010337117,
       "measured": 10.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "javascript codon units",
@@ -253,15 +261,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "isa_opcode_count",
       "name": "fsotb_opcode_codon_units",
-      "computed": 27.002791,
+      "computed": 27.0027910217,
       "measured": 27.0,
-      "error_pct": 0.010337117254358666,
+      "error_pct": 0.0103371174074,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "fsotb opcode codon units",
@@ -275,15 +284,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "gap_precision_pct",
       "name": "hole_detection_precision_target",
-      "computed": 100.010337,
+      "computed": 100.010337117,
       "measured": 100.0,
-      "error_pct": 0.010337117254351824,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "hole detection precision target",
@@ -297,15 +307,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "gap_recall_pct",
       "name": "hole_detection_recall_target",
-      "computed": 100.010337,
+      "computed": 100.010337117,
       "measured": 100.0,
-      "error_pct": 0.010337117254351824,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "hole detection recall target",
@@ -319,15 +330,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "bio_malware_bridge",
       "name": "virology_malware_coupling_weight",
-      "computed": 1.000103,
+      "computed": 1.00010337117,
       "measured": 1.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "virology malware coupling weight",
@@ -341,15 +353,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "crypto_channel_weight",
       "name": "crypto_hygiene_weight",
-      "computed": 1.000103,
+      "computed": 1.00010337117,
       "measured": 1.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "crypto hygiene weight",
@@ -363,15 +376,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "network_channel_weight",
       "name": "network_exploit_coupling_weight",
-      "computed": 1.000103,
+      "computed": 1.00010337117,
       "measured": 1.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "network exploit coupling weight",
@@ -385,15 +399,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "cve_channel_weight",
       "name": "cve_pattern_overlap_weight",
-      "computed": 1.000103,
+      "computed": 1.00010337117,
       "measured": 1.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "cve pattern overlap weight",
@@ -407,15 +422,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "isa_oracle_weight",
       "name": "trinary_oracle_weight",
-      "computed": 1.000103,
+      "computed": 1.00010337117,
       "measured": 1.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "trinary oracle weight",
@@ -429,15 +445,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
       "property": "codon_expression_match",
       "name": "genomic_expression_analog",
-      "computed": 1.000103,
+      "computed": 1.00010337117,
       "measured": 1.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.010337117,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "genomic expression analog",
@@ -451,7 +468,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -479,9 +497,9 @@
       "lab": "zero_day_evaluator_lab",
       "property": "amber_max_holes",
       "name": "risk_tier_amber_max_holes",
-      "computed": 2.000207,
+      "computed": 2.00020674235,
       "measured": 2.0,
-      "error_pct": 0.010337117254355377,
+      "error_pct": 0.0103371175,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "zero day evaluator",
       "display_name": "risk tier amber max holes",
@@ -495,7 +513,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0103371172544
     },
     {
       "lab": "zero_day_evaluator_lab",

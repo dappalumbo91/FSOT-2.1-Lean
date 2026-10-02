@@ -7,6 +7,7 @@ import argparse
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 EVOLUTION = ROOT / "data" / "evolution_operon_benchmark.json"
@@ -60,7 +61,7 @@ def _bio_constant_records() -> list[dict]:
                 "lab": "synthetic_biology_lab",
                 "property": "bio_constant",
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "fsot_biology_scalar",

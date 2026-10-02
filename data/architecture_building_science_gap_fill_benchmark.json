@@ -110,9 +110,9 @@
       "lab": "architecture_building_science_lab",
       "property": "seer",
       "name": "Residential SEER 14 baseline",
-      "computed": 14.011018,
+      "computed": 14.011017643,
       "measured": 14.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Residential SEER 14 baseline",
@@ -126,15 +126,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "cop_rated",
       "name": "Residential SEER 14 baseline",
-      "computed": 3.502754,
+      "computed": 3.50275441076,
       "measured": 3.5,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.0786974502857,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Residential SEER 14 baseline",
@@ -148,15 +149,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "seer",
       "name": "High-efficiency SEER 22",
-      "computed": 22.017313,
+      "computed": 22.017313439,
       "measured": 22.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "High-efficiency SEER 22",
@@ -170,15 +172,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "cop_rated",
       "name": "High-efficiency SEER 22",
-      "computed": 5.504328,
+      "computed": 5.50432835976,
       "measured": 5.5,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.0786974501818,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "High-efficiency SEER 22",
@@ -192,15 +195,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "hspf",
       "name": "Heat pump HSPF 10",
-      "computed": 10.00787,
+      "computed": 10.007869745,
       "measured": 10.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Heat pump HSPF 10",
@@ -214,15 +218,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "cop_heat",
       "name": "Heat pump HSPF 10",
-      "computed": 3.002361,
+      "computed": 3.0023609235,
       "measured": 3.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Heat pump HSPF 10",
@@ -236,15 +241,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "hspf",
       "name": "Heat pump HSPF 13",
-      "computed": 13.010231,
+      "computed": 13.0102306685,
       "measured": 13.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Heat pump HSPF 13",
@@ -258,15 +264,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "cop_heat",
       "name": "Heat pump HSPF 13",
-      "computed": 3.802991,
+      "computed": 3.80299050311,
       "measured": 3.8,
-      "error_pct": 0.07869745016115581,
+      "error_pct": 0.0786974502632,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Heat pump HSPF 13",
@@ -280,15 +287,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "cop_carnot",
       "name": "Carnot COP (0C cold, 27C hot)",
-      "computed": 11.008657,
+      "computed": 11.0086567195,
       "measured": 11.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Carnot COP (0C cold, 27C hot)",
@@ -302,15 +310,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "t_cold_k",
       "name": "Carnot COP (0C cold, 27C hot)",
-      "computed": 273.364962,
+      "computed": 273.364962085,
       "measured": 273.15,
-      "error_pct": 0.07869745016115301,
+      "error_pct": 0.078697450119,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Carnot COP (0C cold, 27C hot)",
@@ -324,15 +333,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "t_hot_k",
       "name": "Carnot COP (0C cold, 27C hot)",
-      "computed": 300.38621,
+      "computed": 300.386210397,
       "measured": 300.15,
-      "error_pct": 0.07869745016114993,
+      "error_pct": 0.0786974502749,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Carnot COP (0C cold, 27C hot)",
@@ -346,15 +356,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501611
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "cop_carnot",
       "name": "Carnot COP (5C cold, 35C hot)",
-      "computed": 9.407398,
+      "computed": 9.40739756032,
       "measured": 9.4,
-      "error_pct": 0.07869745016115058,
+      "error_pct": 0.0786974502128,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Carnot COP (5C cold, 35C hot)",
@@ -368,15 +379,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "t_cold_k",
       "name": "Carnot COP (5C cold, 35C hot)",
-      "computed": 278.368897,
+      "computed": 278.368896958,
       "measured": 278.15,
-      "error_pct": 0.07869745016115694,
+      "error_pct": 0.0786974502966,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Carnot COP (5C cold, 35C hot)",
@@ -390,15 +402,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "t_hot_k",
       "name": "Carnot COP (5C cold, 35C hot)",
-      "computed": 308.392506,
+      "computed": 308.392506193,
       "measured": 308.15,
-      "error_pct": 0.07869745016115937,
+      "error_pct": 0.0786974502677,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Carnot COP (5C cold, 35C hot)",
@@ -412,15 +425,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "cop",
       "name": "Chiller centrifugal",
-      "computed": 6.204879,
+      "computed": 6.20487924191,
       "measured": 6.2,
-      "error_pct": 0.07869745016115241,
+      "error_pct": 0.0786974501613,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Chiller centrifugal",
@@ -434,15 +448,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "capacity_tons",
       "name": "Chiller centrifugal",
-      "computed": 500.393487,
+      "computed": 500.393487251,
       "measured": 500.0,
-      "error_pct": 0.0786974501611553,
+      "error_pct": 0.0786974502,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Chiller centrifugal",
@@ -456,15 +471,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "cop",
       "name": "Geothermal heat pump",
-      "computed": 4.503541,
+      "computed": 4.50354138526,
       "measured": 4.5,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.0786974502222,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Geothermal heat pump",
@@ -478,15 +494,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "eer",
       "name": "Geothermal heat pump",
-      "computed": 20.015739,
+      "computed": 20.01573949,
       "measured": 20.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Geothermal heat pump",
@@ -500,15 +517,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "tc_k",
       "name": "R410A critical temp",
-      "computed": 344.771113,
+      "computed": 344.771112716,
       "measured": 344.5,
-      "error_pct": 0.07869745016116175,
+      "error_pct": 0.0786974502177,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "R410A critical temp",
@@ -522,15 +540,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "gwp",
       "name": "R32 GWP",
-      "computed": 675.531208,
+      "computed": 675.531207789,
       "measured": 675.0,
-      "error_pct": 0.07869745016116078,
+      "error_pct": 0.0786974502222,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "R32 GWP",
@@ -544,15 +563,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "pue",
       "name": "Data center PUE 1.1",
-      "computed": 1.100866,
+      "computed": 1.10086567195,
       "measured": 1.1,
-      "error_pct": 0.07869745016116218,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Data center PUE 1.1",
@@ -566,15 +586,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "delta_t_c",
       "name": "Liquid cooling CDU",
-      "computed": 12.009444,
+      "computed": 12.009443694,
       "measured": 12.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Liquid cooling CDU",
@@ -588,15 +609,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "architecture_building_science_lab",
       "property": "flow_lpm",
       "name": "Liquid cooling CDU",
-      "computed": 40.031479,
+      "computed": 40.0314789801,
       "measured": 40.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745025,
       "source": "ashrae_hvac_reference",
       "domain_display_name": "architecture building science",
       "display_name": "Liquid cooling CDU",
@@ -610,7 +632,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "weather_lab",

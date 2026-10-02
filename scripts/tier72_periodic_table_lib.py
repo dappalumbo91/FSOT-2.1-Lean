@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import math
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -87,7 +88,7 @@ def build_periodic_table_public_panel() -> dict:
                     "property": prop,
                     "name": str(elem.get("symbol") or z),
                     "Z": z,
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": float(measured),
                     "error_pct": round(err, 6),
                     "eval_kind": "iupac_anchor",

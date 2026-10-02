@@ -73,180 +73,195 @@
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-20",
-      "computed": 118.01084,
+      "computed": 118.010840232,
       "measured": 118.0,
-      "error_pct": 0.009186636881590415,
+      "error_pct": 0.00918663728814,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "void",
         "static"
-      ]
+      ],
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-78",
-      "computed": 104.009554,
+      "computed": 104.009554102,
       "measured": 104.0,
-      "error_pct": 0.00918663688158115,
+      "error_pct": 0.00918663653846,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "eval",
         "exec"
-      ]
+      ],
+      "error_pct_full": 0.00918663688158
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-787",
-      "computed": 100.009187,
+      "computed": 100.009186637,
       "measured": 100.0,
-      "error_pct": 0.009186636881580057,
+      "error_pct": 0.009186637,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "malloc",
         "memcpy",
         "strcpy"
-      ]
+      ],
+      "error_pct_full": 0.00918663688158
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-416",
-      "computed": 92.008452,
+      "computed": 92.0084517059,
       "measured": 92.0,
-      "error_pct": 0.009186636881593031,
+      "error_pct": 0.00918663684783,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "malloc",
         "free"
-      ]
+      ],
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-119",
-      "computed": 84.007717,
+      "computed": 84.007716775,
       "measured": 84.0,
-      "error_pct": 0.009186636881591562,
+      "error_pct": 0.00918663690477,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "malloc",
         "memcpy",
         "strcpy"
-      ]
+      ],
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-22",
-      "computed": 76.006982,
+      "computed": 76.006981844,
       "measured": 76.0,
-      "error_pct": 0.00918663688158978,
+      "error_pct": 0.0091866368421,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": []
+      "risk_tokens": [],
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-502",
-      "computed": 67.006155,
+      "computed": 67.0061550467,
       "measured": 67.0,
-      "error_pct": 0.009186636881581965,
+      "error_pct": 0.00918663686567,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "pickle",
         "eval"
-      ]
+      ],
+      "error_pct_full": 0.00918663688158
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-94",
-      "computed": 65.005971,
+      "computed": 65.005971314,
       "measured": 65.0,
-      "error_pct": 0.009186636881592082,
+      "error_pct": 0.00918663692309,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "exec",
         "eval"
-      ]
+      ],
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-287",
-      "computed": 39.003583,
+      "computed": 39.0035827884,
       "measured": 39.0,
-      "error_pct": 0.00918663688158115,
+      "error_pct": 0.00918663692308,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": []
+      "risk_tokens": [],
+      "error_pct_full": 0.00918663688158
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-843",
-      "computed": 37.003399,
+      "computed": 37.0033990556,
       "measured": 37.0,
-      "error_pct": 0.009186636881579674,
+      "error_pct": 0.00918663675675,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": []
+      "risk_tokens": [],
+      "error_pct_full": 0.00918663688158
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-306",
-      "computed": 36.003307,
+      "computed": 36.0033071893,
       "measured": 36.0,
-      "error_pct": 0.009186636881588741,
+      "error_pct": 0.00918663694445,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": []
+      "risk_tokens": [],
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-284",
-      "computed": 34.003123,
+      "computed": 34.0031234565,
       "measured": 34.0,
-      "error_pct": 0.00918663688158758,
+      "error_pct": 0.0091866367647,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": []
+      "risk_tokens": [],
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-79",
-      "computed": 33.003032,
+      "computed": 33.0030315902,
       "measured": 33.0,
-      "error_pct": 0.009186636881576182,
+      "error_pct": 0.00918663696971,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "document",
         "innerHTML"
-      ]
+      ],
+      "error_pct_full": 0.00918663688158
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-264",
-      "computed": 31.002848,
+      "computed": 31.0028478574,
       "measured": 31.0,
-      "error_pct": 0.009186636881585558,
+      "error_pct": 0.00918663677419,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": []
+      "risk_tokens": [],
+      "error_pct_full": 0.00918663688159
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "kev_cwe_frequency",
       "name": "CWE-122",
-      "computed": 30.002756,
+      "computed": 30.0027559911,
       "measured": 30.0,
-      "error_pct": 0.009186636881584795,
+      "error_pct": 0.009186637,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
         "strcpy",
         "malloc"
-      ]
+      ],
+      "error_pct_full": 0.00918663688158
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -407,19 +422,21 @@
       "lab": "cve_codon_falsification_lab",
       "property": "hole_detection_rate",
       "name": "aggregate_sample_hole_rate",
-      "computed": 0.750111,
+      "computed": 0.750110754828,
       "measured": 0.75,
-      "error_pct": 0.014767310363369054,
-      "source": "code_genome_lib"
+      "error_pct": 0.0147673104,
+      "source": "code_genome_lib",
+      "error_pct_full": 0.0147673103634
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "cwe_codon_overlap_rate",
       "name": "kev_top_cwe_token_overlap_rate",
-      "computed": 0.500153,
+      "computed": 0.500153110615,
       "measured": 0.5,
-      "error_pct": 0.03062212293865052,
-      "source": "cwe_codon_map"
+      "error_pct": 0.030622123,
+      "source": "cwe_codon_map",
+      "error_pct_full": 0.0306221229387
     }
   ],
   "margin_summary": {

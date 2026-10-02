@@ -11,6 +11,7 @@ DATA = ROOT / "data"
 PUBCHEM_VENDOR = ROOT / "vendor" / "public_data" / "pubchem" / "pubchem_summary.json"
 
 from tier_gap_fill_lib import _bench_v11, _load_fsot  # noqa: E402
+from fsot_api_predict_lib import round_sig
 
 ATOMIC_MASS = {
     "H": 1.008, "C": 12.011, "N": 14.007, "O": 15.999, "P": 30.974, "S": 32.06,
@@ -63,7 +64,7 @@ def build_pubchem_stability_panel() -> dict:
                 "property": "molecular_weight",
                 "name": cid,
                 "formula": formula,
-                "computed": round(computed, 4),
+                "computed": round_sig(computed),
                 "measured": float(measured),
                 "error_pct": round(err, 6),
                 "eval_kind": "formula_mass_closure",

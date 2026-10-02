@@ -60,9 +60,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "openssl_mem_clr__stability",
-      "computed": 0.882534,
+      "computed": 0.88253425028,
       "measured": 0.88243,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999773,
       "source": "openssl/openssl",
       "language": "C",
       "category": "crypto_library",
@@ -78,15 +78,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "linux_kernel_list__stability",
-      "computed": 0.783437,
+      "computed": 0.78343654426,
       "measured": 0.783344,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999796,
       "source": "torvalds/linux",
       "language": "C",
       "category": "systems_kernel",
@@ -102,7 +103,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -180,9 +182,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "rust_std_vec__stability",
-      "computed": 0.524433,
+      "computed": 0.52443294919,
       "measured": 0.524371,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000114,
       "source": "rust-lang/rust",
       "language": "Rust",
       "category": "memory_safe_std",
@@ -198,7 +200,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -420,9 +423,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "python_dictobject__stability",
-      "computed": 0.730043,
+      "computed": 0.73004323712,
       "measured": 0.729957,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000027,
       "source": "python/cpython",
       "language": "C",
       "category": "interpreter_core",
@@ -438,7 +441,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -612,9 +616,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "cpython_ceval__stability",
-      "computed": 0.813384,
+      "computed": 0.813384081844,
       "measured": 0.813288,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999607,
       "source": "python/cpython",
       "language": "C",
       "category": "interpreter_core",
@@ -630,7 +634,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -732,9 +737,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "nodejs_buffer__stability",
-      "computed": 0.600869,
+      "computed": 0.600868978276,
       "measured": 0.600798,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000466,
       "source": "nodejs/node",
       "language": "JavaScript",
       "category": "runtime_stdlib",
@@ -750,7 +755,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -828,9 +834,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "express_router__stability",
-      "computed": 0.511014,
+      "computed": 0.511014364106,
       "measured": 0.510954,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000861,
       "source": "expressjs/express",
       "language": "JavaScript",
       "category": "web_framework",
@@ -846,7 +852,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -900,9 +907,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "golang_http_serve__stability",
-      "computed": 0.578806,
+      "computed": 0.578806372107,
       "measured": 0.578738,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999447,
       "source": "golang/go",
       "language": "Go",
       "category": "stdlib_network",
@@ -918,7 +925,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -1068,9 +1076,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "zig_std_arraylist__stability",
-      "computed": 0.475854,
+      "computed": 0.475854210776,
       "measured": 0.475798,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000588,
       "source": "ziglang/zig",
       "language": "Zig",
       "category": "memory_safe_std",
@@ -1086,7 +1094,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -1212,9 +1221,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "lean4_core_init__stability",
-      "computed": 0.811832,
+      "computed": 0.811831898491,
       "measured": 0.811736,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999951,
       "source": "leanprover/lean4",
       "language": "C",
       "category": "proof_assistant_runtime",
@@ -1230,15 +1239,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "sqlite_mem__stability",
-      "computed": 0.761814,
+      "computed": 0.761813990073,
       "measured": 0.761724,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999527,
       "source": "sqlite/sqlite",
       "language": "C",
       "category": "embedded_database",
@@ -1254,7 +1264,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -1356,9 +1367,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "redis_sds__stability",
-      "computed": 0.739003,
+      "computed": 0.739003295536,
       "measured": 0.738916,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999675,
       "source": "redis/redis",
       "language": "C",
       "category": "in_memory_store",
@@ -1374,7 +1385,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -1548,9 +1560,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "pytorch_tensor__stability",
-      "computed": 0.813384,
+      "computed": 0.813384081844,
       "measured": 0.813288,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999607,
       "source": "pytorch/pytorch",
       "language": "C",
       "category": "ml_framework",
@@ -1566,7 +1578,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -1668,9 +1681,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "kubernetes_client_go__stability",
-      "computed": 0.550655,
+      "computed": 0.550655046703,
       "measured": 0.55059,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000727,
       "source": "kubernetes/client-go",
       "language": "Go",
       "category": "cloud_native",
@@ -1686,7 +1699,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -1836,9 +1850,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "react_hooks__stability",
-      "computed": 0.858712,
+      "computed": 0.858712436304,
       "measured": 0.858611,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000536,
       "source": "facebook/react",
       "language": "JavaScript",
       "category": "ui_framework",
@@ -1854,15 +1868,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "openjdk_string__stability",
-      "computed": 0.654,
+      "computed": 0.654000254463,
       "measured": 0.653923,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999664,
       "source": "openjdk/jdk",
       "language": "Java",
       "category": "jvm_stdlib",
@@ -1878,7 +1893,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -2076,9 +2092,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "openjdk_hashmap__stability",
-      "computed": 0.594545,
+      "computed": 0.594545231277,
       "measured": 0.594475,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000841,
       "source": "openjdk/jdk",
       "language": "Java",
       "category": "jvm_stdlib",
@@ -2094,7 +2110,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -2316,9 +2333,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "kotlin_collections__stability",
-      "computed": 0.767287,
+      "computed": 0.767286636535,
       "measured": 0.767196,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999426,
       "source": "JetBrains/kotlin",
       "language": "Kotlin",
       "category": "jvm_stdlib",
@@ -2334,7 +2351,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -2436,9 +2454,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "kotlin_body_resolver__stability",
-      "computed": 0.643285,
+      "computed": 0.643284988711,
       "measured": 0.643209,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999596,
       "source": "JetBrains/kotlin",
       "language": "Java",
       "category": "compiler_frontend",
@@ -2454,7 +2472,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -2580,9 +2599,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "swift_string__stability",
-      "computed": 0.586284,
+      "computed": 0.58628425544,
       "measured": 0.586215,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999829,
       "source": "apple/swift",
       "language": "Swift",
       "category": "memory_safe_std",
@@ -2598,7 +2617,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -2772,9 +2792,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "swift_array__stability",
-      "computed": 0.559067,
+      "computed": 0.559067040378,
       "measured": 0.559001,
-      "error_pct": 0.011814,
+      "error_pct": 0.011813999975,
       "source": "apple/swift",
       "language": "Swift",
       "category": "memory_safe_std",
@@ -2790,7 +2810,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -2940,9 +2961,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "haskell_bytestring__stability",
-      "computed": 0.539392,
+      "computed": 0.53939171621,
       "measured": 0.539328,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000148,
       "source": "haskell/bytestring",
       "language": "Haskell",
       "category": "functional_stdlib",
@@ -2958,7 +2979,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -3180,9 +3202,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "haskell_async__stability",
-      "computed": 0.571848,
+      "computed": 0.571847550089,
       "measured": 0.57178,
-      "error_pct": 0.011814,
+      "error_pct": 0.011813999965,
       "source": "simonmar/async",
       "language": "Haskell",
       "category": "concurrency_lib",
@@ -3198,7 +3220,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.011814
     },
     {
       "lab": "external_oss_code_genome_lab",

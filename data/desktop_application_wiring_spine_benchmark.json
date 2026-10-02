@@ -79,31 +79,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "tier_mild_intensity",
       "name": "tier_mild_intensity",
-      "computed": 1.050155,
+      "computed": 1.0501550535,
       "measured": 1.05,
       "error_pct": 0.014767,
       "source_panel": "trinary_hardware_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "tier_moderate_intensity",
       "name": "tier_moderate_intensity",
-      "computed": 1.15017,
+      "computed": 1.1501698205,
       "measured": 1.15,
       "error_pct": 0.014767,
       "source_panel": "trinary_hardware_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "tier_severe_intensity",
       "name": "tier_severe_intensity",
-      "computed": 1.300192,
+      "computed": 1.300191971,
       "measured": 1.3,
       "error_pct": 0.014767,
       "source_panel": "trinary_hardware_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -119,31 +122,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "text_len",
       "name": "llm phrase and contraction",
-      "computed": 44.013863,
+      "computed": 44.01386264,
       "measured": 44.0,
       "error_pct": 0.031506,
       "source_panel": "tokenization_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "expected_id_count",
       "name": "llm phrase and contraction",
-      "computed": 5.000738,
+      "computed": 5.00073835,
       "measured": 5.0,
       "error_pct": 0.014767,
       "source_panel": "tokenization_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "expected_gate_count",
       "name": "llm phrase and contraction",
-      "computed": 2.00063,
+      "computed": 2.00063012,
       "measured": 2.0,
       "error_pct": 0.031506,
       "source_panel": "tokenization_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -159,11 +165,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "pack_mean",
       "name": "habitat_rust",
-      "computed": 0.535379,
+      "computed": 0.535379049793,
       "measured": 0.535282682851862,
-      "error_pct": 0.018003,
+      "error_pct": 0.0180029999522,
       "source_panel": "living_fsot_hardware_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.018003
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -179,11 +186,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "organ_accuracy",
       "name": "elite-g90-0_cognitive",
-      "computed": 0.968011,
+      "computed": 0.968011041617,
       "measured": 0.9677061561155675,
-      "error_pct": 0.031506,
+      "error_pct": 0.0315059999883,
       "source_panel": "living_fsot_hardware_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -199,31 +207,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "promotion_threshold_percent",
       "name": "qwen_formal_env",
-      "computed": 2.000295,
+      "computed": 2.00029534,
       "measured": 2.0,
       "error_pct": 0.014767,
       "source_panel": "certified_agent_formal_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "max_tool_iterations",
       "name": "qwen_formal_env",
-      "computed": 10.001477,
+      "computed": 10.0014767,
       "measured": 10.0,
       "error_pct": 0.014767,
       "source_panel": "certified_agent_formal_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "max_rag_results",
       "name": "qwen_formal_env",
-      "computed": 8.00252,
+      "computed": 8.00252048,
       "measured": 8.0,
       "error_pct": 0.031506,
       "source_panel": "certified_agent_formal_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -239,31 +250,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "verse_count",
       "name": "verse_count",
-      "computed": 12.00156,
+      "computed": 12.00156036,
       "measured": 12.0,
       "error_pct": 0.013003,
       "source_panel": "omni_theory_humanities_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.013003
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "S",
       "name": "Genesis_1:1",
-      "computed": 0.421754,
+      "computed": 0.421754332011,
       "measured": 0.42162149594294157,
-      "error_pct": 0.031506,
+      "error_pct": 0.0315059998925,
       "source_panel": "omni_theory_humanities_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "D_eff",
       "name": "Genesis_1:1",
-      "computed": 25.003251,
+      "computed": 25.00325075,
       "measured": 25.0,
       "error_pct": 0.013003,
       "source_panel": "omni_theory_humanities_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.013003
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -279,31 +293,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "benchmark_count",
       "name": "benchmark_count",
-      "computed": 4.000591,
+      "computed": 4.00059068,
       "measured": 4.0,
       "error_pct": 0.014767,
       "source_panel": "validators_intrinsic_llm_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "topics",
       "name": "Validation (3 topics)",
-      "computed": 3.000443,
+      "computed": 3.00044301,
       "measured": 3.0,
       "error_pct": 0.014767,
       "source_panel": "validators_intrinsic_llm_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "hits",
       "name": "Validation (3 topics)",
-      "computed": 15.002215,
+      "computed": 15.00221505,
       "measured": 15.0,
       "error_pct": 0.014767,
       "source_panel": "validators_intrinsic_llm_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -319,31 +336,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "field_count",
       "name": "field_count",
-      "computed": 7.000931,
+      "computed": 7.00093058,
       "measured": 7.0,
       "error_pct": 0.013294,
       "source_panel": "bibliography_corpus_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.013294
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "constant_count",
       "name": "constant_count",
-      "computed": 9.001196,
+      "computed": 9.00119646,
       "measured": 9.0,
       "error_pct": 0.013294,
       "source_panel": "bibliography_corpus_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.013294
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "theorem_count",
       "name": "theorem_count",
-      "computed": 1.000133,
+      "computed": 1.00013294,
       "measured": 1.0,
       "error_pct": 0.013294,
       "source_panel": "bibliography_corpus_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.013294
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -359,31 +379,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "branching_event_count",
       "name": "branching_event_count",
-      "computed": 17.001443,
+      "computed": 17.00144296,
       "measured": 17.0,
-      "error_pct": 0.008488,
+      "error_pct": 0.00848799999999,
       "source_panel": "binary_decoder_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.008488
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "total_steps",
       "name": "rendlesham_trace",
-      "computed": 52.004414,
+      "computed": 52.00441376,
       "measured": 52.0,
       "error_pct": 0.008488,
       "source_panel": "binary_decoder_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.008488
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "time_in_core",
       "name": "rendlesham_trace",
-      "computed": 14.001188,
+      "computed": 14.00118832,
       "measured": 14.0,
       "error_pct": 0.008488,
       "source_panel": "binary_decoder_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.008488
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -399,21 +422,23 @@
       "lab": "desktop_application_wiring_lab",
       "property": "syncytial_coherence",
       "name": "syncytial_coherence",
-      "computed": 2.940731,
+      "computed": 2.94073146735,
       "measured": 2.9400777116690997,
-      "error_pct": 0.022236,
+      "error_pct": 0.0222360000318,
       "source_panel": "physarum_biological_cuda_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.022236
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "global_coherence",
       "name": "global_coherence",
-      "computed": 0.322184,
+      "computed": 0.3221837949,
       "measured": 0.3221121700374861,
-      "error_pct": 0.022236,
+      "error_pct": 0.0222360001193,
       "source_panel": "physarum_biological_cuda_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.022236
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -439,11 +464,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "source_count",
       "name": "source_count",
-      "computed": 39.007021,
+      "computed": 39.00702117,
       "measured": 39.0,
       "error_pct": 0.018003,
       "source_panel": "arxiv_brain_knowledge_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.018003
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -459,11 +485,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "source_count",
       "name": "source_count",
-      "computed": 39.007021,
+      "computed": 39.00702117,
       "measured": 39.0,
       "error_pct": 0.018003,
       "source_panel": "arxiv_brain_knowledge_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.018003
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -479,11 +506,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "field_count",
       "name": "field_count",
-      "computed": 9.001329,
+      "computed": 9.00132903,
       "measured": 9.0,
       "error_pct": 0.014767,
       "source_panel": "scalar_solver_35_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -519,11 +547,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "primitive_count",
       "name": "primitive_count",
-      "computed": 6.00189,
+      "computed": 6.00189036,
       "measured": 6.0,
       "error_pct": 0.031506,
       "source_panel": "arxiv_primitives_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -559,31 +588,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "field_count",
       "name": "field_count",
-      "computed": 7.001034,
+      "computed": 7.00103369,
       "measured": 7.0,
       "error_pct": 0.014767,
       "source_panel": "rust_lean_bridge_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "boot_d_eff",
       "name": "boot_d_eff",
-      "computed": 8.001181,
+      "computed": 8.00118136,
       "measured": 8.0,
       "error_pct": 0.014767,
       "source_panel": "rust_lean_bridge_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "boot_delta_psi",
       "name": "boot_delta_psi",
-      "computed": 0.700103,
+      "computed": 0.700103369,
       "measured": 0.7,
       "error_pct": 0.014767,
       "source_panel": "rust_lean_bridge_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -639,31 +671,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "anchor_count",
       "name": "anchor_count",
-      "computed": 10.003151,
+      "computed": 10.0031506,
       "measured": 10.0,
       "error_pct": 0.031506,
       "source_panel": "vl_agent_distill_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "K_FSOT",
       "name": "K_FSOT",
-      "computed": 0.420354,
+      "computed": 0.420354059198,
       "measured": 0.4202216641606967,
-      "error_pct": 0.031506,
+      "error_pct": 0.0315059999507,
       "source_panel": "vl_agent_distill_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "transition_limit",
       "name": "transition_limit",
-      "computed": 0.680147,
+      "computed": 0.680147155092,
       "measured": 0.6799329354210508,
-      "error_pct": 0.031506,
+      "error_pct": 0.0315060000464,
       "source_panel": "vl_agent_distill_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.031506
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -679,11 +714,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "field_count",
       "name": "field_count",
-      "computed": 9.001329,
+      "computed": 9.00132903,
       "measured": 9.0,
       "error_pct": 0.014767,
       "source_panel": "early_lean_mc_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -699,11 +735,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "mc_checkpoint",
       "name": "mc_checkpoint",
-      "computed": 5.000738,
+      "computed": 5.00073835,
       "measured": 5.0,
       "error_pct": 0.014767,
       "source_panel": "early_lean_mc_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -719,11 +756,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "cp_J_molK",
       "name": "metals_Fe_cp_J_molK",
-      "computed": 25.103366,
+      "computed": 25.10336591,
       "measured": 25.1,
       "error_pct": 0.01341,
       "source_panel": "machine_and_molecule_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -739,11 +777,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "work_function_eV",
       "name": "metals_Fe_work_function_eV",
-      "computed": 4.500603,
+      "computed": 4.50060345,
       "measured": 4.5,
       "error_pct": 0.01341,
       "source_panel": "machine_and_molecule_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -769,11 +808,12 @@
       "lab": "desktop_application_wiring_lab",
       "property": "stoich_afr",
       "name": "fsot_hemp_waste_grounded",
-      "computed": 7.481732,
+      "computed": 7.48173183068,
       "measured": 7.478789001995101,
-      "error_pct": 0.039349,
+      "error_pct": 0.0393490000067,
       "source_panel": "fuel_lab_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.039349
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -799,31 +839,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "value",
       "name": "cycle_cost_score_proxy",
-      "computed": 1.000265,
+      "computed": 1.00026472,
       "measured": 1.0,
       "error_pct": 0.026472,
       "source_panel": "blackhole_whitehole_cycle_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.026472
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "value",
       "name": "information_density_delta_proxy",
-      "computed": 0.420111,
+      "computed": 0.4201111824,
       "measured": 0.42,
       "error_pct": 0.026472,
       "source_panel": "blackhole_whitehole_cycle_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.026472
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "value",
       "name": "phase_activity_infall_ratio",
-      "computed": 0.350093,
+      "computed": 0.350092652,
       "measured": 0.35,
       "error_pct": 0.026472,
       "source_panel": "blackhole_whitehole_cycle_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.026472
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -839,31 +882,34 @@
       "lab": "desktop_application_wiring_lab",
       "property": "value",
       "name": "qubit_teleport_fidelity_typical",
-      "computed": 0.850812,
+      "computed": 0.8508121835,
       "measured": 0.85,
       "error_pct": 0.095551,
       "source_panel": "star_trek_transporter_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "value",
       "name": "entanglement_swapping_fidelity",
-      "computed": 0.780745,
+      "computed": 0.7807452978,
       "measured": 0.78,
       "error_pct": 0.095551,
       "source_panel": "star_trek_transporter_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "value",
       "name": "classical_bits_per_qubit",
-      "computed": 2.001911,
+      "computed": 2.00191102,
       "measured": 2.0,
       "error_pct": 0.095551,
       "source_panel": "star_trek_transporter_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "error_pct_full": 0.095551
     }
   ],
   "margin_summary": {

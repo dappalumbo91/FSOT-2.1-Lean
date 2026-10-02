@@ -238,6 +238,14 @@ PROPERTY_ROUTING: dict[str, str] = {
 }
 
 
+def round_sig(value: float, digits: int = 12) -> float:
+    """Significant-digit rounding. Absolute round(x, 6) wipes values below ~1e-4."""
+    number = float(value)
+    if number == 0.0 or number != number:  # NaN stays out of the formatted path
+        return number
+    return float(f"{number:.{digits}g}")
+
+
 def err_pct(computed: float, measured: float) -> float:
     if measured == 0:
         return abs(computed - measured) * 100.0
@@ -343,16 +351,19 @@ def make_fsot_record(
         kind = "fsot_correction"
     else:
         kind = eval_kind
+    stored_computed = round_sig(computed)
+    stored_error = err_pct(stored_computed, measured)
     rec: dict[str, Any] = {
         "lab": lab,
         "property": property_name,
         "name": name,
-        "computed": round(computed, 6) if abs(computed) < 1e6 else round(computed, 4),
+        "computed": stored_computed,
         "measured": measured,
-        "error_pct": round(error, 6),
+        "error_pct": round_sig(stored_error),
+        "error_pct_full": round_sig(error),
         "eval_kind": kind,
         "fsot_domain": fsot_domain,
-        "fsot_scalar": round(domain_scalar(fsot_domain), 6),
+        "fsot_scalar": round_sig(domain_scalar(fsot_domain)),
     }
     if kind == "fsot_correction":
         rec["ledger"] = "B"

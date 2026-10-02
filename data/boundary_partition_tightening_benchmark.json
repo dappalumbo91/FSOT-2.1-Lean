@@ -216,9 +216,9 @@
       "lab": "boundary_partition_tightening_lab",
       "property": "archetype_mean_S",
       "name": "judgmental_reset",
-      "computed": -3.305753,
+      "computed": -3.30575252747,
       "measured": -3.30584,
-      "error_pct": 0.002646,
+      "error_pct": 0.00264600010889,
       "node_count": 4,
       "formula": null,
       "eval_kind": "archetype_precision",
@@ -234,7 +234,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.002646
     },
     {
       "lab": "boundary_partition_tightening_fsot_lab",

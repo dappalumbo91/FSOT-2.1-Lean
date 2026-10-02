@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -43,7 +44,7 @@ def _malware_ingest_records(lab: str) -> list[dict]:
                 "lab": lab,
                 "property": "malwarebazaar_tag_count",
                 "name": row.get("sha256_hash") or row.get("signature"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "malwarebazaar",
@@ -58,7 +59,7 @@ def _malware_ingest_records(lab: str) -> list[dict]:
                 "lab": lab,
                 "property": "malware_family_prevalence",
                 "name": fam,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "malwarebazaar_histogram",
@@ -72,7 +73,7 @@ def _malware_ingest_records(lab: str) -> list[dict]:
                 "lab": lab,
                 "property": "cisa_kev_exploit",
                 "name": row.get("cve_id"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "cisa_kev",
@@ -167,7 +168,7 @@ def build_code_genome_depth() -> dict:
                     "lab": "code_genome_lab",
                     "property": "codon_stability",
                     "name": name,
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": measured,
                     "error_pct": round(err, 6),
                     "source": analysis["path"],

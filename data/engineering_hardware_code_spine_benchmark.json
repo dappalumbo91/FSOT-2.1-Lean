@@ -73,40 +73,43 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "vdd_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
       "property": "vdd_min_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.000623,
+      "computed": 3.00062265,
       "measured": 3.0,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
       "property": "vdd_max_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.600747,
+      "computed": 3.60074718,
       "measured": 3.6,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -125,40 +128,43 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "flash_mhz",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 40.005907,
+      "computed": 40.0059068,
       "measured": 40.0,
       "error_pct": 0.014767,
       "eval_kind": "live_formula",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
       "property": "wifi_freq_ghz",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 2.400498,
+      "computed": 2.40049812,
       "measured": 2.4,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
       "property": "deep_sleep_ua",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 10.003935,
+      "computed": 10.0039349,
       "measured": 10.0,
       "error_pct": 0.039349,
       "eval_kind": "live_formula",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.039349
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -206,9 +212,9 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "mean_codon_stability",
       "name": "openssl_mem_clr__stability",
-      "computed": 0.882534,
+      "computed": 0.88253425028,
       "measured": 0.88243,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999773,
       "source": "openssl/openssl",
       "language": "C",
       "category": "crypto_library",
@@ -225,15 +231,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
       "property": "mean_codon_stability",
       "name": "linux_kernel_list__stability",
-      "computed": 0.783437,
+      "computed": 0.78343654426,
       "measured": 0.783344,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999796,
       "source": "torvalds/linux",
       "language": "C",
       "category": "systems_kernel",
@@ -250,7 +257,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -331,9 +339,9 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "mean_codon_stability",
       "name": "rust_std_vec__stability",
-      "computed": 0.524433,
+      "computed": 0.52443294919,
       "measured": 0.524371,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118140000114,
       "source": "rust-lang/rust",
       "language": "Rust",
       "category": "memory_safe_std",
@@ -350,7 +358,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -454,7 +463,7 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_10k_100nF",
-      "computed": 0.001,
+      "computed": 0.00100020755,
       "measured": 0.001,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
@@ -462,7 +471,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 10000.0,
       "C_f": 1e-07,
-      "textbook_tau": 0.001
+      "textbook_tau": 0.001,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -478,7 +488,7 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_1k_10uF",
-      "computed": 0.010002,
+      "computed": 0.0100020755,
       "measured": 0.01,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
@@ -486,7 +496,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 1000.0,
       "C_f": 1e-05,
-      "textbook_tau": 0.01
+      "textbook_tau": 0.01,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -502,7 +513,7 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_4k7_10nF",
-      "computed": 4.7e-05,
+      "computed": 4.700975485e-05,
       "measured": 4.7e-05,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
@@ -510,7 +521,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 4700.0,
       "C_f": 1e-08,
-      "textbook_tau": 4.7000000000000004e-05
+      "textbook_tau": 4.7000000000000004e-05,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -526,7 +538,7 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_100k_1uF",
-      "computed": 0.100021,
+      "computed": 0.100020755,
       "measured": 0.1,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
@@ -534,7 +546,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 100000.0,
       "C_f": 1e-06,
-      "textbook_tau": 0.09999999999999999
+      "textbook_tau": 0.09999999999999999,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -1106,11 +1119,12 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "c_pack_word",
       "name": "c_pack_parity",
-      "computed": 5.270498306774157e+18,
+      "computed": 5.27049830677e+18,
       "measured": 5.270498306774157e+18,
-      "error_pct": 0.0,
+      "error_pct": 7.88813458996e-11,
       "eval_kind": "live_formula",
-      "formula": "pack 0..31 mod3 golden"
+      "formula": "pack 0..31 mod3 golden",
+      "error_pct_full": 0.0
     },
     {
       "lab": "engineering_hardware_code_spine_lab",

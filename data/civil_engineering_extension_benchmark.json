@@ -82,9 +82,9 @@
       "lab": "civil_engineering_lab",
       "property": "bridge_span_m",
       "name": "golden_gate_span",
-      "computed": 1280.429133,
+      "computed": 1280.42913265,
       "measured": 1280.0,
-      "error_pct": 0.0335259880736416,
+      "error_pct": 0.0335259882812,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "golden gate span",
@@ -98,15 +98,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "bridge_span_m",
       "name": "akashi_kaikyo_span",
-      "computed": 1991.667502,
+      "computed": 1991.66750242,
       "measured": 1991.0,
-      "error_pct": 0.03352598807364387,
+      "error_pct": 0.0335259879458,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "akashi kaikyo span",
@@ -120,15 +121,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "compressive_strength_mpa",
       "name": "concrete_fc_28d",
-      "computed": 30.010058,
+      "computed": 30.0100577964,
       "measured": 30.0,
-      "error_pct": 0.0335259880736416,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "concrete fc 28d",
@@ -142,15 +144,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "yield_strength_mpa",
       "name": "steel_yield_fy",
-      "computed": 345.115665,
+      "computed": 345.115664659,
       "measured": 345.0,
-      "error_pct": 0.033525988073648295,
+      "error_pct": 0.0335259881159,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "steel yield fy",
@@ -164,15 +167,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "yield_strength_mpa",
       "name": "rebar_grade_60_ksi",
-      "computed": 414.138798,
+      "computed": 414.138797591,
       "measured": 414.0,
-      "error_pct": 0.033525988073648295,
+      "error_pct": 0.0335259881643,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "rebar grade 60 ksi",
@@ -186,15 +190,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "bearing_capacity_kpa",
       "name": "soil_bearing_capacity",
-      "computed": 150.050289,
+      "computed": 150.050288982,
       "measured": 150.0,
-      "error_pct": 0.03352598807363923,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "soil bearing capacity",
@@ -208,15 +213,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "end_bearing_kpa",
       "name": "pile_capacity_end_bearing",
-      "computed": 5001.676299,
+      "computed": 5001.6762994,
       "measured": 5000.0,
-      "error_pct": 0.03352598807365212,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "pile capacity end bearing",
@@ -230,15 +236,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880737
     },
     {
       "lab": "civil_engineering_lab",
       "property": "floor_live_load_kpa",
       "name": "live_load_office",
-      "computed": 2.400805,
+      "computed": 2.40080462371,
       "measured": 2.4,
-      "error_pct": 0.03352598807363864,
+      "error_pct": 0.0335259879167,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "live load office",
@@ -252,15 +259,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "basic_wind_speed_ms",
       "name": "wind_speed_basic",
-      "computed": 40.01341,
+      "computed": 40.0134103952,
       "measured": 40.0,
-      "error_pct": 0.0335259880736416,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "wind speed basic",
@@ -274,15 +282,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "peak_ground_accel_g",
       "name": "seismic_pga_design",
-      "computed": 0.400134,
+      "computed": 0.400134103952,
       "measured": 0.4,
-      "error_pct": 0.033525988073643265,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "seismic pga design",
@@ -296,15 +305,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "elastic_modulus_gpa",
       "name": "concrete_modulus_ec",
-      "computed": 30.010058,
+      "computed": 30.0100577964,
       "measured": 30.0,
-      "error_pct": 0.0335259880736416,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "concrete modulus ec",
@@ -318,15 +328,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "elastic_modulus_gpa",
       "name": "steel_modulus_es",
-      "computed": 200.067052,
+      "computed": 200.067051976,
       "measured": 200.0,
-      "error_pct": 0.033525988073648705,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "steel modulus es",
@@ -340,15 +351,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "dam_height_m",
       "name": "hoover_dam_height",
-      "computed": 221.074092,
+      "computed": 221.074092434,
       "measured": 221.0,
-      "error_pct": 0.033525988073647546,
+      "error_pct": 0.0335259882353,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "hoover dam height",
@@ -362,15 +374,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "building_height_m",
       "name": "burj_khalifa_height",
-      "computed": 828.277595,
+      "computed": 828.277595181,
       "measured": 828.0,
-      "error_pct": 0.033525988073648295,
+      "error_pct": 0.0335259880435,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "burj khalifa height",
@@ -384,15 +397,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "tunnel_diameter_m",
       "name": "tunnel_diameter_highway",
-      "computed": 12.004023,
+      "computed": 12.0040231186,
       "measured": 12.0,
-      "error_pct": 0.03352598807365344,
+      "error_pct": 0.0335259883333,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "tunnel diameter highway",
@@ -406,15 +420,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880737
     },
     {
       "lab": "civil_engineering_lab",
       "property": "wall_height_m",
       "name": "retaining_wall_height",
-      "computed": 6.002012,
+      "computed": 6.00201155928,
       "measured": 6.0,
-      "error_pct": 0.03352598807365344,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "retaining wall height",
@@ -428,15 +443,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880737
     },
     {
       "lab": "civil_engineering_lab",
       "property": "pavement_thickness_mm",
       "name": "pavement_thickness_highway",
-      "computed": 300.100578,
+      "computed": 300.100577964,
       "measured": 300.0,
-      "error_pct": 0.03352598807363923,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "pavement thickness highway",
@@ -450,15 +466,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "tank_capacity_m3",
       "name": "water_tower_capacity",
-      "computed": 1000.33526,
+      "computed": 1000.33525988,
       "measured": 1000.0,
-      "error_pct": 0.03352598807364302,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "water tower capacity",
@@ -472,15 +489,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "cable_tension_mn",
       "name": "suspension_cable_tension",
-      "computed": 200.067052,
+      "computed": 200.067051976,
       "measured": 200.0,
-      "error_pct": 0.033525988073648705,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "suspension cable tension",
@@ -494,15 +512,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "civil_engineering_lab",
       "property": "allowable_settlement_mm",
       "name": "foundation_settlement_limit",
-      "computed": 25.008381,
+      "computed": 25.008381497,
       "measured": 25.0,
-      "error_pct": 0.033525988073648705,
+      "error_pct": 0.033525988,
       "source": "civil_engineering_reference_observables",
       "domain_display_name": "civil engineering",
       "display_name": "foundation settlement limit",
@@ -516,7 +535,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0335259880736
     },
     {
       "lab": "materials_engineering_lab",

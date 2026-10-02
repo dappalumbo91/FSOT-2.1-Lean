@@ -139,91 +139,100 @@
       "lab": "tier_96_circuit_spine_lab",
       "property": "resistance_ohm",
       "name": "R_22R_5pct",
-      "computed": 22.004566,
+      "computed": 22.0045661,
       "measured": 22.0,
       "error_pct": 0.020755,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "capacitance_f",
       "name": "C_10nF_X7R",
-      "computed": 0.0,
+      "computed": 1.0001341e-08,
       "measured": 1e-08,
       "error_pct": 0.01341,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "capacitance_f",
       "name": "C_100nF_X7R",
-      "computed": 0.0,
+      "computed": 1.0001341e-07,
       "measured": 1e-07,
       "error_pct": 0.01341,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "capacitance_f",
       "name": "C_1uF_X5R",
-      "computed": 1e-06,
+      "computed": 1.0001341e-06,
       "measured": 1e-06,
       "error_pct": 0.01341,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "capacitance_f",
       "name": "C_10uF_electrolytic",
-      "computed": 1e-05,
+      "computed": 1.0001341e-05,
       "measured": 1e-05,
       "error_pct": 0.01341,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "capacitance_f",
       "name": "C_100pF_C0G",
-      "computed": 0.0,
+      "computed": 1.0001341e-10,
       "measured": 1e-10,
       "error_pct": 0.01341,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "inductance_h",
       "name": "L_10uH_power",
-      "computed": 1e-05,
+      "computed": 1.00020755e-05,
       "measured": 1e-05,
       "error_pct": 0.020755,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "inductance_h",
       "name": "L_100uH_rf",
-      "computed": 0.0001,
+      "computed": 0.000100020755,
       "measured": 0.0001,
       "error_pct": 0.020755,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "inductance_h",
       "name": "L_1mH_filter",
-      "computed": 0.001,
+      "computed": 0.00100020755,
       "measured": 0.001,
       "error_pct": 0.020755,
       "source_panel": "Circuit_Component_Emergence_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
@@ -248,51 +257,56 @@
       "lab": "tier_96_circuit_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_10k_100nF",
-      "computed": 0.001,
+      "computed": 0.00100020755,
       "measured": 0.001,
       "error_pct": 0.020755,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_1k_10uF",
-      "computed": 0.010002,
+      "computed": 0.0100020755,
       "measured": 0.01,
       "error_pct": 0.020755,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_4k7_10nF",
-      "computed": 4.7e-05,
+      "computed": 4.700975485e-05,
       "measured": 4.7e-05,
       "error_pct": 0.020755,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_100k_1uF",
-      "computed": 0.100021,
+      "computed": 0.100020755,
       "measured": 0.1,
       "error_pct": 0.020755,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_22R_100nF",
-      "computed": 2e-06,
+      "computed": 2.20045661e-06,
       "measured": 2.2e-06,
       "error_pct": 0.020755,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "tier_96_circuit_spine_lab",
@@ -386,41 +400,45 @@
       "lab": "tier_96_circuit_spine_lab",
       "property": "molecular_weight",
       "name": "2244",
-      "computed": 180.159,
+      "computed": 180.159000112,
       "measured": 180.16,
-      "error_pct": 0.000555,
+      "error_pct": 0.000554999999998,
       "source_panel": "Electrical_Power_Systems",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.000555
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "molecular_weight",
       "name": "1983",
-      "computed": 151.165,
+      "computed": 151.165000373,
       "measured": 151.16,
-      "error_pct": 0.003308,
+      "error_pct": 0.00330800013231,
       "source_panel": "Electrical_Power_Systems",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.003308
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "molecular_weight",
       "name": "3672",
-      "computed": 206.285,
+      "computed": 206.285000227,
       "measured": 206.28,
-      "error_pct": 0.002424,
+      "error_pct": 0.00242399990305,
       "source_panel": "Electrical_Power_Systems",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.002424
     },
     {
       "lab": "tier_96_circuit_spine_lab",
       "property": "molecular_weight",
       "name": "3033",
-      "computed": 296.147,
+      "computed": 296.146999953,
       "measured": 296.1,
       "error_pct": 0.015873,
       "source_panel": "Electrical_Power_Systems",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.015873
     }
   ],
   "margin_summary": {

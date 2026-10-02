@@ -287,11 +287,12 @@
       "name": "banana_bread:bake_temperature_C",
       "recipe_id": "banana_bread",
       "category": "quick_bread",
-      "computed": 175.083327,
+      "computed": 175.083326577,
       "measured": 175.0,
-      "error_pct": 0.047615187057821064,
+      "error_pct": 0.0476151868571,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -299,11 +300,12 @@
       "name": "banana_bread:bake_time_min",
       "recipe_id": "banana_bread",
       "category": "quick_bread",
-      "computed": 58.027617,
+      "computed": 58.0276168085,
       "measured": 58.0,
-      "error_pct": 0.047615187057828696,
+      "error_pct": 0.047615187069,
       "source": "recipe_process",
-      "unit": "min"
+      "unit": "min",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -311,11 +313,12 @@
       "name": "banana_bread:banana_mass_fraction",
       "recipe_id": "banana_bread",
       "category": "quick_bread",
-      "computed": 0.340081,
+      "computed": 0.340080945818,
       "measured": 0.34,
-      "error_pct": 0.023807593528905633,
+      "error_pct": 0.0238075935294,
       "source": "recipe_process",
-      "unit": "mass_fraction"
+      "unit": "mass_fraction",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -323,11 +326,12 @@
       "name": "banana_bread:final_moisture_pct",
       "recipe_id": "banana_bread",
       "category": "quick_bread",
-      "computed": 28.506785,
+      "computed": 28.5067851642,
       "measured": 28.5,
-      "error_pct": 0.023807593528913595,
+      "error_pct": 0.0238075936842,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -335,11 +339,12 @@
       "name": "zucchini_bread:bake_temperature_C",
       "recipe_id": "zucchini_bread",
       "category": "quick_bread",
-      "computed": 175.083327,
+      "computed": 175.083326577,
       "measured": 175.0,
-      "error_pct": 0.047615187057821064,
+      "error_pct": 0.0476151868571,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -347,11 +352,12 @@
       "name": "zucchini_bread:bake_time_min",
       "recipe_id": "zucchini_bread",
       "category": "quick_bread",
-      "computed": 52.02476,
+      "computed": 52.0247598973,
       "measured": 52.0,
-      "error_pct": 0.047615187057832464,
+      "error_pct": 0.0476151871154,
       "source": "recipe_process",
-      "unit": "min"
+      "unit": "min",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -359,11 +365,12 @@
       "name": "zucchini_bread:zucchini_mass_fraction",
       "recipe_id": "zucchini_bread",
       "category": "quick_bread",
-      "computed": 0.290069,
+      "computed": 0.290069042021,
       "measured": 0.29,
-      "error_pct": 0.023807593528919712,
+      "error_pct": 0.0238075934483,
       "source": "recipe_process",
-      "unit": "mass_fraction"
+      "unit": "mass_fraction",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -371,11 +378,12 @@
       "name": "zucchini_bread:final_moisture_pct",
       "recipe_id": "zucchini_bread",
       "category": "quick_bread",
-      "computed": 26.00619,
+      "computed": 26.0061899743,
       "measured": 26.0,
-      "error_pct": 0.023807593528916232,
+      "error_pct": 0.0238075934615,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -383,11 +391,12 @@
       "name": "pumpkin_bread:bake_temperature_C",
       "recipe_id": "pumpkin_bread",
       "category": "quick_bread",
-      "computed": 175.083327,
+      "computed": 175.083326577,
       "measured": 175.0,
-      "error_pct": 0.047615187057821064,
+      "error_pct": 0.0476151868571,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -395,11 +404,12 @@
       "name": "pumpkin_bread:bake_time_min",
       "recipe_id": "pumpkin_bread",
       "category": "quick_bread",
-      "computed": 60.028569,
+      "computed": 60.0285691122,
       "measured": 60.0,
-      "error_pct": 0.04761518705781972,
+      "error_pct": 0.047615187,
       "source": "recipe_process",
-      "unit": "min"
+      "unit": "min",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -407,11 +417,12 @@
       "name": "pumpkin_bread:pumpkin_mass_fraction",
       "recipe_id": "pumpkin_bread",
       "category": "quick_bread",
-      "computed": 0.310074,
+      "computed": 0.31007380354,
       "measured": 0.31,
-      "error_pct": 0.023807593528913533,
+      "error_pct": 0.0238075935484,
       "source": "recipe_process",
-      "unit": "mass_fraction"
+      "unit": "mass_fraction",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -419,11 +430,12 @@
       "name": "pumpkin_bread:final_moisture_pct",
       "recipe_id": "pumpkin_bread",
       "category": "quick_bread",
-      "computed": 27.206476,
+      "computed": 27.2064756654,
       "measured": 27.2,
-      "error_pct": 0.02380759352891543,
+      "error_pct": 0.0238075933824,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -431,11 +443,12 @@
       "name": "sourdough_loaf:bake_temperature_C",
       "recipe_id": "sourdough_loaf",
       "category": "fermented_bread",
-      "computed": 230.109515,
+      "computed": 230.10951493,
       "measured": 230.0,
-      "error_pct": 0.04761518705782178,
+      "error_pct": 0.0476151869565,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -443,11 +456,12 @@
       "name": "sourdough_loaf:bake_time_min",
       "recipe_id": "sourdough_loaf",
       "category": "fermented_bread",
-      "computed": 40.019046,
+      "computed": 40.0190460748,
       "measured": 40.0,
-      "error_pct": 0.047615187057825636,
+      "error_pct": 0.047615187,
       "source": "recipe_process",
-      "unit": "min"
+      "unit": "min",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -455,11 +469,12 @@
       "name": "sourdough_loaf:hydration_pct",
       "recipe_id": "sourdough_loaf",
       "category": "fermented_bread",
-      "computed": 72.017141,
+      "computed": 72.0171414673,
       "measured": 72.0,
-      "error_pct": 0.023807593528917752,
+      "error_pct": 0.0238075934722,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -467,11 +482,12 @@
       "name": "sourdough_loaf:final_moisture_pct",
       "recipe_id": "sourdough_loaf",
       "category": "fermented_bread",
-      "computed": 35.008333,
+      "computed": 35.0083326577,
       "measured": 35.0,
-      "error_pct": 0.023807593528906473,
+      "error_pct": 0.0238075934286,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -479,11 +495,12 @@
       "name": "pizza_dough:bake_temperature_C",
       "recipe_id": "pizza_dough",
       "category": "fermented_bread",
-      "computed": 450.214268,
+      "computed": 450.214268342,
       "measured": 450.0,
-      "error_pct": 0.047615187057822875,
+      "error_pct": 0.0476151871111,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -491,11 +508,12 @@
       "name": "pizza_dough:bake_time_min",
       "recipe_id": "pizza_dough",
       "category": "fermented_bread",
-      "computed": 1.500714,
+      "computed": 1.50071422781,
       "measured": 1.5,
-      "error_pct": 0.047615187057825636,
+      "error_pct": 0.0476151873333,
       "source": "recipe_process",
-      "unit": "min"
+      "unit": "min",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -503,11 +521,12 @@
       "name": "pizza_dough:hydration_pct",
       "recipe_id": "pizza_dough",
       "category": "fermented_bread",
-      "computed": 65.015475,
+      "computed": 65.0154749358,
       "measured": 65.0,
-      "error_pct": 0.023807593528908037,
+      "error_pct": 0.0238075935385,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -515,11 +534,12 @@
       "name": "pizza_dough:final_moisture_pct",
       "recipe_id": "pizza_dough",
       "category": "fermented_bread",
-      "computed": 22.005238,
+      "computed": 22.0052376706,
       "measured": 22.0,
-      "error_pct": 0.023807593528908783,
+      "error_pct": 0.0238075936364,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -527,11 +547,12 @@
       "name": "chocolate_chip_cookie:bake_temperature_C",
       "recipe_id": "chocolate_chip_cookie",
       "category": "cookie_roast",
-      "computed": 190.090469,
+      "computed": 190.090468855,
       "measured": 190.0,
-      "error_pct": 0.04761518705783218,
+      "error_pct": 0.0476151868421,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -539,11 +560,12 @@
       "name": "chocolate_chip_cookie:bake_time_min",
       "recipe_id": "chocolate_chip_cookie",
       "category": "cookie_roast",
-      "computed": 11.005238,
+      "computed": 11.0052376706,
       "measured": 11.0,
-      "error_pct": 0.047615187057817566,
+      "error_pct": 0.0476151872727,
       "source": "recipe_process",
-      "unit": "min"
+      "unit": "min",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -551,11 +573,12 @@
       "name": "chocolate_chip_cookie:sugar_mass_fraction",
       "recipe_id": "chocolate_chip_cookie",
       "category": "cookie_roast",
-      "computed": 0.280067,
+      "computed": 0.280066661262,
       "measured": 0.28,
-      "error_pct": 0.023807593528903298,
+      "error_pct": 0.0238075935714,
       "source": "recipe_process",
-      "unit": "mass_fraction"
+      "unit": "mass_fraction",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -563,11 +586,12 @@
       "name": "chocolate_chip_cookie:final_moisture_pct",
       "recipe_id": "chocolate_chip_cookie",
       "category": "cookie_roast",
-      "computed": 8.502024,
+      "computed": 8.50202364545,
       "measured": 8.5,
-      "error_pct": 0.02380759352891543,
+      "error_pct": 0.0238075935294,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -575,11 +599,12 @@
       "name": "roast_chicken:bake_temperature_C",
       "recipe_id": "roast_chicken",
       "category": "maillard_roast",
-      "computed": 200.09523,
+      "computed": 200.095230374,
       "measured": 200.0,
-      "error_pct": 0.04761518705782919,
+      "error_pct": 0.047615187,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -587,11 +612,12 @@
       "name": "roast_chicken:bake_time_min",
       "recipe_id": "roast_chicken",
       "category": "maillard_roast",
-      "computed": 75.035711,
+      "computed": 75.0357113903,
       "measured": 75.0,
-      "error_pct": 0.04761518705782919,
+      "error_pct": 0.0476151870667,
       "source": "recipe_process",
-      "unit": "min"
+      "unit": "min",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -599,11 +625,12 @@
       "name": "roast_chicken:internal_temp_C",
       "recipe_id": "roast_chicken",
       "category": "maillard_roast",
-      "computed": 74.035235,
+      "computed": 74.0352352384,
       "measured": 74.0,
-      "error_pct": 0.047615187057818434,
+      "error_pct": 0.047615187027,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -611,11 +638,12 @@
       "name": "roast_chicken:final_moisture_pct",
       "recipe_id": "roast_chicken",
       "category": "maillard_roast",
-      "computed": 62.014761,
+      "computed": 62.014760708,
       "measured": 62.0,
-      "error_pct": 0.023807593528911385,
+      "error_pct": 0.0238075935484,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -623,11 +651,12 @@
       "name": "kimchi_batch:ferment_temperature_C",
       "recipe_id": "kimchi_batch",
       "category": "fermented_veg",
-      "computed": 18.008571,
+      "computed": 18.0085707337,
       "measured": 18.0,
-      "error_pct": 0.047615187057835504,
+      "error_pct": 0.0476151872222,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -635,11 +664,12 @@
       "name": "kimchi_batch:ferment_time_h",
       "recipe_id": "kimchi_batch",
       "category": "fermented_veg",
-      "computed": 72.034283,
+      "computed": 72.0342829347,
       "measured": 72.0,
-      "error_pct": 0.047615187057835504,
+      "error_pct": 0.0476151870833,
       "source": "recipe_process",
-      "unit": "h"
+      "unit": "h",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -647,11 +677,12 @@
       "name": "kimchi_batch:final_ph",
       "recipe_id": "kimchi_batch",
       "category": "fermented_veg",
-      "computed": 4.301024,
+      "computed": 4.30102372652,
       "measured": 4.3,
-      "error_pct": 0.023807593528911784,
+      "error_pct": 0.0238075934884,
       "source": "recipe_process",
-      "unit": "ph"
+      "unit": "ph",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -659,11 +690,12 @@
       "name": "kimchi_batch:salt_mass_fraction",
       "recipe_id": "kimchi_batch",
       "category": "fermented_veg",
-      "computed": 0.025006,
+      "computed": 0.0250059518984,
       "measured": 0.025,
-      "error_pct": 0.023807593528907267,
+      "error_pct": 0.0238075936,
       "source": "recipe_process",
-      "unit": "mass_fraction"
+      "unit": "mass_fraction",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -671,11 +703,12 @@
       "name": "yogurt_batch:ferment_temperature_C",
       "recipe_id": "yogurt_batch",
       "category": "fermented_dairy",
-      "computed": 42.019998,
+      "computed": 42.0199983786,
       "measured": 42.0,
-      "error_pct": 0.04761518705782986,
+      "error_pct": 0.0476151871429,
       "source": "recipe_process",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -683,11 +716,12 @@
       "name": "yogurt_batch:ferment_time_h",
       "recipe_id": "yogurt_batch",
       "category": "fermented_dairy",
-      "computed": 6.002857,
+      "computed": 6.00285691122,
       "measured": 6.0,
-      "error_pct": 0.047615187057825636,
+      "error_pct": 0.047615187,
       "source": "recipe_process",
-      "unit": "h"
+      "unit": "h",
+      "error_pct_full": 0.0476151870578
     },
     {
       "lab": "culinary_arts_lab",
@@ -695,11 +729,12 @@
       "name": "yogurt_batch:final_ph",
       "recipe_id": "yogurt_batch",
       "category": "fermented_dairy",
-      "computed": 4.501071,
+      "computed": 4.50107134171,
       "measured": 4.5,
-      "error_pct": 0.023807593528917752,
+      "error_pct": 0.0238075935556,
       "source": "recipe_process",
-      "unit": "ph"
+      "unit": "ph",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
@@ -707,71 +742,78 @@
       "name": "yogurt_batch:final_moisture_pct",
       "recipe_id": "yogurt_batch",
       "category": "fermented_dairy",
-      "computed": 87.020713,
+      "computed": 87.0207126064,
       "measured": 87.0,
-      "error_pct": 0.023807593528912308,
+      "error_pct": 0.0238075935632,
       "source": "recipe_process",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0238075935289
     },
     {
       "lab": "culinary_arts_lab",
       "property": "first_crack_temperature_C",
       "name": "coffee_roast:first_crack_temperature_C",
-      "computed": 196.154247,
+      "computed": 196.154247002,
       "measured": 196.0,
-      "error_pct": 0.07869745016115089,
+      "error_pct": 0.07869745,
       "source": "coffee_roast",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "culinary_arts_lab",
       "property": "development_time_ratio",
       "name": "coffee_roast:development_time_ratio",
-      "computed": 0.240189,
+      "computed": 0.24018887388,
       "measured": 0.24,
-      "error_pct": 0.07869745016115398,
+      "error_pct": 0.07869745,
       "source": "coffee_roast",
-      "unit": "ratio"
+      "unit": "ratio",
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "culinary_arts_lab",
       "property": "weight_loss_pct",
       "name": "coffee_roast:weight_loss_pct",
-      "computed": 14.811647,
+      "computed": 14.8116472226,
       "measured": 14.8,
-      "error_pct": 0.07869745016116055,
+      "error_pct": 0.07869745,
       "source": "coffee_roast",
-      "unit": "pct"
+      "unit": "pct",
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "culinary_arts_lab",
       "property": "end_temperature_C",
       "name": "coffee_roast:end_temperature_C",
-      "computed": 205.16133,
+      "computed": 205.161329773,
       "measured": 205.0,
-      "error_pct": 0.07869745016116335,
+      "error_pct": 0.0786974502439,
       "source": "coffee_roast",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "culinary_arts_lab",
       "property": "second_crack_temperature_C",
       "name": "coffee_roast:second_crack_temperature_C",
-      "computed": 224.176282,
+      "computed": 224.176282288,
       "measured": 224.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "coffee_roast",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "culinary_arts_lab",
       "property": "city_plus_end_C",
       "name": "coffee_roast:city_plus_end_C",
-      "computed": 215.1692,
+      "computed": 215.169199518,
       "measured": 215.0,
-      "error_pct": 0.0786974501611598,
+      "error_pct": 0.0786974502326,
       "source": "coffee_roast",
-      "unit": "C"
+      "unit": "C",
+      "error_pct_full": 0.0786974501612
     }
   ],
   "crosswalk_modules": [

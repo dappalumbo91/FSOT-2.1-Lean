@@ -73,11 +73,12 @@
       "source_panel": "hubble_bubble",
       "property": "sector_h0_overlay",
       "name": "global_cmb_background",
-      "computed": 68.440057,
+      "computed": 68.4400568298,
       "measured": 68.44005682979427,
-      "error_pct": 0.0,
+      "error_pct": 8.3678692209e-12,
       "eval_kind": "crosswalk_relay",
-      "status": "hubble_tension_resolution"
+      "status": "hubble_tension_resolution",
+      "error_pct_full": 0.0
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -94,10 +95,11 @@
       "source_panel": "hubble_bubble",
       "property": "fpc_tau_anchor",
       "name": "cs133_fpc_equilibrium",
-      "computed": 1.344535,
+      "computed": 1.34453487168,
       "measured": 1.344,
       "error_pct": 0.039797,
-      "eval_kind": "fpc_anchor"
+      "eval_kind": "fpc_anchor",
+      "error_pct_full": 0.039797
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -113,39 +115,42 @@
       "source_panel": "dark_sector",
       "property": "dark_energy_eos",
       "name": "w0_cmb",
-      "computed": -1.029981,
+      "computed": -1.0299812952,
       "measured": -1.03,
       "error_pct": 0.001816,
       "eval_kind": "crosswalk_relay",
       "comparison_class": "cmb_sector_prediction",
       "reference": "Planck2018",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "error_pct_full": 0.001816
     },
     {
       "lab": "hubble_dark_sector_lab",
       "source_panel": "dark_sector",
       "property": "dark_energy_eos",
       "name": "w0_bao",
-      "computed": -0.729679,
+      "computed": -0.72967901681,
       "measured": -0.727,
       "error_pct": 0.368503,
       "eval_kind": "crosswalk_relay",
       "comparison_class": "bao_sector_prediction",
       "reference": "DESI_DR2",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "error_pct_full": 0.368503
     },
     {
       "lab": "hubble_dark_sector_lab",
       "source_panel": "dark_sector",
       "property": "dark_energy_eos_evolution",
       "name": "wa_bao",
-      "computed": -1.020856,
+      "computed": -1.0208556427,
       "measured": -1.018,
       "error_pct": 0.280515,
       "eval_kind": "crosswalk_relay",
       "comparison_class": "bao_sector_prediction",
       "reference": "DESI_DR2",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "error_pct_full": 0.280515
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -218,10 +223,11 @@
       "source_panel": "dark_sector",
       "property": "importance_score",
       "name": "18-100754-general-1946-7-vol-2",
-      "computed": 6.400543,
+      "computed": 6.400543232,
       "measured": 6.4,
       "error_pct": 0.008488,
-      "eval_kind": "fsot_prediction"
+      "eval_kind": "fsot_prediction",
+      "error_pct_full": 0.008488
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -297,20 +303,22 @@
       "source_panel": "cosmology_anomaly_deep",
       "property": "fpc_tau_anchor",
       "name": "cs133_fpc_equilibrium",
-      "computed": 1.344535,
+      "computed": 1.34453487168,
       "measured": 1.344,
       "error_pct": 0.039797,
-      "eval_kind": "fpc_anchor"
+      "eval_kind": "fpc_anchor",
+      "error_pct_full": 0.039797
     },
     {
       "lab": "hubble_dark_sector_lab",
       "property": "h0_fsot_dual_anchor",
       "name": "h0_fsot_bubble",
-      "computed": 72.100362,
+      "computed": 72.100361942,
       "measured": 72.1,
-      "error_pct": 0.000502,
+      "error_pct": 0.000502000000017,
       "eval_kind": "literature_monitor",
-      "comparison_class": "literature_monitor"
+      "comparison_class": "literature_monitor",
+      "error_pct_full": 0.000502
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -327,21 +335,23 @@
       "lab": "hubble_dark_sector_lab",
       "property": "dark_energy_eos_w0",
       "name": "w0",
-      "computed": -1.000005,
+      "computed": -1.00000502,
       "measured": -1.0,
-      "error_pct": 0.000502,
+      "error_pct": 0.000501999999991,
       "eval_kind": "live_formula",
-      "comparison_class": "scalar_prediction"
+      "comparison_class": "scalar_prediction",
+      "error_pct_full": 0.000502
     },
     {
       "lab": "hubble_dark_sector_lab",
       "property": "omega_lambda",
       "name": "omega_lambda",
-      "computed": 0.685003,
+      "computed": 0.6850034387,
       "measured": 0.685,
-      "error_pct": 0.000502,
+      "error_pct": 0.000501999999995,
       "eval_kind": "live_formula",
-      "comparison_class": "scalar_prediction"
+      "comparison_class": "scalar_prediction",
+      "error_pct_full": 0.000502
     },
     {
       "lab": "hubble_dark_sector_lab",

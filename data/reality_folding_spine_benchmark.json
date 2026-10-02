@@ -131,9 +131,9 @@
       "lab": "reality_folding_spine_lab",
       "property": "coupling_nodes",
       "name": "domain_graph",
-      "computed": 282.053603,
+      "computed": 282.053603318,
       "measured": 282.0,
-      "error_pct": 0.019008268802510223,
+      "error_pct": 0.0190082687943,
       "source": "reality_folding_spine_metrics",
       "domain_display_name": "reality folding spine",
       "display_name": "domain graph",
@@ -147,15 +147,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0190082688025
     },
     {
       "lab": "reality_folding_spine_lab",
       "property": "ladder_rungs",
       "name": "compactification",
-      "computed": 10.001901,
+      "computed": 10.0019008269,
       "measured": 10.0,
-      "error_pct": 0.019008268802505057,
+      "error_pct": 0.019008269,
       "source": "reality_folding_spine_metrics",
       "domain_display_name": "reality folding spine",
       "display_name": "compactification",
@@ -169,15 +170,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0190082688025
     },
     {
       "lab": "reality_folding_spine_lab",
       "property": "adjacent_pairs",
       "name": "neighbor_coupling",
-      "computed": 9.001711,
+      "computed": 9.00171074419,
       "measured": 9.0,
-      "error_pct": 0.019008268802503083,
+      "error_pct": 0.0190082687778,
       "source": "reality_folding_spine_metrics",
       "domain_display_name": "reality folding spine",
       "display_name": "neighbor coupling",
@@ -191,15 +193,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0190082688025
     },
     {
       "lab": "reality_folding_spine_lab",
       "property": "fold_depth_span",
       "name": "string_cosmo_span",
-      "computed": 2.719917,
+      "computed": 2.71991691086,
       "measured": 2.7194,
-      "error_pct": 0.019008268802494864,
+      "error_pct": 0.0190082687358,
       "source": "reality_folding_spine_metrics",
       "domain_display_name": "reality folding spine",
       "display_name": "string cosmo span",
@@ -213,15 +216,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0190082688025
     },
     {
       "lab": "reality_folding_spine_lab",
       "property": "toe_unity_green",
       "name": "unification_spine",
-      "computed": 1.00019,
+      "computed": 1.00019008269,
       "measured": 1.0,
-      "error_pct": 0.019008268802500616,
+      "error_pct": 0.019008269,
       "source": "reality_folding_spine_metrics",
       "domain_display_name": "reality folding spine",
       "display_name": "unification spine",
@@ -235,7 +239,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0190082688025
     },
     {
       "lab": "reality_folding_spine_fsot_lab",

@@ -505,9 +505,9 @@
       "lab": "symbolic_archetype_panel_lab",
       "property": "archetype_mean_S",
       "name": "judgmental_reset",
-      "computed": -3.305753,
+      "computed": -3.30575252747,
       "measured": -3.30584,
-      "error_pct": 0.002646,
+      "error_pct": 0.00264600010889,
       "node_count": 4,
       "formula": "-(Radial_coupling - Outer_coupling) * Metatron_Spheres - W_Binding * Resonance_Rate / 2",
       "physical_explanation": "System-wide damping event \u2014 radial/outer coupling gap across all 13 Metatron spheres plus binding\u00d7rate dissipation (flood/judgment motifs as information flush).",
@@ -525,15 +525,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.002646
     },
     {
       "lab": "symbolic_archetype_panel_lab",
       "property": "archetype_mean_S",
       "name": "observer_theophany",
-      "computed": -0.803471,
+      "computed": -0.803471473586,
       "measured": -0.802492,
-      "error_pct": 0.122054,
+      "error_pct": 0.12205400004,
       "node_count": 1,
       "formula": "-(W_Binding - Consciousness_Gate) * Metatron_Spheres / 4",
       "physical_explanation": "Binding\u2013gate gap across sphere quadrant (theophany motifs as observer-channel perturbation, not supernatural claim).",
@@ -551,7 +552,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.122054
     }
   ],
   "margin_summary": {

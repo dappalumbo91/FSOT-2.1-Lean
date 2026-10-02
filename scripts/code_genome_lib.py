@@ -8,6 +8,7 @@ import json
 import re
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "vendor" / "cybersecurity" / "code_genome_language_registry.json"
@@ -177,7 +178,7 @@ def genome_benchmark_records(domain_scalar: float, lab: str = "code_genome_lab")
                 "lab": lab,
                 "property": "codon_unit_coverage",
                 "name": f"{language}_codon_units",
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": float(n_units),
                 "error_pct": round(abs(computed - n_units) / max(n_units, 1) * 100.0, 6),
                 "source": "code_genome_language_registry",

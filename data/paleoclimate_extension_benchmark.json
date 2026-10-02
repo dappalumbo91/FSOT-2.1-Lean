@@ -83,9 +83,9 @@
       "lab": "paleoclimate_lab",
       "property": "co2_ppm",
       "name": "vostok_co2_lgm",
-      "computed": 180.027029,
+      "computed": 180.027028537,
       "measured": 180.0,
-      "error_pct": 0.015015854077439094,
+      "error_pct": 0.0150158538889,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "vostok co2 lgm",
@@ -99,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "co2_ppm",
       "name": "vostok_co2_preindustrial",
-      "computed": 280.042044,
+      "computed": 280.042044391,
       "measured": 280.0,
-      "error_pct": 0.015015854077436839,
+      "error_pct": 0.0150158539286,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "vostok co2 preindustrial",
@@ -121,15 +122,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "co2_ppm",
       "name": "epica_dome_c_co2_holocene",
-      "computed": 260.039041,
+      "computed": 260.039041221,
       "measured": 260.0,
-      "error_pct": 0.015015854077441522,
+      "error_pct": 0.0150158542308,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "epica dome c co2 holocene",
@@ -143,15 +145,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "temp_anomaly_c",
       "name": "eemian_temp_anomaly",
-      "computed": 1.500225,
+      "computed": 1.50022523781,
       "measured": 1.5,
-      "error_pct": 0.015015854077438107,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "eemian temp anomaly",
@@ -165,15 +168,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "temp_anomaly_c",
       "name": "lgm_temp_anomaly",
-      "computed": -5.000751,
+      "computed": -5.0007507927,
       "measured": -5.0,
-      "error_pct": 0.015015854077446988,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "lgm temp anomaly",
@@ -187,15 +191,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "temp_anomaly_c",
       "name": "holocene_optimum_anomaly",
-      "computed": 0.500075,
+      "computed": 0.50007507927,
       "measured": 0.5,
-      "error_pct": 0.015015854077438107,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "holocene optimum anomaly",
@@ -209,15 +214,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "temp_anomaly_c",
       "name": "younger_dryas_anomaly",
-      "computed": -3.00045,
+      "computed": -3.00045047562,
       "measured": -3.0,
-      "error_pct": 0.015015854077438107,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "younger dryas anomaly",
@@ -231,15 +237,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "co2_ppm",
       "name": "petm_co2_spike",
-      "computed": 1000.150159,
+      "computed": 1000.15015854,
       "measured": 1000.0,
-      "error_pct": 0.015015854077432778,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "petm co2 spike",
@@ -253,15 +260,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "temp_anomaly_c",
       "name": "petm_temp_spike",
-      "computed": 5.000751,
+      "computed": 5.0007507927,
       "measured": 5.0,
-      "error_pct": 0.015015854077446988,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "petm temp spike",
@@ -275,15 +283,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "temp_anomaly_c",
       "name": "mwp_temp_anomaly",
-      "computed": 0.300045,
+      "computed": 0.300045047562,
       "measured": 0.3,
-      "error_pct": 0.015015854077445509,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "mwp temp anomaly",
@@ -297,15 +306,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "temp_anomaly_c",
       "name": "littl_age_anomaly",
-      "computed": -0.500075,
+      "computed": -0.50007507927,
       "measured": -0.5,
-      "error_pct": 0.015015854077438107,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "littl age anomaly",
@@ -319,15 +329,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "delta_o18_permil",
       "name": "greenland_ice_core_d18o",
-      "computed": -35.005256,
+      "computed": -35.0052555489,
       "measured": -35.0,
-      "error_pct": 0.015015854077436839,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "greenland ice core d18o",
@@ -341,15 +352,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "delta_o18_permil",
       "name": "antarctic_ice_core_d18o",
-      "computed": -40.006006,
+      "computed": -40.0060063416,
       "measured": -40.0,
-      "error_pct": 0.015015854077446988,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "antarctic ice core d18o",
@@ -363,15 +375,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "sea_level_m",
       "name": "sea_level_lgm",
-      "computed": -120.018019,
+      "computed": -120.018019025,
       "measured": -120.0,
-      "error_pct": 0.015015854077435147,
+      "error_pct": 0.0150158541667,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "sea level lgm",
@@ -385,15 +398,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "sea_level_m",
       "name": "sea_level_eemian",
-      "computed": 6.000901,
+      "computed": 6.00090095124,
       "measured": 6.0,
-      "error_pct": 0.015015854077438107,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "sea level eemian",
@@ -407,15 +421,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "ch4_ppb",
       "name": "methane_lgm_ppb",
-      "computed": 350.052555,
+      "computed": 350.052555489,
       "measured": 350.0,
-      "error_pct": 0.015015854077432778,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "methane lgm ppb",
@@ -429,15 +444,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "ch4_ppb",
       "name": "methane_preindustrial_ppb",
-      "computed": 700.105111,
+      "computed": 700.105110979,
       "measured": 700.0,
-      "error_pct": 0.015015854077432778,
+      "error_pct": 0.0150158541429,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "methane preindustrial ppb",
@@ -451,15 +467,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "dust_flux_factor",
       "name": "dust_lgm_factor",
-      "computed": 25.003754,
+      "computed": 25.0037539635,
       "measured": 25.0,
-      "error_pct": 0.015015854077432778,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "dust lgm factor",
@@ -473,15 +490,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "sst_anomaly_c",
       "name": "ocean_sst_lgm_anomaly",
-      "computed": -2.500375,
+      "computed": -2.50037539635,
       "measured": -2.5,
-      "error_pct": 0.015015854077446988,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "ocean sst lgm anomaly",
@@ -495,15 +513,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "paleoclimate_lab",
       "property": "insolation_w_m2",
       "name": "orbital_forcing_insolation",
-      "computed": 450.067571,
+      "computed": 450.067571343,
       "measured": 450.0,
-      "error_pct": 0.015015854077432778,
+      "error_pct": 0.015015854,
       "source": "paleoclimate_reference_observables",
       "domain_display_name": "paleoclimate",
       "display_name": "orbital forcing insolation",
@@ -517,7 +536,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0150158540774
     },
     {
       "lab": "cryosphere_lab",

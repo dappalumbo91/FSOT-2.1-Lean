@@ -86,7 +86,7 @@
       "lab": "pure_mathematics_panel_lab",
       "property": "engine_native_h0",
       "name": "dlmf",
-      "computed": 67.464401,
+      "computed": 67.464401374,
       "measured": 67.4,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -107,7 +107,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "unit": "km s^-1 Mpc^-1"
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -140,7 +141,7 @@
       "lab": "pure_mathematics_panel_lab",
       "property": "hubble_constant_km_s_mpc",
       "name": "dlmf",
-      "computed": 67.464401,
+      "computed": 67.464401374,
       "measured": 67.4,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -162,13 +163,14 @@
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.2,
         "unit": "km s^-1 Mpc^-1"
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "matter_fluctuation_amplitude",
       "name": "dlmf",
-      "computed": 0.811775,
+      "computed": 0.81177491861,
       "measured": 0.811,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -189,13 +191,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "unit": "dimensionless"
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "importance_score",
       "name": "18-100754-general-1946-7-vol-2",
-      "computed": 6.400543,
+      "computed": 6.400543232,
       "measured": 6.4,
       "error_pct": 0.008488,
       "eval_kind": "fsot_prediction",
@@ -215,7 +218,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.008488
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -247,9 +251,9 @@
       "lab": "pure_mathematics_panel_lab",
       "property": "lat",
       "name": "18-6369445-general-1948-vol-1",
-      "computed": 39.029002,
+      "computed": 39.0290022025,
       "measured": 38.9917452,
-      "error_pct": 0.095551,
+      "error_pct": 0.0955510001127,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
@@ -267,15 +271,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "lng",
       "name": "18-6369445-general-1948-vol-1",
-      "computed": -82.154122,
+      "computed": -82.1541221502,
       "measured": -82.075698,
-      "error_pct": 0.095551,
+      "error_pct": 0.0955510000049,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
@@ -293,13 +298,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "domain_divergence_depth",
       "name": "Plasma_Physics",
-      "computed": 6.556259,
+      "computed": 6.5562585905,
       "measured": 6.55,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -319,13 +325,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "domain_divergence_depth",
       "name": "Immunology",
-      "computed": 6.205924,
+      "computed": 6.205924162,
       "measured": 6.2,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -345,13 +352,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "domain_divergence_depth",
       "name": "Climate_Science",
-      "computed": 6.205924,
+      "computed": 6.205924162,
       "measured": 6.2,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -371,13 +379,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "domain_divergence_depth",
       "name": "Cosmology_Extended",
-      "computed": 7.20688,
+      "computed": 7.206879672,
       "measured": 7.2,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -397,13 +406,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "fpc_tau_unity_coupling",
       "name": "AI_Galactic_Orbital_Bridge",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -423,13 +433,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "fpc_tau_unity_coupling",
       "name": "Acoustic_Resonance_Materials",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -449,13 +460,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "fpc_tau_unity_coupling",
       "name": "Adjacent_Rung_Coupling",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -475,13 +487,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "fpc_tau_unity_coupling",
       "name": "Adversarial_Fractal_Break_Tests",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -501,13 +514,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "scalar_ratio_unity",
       "name": "Astronomy__Cosmology_Extended__astronomical",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -527,13 +541,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "scalar_ratio_unity",
       "name": "Astronomy__Planetary_Structure__astronomical",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -553,13 +568,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "scalar_ratio_unity",
       "name": "Astronomy__Orbital_Mechanics__astronomical",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -579,13 +595,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "scalar_ratio_unity",
       "name": "Astronomy__Small_Body_Orbits__astronomical",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -605,13 +622,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.095551
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-001",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -632,13 +650,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-002",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -659,13 +678,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-010",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -686,13 +706,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-020",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -713,13 +734,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-030",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -740,13 +762,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-040",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -767,13 +790,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-041",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -794,13 +818,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-050",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -821,13 +846,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-051",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -848,13 +874,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-060",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -875,13 +902,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-061",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -902,13 +930,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-062",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -929,13 +958,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-063",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -956,13 +986,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-064",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -983,13 +1014,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-065",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1010,13 +1042,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-066",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1037,13 +1070,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-067",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1065,13 +1099,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.2
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-068",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1092,13 +1127,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-069",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1119,13 +1155,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-070",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1146,13 +1183,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-071",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1173,13 +1211,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-072",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1200,13 +1239,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-073",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1227,13 +1267,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "pure_mathematics_panel_lab",
       "property": "schema_valid",
       "name": "AA-074",
-      "computed": 1.000258,
+      "computed": 1.0002584,
       "measured": 1.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -1254,7 +1295,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     }
   ],
   "margin_summary": {

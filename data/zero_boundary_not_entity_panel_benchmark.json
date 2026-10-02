@@ -62,9 +62,9 @@
       "lab": "zero_boundary_lab",
       "property": "poof_boundary_coupling",
       "name": "absence_decay_times_boundary",
-      "computed": 153.511389,
+      "computed": 153.511388899,
       "measured": 153.482215,
-      "error_pct": 0.019008,
+      "error_pct": 0.0190079997217,
       "eval_kind": "zero_as_infinity_boundary",
       "axiom_id": "A4_zero_not_entity",
       "note": "Zero is notation for absence limit \u2014 not a divisor",
@@ -80,7 +80,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.019008
     },
     {
       "lab": "zero_boundary_lab",
@@ -139,9 +140,9 @@
       "lab": "zero_boundary_lab",
       "property": "carry_sum_emergence",
       "name": "decimal_carry",
-      "computed": 10.00095,
+      "computed": 10.0009504,
       "measured": 10.0,
-      "error_pct": 0.009504,
+      "error_pct": 0.00950400000001,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
@@ -162,15 +163,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.009504
     },
     {
       "lab": "zero_boundary_lab",
       "property": "carry_sum_emergence",
       "name": "first_overflow_place",
-      "computed": 10.00095,
+      "computed": 10.0009504,
       "measured": 10.0,
-      "error_pct": 0.009504,
+      "error_pct": 0.00950400000001,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
@@ -191,7 +193,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.009504
     },
     {
       "lab": "zero_boundary_lab",

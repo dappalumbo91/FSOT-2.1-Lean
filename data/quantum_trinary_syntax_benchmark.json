@@ -74,7 +74,7 @@
       "lab": "quantum_depth_lab",
       "property": "chsh_classical_bound",
       "name": "chsh_classical_bound",
-      "computed": 2.001911,
+      "computed": 2.00191102,
       "measured": 2.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -82,27 +82,29 @@
       "fsot_scalar": 0.955506,
       "formula": "2  [CHSH classical]",
       "sector": "quantum_depth",
-      "source": "literature_structure+fsot_scaled"
+      "source": "literature_structure+fsot_scaled",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "quantum_depth_lab",
       "property": "chsh_tsirelson_bound",
       "name": "chsh_tsirelson_bound",
-      "computed": 2.83113,
+      "computed": 2.83112971515,
       "measured": 2.8284271247461903,
-      "error_pct": 0.095551,
+      "error_pct": 0.0955510000652,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "formula": "2*sqrt(2)  [Tsirelson]",
       "sector": "quantum_depth",
-      "source": "literature_structure+fsot_scaled"
+      "source": "literature_structure+fsot_scaled",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "quantum_depth_lab",
       "property": "bell_state_entropy_ebits",
       "name": "bell_state_entropy_ebits",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -110,13 +112,14 @@
       "fsot_scalar": 0.955506,
       "formula": "log2(2)=1 ebit",
       "sector": "quantum_depth",
-      "source": "literature_structure+fsot_scaled"
+      "source": "literature_structure+fsot_scaled",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "quantum_depth_lab",
       "property": "epr_singlet_correlation",
       "name": "epr_singlet_correlation",
-      "computed": 1.000956,
+      "computed": 1.00095551,
       "measured": 1.0,
       "error_pct": 0.095551,
       "eval_kind": "fsot_prediction",
@@ -124,27 +127,29 @@
       "fsot_scalar": 0.955506,
       "formula": "|<-1>| singlet corr mag",
       "sector": "quantum_depth",
-      "source": "literature_structure+fsot_scaled"
+      "source": "literature_structure+fsot_scaled",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "quantum_depth_lab",
       "property": "surface_code_threshold",
       "name": "surface_code_threshold",
-      "computed": 0.0057,
+      "computed": 0.005700336699,
       "measured": 0.0057,
-      "error_pct": 0.005907,
+      "error_pct": 0.00590699999999,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "formula": "surface-code p_th class",
       "sector": "quantum_depth",
-      "source": "literature_structure+fsot_scaled"
+      "source": "literature_structure+fsot_scaled",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "quantum_depth_lab",
       "property": "grover_speedup_exponent",
       "name": "grover_speedup_exponent",
-      "computed": 0.50003,
+      "computed": 0.500029535,
       "measured": 0.5,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -152,7 +157,8 @@
       "fsot_scalar": -0.147673,
       "formula": "1/2 query exponent",
       "sector": "quantum_depth",
-      "source": "literature_structure+fsot_scaled"
+      "source": "literature_structure+fsot_scaled",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "quantum_depth_lab",
@@ -181,14 +187,15 @@
       "lab": "quantum_depth_lab",
       "property": "bell_quantum_margin",
       "name": "tsirelson_minus_classical",
-      "computed": 0.829219,
+      "computed": 0.829218695148,
       "measured": 0.8284271247461903,
-      "error_pct": 0.095551,
+      "error_pct": 0.0955509999811,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "formula": "2*sqrt(2)-2",
-      "sector": "quantum_depth"
+      "sector": "quantum_depth",
+      "error_pct_full": 0.095551
     },
     {
       "lab": "quantum_depth_lab",
@@ -244,14 +251,15 @@
       "lab": "trinary_syntax_lab",
       "property": "word_width_trits",
       "name": "word_width_trits",
-      "computed": 27.001595,
+      "computed": 27.00159489,
       "measured": 27.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "formula": "word_width_trits=27",
-      "sector": "trinary_syntax"
+      "sector": "trinary_syntax",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
@@ -366,7 +374,7 @@
       "lab": "trinary_syntax_lab",
       "property": "opcode_index",
       "name": "opcode_0_HALT",
-      "computed": 1.000059,
+      "computed": 1.00005907,
       "measured": 1.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -374,13 +382,14 @@
       "fsot_scalar": -0.147673,
       "mnemonic": "HALT",
       "sector": "trinary_syntax",
-      "formula": "op=0"
+      "formula": "op=0",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
       "property": "opcode_index",
       "name": "opcode_1_IMM",
-      "computed": 2.000118,
+      "computed": 2.00011814,
       "measured": 2.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -388,13 +397,14 @@
       "fsot_scalar": -0.147673,
       "mnemonic": "IMM",
       "sector": "trinary_syntax",
-      "formula": "op=1"
+      "formula": "op=1",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
       "property": "opcode_index",
       "name": "opcode_2_MOVT",
-      "computed": 3.000177,
+      "computed": 3.00017721,
       "measured": 3.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -402,13 +412,14 @@
       "fsot_scalar": -0.147673,
       "mnemonic": "MOVT",
       "sector": "trinary_syntax",
-      "formula": "op=2"
+      "formula": "op=2",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
       "property": "opcode_index",
       "name": "opcode_3_LOADT",
-      "computed": 4.000236,
+      "computed": 4.00023628,
       "measured": 4.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -416,13 +427,14 @@
       "fsot_scalar": -0.147673,
       "mnemonic": "LOADT",
       "sector": "trinary_syntax",
-      "formula": "op=3"
+      "formula": "op=3",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
       "property": "opcode_index",
       "name": "opcode_4_STORET",
-      "computed": 5.000295,
+      "computed": 5.00029535,
       "measured": 5.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -430,13 +442,14 @@
       "fsot_scalar": -0.147673,
       "mnemonic": "STORET",
       "sector": "trinary_syntax",
-      "formula": "op=4"
+      "formula": "op=4",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
       "property": "opcode_index",
       "name": "opcode_5_ADDT",
-      "computed": 6.000354,
+      "computed": 6.00035442,
       "measured": 6.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -444,13 +457,14 @@
       "fsot_scalar": -0.147673,
       "mnemonic": "ADDT",
       "sector": "trinary_syntax",
-      "formula": "op=5"
+      "formula": "op=5",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
       "property": "opcode_index",
       "name": "opcode_6_SUBT",
-      "computed": 7.000413,
+      "computed": 7.00041349,
       "measured": 7.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -458,13 +472,14 @@
       "fsot_scalar": -0.147673,
       "mnemonic": "SUBT",
       "sector": "trinary_syntax",
-      "formula": "op=6"
+      "formula": "op=6",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
       "property": "opcode_index",
       "name": "opcode_7_MULT",
-      "computed": 8.000473,
+      "computed": 8.00047256,
       "measured": 8.0,
       "error_pct": 0.005907,
       "eval_kind": "fsot_prediction",
@@ -472,20 +487,22 @@
       "fsot_scalar": -0.147673,
       "mnemonic": "MULT",
       "sector": "trinary_syntax",
-      "formula": "op=7"
+      "formula": "op=7",
+      "error_pct_full": 0.005907
     },
     {
       "lab": "trinary_syntax_lab",
       "property": "phi_seed",
       "name": "golden_ratio_seed",
-      "computed": 1.61958,
+      "computed": 1.61958003641,
       "measured": 1.618033988749895,
-      "error_pct": 0.095551,
+      "error_pct": 0.0955510002172,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "formula": "(1+sqrt(5))/2",
-      "sector": "trinary_syntax"
+      "sector": "trinary_syntax",
+      "error_pct_full": 0.095551
     }
   ],
   "margin_summary": {

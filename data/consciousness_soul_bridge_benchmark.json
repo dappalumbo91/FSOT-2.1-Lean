@@ -484,9 +484,9 @@
       "lab": "consciousness_soul_bridge_lab",
       "property": "vib_pattern_stability",
       "name": "vib_pattern_stability",
-      "computed": 0.767742,
+      "computed": 0.76774207922,
       "measured": 0.766238,
-      "error_pct": 0.196294,
+      "error_pct": 0.196294000037,
       "formula": "measured_avg_S*W_Integration",
       "eval_kind": "bridge_observable",
       "domain_display_name": "consciousness soul bridge",
@@ -501,7 +501,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.196294
     },
     {
       "lab": "consciousness_soul_bridge_lab",
@@ -553,7 +554,7 @@
       "lab": "consciousness_soul_bridge_lab",
       "property": "fic_optimal_S_final",
       "name": "fic_D_eff_12",
-      "computed": 0.273464,
+      "computed": 0.2734642944,
       "measured": 0.2736,
       "error_pct": 0.0496,
       "formula": "FIC_valve*compute_scalar(D_eff=12)",
@@ -570,7 +571,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0496
     },
     {
       "lab": "consciousness_soul_bridge_lab",

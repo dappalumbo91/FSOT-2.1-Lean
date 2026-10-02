@@ -83,9 +83,9 @@
       "lab": "mechanical_engineering_lab",
       "property": "thermal_efficiency_pct",
       "name": "steam_turbine_efficiency",
-      "computed": 45.035414,
+      "computed": 45.0354138526,
       "measured": 45.0,
-      "error_pct": 0.07869745016115025,
+      "error_pct": 0.0786974502222,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "steam turbine efficiency",
@@ -99,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "thermal_efficiency_pct",
       "name": "gas_turbine_efficiency",
-      "computed": 40.031479,
+      "computed": 40.0314789801,
       "measured": 40.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745025,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "gas turbine efficiency",
@@ -121,15 +122,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "carnot_efficiency_pct",
       "name": "carnot_limit_steam",
-      "computed": 55.043284,
+      "computed": 55.0432835976,
       "measured": 55.0,
-      "error_pct": 0.07869745016116461,
+      "error_pct": 0.0786974501818,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "carnot limit steam",
@@ -143,7 +145,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -171,9 +174,9 @@
       "lab": "mechanical_engineering_lab",
       "property": "gear_ratio",
       "name": "gear_ratio_standard",
-      "computed": 3.002361,
+      "computed": 3.0023609235,
       "measured": 3.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "gear ratio standard",
@@ -187,15 +190,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "shear_stress_mpa",
       "name": "shaft_torsional_stress",
-      "computed": 80.062958,
+      "computed": 80.0629579601,
       "measured": 80.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.078697450125,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "shaft torsional stress",
@@ -209,15 +213,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "pump_head_m",
       "name": "pump_head_m",
-      "computed": 50.039349,
+      "computed": 50.0393487251,
       "measured": 50.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.0786974502,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "pump head m",
@@ -231,15 +236,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "pressure_ratio",
       "name": "compressor_pressure_ratio",
-      "computed": 10.00787,
+      "computed": 10.007869745,
       "measured": 10.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "compressor pressure ratio",
@@ -253,15 +259,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "torque_nm",
       "name": "engine_torque_nm",
-      "computed": 400.31479,
+      "computed": 400.314789801,
       "measured": 400.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745025,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "engine torque nm",
@@ -275,15 +282,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "max_rpm",
       "name": "engine_rpm_redline",
-      "computed": 7005.508822,
+      "computed": 7005.50882151,
       "measured": 7000.0,
-      "error_pct": 0.07869745016115692,
+      "error_pct": 0.0786974501429,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "engine rpm redline",
@@ -297,15 +305,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "overall_htc_w_m2k",
       "name": "heat_exchanger_ua",
-      "computed": 500.393487,
+      "computed": 500.393487251,
       "measured": 500.0,
-      "error_pct": 0.0786974501611553,
+      "error_pct": 0.0786974502,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "heat exchanger ua",
@@ -319,7 +328,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -347,9 +357,9 @@
       "lab": "mechanical_engineering_lab",
       "property": "mach_number",
       "name": "mach_critical",
-      "computed": 1.000787,
+      "computed": 1.0007869745,
       "measured": 1.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "mach critical",
@@ -363,15 +373,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "youngs_modulus_gpa",
       "name": "youngs_modulus_steel",
-      "computed": 200.157395,
+      "computed": 200.1573949,
       "measured": 200.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "youngs modulus steel",
@@ -386,15 +397,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "poisson_ratio",
       "name": "poisson_steel",
-      "computed": 0.300236,
+      "computed": 0.30023609235,
       "measured": 0.3,
-      "error_pct": 0.07869745016116556,
+      "error_pct": 0.07869745,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "poisson steel",
@@ -408,15 +420,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "cte_um_m_k",
       "name": "thermal_expansion_steel",
-      "computed": 12.009444,
+      "computed": 12.009443694,
       "measured": 12.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "thermal expansion steel",
@@ -430,15 +443,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "friction_coefficient",
       "name": "friction_coefficient_bearing",
-      "computed": 0.001001,
+      "computed": 0.0010007869745,
       "measured": 0.001,
-      "error_pct": 0.07869745016115831,
+      "error_pct": 0.07869745,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "friction coefficient bearing",
@@ -452,15 +466,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "natural_frequency_hz",
       "name": "vibration_natural_freq_hz",
-      "computed": 50.039349,
+      "computed": 50.0393487251,
       "measured": 50.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.0786974502,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "vibration natural freq hz",
@@ -474,15 +489,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "bolt_preload_kn",
       "name": "bolt_preload_kn",
-      "computed": 100.078697,
+      "computed": 100.07869745,
       "measured": 100.0,
-      "error_pct": 0.07869745016115814,
+      "error_pct": 0.07869745,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "bolt preload kn",
@@ -496,15 +512,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "mechanical_engineering_lab",
       "property": "actuator_force_kn",
       "name": "hydraulic_cylinder_force_kn",
-      "computed": 500.393487,
+      "computed": 500.393487251,
       "measured": 500.0,
-      "error_pct": 0.0786974501611553,
+      "error_pct": 0.0786974502,
       "source": "mechanical_engineering_reference_observables",
       "domain_display_name": "mechanical engineering",
       "display_name": "hydraulic cylinder force kn",
@@ -518,7 +535,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0786974501612
     },
     {
       "lab": "materials_engineering_lab",

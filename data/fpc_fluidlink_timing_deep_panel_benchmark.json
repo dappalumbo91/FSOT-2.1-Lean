@@ -86,7 +86,7 @@
       "lab": "fpc_fluidlink_timing_deep_lab",
       "property": "fpc_tau_anchor",
       "name": "cs133_fpc_equilibrium",
-      "computed": 1.344535,
+      "computed": 1.34453487168,
       "measured": 1.344,
       "error_pct": 0.039797,
       "eval_kind": "fpc_anchor",
@@ -102,7 +102,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039797
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -130,7 +131,7 @@
       "lab": "fpc_fluidlink_timing_deep_lab",
       "property": "fpc_tau_anchor",
       "name": "iers_planetary_tau",
-      "computed": 1.790477,
+      "computed": 1.7904774825,
       "measured": 1.79,
       "error_pct": 0.026675,
       "eval_kind": "fpc_anchor",
@@ -146,7 +147,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.026675
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -174,7 +176,7 @@
       "lab": "fpc_fluidlink_timing_deep_lab",
       "property": "fpc_tau_anchor",
       "name": "kepler_orbital_tau",
-      "computed": 1.800714,
+      "computed": 1.800713916,
       "measured": 1.8,
       "error_pct": 0.039662,
       "eval_kind": "fpc_anchor",
@@ -190,7 +192,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039662
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -218,7 +221,7 @@
       "lab": "fpc_fluidlink_timing_deep_lab",
       "property": "fpc_tau_anchor",
       "name": "lambda_cdm_damping",
-      "computed": 0.500111,
+      "computed": 0.500110905,
       "measured": 0.5,
       "error_pct": 0.022181,
       "eval_kind": "fpc_anchor",
@@ -234,7 +237,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022181
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -262,9 +266,9 @@
       "lab": "fpc_fluidlink_timing_deep_lab",
       "property": "cosmology_fpc_tau",
       "name": "cosmological_tau_damping",
-      "computed": 0.5,
+      "computed": 0.50000025,
       "measured": 0.5,
-      "error_pct": 5e-05,
+      "error_pct": 5.0000000007e-05,
       "eval_kind": "cosmo_fpc_relay",
       "domain_display_name": "fpc fluidlink timing deep",
       "display_name": "cosmological tau damping",
@@ -278,15 +282,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 5e-05
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
       "property": "cosmology_fpc_tau",
       "name": "hubble_flow_tau",
-      "computed": 1.790001,
+      "computed": 1.790000895,
       "measured": 1.79,
-      "error_pct": 5e-05,
+      "error_pct": 4.99999999938e-05,
       "eval_kind": "cosmo_fpc_relay",
       "domain_display_name": "fpc fluidlink timing deep",
       "display_name": "hubble flow tau",
@@ -300,15 +305,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 5e-05
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
       "property": "cosmology_fpc_tau",
       "name": "cmb_phase_tau",
-      "computed": 1.800001,
+      "computed": 1.8000009,
       "measured": 1.8,
-      "error_pct": 5e-05,
+      "error_pct": 4.99999999922e-05,
       "eval_kind": "cosmo_fpc_relay",
       "domain_display_name": "fpc fluidlink timing deep",
       "display_name": "cmb phase tau",
@@ -322,7 +328,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 5e-05
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",

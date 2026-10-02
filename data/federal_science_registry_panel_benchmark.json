@@ -139,7 +139,7 @@
       "lab": "federal_science_registry_lab",
       "property": "resource_allocation_tiers",
       "name": "nairr",
-      "computed": 4.001034,
+      "computed": 4.0010336,
       "measured": 4.0,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
@@ -159,7 +159,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.02584
     },
     {
       "lab": "federal_science_registry_lab",
@@ -191,7 +192,7 @@
       "lab": "federal_science_registry_lab",
       "property": "federal_lab_partners",
       "name": "genesis_mission",
-      "computed": 17.002763,
+      "computed": 17.00276318,
       "measured": 17.0,
       "error_pct": 0.016254,
       "eval_kind": "fsot_prediction",
@@ -211,13 +212,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.016254
     },
     {
       "lab": "federal_science_registry_lab",
       "property": "open_science_corpus_tb",
       "name": "genesis_mission",
-      "computed": 42.505699,
+      "computed": 42.50569925,
       "measured": 42.5,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -237,13 +239,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "federal_science_registry_lab",
       "property": "ai_model_checkpoints",
       "name": "genesis_mission",
-      "computed": 12.001595,
+      "computed": 12.00159528,
       "measured": 12.0,
       "error_pct": 0.013294,
       "eval_kind": "fsot_prediction",
@@ -263,7 +266,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.013294
     },
     {
       "lab": "federal_science_registry_lab",
@@ -321,7 +325,7 @@
       "lab": "federal_science_registry_lab",
       "property": "declassified_fraction_pct",
       "name": "osti_bridge",
-      "computed": 8.200779,
+      "computed": 8.200779328,
       "measured": 8.2,
       "error_pct": 0.009504,
       "eval_kind": "fsot_prediction",
@@ -341,7 +345,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.009504
     },
     {
       "lab": "federal_science_registry_lab",
@@ -451,7 +456,7 @@
       "lab": "federal_science_registry_lab",
       "property": "public_document_tranches",
       "name": "aaro_uap",
-      "computed": 3.000945,
+      "computed": 3.00094518,
       "measured": 3.0,
       "error_pct": 0.031506,
       "eval_kind": "fsot_prediction",
@@ -471,7 +476,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "federal_science_registry_panel_fsot_lab",

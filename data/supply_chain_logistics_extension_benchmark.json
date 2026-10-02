@@ -83,9 +83,9 @@
       "lab": "supply_chain_lab",
       "property": "inventory_turnover_ratio",
       "name": "inventory_turnover_retail",
-      "computed": 8.002584,
+      "computed": 8.00258401808,
       "measured": 8.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "inventory turnover retail",
@@ -99,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "inventory_turnover_ratio",
       "name": "inventory_turnover_auto",
-      "computed": 12.003876,
+      "computed": 12.0038760271,
       "measured": 12.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.0323002258333,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "inventory turnover auto",
@@ -121,15 +122,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "fill_rate_pct",
       "name": "order_fill_rate",
-      "computed": 95.030685,
+      "computed": 95.0306852147,
       "measured": 95.0,
-      "error_pct": 0.03230022603428563,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "order fill rate",
@@ -143,15 +145,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "lead_time_days",
       "name": "lead_time_domestic_days",
-      "computed": 5.001615,
+      "computed": 5.0016150113,
       "measured": 5.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "lead time domestic days",
@@ -165,15 +168,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "lead_time_days",
       "name": "lead_time_ocean_days",
-      "computed": 30.00969,
+      "computed": 30.0096900678,
       "measured": 30.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "lead time ocean days",
@@ -187,15 +191,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "lead_time_days",
       "name": "lead_time_air_days",
-      "computed": 3.000969,
+      "computed": 3.00096900678,
       "measured": 3.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "lead time air days",
@@ -209,15 +214,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "safety_stock_days",
       "name": "safety_stock_days",
-      "computed": 14.004522,
+      "computed": 14.0045220316,
       "measured": 14.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.0323002257143,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "safety stock days",
@@ -231,15 +237,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "utilization_pct",
       "name": "warehouse_utilization_pct",
-      "computed": 85.027455,
+      "computed": 85.0274551921,
       "measured": 85.0,
-      "error_pct": 0.03230022603428123,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "warehouse utilization pct",
@@ -253,15 +260,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "cost_per_km_usd",
       "name": "freight_cost_per_km",
-      "computed": 1.500485,
+      "computed": 1.50048450339,
       "measured": 1.5,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "freight cost per km",
@@ -276,15 +284,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "throughput_teus",
       "name": "container_teus_year",
-      "computed": 40.01292,
+      "computed": 40.0129200904,
       "measured": 40.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "container teus year",
@@ -298,15 +307,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "demand_amplification_factor",
       "name": "bullwhip_amplification",
-      "computed": 2.000646,
+      "computed": 2.00064600452,
       "measured": 2.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "bullwhip amplification",
@@ -320,15 +330,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "inventory_carrying_cost_pct",
       "name": "carrying_cost_pct",
-      "computed": 25.008075,
+      "computed": 25.0080750565,
       "measured": 25.0,
-      "error_pct": 0.03230022603429461,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "carrying cost pct",
@@ -342,15 +353,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "stockout_rate_pct",
       "name": "stockout_rate_pct",
-      "computed": 2.000646,
+      "computed": 2.00064600452,
       "measured": 2.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "stockout rate pct",
@@ -364,15 +376,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "perfect_order_pct",
       "name": "perfect_order_rate",
-      "computed": 90.02907,
+      "computed": 90.0290702034,
       "measured": 90.0,
-      "error_pct": 0.03230022603429145,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "perfect order rate",
@@ -386,15 +399,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "cash_cycle_days",
       "name": "cash_to_cash_cycle_days",
-      "computed": 60.01938,
+      "computed": 60.0193801356,
       "measured": 60.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "cash to cash cycle days",
@@ -408,15 +422,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "on_time_delivery_pct",
       "name": "supplier_otd_pct",
-      "computed": 92.029716,
+      "computed": 92.029716208,
       "measured": 92.0,
-      "error_pct": 0.03230022603427978,
+      "error_pct": 0.032300226087,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "supplier otd pct",
@@ -430,15 +445,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "receiving_hours",
       "name": "dock_to_stock_hours",
-      "computed": 4.001292,
+      "computed": 4.00129200904,
       "measured": 4.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "dock to stock hours",
@@ -452,15 +468,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "pick_accuracy_pct",
       "name": "pick_accuracy_pct",
-      "computed": 99.532139,
+      "computed": 99.5321387249,
       "measured": 99.5,
-      "error_pct": 0.03230022603428661,
+      "error_pct": 0.0323002260301,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "pick accuracy pct",
@@ -474,15 +491,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "last_mile_cost_usd",
       "name": "last_mile_cost_usd",
-      "computed": 8.002584,
+      "computed": 8.00258401808,
       "measured": 8.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "last mile cost usd",
@@ -496,15 +514,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "supply_chain_lab",
       "property": "return_rate_pct",
       "name": "reverse_logistics_pct",
-      "computed": 10.00323,
+      "computed": 10.0032300226,
       "measured": 10.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "supply_chain_reference_observables",
       "domain_display_name": "supply chain",
       "display_name": "reverse logistics pct",
@@ -518,15 +537,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Spinus pinus",
-      "computed": 42.620781,
+      "computed": 42.6207814656,
       "measured": 42.613103,
-      "error_pct": 0.018019024892929635,
+      "error_pct": 0.0180190248056,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Spinus pinus",
@@ -540,15 +560,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Zonotrichia albicollis",
-      "computed": 40.487675,
+      "computed": 40.4876751699,
       "measured": 40.480381,
-      "error_pct": 0.018019024892940702,
+      "error_pct": 0.0180190248209,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Zonotrichia albicollis",
@@ -562,15 +583,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Larix laricina",
-      "computed": 43.662825,
+      "computed": 43.6628251979,
       "measured": 43.654959,
-      "error_pct": 0.018019024892935363,
+      "error_pct": 0.018019024826,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Larix laricina",
@@ -584,15 +606,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Buteo jamaicensis",
-      "computed": 40.963634,
+      "computed": 40.9636339176,
       "measured": 40.956254,
-      "error_pct": 0.018019024892929232,
+      "error_pct": 0.0180190248844,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Buteo jamaicensis",
@@ -606,15 +629,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Picea rubens",
-      "computed": 42.687621,
+      "computed": 42.6876205072,
       "measured": 42.67993,
-      "error_pct": 0.01801902489293697,
+      "error_pct": 0.0180190248672,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Picea rubens",
@@ -628,7 +652,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -656,9 +681,9 @@
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Gaultheria procumbens",
-      "computed": 42.112739,
+      "computed": 42.1127389378,
       "measured": 42.105152,
-      "error_pct": 0.018019024892932806,
+      "error_pct": 0.0180190248452,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Gaultheria procumbens",
@@ -672,7 +697,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -700,9 +726,9 @@
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Alsophila pometaria",
-      "computed": 41.002167,
+      "computed": 41.0021668596,
       "measured": 40.99478,
-      "error_pct": 0.0180190248929422,
+      "error_pct": 0.0180190248612,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Alsophila pometaria",
@@ -716,15 +742,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Gaultheria hispidula",
-      "computed": 42.688044,
+      "computed": 42.6880435834,
       "measured": 42.680353,
-      "error_pct": 0.018019024892932733,
+      "error_pct": 0.0180190248192,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Gaultheria hispidula",
@@ -738,15 +765,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Lamium purpureum",
-      "computed": 40.664184,
+      "computed": 40.6641839694,
       "measured": 40.656858,
-      "error_pct": 0.018019024892935782,
+      "error_pct": 0.0180190249822,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Lamium purpureum",
@@ -760,15 +788,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Melanerpes carolinus",
-      "computed": 41.84623,
+      "computed": 41.8462299241,
       "measured": 41.838691,
-      "error_pct": 0.018019024892931328,
+      "error_pct": 0.0180190247826,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Melanerpes carolinus",
@@ -782,15 +811,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Smilax glauca",
-      "computed": 41.836065,
+      "computed": 41.8360650929,
       "measured": 41.828528,
-      "error_pct": 0.018019024892931966,
+      "error_pct": 0.0180190249583,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Smilax glauca",
@@ -804,15 +834,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Spatula clypeata",
-      "computed": 40.734019,
+      "computed": 40.7340185506,
       "measured": 40.72668,
-      "error_pct": 0.018019024892933586,
+      "error_pct": 0.0180190248751,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Spatula clypeata",
@@ -826,15 +857,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Biscogniauxia marginata",
-      "computed": 40.803848,
+      "computed": 40.8038481309,
       "measured": 40.796497,
-      "error_pct": 0.01801902489294211,
+      "error_pct": 0.0180190247707,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Biscogniauxia marginata",
@@ -848,7 +880,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -876,9 +909,9 @@
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Passer domesticus",
-      "computed": 40.406919,
+      "computed": 40.406918621,
       "measured": 40.399639,
-      "error_pct": 0.018019024892939342,
+      "error_pct": 0.018019024873,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Passer domesticus",
@@ -892,15 +925,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Abies balsamea",
-      "computed": 43.665095,
+      "computed": 43.6650946068,
       "measured": 43.657228,
-      "error_pct": 0.018019024892938225,
+      "error_pct": 0.0180190249367,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Abies balsamea",
@@ -914,15 +948,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Sialia sialis",
-      "computed": 42.426588,
+      "computed": 42.4265884803,
       "measured": 42.418945,
-      "error_pct": 0.018019024892935782,
+      "error_pct": 0.0180190249899,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Sialia sialis",
@@ -936,15 +971,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     },
     {
       "lab": "agriculture_agroecology_lab",
       "property": "mean_latitude",
       "name": "Aythya affinis",
-      "computed": 41.753128,
+      "computed": 41.7531281511,
       "measured": 41.745606,
-      "error_pct": 0.018019024892935664,
+      "error_pct": 0.0180190248047,
       "source": "gbif_crop_proxy",
       "domain_display_name": "agriculture agroecology",
       "display_name": "Aythya affinis",
@@ -958,7 +994,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0180190248929
     }
   ],
   "margin_summary": {

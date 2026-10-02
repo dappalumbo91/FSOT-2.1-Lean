@@ -7,6 +7,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -311,7 +312,7 @@ def _validate_fpc_scale(
             computed = fpc_anchor_prediction(measured, fpc["S"], omega)
     err = _err_pct(computed, measured)
     out: dict[str, Any] = {
-        "computed": round(computed, 6),
+        "computed": round_sig(computed),
         "measured": round(measured, 6),
         "error_pct": round(err, 6),
         "validation_method": method,
@@ -637,7 +638,7 @@ def run_multi_scale_panel() -> list[dict]:
                     "lab": "time_emergence_lab",
                     "property": prop,
                     "name": f"sgra_{label}",
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": round(measured, 6),
                     "error_pct": round(_err_pct(computed, measured), 6),
                     "source": "GR Schwarzschild vs FPC whirlpool horizon stack",

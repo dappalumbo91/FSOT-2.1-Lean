@@ -96,19 +96,21 @@
       "lab": "fluid_phase_current_spine_lab",
       "property": "fluidlink_edges",
       "name": "temporal_coupling",
-      "computed": 6.00057,
+      "computed": 6.00057024,
       "measured": 6.0,
       "error_pct": 0.009504,
-      "source": "fluid_phase_current_spine"
+      "source": "fluid_phase_current_spine",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "fluid_phase_current_spine_lab",
       "property": "crosswalk_domains",
       "name": "multi_domain_fpc",
-      "computed": 367.03488,
+      "computed": 367.03487968,
       "measured": 367.0,
       "error_pct": 0.009504,
-      "source": "fluid_phase_current_spine"
+      "source": "fluid_phase_current_spine",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "fluid_phase_current_spine_lab",
@@ -123,10 +125,11 @@
       "lab": "fluid_phase_current_spine_lab",
       "property": "time_sim_green",
       "name": "fpc_simulation",
-      "computed": 1.000095,
+      "computed": 1.00009504,
       "measured": 1.0,
-      "error_pct": 0.009504,
-      "source": "fluid_phase_current_spine"
+      "error_pct": 0.00950399999999,
+      "source": "fluid_phase_current_spine",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "fluid_phase_current_spine_fsot_lab",

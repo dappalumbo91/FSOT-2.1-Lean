@@ -101,11 +101,12 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "candidate_fsot_prediction",
       "name": "pd_deuterium_lattice",
-      "computed": 1.850001,
+      "computed": 1.8500014615,
       "measured": 1.85,
-      "error_pct": 7.9e-05,
+      "error_pct": 7.89999999952e-05,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 7.9e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -121,11 +122,12 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "candidate_fsot_prediction",
       "name": "ni_hydrogen_lattice",
-      "computed": 1.620001,
+      "computed": 1.6200012798,
       "measured": 1.62,
-      "error_pct": 7.9e-05,
+      "error_pct": 7.89999999985e-05,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 7.9e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -141,11 +143,12 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "candidate_fsot_prediction",
       "name": "titanium_deuterium_absorption",
-      "computed": 1.410001,
+      "computed": 1.4100011139,
       "measured": 1.41,
-      "error_pct": 7.9e-05,
+      "error_pct": 7.90000000011e-05,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 7.9e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -181,11 +184,12 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "candidate_fsot_prediction",
       "name": "sonofusion_bubble_collapse",
-      "computed": 0.42,
+      "computed": 0.4200003318,
       "measured": 0.42,
-      "error_pct": 7.9e-05,
+      "error_pct": 7.90000000073e-05,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 7.9e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -249,11 +253,12 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "predicted_binding_energy_per_nucleon_mev",
       "name": "Z120_N184_unbinilium",
-      "computed": 6.838741,
+      "computed": 6.8387414968,
       "measured": 6.838735,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000255924e-05,
       "source_panel": "undiscovered_element_prereg",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -279,11 +284,12 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "predicted_binding_energy_per_nucleon_mev",
       "name": "Z126_N184_unbihexium",
-      "computed": 6.700041,
+      "computed": 6.70004136503,
       "measured": 6.700035,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999514921e-05,
       "source_panel": "undiscovered_element_prereg",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -309,11 +315,12 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "predicted_binding_energy_per_nucleon_mev",
       "name": "Z119_N177_ununennium",
-      "computed": 6.858281,
+      "computed": 6.85828051536,
       "measured": 6.858274,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999956251e-05,
       "source_panel": "undiscovered_element_prereg",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -347,51 +354,56 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "fusion_energetics_relay",
       "name": "dt_fusion",
-      "computed": 17.600017,
+      "computed": 17.60001672,
       "measured": 17.6,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999878e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "fusion_energetics_relay",
       "name": "dt_fusion",
-      "computed": 15.000014,
+      "computed": 15.00001425,
       "measured": 15.0,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.4999999997e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "fusion_energetics_relay",
       "name": "dd_fusion",
-      "computed": 4.030004,
+      "computed": 4.0300038285,
       "measured": 4.03,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999924e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "beam_energy_mev_u",
       "name": "Og_2006",
-      "computed": 245.001928,
+      "computed": 245.00192815,
       "measured": 245.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000786999999999,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.000787
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Og_2006",
-      "computed": 0.5,
+      "computed": 0.500000475,
       "measured": 0.5,
       "error_pct": 9.5e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -407,21 +419,23 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "beam_energy_mev_u",
       "name": "Ts_2010",
-      "computed": 249.00196,
+      "computed": 249.00195963,
       "measured": 249.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000786999999995,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.000787
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Ts_2010",
-      "computed": 0.08,
+      "computed": 0.080000076,
       "measured": 0.08,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.5000000002e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -437,21 +451,23 @@
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "beam_energy_mev_u",
       "name": "Lv_2000",
-      "computed": 236.001857,
+      "computed": 236.00185732,
       "measured": 236.0,
       "error_pct": 0.000787,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.000787
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Lv_2000",
-      "computed": 0.05,
+      "computed": 0.0500000475,
       "measured": 0.05,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999916e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",

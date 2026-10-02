@@ -2322,7 +2322,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Co60_G3",
-      "computed": 158.532995,
+      "computed": 158.532994599,
       "measured": 158.46,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -2331,7 +2331,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -3267,7 +3268,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Zn64_G3",
-      "computed": 110.750994,
+      "computed": 110.750993955,
       "measured": 110.7,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -3276,7 +3277,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -3582,16 +3584,17 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Zr90_G3",
-      "computed": 132.777136,
+      "computed": 132.777135625,
       "measured": 132.716,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649996986,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -3867,7 +3870,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Mo98_G1",
-      "computed": 52.654244,
+      "computed": 52.6542440095,
       "measured": 52.63,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -3876,7 +3879,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -4182,7 +4186,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Tc99_G1",
-      "computed": 2.173601,
+      "computed": 2.17360080819,
       "measured": 2.1726,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -4191,37 +4195,40 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Tc99_G2",
-      "computed": 142.695703,
+      "computed": 142.695702509,
       "measured": 142.63,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649996494,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Tc99_G3",
-      "computed": 40.601925,
+      "computed": 40.6019246649,
       "measured": 40.58323,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460650000012,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -4317,16 +4324,17 @@
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "I131_L1",
-      "computed": 149.784967,
+      "computed": 149.784966675,
       "measured": 149.716,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649997328,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -4482,16 +4490,17 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "I131_G0",
-      "computed": 149.784967,
+      "computed": 149.784966675,
       "measured": 149.716,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649997328,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -6102,7 +6111,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Bi209_G3",
-      "computed": 49.963005,
+      "computed": 49.963004861,
       "measured": 49.94,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6111,7 +6120,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -6207,22 +6217,23 @@
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "Th232_L1",
-      "computed": 49.391742,
+      "computed": 49.3917418298,
       "measured": 49.369,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649998987,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "Th232_L2",
-      "computed": 162.194681,
+      "computed": 162.194680578,
       "measured": 162.12,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6231,7 +6242,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -6372,16 +6384,17 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Th232_G0",
-      "computed": 49.391742,
+      "computed": 49.3917418298,
       "measured": 49.369,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649998987,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -6522,7 +6535,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "U235_L1",
-      "computed": 0.076035,
+      "computed": 0.0760350094,
       "measured": 0.076,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6531,22 +6544,24 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "U235_L2",
-      "computed": 13.039904,
+      "computed": 13.039904066,
       "measured": 13.0339,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649997315,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -6567,16 +6582,17 @@
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "U235_L4",
-      "computed": 51.720614,
+      "computed": 51.7206141309,
       "measured": 51.6968,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649999613,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -6597,31 +6613,33 @@
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "U235_L6",
-      "computed": 103.950863,
+      "computed": 103.950862917,
       "measured": 103.903,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460650000481,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "U235_L7",
-      "computed": 129.359062,
+      "computed": 129.359061815,
       "measured": 129.2995,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460650002514,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -6687,7 +6705,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G0",
-      "computed": 0.076535,
+      "computed": 0.076535239725,
       "measured": 0.0765,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6696,28 +6714,30 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G1",
-      "computed": 12.980977,
+      "computed": 12.9809769337,
       "measured": 12.975,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649996146,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G2",
-      "computed": 46.231287,
+      "computed": 46.2312866365,
       "measured": 46.21,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6726,28 +6746,30 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G3",
-      "computed": 38.678809,
+      "computed": 38.6788091896,
       "measured": 38.661,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649998707,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G4",
-      "computed": 51.647781,
+      "computed": 51.6477805956,
       "measured": 51.624,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6756,13 +6778,14 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G5",
-      "computed": 30.053838,
+      "computed": 30.053837926,
       "measured": 30.04,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6771,13 +6794,14 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G6",
-      "computed": 68.727645,
+      "computed": 68.7276448124,
       "measured": 68.696,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6786,7 +6810,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -6807,7 +6832,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G8",
-      "computed": 103.107475,
+      "computed": 103.107474589,
       "measured": 103.06,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6816,13 +6841,14 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U235_G9",
-      "computed": 47.621927,
+      "computed": 47.62192694,
       "measured": 47.6,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6831,13 +6857,14 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "U238_L1",
-      "computed": 44.936691,
+      "computed": 44.9366905554,
       "measured": 44.916,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -6846,7 +6873,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -7002,16 +7030,17 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U238_G0",
-      "computed": 44.93569,
+      "computed": 44.9356900947,
       "measured": 44.915,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649998887,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -7032,16 +7061,17 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U238_G2",
-      "computed": 159.091252,
+      "computed": 159.091251642,
       "measured": 159.018,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460650001887,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -7092,7 +7122,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "U238_G6",
-      "computed": 51.823862,
+      "computed": 51.82386167,
       "measured": 51.8,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7101,7 +7131,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -7152,7 +7183,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "Pu239_L1",
-      "computed": 7.864621,
+      "computed": 7.86462116965,
       "measured": 7.861,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7161,37 +7192,40 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "Pu239_L2",
-      "computed": 57.301384,
+      "computed": 57.3013837287,
       "measured": 57.275,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649999127,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "Pu239_L3",
-      "computed": 75.739874,
+      "computed": 75.7398735082,
       "measured": 75.705,
-      "error_pct": 0.046065,
+      "error_pct": 0.046064999934,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -7317,7 +7351,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Pu239_G0",
-      "computed": 7.863621,
+      "computed": 7.863620709,
       "measured": 7.86,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7326,13 +7360,14 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Pu239_G1",
-      "computed": 49.434762,
+      "computed": 49.4347616378,
       "measured": 49.412,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7341,28 +7376,30 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Pu239_G2",
-      "computed": 57.299383,
+      "computed": 57.2993828075,
       "measured": 57.273,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460650000873,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Pu239_G3",
-      "computed": 18.408476,
+      "computed": 18.40847596,
       "measured": 18.4,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7371,28 +7408,30 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Pu239_G4",
-      "computed": 67.872251,
+      "computed": 67.8722509566,
       "measured": 67.841,
-      "error_pct": 0.046065,
+      "error_pct": 0.0460649999263,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Pu239_G5",
-      "computed": 88.100565,
+      "computed": 88.100564839,
       "measured": 88.06,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7401,7 +7440,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -7467,7 +7507,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "Am241_L1",
-      "computed": 41.194968,
+      "computed": 41.1949677244,
       "measured": 41.176,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7476,13 +7516,14 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "level_energy_keV",
       "name": "Am241_L2",
-      "computed": 93.743163,
+      "computed": 93.743162905,
       "measured": 93.7,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7491,7 +7532,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_levels",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -7632,7 +7674,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Am241_G0",
-      "computed": 41.194968,
+      "computed": 41.1949677244,
       "measured": 41.176,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7641,13 +7683,14 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Am241_G1",
-      "computed": 116.45362,
+      "computed": 116.45361966,
       "measured": 116.4,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7656,7 +7699,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",
@@ -7737,7 +7781,7 @@
       "lab": "endf_iaea_open_lab",
       "property": "gamma_energy_keV",
       "name": "Am241_G7",
-      "computed": 162.47481,
+      "computed": 162.47480956,
       "measured": 162.4,
       "error_pct": 0.046065,
       "eval_kind": "fsot_prediction",
@@ -7746,7 +7790,8 @@
       "frontier_id": "endf_reaction_subset",
       "source": "IAEA_gammas",
       "math": "fsot_scaled_only",
-      "auth": "none"
+      "auth": "none",
+      "error_pct_full": 0.046065
     },
     {
       "lab": "endf_iaea_open_lab",

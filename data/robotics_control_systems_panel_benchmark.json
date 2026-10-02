@@ -59,7 +59,7 @@
       "lab": "robotics_panel_lab",
       "property": "proportional_gain",
       "name": "pid_kp_default",
-      "computed": 1.000134,
+      "computed": 1.0001341,
       "measured": 1.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -78,13 +78,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",
       "property": "integral_gain",
       "name": "pid_ki_default",
-      "computed": 0.100013,
+      "computed": 0.10001341,
       "measured": 0.1,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -104,13 +105,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.2
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",
       "property": "derivative_gain",
       "name": "pid_kd_default",
-      "computed": 0.050007,
+      "computed": 0.050006705,
       "measured": 0.05,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -130,13 +132,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.2
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",
       "property": "positioning_accuracy_deg",
       "name": "servo_accuracy_deg",
-      "computed": 0.010001,
+      "computed": 0.010001341,
       "measured": 0.01,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -155,13 +158,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",
       "property": "encoder_resolution_bits",
       "name": "encoder_resolution_bits",
-      "computed": 17.00228,
+      "computed": 17.0022797,
       "measured": 17.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -180,7 +184,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",
@@ -211,7 +216,7 @@
       "lab": "robotics_panel_lab",
       "property": "repeatability_mm",
       "name": "robot_repeatability_mm",
-      "computed": 0.050007,
+      "computed": 0.050006705,
       "measured": 0.05,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -230,7 +235,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",
@@ -311,7 +317,7 @@
       "lab": "robotics_panel_lab",
       "property": "gyro_noise_deg_s",
       "name": "imu_gyro_noise",
-      "computed": 0.010001,
+      "computed": 0.010001341,
       "measured": 0.01,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -330,13 +336,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",
       "property": "localization_error_cm",
       "name": "slam_pose_error_cm",
-      "computed": 5.000671,
+      "computed": 5.0006705,
       "measured": 5.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -355,13 +362,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",
       "property": "thrust_to_weight",
       "name": "quadcopter_hover_thrust",
-      "computed": 2.000268,
+      "computed": 2.0002682,
       "measured": 2.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
@@ -380,7 +388,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.01341
     },
     {
       "lab": "robotics_panel_lab",

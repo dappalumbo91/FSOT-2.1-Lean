@@ -358,40 +358,43 @@
       "lab": "fsot_gpu_engineering_spine_lab",
       "property": "vdd_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
       "property": "vdd_min_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.000623,
+      "computed": 3.00062265,
       "measured": 3.0,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
       "property": "vdd_max_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.600747,
+      "computed": 3.60074718,
       "measured": 3.6,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
@@ -410,27 +413,29 @@
       "lab": "fsot_gpu_engineering_spine_lab",
       "property": "flash_mhz",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 40.005907,
+      "computed": 40.0059068,
       "measured": 40.0,
       "error_pct": 0.014767,
       "eval_kind": "live_formula",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
       "property": "wifi_freq_ghz",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 2.400498,
+      "computed": 2.40049812,
       "measured": 2.4,
       "error_pct": 0.020755,
       "eval_kind": "live_formula",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
@@ -465,9 +470,9 @@
       "lab": "fsot_gpu_engineering_spine_lab",
       "property": "mean_codon_stability",
       "name": "openssl_mem_clr__stability",
-      "computed": 0.882534,
+      "computed": 0.88253425028,
       "measured": 0.88243,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999773,
       "source": "openssl/openssl",
       "language": "C",
       "category": "crypto_library",
@@ -484,15 +489,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
       "property": "mean_codon_stability",
       "name": "linux_kernel_list__stability",
-      "computed": 0.783437,
+      "computed": 0.78343654426,
       "measured": 0.783344,
-      "error_pct": 0.011814,
+      "error_pct": 0.0118139999796,
       "source": "torvalds/linux",
       "language": "C",
       "category": "systems_kernel",
@@ -509,7 +515,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       },
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "error_pct_full": 0.011814
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",

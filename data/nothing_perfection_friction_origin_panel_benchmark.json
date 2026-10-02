@@ -131,9 +131,9 @@
       "lab": "nothing_perfection_friction_lab",
       "property": "unobserved_outgassing_fraction",
       "name": "bh_wh_interface",
-      "computed": 0.666843,
+      "computed": 0.666843146667,
       "measured": 0.6666666666666667,
-      "error_pct": 0.026472,
+      "error_pct": 0.02647200005,
       "eval_kind": "outgas_emergence",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
@@ -150,7 +150,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.026472
     },
     {
       "lab": "nothing_perfection_friction_lab",

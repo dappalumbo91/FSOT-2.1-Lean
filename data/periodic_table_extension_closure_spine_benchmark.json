@@ -112,9 +112,9 @@
       "lab": "periodic_extension_closure_lab",
       "property": "energy_mev",
       "name": "dt_fusion",
-      "computed": 17.600017,
+      "computed": 17.60001672,
       "measured": 17.6,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999878e-05,
       "source_panel": "fusion_lab",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -129,15 +129,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
       "property": "coulomb_peak_kev",
       "name": "dt_fusion",
-      "computed": 15.000014,
+      "computed": 15.00001425,
       "measured": 15.0,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.4999999997e-05,
       "source_panel": "fusion_lab",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -152,15 +153,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
       "property": "cross_section_peak_barn",
       "name": "dt_fusion",
-      "computed": 5.000005,
+      "computed": 5.00000475,
       "measured": 5.0,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000088e-05,
       "source_panel": "fusion_lab",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -175,7 +177,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
@@ -227,9 +230,9 @@
       "lab": "periodic_extension_closure_lab",
       "property": "atomic_weight",
       "name": "H",
-      "computed": 1.008001,
+      "computed": 1.0080009576,
       "measured": 1.008,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999963e-05,
       "source_panel": "periodic_completion",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -244,15 +247,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
       "property": "ionization_ev",
       "name": "H",
-      "computed": 13.598013,
+      "computed": 13.5980129181,
       "measured": 13.598,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999962e-05,
       "source_panel": "periodic_completion",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -267,7 +271,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
@@ -342,9 +347,9 @@
       "lab": "periodic_extension_closure_lab",
       "property": "fusion_energetics_relay",
       "name": "dt_fusion",
-      "computed": 17.600017,
+      "computed": 17.60001672,
       "measured": 17.6,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999878e-05,
       "source_panel": "lab_synthesis",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -359,15 +364,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
       "property": "fusion_energetics_relay",
       "name": "dt_fusion",
-      "computed": 15.000014,
+      "computed": 15.00001425,
       "measured": 15.0,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.4999999997e-05,
       "source_panel": "lab_synthesis",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -382,15 +388,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
       "property": "fusion_energetics_relay",
       "name": "dd_fusion",
-      "computed": 4.030004,
+      "computed": 4.0300038285,
       "measured": 4.03,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999924e-05,
       "source_panel": "lab_synthesis",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -405,7 +412,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
@@ -503,9 +511,9 @@
       "lab": "periodic_extension_closure_lab",
       "property": "binding_energy_per_nucleon_mev",
       "name": "Z119_N177",
-      "computed": 7.450007,
+      "computed": 7.4500070775,
       "measured": 7.45,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999919e-05,
       "source_panel": "island_completion",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -520,7 +528,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",
@@ -595,9 +604,9 @@
       "lab": "periodic_extension_closure_lab",
       "property": "binding_energy_per_nucleon_mev",
       "name": "Z128_N184",
-      "computed": 7.590007,
+      "computed": 7.5900072105,
       "measured": 7.59,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999966e-05,
       "source_panel": "distant_island_deep",
       "eval_kind": "closure_relay",
       "domain_display_name": "periodic extension closure",
@@ -612,7 +621,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "periodic_extension_closure_lab",

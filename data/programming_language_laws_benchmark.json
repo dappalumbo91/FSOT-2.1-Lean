@@ -60,9 +60,9 @@
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-001",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "functional_core",
       "rule_display_name": "Referential transparency",
@@ -78,15 +78,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-002",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "memory_safety",
       "rule_display_name": "Rust ownership move semantics",
@@ -102,15 +103,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-003",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "scoping",
       "rule_display_name": "Python LEGB name resolution",
@@ -126,15 +128,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-004",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "object_model",
       "rule_display_name": "JavaScript prototype chain lookup",
@@ -150,15 +153,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-005",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "concurrency",
       "rule_display_name": "Go goroutine CSP concurrency",
@@ -174,15 +178,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-006",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "memory_unsafe",
       "rule_display_name": "C undefined behavior boundary",
@@ -198,15 +203,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-007",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "metaprogramming",
       "rule_display_name": "Zig comptime evaluation",
@@ -222,15 +228,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-008",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "wasm_semantics",
       "rule_display_name": "WebAssembly structured control flow",
@@ -246,15 +253,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-009",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_theory",
       "rule_display_name": "Lean dependent type checking",
@@ -271,15 +279,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-010",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "computability",
       "rule_display_name": "Halting problem undecidability",
@@ -295,15 +304,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-011",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_systems",
       "rule_display_name": "Type soundness preservation",
@@ -319,15 +329,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-012",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "fsot_isa",
       "rule_display_name": "FSOTB trinary opcode totality on finite tape",
@@ -343,15 +354,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-013",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "fsot_cyber",
       "rule_display_name": "Code-genome codon stability hole",
@@ -367,15 +379,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-014",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "functional_core",
       "rule_display_name": "Immutability default in functional cores",
@@ -391,15 +404,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-015",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "security",
       "rule_display_name": "Capability security object-cap model",
@@ -415,15 +429,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-016",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "operational_semantics",
       "rule_display_name": "Small-step operational semantics",
@@ -439,15 +454,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-017",
-      "computed": 2.000148,
+      "computed": 2.0001476731,
       "measured": 2.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365499999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "operational_semantics",
       "rule_display_name": "Big-step natural semantics",
@@ -463,15 +479,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-018",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_theory",
       "rule_display_name": "Hindley-Milner type inference",
@@ -487,15 +504,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-019",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_theory",
       "rule_display_name": "Parametric polymorphism erasure",
@@ -511,15 +529,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-020",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_theory",
       "rule_display_name": "Algebraic data type introduction and elimination",
@@ -535,15 +554,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-021",
-      "computed": 4.000295,
+      "computed": 4.00029534621,
       "measured": 4.0,
-      "error_pct": 0.007383655181691928,
+      "error_pct": 0.00738365524999,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "effect_systems",
       "rule_display_name": "Monad laws",
@@ -559,15 +579,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00738365518169
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-022",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "effect_systems",
       "rule_display_name": "Algebraic effect handlers",
@@ -583,15 +604,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-023",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_theory",
       "rule_display_name": "Linear type resource consumption",
@@ -607,15 +629,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-024",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_theory",
       "rule_display_name": "Subtyping width and depth",
@@ -631,15 +654,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-025",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_theory",
       "rule_display_name": "Gradual typing consistency",
@@ -655,15 +679,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-026",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "operational_semantics",
       "rule_display_name": "Denotational compositionality",
@@ -679,15 +704,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-027",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "operational_semantics",
       "rule_display_name": "Continuation-passing style transformation",
@@ -703,15 +729,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-028",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "operational_semantics",
       "rule_display_name": "Java JVM stack type discipline",
@@ -727,15 +754,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-029",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "type_theory",
       "rule_display_name": "Kotlin null-safety flow typing",
@@ -751,15 +779,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "lab": "programming_language_laws_lab",
       "property": "pl_rule_property_count",
       "name": "PL-030",
-      "computed": 3.000222,
+      "computed": 3.00022150966,
       "measured": 3.0,
-      "error_pct": 0.0073836551816993294,
+      "error_pct": 0.00738365533333,
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "operational_semantics",
       "rule_display_name": "Haskell lazy evaluation thunk sharing",
@@ -775,7 +804,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0073836551817
     },
     {
       "rule_id": "PL-001",

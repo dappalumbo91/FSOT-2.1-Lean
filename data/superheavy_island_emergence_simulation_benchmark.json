@@ -135,9 +135,9 @@
       "property": "island_emergence_score",
       "name": "Z119_N177",
       "Z": 119,
-      "computed": 0.783803,
+      "computed": 0.783803007838,
       "measured": 0.783803,
-      "error_pct": 1e-06,
+      "error_pct": 9.99996175926e-07,
       "eval_kind": "emergence_score",
       "domain_display_name": "superheavy island emergence",
       "display_name": "Z119 N177",
@@ -151,7 +151,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 1e-06
     },
     {
       "lab": "superheavy_island_emergence_lab",

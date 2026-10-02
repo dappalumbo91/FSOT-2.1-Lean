@@ -85,9 +85,9 @@
       "lab": "ionospheric_chemistry_lab",
       "property": "ionosphere_mhd_beta",
       "name": "ionosphere",
-      "computed": 1.000236,
+      "computed": 1.00023609235,
       "measured": 1.0,
-      "error_pct": 0.02360923504833856,
+      "error_pct": 0.023609235,
       "source": "plasma_physics_benchmark.json",
       "beta": 1e-06,
       "formula_branch": "term3.acoustic_inflow",
@@ -103,7 +103,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0236092350483
     },
     {
       "lab": "ionospheric_chemistry_lab",
@@ -1466,9 +1467,9 @@
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-03T09:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1483,7 +1484,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
@@ -1604,9 +1606,9 @@
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-04T03:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1621,15 +1623,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-04T06:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1644,15 +1647,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-04T09:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1667,15 +1671,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-04T12:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1690,7 +1695,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
@@ -1742,9 +1748,9 @@
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-04T21:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1759,15 +1765,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-05T00:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1782,15 +1789,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-05T03:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1805,15 +1813,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-05T06:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1828,15 +1837,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-05T09:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1851,15 +1861,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "kp_storm_classifier",
       "name": "1932-01-05T12:00:00",
-      "computed": 1.000197,
+      "computed": 1.00019674363,
       "measured": 1.0,
-      "error_pct": 0.019674362540289536,
+      "error_pct": 0.019674363,
       "source": "space_weather_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1874,7 +1885,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0196743625403
     },
     {
       "lab": "ionospheric_chemistry_lab",
@@ -1949,9 +1961,9 @@
       "lab": "ionospheric_chemistry_lab",
       "property": "magnetosphere_extended_coupling",
       "name": "historical_coupled_dst_kp_storm_classifier",
-      "computed": 100.023609,
+      "computed": 100.023609235,
       "measured": 100.0,
-      "error_pct": 0.023609235048340338,
+      "error_pct": 0.023609235,
       "source": "magnetosphere_extended_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1966,15 +1978,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0236092350483
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "magnetosphere_extended_coupling",
       "name": "storm_holdout_g_scale_classifier",
-      "computed": 100.023609,
+      "computed": 100.023609235,
       "measured": 100.0,
-      "error_pct": 0.023609235048340338,
+      "error_pct": 0.023609235,
       "source": "magnetosphere_extended_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -1989,15 +2002,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0236092350483
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "magnetosphere_extended_coupling",
       "name": "solar_wind_bz_southward_classifier",
-      "computed": 100.023609,
+      "computed": 100.023609235,
       "measured": 100.0,
-      "error_pct": 0.023609235048340338,
+      "error_pct": 0.023609235,
       "source": "magnetosphere_extended_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -2012,15 +2026,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0236092350483
     },
     {
       "lab": "ionospheric_chemistry_lab",
       "property": "magnetosphere_extended_coupling",
       "name": "pooled_magnetosphere_extended_classifier",
-      "computed": 100.023609,
+      "computed": 100.023609235,
       "measured": 100.0,
-      "error_pct": 0.023609235048340338,
+      "error_pct": 0.023609235,
       "source": "magnetosphere_extended_benchmark.json",
       "formula_branch": "term3.acoustic_inflow",
       "domain_display_name": "ionospheric chemistry",
@@ -2035,7 +2050,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0236092350483
     }
   ],
   "margin_summary": {

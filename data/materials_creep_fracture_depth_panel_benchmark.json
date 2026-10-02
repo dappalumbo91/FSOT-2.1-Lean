@@ -70,13 +70,14 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "value",
       "name": "polymer_creep_strain_10yr_pct",
-      "computed": 2.000268,
+      "computed": 2.0002682,
       "measured": 2.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -94,13 +95,14 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "value",
       "name": "creep_exponent_n_typical",
-      "computed": 5.000671,
+      "computed": 5.0006705,
       "measured": 5.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -118,37 +120,40 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "value",
       "name": "aluminum_KIc_MPa_sqrt_m",
-      "computed": 29.003889,
+      "computed": 29.0038889,
       "measured": 29.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "value",
       "name": "ceramic_fracture_toughness_MPa_sqrt_m",
-      "computed": 4.000536,
+      "computed": 4.0005364,
       "measured": 4.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "value",
       "name": "paris_exponent_m_typical",
-      "computed": 3.000402,
+      "computed": 3.0004023,
       "measured": 3.0,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -178,25 +183,27 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "value",
       "name": "fatigue_endurance_limit_fraction",
-      "computed": 0.500067,
+      "computed": 0.50006705,
       "measured": 0.5,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "band_gap_eV",
       "name": "Si",
-      "computed": 1.110149,
+      "computed": 1.110148851,
       "measured": 1.11,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -214,85 +221,92 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "Si",
-      "computed": 97.011382,
+      "computed": 97.01138198,
       "measured": 97.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "band_gap_eV",
       "name": "GaAs",
-      "computed": 1.520204,
+      "computed": 1.520203832,
       "measured": 1.52,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "GaAs",
-      "computed": -0.33005,
+      "computed": -0.3300497871,
       "measured": -0.33,
       "error_pct": 0.015087,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.015087
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "GaAs",
-      "computed": 75.508859,
+      "computed": 75.50885917,
       "measured": 75.5,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "band_gap_eV",
       "name": "GaN",
-      "computed": 3.440461,
+      "computed": 3.440461304,
       "measured": 3.44,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "GaN",
-      "computed": -0.910137,
+      "computed": -0.9101372917,
       "measured": -0.91,
       "error_pct": 0.015087,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.015087
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "GaN",
-      "computed": 187.021943,
+      "computed": 187.02194258,
       "measured": 187.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -322,13 +336,14 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "Cu",
-      "computed": 137.016076,
+      "computed": 137.01607558,
       "measured": 137.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -358,13 +373,14 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "Fe",
-      "computed": 168.019713,
+      "computed": 168.01971312,
       "measured": 168.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -394,37 +410,40 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "Al",
-      "computed": 76.008918,
+      "computed": 76.00891784,
       "measured": 76.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "band_gap_eV",
       "name": "Al2O3",
-      "computed": 8.80118,
+      "computed": 8.80118008,
       "measured": 8.8,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "Al2O3",
-      "computed": -3.170478,
+      "computed": -3.1704782579,
       "measured": -3.17,
       "error_pct": 0.015087,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.015087
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -442,25 +461,27 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "band_gap_eV",
       "name": "TiO2",
-      "computed": 3.050409,
+      "computed": 3.050409005,
       "measured": 3.05,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "TiO2",
-      "computed": -1.910288,
+      "computed": -1.9102881617,
       "measured": -1.91,
       "error_pct": 0.015087,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.015087
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -478,85 +499,92 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "band_gap_eV",
       "name": "ZnO",
-      "computed": 3.440461,
+      "computed": 3.440461304,
       "measured": 3.44,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "ZnO",
-      "computed": -0.73011,
+      "computed": -0.7301101351,
       "measured": -0.73,
       "error_pct": 0.015087,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.015087
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "ZnO",
-      "computed": 142.016662,
+      "computed": 142.01666228,
       "measured": 142.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "band_gap_eV",
       "name": "SiO2",
-      "computed": 8.9512,
+      "computed": 8.951200195,
       "measured": 8.95,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "SiO2",
-      "computed": -2.130321,
+      "computed": -2.1303213531,
       "measured": -2.13,
       "error_pct": 0.015087,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.015087
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "SiO2",
-      "computed": 37.004342,
+      "computed": 37.00434158,
       "measured": 37.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
       "property": "band_gap_eV",
       "name": "Ge",
-      "computed": 0.67009,
+      "computed": 0.670089847,
       "measured": 0.67,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -574,13 +602,14 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "Ge",
-      "computed": 75.008801,
+      "computed": 75.0088005,
       "measured": 75.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     },
     {
       "lab": "materials_creep_fracture_depth_lab",
@@ -610,13 +639,14 @@
       "lab": "materials_creep_fracture_depth_lab",
       "property": "bulk_modulus_GPa",
       "name": "Au",
-      "computed": 220.025815,
+      "computed": 220.0258148,
       "measured": 220.0,
       "error_pct": 0.011734,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project"
+      "ingest_source": "creep_fracture_materials_literature_anchors+materials_project",
+      "error_pct_full": 0.011734
     }
   ],
   "margin_summary": {

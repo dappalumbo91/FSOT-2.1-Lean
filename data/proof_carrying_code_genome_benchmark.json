@@ -82,9 +82,9 @@
       "lab": "proof_carrying_code_genome_lab",
       "property": "oss_runtime_affinity",
       "name": "openjdk_string__openjdk_hashmap",
-      "computed": 0.946438,
+      "computed": 0.946437902067,
       "measured": 0.946382,
-      "error_pct": 0.00590692414534851,
+      "error_pct": 0.00590692415959,
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "openjdk/jdk",
       "b_repo": "openjdk/jdk",
@@ -101,15 +101,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00590692414535
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "oss_runtime_affinity",
       "name": "swift_string__swift_array",
-      "computed": 0.938408,
+      "computed": 0.9384084278,
       "measured": 0.938353,
-      "error_pct": 0.005906924145350686,
+      "error_pct": 0.00590692415328,
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "apple/swift",
       "b_repo": "apple/swift",
@@ -126,15 +127,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00590692414535
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "oss_runtime_affinity",
       "name": "python_dictobject__cpython_ceval",
-      "computed": 0.86573,
+      "computed": 0.865730135002,
       "measured": 0.865679,
-      "error_pct": 0.005906924145354116,
+      "error_pct": 0.00590692416012,
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "python/cpython",
       "b_repo": "python/cpython",
@@ -151,15 +153,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00590692414535
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "oss_runtime_affinity",
       "name": "cpython_ceval__pytorch_tensor",
-      "computed": 0.85005,
+      "computed": 0.850050208855,
       "measured": 0.85,
-      "error_pct": 0.005906924145345184,
+      "error_pct": 0.00590692411765,
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "python/cpython",
       "b_repo": "pytorch/pytorch",
@@ -176,15 +179,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00590692414535
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "oss_runtime_affinity",
       "name": "golang_http_serve__kubernetes_client_go",
-      "computed": 0.788307,
+      "computed": 0.78830656192,
       "measured": 0.78826,
-      "error_pct": 0.005906924145343475,
+      "error_pct": 0.00590692411134,
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "golang/go",
       "b_repo": "kubernetes/client-go",
@@ -201,15 +205,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00590692414534
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "oss_runtime_affinity",
       "name": "linux_kernel_list__cpython_ceval",
-      "computed": 0.769899,
+      "computed": 0.769899474692,
       "measured": 0.769854,
-      "error_pct": 0.0059069241453486585,
+      "error_pct": 0.00590692417004,
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "torvalds/linux",
       "b_repo": "python/cpython",
@@ -226,15 +231,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00590692414535
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "oss_runtime_affinity",
       "name": "linux_kernel_list__pytorch_tensor",
-      "computed": 0.769899,
+      "computed": 0.769899474692,
       "measured": 0.769854,
-      "error_pct": 0.0059069241453486585,
+      "error_pct": 0.00590692417004,
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "torvalds/linux",
       "b_repo": "pytorch/pytorch",
@@ -251,15 +257,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00590692414535
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "oss_runtime_affinity",
       "name": "python_dictobject__redis_sds",
-      "computed": 0.757862,
+      "computed": 0.757861763675,
       "measured": 0.757817,
-      "error_pct": 0.005906924145348611,
+      "error_pct": 0.0059069240991,
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "python/cpython",
       "b_repo": "redis/redis",
@@ -276,15 +283,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00590692414535
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "boot_d_eff",
-      "computed": 8.000413,
+      "computed": 8.00041348469,
       "measured": 8.0,
-      "error_pct": 0.0051685586271776884,
+      "error_pct": 0.005168558625,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -299,15 +307,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "constant_count",
-      "computed": 16.000827,
+      "computed": 16.0008269694,
       "measured": 16.0,
-      "error_pct": 0.0051685586271776884,
+      "error_pct": 0.00516855874999,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -322,15 +331,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "K_matches_atlas",
-      "computed": 1.000052,
+      "computed": 1.00005168559,
       "measured": 1.0,
-      "error_pct": 0.0051685586271776884,
+      "error_pct": 0.00516855899999,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -345,15 +355,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "boot_scalar_positive",
-      "computed": 1.000052,
+      "computed": 1.00005168559,
       "measured": 1.0,
-      "error_pct": 0.0051685586271776884,
+      "error_pct": 0.00516855899999,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -368,15 +379,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "boot_scalar",
-      "computed": 0.099294,
+      "computed": 0.0992940880765,
       "measured": 0.09928895626861721,
-      "error_pct": 0.005168558627181154,
+      "error_pct": 0.00516855859468,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -391,15 +403,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "no_std",
-      "computed": 1.000052,
+      "computed": 1.00005168559,
       "measured": 1.0,
-      "error_pct": 0.0051685586271776884,
+      "error_pct": 0.00516855899999,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -414,15 +427,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "requires_lean_bridge",
-      "computed": 1.000052,
+      "computed": 1.00005168559,
       "measured": 1.0,
-      "error_pct": 0.0051685586271776884,
+      "error_pct": 0.00516855899999,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -437,15 +451,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "boot_observed",
-      "computed": 1.000052,
+      "computed": 1.00005168559,
       "measured": 1.0,
-      "error_pct": 0.0051685586271776884,
+      "error_pct": 0.00516855899999,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -460,15 +475,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "rust_lean_proof_bridge",
       "name": "boot_delta_psi",
-      "computed": 0.700036,
+      "computed": 0.70003617991,
       "measured": 0.7,
-      "error_pct": 0.005168558627184033,
+      "error_pct": 0.00516855857143,
       "source": "rust_lean_bridge_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -483,15 +499,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00516855862718
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "formal_reasoning_coupling",
       "name": "S_final",
-      "computed": 0.148071,
+      "computed": 0.148071062454,
       "measured": 0.14806450291069925,
-      "error_pct": 0.0044301931090089935,
+      "error_pct": 0.00443019303871,
       "source": "computational_reasoning_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -506,15 +523,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00443019310901
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "formal_reasoning_coupling",
       "name": "S_final",
-      "computed": 0.148098,
+      "computed": 0.148098039928,
       "measured": 0.14809147918973453,
-      "error_pct": 0.004430193108999071,
+      "error_pct": 0.00443019294652,
       "source": "computational_reasoning_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -529,15 +547,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.004430193109
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "formal_reasoning_coupling",
       "name": "S_final",
-      "computed": 0.148125,
+      "computed": 0.148124991214,
       "measured": 0.148118429281082,
-      "error_pct": 0.00443019310901453,
+      "error_pct": 0.00443019342688,
       "source": "computational_reasoning_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -552,15 +571,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00443019310901
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "formal_reasoning_coupling",
       "name": "S_final",
-      "computed": 0.148152,
+      "computed": 0.148151916336,
       "measured": 0.1481453532107139,
-      "error_pct": 0.004430193109009354,
+      "error_pct": 0.00443019314738,
       "source": "computational_reasoning_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -575,15 +595,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00443019310901
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "formal_reasoning_coupling",
       "name": "S_final",
-      "computed": 0.130063,
+      "computed": 0.130063039789,
       "measured": 0.1300572780008903,
-      "error_pct": 0.004430193109008649,
+      "error_pct": 0.00443019275682,
       "source": "computational_reasoning_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -598,15 +619,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00443019310901
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "formal_reasoning_coupling",
       "name": "S_final",
-      "computed": 0.130107,
+      "computed": 0.13010710532,
       "measured": 0.1301013415790377,
-      "error_pct": 0.004430193109000052,
+      "error_pct": 0.00443019333418,
       "source": "computational_reasoning_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -621,15 +643,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.004430193109
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "formal_reasoning_coupling",
       "name": "S_final",
-      "computed": 0.130151,
+      "computed": 0.130151128073,
       "measured": 0.1301453623817071,
-      "error_pct": 0.004430193109010174,
+      "error_pct": 0.0044301934294,
       "source": "computational_reasoning_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -644,15 +667,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.00443019310901
     },
     {
       "lab": "proof_carrying_code_genome_lab",
       "property": "formal_reasoning_coupling",
       "name": "S_final",
-      "computed": 0.130195,
+      "computed": 0.130195108091,
       "measured": 0.13018934045132224,
-      "error_pct": 0.004430193109002444,
+      "error_pct": 0.00443019348416,
       "source": "computational_reasoning_benchmark.json",
       "formula_branch": "term1.perceived_adjust",
       "domain_display_name": "proof carrying code genome",
@@ -667,7 +691,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.004430193109
     }
   ],
   "margin_summary": {

@@ -83,9 +83,9 @@
       "lab": "cryptography_lab",
       "property": "symmetric_key_bits",
       "name": "AES_128_key_bits",
-      "computed": 128.072992,
+      "computed": 128.072991752,
       "measured": 128.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.05702480625,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "AES 128 key bits",
@@ -99,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "symmetric_key_bits",
       "name": "AES_256_key_bits",
-      "computed": 256.145984,
+      "computed": 256.145983504,
       "measured": 256.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.05702480625,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "AES 256 key bits",
@@ -121,15 +122,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "block_cipher_rounds",
       "name": "AES_rounds_128",
-      "computed": 10.005702,
+      "computed": 10.0057024806,
       "measured": 10.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.057024806,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "AES rounds 128",
@@ -143,15 +145,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "asymmetric_modulus_bits",
       "name": "RSA_modulus_bits",
-      "computed": 2049.167868,
+      "computed": 2049.16786804,
       "measured": 2048.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.0570248066406,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "RSA modulus bits",
@@ -165,15 +168,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "public_exponent",
       "name": "RSA_public_exponent",
-      "computed": 65574.372347,
+      "computed": 65574.3723474,
       "measured": 65537.0,
-      "error_pct": 0.05702480640748913,
+      "error_pct": 0.0570248064452,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "RSA public exponent",
@@ -187,15 +191,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "curve_order_bits",
       "name": "ECDSA_P256_order_bits",
-      "computed": 256.145984,
+      "computed": 256.145983504,
       "measured": 256.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.05702480625,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "ECDSA P256 order bits",
@@ -209,15 +214,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "ecc_key_bits",
       "name": "Curve25519_key_bits",
-      "computed": 256.145984,
+      "computed": 256.145983504,
       "measured": 256.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.05702480625,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "Curve25519 key bits",
@@ -231,15 +237,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "hash_output_bits",
       "name": "SHA256_digest_bits",
-      "computed": 256.145984,
+      "computed": 256.145983504,
       "measured": 256.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.05702480625,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "SHA256 digest bits",
@@ -253,15 +260,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "collision_work_exponent",
       "name": "SHA256_collision_work_exp",
-      "computed": 128.072992,
+      "computed": 128.072991752,
       "measured": 128.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.05702480625,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "SHA256 collision work exp",
@@ -275,15 +283,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "protocol_version",
       "name": "TLS13_min_version",
-      "computed": 1.300741,
+      "computed": 1.30074132248,
       "measured": 1.3,
-      "error_pct": 0.05702480640748306,
+      "error_pct": 0.0570248061538,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "TLS13 min version",
@@ -297,15 +306,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "pqc_security_level",
       "name": "Kyber768_security_category",
-      "computed": 3.001711,
+      "computed": 3.00171074419,
       "measured": 3.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.0570248063333,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "Kyber768 security category",
@@ -319,15 +329,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "pqc_signature_level",
       "name": "Dilithium3_security_category",
-      "computed": 3.001711,
+      "computed": 3.00171074419,
       "measured": 3.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.0570248063333,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "Dilithium3 security category",
@@ -341,15 +352,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "hash_signature_level",
       "name": "SPHINCS_plus_128f_security",
-      "computed": 1.00057,
+      "computed": 1.00057024806,
       "measured": 1.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.057024806,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "SPHINCS plus 128f security",
@@ -363,15 +375,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "dh_modulus_bits",
       "name": "DH_group_min_bits",
-      "computed": 2049.167868,
+      "computed": 2049.16786804,
       "measured": 2048.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.0570248066406,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "DH group min bits",
@@ -385,15 +398,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "aead_nonce_bits",
       "name": "GCM_nonce_bits",
-      "computed": 96.054744,
+      "computed": 96.0547438142,
       "measured": 96.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.0570248064583,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "GCM nonce bits",
@@ -407,7 +421,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
@@ -436,9 +451,9 @@
       "lab": "cryptography_lab",
       "property": "memory_hard_kdf_kb",
       "name": "Argon2_memory_kb",
-      "computed": 19467.094746,
+      "computed": 19467.0947463,
       "measured": 19456.0,
-      "error_pct": 0.057024806407474975,
+      "error_pct": 0.0570248062294,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "Argon2 memory kb",
@@ -453,15 +468,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "hmac_block_bits",
       "name": "HMAC_SHA256_block_bits",
-      "computed": 512.291967,
+      "computed": 512.291967009,
       "measured": 512.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.0570248064453,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "HMAC SHA256 block bits",
@@ -475,15 +491,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "signature_key_bits",
       "name": "Ed25519_key_bits",
-      "computed": 256.145984,
+      "computed": 256.145983504,
       "measured": 256.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.05702480625,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "Ed25519 key bits",
@@ -497,15 +514,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "stream_cipher_key_bits",
       "name": "ChaCha20_key_bits",
-      "computed": 256.145984,
+      "computed": 256.145983504,
       "measured": 256.0,
-      "error_pct": 0.057024806407479645,
+      "error_pct": 0.05702480625,
       "source": "cryptography_technology_reference_observables",
       "domain_display_name": "cryptography",
       "display_name": "ChaCha20 key bits",
@@ -519,15 +537,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0570248064075
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-001",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "public_key",
       "rule_display_name": "RSA key generation correctness",
@@ -543,15 +562,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-002",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "hardness",
       "rule_display_name": "Discrete log problem hardness",
@@ -567,15 +587,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-003",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "ecc",
       "rule_display_name": "Elliptic curve point doubling",
@@ -591,15 +612,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-004",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "key_exchange",
       "rule_display_name": "Diffie-Hellman shared secret",
@@ -615,15 +637,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-005",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "symmetric",
       "rule_display_name": "AES round structure",
@@ -639,15 +662,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-006",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "hash_functions",
       "rule_display_name": "Cryptographic hash collision resistance",
@@ -663,15 +687,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-007",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "post_quantum",
       "rule_display_name": "Learning with errors (LWE)",
@@ -687,15 +712,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-008",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "secret_sharing",
       "rule_display_name": "Shamir secret sharing",
@@ -711,15 +737,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-009",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "signatures",
       "rule_display_name": "Schnorr signature",
@@ -735,15 +762,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-010",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "proof_systems",
       "rule_display_name": "Zero-knowledge soundness/completeness",
@@ -759,15 +787,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-011",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "primitives",
       "rule_display_name": "GHZ-style commitment binding",
@@ -783,15 +812,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "lab": "cryptography_lab",
       "property": "crypto_rule_property_count",
       "name": "CR-012",
-      "computed": 2.00095,
+      "computed": 2.00095041344,
       "measured": 2.0,
-      "error_pct": 0.047520672006218234,
+      "error_pct": 0.047520672,
       "source": "CRYPTOGRAPHY_RULES.json",
       "category": "post_quantum",
       "rule_display_name": "Quantum-safe migration timeline",
@@ -807,7 +837,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0475206720062
     },
     {
       "rule_id": "CR-001",

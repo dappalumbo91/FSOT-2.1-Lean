@@ -62,49 +62,53 @@
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "chsh_classical_bound",
-      "computed": 2.000816,
+      "computed": 2.00081634,
       "measured": 2.0,
       "error_pct": 0.040817,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "chsh_tsirelson_bound",
-      "computed": 2.829581,
+      "computed": 2.82958147905,
       "measured": 2.828427,
-      "error_pct": 0.040817,
+      "error_pct": 0.0408170000498,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "bell_inequality_margin",
-      "computed": 0.414383,
+      "computed": 0.414383069728,
       "measured": 0.414214,
-      "error_pct": 0.040817,
+      "error_pct": 0.0408169999083,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "epr_entangled_pair_spin_correlation",
-      "computed": 1.000408,
+      "computed": 1.00040817,
       "measured": 1.0,
       "error_pct": 0.040817,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
@@ -122,73 +126,79 @@
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "superconducting_qubit_T2_us",
-      "computed": 95.014029,
+      "computed": 95.01402865,
       "measured": 95.0,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "trapped_ion_T1_s",
-      "computed": 10.001477,
+      "computed": 10.0014767,
       "measured": 10.0,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "nv_center_T2_ms",
-      "computed": 1.800266,
+      "computed": 1.800265806,
       "measured": 1.8,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "planck_constant_eV_s",
-      "computed": 0.0,
+      "computed": 4.138710803e-15,
       "measured": 4.135667696e-15,
-      "error_pct": 0.073582,
+      "error_pct": 0.0735819999016,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.073582
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "reduced_planck_eV_s",
-      "computed": 0.0,
+      "computed": 6.58696282422e-16,
       "measured": 6.582119569e-16,
-      "error_pct": 0.073582,
+      "error_pct": 0.0735819999808,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.073582
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_lab",
       "property": "value",
       "name": "fine_structure_inverse",
-      "computed": 137.136833,
+      "computed": 137.136832913,
       "measured": 137.035999084,
-      "error_pct": 0.073582,
+      "error_pct": 0.0735820001124,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Atomic_Physics",
       "fsot_scalar": 0.735824,
-      "ingest_source": "entanglement_decoherence_literature_anchors"
+      "ingest_source": "entanglement_decoherence_literature_anchors",
+      "error_pct_full": 0.073582
     },
     {
       "lab": "quantum_mechanics_entanglement_depth_panel_fsot_lab",

@@ -71,25 +71,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "arm_length_km",
       "name": "LIGO_Hanford",
-      "computed": 4.001632,
+      "computed": 4.00163224,
       "measured": 4.0,
       "error_pct": 0.040806,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040806
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "strain_sensitivity",
       "name": "LIGO_Hanford",
-      "computed": 0.0,
+      "computed": 1.00040817e-21,
       "measured": 1e-21,
       "error_pct": 0.040817,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -107,25 +109,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "arm_length_km",
       "name": "LIGO_Livingston",
-      "computed": 4.001632,
+      "computed": 4.00163224,
       "measured": 4.0,
       "error_pct": 0.040806,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040806
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "strain_sensitivity",
       "name": "LIGO_Livingston",
-      "computed": 0.0,
+      "computed": 1.00040817e-21,
       "measured": 1e-21,
       "error_pct": 0.040817,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -143,25 +147,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "arm_length_km",
       "name": "Virgo",
-      "computed": 3.001224,
+      "computed": 3.00122418,
       "measured": 3.0,
       "error_pct": 0.040806,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040806
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "strain_sensitivity",
       "name": "Virgo",
-      "computed": 0.0,
+      "computed": 1.00040817e-21,
       "measured": 1e-21,
       "error_pct": 0.040817,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -179,25 +185,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "arm_length_km",
       "name": "GEO600",
-      "computed": 0.600245,
+      "computed": 0.600244836,
       "measured": 0.6,
       "error_pct": 0.040806,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040806
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "strain_sensitivity",
       "name": "GEO600",
-      "computed": 0.0,
+      "computed": 1.00040817e-20,
       "measured": 1e-20,
       "error_pct": 0.040817,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -227,25 +235,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "arm_length_km",
       "name": "LISA_pathfinder",
-      "computed": 0.0002,
+      "computed": 0.000200081612,
       "measured": 0.0002,
       "error_pct": 0.040806,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040806
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "strain_sensitivity",
       "name": "LISA_pathfinder",
-      "computed": 0.0,
+      "computed": 1.00040817e-14,
       "measured": 1e-14,
       "error_pct": 0.040817,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040817
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -299,25 +309,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "baseline_m",
       "name": "VLTI_GRAVITY",
-      "computed": 130.053048,
+      "computed": 130.0530478,
       "measured": 130.0,
       "error_pct": 0.040806,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040806
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "resolution_mas",
       "name": "VLTI_GRAVITY",
-      "computed": 0.500204,
+      "computed": 0.50020403,
       "measured": 0.5,
       "error_pct": 0.040806,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.040806
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -335,25 +347,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Andromeda",
-      "computed": 12.003234,
+      "computed": 12.00323448,
       "measured": 12.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Andromeda",
-      "computed": 0.494963,
+      "computed": 0.494963148708,
       "measured": 0.494852,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000566,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -371,25 +385,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Orion Nebula",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Orion Nebula",
-      "computed": 0.301167,
+      "computed": 0.301166629846,
       "measured": 0.301099,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609998705,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -407,25 +423,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Hubble Deep Field North",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Hubble Deep Field North",
-      "computed": 0.308522,
+      "computed": 0.308522281628,
       "measured": 0.308453,
-      "error_pct": 0.022461,
+      "error_pct": 0.022460999893,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -443,25 +461,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "JWST Deep Field",
-      "computed": 8.002156,
+      "computed": 8.00215632,
       "measured": 8.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "JWST Deep Field",
-      "computed": 0.13314,
+      "computed": 0.133139897837,
       "measured": 0.13311,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999249,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -479,25 +499,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Large Magellanic Cloud",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Large Magellanic Cloud",
-      "computed": 0.004282,
+      "computed": 0.00428196155541,
       "measured": 0.004281,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -515,25 +537,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Crab Nebula",
-      "computed": 11.002965,
+      "computed": 11.00296494,
       "measured": 11.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Crab Nebula",
-      "computed": 0.52432,
+      "computed": 0.524319741011,
       "measured": 0.524202,
-      "error_pct": 0.022461,
+      "error_pct": 0.022460999958,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -551,25 +575,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Cygnus X-1",
-      "computed": 6.001617,
+      "computed": 6.00161724,
       "measured": 6.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Cygnus X-1",
-      "computed": 0.407499,
+      "computed": 0.407498507686,
       "measured": 0.407407,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999337,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -587,13 +613,14 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Pleiades",
-      "computed": 4.001078,
+      "computed": 4.00107816,
       "measured": 4.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -623,25 +650,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Omega Centauri",
-      "computed": 11.002965,
+      "computed": 11.00296494,
       "measured": 11.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Omega Centauri",
-      "computed": 0.324029,
+      "computed": 0.324028763757,
       "measured": 0.323956,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999506,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -659,25 +688,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Perseus A",
-      "computed": 13.003504,
+      "computed": 13.00350402,
       "measured": 13.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Perseus A",
-      "computed": 0.327169,
+      "computed": 0.327169469033,
       "measured": 0.327096,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610001345,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -695,13 +726,14 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "WASP-12 field",
-      "computed": 3.000809,
+      "computed": 3.00080862,
       "measured": 3.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -731,25 +763,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "TRAPPIST-1",
-      "computed": 11.002965,
+      "computed": 11.00296494,
       "measured": 11.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "TRAPPIST-1",
-      "computed": 0.63482,
+      "computed": 0.634819554801,
       "measured": 0.634677,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000047,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -767,25 +801,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Orion Trapezium",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Orion Trapezium",
-      "computed": 0.312231,
+      "computed": 0.312231114482,
       "measured": 0.312161,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999327,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -803,25 +839,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Virgo A",
-      "computed": 14.003774,
+      "computed": 14.00377356,
       "measured": 14.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Virgo A",
-      "computed": 0.697383,
+      "computed": 0.697382603932,
       "measured": 0.697226,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000201,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -839,25 +877,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Whirlpool Galaxy",
-      "computed": 13.003504,
+      "computed": 13.00350402,
       "measured": 13.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Whirlpool Galaxy",
-      "computed": 0.418091,
+      "computed": 0.418090886306,
       "measured": 0.417997,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999593,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -875,25 +915,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Sombrero Galaxy",
-      "computed": 12.003234,
+      "computed": 12.00323448,
       "measured": 12.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Sombrero Galaxy",
-      "computed": 0.349902,
+      "computed": 0.349901573744,
       "measured": 0.349823,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999914,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -911,25 +953,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Cigar Galaxy",
-      "computed": 13.003504,
+      "computed": 13.00350402,
       "measured": 13.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Cigar Galaxy",
-      "computed": 0.503546,
+      "computed": 0.503546076086,
       "measured": 0.503433,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999742,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -947,25 +991,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Pinwheel Galaxy",
-      "computed": 14.003774,
+      "computed": 14.00377356,
       "measured": 14.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Pinwheel Galaxy",
-      "computed": 0.370826,
+      "computed": 0.370826272585,
       "measured": 0.370743,
-      "error_pct": 0.022461,
+      "error_pct": 0.022460999938,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -983,25 +1029,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "NGC 1300",
-      "computed": 8.002156,
+      "computed": 8.00215632,
       "measured": 8.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "NGC 1300",
-      "computed": 0.28369,
+      "computed": 0.283689705236,
       "measured": 0.283626,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000494,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1019,25 +1067,27 @@
       "lab": "optics_interferometry_depth_lab",
       "property": "instrument_diversity",
       "name": "Great Barred Spiral",
-      "computed": 10.002695,
+      "computed": 10.0026954,
       "measured": 10.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.026954
     },
     {
       "lab": "optics_interferometry_depth_lab",
       "property": "hst_fraction",
       "name": "Great Barred Spiral",
-      "computed": 0.362504,
+      "computed": 0.36250440383,
       "measured": 0.362423,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999917,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "error_pct_full": 0.022461
     }
   ],
   "margin_summary": {

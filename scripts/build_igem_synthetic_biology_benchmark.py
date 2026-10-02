@@ -8,6 +8,7 @@ import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 try:
     import yaml
@@ -133,7 +134,7 @@ def _bridge_records(operons: list[dict], s_bio: float) -> list[dict]:
                 "lab": "igem_biology_strict_bridge",
                 "property": "biology_strict_operon_replication",
                 "name": operon.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": float(operon.get("error_pct") or err),
                 "strict": True,

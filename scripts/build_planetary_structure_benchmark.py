@@ -8,6 +8,7 @@ import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "planetary_jpl_cache.json"
@@ -41,7 +42,7 @@ def build(cache_path: Path = CACHE) -> dict:
                 "lab": "planetary_structure_lab",
                 "property": "mean_density",
                 "name": body.get("name"),
-                "computed": round(computed, 4),
+                "computed": round_sig(computed),
                 "measured": float(published),
                 "error_pct": round(err, 6),
                 "within_tol": err <= tol_pct,

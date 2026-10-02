@@ -82,9 +82,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_coherence_delta",
       "name": "AR01",
-      "computed": 0.037472,
+      "computed": 0.0374722402347,
       "measured": 0.037458,
-      "error_pct": 0.0380165376049781,
+      "error_pct": 0.0380165377223,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "string_to_nuclear_adjacent_fold",
       "mec_id": "MEC-030",
@@ -105,15 +105,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.038016537605
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR01",
-      "computed": 1.092915,
+      "computed": 1.09291533067,
       "measured": 1.0925,
-      "error_pct": 0.03801653760497247,
+      "error_pct": 0.0380165372998,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "string_to_nuclear_adjacent_fold",
       "mec_id": "MEC-030",
@@ -134,15 +135,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.038016537605
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_lower_median",
       "name": "AR01",
-      "computed": 0.03992,
+      "computed": 0.0399201704993,
       "measured": 0.039905,
-      "error_pct": 0.03801653760497056,
+      "error_pct": 0.0380165375266,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "string_to_nuclear_adjacent_fold",
       "mec_id": "MEC-030",
@@ -163,7 +165,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.038016537605
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -227,9 +230,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR02",
-      "computed": 0.085325,
+      "computed": 0.0853251063103,
       "measured": 0.0853,
-      "error_pct": 0.029432954634511555,
+      "error_pct": 0.0294329546307,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "nuclear_to_atomic_adjacent_fold",
       "mec_id": "MEC-031",
@@ -250,7 +253,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0294329546345
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -314,9 +318,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_coherence_delta",
       "name": "AR03",
-      "computed": 0.00178,
+      "computed": 0.00178023870504,
       "measured": 0.00178,
-      "error_pct": 0.013410395229458678,
+      "error_pct": 0.0134103955056,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "atomic_to_molecular_adjacent_fold",
       "mec_id": "MEC-032",
@@ -337,15 +341,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0134103952295
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR03",
-      "computed": 0.080411,
+      "computed": 0.0804107819578,
       "measured": 0.0804,
-      "error_pct": 0.013410395229470254,
+      "error_pct": 0.0134103952736,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "atomic_to_molecular_adjacent_fold",
       "mec_id": "MEC-032",
@@ -366,7 +371,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0134103952295
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -401,9 +407,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_upper_median",
       "name": "AR03",
-      "computed": 0.00273,
+      "computed": 0.00273036610379,
       "measured": 0.00273,
-      "error_pct": 0.013410395229467034,
+      "error_pct": 0.0134103952381,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "atomic_to_molecular_adjacent_fold",
       "mec_id": "MEC-032",
@@ -424,7 +430,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0134103952295
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -459,9 +466,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR04",
-      "computed": 0.076914,
+      "computed": 0.0769136797412,
       "measured": 0.0769,
-      "error_pct": 0.017789000308162776,
+      "error_pct": 0.0177890002601,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "molecular_to_cellular_adjacent_fold",
       "mec_id": "MEC-033",
@@ -482,7 +489,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0177890003082
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -546,9 +554,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_coherence_delta",
       "name": "AR05",
-      "computed": 0.061212,
+      "computed": 0.0612124969081,
       "measured": 0.061205,
-      "error_pct": 0.01224884917545696,
+      "error_pct": 0.0122488491136,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "cellular_to_organismic_adjacent_fold",
       "mec_id": "MEC-034",
@@ -569,15 +577,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0122488491755
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR05",
-      "computed": 0.074209,
+      "computed": 0.0742090886461,
       "measured": 0.0742,
-      "error_pct": 0.012248849175454568,
+      "error_pct": 0.0122488491914,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "cellular_to_organismic_adjacent_fold",
       "mec_id": "MEC-034",
@@ -598,7 +607,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0122488491755
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -633,9 +643,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_upper_median",
       "name": "AR05",
-      "computed": 0.061212,
+      "computed": 0.0612124969081,
       "measured": 0.061205,
-      "error_pct": 0.01224884917545696,
+      "error_pct": 0.0122488491136,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "cellular_to_organismic_adjacent_fold",
       "mec_id": "MEC-034",
@@ -656,15 +666,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0122488491755
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_coherence_delta",
       "name": "AR06",
-      "computed": 0.043312,
+      "computed": 0.0433122872358,
       "measured": 0.043299,
-      "error_pct": 0.03068716554162221,
+      "error_pct": 0.0306871655235,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "organismic_to_planetary_adjacent_fold",
       "mec_id": "MEC-035",
@@ -685,15 +696,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306871655416
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR06",
-      "computed": 0.107133,
+      "computed": 0.107132865954,
       "measured": 0.1071,
-      "error_pct": 0.030687165541624938,
+      "error_pct": 0.0306871652661,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "organismic_to_planetary_adjacent_fold",
       "mec_id": "MEC-035",
@@ -714,15 +726,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306871655416
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_lower_median",
       "name": "AR06",
-      "computed": 0.061224,
+      "computed": 0.0612237820797,
       "measured": 0.061205,
-      "error_pct": 0.030687165541625476,
+      "error_pct": 0.030687165591,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "organismic_to_planetary_adjacent_fold",
       "mec_id": "MEC-035",
@@ -743,15 +756,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306871655416
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_upper_median",
       "name": "AR06",
-      "computed": 0.017911,
+      "computed": 0.0179114948439,
       "measured": 0.017906,
-      "error_pct": 0.03068716554161398,
+      "error_pct": 0.0306871657545,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "organismic_to_planetary_adjacent_fold",
       "mec_id": "MEC-035",
@@ -772,15 +786,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0306871655416
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_coherence_delta",
       "name": "AR07",
-      "computed": 0.017912,
+      "computed": 0.0179123201791,
       "measured": 0.017906,
-      "error_pct": 0.03529643193671149,
+      "error_pct": 0.0352964319223,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "planetary_to_stellar_adjacent_fold",
       "mec_id": "MEC-036",
@@ -801,15 +816,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0352964319367
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR07",
-      "computed": 0.136748,
+      "computed": 0.136748250222,
       "measured": 0.1367,
-      "error_pct": 0.035296431936720274,
+      "error_pct": 0.035296431602,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "planetary_to_stellar_adjacent_fold",
       "mec_id": "MEC-036",
@@ -830,15 +846,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0352964319367
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_lower_median",
       "name": "AR07",
-      "computed": 0.017912,
+      "computed": 0.0179123201791,
       "measured": 0.017906,
-      "error_pct": 0.03529643193671149,
+      "error_pct": 0.0352964319223,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "planetary_to_stellar_adjacent_fold",
       "mec_id": "MEC-036",
@@ -859,7 +876,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0352964319367
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -923,9 +941,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR08",
-      "computed": 0.066324,
+      "computed": 0.0663238271477,
       "measured": 0.0663,
-      "error_pct": 0.035938382726640274,
+      "error_pct": 0.0359383826546,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "stellar_to_galactic_adjacent_fold",
       "mec_id": "MEC-037",
@@ -946,7 +964,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0359383827266
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -1010,9 +1029,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_coherence_delta",
       "name": "AR09",
-      "computed": 0.021959,
+      "computed": 0.0219594125681,
       "measured": 0.021955,
-      "error_pct": 0.020098237848404983,
+      "error_pct": 0.0200982377591,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "galactic_to_cosmological_adjacent_fold",
       "mec_id": "MEC-038",
@@ -1033,15 +1052,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0200982378484
     },
     {
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_fold_step",
       "name": "AR09",
-      "computed": 0.902981,
+      "computed": 0.902981446891,
       "measured": 0.9028,
-      "error_pct": 0.020098237848405004,
+      "error_pct": 0.0200982378157,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "galactic_to_cosmological_adjacent_fold",
       "mec_id": "MEC-038",
@@ -1062,7 +1082,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0200982378484
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -1097,9 +1118,9 @@
       "lab": "adjacent_rung_coupling_lab",
       "property": "adjacent_upper_median",
       "name": "AR09",
-      "computed": 0.021959,
+      "computed": 0.0219594125681,
       "measured": 0.021955,
-      "error_pct": 0.020098237848404983,
+      "error_pct": 0.0200982377591,
       "source": "compactification_ladder_manifest.yaml",
       "mechanism": "galactic_to_cosmological_adjacent_fold",
       "mec_id": "MEC-038",
@@ -1120,7 +1141,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0200982378484
     }
   ],
   "margin_summary": {

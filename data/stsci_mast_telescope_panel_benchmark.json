@@ -134,9 +134,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "55_Cancri",
-      "computed": 0.570563,
+      "computed": 0.570563125405,
       "measured": 0.570435,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999386,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -155,15 +155,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "55_Cancri",
-      "computed": 0.236575,
+      "computed": 0.236575125206,
       "measured": 0.236522,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609998224,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -182,15 +183,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "55_Cancri",
-      "computed": 0.013046,
+      "computed": 0.0130459295882,
       "measured": 0.013043,
-      "error_pct": 0.022461,
+      "error_pct": 0.02246099977,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -209,13 +211,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "55_Cancri",
-      "computed": 11.002965,
+      "computed": 11.00296494,
       "measured": 11.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -236,15 +239,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "55_Cancri",
-      "computed": 91.9289,
+      "computed": 91.9288998743,
       "measured": 91.900001,
-      "error_pct": 0.031446,
+      "error_pct": 0.0314459999843,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -263,7 +267,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -411,9 +416,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Betelgeuse",
-      "computed": 0.459664,
+      "computed": 0.459664221996,
       "measured": 0.459561,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999543,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -432,7 +437,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -465,7 +471,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Betelgeuse",
-      "computed": 0.003763,
+      "computed": 0.00376284498282,
       "measured": 0.003762,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -486,13 +492,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Betelgeuse",
-      "computed": 10.002695,
+      "computed": 10.0026954,
       "measured": 10.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -513,13 +520,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "Betelgeuse",
-      "computed": 372.116979,
+      "computed": 372.11697912,
       "measured": 372.0,
       "error_pct": 0.031446,
       "eval_kind": "fsot_prediction",
@@ -540,7 +548,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -688,9 +697,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Carina",
-      "computed": 0.152529,
+      "computed": 0.152529251902,
       "measured": 0.152495,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000328,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -709,7 +718,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -742,7 +752,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Carina",
-      "computed": 0.007396,
+      "computed": 0.00739566076634,
       "measured": 0.007394,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -763,13 +773,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Carina",
-      "computed": 5.001348,
+      "computed": 5.0013477,
       "measured": 5.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -790,7 +801,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -965,9 +977,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Crab",
-      "computed": 0.52432,
+      "computed": 0.524319741011,
       "measured": 0.524202,
-      "error_pct": 0.022461,
+      "error_pct": 0.022460999958,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -986,13 +998,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Crab",
-      "computed": 0.096832,
+      "computed": 0.0968317444941,
       "measured": 0.09681,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -1013,13 +1026,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Crab",
-      "computed": 0.003301,
+      "computed": 0.003300741213,
       "measured": 0.0033,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -1040,13 +1054,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Crab",
-      "computed": 11.002965,
+      "computed": 11.00296494,
       "measured": 11.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -1067,7 +1082,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -1242,9 +1258,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Cygnus_X1",
-      "computed": 0.407499,
+      "computed": 0.407498507686,
       "measured": 0.407407,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999337,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -1263,7 +1279,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -1296,9 +1313,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Cygnus_X1",
-      "computed": 0.026755,
+      "computed": 0.0267550080929,
       "measured": 0.026749,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000374,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -1317,13 +1334,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Cygnus_X1",
-      "computed": 6.001617,
+      "computed": 6.00161724,
       "measured": 6.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -1344,15 +1362,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "Cygnus_X1",
-      "computed": 179.256348,
+      "computed": 179.256348231,
       "measured": 179.199997,
-      "error_pct": 0.031446,
+      "error_pct": 0.0314459999684,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -1371,7 +1390,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -1519,9 +1539,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Eagle",
-      "computed": 0.374941,
+      "computed": 0.374941196631,
       "measured": 0.374857,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000614,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -1540,15 +1560,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Eagle",
-      "computed": 0.339505,
+      "computed": 0.339505239148,
       "measured": 0.339429,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000913,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -1567,13 +1588,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Eagle",
-      "computed": 0.024005,
+      "computed": 0.02400539064,
       "measured": 0.024,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -1594,13 +1616,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Eagle",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -1621,7 +1644,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -1796,9 +1820,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "HDF_North",
-      "computed": 0.308522,
+      "computed": 0.308522281628,
       "measured": 0.308453,
-      "error_pct": 0.022461,
+      "error_pct": 0.022460999893,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -1817,15 +1841,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "HDF_North",
-      "computed": 0.268976,
+      "computed": 0.268976401223,
       "measured": 0.268916,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000892,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -1844,13 +1869,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "HDF_North",
-      "computed": 0.002045,
+      "computed": 0.00204545932745,
       "measured": 0.002045,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -1871,13 +1897,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "HDF_North",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -1898,7 +1925,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -2046,7 +2074,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "obs_count_total",
       "name": "HD_189733",
-      "computed": 18.004852,
+      "computed": 18.00485172,
       "measured": 18.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -2067,7 +2095,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -2127,9 +2156,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "HD_189733",
-      "computed": 0.111136,
+      "computed": 0.111135956642,
       "measured": 0.111111,
-      "error_pct": 0.022461,
+      "error_pct": 0.022461000261,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -2148,13 +2177,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "HD_189733",
-      "computed": 4.001078,
+      "computed": 4.00107816,
       "measured": 4.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -2175,7 +2205,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -2301,9 +2332,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Helix",
-      "computed": 0.644636,
+      "computed": 0.644635759124,
       "measured": 0.644491,
-      "error_pct": 0.022461,
+      "error_pct": 0.022461000076,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -2322,15 +2353,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Helix",
-      "computed": 0.024954,
+      "computed": 0.0249536035703,
       "measured": 0.024948,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000802,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -2349,15 +2381,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Helix",
-      "computed": 0.029113,
+      "computed": 0.0291125374987,
       "measured": 0.029106,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610001374,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -2376,13 +2409,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Helix",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -2403,15 +2437,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "Helix",
-      "computed": 134.942424,
+      "computed": 134.942423655,
       "measured": 134.900003,
-      "error_pct": 0.031446,
+      "error_pct": 0.031446000042,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -2430,7 +2465,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -2551,7 +2587,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "obs_count_total",
       "name": "Kepler_SN",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -2572,7 +2608,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -2632,9 +2669,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Kepler_SN",
-      "computed": 0.111136,
+      "computed": 0.111135956642,
       "measured": 0.111111,
-      "error_pct": 0.022461,
+      "error_pct": 0.022461000261,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -2653,13 +2690,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Kepler_SN",
-      "computed": 3.000809,
+      "computed": 3.00080862,
       "measured": 3.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -2680,7 +2718,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -2806,7 +2845,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "LMC",
-      "computed": 0.004282,
+      "computed": 0.00428196155541,
       "measured": 0.004281,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -2827,15 +2866,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "LMC",
-      "computed": 0.072017,
+      "computed": 0.0720171721446,
       "measured": 0.072001,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999861,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -2854,13 +2894,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "LMC",
-      "computed": 0.002597,
+      "computed": 0.00259658308756,
       "measured": 0.002596,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -2881,13 +2922,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "LMC",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -2908,7 +2950,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -3083,9 +3126,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "M101",
-      "computed": 0.370826,
+      "computed": 0.370826272585,
       "measured": 0.370743,
-      "error_pct": 0.022461,
+      "error_pct": 0.022460999938,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -3104,15 +3147,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "M101",
-      "computed": 0.015351,
+      "computed": 0.0153514473143,
       "measured": 0.015348,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610001303,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -3131,13 +3175,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "M101",
-      "computed": 0.003358,
+      "computed": 0.00335775401577,
       "measured": 0.003357,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -3158,13 +3203,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "M101",
-      "computed": 14.003774,
+      "computed": 14.00377356,
       "measured": 14.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -3185,7 +3231,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -3360,9 +3407,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "M104",
-      "computed": 0.349902,
+      "computed": 0.349901573744,
       "measured": 0.349823,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999914,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -3381,15 +3428,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "M104",
-      "computed": 0.116634,
+      "computed": 0.116634191323,
       "measured": 0.116608,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610001029,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -3408,13 +3456,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "M104",
-      "computed": 0.008836,
+      "computed": 0.00883598420474,
       "measured": 0.008834,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -3435,13 +3484,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "M104",
-      "computed": 12.003234,
+      "computed": 12.00323448,
       "measured": 12.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -3462,7 +3512,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -3637,9 +3688,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "M31",
-      "computed": 0.494963,
+      "computed": 0.494963148708,
       "measured": 0.494852,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000566,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -3658,7 +3709,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -3691,7 +3743,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "M31",
-      "computed": 0.001817,
+      "computed": 0.00181740811637,
       "measured": 0.001817,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -3712,13 +3764,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "M31",
-      "computed": 12.003234,
+      "computed": 12.00323448,
       "measured": 12.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -3739,7 +3792,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -3914,9 +3968,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "M42",
-      "computed": 0.312231,
+      "computed": 0.312231114482,
       "measured": 0.312161,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999327,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -3935,15 +3989,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "M42",
-      "computed": 0.3374,
+      "computed": 0.337399766344,
       "measured": 0.337324,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610001067,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -3962,13 +4017,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "M42",
-      "computed": 0.001552,
+      "computed": 0.00155234859472,
       "measured": 0.001552,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -3989,13 +4045,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "M42",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -4016,7 +4073,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -4191,9 +4249,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "M51",
-      "computed": 0.418091,
+      "computed": 0.418090886306,
       "measured": 0.417997,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999593,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -4212,15 +4270,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "M51",
-      "computed": 0.164333,
+      "computed": 0.164332902525,
       "measured": 0.164296,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610002678,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -4239,13 +4298,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "M51",
-      "computed": 0.001451,
+      "computed": 0.00145132590911,
       "measured": 0.001451,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -4266,13 +4326,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "M51",
-      "computed": 13.003504,
+      "computed": 13.00350402,
       "measured": 13.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -4293,7 +4354,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -4468,9 +4530,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "M82",
-      "computed": 0.503546,
+      "computed": 0.503546076086,
       "measured": 0.503433,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999742,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -4489,15 +4551,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "M82",
-      "computed": 0.055307,
+      "computed": 0.0553074198099,
       "measured": 0.055295,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999096,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -4516,13 +4579,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "M82",
-      "computed": 0.002892,
+      "computed": 0.00289164934751,
       "measured": 0.002891,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -4543,13 +4607,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "M82",
-      "computed": 13.003504,
+      "computed": 13.00350402,
       "measured": 13.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -4570,7 +4635,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -4745,9 +4811,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "M87",
-      "computed": 0.697383,
+      "computed": 0.697382603932,
       "measured": 0.697226,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000201,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -4766,15 +4832,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "M87",
-      "computed": 0.013167,
+      "computed": 0.013166956766,
       "measured": 0.013164,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609996961,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -4793,13 +4860,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "M87",
-      "computed": 0.000705,
+      "computed": 0.00070515835005,
       "measured": 0.000705,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -4820,13 +4888,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "M87",
-      "computed": 14.003774,
+      "computed": 14.00377356,
       "measured": 14.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -4847,7 +4916,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -5022,9 +5092,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "NGC_1275",
-      "computed": 0.327169,
+      "computed": 0.327169469033,
       "measured": 0.327096,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610001345,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -5043,15 +5113,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "NGC_1275",
-      "computed": 0.291125,
+      "computed": 0.291125374987,
       "measured": 0.29106,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610001374,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -5070,13 +5141,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "NGC_1275",
-      "computed": 0.002773,
+      "computed": 0.00277262261892,
       "measured": 0.002772,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -5097,13 +5169,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "NGC_1275",
-      "computed": 13.003504,
+      "computed": 13.00350402,
       "measured": 13.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -5124,7 +5197,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -5299,9 +5373,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "NGC_1300",
-      "computed": 0.28369,
+      "computed": 0.283689705236,
       "measured": 0.283626,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000494,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -5320,15 +5394,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "NGC_1300",
-      "computed": 0.511811,
+      "computed": 0.511810932039,
       "measured": 0.511696,
-      "error_pct": 0.022461,
+      "error_pct": 0.022461000086,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -5347,13 +5422,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "NGC_1300",
-      "computed": 0.005849,
+      "computed": 0.00584931351928,
       "measured": 0.005848,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -5374,13 +5450,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "NGC_1300",
-      "computed": 8.002156,
+      "computed": 8.00215632,
       "measured": 8.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -5401,7 +5478,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -5576,9 +5654,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "NGC_1365",
-      "computed": 0.362504,
+      "computed": 0.36250440383,
       "measured": 0.362423,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999917,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -5597,15 +5675,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "NGC_1365",
-      "computed": 0.046211,
+      "computed": 0.0462113772066,
       "measured": 0.046201,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999784,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -5624,13 +5703,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "NGC_1365",
-      "computed": 0.004108,
+      "computed": 0.00410792247327,
       "measured": 0.004107,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -5651,13 +5731,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "NGC_1365",
-      "computed": 10.002695,
+      "computed": 10.0026954,
       "measured": 10.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -5678,7 +5759,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -5853,9 +5935,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "NGC_253",
-      "computed": 0.374304,
+      "computed": 0.374304053554,
       "measured": 0.37422,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999466,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -5874,15 +5956,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "NGC_253",
-      "computed": 0.299443,
+      "computed": 0.299443242843,
       "measured": 0.299376,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609998798,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -5901,13 +5984,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "NGC_253",
-      "computed": 0.002079,
+      "computed": 0.00207946696419,
       "measured": 0.002079,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -5928,13 +6012,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "NGC_253",
-      "computed": 13.003504,
+      "computed": 13.00350402,
       "measured": 13.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -5955,7 +6040,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -6130,9 +6216,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "NGC_4038",
-      "computed": 0.443549,
+      "computed": 0.44354860308,
       "measured": 0.443449,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000248,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -6151,15 +6237,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "NGC_4038",
-      "computed": 0.049283,
+      "computed": 0.0492830669839,
       "measured": 0.049272,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999594,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -6178,13 +6265,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "NGC_4038",
-      "computed": 0.00448,
+      "computed": 0.00448000602819,
       "measured": 0.004479,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -6205,13 +6293,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "NGC_4038",
-      "computed": 11.002965,
+      "computed": 11.00296494,
       "measured": 11.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -6232,7 +6321,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -6407,9 +6497,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "NGC_6240",
-      "computed": 0.363523,
+      "computed": 0.363522632483,
       "measured": 0.363441,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999972,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -6428,15 +6518,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "NGC_6240",
-      "computed": 0.088192,
+      "computed": 0.0881918043129,
       "measured": 0.088172,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999773,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -6455,7 +6546,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -6488,7 +6580,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "NGC_6240",
-      "computed": 10.002695,
+      "computed": 10.0026954,
       "measured": 10.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -6509,7 +6601,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -6684,9 +6777,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Omega_Cen",
-      "computed": 0.324029,
+      "computed": 0.324028763757,
       "measured": 0.323956,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999506,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -6705,15 +6798,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Omega_Cen",
-      "computed": 0.015105,
+      "computed": 0.0151053920602,
       "measured": 0.015102,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609998676,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -6732,13 +6826,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Omega_Cen",
-      "computed": 0.000444,
+      "computed": 0.00044409972684,
       "measured": 0.000444,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -6759,13 +6854,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Omega_Cen",
-      "computed": 11.002965,
+      "computed": 11.00296494,
       "measured": 11.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -6786,13 +6882,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "Omega_Cen",
-      "computed": 348.109432,
+      "computed": 348.10943208,
       "measured": 348.0,
       "error_pct": 0.031446,
       "eval_kind": "fsot_prediction",
@@ -6813,7 +6910,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -6961,9 +7059,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Orion",
-      "computed": 0.301167,
+      "computed": 0.301166629846,
       "measured": 0.301099,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609998705,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -6982,15 +7080,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Orion",
-      "computed": 0.338487,
+      "computed": 0.338487010495,
       "measured": 0.338411,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000857,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -7009,13 +7108,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Orion",
-      "computed": 0.001446,
+      "computed": 0.00144632478606,
       "measured": 0.001446,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -7036,13 +7136,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Orion",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -7063,7 +7164,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -7211,7 +7313,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "obs_count_total",
       "name": "Pleiades",
-      "computed": 87.02345,
+      "computed": 87.02344998,
       "measured": 87.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -7232,7 +7334,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -7292,9 +7395,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Pleiades",
-      "computed": 0.160956,
+      "computed": 0.160956144241,
       "measured": 0.16092,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609998757,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -7313,13 +7416,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Pleiades",
-      "computed": 4.001078,
+      "computed": 4.00107816,
       "measured": 4.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -7340,7 +7444,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -7466,9 +7571,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Proxima_Cen",
-      "computed": 0.744585,
+      "computed": 0.744585203727,
       "measured": 0.744418,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000027,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -7487,13 +7592,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Proxima_Cen",
-      "computed": 0.007053,
+      "computed": 0.00705258372511,
       "measured": 0.007051,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -7514,15 +7620,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Proxima_Cen",
-      "computed": 0.015279,
+      "computed": 0.0152794311424,
       "measured": 0.015276,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610002618,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -7541,13 +7648,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Proxima_Cen",
-      "computed": 12.003234,
+      "computed": 12.00323448,
       "measured": 12.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -7568,13 +7676,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "Proxima_Cen",
-      "computed": 141.994638,
+      "computed": 141.994637597,
       "measured": 141.95,
       "error_pct": 0.031446,
       "eval_kind": "fsot_prediction",
@@ -7595,7 +7704,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -7743,9 +7853,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Ring",
-      "computed": 0.177241,
+      "computed": 0.177240801117,
       "measured": 0.177201,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610002201,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -7764,15 +7874,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Ring",
-      "computed": 0.580265,
+      "computed": 0.580265304122,
       "measured": 0.580135,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999397,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -7791,15 +7902,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Ring",
-      "computed": 0.014676,
+      "computed": 0.0146762957025,
       "measured": 0.014673,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609997955,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -7818,13 +7930,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Ring",
-      "computed": 10.002695,
+      "computed": 10.0026954,
       "measured": 10.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -7845,7 +7958,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -8020,9 +8134,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "SMACS0723",
-      "computed": 0.13314,
+      "computed": 0.133139897837,
       "measured": 0.13311,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999249,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -8041,13 +8155,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "SMACS0723",
-      "computed": 0.343477,
+      "computed": 0.343477131074,
       "measured": 0.3434,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -8068,15 +8183,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "SMACS0723",
-      "computed": 0.050347,
+      "computed": 0.050347305969,
       "measured": 0.050336,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000795,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -8095,13 +8211,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "SMACS0723",
-      "computed": 8.002156,
+      "computed": 8.00215632,
       "measured": 8.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -8122,7 +8239,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -8297,9 +8415,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Sgr_A",
-      "computed": 0.247345,
+      "computed": 0.247344543582,
       "measured": 0.247289,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609998827,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -8318,15 +8436,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Sgr_A",
-      "computed": 0.306517,
+      "computed": 0.306516831285,
       "measured": 0.306448,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609999086,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -8345,13 +8464,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Sgr_A",
-      "computed": 0.001183,
+      "computed": 0.00118326571363,
       "measured": 0.001183,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -8372,13 +8492,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Sgr_A",
-      "computed": 10.002695,
+      "computed": 10.0026954,
       "measured": 10.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -8399,13 +8520,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "Sgr_A",
-      "computed": 576.181129,
+      "computed": 576.18112896,
       "measured": 576.0,
       "error_pct": 0.031446,
       "eval_kind": "fsot_prediction",
@@ -8426,7 +8548,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -8574,9 +8697,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "TRAPPIST_1",
-      "computed": 0.63482,
+      "computed": 0.634819554801,
       "measured": 0.634677,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000047,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -8595,15 +8718,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "TRAPPIST_1",
-      "computed": 0.158907,
+      "computed": 0.158906684015,
       "measured": 0.158871,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224609998049,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -8622,13 +8746,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "TRAPPIST_1",
-      "computed": 0.00121,
+      "computed": 0.0012102717781,
       "measured": 0.00121,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -8649,13 +8774,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "TRAPPIST_1",
-      "computed": 11.002965,
+      "computed": 11.00296494,
       "measured": 11.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -8676,15 +8802,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "TRAPPIST_1",
-      "computed": 112.043218,
+      "computed": 112.043218034,
       "measured": 112.007996,
-      "error_pct": 0.031446,
+      "error_pct": 0.0314459996231,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -8703,7 +8830,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -8824,7 +8952,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "obs_count_total",
       "name": "Tycho_SN",
-      "computed": 25.006738,
+      "computed": 25.0067385,
       "measured": 25.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -8845,7 +8973,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -8905,7 +9034,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Tycho_SN",
-      "computed": 0.160036,
+      "computed": 0.1600359376,
       "measured": 0.16,
       "error_pct": 0.022461,
       "eval_kind": "fsot_prediction",
@@ -8926,13 +9055,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Tycho_SN",
-      "computed": 5.001348,
+      "computed": 5.0013477,
       "measured": 5.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -8953,7 +9083,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -9079,9 +9210,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "hst_fraction",
       "name": "Vega",
-      "computed": 0.483068,
+      "computed": 0.483068477646,
       "measured": 0.48296,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000828,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -9100,15 +9231,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "jwst_fraction",
       "name": "Vega",
-      "computed": 0.014609,
+      "computed": 0.0146092806537,
       "measured": 0.014606,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610002739,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -9127,15 +9259,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "Vega",
-      "computed": 0.020453,
+      "computed": 0.0204525928253,
       "measured": 0.020448,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000978,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -9154,13 +9287,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "Vega",
-      "computed": 9.002426,
+      "computed": 9.00242586,
       "measured": 9.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -9181,15 +9315,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "median_exptime_hst_s",
       "name": "Vega",
-      "computed": 63.944102,
+      "computed": 63.944101541,
       "measured": 63.924,
-      "error_pct": 0.031446,
+      "error_pct": 0.0314459999374,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -9208,7 +9343,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.031446
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -9329,7 +9465,7 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "obs_count_total",
       "name": "WASP_12",
-      "computed": 33.008895,
+      "computed": 33.00889482,
       "measured": 33.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -9350,7 +9486,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",
@@ -9410,9 +9547,9 @@
       "lab": "stsci_mast_telescope_lab",
       "property": "tess_fraction",
       "name": "WASP_12",
-      "computed": 0.212169,
+      "computed": 0.212168644498,
       "measured": 0.212121,
-      "error_pct": 0.022461,
+      "error_pct": 0.0224610000896,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
@@ -9431,13 +9568,14 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.022461
     },
     {
       "lab": "stsci_mast_telescope_lab",
       "property": "instrument_diversity",
       "name": "WASP_12",
-      "computed": 3.000809,
+      "computed": 3.00080862,
       "measured": 3.0,
       "error_pct": 0.026954,
       "eval_kind": "fsot_prediction",
@@ -9458,7 +9596,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "MAST CAOM cone"
-      }
+      },
+      "error_pct_full": 0.026954
     },
     {
       "lab": "stsci_mast_telescope_lab",

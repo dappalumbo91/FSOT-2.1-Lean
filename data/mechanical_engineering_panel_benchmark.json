@@ -84,7 +84,7 @@
       "lab": "mechanical_engineering_panel_lab",
       "property": "thermal_efficiency_pct",
       "name": "steam_turbine_efficiency",
-      "computed": 45.017707,
+      "computed": 45.01770705,
       "measured": 45.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -103,7 +103,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -134,7 +135,7 @@
       "lab": "mechanical_engineering_panel_lab",
       "property": "carnot_efficiency_pct",
       "name": "carnot_limit_steam",
-      "computed": 55.021642,
+      "computed": 55.02164195,
       "measured": 55.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -153,7 +154,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -184,7 +186,7 @@
       "lab": "mechanical_engineering_panel_lab",
       "property": "gear_ratio",
       "name": "gear_ratio_standard",
-      "computed": 3.00118,
+      "computed": 3.00118047,
       "measured": 3.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -203,13 +205,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",
       "property": "shear_stress_mpa",
       "name": "shaft_torsional_stress",
-      "computed": 80.031479,
+      "computed": 80.0314792,
       "measured": 80.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -228,7 +231,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -259,7 +263,7 @@
       "lab": "mechanical_engineering_panel_lab",
       "property": "pressure_ratio",
       "name": "compressor_pressure_ratio",
-      "computed": 10.003935,
+      "computed": 10.0039349,
       "measured": 10.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -278,7 +282,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -384,7 +389,7 @@
       "lab": "mechanical_engineering_panel_lab",
       "property": "mach_number",
       "name": "mach_critical",
-      "computed": 1.000393,
+      "computed": 1.00039349,
       "measured": 1.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -403,7 +408,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -435,7 +441,7 @@
       "lab": "mechanical_engineering_panel_lab",
       "property": "poisson_ratio",
       "name": "poisson_steel",
-      "computed": 0.300118,
+      "computed": 0.300118047,
       "measured": 0.3,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -454,13 +460,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",
       "property": "cte_um_m_k",
       "name": "thermal_expansion_steel",
-      "computed": 12.004722,
+      "computed": 12.00472188,
       "measured": 12.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -479,13 +486,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",
       "property": "friction_coefficient",
       "name": "friction_coefficient_bearing",
-      "computed": 0.001,
+      "computed": 0.00100039349,
       "measured": 0.001,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
@@ -504,7 +512,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.039349
     },
     {
       "lab": "mechanical_engineering_panel_lab",

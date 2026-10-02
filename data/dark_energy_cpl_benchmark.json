@@ -96,25 +96,27 @@
       "lab": "dark_energy_cpl_lab",
       "property": "w0_cmb_readout",
       "name": "cmb_sector_w0",
-      "computed": -1.029981,
+      "computed": -1.0299812952,
       "measured": -1.03,
       "error_pct": 0.001816,
       "formula": "\u2212P_new\u00b7\u03c0/G",
       "eval_kind": "live_formula",
       "comparison_class": "cmb_sector_prediction",
-      "reference": "Planck2018"
+      "reference": "Planck2018",
+      "error_pct_full": 0.001816
     },
     {
       "lab": "dark_energy_cpl_lab",
       "property": "w0_bao_readout",
       "name": "bao_sector_w0",
-      "computed": -0.729679,
+      "computed": -0.72967901681,
       "measured": -0.727,
       "error_pct": 0.368503,
       "formula": "w0_cmb\u00b7(1 \u2212 G/\u03c0)",
       "eval_kind": "live_formula",
       "comparison_class": "bao_sector_prediction",
-      "reference": "DESI_DR2"
+      "reference": "DESI_DR2",
+      "error_pct_full": 0.368503
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -133,13 +135,14 @@
       "lab": "dark_energy_cpl_lab",
       "property": "wa_bao_readout",
       "name": "bao_sector_wa",
-      "computed": -1.020856,
+      "computed": -1.0208556427,
       "measured": -1.018,
       "error_pct": 0.280515,
       "formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
       "eval_kind": "live_formula",
       "comparison_class": "bao_sector_prediction",
-      "reference": "DESI_DR2"
+      "reference": "DESI_DR2",
+      "error_pct_full": 0.280515
     },
     {
       "lab": "dark_energy_cpl_lab",

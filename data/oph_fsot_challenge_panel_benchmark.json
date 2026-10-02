@@ -217,15 +217,16 @@
       "lab": "oph_challenge_lab",
       "property": "alpha_em_inverse",
       "name": "PDG_class",
-      "computed": 137.049023,
+      "computed": 137.049022985,
       "measured": 137.035999084,
-      "error_pct": 0.009504,
+      "error_pct": 0.00950399974244,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "formula": "fsot_scaled @ Particle_Physics vs PDG \u03b1\u207b\u00b9",
       "layer": "sm_couplings",
-      "source": "PDG class anchor"
+      "source": "PDG class anchor",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "oph_challenge_lab",
@@ -394,14 +395,15 @@
       "lab": "oph_challenge_lab",
       "property": "alpha_s_mz_order",
       "name": "strong_coupling_order",
-      "computed": 0.117911,
+      "computed": 0.117911205216,
       "measured": 0.1179,
       "error_pct": 0.009504,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "formula": "fsot_scaled @ Particle_Physics vs PDG \u03b1_s(M_Z) class",
-      "layer": "sm_couplings"
+      "layer": "sm_couplings",
+      "error_pct_full": 0.009504
     },
     {
       "lab": "oph_challenge_lab",

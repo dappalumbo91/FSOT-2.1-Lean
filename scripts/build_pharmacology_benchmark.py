@@ -9,6 +9,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "pharmacology_chembl_cache.json"
@@ -76,7 +77,7 @@ def build(cache_path: Path = CACHE) -> dict:
                 "name": row.get("pref_name") or row.get("molecule_chembl_id"),
                 "chembl_id": row.get("molecule_chembl_id"),
                 "formula": formula,
-                "computed": round(computed, 4),
+                "computed": round_sig(computed),
                 "measured": float(measured),
                 "error_pct": err,
                 "within_band": err <= tol_pct,

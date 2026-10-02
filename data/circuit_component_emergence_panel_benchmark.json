@@ -156,7 +156,7 @@
       "lab": "circuit_component_lab",
       "property": "resistance_ohm",
       "name": "R_22R_5pct",
-      "computed": 22.004566,
+      "computed": 22.0045661,
       "measured": 22.0,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -164,111 +164,120 @@
       "fsot_scalar": 0.518866,
       "component_class": "resistor",
       "designator": "R8",
-      "industry_ref": "EIA-96/IEC 60115"
+      "industry_ref": "EIA-96/IEC 60115",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "capacitance_f",
       "name": "C_10nF_X7R",
-      "computed": 0.0,
+      "computed": 1.0001341e-08,
       "measured": 1e-08,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "component_class": "capacitor",
-      "dielectric": "X7R"
+      "dielectric": "X7R",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "circuit_component_lab",
       "property": "capacitance_f",
       "name": "C_100nF_X7R",
-      "computed": 0.0,
+      "computed": 1.0001341e-07,
       "measured": 1e-07,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "component_class": "capacitor",
-      "dielectric": "X7R"
+      "dielectric": "X7R",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "circuit_component_lab",
       "property": "capacitance_f",
       "name": "C_1uF_X5R",
-      "computed": 1e-06,
+      "computed": 1.0001341e-06,
       "measured": 1e-06,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "component_class": "capacitor",
-      "dielectric": "X5R"
+      "dielectric": "X5R",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "circuit_component_lab",
       "property": "capacitance_f",
       "name": "C_10uF_electrolytic",
-      "computed": 1e-05,
+      "computed": 1.0001341e-05,
       "measured": 1e-05,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "component_class": "capacitor",
-      "dielectric": "electrolytic"
+      "dielectric": "electrolytic",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "circuit_component_lab",
       "property": "capacitance_f",
       "name": "C_100pF_C0G",
-      "computed": 0.0,
+      "computed": 1.0001341e-10,
       "measured": 1e-10,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "component_class": "capacitor",
-      "dielectric": "C0G"
+      "dielectric": "C0G",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "circuit_component_lab",
       "property": "inductance_h",
       "name": "L_10uH_power",
-      "computed": 1e-05,
+      "computed": 1.00020755e-05,
       "measured": 1e-05,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "inductor",
-      "q_factor": 45
+      "q_factor": 45,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "inductance_h",
       "name": "L_100uH_rf",
-      "computed": 0.0001,
+      "computed": 0.000100020755,
       "measured": 0.0001,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "inductor",
-      "q_factor": 60
+      "q_factor": 60,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "inductance_h",
       "name": "L_1mH_filter",
-      "computed": 0.001,
+      "computed": 0.00100020755,
       "measured": 0.001,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "inductor",
-      "q_factor": 35
+      "q_factor": 35,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
@@ -286,52 +295,56 @@
       "lab": "circuit_component_lab",
       "property": "rdson_ohm",
       "name": "Q_IRLZ44N",
-      "computed": 0.022005,
+      "computed": 0.0220045661,
       "measured": 0.022,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
-      "component_class": "semiconductor"
+      "component_class": "semiconductor",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "efficiency_pct",
       "name": "PS_BUCK_5V3A",
-      "computed": 92.036201,
+      "computed": 92.03620108,
       "measured": 92.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "component_class": "power",
-      "vout_v": 5
+      "vout_v": 5,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "circuit_component_lab",
       "property": "efficiency_pct",
       "name": "PS_LDO_3V3",
-      "computed": 66.02597,
+      "computed": 66.02597034,
       "measured": 66.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "component_class": "power",
-      "vout_v": 3.3
+      "vout_v": 3.3,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "circuit_component_lab",
       "property": "efficiency_pct",
       "name": "PS_BOOST_12V",
-      "computed": 88.034627,
+      "computed": 88.03462712,
       "measured": 88.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "component_class": "power",
-      "vout_v": 12
+      "vout_v": 12,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "circuit_component_lab",
@@ -361,40 +374,43 @@
       "lab": "circuit_component_lab",
       "property": "vdd_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "vdd_min_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.000623,
+      "computed": 3.00062265,
       "measured": 3.0,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "vdd_max_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.600747,
+      "computed": 3.60074718,
       "measured": 3.6,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
@@ -413,40 +429,43 @@
       "lab": "circuit_component_lab",
       "property": "flash_mhz",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 40.005907,
+      "computed": 40.0059068,
       "measured": 40.0,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "circuit_component_lab",
       "property": "wifi_freq_ghz",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 2.400498,
+      "computed": 2.40049812,
       "measured": 2.4,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "deep_sleep_ua",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 10.003935,
+      "computed": 10.0039349,
       "measured": 10.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.039349
     },
     {
       "lab": "circuit_component_lab",
@@ -465,66 +484,71 @@
       "lab": "circuit_component_lab",
       "property": "gpio_high_v",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "adc_bits",
       "name": "MCU_ESP32_WROOM32",
-      "computed": 12.001772,
+      "computed": 12.00177204,
       "measured": 12.0,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "circuit_component_lab",
       "property": "vdd_v",
       "name": "MCU_ESP32_S3",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "vdd_min_v",
       "name": "MCU_ESP32_S3",
-      "computed": 3.000623,
+      "computed": 3.00062265,
       "measured": 3.0,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "vdd_max_v",
       "name": "MCU_ESP32_S3",
-      "computed": 3.600747,
+      "computed": 3.60074718,
       "measured": 3.6,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
@@ -543,40 +567,43 @@
       "lab": "circuit_component_lab",
       "property": "flash_mhz",
       "name": "MCU_ESP32_S3",
-      "computed": 80.011814,
+      "computed": 80.0118136,
       "measured": 80.0,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "circuit_component_lab",
       "property": "wifi_freq_ghz",
       "name": "MCU_ESP32_S3",
-      "computed": 2.400498,
+      "computed": 2.40049812,
       "measured": 2.4,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "deep_sleep_ua",
       "name": "MCU_ESP32_S3",
-      "computed": 8.003148,
+      "computed": 8.00314792,
       "measured": 8.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.039349
     },
     {
       "lab": "circuit_component_lab",
@@ -595,105 +622,113 @@
       "lab": "circuit_component_lab",
       "property": "gpio_high_v",
       "name": "MCU_ESP32_S3",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "adc_bits",
       "name": "MCU_ESP32_S3",
-      "computed": 12.001772,
+      "computed": 12.00177204,
       "measured": 12.0,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "component_class": "mcu",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.014767
     },
     {
       "lab": "circuit_component_lab",
       "property": "efficiency_pct",
       "name": "REG_AMS1117_3V3",
-      "computed": 66.02597,
+      "computed": 66.02597034,
       "measured": 66.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "component_class": "power",
-      "vout_v": 3.3
+      "vout_v": 3.3,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "circuit_component_lab",
       "property": "dropout_v",
       "name": "REG_AMS1117_3V3",
-      "computed": 1.100228,
+      "computed": 1.100228305,
       "measured": 1.1,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "component_class": "power",
-      "platform": "esp32_engineering"
+      "platform": "esp32_engineering",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
       "property": "efficiency_pct",
       "name": "BUCK_MP1584_3V3",
-      "computed": 90.035414,
+      "computed": 90.0354141,
       "measured": 90.0,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "component_class": "power",
-      "vout_v": 3.3
+      "vout_v": 3.3,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "circuit_component_lab",
       "property": "capacitance_f",
       "name": "C_100uF_bulk_ESP",
-      "computed": 0.0001,
+      "computed": 0.00010001341,
       "measured": 0.0001,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "component_class": "capacitor",
-      "dielectric": "electrolytic"
+      "dielectric": "electrolytic",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "circuit_component_lab",
       "property": "capacitance_f",
       "name": "C_100nF_bypass_ESP",
-      "computed": 0.0,
+      "computed": 1.0001341e-07,
       "measured": 1e-07,
       "error_pct": 0.01341,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "component_class": "capacitor",
-      "dielectric": "X7R"
+      "dielectric": "X7R",
+      "error_pct_full": 0.01341
     },
     {
       "lab": "circuit_component_lab",
       "property": "vdd_v",
       "name": "esp32_vdd_rail",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "platform": "esp32",
-      "note": "3V3 rail sizing for WiFi TX peak headroom"
+      "note": "3V3 rail sizing for WiFi TX peak headroom",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
@@ -712,14 +747,15 @@
       "lab": "circuit_component_lab",
       "property": "v_high_v",
       "name": "esp32_gpio_logic",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "platform": "esp32",
-      "note": "GPIO absolute levels \u2014 not 5V tolerant on classic ESP32"
+      "note": "GPIO absolute levels \u2014 not 5V tolerant on classic ESP32",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
@@ -738,14 +774,15 @@
       "lab": "circuit_component_lab",
       "property": "vdd_v",
       "name": "esp32_i2c_pullup",
-      "computed": 3.300685,
+      "computed": 3.300684915,
       "measured": 3.3,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "platform": "esp32",
-      "note": "Typical I2C pull-up starting point on 3V3"
+      "note": "Typical I2C pull-up starting point on 3V3",
+      "error_pct_full": 0.020755
     },
     {
       "lab": "circuit_component_lab",
@@ -790,14 +827,15 @@
       "lab": "circuit_component_lab",
       "property": "flash_mhz",
       "name": "esp32_flash_spi",
-      "computed": 40.005907,
+      "computed": 40.0059068,
       "measured": 40.0,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "platform": "esp32",
-      "note": "Quad SPI flash clock typical"
+      "note": "Quad SPI flash clock typical",
+      "error_pct_full": 0.014767
     }
   ],
   "margin_summary": {

@@ -69,11 +69,12 @@
       "lab": "fsot_c_parity_lab",
       "property": "c_pack_word",
       "name": "c_pack_parity",
-      "computed": 5.270498306774157e+18,
+      "computed": 5.27049830677e+18,
       "measured": 5.270498306774157e+18,
-      "error_pct": 0.0,
+      "error_pct": 7.88813458996e-11,
       "eval_kind": "live_formula",
-      "formula": "pack 0..31 mod3 golden"
+      "formula": "pack 0..31 mod3 golden",
+      "error_pct_full": 0.0
     },
     {
       "lab": "fsot_c_parity_lab",
@@ -219,11 +220,12 @@
       "lab": "fsot_c_parity_lab",
       "property": "pack_word_golden_identity",
       "name": "c_structural",
-      "computed": 5.270498306774157e+18,
+      "computed": 5.27049830677e+18,
       "measured": 5.270498306774157e+18,
-      "error_pct": 0.0,
+      "error_pct": 7.88813458996e-11,
       "eval_kind": "live_formula",
-      "formula": "0..31 mod3 pack word"
+      "formula": "0..31 mod3 pack word",
+      "error_pct_full": 0.0
     },
     {
       "lab": "fsot_c_parity_lab",

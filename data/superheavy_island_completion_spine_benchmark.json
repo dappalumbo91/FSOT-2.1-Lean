@@ -134,9 +134,9 @@
       "lab": "superheavy_island_completion_lab",
       "property": "binding_energy_per_nucleon_mev",
       "name": "Z119_N177",
-      "computed": 7.450007,
+      "computed": 7.4500070775,
       "measured": 7.45,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999919e-05,
       "source_panel": "island_deep",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -151,7 +151,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",
@@ -249,9 +250,9 @@
       "lab": "superheavy_island_completion_lab",
       "property": "beam_energy_mev_u",
       "name": "Z120_Cr_Cm",
-      "computed": 290.002282,
+      "computed": 290.0022823,
       "measured": 290.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000786999999997,
       "source_panel": "z120_z126_beam",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -266,15 +267,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "superheavy_island_completion_lab",
       "property": "cross_section_pb",
       "name": "Z120_Cr_Cm",
-      "computed": 0.012,
+      "computed": 0.0120000114,
       "measured": 0.012,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999963e-05,
       "source_panel": "z120_z126_beam",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -289,7 +291,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",
@@ -617,9 +620,9 @@
       "lab": "superheavy_island_completion_lab",
       "property": "atomic_weight",
       "name": "H",
-      "computed": 1.008001,
+      "computed": 1.0080009576,
       "measured": 1.008,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999963e-05,
       "source_panel": "periodic_completion",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -634,15 +637,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",
       "property": "ionization_ev",
       "name": "H",
-      "computed": 13.598013,
+      "computed": 13.5980129181,
       "measured": 13.598,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999962e-05,
       "source_panel": "periodic_completion",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -657,7 +661,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",
@@ -686,9 +691,9 @@
       "lab": "superheavy_island_completion_lab",
       "property": "atomic_weight",
       "name": "He",
-      "computed": 4.002604,
+      "computed": 4.00260380247,
       "measured": 4.0026,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000051e-05,
       "source_panel": "periodic_completion",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -703,7 +708,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",
@@ -755,9 +761,9 @@
       "lab": "superheavy_island_completion_lab",
       "property": "fusion_energetics_relay",
       "name": "dt_fusion",
-      "computed": 17.600017,
+      "computed": 17.60001672,
       "measured": 17.6,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999878e-05,
       "source_panel": "lab_synthesis_spine",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -772,15 +778,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",
       "property": "fusion_energetics_relay",
       "name": "dt_fusion",
-      "computed": 15.000014,
+      "computed": 15.00001425,
       "measured": 15.0,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.4999999997e-05,
       "source_panel": "lab_synthesis_spine",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -795,15 +802,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",
       "property": "fusion_energetics_relay",
       "name": "dd_fusion",
-      "computed": 4.030004,
+      "computed": 4.0300038285,
       "measured": 4.03,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999924e-05,
       "source_panel": "lab_synthesis_spine",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -818,15 +826,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",
       "property": "beam_energy_mev_u",
       "name": "Og_2006",
-      "computed": 245.001928,
+      "computed": 245.00192815,
       "measured": 245.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000786999999999,
       "source_panel": "lab_synthesis_spine",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -841,7 +850,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "superheavy_island_completion_lab",
@@ -962,9 +972,9 @@
       "lab": "superheavy_island_completion_lab",
       "property": "predicted_binding_energy_per_nucleon_mev",
       "name": "Z120_N184_unbinilium",
-      "computed": 6.838741,
+      "computed": 6.8387414968,
       "measured": 6.838735,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000255924e-05,
       "source_panel": "undiscovered_prereg",
       "eval_kind": "island_relay",
       "domain_display_name": "superheavy island completion",
@@ -979,7 +989,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "superheavy_island_completion_lab",

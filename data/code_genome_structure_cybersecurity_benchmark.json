@@ -1451,7 +1451,7 @@
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "Lean_codon_units",
-      "computed": 9.001329,
+      "computed": 9.00132903,
       "measured": 9.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1467,13 +1467,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "Rust_codon_units",
-      "computed": 10.001477,
+      "computed": 10.0014767,
       "measured": 10.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1489,13 +1490,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "Python_codon_units",
-      "computed": 10.001477,
+      "computed": 10.0014767,
       "measured": 10.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1511,13 +1513,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "C_codon_units",
-      "computed": 10.001477,
+      "computed": 10.0014767,
       "measured": 10.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1533,13 +1536,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "JavaScript_codon_units",
-      "computed": 10.001477,
+      "computed": 10.0014767,
       "measured": 10.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1555,13 +1559,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "Go_codon_units",
-      "computed": 8.001181,
+      "computed": 8.00118136,
       "measured": 8.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1577,13 +1582,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "Zig_codon_units",
-      "computed": 8.001181,
+      "computed": 8.00118136,
       "measured": 8.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1599,13 +1605,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "WebAssembly_codon_units",
-      "computed": 6.000886,
+      "computed": 6.00088602,
       "measured": 6.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1621,13 +1628,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
       "property": "codon_unit_coverage",
       "name": "FSOTB_ISA_codon_units",
-      "computed": 27.003987,
+      "computed": 27.00398709,
       "measured": 27.0,
       "error_pct": 0.014767,
       "source": "code_genome_language_registry",
@@ -1643,7 +1651,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.014767
     },
     {
       "lab": "code_genome_lab",
@@ -2225,9 +2234,9 @@
       "lab": "code_genome_lab",
       "property": "unified_codon_count",
       "name": "codon_alphabet_size",
-      "computed": 64.015679,
+      "computed": 64.0156785269,
       "measured": 64.0,
-      "error_pct": 0.02449769835093374,
+      "error_pct": 0.0244976982813,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "codon alphabet size",
@@ -2241,15 +2250,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "hole_detection_threshold",
       "name": "stability_match_threshold",
-      "computed": 0.850208,
+      "computed": 0.850208230436,
       "measured": 0.85,
-      "error_pct": 0.024497698350935047,
+      "error_pct": 0.0244976983529,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "stability match threshold",
@@ -2263,15 +2273,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "gap_window_codons",
       "name": "codon_window_size",
-      "computed": 3.000735,
+      "computed": 3.00073493095,
       "measured": 3.0,
-      "error_pct": 0.02449769835092634,
+      "error_pct": 0.0244976983333,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "codon window size",
@@ -2285,15 +2296,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "mapped_languages",
       "name": "language_bridge_count",
-      "computed": 6.00147,
+      "computed": 6.0014698619,
       "measured": 6.0,
-      "error_pct": 0.02449769835092634,
+      "error_pct": 0.0244976983333,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "language bridge count",
@@ -2307,15 +2319,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "lean_token_classes",
       "name": "lean_codon_units",
-      "computed": 9.002205,
+      "computed": 9.00220479285,
       "measured": 9.0,
-      "error_pct": 0.024497698350936205,
+      "error_pct": 0.0244976983333,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "lean codon units",
@@ -2329,15 +2342,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "rust_token_classes",
       "name": "rust_codon_units",
-      "computed": 10.00245,
+      "computed": 10.0024497698,
       "measured": 10.0,
-      "error_pct": 0.02449769835093818,
+      "error_pct": 0.024497698,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "rust codon units",
@@ -2351,15 +2365,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "python_token_classes",
       "name": "python_codon_units",
-      "computed": 10.00245,
+      "computed": 10.0024497698,
       "measured": 10.0,
-      "error_pct": 0.02449769835093818,
+      "error_pct": 0.024497698,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "python codon units",
@@ -2373,15 +2388,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "c_token_classes",
       "name": "c_codon_units",
-      "computed": 10.00245,
+      "computed": 10.0024497698,
       "measured": 10.0,
-      "error_pct": 0.02449769835093818,
+      "error_pct": 0.024497698,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "c codon units",
@@ -2395,15 +2411,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "js_token_classes",
       "name": "javascript_codon_units",
-      "computed": 10.00245,
+      "computed": 10.0024497698,
       "measured": 10.0,
-      "error_pct": 0.02449769835093818,
+      "error_pct": 0.024497698,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "javascript codon units",
@@ -2417,15 +2434,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "code_genome_lab",
       "property": "isa_opcode_count",
       "name": "fsotb_opcode_codon_units",
-      "computed": 27.006614,
+      "computed": 27.0066143786,
       "measured": 27.0,
-      "error_pct": 0.024497698350929624,
+      "error_pct": 0.0244976985185,
       "source": "zero_day_evaluator_reference_observables",
       "domain_display_name": "code genome",
       "display_name": "fsotb opcode codon units",
@@ -2439,7 +2457,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0244976983509
     },
     {
       "lab": "binary_decoder_rendlesham",

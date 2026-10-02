@@ -6,6 +6,7 @@ import math
 import os
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -131,7 +132,7 @@ def build_compactification_ladder() -> dict:
                     "name": rung["name"],
                     "rung_id": rung["id"],
                     "rung_index": rung["rung_index"],
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": round(measured, 6),
                     "error_pct": err,
                     "source": rung.get("benchmark_primary"),
@@ -205,7 +206,7 @@ def build_adjacent_rung_coupling() -> dict:
                     "lab": "adjacent_rung_coupling_lab",
                     "property": prop,
                     "name": pair["id"],
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": round(measured, 6),
                     "error_pct": err,
                     "source": "compactification_ladder_manifest.yaml",
@@ -277,7 +278,7 @@ def build_fold_depth_metrics() -> dict:
                     "property": prop,
                     "name": rung["name"],
                     "rung_id": rung["id"],
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": round(measured, 6),
                     "error_pct": err,
                     "source": "fsot_formula_spine.yaml",
@@ -294,7 +295,7 @@ def build_fold_depth_metrics() -> dict:
             "lab": "fold_depth_metrics_lab",
             "property": "ladder_fold_span",
             "name": "string_to_cosmological",
-            "computed": round(computed, 6),
+            "computed": round_sig(computed),
             "measured": round(ladder_span, 6),
             "error_pct": err,
             "source": "compactification_ladder_manifest.yaml",
@@ -374,7 +375,7 @@ def build_reality_folding_spine() -> dict:
                 "lab": "reality_folding_spine_lab",
                 "property": prop,
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "reality_folding_spine_metrics",

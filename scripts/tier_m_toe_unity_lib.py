@@ -5,6 +5,7 @@ import json
 import os
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -66,7 +67,7 @@ def _cross_scale_motif_records(*, lab: str, small_bench: dict, large_bench: dict
             "lab": lab,
             "property": "cross_scale_self_similarity",
             "name": f"{small_bench.get('domain')}__{large_bench.get('domain')}",
-            "computed": round(computed, 6),
+            "computed": round_sig(computed),
             "measured": round(measured, 6),
             "error_pct": err,
             "source": "cross_scale_motif",
@@ -203,7 +204,7 @@ def build_toe_unification_spine() -> dict:
                 "lab": "toe_unification_spine_lab",
                 "property": prop,
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "toe_unification_metrics",

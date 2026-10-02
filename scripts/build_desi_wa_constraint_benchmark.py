@@ -8,6 +8,7 @@ import json
 import shutil
 import sys
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 REFERENCE = ROOT / "data" / "dark_energy_cpl_reference.json"
@@ -63,7 +64,7 @@ def build() -> dict:
                 "lab": "desi_wa_constraint_lab",
                 "property": property_name,
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": center,
                 "error_pct": err,
                 "sigma_distance": round(z_loc, 4),

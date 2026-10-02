@@ -83,9 +83,9 @@
       "lab": "finance_markets_lab",
       "property": "sharpe_ratio",
       "name": "sp500_sharpe_10y",
-      "computed": 0.600194,
+      "computed": 0.600193801356,
       "measured": 0.6,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "sp500 sharpe 10y",
@@ -99,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "volatility_index",
       "name": "vix_long_run_mean",
-      "computed": 19.006137,
+      "computed": 19.0061370429,
       "measured": 19.0,
-      "error_pct": 0.03230022603427815,
+      "error_pct": 0.0323002257895,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "vix long run mean",
@@ -121,15 +122,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "bond_yield_pct",
       "name": "us_10y_yield",
-      "computed": 4.501454,
+      "computed": 4.50145351017,
       "measured": 4.5,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "us 10y yield",
@@ -143,15 +145,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "policy_rate_pct",
       "name": "fed_funds_rate",
-      "computed": 5.251696,
+      "computed": 5.25169576187,
       "measured": 5.25,
-      "error_pct": 0.03230022603429596,
+      "error_pct": 0.0323002260952,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "fed funds rate",
@@ -165,15 +168,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "commodity_price_usd",
       "name": "gold_price_usd_oz",
-      "computed": 2300.742905,
+      "computed": 2300.7429052,
       "measured": 2300.0,
-      "error_pct": 0.03230022603429461,
+      "error_pct": 0.032300226087,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "gold price usd oz",
@@ -187,15 +191,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "commodity_price_usd",
       "name": "wti_crude_usd_bbl",
-      "computed": 75.024225,
+      "computed": 75.0242251695,
       "measured": 75.0,
-      "error_pct": 0.03230022603429461,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "wti crude usd bbl",
@@ -209,15 +214,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "exchange_rate",
       "name": "eur_usd_fx",
-      "computed": 1.080349,
+      "computed": 1.08034884244,
       "measured": 1.08,
-      "error_pct": 0.03230022603429573,
+      "error_pct": 0.0323002259259,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "eur usd fx",
@@ -231,15 +237,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "market_cap_billion_usd",
       "name": "btc_market_cap_b",
-      "computed": 1200.387603,
+      "computed": 1200.38760271,
       "measured": 1200.0,
-      "error_pct": 0.03230022603429461,
+      "error_pct": 0.0323002258333,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "btc market cap b",
@@ -253,15 +260,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "price_earnings_ratio",
       "name": "pe_ratio_sp500",
-      "computed": 22.007106,
+      "computed": 22.0071060497,
       "measured": 22.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.0323002259091,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "pe ratio sp500",
@@ -275,15 +283,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "dividend_yield_pct",
       "name": "dividend_yield_sp500",
-      "computed": 1.500485,
+      "computed": 1.50048450339,
       "measured": 1.5,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "dividend yield sp500",
@@ -297,15 +306,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "credit_spread_bps",
       "name": "credit_spread_ig",
-      "computed": 100.0323,
+      "computed": 100.032300226,
       "measured": 100.0,
-      "error_pct": 0.03230022603429461,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "credit spread ig",
@@ -319,15 +329,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "credit_spread_bps",
       "name": "credit_spread_hy",
-      "computed": 400.129201,
+      "computed": 400.129200904,
       "measured": 400.0,
-      "error_pct": 0.03230022603429461,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "credit spread hy",
@@ -341,15 +352,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "mortgage_rate_pct",
       "name": "mortgage_rate_30y",
-      "computed": 7.002261,
+      "computed": 7.00226101582,
       "measured": 7.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "mortgage rate 30y",
@@ -363,15 +375,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "inflation_rate_pct",
       "name": "inflation_cpi_yoy",
-      "computed": 3.000969,
+      "computed": 3.00096900678,
       "measured": 3.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "inflation cpi yoy",
@@ -385,15 +398,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "unemployment_pct",
       "name": "unemployment_rate",
-      "computed": 4.001292,
+      "computed": 4.00129200904,
       "measured": 4.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "unemployment rate",
@@ -407,15 +421,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "gdp_growth_pct",
       "name": "gdp_growth_us",
-      "computed": 2.500808,
+      "computed": 2.50080750565,
       "measured": 2.5,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "gdp growth us",
@@ -429,15 +444,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "default_rate_pct",
       "name": "corporate_bond_default",
-      "computed": 1.500485,
+      "computed": 1.50048450339,
       "measured": 1.5,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "corporate bond default",
@@ -451,15 +467,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "implied_move_pct",
       "name": "options_implied_move",
-      "computed": 5.001615,
+      "computed": 5.0016150113,
       "measured": 5.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "options implied move",
@@ -473,15 +490,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "bid_ask_spread_bps",
       "name": "liquidity_bid_ask_bps",
-      "computed": 2.000646,
+      "computed": 2.00064600452,
       "measured": 2.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "liquidity bid ask bps",
@@ -495,15 +513,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "beta",
       "name": "market_beta_spy",
-      "computed": 1.000323,
+      "computed": 1.00032300226,
       "measured": 1.0,
-      "error_pct": 0.032300226034287505,
+      "error_pct": 0.032300226,
       "source": "finance_markets_reference_observables",
       "domain_display_name": "finance markets",
       "display_name": "market beta spy",
@@ -517,15 +536,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0323002260343
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "US_2023",
-      "computed": 27818703546283.652,
+      "computed": 27818703546300.0,
       "measured": 27811517000000.0,
-      "error_pct": 0.02584018082743327,
+      "error_pct": 0.0258401808862,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2023",
@@ -539,15 +559,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "US_2022",
-      "computed": 26061346559371.49,
+      "computed": 26061346559400.0,
       "measured": 26054614000000.0,
-      "error_pct": 0.02584018082742765,
+      "error_pct": 0.0258401809369,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2022",
@@ -561,15 +582,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "US_2021",
-      "computed": 23731775749570.473,
+      "computed": 23731775749600.0,
       "measured": 23725645000000.0,
-      "error_pct": 0.025840180827423894,
+      "error_pct": 0.0258401809519,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2021",
@@ -583,15 +605,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "US_2020",
-      "computed": 21380804411262.77,
+      "computed": 21380804411300.0,
       "measured": 21375281000000.0,
-      "error_pct": 0.025840180827421785,
+      "error_pct": 0.0258401810016,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2020",
@@ -605,15 +628,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "US_2019",
-      "computed": 21545547970298.996,
+      "computed": 21545547970300.0,
       "measured": 21539982000000.0,
-      "error_pct": 0.025840180827431024,
+      "error_pct": 0.0258401808321,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2019",
@@ -627,15 +651,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "US_2023",
-      "computed": 82608.125345,
+      "computed": 82608.1253453,
       "measured": 82586.7847707894,
-      "error_pct": 0.025840180827434677,
+      "error_pct": 0.0258401808108,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2023",
@@ -649,15 +674,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "US_2022",
-      "computed": 78028.847168,
+      "computed": 78028.8471676,
       "measured": 78008.6895811877,
-      "error_pct": 0.02584018082742571,
+      "error_pct": 0.0258401807805,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2022",
@@ -671,15 +697,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "US_2021",
-      "computed": 71459.692524,
+      "computed": 71459.6925241,
       "measured": 71441.2319805947,
-      "error_pct": 0.025840180827431534,
+      "error_pct": 0.0258401807941,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2021",
@@ -693,15 +720,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "US_2020",
-      "computed": 64481.955091,
+      "computed": 64481.9550909,
       "measured": 64465.2971415748,
-      "error_pct": 0.02584018082743167,
+      "error_pct": 0.0258401807854,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "US 2020",
@@ -715,7 +743,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
@@ -743,9 +772,9 @@
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "GB_2023",
-      "computed": 3421680593830.1577,
+      "computed": 3421680593830.0,
       "measured": 3420796653789.08,
-      "error_pct": 0.02584018082742602,
+      "error_pct": 0.0258401808228,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2023",
@@ -759,15 +788,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "GB_2022",
-      "computed": 3182066389758.133,
+      "computed": 3182066389760.0,
       "measured": 3181244350465.41,
-      "error_pct": 0.02584018082742979,
+      "error_pct": 0.0258401808861,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2022",
@@ -781,15 +811,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "GB_2021",
-      "computed": 3195384668796.988,
+      "computed": 3195384668800.0,
       "measured": 3194559188925.93,
-      "error_pct": 0.025840180827426108,
+      "error_pct": 0.0258401809217,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2021",
@@ -803,15 +834,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "GB_2020",
-      "computed": 2724705365212.3257,
+      "computed": 2724705365210.0,
       "measured": 2724001478304.59,
-      "error_pct": 0.025840180827432474,
+      "error_pct": 0.0258401807421,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2020",
@@ -825,15 +857,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "GB_2019",
-      "computed": 2876453168700.0483,
+      "computed": 2876453168700.0,
       "measured": 2875710080015.3,
-      "error_pct": 0.02584018082742825,
+      "error_pct": 0.0258401808257,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2019",
@@ -847,15 +880,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "GB_2023",
-      "computed": 49932.589,
+      "computed": 49932.5890002,
       "measured": 49919.6896621586,
-      "error_pct": 0.025840180827429744,
+      "error_pct": 0.0258401807557,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2023",
@@ -869,15 +903,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "GB_2022",
-      "computed": 47046.933434,
+      "computed": 47046.9334342,
       "measured": 47034.7795621476,
-      "error_pct": 0.02584018082742398,
+      "error_pct": 0.0258401807461,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2022",
@@ -891,15 +926,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "GB_2021",
-      "computed": 47707.973794,
+      "computed": 47707.9737943,
       "measured": 47695.6491523474,
-      "error_pct": 0.02584018082743021,
+      "error_pct": 0.0258401807537,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2021",
@@ -913,15 +949,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "GB_2020",
-      "computed": 40825.672239,
+      "computed": 40825.6722387,
       "measured": 40815.1255364787,
-      "error_pct": 0.025840180827432314,
+      "error_pct": 0.0258401807729,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2020",
@@ -935,15 +972,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "GB_2019",
-      "computed": 43171.837196,
+      "computed": 43171.8371961,
       "measured": 43160.6843971799,
-      "error_pct": 0.02584018082743328,
+      "error_pct": 0.0258401808865,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "GB 2019",
@@ -957,15 +995,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "JP_2023",
-      "computed": 4385987324234.3076,
+      "computed": 4385987324230.0,
       "measured": 4384854269961.93,
-      "error_pct": 0.02584018082742984,
+      "error_pct": 0.0258401807292,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2023",
@@ -979,15 +1018,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "JP_2022",
-      "computed": 4449125572409.911,
+      "computed": 4449125572410.0,
       "measured": 4447976207314.78,
-      "error_pct": 0.0258401808274223,
+      "error_pct": 0.0258401808294,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2022",
@@ -1001,15 +1041,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "JP_2021",
-      "computed": 5227283911424.783,
+      "computed": 5227283911420.0,
       "measured": 5225933520753.1,
-      "error_pct": 0.025840180827424522,
+      "error_pct": 0.0258401807359,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2021",
@@ -1023,15 +1064,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "JP_2020",
-      "computed": 5190538441674.15,
+      "computed": 5190538441670.0,
       "measured": 5189197543645.38,
-      "error_pct": 0.025840180827429726,
+      "error_pct": 0.0258401807474,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2020",
@@ -1045,15 +1087,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "JP_2019",
-      "computed": 5247110513056.918,
+      "computed": 5247110513060.0,
       "measured": 5245755000479.03,
-      "error_pct": 0.025840180827429282,
+      "error_pct": 0.0258401808862,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2019",
@@ -1067,7 +1110,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
@@ -1095,9 +1139,9 @@
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "JP_2022",
-      "computed": 35557.450258,
+      "computed": 35557.4502581,
       "measured": 35548.2645222433,
-      "error_pct": 0.025840180827433116,
+      "error_pct": 0.0258401808925,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2022",
@@ -1111,15 +1155,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "JP_2021",
-      "computed": 41591.483579,
+      "computed": 41591.4835789,
       "measured": 41580.739040705,
-      "error_pct": 0.02584018082743412,
+      "error_pct": 0.0258401809176,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2021",
@@ -1133,15 +1178,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "JP_2020",
-      "computed": 41109.59395,
+      "computed": 41109.5939496,
       "measured": 41098.9739004553,
-      "error_pct": 0.02584018082743142,
+      "error_pct": 0.0258401807559,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2020",
@@ -1155,15 +1201,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "JP_2019",
-      "computed": 41435.56982,
+      "computed": 41435.5698203,
       "measured": 41424.8655601543,
-      "error_pct": 0.025840180827427017,
+      "error_pct": 0.025840180773,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "JP 2019",
@@ -1177,15 +1224,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "DE_2023",
-      "computed": 4563386415166.398,
+      "computed": 4563386415170.0,
       "measured": 4562207532490.28,
-      "error_pct": 0.02584018082743095,
+      "error_pct": 0.0258401809064,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2023",
@@ -1199,15 +1247,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "DE_2022",
-      "computed": 4202107258084.174,
+      "computed": 4202107258080.0,
       "measured": 4201021706478.62,
-      "error_pct": 0.02584018082743119,
+      "error_pct": 0.0258401807281,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2022",
@@ -1221,15 +1270,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "DE_2021",
-      "computed": 4356377358391.0312,
+      "computed": 4356377358390.0,
       "measured": 4355251953410.78,
-      "error_pct": 0.02584018082742867,
+      "error_pct": 0.0258401808038,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2021",
@@ -1243,15 +1293,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "DE_2020",
-      "computed": 3942417421691.578,
+      "computed": 3942417421690.0,
       "measured": 3941398957073.94,
-      "error_pct": 0.02584018082742587,
+      "error_pct": 0.0258401807874,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2020",
@@ -1265,15 +1316,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "DE_2019",
-      "computed": 3960918038014.566,
+      "computed": 3960918038010.0,
       "measured": 3959894794039.21,
-      "error_pct": 0.02584018082743602,
+      "error_pct": 0.0258401807121,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2019",
@@ -1287,15 +1339,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "DE_2023",
-      "computed": 54790.921239,
+      "computed": 54790.9212391,
       "measured": 54776.7668235491,
-      "error_pct": 0.025840180827433442,
+      "error_pct": 0.0258401807403,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2023",
@@ -1309,15 +1362,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "DE_2022",
-      "computed": 50519.568939,
+      "computed": 50519.5689394,
       "measured": 50506.5179638543,
-      "error_pct": 0.025840180827424633,
+      "error_pct": 0.0258401807764,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2022",
@@ -1331,15 +1385,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "DE_2021",
-      "computed": 52362.773139,
+      "computed": 52362.7731393,
       "measured": 52349.2459994422,
-      "error_pct": 0.025840180827431652,
+      "error_pct": 0.0258401808843,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2021",
@@ -1353,15 +1408,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "DE_2020",
-      "computed": 47407.120371,
+      "computed": 47407.1203714,
       "measured": 47394.8734504469,
-      "error_pct": 0.02584018082743644,
+      "error_pct": 0.0258401807231,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2020",
@@ -1375,15 +1431,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "DE_2019",
-      "computed": 47668.514188,
+      "computed": 47668.5141879,
       "measured": 47656.199739747,
-      "error_pct": 0.02584018082743379,
+      "error_pct": 0.0258401807535,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "DE 2019",
@@ -1397,15 +1454,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IN_2023",
-      "computed": 3501810671093.677,
+      "computed": 3501810671090.0,
       "measured": 3500906030644.76,
-      "error_pct": 0.025840180827429553,
+      "error_pct": 0.0258401807224,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2023",
@@ -1419,15 +1477,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IN_2022",
-      "computed": 3250778281996.587,
+      "computed": 3250778282000.0,
       "measured": 3249938492013.47,
-      "error_pct": 0.02584018082743513,
+      "error_pct": 0.0258401809325,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2022",
@@ -1441,15 +1500,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IN_2021",
-      "computed": 3168089051716.815,
+      "computed": 3168089051720.0,
       "measured": 3167270623260.47,
-      "error_pct": 0.025840180827434795,
+      "error_pct": 0.025840180928,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2021",
@@ -1463,15 +1523,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IN_2020",
-      "computed": 2675542765072.0425,
+      "computed": 2675542765070.0,
       "measured": 2674851578587.27,
-      "error_pct": 0.025840180827435402,
+      "error_pct": 0.0258401807511,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2020",
@@ -1485,15 +1546,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IN_2019",
-      "computed": 2836338982342.4385,
+      "computed": 2836338982340.0,
       "measured": 2835606256558.19,
-      "error_pct": 0.025840180827429303,
+      "error_pct": 0.0258401807414,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2019",
@@ -1507,15 +1569,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IN_2023",
-      "computed": 2435.077329,
+      "computed": 2435.07732924,
       "measured": 2434.44826340989,
-      "error_pct": 0.02584018082743852,
+      "error_pct": 0.0258401806917,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2023",
@@ -1529,15 +1592,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IN_2022",
-      "computed": 2280.570609,
+      "computed": 2280.57060853,
       "measured": 2279.98145719369,
-      "error_pct": 0.025840180827437133,
+      "error_pct": 0.0258401810441,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2022",
@@ -1551,15 +1615,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IN_2021",
-      "computed": 2240.192564,
+      "computed": 2240.19256394,
       "measured": 2239.61384367482,
-      "error_pct": 0.025840180827429476,
+      "error_pct": 0.0258401807443,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2021",
@@ -1573,15 +1638,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IN_2020",
-      "computed": 1907.5353,
+      "computed": 1907.53529961,
       "measured": 1907.04251637669,
-      "error_pct": 0.025840180827432172,
+      "error_pct": 0.0258401807552,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2020",
@@ -1595,15 +1661,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IN_2019",
-      "computed": 2041.956146,
+      "computed": 2041.95614584,
       "measured": 2041.42863698585,
-      "error_pct": 0.02584018082743125,
+      "error_pct": 0.025840180969,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IN 2019",
@@ -1617,15 +1684,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "BR_2023",
-      "computed": 2191697958095.05,
+      "computed": 2191697958100.0,
       "measured": 2191131765684.63,
-      "error_pct": 0.0258401808274299,
+      "error_pct": 0.0258401810533,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2023",
@@ -1639,15 +1707,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "BR_2022",
-      "computed": 1952428322759.5684,
+      "computed": 1952428322760.0,
       "measured": 1951923942083.32,
-      "error_pct": 0.025840180827433133,
+      "error_pct": 0.0258401808495,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2022",
@@ -1661,15 +1730,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "BR_2021",
-      "computed": 1671079097213.7656,
+      "computed": 1671079097210.0,
       "measured": 1670647398904.9,
-      "error_pct": 0.025840180827426455,
+      "error_pct": 0.025840180602,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2021",
@@ -1683,15 +1753,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "BR_2020",
-      "computed": 1476488660088.2673,
+      "computed": 1476488660090.0,
       "measured": 1476107231310.49,
-      "error_pct": 0.025840180827426118,
+      "error_pct": 0.0258401809448,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2020",
@@ -1705,15 +1776,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "BR_2019",
-      "computed": 1873772266119.2964,
+      "computed": 1873772266120.0,
       "measured": 1873288205059.69,
-      "error_pct": 0.025840180827435538,
+      "error_pct": 0.025840180865,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2019",
@@ -1727,15 +1799,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "BR_2023",
-      "computed": 10380.270867,
+      "computed": 10380.2708671,
       "measured": 10377.5892792557,
-      "error_pct": 0.025840180827434747,
+      "error_pct": 0.0258401809143,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2023",
@@ -1749,15 +1822,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "BR_2022",
-      "computed": 9283.731658,
+      "computed": 9283.73165773,
       "measured": 9281.33334441234,
-      "error_pct": 0.025840180827426718,
+      "error_pct": 0.0258401808088,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2022",
@@ -1771,15 +1845,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "BR_2021",
-      "computed": 7974.596768,
+      "computed": 7974.59676775,
       "measured": 7972.5366498646,
-      "error_pct": 0.025840180827431718,
+      "error_pct": 0.0258401808091,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2021",
@@ -1793,15 +1868,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "BR_2020",
-      "computed": 7076.021768,
+      "computed": 7076.02176784,
       "measured": 7074.19378337644,
-      "error_pct": 0.025840180827429268,
+      "error_pct": 0.0258401807971,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2020",
@@ -1815,15 +1891,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "BR_2019",
-      "computed": 9032.166592,
+      "computed": 9032.16659206,
       "measured": 9029.83326681073,
-      "error_pct": 0.025840180827427443,
+      "error_pct": 0.0258401808796,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "BR 2019",
@@ -1837,15 +1914,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CN_2023",
-      "computed": 18275077747730.547,
+      "computed": 18275077747700.0,
       "measured": 18270356654533.2,
-      "error_pct": 0.025840180827429386,
+      "error_pct": 0.0258401806602,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2023",
@@ -1859,15 +1937,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CN_2022",
-      "computed": 18321498106893.54,
+      "computed": 18321498106900.0,
       "measured": 18316765021690.2,
-      "error_pct": 0.025840180827428078,
+      "error_pct": 0.0258401808627,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2022",
@@ -1881,15 +1960,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CN_2021",
-      "computed": 18206402071426.8,
+      "computed": 18206402071400.0,
       "measured": 18201698719564.0,
-      "error_pct": 0.02584018082743787,
+      "error_pct": 0.0258401806802,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2021",
@@ -1903,15 +1983,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CN_2020",
-      "computed": 15000289267253.408,
+      "computed": 15000289267300.0,
       "measured": 14996414166715.1,
-      "error_pct": 0.025840180827423877,
+      "error_pct": 0.0258401811381,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2020",
@@ -1925,15 +2006,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CN_2019",
-      "computed": 14563929474791.148,
+      "computed": 14563929474800.0,
       "measured": 14560167101283.4,
-      "error_pct": 0.025840180827433046,
+      "error_pct": 0.0258401808882,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2019",
@@ -1947,15 +2029,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "CN_2023",
-      "computed": 12954.524848,
+      "computed": 12954.5248476,
       "measured": 12951.1782397043,
-      "error_pct": 0.025840180827436124,
+      "error_pct": 0.0258401809763,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2023",
@@ -1969,15 +2052,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "CN_2022",
-      "computed": 12973.957269,
+      "computed": 12973.9572694,
       "measured": 12970.6056414327,
-      "error_pct": 0.02584018082743046,
+      "error_pct": 0.0258401809442,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2022",
@@ -1991,7 +2075,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
@@ -2019,9 +2104,9 @@
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "CN_2020",
-      "computed": 10630.209955,
+      "computed": 10630.2099548,
       "measured": 10627.4637989619,
-      "error_pct": 0.025840180827436124,
+      "error_pct": 0.0258401805929,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2020",
@@ -2035,15 +2120,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "CN_2019",
-      "computed": 10345.573577,
+      "computed": 10345.5735767,
       "measured": 10342.9009524335,
-      "error_pct": 0.025840180827428096,
+      "error_pct": 0.0258401804174,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CN 2019",
@@ -2057,15 +2143,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CA_2023",
-      "computed": 2197161440166.7764,
+      "computed": 2197161440170.0,
       "measured": 2196593836347.42,
-      "error_pct": 0.025840180827434108,
+      "error_pct": 0.0258401809742,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CA 2023",
@@ -2079,15 +2166,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CA_2022",
-      "computed": 2201131414449.197,
+      "computed": 2201131414450.0,
       "measured": 2200562785046.32,
-      "error_pct": 0.02584018082742338,
+      "error_pct": 0.0258401808639,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CA 2022",
@@ -2101,15 +2189,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CA_2021",
-      "computed": 2022900537016.306,
+      "computed": 2022900537020.0,
       "measured": 2022377950896.78,
-      "error_pct": 0.02584018082743383,
+      "error_pct": 0.0258401810101,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CA 2021",
@@ -2123,15 +2212,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CA_2020",
-      "computed": 1656114799388.1685,
+      "computed": 1656114799390.0,
       "measured": 1655686966881.99,
-      "error_pct": 0.02584018082742816,
+      "error_pct": 0.025840180938,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CA 2020",
@@ -2145,15 +2235,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "CA_2019",
-      "computed": 1744179534871.2278,
+      "computed": 1744179534870.0,
       "measured": 1743728952156.85,
-      "error_pct": 0.025840180827436027,
+      "error_pct": 0.025840180757,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CA 2019",
@@ -2167,7 +2258,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
@@ -2195,9 +2287,9 @@
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "CA_2022",
-      "computed": 56511.526442,
+      "computed": 56511.5264423,
       "measured": 56496.9275340663,
-      "error_pct": 0.0258401808274304,
+      "error_pct": 0.025840180822,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CA 2022",
@@ -2211,7 +2303,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
@@ -2239,9 +2332,9 @@
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "CA_2020",
-      "computed": 43549.148391,
+      "computed": 43549.1483915,
       "measured": 43537.8981198851,
-      "error_pct": 0.025840180827435374,
+      "error_pct": 0.0258401808556,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "CA 2020",
@@ -2255,7 +2348,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
@@ -2283,9 +2377,9 @@
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "AU_2023",
-      "computed": 1734899449998.7507,
+      "computed": 1734899450000.0,
       "measured": 1734451264655.6,
-      "error_pct": 0.02584018082742892,
+      "error_pct": 0.0258401808995,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2023",
@@ -2299,15 +2393,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "AU_2022",
-      "computed": 1696065688697.1267,
+      "computed": 1696065688700.0,
       "measured": 1695627535475.8,
-      "error_pct": 0.0258401808274311,
+      "error_pct": 0.0258401809969,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2022",
@@ -2321,15 +2416,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "AU_2021",
-      "computed": 1561020759584.958,
+      "computed": 1561020759580.0,
       "measured": 1560617493202.69,
-      "error_pct": 0.02584018082742912,
+      "error_pct": 0.0258401805097,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2021",
@@ -2343,15 +2439,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "AU_2020",
-      "computed": 1333680998200.818,
+      "computed": 1333680998200.0,
       "measured": 1333336461648.09,
-      "error_pct": 0.0258401808274378,
+      "error_pct": 0.0258401807661,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2020",
@@ -2365,15 +2462,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "AU_2019",
-      "computed": 1398710939022.3538,
+      "computed": 1398710939020.0,
       "measured": 1398349602956.35,
-      "error_pct": 0.025840180827436564,
+      "error_pct": 0.0258401806591,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2019",
@@ -2387,7 +2485,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
@@ -2415,9 +2514,9 @@
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "AU_2022",
-      "computed": 65186.359033,
+      "computed": 65186.3590334,
       "measured": 65169.5191118657,
-      "error_pct": 0.025840180827434882,
+      "error_pct": 0.0258401807529,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2022",
@@ -2431,15 +2530,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "AU_2021",
-      "computed": 60774.60465,
+      "computed": 60774.6046505,
       "measured": 60758.9044397144,
-      "error_pct": 0.02584018082743536,
+      "error_pct": 0.0258401808432,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2021",
@@ -2453,15 +2553,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "AU_2020",
-      "computed": 51996.884985,
+      "computed": 51996.8849847,
       "measured": 51983.4523666382,
-      "error_pct": 0.025840180827428946,
+      "error_pct": 0.0258401807696,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2020",
@@ -2475,15 +2576,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "AU_2019",
-      "computed": 55209.020935,
+      "computed": 55209.0209351,
       "measured": 55194.7585097428,
-      "error_pct": 0.025840180827430524,
+      "error_pct": 0.0258401807387,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "AU 2019",
@@ -2497,15 +2599,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IT_2023",
-      "computed": 2317480982941.26,
+      "computed": 2317480982940.0,
       "measured": 2316882296366.32,
-      "error_pct": 0.025840180827437415,
+      "error_pct": 0.0258401807731,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2023",
@@ -2519,15 +2622,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IT_2022",
-      "computed": 2104611325199.866,
+      "computed": 2104611325200.0,
       "measured": 2104067630319.46,
-      "error_pct": 0.02584018082743171,
+      "error_pct": 0.0258401808338,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2022",
@@ -2541,15 +2645,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IT_2021",
-      "computed": 2179770884825.3928,
+      "computed": 2179770884830.0,
       "measured": 2179207773596.09,
-      "error_pct": 0.02584018082743428,
+      "error_pct": 0.0258401810388,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2021",
@@ -2563,15 +2668,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IT_2020",
-      "computed": 1907973990643.1892,
+      "computed": 1907973990640.0,
       "measured": 1907481094079.23,
-      "error_pct": 0.025840180827436048,
+      "error_pct": 0.0258401806602,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2020",
@@ -2585,15 +2691,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "IT_2019",
-      "computed": 2020128666631.7703,
+      "computed": 2020128666630.0,
       "measured": 2019606796583.53,
-      "error_pct": 0.025840180827429202,
+      "error_pct": 0.0258401807398,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2019",
@@ -2607,15 +2714,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IT_2023",
-      "computed": 39289.849728,
+      "computed": 39289.8497276,
       "measured": 39279.699782164,
-      "error_pct": 0.025840180827432026,
+      "error_pct": 0.0258401807862,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2023",
@@ -2629,15 +2737,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IT_2022",
-      "computed": 35663.117244,
+      "computed": 35663.1172437,
       "measured": 35653.9042103495,
-      "error_pct": 0.02584018082744016,
+      "error_pct": 0.025840180913,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2022",
@@ -2651,15 +2760,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IT_2021",
-      "computed": 36862.065305,
+      "computed": 36862.0653051,
       "measured": 36852.5425414951,
-      "error_pct": 0.02584018082743742,
+      "error_pct": 0.0258401807533,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2021",
@@ -2673,15 +2783,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IT_2020",
-      "computed": 32099.77916,
+      "computed": 32099.7791603,
       "measured": 32091.4866621366,
-      "error_pct": 0.025840180827427582,
+      "error_pct": 0.0258401807641,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2020",
@@ -2695,15 +2806,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "IT_2019",
-      "computed": 33821.526011,
+      "computed": 33821.5260106,
       "measured": 33812.788724868,
-      "error_pct": 0.02584018082743022,
+      "error_pct": 0.0258401807763,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "IT 2019",
@@ -2717,15 +2829,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "MX_2023",
-      "computed": 1794874026596.8865,
+      "computed": 1794874026600.0,
       "measured": 1794410347718.25,
-      "error_pct": 0.02584018082742796,
+      "error_pct": 0.0258401810009,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2023",
@@ -2739,15 +2852,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "MX_2022",
-      "computed": 1467313782828.7446,
+      "computed": 1467313782830.0,
       "measured": 1466934724243.38,
-      "error_pct": 0.02584018082742285,
+      "error_pct": 0.025840180913,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2022",
@@ -2761,15 +2875,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "MX_2021",
-      "computed": 1316909670764.8887,
+      "computed": 1316909670760.0,
       "measured": 1316569466833.94,
-      "error_pct": 0.025840180827438303,
+      "error_pct": 0.0258401804561,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2021",
@@ -2783,15 +2898,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "MX_2020",
-      "computed": 1121354452331.829,
+      "computed": 1121354452330.0,
       "measured": 1121064767168.8,
-      "error_pct": 0.02584018082743247,
+      "error_pct": 0.0258401806643,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2020",
@@ -2805,15 +2921,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_current_USD",
       "name": "MX_2019",
-      "computed": 1304443187407.567,
+      "computed": 1304443187410.0,
       "measured": 1304106204006.27,
-      "error_pct": 0.02584018082742399,
+      "error_pct": 0.025840181014,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2019",
@@ -2827,15 +2944,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "MX_2023",
-      "computed": 13834.417764,
+      "computed": 13834.4177639,
       "measured": 13830.843848864,
-      "error_pct": 0.025840180827429712,
+      "error_pct": 0.0258401806503,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2023",
@@ -2849,15 +2967,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "MX_2022",
-      "computed": 11408.741325,
+      "computed": 11408.7413248,
       "measured": 11405.7940469896,
-      "error_pct": 0.025840180827431065,
+      "error_pct": 0.0258401808612,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2022",
@@ -2871,15 +2990,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "MX_2021",
-      "computed": 10316.715843,
+      "computed": 10316.7158427,
       "measured": 10314.0506733708,
-      "error_pct": 0.025840180827423124,
+      "error_pct": 0.0258401806778,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2021",
@@ -2893,15 +3013,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "MX_2020",
-      "computed": 8843.55535,
+      "computed": 8843.55534965,
       "measured": 8841.27074929751,
-      "error_pct": 0.025840180827431596,
+      "error_pct": 0.0258401808662,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2020",
@@ -2915,15 +3036,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "finance_markets_lab",
       "property": "GDP_per_capita",
       "name": "MX_2019",
-      "computed": 10372.234871,
+      "computed": 10372.2348712,
       "measured": 10369.5553593527,
-      "error_pct": 0.025840180827424414,
+      "error_pct": 0.0258401807449,
       "source": "world_bank_finance",
       "domain_display_name": "finance markets",
       "display_name": "MX 2019",
@@ -2937,15 +3059,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.0258401808274
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_panel_cv_pct",
       "name": "2023_cross_country",
-      "computed": 123.386071,
+      "computed": 123.386070594,
       "measured": 123.187122,
-      "error_pct": 0.16150113017143683,
+      "error_pct": 0.161501129964,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2023 cross country",
@@ -2959,7 +3082,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
@@ -2987,9 +3111,9 @@
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_panel_cv_pct",
       "name": "2021_cross_country",
-      "computed": 119.36865,
+      "computed": 119.368649876,
       "measured": 119.176179,
-      "error_pct": 0.16150113017143417,
+      "error_pct": 0.161501130188,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2021 cross country",
@@ -3003,7 +3127,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
@@ -3053,9 +3178,9 @@
       "lab": "econometrics_lab",
       "property": "GDP_per_capita_panel_cv_pct",
       "name": "2023_cross_country",
-      "computed": 64.427029,
+      "computed": 64.4270286078,
       "measured": 64.323146,
-      "error_pct": 0.16150113017143555,
+      "error_pct": 0.161501130246,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2023 cross country",
@@ -3069,15 +3194,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_per_capita_panel_cv_pct",
       "name": "2022_cross_country",
-      "computed": 65.456554,
+      "computed": 65.4565536213,
       "measured": 65.351011,
-      "error_pct": 0.16150113017143364,
+      "error_pct": 0.161501130105,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2022 cross country",
@@ -3091,15 +3217,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_per_capita_panel_cv_pct",
       "name": "2021_cross_country",
-      "computed": 63.230169,
+      "computed": 63.2301687823,
       "measured": 63.128216,
-      "error_pct": 0.16150113017144266,
+      "error_pct": 0.161501130176,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2021 cross country",
@@ -3113,7 +3240,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
@@ -3141,9 +3269,9 @@
       "lab": "econometrics_lab",
       "property": "GDP_per_capita_panel_cv_pct",
       "name": "2019_cross_country",
-      "computed": 62.178375,
+      "computed": 62.1783748622,
       "measured": 62.078118,
-      "error_pct": 0.161501130171441,
+      "error_pct": 0.161501130237,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2019 cross country",
@@ -3157,15 +3285,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "population_total_panel_cv_pct",
       "name": "2023_cross_country",
-      "computed": 149.20157,
+      "computed": 149.201569692,
       "measured": 148.960996,
-      "error_pct": 0.16150113017144085,
+      "error_pct": 0.161501130135,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2023 cross country",
@@ -3179,15 +3308,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "population_total_panel_cv_pct",
       "name": "2022_cross_country",
-      "computed": 149.263308,
+      "computed": 149.26330824,
       "measured": 149.022635,
-      "error_pct": 0.16150113017144377,
+      "error_pct": 0.161501130348,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2022 cross country",
@@ -3201,15 +3331,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "population_total_panel_cv_pct",
       "name": "2021_cross_country",
-      "computed": 149.256431,
+      "computed": 149.256431151,
       "measured": 149.015769,
-      "error_pct": 0.16150113017143403,
+      "error_pct": 0.161501130125,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2021 cross country",
@@ -3223,15 +3354,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
       "property": "population_total_panel_cv_pct",
       "name": "2020_cross_country",
-      "computed": 149.147275,
+      "computed": 149.147275147,
       "measured": 148.906789,
-      "error_pct": 0.16150113017144527,
+      "error_pct": 0.161501130079,
       "source": "world_bank_panel",
       "domain_display_name": "econometrics",
       "display_name": "2020 cross country",
@@ -3245,7 +3377,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.161501130171
     },
     {
       "lab": "econometrics_lab",
@@ -3273,9 +3406,9 @@
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "AU_2020",
-      "computed": -4.655284,
+      "computed": -4.65528390792,
       "measured": -4.649277,
-      "error_pct": 0.12920090413715746,
+      "error_pct": 0.129200904141,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "AU 2020",
@@ -3289,15 +3422,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "AU_2021",
-      "computed": 17.068061,
+      "computed": 17.0680606339,
       "measured": 17.046037,
-      "error_pct": 0.12920090413714977,
+      "error_pct": 0.129200903999,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "AU 2021",
@@ -3311,15 +3445,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "AU_2022",
-      "computed": 8.662243,
+      "computed": 8.66224325549,
       "measured": 8.651066,
-      "error_pct": 0.1292009041371584,
+      "error_pct": 0.129200904143,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "AU 2022",
@@ -3333,15 +3468,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "AU_2023",
-      "computed": 2.292596,
+      "computed": 2.292596233,
       "measured": 2.289638,
-      "error_pct": 0.12920090413715918,
+      "error_pct": 0.129200904248,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "AU 2023",
@@ -3355,15 +3491,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     },
     {
       "lab": "econometrics_lab",
       "property": "GDP_current_USD_yoy_growth_pct",
       "name": "BR_2019",
-      "computed": 8.015003,
+      "computed": 8.01500309439,
       "measured": 8.004661,
-      "error_pct": 0.12920090413714402,
+      "error_pct": 0.129200904198,
       "source": "economics_yoy_bridge",
       "domain_display_name": "econometrics",
       "display_name": "BR 2019",
@@ -3377,7 +3514,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.129200904137
     }
   ],
   "margin_summary": {

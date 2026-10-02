@@ -196,7 +196,7 @@
       "lab": "time_emergence_deep_lab",
       "property": "fast_tick_log_ratio",
       "name": "atomic_cs133",
-      "computed": 1.344299,
+      "computed": 1.34429933568,
       "measured": 1.344,
       "error_pct": 0.022272,
       "eval_kind": "time_relay",
@@ -212,7 +212,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022272
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -266,9 +267,9 @@
       "lab": "time_emergence_deep_lab",
       "property": "real_time_anchor",
       "name": "earth_sidereal_omega_rad_s",
-      "computed": 7.3e-05,
+      "computed": 7.29211585792e-05,
       "measured": 7.292115857915991e-05,
-      "error_pct": 0.0,
+      "error_pct": 5.49749566638e-11,
       "unit": "rad/s",
       "eval_kind": "time_anchor",
       "domain_display_name": "time emergence deep",
@@ -284,7 +285,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "unit": "rad/s"
-      }
+      },
+      "error_pct_full": 0.0
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -314,9 +316,9 @@
       "lab": "time_emergence_deep_lab",
       "property": "real_time_anchor",
       "name": "moon_sidereal_omega_rad_s",
-      "computed": 3e-06,
+      "computed": 2.66169952722e-06,
       "measured": 2.6616995272150692e-06,
-      "error_pct": 0.0,
+      "error_pct": 1.85241750076e-10,
       "unit": "rad/s",
       "eval_kind": "time_anchor",
       "domain_display_name": "time emergence deep",
@@ -332,15 +334,16 @@
         "within_green_gate": false,
         "within_aspiration_gate": false,
         "unit": "rad/s"
-      }
+      },
+      "error_pct_full": 0.0
     },
     {
       "lab": "time_emergence_deep_lab",
       "property": "real_time_anchor",
       "name": "hubble_h0_km_s_mpc",
-      "computed": 68.440091,
+      "computed": 68.4400910498,
       "measured": 68.44005682979427,
-      "error_pct": 5e-05,
+      "error_pct": 4.99999668549e-05,
       "unit": "km/s/Mpc",
       "eval_kind": "time_anchor",
       "domain_display_name": "time emergence deep",
@@ -357,15 +360,16 @@
         "within_aspiration_gate": true,
         "reference_uncertainty_pct": 0.15,
         "unit": "km/s/Mpc"
-      }
+      },
+      "error_pct_full": 5e-05
     },
     {
       "lab": "time_emergence_deep_lab",
       "property": "real_time_anchor",
       "name": "schwarzschild_photon_sphere_dilation",
-      "computed": 0.57735,
+      "computed": 0.57735026919,
       "measured": 0.5773502691896257,
-      "error_pct": 0.0,
+      "error_pct": 6.4823072158e-11,
       "unit": "dimensionless",
       "eval_kind": "time_anchor",
       "domain_display_name": "time emergence deep",
@@ -381,15 +385,16 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "unit": "dimensionless"
-      }
+      },
+      "error_pct_full": 0.0
     },
     {
       "lab": "time_emergence_deep_lab",
       "property": "real_time_anchor",
       "name": "schwarzschild_isco_dilation",
-      "computed": 0.816497,
+      "computed": 0.816496580928,
       "measured": 0.816496580927726,
-      "error_pct": 0.0,
+      "error_pct": 3.3558382102e-11,
       "unit": "dimensionless",
       "eval_kind": "time_anchor",
       "domain_display_name": "time emergence deep",
@@ -405,7 +410,8 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "unit": "dimensionless"
-      }
+      },
+      "error_pct_full": 0.0
     },
     {
       "lab": "time_emergence_deep_lab",

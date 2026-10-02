@@ -64,7 +64,7 @@
       "lab": "schematic_netlist_lab",
       "property": "rc_tau_s",
       "name": "RC_10k_100nF",
-      "computed": 0.001,
+      "computed": 0.00100020755,
       "measured": 0.001,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -72,7 +72,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 10000.0,
       "C_f": 1e-07,
-      "textbook_tau": 0.001
+      "textbook_tau": 0.001,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
@@ -88,7 +89,7 @@
       "lab": "schematic_netlist_lab",
       "property": "rc_tau_s",
       "name": "RC_1k_10uF",
-      "computed": 0.010002,
+      "computed": 0.0100020755,
       "measured": 0.01,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -96,7 +97,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 1000.0,
       "C_f": 1e-05,
-      "textbook_tau": 0.01
+      "textbook_tau": 0.01,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
@@ -112,7 +114,7 @@
       "lab": "schematic_netlist_lab",
       "property": "rc_tau_s",
       "name": "RC_4k7_10nF",
-      "computed": 4.7e-05,
+      "computed": 4.700975485e-05,
       "measured": 4.7e-05,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -120,7 +122,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 4700.0,
       "C_f": 1e-08,
-      "textbook_tau": 4.7000000000000004e-05
+      "textbook_tau": 4.7000000000000004e-05,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
@@ -136,7 +139,7 @@
       "lab": "schematic_netlist_lab",
       "property": "rc_tau_s",
       "name": "RC_100k_1uF",
-      "computed": 0.100021,
+      "computed": 0.100020755,
       "measured": 0.1,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -144,7 +147,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 100000.0,
       "C_f": 1e-06,
-      "textbook_tau": 0.09999999999999999
+      "textbook_tau": 0.09999999999999999,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
@@ -160,7 +164,7 @@
       "lab": "schematic_netlist_lab",
       "property": "rc_tau_s",
       "name": "RC_22R_100nF",
-      "computed": 2e-06,
+      "computed": 2.20045661e-06,
       "measured": 2.2e-06,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -168,7 +172,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 22.0,
       "C_f": 1e-07,
-      "textbook_tau": 2.2e-06
+      "textbook_tau": 2.2e-06,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
@@ -256,7 +261,7 @@
       "lab": "schematic_netlist_lab",
       "property": "divider_vout_v",
       "name": "divider_10k_10k",
-      "computed": 2.500519,
+      "computed": 2.500518875,
       "measured": 2.5,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -264,27 +269,29 @@
       "fsot_scalar": 0.518866,
       "vin_v": 5,
       "R_top": 10000,
-      "R_bot": 10000
+      "R_bot": 10000,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
       "property": "divider_vout_v",
       "name": "divider_10k_4k7",
-      "computed": 1.598971,
+      "computed": 1.59897079752,
       "measured": 1.598639,
-      "error_pct": 0.020755,
+      "error_pct": 0.0207549997216,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Electromagnetism",
       "fsot_scalar": 0.518866,
       "vin_v": 5,
       "R_top": 10000,
-      "R_bot": 4700
+      "R_bot": 4700,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
       "property": "divider_vout_v",
       "name": "divider_1k_2k",
-      "computed": 2.200457,
+      "computed": 2.20045661,
       "measured": 2.2,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -292,52 +299,56 @@
       "fsot_scalar": 0.518866,
       "vin_v": 3.3,
       "R_top": 1000,
-      "R_bot": 2000
+      "R_bot": 2000,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
       "property": "dissipated_power_w",
       "name": "power_5V_1k",
-      "computed": 0.02501,
+      "computed": 0.02500983725,
       "measured": 0.025,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "V_v": 5,
-      "R_ohm": 1000
+      "R_ohm": 1000,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "schematic_netlist_lab",
       "property": "dissipated_power_w",
       "name": "power_3V3_470",
-      "computed": 0.023179,
+      "computed": 0.0231791171633,
       "measured": 0.02317,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "V_v": 3.3,
-      "R_ohm": 470
+      "R_ohm": 470,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "schematic_netlist_lab",
       "property": "dissipated_power_w",
       "name": "power_12V_4k7",
-      "computed": 0.03065,
+      "computed": 0.0306500557466,
       "measured": 0.030638,
-      "error_pct": 0.039349,
+      "error_pct": 0.0393489999347,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "V_v": 12,
-      "R_ohm": 4700
+      "R_ohm": 4700,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "schematic_netlist_lab",
       "property": "rc_tau_s",
       "name": "esp32_rc_reset_10k_100n",
-      "computed": 0.001,
+      "computed": 0.00100020755,
       "measured": 0.001,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -345,7 +356,8 @@
       "fsot_scalar": 0.518866,
       "R_ohm": 10000.0,
       "C_f": 1e-07,
-      "textbook_tau": 0.001
+      "textbook_tau": 0.001,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",
@@ -361,20 +373,21 @@
       "lab": "schematic_netlist_lab",
       "property": "dissipated_power_w",
       "name": "esp32_i2c_pull_4k7",
-      "computed": 0.002318,
+      "computed": 0.00231791171633,
       "measured": 0.002317,
       "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
       "V_v": 3.3,
-      "R_ohm": 4700
+      "R_ohm": 4700,
+      "error_pct_full": 0.039349
     },
     {
       "lab": "schematic_netlist_lab",
       "property": "divider_vout_v",
       "name": "esp32_uart_divider_optional",
-      "computed": 3.333692,
+      "computed": 3.33369176415,
       "measured": 3.333,
       "error_pct": 0.020755,
       "eval_kind": "fsot_prediction",
@@ -382,7 +395,8 @@
       "fsot_scalar": 0.518866,
       "vin_v": 5.0,
       "R_top": 10000,
-      "R_bot": 20000
+      "R_bot": 20000,
+      "error_pct_full": 0.020755
     },
     {
       "lab": "schematic_netlist_lab",

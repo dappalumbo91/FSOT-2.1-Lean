@@ -225,7 +225,7 @@
       "lab": "consciousness_expansion_lab",
       "property": "brain_energy_fraction",
       "name": "Homo_sapiens",
-      "computed": 0.241676,
+      "computed": 0.241676118496,
       "measured": 0.2416,
       "error_pct": 0.031506,
       "source_panel": "consciousness_species_multi_panel",
@@ -242,13 +242,14 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_expansion_lab",
       "property": "brain_power_w",
       "name": "Homo_sapiens",
-      "computed": 20.003601,
+      "computed": 20.0036006,
       "measured": 20.0,
       "error_pct": 0.018003,
       "source_panel": "consciousness_species_multi_panel",
@@ -268,13 +269,14 @@
         "reference_uncertainty_pct": 25.0,
         "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
         "observable_status": "consciousness_open"
-      }
+      },
+      "error_pct_full": 0.018003
     },
     {
       "lab": "consciousness_expansion_lab",
       "property": "total_metabolic_w",
       "name": "Homo_sapiens",
-      "computed": 82.798407,
+      "computed": 82.7984069608,
       "measured": 82.78,
       "error_pct": 0.022236,
       "source_panel": "consciousness_species_multi_panel",
@@ -291,7 +293,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.022236
     },
     {
       "lab": "consciousness_expansion_lab",
@@ -320,7 +323,7 @@
       "lab": "consciousness_expansion_lab",
       "property": "brain_energy_fraction",
       "name": "Mus_musculus",
-      "computed": 0.100032,
+      "computed": 0.100031506,
       "measured": 0.1,
       "error_pct": 0.031506,
       "source_panel": "consciousness_species_multi_panel",
@@ -337,7 +340,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.031506
     },
     {
       "lab": "consciousness_expansion_lab",
@@ -389,9 +393,9 @@
       "lab": "consciousness_expansion_lab",
       "property": "observer_channel_strength",
       "name": "Homo_sapiens",
-      "computed": 0.90214,
+      "computed": 0.902140465342,
       "measured": 0.901667,
-      "error_pct": 0.05251,
+      "error_pct": 0.0525100000333,
       "source_panel": "observer_effect_cross_species_panel",
       "eval_kind": "ingest_relay",
       "domain_display_name": "consciousness expansion",
@@ -406,7 +410,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.05251
     },
     {
       "lab": "consciousness_expansion_lab",

@@ -60,9 +60,9 @@
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "fusion_energetics_relay",
       "name": "dt_fusion",
-      "computed": 17.600017,
+      "computed": 17.60001672,
       "measured": 17.6,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999878e-05,
       "eval_kind": "fusion_relay",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "dt fusion",
@@ -76,15 +76,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "fusion_energetics_relay",
       "name": "dt_fusion",
-      "computed": 15.000014,
+      "computed": 15.00001425,
       "measured": 15.0,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.4999999997e-05,
       "eval_kind": "fusion_relay",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "dt fusion",
@@ -98,15 +99,16 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "fusion_energetics_relay",
       "name": "dd_fusion",
-      "computed": 4.030004,
+      "computed": 4.0300038285,
       "measured": 4.03,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999924e-05,
       "eval_kind": "fusion_relay",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "dd fusion",
@@ -120,16 +122,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "beam_energy_mev_u",
       "name": "Og_2006",
       "product_Z": 118,
-      "computed": 245.001928,
+      "computed": 245.00192815,
       "measured": 245.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000786999999999,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Og 2006",
@@ -143,14 +146,15 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Og_2006",
       "product_Z": 118,
-      "computed": 0.5,
+      "computed": 0.500000475,
       "measured": 0.5,
       "error_pct": 9.5e-05,
       "eval_kind": "published_reaction",
@@ -166,7 +170,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -195,9 +200,9 @@
       "property": "beam_energy_mev_u",
       "name": "Ts_2010",
       "product_Z": 117,
-      "computed": 249.00196,
+      "computed": 249.00195963,
       "measured": 249.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000786999999995,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Ts 2010",
@@ -211,16 +216,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Ts_2010",
       "product_Z": 117,
-      "computed": 0.08,
+      "computed": 0.080000076,
       "measured": 0.08,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.5000000002e-05,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Ts 2010",
@@ -234,7 +240,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -263,7 +270,7 @@
       "property": "beam_energy_mev_u",
       "name": "Lv_2000",
       "product_Z": 116,
-      "computed": 236.001857,
+      "computed": 236.00185732,
       "measured": 236.0,
       "error_pct": 0.000787,
       "eval_kind": "published_reaction",
@@ -279,16 +286,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Lv_2000",
       "product_Z": 116,
-      "computed": 0.05,
+      "computed": 0.0500000475,
       "measured": 0.05,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999916e-05,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Lv 2000",
@@ -302,7 +310,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -331,9 +340,9 @@
       "property": "beam_energy_mev_u",
       "name": "Mc_2010",
       "product_Z": 115,
-      "computed": 248.001952,
+      "computed": 248.00195176,
       "measured": 248.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000786999999999,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Mc 2010",
@@ -347,16 +356,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Mc_2010",
       "product_Z": 115,
-      "computed": 0.03,
+      "computed": 0.0300000285,
       "measured": 0.03,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000078e-05,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Mc 2010",
@@ -370,7 +380,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -399,9 +410,9 @@
       "property": "beam_energy_mev_u",
       "name": "Nh_2004",
       "product_Z": 113,
-      "computed": 250.001967,
+      "computed": 250.0019675,
       "measured": 250.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000787000000003,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Nh 2004",
@@ -415,16 +426,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Nh_2004",
       "product_Z": 113,
-      "computed": 0.02,
+      "computed": 0.020000019,
       "measured": 0.02,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.5000000002e-05,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Nh 2004",
@@ -438,7 +450,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -467,9 +480,9 @@
       "property": "beam_energy_mev_u",
       "name": "Fl_1999",
       "product_Z": 114,
-      "computed": 244.00192,
+      "computed": 244.00192028,
       "measured": 244.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000787000000003,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Fl 1999",
@@ -483,16 +496,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Fl_1999",
       "product_Z": 114,
-      "computed": 0.12,
+      "computed": 0.120000114,
       "measured": 0.12,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000078e-05,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Fl 1999",
@@ -506,7 +520,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -535,7 +550,7 @@
       "property": "beam_energy_mev_u",
       "name": "Cn_1996",
       "product_Z": 112,
-      "computed": 354.002786,
+      "computed": 354.00278598,
       "measured": 354.0,
       "error_pct": 0.000787,
       "eval_kind": "published_reaction",
@@ -551,14 +566,15 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Cn_1996",
       "product_Z": 112,
-      "computed": 0.5,
+      "computed": 0.500000475,
       "measured": 0.5,
       "error_pct": 9.5e-05,
       "eval_kind": "published_reaction",
@@ -574,7 +590,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -626,7 +643,7 @@
       "property": "cross_section_pb",
       "name": "Hs_1984",
       "product_Z": 108,
-      "computed": 2.000002,
+      "computed": 2.0000019,
       "measured": 2.0,
       "error_pct": 9.5e-05,
       "eval_kind": "published_reaction",
@@ -642,7 +659,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -671,9 +689,9 @@
       "property": "beam_energy_mev_u",
       "name": "Rf_1969",
       "product_Z": 104,
-      "computed": 121.000952,
+      "computed": 121.00095227,
       "measured": 121.0,
-      "error_pct": 0.000787,
+      "error_pct": 0.000786999999999,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Rf 1969",
@@ -687,16 +705,17 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 0.000787
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
       "property": "cross_section_pb",
       "name": "Rf_1969",
       "product_Z": 104,
-      "computed": 10.00001,
+      "computed": 10.0000095,
       "measured": 10.0,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000088e-05,
       "eval_kind": "published_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Rf 1969",
@@ -710,7 +729,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -739,9 +759,9 @@
       "property": "proposed_viability_score",
       "name": "Z119_Ti_Bk",
       "product_Z": 119,
-      "computed": 0.42,
+      "computed": 0.420000399,
       "measured": 0.42,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000095e-05,
       "eval_kind": "proposed_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Z119 Ti Bk",
@@ -755,7 +775,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -784,9 +805,9 @@
       "property": "proposed_viability_score",
       "name": "Z120_Cr_Cm",
       "product_Z": 120,
-      "computed": 0.550001,
+      "computed": 0.5500005225,
       "measured": 0.55,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.49999999878e-05,
       "eval_kind": "proposed_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Z120 Cr Cm",
@@ -800,7 +821,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -829,9 +851,9 @@
       "property": "proposed_viability_score",
       "name": "Z124_Fe_Cm",
       "product_Z": 124,
-      "computed": 0.38,
+      "computed": 0.380000361,
       "measured": 0.38,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000011e-05,
       "eval_kind": "proposed_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Z124 Fe Cm",
@@ -845,7 +867,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",
@@ -874,9 +897,9 @@
       "property": "proposed_viability_score",
       "name": "Z126_Ni_U",
       "product_Z": 126,
-      "computed": 0.48,
+      "computed": 0.480000456,
       "measured": 0.48,
-      "error_pct": 9.5e-05,
+      "error_pct": 9.50000000078e-05,
       "eval_kind": "proposed_reaction",
       "domain_display_name": "heavy ion synthesis",
       "display_name": "Z126 Ni U",
@@ -890,7 +913,8 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "error_pct_full": 9.5e-05
     },
     {
       "lab": "heavy_ion_lab_synthesis_lab",

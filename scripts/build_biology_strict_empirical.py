@@ -9,6 +9,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "data" / "biology_strict_manifest.yaml"
@@ -196,7 +197,7 @@ def _bio_constant_records() -> list[dict]:
                 "lab": "biology_strict_lab",
                 "property": "bio_constant_scale",
                 "name": name,
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "FSOT_biological_scalar_scale",

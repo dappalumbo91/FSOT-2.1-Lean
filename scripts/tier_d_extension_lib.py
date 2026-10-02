@@ -9,6 +9,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
+from fsot_api_predict_lib import round_sig
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -136,7 +137,7 @@ def _gbif_kingdom_records(kingdom_label: str, lab: str, scalar_name: str) -> lis
                     "lab": lab,
                     "property": prop,
                     "name": row.get("species"),
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": measured,
                     "error_pct": err,
                     "source": f"gbif_{kingdom_label.lower()}_api",
@@ -189,7 +190,7 @@ def build_botany() -> dict:
                     "lab": "botany_lab",
                     "property": row.get("property"),
                     "name": name,
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": measured,
                     "error_pct": err,
                     "source": "gbif_plant_proxy",
@@ -220,7 +221,7 @@ def build_zoology() -> dict:
                 "lab": "zoology_lab",
                 "property": row.get("property"),
                 "name": row.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "gbif_animal_bridge",
@@ -256,7 +257,7 @@ def build_clinical_medicine() -> dict:
                 computed, err = _fsot_scaled(measured, s_med, 0.0015)
                 row = {
                     **row,
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": measured,
                     "error_pct": err,
                 }
@@ -287,7 +288,7 @@ def build_chemical_engineering() -> dict:
                 "lab": "chemical_engineering_lab",
                 "property": row.get("property"),
                 "name": row.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "pubchem_process",
@@ -343,7 +344,7 @@ def build_environmental_engineering() -> dict:
                 "lab": "environmental_engineering_lab",
                 "property": row.get("property"),
                 "name": row.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "world_bank_environment",
@@ -379,7 +380,7 @@ def build_anthropology() -> dict:
                 "lab": "anthropology_lab",
                 "property": "cited_by_count",
                 "name": row.get("name"),
-                "computed": round(computed, 6),
+                "computed": round_sig(computed),
                 "measured": measured,
                 "error_pct": err,
                 "source": "openalex_anthropology",
@@ -394,7 +395,7 @@ def build_anthropology() -> dict:
                     "lab": "anthropology_lab",
                     "property": "cited_by_count",
                     "name": row.get("name"),
-                    "computed": round(computed, 6),
+                    "computed": round_sig(computed),
                     "measured": measured,
                     "error_pct": err,
                     "source": "openalex_citation_bridge",
