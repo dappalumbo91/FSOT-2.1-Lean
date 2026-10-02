@@ -43,11 +43,20 @@ def main() -> int:
     strict_fails = [r for r in rows if not r["strict_scalar_pass"] and r["scalar_count"] > 0]
     classifier_fails = [r for r in rows if not r["classifier_pass"] and r["classifier_count"] > 0]
     tier_fails = [r for r in rows if not r["tier_scalar_pass"] and r["scalar_count"] > 0]
+    gated = [r for r in rows if r.get("scalar_count", 0) > 0]
+    gated_green = [r for r in gated if r["green_gate_pass"]]
+    genuine_prediction_count = sum(int(r.get("genuine_prediction_count") or 0) for r in rows)
+    structural_correction_count = sum(int(r.get("structural_correction_count") or 0) for r in rows)
 
     summary = {
         "benchmark_file_count": len(rows),
         "excluded_file_count": len(excluded),
         "excluded_files": list(AUDIT_EXCLUDED_BENCHMARKS),
+        "genuine_prediction_count": genuine_prediction_count,
+        "structural_correction_count": structural_correction_count,
+        "files_with_gated_scalars_count": len(gated),
+        "files_with_gated_scalars_green_count": len(gated_green),
+        "files_with_gated_scalars": [r["file"] for r in gated],
         "threshold_official_pooled_median_pct": MAX_MEDIAN_ERROR_PCT,
         "threshold_strict_scalar_max_pct": MAX_SCALAR_ERROR_PCT,
         "threshold_tier_scalar_max_pct": TIER_SCALAR_MAX_ERROR_PCT,
@@ -80,6 +89,14 @@ def main() -> int:
 
     print(f"Wrote {OUT}")
     print(f"  active files={len(rows)} excluded={len(excluded)}")
+    print(
+        f"  genuine predictions={genuine_prediction_count} "
+        f"structural corrections (Ledger B)={structural_correction_count}"
+    )
+    print(
+        f"  files with gated scalars={len(gated)} "
+        f"of which green={len(gated_green)}"
+    )
     print(
         f"  GREEN (pooled<={MAX_MEDIAN_ERROR_PCT}% + classifier>={MIN_CLASSIFIER_ACCURACY_PCT}%): "
         f"{summary['green_gate_pass_count']} pass / {summary['green_gate_fail_count']} fail"

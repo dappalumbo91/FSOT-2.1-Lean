@@ -211,11 +211,32 @@ GAP_FILL_STRUCTURAL_PROPERTIES = frozenset(
 )
 
 
+def is_ledger_b_scale_step(r: dict) -> bool:
+    """True for the catalog step c = m (1 + |S| f).
+
+    New rows are stamped eval_kind fsot_correction. Historical rows from the
+    same builder are still stamped fsot_prediction and carry fsot_domain
+    and/or fsot_scalar. An fsot_prediction row with neither field is a
+    different path (seed-derived or interconnect comparison) and stays
+    eligible for the scalar gate. Formula-mass rows are stamped live_formula
+    and are not this step.
+    """
+    kind = str(r.get("eval_kind") or "").lower()
+    if kind == "fsot_correction":
+        return True
+    if kind != "fsot_prediction":
+        return False
+    if r.get("fsot_domain") or r.get("fsot_scalar") is not None:
+        return True
+    return False
+
+
 def classify_record(r: dict, *, file_name: str = "") -> str:
     """Return record kind: scalar | classifier | structural."""
-    # c = m (1 + |S| ALPHA) is the Ledger B step. It is not a prediction,
-    # even when a builder also stamped record_kind scalar.
-    if str(r.get("eval_kind") or "").lower() == "fsot_correction":
+    # c = m (1 + |S| f) is the Ledger B step. It is not a prediction,
+    # even when a builder also stamped record_kind scalar or eval_kind
+    # fsot_prediction.
+    if is_ledger_b_scale_step(r):
         return "structural"
 
     explicit = r.get("record_kind")
@@ -421,6 +442,37 @@ def scalar_metrics(records: list[dict], *, file_name: str = "") -> dict[str, Any
     }
 
 
+def prediction_class_counts(records: list[dict], *, file_name: str = "") -> dict[str, int]:
+    """Genuine scalar-gate rows versus Ledger B scale-step rows.
+
+    Genuine predictions are records that remain in the scalar gate.
+    Structural corrections are the Ledger B step only. Other structural
+    kinds (anchors, rollups, preregistration holds) are neither count.
+    """
+    genuine = 0
+    structural_correction = 0
+    for r in records:
+        if not isinstance(r, dict):
+            continue
+        if is_ledger_b_scale_step(r):
+            structural_correction += 1
+            continue
+        if classify_record(r, file_name=file_name) != "scalar":
+            continue
+        e = r.get("error_pct")
+        if e is None:
+            continue
+        try:
+            float(e)
+        except (TypeError, ValueError):
+            continue
+        genuine += 1
+    return {
+        "genuine_prediction_count": genuine,
+        "structural_correction_count": structural_correction,
+    }
+
+
 def analyze_benchmark(doc: dict, *, file_name: str = "") -> dict[str, Any]:
     """Full margin analysis for one benchmark JSON document."""
     if file_name in AUDIT_EXCLUDED_BENCHMARKS:
@@ -440,6 +492,7 @@ def analyze_benchmark(doc: dict, *, file_name: str = "") -> dict[str, Any]:
 
     scalar = scalar_metrics(mat, file_name=file_name)
     classifier = classifier_metrics(mat)
+    classes = prediction_class_counts(mat, file_name=file_name)
 
     scalar_pooled = scalar["scalar_median_error_pct"]
     if scalar["scalar_count"] > 0:
@@ -465,6 +518,7 @@ def analyze_benchmark(doc: dict, *, file_name: str = "") -> dict[str, Any]:
         "green_gate_pass": green_pass,
         "scalar_gate_applicable": scalar["scalar_count"] > 0,
         "green_gate_pass_pooled_only": green_pass,
+        **classes,
         **scalar,
         **classifier,
     }
