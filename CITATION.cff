@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Fluid Spacetime Omni-Theory (FSOT): Cross-Domain Empirical and Formal Verification of a Seed-Derived Scalar Engine"
+authors:
+  - family-names: Palumbo
+    given-names: Damian Arthur
+repository-code: "https://github.com/dappalumbo91/FSOT-2.1-Lean"
+url: "https://github.com/dappalumbo91/FSOT-2.1-Lean"
+license: Apache-2.0
+version: "2.13"
+date-released: "2026-09-29"
+abstract: >-
+  Lean 4 formalization of Fluid Spacetime Omni-Theory (FSOT) 2.1, whose core
+  scalar law S = K(T1 + T2 + T3) is computed from mathematical seed constants
+  with zero free parameters, together with a reproducible comparison of its
+  outputs against public measured data.
+keywords: [fsot, lean4, formal-verification, physics, reproducible-research]
