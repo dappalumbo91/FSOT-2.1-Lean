@@ -92,7 +92,7 @@ def main() -> int:
                 changed += 1
         if n_ch:
             doc["ledger_b_rebuilt_at"] = datetime.now(timezone.utc).isoformat()
-            path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+            path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "files_seen": files,
@@ -101,8 +101,8 @@ def main() -> int:
         "failed_files": failed_files,
         "note": "Ledger B only. f=ALPHA. seed identities untouched.",
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
-    print(json.dumps(report, indent=2))
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
+    print(json.dumps(report, indent=2, allow_nan=False))
     return 0
 
 

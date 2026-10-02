@@ -99,7 +99,7 @@ def main() -> int:
         "audit_overall_ok": audit.get("overall_ok"),
         "living_root": audit.get("living_root"),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT} ({len(records)} records)")
     return 0
 

@@ -162,7 +162,7 @@ def fetch_alphafold_pdb(acc: str, cache: Path) -> tuple[str, np.ndarray] | None:
         meta = http_json(f"https://alphafold.ebi.ac.uk/api/prediction/{acc}")
         if meta is None:
             return None
-        meta_path.write_text(json.dumps(meta, indent=2), encoding="utf-8")
+        meta_path.write_text(json.dumps(meta, indent=2, allow_nan=False), encoding="utf-8")
     if not isinstance(meta, list) or not meta:
         return None
     entry = meta[0]
@@ -402,8 +402,8 @@ def main() -> int:
         ],
     }
 
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    (store / "fsot_vs_alphafold_structure.json").write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
+    (store / "fsot_vs_alphafold_structure.json").write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     s = doc["summary"]
     lines = [

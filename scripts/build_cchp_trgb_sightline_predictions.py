@@ -193,7 +193,7 @@ def build() -> dict:
         "sky_sectors": sector_preds,
         "refresh": "python scripts/build_cchp_trgb_sightline_predictions.py",
     }
-    raw = json.dumps({k: v for k, v in doc.items() if k != "bundle_sha256"}, sort_keys=True).encode()
+    raw = json.dumps({k: v for k, v in doc.items() if k != "bundle_sha256"}, sort_keys=True, allow_nan=False).encode()
     doc["bundle_sha256"] = hashlib.sha256(raw).hexdigest()
     return doc
 
@@ -251,12 +251,12 @@ def write_pointer(doc: dict) -> None:
         "Store large open-science dumps on G:/FSOT-PublicData. "
         "Monorepo keeps engines, predictions, and path pointers only."
     )
-    POINTER.write_text(json.dumps(ptr, indent=2), encoding="utf-8")
+    POINTER.write_text(json.dumps(ptr, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def main() -> int:
     doc = build()
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     write_md(doc)
     write_pointer(doc)
     print(f"Wrote {OUT_JSON}")

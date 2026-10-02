@@ -47,7 +47,7 @@ def main() -> int:
     kronos = ingest_kronos()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["kronos_lab"] = kronos
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  runs: {kronos['run_count']}")
     if kronos.get("best_fractional_error") is not None:

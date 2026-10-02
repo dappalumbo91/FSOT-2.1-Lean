@@ -59,7 +59,7 @@ def main() -> int:
     unified = ingest_unified_db()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["unified_db"] = unified
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  strict_empirical: {unified['strict_empirical']}  evaluation_ok: {unified['evaluation_ok']}")
     print(f"  records_total: {unified.get('records_total')}  top_projects: {unified.get('top_project_count')}")

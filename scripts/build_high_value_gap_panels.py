@@ -61,7 +61,7 @@ def _save_cache(source_id: str, payload: Any, url: str, description: str, family
         (vendor_dir(source_id) / "raw.txt").write_text(payload, encoding="utf-8", errors="replace")
     path = vendor_dir(source_id) / "live.json"
     # avoid huge payloads in live.json
-    if isinstance(payload, dict) and len(json.dumps(payload)[:1]) >= 0:
+    if isinstance(payload, dict) and len(json.dumps(payload, allow_nan=False)[:1]) >= 0:
         compact = payload
         if isinstance(payload.get("events"), dict) and len(payload["events"]) > 80:
             # store summary only in live.json; full cache separate
@@ -71,7 +71,7 @@ def _save_cache(source_id: str, payload: Any, url: str, description: str, family
                 "note": "full events in events_cache.json",
             }
             doc["payload"] = compact
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return path
 
 
@@ -103,7 +103,7 @@ def _panel(
     doc["policy"] = "open_science_only_no_credentials"
     doc["high_value_gap_id"] = gap_id
     out = ROOT / "data" / out_name
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"  Wrote {out.name} n={doc['record_count']} pooled={doc.get('pooled_median_error_pct')}%")
     return doc
 
@@ -139,7 +139,7 @@ def build_nufit() -> dict:
         "note": "Published open global-fit table (no API key); residual-gated as literature anchors",
     }
     cache_path = vendor_dir("nufit_6_0_literature") / "parameters.json"
-    cache_path.write_text(json.dumps(lit, indent=2), encoding="utf-8")
+    cache_path.write_text(json.dumps(lit, indent=2, allow_nan=False), encoding="utf-8")
     _save_cache(
         "nufit_6_0_literature",
         lit,
@@ -207,7 +207,7 @@ def build_gwtc() -> dict:
             }
         )
     full_path.write_text(
-        json.dumps({"fetched_at": _now(), "url": url, "count": len(slim), "events": slim}, indent=2),
+        json.dumps({"fetched_at": _now(), "url": url, "count": len(slim), "events": slim}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     _save_cache("gwtc_catalog", {"events": {e["id"]: e for e in slim[:5]}, "count": len(slim)}, url, "GWTC catalog via GWOSC", "cosmology_astrophysics")
@@ -296,7 +296,7 @@ def build_nuclear() -> dict:
             break  # first ground-state row
     cache = {"fetched_at": _now(), "nuclides": nuclides, "rows": rows, "auth": "none", "source": "IAEA Live Chart API"}
     cpath = vendor_dir("iaea_nuclear_ground_states") / "ground_states.json"
-    cpath.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+    cpath.write_text(json.dumps(cache, indent=2, allow_nan=False), encoding="utf-8")
     _save_cache("iaea_nuclear_ground_states", {"count": len(rows)}, "https://www-nds.iaea.org/relnsd/v0/data", "IAEA ground states", "particle_nuclear_atomic")
 
     # AME2020 header + sample lines (mass excess style open file)
@@ -420,7 +420,7 @@ def build_nist_asd() -> dict:
         "auth": "none",
         "fetched_at": _now(),
     }
-    (vendor_dir("nist_asd_spectroscopy") / "line_anchors.json").write_text(json.dumps(lit, indent=2), encoding="utf-8")
+    (vendor_dir("nist_asd_spectroscopy") / "line_anchors.json").write_text(json.dumps(lit, indent=2, allow_nan=False), encoding="utf-8")
     _save_cache("nist_asd_spectroscopy", lit, hb_url, "NIST spectroscopic line anchors", "particle_nuclear_atomic")
 
     records = []
@@ -647,7 +647,7 @@ def build_math_depth() -> dict:
     lmfdb = fetch_json(lmfdb_url, timeout=60, retries=3, headers=UA)
     fields = lmfdb.get("data") or []
     (vendor_dir("lmfdb_nf_fields") / "nf_fields_deg2.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(fields), "data": fields}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(fields), "data": fields}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     _save_cache("lmfdb_nf_fields", {"count": len(fields)}, lmfdb_url, "LMFDB quadratic fields", "formal_math_computation")
@@ -663,7 +663,7 @@ def build_math_depth() -> dict:
         except Exception as exc:  # noqa: BLE001
             print(f"  OEIS {oid} fail: {exc}")
     (vendor_dir("oeis_sequences") / "sample.json").write_text(
-        json.dumps({"fetched_at": _now(), "sequences": oeis_docs}, indent=2),
+        json.dumps({"fetched_at": _now(), "sequences": oeis_docs}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
 
@@ -775,11 +775,11 @@ def build_chembl_deep() -> dict:
         headers=UA,
     )
     (vendor_dir("chembl_deep") / "molecules.json").write_text(
-        json.dumps({"fetched_at": _now(), "molecules": molecules}, indent=2),
+        json.dumps({"fetched_at": _now(), "molecules": molecules}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     (vendor_dir("chembl_deep") / "targets_sample.json").write_text(
-        json.dumps(targets, indent=2),
+        json.dumps(targets, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     _save_cache("chembl_deep", {"mols": len(molecules)}, "https://www.ebi.ac.uk/chembl/api/data/", "ChEMBL deep", "chemistry_materials")
@@ -859,7 +859,7 @@ def build_exoplanet() -> dict:
     if not isinstance(rows, list):
         rows = []
     (vendor_dir("exoplanet_archive_depth") / "pscomppars_sample.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(rows), "rows": rows}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(rows), "rows": rows}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     _save_cache(
@@ -956,7 +956,7 @@ def main() -> int:
         ],
     }
     out = ROOT / "data" / "high_value_gap_expansion_report.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {out.relative_to(ROOT)}")
     ok = sum(1 for r in results.values() if r.get("status") == "ok")
     print(f"Panels ok: {ok}/{len(builders)}")

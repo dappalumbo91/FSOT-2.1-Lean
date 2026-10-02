@@ -99,7 +99,7 @@ def main() -> int:
     }
     OUT_MD.parent.mkdir(parents=True, exist_ok=True)
     OUT_MD.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT_MD}")
     return 0
 

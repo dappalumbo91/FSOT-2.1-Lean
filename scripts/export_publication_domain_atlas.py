@@ -68,7 +68,7 @@ def main() -> int:
 
     if args.format in ("all", "json"):
         out_json = OUT_DIR / "domain_atlas.json"
-        out_json.write_text(json.dumps(atlas, indent=2), encoding="utf-8")
+        out_json.write_text(json.dumps(atlas, indent=2, allow_nan=False), encoding="utf-8")
         print(f"Wrote {out_json}  domains={len(rows)}")
 
     if args.format in ("all", "csv"):

@@ -73,7 +73,7 @@ def ingest_malwarebazaar(*, limit: int = 200) -> dict:
             raise RuntimeError(f"MalwareBazaar fetch failed: {exc}") from exc
 
     trimmed = samples[:limit]
-    ext.write_text(json.dumps({"fetched_at": datetime.now(timezone.utc).isoformat(), "samples": trimmed}, indent=2), encoding="utf-8")
+    ext.write_text(json.dumps({"fetched_at": datetime.now(timezone.utc).isoformat(), "samples": trimmed}, indent=2, allow_nan=False), encoding="utf-8")
 
     families: dict[str, int] = {}
     tags: dict[str, int] = {}
@@ -107,7 +107,7 @@ def ingest_malwarebazaar(*, limit: int = 200) -> dict:
         "records": records,
         "external_cache": str(ext),
     }
-    payload = json.dumps(summary, indent=2)
+    payload = json.dumps(summary, indent=2, allow_nan=False)
     vend.write_text(payload, encoding="utf-8")
     vend_pub.write_text(payload, encoding="utf-8")
     return {"malwarebazaar_samples": len(records), "external": str(ext), "vendor": str(vend)}
@@ -129,7 +129,7 @@ def ingest_cisa_kev() -> dict:
     else:
         source = "live_api"
 
-    ext.write_text(json.dumps(raw, indent=2), encoding="utf-8")
+    ext.write_text(json.dumps(raw, indent=2, allow_nan=False), encoding="utf-8")
     vulns = raw.get("vulnerabilities") or []
     vendors: dict[str, int] = {}
     cwes: dict[str, int] = {}
@@ -163,7 +163,7 @@ def ingest_cisa_kev() -> dict:
         "records": records,
         "external_cache": str(ext),
     }
-    payload = json.dumps(summary, indent=2)
+    payload = json.dumps(summary, indent=2, allow_nan=False)
     vend.write_text(payload, encoding="utf-8")
     vend_pub.write_text(payload, encoding="utf-8")
     return {"cisa_kev_count": len(records), "external": str(ext), "vendor": str(vend)}
@@ -177,7 +177,7 @@ def main() -> int:
     print(f"External cache: {root}")
     mb = ingest_malwarebazaar(limit=args.malware_limit)
     kev = ingest_cisa_kev()
-    print(json.dumps({"malwarebazaar": mb, "cisa_kev": kev}, indent=2))
+    print(json.dumps({"malwarebazaar": mb, "cisa_kev": kev}, indent=2, allow_nan=False))
     return 0
 
 

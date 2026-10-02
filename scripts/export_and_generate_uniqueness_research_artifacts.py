@@ -1011,7 +1011,7 @@ def main() -> int:
         ),
     }
     OUT_OBL.parent.mkdir(parents=True, exist_ok=True)
-    OUT_OBL.write_text(json.dumps(obl_doc, indent=2), encoding="utf-8")
+    OUT_OBL.write_text(json.dumps(obl_doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT_OBL} ({len(obs)} obligations)")
 
     LEAN_OUT.parent.mkdir(parents=True, exist_ok=True)

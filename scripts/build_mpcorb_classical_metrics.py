@@ -570,7 +570,7 @@ def main() -> int:
     args = ap.parse_args()
     print("Scanning MPCORB for classical metrics…")
     doc = build(max_rows=args.max_rows)
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     write_md(doc)
     dual = doc["dual_scoreboard"]
     print(f"Wrote {OUT_JSON}")

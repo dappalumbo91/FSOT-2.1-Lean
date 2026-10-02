@@ -82,7 +82,7 @@ def main() -> int:
         "bulk_antimatter_damped": summary["bulk_antimatter_damped"],
     }
     doc["generated_at"] = _now()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     research = {
         "generated_at": _now(),
@@ -117,7 +117,7 @@ def main() -> int:
             "Omega_b_h2": "vendor/fsot_compute.py wave1",
         },
     }
-    REPORT.write_text(json.dumps(research, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(research, indent=2, allow_nan=False), encoding="utf-8")
 
     MANIFEST.write_text(
         "\n".join(

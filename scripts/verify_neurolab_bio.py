@@ -187,7 +187,7 @@ def verify_bio(
         translations = json.loads(translations_path.read_text(encoding="utf-8"))
     elif jl_path.exists():
         translations = parse_translations(jl_path)
-        translations_path.write_text(json.dumps(translations, indent=2), encoding="utf-8")
+        translations_path.write_text(json.dumps(translations, indent=2, allow_nan=False), encoding="utf-8")
     else:
         return [f"missing translations: {jl_path}"], {}
 

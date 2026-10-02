@@ -25,7 +25,7 @@ def main() -> int:
         out_path = ROOT / "data" / out_name
         try:
             doc = builder()
-            out_path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+            out_path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
             print(f"Wrote {out_path}")
             print(f"  {domain}: records={doc['record_count']} median_err={doc.get('median_error_pct')}")
         except Exception as exc:

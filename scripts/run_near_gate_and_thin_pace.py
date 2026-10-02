@@ -96,7 +96,7 @@ def main() -> int:
         from build_multi_hero_benchmark import build as build_mh, OUTPUT as MH_OUT
 
         mh = build_mh()
-        MH_OUT.write_text(json.dumps(mh, indent=2), encoding="utf-8")
+        MH_OUT.write_text(json.dumps(mh, indent=2, allow_nan=False), encoding="utf-8")
         report["actions"].append(
             {
                 "rebuild": "multi_hero_benchmark",
@@ -117,7 +117,7 @@ def main() -> int:
 
         hy = build_hybrid_fi_sim_multi_hero_panel()
         out_h = DATA / "hybrid_fi_sim_multi_hero_panel_benchmark.json"
-        out_h.write_text(json.dumps(hy, indent=2), encoding="utf-8")
+        out_h.write_text(json.dumps(hy, indent=2, allow_nan=False), encoding="utf-8")
         mr = hy.get("material_records") or hy.get("records") or []
         report["actions"].append(
             {
@@ -143,7 +143,7 @@ def main() -> int:
         from build_materials_species_bridge_benchmark import build as build_msb, OUTPUT as MSB_OUT
 
         msb = build_msb()
-        MSB_OUT.write_text(json.dumps(msb, indent=2), encoding="utf-8")
+        MSB_OUT.write_text(json.dumps(msb, indent=2, allow_nan=False), encoding="utf-8")
         report["actions"].append(
             {
                 "rebuild": "materials_species_bridge",
@@ -191,7 +191,7 @@ def main() -> int:
         print("margin SKIP:", e)
 
     out = DATA / "near_gate_thin_pace_report.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {out}")
     if report["errors"]:
         print("Completed with errors:", len(report["errors"]))

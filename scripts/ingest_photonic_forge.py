@@ -45,7 +45,7 @@ def main() -> int:
     photonic = ingest_photonic()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["photonic_forge"] = photonic
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  voxels: {photonic['voxel_count']}")
     print(f"  trinary counts: {photonic['trinary_counts']}")

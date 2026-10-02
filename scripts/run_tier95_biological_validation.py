@@ -151,7 +151,7 @@ def main() -> int:
             "within_literature_band_fraction": bio.get("within_literature_band_fraction"),
         },
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     print("=== Tier 95 Accuracy (margin of error %) ===")
     h = report["headline"]

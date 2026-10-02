@@ -428,7 +428,7 @@ def main() -> int:
             "True margin violations (false inequalities) must be empty on a green ledger."
         ),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     print("CROSS-REFINEMENT LEAN ↔ COQ AUDIT")
     print(f"  total obligations: {len(exported_obs)}")

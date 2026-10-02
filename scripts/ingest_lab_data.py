@@ -378,7 +378,7 @@ def main() -> int:
 
     registry = build_registry()
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
 
     smiles = registry["smiles_lab"]
     neuro = registry["neurolab"]

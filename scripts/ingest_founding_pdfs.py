@@ -188,7 +188,7 @@ def ingest_pdfs(
         "entries": entries,
     }
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    manifest_path.write_text(json.dumps(manifest, indent=2, allow_nan=False), encoding="utf-8")
 
     print(f"PDFs: {len(entries)} | ok={ok} low_yield={low_yield} failed={failed}")
     print(f"Manifest: {manifest_path}")

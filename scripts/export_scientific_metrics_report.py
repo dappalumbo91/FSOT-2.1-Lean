@@ -210,7 +210,7 @@ def main() -> int:
         ),
     }
 
-    OUT_JSON.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     print("=== FSOT Scientific Metrics Export (GitHub-ready) ===")
     print(f"Benchmark files scanned: {len(benchmarks)}")

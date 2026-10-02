@@ -137,7 +137,7 @@ def main() -> int:
         report["mind_states"].append(row)
 
     out = ROOT / "data" / "biofield_coherence_simulation.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     print("=== FSOT Biofield / Coherent Observer Simulation ===")
     print(f"Waking baseline S = {baseline:.6f}")

@@ -128,7 +128,7 @@ def main() -> int:
         "rust_cpu_n": rust_cpu.get("n"),
     }
     out = ROOT / "data" / "hardware_competitive_refine_report.json"
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     cpu = doc["cpu"]["summary"]
     ram = doc["ram"]["summary"]

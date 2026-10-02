@@ -34,7 +34,7 @@ def main() -> int:
         "median_error_pct": bench.get("median_error_pct"),
         "ingested_at": datetime.now(timezone.utc).isoformat(),
     }
-    REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    REGISTRY.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {REGISTRY}")
     print(f"  hydrology months: {bench.get('record_count')}")
     return 0

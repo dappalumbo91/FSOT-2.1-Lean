@@ -115,7 +115,7 @@ def main() -> int:
         "top_offenders": offenders[:8],
         "all_margins": offenders,
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print("Top offenders:")
     for row in doc["top_offenders"]:

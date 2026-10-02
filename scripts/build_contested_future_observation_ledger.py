@@ -194,11 +194,11 @@ def main() -> int:
             "python scripts/build_toe_gap_closure.py",
         ],
     }
-    raw = json.dumps(body, sort_keys=True).encode()
+    raw = json.dumps(body, sort_keys=True, allow_nan=False).encode()
     body["ledger_sha256"] = hashlib.sha256(raw).hexdigest()
 
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(body, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(body, indent=2, allow_nan=False), encoding="utf-8")
 
     lines = [
         "# Contested Future-Observation Ledger",

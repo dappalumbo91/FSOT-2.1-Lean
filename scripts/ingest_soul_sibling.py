@@ -44,7 +44,7 @@ def main() -> int:
     soul = ingest_soul_sibling()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["soul_sibling"] = soul
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  D_compact: {soul.get('D_compact')}  zero_free: {soul.get('zero_free')}")
     return 0

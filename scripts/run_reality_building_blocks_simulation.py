@@ -415,7 +415,7 @@ def main() -> int:
         print("Missing hierarchy/network — run build_fsot_system_math_audit.py", file=sys.stderr)
         return 1
     sim = simulate(audit, hier, net)
-    OUT.write_text(json.dumps(sim, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(sim, indent=2, allow_nan=False), encoding="utf-8")
     write_doc(sim)
     print(f"Wrote {OUT}")
     print(f"Wrote {OUT_DOC}")

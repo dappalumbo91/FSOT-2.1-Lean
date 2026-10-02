@@ -35,7 +35,7 @@ def main() -> int:
         "source_md": str(md),
         "ingested_at": datetime.now(timezone.utc).isoformat(),
     }
-    REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    REGISTRY.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {REGISTRY}")
     print(f"  observables: {summary['observable_count']}  max_err: {summary['max_error_pct']:.4f}%")
     return 0

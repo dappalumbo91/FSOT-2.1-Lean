@@ -230,7 +230,7 @@ def main() -> int:
         "extension_panel_index": ext_list,
         "ten_unentered_domain_candidates": UNENTERED_CANDIDATES,
     }
-    OUT.write_text(json.dumps(audit, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(audit, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"  core: 35 | extensions: {len(ext_domains)} | total surface: {audit['summary']['total_scientific_surface']}")
     print(f"  records: {audit['summary']['core_total_empirical_records']}")

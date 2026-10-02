@@ -11,7 +11,7 @@ OPENNEURO_URL = "https://openneuro.org/crn/graphql"
 def _graphql(query: str) -> dict:
     req = urllib.request.Request(
         OPENNEURO_URL,
-        data=json.dumps({"query": query}).encode(),
+        data=json.dumps({"query": query}, allow_nan=False).encode(),
         headers={"Content-Type": "application/json", "User-Agent": "FSOT-2.1-Lean/openneuro"},
     )
     with urllib.request.urlopen(req, timeout=90) as resp:

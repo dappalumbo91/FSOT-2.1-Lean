@@ -147,7 +147,7 @@ def main() -> int:
         "overall_ok": all(checks.values()),
         "fstar_report": str(FSTAR_REPORT),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     print("CROSS-REFINEMENT FSTAR AUDIT")
     for k, v in checks.items():

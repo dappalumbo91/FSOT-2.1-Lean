@@ -74,7 +74,7 @@ def main() -> int:
                 "rows": payload,
             },
             indent=2,
-        )
+         allow_nan=False)
         + "\n",
         encoding="utf-8",
     )

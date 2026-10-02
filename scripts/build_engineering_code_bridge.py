@@ -30,7 +30,7 @@ def main() -> int:
         ("Tier_96_Circuit_Spine", build_tier_96_circuit_spine),
     ):
         doc = builder()
-        circuit_out(name).write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        circuit_out(name).write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
         print(f"{name}: n={doc.get('record_count')} med={doc.get('median_error_pct')}")
 
     # FSOT-GPU CUDA competitive + parity (same class as coding verifier: structure, not weights)
@@ -48,7 +48,7 @@ def main() -> int:
     ):
         doc = GPU_BUILDERS[name]()
         out = gpu_out(name)
-        out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
         print(
             f"{name}: n={doc.get('record_count')} med={doc.get('median_error_pct')} -> {out.name}"
         )
@@ -56,7 +56,7 @@ def main() -> int:
     for name, builder in BUILDERS.items():
         doc = builder()
         out = output_path(name)
-        out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
         print(f"{name}: n={doc.get('record_count')} med={doc.get('median_error_pct')} -> {out.name}")
     return 0
 

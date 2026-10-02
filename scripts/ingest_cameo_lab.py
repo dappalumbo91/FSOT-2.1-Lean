@@ -47,7 +47,7 @@ def main() -> int:
     cameo = ingest_cameo()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["cameo_lab"] = cameo
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  benchmarks: {cameo['benchmark_count']}")
     print(f"  mean top-L prec: {cameo['mean_top_l_prec']:.2f}%")

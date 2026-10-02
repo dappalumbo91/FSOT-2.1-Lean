@@ -37,7 +37,7 @@ def main() -> int:
         "verification_tier": "numeric_formula",
         "ingested_at": datetime.now(timezone.utc).isoformat(),
     }
-    REGISTRY_PATH.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    REGISTRY_PATH.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {REGISTRY_PATH}")
     print(f"  records: {summary['records_total']}  matched: {summary['matched_count']}")
     print(f"  within 2%: {summary['within_target_2pct']}  within 5%: {summary['within_tolerable_5pct']}")

@@ -93,8 +93,8 @@ def _fetch_text(url: str, *, timeout: int = 90) -> str:
 def _write_bundle(domain: str, cache_name: str, vendor_name: str, doc: dict) -> Path:
     doc.setdefault("fetched_at", datetime.now(timezone.utc).isoformat())
     doc.setdefault("external_cache", str(cache_path(domain, cache_name)))
-    cache_path(domain, cache_name).write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    vendor_path(domain, vendor_name).write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    cache_path(domain, cache_name).write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
+    vendor_path(domain, vendor_name).write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return vendor_path(domain, vendor_name)
 
 

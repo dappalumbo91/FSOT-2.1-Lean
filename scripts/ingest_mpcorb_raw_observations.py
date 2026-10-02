@@ -162,7 +162,7 @@ def stratified_sample(path: Path, per_cell: int = 4, max_total: int = 80) -> lis
 def fetch_obs(desig: str, timeout: int = 120) -> dict:
     body = json.dumps(
         {"desigs": [desig], "output_format": ["ADES_DF", "OBS80"]}
-    ).encode()
+    , allow_nan=False).encode()
     req = urllib.request.Request(
         API,
         data=body,
@@ -250,7 +250,7 @@ def main() -> int:
                 "fetched_at": payload.get("fetched_at"),
                 "source": API,
             }
-            out_path.write_text(json.dumps(record), encoding="utf-8")
+            out_path.write_text(json.dumps(record, allow_nan=False), encoding="utf-8")
             print(f"ok n_api={payload.get('n_obs')} optical={len(optical)}")
             results.append(
                 {
@@ -277,7 +277,7 @@ def main() -> int:
         "fetched_ok": sum(1 for r in results if r.get("fetch_ok")),
         "objects": results,
     }
-    (store / "sample_index.json").write_text(json.dumps(index, indent=2), encoding="utf-8")
+    (store / "sample_index.json").write_text(json.dumps(index, indent=2, allow_nan=False), encoding="utf-8")
 
     # monorepo pointer
     ptr = {}
@@ -296,11 +296,11 @@ def main() -> int:
         "sample_size": index["sample_size"],
     }
     POINTER.parent.mkdir(parents=True, exist_ok=True)
-    POINTER.write_text(json.dumps(ptr, indent=2), encoding="utf-8")
+    POINTER.write_text(json.dumps(ptr, indent=2, allow_nan=False), encoding="utf-8")
 
     # lightweight monorepo copy of index only
     mono = ROOT / "data" / "mpcorb_raw_obs_sample_index.json"
-    mono.write_text(json.dumps(index, indent=2), encoding="utf-8")
+    mono.write_text(json.dumps(index, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Index: {store / 'sample_index.json'}")
     print(f"Monorepo index: {mono}")
     print(f"OK {index['fetched_ok']}/{index['sample_size']}")

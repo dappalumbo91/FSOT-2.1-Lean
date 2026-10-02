@@ -60,7 +60,7 @@ def main() -> int:
                 "records": records,
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     print(f"Wrote {args.output}")

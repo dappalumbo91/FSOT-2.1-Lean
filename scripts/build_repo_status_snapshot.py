@@ -345,7 +345,7 @@ def write_md(doc: dict) -> str:
 
 def main() -> int:
     doc = build()
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     OUT_MD.write_text(write_md(doc), encoding="utf-8")
     print(f"Wrote {OUT_JSON}")
     print(f"Wrote {OUT_MD}")

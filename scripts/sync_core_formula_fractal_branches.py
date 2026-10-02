@@ -135,7 +135,7 @@ def _patch_compute(index: dict) -> None:
 
 def main() -> int:
     index = build_branch_index()
-    OUT_JSON.write_text(json.dumps(index, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(index, indent=2, allow_nan=False), encoding="utf-8")
     _patch_spine(index)
     _patch_compute(index)
     print(

@@ -115,7 +115,7 @@ def main() -> int:
     }
 
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(diagnosis, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(diagnosis, indent=2, allow_nan=False), encoding="utf-8")
     OUT_MD.write_text(_md(diagnosis, anchors, cep_hosts, rows), encoding="utf-8")
     print(f"Wrote {OUT_JSON}")
     print(f"Wrote {OUT_MD}")

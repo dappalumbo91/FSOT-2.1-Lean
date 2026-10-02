@@ -25,7 +25,7 @@ def main() -> int:
         "note": "Update proxy_accuracy after each Kaggle leaderboard feedback",
     }
     LIVING_STATE.parent.mkdir(parents=True, exist_ok=True)
-    LIVING_STATE.write_text(json.dumps(out, indent=2), encoding="utf-8")
+    LIVING_STATE.write_text(json.dumps(out, indent=2, allow_nan=False), encoding="utf-8")
     print(f"wrote {LIVING_STATE} proxy={proxy}")
     return 0
 

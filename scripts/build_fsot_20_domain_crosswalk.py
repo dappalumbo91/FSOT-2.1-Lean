@@ -186,7 +186,7 @@ def main() -> int:
     args = parser.parse_args()
     doc = build_crosswalk()
     args.json.parent.mkdir(parents=True, exist_ok=True)
-    args.json.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.json.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     args.yaml.write_text(yaml.dump(doc, sort_keys=False, default_flow_style=False), encoding="utf-8")
     print(f"Wrote {args.json}")
     print(f"Wrote {args.yaml}")

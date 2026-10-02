@@ -106,7 +106,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
     bench = build(args.manifest)
-    args.output.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  anomalies: {bench['record_count']}  resolved≤15%: {bench['resolved_fraction']:.1%}")
     print(f"  median err: {bench['median_error_pct']}%  max err: {bench['max_error_pct']}%")

@@ -322,7 +322,7 @@ def main() -> int:
     report = verify()
     report["post_refinement"] = _combined_post_refinement(report)
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     _update_ledger_status(report)
 
     acc = report["accuracy_summary"]

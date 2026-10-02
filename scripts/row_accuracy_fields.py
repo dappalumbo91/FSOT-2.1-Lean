@@ -232,7 +232,7 @@ def main() -> int:
     codata = json.loads(CODATA.read_text(encoding="utf-8"))
     for row in codata.get("material_records") or []:
         stamp_inplace(row, file_name=CODATA.name)
-    CODATA.write_text(json.dumps(codata, indent=2) + "\n", encoding="utf-8")
+    CODATA.write_text(json.dumps(codata, indent=2, allow_nan=False) + "\n", encoding="utf-8")
 
     counts: Counter[str] = Counter()
     n = 0
@@ -268,7 +268,7 @@ def main() -> int:
                             **fields,
                         },
                         ensure_ascii=True,
-                    )
+                     allow_nan=False)
                     + "\n"
                 )
     summary = {
@@ -283,7 +283,7 @@ def main() -> int:
         "ledger": str(LEDGER),
         "codata_rows_stamped_in_place": True,
     }
-    SUMMARY.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    SUMMARY.write_text(json.dumps(summary, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     print(f"rows={n}")
     for key, count in counts.most_common():
         print(f"  {key} {count}")

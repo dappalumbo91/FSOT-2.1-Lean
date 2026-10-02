@@ -148,8 +148,8 @@ def main() -> int:
     }
     cache_path = external_cache_root() / CACHE_NAME
     vendor_path = VENDOR / CACHE_NAME
-    cache_path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    vendor_path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    cache_path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
+    vendor_path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {cache_path} ({len(events)} events, source={source})")
     print(f"Wrote {vendor_path}")
     return 0

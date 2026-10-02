@@ -379,7 +379,7 @@ def write_doc(doc: dict) -> None:
             lines.append(lay["note"])
             lines.append("")
         for p in lay.get("pieces") or []:
-            lines.append(f"- `{json.dumps(p, default=str)[:200]}`")
+            lines.append(f"- `{json.dumps(p, default=str, allow_nan=False)[:200]}`")
         lines.append("")
     lines += ["## Connectives OK", ""]
     for c in doc["connectives_ok"]:
@@ -398,7 +398,7 @@ def write_doc(doc: dict) -> None:
 
 def main() -> int:
     doc = audit()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     write_doc(doc)
     print(f"Wrote {OUT}")
     print(f"Wrote {OUT_DOC}")

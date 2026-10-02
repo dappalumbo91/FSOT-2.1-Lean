@@ -343,7 +343,7 @@ def run_live(port: str, snapshot: bool = False) -> int:
                             doc = publish_snapshot_doc(frame, boot_markers, port)
                             OUT_DIR.mkdir(parents=True, exist_ok=True)
                             SNAPSHOT_JSON.write_text(
-                                json.dumps(doc, indent=2), encoding="utf-8"
+                                json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8"
                             )
                             print(f"Wrote {SNAPSHOT_JSON}")
                             return 0
@@ -378,7 +378,7 @@ def run_capture_once(port: str, seconds: float = 45.0) -> int:
     )
     doc = publish_snapshot_doc(frame, boot_markers, port)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    SNAPSHOT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    SNAPSHOT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {SNAPSHOT_JSON}")
     import matplotlib.pyplot as plt
 

@@ -284,7 +284,7 @@ def main() -> int:
         "upgrade_candidates_preview": depth_targets_for_upgrade(corpus, limit=30),
     }
     OUT_INV.parent.mkdir(parents=True, exist_ok=True)
-    OUT_INV.write_text(json.dumps(inv_doc, indent=2), encoding="utf-8")
+    OUT_INV.write_text(json.dumps(inv_doc, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"  theorems={corpus['theorem_count']} mathlib_depth="
         f"{corpus['mathlib_depth_count']} ({corpus['mathlib_depth_pct']}%)"
@@ -457,7 +457,7 @@ def main() -> int:
         ),
     }
 
-    OUT_REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT_REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     OUT_MD.write_text(write_md(report), encoding="utf-8")
     print(f"\nWrote {OUT_REPORT}")
     print(f"Wrote {OUT_MD}")

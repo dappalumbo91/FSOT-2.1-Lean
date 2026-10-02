@@ -316,7 +316,7 @@ def build() -> dict:
 
 def main() -> int:
     doc = build()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     s = doc["summary"]
     print("=== Scientific pushback audit ===")
     print(f"  domains: {s['extension_domain_count']} green={s['green_gate_pass_count']} fail={s['green_gate_fail_count']}")

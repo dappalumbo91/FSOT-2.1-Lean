@@ -62,7 +62,7 @@ def _domain_table_sha() -> tuple[str, str, list[dict]]:
                 "C": float(cfg.C),
             }
         )
-    blob = json.dumps(rows, sort_keys=True, separators=(",", ":"))
+    blob = json.dumps(rows, sort_keys=True, separators=(",", ":"), allow_nan=False)
     table_sha = hashlib.sha256(blob.encode("utf-8")).hexdigest()
     src = COMPUTE_PATH.read_text(encoding="utf-8") if COMPUTE_PATH.exists() else ""
     k_ok = K_LINE_NEEDLE in src
@@ -182,7 +182,7 @@ def build_audit() -> dict:
     }
     prior = json.loads(FREEZE_JSON.read_text(encoding="utf-8")) if FREEZE_JSON.exists() else {}
     if prior.get("pin_prefix") != pin:
-        FREEZE_JSON.write_text(json.dumps({**freeze, "domains": freeze_rows}, indent=2), encoding="utf-8")
+        FREEZE_JSON.write_text(json.dumps({**freeze, "domains": freeze_rows}, indent=2, allow_nan=False), encoding="utf-8")
         freeze_ok = True
         freeze_reason = "wrote_freeze_for_new_pin"
     else:
@@ -240,7 +240,7 @@ def main() -> int:
         return 1
     audit = build_audit()
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_JSON.write_text(json.dumps(audit, indent=2), encoding="utf-8")
+    OUTPUT_JSON.write_text(json.dumps(audit, indent=2, allow_nan=False), encoding="utf-8")
     print("=== FSOT parameter count audit ===")
     print(f"  scalar_input_fields: {audit['scalar_input_fields']}")
     print(f"  domain_table_slots: {audit['domain_table']['total_domain_table_slots']}")

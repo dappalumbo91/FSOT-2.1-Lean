@@ -55,7 +55,7 @@ def main() -> int:
             "cargo test exercises boot + dynamic spot checks."
         ),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     print("RUST_LEAN_BRIDGE RUNTIME PARITY (Tier 85)")
     print(f"  python boot_scalar: {py_boot} (ok={py_ok})")

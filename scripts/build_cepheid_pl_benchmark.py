@@ -74,7 +74,7 @@ def main() -> int:
     doc["cepheid_status"] = (
         "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
     )
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     outcome = {
         "pin": "D1D38A",
@@ -87,7 +87,7 @@ def main() -> int:
         "kill": "pooled median > 0.5% or anyone fits a PL slope/γ to the R22 table",
     }
     OUTCOME.parent.mkdir(parents=True, exist_ok=True)
-    OUTCOME.write_text(json.dumps(outcome, indent=2), encoding="utf-8")
+    OUTCOME.write_text(json.dumps(outcome, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"Wrote {OUTCOME}")
     for r in rows:

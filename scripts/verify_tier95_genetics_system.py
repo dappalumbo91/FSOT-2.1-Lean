@@ -173,7 +173,7 @@ def main() -> int:
             "not isolated curve-fit on Zebrahub outcomes."
         ),
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     print("=== Tier 95 Genetics System Crosswalk ===")
     for chk in checks:

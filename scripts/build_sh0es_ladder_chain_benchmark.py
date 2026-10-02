@@ -259,7 +259,7 @@ def main() -> int:
     doc["sh0es_status"] = (
         "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
     )
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     outcome = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -288,7 +288,7 @@ def main() -> int:
         "kill": "ladder_chain median > 0.5% on refresh, or class rho retuned to hit 73.04",
     }
     OUTCOME.parent.mkdir(parents=True, exist_ok=True)
-    OUTCOME.write_text(json.dumps(outcome, indent=2), encoding="utf-8")
+    OUTCOME.write_text(json.dumps(outcome, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"Wrote {OUTCOME}")
     print(

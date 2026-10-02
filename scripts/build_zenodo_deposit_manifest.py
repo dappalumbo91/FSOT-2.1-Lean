@@ -175,8 +175,8 @@ def main() -> int:
         ],
     }
 
-    MANIFEST.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-    METADATA.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
+    MANIFEST.write_text(json.dumps(manifest, indent=2, allow_nan=False), encoding="utf-8")
+    METADATA.write_text(json.dumps(metadata, indent=2, allow_nan=False), encoding="utf-8")
 
     readme_text = f"""# Zenodo Upload Guide — FSOT Monograph v1
 

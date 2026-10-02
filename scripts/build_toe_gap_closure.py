@@ -396,7 +396,7 @@ def build_contested_refresh() -> dict:
             "(e.g. w_a uses DESI DR2 −1.018; H0 local uses 25π−5.5 seed sector form)."
         ),
     }
-    OUT_CONTESTED.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_CONTESTED.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 
@@ -453,7 +453,7 @@ def build_dynamics_benchmark() -> dict:
         "records": rows,
         "material_records": rows,
     }
-    OUT_DYN_BENCH.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_DYN_BENCH.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 
@@ -495,8 +495,8 @@ def build_gr_sm_deep_benchmark() -> dict:
             "derivation; see manifest.does_not_yet_include."
         ),
     }
-    OUT_GR_SM_BENCH.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    OUT_FORCE_MANIFEST.write_text(json.dumps(suite["manifest"], indent=2), encoding="utf-8")
+    OUT_GR_SM_BENCH.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
+    OUT_FORCE_MANIFEST.write_text(json.dumps(suite["manifest"], indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 
@@ -600,7 +600,7 @@ def build_limit_recovery_benchmark() -> dict:
             "full spin-2 quantization remains open research."
         ),
     }
-    OUT_LIMIT_BENCH.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_LIMIT_BENCH.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 
@@ -762,9 +762,9 @@ def freeze_prereg() -> dict:
         "bundle_sha256": None,
     }
     # Hash the slate body without circular self-hash
-    body = json.dumps({k: v for k, v in slate.items() if k != "bundle_sha256"}, sort_keys=True).encode()
+    body = json.dumps({k: v for k, v in slate.items() if k != "bundle_sha256"}, sort_keys=True, allow_nan=False).encode()
     slate["bundle_sha256"] = hashlib.sha256(body).hexdigest()
-    OUT_PREREG_FREEZE.write_text(json.dumps(slate, indent=2), encoding="utf-8")
+    OUT_PREREG_FREEZE.write_text(json.dumps(slate, indent=2, allow_nan=False), encoding="utf-8")
     return slate
 
 
@@ -1106,7 +1106,7 @@ def main() -> int:
             "confinement uniqueness, spin-2 Fock uniqueness, EH measure uniqueness) remain open."
         ),
     }
-    OUT_REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT_REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT_REPORT}")
     print(
         f"  Label A: {evaluation['label_A_empirical_framework']}  "

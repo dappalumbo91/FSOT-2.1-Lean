@@ -294,7 +294,7 @@ def main() -> int:
     if doc.get("margin_summary"):
         doc["margin_summary"]["scalar_pooled_median_error_pct"] = pooled
 
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT} portable_records={len(sample_records)} FULL_obs={all_err.size} pooled={pooled}%")
 
     # External full summary + error histogram for offline audit
@@ -315,7 +315,7 @@ def main() -> int:
         "green_gate_pct": 0.5,
         "green": pooled < 0.5,
     }
-    (ext / "full_quality_residual_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    (ext / "full_quality_residual_summary.json").write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
     np.savez_compressed(
         ext / "full_quality_error_pct.npz",
         error_pct=all_err.astype(np.float32),

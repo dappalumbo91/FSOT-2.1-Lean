@@ -90,7 +90,7 @@ def main() -> int:
         print(f"Missing {SPINE}", file=sys.stderr)
         return 1
     doc = build()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     s = doc["summary"]
     print(f"Wrote {OUT}")
     print(f"  atomic={s['atomic_triangulated']} oracle={s['oracle_replay']} structural={s['structural_index']}")

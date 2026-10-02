@@ -27,7 +27,7 @@ def main() -> int:
     write_sweep_csv(rows, args.csv)
     summary = summarize_sweep(rows)
     summary["csv_path"] = str(args.csv)
-    args.report.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    args.report.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.csv} ({len(rows)} rows)")
     print(f"Wrote {args.report}")
     print(f"  fertile: {summary['fertile_count']}/{summary['sweep_row_count']}")

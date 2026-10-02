@@ -73,7 +73,7 @@ def _load_state(store: Path) -> dict:
 
 def _save_state(store: Path, state: dict) -> None:
     state["updated_at"] = _now()
-    (store / STATE_NAME).write_text(json.dumps(state, indent=2), encoding="utf-8")
+    (store / STATE_NAME).write_text(json.dumps(state, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def build_queue(
@@ -201,7 +201,7 @@ def expand_queue_sequential(
     queue_path = store / QUEUE_NAME
     with queue_path.open("a", encoding="utf-8") as f:
         for row in added_rows:
-            f.write(json.dumps(row) + "\n")
+            f.write(json.dumps(row, allow_nan=False) + "\n")
 
     return {
         "added": len(added_rows),
@@ -225,7 +225,7 @@ def merge_queue(store: Path, new_rows: list[dict]) -> int:
             d = row.get("api_desig")
             if d in existing:
                 continue
-            f.write(json.dumps(row) + "\n")
+            f.write(json.dumps(row, allow_nan=False) + "\n")
             existing.add(d)
             added += 1
     return added
@@ -318,7 +318,7 @@ def run_fetch(
                 "fetched_at": payload.get("fetched_at"),
                 "source": "https://data.minorplanetcenter.net/api/get-obs",
             }
-            out_path.write_text(json.dumps(record), encoding="utf-8")
+            out_path.write_text(json.dumps(record, allow_nan=False), encoding="utf-8")
             state.setdefault("fetched", {})[desig] = {
                 "ok": True,
                 "n_obs_api": payload.get("n_obs"),
@@ -369,9 +369,9 @@ def run_fetch(
         ),
         "objects": objects,
     }
-    (store / "sample_index.json").write_text(json.dumps(index, indent=2), encoding="utf-8")
+    (store / "sample_index.json").write_text(json.dumps(index, indent=2, allow_nan=False), encoding="utf-8")
     (ROOT / "data" / "mpcorb_raw_obs_sample_index.json").write_text(
-        json.dumps(index, indent=2), encoding="utf-8"
+        json.dumps(index, indent=2, allow_nan=False), encoding="utf-8"
     )
     # pointer
     ptr = {}
@@ -388,7 +388,7 @@ def run_fetch(
         "objects_fetched_ok": index["fetched_ok"],
         "total_optical_observations": total_optical,
     }
-    POINTER.write_text(json.dumps(ptr, indent=2), encoding="utf-8")
+    POINTER.write_text(json.dumps(ptr, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"Fetch complete: {index['fetched_ok']} objects, "
         f"{total_optical:,} optical observations stored"
@@ -467,7 +467,7 @@ def verify_fsot_per_object(store: Path, *, gate_pct: float = 0.5) -> dict:
         "objects": rows,
     }
     out = store / "fsot_per_object_verify.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     # also mirror a slim copy into repo data for GitHub
     slim = {
         k: report[k]
@@ -484,7 +484,7 @@ def verify_fsot_per_object(store: Path, *, gate_pct: float = 0.5) -> dict:
     }
     slim["sample_objects"] = rows[:30]
     (ROOT / "data" / "mpcorb_fsot_per_object_verify.json").write_text(
-        json.dumps(slim, indent=2), encoding="utf-8"
+        json.dumps(slim, indent=2, allow_nan=False), encoding="utf-8"
     )
     print(
         f"FSOT per-object verify: {len(rows)} objects · "

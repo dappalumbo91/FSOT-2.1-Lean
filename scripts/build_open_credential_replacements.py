@@ -69,7 +69,7 @@ def _save_live(source_id: str, url: str, payload: Any, description: str) -> Path
         "description": description,
     }
     path = vendor_dir(source_id) / "live.json"
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return path
 
 
@@ -137,7 +137,7 @@ def ingest_jarvis() -> dict[str, Any]:
         "replaces": "materials_project_api_key",
     }
     out = ROOT / "vendor" / "open_science" / "jarvis_optimade_dft" / "materials_cache.json"
-    out.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(cache, indent=2, allow_nan=False), encoding="utf-8")
     print(f"JARVIS: {len(materials)} materials → {out.relative_to(ROOT)}")
     return cache
 
@@ -199,7 +199,7 @@ def ingest_cod() -> dict[str, Any]:
         "replaces": "materials_project_structures_key_path",
     }
     out = ROOT / "vendor" / "open_science" / "cod_optimade_structures" / "structures_cache.json"
-    out.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(cache, indent=2, allow_nan=False), encoding="utf-8")
     print(f"COD: {len(structures)} structures → {out.relative_to(ROOT)}")
     return cache
 
@@ -253,7 +253,7 @@ def ingest_world_bank_macro() -> dict[str, Any]:
     }
     out = ROOT / "vendor" / "open_science" / "worldbank_macro" / "macro_cache.json"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(cache, indent=2, allow_nan=False), encoding="utf-8")
     print(f"World Bank macro: {len(series)} observations → {out.relative_to(ROOT)}")
     return cache
 
@@ -315,7 +315,7 @@ def build_jarvis_panel(cache: dict[str, Any]) -> dict:
     doc["policy"] = "open_science_only_no_credentials"
     doc["replaces"] = "materials_project_live_api_key"
     out = ROOT / "data" / "jarvis_dft_open_panel_benchmark.json"
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"Wrote {out.name} n={doc['record_count']} "
         f"pooled={doc.get('pooled_median_error_pct')}%"
@@ -383,7 +383,7 @@ def build_cod_panel(cache: dict[str, Any]) -> dict:
     doc["policy"] = "open_science_only_no_credentials"
     doc["replaces"] = "materials_project_structures_key_path"
     out = ROOT / "data" / "cod_optimade_structures_benchmark.json"
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"Wrote {out.name} n={doc['record_count']} "
         f"pooled={doc.get('pooled_median_error_pct')}%"
@@ -442,7 +442,7 @@ def build_world_bank_macro_panel(cache: dict[str, Any]) -> dict:
     doc["policy"] = "open_science_only_no_credentials"
     doc["replaces"] = "fred_api_key"
     out = ROOT / "data" / "world_bank_macro_open_benchmark.json"
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"Wrote {out.name} n={doc['record_count']} "
         f"pooled={doc.get('pooled_median_error_pct')}%"
@@ -482,7 +482,7 @@ def main() -> int:
         },
     }
     sp = ROOT / "data" / "open_credential_replacements_report.json"
-    sp.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    sp.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {sp.relative_to(ROOT)}")
     return 0
 

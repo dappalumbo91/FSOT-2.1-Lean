@@ -291,7 +291,7 @@ def main() -> int:
         "benchmark_domain_count": len(domains),
         "nothing_fell_out": fail == 0 and int(bm.get("green_gate_fail_count") or 0) == 0,
     }
-    OUT_MARGIN.write_text(json.dumps(margin_doc, indent=2), encoding="utf-8")
+    OUT_MARGIN.write_text(json.dumps(margin_doc, indent=2, allow_nan=False), encoding="utf-8")
 
     metrics_doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -313,7 +313,7 @@ def main() -> int:
         "family_summary": family_summary,
         "domains": mapped,
     }
-    OUT_JSON.write_text(json.dumps(metrics_doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(metrics_doc, indent=2, allow_nan=False), encoding="utf-8")
 
     lines = [
         "# Scientific error metrics map (FSOT residuals → field language)",

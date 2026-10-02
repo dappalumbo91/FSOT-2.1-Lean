@@ -174,7 +174,7 @@ def main() -> int:
             attest = doc.setdefault("accuracy_attestation", {})
             attest["si_definitions_adopted"] = True
             attest["adopted_residual"] = 0
-        text = json.dumps(doc, indent=2) + "\n"
+        text = json.dumps(doc, indent=2, allow_nan=False) + "\n"
         path.write_text(text, encoding="utf-8")
         print(path.name, len(stats["names"]) - before)
     print("adopted", len(stats["names"]))

@@ -346,7 +346,7 @@ def build_report(*, online: bool) -> dict:
             "kaggle_pack": "python scripts/build_kaggle_prediction_pack.py",
         },
     }
-    body = json.dumps({k: v for k, v in report.items() if k != "report_sha256"}, sort_keys=True).encode()
+    body = json.dumps({k: v for k, v in report.items() if k != "report_sha256"}, sort_keys=True, allow_nan=False).encode()
     report["report_sha256"] = hashlib.sha256(body).hexdigest()
     return report
 
@@ -488,7 +488,7 @@ def main() -> int:
     online = bool(args.online) and not args.offline
 
     report = build_report(online=online)
-    payload = json.dumps(report, indent=2)
+    payload = json.dumps(report, indent=2, allow_nan=False)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(payload, encoding="utf-8")
     RESULTS_JSON.parent.mkdir(parents=True, exist_ok=True)

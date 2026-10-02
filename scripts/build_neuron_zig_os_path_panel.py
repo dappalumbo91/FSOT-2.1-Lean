@@ -271,7 +271,7 @@ def build() -> dict:
         "neuron_zig": "https://github.com/dappalumbo91/fsot-neuron-zig",
         "claim": "roadmap residual panel — not a shipped multi-user OS",
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 

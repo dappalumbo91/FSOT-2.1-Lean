@@ -118,7 +118,7 @@ def collect_samples(*, samples: int = 16, interval_ms: float = 50.0, workspace: 
         "note": "Mic/camera/ESP32 sensory paths deferred; timing+display+hash proxies suffice for software observer loop.",
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    CACHE.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    CACHE.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 
@@ -241,5 +241,5 @@ def replay_observed_batch(samples_doc: dict | None = None) -> dict:
         "all_ok": pooled <= 0.5,
         "aspiration_ok": pooled <= 0.05,
     }
-    (OUT_DIR / "observer_replay_report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    (OUT_DIR / "observer_replay_report.json").write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     return report

@@ -18,7 +18,7 @@ REPORT = ROOT / "data" / "sota_observable_ledger_report.json"
 
 def main() -> int:
     report = build(LEDGER)
-    REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     issues: list[str] = []
     headline_records = [

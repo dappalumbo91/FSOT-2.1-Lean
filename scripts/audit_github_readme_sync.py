@@ -213,7 +213,7 @@ def main() -> int:
     }
 
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     md_lines = [
         "# GitHub / README Sync Audit",
@@ -262,7 +262,7 @@ def main() -> int:
     )
     OUT_MD.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
 
-    print(json.dumps({"ok": report["ok_for_expansive_run"], "actions": len(actions), "out": str(OUT_JSON)}, indent=2))
+    print(json.dumps({"ok": report["ok_for_expansive_run"], "actions": len(actions), "out": str(OUT_JSON)}, indent=2, allow_nan=False))
     return 0 if report["ok_for_expansive_run"] else 1
 
 

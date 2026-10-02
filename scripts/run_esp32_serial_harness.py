@@ -39,7 +39,7 @@ def main() -> int:
             "for eight-way bare-metal verification."
         ),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     serial = harness.get("serial_capture") or {}
     print("ESP32 FSOT SERIAL HARNESS (Tier 91)")
     print(f"  port: {port or 'n/a'}")

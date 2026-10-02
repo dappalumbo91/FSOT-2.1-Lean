@@ -46,7 +46,7 @@ def clean_file(path: Path) -> None:
         channel_stats=[("fsot_proper", "hardware_clean", errs or [0.0])],
         sota_baselines={"pre": {"sota_typical_error_pct": 10.0, "sota_model": "pre"}},
     )
-    path.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
     print(f"{path.name}: {len(base)} -> {rebuilt.get('record_count')} med={rebuilt.get('pooled_median_error_pct')}")
 
 
@@ -95,7 +95,7 @@ def main() -> int:
             ],
             sota_baselines={"pre": {"sota_typical_error_pct": 10.0, "sota_model": "pre"}},
         )
-        (ROOT / "data" / out).write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+        (ROOT / "data" / out).write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
         print(f"spine {out}: n={rebuilt.get('record_count')} med={rebuilt.get('pooled_median_error_pct')}")
     return 0
 

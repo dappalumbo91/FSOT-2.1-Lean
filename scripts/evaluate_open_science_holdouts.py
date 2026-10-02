@@ -125,7 +125,7 @@ def main() -> int:
         "overall_ok": failed == 0,
         "results": results,
     }
-    OUT.write_text(json.dumps(out, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(out, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT} pass={passed} fail={failed} skip={skipped} overall_ok={out['overall_ok']}")
     for r in results:
         print(f"  {r['status'].upper():4} {r['id']} {r['name']}")

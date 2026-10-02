@@ -76,9 +76,9 @@ def main() -> int:
         },
     }
 
-    SUMMARY.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    SUMMARY.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
     # Replace repo benchmark with summary for portable clone-and-verify
-    FULL.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    FULL.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
 
     if MANIFEST.exists():
         try:

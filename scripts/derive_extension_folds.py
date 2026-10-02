@@ -176,7 +176,7 @@ def main() -> int:
         "n": len(rows),
         "folds": rows,
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     n_diff = sum(1 for r in rows.values() if r["yaml_D_eff_ignored"] != r["D_eff"])
     print(f"wrote {OUT} n={len(rows)} yaml_D_differs={n_diff}")
     return 0

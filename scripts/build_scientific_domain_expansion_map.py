@@ -230,7 +230,7 @@ def main() -> int:
     args = parser.parse_args()
     doc = build_map()
     args.output_json.parent.mkdir(parents=True, exist_ok=True)
-    args.output_json.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output_json.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     args.output_yaml.write_text(yaml.dump(doc, sort_keys=False, default_flow_style=False), encoding="utf-8")
     s = doc["summary"]
     print(f"Wrote {args.output_json}")

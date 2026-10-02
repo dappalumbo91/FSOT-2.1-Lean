@@ -146,7 +146,7 @@ def main() -> int:
             "data/formula_branching_fractal_benchmark.json",
         ],
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT} — {len(core_chains)} core + {len(extension_chains)} extension chains")
     return 0
 

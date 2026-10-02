@@ -52,7 +52,7 @@ def _tag(path: Path, role: str, note: str) -> dict:
     bench["ledger_role"] = role
     bench["ledger_role_note"] = note
     bench["ledger_b_closed_at"] = _now()
-    path.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
     return {"file": path.name, "domain": _domain(bench, path), "role": role}
 
 
@@ -71,7 +71,7 @@ def _append_structural(path: Path, extra: list[dict], *, note: str) -> dict:
     bench["observable_count"] = len(mat)
     bench["ledger_b_closed_at"] = _now()
     bench["ledger_b_expand_note"] = note
-    path.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
     return {
         "file": path.name,
         "domain": _domain(bench, path),
@@ -206,8 +206,8 @@ def main() -> int:
         ],
     }
     out = DATA / "ledger_b_closure.json"
-    out.write_text(json.dumps(closure, indent=2), encoding="utf-8")
-    print(json.dumps({k: closure[k] for k in ("ledger_b_done", "ledger_b_empirical_open", "tier_distribution")}, indent=2))
+    out.write_text(json.dumps(closure, indent=2, allow_nan=False), encoding="utf-8")
+    print(json.dumps({k: closure[k] for k in ("ledger_b_done", "ledger_b_empirical_open", "tier_distribution")}, indent=2, allow_nan=False))
     if open_thin:
         print("still C_thin:")
         for r in open_thin:

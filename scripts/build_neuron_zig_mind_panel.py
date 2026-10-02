@@ -265,7 +265,7 @@ def build() -> dict:
         "process_debt_holes": [h for h in holes if h.get("severity") in ("process_debt", "logic_or_application_hole")],
     }
 
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 
@@ -303,7 +303,7 @@ def write_closure(doc: dict) -> dict:
         ],
         "claim": "overall_ok requires stamp + no blockers + scalar pooled ≤0.5%; process debt may remain as refinement list",
     }
-    CLOSURE_OUT.write_text(json.dumps(closure, indent=2), encoding="utf-8")
+    CLOSURE_OUT.write_text(json.dumps(closure, indent=2, allow_nan=False), encoding="utf-8")
     return closure
 
 

@@ -90,7 +90,7 @@ def _panel(domain: str, records: list[dict], maps: list[str], d_eff: int, source
     doc["policy"] = "open_science_only_no_credentials"
     doc["residual_law"] = "make_fsot_record → fsot_scaled only (FSOT mathematics)"
     doc["frontier_id"] = frontier_id
-    (ROOT / "data" / out_name).write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    (ROOT / "data" / out_name).write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"  {out_name}: n={doc['record_count']} pooled={doc.get('pooled_median_error_pct')}%")
     return doc
 
@@ -127,7 +127,7 @@ def build_uniprot() -> dict:
             by_acc[str(acc)] = e
     entries = list(by_acc.values())
     (vendor_dir("uniprot_proteome_slice") / "entries.json").write_text(
-        json.dumps({"fetched_at": _now(), "n": len(entries), "accessions": list(by_acc.keys())}, indent=2),
+        json.dumps({"fetched_at": _now(), "n": len(entries), "accessions": list(by_acc.keys())}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -198,7 +198,7 @@ def build_alphafold() -> dict:
                 records.append(fsot_row(lab="alphafold_frontier_lab", property_name="sequence_length", name=acc, measured=float(len(seq)), domain="Biochemistry", extra={"frontier_id": "alphafold_batch_meta"}))
             elif isinstance(seq, dict) and seq.get("length"):
                 records.append(fsot_row(lab="alphafold_frontier_lab", property_name="sequence_length", name=acc, measured=float(seq["length"]), domain="Biochemistry", extra={"frontier_id": "alphafold_batch_meta"}))
-    (vendor_dir("alphafold_batch_meta") / "predictions.json").write_text(json.dumps({"fetched_at": _now(), "metas": metas}, indent=2), encoding="utf-8")
+    (vendor_dir("alphafold_batch_meta") / "predictions.json").write_text(json.dumps({"fetched_at": _now(), "metas": metas}, indent=2, allow_nan=False), encoding="utf-8")
     records.append(fsot_row(lab="alphafold_frontier_lab", property_name="prediction_entries", name="af_batch", measured=float(max(len(metas), 1)), domain="Biochemistry", extra={"frontier_id": "alphafold_batch_meta"}))
     return _panel("AlphaFold_Batch_Meta_Open", records, ["biology", "biochemistry"], 14, ["https://alphafold.ebi.ac.uk/api/"], "alphafold", "AlphaFold DB public API", "alphafold_batch_meta_open_benchmark.json", "alphafold_batch_meta")
 
@@ -243,7 +243,7 @@ def build_rcsb() -> dict:
         exp = doc.get("exptl") or []
         if exp:
             records.append(fsot_row(lab="rcsb_frontier_lab", property_name="exptl_methods", name=pid, measured=float(len(exp)), domain="Biology", extra={"frontier_id": "rcsb_structure_batch"}))
-    (vendor_dir("rcsb_structure_batch") / "entries.json").write_text(json.dumps({"fetched_at": _now(), "ids": entries}, indent=2), encoding="utf-8")
+    (vendor_dir("rcsb_structure_batch") / "entries.json").write_text(json.dumps({"fetched_at": _now(), "ids": entries}, indent=2, allow_nan=False), encoding="utf-8")
     records.append(fsot_row(lab="rcsb_frontier_lab", property_name="entry_panel_size", name="rcsb_batch", measured=float(len(entries)), domain="Biology", extra={"frontier_id": "rcsb_structure_batch"}))
     return _panel("RCSB_Structure_Batch_Open", records, ["biology", "chemistry"], 14, ["https://data.rcsb.org/rest/v1/core/entry/"], "rcsb", "RCSB Data API open entries", "rcsb_structure_batch_open_benchmark.json", "rcsb_structure_batch")
 
@@ -281,7 +281,7 @@ def build_oeis() -> dict:
         if name:
             records.append(fsot_row(lab="oeis_frontier_lab", property_name="oeis_name_chars", name=f"A{sid}", measured=float(len(name)), domain="Quantum_Computing", extra={"frontier_id": "oeis_family_sweep"}))
         _ = refs
-    (vendor_dir("oeis_family_sweep") / "sequences.json").write_text(json.dumps({"fetched_at": _now(), "n": len(docs)}, indent=2), encoding="utf-8")
+    (vendor_dir("oeis_family_sweep") / "sequences.json").write_text(json.dumps({"fetched_at": _now(), "n": len(docs)}, indent=2, allow_nan=False), encoding="utf-8")
     return _panel("OEIS_Family_Sweep_Open", records, ["mathematics", "formal"], 14, ["https://oeis.org/"], "oeis", "OEIS open JSON family sweep", "oeis_family_sweep_open_benchmark.json", "oeis_family_sweep")
 
 
@@ -295,7 +295,7 @@ def build_usgs() -> dict:
     payload = fetch_json(url, timeout=60, retries=3, headers=UA)
     feats = payload.get("features") or []
     (vendor_dir("usgs_seismic_history") / "events.json").write_text(
-        json.dumps({"fetched_at": _now(), "n": len(feats)}, indent=2), encoding="utf-8"
+        json.dumps({"fetched_at": _now(), "n": len(feats)}, indent=2, allow_nan=False), encoding="utf-8"
     )
     records = []
     for f in feats:
@@ -356,7 +356,7 @@ def build_noaa_tides() -> dict:
             records.append(fsot_row(lab="noaa_tides_frontier_lab", property_name="mean_height_m", name=f"{sid}_mean", measured=sum(vals) / len(vals), domain="Oceanography", extra={"frontier_id": "noaa_tides_multi_station"}))
             records.append(fsot_row(lab="noaa_tides_frontier_lab", property_name="max_height_m", name=f"{sid}_max", measured=max(vals), domain="Oceanography", extra={"frontier_id": "noaa_tides_multi_station"}))
     records.append(fsot_row(lab="noaa_tides_frontier_lab", property_name="stations_ok", name="noaa_tide_panel", measured=float(max(ok_stations, 1)), domain="Oceanography", extra={"frontier_id": "noaa_tides_multi_station"}))
-    (vendor_dir("noaa_tides_multi_station") / "meta.json").write_text(json.dumps({"fetched_at": _now(), "stations_ok": ok_stations}, indent=2), encoding="utf-8")
+    (vendor_dir("noaa_tides_multi_station") / "meta.json").write_text(json.dumps({"fetched_at": _now(), "stations_ok": ok_stations}, indent=2, allow_nan=False), encoding="utf-8")
     return _panel("NOAA_Tides_Multi_Station_Open", records, ["earth_science", "ocean"], 16, ["https://api.tidesandcurrents.noaa.gov/"], "noaa_tides", "NOAA CO-OPS open water levels", "noaa_tides_multi_station_open_benchmark.json", "noaa_tides_multi_station")
 
 
@@ -366,7 +366,7 @@ def build_gbif() -> dict:
     payload = fetch_json(url, timeout=60, retries=3, headers=UA)
     results = payload.get("results") or []
     (vendor_dir("gbif_taxon_depth") / "occurrences.json").write_text(
-        json.dumps({"fetched_at": _now(), "n": len(results), "count": payload.get("count")}, indent=2),
+        json.dumps({"fetched_at": _now(), "n": len(results), "count": payload.get("count")}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -422,7 +422,7 @@ def build_zenodo() -> dict:
     if total and total > 0:
         records.append(fsot_row(lab="zenodo_frontier_lab", property_name="search_total_hits", name="zenodo_physics", measured=total, domain="Psychology", extra={"frontier_id": "zenodo_records_depth"}))
     records.append(fsot_row(lab="zenodo_frontier_lab", property_name="page_hits", name="zenodo_page", measured=float(len(hits)), domain="Psychology", extra={"frontier_id": "zenodo_records_depth"}))
-    (vendor_dir("zenodo_records_depth") / "hits.json").write_text(json.dumps({"fetched_at": _now(), "n": len(hits)}, indent=2), encoding="utf-8")
+    (vendor_dir("zenodo_records_depth") / "hits.json").write_text(json.dumps({"fetched_at": _now(), "n": len(hits)}, indent=2, allow_nan=False), encoding="utf-8")
     return _panel("Zenodo_Records_Depth_Open", records, ["formal", "open_science"], 12, [url, "https://zenodo.org/"], "zenodo", "Zenodo open records API", "zenodo_records_depth_open_benchmark.json", "zenodo_records_depth")
 
 
@@ -459,7 +459,7 @@ def main() -> int:
         "results": results,
     }
     out = ROOT / "data" / "open_frontier_wave2_report.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {out.relative_to(ROOT)}")
     ok = sum(1 for r in results.values() if r.get("status") == "ok")
     print(f"Wave2 panels ok: {ok}/{len(results)}")

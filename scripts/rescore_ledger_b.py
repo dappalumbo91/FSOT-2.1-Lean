@@ -188,8 +188,8 @@ def main() -> int:
         "examples": examples,
         "by_file": by_file,
     }
-    OUT.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"rows_scored": scored, "law_version_counts": report["law_version_counts"], "out": str(OUT)}, indent=2))
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    print(json.dumps({"rows_scored": scored, "law_version_counts": report["law_version_counts"], "out": str(OUT)}, indent=2, allow_nan=False))
     return 0
 
 

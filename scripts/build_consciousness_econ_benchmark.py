@@ -87,7 +87,7 @@ def main() -> int:
     }
     doc["tier"] = 51
     doc["econ_status"] = "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  records={doc['record_count']}  pooled={doc['pooled_median_error_pct']:.4f}%")
     return 0

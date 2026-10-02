@@ -452,7 +452,7 @@ def main() -> int:
         "n_sn_hosts_with_z": n_z,
         "hosts": hosts,
     }
-    REDSHIFT_OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    REDSHIFT_OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {REDSHIFT_OUT}  SN hosts with z: {n_z}/{n_sn}")
     return 0
 

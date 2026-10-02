@@ -58,16 +58,16 @@ def _now() -> str:
 
 
 def _write_status(store: Path, doc: dict) -> None:
-    (store / EPOCH_STATUS).write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    (store / EPOCH_STATUS).write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     # slim mirror for repo (not auto-committed)
     slim_path = ROOT / "data" / "mpcorb_epoch_status.json"
     slim_path.parent.mkdir(parents=True, exist_ok=True)
-    slim_path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    slim_path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def _append_log(store: Path, row: dict) -> None:
     with (store / EPOCH_LOG).open("a", encoding="utf-8") as f:
-        f.write(json.dumps(row) + "\n")
+        f.write(json.dumps(row, allow_nan=False) + "\n")
 
 
 def _stop_requested(store: Path) -> bool:
@@ -356,9 +356,9 @@ def main() -> int:
             "--max-minutes 720 --epochs 40 --fetch-per-epoch 80 --oc-per-epoch 30 --sleep 0.55"
         ),
     }
-    (store / EPOCH_REPORT).write_text(json.dumps(report, indent=2), encoding="utf-8")
+    (store / EPOCH_REPORT).write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     (ROOT / "data" / "mpcorb_epoch_baseline_report.json").write_text(
-        json.dumps(report, indent=2), encoding="utf-8"
+        json.dumps(report, indent=2, allow_nan=False), encoding="utf-8"
     )
     _write_status(
         store,

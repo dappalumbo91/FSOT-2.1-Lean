@@ -42,7 +42,7 @@ def _write_bench(path: Path, name: str, rows: list[dict], bench: dict) -> dict:
         channel_stats=[("on_topic_anchors", name, errs or [0.0])],
         sota_baselines=bench.get("sota_comparison") or {},
     )
-    path.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
     rec = int(rebuilt.get("record_count") or 0)
     med = rebuilt.get("pooled_median_error_pct")
     return {
@@ -292,7 +292,7 @@ def main() -> int:
         "policy": "on-topic literature / seed-closed identities only",
         "results": results,
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     for r in results:
         print(f"  {r['domain']:32s} n={r['records']:3d} med={r['median']} {r['tier']}")

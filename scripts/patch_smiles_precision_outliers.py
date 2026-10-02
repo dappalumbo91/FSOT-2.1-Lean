@@ -175,7 +175,7 @@ def _patch_smiles_dataset(path: Path, overrides: dict[tuple[str, str], dict[str,
         row["matched"] = True
         updated += 1
     if updated:
-        path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return updated
 
 
@@ -196,7 +196,7 @@ def _patch_unified_db(path: Path, overrides: dict[tuple[str, str], dict[str, obj
             updated += 1
             break
     if updated:
-        path.write_text(json.dumps(rows, indent=2), encoding="utf-8")
+        path.write_text(json.dumps(rows, indent=2, allow_nan=False), encoding="utf-8")
     return updated
 
 
@@ -208,7 +208,7 @@ def _refresh_registry(dataset_path: Path) -> None:
     registry["smiles_lab"]["source_path"] = str(dataset_path)
     registry["smiles_lab"]["sha256"] = sha256_file(dataset_path)
     registry["smiles_lab"]["precision_outliers_patched_at"] = datetime.now(timezone.utc).isoformat()
-    REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    REGISTRY.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated smiles_lab in {REGISTRY}")
 
 

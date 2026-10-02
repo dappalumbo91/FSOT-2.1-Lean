@@ -34,7 +34,7 @@ def main() -> int:
         print(f"  {key}: {meta['value']} {meta.get('unit', '')} — {meta['source']}")
 
     doc = build_time_emergence_benchmark()
-    OUT_BENCH.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_BENCH.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {OUT_BENCH}")
     print(f"  records={doc.get('record_count')} pooled_median={doc.get('pooled_median_error_pct')}")
     print(f"  status={doc.get('simulation_status')}")
@@ -116,7 +116,7 @@ def main() -> int:
             "python scripts/build_domain_coupling_simulation.py",
         ],
     }
-    OUT_REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT_REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {OUT_REPORT}")
     print("=" * 80)
     return 0

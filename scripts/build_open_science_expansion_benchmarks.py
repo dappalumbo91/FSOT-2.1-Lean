@@ -128,8 +128,8 @@ def main() -> int:
         },
     }
 
-    OUT_SEEDS.write_text(json.dumps(seed_doc, indent=2), encoding="utf-8")
-    OUT_CONCORD.write_text(json.dumps(concord_doc, indent=2), encoding="utf-8")
+    OUT_SEEDS.write_text(json.dumps(seed_doc, indent=2, allow_nan=False), encoding="utf-8")
+    OUT_CONCORD.write_text(json.dumps(concord_doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT_SEEDS} n={len(seed_rows)} median={seed_doc['median_error_pct']}")
     print(
         f"Wrote {OUT_CONCORD} n={len(evidence_rows)} streams_ok={streams_ok} "

@@ -40,7 +40,7 @@ def main() -> int:
                 "solar_wind_speed": wind,
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     print(f"Wrote {CACHE}")

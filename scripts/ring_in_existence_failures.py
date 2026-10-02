@@ -52,7 +52,7 @@ def main() -> int:
 
     summary = {k: v for k, v in doc.items() if k != "records"}
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
 
     print(f"Failures to ring in: {doc['failure_count']}")
     print(f"  Refined via SMILES §-tier: {doc['refined_count']}")

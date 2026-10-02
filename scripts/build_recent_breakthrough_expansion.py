@@ -22,7 +22,7 @@ def main() -> int:
     for name in order:
         doc = BUILDERS[name]()
         out = output_path(name)
-        out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
         print(
             f"{name}: n={doc.get('record_count')} med={doc.get('median_error_pct')} "
             f"pooled={doc.get('pooled_median_error_pct')} -> {out.name}"

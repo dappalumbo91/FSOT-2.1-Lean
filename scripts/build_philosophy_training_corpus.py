@@ -94,7 +94,7 @@ def _json_ref_summary(path: Path) -> str:
         return ""
     data = json.loads(path.read_text(encoding="utf-8"))
     if isinstance(data, dict):
-        return json.dumps(data, indent=2)[:8000]
+        return json.dumps(data, indent=2, allow_nan=False)[:8000]
     return str(data)[:8000]
 
 
@@ -173,7 +173,7 @@ def build_corpus(manifest_path: Path = MANIFEST, out_path: Path = DEFAULT_OUT) -
 
     with out_path.open("w", encoding="utf-8") as fh:
         for row in rows:
-            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+            fh.write(json.dumps(row, ensure_ascii=False, allow_nan=False) + "\n")
 
     summary = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -182,7 +182,7 @@ def build_corpus(manifest_path: Path = MANIFEST, out_path: Path = DEFAULT_OUT) -
         "output": str(out_path),
     }
     summary_path = out_path.with_suffix(".summary.json")
-    summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    summary_path.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
 
     print(f"Wrote {len(rows)} rows -> {out_path}")
     if missing:

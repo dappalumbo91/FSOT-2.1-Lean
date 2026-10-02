@@ -279,6 +279,6 @@ def ingest_mast_bundle(
         ),
     }
     out = VENDOR / "live.json"
-    out.write_text(json.dumps(bundle, indent=2, default=str), encoding="utf-8")
+    out.write_text(json.dumps(bundle, indent=2, default=str, allow_nan=False), encoding="utf-8")
     bundle["path"] = str(out.relative_to(ROOT))
     return bundle

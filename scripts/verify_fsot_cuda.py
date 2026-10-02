@@ -16,7 +16,7 @@ from zebrahub_gpu_video import _torch_info, _sample_zarr_tile  # noqa: E402
 def main() -> int:
     info = _torch_info()
     ok = bool(info.get("cuda_usable"))
-    print(json.dumps(info, indent=2))
+    print(json.dumps(info, indent=2, allow_nan=False))
     if not ok:
         print("\nCUDA not usable. Fix with:")
         print("  pip install --upgrade torch torchvision --index-url https://download.pytorch.org/whl/cu128")
@@ -27,7 +27,7 @@ def main() -> int:
     )
     sample = _sample_zarr_tile(url)
     print("\nZarr GPU sample:")
-    print(json.dumps(sample, indent=2))
+    print(json.dumps(sample, indent=2, allow_nan=False))
     if sample.get("backend") != "torch_cuda" or not sample.get("mean_intensity"):
         return 2
     print("\nFSOT CUDA verification: PASS")

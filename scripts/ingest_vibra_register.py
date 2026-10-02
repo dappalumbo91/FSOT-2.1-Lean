@@ -47,7 +47,7 @@ def main() -> int:
     vibra = ingest_vibra()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["vibra_register"] = vibra
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  d_eff={vibra['d_eff']}  pattern_stability={vibra['pattern_stability']:.4f}")
     print(f"  mc_prob_non_decrease@cp{vibra['mc_checkpoint']}={vibra['mc_prob_non_decrease']}")

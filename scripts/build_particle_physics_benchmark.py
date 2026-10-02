@@ -160,7 +160,7 @@ def main() -> int:
         print(str(exc), file=sys.stderr)
         return 1
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(
         f"  smiles: {bench['smiles_particle_count']}  "

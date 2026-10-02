@@ -83,7 +83,7 @@ def main() -> int:
         "previous_calendar_window_days": max(1, int(round(window_d))),
         "rows": rows,
     }
-    OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     doc = f"""# Market process layer
 
 **Pin:** {payload['pin']} · **Fold:** Economics \(D=20\) · **Generated:** {payload['generated_at']}

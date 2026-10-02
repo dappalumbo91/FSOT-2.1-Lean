@@ -78,7 +78,7 @@ def main() -> int:
         "Coq TranscendentalBoundsNative compile order; coqchk soft for Interval; "
         "F* prefers local tools over broken I: PATH binary"
     )
-    REPORT.write_text(json.dumps(r, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(r, indent=2, allow_nan=False), encoding="utf-8")
     print("after overall_ok", r["overall_ok"], "github_ready", r["github_ready"])
     return 0 if r["overall_ok"] else 1
 

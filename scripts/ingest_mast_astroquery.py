@@ -42,7 +42,7 @@ def main() -> int:
                     "error": msg,
                 },
                 indent=2,
-            ),
+             allow_nan=False),
             encoding="utf-8",
         )
         return 1
@@ -65,7 +65,7 @@ def main() -> int:
                     "error": f"{type(exc).__name__}: {exc}"[:500],
                 },
                 indent=2,
-            ),
+             allow_nan=False),
             encoding="utf-8",
         )
         return 1
@@ -82,7 +82,7 @@ def main() -> int:
         "download": bundle.get("download"),
         "docs": bundle.get("docs"),
     }
-    REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"OK MAST {args.collection}/{args.object} rows={bundle.get('query_rows_total')} saved={bundle.get('path')}")
     print(f"Wrote {REPORT}")
     return 0

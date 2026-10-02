@@ -82,7 +82,7 @@ def main() -> int:
         "overall_ok": False,
     }
     doc["overall_ok"] = doc["build"].get("status") == "passed"
-    REPORT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print("RUST_LEAN_BRIDGE BOOTIMAGE (Tier 87)")
     print(f"  build: {doc['build'].get('status')} -> {doc['build'].get('output', 'n/a')}")
     print(f"  overall_ok: {doc['overall_ok']}")

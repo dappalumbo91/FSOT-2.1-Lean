@@ -70,7 +70,7 @@ def main() -> int:
         "frbs": list(seen.values()),
     }
     (ROOT / "frb" / "chime_frb_catalog1_positions.json").write_text(
-        json.dumps(frb_doc), encoding="utf-8"
+        json.dumps(frb_doc, allow_nan=False), encoding="utf-8"
     )
 
     abell_path = ROOT / "extragalactic_structure" / "abell_vii4a_j2000.tsv"
@@ -98,7 +98,7 @@ def main() -> int:
         "objects": objects,
     }
     (ROOT / "extragalactic_structure" / "abell_clusters.json").write_text(
-        json.dumps(abell_doc), encoding="utf-8"
+        json.dumps(abell_doc, allow_nan=False), encoding="utf-8"
     )
     cat2 = parse_chime_catalog2(now)
     print(
@@ -183,7 +183,7 @@ def parse_chime_catalog2(now: str) -> dict:
         "frbs": frbs,
     }
     (ROOT / "frb" / "chime_frb_catalog2_positions.json").write_text(
-        json.dumps(doc), encoding="utf-8"
+        json.dumps(doc, allow_nan=False), encoding="utf-8"
     )
     return doc
 

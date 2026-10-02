@@ -125,7 +125,7 @@ def main() -> int:
         "top_after": after[:25],
         "actions": actions,
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"  contaminated files: {len(before)} -> {len(after)}")
     print(f"  top remaining: {after[:8]}")

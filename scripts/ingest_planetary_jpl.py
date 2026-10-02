@@ -41,7 +41,7 @@ def main() -> int:
                 "bodies": rows,
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     print(f"Wrote {CACHE}")

@@ -33,7 +33,7 @@ def main() -> int:
         "source_root": bench.get("source_root"),
         "ingested_at": datetime.now(timezone.utc).isoformat(),
     }
-    REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    REGISTRY.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {REGISTRY}")
     print(f"  cosmology observables: {bench.get('observable_count')}")
     return 0

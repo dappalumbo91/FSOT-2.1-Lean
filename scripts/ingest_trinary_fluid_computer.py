@@ -43,7 +43,7 @@ def main() -> int:
     trinary = ingest_trinary_fluid()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["trinary_fluid_computer"] = trinary
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(
         f"  engine_accuracy: {trinary.get('engine_accuracy_pct')}%  "

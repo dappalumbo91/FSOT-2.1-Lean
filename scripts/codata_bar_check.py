@@ -71,7 +71,7 @@ def main() -> int:
         "term": f"{'+' if sign > 0 else '-'}{name}^{exponent}",
         "remain_ppm": remain_ppm,
     }
-    PATH.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
+    PATH.write_text(json.dumps(doc, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     print("codata_bar_check_ok")
     return 0
 

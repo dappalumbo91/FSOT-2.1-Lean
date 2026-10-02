@@ -158,7 +158,7 @@ def main() -> int:
             "Inter-species telepathic communication",
         ],
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"Claims mapped: {len(CLAIMS)}")
     print(f"Scalar anchors: {len(errs)} ok, pooled median {report['pooled_median_error_pct']}%")

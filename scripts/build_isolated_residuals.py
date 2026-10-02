@@ -135,7 +135,7 @@ def main() -> int:
         "items": open_items,
         "remedied": remedied,
     }
-    OUT_JSON.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     lines = [
         "# Isolated residuals — do not stuff",
         "",

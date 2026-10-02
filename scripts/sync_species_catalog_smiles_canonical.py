@@ -80,7 +80,7 @@ def sync_catalog(*, min_error_pct: float = 0.5, phi_only: bool = False, dry_run:
         )
 
     if updated and not dry_run:
-        SPECIES_PATH.write_text(json.dumps(catalog, indent=2), encoding="utf-8")
+        SPECIES_PATH.write_text(json.dumps(catalog, indent=2, allow_nan=False), encoding="utf-8")
 
     return {"updated": updated, "skipped": skipped, "changes": changes, "dry_run": dry_run}
 

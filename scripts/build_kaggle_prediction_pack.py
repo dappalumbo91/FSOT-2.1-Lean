@@ -65,7 +65,7 @@ def _slim_margin(src: Path, dst: Path, n: int = 30) -> None:
         "worst_green_top": green[:n],
         "note": "Slim export for Kaggle — full atlas remains on GitHub monorepo.",
     }
-    dst.write_text(json.dumps(slim, indent=2), encoding="utf-8")
+    dst.write_text(json.dumps(slim, indent=2, allow_nan=False), encoding="utf-8")
 
 
 NOTEBOOK = {
@@ -310,7 +310,7 @@ def build() -> Path:
             "bundle_sha256": atlas.get("bundle_sha256"),
         }
         (DATASET_DIR / "domain_prediction_atlas_slim.json").write_text(
-            json.dumps(slim, indent=2), encoding="utf-8"
+            json.dumps(slim, indent=2, allow_nan=False), encoding="utf-8"
         )
 
     _slim_margin(ROOT / "data" / "benchmark_margin_audit.json", DATASET_DIR / "margin_slim.json")
@@ -324,7 +324,7 @@ def build() -> Path:
         "collaborators": [],
         "data": [],
     }
-    _write(DATASET_DIR / "dataset-metadata.json", json.dumps(ds_meta, indent=2))
+    _write(DATASET_DIR / "dataset-metadata.json", json.dumps(ds_meta, indent=2, allow_nan=False))
     _write(
         DATASET_DIR / "README.md",
         (
@@ -337,7 +337,7 @@ def build() -> Path:
 
     # Kernel notebook + metadata
     nb_path = KERNEL_DIR / "fsot-prediction-monitor.ipynb"
-    _write(nb_path, json.dumps(NOTEBOOK, indent=1))
+    _write(nb_path, json.dumps(NOTEBOOK, indent=1, allow_nan=False))
     kernel_meta = {
         "id": "damianpalumbo/fsot-prediction-monitor",
         "title": "FSOT Prediction Monitor",
@@ -353,7 +353,7 @@ def build() -> Path:
         "kernel_sources": [],
         "model_sources": [],
     }
-    _write(KERNEL_DIR / "kernel-metadata.json", json.dumps(kernel_meta, indent=2))
+    _write(KERNEL_DIR / "kernel-metadata.json", json.dumps(kernel_meta, indent=2, allow_nan=False))
 
     # Local smoke: copy engine into kernel folder for offline run without kaggle input mount
     _copy(DATASET_DIR / "fsot_compute.py", KERNEL_DIR / "fsot_compute.py")
@@ -372,7 +372,7 @@ def build() -> Path:
             "kaggle kernels push -p kaggle/fsot-prediction-monitor/kernel",
         ],
     }
-    _write(OUT / "PACK_MANIFEST.json", json.dumps(manifest, indent=2))
+    _write(OUT / "PACK_MANIFEST.json", json.dumps(manifest, indent=2, allow_nan=False))
     print(f"Built pack at {OUT}")
     print(f"  dataset files: {manifest['files']}")
     return OUT

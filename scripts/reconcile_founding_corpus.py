@@ -177,7 +177,7 @@ def build_founding_corpus(
 
     # Add registry concept summaries as explicit training rows
     for concept in registry.get("concepts") or []:
-        summary = json.dumps(concept, indent=2)
+        summary = json.dumps(concept, indent=2, allow_nan=False)
         rows.append({
             "id": f"registry_{concept['id']}",
             "title": f"Concept map: {concept['id']}",
@@ -192,7 +192,7 @@ def build_founding_corpus(
 
     with out_path.open("w", encoding="utf-8") as fh:
         for row in rows:
-            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+            fh.write(json.dumps(row, ensure_ascii=False, allow_nan=False) + "\n")
 
     summary = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -201,7 +201,7 @@ def build_founding_corpus(
         "output": str(out_path),
     }
     out_path.with_name("fsot_founding_reconciled.summary.json").write_text(
-        json.dumps(summary, indent=2), encoding="utf-8"
+        json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8"
     )
     print(f"Wrote {len(rows)} founding rows -> {out_path}")
     return len(rows)

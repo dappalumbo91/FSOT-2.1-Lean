@@ -107,7 +107,7 @@ def main() -> int:
         bench_path = output_path(domain)
         if not bench_path.exists():
             bench = BUILDERS[domain]()
-            bench_path.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+            bench_path.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
         else:
             bench = json.loads(bench_path.read_text(encoding="utf-8"))
         lean = build_lean(bench, domain)

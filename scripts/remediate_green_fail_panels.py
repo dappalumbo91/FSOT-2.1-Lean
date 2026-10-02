@@ -98,7 +98,7 @@ def main() -> int:
             channel_stats=[("fsot_proper", "green_fix", errs or [0.0])],
             sota_baselines={"pre": {"sota_typical_error_pct": 10.0, "sota_model": "pre"}},
         )
-        p.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+        p.write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
         fixed += 1
         print(
             f"fixed {p.name}: n={rebuilt.get('record_count')} med={rebuilt.get('pooled_median_error_pct')} "

@@ -79,7 +79,7 @@ def scrub_json(path: Path) -> bool:
     cleaned = _walk(doc)
     if cleaned == doc:
         return False
-    path.write_text(json.dumps(cleaned, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(cleaned, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     return True
 
 

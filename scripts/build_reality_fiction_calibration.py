@@ -61,7 +61,7 @@ def build() -> dict:
             "spine_doc": "docs/UNIQUENESS_RESEARCH_SPINE.md",
         },
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     reeval_cases = [c for c in cases if c["tier"] == "reeval_candidate"]
     ledger = {
@@ -110,7 +110,7 @@ def build() -> dict:
         ],
         "calibration_artifact": str(OUT.relative_to(ROOT)).replace("\\", "/"),
     }
-    LEDGER.write_text(json.dumps(ledger, indent=2), encoding="utf-8")
+    LEDGER.write_text(json.dumps(ledger, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 

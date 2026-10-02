@@ -146,7 +146,7 @@ def main() -> int:
         "domain_record_counts": counts,
         "total_records": len(records),
     }
-    OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"  sections: {len(sections)}")
     print(f"  records:  {len(records)}")

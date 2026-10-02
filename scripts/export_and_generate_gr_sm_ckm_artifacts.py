@@ -728,7 +728,7 @@ def write_benchmark(ckm: dict) -> None:
         "honest_scope": ckm.get("honest_scope"),
         "multi_prover_obligations": str(OUT_OBL.relative_to(ROOT)).replace("\\", "/"),
     }
-    OUT_BENCH.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_BENCH.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT_BENCH} n={doc['record_count']} med%={doc['median_error_pct']}")
 
 
@@ -759,7 +759,7 @@ def main() -> int:
         ),
     }
     OUT_OBL.parent.mkdir(parents=True, exist_ok=True)
-    OUT_OBL.write_text(json.dumps(obl_doc, indent=2), encoding="utf-8")
+    OUT_OBL.write_text(json.dumps(obl_doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT_OBL} ({len(obs)} obligations)")
 
     LEAN_OUT.parent.mkdir(parents=True, exist_ok=True)

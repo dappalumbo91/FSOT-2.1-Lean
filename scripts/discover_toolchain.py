@@ -149,8 +149,8 @@ def discover() -> dict:
 
 def main() -> int:
     doc = discover()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    print(json.dumps(doc, indent=2))
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
+    print(json.dumps(doc, indent=2, allow_nan=False))
     return 0
 
 

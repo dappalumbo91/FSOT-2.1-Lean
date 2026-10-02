@@ -187,7 +187,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
     doc = build()
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  H0={doc['records'][0]['computed']:.6f}  err={doc['records'][0]['error_pct']:.4f}%")
     return 0

@@ -28,7 +28,7 @@ def main() -> int:
         return 0
     rec = fsot_predict(args.observable)
     if args.json:
-        print(json.dumps(rec, indent=2))
+        print(json.dumps(rec, indent=2, allow_nan=False))
     else:
         print(f"{rec['observable_id']}  {rec['value']} {rec['units']}")
         print(f"  expression  {rec['expression']}")

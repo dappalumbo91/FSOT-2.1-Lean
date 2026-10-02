@@ -451,7 +451,7 @@ def main() -> int:
         "Adopt SI definitions at residual 0. Judge each measured constant "
         "against its own CODATA uncertainty."
     )
-    PATH.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
+    PATH.write_text(json.dumps(doc, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     print(f"median_error_pct={mid}")
     return 0
 

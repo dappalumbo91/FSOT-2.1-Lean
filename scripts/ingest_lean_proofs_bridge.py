@@ -44,7 +44,7 @@ def main() -> int:
     bridge = ingest_lean_proofs()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["lean_proofs_bridge"] = bridge
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(
         f"  formal_constants: {bridge.get('formal_constant_count')}  "

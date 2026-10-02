@@ -164,7 +164,7 @@ def main() -> int:
     args = parser.parse_args()
     report = evaluate()
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(
         f"  beats SOTA: {report['domains_beats_sota']}/{report['domains_compared']} "

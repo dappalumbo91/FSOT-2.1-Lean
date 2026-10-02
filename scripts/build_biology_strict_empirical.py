@@ -157,7 +157,7 @@ def _soul_gene_mentions(corpus_path: Path, max_lines: int = 0) -> tuple[list[dic
             if not _is_biology(fields):
                 continue
             bio_rows += 1
-            text = json.dumps(fields)
+            text = json.dumps(fields, allow_nan=False)
             for m in GENE_RE.finditer(text):
                 gene = m.group(1).upper()
                 if gene in mention_counts:
@@ -275,7 +275,7 @@ def main() -> int:
         max_corpus_lines=args.max_corpus_lines,
     )
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(
         f"  strict: {doc['strict_record_count']}  total: {doc['record_count']}  "

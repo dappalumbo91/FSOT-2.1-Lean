@@ -194,7 +194,7 @@ def build(
         "sky_sectors": sector_preds,
         "refresh": "python scripts/build_h0_sightline_predictions.py",
     }
-    raw = json.dumps({k: v for k, v in doc.items() if k != "bundle_sha256"}, sort_keys=True).encode()
+    raw = json.dumps({k: v for k, v in doc.items() if k != "bundle_sha256"}, sort_keys=True, allow_nan=False).encode()
     doc["bundle_sha256"] = hashlib.sha256(raw).hexdigest()
     return doc
 
@@ -286,7 +286,7 @@ def main() -> int:
     )
     doc["frozen_file_untouched"] = str(OUT_JSON.relative_to(ROOT)).replace("\\", "/")
     LIVE_PREVIEW.parent.mkdir(parents=True, exist_ok=True)
-    LIVE_PREVIEW.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    LIVE_PREVIEW.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {LIVE_PREVIEW}")
     for h in doc.get("hosts") or []:
         if h.get("host") == "UGC9391":

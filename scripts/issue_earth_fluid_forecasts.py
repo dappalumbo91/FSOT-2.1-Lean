@@ -300,7 +300,7 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     day = _issue_path(issued)
     latest = OUT_DIR / "LATEST.json"
-    text = json.dumps(doc, indent=2)
+    text = json.dumps(doc, indent=2, allow_nan=False)
     day.write_text(text, encoding="utf-8")
     latest.write_text(text, encoding="utf-8")
     md = ROOT / "predictions" / "reports" / "DATED_FLUID_FORECASTS.md"

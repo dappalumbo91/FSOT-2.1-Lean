@@ -131,7 +131,7 @@ def build() -> dict:
 
 def main() -> int:
     doc = build()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"  overall_ok: {doc['overall_ok']}")
     print(f"  structural_proof_count: {doc['structural_proof_count']}")

@@ -129,7 +129,7 @@ def _md(doc: dict[str, Any]) -> str:
 def main() -> int:
     doc = build()
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     OUT_MD.write_text(_md(doc), encoding="utf-8")
     print(
         f"catalog-class refresh hold={doc['hold']} kill={doc['kill']} "

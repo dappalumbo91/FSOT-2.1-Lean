@@ -394,7 +394,7 @@ def main() -> int:
 
     spine_export = build_obligation_export(waves)
     OUT_OBL.parent.mkdir(parents=True, exist_ok=True)
-    OUT_OBL.write_text(json.dumps(spine_export, indent=2), encoding="utf-8")
+    OUT_OBL.write_text(json.dumps(spine_export, indent=2, allow_nan=False), encoding="utf-8")
 
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -420,7 +420,7 @@ def main() -> int:
         },
     }
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     OUT_MD.parent.mkdir(parents=True, exist_ok=True)
     OUT_MD.write_text(write_md(doc), encoding="utf-8")
 

@@ -511,7 +511,7 @@ def main() -> int:
                         "survey": "USGS-FDSN/SWPC-dated-fluid",
                         "result": sc["result"],
                         "measured": sc.get("n_hits", sc.get("kp_max")),
-                        "notes": json.dumps({k: v for k, v in sc.items() if k != "hits"}),
+                        "notes": json.dumps({k: v for k, v in sc.items() if k != "hits"}, allow_nan=False),
                         "authority_pin_prefix": "D1D38A",
                         "predictions_untouched": True,
                     }
@@ -525,14 +525,14 @@ def main() -> int:
             "n_kill": sum(1 for r in rows if r.get("result") == "kill"),
             "n_awaiting": sum(1 for r in rows if r.get("result") == "awaiting"),
         }
-        outp.write_text(json.dumps(out_doc, indent=2), encoding="utf-8")
+        outp.write_text(json.dumps(out_doc, indent=2, allow_nan=False), encoding="utf-8")
         summary.append(out_doc)
         print(
             f"{path.name}: hold={out_doc['n_hold']} kill={out_doc['n_kill']} "
             f"awaiting={out_doc['n_awaiting']}"
         )
     roll = OUT_DIR / "LATEST.json"
-    roll.write_text(json.dumps({"scored_at": now.isoformat(), "issues": summary}, indent=2), encoding="utf-8")
+    roll.write_text(json.dumps({"scored_at": now.isoformat(), "issues": summary}, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {roll}")
     return 0
 

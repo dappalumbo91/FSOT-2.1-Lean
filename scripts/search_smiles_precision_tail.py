@@ -233,7 +233,7 @@ def main() -> int:
     else:
         payload = found
 
-    args.output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {len(payload)} overrides to {args.output}")
     return 0 if len(found) == len(outliers) else 0
 

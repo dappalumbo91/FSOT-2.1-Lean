@@ -54,7 +54,7 @@ def main() -> int:
         "policy": "synthetic gap fill + locked FSOT predictions for real-data verification",
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}  all_ok={doc['all_ok']}")
     if sim_summary:
         print(f"  gap_fill_count={sim_summary.get('gap_fill_count')}")

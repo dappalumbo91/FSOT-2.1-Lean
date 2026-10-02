@@ -1054,7 +1054,7 @@ def patch_species_hg(path: Path) -> None:
         raise SystemExit(f"NH3 cp/cv not found in {path}")
     if not _patch_species_prop(doc, "Cl2", "boiling_K", "Cl2_boiling"):
         raise SystemExit(f"Cl2 boiling_K not found in {path}")
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def main() -> int:
@@ -1087,7 +1087,7 @@ def main() -> int:
         doc = json.loads(original)
         n = walk(doc)
         if n:
-            new = json.dumps(doc, indent=2)
+            new = json.dumps(doc, indent=2, allow_nan=False)
             if new != original.rstrip("\n"):
                 ending = "\n" if original.endswith("\n") else ""
                 path.write_text(new + ending, encoding="utf-8")

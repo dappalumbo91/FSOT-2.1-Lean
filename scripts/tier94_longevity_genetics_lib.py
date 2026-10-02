@@ -164,10 +164,10 @@ def _write_cache(name: str, doc: dict) -> Path:
     doc.setdefault("fetched_at", datetime.now(timezone.utc).isoformat())
     doc.setdefault("credential_free", True)
     path = cache_root() / name
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     bundled = VENDOR_LG / name
     bundled.parent.mkdir(parents=True, exist_ok=True)
-    bundled.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    bundled.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return path
 
 
@@ -386,7 +386,7 @@ def ingest_megadeep_extreme_ncbi() -> dict:
             "last_species": name,
             "updated_at": datetime.now(timezone.utc).isoformat(),
         }
-        state_path.write_text(json.dumps(state, indent=2), encoding="utf-8")
+        state_path.write_text(json.dumps(state, indent=2, allow_nan=False), encoding="utf-8")
         if len(completed) % 10 == 0 or len(completed) == len(targets):
             partial_docs = [species_by_name[n] for n in sorted(species_by_name)]
             _write_cache(

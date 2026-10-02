@@ -40,7 +40,7 @@ def main() -> int:
                 "nebulae": rows,
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     print(f"Wrote {cache_path}")

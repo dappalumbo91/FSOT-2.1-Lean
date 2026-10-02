@@ -172,8 +172,8 @@ def main() -> int:
             "coupling hubs (Code_Genome, Malware, Zero_Day, Cosmology) are the gravitational centers",
         ],
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
-    print(json.dumps({"predictions": len(predictions), "output": str(OUT)}, indent=2))
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
+    print(json.dumps({"predictions": len(predictions), "output": str(OUT)}, indent=2, allow_nan=False))
     for p in predictions[:8]:
         print(f"  PREDICT: {p['predicted_domain']} — {p['rationale'][:70]}...")
     return 0

@@ -55,7 +55,7 @@ def append_run_log(
     }
     RUN_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     with RUN_LOG_PATH.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(entry) + "\n")
+        f.write(json.dumps(entry, allow_nan=False) + "\n")
 
 def rel_err(a: float, b: float) -> float:
     if b == 0:

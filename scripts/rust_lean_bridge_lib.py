@@ -88,7 +88,7 @@ def refresh_summary_boot_scalar() -> dict:
     s = boot_scalar()
     summary["boot_scalar"] = s
     summary["boot_scalar_positive"] = s > 0.0
-    SUMMARY_PATH.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    SUMMARY_PATH.write_text(json.dumps(summary, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     return summary
 
 

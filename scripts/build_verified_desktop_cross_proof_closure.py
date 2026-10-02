@@ -130,7 +130,7 @@ def main() -> int:
         "full_cross_proof_command": "python scripts/run_cross_proof_verification.py",
         "reproduce_panel_command": "python scripts/reproduce_domain_panel.py --panel <Panel> --deep",
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"  verdict: {doc['verdict']}")
     for row in panel_rows:

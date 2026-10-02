@@ -59,7 +59,7 @@ def main() -> int:
         added += 1
     doc["system_count"] = len(doc.get("systems") or [])
     doc["expansion_note"] = "Curated WDS/literature panel when VizieR TAP unavailable"
-    PANEL.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    PANEL.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"WDS panel: {doc['system_count']} systems (+{added} new)")
     return 0
 

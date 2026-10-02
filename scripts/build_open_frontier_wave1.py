@@ -109,7 +109,7 @@ def _panel(
     doc["residual_law"] = "make_fsot_record → fsot_scaled only (FSOT mathematics)"
     doc["frontier_id"] = frontier_id
     path = ROOT / "data" / out_name
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"  {out_name}: n={doc['record_count']} pooled={doc.get('pooled_median_error_pct')}%")
     return doc
 
@@ -168,7 +168,7 @@ def build_pdg() -> dict:
         ],
     }
     (vendor_dir("pdg_live_depth") / "pdg_open_anchors.json").write_text(
-        json.dumps(lit, indent=2), encoding="utf-8"
+        json.dumps(lit, indent=2, allow_nan=False), encoding="utf-8"
     )
     records = []
     for prop, val, name, unit in PDG_ANCHORS:
@@ -218,7 +218,7 @@ def build_gaia() -> dict:
     meta = [m.get("name") for m in (payload.get("metadata") or [])]
     rows = payload.get("data") or []
     (vendor_dir("gaia_source_sample") / "gaia_dr3_sample.json").write_text(
-        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows), "data": rows}, indent=2),
+        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows), "data": rows}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -306,7 +306,7 @@ def build_simbad() -> dict:
     meta = [m.get("name") for m in (payload.get("metadata") or [])]
     rows = payload.get("data") or []
     (vendor_dir("simbad_identity_depth") / "simbad_sample.json").write_text(
-        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows), "data": rows}, indent=2),
+        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows), "data": rows}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     col = {name: i for i, name in enumerate(meta)}
@@ -364,7 +364,7 @@ def build_lmfdb_ec() -> dict:
     payload = fetch_json(url, timeout=90, retries=3, headers=UA)
     curves = payload.get("data") or []
     (vendor_dir("lmfdb_elliptic_curves") / "ec_sample.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(curves), "data": curves[:20]}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(curves), "data": curves[:20]}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -440,7 +440,7 @@ def build_gwas() -> dict:
     payload = fetch_json(url, timeout=60, retries=3, headers=UA)
     studies = (payload.get("_embedded") or {}).get("studies") or []
     (vendor_dir("gwas_catalog_depth") / "studies_sample.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(studies), "studies": studies}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(studies), "studies": studies}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -513,7 +513,7 @@ def build_pubchem() -> dict:
     payload = fetch_json(url, timeout=60, retries=3, headers=UA)
     props = (payload.get("PropertyTable") or {}).get("Properties") or []
     (vendor_dir("pubchem_assay_depth") / "multi_cid.json").write_text(
-        json.dumps({"fetched_at": _now(), "properties": props}, indent=2),
+        json.dumps({"fetched_at": _now(), "properties": props}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -586,7 +586,7 @@ def build_openalex() -> dict:
                 ],
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -667,7 +667,7 @@ def main() -> int:
         "results": results,
     }
     out = ROOT / "data" / "open_frontier_wave1_report.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {out.relative_to(ROOT)}")
     ok = sum(1 for r in results.values() if r.get("status") == "ok")
     print(f"Frontier panels ok: {ok}/{len(results)}")

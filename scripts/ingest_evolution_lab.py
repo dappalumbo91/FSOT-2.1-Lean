@@ -46,7 +46,7 @@ def main() -> int:
     evolution = ingest_evolution()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["evolution_lab"] = evolution
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  operons: {evolution['operon_count']}  fitness: {evolution['fitness']:.3f}")
     return 0

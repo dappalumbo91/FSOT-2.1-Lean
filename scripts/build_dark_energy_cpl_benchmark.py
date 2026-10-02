@@ -197,7 +197,7 @@ def main() -> int:
     doc["preregistered"] = True
     doc["open_predictions"] = open_predictions
     doc["cpl_status"] = "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(
         f"  w0 CMB={readouts['w0_cmb']:.4f} BAO={readouts['w0_bao']:.4f}  "

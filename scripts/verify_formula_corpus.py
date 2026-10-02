@@ -151,7 +151,7 @@ def _live_recompute_sample(
         "drift_debt": drift_debt,
         "note": "Rows where portable math_formula_eval disagrees with cached fsot_numeric_eval outcomes.",
     }
-    DEBT_REPORT.write_text(json.dumps(debt_doc, indent=2), encoding="utf-8")
+    DEBT_REPORT.write_text(json.dumps(debt_doc, indent=2, allow_nan=False), encoding="utf-8")
 
     return issues, {
         "live_recompute_pool_size": len(pool),

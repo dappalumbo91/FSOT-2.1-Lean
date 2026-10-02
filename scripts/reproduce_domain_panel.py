@@ -78,7 +78,7 @@ def main() -> int:
 
     result = verify_one(args.panel, cfg)
     detail = enrich_panel(args.panel, cfg)
-    print(json.dumps({"verify": result, "scientific": detail.get("scientific")}, indent=2))
+    print(json.dumps({"verify": result, "scientific": detail.get("scientific")}, indent=2, allow_nan=False))
     print(f"\n{args.panel}: {'OK' if result['ok'] else 'FAILED'}")
     return 0 if result["ok"] else 1
 

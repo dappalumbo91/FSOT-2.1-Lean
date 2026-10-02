@@ -128,8 +128,8 @@ def main() -> int:
             "ToE-paragraph numbers must come from Ledger A fsot_predict."
         ),
     }
-    OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    print(json.dumps({k: payload[k] for k in payload if k != "note"}, indent=2))
+    OUT.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
+    print(json.dumps({k: payload[k] for k in payload if k != "note"}, indent=2, allow_nan=False))
     print(payload["note"])
     return 0
 

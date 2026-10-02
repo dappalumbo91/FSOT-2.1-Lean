@@ -44,7 +44,7 @@ def main() -> int:
     fuel = ingest_fuel()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["fuel_lab"] = fuel
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  profiles: {fuel['profile_count']}")
     print(f"  entries: {fuel['entry_count']} ({fuel['resolved_count']} resolved)")

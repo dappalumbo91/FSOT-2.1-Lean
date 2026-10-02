@@ -495,11 +495,11 @@ python scripts/build_repo_status_snapshot.py
 
 def main() -> int:
     inv = inventory_benchmarks()
-    OUT_INV.write_text(json.dumps(inv, indent=2), encoding="utf-8")
+    OUT_INV.write_text(json.dumps(inv, indent=2, allow_nan=False), encoding="utf-8")
     write_inventory_md(inv)
 
     phys = build_physics_master()
-    OUT_PHYS.write_text(json.dumps(phys, indent=2), encoding="utf-8")
+    OUT_PHYS.write_text(json.dumps(phys, indent=2, allow_nan=False), encoding="utf-8")
     write_physics_md(phys, inv)
 
     print(f"Wrote {OUT_INV}")

@@ -86,7 +86,7 @@ def main() -> int:
             query=args.query,
         )
         if args.format == "json":
-            print(json.dumps(bundle, indent=2))
+            print(json.dumps(bundle, indent=2, allow_nan=False))
         elif args.format == "bibtex":
             entries = []
             for p in bundle.get("panels") or []:
@@ -123,7 +123,7 @@ def main() -> int:
         payload = {"kind": "search", "query": args.query, "hits": hits}
 
     if args.format == "json":
-        print(json.dumps(payload, indent=2))
+        print(json.dumps(payload, indent=2, allow_nan=False))
     elif args.format == "bibtex" and payload.get("kind") == "panel":
         print(bibtex_panel_entry(payload["panel"], payload))
     else:

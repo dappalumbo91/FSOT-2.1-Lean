@@ -20,7 +20,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
     doc = build_benchmark_doc()
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"Wrote {args.output}\n"
         f"  records={doc.get('record_count')}  pooled={doc.get('pooled_median_error_pct')}%"

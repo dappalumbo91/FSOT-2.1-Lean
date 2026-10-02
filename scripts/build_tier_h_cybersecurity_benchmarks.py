@@ -25,7 +25,7 @@ BUILD_ORDER = BASE_ORDER + DEPTH_ORDER + ["Zero_Day_Risk_Evaluator"]
 def _write(domain: str) -> None:
     doc = BUILDERS[domain]()
     out = output_path(domain)
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     med = doc.get("pooled_median_error_pct")
     extra = ""
     if domain == "Zero_Day_Risk_Evaluator":

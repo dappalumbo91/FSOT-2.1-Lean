@@ -157,7 +157,7 @@ def main() -> int:
         "mpcorb_object_count": (files_meta.get("MPCORB.DAT.gz") or {}).get("orbit_rows_parsed"),
         "comet_line_count": (files_meta.get("AllCometEls.txt") or {}).get("line_count_approx"),
     }
-    MANIFEST.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    MANIFEST.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {MANIFEST}")
     print(f"  MPCORB objects: {doc.get('mpcorb_object_count')}")
     print(f"  Comet lines:    {doc.get('comet_line_count')}")

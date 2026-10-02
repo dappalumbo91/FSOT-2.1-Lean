@@ -677,7 +677,7 @@ def main() -> int:
         "predictions": predictions,
         "n_predictions": len(predictions),
     }
-    OUT_JSON.write_text(json.dumps(layer, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(layer, indent=2, allow_nan=False), encoding="utf-8")
 
     qdoc = {
         "generated_at": ts,
@@ -686,7 +686,7 @@ def main() -> int:
         "status_counts": status_counts,
         "questions": questions,
     }
-    Q_JSON.write_text(json.dumps(qdoc, indent=2), encoding="utf-8")
+    Q_JSON.write_text(json.dumps(qdoc, indent=2, allow_nan=False), encoding="utf-8")
 
     lines = [
         "# Earth-system predictions (weather, seismic, volcanic, solar)",

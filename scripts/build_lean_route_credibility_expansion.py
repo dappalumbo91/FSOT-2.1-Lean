@@ -261,7 +261,7 @@ def main() -> int:
         bench = build_route_benchmark(route_id)
         fname, _, _, _ = ROUTE_BUILDERS[route_id]
         out = DATA / fname
-        out.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+        out.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
         pool = bench.get("pooled_median_error_pct")
         pool_s = f"{float(pool):.4f}" if pool is not None else "?"
         lines.append(
@@ -317,7 +317,7 @@ def main() -> int:
         "coverage_map_updates": updated,
         "all_green": all(r.get("green") for r in routes),
     }
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT_MD}  {doc['routes_green']}/{doc['routes_total']} green")
     return 0
 

@@ -71,7 +71,7 @@ def main() -> int:
     )
     doc["observer_policy"] = "no_mic_no_camera_esp32_deferred"
     doc["generated_at"] = datetime.now(timezone.utc).isoformat()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}  {doc.get('record_count')} records pooled {doc.get('pooled_median_error_pct')}%")
     return 0
 

@@ -135,7 +135,7 @@ def _merge(path: Path, domain: str, names: set[str], catalog: list[dict]) -> dic
         channel_stats=[("fsot_quantum", domain, errs or [0.0])],
         sota_baselines=bench.get("sota_comparison") or {},
     )
-    path.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
     rec_n = int(rebuilt.get("record_count") or 0)
     med = rebuilt.get("pooled_median_error_pct")
     return {
@@ -193,7 +193,7 @@ def fill_higgs_channels(catalog: list[dict]) -> dict:
                 "reference": ref,
             }
         )
-    path.write_text(json.dumps({**bench, "material_records": have}, indent=2), encoding="utf-8")
+    path.write_text(json.dumps({**bench, "material_records": have}, indent=2, allow_nan=False), encoding="utf-8")
     return _merge(path, "higgs_mass", HIGGS_NAMES, catalog)
 
 
@@ -216,7 +216,7 @@ def main() -> int:
         "results": out,
     }
     dest = ROOT / "results" / "verification" / "quantum_ontopic_import.json"
-    dest.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    dest.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {dest}")
     for r in out:
         print(f"  {r['domain']:28s} +{r['added']:2d} n={r['records']:3d} med={r['median']} {r['tier']}")

@@ -71,7 +71,7 @@ def refresh(*, force: bool = False, skip_rebuild: bool = False) -> dict:
     }
     if not stale:
         result["status"] = "skipped"
-        LOG_PATH.write_text(json.dumps(result, indent=2), encoding="utf-8")
+        LOG_PATH.write_text(json.dumps(result, indent=2, allow_nan=False), encoding="utf-8")
         return result
 
     ingest_script = spec.get("ingest", {}).get("script") or "scripts/ingest_github_oss_code_genome.py"
@@ -82,7 +82,7 @@ def refresh(*, force: bool = False, skip_rebuild: bool = False) -> dict:
     result["steps"].append(step)
     if step["returncode"] != 0:
         result["status"] = "ingest_failed"
-        LOG_PATH.write_text(json.dumps(result, indent=2), encoding="utf-8")
+        LOG_PATH.write_text(json.dumps(result, indent=2, allow_nan=False), encoding="utf-8")
         return result
 
     if not skip_rebuild:
@@ -91,11 +91,11 @@ def refresh(*, force: bool = False, skip_rebuild: bool = False) -> dict:
             result["steps"].append(step)
             if step["returncode"] != 0:
                 result["status"] = "rebuild_failed"
-                LOG_PATH.write_text(json.dumps(result, indent=2), encoding="utf-8")
+                LOG_PATH.write_text(json.dumps(result, indent=2, allow_nan=False), encoding="utf-8")
                 return result
 
     result["status"] = "ok"
-    LOG_PATH.write_text(json.dumps(result, indent=2), encoding="utf-8")
+    LOG_PATH.write_text(json.dumps(result, indent=2, allow_nan=False), encoding="utf-8")
     return result
 
 
@@ -108,10 +108,10 @@ def main() -> int:
     if args.dry_run:
         spec = _load_schedule()
         stale, reason = _is_stale(spec, force=args.refresh)
-        print(json.dumps({"stale": stale, "reason": reason, "cadence_days": spec.get("cadence_days")}, indent=2))
+        print(json.dumps({"stale": stale, "reason": reason, "cadence_days": spec.get("cadence_days")}, indent=2, allow_nan=False))
         return 0
     result = refresh(force=args.refresh, skip_rebuild=args.skip_rebuild)
-    print(json.dumps({"status": result.get("status"), "reason": result.get("reason"), "steps": len(result.get("steps", []))}, indent=2))
+    print(json.dumps({"status": result.get("status"), "reason": result.get("reason"), "steps": len(result.get("steps", []))}, indent=2, allow_nan=False))
     return 0 if result.get("status") in ("ok", "skipped") else 1
 
 

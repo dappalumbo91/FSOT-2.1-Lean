@@ -59,13 +59,13 @@ def verify() -> dict:
         "founding_unmapped": unmapped,
         "issues": issues,
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     return report
 
 
 def main() -> int:
     r = verify()
-    print(json.dumps(r, indent=2))
+    print(json.dumps(r, indent=2, allow_nan=False))
     return 0 if r["ok"] else 1
 
 

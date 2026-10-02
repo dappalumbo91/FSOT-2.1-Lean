@@ -131,7 +131,7 @@ def main() -> int:
         "projects": rows,
         "policy": "Archive-first resolution via fsot_paths.verified_desktop_project(); Desktop is legacy fallback only.",
     }
-    OUT.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(manifest, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     return 0
 

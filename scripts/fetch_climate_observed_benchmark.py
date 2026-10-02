@@ -123,7 +123,7 @@ def main() -> int:
     archive = fetch_monthly(args.lat, args.lon, args.start, args.end)
     doc = build_benchmark(archive, args.lat, args.lon)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  months: {doc['month_count']}  median_err: {doc.get('median_error_pct')}")
     return 0

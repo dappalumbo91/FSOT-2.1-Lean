@@ -305,7 +305,7 @@ def write_generated_tests() -> dict:
         "chunks": chunks_meta,
         "test_file": path.name,
     }
-    (RUST_DIR / "obligation_meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
+    (RUST_DIR / "obligation_meta.json").write_text(json.dumps(meta, indent=2, allow_nan=False), encoding="utf-8")
     return meta
 
 

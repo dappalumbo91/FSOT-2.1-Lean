@@ -527,7 +527,7 @@ def _write_sqlite(doc: dict, db_path: Path) -> None:
                 bundle.get("benchmark_data"),
                 bundle.get("ingest_script"),
                 bundle.get("build_script"),
-                json.dumps(row.get("maps_to_lean") or []),
+                json.dumps(row.get("maps_to_lean") or [], allow_nan=False),
                 " ".join(row.get("tags") or []),
             ),
         )
@@ -559,7 +559,7 @@ def _write_sqlite(doc: dict, db_path: Path) -> None:
                 row["intent"],
                 " ".join(row.get("keywords") or []),
                 row.get("core_domain"),
-                json.dumps(row.get("panels") or []),
+                json.dumps(row.get("panels") or [], allow_nan=False),
             ),
         )
         _fts_insert(
@@ -616,7 +616,7 @@ def main() -> int:
     args = parser.parse_args()
 
     doc = build_navigator()
-    args.json.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.json.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     _write_sqlite(doc, args.db)
 
     print(f"Wrote {args.json}")

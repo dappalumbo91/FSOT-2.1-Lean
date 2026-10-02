@@ -36,7 +36,7 @@ def main() -> int:
                 "features": features,
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     print(f"Wrote {CACHE}")

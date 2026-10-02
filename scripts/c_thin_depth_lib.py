@@ -118,7 +118,7 @@ def deepen_panel(panel: str, cfg: dict, ext: dict[str, dict]) -> dict[str, Any] 
     for key in ("rule_id", "formula", "benchmark_version"):
         if bench.get(key) is not None:
             rebuilt[key] = bench[key]
-    bench_path.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+    bench_path.write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
     rec_after = int(rebuilt.get("record_count") or 0)
     med_after = rebuilt.get("pooled_median_error_pct") or rebuilt.get("median_error_pct")
     return {
@@ -176,7 +176,7 @@ def remediate_contaminated_benchmark(path: Path, *, domain: str, maps: list[str]
             "sector": {"sota_typical_error_pct": 10.0, "sota_model": "pre-remediation"}
         },
     )
-    path.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
     return {
         "path": path.name,
         "status": "ok",

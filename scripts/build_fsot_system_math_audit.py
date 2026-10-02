@@ -1021,9 +1021,9 @@ def main() -> int:
     # Put full green panel list on audit too for single-file sim load
     audit["green_benchmark_panels"] = bench.get("green_panels") or []
 
-    OUT_AUDIT.write_text(json.dumps(audit, indent=2), encoding="utf-8")
-    OUT_HIER.write_text(json.dumps(hier, indent=2), encoding="utf-8")
-    OUT_NET.write_text(json.dumps(net, indent=2), encoding="utf-8")
+    OUT_AUDIT.write_text(json.dumps(audit, indent=2, allow_nan=False), encoding="utf-8")
+    OUT_HIER.write_text(json.dumps(hier, indent=2, allow_nan=False), encoding="utf-8")
+    OUT_NET.write_text(json.dumps(net, indent=2, allow_nan=False), encoding="utf-8")
     write_doc(audit)
 
     print(f"Wrote {OUT_AUDIT}")

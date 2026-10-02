@@ -34,7 +34,7 @@ def cache_root() -> Path:
 
 
 def _write(path: Path, doc: dict) -> None:
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def ingest_materials_project() -> dict:
@@ -123,7 +123,7 @@ def ingest_openneuro_full() -> dict:
     _write(out_path, doc)
     if source.startswith("https://"):
         OPENNEURO_BUNDLED.parent.mkdir(parents=True, exist_ok=True)
-        OPENNEURO_BUNDLED.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        OPENNEURO_BUNDLED.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 

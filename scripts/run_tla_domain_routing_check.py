@@ -220,7 +220,7 @@ def main() -> int:
             "status": "missing_spec",
             "overall_ok": False,
         }
-        REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+        REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
         return 1
 
     tlc = try_tlc()
@@ -252,7 +252,7 @@ def main() -> int:
         "note": "Install TLC for independent model checking; Python explorer is always run.",
     }
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"TLA domain routing: {report['status']} "
         f"(states={py['states_explored']}, engine={py['engine']}"

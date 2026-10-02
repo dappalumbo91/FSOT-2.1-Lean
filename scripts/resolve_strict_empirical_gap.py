@@ -171,7 +171,7 @@ def write_outcomes(db_path: Path, updates: list[dict]) -> None:
         cur = con.cursor()
         cur.executemany(
             "UPDATE records SET outcome_json = ? WHERE record_id = ?",
-            [(json.dumps(u["outcome_json"]), u["record_id"]) for u in updates],
+            [(json.dumps(u["outcome_json"], allow_nan=False), u["record_id"]) for u in updates],
         )
         con.commit()
     finally:

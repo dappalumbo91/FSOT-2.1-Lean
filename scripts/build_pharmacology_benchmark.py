@@ -113,7 +113,7 @@ def main() -> int:
     except FileNotFoundError as exc:
         print(str(exc), file=sys.stderr)
         return 1
-    args.output.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  records: {bench['record_count']}  median_err: {bench.get('median_error_pct')}")
     return 0

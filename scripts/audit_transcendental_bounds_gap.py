@@ -152,7 +152,7 @@ def main() -> int:
             "and present in transcendental_bounds.json. This is NOT 68 open failures."
         ),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     print("TRANSCENDENTAL BOUNDS GAP AUDIT")
     print(f"  exported float obligations from Bounds.lean: {len(exported_bounds)}")

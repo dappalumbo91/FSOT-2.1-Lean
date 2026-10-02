@@ -362,7 +362,7 @@ def main() -> int:
         ),
     }
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     md = [
         "# Planetary-cycle connective tanks — why isolated cells kill",

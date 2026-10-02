@@ -44,7 +44,7 @@ def main() -> int:
     math_gen = ingest_math_generator()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["math_generator_lab"] = math_gen
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(
         f"  comparisons: {math_gen.get('comparison_count')}  "

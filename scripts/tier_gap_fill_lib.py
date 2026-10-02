@@ -732,7 +732,7 @@ def _ensure_pk_reference() -> Path:
         "updated": datetime.now(timezone.utc).date().isoformat(),
         "compounds": drugs,
     }
-    PK_REFERENCE.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    PK_REFERENCE.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return PK_REFERENCE
 
 
@@ -788,7 +788,7 @@ def _ensure_fermentation_reference() -> Path:
             {"name": "wine_primary", "optimal_temp_C": 22.0, "optimal_ph": 3.4, "lag_phase_h": 24.0},
         ],
     }
-    FERMENTATION_REFERENCE.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    FERMENTATION_REFERENCE.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return FERMENTATION_REFERENCE
 
 
@@ -1171,4 +1171,4 @@ def rebuild_tier38_benchmarks() -> None:
 
     for _domain, (fname, builder) in T38.items():
         doc = builder()
-        (DATA / fname).write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        (DATA / fname).write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")

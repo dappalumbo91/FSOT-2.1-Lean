@@ -137,7 +137,7 @@ def main() -> int:
             "scripts/build_formal_proof_depth_closure.py",
         ],
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT} — depth_score {depth_score}/5, verdict {doc['verdict']}")
     return 0
 

@@ -228,4 +228,4 @@ def sample_imaging_datasets() -> dict[str, Any]:
 
 
 if __name__ == "__main__":
-    print(json.dumps(sample_imaging_datasets(), indent=2))
+    print(json.dumps(sample_imaging_datasets(), indent=2, allow_nan=False))

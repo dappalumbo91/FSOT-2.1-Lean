@@ -45,7 +45,7 @@ def main() -> int:
     wave4 = ingest_wave4()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["cosmology_wave4"] = wave4
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  wave4 observables: {wave4['observable_count']}  max err: {wave4['max_error_pct']:.4f}%")
     return 0

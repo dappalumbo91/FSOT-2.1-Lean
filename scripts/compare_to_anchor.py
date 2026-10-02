@@ -25,7 +25,7 @@ def main() -> int:
     rec = compare_anchor(args.observable)
     rec["requested_source"] = args.source
     if args.json:
-        print(json.dumps(rec, indent=2))
+        print(json.dumps(rec, indent=2, allow_nan=False))
     else:
         print(f"{rec['observable_id']}  hat={rec['value']}  anchor={rec['anchor']} {rec['units']}")
         print(f"  error_pct   {rec['error_pct']:.6f}%")

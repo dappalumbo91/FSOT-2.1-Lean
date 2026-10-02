@@ -250,7 +250,7 @@ def main() -> int:
         "purpose": "scientific_catalog_multi_prover_reproof",
     }
     (ROOT / "data" / "scientific_catalog_spine_generation.json").write_text(
-        json.dumps(summary, indent=2), encoding="utf-8"
+        json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8"
     )
     print("generation complete", summary)
     return 0

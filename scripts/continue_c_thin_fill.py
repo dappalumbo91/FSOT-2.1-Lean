@@ -146,7 +146,7 @@ def _rewrite(path: Path, domain: str, rows: list[dict], bench: dict, source_extr
         channel_stats=[("continue_fill", domain, errs or [0.0])],
         sota_baselines=bench.get("sota_comparison") or {},
     )
-    path.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
     rec_n = int(rebuilt.get("record_count") or 0)
     med = rebuilt.get("pooled_median_error_pct")
     return {
@@ -454,7 +454,7 @@ def main() -> int:
         "results": results,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     for r in results:
         print(

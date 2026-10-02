@@ -111,7 +111,7 @@ def _fetch(url: str, dest: Path) -> None:
 def _graphql(query: str) -> dict:
     req = urllib.request.Request(
         OPENNEURO_URL,
-        data=json.dumps({"query": query}).encode(),
+        data=json.dumps({"query": query}, allow_nan=False).encode(),
         headers={"Content-Type": "application/json", "User-Agent": "FSOT-2.1-Lean/anomaly-ingest"},
     )
     with urllib.request.urlopen(req, timeout=60) as resp:
@@ -236,7 +236,7 @@ def ingest_anage() -> dict:
         "rows": species_rows,
     }
     vendor_path("consciousness", "anage_summary.json").write_text(
-        json.dumps(summary, indent=2), encoding="utf-8"
+        json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8"
     )
     return summary
 
@@ -288,9 +288,9 @@ def ingest_consciousness_species_panel() -> dict:
         "orders_represented": sorted(by_order.keys()),
         "species": panel,
     }
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     vendor_path("consciousness", "anage_species_panel.json").write_text(
-        json.dumps(doc, indent=2), encoding="utf-8"
+        json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8"
     )
 
     ref_path = ROOT / "data" / "consciousness_reference_observables.json"
@@ -301,7 +301,7 @@ def ingest_consciousness_species_panel() -> dict:
     ref["species"] = merged
     ref["anage_panel_count"] = len(panel)
     ref["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    ref_path.write_text(json.dumps(ref, indent=2), encoding="utf-8")
+    ref_path.write_text(json.dumps(ref, indent=2, allow_nan=False), encoding="utf-8")
     doc["reference_path"] = str(ref_path)
     doc["merged_species_count"] = len(merged)
     return doc
@@ -373,9 +373,9 @@ def ingest_openneuro() -> dict:
         "dataset_count": len(unique),
         "datasets": unique[:60],
     }
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     vendor_path("consciousness", "openneuro_summary.json").write_text(
-        json.dumps(doc, indent=2), encoding="utf-8"
+        json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8"
     )
     return doc
 
@@ -435,8 +435,8 @@ def ingest_sh0es() -> dict:
         "lstsq_rows": lstsq[:40],
         "fits_file_bytes": fits_sizes,
     }
-    vendor_path("sh0es", "sh0es_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
-    (cache / "sh0es_hosts_parsed.json").write_text(json.dumps(host_list, indent=2), encoding="utf-8")
+    vendor_path("sh0es", "sh0es_summary.json").write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
+    (cache / "sh0es_hosts_parsed.json").write_text(json.dumps(host_list, indent=2, allow_nan=False), encoding="utf-8")
     return summary
 
 
@@ -446,7 +446,7 @@ def ingest_dark_energy_cpl() -> dict:
     cache = cache_root() / "dark_energy_cpl"
     cache.mkdir(parents=True, exist_ok=True)
     out = cache / "cpl_reference.json"
-    out.write_text(json.dumps(ref, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(ref, indent=2, allow_nan=False), encoding="utf-8")
     summary = {
         "ingested_at": datetime.now(timezone.utc).isoformat(),
         "cache_path": str(out),
@@ -456,7 +456,7 @@ def ingest_dark_energy_cpl() -> dict:
         "status": ref["fsot_prediction"]["status"],
     }
     vendor_path("dark_energy_cpl", "cpl_constraints_summary.json").write_text(
-        json.dumps(summary, indent=2), encoding="utf-8"
+        json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8"
     )
     return summary
 

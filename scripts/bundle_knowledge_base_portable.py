@@ -69,7 +69,7 @@ def bundle(*, copy_transfer: bool = False) -> dict:
         **summarize_knowledge_base(transfer_data),
         **formula_stats,
     }
-    summary_dest.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    summary_dest.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
     return summary
 
 

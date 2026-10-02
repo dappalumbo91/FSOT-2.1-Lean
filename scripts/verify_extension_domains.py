@@ -137,7 +137,7 @@ def main() -> int:
             "max_effective_scalar_error_pct is the scientifically fair gate."
         ),
     }
-    DEBT_REPORT.write_text(json.dumps(debt_doc, indent=2), encoding="utf-8")
+    DEBT_REPORT.write_text(json.dumps(debt_doc, indent=2, allow_nan=False), encoding="utf-8")
 
     print("=== Extension domains verification ===")
     print(

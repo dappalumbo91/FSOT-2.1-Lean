@@ -304,7 +304,7 @@ def main() -> int:
     ]
 
     (DATA / "scientific_capability_gap_report.json").write_text(
-        json.dumps(report, indent=2), encoding="utf-8"
+        json.dumps(report, indent=2, allow_nan=False), encoding="utf-8"
     )
     (DATA / "scientific_capability_gap_report.md").write_text(
         "\n".join(lines) + "\n", encoding="utf-8"

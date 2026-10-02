@@ -198,7 +198,7 @@ def main() -> int:
             "green_pct": GREEN_PCT,
         },
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print("FSOT HARDWARE BARE-METAL (processor + RAM + C parity)")
     print(f"  cargo_tests: {tests.get('status')}")
     print(f"  hardware_serial: {serial.get('status')} overall={ (serial.get('markers') or {}).get('overall') }")

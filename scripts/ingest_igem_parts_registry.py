@@ -133,7 +133,7 @@ def ingest(*, write_bundled: bool = True) -> dict:
         "api_reachable": live_count > 0,
         "fasta_root": rel_repo_path(fasta_root),
     }
-    registry_path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    registry_path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return {
         "registry": registry_path,
         "fasta_root": fasta_root,

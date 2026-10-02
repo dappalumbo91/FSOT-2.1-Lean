@@ -56,7 +56,7 @@ def main() -> int:
         raise SystemExit(f"missing index: {index_path}")
 
     payload = build_index(index_path, report_path)
-    args.output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  records_total: {payload['records_total']}")
     print(f"  strict_empirical: {payload['records_strict_empirical']}")

@@ -113,7 +113,7 @@ def main() -> int:
             continue
         bench_path = output_path(domain)
         if not bench_path.exists():
-            bench_path.write_text(json.dumps(BUILDERS[domain](), indent=2), encoding="utf-8")
+            bench_path.write_text(json.dumps(BUILDERS[domain](), indent=2, allow_nan=False), encoding="utf-8")
         bench = json.loads(bench_path.read_text(encoding="utf-8"))
         module_stem = LEAN_MAP[domain][3]
         out = FORMAL / f"{module_stem}.lean"

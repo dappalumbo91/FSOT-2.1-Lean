@@ -52,7 +52,7 @@ def main() -> int:
         "cross_proof_overall_ok": cross_ok,
         "overall_ok": all(s["exit_code"] == 0 for s in steps),
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     print("=== Parallel validation suite ===")
     for step in steps:

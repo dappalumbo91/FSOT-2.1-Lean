@@ -71,7 +71,7 @@ def main() -> int:
     doc["verification_pooled_median_error_pct"] = sim.get("verification_pooled_median_error_pct")
     doc["ledger"] = "data/publication/independent_prediction_ledger.yaml"
     doc["generated_at"] = datetime.now(timezone.utc).isoformat()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"Wrote {OUT}  records={doc.get('record_count')} "
         f"verify_median={sim.get('verification_pooled_median_error_pct')}%"

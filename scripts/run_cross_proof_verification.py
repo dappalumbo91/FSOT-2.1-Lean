@@ -1119,7 +1119,7 @@ def main() -> int:
             "+ QEMU serial/disk boot + ESP32 RF observer (optional)."
         ),
     }
-    REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     sync_manifest_from_report(report)
 
     subprocess.run(

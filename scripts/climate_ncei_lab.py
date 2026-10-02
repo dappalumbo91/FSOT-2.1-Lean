@@ -91,7 +91,7 @@ def load_state(state_path: Path) -> dict:
 def save_state(state_path: Path, state: dict) -> None:
     state_path.parent.mkdir(parents=True, exist_ok=True)
     state["updated_at"] = datetime.now(timezone.utc).isoformat()
-    state_path.write_text(json.dumps(state, indent=2), encoding="utf-8")
+    state_path.write_text(json.dumps(state, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def stream_ghcnd_year(year: int, station_ids: set[str], base_url: str | None = None) -> Iterator[tuple[str, str, str, int]]:
@@ -141,7 +141,7 @@ def write_chunk(path: Path, station_id: str, year: int, monthly: dict[str, dict[
         "ingested_at": datetime.now(timezone.utc).isoformat(),
         "monthly": monthly,
     }
-    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def fetch_cdo_year_chunk(

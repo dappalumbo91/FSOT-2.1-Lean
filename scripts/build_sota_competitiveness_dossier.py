@@ -137,7 +137,7 @@ def main() -> int:
     parser.add_argument("--output-json", type=Path, default=OUTPUT_JSON)
     args = parser.parse_args()
     dossier = build()
-    args.output_json.write_text(json.dumps(dossier, indent=2), encoding="utf-8")
+    args.output_json.write_text(json.dumps(dossier, indent=2, allow_nan=False), encoding="utf-8")
     write_markdown(dossier, args.output_md)
     print(f"Wrote {args.output_json}")
     print(f"Wrote {args.output_md}")

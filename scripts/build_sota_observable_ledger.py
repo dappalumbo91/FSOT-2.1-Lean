@@ -183,7 +183,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
     report = build()
-    args.output.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  observables: {report['observable_count']}  beats/meets: {report['beats_or_meets_sota_count']}")
     if report["below_sota_ids"]:

@@ -170,7 +170,7 @@ def main() -> int:
             "all_free_no_account": True,
         },
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     print("CROSS-PROOF COVERAGE AUDIT")
     print(f"  extension domains: {n_domains}")

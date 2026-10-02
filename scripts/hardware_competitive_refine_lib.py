@@ -427,5 +427,5 @@ def run_full_refine() -> dict[str, Any]:
         },
     }
     out = DATA / "hardware_competitive_refine_report.json"
-    out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc

@@ -88,7 +88,7 @@ def _panel(domain: str, records: list[dict], maps: list[str], d_eff: int, source
     doc["policy"] = "open_science_only_no_credentials"
     doc["residual_law"] = "make_fsot_record → fsot_scaled only (FSOT mathematics)"
     doc["frontier_id"] = frontier_id
-    (ROOT / "data" / out_name).write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    (ROOT / "data" / out_name).write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"  {out_name}: n={doc['record_count']} pooled={doc.get('pooled_median_error_pct')}%")
     return doc
 
@@ -200,7 +200,7 @@ def build_endf_nuclear() -> dict:
         )
     )
     (vendor_dir("endf_reaction_subset") / "summary.json").write_text(
-        json.dumps({"fetched_at": _now(), "level_rows": level_rows, "gamma_rows": gamma_rows, "nuclides": nuclides}, indent=2),
+        json.dumps({"fetched_at": _now(), "level_rows": level_rows, "gamma_rows": gamma_rows, "nuclides": nuclides}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel(
@@ -302,7 +302,7 @@ def build_nist_asd() -> dict:
         )
     )
     (vendor_dir("nist_asd_multi_species") / "line_anchors.json").write_text(
-        json.dumps({"fetched_at": _now(), "lines": NIST_LINES, "handbooks": hb_bytes}, indent=2),
+        json.dumps({"fetched_at": _now(), "lines": NIST_LINES, "handbooks": hb_bytes}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel(
@@ -410,7 +410,7 @@ def build_desi() -> dict:
         )
     )
     (vendor_dir("desi_edr_table_slice") / "anchors.json").write_text(
-        json.dumps({"fetched_at": _now(), "anchors": DESI_ANCHORS, "portals_ok": portal_ok}, indent=2),
+        json.dumps({"fetched_at": _now(), "anchors": DESI_ANCHORS, "portals_ok": portal_ok}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel(
@@ -515,7 +515,7 @@ def build_gwosc_strain() -> dict:
         )
     )
     (vendor_dir("gwosc_strain_metadata") / "summary.json").write_text(
-        json.dumps({"fetched_at": _now(), "segments": segments}, indent=2),
+        json.dumps({"fetched_at": _now(), "segments": segments}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel(
@@ -641,7 +641,7 @@ def build_codata() -> dict:
         )
     )
     (out_dir / "sweep_summary.json").write_text(
-        json.dumps({"fetched_at": _now(), "parsed_ok": parsed_ok, "lines": len(lines), "bytes": len(raw)}, indent=2),
+        json.dumps({"fetched_at": _now(), "parsed_ok": parsed_ok, "lines": len(lines), "bytes": len(raw)}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel(
@@ -686,7 +686,7 @@ def main() -> int:
         "results": results,
     }
     out = ROOT / "data" / "open_frontier_wave3_report.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {out.relative_to(ROOT)}")
     ok = sum(1 for r in results.values() if r.get("status") == "ok")
     print(f"Wave3 panels ok: {ok}/{len(results)}")

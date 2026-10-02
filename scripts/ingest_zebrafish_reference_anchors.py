@@ -144,9 +144,9 @@ def ingest_zebrafish_reference_anchors(*, live: bool = True) -> dict:
         "ingest_errors": errors,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     VENDOR_OUT.parent.mkdir(parents=True, exist_ok=True)
-    VENDOR_OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    VENDOR_OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 

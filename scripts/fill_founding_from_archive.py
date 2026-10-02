@@ -171,13 +171,13 @@ def main() -> int:
         "until FSOT 2.1 panel verification. Extra rows are the public catalogs the "
         "I:/fsuft aasb archive was pointing at, not FSUFT 4.2/8.7 chat numbers."
     )
-    REFERENCE.write_text(json.dumps(ref, indent=2), encoding="utf-8")
+    REFERENCE.write_text(json.dumps(ref, indent=2, allow_nan=False), encoding="utf-8")
 
     results = []
     for law_id, (domain, filename) in DOMAIN_SLUG.items():
         doc = BUILDERS[domain]()
         path = output_path(domain)
-        path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
         rec = int(doc.get("record_count") or 0)
         med = doc.get("pooled_median_error_pct")
         results.append(
@@ -202,7 +202,7 @@ def main() -> int:
                 "results": results,
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     print(f"Wrote {out} (+{added_total} anchors)")

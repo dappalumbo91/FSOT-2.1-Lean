@@ -122,7 +122,7 @@ def main() -> int:
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     import json
 
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     OUT_MD.write_text(build_md(rows), encoding="utf-8")
     print(f"Wrote {OUT_JSON}  {len(rows)} names (no private paths)")
     print(f"Wrote {OUT_MD}")

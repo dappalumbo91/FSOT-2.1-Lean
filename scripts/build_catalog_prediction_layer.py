@@ -276,8 +276,8 @@ def build() -> dict:
     raw = json.dumps(
         {k: v for k, v in doc.items() if k not in {"bundle_sha256", "predictions"}},
         sort_keys=True,
-    ).encode()
-    ids = json.dumps([p["id"] for p in predictions], sort_keys=True).encode()
+     allow_nan=False).encode()
+    ids = json.dumps([p["id"] for p in predictions], sort_keys=True, allow_nan=False).encode()
     doc["bundle_sha256"] = hashlib.sha256(raw + ids).hexdigest()
     return doc
 
@@ -336,7 +336,7 @@ def write_md(doc: dict) -> None:
 def main() -> int:
     PRED.mkdir(parents=True, exist_ok=True)
     doc = build()
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     write_md(doc)
     print(f"Wrote {OUT_JSON}")
     print(f"Wrote {OUT_MD}")

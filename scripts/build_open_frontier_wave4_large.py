@@ -89,7 +89,7 @@ def _panel(domain: str, records: list[dict], maps: list[str], d_eff: int, source
     doc["residual_law"] = "make_fsot_record → fsot_scaled only (FSOT mathematics)"
     doc["frontier_id"] = frontier_id
     doc["external_data_root"] = str(external_data_root())
-    (ROOT / "data" / out_name).write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    (ROOT / "data" / out_name).write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"  {out_name}: n={doc['record_count']} pooled={doc.get('pooled_median_error_pct')}%")
     return doc
 
@@ -178,7 +178,7 @@ def build_codata() -> dict:
     records.append(fsot_row(lab="codata_full_lab", property_name="constants_parsed", name="codata_sweep_hits", measured=float(max(parsed_ok, 1)), domain="Atomic_Physics", extra={"frontier_id": "codata_full_table"}))
     records.append(fsot_row(lab="codata_full_lab", property_name="table_bytes", name="codata_allascii", measured=float(len(raw)), domain="Atomic_Physics", extra={"frontier_id": "codata_full_table"}))
     (vendor_dir("codata_full_table") / "sweep_summary.json").write_text(
-        json.dumps({"fetched_at": _now(), "parsed_ok": parsed_ok, "missing": miss, "external": str(ext)}, indent=2),
+        json.dumps({"fetched_at": _now(), "parsed_ok": parsed_ok, "missing": miss, "external": str(ext)}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel("CODATA_Full_Table_Open", records, ["atomic", "particle"], 12, [url, str(ext / "allascii.txt")], "codata_full", "NIST CODATA full table (tight aliases)", "codata_full_table_open_benchmark.json", "codata_full_table")
@@ -204,11 +204,11 @@ def build_gaia_large() -> dict:
     rows = payload.get("data") or []
     ext = open_science_large_dir("gaia")
     (ext / "gaia_dr3_large.json").write_text(
-        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows), "data": rows}, indent=2),
+        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows), "data": rows}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     (vendor_dir("gaia_source_sample") / "gaia_dr3_sample.json").write_text(
-        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows)}, indent=2),
+        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows)}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     col = {name: i for i, name in enumerate(meta)}
@@ -254,7 +254,7 @@ def build_simbad_large() -> dict:
     rows = payload.get("data") or []
     ext = open_science_large_dir("simbad")
     (ext / "simbad_large.json").write_text(
-        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows), "data": rows}, indent=2),
+        json.dumps({"fetched_at": _now(), "columns": meta, "count": len(rows), "data": rows}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     col = {name: i for i, name in enumerate(meta)}
@@ -296,7 +296,7 @@ def build_lmfdb_large() -> dict:
     for degree, limit in ((2, 120), (3, 80), (4, 60), (5, 40)):
         url = f"https://www.lmfdb.org/api/nf_fields/?_format=json&degree={degree}&_per_page={limit}"
         data = (fetch_json(url, timeout=90, retries=2, headers=UA).get("data") or [])
-        (ext / f"nf_deg{degree}.json").write_text(json.dumps({"count": len(data), "data": data}, indent=2), encoding="utf-8")
+        (ext / f"nf_deg{degree}.json").write_text(json.dumps({"count": len(data), "data": data}, indent=2, allow_nan=False), encoding="utf-8")
         for f in data:
             label = str(f.get("label") or f.get("id") or "nf")
             for prop, key in (
@@ -317,7 +317,7 @@ def build_lmfdb_large() -> dict:
     # elliptic curves
     url_ec = "https://www.lmfdb.org/api/ec_curvedata/?_format=json&_per_page=150"
     curves = (fetch_json(url_ec, timeout=90, retries=2, headers=UA).get("data") or [])
-    (ext / "ec_large.json").write_text(json.dumps({"count": len(curves)}, indent=2), encoding="utf-8")
+    (ext / "ec_large.json").write_text(json.dumps({"count": len(curves)}, indent=2, allow_nan=False), encoding="utf-8")
     for c in curves:
         label = str(c.get("lmfdb_label") or c.get("id") or "ec")
         for prop, key in (
@@ -469,7 +469,7 @@ def build_climate_multi() -> dict:
     # write both climate panel names used in atlas
     doc = _panel("NCEI_Climate_Open", records, ["earth_science", "climate"], 14, ["https://www.ncei.noaa.gov/", str(ext)], "ncei_multivar", "NCEI multivariable open climate series", "ncei_climate_open_benchmark.json", "era5_climate_open")
     (ROOT / "data" / "ncei_multivar_climate_open_benchmark.json").write_text(
-        json.dumps(doc, indent=2), encoding="utf-8"
+        json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8"
     )
     return doc
 
@@ -525,7 +525,7 @@ def build_desi_bulk() -> dict:
         ],
         "note": "Full multi-GB products belong under FSOT_EXTERNAL_DATA_ROOT / open_science_large/desi. Residual panel uses open anchors + portal integrity; offline FITS residual can attach later without credentials.",
     }
-    (ext / "DESI_BULK_MANIFEST.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (ext / "DESI_BULK_MANIFEST.json").write_text(json.dumps(manifest, indent=2, allow_nan=False), encoding="utf-8")
     records.append(fsot_row(lab="desi_bulk_lab", property_name="manifest_entries", name="desi_bulk_manifest", measured=float(len(manifest["recommended_full_pull"]) + 1), domain="Cosmology", extra={"frontier_id": "desi_edr_table_slice"}))
     return _panel("DESI_EDR_Table_Slice_Open", records, ["cosmological"], 18, ["https://data.desi.lbl.gov/public/", str(ext)], "desi_bulk", "DESI public bulk indexes + open anchors on external root", "desi_edr_table_slice_open_benchmark.json", "desi_edr_table_slice")
 
@@ -565,7 +565,7 @@ def main() -> int:
         "results": results,
     }
     out = ROOT / "data" / "open_frontier_wave4_large_report.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {out.relative_to(ROOT)}")
     ok = sum(1 for r in results.values() if r.get("status") == "ok")
     print(f"Wave4 panels ok: {ok}/{len(results)}")

@@ -61,7 +61,7 @@ def main() -> int:
     previously made GitHub Actions fail even when green_gate_fail_count == 0.
     """
     doc = build()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"  tier_scalar closed={doc['closed']} fails={doc['tier_scalar_fail_count']}")
     if not doc["closed"]:

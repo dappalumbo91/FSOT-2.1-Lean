@@ -70,7 +70,7 @@ def main() -> int:
         registry = {"registry_version": "1.0"}
 
     registry["codon_trinary_map"] = codon
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  codons: {codon['codon_count']}")
     print(

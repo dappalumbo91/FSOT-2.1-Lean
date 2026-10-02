@@ -60,7 +60,7 @@ def ingest() -> dict:
         }
         registry[lab_key] = entry
         summary[lab_key] = entry
-    REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    REGISTRY.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     return summary
 
 

@@ -103,7 +103,7 @@ def main() -> int:
         "result": result,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}  all_green={result.get('all_claims_green')}")
     return 0 if result.get("all_claims_green") else 1
 

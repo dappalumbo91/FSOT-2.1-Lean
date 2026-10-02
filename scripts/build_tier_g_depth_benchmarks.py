@@ -22,7 +22,7 @@ def main() -> int:
     for domain in domains:
         doc = BUILDERS[domain]()
         out = output_path(domain)
-        out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        out.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
         med = doc.get("pooled_median_error_pct") or doc.get("median_error_pct")
         print(f"{domain}: {doc.get('record_count')} records, pooled median {med}% -> {out.name}")
     return 0

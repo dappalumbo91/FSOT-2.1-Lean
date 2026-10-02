@@ -140,7 +140,7 @@ def main() -> int:
     except Exception as exc:  # noqa: BLE001
         summary["ledger_b_nulls"] = {"error": str(exc), "cite_as_toe_accuracy": False}
 
-    OUT.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
 
     print(f"Wrote {OUT}")
     print(f"  active files={len(rows)} excluded={len(excluded)}")

@@ -61,7 +61,7 @@ def main() -> int:
     bench["cluster_manifest"] = "data/existence_simulation_failure_clusters_manifest.yaml"
     bench["policy"] = "Failures ringed in via sector expansion — not ad-hoc per-observable tuning"
     bench["generated_at"] = datetime.now(timezone.utc).isoformat()
-    OUT.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"Wrote {OUT}  records={bench.get('record_count')} "
         f"pre={bench['pre_ring_in_median_error_pct']:.2f}% post={bench['post_ring_in_median_error_pct']:.4f}%"

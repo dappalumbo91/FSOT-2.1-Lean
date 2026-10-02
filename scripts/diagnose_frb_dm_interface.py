@@ -140,7 +140,7 @@ def main() -> int:
         "rows": with_ex,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     worst = doc["worst_row"] or {}
     best = doc["best_row"] or {}

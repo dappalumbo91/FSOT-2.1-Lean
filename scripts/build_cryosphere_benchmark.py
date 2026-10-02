@@ -91,7 +91,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
     bench = build(args.manifest)
-    args.output.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(
         f"  records: {bench['record_count']}  stations: {bench['station_count']}  "

@@ -160,7 +160,7 @@ def main() -> int:
         "perception_view": "|1+T1_i|/|1+T1_j| vs live |S_i|/|S_j| (T3 leftover). vs 1 is the same-view question, not a 0.5% central. Not a median pad.",
         "look_split_t1": "D9 leftover at the fold-D of named look-splits (CM–Neuro D=13, ac–opt D=9, atomic–HEP D=6, …). The ~0.4% named S-ratio is the D-step still in T1, not a new seed.",
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     def _med(errs: list[float]) -> float | None:
         if not errs:
@@ -193,7 +193,7 @@ def main() -> int:
         ),
     }
     OUTCOME.parent.mkdir(parents=True, exist_ok=True)
-    OUTCOME.write_text(json.dumps(outcome, indent=2), encoding="utf-8")
+    OUTCOME.write_text(json.dumps(outcome, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"Wrote {OUTCOME}")
     print(f"  n_scalar={len(tight)} n_total={len(rows)} pooled={doc.get('pooled_median_error_pct')} {status}")

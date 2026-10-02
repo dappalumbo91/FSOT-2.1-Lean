@@ -134,7 +134,7 @@ def main() -> int:
         "domains": domains,
         "coarsest_outside_digit": outside_table[:40],
     }
-    OUT.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps(summary, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     print(f"scalars={n} median_ppm={summary['median_ppm']}")
     print(f"table_limited={table_limited} outside_digit={n - table_limited}")
     for band in BANDS:

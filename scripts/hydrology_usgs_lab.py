@@ -41,7 +41,7 @@ def load_state(state_path: Path) -> dict:
 def save_state(state_path: Path, state: dict) -> None:
     state_path.parent.mkdir(parents=True, exist_ok=True)
     state["updated_at"] = datetime.now(timezone.utc).isoformat()
-    state_path.write_text(json.dumps(state, indent=2), encoding="utf-8")
+    state_path.write_text(json.dumps(state, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def fetch_station_year(
@@ -93,7 +93,7 @@ def write_chunk(path: Path, station_id: str, year: int, monthly: dict[str, float
         "month_count": len(monthly),
         "written_at": datetime.now(timezone.utc).isoformat(),
     }
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def load_all_chunks(chunks_dir: Path) -> list[dict]:

@@ -34,7 +34,7 @@ def main() -> int:
             "under QEMU and captures FSOT_QEMU_* markers."
         ),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print("RUST_LEAN_BRIDGE QEMU HARNESS (Tier 87)")
     print(f"  serial: {serial.get('status')} boot={serial.get('boot_scalar')}")
     print(f"  disk: {disk.get('status')} boot={disk.get('boot_scalar')} disk_boot={disk.get('disk_boot')}")

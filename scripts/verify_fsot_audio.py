@@ -40,7 +40,7 @@ def main() -> int:
         "calibration_440hz": stats,
         "mel_summary": mel,
     }
-    print(json.dumps(report, indent=2))
+    print(json.dumps(report, indent=2, allow_nan=False))
 
     if deps.get("soundfile") == "missing":
         print("\nInstall: pip install soundfile librosa scipy torchaudio --index-url https://download.pytorch.org/whl/cu128")

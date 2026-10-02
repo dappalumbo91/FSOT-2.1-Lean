@@ -140,7 +140,7 @@ def main() -> int:
         }
     report["headlines"] = headlines
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "sync_report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    (OUT / "sync_report.json").write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT / 'sync_report.json'}")
     for name, block in report["siblings"].items():
         ok = sum(1 for f in block["files"] if f.get("ok"))

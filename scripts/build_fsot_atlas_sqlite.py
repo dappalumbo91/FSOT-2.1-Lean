@@ -546,7 +546,7 @@ def _ingest_engine_math(cur: sqlite3.Cursor) -> dict[str, Any]:
                 b.get("id"),
                 b.get("name"),
                 b.get("role"),
-                json.dumps(b.get("structure") or b.get("depends") or []),
+                json.dumps(b.get("structure") or b.get("depends") or [], allow_nan=False),
                 b.get("fluid_note"),
             ),
         )
@@ -874,7 +874,7 @@ def build() -> dict[str, Any]:
                 missing_files += 1
             mat = _material_rows(doc)
             rec_count = int(doc.get("record_count") or doc.get("observable_count") or len(mat) or rec_count or 0)
-            maps = json.dumps(doc.get("maps_to_lean") or [])
+            maps = json.dumps(doc.get("maps_to_lean") or [], allow_nan=False)
             d_eff = doc.get("D_eff")
             lean = doc.get("lean_module")
         else:
@@ -1065,7 +1065,7 @@ def build() -> dict[str, Any]:
         "query": "python scripts/query_fsot_atlas.py --stats",
         "reality_os": "python scripts/run_fsot_reality_os.py",
     }
-    OUT_REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT_REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     return report
 
 

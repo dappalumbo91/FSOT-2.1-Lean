@@ -162,7 +162,7 @@ def audit_laws(
         "laws": results,
     }
 
-    out_json.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out_json.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     out_md.write_text(_render_md(report), encoding="utf-8")
     print(f"Audit: {out_json}")
     print(f"Summary: {out_md}")

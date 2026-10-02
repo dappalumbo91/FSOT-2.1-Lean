@@ -67,7 +67,7 @@ def cmd_boot(_: argparse.Namespace) -> int:
 def cmd_S(args: argparse.Namespace) -> int:
     if args.domain:
         s = compute_domain_S(args.domain)
-        print(json.dumps({"domain": args.domain, "S": s}, indent=2))
+        print(json.dumps({"domain": args.domain, "S": s}, indent=2, allow_nan=False))
     else:
         s = compute_S_raw(args.d_eff, args.delta_psi, not args.unobserved, args.hits)
         print(
@@ -80,7 +80,7 @@ def cmd_S(args: argparse.Namespace) -> int:
                     "S": s,
                 },
                 indent=2,
-            )
+             allow_nan=False)
         )
     return 0
 
@@ -100,40 +100,40 @@ def cmd_predict(args: argparse.Namespace) -> int:
                     "law": "c = m * (1 + |S| * f)",
                 },
                 indent=2,
-            )
+             allow_nan=False)
         )
     else:
-        print(json.dumps(predict_demo(), indent=2))
+        print(json.dumps(predict_demo(), indent=2, allow_nan=False))
     return 0
 
 
 def cmd_interfaces(args: argparse.Namespace) -> int:
     rows = list_interfaces(kind=args.kind, limit=args.limit)
-    print(json.dumps({"count": len(rows), "interfaces": rows}, indent=2))
+    print(json.dumps({"count": len(rows), "interfaces": rows}, indent=2, allow_nan=False))
     return 0
 
 
 def cmd_neighbors(args: argparse.Namespace) -> int:
-    print(json.dumps({"domain": args.domain, "neighbors": neighbors(args.domain, args.limit)}, indent=2))
+    print(json.dumps({"domain": args.domain, "neighbors": neighbors(args.domain, args.limit)}, indent=2, allow_nan=False))
     return 0
 
 
 def cmd_hierarchy(_: argparse.Namespace) -> int:
-    print(json.dumps({"hierarchy_head": hierarchy_head(15)}, indent=2))
+    print(json.dumps({"hierarchy_head": hierarchy_head(15)}, indent=2, allow_nan=False))
     return 0
 
 
 def cmd_atlas(_: argparse.Namespace) -> int:
-    print(json.dumps(atlas_stats(), indent=2))
+    print(json.dumps(atlas_stats(), indent=2, allow_nan=False))
     return 0
 
 
 def cmd_hardware(args: argparse.Namespace) -> int:
     if getattr(args, "run", False):
         doc = run_hardware_spine(skip_qemu=bool(getattr(args, "skip_qemu", False)))
-        print(json.dumps(doc, indent=2))
+        print(json.dumps(doc, indent=2, allow_nan=False))
         return 0 if doc.get("overall_ok") else 1
-    print(json.dumps(hardware_status(), indent=2))
+    print(json.dumps(hardware_status(), indent=2, allow_nan=False))
     return 0
 
 
@@ -162,7 +162,7 @@ def cmd_snapshot(_: argparse.Namespace) -> int:
                 "multiprover": st.multiprover,
             },
             indent=2,
-        )
+         allow_nan=False)
     )
     return 0
 
@@ -195,12 +195,12 @@ def cmd_audit(_: argparse.Namespace) -> int:
 
 
 def cmd_quantum(_: argparse.Namespace) -> int:
-    print(json.dumps(quantum_status(), indent=2))
+    print(json.dumps(quantum_status(), indent=2, allow_nan=False))
     return 0
 
 
 def cmd_dual(_: argparse.Namespace) -> int:
-    print(json.dumps(matter_dual_status(), indent=2))
+    print(json.dumps(matter_dual_status(), indent=2, allow_nan=False))
     return 0
 
 
@@ -213,27 +213,27 @@ def cmd_matter(args: argparse.Namespace) -> int:
         out["S_quantum"] = compute_domain_S("Quantum_Mechanics")
     except Exception as exc:  # noqa: BLE001
         out["live_S_error"] = str(exc)
-    print(json.dumps(out, indent=2))
+    print(json.dumps(out, indent=2, allow_nan=False))
     return 0
 
 
 def cmd_multiprover(_: argparse.Namespace) -> int:
-    print(json.dumps(multiprover_status(), indent=2))
+    print(json.dumps(multiprover_status(), indent=2, allow_nan=False))
     return 0
 
 
 def cmd_sectors(_: argparse.Namespace) -> int:
-    print(json.dumps(sector_coverage(), indent=2))
+    print(json.dumps(sector_coverage(), indent=2, allow_nan=False))
     return 0
 
 
 def cmd_coverage(_: argparse.Namespace) -> int:
-    print(json.dumps(coverage_checklist(), indent=2))
+    print(json.dumps(coverage_checklist(), indent=2, allow_nan=False))
     return 0
 
 
 def cmd_rules(_: argparse.Namespace) -> int:
-    print(json.dumps({"reality_syntax_rules": reality_syntax_rules()}, indent=2))
+    print(json.dumps({"reality_syntax_rules": reality_syntax_rules()}, indent=2, allow_nan=False))
     return 0
 
 
@@ -241,7 +241,7 @@ def cmd_seeds(args: argparse.Namespace) -> int:
     out: dict = {"seeds": seeds_table()}
     if args.derived:
         out["derived"] = derived_table(args.layer)
-    print(json.dumps(out, indent=2))
+    print(json.dumps(out, indent=2, allow_nan=False))
     return 0
 
 
@@ -273,11 +273,11 @@ def main() -> int:
     sub.add_parser("quantum", help="Quantum mechanics/science coverage + live S").set_defaults(func=cmd_quantum)
 
     def _cmd_qdepth(_: argparse.Namespace) -> int:
-        print(json.dumps(quantum_depth_status(), indent=2))
+        print(json.dumps(quantum_depth_status(), indent=2, allow_nan=False))
         return 0
 
     def _cmd_trinary(_: argparse.Namespace) -> int:
-        print(json.dumps(trinary_syntax_status(), indent=2))
+        print(json.dumps(trinary_syntax_status(), indent=2, allow_nan=False))
         return 0
 
     sub.add_parser("quantum-depth", help="Entanglement/QI depth + unified suite").set_defaults(func=_cmd_qdepth)

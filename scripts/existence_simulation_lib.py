@@ -447,10 +447,10 @@ def material_records_for_benchmark(sim: dict) -> list[dict]:
 
 def persist_simulation(sim: dict) -> tuple[Path, Path]:
     SIM_CACHE.parent.mkdir(parents=True, exist_ok=True)
-    SIM_CACHE.write_text(json.dumps(sim, indent=2), encoding="utf-8")
+    SIM_CACHE.write_text(json.dumps(sim, indent=2, allow_nan=False), encoding="utf-8")
     SIM_REPORT.parent.mkdir(parents=True, exist_ok=True)
     summary = {k: v for k, v in sim.items() if k != "records"}
     summary["record_sample"] = (sim.get("records") or [])[:5]
-    SIM_REPORT.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    SIM_REPORT.write_text(json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8")
     ledger = write_independent_prediction_ledger(sim)
     return SIM_CACHE, ledger

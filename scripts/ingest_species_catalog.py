@@ -63,7 +63,7 @@ def main() -> int:
     species = ingest_species()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["species_catalog"] = species
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  species: {species['species_count']} (metals={species['category_counts']['metals']}, molecules={species['category_counts']['molecules']}, polymers={species['category_counts']['polymers']})")
     print(f"  properties: {species['property_count']}, max error: {species['max_error_pct']:.4f}%")

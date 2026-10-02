@@ -605,7 +605,7 @@ def write_md(doc: dict) -> None:
 def main() -> int:
     print("Model-correct FSOT vs standard (FPC time + residual law)…")
     doc = build()
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     write_md(doc)
     print(f"Wrote {OUT_JSON}")
     print(f"Wrote {OUT_MD}")

@@ -72,7 +72,7 @@ def main() -> int:
     doc["vs_table6"] = diag.get("vs_table6")
     status = "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
     doc["full_sample_status"] = status
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     cz = diag.get("cz_d") or {}
     outcome = {
@@ -116,7 +116,7 @@ def main() -> int:
         ),
     }
     OUTCOME.parent.mkdir(parents=True, exist_ok=True)
-    OUTCOME.write_text(json.dumps(outcome, indent=2), encoding="utf-8")
+    OUTCOME.write_text(json.dumps(outcome, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"Wrote {OUTCOME}")
     for r in rows:

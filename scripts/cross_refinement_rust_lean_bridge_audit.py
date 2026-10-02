@@ -54,7 +54,7 @@ def main() -> int:
             "and host cargo runtime parity."
         ),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     print("CROSS-REFINEMENT RUST_LEAN_BRIDGE AUDIT")
     for k, v in checks.items():

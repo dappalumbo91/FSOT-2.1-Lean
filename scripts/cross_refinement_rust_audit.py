@@ -71,7 +71,7 @@ def main() -> int:
             "Rust replay uses f64 execution; formal spine matches Python decimal when obligations are float-stable."
         ),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     print("CROSS-REFINEMENT RUST EXECUTABLE AUDIT")
     print(f"  connective: {len(connective)} (f64 oracle {connective_ok})")

@@ -444,7 +444,7 @@ def main() -> int:
     )
     args = parser.parse_args()
     report = evaluate_loss_layers(args.dataset)
-    args.output.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     best = report["best"]
     base = report["baseline"]

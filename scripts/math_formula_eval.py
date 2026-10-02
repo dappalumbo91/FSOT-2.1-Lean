@@ -381,7 +381,7 @@ def _hash_str(text: str) -> bytes:
 
 
 def stable_row_key(index: int, row: Mapping[str, object], split_seed: int) -> int:
-    serialized = json.dumps(dict(sorted(row.items())), separators=(",", ":"), ensure_ascii=True)
+    serialized = json.dumps(dict(sorted(row.items())), separators=(",", ":"), ensure_ascii=True, allow_nan=False)
     data = _hash_u64(split_seed) + _hash_u64(index) + _hash_str(serialized)
     return _sip_hash13(data)
 

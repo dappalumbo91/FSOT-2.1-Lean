@@ -157,7 +157,7 @@ def refine_failures(*, gate_pct: float = 1.0) -> dict[str, Any]:
 
 def persist_refinement(doc: dict) -> Path:
     REFINED_OUT.parent.mkdir(parents=True, exist_ok=True)
-    REFINED_OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    REFINED_OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return REFINED_OUT
 
 

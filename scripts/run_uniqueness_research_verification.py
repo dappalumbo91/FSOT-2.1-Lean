@@ -225,7 +225,7 @@ def main() -> int:
         "overall_ok": overall,
         "github_ready": overall and py_ok,
     }
-    REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {REPORT}")
     print(f"overall_ok={overall}")
     return 0 if overall else 1

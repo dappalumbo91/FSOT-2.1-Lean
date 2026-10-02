@@ -203,7 +203,7 @@ def main() -> int:
             "lake": "lake build FSOT",
         },
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {OUT}")
     print(f"VERDICT: {doc['verdict']}")
     return 0 if all_ok else 1

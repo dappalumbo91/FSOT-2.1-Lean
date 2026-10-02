@@ -113,7 +113,7 @@ def main() -> int:
         ),
         "kill": "Individual diagnosis/onset as a 0.5% central. Flip Biology observed.",
     }
-    OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"host_med {host_med:.4f}%  path_med {path_med:.4f}%  n_h={len(hosts)} n_p={len(paths)} "
         f"kappa={kap:.6f}  tau_h={payload['process_time_days_host_d12']:.3f}d "

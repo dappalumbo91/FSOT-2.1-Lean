@@ -82,7 +82,7 @@ def main() -> int:
     }
 
     DATA.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(entries, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(entries, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"Source: {source}")
     return 0

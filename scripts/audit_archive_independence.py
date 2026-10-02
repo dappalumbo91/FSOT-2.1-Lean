@@ -67,8 +67,8 @@ def main() -> int:
         "other_desktop_refs": issues[:100],
         "policy": "I:/FSOT-Physical-Archive is the definitive hub synced to GitHub; C: Desktop is legacy only.",
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
-    print(json.dumps(report, indent=2))
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
+    print(json.dumps(report, indent=2, allow_nan=False))
     return 0 if report["ok"] else 1
 
 

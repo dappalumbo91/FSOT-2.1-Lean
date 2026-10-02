@@ -43,7 +43,7 @@ def main() -> int:
                 "note": "False inequalities — excluded from Coq proof generation.",
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     print(f"Wrote {MARGIN_OUT} ({len(violations)} margin violations, {len(provable)} provable)")

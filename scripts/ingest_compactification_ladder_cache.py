@@ -75,12 +75,12 @@ def main() -> int:
     EXTERNAL.mkdir(parents=True, exist_ok=True)
     ladder = build_ladder_index()
     ladder_path = EXTERNAL / "compactification_ladder_index.json"
-    ladder_path.write_text(json.dumps(ladder, indent=2), encoding="utf-8")
+    ladder_path.write_text(json.dumps(ladder, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {ladder_path} rungs={ladder['rung_count']}")
 
     adjacent = build_adjacent_index()
     adjacent_path = EXTERNAL / "adjacent_rung_coupling_index.json"
-    adjacent_path.write_text(json.dumps(adjacent, indent=2), encoding="utf-8")
+    adjacent_path.write_text(json.dumps(adjacent, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {adjacent_path} pairs={adjacent['adjacent_pair_count']}")
 
     fold = _load_json(DATA / "fold_depth_metrics_benchmark.json")
@@ -96,7 +96,7 @@ def main() -> int:
                 "pooled_median_error_pct": fold.get("pooled_median_error_pct"),
             },
             indent=2,
-        ),
+         allow_nan=False),
         encoding="utf-8",
     )
     print(f"Wrote {fold_path}")
@@ -111,7 +111,7 @@ def main() -> int:
         ],
         "note": "Compactification ladder bulk cache — not stored on main system drive.",
     }
-    (EXTERNAL / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (EXTERNAL / "manifest.json").write_text(json.dumps(manifest, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Compactification ladder cache ready at {EXTERNAL}")
     return 0
 

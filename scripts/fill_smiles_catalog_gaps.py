@@ -60,7 +60,7 @@ def patch_json(json_path: Path, gap_index: dict[tuple[str, str], dict], dry_run:
     meta["catalog_gaps_filled_at"] = datetime.now(timezone.utc).isoformat()
 
     if not dry_run and patched:
-        json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+        json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False), encoding="utf-8")
     return patched
 
 

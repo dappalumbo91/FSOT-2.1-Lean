@@ -175,7 +175,7 @@ def main() -> int:
     registry["experiment_synthesis"] = synthesis
     if synthesis["neuron_cohort_lab"].get("present"):
         registry["neuron_cohort_lab"] = synthesis["neuron_cohort_lab"]
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  neuron FI mean rel err: {synthesis['neuron_hybrid_lab'].get('mean_rel_err')}")
     print(f"  aether distill rows: {synthesis['aether_prime_lab'].get('distill_row_count')}")

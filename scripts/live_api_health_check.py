@@ -460,7 +460,7 @@ def main() -> int:
     fails = [c for c in report["channels"] if c["status"] == "fail"]
     report["fail_count"] = len(fails)
     report["ok_count"] = len(report["channels"]) - len(fails)
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {OUT} ({report['ok_count']} ok / {report['fail_count']} fail)")
     return 1 if fails else 0
 

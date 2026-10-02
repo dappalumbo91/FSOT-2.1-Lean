@@ -211,7 +211,7 @@ def write_expansion(compounds: list[dict], stats: dict) -> None:
         ],
     }
     AUTO_EXPANSION_PATH.parent.mkdir(parents=True, exist_ok=True)
-    AUTO_EXPANSION_PATH.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    AUTO_EXPANSION_PATH.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
 
 def run_rebuild_pipeline() -> int:
@@ -248,7 +248,7 @@ def main() -> int:
     compounds, stats = discover_compounds(include_pharmacology=not args.no_pharmacology)
     existing_n = len(load_existing_cids())
     print(f"Existing panel CIDs: {existing_n}")
-    print(f"Discovery stats: {json.dumps(stats, indent=2)}")
+    print(f"Discovery stats: {json.dumps(stats, indent=2, allow_nan=False)}")
     print(f"New compounds to add: {len(compounds)}")
 
     if args.dry_run:

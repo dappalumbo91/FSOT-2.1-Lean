@@ -61,7 +61,7 @@ def write_jsonl(rows: list[dict], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
         for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+            f.write(json.dumps(row, ensure_ascii=False, allow_nan=False) + "\n")
 
 
 def main() -> int:
@@ -118,7 +118,7 @@ def main() -> int:
         "within_target_2pct": strict_summary.get("within_target_2pct", 0),
         "within_tolerable_5pct": strict_summary.get("within_tolerable_5pct", 0),
     }
-    OUT_SUMMARY.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    OUT_SUMMARY.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT_JSONL} ({len(rows)} rows)")
     print(f"Wrote {OUT_SUMMARY}")
     print(f"  KB catalog formulas: {kb_summary.get('catalog_formulas_total')}")

@@ -82,12 +82,12 @@ def main() -> int:
     EXTERNAL.mkdir(parents=True, exist_ok=True)
     index = build_self_similarity_index()
     index_path = EXTERNAL / "cross_scale_self_similarity_index.json"
-    index_path.write_text(json.dumps(index, indent=2), encoding="utf-8")
+    index_path.write_text(json.dumps(index, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {index_path} motifs={index['motif_count']}")
 
     exo = fetch_nasa_exoplanet_sample()
     exo_path = EXTERNAL / "nasa_exoplanet_sample.json"
-    exo_path.write_text(json.dumps(exo, indent=2), encoding="utf-8")
+    exo_path.write_text(json.dumps(exo, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {exo_path} records={exo.get('record_count', len(exo.get('records') or []))}")
 
     manifest = {
@@ -99,7 +99,7 @@ def main() -> int:
         ],
         "note": "Bulk cross-scale validation cache — not stored on main system drive.",
     }
-    (EXTERNAL / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (EXTERNAL / "manifest.json").write_text(json.dumps(manifest, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Cross-scale bridge cache ready at {EXTERNAL}")
     return 0
 

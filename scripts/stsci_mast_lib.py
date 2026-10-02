@@ -52,7 +52,7 @@ def fetch_caom_cone(ra: float, dec: float, radius_deg: float, *, pagesize: int =
         "removenullcolumns": True,
         "timeout": 120,
     }
-    query = urllib.parse.quote(json.dumps(request_obj))
+    query = urllib.parse.quote(json.dumps(request_obj, allow_nan=False))
     url = f"{MAST_INVOKE}?request={query}"
     req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier79"})
     with urllib.request.urlopen(req, timeout=180) as resp:
@@ -133,9 +133,9 @@ def ingest_mast(*, offline: bool = False) -> dict:
         "api": MAST_INVOKE,
     }
     for path in (external_cache_root() / "mast_live_cache.json", LIVE_CACHE):
-        path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     if source.startswith("MAST_CAOM_live") and objects:
-        BUNDLED_SAMPLE.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        BUNDLED_SAMPLE.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 

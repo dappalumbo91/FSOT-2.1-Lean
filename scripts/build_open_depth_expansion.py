@@ -63,7 +63,7 @@ def _panel(domain: str, records: list[dict], maps: list[str], d_eff: int, source
     doc["depth_pass"] = "open_depth_expansion"
     doc["high_value_gap_id"] = gap_id
     path = ROOT / "data" / out
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"  {out}: n={doc['record_count']} pooled={doc.get('pooled_median_error_pct')}%")
     return doc
 
@@ -94,7 +94,7 @@ def deepen_jarvis() -> dict:
         if len(row) > 2:
             materials.append(row)
     (vendor_dir("jarvis_optimade_dft") / "materials_cache_depth.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(materials), "materials": materials, "url": url}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(materials), "materials": materials, "url": url}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -148,7 +148,7 @@ def deepen_cod() -> dict:
                 row[prop] = val
         structures.append(row)
     (vendor_dir("cod_optimade_structures") / "structures_cache_depth.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(structures), "structures": structures}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(structures), "structures": structures}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -195,7 +195,7 @@ def deepen_gwtc() -> dict:
             }
         )
     (vendor_dir("gwtc_catalog") / "events_cache_depth.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(slim), "events": slim}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(slim), "events": slim}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     records = []
@@ -309,7 +309,7 @@ def deepen_lmfdb_oeis() -> dict:
             )
         )
     (vendor_dir("lmfdb_nf_fields") / "depth_cache.json").write_text(
-        json.dumps({"fetched_at": _now(), "records": len(records), "oeis": len(oeis_docs)}, indent=2),
+        json.dumps({"fetched_at": _now(), "records": len(records), "oeis": len(oeis_docs)}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel("LMFDB_OEIS_Math_Open", records, ["mathematics", "formal"], 14, ["https://www.lmfdb.org/", "https://oeis.org/"], "lmfdb_oeis", "LMFDB+OEIS depth", "lmfdb_oeis_math_open_benchmark.json", "lmfdb_math")
@@ -370,7 +370,7 @@ def deepen_chembl() -> dict:
         )
     )
     (vendor_dir("chembl_deep") / "molecules_depth.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(molecules), "ids": [m.get("molecule_chembl_id") for m in molecules]}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(molecules), "ids": [m.get("molecule_chembl_id") for m in molecules]}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel("ChEMBL_Deep_Open", records, ["chemistry", "biology"], 14, ["https://www.ebi.ac.uk/chembl/api/data/"], "chembl_deep", "ChEMBL multi-molecule depth", "chembl_deep_open_benchmark.json", "chembl_deep")
@@ -478,7 +478,7 @@ def deepen_nuclear() -> dict:
         )
     )
     (vendor_dir("iaea_nuclear_ground_states") / "ground_states_depth.json").write_text(
-        json.dumps({"fetched_at": _now(), "count": len(rows)}, indent=2),
+        json.dumps({"fetched_at": _now(), "count": len(rows)}, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     return _panel("Nuclear_IAEA_Open", records, ["particle", "nuclear"], 16, ["https://www-nds.iaea.org/relnsd/v0/data"], "iaea_nuclear", "IAEA Live Chart depth", "nuclear_iaea_open_benchmark.json", "nuclear_endf_public")
@@ -625,7 +625,7 @@ def main() -> int:
         "results": results,
     }
     out = ROOT / "data" / "open_depth_expansion_report.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {out.relative_to(ROOT)}")
     ok = sum(1 for r in results.values() if r.get("status") == "ok")
     print(f"Depth panels ok: {ok}/{len(results)}")

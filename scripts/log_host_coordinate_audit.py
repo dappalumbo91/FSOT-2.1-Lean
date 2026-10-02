@@ -82,7 +82,7 @@ def main() -> int:
             f"{ugc.get('frozen_h0')}. The frozen value was not rewritten."
         ),
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     for r in rows:
         print(

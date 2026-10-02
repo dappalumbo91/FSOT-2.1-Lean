@@ -37,7 +37,7 @@ def _write_cache(name: str, doc: dict) -> Path:
     doc.setdefault("fetched_at", datetime.now(timezone.utc).isoformat())
     doc.setdefault("credential_free", True)
     path = cache_root() / name
-    path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return path
 
 

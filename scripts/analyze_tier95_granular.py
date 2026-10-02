@@ -73,7 +73,7 @@ def main() -> int:
         print()
 
     out = DATA / "tier95_granular_accuracy_report.json"
-    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {out}")
     return 0
 

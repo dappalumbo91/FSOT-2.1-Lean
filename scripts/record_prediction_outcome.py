@@ -43,7 +43,7 @@ def _git_sha() -> str:
 def append_outcome(row: dict[str, Any]) -> Path:
     LOG.parent.mkdir(parents=True, exist_ok=True)
     with LOG.open("a", encoding="utf-8") as fh:
-        fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+        fh.write(json.dumps(row, ensure_ascii=False, allow_nan=False) + "\n")
     return LOG
 
 

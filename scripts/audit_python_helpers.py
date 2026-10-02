@@ -77,7 +77,7 @@ def main() -> int:
     parser.add_argument("--fail-on-findings", action="store_true")
     args = parser.parse_args()
     doc = audit_scripts()
-    args.report.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.report.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.report}")
     print(f"  scanned={doc['scripts_scanned']} hardcoded={doc['scripts_with_hardcoded_paths']}")
     for row in doc["findings"][:10]:

@@ -7,7 +7,7 @@ from typing import Any
 
 
 def render_html(doc: dict[str, Any]) -> str:
-    payload = json.dumps(doc, ensure_ascii=False)
+    payload = json.dumps(doc, ensure_ascii=False, allow_nan=False)
     payload = payload.replace("</", "<\\/")  # guard script breakout
     return f"""<!DOCTYPE html>
 <html lang="en">

@@ -39,7 +39,7 @@ def main() -> int:
     weather = ingest_weather()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["weather_lab"] = weather
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  hours: {weather['hour_count']}  S_mean: {weather['S_mean']:.4f}")
     return 0

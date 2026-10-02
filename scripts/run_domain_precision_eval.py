@@ -223,7 +223,7 @@ def main() -> int:
     args = parser.parse_args()
     report = evaluate()
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  numeric precision: {report['domains_with_numeric_precision']}/{report['domain_count']}")
     print(f"  target ≤2%: {report['domains_target_band_2pct']}")

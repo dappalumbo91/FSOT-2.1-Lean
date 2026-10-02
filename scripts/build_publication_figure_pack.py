@@ -275,7 +275,7 @@ def main() -> int:
             "pooled_median_of_domains_pct"
         ),
     }
-    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    manifest_path.write_text(json.dumps(manifest, indent=2, allow_nan=False), encoding="utf-8")
 
     print(f"Wrote publication figures to {args.output_dir}")
     for name in manifest["figures"]:

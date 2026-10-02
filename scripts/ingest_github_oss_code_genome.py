@@ -104,7 +104,7 @@ def ingest(*, limit: int | None = None, force: bool = False, stale_days: int | N
         analysis["source"] = source
         analysis["fetched_at"] = datetime.now(timezone.utc).isoformat()
         analysis["content_sha256"] = hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
-        meta_path.write_text(json.dumps(analysis, indent=2), encoding="utf-8")
+        meta_path.write_text(json.dumps(analysis, indent=2, allow_nan=False), encoding="utf-8")
         analyses.append(analysis)
 
     summary = {
@@ -118,7 +118,7 @@ def ingest(*, limit: int | None = None, force: bool = False, stale_days: int | N
     }
     summary_path = VENDOR / "github_oss_code_genome_summary.json"
     ext_summary = cache_path("github_oss", "github_oss_code_genome_summary.json")
-    payload = json.dumps(summary, indent=2)
+    payload = json.dumps(summary, indent=2, allow_nan=False)
     summary_path.write_text(payload, encoding="utf-8")
     ext_summary.write_text(payload, encoding="utf-8")
     return summary
@@ -136,7 +136,7 @@ def main() -> int:
         stale_days = int((spec.get("refresh_schedule") or {}).get("cadence_days") or 0) or None
     print(f"External cache: {external_data_root()}")
     summary = ingest(limit=args.limit, force=args.refresh, stale_days=stale_days)
-    print(json.dumps({"sample_count": summary["sample_count"], "failure_count": summary["failure_count"]}, indent=2))
+    print(json.dumps({"sample_count": summary["sample_count"], "failure_count": summary["failure_count"]}, indent=2, allow_nan=False))
     return 0 if summary["sample_count"] > 0 else 1
 
 

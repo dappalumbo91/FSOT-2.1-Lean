@@ -194,7 +194,7 @@ def main() -> int:
     }
     SCORE_DIR.mkdir(parents=True, exist_ok=True)
     (SCORE_DIR / "RULE_RETRO.json").write_text(
-        json.dumps(out, indent=2), encoding="utf-8"
+        json.dumps(out, indent=2, allow_nan=False), encoding="utf-8"
     )
 
     lines = [

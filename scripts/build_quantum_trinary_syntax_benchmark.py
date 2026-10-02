@@ -49,7 +49,7 @@ def main() -> int:
     doc["summary_physics"] = summary
     doc["policy"] = "fsot_quantum_trinary_same_S"
     doc["ontology"] = summary["ontology"]
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     research = {
         "generated_at": doc["generated_at"],
@@ -75,7 +75,7 @@ def main() -> int:
             "data/trinary_os_tier_e_benchmark.json",
         ],
     }
-    REPORT.write_text(json.dumps(research, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(research, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT} n={doc.get('record_count')} pooled={doc.get('pooled_median_error_pct')}%")
     print(f"  string={summary['sample_reality_string']} opcodes={summary['opcodes']} regs={summary['register_count']}")
     print(f"Wrote {REPORT}")

@@ -329,8 +329,8 @@ def main() -> int:
     parser.add_argument("--quick", action="store_true", help="Skip slow directory size scans")
     args = parser.parse_args()
     doc = audit(skip_fetch=args.skip_fetch, quick=args.quick)
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    print(json.dumps(doc, indent=2))
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
+    print(json.dumps(doc, indent=2, allow_nan=False))
     return 0 if doc["ok"] else 1
 
 

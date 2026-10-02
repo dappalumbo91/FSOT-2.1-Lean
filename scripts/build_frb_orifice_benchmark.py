@@ -330,7 +330,7 @@ def main() -> int:
     else:
         status = "ISOLATE"
     doc["orifice_status"] = status
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     outcome = {
         "pin": PIN,
@@ -366,7 +366,7 @@ def main() -> int:
         ),
     }
     OUTCOME.parent.mkdir(parents=True, exist_ok=True)
-    OUTCOME.write_text(json.dumps(outcome, indent=2), encoding="utf-8")
+    OUTCOME.write_text(json.dumps(outcome, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(f"Wrote {OUTCOME}")
     print(

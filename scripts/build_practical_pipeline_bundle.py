@@ -43,7 +43,7 @@ def main() -> int:
         "embodiment": "Living_FSOT_QEMU + desktop_observer_loop",
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}  all_ok={doc['all_ok']}")
     return 0 if doc["all_ok"] else 1
 

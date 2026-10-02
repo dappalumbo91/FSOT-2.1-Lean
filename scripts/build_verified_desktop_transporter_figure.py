@@ -182,7 +182,7 @@ def main() -> int:
 
     meta = figure_transporter_stack(args.output)
     manifest = args.output.parent / "verified_desktop_transporter_manifest.json"
-    manifest.write_text(json.dumps({"figure": args.output.name, **meta}, indent=2), encoding="utf-8")
+    manifest.write_text(json.dumps({"figure": args.output.name, **meta}, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  records: {meta.get('record_count')}  pooled: {meta.get('pooled_median_error_pct')}%")
     return 0

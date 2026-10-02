@@ -322,7 +322,7 @@ def main() -> int:
                 u = json.loads(u_path.read_text(encoding="utf-8"))
             else:
                 u = fetch_uniprot(acc)
-                u_path.write_text(json.dumps(u, indent=2), encoding="utf-8")
+                u_path.write_text(json.dumps(u, indent=2, allow_nan=False), encoding="utf-8")
                 time.sleep(args.sleep)
             if u.get("ok"):
                 print(f"ok L={u.get('sequence_length')} MW={u.get('mol_weight_da')}")
@@ -339,7 +339,7 @@ def main() -> int:
                 af = json.loads(af_path.read_text(encoding="utf-8"))
             else:
                 af = fetch_alphafold_meta(acc)
-                af_path.write_text(json.dumps(af, indent=2), encoding="utf-8")
+                af_path.write_text(json.dumps(af, indent=2, allow_nan=False), encoding="utf-8")
                 time.sleep(args.sleep)
             if af.get("ok"):
                 print(f"ok global={af.get('globalMetricValue')}")
@@ -393,9 +393,9 @@ def main() -> int:
         },
     }
 
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     (store / "genetics_diversity_pack_report.json").write_text(
-        json.dumps(doc, indent=2), encoding="utf-8"
+        json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8"
     )
 
     fs = doc["fsot"]

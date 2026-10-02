@@ -420,7 +420,7 @@ def main() -> int:
                         "diversity_pack": True,
                         "storage_note": "subsampled optical — not full ADES history",
                     }
-                    out_path.write_text(json.dumps(rec), encoding="utf-8")
+                    out_path.write_text(json.dumps(rec, allow_nan=False), encoding="utf-8")
                     print(f"ok kept={len(optical)} api={payload.get('n_obs')}")
                     optical_meta.append(
                         {
@@ -496,8 +496,8 @@ def main() -> int:
         ],
     }
 
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    (store / "diversity_pack_report.json").write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
+    (store / "diversity_pack_report.json").write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     lines = [
         "# MPCORB diversity pack (storage-capped)",

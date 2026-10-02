@@ -221,7 +221,7 @@ def main() -> int:
         "filled_interconnects": FILLED_INTERCONNECTS,
         "scale_gaps": SCALE_GAPS,
     }
-    OUT_JSON.write_text(json.dumps(tree, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(tree, indent=2, allow_nan=False), encoding="utf-8")
 
     lines = [
         "# Domain family tree — folds, subdomains, between-scale gaps",

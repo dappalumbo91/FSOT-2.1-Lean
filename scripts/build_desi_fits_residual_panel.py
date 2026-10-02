@@ -276,7 +276,7 @@ def build() -> dict:
     doc["catalog_nrows"] = n_total
     doc["sample_objects_zwarn0"] = n_keep
     doc["generated_at"] = _now()
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"Wrote {OUT.name} n={doc['record_count']} pooled={doc.get('pooled_median_error_pct')}% "
         f"sample_objects={n_keep} catalog_nrows={n_total}"
@@ -351,7 +351,7 @@ def build() -> dict:
         slice_doc["frontier_id"] = "desi_edr_table_slice"
         slice_doc["fits_path"] = str(fits_path)
         slice_doc["catalog_nrows"] = n_total
-        OUT_EDR_SLICE.write_text(json.dumps(slice_doc, indent=2), encoding="utf-8")
+        OUT_EDR_SLICE.write_text(json.dumps(slice_doc, indent=2, allow_nan=False), encoding="utf-8")
         print(f"Updated {OUT_EDR_SLICE.name} n={slice_doc['record_count']}")
     except Exception as exc:  # noqa: BLE001
         print(f"  note: edr slice refresh soft-fail: {exc}")
@@ -367,7 +367,7 @@ def build() -> dict:
         "math": "fsot_scaled_only",
     }
     (open_science_large_dir("desi") / "fits_residual_summary.json").write_text(
-        json.dumps(summary, indent=2), encoding="utf-8"
+        json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8"
     )
     return doc
 

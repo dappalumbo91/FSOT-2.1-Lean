@@ -101,7 +101,7 @@ def mark_process_spine(path: Path) -> dict:
         "Process / certificate ledger — not a Layer B measured catalog. "
         "Not densified with formula pads. Excluded from empirical C_thin fills."
     )
-    path.write_text(json.dumps(bench, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(bench, indent=2, allow_nan=False), encoding="utf-8")
     return {"file": path.name, "action": "tagged_process_ledger"}
 
 
@@ -168,7 +168,7 @@ def deepen_science(row: dict) -> dict:
     for key in ("rule_id", "formula", "benchmark_version"):
         if bench.get(key) is not None:
             rebuilt[key] = bench[key]
-    path.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(rebuilt, indent=2, allow_nan=False), encoding="utf-8")
     rec_after = int(rebuilt.get("record_count") or 0)
     med_after = rebuilt.get("pooled_median_error_pct") or rebuilt.get("median_error_pct")
     return {
@@ -214,7 +214,7 @@ def main() -> int:
         ],
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT}")
     print(
         f"  C_thin {report['c_thin_before']} → empirical still thin "

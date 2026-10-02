@@ -211,7 +211,7 @@ def main() -> int:
     doc["h0_global_fsot"] = h0_global
     doc["sh0es_measured_h0"] = sh0es_measured
     doc["sh0es_status"] = "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  hosts={doc['host_count']}  pooled={doc['pooled_median_error_pct']}%")
     return 0

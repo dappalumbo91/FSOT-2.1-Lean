@@ -21,7 +21,7 @@ def main() -> int:
     for name in targets:
         doc = BUILDERS[name]()
         path = output_path(name)
-        path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
         print(f"Wrote {path} — records={doc.get('record_count')} pooled={doc.get('pooled_median_error_pct')}")
     print("Tier L orbital gap-fill benchmarks complete.")
     return 0

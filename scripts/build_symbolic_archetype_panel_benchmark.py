@@ -54,7 +54,7 @@ def main() -> int:
     pooled = float(doc.get("pooled_median_error_pct") if doc.get("pooled_median_error_pct") is not None else 99)
     arch_med = float(meta.get("archetype_channel_median_error_pct") if meta.get("archetype_channel_median_error_pct") is not None else 99)
     doc["panel_status"] = "GREEN" if pooled < 0.5 and arch_med < 1.0 else "YELLOW"
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  records={doc['record_count']}  pooled={doc['pooled_median_error_pct']:.4f}%")
     return 0

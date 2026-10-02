@@ -145,8 +145,8 @@ def main() -> int:
             "Frozen panels were not rewritten."
         ),
     }
-    REPORT.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({k: report[k] if k != "files_updated" else len(updated) for k in report if k != "note"}, indent=2))
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    print(json.dumps({k: report[k] if k != "files_updated" else len(updated) for k in report if k != "note"}, indent=2, allow_nan=False))
     return 0
 
 

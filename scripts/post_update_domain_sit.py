@@ -195,7 +195,7 @@ def main() -> int:
         "ledger_b_sample": b_sample,
         "note": "Live nest + π identities. Ledger A freeze not rewritten. Catalog files not rewritten.",
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"pin={pin} K={_f(K):.9f} cores={len(cores)} miss>0.5%={n_miss}")
     print(f"emergence={doc['n_emergence']} damping={doc['n_damping']} medium={doc['n_medium']}")
     for p in pairs:

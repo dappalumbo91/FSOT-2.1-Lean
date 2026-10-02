@@ -520,7 +520,7 @@ def main() -> int:
         "n_actionable": len(ready),
         "slots": items,
     }
-    OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
 
     lines = [
         "# Prediction expansion map",

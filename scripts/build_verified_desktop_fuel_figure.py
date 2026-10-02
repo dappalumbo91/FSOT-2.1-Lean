@@ -145,7 +145,7 @@ def main() -> int:
 
     meta = figure_verified_desktop_fuels(args.output)
     manifest_path = args.output.parent / "verified_desktop_fuel_figure_manifest.json"
-    manifest_path.write_text(json.dumps({"figure": str(args.output.name), **meta}, indent=2), encoding="utf-8")
+    manifest_path.write_text(json.dumps({"figure": str(args.output.name), **meta}, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  fuels: {len(FSOT_DESIGNED_FUEL_IDS)} designed + gasoline baseline")
     print(f"  records: {meta.get('record_count')}  pooled: {meta.get('pooled_median_error_pct')}%")

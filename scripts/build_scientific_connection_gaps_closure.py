@@ -194,7 +194,7 @@ def main() -> int:
             "255/272 benchmark files non-cosmology",
         ],
     }
-    OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {OUT} — {closed}/{len(gaps)} closed, {c_thin_n} C_thin remaining")
     return 0
 

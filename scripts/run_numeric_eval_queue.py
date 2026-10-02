@@ -195,7 +195,7 @@ def main() -> int:
         "backfill_ran": not args.skip_backfill,
         "pipeline_ran": not args.skip_pipeline,
     }
-    OUT_REPORT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    OUT_REPORT.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {OUT_REPORT}")
     print(f"=== Numeric eval queue ({label}, after) ===")
     for k, v in after.items():

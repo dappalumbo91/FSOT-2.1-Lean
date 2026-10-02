@@ -145,7 +145,7 @@ def main() -> int:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     # Drop bulky hour payload from committed JSON
     out_doc = {k: v for k, v in doc.items() if k != "observed_hours"}
-    args.output.write_text(json.dumps(out_doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(out_doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  classification records: {out_doc['classification_records']}")
     if out_doc.get("median_error_pct") is not None:

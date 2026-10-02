@@ -37,7 +37,7 @@ def main() -> int:
         try:
             doc = fetch_source(src)
             path = vendor_dir(src.id) / "live.json"
-            path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+            path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
             results.append(
                 {
                     "source_id": src.id,
@@ -64,7 +64,7 @@ def main() -> int:
 
     manifest = open_sources_manifest()
     (ROOT / "data" / "open_science_sources_manifest.json").write_text(
-        json.dumps(manifest, indent=2), encoding="utf-8"
+        json.dumps(manifest, indent=2, allow_nan=False), encoding="utf-8"
     )
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -73,7 +73,7 @@ def main() -> int:
         "fail_count": fail,
         "results": results,
     }
-    OUT_SUMMARY.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT_SUMMARY.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {OUT_SUMMARY} ({ok} ok / {fail} fail)")
     return 0 if fail == 0 else 1
 

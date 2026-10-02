@@ -98,7 +98,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
     doc = audit()
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  extension domains: {doc['extension_domain_count']}")
     print(f"  formula corpus portable: {doc['formula_corpus_portable']}")

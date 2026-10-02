@@ -100,7 +100,7 @@ def main() -> int:
         "all_ok": ARCHIVE_DEST.is_dir() and (ARCHIVE_DEST / "thesis_kronos_run_summary.csv").is_file(),
     }
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Synced Kronos → {ARCHIVE_DEST}")
     print(f"  files: {stats.get('files_copied', '?')}  summary_csv: {report['all_ok']}")
     return 0 if report["all_ok"] else 1

@@ -34,7 +34,7 @@ def main() -> int:
     if "math_generator_lab" in registry:
         registry["math_generator_lab"]["rule_corpus_count"] = bench.get("rule_corpus_count")
         registry["math_generator_lab"]["total_rule_count"] = bench.get("total_rule_count")
-    REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    REGISTRY.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {REGISTRY}")
     print(
         f"  corpora: {bench.get('rule_corpus_count')}  "

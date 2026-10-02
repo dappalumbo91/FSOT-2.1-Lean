@@ -116,7 +116,7 @@ def main() -> int:
         "actions": actions,
         "still_thin": [r["panel"] for r in promoted if r["tier_after"] == "C_thin"],
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"C_thin upgrade: {report['c_thin_before']} before → {report['c_thin_after']} after "
         f"({report['promoted_to_B']} → B, {report['promoted_to_A']} → A)"

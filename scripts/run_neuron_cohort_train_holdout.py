@@ -114,7 +114,7 @@ def main() -> int:
 
     doc = build_report(cells, cohort_spec, spec)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     tr = doc.get("train") or {}
     ho = doc.get("holdout") or {}

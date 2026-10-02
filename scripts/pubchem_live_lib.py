@@ -167,7 +167,7 @@ def ingest_pubchem_live(*, cache_path: Path) -> dict:
         "compounds": compounds,
     }
     cache_path.parent.mkdir(parents=True, exist_ok=True)
-    cache_path.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    cache_path.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     return doc
 
 

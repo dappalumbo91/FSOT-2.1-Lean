@@ -49,7 +49,7 @@ def main() -> int:
     out_dir = args.output / bundle["bundle_id"]
     out_dir.mkdir(parents=True, exist_ok=True)
     manifest_path = out_dir / "repro_manifest.json"
-    manifest_path.write_text(json.dumps(bundle, indent=2), encoding="utf-8")
+    manifest_path.write_text(json.dumps(bundle, indent=2, allow_nan=False), encoding="utf-8")
 
     staged: list[str] = []
     if args.stage:
@@ -70,7 +70,7 @@ def main() -> int:
             shutil.copy2(src, dest)
             staged.append(str(dest.relative_to(out_dir)).replace("\\", "/"))
         bundle["staged_files"] = staged
-        manifest_path.write_text(json.dumps(bundle, indent=2), encoding="utf-8")
+        manifest_path.write_text(json.dumps(bundle, indent=2, allow_nan=False), encoding="utf-8")
 
     readme = out_dir / "REPRODUCE.txt"
     readme.write_text(

@@ -87,7 +87,7 @@ def main() -> int:
         },
         "classical_ym_path_integral": "OPEN_NOT_CLAIMED",
     }
-    REPORT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     print(f"\nWrote {REPORT} overall_ok={overall}")
     return 0 if overall else 1
 

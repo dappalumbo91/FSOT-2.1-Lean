@@ -143,7 +143,7 @@ def main() -> int:
             "across proliferation, motility, stability, and imaging interactive systems."
         ),
     }
-    OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
 
     op_bio = report["biological_science"]["operational_tier"]
     print("=== Tier 95 FSOT intrinsic prediction (LODO) ===")

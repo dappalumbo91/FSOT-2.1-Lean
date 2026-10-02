@@ -96,7 +96,7 @@ def fetch_chime() -> int:
         "frbs": list(seen.values()),
     }
     (FRB_DIR / "chime_frb_catalog1_positions.json").write_text(
-        json.dumps(out, indent=2), encoding="utf-8"
+        json.dumps(out, indent=2, allow_nan=False), encoding="utf-8"
     )
     (FRB_DIR / "README.txt").write_text(
         "CHIME/FRB Catalog 1 positions from VizieR J/ApJS/257/59.\n"
@@ -135,7 +135,7 @@ def fetch_abell() -> int:
         "n": len(objects),
         "objects": objects,
     }
-    (CL_DIR / "abell_clusters.json").write_text(json.dumps(doc), encoding="utf-8")
+    (CL_DIR / "abell_clusters.json").write_text(json.dumps(doc, allow_nan=False), encoding="utf-8")
     return len(objects)
 
 

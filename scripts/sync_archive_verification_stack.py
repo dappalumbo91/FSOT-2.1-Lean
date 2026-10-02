@@ -139,7 +139,7 @@ def main() -> int:
         "all_ok": files_ok >= 6 and scripts_ok >= 5,
     }
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     _copy_file(REPORT, ARCHIVE_ROOT / "data" / "publication" / "archive_verification_sync_report.json")
 
     print(f"Synced verification stack → {ARCHIVE_ROOT}")

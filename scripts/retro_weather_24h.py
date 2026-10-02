@@ -209,7 +209,7 @@ def main() -> int:
         "rows": rows_out,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    OUT.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     lines = [
         "# Weather 24 h retrospective",
         "",

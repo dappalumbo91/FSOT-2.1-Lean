@@ -60,7 +60,7 @@ def main() -> int:
         print(f"WARN: {doc['record_count']} records < min_months_total {min_months}")
 
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+    output.write_text(json.dumps(doc, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {output}")
     print(f"  stations: {doc.get('station_count')}  records: {doc.get('record_count')}")
     print(f"  median_err: {doc.get('median_error_pct')}")

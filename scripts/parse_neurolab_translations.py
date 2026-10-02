@@ -154,7 +154,7 @@ def main() -> int:
 
     payload = parse_translations(args.jl_path)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    args.output.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {args.output}")
     for domain, count in payload["counts"].items():
         matched = sum(1 for r in payload["domains"][domain] if r["matched"])

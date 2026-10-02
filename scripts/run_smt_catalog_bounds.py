@@ -179,7 +179,7 @@ def main() -> int:
                     "overall_ok": False,
                 },
                 indent=2,
-            ),
+             allow_nan=False),
             encoding="utf-8",
         )
         return 1
@@ -225,7 +225,7 @@ def main() -> int:
         ),
     }
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    REPORT.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(
         f"SMT catalog bounds: {report['status']} "
         f"(solver={solver_name}, checked={py['checked']}, smt2_asserts={smt_written})"

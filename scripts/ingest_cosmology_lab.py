@@ -56,7 +56,7 @@ def main() -> int:
     cosmology = ingest_cosmology()
     registry = json.loads(args.registry.read_text(encoding="utf-8")) if args.registry.exists() else {}
     registry["cosmology_lambda_cdm"] = cosmology
-    args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
+    args.registry.write_text(json.dumps(registry, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  observables: {cosmology['observable_count']} (w1={cosmology['wave1_count']}, w2={cosmology['wave2_count']}, w3={cosmology['wave3_count']})")
     print(f"  max error: {cosmology['max_error_pct']:.4f}%")
