@@ -561,19 +561,23 @@ def build_dark_sector_open_problems() -> dict:
             continue
         computed = float(row["computed"])
         err = float(row["error_pct"] or _error_pct(computed, measured))
-        records.append(
-            {
-                "lab": "dark_sector_open_lab",
-                "property": prop,
-                "name": name,
-                "computed": computed,
-                "measured": measured,
-                "error_pct": round(err, 6),
-                "wave": wave,
-                "formula": row.get("formula"),
-                "status": "dark_sector_open",
-            }
-        )
+        record = {
+            "lab": "dark_sector_open_lab",
+            "property": prop,
+            "name": name,
+            "computed": computed,
+            "measured": measured,
+            "error_pct": round(err, 6),
+            "wave": wave,
+            "formula": row.get("formula"),
+            "status": "dark_sector_open",
+        }
+        # Cooke et al. 2018 quotes D/H to 1.2%. The seed 1/(π⁴·e⁶) is inside that bar.
+        if name == "D_H_ratio" and measured:
+            sigma = abs(float(measured)) * 0.012
+            record["sigma"] = sigma
+            record["sigma_distance"] = abs(computed - float(measured)) / sigma
+        records.append(record)
 
     errs = [float(r["error_pct"]) for r in records]
     doc = _bench_v11(

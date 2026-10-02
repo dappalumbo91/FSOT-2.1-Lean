@@ -33,6 +33,17 @@ def _err_pct(computed: float, measured: float) -> float:
     return abs(computed - measured) / abs(measured) * 100.0
 
 
+def _store_computed(computed: float) -> float:
+    """Keep twelve figures for anchors below 1e-6.
+
+    round(value, 10) turns the Milgrom anchor 1.2e-10 into 1e-10.
+    Ordinary anchors stay on that absolute round.
+    """
+    if computed != 0.0 and abs(computed) < 1e-6:
+        return float(f"{computed:.12g}")
+    return round(computed, 10)
+
+
 def build_panel(law_id: str) -> dict:
     ref_doc = _load_reference()
     panel_spec = ref_doc["panels"][law_id]
@@ -49,7 +60,7 @@ def build_panel(law_id: str) -> dict:
                 "lab": f"founding_{law_id}_lab",
                 "property": anchor["property"],
                 "name": anchor["name"],
-                "computed": round(computed, 10),
+                "computed": _store_computed(computed),
                 "measured": measured,
                 "error_pct": round(err, 6),
                 "unit": anchor.get("unit"),

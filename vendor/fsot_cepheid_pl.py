@@ -393,6 +393,8 @@ def suite_rows(table_path: Path, nir_path: Path | None = None) -> list[dict[str,
         host_rows = host_mu_vs_trgb(nir_hosts) if "N4258" in nir_hosts else []
         if host_rows:
             mean_d = sum(h["delta"] for h in host_rows) / len(host_rows)
+            trgb_bar = 0.04
+            trgb_pull = abs(mean_d - 0.01) / trgb_bar
             rows.append(
                 {
                     "lab": "cepheid_pl_lab",
@@ -404,7 +406,9 @@ def suite_rows(table_path: Path, nir_path: Path | None = None) -> list[dict[str,
                     "eval_kind": "fsot_prediction",
                     "record_kind": "scalar",
                     "unit": "mag",
-                    "measured_uncertainty": 0.04,
+                    "measured_uncertainty": trgb_bar,
+                    "sigma": trgb_bar,
+                    "sigma_distance": trgb_pull,
                     "note": "Mean (μ_NIR−μ_TRGB) vs Li+2024 0.01±0.04; per-host moduli, not cz/d H0",
                     "n_hosts": float(len(host_rows)),
                     "host_deltas": {h["host"]: round(h["delta"], 4) for h in host_rows},
@@ -622,6 +626,8 @@ def full_sample_suite_rows(
     host_rows = host_mu_vs_trgb(hosts) if "N4258" in hosts else []
     if host_rows:
         mean_d = sum(h["delta"] for h in host_rows) / len(host_rows)
+        trgb_bar = 0.04
+        trgb_pull = abs(mean_d - 0.01) / trgb_bar
         rows.append(
             {
                 "lab": "sh0es_full_sample_lab",
@@ -633,7 +639,9 @@ def full_sample_suite_rows(
                 "eval_kind": "fsot_prediction",
                 "record_kind": "scalar",
                 "unit": "mag",
-                "measured_uncertainty": 0.04,
+                "measured_uncertainty": trgb_bar,
+                "sigma": trgb_bar,
+                "sigma_distance": trgb_pull,
                 "note": "Table 2 intercepts vs Li+2024 TRGB; still not cz/d H0",
                 "n_hosts": float(len(host_rows)),
                 "host_deltas": {h["host"]: round(h["delta"], 4) for h in host_rows},
