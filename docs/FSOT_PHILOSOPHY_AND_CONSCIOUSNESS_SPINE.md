@@ -157,7 +157,7 @@ Rule for training: every generation should tag its **epistemic tier** (proved / 
 
 FSOT's philosophical argument from precision:
 
-1. **343/343 core constants** within 5% (Cosmic Skeleton Key thesis claim)
+1. **Authority targets:** 342 of 343 within 5%. Eight are identity or definition rows. 334 are seed-derived. `Gluon_condensate` is outside 5%. See [`AUTHORITY_REVISION_NOTES.md`](AUTHORITY_REVISION_NOTES.md).
 2. **329/329 extension domains PASS** (verification runner)
 3. **65/65 headline SOTA** beats/meets on certificate
 4. **Consciousness_Expansion_Spine** pooled median **0.0%** (24 observables); species multi-panel **269 / 0.020%**; longevity coupling **890 / 0.022%**; live human `E_con` **20.003601 vs 20.0 W (0.018%)**

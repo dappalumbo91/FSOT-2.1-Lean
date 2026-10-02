@@ -21,6 +21,8 @@ Do not mix these. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md) · knobs: [`docs/FR
 
 Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **AEB2AD** — nest \(D_{\mathrm{eff}}\), derived observed/species, named `_fold_C` unused by \(S\), baryon/DM at Chemistry, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
+The authority summary is **342 / 343** targets within 5%. Eight of the 342 are identity or definition rows. **334** are seed-derived. `DNA_base_pair` is in the 334 and uses the measured Bohr radius as an input. `Gluon_condensate` is the row outside 5%. The file is not edited here. Notes for the next deliberate re-pin: [`docs/AUTHORITY_REVISION_NOTES.md`](docs/AUTHORITY_REVISION_NOTES.md).
+
 > **477** is green *benchmark files*. **~407** is named coverage-map domains. **~403** is atlas CSV rows. **2030** is live atomic obligations (full formal **2594**, catalog **2205**). Do not mix them. Ledger: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md).  
 > Older prose saying **394/394**, **405/405**, **430/432**, **433/433**, **1,863 atomic**, **57% Mathlib**, or **~1912** obligations is **stale**.
 
