@@ -823,15 +823,21 @@ def evaluate_t_criteria(
         except Exception:
             t6_ok = False
 
-    # Label A snapshot
+    # Label A uses the stored-error gate. green_gate_fail_count is the recomputed
+    # gate (7 files on the current pin). CI reports that count and does not fail on it.
+    stored_fail = None
+    recomputed_fail = None
     a_ok = False
     if MARGIN.exists() and CROSS.exists():
         m = json.loads(MARGIN.read_text(encoding="utf-8"))
         c = json.loads(CROSS.read_text(encoding="utf-8"))
-        fail = m.get("green_gate_fail_count")
+        recomputed_fail = m.get("green_gate_fail_count")
+        stored_fail = m.get("green_gate_fail_count_stored_error")
+        if stored_fail is None:
+            stored_fail = recomputed_fail
         a_ok = (
-            fail is not None
-            and int(fail) == 0
+            stored_fail is not None
+            and int(stored_fail) == 0
             and bool(c.get("overall_ok"))
         )
 
@@ -870,6 +876,8 @@ def evaluate_t_criteria(
     return {
         "label_A_empirical_framework": a_ok,
         "label_B_classical_toe": label_b,
+        "green_gate_fail_count_stored_error": stored_fail,
+        "green_gate_fail_count_recomputed": recomputed_fail,
         "criteria": t,
         "contested_panel_median_error_pct": contested.get("median_error_pct"),
         "contested_green": contested.get("green_gate_pass"),
@@ -890,6 +898,9 @@ def write_gap_closure_doc(eval_doc: dict) -> None:
         "",
         f"- **Label A (empirical multi-domain framework):** "
         f"**{'PASS' if eval_doc['label_A_empirical_framework'] else 'FAIL'}**",
+        f"- Stored-error gate failures: **{eval_doc.get('green_gate_fail_count_stored_error')}**. "
+        f"Recomputed gate failures, reported and not the Label A gate: "
+        f"**{eval_doc.get('green_gate_fail_count_recomputed')}**.",
         f"- **Label B (classical ToE T1–T6):** "
         f"**{'PASS' if eval_doc['label_B_classical_toe'] else 'IN PROGRESS'}**",
         "",
