@@ -145,9 +145,9 @@
       "name": "IE_O",
       "target_value": 13.618,
       "unit": "mixed",
-      "fsot_formula": "sin(1)/C_cosm",
-      "computed_value": 13.615286539660229,
-      "error_pct": 0.019926,
+      "fsot_formula": "(sin(1)/C_cosm)*(1+alpha*((1+sin(1))*(1-alpha*(2/pi^2))))",
+      "computed_value": 13.618056803055598,
+      "error_pct": 0.000417,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
