@@ -1247,8 +1247,10 @@ PDG = {
     "sin2_theta_13": 0.0220,
     "delta_pmns_rad": math.radians(197.0),
     "dm2_21": 7.53e-5,
-    "dm2_31_abs": 2.453e-3,
-    "neutrino_m3_over_m2": math.sqrt(2.453e-3 / 7.53e-5),
+    # OD-1, 2026-10-02. Key stays dm2_31. Anchor is Delta m^2_31 (NO),
+    # rpp2024-sum-leptons: 2.455e-3 + 7.53e-5 = 2.5303e-3. Seed formula unchanged.
+    "dm2_31_abs": 2.5303e-3,
+    "neutrino_m3_over_m2": math.sqrt(2.5303e-3 / 7.53e-5),
     # Geometric angles from the SAME global-fit (ρ̄,η̄) — residual-gate these
     "alpha_rad": _PDG_ALPHA_GEOM,
     "beta_rad": _PDG_BETA_GEOM,

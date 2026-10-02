@@ -40,7 +40,7 @@ Brains sit on the Neuroscience nest (`D=11` this edition). Neuron count \(N\) an
 
 ## Matter budget is the chemistry rung
 
-After the nest, Quantum_Mechanics shares Particle at \(D=5\). \(\Omega_b h^2\) and \(\Omega_c h^2\) are the cosmological *inventory* of atoms, not free orbits. That orifice is Chemistry / Physical_Chemistry (first default-look specimen above the particle floor, \(D=6\)). See [`MATTER_BUDGET_OBJECT.md`](MATTER_BUDGET_OBJECT.md). Do not restore QM to \(D=6\).
+After the nest, `derived_D_eff("Quantum_Mechanics")` is 5, the same generation as Particle. The live domain row is \(D_{\mathrm{eff}}=6\) by OD-2 (2026-10-02 18:10 EDT), the pre-FE23A2 value. See [`OWNER_DECISIONS.md`](OWNER_DECISIONS.md). \(\Omega_b h^2\) and \(\Omega_c h^2\) are the cosmological *inventory* of atoms, not free orbits. That orifice is Chemistry / Physical_Chemistry (first default-look specimen above the particle floor, \(D=6\)). See [`MATTER_BUDGET_OBJECT.md`](MATTER_BUDGET_OBJECT.md).
 
 ## Live nest (this edition)
 
@@ -66,6 +66,8 @@ After the nest, Quantum_Mechanics shares Particle at \(D=5\). \(\Omega_b h^2\) a
 | 17 | 21 | Quantum_Gravity |
 | 18 | 23 | Particle_Astrophysics, Astrophysics |
 | 19 | 25 | Cosmology |
+
+The table is `derived_D_eff`. The live Quantum_Mechanics domain uses the OD-2 override, \(D_{\mathrm{eff}}=6\). Extension folds whose parent is Quantum_Mechanics still take `derived_D_eff`, so they stay at 5.
 
 ## Extension parent is the name
 

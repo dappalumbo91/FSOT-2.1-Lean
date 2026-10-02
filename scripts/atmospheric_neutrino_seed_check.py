@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Check the atmospheric splitting (G_Catalan*SUCTION)^3 * (1+(POOF*SUCTION)^2).
 
-The seed file calls this reading dm2_31 and stores the anchor 0.002453.
+The seed file calls this reading dm2_31. OD-1 (2026-10-02) compares it with
+Delta m^2_31 = 2.5303e-3 (NO, rpp2024-sum-leptons), not the old 0.002453 anchor.
 PDG 2026 review Table 14.7 quotes it as Delta m^2_32. The adopted bar is
 the NuFIT global fit that includes Super-Kamiokande and IceCube atmospheric
 data, normal ordering, which is that fit's best ordering:

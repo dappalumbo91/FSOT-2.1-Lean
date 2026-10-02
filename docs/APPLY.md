@@ -44,7 +44,7 @@ Worked examples in-repo:
 - Light fold: [`APPLY_OPTICS.md`](APPLY_OPTICS.md) — CRC \(n_D\) wave vs photon. Neighbor Quantum_Optics nest \(D=8\).
 - Bulk fold: [`APPLY_MATERIALS.md`](APPLY_MATERIALS.md) — CRC density. Same nest generation as Optics (\(D=8\), look \(1\)).
 - Lab-sound fold: [`APPLY_ACOUSTICS.md`](APPLY_ACOUSTICS.md) — CRC \(c\); PREM \(v_P/v_S\). Neighbor Seismology nest \(D=15\).
-- Quantum-to-atom fold: [`APPLY_ATOMIC.md`](APPLY_ATOMIC.md) — NIST hydrogen \(a_0\)/\(R_\infty\); H–Ca ionization. Neighbor Quantum_Mechanics nest \(D=5\) (Particle floor). Atomic/HEP is the live look-split at \(D=6\).
+- Quantum-to-atom fold: [`APPLY_ATOMIC.md`](APPLY_ATOMIC.md) — NIST hydrogen \(a_0\)/\(R_\infty\); H–Ca ionization. Neighbor Quantum_Mechanics derived nest \(D=5\) (Particle floor); live domain \(D_{\mathrm{eff}}=6\) by OD-2 (2026-10-02). Atomic/HEP is the live look-split at \(D=6\).
 - EM fold: [`APPLY_EM.md`](APPLY_EM.md) — CRC \(n_D\) and Maxwell \(n^2\). Neighbor Optics nest \(D=8\).
 - Chemistry ladder: [`APPLY_CHEMISTRY.md`](APPLY_CHEMISTRY.md) — CRC MW / \(T_m\) / \(T_b\) / density. Chemistry / PhysChem nest \(D=6\); Molecular nest \(D=7\).
 - Biology fold: [`APPLY_BIO.md`](APPLY_BIO.md) — NCBI mt-operon / AA MW. Neighbor Biochemistry nest \(D=10\). Dark: do not flip `observed`.

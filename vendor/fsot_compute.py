@@ -293,15 +293,21 @@ def derived_D_eff(name: str) -> int:
     raise KeyError(f"no nest generation for {name!r}")
 
 
+# OD-2, owner decision 2026-10-02 18:10 EDT (pre-FE23A2 value).
+# derived_D_eff is unchanged and still returns 5 for this generation.
+OWNER_D_EFF_OVERRIDES = {"Quantum_Mechanics": 6}
+
+
 def _build_domains() -> dict[str, DomainConfig]:
     """35 orifice rungs. D_eff is compactification depth (5 seeds → D=5, ceiling 5²=25).
-    Look/hits/observed from named fold laws. C is interpretation-only (does not enter S).
+    Quantum_Mechanics is the OD-2 override, 6. Look/hits/observed from named fold laws.
+    C is interpretation-only (does not enter S).
     """
     names = [n for group in NEST_GENERATIONS for n in group]
     domains = [
         DomainConfig(
             name,
-            derived_D_eff(name),
+            OWNER_D_EFF_OVERRIDES.get(name, derived_D_eff(name)),
             _fold_hits(name),
             _fold_look(name),
             mpf(1),
@@ -553,7 +559,9 @@ def wave4() -> list[Result]:
     r.append(Result("sin2_theta12", "2·Poof", 2*POOF, mpf("0.307")))
     r.append(Result("sin2_theta23", "|Chaos|·√e", fabs(CHAOS)*sqrt(E), mpf("0.546")))
     r.append(Result("sin2_theta13", "γ⁶·φ/e", GAMMA**6 * PHI / E, mpf("0.0220")))
-    r.append(Result("Dm2_21/Dm2_32", "γ³·Poof", GAMMA**3 * POOF, mpf("0.0295")))
+    # OD-1, 2026-10-02 18:10 EDT. Formula unchanged. PDG 2024 NO, rpp2024-sum-leptons:
+    # Dm2_31 = 2.455e-3 + 7.53e-5 = 2.5303e-3, so Dm2_21/Dm2_31 = 0.0297593 ± 0.000765.
+    r.append(Result("Dm2_21/Dm2_31", "γ³·Poof", GAMMA**3 * POOF, mpf("0.029759")))
     # CKM remaining
     r.append(Result("|V_ub|", "C_cosm²", C_COSM**2, mpf("0.00382")))
     r.append(Result("|V_td|", "√φ/e⁵", sqrt(PHI)/E**5, mpf("0.00857")))
@@ -584,7 +592,9 @@ def wave4() -> list[Result]:
 def wave5() -> list[Result]:
     r = []
     # Electroweak
-    r.append(Result("Gamma_Z/M_Z", "φ⁵/e⁶", PHI**5 / E**6, mpf("0.02749")))
+    # PDG 2024 rpp2024-sum-gauge-higgs-bosons: 2.4955(23)/91.1880(20) = 0.027366(25).
+    # The old target 0.02749 was this formula's own output. The row stays a miss.
+    r.append(Result("Gamma_Z/M_Z", "φ⁵/e⁶", PHI**5 / E**6, mpf("0.027366")))
     r.append(Result("R_ell", "G³/γ⁶", G_CAT**3 / GAMMA**6, mpf("20.767"), 0.4))
     r.append(Result("R_b", "G/φ³", G_CAT / PHI**3, mpf("0.21629"), 0.1))
     r.append(Result("R_c", "−ln(2) + e/π", -ln(2) + E/PI, mpf("0.1721")))

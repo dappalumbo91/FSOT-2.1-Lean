@@ -519,7 +519,8 @@ PDG: dict[str, float] = {
     "sin2_theta_13": 0.0220,
     "delta_pmns_rad": math.radians(197.0),
     "dm2_21": 7.53e-5,
-    "dm2_31_abs": 2.453e-3,
+    # OD-1, 2026-10-02. Same object as fsot_seed_flavor.PDG["dm2_31_abs"].
+    "dm2_31_abs": 2.5303e-3,
 }
 
 

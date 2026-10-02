@@ -480,7 +480,7 @@ def run_gr_recovery_suite() -> list[dict]:
         _row(
             "neutrino_m3_over_m2",
             seed_neutrino_mass_ratio_m3_m2(),
-            math.sqrt(2.453e-3 / 7.53e-5),
+            math.sqrt(2.5303e-3 / 7.53e-5),  # OD-1: Delta m^2_31 / Delta m^2_21, NO
             claim="T4_neutrino_hierarchy",
             formula="sqrt(dm2_31/dm2_21) seed",
             sector="Flavor",
