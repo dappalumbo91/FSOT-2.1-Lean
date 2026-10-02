@@ -17,9 +17,9 @@ Do not mix these. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md) · knobs: [`docs/FR
 |--------|------|------|-----------|
 | **A closed-form** | **predict** (no measured in the formula) | `python scripts/predict_closed_form.py --observable T_CMB` then compare | quoting 477/477 as this |
 | **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | Accuracy claim: **0** confirmed held-out. Exploratory **359,782** · frozen, pending **0** · confirmed held-out **0** · structural / identity **140,100**. Scalar gate: **50,927** genuine predictions · **140,088** Ledger B corrections · recomputed **470 / 7** (stored-error **477 / 0**). [`docs/EVIDENCE_TIERS.md`](docs/EVIDENCE_TIERS.md) | calling the exploratory count, the correction count, or 477/477 the confirmed accuracy |
-| **C live integrity** | **check** pin / stream / hash | pin **AEB2AD** match · multiprover `overall_ok` | promoting C into A or B |
+| **C live integrity** | **check** pin / stream / hash | pin **2C9442 (previous AEB2AD)** match · multiprover `overall_ok` | promoting C into A or B |
 
-Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **AEB2AD** — nest \(D_{\mathrm{eff}}\), derived observed/species, named `_fold_C` unused by \(S\), baryon/DM at Chemistry, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
+Pin is the SHA-256 prefix of `vendor/fsot_compute.py`. New authority `2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2` (owner decisions OD-1/OD-2 + Γ_Z/M_Z target fix, 2026-10-02); previous AEB2AD. This edition keeps the nest \(D_{\mathrm{eff}}\), derived observed/species, named `_fold_C` unused by \(S\), baryon/DM at Chemistry, \(\pi\) identities, and \(f=\alpha\), and adds the OD-1 neutrino object, the OD-2 Quantum_Mechanics override, and the PDG \(\Gamma_Z/M_Z\) target. Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
 The authority summary is **342 / 343** targets within 5%. Eight of the 342 are identity or definition rows. **334** are seed-derived. `DNA_base_pair` is in the 334 and uses the measured Bohr radius as an input. `Gluon_condensate` is the row outside 5%. The file is not edited here. Notes for the next deliberate re-pin: [`docs/AUTHORITY_REVISION_NOTES.md`](docs/AUTHORITY_REVISION_NOTES.md). Observables whose formula takes no measured input of the same dimension: [`docs/NO_MEASURED_INPUT.md`](docs/NO_MEASURED_INPUT.md). Preregistered rows are scored on their own in `data/held_out_prereg_report.json` and stay out of the green count. Evidence tiers, with confirmed held-out as the accuracy claim: [`docs/EVIDENCE_TIERS.md`](docs/EVIDENCE_TIERS.md) and `data/evidence_tiers.json`.
 
@@ -56,7 +56,7 @@ FSOT is put forward as a **candidate Theory of Everything** under a **frozen tec
 
 ### What ToE PASS means here
 
-1. One seed-derived scalar engine (π, e, φ, γ, G / Catalan) — live pin **AEB2AD** (Paper 03 freeze remains **D1D38A**; [`docs/PIN_LINEAGE.md`](docs/PIN_LINEAGE.md)) — no post-hoc fits; 35 folds frozen.  
+1. One seed-derived scalar engine (π, e, φ, γ, G / Catalan) — live pin **2C9442 (previous AEB2AD)** (Paper 03 freeze remains **D1D38A**; [`docs/PIN_LINEAGE.md`](docs/PIN_LINEAGE.md)) — no post-hoc fits; 35 folds frozen.  
 2. Continuum / fluid dynamics (`vendor/fsot_dynamics.py`) + limit-recovery probes (GR weak field, QM scales, SM bridges).  
 3. Ledger B residual atlas green (live count in [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md), ≤0.5% pooled) — not a Ledger A headline.  
 4. Contested-sector public anchors (H₀ Planck/SH0ES, DESI *w_a*, N_eff, σ₈, Higgs, …) with utilization fixes, not excuses.
@@ -123,7 +123,7 @@ Math key (scientists): [`docs/FSOT_MATH_KEY.md`](docs/FSOT_MATH_KEY.md) · one-p
 
 ## Related embodiments
 
-Cosmology and the neural mind are **domain folds of one** scalar engine. This repository is the public verification face of the Physical Archive, live pin **AEB2AD**. The genetics sibling stays on the Paper 03 freeze **D1D38A**.
+Cosmology and the neural mind are **domain folds of one** scalar engine. This repository is the public verification face of the Physical Archive, live pin **2C9442 (previous AEB2AD)**. The genetics sibling stays on the Paper 03 freeze **D1D38A**.
 
 | Project | Link |
 |---------|------|
@@ -161,7 +161,7 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — π, e, φ, γ, and G (Catalan), **no post-hoc fits**, with \(D_{\mathrm{eff}}\) **derived from the nest** ([`docs/FROZEN_KNOBS.md`](docs/FROZEN_KNOBS.md)).
 
-Ledger **A** predicts from closed forms (`predict_closed_form.py`). Ledger **B** is catalog *correction* \(c=m(1+|S|f)\): **140,088** structural corrections and **50,927** genuine predictions remain in the scalar gate. On stored `error_pct` the file gate is **477 / 0**. On recomputed \(|c-m|/|m|\) it is **470 / 7**. That file count is not an accuracy claim. Ledger **C** is pin/stream integrity. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md). Formal corpus Mathlib-class depth **5248/5248** and formula-authority **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** are Ledger C / formal. The live pin is **AEB2AD**. The stored authority file still stamps the earlier close **D1D38A**. Densify: [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md).
+Ledger **A** predicts from closed forms (`predict_closed_form.py`). Ledger **B** is catalog *correction* \(c=m(1+|S|f)\): **140,088** structural corrections and **50,927** genuine predictions remain in the scalar gate. On stored `error_pct` the file gate is **477 / 0**. On recomputed \(|c-m|/|m|\) it is **470 / 7**. That file count is not an accuracy claim. Ledger **C** is pin/stream integrity. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md). Formal corpus Mathlib-class depth **5248/5248** and formula-authority **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** are Ledger C / formal. The live pin is **2C9442 (previous AEB2AD)**. The stored authority file still stamps the earlier close **D1D38A**. Densify: [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md).
 
 Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator + Mathlib depth campaign), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2205** multiprover obligations). The 2026-09-29 pass is `overall_ok: true` (Coq 49/49, Isabelle 46/46, Rust replay 2130, QEMU passed). ESP32 was skipped, so the eight-way hardware flag is false.
 
@@ -618,7 +618,7 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 | Catalog multiprover obligations | **2205** |
 | Lean formal modules | **562** |
 | Lean Mathlib depth (full Formal) | **5248/5248 (100%)** |
-| Formula authority | **CLOSED** · ZERO_FREE · live pin **AEB2AD** (stored stamp D1D38A) |
+| Formula authority | **CLOSED** · ZERO_FREE · live pin **2C9442 (previous AEB2AD)** (stored stamp D1D38A) |
 | Clean-clone Lean rebuild | **PASS** (2206 jobs, `95a1113`) |
 | Clean-clone Mathlib path | **PASS** |
 | Tier A_strong (status snapshot 2026-09-17) | **118** |

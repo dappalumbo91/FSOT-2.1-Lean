@@ -1,6 +1,6 @@
 # Goal tracks — in progress (not claimed beaten)
 
-**Pin:** AEB2AD · These were coarse “nos.” They are **goals**. Same law, more data, right object.
+**Pin:** 2C9442 (previous AEB2AD) · These were coarse “nos.” They are **goals**. Same law, more data, right object.
 
 | Track | Accurate answer today | Goal | Kill |
 |-------|----------------------|------|------|

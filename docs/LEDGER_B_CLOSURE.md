@@ -1,6 +1,6 @@
 # Ledger B closed (depth / role)
 
-**Pin:** AEB2AD · **Cite as ToE accuracy:** **no**  
+**Pin:** 2C9442 (previous AEB2AD) · **Cite as ToE accuracy:** **no**  
 Machine: [`../data/ledger_b_closure.json`](../data/ledger_b_closure.json)  
 Rebuild: `python scripts/close_ledger_b.py`
 

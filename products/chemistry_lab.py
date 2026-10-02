@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Chemistry lab product — CRC water, three zooms. Ledger B correction. Pin AEB2AD."""
+"""Chemistry lab product — CRC water, three zooms. Ledger B correction. Pin 2C9442 (previous AEB2AD)."""
 from __future__ import annotations
 
 import sys

@@ -1,6 +1,6 @@
 # Sickness two-system — host + pathogen (public data)
 
-**Pin:** AEB2AD · **Product:** [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics) · **Hub:** `products/sickness_coupling.py`
+**Pin:** 2C9442 (previous AEB2AD) · **Product:** [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics) · **Hub:** `products/sickness_coupling.py`
 
 Person-level onset is **not** a 0.5% central today. The work is to couple two
 systems on the same pin with **public structure**, then iron the outcome in

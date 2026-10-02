@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Weather window product — scored NDBC cells. Not ECMWF S2S. Pin AEB2AD."""
+"""Weather window product — scored NDBC cells. Not ECMWF S2S. Pin 2C9442 (previous AEB2AD)."""
 from __future__ import annotations
 
 import json
@@ -10,7 +10,7 @@ LATEST = ROOT / "results" / "dated_forecast_scores" / "LATEST.json"
 
 
 def main() -> int:
-    print("product=weather_monitor pin=AEB2AD ledger=B_correct kill=ECMWF_S2S_beat_claim")
+    print("product=weather_monitor pin=2C9442 ledger=B_correct kill=ECMWF_S2S_beat_claim")
     if not LATEST.is_file():
         print("missing results/dated_forecast_scores/LATEST.json — run score_earth_fluid_forecasts.py")
         return 1

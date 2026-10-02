@@ -4375,7 +4375,7 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     next_dig = [r for r in rows if r.get("next_dig")]
     return {
         "generated_at": _now(),
-        "pin": "AEB2AD",
+        "pin": "2C9442",
         "clay_prize_claimed": False,
         "clay_problems_remaining": int(flags["clay_problems_remaining"]),
         "fsot_green_gate_pct": FSOT_GREEN_GATE_PCT,
@@ -4587,7 +4587,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
     lines = [
         "# Millennium functions — accuracy vs public SOTA",
         "",
-        f"**Pin:** AEB2AD · **Clay Prize claimed:** **no** · **Generated:** `{summary['generated_at']}`",
+        f"**Pin:** 2C9442 (previous AEB2AD) · **Clay Prize claimed:** **no** · **Generated:** `{summary['generated_at']}`",
         "",
         "Clay’s three gates (Qualifying Outlet, two years, community acceptance) are a *social process*.",
         "They live in [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) and stay honest zeros.",

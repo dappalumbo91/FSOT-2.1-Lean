@@ -1,6 +1,6 @@
 # H₀ direction — priors, not a second law
 
-**Live pin:** AEB2AD. **Freeze pin:** D1D38A. Frozen prediction JSON is not rewritten from this page.
+**Live pin:** 2C9442 (previous AEB2AD). **Freeze pin:** D1D38A. Frozen prediction JSON is not rewritten from this page.
 
 ## What is pinned
 

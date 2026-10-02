@@ -1,8 +1,8 @@
 {
-  "freeze_date": "2026-09-14",
-  "pin_prefix": "AEB2AD",
+  "freeze_date": "2026-10-02",
+  "pin_prefix": "2C9442",
   "domain_count": 35,
-  "domain_table_sha256": "8e30e85e72091462c4d66df2d498afb36ccbc2d40eb5df01b4e083947c79dad3",
+  "domain_table_sha256": "8cde2e8bfafa2576eb4f5c6199f1f5b647b573d3d759ebf5556924a3364a42d1",
   "k_line_present": true,
   "k_line_sha256": "520f7bd28060075a64c6570096695205a00be17f6a70e1057c64fb43be948155",
   "note": "K = \u2026(1\u2212\u03c0\u207b\u2074); C_EFF uses \u03c0\u207b\u2074; C_COSM = 1/(\u03c6 \u03c0\u00b2). Look is 1 except Atomic e/\u03c0 and HEP 1\u2212POOF/\u03c0. Hits 0 except HEP=1. D_eff is the orifice rung (5 seeds \u2192 D=5, ceiling 25). f_domain = ALPHA.",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "Quantum_Mechanics",
-      "D_eff": 5,
+      "D_eff": 6,
       "hits": 0,
       "delta_psi": 1.0,
       "delta_theta": 1.0,

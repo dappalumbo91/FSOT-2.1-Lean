@@ -4,7 +4,7 @@ Damian Palumbo made these decisions on 2026-10-02 at 18:10 EDT. This note record
 
 No constant, gate, or other domain parameter was changed. `derived_D_eff` is unchanged. Preregistration `TOE-PREREG-20260909` stays on its original pin. These post-prereg owner decisions are reported separately from preregistered results.
 
-Authority SHA-256 of the edited `vendor/fsot_compute.py` (CRLF bytes) is `2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2`. Previous authority is `AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170`.
+New authority `2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2` (owner decisions OD-1/OD-2 + Γ_Z/M_Z target fix, 2026-10-02); previous AEB2AD. That digest is the CRLF bytes of `vendor/fsot_compute.py`. `scripts/fsot_hash_gate.py` stores it as `AUTHORITY_SHA256`. `PREVIOUS_OWNER_OD_SHA256` stores `AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170`. Prediction freezes, including `predictions/domain_freezes/AEB2AD_mapping.json`, Paper 03, and `TOE-PREREG-20260909`, were not rewritten. `scripts/audit_parameter_count.py` rewrites `data/domain_table_freeze.json` when the pin prefix changes. That file is the identity freeze for the new pin. Desktop copies of `fsot_compute.py` were not edited.
 
 ## OD-1 — neutrino ratio object is Δm²₂₁/Δm²₃₁ (normal ordering)
 
@@ -53,7 +53,7 @@ Rows that do not use S_QUANT stay put: Omega_b_h2 0.02246162141864744, Omega_m 0
 - Quantum_Materials
 - Quantum_Mechanics_Entanglement_Depth_Panel
 
-`scripts/assert_derived_folds.py` checks `derived_D_eff("Quantum_Mechanics") == derived_D_eff("Particle_Physics")`. That remains true.
+`scripts/assert_derived_folds.py` checks `derived_D_eff("Quantum_Mechanics") == derived_D_eff("Particle_Physics")`. That remains true. The same script used to require `S_QUANT` to stay off `S_CHEM`, which was the D_eff 5 signature. Live `S_QUANT` now matches `S_CHEM` because both sit at D_eff 6. `Omega_b_h2` still multiplies `S_CHEM` (`|S_cosm|·(1 − S_chem)`), and that chemistry reading stays inside 0.5% of 0.02237. The kill-path now requires the live override to be 6 and the derived nest to stay 5.
 
 ### Ledger B
 

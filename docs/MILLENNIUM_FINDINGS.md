@@ -1,6 +1,6 @@
 # Findings, review, and where to improve
 
-**Pin:** AEB2AD · **Clay not claimed** · Clean-clone stamp `overall_ok=true` at
+**Pin:** 2C9442 (previous AEB2AD) · **Clay not claimed** · Clean-clone stamp `overall_ok=true` at
 [`../data/reproduce_stamp.json`](../data/reproduce_stamp.json).
 
 Spine: [`FUNCTION_NOT_FORMULA.md`](FUNCTION_NOT_FORMULA.md).  

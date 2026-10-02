@@ -1,6 +1,6 @@
 # Millennium Prize track — official rules + FSOT native objects
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no**  
+**Pin:** 2C9442 (previous AEB2AD) · **Clay Prize claimed:** **no**  
 **Rules:** [CMI Millennium Prize Rules](https://www.claymath.org/millennium-problems/rules/) (Board, 26 September 2018)  
 **PDF:** https://www.claymath.org/wp-content/uploads/2022/03/millennium_prize_rules_0.pdf  
 **Problems:** https://www.claymath.org/millennium-problems/

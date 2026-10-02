@@ -1,6 +1,6 @@
 # The millenium questions are about functions in reality
 
-**Pin:** AEB2AD · **Clay Prize claimed:** **no** · GitHub is not a Qualifying Outlet.
+**Pin:** 2C9442 (previous AEB2AD) · **Clay Prize claimed:** **no** · GitHub is not a Qualifying Outlet.
 
 Clay froze a *manuscript formula* as the prize object. That formula is a guess about
 how to write the question. It is not automatically the function that exists in

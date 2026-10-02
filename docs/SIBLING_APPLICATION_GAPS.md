@@ -1,6 +1,6 @@
 # Coverage vs product — where a new GitHub text/simulation belongs
 
-**Pin:** AEB2AD · Hub is the **authority**. Siblings **quote** the pin; they do not fork the scalar.
+**Pin:** 2C9442 (previous AEB2AD) · Hub is the **authority**. Siblings **quote** the pin; they do not fork the scalar.
 
 This audit is for the next open-source texts and simulators. Two different ledgers:
 
@@ -73,7 +73,7 @@ Do not stand up a “YM uniqueness repo” that pretends the probes are the theo
 
 ## High-value sibling / text slots (physics and application)
 
-These are **application gaps**, not residual holes. Each should pin AEB2AD,
+These are **application gaps**, not residual holes. Each should pin 2C9442,
 cite [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md), and keep kill criteria.
 
 | Slot | Hub already has | Sibling would add | Kill |
@@ -102,7 +102,7 @@ CASP/CAMEO blind, dated `2026-09-09` after `valid_to`.
 
 ```text
 git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
-# pin AEB2AD — do not copy-paste a second vendor/fsot_compute.py
+# pin 2C9442 — do not copy-paste a second vendor/fsot_compute.py
 ```
 
 1. Import `fsot_scaled` / quote the oracle hash prefix.

@@ -1,6 +1,6 @@
 # FSOT path-sum — native path integral
 
-**Pin:** AEB2AD · Lean: `FSOT/Formal/UniquenessAttractor.lean` (`poof_hold`, `path_sum2`)  
+**Pin:** 2C9442 (previous AEB2AD) · Lean: `FSOT/Formal/UniquenessAttractor.lean` (`poof_hold`, `path_sum2`)  
 **Python:** `vendor/fsot_path_sum.py`
 
 The path integral **in this model** is a sum over discrete process-time branches

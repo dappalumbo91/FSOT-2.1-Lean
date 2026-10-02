@@ -4,7 +4,7 @@
 
 Run this if you want to **break FSOT fast** — not read 12,000 lines of narrative first.
 
-**Live authority:** pin **AEB2AD** (match=True) · green **477/477** · multiprover overall_ok=True  
+**Live authority:** pin **2C9442 (previous AEB2AD)** (match=True) · green **477/477** · multiprover overall_ok=True  
 Full human guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) · audience map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) · math: [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md)
 
 Picture first (do not silo H₀): [`CONCEPTS.md`](CONCEPTS.md) C2–C3, C8, C10 · [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md)  
@@ -47,7 +47,7 @@ python scripts/audit_parameter_count.py
 
 | Check | Expected |
 |-------|----------|
-| Pin | **AEB2AD** with `pin_match: true` in `docs/CURRENT_STATUS.md` |
+| Pin | **2C9442 (previous AEB2AD)** with `pin_match: true` in `docs/CURRENT_STATUS.md` |
 | Benchmark green | **477/477** fail 0 (`data/benchmark_margin_audit.json`) |
 | Gate | pooled median ≤ **0.5%** |
 | Parameter audit | **ZERO_FREE** |

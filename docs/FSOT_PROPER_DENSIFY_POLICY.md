@@ -1,7 +1,7 @@
 # FSOT proper densify policy
 
 **Rule:** densify only with **your formula** against **real measured data**.  
-**After lock \(T_0\) (2026-09-09, then-pin D1D38A; live AEB2AD):** a miss is not a fold edit.
+**After lock \(T_0\) (2026-09-09, then-pin D1D38A; new authority `2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2` (owner decisions OD-1/OD-2 + Γ_Z/M_Z target fix, 2026-10-02); previous AEB2AD):** a miss is not a fold edit.
 
 ## Fold edits are not residual repair
 

@@ -61,15 +61,18 @@ def main() -> int:
         if s == 0:
             issues.append(f"extension {sample} scalar is zero")
 
-    # Matter budget uses chemistry, not QM
+    # Matter budget uses chemistry, not the QM label.
+    # OD-2 (2026-10-02) sets the live Quantum_Mechanics domain to D_eff 6.
+    # derived_D_eff stays 5, so the live scalar matches S_CHEM. That match is
+    # the restored pre-FE23A2 reading. Omega_b_h2 still multiplies S_CHEM.
+    if DOMAINS["Quantum_Mechanics"].D_eff != 6:
+        issues.append("OD-2 live Quantum_Mechanics D_eff is not 6")
+    if derived_D_eff("Quantum_Mechanics") != 5:
+        issues.append("derived Quantum_Mechanics D_eff moved off 5")
     omb_chem = abs(float(S_COSM)) * (1.0 - float(S_CHEM))
-    omb_qm = abs(float(S_COSM)) * (1.0 - float(S_QUANT))
-    if abs(omb_chem - omb_qm) < 1e-12:
-        issues.append("S_chem collapsed onto S_quant — baryon object not relabeled")
+    if abs(float(S_QUANT) - float(S_CHEM)) > 1e-12:
+        issues.append("OD-2 live S_QUANT does not match S_CHEM at D_eff 6")
     err_chem = abs(omb_chem - 0.02237) / 0.02237 * 100
-    err_qm = abs(omb_qm - 0.02237) / 0.02237 * 100
-    if err_qm < 5:
-        issues.append("QM-class Omega_b no longer shows the nest-collapse miss")
     if err_chem > 0.5:
         issues.append(f"Chemistry-rung Omega_b outside 0.5% ({err_chem:.3f}%)")
 
@@ -107,7 +110,7 @@ def main() -> int:
         return 1
     print("OK derived folds")
     print(f"  Neuro D={derived_D_eff('Neuroscience')} QM D={derived_D_eff('Quantum_Mechanics')}")
-    print(f"  Omega_b chem={omb_chem:.6f} ({err_chem:.3f}%)  qm-class={omb_qm:.6f} ({err_qm:.3f}%)")
+    print(f"  Omega_b chem={omb_chem:.6f} ({err_chem:.3f}%)  live QM D={DOMAINS['Quantum_Mechanics'].D_eff}")
     print(f"  medium orifices={len(MEDIUM_ORIFICES)} species={len(SPECIES)}")
     return 0
 

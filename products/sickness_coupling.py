@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sickness coupling product — host + pathogen lengths. Not a diagnosis. Pin AEB2AD."""
+"""Sickness coupling product — host + pathogen lengths. Not a diagnosis. Pin 2C9442 (previous AEB2AD)."""
 from __future__ import annotations
 
 import json
@@ -10,7 +10,7 @@ SMOKE = ROOT / "data" / "sickness_two_system_smoke.json"
 
 
 def main() -> int:
-    print("product=sickness_coupling pin=AEB2AD ledger=B_correct kill=person_onset_as_0.5pct")
+    print("product=sickness_coupling pin=2C9442 ledger=B_correct kill=person_onset_as_0.5pct")
     if not SMOKE.is_file():
         print("missing data/sickness_two_system_smoke.json — run scripts/smoke_sickness_two_system.py")
         return 1

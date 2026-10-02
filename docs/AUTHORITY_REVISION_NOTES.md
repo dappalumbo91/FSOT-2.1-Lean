@@ -1,7 +1,15 @@
 # Authority revision notes
 
+## 2026-10-02 · 2C9442
+
+New authority `2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2` (owner decisions OD-1/OD-2 + Γ_Z/M_Z target fix, 2026-10-02); previous AEB2AD.
+OD-1 renames the neutrino row to `Dm2_21/Dm2_31` and sets the display target to 0.029759.
+OD-2 sets the live Quantum_Mechanics \(D_{\mathrm{eff}}\) to 6. `derived_D_eff` still returns 5.
+The \(\Gamma_Z/M_Z\) target is 0.027366. The formula is unchanged.
+The B-01 line numbers below were counted on the AEB2AD file and are not renumbered.
+
 These notes are for the next time the authority file is deliberately re-pinned.
-`vendor/fsot_compute.py` is unchanged. Pin **AEB2AD**. Nothing below is a value edit.
+The inventory below is the AEB2AD reading aid. It is not a new value edit.
 
 `full_report()` prints 343 constants with targets and 342 within 5%. Read that 342 as two groups:
 

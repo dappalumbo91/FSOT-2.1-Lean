@@ -1,6 +1,6 @@
 # What the Millennium Navier–Stokes statement is — vs what FSOT is doing
 
-**Pin:** AEB2AD · Scoreboard: [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) · Outcomes: [`../results/millennium_named_outcomes.md`](../results/millennium_named_outcomes.md)
+**Pin:** 2C9442 (previous AEB2AD) · Scoreboard: [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) · Outcomes: [`../results/millennium_named_outcomes.md`](../results/millennium_named_outcomes.md)
 
 These are **two different objects**. Related physics (3D incompressible flow). Mixing them is how false credit happens.
 

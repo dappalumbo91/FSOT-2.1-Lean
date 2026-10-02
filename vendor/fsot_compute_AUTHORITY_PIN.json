@@ -1,13 +1,15 @@
 {
-  "repinned_at": "2026-09-14T23:10:00+00:00",
-  "authority_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
-  "pin_prefix": "AEB2AD",
-  "previous_pin_prefix": "3FBCE5",
-  "previous_authority_sha256": "3FBCE5F87825F15024BBE49CFD90E06BD4C16DBD278AB988AFF123F97D71FEFF",
+  "repinned_at": "2026-10-02T22:10:00+00:00",
+  "authority_sha256": "2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2",
+  "pin_prefix": "2C9442",
+  "previous_pin_prefix": "AEB2AD",
+  "previous_authority_sha256": "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170",
+  "species_pin": "3FBCE5",
+  "derived_d_pin": "FE23A2",
   "pi_identity_pin": "3090BC",
   "decimal_knob_pin": "D1D38A",
   "github_repo": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
   "compute_matches_certificate": true,
   "gitattributes": "vendor/fsot_compute.py -text",
-  "note": "Edition AEB2AD: _fold_C named (does not enter S). Ledger A numbers unchanged from 3FBCE5. Lean 0.99/0.01 replaced by pi identities. GitHub is the authority."
+  "note": "New authority 2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2 (owner decisions OD-1/OD-2 + Gamma_Z/M_Z target fix, 2026-10-02); previous AEB2AD. Edition AEB2AD named _fold_C (does not enter S). Ledger A numbers unchanged from 3FBCE5. GitHub is the authority."
 }

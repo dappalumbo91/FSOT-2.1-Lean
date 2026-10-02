@@ -188,7 +188,7 @@ def main() -> int:
         by[r["class"]] = by.get(r["class"], 0) + 1
     closure = {
         "generated_at": _now(),
-        "pin": "AEB2AD",
+        "pin": "2C9442",
         "cite_as_toe_accuracy": False,
         "green_gate": "477/477 stays; this file is depth/role, not a new residual gate",
         "ledger_b_empirical_open": len(open_thin),

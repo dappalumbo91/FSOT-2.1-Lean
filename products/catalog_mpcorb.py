@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""MPCORB catalog product — class residual, not one ε per rock. Pin AEB2AD."""
+"""MPCORB catalog product — class residual, not one ε per rock. Pin 2C9442 (previous AEB2AD)."""
 from __future__ import annotations
 
 import json
@@ -10,7 +10,7 @@ BENCH = ROOT / "data" / "mpcorb_fsot_benchmark.json"
 
 
 def main() -> int:
-    print("product=catalog_mpcorb pin=AEB2AD ledger=B_correct kill=one_epsilon_per_asteroid")
+    print("product=catalog_mpcorb pin=2C9442 ledger=B_correct kill=one_epsilon_per_asteroid")
     if not BENCH.is_file():
         print("missing data/mpcorb_fsot_benchmark.json")
         return 1

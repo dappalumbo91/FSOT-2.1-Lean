@@ -1,6 +1,6 @@
 # Field products (hub entry points)
 
-**Live pin:** AEB2AD. These are **application CLIs** on public tables. They quote the oracle; they do not fork `vendor/fsot_compute.py`.
+**Live pin:** 2C9442 (previous AEB2AD). These are **application CLIs** on public tables. They quote the oracle; they do not fork `vendor/fsot_compute.py`.
 
 Ledger: **B corrects** (catalog residual). Not Ledger A predict. Not a Clay prize. Not ECMWF beaten.
 

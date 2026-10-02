@@ -1,6 +1,6 @@
 # No decimal knobs — identities
 
-**Live pin:** AEB2AD. Freeze-era pin D1D38A is historical — [`PIN_LINEAGE.md`](PIN_LINEAGE.md).  
+**Live pin:** 2C9442 (previous AEB2AD). Freeze-era pin D1D38A is historical — [`PIN_LINEAGE.md`](PIN_LINEAGE.md).  
 **Peer review:** out of scope.
 
 “Zero free parameters” means the engine is **self-derived**. Assigned decimals (`0.99`, `0.01`, `10`, per-domain `0.85`…) were a drift. They are replaced by seed identities. A miss goes to [`../results/MISSES.md`](../results/MISSES.md). We do **not** put the decimals back to chase a residual.
@@ -75,4 +75,4 @@ The table is `derived_D_eff`. The live Quantum_Mechanics domain uses the OD-2 ov
 
 ## Hash gate
 
-`python scripts/audit_parameter_count.py` fails if these identities move without a new pin. Previous pin **D1D38A** held the rounded decimals. **3090BC** held π identities with assigned \(D\). **FE23A2** derived \(D_{\mathrm{eff}}\). **3FBCE5** derived observed/species and the baryon/DM chemistry object. This edition names `_fold_C` (unused by \(S\)). Python, `FSOT.Scalar` (Float), and Lean `FSOT.Formal` Real \(k\) / \(C_{\mathrm{eff}}\) use \(\pi\) identities (\(1-\pi^{-4}\), \(\pi^{-4}\)). `get_domain_params` (Real) follows `DerivedNest` \(D\) and the named look/hits/observed laws. Biology is a dark medium (live \(S<0\)).
+`python scripts/audit_parameter_count.py` fails if these identities move without a new pin. **2C9442** is this edition. New authority `2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2` (owner decisions OD-1/OD-2 + Γ_Z/M_Z target fix, 2026-10-02); previous AEB2AD. **AEB2AD** named `_fold_C` (unused by \(S\)). Previous pin **D1D38A** held the rounded decimals. **3090BC** held π identities with assigned \(D\). **FE23A2** derived \(D_{\mathrm{eff}}\). **3FBCE5** derived observed/species and the baryon/DM chemistry object. Python, `FSOT.Scalar` (Float), and Lean `FSOT.Formal` Real \(k\) / \(C_{\mathrm{eff}}\) use \(\pi\) identities (\(1-\pi^{-4}\), \(\pi^{-4}\)). `get_domain_params` (Real) follows `DerivedNest` \(D\) and the named look/hits/observed laws. Biology is a dark medium (live \(S<0\)).

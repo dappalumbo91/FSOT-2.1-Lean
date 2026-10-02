@@ -42,7 +42,7 @@ Everyone who will **run code** also reads [`REPRODUCIBILITY.md`](REPRODUCIBILITY
 
 ## Accuracy rule (non-negotiable)
 
-1. **Pin** = first 6 hex of SHA-256 of `vendor/fsot_compute.py` (live **AEB2AD** when pin_match is true).  
+1. **Pin** = first 6 hex of SHA-256 of `vendor/fsot_compute.py` (live **2C9442 (previous AEB2AD)** when pin_match is true).  
 2. **Green count** = `data/benchmark_margin_audit.json` → `green_gate_pass_count` / `benchmark_file_count` (gate ≤ **0.5%** pooled median).  
 3. **Multiprover** = `data/cross_proof_verification_report.json` → `overall_ok`.  
 4. If a doc disagrees with [`CURRENT_STATUS.md`](CURRENT_STATUS.md), **the status file wins** until the doc is regenerated.

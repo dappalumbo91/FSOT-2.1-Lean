@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Re-score stored Ledger B rows with the live law. Does not overwrite them.
 
-Live law: c = m (1 + |S| ALPHA), S from vendor/fsot_compute.py (pin AEB2AD).
+Live law: c = m (1 + |S| ALPHA), S from vendor/fsot_compute.py (pin 2C9442, previous AEB2AD).
 Stored rows that predate that law keep their values. This report is the
 side-by-side count for Damian. Replacing stored values is a separate decision.
 """
@@ -177,7 +177,7 @@ def main() -> int:
             by_file[path.name] = dict(file_counts)
     report = {
         "law": "c = m (1 + |S| ALPHA)",
-        "pin": "AEB2AD",
+        "pin": "2C9442",
         "stored_values_overwritten": False,
         "decision": "Left for Damian. This file is the side-by-side count only.",
         "rows_scored": scored,

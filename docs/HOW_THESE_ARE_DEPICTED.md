@@ -1,6 +1,6 @@
 # How these problems are normally depicted — vs FSOT panels
 
-**Pin:** AEB2AD · **Clay not claimed.**
+**Pin:** 2C9442 (previous AEB2AD) · **Clay not claimed.**
 
 People who attempt millenium problems publish a *picture of the formula*.
 FSOT publishes a *picture of the function that has data*. Generate:

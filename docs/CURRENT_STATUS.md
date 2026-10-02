@@ -10,12 +10,14 @@
 
 | Item | Value |
 |------|-------|
-| Pin | **AEB2AD** |
+| Pin | **2C9442 (previous AEB2AD)** |
 | Match | **True** |
-| SHA-256 | `AEB2ADAD6E80F487…` |
+| SHA-256 | `2C9442B7295A1D39…` |
 | Path | `vendor/fsot_compute.py` |
 | Formula authority | **FORMULA_AUTHORITY_SYSTEM_CLOSED** (all_ok=True) |
 | Parameters | **ZERO_FREE — 0.99/0.01/10 are π identities; D_eff from nest; look/hits/observed named laws; species inherit Neuroscience; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.** |
+
+New authority `2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2` (owner decisions OD-1/OD-2 + Γ_Z/M_Z target fix, 2026-10-02); previous AEB2AD. The pin row was updated on 2026-10-02. Empirical counts in this snapshot were not regenerated.
 
 ## Three ledgers (never mixed)
 

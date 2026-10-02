@@ -1,7 +1,7 @@
 # Physics completion status — what “finished” means here
 
 **Edition:** 2026-08-05  
-**Authority pin:** AEB2AD  
+**Authority pin:** new authority `2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2` (owner decisions OD-1/OD-2 + Γ_Z/M_Z target fix, 2026-10-02); previous AEB2AD  
 **Regenerate scoreboard:** `python scripts/build_toe_gap_closure.py` · `python scripts/audit_all_benchmark_margins.py` · `python scripts/build_repo_status_snapshot.py`
 
 ---

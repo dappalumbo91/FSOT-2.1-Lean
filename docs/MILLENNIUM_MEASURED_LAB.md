@@ -1,6 +1,6 @@
 # Millennium measured-compare lab
 
-**Pin:** AEB2AD · Public Apache-2.0:
+**Pin:** 2C9442 (previous AEB2AD) · Public Apache-2.0:
 [https://github.com/dappalumbo91/fsot-millennium-measured](https://github.com/dappalumbo91/fsot-millennium-measured)
 
 FSOT 2.1 (`dappalumbo91/FSOT-2.1-Lean`) is the authority. This sibling vendors the

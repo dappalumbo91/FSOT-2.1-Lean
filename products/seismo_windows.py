@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Seismology window product — 39 km cells / φ^4 days. Not UTC hypocenter. Pin AEB2AD."""
+"""Seismology window product — 39 km cells / φ^4 days. Not UTC hypocenter. Pin 2C9442 (previous AEB2AD)."""
 from __future__ import annotations
 
 import json
@@ -10,7 +10,7 @@ SCORES = ROOT / "results" / "dated_forecast_scores"
 
 
 def main() -> int:
-    print("product=seismo_windows pin=AEB2AD ledger=B_correct kill=UTC_hypocenter_as_0.5pct")
+    print("product=seismo_windows pin=2C9442 ledger=B_correct kill=UTC_hypocenter_as_0.5pct")
     rows = []
     for p in sorted(SCORES.glob("*_score.json")):
         blob = json.loads(p.read_text(encoding="utf-8"))

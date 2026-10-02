@@ -171,7 +171,7 @@ def main() -> int:
     channel_med = {p: _med(e) for p, e in by_prop.items()}
     n_struct = len(rows) - len(tight)
     outcome = {
-        "pin": "AEB2AD",
+        "pin": "2C9442",
         "status": status,
         "pooled_median_error_pct": doc.get("pooled_median_error_pct"),
         "n_scalar": len(tight),

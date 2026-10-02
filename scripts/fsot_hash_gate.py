@@ -11,6 +11,9 @@ from pathlib import Path
 from fsot_paths import REPO_ROOT, portable_mode, rel_repo_path
 
 AUTHORITY_SHA256 = (
+    "2C9442B7295A1D39928C5C7CCB81280B443210681FAA74C4D8D4DF37D43A23D2"
+)
+PREVIOUS_OWNER_OD_SHA256 = (
     "AEB2ADAD6E80F487772C5DF90A2E3DDA71624AB831A6A83B94AB471AC9AAC170"
 )
 PREVIOUS_SPECIES_SHA256 = (
@@ -37,6 +40,7 @@ STALE_SHA256 = (
 
 KNOWN_HASHES: dict[str, str] = {
     AUTHORITY_SHA256: "canonical",
+    PREVIOUS_OWNER_OD_SHA256: "previous_owner_od",
     PREVIOUS_SPECIES_SHA256: "previous_species_observed_chem_rung",
     PREVIOUS_DERIVED_D_SHA256: "previous_derived_D_nest",
     PREVIOUS_PI_IDENTITY_SHA256: "previous_pi_identities_assigned_D",
@@ -118,6 +122,7 @@ def build_hash_gate_payload(source: Path) -> dict:
         "synced_at": datetime.now(timezone.utc).isoformat(),
         "known_hashes": {
             "canonical": AUTHORITY_SHA256,
+            "previous_owner_od": PREVIOUS_OWNER_OD_SHA256,
             "pre_ledger_align": PRE_LEDGER_ALIGN_SHA256,
             "extended_fork": EXTENDED_FORK_SHA256,
             "stale": STALE_SHA256,

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Optics n_D product — CRC index on Optics fold, not Chemistry MW. Pin AEB2AD."""
+"""Optics n_D product — CRC index on Optics fold, not Chemistry MW. Pin 2C9442 (previous AEB2AD)."""
 from __future__ import annotations
 
 import sys
@@ -14,7 +14,7 @@ from fsot_compute import PHI  # noqa: E402
 
 
 def main() -> int:
-    print("product=optics_nd pin=AEB2AD ledger=B_correct kill=water_eps80_as_n2")
+    print("product=optics_nd pin=2C9442 ledger=B_correct kill=water_eps80_as_n2")
     rows = [
         ("water_nD_20C", 1.3330, "Optics"),
         ("ice_Ih_nD", 1.309, "Optics"),

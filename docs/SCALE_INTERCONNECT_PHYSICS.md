@@ -1,6 +1,6 @@
 # Between-scale interconnects — one fluid, adjacent folds
 
-**Pin:** AEB2AD · **no new coefficient**  
+**Pin:** 2C9442 (previous AEB2AD) · **no new coefficient**  
 **Panel:** `data/between_scale_interconnect_benchmark.json`  
 **Refresh:** `python scripts/build_scale_interconnect_benchmark.py`  
 **Outcome:** [`../results/between_scale_interconnect_outcome.json`](../results/between_scale_interconnect_outcome.json)

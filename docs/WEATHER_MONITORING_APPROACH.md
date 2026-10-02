@@ -1,6 +1,6 @@
 # Weather (and Earth-fluid) monitoring — approach before the product
 
-**Pin:** AEB2AD  
+**Pin:** 2C9442 (previous AEB2AD)  
 This is the **mathematics and loop** for a later always-on weather/seismic sibling, the same way Genetics and Quantum are siblings. It is not that product. No unpublished device specs.
 
 When the always-on system exists, it will ingest continuously, shorten `dt`, and add station graphs. The **valve and the score** should stay these.

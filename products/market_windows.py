@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Market process product — Economics class window, not a ticker. Pin AEB2AD."""
+"""Market process product — Economics class window, not a ticker. Pin 2C9442 (previous AEB2AD)."""
 from __future__ import annotations
 
 import json
@@ -10,7 +10,7 @@ LAYER = ROOT / "data" / "market_process_layer.json"
 
 
 def main() -> int:
-    print("product=market_windows pin=AEB2AD ledger=B_correct kill=ticker_close_as_0.5pct")
+    print("product=market_windows pin=2C9442 ledger=B_correct kill=ticker_close_as_0.5pct")
     if not LAYER.is_file():
         print("missing data/market_process_layer.json — run scripts/build_market_process_layer.py")
         return 1

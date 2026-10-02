@@ -1,6 +1,6 @@
 # Object scoring — do not kill the wrong row
 
-**As-of:** 2026-09-07 · freeze `TOE-PREREG-20260806` · freeze-pin **D1D38A** · live pin **AEB2AD**
+**As-of:** 2026-09-07 · freeze `TOE-PREREG-20260806` · freeze-pin **D1D38A** · live pin **2C9442 (previous AEB2AD)**
 
 Calendar watches (Euclid / JWST / DESI — not retunes): [`../results/WATCHES.md`](../results/WATCHES.md).
 
