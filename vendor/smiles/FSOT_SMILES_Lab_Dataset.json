@@ -181,9 +181,9 @@
       "name": "IE_Na",
       "target_value": 5.139,
       "unit": "mixed",
-      "fsot_formula": "\u03b3\u207b\u00b3 \u2212 C_cosm",
-      "computed_value": 5.137985034888274,
-      "error_pct": 0.01975,
+      "fsot_formula": "\u03b3\u207b\u00b3 \u2212 C_cosm*(1-alpha*((phi^3)*(1-alpha*(pi/phi))))",
+      "computed_value": 5.139076784659831,
+      "error_pct": 0.001494,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
