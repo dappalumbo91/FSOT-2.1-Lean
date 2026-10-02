@@ -30,20 +30,45 @@ jobs:
       - name: Benchmark margin audit (green gate)
         run: python scripts/audit_all_benchmark_margins.py
 
-      - name: Assert zero green-gate failures
+      - name: Assert margin audit report
         run: |
           python - <<'PY'
           import json, sys
           m = json.load(open("data/benchmark_margin_audit.json", encoding="utf-8"))
-          raw = m.get("green_gate_fail_count")
-          if raw is None:
-              print("missing green_gate_fail_count")
+          required = (
+              "green_gate_fail_count",
+              "green_gate_fail_count_stored_error",
+              "green_gate_pass_count",
+              "green_gate_pass_count_stored_error",
+              "genuine_prediction_count",
+              "structural_correction_count",
+              "error_pct_disagreement_count",
+              "error_pct_crosses_half_pct_count",
+              "unlisted_recomputed_gate_failures",
+          )
+          for key in required:
+              if key not in m:
+                  print("missing", key)
+                  sys.exit(1)
+          print(
+              "stored",
+              m["green_gate_pass_count_stored_error"],
+              "recomputed",
+              m["green_gate_pass_count"],
+              "recomputed_fail",
+              m["green_gate_fail_count"],
+              "disagree",
+              m["error_pct_disagreement_count"],
+              "cross_0.5",
+              m["error_pct_crosses_half_pct_count"],
+          )
+          if m["unlisted_recomputed_gate_failures"]:
+              print("unlisted", m["unlisted_recomputed_gate_failures"])
               sys.exit(1)
-          fail = int(raw)
-          n = int(m.get("benchmark_file_count") or 0)
-          print(f"green {n - fail}/{n} fail={fail}")
-          if fail != 0:
-              print("FAIL green_gate_failures:", m.get("green_gate_failures"))
+          if int(m.get("classifier_fail_count") or 0) != 0:
+              sys.exit(1)
+          if int(m["green_gate_fail_count_stored_error"]) != 0:
+              print("stored-error gate regressed")
               sys.exit(1)
           PY
 

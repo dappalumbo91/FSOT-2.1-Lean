@@ -302,6 +302,105 @@ def _median_or_none(values: list[float]) -> float | None:
     return float(median(values)) if values else None
 
 
+# Half a unit in the fourth decimal of a percent. Writer output is commonly
+# round(error, 6); differences inside this band are display grain.
+ERROR_PCT_DISPLAY_TOL = 5e-4
+
+
+def _stored_error_pct(r: dict) -> float | None:
+    e = r.get("error_pct")
+    if e is None:
+        return None
+    try:
+        return float(e)
+    except (TypeError, ValueError):
+        return None
+
+
+def recomputed_relative_error_pct(r: dict) -> float | None:
+    """|computed - measured| / |measured| × 100 from the row's own fields.
+
+    Returns None when measured is 0 or either field is not numeric.
+    Percent of a zero measured value is undefined.
+    """
+    comp = r.get("computed")
+    meas = r.get("measured")
+    if not isinstance(comp, (int, float)) or not isinstance(meas, (int, float)):
+        return None
+    measured = float(meas)
+    if measured == 0.0:
+        return None
+    return abs(float(comp) - measured) / abs(measured) * 100.0
+
+
+def _stored_error_reason(r: dict) -> str | None:
+    """Why a row must not be gated on |computed-measured|/|measured|.
+
+    Sigma-distance rows store error_pct in units of the published uncertainty,
+    not as a percent of measured. Match flags store a 0/1 outcome in measured.
+    Inequality rows store whether a limit holds; computed is the limit.
+    """
+    if r.get("sigma") is not None or r.get("sigma_distance") is not None:
+        return "stored_sigma"
+    if isinstance(r.get("match"), bool) or r.get("expected_holes") is True:
+        return "stored_match_flag"
+    formula = str(r.get("formula") or "")
+    prop = str(r.get("property") or "").lower()
+    if any(tok in formula for tok in ("≤", "≥", "<=", ">=")):
+        return "stored_inequality_bound"
+    if "_under_" in prop or prop.endswith("_le_1"):
+        return "stored_inequality_bound"
+    kind = str(r.get("eval_kind") or "").lower()
+    meas = r.get("measured")
+    if (
+        kind == "dynamics_integration"
+        and isinstance(meas, (int, float))
+        and float(meas) == 1.0
+        and _stored_error_pct(r) == 0.0
+    ):
+        return "stored_dynamics_flag"
+    return None
+
+
+def gate_error_pct(r: dict) -> tuple[float | None, str]:
+    """Error the scalar gate uses, and the reason that figure was chosen."""
+    stored = _stored_error_pct(r)
+    reason = _stored_error_reason(r)
+    if reason is not None:
+        return stored, reason
+    recomputed = recomputed_relative_error_pct(r)
+    if recomputed is None:
+        return stored, "stored_measured_zero_or_missing"
+    return recomputed, "recomputed"
+
+
+def error_pct_disagrees(r: dict) -> dict[str, Any] | None:
+    """Stored error_pct versus the recomputed percent, past display grain.
+
+    Sigma-distance rows are omitted here. Their stored figure is a different unit,
+    so a numeric gap is not a percent-error disagreement.
+    """
+    if r.get("sigma") is not None or r.get("sigma_distance") is not None:
+        return None
+    stored = _stored_error_pct(r)
+    recomputed = recomputed_relative_error_pct(r)
+    if stored is None or recomputed is None:
+        return None
+    if abs(stored - recomputed) <= ERROR_PCT_DISPLAY_TOL:
+        return None
+    return {
+        "name": r.get("name"),
+        "property": r.get("property"),
+        "eval_kind": r.get("eval_kind"),
+        "stored_error_pct": stored,
+        "recomputed_error_pct": recomputed,
+        "computed": r.get("computed"),
+        "measured": r.get("measured"),
+        "ledger_b_scale_step": is_ledger_b_scale_step(r),
+        "gate_reason": _stored_error_reason(r) or "recomputed",
+    }
+
+
 def classifier_metrics(records: list[dict]) -> dict[str, Any]:
     """Accuracy-based metrics for binary {0,1} classifier records."""
     cls = [r for r in records if classify_record(r) == "classifier"]
@@ -345,16 +444,21 @@ def scalar_metrics(records: list[dict], *, file_name: str = "") -> dict[str, Any
     from scientific_measurement_lib import literature_aware_error_pct
 
     errs = []
+    stored_errs = []
     effective_errs = []
     gate_errs: list[float] = []
     max_err = 0.0
+    max_stored_err = 0.0
     max_gate_err = 0.0
     max_effective_any = 0.0
     max_row: dict | None = None
+    max_stored_row: dict | None = None
     max_gate_row: dict | None = None
     max_effective_row: dict | None = None
     rounding_ghost_count = 0
     catalog_crosswalk_count = 0
+    disagreement_count = 0
+    disagreement_crosses_half_pct = 0
 
     for r in records:
         if classify_record(r, file_name=file_name) != "scalar":
@@ -366,10 +470,26 @@ def scalar_metrics(records: list[dict], *, file_name: str = "") -> dict[str, Any
             ef = float(e)
         except (TypeError, ValueError):
             continue
-        errs.append(ef)
-        if ef > max_err:
-            max_err = ef
+        stored_errs.append(ef)
+        if ef > max_stored_err:
+            max_stored_err = ef
+            max_stored_row = r
+        gate_value, gate_reason = gate_error_pct(r)
+        if gate_value is None:
+            continue
+        # The scalar gate uses the recomputed percent. Sigma-distance rows,
+        # match flags, and inequality limits keep the stored figure: that
+        # figure is not |computed-measured|/|measured|.
+        used = float(gate_value)
+        errs.append(used)
+        if used > max_err:
+            max_err = used
             max_row = r
+        gap = error_pct_disagrees(r)
+        if gap is not None and gate_reason == "recomputed":
+            disagreement_count += 1
+            if gap["recomputed_error_pct"] > MAX_SCALAR_ERROR_PCT and ef <= MAX_SCALAR_ERROR_PCT:
+                disagreement_crosses_half_pct += 1
 
         comp = r.get("computed")
         meas = r.get("measured")
@@ -377,15 +497,15 @@ def scalar_metrics(records: list[dict], *, file_name: str = "") -> dict[str, Any
             try:
                 aware = literature_aware_error_pct(float(comp), float(meas), r)
             except (TypeError, ValueError):
-                aware = {"effective_error_pct": ef, "comparison_kind": "raw"}
+                aware = {"effective_error_pct": used, "comparison_kind": "raw"}
         else:
-            aware = {"effective_error_pct": ef, "comparison_kind": "raw"}
+            aware = {"effective_error_pct": used, "comparison_kind": "raw"}
 
         eff_raw = aware.get("effective_error_pct")
-        eff = float(eff_raw if eff_raw is not None else ef)
+        eff = float(eff_raw if eff_raw is not None else used)
         effective_errs.append(eff)
         contested = is_contested_record(r)
-        gate_err = eff if contested else ef
+        gate_err = eff if contested else used
         gate_errs.append(gate_err)
         if gate_err > max_gate_err:
             max_gate_err = gate_err
@@ -411,13 +531,18 @@ def scalar_metrics(records: list[dict], *, file_name: str = "") -> dict[str, Any
                 max_raw_effective = max_err
 
     med = _median_or_none(errs)
+    stored_med = _median_or_none(stored_errs)
     effective_med = _median_or_none(effective_errs)
     gate_med = _median_or_none(gate_errs)
     tier_med = effective_med if effective_med is not None else (gate_med if gate_med is not None else med)
     return {
         "scalar_count": len(errs),
         "scalar_median_error_pct": med,
+        "scalar_median_stored_error_pct": stored_med,
         "max_scalar_error_pct": max_err if errs else None,
+        "max_stored_scalar_error_pct": max_stored_err if stored_errs else None,
+        "stored_error_disagreement_count": disagreement_count,
+        "stored_error_crosses_half_pct_count": disagreement_crosses_half_pct,
         "max_scalar_name": (max_row or {}).get("name"),
         "max_scalar_property": (max_row or {}).get("property"),
         "effective_scalar_median_error_pct": effective_med,
@@ -430,6 +555,7 @@ def scalar_metrics(records: list[dict], *, file_name: str = "") -> dict[str, Any
         "rounding_ghost_scalar_count": rounding_ghost_count,
         "catalog_crosswalk_scalar_count": catalog_crosswalk_count,
         "strict_scalar_pass": not gate_errs or max_gate_err <= MAX_SCALAR_ERROR_PCT,
+        "strict_scalar_pass_stored_error": not stored_errs or max_stored_err <= MAX_SCALAR_ERROR_PCT,
         "effective_scalar_pass": not effective_errs or max_raw_effective <= MAX_SCALAR_ERROR_PCT,
         "max_gate_scalar_error_pct": max_gate_err if gate_errs else None,
         "max_gate_scalar_name": (max_gate_row or {}).get("name"),
@@ -506,6 +632,14 @@ def analyze_benchmark(doc: dict, *, file_name: str = "") -> dict[str, Any]:
         and classifier["classifier_pass"]
         and (scalar["scalar_count"] == 0 or scalar["strict_scalar_pass"])
     )
+    stored_pooled = scalar.get("scalar_median_stored_error_pct")
+    if scalar["scalar_count"] == 0:
+        stored_pooled = None
+    green_pass_stored = (
+        (stored_pooled is None or stored_pooled <= MAX_MEDIAN_ERROR_PCT)
+        and classifier["classifier_pass"]
+        and (scalar["scalar_count"] == 0 or scalar["strict_scalar_pass_stored_error"])
+    )
 
     return {
         "excluded": False,
@@ -516,6 +650,7 @@ def analyze_benchmark(doc: dict, *, file_name: str = "") -> dict[str, Any]:
         "scalar_pooled_median_error_pct": scalar_pooled,
         "official_pooled_median_error_pct": official_pooled,
         "green_gate_pass": green_pass,
+        "green_gate_pass_stored_error": green_pass_stored,
         "scalar_gate_applicable": scalar["scalar_count"] > 0,
         "green_gate_pass_pooled_only": green_pass,
         **classes,

@@ -16,7 +16,7 @@ Do not mix these. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md) · knobs: [`docs/FR
 | Ledger | Verb | Live | Forbidden |
 |--------|------|------|-----------|
 | **A closed-form** | **predict** (no measured in the formula) | `python scripts/predict_closed_form.py --observable T_CMB` then compare | quoting 477/477 as this |
-| **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | **140,088** structural corrections · **50,927** genuine predictions still in the scalar gate · **315 / 315** of those files green · file-level residual gate **477 / 477** (not an accuracy claim) | calling 477/477, or the correction count, ToE accuracy |
+| **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | **140,088** structural corrections · **50,927** genuine predictions · recomputed gate **465 / 12** (stored-error gate was **477 / 0**) | calling 477/477, or the correction count, ToE accuracy |
 | **C live integrity** | **check** pin / stream / hash | pin **AEB2AD** match · multiprover `overall_ok` | promoting C into A or B |
 
 Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **AEB2AD** — nest \(D_{\mathrm{eff}}\), derived observed/species, named `_fold_C` unused by \(S\), baryon/DM at Chemistry, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
@@ -158,7 +158,7 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — π, e, φ, γ, and G (Catalan), **no post-hoc fits**, with \(D_{\mathrm{eff}}\) **derived from the nest** ([`docs/FROZEN_KNOBS.md`](docs/FROZEN_KNOBS.md)).
 
-Ledger **A** predicts from closed forms (`predict_closed_form.py`). Ledger **B** is catalog *correction* \(c=m(1+|S|f)\): **140,088** structural corrections and **50,927** genuine predictions remain in the scalar gate (**315 / 315** of those files green). The file-level residual gate is **477 / 477** at ≤0.5% pooled. That file count is not an accuracy claim. Ledger **C** is pin/stream integrity. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md). Formal corpus Mathlib-class depth **5248/5248** and formula-authority **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** are Ledger C / formal. The live pin is **AEB2AD**. The stored authority file still stamps the earlier close **D1D38A**. Densify: [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md).
+Ledger **A** predicts from closed forms (`predict_closed_form.py`). Ledger **B** is catalog *correction* \(c=m(1+|S|f)\): **140,088** structural corrections and **50,927** genuine predictions remain in the scalar gate. On stored `error_pct` the file gate is **477 / 0**. On recomputed \(|c-m|/|m|\) it is **465 / 12**. That file count is not an accuracy claim. Ledger **C** is pin/stream integrity. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md). Formal corpus Mathlib-class depth **5248/5248** and formula-authority **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** are Ledger C / formal. The live pin is **AEB2AD**. The stored authority file still stamps the earlier close **D1D38A**. Densify: [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md).
 
 Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator + Mathlib depth campaign), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2205** multiprover obligations). The 2026-09-29 pass is `overall_ok: true` (Coq 49/49, Isabelle 46/46, Rust replay 2130, QEMU passed). ESP32 was skipped, so the eight-way hardware flag is false.
 
@@ -275,7 +275,7 @@ This is not poetry layered on curve fits. It is a **falsifiable engineering spec
 This work makes five contributions at arXiv preprint standard:
 
 1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across a **~407-name coverage map**. **50,927** genuine predictions remain in the scalar gate. **140,088** rows are Ledger B structural corrections and are not counted as predictions. No per-observable least-squares tuning.
-2. **Ledger B catalog residual** — **140,088** corrections use \(c=m(1+|S|f)\). **315 / 315** files that still have genuine predictions pass the ≤0.5% gate. The file-level residual gate is **477 / 477**. Median-of-medians **0.005537779313588844%** was the pre-split figure over 414 medians. The tighter 0.05% score is closed, with 0 failing. None of these file counts is a ToE accuracy claim.
+2. **Ledger B catalog residual** — **140,088** corrections use \(c=m(1+|S|f)\). **303 / 315** files that still have genuine predictions pass the recomputed ≤0.5% gate. Stored `error_pct` was **477 / 0**. Recomputed \(|c-m|/|m|\) is **465 / 12**. Median-of-medians **0.005537779313588844%** was the pre-split figure over 414 medians. None of these file counts is a ToE accuracy claim.
 3. **Ledger A contested-sector closed forms** — H₀, σ₈, BBN, hierarchy, dark-energy proxies are emitted with `predict_closed_form.py` / seed expressions, then compared. Do not quote the 477-file gate as those numbers.
 4. **Five-prover formal triangulation** — **2030** atomic obligations (full formal **2594**) exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` — proof assistants as scientific instruments, not software-only checks.
 5. **Executable falsification registry** â€” Preregistered predictions **PRED-001–084**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
@@ -545,7 +545,7 @@ Formula-faithful only: same statements, stronger constructive proof shape (term-
 ### 5.3 Benchmark margin gate
 
 - **GREEN:** pooled median ≤ 0.5% AND classifier ≥ 99.5%  
-- **Result:** file gate **477/477** still passes. Scalar gate: **50,927** genuine predictions, **315 / 315** of those files green. Structural corrections: **140,088**. Source: `data/benchmark_margin_audit.json`.
+- **Result:** stored `error_pct` gate **477 / 0**. Recomputed \(|c-m|/|m|\) gate **465 / 12**. Scalar gate: **50,927** genuine predictions, **303 / 315** of those files green on the recomputed figure. Structural corrections: **140,088**. Source: `data/benchmark_margin_audit.json`.
 
 ### 5.4 AI assistance â€” human responsibility
 
@@ -606,8 +606,9 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 | MPCORB catalog objects | **1,554,101** (~0.023% residual) |
 | Genuine predictions in the scalar gate | **50,927** |
 | Structural corrections (Ledger B) | **140,088** |
-| Files that still have gated scalars | **315 / 315** green |
-| Benchmark files at the ≤0.5% file gate | **477/477** (not an accuracy claim) |
+| Files that still have gated scalars | **303 / 315** green on recomputed error |
+| Stored `error_pct` file gate | **477 / 0** |
+| Recomputed \(\|c-m\|/\|m\|\) file gate | **465 / 12** |
 | Median-of-medians residual | **0.005537779313588844%** (414 prediction medians, pre-split figure) |
 | Worst domain max scalar error | **0.441042%** (Zebrafish predictive panel) |
 | Tighter 0.05% score | **closed, 0 failing** |
