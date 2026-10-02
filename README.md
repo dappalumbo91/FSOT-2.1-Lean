@@ -16,12 +16,12 @@ Do not mix these. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md) · knobs: [`docs/FR
 | Ledger | Verb | Live | Forbidden |
 |--------|------|------|-----------|
 | **A closed-form** | **predict** (no measured in the formula) | `python scripts/predict_closed_form.py --observable T_CMB` then compare | quoting 477/477 as this |
-| **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | **140,088** structural corrections · **50,927** genuine predictions · recomputed gate **470 / 7** (stored-error gate **477 / 0**) | calling 477/477, or the correction count, ToE accuracy |
+| **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | Accuracy claim: **0** confirmed held-out. Exploratory **359,782** · frozen, pending **0** · confirmed held-out **0** · structural / identity **140,100**. Scalar gate: **50,927** genuine predictions · **140,088** Ledger B corrections · recomputed **470 / 7** (stored-error **477 / 0**). [`docs/EVIDENCE_TIERS.md`](docs/EVIDENCE_TIERS.md) | calling the exploratory count, the correction count, or 477/477 the confirmed accuracy |
 | **C live integrity** | **check** pin / stream / hash | pin **AEB2AD** match · multiprover `overall_ok` | promoting C into A or B |
 
 Pin is the SHA-256 prefix of `vendor/fsot_compute.py` (this edition **AEB2AD** — nest \(D_{\mathrm{eff}}\), derived observed/species, named `_fold_C` unused by \(S\), baryon/DM at Chemistry, decimals are \(\pi\) identities, \(f=\alpha\)). Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
-The authority summary is **342 / 343** targets within 5%. Eight of the 342 are identity or definition rows. **334** are seed-derived. `DNA_base_pair` is in the 334 and uses the measured Bohr radius as an input. `Gluon_condensate` is the row outside 5%. The file is not edited here. Notes for the next deliberate re-pin: [`docs/AUTHORITY_REVISION_NOTES.md`](docs/AUTHORITY_REVISION_NOTES.md). Observables whose formula takes no measured input of the same dimension: [`docs/NO_MEASURED_INPUT.md`](docs/NO_MEASURED_INPUT.md). Preregistered rows are scored on their own in `data/held_out_prereg_report.json` and stay out of the green count.
+The authority summary is **342 / 343** targets within 5%. Eight of the 342 are identity or definition rows. **334** are seed-derived. `DNA_base_pair` is in the 334 and uses the measured Bohr radius as an input. `Gluon_condensate` is the row outside 5%. The file is not edited here. Notes for the next deliberate re-pin: [`docs/AUTHORITY_REVISION_NOTES.md`](docs/AUTHORITY_REVISION_NOTES.md). Observables whose formula takes no measured input of the same dimension: [`docs/NO_MEASURED_INPUT.md`](docs/NO_MEASURED_INPUT.md). Preregistered rows are scored on their own in `data/held_out_prereg_report.json` and stay out of the green count. Evidence tiers, with confirmed held-out as the accuracy claim: [`docs/EVIDENCE_TIERS.md`](docs/EVIDENCE_TIERS.md) and `data/evidence_tiers.json`.
 
 > **477** is green *benchmark files*. **~407** is named coverage-map domains. **~403** is atlas CSV rows. **2030** is live atomic obligations (full formal **2594**, catalog **2205**). Do not mix them. Ledger: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md).  
 > Older prose saying **394/394**, **405/405**, **430/432**, **433/433**, **1,863 atomic**, **57% Mathlib**, or **~1912** obligations is **stale**.
@@ -35,6 +35,7 @@ lake build FSOT
 python scripts/run_mathlib_rederivation_campaign.py   # expect FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED
 python scripts/run_formula_authority_closure.py       # expect FORMULA_AUTHORITY_SYSTEM_CLOSED
 python scripts/audit_all_benchmark_margins.py         # expect green_gate_fail_count 0; read genuine_prediction_count and structural_correction_count
+python scripts/evidence_tiers.py --check              # Tier 3 freeze date must precede the data release; accuracy claim is confirmed held-out
 python scripts/run_publication_verification_bundle.py
 ```
 

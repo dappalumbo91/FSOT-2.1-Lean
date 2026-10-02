@@ -22,6 +22,17 @@ from fsot_precision_constants import (  # noqa: E402
 
 DATA = ROOT / "data"
 OUT = DATA / "benchmark_margin_audit.json"
+EVIDENCE_TIERS = DATA / "evidence_tiers.json"
+
+
+def _evidence_tier_headline() -> dict | None:
+    if not EVIDENCE_TIERS.is_file():
+        return None
+    try:
+        headline = json.loads(EVIDENCE_TIERS.read_text(encoding="utf-8")).get("headline")
+    except json.JSONDecodeError:
+        return None
+    return headline if isinstance(headline, dict) else None
 
 
 def _records(doc: dict) -> list[dict]:
@@ -94,6 +105,7 @@ def main() -> int:
         "excluded_files": list(AUDIT_EXCLUDED_BENCHMARKS),
         "genuine_prediction_count": genuine_prediction_count,
         "structural_correction_count": structural_correction_count,
+        "evidence_tier_headline": _evidence_tier_headline(),
         "files_with_gated_scalars_count": len(gated),
         "files_with_gated_scalars_green_count": len(gated_green),
         "files_with_gated_scalars": [r["file"] for r in gated],
@@ -148,6 +160,16 @@ def main() -> int:
         f"  genuine predictions={genuine_prediction_count} "
         f"structural corrections (Ledger B)={structural_correction_count}"
     )
+    headline = summary.get("evidence_tier_headline") or {}
+    if headline:
+        print(
+            "  evidence tiers: "
+            f"exploratory={headline.get('exploratory')} "
+            f"frozen_pending={headline.get('frozen_pending')} "
+            f"confirmed_held_out={headline.get('confirmed_held_out')} "
+            f"structural_identity={headline.get('structural_identity')} "
+            "(accuracy claim is confirmed_held_out)"
+        )
     print(
         f"  files with gated scalars={len(gated)} "
         f"of which green={len(gated_green)}"
