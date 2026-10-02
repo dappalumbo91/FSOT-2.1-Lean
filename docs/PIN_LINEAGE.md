@@ -20,6 +20,8 @@ Allowed: live prose says AEB2AD; freeze files keep D1D38A and point here.
 
 Confirm live: `python scripts/build_repo_status_snapshot.py` → `authority.pin_prefix`.
 
+The Ledger A yaml is unchanged. Its SHA-256 is recorded in [`../predictions/LEDGER_A_FREEZE_SHA256.json`](../predictions/LEDGER_A_FREEZE_SHA256.json). The current domain mapping at pin AEB2AD is hashed in [`../predictions/domain_freezes/AEB2AD_mapping.json`](../predictions/domain_freezes/AEB2AD_mapping.json). `predictions/toe_prereg_freeze.json` stays the D1D38A preregistration. The date gap, and the two `w_a` values, are in [`FREEZE_HYGIENE.md`](FREEZE_HYGIENE.md).
+
 ## Freeze file bytes
 
 The prereg hashes for `predictions/h0_sightline_predictions.json` (`1e050028…ac27`) and `predictions/h0_multi_tool_predictions.json` (`298c71f1…15fc`) match the files as stored: Windows CRLF, and no extra final newline. An LF-normalized copy does not match. Do not rewrite those files to LF. That would change the hash without changing the numbers.

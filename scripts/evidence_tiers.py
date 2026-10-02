@@ -133,6 +133,22 @@ def _load_freezes() -> list[dict]:
     if FREEZE_DIR.is_dir():
         for path in sorted(FREEZE_DIR.glob("*.json")):
             doc = json.loads(path.read_text(encoding="utf-8"))
+            domains = doc.get("domains")
+            if isinstance(domains, dict):
+                for name in sorted(domains):
+                    mapping = domains[name]
+                    found.append(
+                        {
+                            "kind": "domain_mapping",
+                            "path": path.relative_to(ROOT).as_posix(),
+                            "sha256": doc.get("mapping_sha256") or _sha256(path),
+                            "file_sha256": _sha256(path),
+                            "date": doc.get("frozen_at"),
+                            "domain": name,
+                            "mapping": mapping if isinstance(mapping, dict) else {},
+                        }
+                    )
+                continue
             found.append(
                 {
                     "kind": "domain_mapping",

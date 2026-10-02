@@ -1,0 +1,3268 @@
+{
+  "freeze_id": "AEB2AD-MAPPING",
+  "pin_prefix": "AEB2AD",
+  "authority_file": "vendor/fsot_compute.py",
+  "authority_sha256": "aeb2adad6e80f487772c5df90a2e3dda71624ab831a6a83b94ab471ac9aac170",
+  "frozen_at": "2026-10-02T05:13:52.330636+00:00",
+  "domain_count": 407,
+  "domains": {
+    "Particle_Physics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Quantum_Mechanics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 5,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Atomic_Physics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 6,
+      "look": "0.86525597943226508721777478964608961742874462390851",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "High_Energy_Physics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 6,
+      "look": "0.95114509364571126475870681725806650084231257608704",
+      "hits": 1,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Physical_Chemistry": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 6,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Chemistry": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 6,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Electromagnetism": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 7,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Molecular_Chemistry": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 7,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Optics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 8,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Acoustics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 8,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Materials_Science": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 8,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Quantum_Computing": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 8,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Quantum_Optics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 8,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Biology": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 9,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Biochemistry": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 10,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Neuroscience": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 11,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Condensed_Matter": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 11,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Thermodynamics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 12,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Fluid_Dynamics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 12,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Nuclear_Physics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 12,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Ecology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Ecology",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Meteorology": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 13,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Psychology": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 13,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Atmospheric_Physics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 14,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Oceanography": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 14,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Seismology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Seismology",
+      "D_eff": 15,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Sociology": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 15,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Geophysics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 16,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Astronomy": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 18,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Economics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 18,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Planetary_Science": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 19,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Quantum_Gravity": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 21,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Particle_Astrophysics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 23,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Astrophysics": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 23,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": true
+    },
+    "Cosmology": {
+      "source": "vendor/fsot_compute.py",
+      "D_eff": 25,
+      "look": "1.0",
+      "hits": 0,
+      "delta_theta": "1.0",
+      "observed": false
+    },
+    "Plasma_Physics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Condensed_Matter",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Immunology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Climate_Science": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Meteorology",
+      "D_eff": 13,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Cosmology_Extended": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Cosmology_Bubble_Bleed": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Cosmology_Anomalies": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Higgs_Mass": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Space_Weather": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Hydrology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Pharmacology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Cryosphere": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Tectonics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Geomagnetism": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Planetary_Structure": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Planetary_Science",
+      "D_eff": 19,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Orbital_Mechanics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Small_Body_Orbits": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "TOE_Dynamics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "TOE_Limit_Recovery": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "TOE_Contested_Sector_Refresh": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "MPCORB_Minor_Planet_Catalog": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Magnetosphere": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Grace_Cryosphere": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Seismology_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Seismology",
+      "D_eff": 15,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Planetary_Atmospheres": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Planetary_Science",
+      "D_eff": 19,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Magnetosphere_Extended": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Geochemistry": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Oncology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Neuroimmunology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Synthetic_Biology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Quantum_Materials": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Mechanics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Neuron_Multi_Hero": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Linguistics_Formal": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Mathematics_Computational": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Materials_Engineering": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Computational_Reasoning": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Math_Generator_Rules_Eval": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Trinary_OS_Portable": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Materials_Species_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "IGEM_Synthetic_Biology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Culinary_Arts": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Pharmacokinetics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Food_Microbiology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Agriculture_Agroecology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Ecology",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Maillard_Chemistry": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Econometrics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Sports_Biomechanics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Architecture_Building_Science": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Acoustics",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Geology_Stratigraphy": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Botany": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Zoology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Clinical_Medicine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Chemical_Engineering": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Environmental_Engineering": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Anthropology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Math_Generator_Benchmark_Formula_Eval": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Trinary_OS_ISA_Rebuild": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "IGEM_Live_FASTA_Ingest": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Math_Generator_Airfoil_RMSE": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Trinary_OS_Round_Trip": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Tokenization_Smoke": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Trinary_Hardware_Motif": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Computing",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Intrinsic_LLM_Validators": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Biological_CUDA_Physarum": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Arxiv_Primitives_V14": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Formula_Corpus_CNC": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Binary_Decoder_Rendlesham": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Certified_Agent_Qwen": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Omni_Theory_Genesis": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "FSOT_Aggregate_Unified_DB": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Prediction_Rederivation": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "VL_Distill_Atlas": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Rust_Lean_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Bibliography_Lean_Corpus": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "NIST_CODATA_Constants": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Atomic_Physics",
+      "D_eff": 6,
+      "look": 0.8652559794322651,
+      "hits": 0,
+      "observed": true
+    },
+    "GBIF_Species_Occurrence": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Ecology",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "NOAA_Coastal_Tides": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Oceanography",
+      "D_eff": 14,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "World_Bank_Development": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "NASA_Exoplanet_Archive": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "RCSB_PDB_Structures": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "OpenAlex_Citation_Graph": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "PubChem_Compound_Properties": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "CERN_Open_Data_LHC": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "UniProt_Protein_Annotations": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Space_Propulsion_Systems": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Electrical_Power_Systems": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "HVAC_Thermal_Systems": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Trinary_OS_Tier_E": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Breakthrough_Discoveries_2024_2026": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Paleontology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Marine_Biology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Mycology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Entomology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Virology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Epidemiology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Cardiology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Civil_Engineering": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Mechanical_Engineering": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Robotics_Control_Systems": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Neuroeconomics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Paleoclimate": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Meteorology",
+      "D_eff": 13,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Speleology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Exogeology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Pure_Mathematics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "History": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Law_Policy": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Finance_Markets": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Supply_Chain_Logistics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Domain_Coupling_Simulation": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Formula_Corpus_Closure": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Cryptography_Technology": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Network_Internet_Protocols": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Malware_Threat_Intelligence": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Secure_Software_Engineering": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Code_Genome_Structure": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Zero_Day_Risk_Evaluator": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "External_OSS_Code_Genome": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Programming_Language_Laws": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Formula_Branching_Fractal": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Mechanistic_Coupling": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Atomic_Physics",
+      "D_eff": 6,
+      "look": 0.8652559794322651,
+      "hits": 0,
+      "observed": true
+    },
+    "CVE_Codon_Hole_Falsification": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Theory_Completeness_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Fractal_Constant_Recursion": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Preregistered_Predictions": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Portable_Clone_Verify": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Observer_Channel_Derivation": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Adversarial_Fractal_Break_Tests": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "ToE_Gap_Closure_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Acoustic_Resonance_Materials": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Acoustics",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Chaos_Mediated_Phase_Transitions": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Phi_Morphogenetic_Scaling": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Ionospheric_Chemistry_Coupling": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Energy_AI_Orbital_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Consciousness_Galactic_Orbital_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Energy_Neural_Orbital_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Particle_Neural_Orbital_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Proof_Carrying_Code_Genome": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Domain_Orbital_Predictions": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Medical_Galactic_Orbital_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "AI_Galactic_Orbital_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Neural_Galactic_Orbital_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "ToE_Unification_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Compactification_Ladder": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Adjacent_Rung_Coupling": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Fold_Depth_Metrics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Reality_Folding_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Time_Emergence_Simulation": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Time_Domain_Crosswalk": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "FPC_Temporal_Coupling": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Fluid_Phase_Current_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Fluid_Dynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Stumped_Observables_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Hubble_Bubble_Tension": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Dark_Sector_Open_Problems": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Stumped_Observables_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Consciousness_Econ": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Dark_Energy_CPL": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "SH0ES_Refined": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "SH0ES_Ladder_Chain": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Cepheid_PL_Interconnect": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Computing",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "SH0ES_Full_Sample": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Between_Scale_Interconnects": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Computing",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Consciousness_Soul_Bridge": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Symbolic_Archetype_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Astrophysical_Structure_Crosswalk": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Stellar_Multiplicity_Catalog": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Compact_Object_Binary_Events": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Galactic_Structure_Sample": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Solar_System_Structure_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Exoplanet_System_Architecture": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "PubChem_Stability_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Materials_Genome_Crosswalk": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "UniProt_Structure_Annotations_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "IGEM_Parts_Expanded": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Interdisciplinary_Spine_Crosswalk": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Chemical_Structure_Stability_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Published_Fuel_Property_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "GWOSC_Live_Event_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Astrophysics",
+      "D_eff": 23,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Stellar_Multiplicity_Live_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Material_Property_Verification_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Fuel_Thermochemistry_Public_Anchors": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "SIMBAD_Stellar_Identity_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Gaia_Astrometry_Panel_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Music_Harmonics_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Acoustics",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "XR_Interactive_Media_Math_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Acoustics",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Creative_Arts_Math_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Acoustics",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "WDS_Live_Multiplicity_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Gaia_DR3_TAP_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Preregistered_Predictions_Verification_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Information_Theory_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Network_Science_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Semiconductor_Physics_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Statistical_Mechanics_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Biophysics_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Neurolab_Gaps_Math_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Material_In_Silico_Screening_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Fuel_Candidate_Prereg_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Interactive_Media_Prereg_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Quantum_Information": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Mechanics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Econophysics": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Genomic_Sciences": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Neurolab_Residual_Math_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Term3_Acoustic_Bleed_Depth": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Acoustics",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Initiation_Transformation_Archetype": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Boundary_Partition_Tightening": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Formula_Precision_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Materials_Project_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "PubChem_Live_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "OpenNeuro_Full_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "VizieR_WDS_TAP_Live_Deep": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Live_Ingest_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Unified_DB_Candidate_Crosswalk": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "FSOT_Aggregate_Organized_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Unified_DB_Crosswalk_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Proof_Ledger_Closure_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Preregistered_Outcome_Tracking": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "ToE_Claim_Certificate_Bundle": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Fusion_Physics_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Magnetic_Confinement_Fusion_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Inertial_Confinement_Fusion_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Cold_Fusion_Candidate_Prereg_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Fusion_Lab_Certificate_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Periodic_Table_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Superheavy_Element_Stability_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Undiscovered_Element_Candidate_Prereg_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Natural_Formation_Element_Simulation": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Periodic_Table_Completion_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Heavy_Ion_Lab_Synthesis_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Element_Synthesis_Condition_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Cold_Fusion_Lab_Synthesis_Crosswalk": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Metamaterial_Fluid_Design_Prereg_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Lab_Synthesis_Metamaterial_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Island_Of_Stability_Deep_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Z120_Z126_Beam_Synthesis_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Fusion_Decay_Chain_Prereg_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Superheavy_Island_Emergence_Simulation": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Superheavy_Island_Completion_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Distant_Island_Z128_Z132_Deep_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Z164_Distant_Island_Prereg_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Periodic_Extension_Decay_Topology_Scaffold": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Distant_Island_Emergence_Simulation": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Periodic_Table_Extension_Closure_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Time_Emergence_Deep_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "FPC_Fluidlink_Timing_Deep_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Fluid_Dynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Cosmology_Anomaly_Deep_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Hubble_Dark_Sector_Crosswalk": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Fluid_Spacetime_Observable_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Fluid_Dynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Hybrid_FI_Sim_Multi_Hero_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Knowledge_Base_Portable_Bundle_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "RD_Interval_Tightening_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Domain_Coupling_Simulation_Refresh_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Fluid_Spacetime_Prereg_Validation_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Fluid_Dynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Warp_BH_WH_Portal_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Electromagnetism",
+      "D_eff": 7,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "PDG_Particle_Properties": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "CRC_Handbook_Properties": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "NIST_DLMF_Special_Functions": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Atomic_Physics",
+      "D_eff": 6,
+      "look": 0.8652559794322651,
+      "hits": 0,
+      "observed": true
+    },
+    "STScI_MAST_Telescope_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "NASA_NEO_Feed_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "NASA_DONKI_Solar_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "ClinicalTrials_Medical_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biochemistry",
+      "D_eff": 10,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "OSTI_DOE_Science_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Nuclear_Physics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "UAP_War_Gov_Release_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Federal_Science_Registry_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Government_Open_Data_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "NCBI_Gene_Public_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Crossref_Scholarly_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "iNaturalist_Observation_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "NOAA_NDBC_Buoy_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Oceanography",
+      "D_eff": 14,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Open_Meteo_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Public_Verifiable_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Volcanology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Limnology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Radio_Astronomy_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Petrology_Geochemistry_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Chemistry",
+      "D_eff": 6,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Actuarial_Science_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Ethology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Toxicology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Soil_Science_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Neutrino_Physics_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Cartography_GIS_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Scientific_Expansion_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Epidemiology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Virology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Paleontology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Arxiv_Gravitational_Waves_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Entomology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Mycology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Marine_Biology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Immunology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Cardiology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Robotics_Control_Systems_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Scientific_Expansion_Wave2_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Civil_Engineering_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Mechanical_Engineering_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Thermodynamics",
+      "D_eff": 12,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Neuroeconomics_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Paleoclimate_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Meteorology",
+      "D_eff": 13,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Speleology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Exogeology_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "History_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Law_Policy_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Finance_Markets_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Economics",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Supply_Chain_Logistics_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Scientific_Expansion_Wave3_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Pure_Mathematics_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Hybrid_FI_Sim_Stratum_Deep_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Culinary_Fermentation_Maillard_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Materials_Species_Bridge_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Scientific_Expansion_Depth_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Quantum_Computing_Math_Depth_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Computing",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Neuroscience_Connectomics_Depth_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Condensed_Matter_Superconductivity_Depth_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Condensed_Matter",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Optics_Interferometry_Depth_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Optics",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Scientific_Expansion_Depth_Wave2_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Trinary_Hardware_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Computing",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Tokenization_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Living_FSOT_Hardware_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Computing",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Certified_Agent_Formal_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Desktop_Application_Wiring_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "The_Well_Outcomes_Verification_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "The_Well_Spot_Check_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "The_Well_Verification_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Microtubule_Quantum_Consciousness_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Mechanics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Consciousness_Species_Multi_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Observer_Effect_Cross_Species_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Consciousness_Expansion_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Nothing_Perfection_Friction_Origin_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Zero_Boundary_Not_Entity_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Overflow_Carry_Emergence_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Complexity_Folding_Emergence_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Foundational_Ontology_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Alternate_Base_Mathematics_Explorer_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Alternate_Base_Mathematics_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Consciousness_Genetics_Species_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Consciousness_Genetics_Coupling_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Experimental_Base_Mathematics_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Tier_93_Dual_Wave_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Longevity_AnAge_Catalog_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Longevity_Genetic_Mechanics_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Longevity_Extreme_Species_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Longevity_MegaDeep_NCBI_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Longevity_Telomere_Repair_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Longevity_Consciousness_Coupling_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Tier_94_Longevity_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Zebrafish_Cell_Tracking_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Zebrafish_Developmental_Mechanics_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Zebrafish_Longevity_Genetics_Coupling_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Tier_95_Zebrafish_Spine": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Founding_Quantum_Vacuum_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Mechanics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Founding_Cosmic_Ray_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Founding_Galactic_Halo_Rotation_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Founding_Cosmic_Dust_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Founding_White_Dwarf_Cooling_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Founding_Atmospheric_Ozone_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Meteorology",
+      "D_eff": 13,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Founding_Pulsar_Glitch_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astronomy",
+      "D_eff": 18,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Biology_Developmental_Structural_Depth_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Quantum_Mechanics_Entanglement_Depth_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Quantum_Mechanics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Psychology_Psychometrics_Depth_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Psychology",
+      "D_eff": 13,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Materials_Creep_Fracture_Depth_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Omni_Theory_Humanities_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Intrinsic_LLM_Validators_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Bibliography_Corpus_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Binary_Decoder_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Physarum_Biological_CUDA_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Biology",
+      "D_eff": 9,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Arxiv_Brain_Knowledge_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Scalar_Solver_35_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Arxiv_Primitives_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Neuroscience",
+      "D_eff": 11,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Rust_Lean_Bridge_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Canonical_Oracle_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Particle_Physics",
+      "D_eff": 5,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "VL_Agent_Distill_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Early_Lean_MC_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    },
+    "Machine_And_Molecule_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Fuel_Lab_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Materials_Science",
+      "D_eff": 8,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "BlackHole_WhiteHole_Cycle_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Astrophysics",
+      "D_eff": 23,
+      "look": 1.0,
+      "hits": 0,
+      "observed": true
+    },
+    "Star_Trek_Transporter_Live_Panel": {
+      "source": "data/extension_folds_derived.json",
+      "parent_core": "Cosmology",
+      "D_eff": 25,
+      "look": 1.0,
+      "hits": 0,
+      "observed": false
+    }
+  },
+  "mapping_sha256": "a2161f46bf7e805b7097d86732065988be42648bff33bf675ad9525f55f7b26b",
+  "note": "Freeze of the current domain mapping at the live authority pin. No benchmark value was changed. predictions/toe_prereg_freeze.json stays the D1D38A preregistration and was not edited."
+}
