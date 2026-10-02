@@ -27,6 +27,15 @@ RELEASE_RE = re.compile(
     r"https://github\.com/dappalumbo91/FSOT-2\.1-Lean/releases/tag/([A-Za-z0-9._-]+)"
 )
 DRIVE_RE = re.compile(r"^[A-Za-z]:/")
+# Citation surfaces must not keep a machine path even outside a hub URL.
+# (?<![A-Za-z]) avoids the "s:" inside "https://".
+LOCAL_DRIVE_RE = re.compile(r"(?<![A-Za-z])[A-Za-z]:[/\\]")
+CITATION_SURFACES = {
+    "docs/BENCHMARK_DATA_CITATIONS.md",
+    "data/benchmark_anchor_citation_ledger.json",
+    "data/publication/PUBLISH_WITHOUT_NEW_ACCOUNT.md",
+    "docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md",
+}
 TEXT_SUFFIXES = {
     ".md",
     ".json",
@@ -114,6 +123,8 @@ def scan() -> list[str]:
             text = path.read_text(encoding="utf-8")
         except (UnicodeDecodeError, OSError):
             continue
+        if rel in CITATION_SURFACES and LOCAL_DRIVE_RE.search(text):
+            problems.append(f"{rel}: local drive path in a citation surface")
         if "github.com/dappalumbo91/FSOT-2.1-Lean" not in text:
             continue
         for match in SELF_RE.finditer(text):

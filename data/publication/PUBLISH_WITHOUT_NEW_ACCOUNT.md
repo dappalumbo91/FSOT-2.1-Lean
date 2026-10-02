@@ -7,7 +7,7 @@ You already have **GitHub** (and optionally **OSF**). You do **not** need Zenodo
 Uses login you already have for `dappalumbo91/FSOT-2.1-Lean`.
 
 ```powershell
-cd I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full
+# From a clone of https://github.com/dappalumbo91/FSOT-2.1-Lean
 python scripts/publish_github_release.py
 ```
 

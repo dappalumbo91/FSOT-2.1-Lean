@@ -29,6 +29,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from check_internal_links import resolve_repo_path, tracked_index  # noqa: E402
+from local_path_citations import cite_local_path  # noqa: E402
 MARGIN = ROOT / "data" / "benchmark_margin_audit.json"
 EXT_MANIFEST = ROOT / "data" / "extension_domains_manifest.yaml"
 API_REQ = ROOT / "data" / "api_requirements.yaml"
@@ -418,6 +419,11 @@ def _resolve_token(token: str, api_index: dict[str, dict], open_index: dict[str,
             "title": token,
             "note": "internal densify/process/noise tag — not a measurement authority",
         }
+    # A drive letter never becomes a hub URL. Repo path, public source, or an
+    # explicit "not tracked" note. The note carries no machine path.
+    cited = cite_local_path(token)
+    if cited is not None:
+        return cited
     # GitHub owner/repo corpora. A repo-relative path is not an owner/repo.
     if re.fullmatch(r"[a-z0-9_.-]+/[a-z0-9_.-]+", t):
         files, by_name = tracked_index()
@@ -453,14 +459,6 @@ def _resolve_token(token: str, api_index: dict[str, dict], open_index: dict[str,
         or t.startswith("predictions/")
         or t.startswith("scripts/")
     ):
-        slashed = token.strip().replace("\\", "/")
-        if re.match(r"^[A-Za-z]:/", slashed):
-            return {
-                "kind": "vendor_cache",
-                "title": token,
-                "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/" + slashed,
-                "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
-            }
         files, by_name = tracked_index()
         rel = resolve_repo_path(token, files, by_name)
         if rel is None:

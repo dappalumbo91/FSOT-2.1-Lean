@@ -11,20 +11,20 @@
     "panels_scanned": 432,
     "unique_public_anchors": 833,
     "kind_counts": {
-      "vendor_cache": 373,
-      "software": 161,
-      "dataset": 690,
-      "ingest_script": 130,
-      "unresolved": 417,
-      "api": 155,
       "process": 331,
+      "vendor_cache": 369,
+      "dataset": 695,
+      "unresolved": 414,
+      "software": 161,
+      "ingest_script": 130,
+      "api": 155,
       "literature": 313,
-      "url": 11
+      "url": 13
     },
     "unresolved_token_count": 373,
     "unresolved_top": [
       [
-        "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
+        "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
         4
       ],
       [
@@ -694,7 +694,7 @@
       "family": "biology_genomics",
       "auth": "none",
       "note": "",
-      "matched_token": "G:/FSOT-PublicData/anomaly_observables/consciousness/anage",
+      "matched_token": "AnAge species dataset",
       "panels": [
         "Consciousness_Econ",
         "Consciousness_Expansion_Spine",
@@ -702,10 +702,10 @@
         "Longevity_AnAge_Catalog_Panel"
       ],
       "token_examples": [
-        "G:/FSOT-PublicData/anomaly_observables/consciousness/anage",
+        "AnAge species dataset",
         "AnAge_HAGR",
         "https://genomics.senescence.info/species/dataset.zip",
-        "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\consciousness\\anage\\anage_data.txt"
+        "AnAge anage_data.txt"
       ]
     },
     {
@@ -3499,31 +3499,32 @@
       ]
     },
     {
-      "kind": "unresolved",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\c\\fsot_pack_parity\\fsot_pack_parity.c",
-      "note": "Named in panel source; add explicit public URL if this is an external authority",
+      "kind": "vendor_cache",
+      "title": "verification/c/fsot_pack_parity/fsot_pack_parity.c",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "FSOT_C_Pack_Parity_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\c\\fsot_pack_parity\\fsot_pack_parity.c"
-      ]
+        "verification/c/fsot_pack_parity/fsot_pack_parity.c"
+      ],
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/verification/c/fsot_pack_parity/fsot_pack_parity.c"
     },
     {
       "kind": "unresolved",
-      "title": "C:\\Users\\damia\\Desktop\\fsot code language",
-      "note": "Named in panel source; add explicit public URL if this is an external authority",
+      "title": "fsot code language (not tracked)",
+      "note": "Named as a local desktop code-language tree. It is not in this repository. No public URL, DOI, or checksum is recorded.",
       "panels": [
         "Coding_Structure_Verifier_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\fsot code language"
+        "fsot code language (not tracked)"
       ]
     },
     {
       "kind": "unresolved",
-      "title": "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
-      "note": "Named in panel source; add explicit public URL if this is an external authority",
+      "title": "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
+      "note": "Named as a local desktop GPU experiment. It is not in this repository. No public URL, DOI, or checksum is recorded.",
       "panels": [
         "FSOT_GPU_CUDA_Competitive_Panel",
         "FSOT_GPU_Parity_Verify_Panel",
@@ -3531,7 +3532,7 @@
         "FSOT_RAM_Function_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star"
+        "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)"
       ]
     },
     {
@@ -3712,15 +3713,16 @@
       ]
     },
     {
-      "kind": "unresolved",
-      "title": "G:\\FSOT-PublicData\\trinary_os",
-      "note": "Named in panel source; add explicit public URL if this is an external authority",
+      "kind": "vendor_cache",
+      "title": "vendor/trinary_os",
+      "note": "In-repo trinary OS tree. A separate local public-data directory is not published, and no extra checksum is recorded for it.",
       "panels": [
         "Trinary_OS_Tier_E"
       ],
       "token_examples": [
-        "G:\\FSOT-PublicData\\trinary_os"
-      ]
+        "vendor/trinary_os"
+      ],
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os"
     },
     {
       "kind": "unresolved",
@@ -3778,37 +3780,40 @@
       ]
     },
     {
-      "kind": "unresolved",
-      "title": "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\fuel_lab\\engine_simulator\\REAL_DATA_PROVENANCE.md",
-      "note": "Named in panel source; add explicit public URL if this is an external authority",
+      "kind": "dataset",
+      "title": "Fuel-lab engine simulator provenance",
+      "note": "The provenance note is not in this repository. It records PubChem PUG REST for compound properties, with a NIST property lookup when PubChem has no result. Local note SHA-256 3497c80ed65e6bfe79c01565a6aa66b9b6fe49d9026ae1549584b3db2ea3b95c.",
       "panels": [
         "Fuel_Lab_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\fuel_lab\\engine_simulator\\REAL_DATA_PROVENANCE.md"
-      ]
+        "Fuel-lab engine simulator provenance"
+      ],
+      "url": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest"
     },
     {
-      "kind": "unresolved",
-      "title": "I:\\Protofluid-Language-Translator-2.0-Zig",
-      "note": "Named in panel source; add explicit public URL if this is an external authority",
+      "kind": "url",
+      "title": "Protofluid Language Translator 2.0 (Zig)",
+      "note": "Public repository. Clone that URL. No release checksum is recorded here.",
       "panels": [
         "Coding_Structure_Verifier_Panel"
       ],
       "token_examples": [
-        "I:\\Protofluid-Language-Translator-2.0-Zig"
-      ]
+        "Protofluid Language Translator 2.0 (Zig)"
+      ],
+      "url": "https://github.com/dappalumbo91/Protofluid-Language-Translator-2.0-Zig"
     },
     {
-      "kind": "unresolved",
-      "title": "I:\\fsot-neuron-zig",
-      "note": "Named in panel source; add explicit public URL if this is an external authority",
+      "kind": "url",
+      "title": "fsot-neuron-zig",
+      "note": "Public repository. Clone that URL. No release checksum is recorded here.",
       "panels": [
         "Coding_Structure_Verifier_Panel"
       ],
       "token_examples": [
-        "I:\\fsot-neuron-zig"
-      ]
+        "fsot-neuron-zig"
+      ],
+      "url": "https://github.com/dappalumbo91/fsot-neuron-zig"
     },
     {
       "kind": "unresolved",
@@ -7618,329 +7623,329 @@
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\dark_energy_cpl_reference.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/dark_energy_cpl_reference.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "data/dark_energy_cpl_reference.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/dark_energy_cpl_reference.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "DESI_wa_Constraint"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\dark_energy_cpl_reference.json"
+        "data/dark_energy_cpl_reference.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\foundational_ontology_axioms.yaml",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/foundational_ontology_axioms.yaml",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "data/foundational_ontology_axioms.yaml",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/foundational_ontology_axioms.yaml",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Foundational_Ontology_Spine"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\foundational_ontology_axioms.yaml"
+        "data/foundational_ontology_axioms.yaml"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\hardware_competitive_refine_report.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/hardware_competitive_refine_report.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "data/hardware_competitive_refine_report.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/hardware_competitive_refine_report.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "FSOT_Cache_Hierarchy_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\hardware_competitive_refine_report.json"
+        "data/hardware_competitive_refine_report.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\preregistered_predictions_manifest.yaml",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/preregistered_predictions_manifest.yaml",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "predictions/preregistered_predictions_manifest.yaml",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/predictions/preregistered_predictions_manifest.yaml",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Preregistered_Outcome_Tracking"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\preregistered_predictions_manifest.yaml"
+        "predictions/preregistered_predictions_manifest.yaml"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\bibliography_corpus_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Bibliography_Corpus_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\bibliography_corpus_cache.json"
+        "vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/biological_cuda_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/biological_cuda_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/biological_cuda_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Physarum_Biological_CUDA_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json"
+        "vendor/application_wiring/tier88_cache/biological_cuda_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\living_fsot_hardware_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Living_FSOT_Hardware_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\living_fsot_hardware_cache.json"
+        "vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\tokenization_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/tokenization_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/tokenization_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/tokenization_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Tokenization_Live_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\tokenization_cache.json"
+        "vendor/application_wiring/tier88_cache/tokenization_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/vl_agent_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/vl_agent_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/vl_agent_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "VL_Agent_Distill_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json"
+        "vendor/application_wiring/tier88_cache/vl_agent_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/circuit_components/industry_component_catalog.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/circuit_components/industry_component_catalog.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/circuit_components/industry_component_catalog.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Circuit_Component_Emergence_Panel",
         "ESP32_Platform_Engineering_Panel",
         "Schematic_Netlist_Intrinsic_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json"
+        "vendor/circuit_components/industry_component_catalog.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\tier96_cache\\industry_component_catalog_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/circuit_components/tier96_cache/industry_component_catalog_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/circuit_components/tier96_cache/industry_component_catalog_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/circuit_components/tier96_cache/industry_component_catalog_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Circuit_Component_Emergence_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\tier96_cache\\industry_component_catalog_cache.json"
+        "vendor/circuit_components/tier96_cache/industry_component_catalog_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Hubble_Dark_Sector_Crosswalk"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json"
+        "vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\fusion_public_anchors.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fusion/fusion_public_anchors.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/fusion/fusion_public_anchors.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fusion/fusion_public_anchors.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Recent_Breakthroughs_Expansion_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\fusion_public_anchors.json"
+        "vendor/fusion/fusion_public_anchors.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fusion/qce_elm_public_anchors.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/fusion/qce_elm_public_anchors.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fusion/qce_elm_public_anchors.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "QCE_ELM_Fusion_Edge_Panel",
         "Recent_Breakthroughs_Expansion_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json"
+        "vendor/fusion/qce_elm_public_anchors.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\hardware\\dzhanibekov_public_anchors.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/hardware/dzhanibekov_public_anchors.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/hardware/dzhanibekov_public_anchors.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/hardware/dzhanibekov_public_anchors.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Dzhanibekov_Intermediate_Axis_FSOT_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\hardware\\dzhanibekov_public_anchors.json"
+        "vendor/hardware/dzhanibekov_public_anchors.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/lab_synthesis/heavy_ion_reaction_anchors.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/lab_synthesis/heavy_ion_reaction_anchors.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/lab_synthesis/heavy_ion_reaction_anchors.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Cold_Fusion_Lab_Synthesis_Crosswalk"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json"
+        "vendor/lab_synthesis/heavy_ion_reaction_anchors.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\lab_synthesis\\metamaterial_fluid_prereg_candidates.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Cold_Fusion_Lab_Synthesis_Crosswalk"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\lab_synthesis\\metamaterial_fluid_prereg_candidates.json"
+        "vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier86_cache\\culinary_fermentation_maillard_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier86_cache/culinary_fermentation_maillard_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier86_cache/culinary_fermentation_maillard_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier86_cache/culinary_fermentation_maillard_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Culinary_Fermentation_Maillard_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier86_cache\\culinary_fermentation_maillard_cache.json"
+        "vendor/scientific_expansion/tier86_cache/culinary_fermentation_maillard_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\biology_developmental_structural_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/biology_developmental_structural_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier87_cache/biology_developmental_structural_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/biology_developmental_structural_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Biology_Developmental_Structural_Depth_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\biology_developmental_structural_cache.json"
+        "vendor/scientific_expansion/tier87_cache/biology_developmental_structural_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\condensed_matter_superconductivity_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/condensed_matter_superconductivity_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier87_cache/condensed_matter_superconductivity_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/condensed_matter_superconductivity_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Condensed_Matter_Superconductivity_Depth_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\condensed_matter_superconductivity_cache.json"
+        "vendor/scientific_expansion/tier87_cache/condensed_matter_superconductivity_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\materials_creep_fracture_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/materials_creep_fracture_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier87_cache/materials_creep_fracture_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/materials_creep_fracture_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Materials_Creep_Fracture_Depth_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\materials_creep_fracture_cache.json"
+        "vendor/scientific_expansion/tier87_cache/materials_creep_fracture_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\neuroscience_connectomics_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/neuroscience_connectomics_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier87_cache/neuroscience_connectomics_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/neuroscience_connectomics_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Neuroscience_Connectomics_Depth_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\neuroscience_connectomics_cache.json"
+        "vendor/scientific_expansion/tier87_cache/neuroscience_connectomics_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\optics_interferometry_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/optics_interferometry_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier87_cache/optics_interferometry_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/optics_interferometry_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Optics_Interferometry_Depth_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\optics_interferometry_cache.json"
+        "vendor/scientific_expansion/tier87_cache/optics_interferometry_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\psychology_psychometrics_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/psychology_psychometrics_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier87_cache/psychology_psychometrics_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/psychology_psychometrics_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Psychology_Psychometrics_Depth_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\psychology_psychometrics_cache.json"
+        "vendor/scientific_expansion/tier87_cache/psychology_psychometrics_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\quantum_computing_math_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Quantum_Computing_Math_Depth_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\quantum_computing_math_cache.json"
+        "vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\quantum_mechanics_entanglement_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Quantum_Mechanics_Entanglement_Depth_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\quantum_mechanics_entanglement_cache.json"
+        "vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "C:\\Users\\damia\\Desktop\\FSOT-Legacy-Physics-Connections\\concept_refinement\\warp_actuation_formula_fsot21.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-Legacy-Physics-Connections/concept_refinement/warp_actuation_formula_fsot21.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+      "note": "In-repo copy of the legacy-physics warp actuation formula. SHA-256 97cd202b77da9915f537437e7274328f65e4395541a2d1b1d4d36da889213513.",
       "panels": [
         "Warp_BH_WH_Portal_Panel"
       ],
       "token_examples": [
-        "C:\\Users\\damia\\Desktop\\FSOT-Legacy-Physics-Connections\\concept_refinement\\warp_actuation_formula_fsot21.json"
+        "vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json"
       ]
     },
     {
@@ -7968,339 +7973,337 @@
       ]
     },
     {
-      "kind": "vendor_cache",
-      "title": "G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "kind": "unresolved",
+      "title": "FSOT mythology graph (not tracked)",
+      "note": "fsot_mythology_graph.json is not in this repository. No public URL, DOI, or upstream checksum is recorded. Local file SHA-256 2741a3298cd320473c1b843e41d00d0cd1408b39375e4d531eb944f8500d55ce.",
       "panels": [
         "Symbolic_Archetype_Panel"
       ],
       "token_examples": [
-        "G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json"
+        "FSOT mythology graph (not tracked)"
       ]
     },
     {
-      "kind": "vendor_cache",
-      "title": "G:\\FSOT-PublicData\\anomaly_observables\\consciousness\\tier90_microtubule_observer_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/anomaly_observables/consciousness/tier90_microtubule_observer_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "kind": "dataset",
+      "title": "Microtubule observer cache (not tracked)",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_resonance_reference.json",
+      "note": "In-repo microtubule resonance reference. The observer cache that pointed here is not tracked. Local cache SHA-256 308d76f3f0fc73a0c52243294d7f8fbaf33ce2c11a07bab46ea7941dc2fc4282. No public DOI or upstream checksum is recorded for that cache.",
       "panels": [
         "Microtubule_Quantum_Consciousness_Panel"
       ],
       "token_examples": [
-        "G:\\FSOT-PublicData\\anomaly_observables\\consciousness\\tier90_microtubule_observer_cache.json"
+        "Microtubule observer cache (not tracked)"
       ]
     },
     {
-      "kind": "vendor_cache",
-      "title": "G:\\FSOT-PublicData\\anomaly_observables\\consciousness\\tier90_species_panel_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/anomaly_observables/consciousness/tier90_species_panel_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "kind": "dataset",
+      "title": "AnAge consciousness species panel",
+      "url": "https://genomics.senescence.info/species/dataset.zip",
+      "note": "Human Ageing Genomic Resources AnAge. Download dataset.zip and unzip anage_data.txt. Ingested anage_data.txt SHA-256 98867969fbd4d0bed6bab415c2715bb19079dbd7f92bdc26e5961856aa1c1519. In-repo species reference: data/consciousness_reference_observables.json. Local species-panel cache is not tracked. SHA-256 052a681f41c5bcabe963cc93faeeeb21494a06b7f006891d4a94f2fa7bca9de9.",
       "panels": [
         "Consciousness_Species_Multi_Panel"
       ],
       "token_examples": [
-        "G:\\FSOT-PublicData\\anomaly_observables\\consciousness\\tier90_species_panel_cache.json"
+        "AnAge consciousness species panel"
       ]
     },
     {
-      "kind": "vendor_cache",
-      "title": "G:\\FSOT-PublicData\\the_well\\the_well_catalog_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/the_well/the_well_catalog_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "kind": "dataset",
+      "title": "The Well catalog (Polymathic AI)",
+      "url": "https://arxiv.org/abs/2412.00568",
+      "note": "Local catalog cache is not tracked. Ohana et al., arXiv:2412.00568. Download the code and data from https://github.com/PolymathicAI/the_well (about 15 TB; streaming via hf://datasets/polymathic-ai/). Hugging Face collection: https://huggingface.co/collections/polymathic-ai/the-well. Local aggregate-stats cache SHA-256 f3abed951c0c479823b162411d3591551143f89f058a7a7ba6254a75b555c5dc. Upstream dataset checksums are not copied here.",
       "panels": [
         "The_Well_Outcomes_Verification_Panel"
       ],
       "token_examples": [
-        "G:\\FSOT-PublicData\\the_well\\the_well_catalog_cache.json"
+        "The Well catalog (Polymathic AI)"
       ]
     },
     {
-      "kind": "vendor_cache",
-      "title": "G:\\FSOT-PublicData\\the_well\\the_well_spot_checks_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/the_well/the_well_spot_checks_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "kind": "dataset",
+      "title": "The Well spot-check scalars",
+      "url": "https://github.com/PolymathicAI/the_well",
+      "note": "Local spot-check cache is not tracked. Same release as The Well, arXiv:2412.00568. Download from https://github.com/PolymathicAI/the_well. Local cache SHA-256 5eb63c8aebe3a31515f6f7745c2654543ef6ac6023ccb061c281564d8cc858d8.",
       "panels": [
         "The_Well_Spot_Check_Panel"
       ],
       "token_examples": [
-        "G:\\FSOT-PublicData\\the_well\\the_well_spot_checks_cache.json"
+        "The Well spot-check scalars"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_brain_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/arxiv_brain_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/arxiv_brain_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/arxiv_brain_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Arxiv_Brain_Knowledge_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_brain_cache.json"
+        "vendor/application_wiring/tier88_cache/arxiv_brain_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_primitives_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/arxiv_primitives_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/arxiv_primitives_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/arxiv_primitives_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Arxiv_Primitives_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_primitives_cache.json"
+        "vendor/application_wiring/tier88_cache/arxiv_primitives_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\binary_decoder_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/binary_decoder_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/binary_decoder_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/binary_decoder_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Binary_Decoder_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\binary_decoder_cache.json"
+        "vendor/application_wiring/tier88_cache/binary_decoder_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\blackhole_whitehole_cycle_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/blackhole_whitehole_cycle_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/blackhole_whitehole_cycle_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/blackhole_whitehole_cycle_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "BlackHole_WhiteHole_Cycle_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\blackhole_whitehole_cycle_cache.json"
+        "vendor/application_wiring/tier88_cache/blackhole_whitehole_cycle_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\canonical_oracle_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/canonical_oracle_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/canonical_oracle_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/canonical_oracle_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Canonical_Oracle_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\canonical_oracle_cache.json"
+        "vendor/application_wiring/tier88_cache/canonical_oracle_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\certified_agent_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/certified_agent_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/certified_agent_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/certified_agent_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Certified_Agent_Formal_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\certified_agent_cache.json"
+        "vendor/application_wiring/tier88_cache/certified_agent_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\early_lean_mc_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/early_lean_mc_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/early_lean_mc_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/early_lean_mc_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Early_Lean_MC_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\early_lean_mc_cache.json"
+        "vendor/application_wiring/tier88_cache/early_lean_mc_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\fuel_lab_live_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Fuel_Lab_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\fuel_lab_live_cache.json"
+        "vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\machine_and_molecule_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/machine_and_molecule_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/machine_and_molecule_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/machine_and_molecule_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Machine_And_Molecule_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\machine_and_molecule_cache.json"
+        "vendor/application_wiring/tier88_cache/machine_and_molecule_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\omni_theory_humanities_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/omni_theory_humanities_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/omni_theory_humanities_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/omni_theory_humanities_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Omni_Theory_Humanities_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\omni_theory_humanities_cache.json"
+        "vendor/application_wiring/tier88_cache/omni_theory_humanities_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\rust_lean_bridge_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/rust_lean_bridge_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/rust_lean_bridge_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/rust_lean_bridge_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Rust_Lean_Bridge_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\rust_lean_bridge_cache.json"
+        "vendor/application_wiring/tier88_cache/rust_lean_bridge_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\scalar_solver_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/scalar_solver_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/scalar_solver_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/scalar_solver_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Scalar_Solver_35_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\scalar_solver_cache.json"
+        "vendor/application_wiring/tier88_cache/scalar_solver_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\star_trek_transporter_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/star_trek_transporter_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/star_trek_transporter_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/star_trek_transporter_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Star_Trek_Transporter_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\star_trek_transporter_cache.json"
+        "vendor/application_wiring/tier88_cache/star_trek_transporter_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\trinary_hardware_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/trinary_hardware_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/trinary_hardware_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/trinary_hardware_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Trinary_Hardware_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\trinary_hardware_cache.json"
+        "vendor/application_wiring/tier88_cache/trinary_hardware_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\validators_intrinsic_llm_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/validators_intrinsic_llm_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/application_wiring/tier88_cache/validators_intrinsic_llm_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/validators_intrinsic_llm_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Intrinsic_LLM_Validators_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\validators_intrinsic_llm_cache.json"
+        "vendor/application_wiring/tier88_cache/validators_intrinsic_llm_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\materials_project_live_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/materials_project_live_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/live_cache/tier68/materials_project_live_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/live_cache/tier68/materials_project_live_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Materials_Project_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\materials_project_live_cache.json"
+        "vendor/live_cache/tier68/materials_project_live_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\openneuro_full_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/openneuro_full_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/live_cache/tier68/openneuro_full_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/live_cache/tier68/openneuro_full_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "OpenNeuro_Full_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\openneuro_full_cache.json"
+        "vendor/live_cache/tier68/openneuro_full_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\pubchem_live_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/pubchem_live_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/live_cache/tier68/pubchem_live_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/live_cache/tier68/pubchem_live_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "PubChem_Live_Deep"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\pubchem_live_cache.json"
+        "vendor/live_cache/tier68/pubchem_live_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\vizier_wds_tap_live_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/vizier_wds_tap_live_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/live_cache/tier68/vizier_wds_tap_live_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/live_cache/tier68/vizier_wds_tap_live_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "VizieR_WDS_TAP_Live_Deep"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\vizier_wds_tap_live_cache.json"
+        "vendor/live_cache/tier68/vizier_wds_tap_live_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\scientific_expansion\\tier85_cache\\mechanical_engineering_cache.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/scientific_expansion/tier85_cache/mechanical_engineering_cache.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/scientific_expansion/tier85_cache/mechanical_engineering_cache.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier85_cache/mechanical_engineering_cache.json",
+      "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
       "panels": [
         "Mechanical_Engineering_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\scientific_expansion\\tier85_cache\\mechanical_engineering_cache.json"
+        "vendor/scientific_expansion/tier85_cache/mechanical_engineering_cache.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\verified_desktop\\legacy_physics\\warp_actuation_formula_fsot21.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+      "note": "In-repo copy of the legacy-physics warp actuation formula. SHA-256 97cd202b77da9915f537437e7274328f65e4395541a2d1b1d4d36da889213513.",
       "panels": [
         "Star_Trek_Transporter_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\verified_desktop\\legacy_physics\\warp_actuation_formula_fsot21.json"
+        "vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json"
       ]
     },
     {
       "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\04_Genetics-Longevity\\tier94_anage_longevity_catalog.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/04_Genetics-Longevity/tier94_anage_longevity_catalog.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "title": "vendor/longevity_genetics/tier94_anage_longevity_catalog.json",
+      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_anage_longevity_catalog.json",
+      "note": "In-repo AnAge longevity catalog. SHA-256 a33ee5e95d8af532cc744bb7ff889e3a4cfcdcad6948a7f74f6f6d2685258d94. Source: Human Ageing Genomic Resources AnAge. Download https://genomics.senescence.info/species/dataset.zip and unzip anage_data.txt. Ingested anage_data.txt SHA-256 98867969fbd4d0bed6bab415c2715bb19079dbd7f92bdc26e5961856aa1c1519.",
       "panels": [
         "Longevity_AnAge_Catalog_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\04_Genetics-Longevity\\tier94_anage_longevity_catalog.json"
+        "vendor/longevity_genetics/tier94_anage_longevity_catalog.json"
       ]
     },
     {
-      "kind": "vendor_cache",
-      "title": "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\star_trek_transporter\\pattern_buffer_scan_results.json",
-      "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects/star_trek_transporter/pattern_buffer_scan_results.json",
-      "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml",
+      "kind": "unresolved",
+      "title": "Pattern-buffer scan results (not tracked)",
+      "note": "pattern_buffer_scan_results.json is a local simulator scan and is not in this repository. No public URL or DOI is recorded. Local file SHA-256 645fcb2a21817ef7ac8c8cf6bfbe749ceb8feb7f3a0edf110e00647aa7bbcc8c.",
       "panels": [
         "Star_Trek_Transporter_Live_Panel"
       ],
       "token_examples": [
-        "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\star_trek_transporter\\pattern_buffer_scan_results.json"
+        "Pattern-buffer scan results (not tracked)"
       ]
     },
     {
@@ -12240,16 +12243,16 @@
       "record_count": 20,
       "pooled_median_error_pct": 0.018003,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_brain_cache.json",
+        "vendor/application_wiring/tier88_cache/arxiv_brain_cache.json",
         "desktop_knowledge_brain",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_brain_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/arxiv_brain_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/arxiv_brain_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/arxiv_brain_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -12317,16 +12320,16 @@
       "record_count": 22,
       "pooled_median_error_pct": 0.031506,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_primitives_cache.json",
+        "vendor/application_wiring/tier88_cache/arxiv_primitives_cache.json",
         "desktop_arxiv_primitives",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_primitives_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/arxiv_primitives_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/arxiv_primitives_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/arxiv_primitives_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "api",
@@ -12661,7 +12664,7 @@
       "record_count": 20,
       "pooled_median_error_pct": 0.013294,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\bibliography_corpus_cache.json",
+        "vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json",
         "desktop_bibliography",
         "c_thin_depth_pass",
         "fsot_proper_densify_remediation",
@@ -12672,9 +12675,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\bibliography_corpus_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -12866,7 +12869,7 @@
       "record_count": 20,
       "pooled_median_error_pct": 2.1766e-05,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\binary_decoder_cache.json",
+        "vendor/application_wiring/tier88_cache/binary_decoder_cache.json",
         "desktop_binary_decoder",
         "c_thin_depth_pass",
         "fsot_proper_densify_remediation",
@@ -12883,9 +12886,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\binary_decoder_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/binary_decoder_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/binary_decoder_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/binary_decoder_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -13122,7 +13125,7 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.015311,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\biology_developmental_structural_cache.json",
+        "vendor/scientific_expansion/tier87_cache/biology_developmental_structural_cache.json",
         "developmental_structural_biology_literature_anchors",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -13138,9 +13141,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\biology_developmental_structural_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/biology_developmental_structural_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier87_cache/biology_developmental_structural_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/biology_developmental_structural_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -13341,7 +13344,7 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.026472,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\blackhole_whitehole_cycle_cache.json",
+        "vendor/application_wiring/tier88_cache/blackhole_whitehole_cycle_cache.json",
         "bh_wh_cycle_blueprint",
         "fsot_proper_green_remediation",
         "ingest:scripts/ingest_tier88_application_wiring.py"
@@ -13349,9 +13352,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\blackhole_whitehole_cycle_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/blackhole_whitehole_cycle_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/blackhole_whitehole_cycle_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/blackhole_whitehole_cycle_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -13812,7 +13815,7 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.000561846,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\canonical_oracle_cache.json",
+        "vendor/application_wiring/tier88_cache/canonical_oracle_cache.json",
         "desktop_canonical_oracle",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -13831,9 +13834,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\canonical_oracle_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/canonical_oracle_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/canonical_oracle_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/canonical_oracle_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -14059,7 +14062,7 @@
       "record_count": 21,
       "pooled_median_error_pct": 0.014767,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\certified_agent_cache.json",
+        "vendor/application_wiring/tier88_cache/certified_agent_cache.json",
         "desktop_certified_agent",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -14074,9 +14077,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\certified_agent_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/certified_agent_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/certified_agent_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/certified_agent_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -14437,21 +14440,21 @@
       "record_count": 57,
       "pooled_median_error_pct": 0.020755,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json",
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\tier96_cache\\industry_component_catalog_cache.json"
+        "vendor/circuit_components/industry_component_catalog.json",
+        "vendor/circuit_components/tier96_cache/industry_component_catalog_cache.json"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/circuit_components/industry_component_catalog.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/circuit_components/industry_component_catalog.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/circuit_components/industry_component_catalog.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\tier96_cache\\industry_component_catalog_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/circuit_components/tier96_cache/industry_component_catalog_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/circuit_components/tier96_cache/industry_component_catalog_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/circuit_components/tier96_cache/industry_component_catalog_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         }
       ],
       "maps_to_lean": [
@@ -14806,9 +14809,9 @@
       "source_tokens": [
         "data/programming_language_laws_benchmark.json",
         "data/external_oss_code_genome_benchmark.json",
-        "I:\\Protofluid-Language-Translator-2.0-Zig",
-        "C:\\Users\\damia\\Desktop\\fsot code language",
-        "I:\\fsot-neuron-zig",
+        "Protofluid Language Translator 2.0 (Zig)",
+        "fsot code language (not tracked)",
+        "fsot-neuron-zig",
         "fsot_proper_densify_remediation",
         "openssl/openssl",
         "torvalds/linux",
@@ -14831,19 +14834,21 @@
           "note": "Code-genome / OSS structure panel source"
         },
         {
-          "kind": "unresolved",
-          "title": "I:\\Protofluid-Language-Translator-2.0-Zig",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "kind": "url",
+          "title": "Protofluid Language Translator 2.0 (Zig)",
+          "note": "Public repository. Clone that URL. No release checksum is recorded here.",
+          "url": "https://github.com/dappalumbo91/Protofluid-Language-Translator-2.0-Zig"
         },
         {
           "kind": "unresolved",
-          "title": "C:\\Users\\damia\\Desktop\\fsot code language",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "title": "fsot code language (not tracked)",
+          "note": "Named as a local desktop code-language tree. It is not in this repository. No public URL, DOI, or checksum is recorded."
         },
         {
-          "kind": "unresolved",
-          "title": "I:\\fsot-neuron-zig",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "kind": "url",
+          "title": "fsot-neuron-zig",
+          "note": "Public repository. Clone that URL. No release checksum is recorded here.",
+          "url": "https://github.com/dappalumbo91/fsot-neuron-zig"
         },
         {
           "kind": "process",
@@ -14970,8 +14975,8 @@
       "source_tokens": [
         "cold_fusion_candidate_prereg_scaffold_benchmark.json",
         "undiscovered_element_candidate_prereg_scaffold_benchmark.json",
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json",
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\lab_synthesis\\metamaterial_fluid_prereg_candidates.json"
+        "vendor/lab_synthesis/heavy_ion_reaction_anchors.json",
+        "vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json"
       ],
       "public_anchors": [
         {
@@ -14988,15 +14993,15 @@
         },
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/lab_synthesis/heavy_ion_reaction_anchors.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/lab_synthesis/heavy_ion_reaction_anchors.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/lab_synthesis/heavy_ion_reaction_anchors.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\lab_synthesis\\metamaterial_fluid_prereg_candidates.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         }
       ],
       "maps_to_lean": [
@@ -15190,7 +15195,7 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.033841,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\condensed_matter_superconductivity_cache.json",
+        "vendor/scientific_expansion/tier87_cache/condensed_matter_superconductivity_cache.json",
         "literature_Tc",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -15205,9 +15210,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\condensed_matter_superconductivity_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/condensed_matter_superconductivity_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier87_cache/condensed_matter_superconductivity_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/condensed_matter_superconductivity_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -15292,7 +15297,7 @@
       "source_tokens": [
         "data/consciousness_reference_observables.json",
         "data/consciousness_resonance_reference.json",
-        "G:/FSOT-PublicData/anomaly_observables/consciousness/anage",
+        "AnAge species dataset",
         "scripts/consciousness_econ_lib.py",
         "fsot_proper_green_remediation",
         "ingest:scripts/ingest_anomaly_public_data.py"
@@ -15318,7 +15323,7 @@
           "family": "biology_genomics",
           "auth": "none",
           "note": "",
-          "matched_token": "G:/FSOT-PublicData/anomaly_observables/consciousness/anage"
+          "matched_token": "AnAge species dataset"
         },
         {
           "kind": "dataset",
@@ -15716,7 +15721,7 @@
       "source_tokens": [
         "https://genomics.senescence.info/species/dataset.zip",
         "vendor/fsot_compute.py\\data\\consciousness_reference_observables.json",
-        "G:\\FSOT-PublicData\\anomaly_observables\\consciousness\\tier90_species_panel_cache.json",
+        "AnAge consciousness species panel",
         "ingest:scripts/ingest_tier90_consciousness_expansion.py"
       ],
       "public_anchors": [
@@ -15732,10 +15737,10 @@
           "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py"
         },
         {
-          "kind": "vendor_cache",
-          "title": "G:\\FSOT-PublicData\\anomaly_observables\\consciousness\\tier90_species_panel_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/anomaly_observables/consciousness/tier90_species_panel_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "kind": "dataset",
+          "title": "AnAge consciousness species panel",
+          "url": "https://genomics.senescence.info/species/dataset.zip",
+          "note": "Human Ageing Genomic Resources AnAge. Download dataset.zip and unzip anage_data.txt. Ingested anage_data.txt SHA-256 98867969fbd4d0bed6bab415c2715bb19079dbd7f92bdc26e5961856aa1c1519. In-repo species reference: data/consciousness_reference_observables.json. Local species-panel cache is not tracked. SHA-256 052a681f41c5bcabe963cc93faeeeb21494a06b7f006891d4a94f2fa7bca9de9."
         },
         {
           "kind": "ingest_script",
@@ -16135,7 +16140,7 @@
       "record_count": 151,
       "pooled_median_error_pct": 0.040788,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier86_cache\\culinary_fermentation_maillard_cache.json",
+        "vendor/scientific_expansion/tier86_cache/culinary_fermentation_maillard_cache.json",
         "PubChem",
         "fermentation_reference",
         "ingest:scripts/ingest_tier86_scientific_expansion.py"
@@ -16143,9 +16148,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier86_cache\\culinary_fermentation_maillard_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier86_cache/culinary_fermentation_maillard_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier86_cache/culinary_fermentation_maillard_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier86_cache/culinary_fermentation_maillard_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "api",
@@ -16181,15 +16186,15 @@
       "record_count": 27,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\dark_energy_cpl_reference.json",
+        "data/dark_energy_cpl_reference.json",
         "scripts/dark_energy_dual_readout_lib.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\dark_energy_cpl_reference.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/dark_energy_cpl_reference.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "data/dark_energy_cpl_reference.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/dark_energy_cpl_reference.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "dataset",
@@ -16738,16 +16743,16 @@
       "record_count": 32,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\hardware\\dzhanibekov_public_anchors.json",
+        "vendor/hardware/dzhanibekov_public_anchors.json",
         "intermediate_axis_theorem / tennis_racket / Dzhanibekov public literature",
         "x.com/dr_logvinovich/status/2084655064602358240"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\hardware\\dzhanibekov_public_anchors.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/hardware/dzhanibekov_public_anchors.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/hardware/dzhanibekov_public_anchors.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/hardware/dzhanibekov_public_anchors.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -16776,15 +16781,15 @@
       "record_count": 34,
       "pooled_median_error_pct": 0.020755,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json",
+        "vendor/circuit_components/industry_component_catalog.json",
         "verification/esp32/fsot_esp32_observer"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/circuit_components/industry_component_catalog.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/circuit_components/industry_component_catalog.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/circuit_components/industry_component_catalog.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -16808,7 +16813,7 @@
       "record_count": 21,
       "pooled_median_error_pct": 2.1766e-05,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\early_lean_mc_cache.json",
+        "vendor/application_wiring/tier88_cache/early_lean_mc_cache.json",
         "desktop_early_lean_mc",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -16825,9 +16830,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\early_lean_mc_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/early_lean_mc_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/early_lean_mc_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/early_lean_mc_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -19311,7 +19316,7 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\c\\fsot_pack_parity\\fsot_pack_parity.c",
+        "verification/c/fsot_pack_parity/fsot_pack_parity.c",
         "vendor/fsot_compute.py",
         "fsot_proper_hardware_clean",
         "fsot_proper_densify",
@@ -19320,9 +19325,10 @@
       ],
       "public_anchors": [
         {
-          "kind": "unresolved",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\c\\fsot_pack_parity\\fsot_pack_parity.c",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "kind": "vendor_cache",
+          "title": "verification/c/fsot_pack_parity/fsot_pack_parity.c",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml.",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/verification/c/fsot_pack_parity/fsot_pack_parity.c"
         },
         {
           "kind": "dataset",
@@ -19371,7 +19377,7 @@
       "source_tokens": [
         "hardware_depth_bridge",
         "industry_x86_cache_classes",
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\hardware_competitive_refine_report.json",
+        "data/hardware_competitive_refine_report.json",
         "fsot_proper_hardware_clean"
       ],
       "public_anchors": [
@@ -19387,9 +19393,9 @@
         },
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\hardware_competitive_refine_report.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/hardware_competitive_refine_report.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "data/hardware_competitive_refine_report.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/hardware_competitive_refine_report.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "process",
@@ -19412,8 +19418,8 @@
       "record_count": 27,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
-        "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
+        "vendor/fsot_compute.py",
+        "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
         "results/competitive/beat_cuda.json",
         "parity/golden.json",
         "phase2_native_gpu/cuda/fsot_beat_cuda.cu",
@@ -19431,8 +19437,8 @@
         },
         {
           "kind": "unresolved",
-          "title": "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "title": "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
+          "note": "Named as a local desktop GPU experiment. It is not in this repository. No public URL, DOI, or checksum is recorded."
         },
         {
           "kind": "vendor_cache",
@@ -19568,8 +19574,8 @@
       "record_count": 48,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
-        "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
+        "vendor/fsot_compute.py",
+        "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
         "results/parity/parity_ledger.json",
         "results/industry_lm/fsot21_verify.json",
         "phase1_formal_gpu/",
@@ -19584,8 +19590,8 @@
         },
         {
           "kind": "unresolved",
-          "title": "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "title": "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
+          "note": "Named as a local desktop GPU experiment. It is not in this repository. No public URL, DOI, or checksum is recorded."
         },
         {
           "kind": "vendor_cache",
@@ -19735,8 +19741,8 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
-        "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
+        "vendor/fsot_compute.py",
+        "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
         "phase1_formal_gpu/lean/Trinary.lean",
         "phase1_formal_gpu/isabelle/Trinary.thy",
         "results/competitive/beat_cuda.json",
@@ -19757,8 +19763,8 @@
         },
         {
           "kind": "unresolved",
-          "title": "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "title": "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
+          "note": "Named as a local desktop GPU experiment. It is not in this repository. No public URL, DOI, or checksum is recorded."
         },
         {
           "kind": "unresolved",
@@ -19835,8 +19841,8 @@
       "record_count": 32,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
-        "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
+        "vendor/fsot_compute.py",
+        "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
         "phase1_formal_gpu/lean/GpuMemory.lean",
         "phase1_formal_gpu/lean/Trinary.lean",
         "results/phase0/gpu_probe.json",
@@ -19852,8 +19858,8 @@
         },
         {
           "kind": "unresolved",
-          "title": "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "title": "GPU experiment for Lean, Coq, Isabelle, and Star (not tracked)",
+          "note": "Named as a local desktop GPU experiment. It is not in this repository. No public URL, DOI, or checksum is recorded."
         },
         {
           "kind": "unresolved",
@@ -21123,7 +21129,7 @@
       "pooled_median_error_pct": 0.009504,
       "source_tokens": [
         "tier91_foundational_ontology_panels",
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\foundational_ontology_axioms.yaml",
+        "data/foundational_ontology_axioms.yaml",
         "fsot_proper_green_remediation"
       ],
       "public_anchors": [
@@ -21134,9 +21140,9 @@
         },
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\foundational_ontology_axioms.yaml",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/foundational_ontology_axioms.yaml",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "data/foundational_ontology_axioms.yaml",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/foundational_ontology_axioms.yaml",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "process",
@@ -21440,21 +21446,21 @@
       "record_count": 366,
       "pooled_median_error_pct": 0.039349,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\fuel_lab_live_cache.json",
+        "vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json",
         "desktop_fuel_lab_engine_simulator",
         "compare_full_20260526.json",
         "compare_optimax_wave_20260715.json",
         "material_compatibility_comparison.json",
         "refined_grounded_hemp.json",
-        "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\fuel_lab\\engine_simulator\\REAL_DATA_PROVENANCE.md",
+        "Fuel-lab engine simulator provenance",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\fuel_lab_live_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/fuel_lab_live_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -21486,9 +21492,10 @@
           "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
         },
         {
-          "kind": "unresolved",
-          "title": "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\fuel_lab\\engine_simulator\\REAL_DATA_PROVENANCE.md",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "kind": "dataset",
+          "title": "Fuel-lab engine simulator provenance",
+          "note": "The provenance note is not in this repository. It records PubChem PUG REST for compound properties, with a NIST property lookup when PubChem has no result. Local note SHA-256 3497c80ed65e6bfe79c01565a6aa66b9b6fe49d9026ae1549584b3db2ea3b95c.",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest"
         },
         {
           "kind": "ingest_script",
@@ -22744,7 +22751,7 @@
       "record_count": 32,
       "pooled_median_error_pct": 0.004252889935064887,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
+        "vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json",
         "hubble_bubble_tension_benchmark.json",
         "dark_sector_open_problems_benchmark.json",
         "fsot_proper_densify",
@@ -22754,9 +22761,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
@@ -23608,16 +23615,16 @@
       "record_count": 21,
       "pooled_median_error_pct": 0.014767,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\validators_intrinsic_llm_cache.json",
+        "vendor/application_wiring/tier88_cache/validators_intrinsic_llm_cache.json",
         "desktop_intrinsic_llm",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\validators_intrinsic_llm_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/validators_intrinsic_llm_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/validators_intrinsic_llm_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/validators_intrinsic_llm_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -24230,16 +24237,16 @@
       "record_count": 152,
       "pooled_median_error_pct": 0.014767,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\living_fsot_hardware_cache.json",
+        "vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json",
         "desktop_living_fsot",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\living_fsot_hardware_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -24268,8 +24275,8 @@
       "record_count": 966,
       "pooled_median_error_pct": 0.022236,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\consciousness\\anage\\anage_data.txt",
-        "I:\\FSOT-Physical-Archive\\04_Genetics-Longevity\\tier94_anage_longevity_catalog.json",
+        "AnAge anage_data.txt",
+        "vendor/longevity_genetics/tier94_anage_longevity_catalog.json",
         "ingest:scripts/ingest_tier94_longevity_genetics.py"
       ],
       "public_anchors": [
@@ -24281,13 +24288,13 @@
           "family": "biology_genomics",
           "auth": "none",
           "note": "",
-          "matched_token": "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\consciousness\\anage\\anage_data.txt"
+          "matched_token": "AnAge anage_data.txt"
         },
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\04_Genetics-Longevity\\tier94_anage_longevity_catalog.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/04_Genetics-Longevity/tier94_anage_longevity_catalog.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/longevity_genetics/tier94_anage_longevity_catalog.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/longevity_genetics/tier94_anage_longevity_catalog.json",
+          "note": "In-repo AnAge longevity catalog. SHA-256 a33ee5e95d8af532cc744bb7ff889e3a4cfcdcad6948a7f74f6f6d2685258d94. Source: Human Ageing Genomic Resources AnAge. Download https://genomics.senescence.info/species/dataset.zip and unzip anage_data.txt. Ingested anage_data.txt SHA-256 98867969fbd4d0bed6bab415c2715bb19079dbd7f92bdc26e5961856aa1c1519."
         },
         {
           "kind": "ingest_script",
@@ -24524,16 +24531,16 @@
       "record_count": 120,
       "pooled_median_error_pct": 0.01341,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\machine_and_molecule_cache.json",
+        "vendor/application_wiring/tier88_cache/machine_and_molecule_cache.json",
         "desktop_machine_and_molecule_species_catalog",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\machine_and_molecule_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/machine_and_molecule_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/machine_and_molecule_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/machine_and_molecule_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -25125,16 +25132,16 @@
       "record_count": 47,
       "pooled_median_error_pct": 0.01341,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\materials_creep_fracture_cache.json",
+        "vendor/scientific_expansion/tier87_cache/materials_creep_fracture_cache.json",
         "creep_fracture_materials_literature_anchors+materials_project",
         "ingest:scripts/ingest_tier87_scientific_expansion.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\materials_creep_fracture_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/materials_creep_fracture_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier87_cache/materials_creep_fracture_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/materials_creep_fracture_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -25208,16 +25215,16 @@
       "record_count": 141,
       "pooled_median_error_pct": 0.011734,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\materials_project_live_cache.json",
+        "vendor/live_cache/tier68/materials_project_live_cache.json",
         "vendor/materials_live/materials_project_bundled.json",
         "ingest:scripts/ingest_tier68_live_ingest.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\materials_project_live_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/materials_project_live_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/live_cache/tier68/materials_project_live_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/live_cache/tier68/materials_project_live_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
@@ -25636,16 +25643,16 @@
       "record_count": 20,
       "pooled_median_error_pct": 0.039349,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\scientific_expansion\\tier85_cache\\mechanical_engineering_cache.json",
+        "vendor/scientific_expansion/tier85_cache/mechanical_engineering_cache.json",
         "ASME mechanical engineering reference",
         "ingest:scripts/ingest_tier85_scientific_expansion.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\scientific_expansion\\tier85_cache\\mechanical_engineering_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/scientific_expansion/tier85_cache/mechanical_engineering_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier85_cache/mechanical_engineering_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier85_cache/mechanical_engineering_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -25835,7 +25842,7 @@
       "record_count": 21,
       "pooled_median_error_pct": 0.0094425,
       "source_tokens": [
-        "G:\\FSOT-PublicData\\anomaly_observables\\consciousness\\tier90_microtubule_observer_cache.json",
+        "Microtubule observer cache (not tracked)",
         "data/consciousness_econ_benchmark.json",
         "data/quantum_computing_math_depth_panel_benchmark.json",
         "data/observer_channel_derivation_benchmark.json",
@@ -25847,10 +25854,10 @@
       ],
       "public_anchors": [
         {
-          "kind": "vendor_cache",
-          "title": "G:\\FSOT-PublicData\\anomaly_observables\\consciousness\\tier90_microtubule_observer_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/anomaly_observables/consciousness/tier90_microtubule_observer_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "kind": "dataset",
+          "title": "Microtubule observer cache (not tracked)",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/consciousness_resonance_reference.json",
+          "note": "In-repo microtubule resonance reference. The observer cache that pointed here is not tracked. Local cache SHA-256 308d76f3f0fc73a0c52243294d7f8fbaf33ce2c11a07bab46ea7941dc2fc4282. No public DOI or upstream checksum is recorded for that cache."
         },
         {
           "kind": "dataset",
@@ -26856,7 +26863,7 @@
       "record_count": 27,
       "pooled_median_error_pct": 0.0201195,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\neuroscience_connectomics_cache.json",
+        "vendor/scientific_expansion/tier87_cache/neuroscience_connectomics_cache.json",
         "neuron_cohort",
         "openneuro",
         "ingest:scripts/ingest_tier87_scientific_expansion.py"
@@ -26864,9 +26871,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\neuroscience_connectomics_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/neuroscience_connectomics_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier87_cache/neuroscience_connectomics_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/neuroscience_connectomics_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -27477,16 +27484,16 @@
       "record_count": 37,
       "pooled_median_error_pct": 0.0222545,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\omni_theory_humanities_cache.json",
+        "vendor/application_wiring/tier88_cache/omni_theory_humanities_cache.json",
         "desktop_omni_theory",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\omni_theory_humanities_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/omni_theory_humanities_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/omni_theory_humanities_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/omni_theory_humanities_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -27546,16 +27553,16 @@
       "record_count": 20,
       "pooled_median_error_pct": 0.015431,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\openneuro_full_cache.json",
+        "vendor/live_cache/tier68/openneuro_full_cache.json",
         "vendor/public_data/consciousness/openneuro_summary.json",
         "ingest:scripts/ingest_tier68_live_ingest.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\openneuro_full_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/openneuro_full_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/live_cache/tier68/openneuro_full_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/live_cache/tier68/openneuro_full_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
@@ -27870,7 +27877,7 @@
       "record_count": 82,
       "pooled_median_error_pct": 0.026954,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\optics_interferometry_cache.json",
+        "vendor/scientific_expansion/tier87_cache/optics_interferometry_cache.json",
         "LIGO_reference",
         "MAST_em",
         "ingest:scripts/ingest_tier87_scientific_expansion.py"
@@ -27878,9 +27885,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\optics_interferometry_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/optics_interferometry_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier87_cache/optics_interferometry_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/optics_interferometry_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -28604,7 +28611,7 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.0003086625,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
+        "vendor/application_wiring/tier88_cache/biological_cuda_cache.json",
         "desktop_physarum",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -28622,9 +28629,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/biological_cuda_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/biological_cuda_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/biological_cuda_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -29180,15 +29187,15 @@
       "record_count": 72,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\preregistered_predictions_manifest.yaml",
+        "predictions/preregistered_predictions_manifest.yaml",
         "preregistered_predictions_verification_scaffold_benchmark.json"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\preregistered_predictions_manifest.yaml",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/preregistered_predictions_manifest.yaml",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "predictions/preregistered_predictions_manifest.yaml",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/predictions/preregistered_predictions_manifest.yaml",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
@@ -29505,7 +29512,7 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.009282423000000001,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\psychology_psychometrics_cache.json",
+        "vendor/scientific_expansion/tier87_cache/psychology_psychometrics_cache.json",
         "psychometrics_rct_literature_anchors",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -29522,9 +29529,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\psychology_psychometrics_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/psychology_psychometrics_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier87_cache/psychology_psychometrics_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/psychology_psychometrics_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -29653,7 +29660,7 @@
       "record_count": 5043,
       "pooled_median_error_pct": 0.032631,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\pubchem_live_cache.json",
+        "vendor/live_cache/tier68/pubchem_live_cache.json",
         "vendor/public_data/pubchem/pubchem_preregistered_panel.json",
         "vendor/public_data/pubchem/pubchem_culinary_expansion.json",
         "vendor/public_data/pubchem/pubchem_auto_expansion.json",
@@ -29669,9 +29676,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\pubchem_live_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/pubchem_live_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/live_cache/tier68/pubchem_live_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/live_cache/tier68/pubchem_live_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
@@ -29971,7 +29978,7 @@
       "record_count": 45,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json",
+        "vendor/fusion/qce_elm_public_anchors.json",
         "Physical Review Letters 2026 Zhang et al. QCE",
         "fsot_proper_densify_remediation",
         "public ELM literature + TechTimes/PRL summary"
@@ -29979,9 +29986,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fusion/qce_elm_public_anchors.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/fusion/qce_elm_public_anchors.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fusion/qce_elm_public_anchors.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -30070,7 +30077,7 @@
       "record_count": 77,
       "pooled_median_error_pct": 0.014767,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\quantum_computing_math_cache.json",
+        "vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json",
         "QUANTUM_COMPUTING_RULES",
         "math_first_qc_reference",
         "quantum_computing_gap_fill",
@@ -30079,9 +30086,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\quantum_computing_math_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/quantum_computing_math_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -30232,7 +30239,7 @@
       "record_count": 21,
       "pooled_median_error_pct": 0.014767,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\quantum_mechanics_entanglement_cache.json",
+        "vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json",
         "entanglement_decoherence_literature_anchors",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -30249,9 +30256,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\quantum_mechanics_entanglement_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/scientific_expansion/tier87_cache/quantum_mechanics_entanglement_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -30741,23 +30748,23 @@
       "record_count": 63,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json",
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\fusion_public_anchors.json",
+        "vendor/fusion/qce_elm_public_anchors.json",
+        "vendor/fusion/fusion_public_anchors.json",
         "public 2022\u20132026 fusion/quantum breakthrough literature",
         "fsot_proper_densify_remediation"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fusion/qce_elm_public_anchors.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/fusion/qce_elm_public_anchors.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fusion/qce_elm_public_anchors.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\fusion_public_anchors.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fusion/fusion_public_anchors.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/fusion/fusion_public_anchors.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fusion/fusion_public_anchors.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -30905,7 +30912,7 @@
       "record_count": 21,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\rust_lean_bridge_cache.json",
+        "vendor/application_wiring/tier88_cache/rust_lean_bridge_cache.json",
         "desktop_rust_lean_bridge",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -30924,9 +30931,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\rust_lean_bridge_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/rust_lean_bridge_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/rust_lean_bridge_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/rust_lean_bridge_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -31034,7 +31041,7 @@
       "record_count": 7,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "G:/FSOT-PublicData/anomaly_observables/sh0es",
+        "Pantheon+SH0ES DataRelease",
         "data/sh0es_host_coordinates.json",
         "data/sector_h0_seed.json",
         "ingest:scripts/ingest_anomaly_public_data.py"
@@ -31046,7 +31053,7 @@
           "publisher": "literature",
           "url": "https://ui.adsabs.harvard.edu/",
           "note": "Contested H0 anchor \u2014 see contested sector panel",
-          "matched_token": "G:/FSOT-PublicData/anomaly_observables/sh0es"
+          "matched_token": "Pantheon+SH0ES DataRelease"
         },
         {
           "kind": "dataset",
@@ -31164,7 +31171,7 @@
       "record_count": 21,
       "pooled_median_error_pct": 0.007394383,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\scalar_solver_cache.json",
+        "vendor/application_wiring/tier88_cache/scalar_solver_cache.json",
         "desktop_scalar_solver",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -31181,9 +31188,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\scalar_solver_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/scalar_solver_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/scalar_solver_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/scalar_solver_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -31277,16 +31284,16 @@
       "record_count": 27,
       "pooled_median_error_pct": 0.020755,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json",
+        "vendor/circuit_components/industry_component_catalog.json",
         "reference_circuits",
         "fsot_proper_densify_remediation"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/circuit_components/industry_component_catalog.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/circuit_components/industry_component_catalog.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/circuit_components/industry_component_catalog.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -32272,10 +32279,10 @@
       "record_count": 1575,
       "pooled_median_error_pct": 0.031159,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\star_trek_transporter_cache.json",
+        "vendor/application_wiring/tier88_cache/star_trek_transporter_cache.json",
         "fsot_transporter_technology_stack",
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\verified_desktop\\legacy_physics\\warp_actuation_formula_fsot21.json",
-        "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\star_trek_transporter\\pattern_buffer_scan_results.json",
+        "vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+        "Pattern-buffer scan results (not tracked)",
         "Warp_BH_WH_Portal_Panel",
         "fsot_proper_green_remediation",
         "ingest:scripts/ingest_tier88_application_wiring.py"
@@ -32283,9 +32290,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\star_trek_transporter_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/star_trek_transporter_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/star_trek_transporter_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/star_trek_transporter_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -32294,15 +32301,14 @@
         },
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\verified_desktop\\legacy_physics\\warp_actuation_formula_fsot21.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+          "note": "In-repo copy of the legacy-physics warp actuation formula. SHA-256 97cd202b77da9915f537437e7274328f65e4395541a2d1b1d4d36da889213513."
         },
         {
-          "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\star_trek_transporter\\pattern_buffer_scan_results.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects/star_trek_transporter/pattern_buffer_scan_results.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "kind": "unresolved",
+          "title": "Pattern-buffer scan results (not tracked)",
+          "note": "pattern_buffer_scan_results.json is a local simulator scan and is not in this repository. No public URL or DOI is recorded. Local file SHA-256 645fcb2a21817ef7ac8c8cf6bfbe749ceb8feb7f3a0edf110e00647aa7bbcc8c."
         },
         {
           "kind": "unresolved",
@@ -33038,7 +33044,7 @@
       "source_tokens": [
         "data/symbolic_archetype_reference.json",
         "vendor/fringe_desktop/symbolic_encoding_graph_summary.json",
-        "G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json",
+        "FSOT mythology graph (not tracked)",
         "scripts/symbolic_archetype_lib.py",
         "fsot_proper_green_remediation",
         "ingest:scripts/ingest_fringe_desktop_data.py"
@@ -33057,10 +33063,9 @@
           "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
         },
         {
-          "kind": "vendor_cache",
-          "title": "G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "kind": "unresolved",
+          "title": "FSOT mythology graph (not tracked)",
+          "note": "fsot_mythology_graph.json is not in this repository. No public URL, DOI, or upstream checksum is recorded. Local file SHA-256 2741a3298cd320473c1b843e41d00d0cd1408b39375e4d531eb944f8500d55ce."
         },
         {
           "kind": "dataset",
@@ -33204,17 +33209,17 @@
       "record_count": 246,
       "pooled_median_error_pct": 0.031159,
       "source_tokens": [
-        "G:\\FSOT-PublicData\\the_well\\the_well_catalog_cache.json",
+        "The Well catalog (Polymathic AI)",
         "https://huggingface.co/collections/polymathic-ai/the-well",
         "arxiv:2412.00568",
         "ingest:scripts/ingest_tier89_the_well.py"
       ],
       "public_anchors": [
         {
-          "kind": "vendor_cache",
-          "title": "G:\\FSOT-PublicData\\the_well\\the_well_catalog_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/the_well/the_well_catalog_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "kind": "dataset",
+          "title": "The Well catalog (Polymathic AI)",
+          "url": "https://arxiv.org/abs/2412.00568",
+          "note": "Local catalog cache is not tracked. Ohana et al., arXiv:2412.00568. Download the code and data from https://github.com/PolymathicAI/the_well (about 15 TB; streaming via hf://datasets/polymathic-ai/). Hugging Face collection: https://huggingface.co/collections/polymathic-ai/the-well. Local aggregate-stats cache SHA-256 f3abed951c0c479823b162411d3591551143f89f058a7a7ba6254a75b555c5dc. Upstream dataset checksums are not copied here."
         },
         {
           "kind": "url",
@@ -33251,7 +33256,7 @@
       "record_count": 24,
       "pooled_median_error_pct": 0.015860423,
       "source_tokens": [
-        "G:\\FSOT-PublicData\\the_well\\the_well_spot_checks_cache.json",
+        "The Well spot-check scalars",
         "the_well_hdf5_spot_chunks",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -33267,10 +33272,10 @@
       ],
       "public_anchors": [
         {
-          "kind": "vendor_cache",
-          "title": "G:\\FSOT-PublicData\\the_well\\the_well_spot_checks_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/the_well/the_well_spot_checks_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "kind": "dataset",
+          "title": "The Well spot-check scalars",
+          "url": "https://github.com/PolymathicAI/the_well",
+          "note": "Local spot-check cache is not tracked. Same release as The Well, arXiv:2412.00568. Download from https://github.com/PolymathicAI/the_well. Local cache SHA-256 5eb63c8aebe3a31515f6f7745c2654543ef6ac6023ccb061c281564d8cc858d8."
         },
         {
           "kind": "unresolved",
@@ -34159,16 +34164,16 @@
       "record_count": 51,
       "pooled_median_error_pct": 0.031506,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\tokenization_cache.json",
+        "vendor/application_wiring/tier88_cache/tokenization_cache.json",
         "desktop_dictionary",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\tokenization_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/tokenization_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/tokenization_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/tokenization_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -34385,16 +34390,16 @@
       "record_count": 28,
       "pooled_median_error_pct": 0.014767,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\trinary_hardware_cache.json",
+        "vendor/application_wiring/tier88_cache/trinary_hardware_cache.json",
         "desktop_trinary_hardware",
         "ingest:scripts/ingest_tier88_application_wiring.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\trinary_hardware_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/application_wiring/tier88_cache/trinary_hardware_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/trinary_hardware_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/trinary_hardware_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -34718,7 +34723,7 @@
         "data/trinary_os_portable_benchmark.json",
         "data/trinary_os_isa_rebuild_benchmark.json",
         "data/trinary_os_round_trip_benchmark.json",
-        "G:\\FSOT-PublicData\\trinary_os"
+        "vendor/trinary_os"
       ],
       "public_anchors": [
         {
@@ -34746,9 +34751,10 @@
           "note": "Code-genome / OSS structure panel source"
         },
         {
-          "kind": "unresolved",
-          "title": "G:\\FSOT-PublicData\\trinary_os",
-          "note": "Named in panel source; add explicit public URL if this is an external authority"
+          "kind": "vendor_cache",
+          "title": "vendor/trinary_os",
+          "note": "In-repo trinary OS tree. A separate local public-data directory is not published, and no extra checksum is recorded for it.",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os"
         }
       ],
       "maps_to_lean": [
@@ -34984,7 +34990,7 @@
       "record_count": 21,
       "pooled_median_error_pct": 0.031506,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json",
+        "vendor/application_wiring/tier88_cache/vl_agent_cache.json",
         "desktop_vl_distill",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -35001,9 +35007,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/vl_agent_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/application_wiring/tier88_cache/vl_agent_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/application_wiring/tier88_cache/vl_agent_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "unresolved",
@@ -35436,16 +35442,16 @@
       "record_count": 91,
       "pooled_median_error_pct": 0.026954,
       "source_tokens": [
-        "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\vizier_wds_tap_live_cache.json",
+        "vendor/live_cache/tier68/vizier_wds_tap_live_cache.json",
         "wds_live_multiplicity_deep_benchmark.json",
         "ingest:scripts/ingest_tier68_live_ingest.py"
       ],
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\vizier_wds_tap_live_cache.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full/vendor/live_cache/tier68/vizier_wds_tap_live_cache.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/live_cache/tier68/vizier_wds_tap_live_cache.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/live_cache/tier68/vizier_wds_tap_live_cache.json",
+          "note": "In-repo path. Rebuild notes stay in ingest scripts and data/api_requirements.yaml."
         },
         {
           "kind": "vendor_cache",
@@ -35551,7 +35557,7 @@
       "record_count": 23,
       "pooled_median_error_pct": 0.0,
       "source_tokens": [
-        "C:\\Users\\damia\\Desktop\\FSOT-Legacy-Physics-Connections\\concept_refinement\\warp_actuation_formula_fsot21.json",
+        "vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
         "vendor/fsot_compute.py\\data\\lab_registry.json",
         "c_thin_depth_pass",
         "fsot_proper_densify",
@@ -35569,9 +35575,9 @@
       "public_anchors": [
         {
           "kind": "vendor_cache",
-          "title": "C:\\Users\\damia\\Desktop\\FSOT-Legacy-Physics-Connections\\concept_refinement\\warp_actuation_formula_fsot21.json",
-          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-Legacy-Physics-Connections/concept_refinement/warp_actuation_formula_fsot21.json",
-          "note": "In-repo portable cache; rebuild path in ingest scripts / api_requirements.yaml"
+          "title": "vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+          "url": "https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/verified_desktop/legacy_physics/warp_actuation_formula_fsot21.json",
+          "note": "In-repo copy of the legacy-physics warp actuation formula. SHA-256 97cd202b77da9915f537437e7274328f65e4395541a2d1b1d4d36da889213513."
         },
         {
           "kind": "software",
