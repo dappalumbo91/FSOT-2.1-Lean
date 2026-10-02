@@ -1,0 +1,492 @@
+{
+  "purpose": "Scores preregistered and held-out rows on their own. An explicit record_kind of scalar is honored before the preregistered eval_kind check, so those rows remain in the scalar gate. Rows that reach the preregistered eval_kind check return structural and stay out of the green count.",
+  "half_pct_band": 0.5,
+  "freeze_ref": {
+    "path": "predictions/toe_prereg_freeze.json",
+    "freeze_id": "TOE-PREREG-20260909",
+    "frozen_at": "2026-09-09T16:11:09.786611+00:00",
+    "review_horizon": "2027-06-30",
+    "sha256": "2eef40f7ef5df4fbb6f8954d47f4df67cd3f7a2590e358ee86226525e7205225",
+    "pin_text": "D1D38A",
+    "note": "Hash and date are read from the freeze file. This report does not edit it."
+  },
+  "rows_seen": 400,
+  "excluded_from_scalar_gate": 178,
+  "still_in_scalar_gate": 222,
+  "scored": 400,
+  "within_half_pct": 382,
+  "outside_half_pct": 18,
+  "unscored_missing_pair": 0,
+  "sector_predictions": [
+    {
+      "id": "PRED-H0-bridge",
+      "fsot_predicted": 70.75,
+      "unit": "km/s/Mpc",
+      "kill": "not_between_67.4_and_73.04",
+      "future_survey": "SH0ES/JWST/Carnegie local distance ladder refresh",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-S8",
+      "fsot_predicted": 0.805,
+      "unit": "S8",
+      "kill": "outside_planck_des_band",
+      "future_survey": "DES Y3/Y6 + Euclid weak lensing",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-wa",
+      "fsot_predicted": -1.018,
+      "unit": "w_a",
+      "kill": "desi_3sigma_exclusion",
+      "future_survey": "DESI DR2+/DR3 BAO + Euclid BAO",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-Neffective",
+      "fsot_predicted": 3.046,
+      "unit": "N_eff",
+      "kill": "cmb_3sigma_exclusion",
+      "future_survey": "CMB-S4 / Simons Observatory N_eff",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-mH",
+      "fsot_predicted": 125.25,
+      "unit": "GeV",
+      "kill": "pdg_update_outside_0_5pct",
+      "future_survey": "PDG Higgs mass combination update",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-sigma8-central",
+      "fsot_predicted": 0.8111,
+      "unit": "sigma8",
+      "kill": "outside_0_5pct_of_frozen_central_when_next_lensing_release",
+      "future_survey": "Euclid + LSST year-1 sigma8",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-Omega-Lambda",
+      "fsot_predicted": 0.6847,
+      "unit": "dimensionless",
+      "kill": "outside_0_5pct_of_frozen_central",
+      "future_survey": "combined BAO+CMB Omega_Lambda posterior",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-tau-reion",
+      "fsot_predicted": 0.0544,
+      "unit": "tau",
+      "kill": "outside_0_5pct_of_frozen_central",
+      "future_survey": "CMB polarization reionization optical depth",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-H0-Planck-sector",
+      "fsot_predicted": 67.4,
+      "unit": "km/s/Mpc",
+      "kill": "cmb_only_H0_outside_0_5pct_of_67_4",
+      "future_survey": "Planck-class CMB-only H0 reanalysis",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-cusp-core-rc",
+      "fsot_predicted": 0.6,
+      "unit": "kpc",
+      "kill": "fornax_class_core_radius_outside_0_5pct_band",
+      "future_survey": "dwarf spheroidal kinematic core-radius campaigns",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-lithium-factor",
+      "fsot_predicted": 3.0,
+      "unit": "underproduction_factor",
+      "kill": "bbn_lithium_gap_factor_outside_10pct_of_3",
+      "future_survey": "BBN abundance reanalysis + metal-poor star Li",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-FRB-DM-excess",
+      "fsot_predicted": 200.0,
+      "unit": "pc_cm3_excess",
+      "kill": "chime_class_dm_excess_outside_0_5pct_of_200",
+      "future_survey": "CHIME/FRB high-DM catalog refresh",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-DarkEnergy-CPL-wa-sign",
+      "fsot_predicted": -1.018,
+      "unit": "w_a",
+      "kill": "wa_sign_flip_or_3sigma_from_frozen",
+      "future_survey": "DESI+Euclid joint CPL (w0,wa) posterior",
+      "matched_benchmark_row": false
+    },
+    {
+      "id": "PRED-Zebrafish-panel-hold",
+      "fsot_predicted": 0.358,
+      "unit": "pooled_median_error_pct_upper_watch",
+      "kill": "zebrafish_predictive_panel_exceeds_0_5pct_on_refresh",
+      "future_survey": "next open zebrafish developmental atlas refresh",
+      "matched_benchmark_row": false
+    }
+  ],
+  "sector_predictions_without_a_benchmark_row": [
+    "PRED-H0-bridge",
+    "PRED-S8",
+    "PRED-wa",
+    "PRED-Neffective",
+    "PRED-mH",
+    "PRED-sigma8-central",
+    "PRED-Omega-Lambda",
+    "PRED-tau-reion",
+    "PRED-H0-Planck-sector",
+    "PRED-cusp-core-rc",
+    "PRED-lithium-factor",
+    "PRED-FRB-DM-excess",
+    "PRED-DarkEnergy-CPL-wa-sign",
+    "PRED-Zebrafish-panel-hold"
+  ],
+  "by_file": [
+    {
+      "file": "cold_fusion_candidate_prereg_scaffold_benchmark.json",
+      "sha256": "e2e6fbd7cfe54791b52344dd54418cfc609f445ab8861a754bdd0be73e208b1f",
+      "rows": 24,
+      "excluded_from_scalar_gate": 10,
+      "still_in_scalar_gate": 14,
+      "scored": 24,
+      "within_half_pct": 24,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "cosmology_anomaly_deep_panel_benchmark.json",
+      "sha256": "ff8c66d323df360e075f65e06891e72aee1c1debd07136437ec3cda9e10dca6e",
+      "rows": 1,
+      "excluded_from_scalar_gate": 1,
+      "still_in_scalar_gate": 0,
+      "scored": 1,
+      "within_half_pct": 1,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "dark_energy_cpl_benchmark.json",
+      "sha256": "9d59df5cc76d0b54d9574e9131d5bc44de9e529d7fa56595eeb262d919ca5285",
+      "rows": 11,
+      "excluded_from_scalar_gate": 11,
+      "still_in_scalar_gate": 0,
+      "scored": 11,
+      "within_half_pct": 5,
+      "outside_half_pct": 6,
+      "unscored": 0
+    },
+    {
+      "file": "dark_sector_open_problems_benchmark.json",
+      "sha256": "5ce623858ba146961d1079d0dbc9cf8b2627035073a9dd843e530ecb2f631b01",
+      "rows": 1,
+      "excluded_from_scalar_gate": 1,
+      "still_in_scalar_gate": 0,
+      "scored": 1,
+      "within_half_pct": 1,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "fluid_spacetime_observable_spine_benchmark.json",
+      "sha256": "c2b20d353ae890099c3d9dbad6477d993b4314709b064cf3116967eb743b7707",
+      "rows": 2,
+      "excluded_from_scalar_gate": 2,
+      "still_in_scalar_gate": 0,
+      "scored": 2,
+      "within_half_pct": 2,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "fluid_spacetime_prereg_validation_panel_benchmark.json",
+      "sha256": "c60d0fa76aee07fc1854355913ad6e0e289d5e6a549dcf228155e653702b1d40",
+      "rows": 20,
+      "excluded_from_scalar_gate": 8,
+      "still_in_scalar_gate": 12,
+      "scored": 20,
+      "within_half_pct": 20,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "fuel_candidate_prereg_scaffold_benchmark.json",
+      "sha256": "011b1e5dd6139dcbf6f355038c86e666d27b1b3852789b3c69ae2e77a1676075",
+      "rows": 33,
+      "excluded_from_scalar_gate": 28,
+      "still_in_scalar_gate": 5,
+      "scored": 33,
+      "within_half_pct": 33,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "fusion_decay_chain_prereg_scaffold_benchmark.json",
+      "sha256": "c2463f48b7d0db7eeb66dfb918242ab3fb74f7abeea1de391fb331cdd57c1555",
+      "rows": 24,
+      "excluded_from_scalar_gate": 12,
+      "still_in_scalar_gate": 12,
+      "scored": 24,
+      "within_half_pct": 24,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "interactive_media_prereg_scaffold_benchmark.json",
+      "sha256": "2cb070b677495ae01775cd6442717e8559b9040374e23cc79cea737f93071996",
+      "rows": 42,
+      "excluded_from_scalar_gate": 38,
+      "still_in_scalar_gate": 4,
+      "scored": 42,
+      "within_half_pct": 42,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "metamaterial_fluid_design_prereg_scaffold_benchmark.json",
+      "sha256": "3438cace7527c91778aa4d9e413ddd1a1e4ad418a8c4b4dc86eadd16a853d9b1",
+      "rows": 25,
+      "excluded_from_scalar_gate": 16,
+      "still_in_scalar_gate": 9,
+      "scored": 25,
+      "within_half_pct": 25,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "sha256": "383d3e1b0935d66fbb2bd10098743f5eb6702cd7bb2bdd85db999a643139ff87",
+      "rows": 72,
+      "excluded_from_scalar_gate": 36,
+      "still_in_scalar_gate": 36,
+      "scored": 72,
+      "within_half_pct": 61,
+      "outside_half_pct": 11,
+      "unscored": 0
+    },
+    {
+      "file": "preregistered_predictions_benchmark.json",
+      "sha256": "d13782cc0a952960e3d89d313b527976215f11e11e384c5fb2bba9a946a0ae18",
+      "rows": 35,
+      "excluded_from_scalar_gate": 0,
+      "still_in_scalar_gate": 35,
+      "scored": 35,
+      "within_half_pct": 34,
+      "outside_half_pct": 1,
+      "unscored": 0
+    },
+    {
+      "file": "preregistered_predictions_verification_scaffold_benchmark.json",
+      "sha256": "62418e5f93ea40d331deb42074bdd64d47252ca8dc730ef0408a60498e7c6656",
+      "rows": 60,
+      "excluded_from_scalar_gate": 1,
+      "still_in_scalar_gate": 59,
+      "scored": 60,
+      "within_half_pct": 60,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "stumped_observables_panel_benchmark.json",
+      "sha256": "16d41bea4bfc5f9b89b72781af9f7666aaa170d990f0c76b168ec10f5fa1a30d",
+      "rows": 1,
+      "excluded_from_scalar_gate": 1,
+      "still_in_scalar_gate": 0,
+      "scored": 1,
+      "within_half_pct": 1,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "undiscovered_element_candidate_prereg_scaffold_benchmark.json",
+      "sha256": "0248d7235c6378e87e53bef710799a4f8f5f8c467e98901c71910507a4e325b4",
+      "rows": 25,
+      "excluded_from_scalar_gate": 10,
+      "still_in_scalar_gate": 15,
+      "scored": 25,
+      "within_half_pct": 25,
+      "outside_half_pct": 0,
+      "unscored": 0
+    },
+    {
+      "file": "z164_distant_island_prereg_scaffold_benchmark.json",
+      "sha256": "26f343f91cc1aabd6936f183df3cd3a6ef123d5a83fc12d2393528f2c0d03166",
+      "rows": 24,
+      "excluded_from_scalar_gate": 3,
+      "still_in_scalar_gate": 21,
+      "scored": 24,
+      "within_half_pct": 24,
+      "outside_half_pct": 0,
+      "unscored": 0
+    }
+  ],
+  "outliers_outside_half_pct": [
+    {
+      "file": "dark_energy_cpl_benchmark.json",
+      "name": "Planck2018_wa",
+      "eval_kind": "preregistered_falsifiable",
+      "classify": "structural",
+      "gate_error_pct": 0.051014,
+      "gate_reason": "stored_sigma",
+      "recomputed_error_pct": 102.02749999999997
+    },
+    {
+      "file": "dark_energy_cpl_benchmark.json",
+      "name": "DES_Y3_w0",
+      "eval_kind": "w0_live",
+      "classify": "structural",
+      "gate_error_pct": 0.064585,
+      "gate_reason": "stored_sigma",
+      "recomputed_error_pct": 10.037832310838445
+    },
+    {
+      "file": "dark_energy_cpl_benchmark.json",
+      "name": "DES_Y3_wa",
+      "eval_kind": "preregistered_falsifiable",
+      "classify": "structural",
+      "gate_error_pct": 0.102336,
+      "gate_reason": "stored_sigma",
+      "recomputed_error_pct": 226.60107142857143
+    },
+    {
+      "file": "dark_energy_cpl_benchmark.json",
+      "name": "PantheonPlus_w0",
+      "eval_kind": "w0_live",
+      "classify": "structural",
+      "gate_error_pct": 0.025535,
+      "gate_reason": "stored_sigma",
+      "recomputed_error_pct": 2.2821251241310967
+    },
+    {
+      "file": "dark_energy_cpl_benchmark.json",
+      "name": "DESI_2024_BAO_preview_w0",
+      "eval_kind": "w0_live",
+      "classify": "structural",
+      "gate_error_pct": 0.012477,
+      "gate_reason": "stored_sigma",
+      "recomputed_error_pct": 0.9785294117647076
+    },
+    {
+      "file": "dark_energy_cpl_benchmark.json",
+      "name": "DESI_2024_BAO_preview_wa",
+      "eval_kind": "preregistered_falsifiable",
+      "classify": "structural",
+      "gate_error_pct": 0.101159,
+      "gate_reason": "stored_sigma",
+      "recomputed_error_pct": 708.11
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-016",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-032",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-033",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-034",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-035",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-036",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-039",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-040",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-041",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-038",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_outcome_tracking_benchmark.json",
+      "name": "PRED-037",
+      "eval_kind": "outcome_gate",
+      "classify": "structural",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    },
+    {
+      "file": "preregistered_predictions_benchmark.json",
+      "name": "PRED-004",
+      "eval_kind": "",
+      "classify": "scalar",
+      "gate_error_pct": 100.0,
+      "gate_reason": "recomputed",
+      "recomputed_error_pct": 100.0
+    }
+  ]
+}
