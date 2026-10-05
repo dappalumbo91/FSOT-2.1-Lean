@@ -229,9 +229,9 @@
       "name": "IE_P",
       "target_value": 10.487,
       "unit": "mixed",
-      "fsot_formula": "\u03c0\u00b2 + \u03c6\u207b\u00b9",
-      "computed_value": 10.487638389839253,
-      "error_pct": 0.006087,
+      "fsot_formula": "\u03c0\u00b2 + (\u03c6\u207b\u00b9)*(1-alpha*((2/pi^2)*(1+alpha*((pi+phi^2)*(1+alpha*(2/pi^2))))))",
+      "computed_value": 10.486686001486598,
+      "error_pct": 0.002994,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
