@@ -241,9 +241,9 @@
       "name": "IE_S",
       "target_value": 10.36,
       "unit": "mixed",
-      "fsot_formula": "\u03c6\u2076/\u221a3",
-      "computed_value": 10.360130217649854,
-      "error_pct": 0.001257,
+      "fsot_formula": "(\u03c6\u2076/\u221a3)*(1-alpha*((6/phi^18)*(1+alpha*((6*phi^6/sqrt(3))*(1-alpha*(2*(1+alpha*((phi^6+3)*(1+alpha)))))))))",
+      "computed_value": 10.360016699986986,
+      "error_pct": 0.000161,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
