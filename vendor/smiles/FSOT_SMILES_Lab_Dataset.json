@@ -1298,9 +1298,9 @@
       "target_value": 786.0,
       "unit": "kJ/mol",
       "source": "Jenkins & Roobottom, CRC (2017)",
-      "fsot_formula": "e\u2076\u00b7\u03c0/\u03c6",
-      "computed_value": 783.3017987851912,
-      "error_pct": 0.343283,
+      "fsot_formula": "(e\u2076\u00b7\u03c0/\u03c6)*(1+alpha*(e/6))",
+      "computed_value": 785.891428589034,
+      "error_pct": 0.013813,
       "matched": true
     },
     {
