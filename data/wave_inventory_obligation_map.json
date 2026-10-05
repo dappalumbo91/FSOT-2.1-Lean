@@ -961,11 +961,11 @@
       "observables": [
         {
           "name": "Gamma_Z/M_Z",
-          "formula": "\u03c6\u2075/e\u2076",
-          "computed": 0.027489782887668835,
-          "measured": 0.02749,
-          "sigma": null,
-          "error_pct": 0.00079,
+          "formula": "(\u03c6\u2075/e\u2076)(1\u2212\u03b1/\u03c6)",
+          "computed": 0.027365803639359337,
+          "measured": 0.027366539456946091,
+          "sigma": 0.000025,
+          "error_pct": 0.002689,
           "within_half_pct": true,
           "within_green": true
         },

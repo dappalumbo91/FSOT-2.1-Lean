@@ -64,3 +64,5 @@ Stored Ledger B verdicts were not regenerated. `scripts/close_ledger_b.py` resta
 The formula stays `φ⁵/e⁶`. Computed value 0.027489782887668835. The old target `0.02749` was that output. The target is now `mpf("0.027366")`.
 
 PDG 2024, rpp2024-sum-gauge-higgs-bosons: Γ_Z/M_Z = 2.4955(23)/91.1880(20) = 0.027366(25). z versus σ 0.000025 is 4.951. The row stays a miss. No extra sigma argument was added to `Result`.
+
+The bare engine row stays that miss. The catalog reading is `(φ⁵/e⁶)(1−α/φ) = 0.02736580363935934`, 0.029 uncertainties low of `2.4955/91.1880`. The fractional gap divided by the adopted alpha is 0.6144, and `1/φ` is already the base of that tower. `α·γ` finishes 0.30 uncertainties high and `α·ψ_con` finishes 0.14 uncertainties low. Both sit inside two uncertainties and farther from the quotient, so they stay off the leaf. The leaf is printed by `scripts/gamma_z_seed_check.py`. The engine formula stays `φ⁵/e⁶`, and the pin stays 2C9442.

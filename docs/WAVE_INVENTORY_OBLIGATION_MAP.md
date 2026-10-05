@@ -122,7 +122,7 @@ Every `fsot_compute.waveN()` Result is inventoried against Lean modules and mult
 
 | Observable | Formula | Error% | ≤0.5% |
 |------------|---------|-------:|:-----:|
-| `Gamma_Z/M_Z` | `φ⁵/e⁶` | 0.00079 | ✓ |
+| `Gamma_Z/M_Z` | `(φ⁵/e⁶)(1−α/φ)` | 0.002689 | ✓ |
 | `R_ell` | `G³/γ⁶` | 0.054141 | ✓ |
 | `R_b` | `G/φ³` | 0.027673 | ✓ |
 | `R_c` | `−ln(2) + e/π` | 0.005113 | ✓ |
