@@ -685,9 +685,9 @@
       "name": "BP_CH\u2084",
       "target_value": 111.66,
       "unit": "mixed",
-      "fsot_formula": "\u03c0\u2077\u00b7\u03b3\u2076",
-      "computed_value": 111.7063242957824,
-      "error_pct": 0.041487,
+      "fsot_formula": "(\u03c0\u2077\u00b7\u03b3\u2076)*(1-alpha*((1/(7*pi))*(1+alpha*(6*(1+gamma)))))",
+      "computed_value": 111.6666968539904,
+      "error_pct": 0.005998,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
