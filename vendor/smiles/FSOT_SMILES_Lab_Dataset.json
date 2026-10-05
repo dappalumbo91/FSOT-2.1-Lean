@@ -217,9 +217,9 @@
       "name": "IE_Si",
       "target_value": 8.152,
       "unit": "mixed",
-      "fsot_formula": "e\u00b2 + \u221a\u03b3",
-      "computed_value": 8.148803204816241,
-      "error_pct": 0.039215,
+      "fsot_formula": "e\u00b2 + (\u221a\u03b3)*(1+alpha*((1/2)*(1+alpha*((e^2-2)*(1-alpha*(e^2-2))))))",
+      "computed_value": 8.151680003030119,
+      "error_pct": 0.003925,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
