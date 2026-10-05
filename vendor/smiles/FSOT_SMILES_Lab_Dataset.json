@@ -673,9 +673,9 @@
       "name": "BP_NH\u2083",
       "target_value": 239.82,
       "unit": "mixed",
-      "fsot_formula": "e\u2075\u00b7\u03c6",
-      "computed_value": 240.13753580571478,
-      "error_pct": 0.132406,
+      "fsot_formula": "(e\u2075\u00b7\u03c6)*(1-alpha*((1/5)*(1-alpha*(5*(1+e)))))",
+      "computed_value": 239.83461023619077,
+      "error_pct": 0.006092,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
