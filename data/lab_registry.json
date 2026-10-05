@@ -9074,9 +9074,9 @@
         "species_id": "olive oil",
         "property": "viscosity",
         "target": 84.0,
-        "computed": 83.63259188689287,
-        "error_pct": 0.4374,
-        "formula": "e\u2074+\u03c6\u2077",
+        "computed": 83.99586565942973,
+        "error_pct": 0.0049,
+        "formula": "(e\u2074+\u03c6\u2077)*(1+alpha*(phi/e))",
         "unit": "mPa\u00b7s"
       },
       {

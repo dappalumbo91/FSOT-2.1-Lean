@@ -3187,9 +3187,9 @@
       "target_value": 84.0,
       "unit": "mPa\u00b7s",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "e\u2074+\u03c6\u2077",
-      "computed_value": 83.63259188689287,
-      "error_pct": 0.437391,
+      "fsot_formula": "(e\u2074+\u03c6\u2077)*(1+alpha*(phi/e))",
+      "computed_value": 83.99586565942973,
+      "error_pct": 0.004922,
       "matched": true
     },
     {
