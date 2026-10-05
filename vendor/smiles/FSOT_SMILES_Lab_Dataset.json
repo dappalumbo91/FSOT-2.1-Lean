@@ -10642,9 +10642,9 @@
       "target_value": 20.0,
       "unit": "K\u00b7kg/mol",
       "source": "CRC / Atkins",
-      "fsot_formula": "E\u00b3",
-      "computed_value": 20.085536923187668,
-      "error_pct": 0.427685,
+      "fsot_formula": "(E\u00b3)*(1-alpha*(1/e))",
+      "computed_value": 20.031616375711796,
+      "error_pct": 0.158082,
       "matched": true
     },
     {
