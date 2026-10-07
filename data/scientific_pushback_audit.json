@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T22:06:14.463246+00:00",
+  "generated_at": "2026-10-07T01:52:34.209975+00:00",
   "version": "1.0",
   "summary": {
     "extension_domain_count": 375,
@@ -9,7 +9,7 @@
     "stumped_observable_count": 13,
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
-    "domains_missing_uncertainty_metadata": 1,
+    "domains_missing_uncertainty_metadata": 0,
     "domains_raw_eff_divergence": 1
   },
   "aspiration_debt": [],
@@ -243,29 +243,49 @@
       "pushback_risk": "unconfirmed_prediction"
     }
   ],
-  "high_pushback_domains": [],
-  "missing_uncertainty_domains": [
+  "high_pushback_domains": [
     {
-      "domain": "TOE_Contested_Sector_Refresh",
-      "scalar_count": 15,
-      "missing_scientific_measurement": 15,
-      "stumped_missing_uncertainty": 1,
-      "stumped_untagged_contested": 12,
-      "max_scalar_error_pct": 0.018002668701804225,
-      "max_effective_scalar_error_pct": 0.018002668701804225,
-      "pooled_median_error_pct": 0.009407278780006464,
+      "domain": "Dark_Sector_Open_Problems",
+      "scalar_count": 23,
+      "missing_scientific_measurement": 14,
+      "stumped_missing_uncertainty": 0,
+      "stumped_untagged_contested": 4,
+      "max_scalar_error_pct": 3.036446519949971,
+      "max_effective_scalar_error_pct": 3.036446519949971,
+      "pooled_median_error_pct": 0.0005618458987473253,
       "green_gate_pass": true,
       "raw_eff_divergence_count": 0,
       "top_raw_eff_divergence": [],
       "max_pushback_scalar": {
-        "property": "e_con",
-        "name": "e_con",
-        "raw_pct": 0.018002668701804225,
-        "effective_pct": 0.018002668701804225,
+        "property": "deuterium_abundance",
+        "name": "D_H_ratio",
+        "raw_pct": 0.090986,
+        "effective_pct": 0.090986,
+        "contested": false
+      }
+    },
+    {
+      "domain": "Cosmology_Bubble_Bleed",
+      "scalar_count": 30,
+      "missing_scientific_measurement": 0,
+      "stumped_missing_uncertainty": 0,
+      "stumped_untagged_contested": 0,
+      "max_scalar_error_pct": 2.0000000000000067,
+      "max_effective_scalar_error_pct": 2.0000000000000067,
+      "pooled_median_error_pct": 0.0,
+      "green_gate_pass": true,
+      "raw_eff_divergence_count": 0,
+      "top_raw_eff_divergence": [],
+      "max_pushback_scalar": {
+        "property": "nebula_wh_closure",
+        "name": "Orion_Nebula",
+        "raw_pct": 0.0,
+        "effective_pct": 0.0,
         "contested": false
       }
     }
   ],
+  "missing_uncertainty_domains": [],
   "raw_eff_divergence_domains": [
     {
       "domain": "TOE_Dynamics",

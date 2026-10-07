@@ -1,12 +1,20 @@
 {
-  "generated_at": "2026-09-29T22:06:14.567005+00:00",
+  "generated_at": "2026-10-07T01:52:34.336294+00:00",
   "version": "1.0",
   "gate": "pooled_scalar_median_or_effective_median <= 0.05%",
   "tier_scalar_max_record_gate_pct": 0.05,
   "benchmark_file_count": 477,
-  "tier_scalar_pass_count": 477,
-  "tier_scalar_fail_count": 0,
-  "closed": true,
-  "failing_domains": [],
+  "tier_scalar_pass_count": 476,
+  "tier_scalar_fail_count": 1,
+  "closed": false,
+  "failing_domains": [
+    {
+      "domain": "DESI_EDR_Table_Slice_Open",
+      "file": "desi_edr_table_slice_open_benchmark.json",
+      "scalar_pooled_median_error_pct": 0.15070210704281267,
+      "effective_scalar_median_error_pct": 0.15070210704281267,
+      "max_scalar_error_pct": 0.3685028152534126
+    }
+  ],
   "honest_statement": "tier_scalar_pass uses pooled scalar median (or literature-aware effective median) \u2264 0.05%, aligned with fsot_precision_constants tier aspiration. Per-record max up to 0.5% remains the green_gate strict_scalar bound."
 }

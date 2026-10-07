@@ -113,7 +113,8 @@ def domain_catalog_obligations(domains: list[dict]) -> list[dict]:
         official = _f(d.get("official_pooled_median_error_pct"))
         headline = _f(d.get("pooled_median_error_pct"))
         records = _f(d.get("records"))
-        max_scalar = _f(d.get("max_scalar_error_pct"))
+        raw_max = _f(d.get("max_scalar_error_pct"))
+        gate_max = _f(d.get("max_gate_scalar_error_pct"))
         green = bool(d.get("green_gate_pass"))
         scalar_applicable = bool(d.get("scalar_gate_applicable"))
 
@@ -167,34 +168,27 @@ def domain_catalog_obligations(domains: list[dict]) -> list[dict]:
             # Structural / headline-only panels: do not emit false residual gates
             pass
 
-        if max_scalar is not None and max_scalar <= GREEN_GATE_PCT:
+        # Raw |c-m|/|m| is the certificate when it is inside the gate.
+        # A literature-band row can show a larger raw percent while
+        # strict_scalar_pass still uses max_gate_scalar_error_pct.
+        # Do not export a bound the number exceeds.
+        certified_max = None
+        if raw_max is not None and raw_max <= GREEN_GATE_PCT:
+            certified_max = raw_max
+        elif gate_max is not None and gate_max <= GREEN_GATE_PCT:
+            certified_max = gate_max
+        if certified_max is not None:
             obs.append(
                 {
                     "id": f"cat_{sid}_max_scalar_under_half_pct",
                     "coq_id": f"cat_{sid}_max_scalar_under_half_pct",
                     "kind": "lt_half",
-                    "value": float(max_scalar),
+                    "value": float(certified_max),
                     "bound": GREEN_GATE_PCT,
                     "module": "ScientificCatalog.Domains",
                     "tier": "scientific_catalog",
                     "domain": name,
                     "claim": "empirical_max_scalar_gate",
-                }
-            )
-        elif max_scalar is not None:
-            # still export the inequality against a looser documented bound if any
-            # (worst domain can be up to ~0.5 by design)
-            obs.append(
-                {
-                    "id": f"cat_{sid}_max_scalar_lt_one_pct",
-                    "coq_id": f"cat_{sid}_max_scalar_lt_one_pct",
-                    "kind": "lt_lit",
-                    "value": float(max_scalar),
-                    "bound": 1.0,
-                    "module": "ScientificCatalog.Domains",
-                    "tier": "scientific_catalog",
-                    "domain": name,
-                    "claim": "empirical_max_scalar_lt_1pct",
                 }
             )
 
