@@ -6,6 +6,8 @@ import json
 import math
 import shutil
 import subprocess
+import tempfile
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -113,29 +115,54 @@ def _rust_cargo_env() -> dict[str, str]:
     return env
 
 
+def _link_locked(text: str) -> bool:
+    """Windows link.exe LNK1104: the output exe is open, usually by a scanner or a prior cargo."""
+    folded = text.lower()
+    return "lnk1104" in folded or "cannot open file" in folded
+
+
 def run_cargo_runtime_parity() -> dict:
     cargo = shutil.which("cargo")
     if not cargo:
         return {"status": "skipped", "reason": "cargo not on PATH"}
     if not (KERNEL_DIR / "tests" / "runtime_parity.rs").exists():
         return {"status": "failed", "reason": "missing runtime_parity tests"}
+    last: dict = {
+        "status": "failed",
+        "tool": cargo,
+        "crate": "fsot_scalar_kernel",
+        "test_file": "runtime_parity.rs",
+    }
     try:
-        r = subprocess.run(
-            [cargo, "test", "--quiet"],
-            cwd=str(KERNEL_DIR),
-            capture_output=True,
-            text=True,
-            timeout=300,
-            env=_rust_cargo_env(),
-        )
-        out = (r.stdout or "") + (r.stderr or "")
-        return {
-            "status": "passed" if r.returncode == 0 else "failed",
-            "tool": cargo,
-            "crate": "fsot_scalar_kernel",
-            "test_file": "runtime_parity.rs",
-            "returncode": r.returncode,
-            "stderr_tail": out[-2000:],
-        }
+        # Three attempts. A locked runtime_parity.exe is not a scalar miss. Later
+        # attempts leave the shared temp target and link into a fresh directory.
+        for attempt in range(3):
+            env = _rust_cargo_env()
+            if attempt:
+                fresh = Path(tempfile.gettempdir()) / f"fsot_rust_target_r{attempt + 1}"
+                fresh.mkdir(parents=True, exist_ok=True)
+                env["CARGO_TARGET_DIR"] = str(fresh)
+            r = subprocess.run(
+                [cargo, "test", "--quiet"],
+                cwd=str(KERNEL_DIR),
+                capture_output=True,
+                text=True,
+                timeout=300,
+                env=env,
+            )
+            out = (r.stdout or "") + (r.stderr or "")
+            last = {
+                "status": "passed" if r.returncode == 0 else "failed",
+                "tool": cargo,
+                "crate": "fsot_scalar_kernel",
+                "test_file": "runtime_parity.rs",
+                "returncode": r.returncode,
+                "attempts": attempt + 1,
+                "stderr_tail": out[-2000:],
+            }
+            if r.returncode == 0 or not _link_locked(out):
+                return last
+            time.sleep(2)
+        return last
     except Exception as e:
         return {"status": "failed", "reason": str(e)}
