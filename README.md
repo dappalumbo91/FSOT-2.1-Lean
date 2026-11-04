@@ -1,5 +1,8 @@
 # Fluid Spacetime Omni-Theory (FSOT)
 
+[![CI](https://github.com/dappalumbo91/FSOT-2.1-Lean/actions/workflows/ci.yml/badge.svg)](https://github.com/dappalumbo91/FSOT-2.1-Lean/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 ## A Cross-Domain Theory of Everything — Published on GitHub
 
 **Author:** Damian Arthur Palumbo  
